@@ -1,4 +1,4 @@
-﻿capital = 64
+﻿capital = 65
 
 if = {
 	limit = {
@@ -357,7 +357,7 @@ set_popularities = {
 	communism = 20
 }
 
-create_faction = Axis
+create_faction = "Central Europa"
 add_to_faction = GER
 
 

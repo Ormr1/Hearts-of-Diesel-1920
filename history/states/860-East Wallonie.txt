@@ -4,7 +4,7 @@ state={
 	name="STATE_860"
 
 	history={
-		owner = BEL
+		owner = GER
 		victory_points = {
 			9418 5 
 		}
@@ -16,12 +16,12 @@ state={
 			industrial_complex = 2
 
 		}
-		add_core_of = BEL
+		add_core_of = GER
 
 	}
 
 	provinces={
-		3488 6537 9418 9444 11407 13260 
+		6537 9418 9444 11407 13260 
 	}
 	manpower=1340000
 	buildings_max_level_factor=1.000
