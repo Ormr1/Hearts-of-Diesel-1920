@@ -1,0 +1,51 @@
+state={
+	id=975
+	name="STATE_975"
+	resources={
+		steel=20.000
+	}
+	history={
+		owner = GER
+		victory_points = {
+			9503 5 
+		}
+		victory_points = {
+			9559 10 
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+			549 = {
+				bunker = 10
+			}
+			3629 = {
+				bunker = 10
+			}
+			9503 = {
+				bunker = 10
+			}
+			9559 = {
+				bunker = 10
+			}
+			11502 = {
+				bunker = 10
+			}
+			anti_air_building = 3
+			air_base = 3
+		}
+		add_core_of = FRA
+		add_core_of = GER
+		1939.1.1 = {
+			buildings = {
+				industrial_complex = 3
+			}
+		}
+	}
+	provinces={
+		549 1346 3629 9503 9559 11502 
+	}
+	manpower=440706
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
+}

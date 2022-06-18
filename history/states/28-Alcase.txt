@@ -1,0 +1,42 @@
+
+state={
+	id=28
+	name="STATE_28"
+	resources={
+		steel=80.000
+	}
+
+	history={
+		owner = FRA
+		victory_points = {
+			678 5 
+		}
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+			678 = {
+				bunker = 10
+			}
+			6529 = {
+				bunker = 10
+			}
+			anti_air_building = 2
+			air_base = 2
+
+		}
+		add_core_of = FRA
+		1939.1.1 = {
+			buildings = {
+				industrial_complex = 1
+			}
+		}
+	}
+
+	provinces={
+		678 6529 
+	}
+	manpower=674794
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=14.000
+}

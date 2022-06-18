@@ -1,0 +1,25 @@
+state={
+	id=977
+	name="STATE_977"
+	history = {
+		owner = GER
+		victory_points = {
+			11506 50 
+		}
+		buildings = {
+			infrastructure = 3
+			arms_factory = 3
+			industrial_complex = 3
+			anti_air_building = 2
+			air_base = 2
+		}
+		add_core_of = FRA
+	}
+	provinces={
+		11506 
+	}
+	manpower=2871429
+	buildings_max_level_factor=1.000
+	state_category=metropolis
+	local_supplies=0.000
+}
