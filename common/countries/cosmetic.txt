@@ -466,6 +466,16 @@ GRE_GREATER_GREECE_neutrality = {
 	color_ui = rgb { 19 131 196 }
 }
 
+GRE_east_rome = {
+	color = rgb { 86 0 127 }
+	color_ui = rgb { 86 0 127 }
+}
+
+ITA_west_rome = {
+	color = rgb { 153 0 0 }
+	color_ui = rgb { 153 0 0 }
+}
+
 MAE_communism = {
 	color = rgb { 35 65 153 }
 	color_ui = rgb { 35 65 153 }

@@ -5,7 +5,7 @@ state={
 	impassable = yes
 
 	history={
-		owner = ITA
+		owner = GRE
 		buildings = {
 			infrastructure = 0
 		}

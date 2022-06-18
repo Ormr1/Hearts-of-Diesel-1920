@@ -76,7 +76,7 @@
  SWE_ADJ:0 "Swedish"
  FRA_fascism:0 "Kingdom of the Franks"
  FRA_fascism_DEF:0 "the Kingdom of the Franks"
- FRA_democratic:0 "Franks"
+ FRA_democratic:0 "Republic of the Franks"
  FRA_democratic_DEF:0 "The Republic of the Franks"
  FRA_neutrality:0 "Kingdom of Franks"
  FRA_neutrality_DEF:0 "the Kingdom of the Franks"
@@ -3693,3 +3693,4 @@
  SIK_SOV_communism_subject:0 "Soviet Socialist Republic of Sinkiang"
  SIK_communism_subject_DEF:0 "the Soviet Socialist Republic of Sinkiang"
  SIK_communism_subject_ADJ:0 "Sinkiang"
+ BED:0 "Bedouin Tribes"
