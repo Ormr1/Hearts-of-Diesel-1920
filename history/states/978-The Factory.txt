@@ -1,0 +1,30 @@
+state={
+	id=978
+	name="STATE_978"
+	history = {
+		owner = FAC
+		victory_points = {
+			6584 100 
+		}
+		buildings = {
+			infrastructure = 10
+			arms_factory = 5
+			industrial_complex = 5
+			anti_air_building = 5
+			air_base = 10
+			radio = 1
+			6584 = {
+				bunker = 10
+				supply_node = 1
+			}
+		}
+		add_core_of = FAC
+	}
+	provinces={
+		6584 
+	}
+	manpower=1435715
+	buildings_max_level_factor=1.000
+	state_category=metropolis
+	local_supplies=0.000
+}

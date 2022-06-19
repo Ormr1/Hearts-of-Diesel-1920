@@ -1,3 +1,4 @@
+
 state={
 	id=917
 	name="STATE_917"
@@ -9,10 +10,11 @@ state={
 
 		}
 		add_core_of = USA
+
 	}
 
 	provinces={
-		4586 
+		4586 4740 10340 
 	}
 	manpower=340004
 	buildings_max_level_factor=1.000

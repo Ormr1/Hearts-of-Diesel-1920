@@ -1,4 +1,4 @@
-﻿capital = 292
+﻿capital = 765
 
 oob = "SAU_1936"
 
@@ -16,6 +16,11 @@ if = {
 }
 
 set_convoys = 5
+
+declare_war_on = {
+    target = BED
+    type = civil_war
+}
 
 recruit_character = SAU_abdulaziz_ibn_saud
 recruit_character = SAU_philip_gordon_lee
