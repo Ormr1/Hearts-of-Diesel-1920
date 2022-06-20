@@ -3,7 +3,7 @@ state={
 	name="STATE_972"
 
 	history={
-		owner = ENG
+		owner = ZAM
 		add_core_of = ZAM
 		buildings = {
 			infrastructure = 2
