@@ -86,8 +86,8 @@ ALB = {
 	color_ui = rgb { 194 59 133 }
 }
 NOR = {
-	color = rgb { 111 71 71 }
-	color_ui = rgb { 144 92 92 }
+	color = rgb { 35 79 138 }
+	color_ui = rgb { 35 79 138 }
 }
 DEN = {
 	color = rgb { 153 116 93 }
@@ -170,8 +170,8 @@ ETH = {
 	color_ui = rgb { 198 169 248 }
 }
 GUA = {
-	color = rgb { 72 49 112 }
-	color_ui = rgb { 72 49 112 }
+	color = rgb { 137 197 227 }
+	color_ui = rgb { 137 197 227 }
 }
 HON = {
 	color = rgb { 128 145 65 }
