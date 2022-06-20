@@ -1,0 +1,27 @@
+
+state={
+	id=979
+	name="STATE_979"
+	resources={
+		
+	}
+
+	history={
+		owner = AST
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			air_base = 1
+		}
+		add_core_of = AST
+
+	}
+
+	provinces={
+		2116 2221 10941 10977 10991 12934
+	}
+	manpower=916800
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}
