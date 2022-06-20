@@ -3,7 +3,7 @@ state={
 	name="STATE_953"
 
 	history={
-		owner = CUB
+		owner = USA
 		victory_points = {
 			7546 1 
 		}
@@ -13,6 +13,7 @@ state={
 
 		}
 		add_core_of = CUB
+		add_core_of = USA
 
 	}
 
