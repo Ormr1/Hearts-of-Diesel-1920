@@ -151,16 +151,21 @@ if = {
 		autonomous_state = autonomy_dominion
 		freedom_level = 0.4
 	}
+	set_autonomy = {
+		target = SYR
+		autonomous_state = autonomy_dominion
+		freedom_level = 0.4
+	}
+	set_autonomy = {
+		target = AST
+		autonomous_state = autonomy_dominion
+		freedom_level = 0.2
+	}
 	else = {
 		puppet = SAU
+		puppet = SYR
+		puppet = AST
 	}
-}
-
-#Trade
-create_import = {
-		resource = tungsten
-		factories = 1
-		exporter = SWE
 }
 
 1939.1.1 = {
@@ -376,6 +381,7 @@ set_popularities = {
 
 create_faction = "Central Europa"
 add_to_faction = GER
+add_to_faction = AST
 
 
 add_ideas = {
