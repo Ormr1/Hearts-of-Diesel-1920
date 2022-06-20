@@ -815,3 +815,20 @@ CHU = {
 	color = rgb { 191 128 64 }
 	color_ui = rgb { 134 89 45 }
 }
+
+MAR = {
+	color = rgb { 236 165 20 }
+	color_ui = rgb { 134 89 45 }
+}
+CRN = {
+	color = rgb { 90 141 196 }
+	color_ui = rgb { 134 89 45 }
+}
+MYS = {
+	color = rgb { 198 81 65 }
+	color_ui = rgb { 134 89 45 }
+}
+HYD = {
+	color = rgb { 142 87 88 }
+	color_ui = rgb { 134 89 45 }
+}
