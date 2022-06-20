@@ -20,10 +20,6 @@ state={
 				bunker = 1
 
 			}
-			7520 = {
-				coastal_bunker = 1
-
-			}
 
 		}
 		victory_points = {
@@ -31,9 +27,6 @@ state={
 		}
 		victory_points = {
 			12406 20.0 
-		}
-		victory_points = {
-			7520 1 
 		}
 		add_core_of = AST
 

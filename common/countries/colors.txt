@@ -831,3 +831,19 @@ HYD = {
 	color = rgb { 142 87 88 }
 	color_ui = rgb { 134 89 45 }
 }
+MRR = {
+	color = rgb { 168 104 106 }
+	color_ui = rgb { 134 89 45 }
+}
+MRC = {
+	color = rgb { 150 216 255 }
+	color_ui = rgb { 134 89 45 }
+}
+WIR = {
+	color = rgb { 172 226 145 }
+	color_ui = rgb { 134 89 45 }
+}
+PAM = {
+	color = rgb { 62 183 110 }
+	color_ui = rgb { 134 89 45 }
+}
