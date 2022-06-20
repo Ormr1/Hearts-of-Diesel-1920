@@ -1,4 +1,14 @@
 1. Map/Borders
+	Europe: Done
+	Middle East: Done
+	North America: In-Progress
+	South America: In-Progress
+	South Asia: In-Progress
+	Southeast Asia: In-Progress
+	East Asia: In-Progress
+	Oceania: In-Progress
+	Africa: In-Progress
+	
 2. Names + Flags
 3. Tech
 4. Generic Tree
