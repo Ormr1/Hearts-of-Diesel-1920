@@ -1,6 +1,8 @@
 ﻿l_english:
  GER_fascism:0 "Empire of Saxony"
  GER_fascism_DEF:0 "the Empire of Saxony"
+ GER_monarchy:0 "Empire of Saxony"
+ GER_monarchy_DEF:0 "the Empire of Saxony"
  GER_democratic:0 "Saxony Republic"
  GER_democratic_DEF:0 "the Saxony Republic"
  GER_neutrality:0 "Empire of Saxony"

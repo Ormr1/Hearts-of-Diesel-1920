@@ -1,4 +1,18 @@
 characters={
+	GER_friedrich_iii={
+		name=GER_friedrich_iii
+		portraits={
+			civilian={
+				large=GFX_portrait_GER_friedrich_iii
+			}
+		}
+		country_leader={
+			ideology=constitutional_monarchy
+			traits={  }
+			expire="1922.1.1.1"
+			id=-1
+		}
+	}
 	GER_adolf_hitler={
 		name=GER_adolf_hitler
 		portraits={
