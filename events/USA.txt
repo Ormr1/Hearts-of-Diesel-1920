@@ -273,7 +273,7 @@ country_event = {
 				}
 			}
 		}		
-		set_party_name = { ideology = democratic long_name = USA_republican_party name = USA_republican_party }
+		set_party_name = { ideology = democratic long_name = USA_federalist_party_long name = USA_federalist_party }
 		set_variable = { election_factor = random }
 		add_to_variable = { election_factor = -0.6 }
 		USA_election_senate = yes
@@ -374,7 +374,7 @@ country_event = {
 				is_historical_focus_on = yes
 			}
 		}	
-		set_party_name = { ideology = democratic long_name = USA_republican_party name = USA_republican_party }
+		set_party_name = { ideology = democratic long_name = USA_federalist_party_long name = USA_federalist_party }
 		remove_ideas = new_deal
 		add_ideas = wilkies_new_deal
 		set_variable = { election_factor = random }
@@ -538,7 +538,7 @@ country_event = {
 			}
 		}		
 		remove_ideas = new_deal
-		set_party_name = { ideology = democratic long_name = USA_republican_party name = USA_republican_party }
+		set_party_name = { ideology = democratic long_name = USA_federalist_party_long name = USA_federalist_party }
 		set_variable = { election_factor = random }
 		add_to_variable = { election_factor = -0.6 }
 		USA_election_senate = yes
@@ -705,7 +705,7 @@ country_event = {
 			}
 		}
 		remove_ideas = new_deal
-		set_party_name = { ideology = democratic long_name = USA_republican_party name = USA_republican_party }
+		set_party_name = { ideology = democratic long_name = USA_federalist_party_long name = USA_federalist_party }
 		set_variable = { election_factor = random }
 		add_to_variable = { election_factor = -0.6 }
 		USA_election_senate = yes

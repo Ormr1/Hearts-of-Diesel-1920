@@ -143,6 +143,13 @@ give_guarantee = PAR
 give_guarantee = ARG
 give_guarantee = URG
 
+# Parties
+set_party_name = { 
+    ideology = democratic 
+    long_name = USA_democratic_republican_party_long 
+    name = USA_democratic_republican_party 
+}
+
 1939.1.1 = {
 
 	add_political_power = 1199
