@@ -143,8 +143,13 @@ if = {
 		autonomous_state = autonomy_colony
 		freedom_level = 0.4
 	}
+	set_autonomy = {
+		target = MAL
+		autonomous_state = autonomy_integrated_puppet
+	}
 	else = {
 		puppet = ITA
+		puppet = MAL
 	}
 }
 

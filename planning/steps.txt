@@ -1,13 +1,13 @@
 1. Map/Borders
 	Europe: Done
 	Middle East: Done
-	North America: In-Progress
-	South America: In-Progress
+	North America: Done
+	South America: Done
 	South Asia: In-Progress
 	Southeast Asia: In-Progress
 	East Asia: In-Progress
 	Oceania: In-Progress
-	Africa: In-Progress
+	Africa: Done
 	
 2. Names + Flags
 3. Tech
