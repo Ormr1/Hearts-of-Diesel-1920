@@ -27,7 +27,7 @@ state={
 				naval_base = 4
 			}
 		}
-		add_core_of = ALB
+		add_core_of = YUG
 		add_core_of = GRE
 
 		1939.4.12 = {

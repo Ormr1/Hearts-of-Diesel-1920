@@ -97,6 +97,9 @@
  centrism_desc:0 "Centrism is a form of government which wants to achieve common sense solutions that appropriately address current and future needs, that support the public trust and serve the common good with consideration of risk and capacity in context of these needs."
  anarchism:0 "Anarchism"
  anarchism_desc:0 "Anarchism is the rejection of authority itself, promoting the division of society into self-managing and self-governing collectives instead of a singular, centralized state."
+ shogunate:0 "Shogun"
+ shogunate_noun:0 "Shogunate"
+ shogunate_desc:0 "The Shogunate is a unique iteration of aristocratic feudalism unique to Togawa. The Imperial Family, the central and spiritual authority of Togawa, maintains minimal intervention of governance, deligating most responsibilities and authority to local aristocratic families called the Han, while the government is headed and controlled by the Shogun, the family head of the most influent and rich of the Han Families."
  # Monarchist Sub-Ideologies
  constitutional_monarchy:0 "Constitutional Monarch"
  constitutional_monarchy_noun:0 "Constitutional Monarchy"
@@ -871,7 +874,7 @@
  VLA_communism_party:0 "VCA"
  VLA_communism_party_long:0 "The Vladivostok All-Communist Assembly"
  VLA_fascism_party:0 "RJU"
- VLA_fascism_party_long:0 "The Russo-Japanese Unification Party"
+ VLA_fascism_party_long:0 "The Russo-Togawaese Unification Party"
  VLA_democratic_party:0 "VVD"
  VLA_democratic_party_long:0 "Vladivostok Duma"
  VLA_neutrality_party:0 "WAR"

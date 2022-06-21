@@ -246,6 +246,10 @@ ideologies = {
 				can_be_randomly_selected = no
 			}
 
+			shogunate = {
+				can_be_randomly_selected = no
+			}
+
 			technocracy = {
 			}
 		}
