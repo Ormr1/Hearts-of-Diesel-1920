@@ -39,6 +39,6 @@ set_politics = {
 	elections_allowed = no
 }
 set_popularities = {
-	monarchy = 88
+	monarchy = 78
 	neutrality = 22
 }

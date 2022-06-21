@@ -33,6 +33,8 @@
  ENG_ADJ:0 "Albionian"
  SOV_fascism:0 "Rusviet Tsardom"
  SOV_fascism_DEF:0 "the Rusviet Tsardom"
+ SOV_monarchy:0 "Rusviet Tsardom"
+ SOV_monarchy_DEF:0 "the Rusviet Tsardom"
  SOV_democratic:0 "Rusviet Republic"
  SOV_democratic_DEF:0 "the Rusviet Republic"
  SOV_neutrality:0 "Rusviet Tsardom"

@@ -119,21 +119,6 @@ if = {
 		set_research_slots = 3
 	    reserve_dynamic_country = yes
 	}
-	SPR = {
-		set_variable = { var = spa_civil_war_divisions_counter_var value = 17 }
-		set_variable = { var = spr_civil_war_divisions_counter_var value = 66 }
-	}
-	for_each_scope_loop = {
-	    array = core_states
-	    
-	    set_state_flag = SPR_original_core
-	}
-	add_ideas = {
-		SPA_carlism_1
-		SPR_military_disloyalty
-		SPR_political_violence
-		SPR_national_strikes_3
-	}
 	recruit_character = SPR_niceto_alcala_zamora
 	recruit_character = SPR_jose_diaz
 	recruit_character = SPA_jose_antonio_primo_de_rivera

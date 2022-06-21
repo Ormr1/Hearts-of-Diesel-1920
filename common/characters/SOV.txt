@@ -12,6 +12,25 @@ characters = {
   ####    ####    ####   #    #    #    #    #    #        ######  ######  #    #  #####   ######  #    #   ####  
                                                                                                                   
 
+	SOV_tsar_nicholas = {
+		name = "Tsar Nicholas"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SOV/Portrait_Tsar_Nicholas.dds"
+			}
+			army = {
+				large = GFX_portrait_SOV_tsar_nicholas
+				small = GFX_portrait_SOV_tsar_nicholas_small
+			}
+		}
+		country_leader = {
+			ideology = absolute_monarchy
+			traits = { }
+			expire = "1953.3.1.1"
+			id = -1
+		}
+	}
+
 	SOV_iosif_stalin = {
 		name = SOV_iosif_stalin
 		portraits = {
