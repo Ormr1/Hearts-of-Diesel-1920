@@ -473,6 +473,14 @@ spriteTypes = {
 		name = "GFX_ideology_democratic_group"
 		texturefile = "gfx/interface/ideologies/democratic_group.dds"
 	}
+	spriteType = {
+		name = "GFX_ideology_fenris_group"
+		texturefile = "gfx/interface/ideologies/fenris_group.dds"
+	}
+	spriteType = {
+		name = "GFX_ideology_monarchy_group"
+		texturefile = "gfx/interface/ideologies/monarchy_group.dds"
+	}
 
 	spriteType = {
 		name = "GFX_ideology_anarchism"

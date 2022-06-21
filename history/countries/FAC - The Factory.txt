@@ -53,6 +53,7 @@ if = {
 		basic_light_tank_chassis = 1
 	}
 }
+create_faction = "Factory Alliance"
 
 set_politics = {
 	ruling_party = neutrality
