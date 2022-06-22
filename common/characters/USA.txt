@@ -1,16 +1,25 @@
 characters={
+	USA_booker_t_washington = {
+		name = USA_booker_t_washington
+		portraits = {
+			civilian = {
+				large = GFX_portrait_USA_booker_t_washington
+			}
+		}
+		country_leader={
+			ideology=centrism_democratic
+			traits={ dislikes_germany }
+			expire="1947.1.1.1"
+			id=-1
+		}
+	}
+
 	USA_franklin_delano_roosevelt={
 		name=USA_franklin_delano_roosevelt
 		portraits={
 			civilian={
 				large=GFX_portrait_USA_franklin_delano_roosevelt
 			}
-		}
-		country_leader={
-			ideology=liberalism
-			traits={ dislikes_germany }
-			expire="1947.1.1.1"
-			id=-1
 		}
 	}
 

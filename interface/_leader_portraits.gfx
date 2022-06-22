@@ -21,6 +21,16 @@ spriteTypes = {
 	### GER
 
 	spriteType = {
+		name = "GFX_portrait_GER_friedrich_iii"
+		texturefile = "gfx/leaders/GER/Portrait_GER_Friedrich_III.png"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_GER_wilhelm_ii"
+		texturefile = "gfx/leaders/GER/Portrait_GER_Wilhelm_II.png"
+	}
+
+	spriteType = {
 		name = "GFX_portrait_ger_felix_steiner"
 		texturefile = "gfx/leaders/GER/portrait_ger_felix_steiner.dds"
 	}
@@ -61,6 +71,11 @@ spriteTypes = {
 	}
 
 	#### USA
+
+	spriteType = {
+		name = "GFX_portrait_USA_booker_t_washington"
+		texturefile = "gfx/leaders/USA/Portrait_USA_Booker_T_Washington.png"
+	}
 
 	spriteType = {
 		name = "GFX_portrait_USA_charles_lindbergh"
@@ -579,7 +594,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_portrait_GRE_adolfos_i"
-		texturefile = "gfx/leaders/GRE/portrait_gre_adolfos_i.dds"
+		texturefile = "gfx/leaders/GRE/Portrait_GRE_Adolfos_I.dds"
 	}
 
 	spriteType = {
@@ -4197,6 +4212,11 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = GFX_portrait_FRA_louis_iv_merovech
+		texturefile = "gfx/leaders/FRA/Portrait_FRA_Louis_IV_Merovech.png"
+	}
+
+	spriteType = {
 		name = GFX_portrait_FRA_edouard_daladier
 		texturefile = "gfx/leaders/FRA/Portrait_France_Edouard_Daladier.dds"
 	}
@@ -4912,7 +4932,7 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = GFX_portrait_ITA_benito_mussolini
+		name = GFX_portrait_ITA_benito_caesar
 		texturefile = "gfx/leaders/ITA/Portrait_Italy_Benito_Mussolini.dds"
 	}
 

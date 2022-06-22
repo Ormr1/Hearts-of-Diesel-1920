@@ -1,13 +1,13 @@
 characters={
-	ITA_benito_mussolini={
-		name=ITA_benito_mussolini
+	ITA_benito_caesar={
+		name=ITA_benito_caesar
 		portraits={
 			civilian={
-				large=GFX_portrait_ITA_benito_mussolini
+				large=GFX_portrait_ITA_benito_caesar
 			}
 		}
 		country_leader={
-			ideology=fascism_ideology
+			ideology=absolute_monarchy
 			expire="1965.1.1.1"
 			id=-1
 		}

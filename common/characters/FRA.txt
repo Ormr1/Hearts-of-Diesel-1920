@@ -1,4 +1,18 @@
 characters={
+	FRA_louis_iv_merovech = {
+		name = FRA_louis_iv_merovech
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_FRA_louis_iv_merovech"
+			}
+		}
+		country_leader={
+			ideology=absolute_monarchy
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
 	FRA_pierre_laval={ #Democratic Leader
 		name=FRA_pierre_laval
 		portraits={

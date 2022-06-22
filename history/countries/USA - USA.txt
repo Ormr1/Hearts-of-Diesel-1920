@@ -146,8 +146,8 @@ give_guarantee = URG
 # Parties
 set_party_name = { 
     ideology = democratic 
-    long_name = USA_democratic_republican_party_long 
-    name = USA_democratic_republican_party 
+    long_name = USA_federalist_party_long 
+    name = USA_federalist_party 
 }
 
 1939.1.1 = {
@@ -325,6 +325,7 @@ set_autonomy = {
 	}
 }
 
+recruit_character = USA_booker_t_washington
 recruit_character = USA_earl_browder
 recruit_character = USA_william_dudley_pelley
 recruit_character = USA_franklin_delano_roosevelt

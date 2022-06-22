@@ -324,6 +324,7 @@
  MAN_changlin_linge:0 "Changlin Linge"
 
  #USA
+ USA_booker_t_washington:0 "Booker T. Washington"
  USA_franklin_delano_roosevelt:0 "Franklin Delano Roosevelt"
  USA_william_dudley_pelley:0 "William Dudley Pelley"
  USA_earl_browder:0 "$earl_browder$"
@@ -384,7 +385,7 @@
  
 
  #ITALY
- ITA_benito_mussolini:0 "Benito Mussolini"
+ ITA_benito_caesar:0 "Benito Caesar"
  ITA_ferruccio_parri:0 "Ferruccio Parri"
  ITA_victor_emmanuel_iii:0 "Victor Emmanuel III"
  ITA_palmiro_togliatti:0 "Palmiro Togliatti"
@@ -421,6 +422,7 @@
  ITA_carlo_scorza:0 "$carlo_scorza$"
 
  #FRANCE
+ FRA_louis_iv_merovech:0 "Louis IV Merovech"
  FRA_pierre_laval:0 "Pierre Laval"
  FRA_edouard_daladier:0 "Édouard Daladier"
  FRA_denis_guillaumat:0 "Denis Guillaumat"
@@ -799,6 +801,7 @@
  CRO_nikola_mandic:0 "Nikola Mandic"
 
  #GREECE
+ GRE_adolfos_i:0 "Adólfos I Palaiologos"
  GRE_konstantinos_demertzis:0 "Konstantinos Demertzis"
  GRE_nikos_zachariadis:0 "Nikos Zachariadis"
  GRE_george_mercouris:0 "George Mercouris"

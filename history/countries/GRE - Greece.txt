@@ -320,16 +320,16 @@ set_cosmetic_tag = GRE_east_rome
 }
 
 set_politics = {
-	ruling_party = neutrality
+	ruling_party = monarchy
 	last_election = "1935.6.9"
 	election_frequency = 7
 	elections_allowed = yes # none after offset 1
 }
 set_popularities = {
-	democratic = 43
+	monarchy = 73
 	fascism = 2
-	communism = 17
-	neutrality = 38
+	democratic = 17
+	neutrality = 8
 }
 
 set_stability = 0.72
@@ -339,6 +339,7 @@ set_convoys = 80
 
 if = { 
 	limit = { has_dlc = "Battle for the Bosporus" }
+	recruit_character = GRE_adolfos_i
 	recruit_character = GRE_konstantinos_demertzis
 	recruit_character = GRE_nikos_zachariadis
 	recruit_character = GRE_george_mercouris

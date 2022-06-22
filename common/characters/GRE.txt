@@ -1,4 +1,19 @@
 characters={
+	GRE_adolfos_i = {
+		name = GRE_adolfos_i
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_Adolfos_I"
+			}
+		}
+		country_leader={
+			ideology=absolute_monarchy
+			traits={ dictator }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
 	GRE_konstantinos_demertzis={
 		name=GRE_konstantinos_demertzis
 		portraits={
