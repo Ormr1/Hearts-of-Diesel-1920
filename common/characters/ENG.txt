@@ -1,4 +1,26 @@
 characters={
+	ENG_raibeart_iv_stiubhart = {
+		name = ENG_raibeart_iv_stiubhart
+		portraits = {
+			civilian = {
+				large = GFX_portrait_ENG_raibeart_iv_stiubhart
+			}
+		}
+		country_leader = {
+			ideology = constitutional_monarchy
+			traits = { }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	ENG_buadnach_iii_stiubhart = {
+		name = ENG_buadnach_iii_stiubhart
+		portraits = {
+			civilian = {
+				large = GFX_portrait_ENG_buadnach_iii_stiubhart
+			}
+		}
+	}
 	ENG_winston_churchill={
 		name=ENG_winston_churchill
 		portraits={

@@ -131,28 +131,6 @@ if = {
 
 set_convoys = 10
 
-if = {
-	limit = {
-		OR = {
-			has_dlc = "Together for Victory"
-			has_dlc = "Man the Guns"
-		}
-	}
-	set_autonomy = {
-		target = ITA
-		autonomous_state = autonomy_colony
-		freedom_level = 0.4
-	}
-	set_autonomy = {
-		target = MAL
-		autonomous_state = autonomy_integrated_puppet
-	}
-	else = {
-		puppet = ITA
-		puppet = MAL
-	}
-}
-
 set_cosmetic_tag = GRE_east_rome
 
 1939.1.1 = {
@@ -321,15 +299,35 @@ set_cosmetic_tag = GRE_east_rome
 
 set_politics = {
 	ruling_party = monarchy
-	last_election = "1935.6.9"
-	election_frequency = 7
-	elections_allowed = yes # none after offset 1
+	elections_allowed = no
 }
 set_popularities = {
 	monarchy = 73
 	fascism = 2
 	democratic = 17
 	neutrality = 8
+}
+
+if = {
+	limit = {
+		OR = {
+			has_dlc = "Together for Victory"
+			has_dlc = "Man the Guns"
+		}
+	}
+	set_autonomy = {
+		target = ITA
+		autonomous_state = autonomy_colony
+		freedom_level = 0.4
+	}
+	set_autonomy = {
+		target = MAL
+		autonomous_state = autonomy_integrated_puppet
+	}
+	else = {
+		puppet = ITA
+		puppet = MAL
+	}
 }
 
 set_stability = 0.72

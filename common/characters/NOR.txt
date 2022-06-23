@@ -1,4 +1,17 @@
 characters={
+	NOR_yngvi_x_osmund = {
+		name = NOR_yngvi_x_osmund
+		portraits = {
+			civilian = {
+				large = GFX_portrait_NOR_yngvi_x_osmund
+			}
+		}
+		country_leader = {
+			ideology = constitutional_monarchy
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
 	NOR_johan_nygaardsvold={
 		name="Johan Nygaardsvold"
 		portraits={

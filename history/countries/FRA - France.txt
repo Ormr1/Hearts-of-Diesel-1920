@@ -131,7 +131,10 @@ if = {
 		mtg_transport = 1
 		cruiser_submarines = 1
 	}
-	add_ideas = MTG_naval_treaty_adherent
+	add_ideas = {
+		MTG_naval_treaty_adherent
+		sour_loser
+	}
 }
 if = {
 	limit = {

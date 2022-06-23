@@ -9,6 +9,7 @@ if = {
 	}
 }
 
+recruit_character = NOR_yngvi_x_osmund
 recruit_character = NOR_johan_nygaardsvold
 recruit_character = NOR_vidkun_quisling
 recruit_character = NOR_johan_ludwig_mowinckel
@@ -153,30 +154,13 @@ set_convoys = 200		# biggest merchant marine in the world
 set_stability = 0.7
 
 set_politics = {
-	ruling_party = democratic
-	last_election = "1933.10.16"
-	election_frequency = 36
-	elections_allowed = yes
+	ruling_party = monarchy
+	elections_allowed = no
 }
 set_popularities = {
-	democratic = 96
-	fascism = 2
+	monarchy = 96
+	democratic = 2
 	communism = 2
-}
-
-1939.1.1 = {
-	set_politics = {
-		ruling_party = democratic
-		last_election = "1936.10.19"
-		election_frequency = 36
-		elections_allowed = yes
-	}
-	set_popularities = {
-		democratic = 84
-		fascism = 2
-		communism = 2
-		neutrality = 12
-	}
 }
 
 ### VARIANTS ###

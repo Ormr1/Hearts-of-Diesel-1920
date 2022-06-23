@@ -469,6 +469,8 @@
  FRA_charles_maurras:0 "$charles_maurras$"
 
  #UNITED KINGDOM
+ ENG_raibeart_iv_stiubhart:0 "Raibert IV Stiùbhart"
+ ENG_buadnach_iii_stiubhart:0 "Buadnach III Stiùbhart"
  ENG_stanley_baldwin:0 "Stanley Baldwin"
  ENG_harry_pollitt:0 "$harry_pollitt$"
  ENG_neville_chamberlain:0 "Neville Chamberlain"
@@ -779,6 +781,9 @@
  LIT_kazys_skuchas:0 "Kazys Skučas"
  LIT_stasys_pundzevichius:0 "Stasys Pundzevičius"
  LIT_petras_schatz:0 "Petras Schatz"
+
+ # NORDIC KINGDOMS
+ NOR_yngvi_x_osmund:0 "Yngvi X Osmund"
 
  #SWEDEN 
  SWE_per_albin_hansson:0 "Per Albin Hansson"

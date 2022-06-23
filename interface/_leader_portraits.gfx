@@ -3801,6 +3801,18 @@ spriteTypes = {
 		texturefile = "gfx/leaders/South America/portrait_south_america_generic_9.dds"
 	}
 
+	### ENG
+
+	spriteType = {
+		name = GFX_portrait_ENG_raibeart_iv_stiubhart
+		texturefile = "gfx/leaders/ENG/Portrait_ENG_Raibeart_IV_Stiubhart.png"
+	}
+
+	spriteType = {
+		name = GFX_portrait_ENG_buadnach_iii_stiubhart
+		texturefile = "gfx/leaders/ENG/Portrait_ENG_Buadnach_III_Stiubhart.png"
+	}
+
 	spriteType = {
 		name = GFX_portrait_ENG_winston_churchill
 		texturefile = "gfx/leaders/ENG/Portrait_Britain_Winston_Churchill.dds"
@@ -6575,6 +6587,15 @@ spriteTypes = {
 		name = GFX_portrait_SPR_jose_rovira
 		texturefile = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
 	}
+
+	### NOR
+    
+	spriteType = {
+		name = GFX_portrait_NOR_yngvi_x_osmund
+		texturefile = "gfx/leaders/NOR/Portrait_NOR_Yngvi_X_Osmund.png"
+	}
+
+	### SWE
 
 	spriteType = {
 		name = GFX_portrait_SWE_per_albin_hansson
