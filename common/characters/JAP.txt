@@ -1,4 +1,46 @@
 characters={
+	JAP_hideki_tojo={
+		name=JAP_hideki_tojo
+		portraits={
+			civilian = {
+				large = GFX_portrait_JAP_hideki_tojo
+			}
+			army={
+				large = GFX_portrait_JAP_hideki_tojo
+				small="GFX_idea_hideki_tojo"
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = hideki_tojo
+			allowed = {
+				original_tag = JAP
+			}
+			traits = {
+				army_chief_morale_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		field_marshal={
+			traits={ JAP_samurai_lineage offensive_doctrine inspirational_leader }
+			skill=5
+			attack_skill=5
+			defense_skill=5
+			planning_skill=3
+			logistics_skill=2
+			legacy_id=0
+		}
+		country_leader={
+			ideology=shogunate
+			traits={ warrior_code }
+			expire="1989.1.1.1"
+			id=700
+		}
+	}
+
 	JAP_emperor_hirohito={
 		name=JAP_emperor_hirohito
 		portraits={
@@ -7,8 +49,8 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=fascism_ideology
-			traits={ warrior_code emperor_showa imperial_sanction }
+			ideology=absolute_monarchy
+			traits={ warrior_code imperial_sanction }
 			expire="1989.1.1.1"
 			id=700
 		}
@@ -1097,29 +1139,6 @@ characters={
 				army_chief_drill_3
 			}
 			cost = 200
-			ai_will_do = {
-				factor = 1.000
-			}
-		}
-	}
-
-	JAP_hideki_tojo={
-		name=JAP_hideki_tojo
-		portraits={
-			army={
-				small="GFX_idea_hideki_tojo"
-			}
-		}
-		advisor={
-			slot = army_chief
-			idea_token = hideki_tojo
-			allowed = {
-				original_tag = JAP
-			}
-			traits = {
-				army_chief_morale_2
-			}
-			cost = 100
 			ai_will_do = {
 				factor = 1.000
 			}

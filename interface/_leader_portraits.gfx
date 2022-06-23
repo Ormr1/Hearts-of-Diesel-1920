@@ -1675,6 +1675,14 @@ spriteTypes = {
 		name = "GFX_Portrait_chile_arturo_alessandri_small"
 		texturefile = "gfx/interface/ideas/idea_CHL_arturo_alessandri.dds"
 	}
+
+	### JAP
+
+	spriteType = {
+		name = "GFX_portrait_JAP_hideki_tojo"
+		texturefile = "gfx/leaders/JAP/Portrait_JAP_Hideki_Tojo.png"
+	}
+
 	spriteType = {
 		name = "GFX_Portrait_kyuichi_tokuda"
 		texturefile = "gfx/leaders/JAP/portrait_jap_kyuichi_tokuda.dds"
