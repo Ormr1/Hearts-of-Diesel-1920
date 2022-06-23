@@ -11,6 +11,7 @@ add_ideas = {
 	limited_conscription
 }
 
+recruit_character = MON_bogd_khan
 recruit_character = MON_anandyn_amar
 recruit_character = MON_mingzhu_zhanshan
 recruit_character = MON_fu_shangzhi
@@ -79,13 +80,11 @@ recruit_character = MON_pai_yun_ti
 }
 
 set_politics = {
-	ruling_party = communism
-	last_election = "1936.1.1"
-	election_frequency = 48
+	ruling_party = neutrality
 	elections_allowed = no
 }
 set_popularities = {
-	communism = 100
+	neutrality = 100
 }
 
 1939.1.1 = {

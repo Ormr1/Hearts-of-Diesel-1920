@@ -1994,6 +1994,11 @@ spriteTypes = {
 	##### MON #####
 
 	spriteType = {
+		name = "GFX_portrait_MON_bogd_khan"
+		texturefile = "gfx/leaders/MON/portrait_MON_bogd_khan.png"
+	}
+
+	spriteType = {
 		name = "GFX_portrait_mon_anandyn_amar"
 		texturefile = "gfx/leaders/MON/portrait_mon_anandyn_amar.dds"
 	}

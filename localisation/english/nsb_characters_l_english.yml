@@ -115,6 +115,9 @@
  SOV_metropolitan_meletius:0 "Metropolitan Meletius"
  SOV_patriarch_meletius:0 "Patriarch Meletius"
 
+ # MON
+ MON_bogd_khan:0 "Bogd Khan"
+
  #ARGENTINA
  ARG_senor_hitler:0 "Señor Hilter"
 

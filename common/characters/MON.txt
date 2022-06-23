@@ -1,4 +1,17 @@
 characters={
+	MON_bogd_khan = {
+		name = MON_bogd_khan
+		portraits = {
+			civilian = {
+				large = GFX_portrait_MON_bogd_khan
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			expire = "1961.1.1.1"
+			id = -1
+		}
+	}
 	MON_anandyn_amar={
 		name="Anandyn Amar"
 		portraits={
@@ -45,12 +58,6 @@ characters={
 			civilian={
 				large=GFX_portrait_Songgotu_Kangan
 			}
-		}
-		country_leader={
-			ideology=oligarchism
-			traits={ armaments_organizer }
-			expire="1948.1.1.12"
-			id=-1
 		}
 	}
 	MON_khorloogiin_choibalsan={
