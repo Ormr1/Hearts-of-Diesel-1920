@@ -1,0 +1,10 @@
+1. Infantry
+2. Special Forces
+3. Exosuits
+4. Mechs
+5. Artillery
+6. Airships
+7. Naval
+8. Naval Airships
+9. Engineering
+19. Industry
