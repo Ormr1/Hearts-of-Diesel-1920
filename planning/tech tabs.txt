@@ -1,10 +1,75 @@
 1. Infantry
-2. Special Forces
-3. Exosuits
-4. Mechs
-5. Artillery
-6. Airships
-7. Naval
-8. Naval Airships
-9. Engineering
-10. Industry
+    - Infantry rifles
+    - Support equipment
+    - Motorized equipment
+    - Mechanized equipment
+    - Amtracs
+2. Support Companies
+    - Engineers
+    - Recon
+        - Cavalry Recon
+        - Exosuit Recon
+        - Truck Recon
+        - Mech Recon
+        - Skybike Recon
+    - MP
+    - Maintenance
+    - Field Hospital
+    - Logistics
+    - Signals (around 1930s)
+3. Special Forces
+    - Marines
+    - Mountaineers
+    - Paratroopers
+    - Rangers
+    - Airlift Infantry
+4. Exosuits
+    - Light Exosuits
+    - Medium Exosuits
+    - Heavy Exosuits
+    - Maintenance Exosuits
+5. Mechs
+    - Light Mechs
+    - Medium Mechs
+    - Heavy Mechs
+    - Super Heavy Mechs
+6. Artillery
+    - Artillery
+    - Anti-Air
+    - Anti-Mech
+7. Airships
+    - Skybikes
+    - Gunships
+    - Interceptors
+    - Close Air Support
+    - Multirole
+    - Naval Bomber
+    - Heavy Interceptors
+    - Tactical Bombers
+    - Strategic Bombers
+    - Scout Airships
+    - Flying Carriers
+8. Naval
+    - Destroyers
+    - Cruisers
+    - Battleships
+    - Carriers
+    - Submarines
+    - Damage Control
+    - Fire Control
+    - Transports
+    - Mine Warfare
+9. Naval Airships
+    - Air Battleships
+    - Flying Supercarriers
+10. Engineering
+    - Electronic Engineering
+        - Radios
+        - Computing
+        - Electricity
+    - Atomic Research
+11. Industry
+    - Production
+    - Industry
+    - Construction
+    - Synthetic Oil
