@@ -73,3 +73,6 @@
     - Industry
     - Construction
     - Synthetic Oil
+12. Biological Warfare
+    - Weaponized Diseases
+    - Gas Weapons
