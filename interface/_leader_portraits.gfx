@@ -2983,6 +2983,15 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/idea_SOV_yakov_cherevichenko.dds"
 	}
 
+	# CRI
+
+	spriteType = {
+		name = "GFX_portrait_CRI_amet_giray"
+		texturefile = "gfx/leaders/CRI/Portrait_CRI_Amet_Giray.png"
+	}
+
+	# BUL
+
 	spriteType = {
 		name = "GFX_idea_BUL_georgi_popov"
 		texturefile = "gfx/interface/ideas/idea_europe_generic_land_2.dds"

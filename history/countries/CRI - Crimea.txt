@@ -74,19 +74,17 @@ if = {
 	}
 }
 set_politics = {
-	ruling_party = democratic
+	ruling_party = monarchy
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = yes
 }
 
 set_popularities = {
-	democratic = 50
+	monarchy = 50
 	fascism = 20
-	communism = 30
+	democratic = 30
 }
 
-
+recruit_character = CRI_amet_giray
 recruit_character = CRI_ilyas_tarkhan
-
-

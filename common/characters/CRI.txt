@@ -1,4 +1,17 @@
 characters={
+	CRI_amet_giray = {
+		name = "Amet Giray"
+		portraits = {
+			civilian = {
+				large = GFX_portrait_CRI_amet_giray
+			}
+		}
+		country_leader = {
+			ideology = benevolent_monarchy
+			expire = "1965.1.1.1"
+			id = -1
+		}
+	}
 	CRI_ilyas_tarkhan = {
 		name = "Ilyas Tarkhan" 
 		portraits = {
