@@ -8,6 +8,7 @@ state={
 	history={
 		owner = SAM
 		add_core_of = TAH
+		add_core_of = SAM
 		buildings = {
 			infrastructure = 2
 			air_base = 1

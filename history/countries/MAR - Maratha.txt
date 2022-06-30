@@ -54,6 +54,9 @@ if = {
 	}
 }
 
+recruit_character = MAR_shahu_IV
+recruit_character = MAR_rajaram_III
+
 set_politics = {
 	ruling_party = monarchy
 	elections_allowed = no

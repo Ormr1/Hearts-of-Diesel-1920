@@ -1,0 +1,25 @@
+characters = {
+	WIR_jimmy_clements = {
+		name = "Jimmy Clements" 
+		portraits = {
+			civilian = {
+				large = GFX_portrait_jimmy_clements
+			}
+		}
+		country_leader = {
+			ideology = centrism
+			expire = "1927.1.1.1"
+			traits={  }
+			id = -1
+		}
+	}
+	WIR_charcter_backup = {
+		name = "Jimmy Clements" 
+		portraits = {
+			civilian = {
+				large = GFX_portrait_jimmy_clements
+			}
+		}
+	}
+}
+	

@@ -15,7 +15,7 @@ state={
 
 			}
 		}
-		add_core_of = AST
+		add_core_of = PAM
 		
 		victory_points = {
 			7566 1 

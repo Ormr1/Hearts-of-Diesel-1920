@@ -73,6 +73,8 @@ if = {
 		basic_torpedo = 1
 	}
 }
+recruit_character = CRI_amet_giray
+recruit_character = CRI_ilyas_tarkhan
 set_politics = {
 	ruling_party = monarchy
 	last_election = "1936.1.1"
@@ -86,5 +88,3 @@ set_popularities = {
 	democratic = 30
 }
 
-recruit_character = CRI_amet_giray
-recruit_character = CRI_ilyas_tarkhan

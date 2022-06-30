@@ -1,0 +1,30 @@
+characters = {
+	MAR_shahu_IV = {
+		name = "Shahu IV" 
+		portraits = {
+			civilian = {
+				large = GFX_portrait_shahu_IV
+			}
+		}
+		country_leader = {
+			ideology = benevolent_monarchy
+			traits={  }
+			expire = "1922.1.1.1"
+			id = -1
+		}
+	}
+	MAR_rajaram_III = {
+		name = "Rajaram III" 
+		portraits = {
+			civilian = {
+				large = GFX_portrait_rajaram_III
+			}
+		}
+		# country_leader = {
+			# ideology = benevolent_monarchy
+			# expire = "1922.1.1.1"
+			# id = -1
+		# }
+	}
+}
+	

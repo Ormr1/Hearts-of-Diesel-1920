@@ -1,0 +1,31 @@
+characters = {
+	SAM_malietoa_tanumafili_I = {
+		name = "Malietoa Tanumafili I" 
+		portraits = {
+			civilian = {
+				large = GFX_portrait_malietoa_tanumafili_I
+			}
+		}
+		country_leader = {
+			ideology = social_democracy
+			traits={  }
+			expire = "1939.1.1.1"
+			id = -1
+		}
+	}
+	SAM_malietoa_tanumafili_II = {
+		name = "Malietoa Tanumafili II" 
+		portraits = {
+			civilian = {
+				large = GFX_portrait_malietoa_tanumafili_II
+			}
+		}
+		# country_leader = {
+			# ideology = social_democracy
+			# traits={  }
+			# expire = "2007.1.1.1"
+			# id = -1
+		# }
+	}
+}
+

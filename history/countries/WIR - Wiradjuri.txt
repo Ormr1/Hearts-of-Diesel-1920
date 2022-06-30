@@ -53,6 +53,7 @@ if = {
 		basic_light_tank_chassis = 1
 	}
 }
+recruit_character = WIR_jimmy_clements
 
 set_politics = {
 	ruling_party = neutrality
@@ -61,3 +62,5 @@ set_politics = {
 set_popularities = {
 	neutrality = 100
 }
+
+recruit_character = WIR_charcter_backup
