@@ -63,6 +63,7 @@ recruit_character = COL_jorge_lopez_suyo
 
 
 set_country_flag = monroe_doctrine
+set_cosmetic_tag = GCO_UNIFIED
 
 set_convoys = 10
 
