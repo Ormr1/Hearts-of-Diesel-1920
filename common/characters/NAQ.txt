@@ -1,0 +1,18 @@
+characters = {
+	NAQ_maurice_antoine_francois_monguillot = {
+		name = "Maurice Antoine François Monguillot" 
+		portraits = {
+			civilian = {
+				large = GFX_portrait_maurice_antoine_francois_monguillot
+			}
+		}
+		country_leader = {
+			ideology = oligarchism
+			expire = "1927.1.1.1"
+			traits={  }
+			id = -1
+		}
+	}
+}
+	
+	

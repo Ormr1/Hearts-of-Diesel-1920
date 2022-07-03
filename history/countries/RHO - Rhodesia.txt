@@ -23,7 +23,8 @@ set_popularities = {
 	democratic = 12
 	fascism = 27
 	communism = 16
-	neutrality = 45
+	neutrality = 38
+	fenris = 7
 }
 
 #set_cosmetic_tag = SAM_confederacy

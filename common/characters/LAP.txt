@@ -1,0 +1,18 @@
+characters = {
+	LAP_john_louis_sanfuentes = {
+		name = "John Louis Sanfuentes" 
+		portraits = {
+			civilian = {
+				large = GFX_portrait_john_louis_sanfuentes
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			expire = "1927.1.1.1"
+			traits={  }
+			id = -1
+		}
+	}
+}
+	
+	

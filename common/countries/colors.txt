@@ -860,3 +860,15 @@ NAQ = {
 	color = rgb { 203 4 4 }
 	color_ui = rgb { 134 89 45 }
 }
+LAP = {
+	color = rgb { 120 137 232 }
+	color_ui = rgb { 134 89 45 }
+}
+RGS = {
+	color = rgb { 128 201 68 }
+	color_ui = rgb { 134 89 45 }
+}
+PAT = {
+	color = rgb { 201 78 158 }
+	color_ui = rgb { 134 89 45 }
+}
