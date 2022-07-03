@@ -1,0 +1,18 @@
+characters = {
+	RHO_philip_lyttelton_gell = {
+		name = "Philip Lyttelton Gell" 
+		portraits = {
+			civilian = {
+				large = GFX_portrait_philip_lyttelton_gell
+			}
+		}
+		country_leader = {
+			ideology = oligarchism
+			expire = "1927.1.1.1"
+			traits={  }
+			id = -1
+		}
+	}
+}
+	
+	

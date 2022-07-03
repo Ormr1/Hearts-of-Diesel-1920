@@ -4,12 +4,12 @@ state={
 	name="STATE_285"
 
 	history={
-		owner = FRA
+		owner = NAQ
 		buildings = {
 			infrastructure = 3
-			arms_factory = 2
-			industrial_complex = 4
-			dockyard = 2
+			arms_factory = 1
+			industrial_complex = 2
+			dockyard = 1
 			air_base = 5
 			12406 = {
 				naval_base = 6
@@ -28,7 +28,7 @@ state={
 		victory_points = {
 			12406 20.0 
 		}
-		add_core_of = AST
+		add_core_of = NAQ
 
 	}
 

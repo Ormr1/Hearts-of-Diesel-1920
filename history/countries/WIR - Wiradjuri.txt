@@ -62,5 +62,3 @@ set_politics = {
 set_popularities = {
 	neutrality = 100
 }
-
-recruit_character = WIR_charcter_backup

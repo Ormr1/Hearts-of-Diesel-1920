@@ -852,3 +852,11 @@ PAM = {
 	color = rgb { 62 183 110 }
 	color_ui = rgb { 134 89 45 }
 }
+RHO = {
+	color = rgb { 36 91 68 }
+	color_ui = rgb { 134 89 45 }
+}
+NAQ = {
+	color = rgb { 203 4 4 }
+	color_ui = rgb { 134 89 45 }
+}

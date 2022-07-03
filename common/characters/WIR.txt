@@ -13,13 +13,5 @@ characters = {
 			id = -1
 		}
 	}
-	WIR_charcter_backup = {
-		name = "Jimmy Clements" 
-		portraits = {
-			civilian = {
-				large = GFX_portrait_jimmy_clements
-			}
-		}
-	}
 }
 	

@@ -8,6 +8,9 @@ set_technology = {
 }
 
 set_convoys = 20
+
+recruit_character = SAM_malietoa_tanumafili_I
+recruit_character = SAM_malietoa_tanumafili_II
 set_politics = {
 	ruling_party = democratic
 	last_election = "1898.1.1"
@@ -22,5 +25,3 @@ set_popularities = {
 }
 
 set_cosmetic_tag = SAM_confederacy
-recruit_character = SAM_malietoa_tanumafili_I
-recruit_character = SAM_malietoa_tanumafili_II
