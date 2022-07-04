@@ -1,0 +1,20 @@
+################
+##### ETH ######
+################
+
+LAP_collapse_category = {
+
+	icon = GFX_decision_category_saf_anti_colonialist_crusade
+	
+	allowed = {
+		tag = LAP
+	}
+
+	priority = {
+		base = 10
+	}
+
+	visible = {
+		has_country_flag = LAP_in_revolt
+	}
+}

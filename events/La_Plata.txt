@@ -1,0 +1,300 @@
+﻿###########################
+# Bulgarian Events
+###########################
+
+add_namespace = la_plata
+
+##################################
+# start of the La Plata collapse #
+##################################
+
+country_event = { #Workers of rio grande do sul revolt
+	id = la_plata.100
+	title = la_plata.100.t
+	desc = la_plata.100.d
+	picture = GFX_report_event_hitler_handshake
+	
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect={
+			RGS={
+				transfer_state = 502
+				load_oob = "RGS_1921"
+				set_politics = {
+					ruling_party = communism
+					last_election = "1921.1.1"
+					elections_allowed = no
+				}
+				set_popularities = {
+					communism = 89
+					neutrality = 11
+				}
+			}
+			LAP={
+				declare_war_on = {
+					target = RGS
+					type = annex_everything
+				}
+				set_country_flag = LAP_in_revolt
+				activate_mission = LAP_defeat_rio_grande_workers
+			}
+		}
+	}
+	
+	option = {
+		name = la_plata.100.a
+
+	}
+	option = {
+		name = la_plata.100.b
+		RGS={
+			change_tag_from = LAP
+		}
+	}
+}
+country_event = { #Patagonia
+	id = la_plata.101
+	title = la_plata.101.t
+	desc = la_plata.101.d
+	picture = GFX_report_event_hitler_handshake
+	
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect={
+			PAT={
+				transfer_state = 512
+				transfer_state = 986
+				load_oob = "PAT_1921"
+				set_politics = {
+					ruling_party = democratic
+					last_election = "1921.1.1"
+					elections_allowed = no
+				}
+				set_popularities = {
+					democratic = 58
+					monarchy = 42
+				}
+				country_event = {id = la_plata.107 days = 18}
+			}
+			LAP={
+				declare_war_on = {
+					target = PAT
+					type = annex_everything
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = la_plata.101.a
+
+	}
+	option = {
+		name = la_plata.101.b
+		PAT={
+			change_tag_from = LAP
+		}
+	}
+}
+country_event = { #Uruguay
+	id = la_plata.102
+	title = la_plata.102.t
+	desc = la_plata.102.d
+	picture = GFX_report_event_hitler_handshake
+	
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect={
+			URG={
+				transfer_state = 300
+				transfer_state = 987
+				load_oob = "URG_1921"
+				set_politics = {
+					ruling_party = democratic
+					last_election = "1921.1.1"
+					elections_allowed = no
+				}
+				set_popularities = {
+					democratic = 72
+					fascism = 28
+				}
+			}
+			LAP={
+				declare_war_on = {
+					target = URG
+					type = annex_everything
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = la_plata.102.a
+
+	}
+	option = {
+		name = la_plata.102.b
+		URG={
+			change_tag_from = LAP
+		}
+	}
+}
+country_event = { #Chile Abanonds the union
+	id = la_plata.103
+	title = la_plata.103.t
+	desc = la_plata.103.d
+	picture = GFX_report_event_hitler_handshake
+	
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect={
+			CHL={
+				transfer_state = 279
+				transfer_state = 507
+				load_oob = "CHL_1921"
+			}
+			LAP={
+				declare_war_on = {
+					target = CHL
+					type = annex_everything
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = la_plata.103.a
+
+	}
+	option = {
+		name = la_plata.103.b
+		CHL={
+			change_tag_from = LAP
+		}
+	}
+}
+country_event = { #Argentinian Liberals declare
+	id = la_plata.104
+	title = la_plata.104.t
+	desc = la_plata.104.d
+	picture = GFX_report_event_hitler_handshake
+	
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect={
+			ARG={
+				transfer_state = 509
+				transfer_state = 985
+				transfer_state = 511
+				load_oob = "ARG_1921"
+			}
+			LAP={
+				declare_war_on = {
+					target = ARG
+					type = annex_everything
+				}
+				country_event = {id = la_plata.103 days = 1}#chile goes
+				country_event = {id = la_plata.102 days = 4}#as does uruguay
+				country_event = {id = la_plata.105 days = 5}#and paraguay
+			}
+		}
+	}
+	
+	option = {
+		name = la_plata.104.a
+
+	}
+	option = {
+		name = la_plata.104.b
+		ARG={
+			change_tag_from = LAP
+		}
+	}
+}
+country_event = { #Paraguay succends
+	id = la_plata.105
+	title = la_plata.105.t
+	desc = la_plata.105.d
+	picture = GFX_report_event_hitler_handshake
+	
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect={
+			PAR={
+				transfer_state = 301
+				transfer_state = 688
+				load_oob = "PAR_1921"
+			}
+			LAP={
+				declare_war_on = {
+					target = PAR
+					type = annex_everything
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = la_plata.105.a
+
+	}
+	option = {
+		name = la_plata.105.b
+		PAR={
+			change_tag_from = LAP
+		}
+	}
+}
+country_event = { #failier to retake rio grande
+	id = la_plata.106
+	title = la_plata.106.t
+	desc = la_plata.106.d
+	picture = GFX_report_event_hitler_handshake
+	
+	is_triggered_only = yes
+	# trigger = {
+		# RGS = {exists=yes}
+		# date > 1921.01.12
+		# tag = LAP
+		# at_war_with = RGS
+	# }
+	immediate = {
+		hidden_effect={
+			country_event = {id = la_plata.101 days = 9}#patagonia always wanted independance
+			country_event = {id = la_plata.104 days = 5 random = 5}#Argentinian liberals revolt
+		}
+	}
+	
+	option = {#blame the general
+		name = la_plata.106.a
+		add_stability = -0.1
+	}
+}
+country_event = { #Patagonian civil war
+	id = la_plata.107
+	title = la_plata.107.t
+	desc = la_plata.107.d
+	picture = GFX_report_event_hitler_handshake
+	
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect={
+			start_civil_war = {
+				ideology = monarchy
+				size = 0.5
+				only_own_territory = no
+				capital = 986
+				states = { 
+					986
+				}
+				keep_political_leader = yes
+				keep_political_party_members = yes
+			}
+		}
+	}
+	
+	option = {
+		name = la_plata.107.a
+
+	}
+}

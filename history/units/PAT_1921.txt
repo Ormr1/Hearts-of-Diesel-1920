@@ -1,0 +1,48 @@
+﻿division_template = {
+	name = "División de Patagonia"			# Divisions were at reserve levels during peacetime
+	division_names_group = SPAN_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+	}
+}
+
+
+units = {
+	##### Ejercito de Patagonia #####
+	division= {	# "1era División de Infantería"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 12494 # 
+		division_template = "División de Patagonia"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+
+	}
+	division= {	# "2da División de Infantería"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 2
+		}
+		location = 10935 # 
+		division_template = "División de Patagonia"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+
+	}
+	division= {	# "2da División de Infantería"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 10953 # 
+		division_template = "División de Patagonia"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+
+	}
+}

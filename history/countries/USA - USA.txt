@@ -133,17 +133,10 @@ give_guarantee = HON
 give_guarantee = ELS
 give_guarantee = NIC
 give_guarantee = COS
-give_guarantee = PAN
-give_guarantee = VEN
 give_guarantee = COL
-give_guarantee = ECU
 give_guarantee = PRU
 give_guarantee = BRA
-give_guarantee = BOL
-give_guarantee = CHL
-give_guarantee = PAR
-give_guarantee = ARG
-give_guarantee = URG
+give_guarantee = LAP
 
 # Parties
 set_party_name = { 
