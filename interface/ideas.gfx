@@ -1741,6 +1741,11 @@ spriteTypes = {
 		name = "GFX_idea_usa_war_department"
 		texturefile = "gfx/interface/ideas/idea_usa_war_department.dds"
 	}
+
+	spriteType = {
+		name = "GFX_idea_usa_usonian_expeditionary_forces"
+		texturefile = "gfx/interface/ideas/USA/idea_usa_usonian_expeditionary_forces.png"
+	}
 	
 	spriteType = {
 		name = "GFX_idea_usa_great_depression_3"

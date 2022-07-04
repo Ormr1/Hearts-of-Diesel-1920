@@ -294,7 +294,7 @@ set_convoys = 500
 
 set_politics = {
 	ruling_party = democratic
-	last_election = "1932.11.8"
+	last_election = "1916.11.8"
 	election_frequency = 48
 	elections_allowed = yes
 }
@@ -305,7 +305,7 @@ set_popularities = {
 
 add_ideas = {
 	undisturbed_isolation
-	great_depression
+	usa_usonian_expeditionary_forces_1
 	disarmed_nation
 	free_trade
 	home_of_the_free

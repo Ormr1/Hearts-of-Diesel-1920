@@ -2672,3 +2672,9 @@
  ALREADY_HAS_ADVISOR_WITH_TRAIT:0 "There is already an appointed advisor with this trait."
  POL_investments_monarchist:0 "Monarchist Investments"
  CHANGE_ADVISOR:1 "\nYou can replace this advisor by clicking here and selecting a replacement."
+
+ ### HOD IDEAS ###
+ # USA #
+ usa_usonian_expeditionary_forces_1:0 "Usonian Expeditionary Forces"
+ usa_usonian_expeditionary_forces_1_desc:0 "The Usonian Expeditionary Forces, also known as the UEF, make up some of the most elite members of the Usonian Armed Forces. The UEF is equipped to deploy anywhere, anytime across the globe for any mission and any need. The UEF will most certainly be a strong tool to be used by Usonia to expand its influence abroad and secure its interests, whatever those may be."
+ 

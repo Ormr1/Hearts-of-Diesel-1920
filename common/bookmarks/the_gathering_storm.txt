@@ -12,7 +12,7 @@ bookmarks = {
 			ideology = democratic
 			ideas = {
 				home_of_the_free
-				great_depression
+				usa_usonian_expeditionary_forces_1
 				undisturbed_isolation
 			}
 			focuses = {
