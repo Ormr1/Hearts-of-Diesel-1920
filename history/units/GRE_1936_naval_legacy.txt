@@ -8,28 +8,138 @@ units= {
 		task_force = {				
 			name = "Vasilikós Stólos"				
 			location = 4109 # Athens
-			ship = { name = "RHS Georgios Averof" pride_of_the_fleet = yes definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = GRE } } }				
-			ship = { name = "RHS Elli" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = GRE } } }				
+			ship = { name = "RAP Georgios Averof" pride_of_the_fleet = yes definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = GRE } } }				
+			ship = { name = "RAP Elli" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = GRE } } }				
 			# Destroyer Flotilla
-			ship = { name = "RHS Aetos" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GRE } } }		
-			ship = { name = "RHS Ierax" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GRE } } }		
-			ship = { name = "RHS Leon" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GRE } } }		
-			ship = { name = "RHS Panthir" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GRE } } }		
-			ship = { name = "RHS Kountouriotis" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GRE version_name =  "Hydra Class" } } }
-			ship = { name = "RHS Hydra" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GRE version_name =  "Hydra Class" } } }
-			ship = { name = "RHS Psara" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GRE version_name =  "Hydra Class" } } }
-			ship = { name = "RHS Spetsai" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GRE version_name =  "Hydra Class" } } }
+			ship = { name = "RAP Aetos" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GRE } } }		
+			ship = { name = "RAP Ierax" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GRE } } }		
+			ship = { name = "RAP Leon" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GRE } } }		
+			ship = { name = "RAP Panthir" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GRE } } }		
+			ship = { name = "RAP Kountouriotis" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GRE version_name =  "Hydra Class" } } }
+			ship = { name = "RAP Hydra" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GRE version_name =  "Hydra Class" } } }
+			ship = { name = "RAP Psara" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GRE version_name =  "Hydra Class" } } }
+			ship = { name = "RAP Spetsai" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GRE version_name =  "Hydra Class" } } }
 		}					
 		task_force = {					
 			name = "Stolískou Ypovrychíon"				
 			location = 4109 # Athens
-			ship = { name = "RHS Katsonis" definition = submarine equipment = { submarine_1 = { amount = 1 owner = GRE } } }		
-			ship = { name = "RHS Papanikolis" definition = submarine equipment = { submarine_1 = { amount = 1 owner = GRE } } }		
-			ship = { name = "RHS Protefs" definition = submarine equipment = { submarine_1 = { amount = 1 owner = GRE } } }		
-			ship = { name = "RHS Nirefs" definition = submarine equipment = { submarine_1 = { amount = 1 owner = GRE } } }		 
-			ship = { name = "RHS Triton" definition = submarine equipment = { submarine_1 = { amount = 1 owner = GRE } } }		
-			ship = { name = "RHS Glafkos" definition = submarine equipment = { submarine_1 = { amount = 1 owner = GRE } } }		
-		}					
+			ship = { name = "RAP Katsonis" definition = submarine equipment = { submarine_1 = { amount = 1 owner = GRE } } }		
+			ship = { name = "RAP Papanikolis" definition = submarine equipment = { submarine_1 = { amount = 1 owner = GRE } } }		
+			ship = { name = "RAP Protefs" definition = submarine equipment = { submarine_1 = { amount = 1 owner = GRE } } }		
+			ship = { name = "RAP Nirefs" definition = submarine equipment = { submarine_1 = { amount = 1 owner = GRE } } }		 
+			ship = { name = "RAP Triton" definition = submarine equipment = { submarine_1 = { amount = 1 owner = GRE } } }		
+			ship = { name = "RAP Glafkos" definition = submarine equipment = { submarine_1 = { amount = 1 owner = GRE } } }		
+		}				
+	}
+	fleet = {
+		name = "Naftikí Dioíkisi Italías"
+		naval_base = 4159 # Messina, Sicily
+
+		task_force = {
+			name = "Squadra di Sicilia" # Comando Militare Marittimo 'Sicilia'
+			location = 4159 # Messina, Sicily
+
+			# I Squadriglia Torpediniere
+			ship = { name = "RAP Palestro" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GRE } } }
+			ship = { name = "RAP Confienza" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GRE } } }
+			ship = { name = "RAP San Martino" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GRE } } }
+			ship = { name = "RAP Solferino" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GRE } } }
+			# V Squadriglia Torpediniere
+			ship = { name = "RAP Giuseppe La Farina" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GRE } } }
+			ship = { name = "RAP Simone Schiaffino" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GRE } } }
+			ship = { name = "RAP Giuseppe Dezza" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GRE } } }
+			ship = { name = "RAP Giuseppe Cesare Abba" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GRE } } }
+		}
+
+		task_force = {
+			name = "III Gruppo Sommergibili"
+			location = 4159 # Messina, Sicily
+
+			# XXXI Squadriglia Sommergibili
+			ship = { name = "RAP Vettor Pisani" definition = submarine equipment = { submarine_1 = { amount = 1 owner = GRE } } }
+			ship = { name = "RAP Giovanni Bausan" definition = submarine equipment = { submarine_1 = { amount = 1 owner = GRE } } }
+			ship = { name = "RAP Marcantonio Colonna" definition = submarine equipment = { submarine_1 = { amount = 1 owner = GRE } } }
+			ship = { name = "RAP Des Geneys" definition = submarine equipment = { submarine_1 = { amount = 1 owner = GRE } } }
+			# XXXII Squadriglia Sommergibili
+			ship = { name = "RAP Fratelli Bandiera" definition = submarine equipment = { submarine_1 = { amount = 1 owner = GRE version_name = "Bandiera Class" } } }
+			ship = { name = "RAP Luciano Manara" definition = submarine equipment = { submarine_1 = { amount = 1 owner = GRE version_name = "Bandiera Class" } } }
+			ship = { name = "RAP Ciro Menotti" definition = submarine equipment = { submarine_1 = { amount = 1 owner = GRE version_name = "Bandiera Class" } } }
+			ship = { name = "RAP Santorre Santarosa" definition = submarine equipment = { submarine_1 = { amount = 1 owner = GRE version_name = "Bandiera Class" } } }
+			# XXXIII Squadriglia Sommergibili
+			ship = { name = "RAP Goffredo Mameli" definition = submarine equipment = { submarine_1 = { amount = 1 owner = GRE } } }
+			ship = { name = "RAP Pier Capponi" definition = submarine equipment = { submarine_1 = { amount = 1 owner = GRE } } }
+			ship = { name = "RAP Tito Speri" definition = submarine equipment = { submarine_1 = { amount = 1 owner = GRE } } }
+			ship = { name = "RAP Giovanni da Procida" definition = submarine equipment = { submarine_1 = { amount = 1 owner = GRE } } }
+		}
+
+		task_force = {
+			name = "I Omáda Ypovrychíon"
+			location = 11837 # Taranto, Italy
+
+			# XLI Moíra Ypovrychíon
+			ship = { name = "RAP Balíla" definition = submarine equipment = { submarine_1 = { amount = 1 owner = GRE } } }
+			ship = { name = "RAP António Sciesa" definition = submarine equipment = { submarine_1 = { amount = 1 owner = GRE } } }
+			ship = { name = "RAP Enríko Tóti" definition = submarine equipment = { submarine_1 = { amount = 1 owner = GRE } } }
+			ship = { name = "RAP Domenico Millelire" definition = submarine equipment = { submarine_1 = { amount = 1 owner = GRE } } }
+		}
+	}
+
+	### AFRICA ###
+	fleet = {
+		name = "Naftikí Dioíkisi Afrikís"
+		naval_base = 1130 # Tobruk, Libya
+
+		task_force = {
+			name = "Moíra Livýis"
+			location = 1130 # Tobruk, Libya
+
+			# I Squadriglia Cacciatorpediniere
+			ship = { name = "RAP Aquilone" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GRE version_name = "Navigatori Class" } } }
+			ship = { name = "RAP Euro" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GRE version_name = "Navigatori Class" } } }
+			ship = { name = "RAP Nembo" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GRE version_name = "Navigatori Class" } } }
+			ship = { name = "RAP Turbine" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GRE version_name = "Navigatori Class" } } }
+		}
+
+		task_force = {
+			name = "V Gruppo Sommergibili"
+			location = 1130 # Tobruk, Libya
+
+			# LI Squadriglia Sommergibili
+			ship = { name = "RAP Delfino" definition = submarine equipment = { submarine_1 = { amount = 1 owner = GRE version_name = "Bandiera Class" } } }
+			ship = { name = "RAP Narvalo" definition = submarine equipment = { submarine_1 = { amount = 1 owner = GRE version_name = "Bandiera Class" } } }
+			ship = { name = "RAP Squalo" definition = submarine equipment = { submarine_1 = { amount = 1 owner = GRE version_name = "Bandiera Class" } } }
+			ship = { name = "RAP Tricheco" definition = submarine equipment = { submarine_1 = { amount = 1 owner = GRE version_name = "Bandiera Class" } } }
+		}
+	}
+
+	### EAGEAN SEA ###
+	fleet = {
+		name = "Naftikí Dioíkisi Aigaíou"
+		naval_base = 10007 # Rhodes, Greece
+
+		task_force = {
+			name = "Moíra Aigaíou"
+			location = 10007 # Rhodes, Greece
+
+			# IV Squadriglia Cacciatorpediniere
+			ship = { name = "RAP Francesco Crispi" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GRE } } }
+			ship = { name = "RAP Quintino Sella" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GRE } } }
+			# VIII Squadriglia Torpediniere
+			ship = { name = "RAP Astore" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GRE version_name = "Maestrale Class" } } }
+			ship = { name = "RAP Spica" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GRE version_name = "Maestrale Class" } } }
+		}
+
+		task_force = {
+			name = "VI Gruppo Sommergibili"
+			location = 10007 # Rhodes, Greece
+
+			# LXI Squadriglia Sommergibili
+			ship = { name = "RAP Sirena" definition = submarine equipment = { submarine_1 = { amount = 1 owner = GRE version_name = "Sirena Class" } } }
+			ship = { name = "RAP Argonauta" definition = submarine equipment = { submarine_1 = { amount = 1 owner = GRE version_name = "Sirena Class" } } }
+			ship = { name = "RAP Fisalia" definition = submarine equipment = { submarine_1 = { amount = 1 owner = GRE version_name = "Sirena Class" } } }
+			ship = { name = "RAP Smeraldo" definition = submarine equipment = { submarine_1 = { amount = 1 owner = GRE version_name = "Sirena Class" } } }
+			ship = { name = "RAP Naiade" definition = submarine equipment = { submarine_1 = { amount = 1 owner = GRE version_name = "Sirena Class" } } }
+		}
 	}
 } 
 

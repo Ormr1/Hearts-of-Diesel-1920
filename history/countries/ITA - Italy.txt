@@ -624,7 +624,7 @@ if = {
 	}
 	### Light Cruiser Variants	
 	create_equipment_variant = {
-		name = "Taranto Class"
+		name = "Táranta Class"
 		type = ship_hull_cruiser_1
 		name_group = ITA_CL_HISTORICAL
 		parent_version = 0

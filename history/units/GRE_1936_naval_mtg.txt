@@ -8,28 +8,175 @@ units= {
 		task_force = {				
 			name = "Vasilikós Stólos"				
 			location = 4109 # Athens
-			ship = { name = "RHS Georgios Averof" pride_of_the_fleet = yes definition = heavy_cruiser equipment = { ship_hull_cruiser_coastal_defense_ship = { amount = 1 owner = GRE version_name =  "Averof Class" } } }				
-			ship = { name = "RHS Elli" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = GRE version_name =  "Elli Class" } } }				
+			ship = { name = "RAP Georgios Averof" pride_of_the_fleet = yes definition = heavy_cruiser equipment = { ship_hull_cruiser_coastal_defense_ship = { amount = 1 owner = GRE version_name =  "Averof Class" } } }				
+			ship = { name = "RAP Elli" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = GRE version_name =  "Elli Class" } } }				
 			# Destroyer Flotilla
-			ship = { name = "RHS Aetos" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name =  "Aetos Class" } } }		
-			ship = { name = "RHS Ierax" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name =  "Aetos Class" } } }		
-			ship = { name = "RHS Leon" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name =  "Aetos Class" } } }		
-			ship = { name = "RHS Panthir" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name =  "Aetos Class" } } }		
-			ship = { name = "RHS Kountouriotis" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name =  "Hydra Class" } } }
-			ship = { name = "RHS Hydra" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name =  "Hydra Class" } } }
-			ship = { name = "RHS Psara" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name =  "Hydra Class" } } }
-			ship = { name = "RHS Spetsai" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name =  "Hydra Class" } } }
+			ship = { name = "RAP Aetos" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name =  "Aetos Class" } } }		
+			ship = { name = "RAP Ierax" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name =  "Aetos Class" } } }		
+			ship = { name = "RAP Leon" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name =  "Aetos Class" } } }		
+			ship = { name = "RAP Panthir" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name =  "Aetos Class" } } }		
+			ship = { name = "RAP Kountouriotis" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name =  "Hydra Class" } } }
+			ship = { name = "RAP Hydra" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name =  "Hydra Class" } } }
+			ship = { name = "RAP Psara" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name =  "Hydra Class" } } }
+			ship = { name = "RAP Spetsai" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name =  "Hydra Class" } } }
 		}					
 		task_force = {					
 			name = "Stolískou Ypovrychíon"				
 			location = 4109 # Athens
-			ship = { name = "RHS Katsonis" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GRE version_name =  "Katsonis Class" } } }		
-			ship = { name = "RHS Papanikolis" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GRE version_name =  "Katsonis Class" } } }		
-			ship = { name = "RHS Protefs" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = GRE version_name =  "Glafkos Class" } } }		
-			ship = { name = "RHS Nirefs" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = GRE version_name =  "Glafkos Class" } } }		 
-			ship = { name = "RHS Triton" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = GRE version_name =  "Glafkos Class" } } }		
-			ship = { name = "RHS Glafkos" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = GRE version_name =  "Glafkos Class" } } }		
-		}					
+			ship = { name = "RAP Katsonis" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = GRE version_name =  "Glafkos Class" } } }		
+			ship = { name = "RAP Papanikolis" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = GRE version_name =  "Glafkos Class" } } }		
+			ship = { name = "RAP Protefs" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = GRE version_name =  "Glafkos Class" } } }		
+			ship = { name = "RAP Nirefs" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = GRE version_name =  "Glafkos Class" } } }		 
+			ship = { name = "RAP Triton" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = GRE version_name =  "Glafkos Class" } } }		
+			ship = { name = "RAP Glafkos" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = GRE version_name =  "Glafkos Class" } } }		
+		}
+		task_force = { 
+			name = "Omáda tou Aigaíou" 
+			location = 10007 # Rhodes, Greece
+			# IV Squadriglia Cacciatorpediniere
+			ship = { name = "RCT Francesco Crispi" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name = "Hydra Class" } } } 
+			ship = { name = "RCT Quintino Sella" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name = "Hydra Class" } } } 
+			# VIII Squadriglia Torpediniere
+			ship = { name = "RCT Astore" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name = "Hydra Class" } } } 
+			ship = { name = "RCT Spica" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name = "Hydra Class" } } } 
+		} 
+		task_force = { 
+			name = "I Omáda Ypovrychíon"	
+			location = 10007 # Rhodes, Greece
+			# LXI Squadriglia Sommergibili
+			ship = { name = "RSmg Seirina" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = GRE version_name = "Glafkos Class" } } } 
+			ship = { name = "RSmg Argonáftis" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = GRE version_name = "Glafkos Class" } } } 
+			ship = { name = "RSmg Physalia" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = GRE version_name = "Glafkos Class" } } } 
+			ship = { name = "RSmg Smarágdi" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = GRE version_name = "Glafkos Class" } } } 
+			ship = { name = "RSmg Neráida" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = GRE version_name = "Glafkos Class" } } } 
+		}				
 	}
-} 
 
+	### ITALY ###
+	fleet = {
+		name = "Naftikí Dioíkisi Italías"			
+		naval_base = 11837 # Táranta, Italy
+		task_force = { 
+			name = "I Naftikí Moíra" # Dipartimento Militare Marittimo 'Ionio e Basso Adriatico' / I Squadra
+			location = 11837 # Táranta, Italy
+			# V Divisione Corazzate
+			ship = { name = "RAP Caio Duilio" pride_of_the_fleet = yes definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_1 = { amount = 1 owner = GRE version_name = "Kilkis Class"  } } } 
+			ship = { name = "RAP Antréa Ntória" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_1 = { amount = 1 owner = GRE version_name = "Kilkis Class"  } } } 
+			# I Divisione Incrociatori
+			ship = { name = "RAP Zara" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { heavy_cruiser_1 = { amount = 1 owner = GRE version_name = "Zara Class" } } } 
+			ship = { name = "RAP Nkorítsia" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { heavy_cruiser_1 = { amount = 1 owner = GRE version_name = "Zara Class" } } } 
+			ship = { name = "RAP Potámi" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { heavy_cruiser_1 = { amount = 1 owner = GRE version_name = "Zara Class" } } } 
+			# IV Divisione Incrociatori
+			ship = { name = "RAP Louítzi Kantórna" definition = light_cruiser start_experience_factor = 0.25 equipment = { light_cruiser_1 = { amount = 1 owner = GRE version_name = "Tziousáno Class" } } } 
+			ship = { name = "RAP Armánto Ntíaz" definition = light_cruiser start_experience_factor = 0.25 equipment = { light_cruiser_1 = { amount = 1 owner = GRE version_name = "Tziousáno Class" } } } 
+			ship = { name = "RAP Almperíko da Barbiano" definition = light_cruiser start_experience_factor = 0.25 equipment = { light_cruiser_1 = { amount = 1 owner = GRE version_name = "Tziousáno Class" } } } 
+			ship = { name = "RAP Almpérto da Tziousáno" definition = light_cruiser start_experience_factor = 0.25 equipment = { light_cruiser_1 = { amount = 1 owner = GRE version_name = "Tziousáno Class" } } } 
+			# Gruppo Incrociatori (Obsoleti)
+			ship = { name = "RAP Ágios Geórgios" definition = heavy_cruiser equipment = { ship_hull_cruiser_coastal_defense_ship = { amount = 1 owner = GRE version_name = "Ágios Geórgios Class" } } } 
+			ship = { name = "RAP Táranta" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = GRE version_name = "Táranta Class" } } } 
+			ship = { name = "RAP Bári" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = GRE version_name = "Táranta Class" } } }	
+			# Gruppo Esploratori Leggeri (Obsoleti)
+			ship = { name = "RAP Kárlo Mirampélo" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name = "Hydra Class" } } } 
+			ship = { name = "RAP Augusto Riboty" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name = "Hydra Class" } } } 
+			# II Squadriglia Cacciatorpediniere
+			ship = { name = "RAP Ésperos" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name = "Hydra Class" } } } 
+			ship = { name = "RAP Voréas" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name = "Hydra Class" } } } 
+			ship = { name = "RAP Zéfyros" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name = "Hydra Class" } } } 
+			ship = { name = "RAP Óstro" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name = "Hydra Class" } } } 
+			# VI Squadriglia Cacciatorpediniere
+			ship = { name = "RAP Betíno Rikasóli" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name = "Hydra Class" } } } 
+			ship = { name = "RAP Tziováni Nikotéra" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name = "Hydra Class" } } } 
+			# VI Squadriglia Torpediniere
+			ship = { name = "RAP Rosolino Pilo" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name = "Hydra Class" } } } 
+			ship = { name = "RAP Tzouzépe Misóri" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name = "Hydra Class" } } } 
+			ship = { name = "RAP Francesco Stocco" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name = "Hydra Class" } } } 
+			ship = { name = "RAP Tzouzépe Sirtóri" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name = "Hydra Class" } } } 
+			# VII Squadriglia Cacciatorpediniere
+			ship = { name = "RAP Vélos" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name = "Hydra Class" } } } 
+			ship = { name = "RAP Freccia" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name = "Hydra Class" } } } 
+			ship = { name = "RAP Astrapí" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name = "Hydra Class" } } } 
+			ship = { name = "RAP Akóntio" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name = "Hydra Class" } } } 
+			# VII Squadriglia Torpediniere
+			ship = { name = "RAP Angelo Bassini" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name = "Hydra Class" } } } 
+			ship = { name = "RAP Enríko Kozénts" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name = "Hydra Class" } } } 
+			ship = { name = "RAP Tziákomo Méntitsi" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name = "Hydra Class" } } } 
+			ship = { name = "RAP Nikóla Famprízi" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name = "Hydra Class" } } } 
+			# VIII Squadriglia Cacciatorpediniere
+			ship = { name = "RAP Baleno" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name = "Hydra Class" } } } 
+			ship = { name = "RAP Keravnós" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name = "Hydra Class" } } } 
+			ship = { name = "RAP Fulmine" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name = "Hydra Class" } } } 
+			ship = { name = "RAP Lampo" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name = "Hydra Class" } } } 
+			# IX Squadriglia Cacciatorpediniere
+			ship = { name = "RAP Nicoloso da Recco" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name = "Hydra Class" } } } 
+			ship = { name = "RAP Emanuele Pessagno" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name = "Hydra Class" } } } 
+			ship = { name = "RAP Loúka Tarínko" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name = "Hydra Class" } } } 
+			ship = { name = "RAP Antoniotto Usodimare" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name = "Hydra Class" } } } 
+		} 
+		task_force = { 
+			name = "II Omáda Ypovrychíon"	
+			location = 11837 # Táranta, Italy
+			# XLI Squadriglia Sommergibili
+			ship = { name = "RAP Balilla" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = GRE version_name = "Glafkos Class" } } } 
+			ship = { name = "RAP Antonio Sciesa" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = GRE version_name = "Glafkos Class" } } } 
+			ship = { name = "RAP Enrico Toti" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = GRE version_name = "Glafkos Class" } } } 
+			ship = { name = "RAP Domenico Millelire" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = GRE version_name = "Glafkos Class" } } } 
+		}
+		task_force = { 
+			name = "Squadra di Sicilia" # Comando Militare Marittimo 'Sicilia'
+			location = 4159 # Messina, Sicily
+			# I Squadriglia Torpediniere
+			ship = { name = "RCT Palestro" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name = "Hydra Class" } } } 
+			ship = { name = "RCT Confienza" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name = "Hydra Class" } } } 
+			ship = { name = "RCT San Martino" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name = "Hydra Class" } } } 
+			ship = { name = "RCT Solferino" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name = "Hydra Class" } } } 
+			# V Squadriglia Torpediniere
+			ship = { name = "RCT Giuseppe La Farina" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name = "Hydra Class" } } } 
+			ship = { name = "RCT Simone Schiaffino" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name = "Hydra Class" } } } 
+			ship = { name = "RCT Giuseppe Dezza" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name = "Hydra Class" } } } 
+			ship = { name = "RCT Giuseppe Cesare Abba" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name = "Hydra Class" } } } 
+		} 
+		task_force = { 
+			name = "III Omáda Ypovrychíon" 
+			location = 4159 # Messina, Sicily
+			# XXXI Squadriglia Sommergibili
+			ship = { name = "RSmg Vettor Pisani" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = GRE version_name = "Glafkos Class" } } } 
+			ship = { name = "RSmg Giovanni Bausan" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = GRE version_name = "Glafkos Class" } } } 
+			ship = { name = "RSmg Marcantonio Colonna" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = GRE version_name = "Glafkos Class" } } } 
+			ship = { name = "RSmg Des Geneys" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = GRE version_name = "Glafkos Class" } } } 
+			# XXXII Squadriglia Sommergibili
+			ship = { name = "RSmg Fratelli Bandiera" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = GRE version_name = "Glafkos Class" } } } 
+			ship = { name = "RSmg Luciano Manara" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = GRE version_name = "Glafkos Class" } } } 
+			ship = { name = "RSmg Ciro Menotti" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = GRE version_name = "Glafkos Class" } } } 
+			ship = { name = "RSmg Santorre Santarosa" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = GRE version_name = "Glafkos Class" } } } 
+			# XXXIII Squadriglia Sommergibili
+			ship = { name = "RSmg Goffredo Glafkos" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = GRE version_name = "Glafkos Class" } } } 
+			ship = { name = "RSmg Pier Capponi" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = GRE version_name = "Glafkos Class" } } } 
+			ship = { name = "RSmg Tito Speri" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = GRE version_name = "Glafkos Class" } } } 
+			ship = { name = "RSmg Giovanni da Procida" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = GRE version_name = "Glafkos Class" } } } 
+		}
+	}
+
+	### AFRICA ###
+	fleet = {
+		name = "Naftikí Dioíkisi Livýis"			
+		naval_base = 1130 # Tobruk, Libya
+		task_force = { 
+			name = "Squadra di Libia" 
+			location = 1130 # Tobruk, Libya
+			# I Squadriglia Cacciatorpediniere
+			ship = { name = "RCT Aquilone" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name = "Hydra Class" } } } 
+			ship = { name = "RCT Euro" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name = "Hydra Class" } } } 
+			ship = { name = "RCT Nembo" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name = "Hydra Class" } } } 
+			ship = { name = "RCT Turbine" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name = "Hydra Class" } } } 
+		} 
+		task_force = { 
+			name = "IV Omáda Ypovrychíon" 
+			location = 1130 # Tobruk, Libya
+			# LI Squadriglia Sommergibili
+			ship = { name = "RSmg Delfino" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = GRE version_name = "Glafkos Class" } } } 
+			ship = { name = "RSmg Narvalo" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = GRE version_name = "Glafkos Class" } } } 
+			ship = { name = "RSmg Squalo" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = GRE version_name = "Glafkos Class" } } } 
+			ship = { name = "RSmg Tricheco" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = GRE version_name = "Glafkos Class" } } } 
+		} 
+	}
+}

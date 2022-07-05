@@ -208,6 +208,22 @@ units = {
 		start_equipment_factor = 0.3
 
 	}
+
+	# Libya
+	division = { # 
+		name = "7a Divisione CC.NN. 'Cirene'" 
+		location = 1149 
+		division_template = "Trigonikó Pezikoú"	# CC.NN. militia, lower training and equipment 
+		start_experience_factor = 0.1 
+		start_equipment_factor = 0.5 
+	} 
+	division = { #
+		name = "2a Divisione Coloniale 'Libia'"
+		location = 1130 
+		division_template = "Trigonikó Pezikoú" # Colonial militia, lower training and equipment
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } } 
+		start_equipment_factor = 0.5 
+	}
 }
 
 ##### Air units -- Greece did not start to modernize air force until 1937 -- but they should still have their interwar air force available #####

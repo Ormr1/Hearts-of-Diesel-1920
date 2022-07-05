@@ -1,6 +1,6 @@
 characters={
 	ITA_benito_caesar={
-		name=ITA_benito_caesar
+		name=ITA_benito_augustulus
 		portraits={
 			civilian={
 				large=GFX_portrait_ITA_benito_caesar

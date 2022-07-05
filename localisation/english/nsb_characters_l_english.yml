@@ -388,7 +388,7 @@
  
 
  #ITALY
- ITA_benito_caesar:0 "Benito Caesar"
+ ITA_benito_augustulus:0 "Benito Augustulus"
  ITA_ferruccio_parri:0 "Ferruccio Parri"
  ITA_victor_emmanuel_iii:0 "Victor Emmanuel III"
  ITA_palmiro_togliatti:0 "Palmiro Togliatti"
@@ -821,7 +821,7 @@
  GRE_panagiotis_demestichas:1 "Panagiotis Demestichas"
 
  #CANADA
- CAN_mackenzie_king:0 "Mackenzie King"
+ CAN_mackenzie_king:0 "MacCoinnich Rí"
  CAN_adrien_arcand:0 "Adrien Arcand"
  CAN_tim_buck:0 "Tim Buck"
  CAN_j_s_woodsworth:0 "J. S. Woodsworth"
