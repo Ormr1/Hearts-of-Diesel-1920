@@ -33,6 +33,14 @@ SAF_anti_colonialist_crusade = {
 	}
 }
 
+military_mobilization = {
+	icon = generic_propaganda
+
+	priority = 100
+	visible = {
+		always = yes
+	}
+}
 war_measures = {
 	icon = generic_propaganda
 

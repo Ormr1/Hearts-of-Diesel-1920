@@ -1,0 +1,95 @@
+military_mobilization = {
+    mobilize_infantry = {
+        available = {
+            AND = {
+                NOT = {
+                    has_country_flag = already_mobilized
+                }
+                has_war = yes
+                enemies_strength_ratio > 0.50
+            }
+        }
+        visible = {
+            always = yes
+        }
+        icon = placeholder
+        days_remove = 365
+        ai_will_do = {
+            base = 100
+        }
+        complete_effect = {
+            activate_mission = mobilizing_infantry
+            set_country_flag = already_mobilized
+            set_variable = { state_count = num_of_controlled_states }
+            set_variable = { counter = 1 }
+            if = {
+                limit = {
+                    NOT = {
+                        has_template = "Conscript Division"
+                    }
+                }
+                division_template = {
+                    name = "Conscript Division"
+                    is_locked = yes
+                    priority = 0
+                    template_counter = 3
+                    regiments = {
+                        infantry = { x = 0 y = 0 }
+                        infantry = { x = 0 y = 1 }
+                        infantry = { x = 0 y = 2 }
+                        infantry = { x = 1 y = 0 }
+                        infantry = { x = 1 y = 1 }
+                        infantry = { x = 1 y = 2 }
+                        infantry = { x = 2 y = 0 }
+                        infantry = { x = 2 y = 1 }
+                        infantry = { x = 2 y = 2 }
+                    }
+                }
+            }
+        }
+    }
+    mobilizing_infantry = {
+        icon = placeholder
+        days_remove = 7
+        available = {
+            always = no
+        }
+        visible = {
+            has_active_mission = mobilizing_infantry
+        }
+        remove_effect = {
+            mobilize_infantry = yes
+            add_to_variable = { counter = 1 }
+            if = {
+                limit = {
+                    counter < state_count
+                }
+                activate_mission = mobilizing_infantry
+            }
+        }
+    }
+    demobilize_infantry = {
+        available = {
+            AND = {
+                has_country_flag = already_mobilized
+                has_war = no
+                NOT = {
+                    has_active_mission = mobilize_infantry
+                }
+            }
+        }
+        visible = {
+            always = yes
+        }
+        ai_will_do = {
+            base = 100
+        }
+        icon = placeholder
+        complete_effect = {
+            clr_country_flag = already_mobilized
+            every_controlled_state = {
+                clr_state_flag = state_infantry_mobilized
+            }
+        }
+    }
+}
