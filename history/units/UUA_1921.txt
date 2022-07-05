@@ -1,0 +1,105 @@
+﻿division_template = {
+	name = "Peoples Infantry"			# Divisions were at reserve levels during peacetime
+	division_names_group = SPAN_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+}
+
+
+units = {
+	##### Ejercito de Uruguay #####
+	division= {	# "1era División de Infantería"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 2215 # Montevideo
+		division_template = "Peoples Infantry"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+
+	}
+	division= {	# "2da División de Infantería"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 2
+		}
+		location = 11021 # Montevideo
+		division_template = "Peoples Infantry"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+
+	}
+	division= {	# "3da División de Infantería"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 5219 # Montevideo
+		division_template = "Peoples Infantry"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+
+	}
+	division= {	# "4da División de Infantería"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 4
+		}
+		location = 5184 # Montevideo
+		division_template = "Peoples Infantry"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+
+	}
+	division= {	# "4da División de Infantería"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 5
+		}
+		location = 2158 # Montevideo
+		division_template = "Peoples Infantry"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+
+	}
+	division= {	# "4da División de Infantería"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 6
+		}
+		location = 12970 # Montevideo
+		division_template = "Peoples Infantry"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+
+	}
+	division= {	# "4da División de Infantería"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 7
+		}
+		location = 10992 # Montevideo
+		division_template = "Peoples Infantry"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+
+	}
+	division= {	# "4da División de Infantería"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 8
+		}
+		location = 10964 # Montevideo
+		division_template = "Peoples Infantry"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+
+	}
+	
+}

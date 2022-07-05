@@ -10,6 +10,8 @@ state={
 		owner = LAP
 		buildings = {
 			infrastructure = 3
+			arms_factory = 1
+			industrial_complex = 2
 		}
 		add_core_of = ARG
 		add_core_of = LAP
@@ -26,6 +28,6 @@ state={
 	}
 	manpower=2287145
 	buildings_max_level_factor=1.000
-	state_category=rural
+	state_category=town
 	local_supplies=0.000
 }

@@ -18,7 +18,7 @@ LAP_collapse_category = {
 		cancel_trigger = {
 		}
 		
-		days_mission_timeout = 20
+		days_mission_timeout = 45
 
 		
 		cancel_effect = {

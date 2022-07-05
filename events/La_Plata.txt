@@ -118,6 +118,7 @@ country_event = { #Uruguay
 					democratic = 72
 					fascism = 28
 				}
+				country_event = {id = la_plata.110 days = 28}
 			}
 			LAP={
 				declare_war_on = {
@@ -159,6 +160,12 @@ country_event = { #Chile Abanonds the union
 					type = annex_everything
 				}
 			}
+			LPT={
+				declare_war_on = {
+					target = CHL
+					type = annex_everything
+				}
+			}
 		}
 	}
 	
@@ -173,7 +180,7 @@ country_event = { #Chile Abanonds the union
 		}
 	}
 }
-country_event = { #Argentinian Liberals declare
+country_event = { #Argentinia declare
 	id = la_plata.104
 	title = la_plata.104.t
 	desc = la_plata.104.d
@@ -186,7 +193,11 @@ country_event = { #Argentinian Liberals declare
 				transfer_state = 509
 				transfer_state = 985
 				transfer_state = 511
+				transfer_state = 510
+				transfer_state = 984
 				load_oob = "ARG_1921"
+				country_event = {id = la_plata.111 days = 34}#coilition collapse
+				add_manpower = 200000
 			}
 			LAP={
 				declare_war_on = {
@@ -196,6 +207,12 @@ country_event = { #Argentinian Liberals declare
 				country_event = {id = la_plata.103 days = 1}#chile goes
 				country_event = {id = la_plata.102 days = 4}#as does uruguay
 				country_event = {id = la_plata.105 days = 5}#and paraguay
+			}
+			LPT={
+				declare_war_on = {
+					target = ARG
+					type = annex_everything
+				}
 			}
 		}
 	}
@@ -224,6 +241,7 @@ country_event = { #Paraguay succends
 				transfer_state = 301
 				transfer_state = 688
 				load_oob = "PAR_1921"
+				country_event = {id = la_plata.109 days = 34}
 			}
 			LAP={
 				declare_war_on = {
@@ -261,7 +279,7 @@ country_event = { #failier to retake rio grande
 	immediate = {
 		hidden_effect={
 			country_event = {id = la_plata.101 days = 9}#patagonia always wanted independance
-			country_event = {id = la_plata.104 days = 5 random = 5}#Argentinian liberals revolt
+			country_event = {id = la_plata.108 days = 5 random = 5}#Argentinian liberals revolt
 		}
 	}
 	
@@ -296,5 +314,229 @@ country_event = { #Patagonian civil war
 	option = {
 		name = la_plata.107.a
 
+	}
+}
+country_event = { #La Platan Liberals revolt
+	id = la_plata.108
+	title = la_plata.108.t
+	desc = la_plata.108.d
+	picture = GFX_report_event_hitler_handshake
+	
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect={
+			LPT={
+				transfer_state = 279
+				transfer_state = 511
+				transfer_state = 508
+				transfer_state = 509
+				load_oob = "LPT_1921"
+				declare_war_on = {
+					target = RGS
+					type = annex_everything
+				}
+				add_manpower = 200000
+			}
+			LAP={
+				declare_war_on = {
+					target = LPT
+					type = annex_everything
+				}
+				every_core_state={
+					add_core_of = LPT
+				}
+				add_civil_war_target = LPT
+				country_event = {id = la_plata.104 days = 20}#argetnians declare
+			}
+		}
+	}
+	
+	option = {
+		name = la_plata.108.a
+
+	}
+	option = {
+		name = la_plata.108.b
+		LPT={
+			change_tag_from = LAP
+		}
+	}
+}
+country_event = { #Paraguayian civil war
+	id = la_plata.109
+	title = la_plata.109.t
+	desc = la_plata.109.d
+	picture = GFX_report_event_hitler_handshake
+	
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect={
+			start_civil_war = {
+				ideology = fenris
+				size = 0.5
+				only_own_territory = no
+				capital = 688
+				states = { 
+					688
+				}
+				keep_political_leader = yes
+				keep_political_party_members = yes
+			}
+		}
+	}
+	
+	option = {
+		name = la_plata.109.a
+	}
+}
+country_event = { #Uruguayian civil war
+	id = la_plata.110
+	title = la_plata.110.t
+	desc = la_plata.110.d
+	picture = GFX_report_event_hitler_handshake
+	
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect={
+			start_civil_war = {
+				ideology = fascism
+				size = 0.4
+				only_own_territory = no
+				capital = 987
+				states = { 
+					987
+				}
+				keep_political_leader = yes
+				keep_political_party_members = yes
+			}
+		}
+	}
+	
+	option = {
+		name = la_plata.110.a
+
+	}
+}
+country_event = { #Argentinian Coilition collapses
+	id = la_plata.111
+	title = la_plata.111.t
+	desc = la_plata.111.d
+	picture = GFX_report_event_hitler_handshake
+	
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect={
+			UUA={
+				transfer_state = 511
+				load_oob = "UUA_1921"
+				declare_war_on = {
+					target = ARG
+					type = annex_everything
+				}
+				add_manpower = 200000
+			}
+			ARC={
+				transfer_state = 509
+				load_oob = "ARC_1921"
+				declare_war_on = {
+					target = ARG
+					type = annex_everything
+				}
+				declare_war_on = {
+					target = UUA
+					type = annex_everything
+				}
+				add_manpower = 200000
+			}
+			ETR={
+				transfer_state = 510
+				transfer_state = 984
+				load_oob = "ETR_1921"
+				declare_war_on = {
+					target = ARG
+					type = annex_everything
+				}
+				declare_war_on = {
+					target = UUA
+					type = annex_everything
+				}
+				declare_war_on = {
+					target = ARC
+					type = annex_everything
+				}
+				add_manpower = 150000
+			}
+			510={
+				add_core_of = ETR
+			}
+			ARG={
+				declare_war_on = {
+					target = UUA
+					type = annex_everything
+				}
+				declare_war_on = {
+					target = ARC
+					type = annex_everything
+				}
+				every_core_state={
+					add_core_of = UUA
+					add_core_of = ARC
+				}
+				load_oob = "ARG_reneforcement"
+				add_civil_war_target = UUA
+				add_civil_war_target = ARC
+			}
+			LPT={
+				declare_war_on = {
+					target = ARC
+					type = annex_everything
+				}
+				declare_war_on = {
+					target = UUA
+					type = annex_everything
+				}
+				declare_war_on = {
+					target = ETR
+					type = annex_everything
+				}
+			}
+			LAP={
+				declare_war_on = {
+					target = ARC
+					type = annex_everything
+				}
+				declare_war_on = {
+					target = UUA
+					type = annex_everything
+				}
+				declare_war_on = {
+					target = ETR
+					type = annex_everything
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = la_plata.111.a
+
+	}
+	option = {
+		name = la_plata.111.b
+		UUA={
+			change_tag_from = ARG
+		}
+	}
+	option = {
+		name = la_plata.111.c
+		ETR={
+			change_tag_from = ARG
+		}
+	}
+	option = {
+		name = la_plata.111.e
+		ARC={
+			change_tag_from = ARG
+		}
 	}
 }

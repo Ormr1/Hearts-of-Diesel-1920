@@ -10,6 +10,8 @@ state={
 		owner = LAP
 		buildings = {
 			infrastructure = 3 #was: 5
+			arms_factory = 2
+			industrial_complex = 2
 			air_base = 2
 			10447 = {
 				naval_base = 3
@@ -18,6 +20,9 @@ state={
 		add_core_of = RGS
 		victory_points = {
 			10447 3 
+		}
+		victory_points = {
+			1542 1
 		}
 
 	}

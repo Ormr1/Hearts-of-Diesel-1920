@@ -18,10 +18,10 @@ units = {
 				is_name_ordered = yes
 				name_order = 1
 		}
-		location = 10362 # Montevideo
+		location = 5213 # Montevideo
 		division_template = "División de Infanteria"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.9
 
 	}
 	division= {	# "2da División de Infantería"
@@ -29,10 +29,10 @@ units = {
 				is_name_ordered = yes
 				name_order = 2
 		}
-		location = 10362 # Montevideo
+		location = 8169 # Montevideo
 		division_template = "División de Infanteria"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.9
 
 	}
 	division= {	# "3da División de Infantería"
@@ -40,10 +40,10 @@ units = {
 				is_name_ordered = yes
 				name_order = 3
 		}
-		location = 10347 # Montevideo
+		location = 5143 # Montevideo
 		division_template = "División de Infanteria"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.9
 
 	}
 	division= {	# "4da División de Infantería"
@@ -51,34 +51,43 @@ units = {
 				is_name_ordered = yes
 				name_order = 4
 		}
-		location = 10502 # Montevideo
+		location = 10965 # Montevideo
 		division_template = "División de Infanteria"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.9
 
 	}
-	division= {	# "5da División de Infantería"
+	division= {	# "4da División de Infantería"
 		division_name = {
 				is_name_ordered = yes
 				name_order = 5
 		}
-		location = 12468 # Montevideo
+		location = 10944 # Montevideo
 		division_template = "División de Infanteria"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.9
 
 	}
-}
-
-##### No notable Air Forces #####
-instant_effect = {
-	add_equipment_production = {
-		equipment = {
-			type = infantry_equipment_1
-			creator = "URG"
+	division= {	# "4da División de Infantería"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 6
 		}
-		requested_factories = 1
-		progress = 0.75
-		efficiency = 100
+		location = 2208 # Montevideo
+		division_template = "División de Infanteria"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+
+	}
+	division= {	# "4da División de Infantería"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 7
+		}
+		location = 8169 # Montevideo
+		division_template = "División de Infanteria"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+
 	}
 }
