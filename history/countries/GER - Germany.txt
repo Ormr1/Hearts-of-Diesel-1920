@@ -181,7 +181,7 @@ set_popularities = {
 	communism = 20
 }
 
-create_faction = "Central Europa"
+create_faction = GER_dresden_pakt
 add_to_faction = GER
 add_to_faction = AST
 
