@@ -361,7 +361,7 @@ ideologies = {
 			"FACTION_NAME_TOTNAT_5"
 		}
 
-		color = { 214 68 1 }
+		color = { 214 68 2 }
 
 		rules = {
 			can_declare_war_on_same_ideology = no

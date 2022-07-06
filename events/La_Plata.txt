@@ -36,6 +36,7 @@ country_event = { #Workers of rio grande do sul revolt
 					type = annex_everything
 				}
 				set_country_flag = LAP_in_revolt
+				set_country_flag = unable_to_mobilize
 				activate_mission = LAP_defeat_rio_grande_workers
 			}
 		}
@@ -335,6 +336,7 @@ country_event = { #La Platan Liberals revolt
 					target = RGS
 					type = annex_everything
 				}
+				set_country_flag = unable_to_mobilize
 				add_manpower = 200000
 			}
 			LAP={

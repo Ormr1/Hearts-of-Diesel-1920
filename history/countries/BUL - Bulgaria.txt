@@ -13,12 +13,10 @@ set_convoys = 5 #VANILLA & DLC
 		set_popularities = { #VANILLA
 			democratic = 5
 			fascism = 35
-			neutrality = 60
+			monarchy = 60
 		}
 		set_politics = { #VANILLA
-			ruling_party = neutrality
-			last_election = "1931.6.21"
-			election_frequency = 48
+			ruling_party = monarchy
 			elections_allowed = no
 		}
 

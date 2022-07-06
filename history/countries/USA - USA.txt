@@ -304,6 +304,9 @@ add_ideas = {
 	home_of_the_free
 }
 
+set_rule = {
+    can_send_volunteers= yes
+}
 
 # DIPLOMACY
 set_autonomy = {

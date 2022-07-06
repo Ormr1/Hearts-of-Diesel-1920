@@ -3,7 +3,10 @@ military_mobilization = {
         available = {
             AND = {
                 NOT = {
-                    has_country_flag = already_mobilized
+                    OR = {
+                        has_country_flag = already_mobilized
+                        has_country_flag = unable_to_mobilize
+                    }
                 }
                 has_war = yes
                 enemies_strength_ratio > 0.50
@@ -21,7 +24,7 @@ military_mobilization = {
             activate_mission = mobilizing_infantry
             set_country_flag = already_mobilized
             set_variable = { state_count = num_of_controlled_states }
-            set_variable = { counter = 1 }
+            set_variable = { counter = 0 }
             if = {
                 limit = {
                     NOT = {
@@ -59,10 +62,16 @@ military_mobilization = {
         }
         remove_effect = {
             mobilize_infantry = yes
-            add_to_variable = { counter = 1 }
             if = {
                 limit = {
-                    counter < state_count
+                    any_owned_state = {
+                        AND = {
+                            is_core_of = ROOT
+                            NOT = {
+                                has_state_flag = state_infantry_mobilized
+                            }
+                        }
+                    }
                 }
                 activate_mission = mobilizing_infantry
             }
@@ -89,6 +98,10 @@ military_mobilization = {
             clr_country_flag = already_mobilized
             every_controlled_state = {
                 clr_state_flag = state_infantry_mobilized
+            }
+            delete_units = {
+                division_template = "Conscript Division"
+                disband = yes
             }
         }
     }
