@@ -8161,4 +8161,10 @@ spriteTypes = {
 		name = GFX_portrait_malietoa_tanumafili_I
 		texturefile = gfx/leaders/SAM/Portrait_malietoa_tanumafili_I.dds
 	}
+
+	# FACTORY
+	spriteType = {
+		name = GFX_portrait_FAC_nikola_tesla
+		texturefile = "gfx/leaders/FAC/Portrait_FAC_Nikola_Tesla.dds"
+	}
 }

@@ -55,6 +55,8 @@ if = {
 }
 create_faction = "Factory Alliance"
 
+recruit_character = FAC_nikola_tesla
+
 set_politics = {
 	ruling_party = neutrality
 	elections_allowed = no

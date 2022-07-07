@@ -1,0 +1,16 @@
+characters = {
+    FAC_nikola_tesla = {
+		name = FAC_nikola_tesla
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_FAC_nikola_tesla"
+			}
+		}
+		country_leader={
+			ideology=technocracy
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+}

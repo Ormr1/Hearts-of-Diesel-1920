@@ -1,0 +1,65 @@
+Saxony:
+    - Maintain current world order
+    - Deal with Frankish resistance
+    - Liberals vs Old Guard
+    - Wilhelm II problems
+    - Take Arabia/Expand Dresden Pakt
+Franks:
+    - Political Crisis (Monarchists vs Republicans)
+    - Retake lost lands
+    - Partition Saxony as revenge
+    - Monarchists try to royal marry Albion
+    - Republicans try to spread the Revolution
+Albion:
+    - Ally with Eire
+    - Restore independent Belgica
+    - Counter Saxony + Rusviet
+    - Ally with Usonia
+Polania:
+    - Be independent
+Nordic Kingdoms:
+    - 
+Crimea:
+    - Don't be annexed by Rusviet
+    - Modernize...everything
+Eastern Rome:
+    - Reform Roman Empire
+    - Maintain control of Italy
+    - Keep Egypt
+    - Counter Sassanids
+Western Rome:
+    - Political Crisis (Independence vs Loyalists)
+    - More Political Crisis (Fascists vs Communists vs Democrats)
+    - Modernize
+Hispania:
+    - Bedrock of financial stability in Europe
+    - Make empire
+    - Beacon of Western European democracy
+Bulgaria:
+    - Fight Magyaria and Balkania
+Magyaria:
+    - Fight Bulgaria and Balkania
+Balkania:
+    - Fight Magyaria and Bulgaria
+Tui Manu'a:
+    - Maintain dominance of the Pacific
+    - Stronk navy
+    - Make bigger pacific empire
+Togawa Shogunate:
+    - Expand the Shogunate into mainland Asia
+    - Counter Usonian and Tui Manu'an expansion
+    - Make pacific empire
+Xin Dynasty:
+    - Current objective: Survive
+Zhongguo Republic:
+    - Bring democracy to China
+    - Reverse unequal treaties
+    - Kill the emperor
+Yuan Dynasty:
+    - Kill Xin Dynasty
+    - Expand across Eurasia
+    - Make Genghis Khan proud
+Usonia:
+    - Expand democracy
+    - Make the 20th century Usonia's century
+    - Intervene everywhere
