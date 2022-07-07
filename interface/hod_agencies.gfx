@@ -1,0 +1,7 @@
+spriteTypes = {	
+	SpriteType = {
+		name = "GFX_intelligence_agency_logo_fenris"
+		texturefile = "gfx/interface/operatives/agencies/agency_logo_fenris.dds"
+		noOfFrames = 2
+	}
+}

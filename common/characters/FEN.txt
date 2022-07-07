@@ -1,0 +1,16 @@
+characters = {
+    FEN_louis_iv_merovech = {
+		name = FRA_louis_iv_merovech
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_FRA_louis_iv_merovech"
+			}
+		}
+		country_leader={
+			ideology=fenris_ideology
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+}

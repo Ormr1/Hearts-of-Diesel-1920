@@ -1,4 +1,27 @@
 characters={
+	PAR_jose_felix_estigarribia = {
+		name = "Jose Felix Estigarribia"
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_PAR_jose_felix_estigarribia"
+			}
+		}
+		country_leader = {
+			ideology = fenris_ideology
+			traits = { hardened_officer }
+			expire="1965.1.1.1"
+		}
+		country_leader = {
+			ideology = fascism_ideology
+			traits = { hardened_officer }
+			expire="1965.1.1.1"
+		}
+		country_leader = {
+			ideology = despotism
+			traits = { hardened_officer }
+			expire="1965.1.1.1"
+		}
+	}
 	PAR_rafael_franco={
 		name="Rafael Franco"
 		portraits={
@@ -33,12 +56,6 @@ characters={
 				large=GFX_portrait_Francisco_Daza
 			}
 		}
-		country_leader={
-			ideology=rexism
-			traits={ tenacious_negotiator }
-			expire="1942.1.1.12"
-			id=-1
-		}
 	}
 	PAR_manuel_de_la_cruz={
 		name="Manuel de la Cruz"
@@ -47,12 +64,6 @@ characters={
 				large=GFX_portrait_Manuel_de_la_Cruz
 			}
 		}
-		country_leader={
-			ideology=moderatism
-			traits={ quartermaster_general armaments_organizer }
-			expire="1950.1.1.12"
-			id=-1
-		}
 	}
 	PAR_higinio_morinigo={
 		name="Higinio Morinigo"
@@ -60,12 +71,6 @@ characters={
 			civilian={
 				large=GFX_portrait_Higinio_Morinigo
 			}
-		}
-		country_leader={
-			ideology=despotism
-			traits={  }
-			expire="1950.1.1.12"
-			id=-1
 		}
 	}
 	PAR_manuel_t_aponte={

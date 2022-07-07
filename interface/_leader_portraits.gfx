@@ -1651,6 +1651,11 @@ spriteTypes = {
 		name = "GFX_Portrait_paraguay_rafael_franco"
 		texturefile = "gfx/leaders/PAR/portrait_par_rafael_franco.dds"
 	}
+	
+	spriteType = {
+		name = "GFX_portrait_PAR_jose_felix_estigarribia"
+		texturefile = "gfx/leaders/PAR/Portrait_PAR_Jose_Felix_Estigarribia.png"
+	}
 
 	spriteType = {
 		name = "GFX_Portrait_paraguay_rafael_franco_small"

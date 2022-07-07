@@ -9,6 +9,7 @@ set_technology = {
 	early_fighter = 1
 }
 
+recruit_character = PAR_jose_felix_estigarribia
 recruit_character = PAR_rafael_franco
 recruit_character = PAR_emilio_melgarejo
 recruit_character = PAR_francisco_daza
