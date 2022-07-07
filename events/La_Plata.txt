@@ -14,7 +14,11 @@ country_event = { #Workers of rio grande do sul revolt
 	desc = la_plata.100.d
 	picture = GFX_report_event_hitler_handshake
 	
-	is_triggered_only = yes
+	#is_triggered_only = yes
+	trigger={
+		date > 1921.01.08
+	}
+	fire_only_once = yes
 	immediate = {
 		hidden_effect={
 			RGS={
@@ -501,6 +505,7 @@ country_event = { #Argentinian Coilition collapses
 					target = ETR
 					type = annex_everything
 				}
+				country_event = {id = la_plata.112}
 			}
 			LAP={
 				declare_war_on = {
@@ -515,6 +520,7 @@ country_event = { #Argentinian Coilition collapses
 					target = ETR
 					type = annex_everything
 				}
+				country_event = {id = la_plata.112}
 			}
 		}
 	}
@@ -540,5 +546,24 @@ country_event = { #Argentinian Coilition collapses
 		ARC={
 			change_tag_from = ARG
 		}
+	}
+}
+country_event = { #Chile and RGS are unaccessable for now
+	id = la_plata.112
+	title = la_plata.112.t
+	desc = la_plata.112.d
+	picture = GFX_report_event_hitler_handshake
+	
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect={
+			white_peace = CHL
+			white_peace = RGS
+		}
+	}
+	
+	option = {
+		name = la_plata.112.a
+
 	}
 }
