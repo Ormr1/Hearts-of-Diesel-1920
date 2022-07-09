@@ -12,6 +12,7 @@ state={
 
 	history={
 		owner = CRN
+		add_core_of = CRN
 		buildings = {
 			infrastructure = 3 #was: 5
 			industrial_complex = 1

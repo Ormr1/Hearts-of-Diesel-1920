@@ -1,0 +1,44 @@
+characters={
+	MYS_maddur_kantharaj_urs = {
+		name="Maddur Kantharaj Urs"
+		portraits={
+			civilian={
+				large=GFX_portrait_MYS_maddur_kantharaj_urs
+			}
+		}
+		country_leader={
+			ideology=social_democracy
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	MYS_albion_rajkumar_banerjee = {
+		name="Albion Rajkumar Banerjee"
+		portraits={
+			civilian={
+				large=GFX_portrait_MYS_albion_rajkumar_banerjee
+			}
+		}
+	}
+	MYS_mirza_ismail = {
+		name="Mirza Ismail"
+		portraits={
+			civilian={
+				large=GFX_portrait_MYS_mirza_ismail
+			}
+		}
+	}
+	MYS_krishna_raja_wadiyar_IV = {
+		name="Krishna Raja Wadiyar IV"
+		portraits={
+			civilian={
+				large=GFX_portrait_MYS_krishna_raja_wadiyar_IV
+			}
+		}
+		country_leader={
+			ideology=constitutional_monarchy
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+}

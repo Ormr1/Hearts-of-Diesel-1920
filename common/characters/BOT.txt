@@ -1,4 +1,17 @@
 characters={
+	BOT_Khama_III = {
+		name="Khama III"
+		portraits={
+			civilian={
+				large=GFX_portrait_BOT_Khama_III
+			}
+		}
+		country_leader={
+			ideology=despotism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
 	BOT_aa2={
 		advisor={
 			slot = high_command

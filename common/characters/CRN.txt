@@ -1,0 +1,28 @@
+characters={
+	CRN_ghulam_muhammad_ali_khan = {
+		name="Ghulam Muhammad Ali Khan"
+		portraits={
+			civilian={
+				large=GFX_portrait_CRN_ghulam_muhammad_ali_khan
+			}
+		}
+		country_leader={
+			ideology=constitutional_monarchy
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	CRN_erode_venkatappa_ramasamy = {
+		name="Erode Venkatappa Ramasamy"
+		portraits={
+			civilian={
+				large=GFX_portrait_CRN_erode_venkatappa_ramasamy
+			}
+		}
+		country_leader={
+			ideology=social_democracy
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+}

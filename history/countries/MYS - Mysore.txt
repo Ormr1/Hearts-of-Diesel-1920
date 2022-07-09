@@ -53,11 +53,15 @@ if = {
 		basic_light_tank_chassis = 1
 	}
 }
-
+recruit_character = MYS_maddur_kantharaj_urs
+recruit_character = MYS_albion_rajkumar_banerjee
+recruit_character = MYS_mirza_ismail
+recruit_character = MYS_krishna_raja_wadiyar_IV
 set_politics = {
-	ruling_party = neutrality
+	ruling_party = democratic
 	elections_allowed = no
 }
 set_popularities = {
-	neutrality = 100
+	democratic = 62
+	monarchy = 38
 }

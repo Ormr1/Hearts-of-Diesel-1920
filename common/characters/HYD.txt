@@ -1,0 +1,15 @@
+characters={
+	HYD_mir_osman_ali_khan = {
+		name="Mir Osman Ali Khan"
+		portraits={
+			civilian={
+				large=GFX_portrait_HYD_mir_osman_ali_khan
+			}
+		}
+		country_leader={
+			ideology=benevolent_monarchy
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+}

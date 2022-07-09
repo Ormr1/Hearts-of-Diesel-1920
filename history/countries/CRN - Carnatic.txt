@@ -36,6 +36,9 @@ set_technology = {
     radio = 1
     radio_detection = 1
 }
+add_ideas = {
+	CRN_frankish_influence
+}
 if = {
 	limit = {
 		NOT = { has_dlc = "No Step Back" }
@@ -53,11 +56,12 @@ if = {
 		basic_light_tank_chassis = 1
 	}
 }
-
+recruit_character = CRN_ghulam_muhammad_ali_khan
+recruit_character = CRN_erode_venkatappa_ramasamy
 set_politics = {
-	ruling_party = neutrality
+	ruling_party = monarchy
 	elections_allowed = no
 }
 set_popularities = {
-	neutrality = 100
+	monarchy = 100
 }

@@ -53,11 +53,11 @@ if = {
 		basic_light_tank_chassis = 1
 	}
 }
-
+recruit_character = HYD_mir_osman_ali_khan
 set_politics = {
-	ruling_party = neutrality
+	ruling_party = monarchy
 	elections_allowed = no
 }
 set_popularities = {
-	neutrality = 100
+	monarchy = 100
 }

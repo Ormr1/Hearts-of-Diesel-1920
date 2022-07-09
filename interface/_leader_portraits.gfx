@@ -8161,6 +8161,27 @@ spriteTypes = {
 		name = GFX_portrait_malietoa_tanumafili_I
 		texturefile = gfx/leaders/SAM/Portrait_malietoa_tanumafili_I.dds
 	}
+	spriteType = {
+		name = GFX_portrait_BOT_Khama_III
+		texturefile = gfx/leaders/BOT/portrait_BOT_khama_III.dds
+	}
+	spriteType = {
+		name = GFX_portrait_MYS_krishna_raja_wadiyar_IV
+		texturefile = gfx/leaders/MYS/portrait_MYS_krishna_raja_wadiyar_IV.dds
+	}
+	spriteType = {
+		name = GFX_portrait_MYS_albion_rajkumar_banerjee
+		texturefile = gfx/leaders/MYS/portrait_MYS_albion_rajkumar_banerjee.dds
+	}
+	spriteType = {
+		name = GFX_portrait_MYS_mirza_ismail
+		texturefile = gfx/leaders/MYS/portrait_MYS_mirza_ismail.dds
+	}
+	
+	spriteType = {
+		name = GFX_portrait_CRN_ghulam_muhammad_ali_khan
+		texturefile = gfx/leaders/CRN/portrait_CRN_ghulam_muhammad_ali_khan.dds
+	}
 
 	# FACTORY
 	spriteType = {

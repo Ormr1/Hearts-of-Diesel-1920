@@ -1,4 +1,17 @@
 characters={
+	SAF_jan_smuts = {
+		name=SAF_jan_smuts
+		portraits={
+			civilian={
+				large=GFX_portrait_SAF_jan_smuts
+			}
+		}
+		country_leader={
+			ideology=conservatism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
 	SAF_j_b_m_hertzog={
 		name=SAF_j_b_m_hertzog
 		portraits={
@@ -67,20 +80,6 @@ characters={
 		}
 		country_leader={
 			ideology=centrism
-			expire="1965.1.1.1"
-			id=-1
-		}
-	}
-
-	SAF_jan_smuts = {
-		name=SAF_jan_smuts
-		portraits={
-			civilian={
-				large=GFX_portrait_SAF_jan_smuts
-			}
-		}
-		country_leader={
-			ideology=conservatism
 			expire="1965.1.1.1"
 			id=-1
 		}
