@@ -1,13 +1,24 @@
-﻿
+﻿division_template = {
+	name = "División de Cordoba"			# Divisions were at reserve levels during peacetime
+	division_names_group = SPAN_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+}
+
 units = {
 	##### Ejercito de Patagonia #####
 	division= {	# "1era División de Infantería"
 		division_name = {
 				is_name_ordered = yes
-				name_order = 7
+				name_order = 12
 		}
 		location = 12942 # 
-		division_template = "División de Liberal"
+		division_template = "División de Cordoba"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.3
 
@@ -15,10 +26,10 @@ units = {
 	division= {	# "2da División de Infantería"
 		division_name = {
 				is_name_ordered = yes
-				name_order = 8
+				name_order = 13
 		}
 		location = 11022 # 
-		division_template = "División de Liberal"
+		division_template = "División de Cordoba"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.3
 
@@ -26,10 +37,10 @@ units = {
 	division= {	# "2da División de Infantería"
 		division_name = {
 				is_name_ordered = yes
-				name_order = 9
+				name_order = 14
 		}
 		location = 7500 # 
-		division_template = "División de Liberal"
+		division_template = "División de Cordoba"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.3
 
@@ -37,10 +48,10 @@ units = {
 	division= {	# "2da División de Infantería"
 		division_name = {
 				is_name_ordered = yes
-				name_order = 10
+				name_order = 15
 		}
 		location = 10985 # 
-		division_template = "División de Liberal"
+		division_template = "División de Cordoba"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.3
 
@@ -48,10 +59,10 @@ units = {
 	division= {	# "2da División de Infantería"
 		division_name = {
 				is_name_ordered = yes
-				name_order = 11
+				name_order = 16
 		}
 		location = 5163 # 
-		division_template = "División de Liberal"
+		division_template = "División de Cordoba"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.3
 

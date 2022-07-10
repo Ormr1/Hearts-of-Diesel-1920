@@ -101,5 +101,38 @@ units = {
 		start_equipment_factor = 0.9
 
 	}
+	division= {	# "4da División de Infantería"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 9
+		}
+		location = 2215 # Montevideo
+		division_template = "Peoples Infantry"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+
+	}
+	division= {	# "4da División de Infantería"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 10
+		}
+		location = 5184 # Montevideo
+		division_template = "Peoples Infantry"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+
+	}
+	division= {	# "4da División de Infantería"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 11
+		}
+		location = 8215 # Montevideo
+		division_template = "Peoples Infantry"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+
+	}
 	
 }

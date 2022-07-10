@@ -1,2 +1,12 @@
 ideas = {
+	country={
+		ARG_uncivil_war= {
+			picture = generic_intel_bonus
+			
+			modifier = {
+				surrender_limit = 1.00
+				no_supply_grace = 220
+			}
+		}
+	}
 }
