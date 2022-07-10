@@ -63,6 +63,7 @@ if = {
 }
 set_country_flag = monroe_doctrine
 
+recruit_character = BRA_epitacio_pessoa
 recruit_character = BRA_getulio_vargas
 recruit_character = BRA_plinio_salgado
 recruit_character = BRA_luis_carlos_prestes

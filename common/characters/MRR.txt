@@ -1,0 +1,17 @@
+characters = {
+	MRR_david_dnaipon = {
+		name = "David Unaipon" 
+		portraits = {
+			civilian = {
+				large = GFX_portrait_david_unaipon
+			}
+		}
+		country_leader = {
+			ideology = centrism
+			expire = "1967.1.1"
+			traits={  }
+			id = -1
+		}
+	}
+}
+	

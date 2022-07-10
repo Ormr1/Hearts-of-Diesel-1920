@@ -1,4 +1,5 @@
 characters={
+	
 	AST_john_curtin={
 		name=AST_john_curtin
 		portraits={
@@ -8,6 +9,19 @@ characters={
 		}
 		country_leader={
 			ideology=socialism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	AST_albert_hahl={
+		name="Albert Hahl"
+		portraits={
+			civilian={
+				large=GFX_portrait_AST_albert_hahl
+			}
+		}
+		country_leader={
+			ideology=moderatism
 			expire="1965.1.1.1"
 			id=-1
 		}

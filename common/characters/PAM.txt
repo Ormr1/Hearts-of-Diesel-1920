@@ -1,0 +1,17 @@
+characters = {
+	PAM_marou_mimi = {
+		name = "Marou Mimi" 
+		portraits = {
+			civilian = {
+				large = GFX_portrait_marou_mimi
+			}
+		}
+		country_leader = {
+			ideology = centrism
+			expire = "1967.1.1"
+			traits={  }
+			id = -1
+		}
+	}
+}
+	

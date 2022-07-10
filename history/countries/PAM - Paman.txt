@@ -53,7 +53,7 @@ if = {
 		basic_light_tank_chassis = 1
 	}
 }
-
+recruit_character = PAM_marou_mimi
 set_politics = {
 	ruling_party = neutrality
 	elections_allowed = no
