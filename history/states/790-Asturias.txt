@@ -3,7 +3,7 @@ state={
 	name="STATE_790"
 
 	history={
-		owner = ENG
+		owner = GLC
 		victory_points = {
 			11707 3
 		}
@@ -17,7 +17,7 @@ state={
 			}
 
 		}
-		add_core_of = ENG
+		add_core_of = GLC
 		add_claim_by = SPR
 
 	}

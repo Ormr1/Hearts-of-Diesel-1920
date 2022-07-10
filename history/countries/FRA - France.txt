@@ -133,7 +133,7 @@ if = {
 	}
 	add_ideas = {
 		MTG_naval_treaty_adherent
-		sour_loser
+		FRA_loss_to_saxony
 	}
 }
 if = {

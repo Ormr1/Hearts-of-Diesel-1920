@@ -4046,6 +4046,10 @@ spriteTypes = {
 	#FRA LAR
 
 	spriteType = {
+		name = "GFX_idea_FRA_loss_to_saxony"
+		texturefile = "gfx/interface/ideas/FRA/idea_fra_loss_to_saxony.png"
+	}
+	spriteType = {
 		name = "GFX_idea_FRA_aeb"
 		texturefile = "gfx/interface/ideas/fra_aeb.dds"
 	}

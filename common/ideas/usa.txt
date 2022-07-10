@@ -19,6 +19,9 @@ ideas = {
 				send_volunteer_size = 1
 				send_volunteers_tension = -1.0
 			}
+			rule = {
+				can_send_volunteers = yes
+			}
 		}
 		great_depression = {
 			picture = usa_great_depression_3

@@ -1,7 +1,26 @@
 ideas = {
 
 	country = {
+		FRA_loss_to_saxony = {
+			picture = FRA_loss_to_saxony
+			
+			allowed = {
+				original_tag = FRA
+				always = no
+			}
 
+			allowed_civil_war = {
+				tag = FRA
+			}
+
+			removal_cost = 0
+
+			modifier = {
+				stability_factor = -0.10
+				monarchy_drift = -0.01
+				political_power_cost = 0.10
+			}
+		}
 		FRA_full_employment = {
 			picture = generic_production_bonus
 			allowed = {

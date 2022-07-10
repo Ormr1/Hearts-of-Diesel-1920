@@ -165,8 +165,9 @@ if = {
 		}
 	}
 	set_autonomy = {
-		target = MAL
-		autonomous_state = autonomy_integrated_puppet
+		target = GLC
+		autonomous_state = autonomy_colony
+		freedom_level = 0.2
 	}
 	set_autonomy = {
 		target = CAN
@@ -174,7 +175,8 @@ if = {
 		freedom_level = 0.4
 	}
 	else = {
-		puppet = MAL
+		puppet = GLC
+		puppet = CAN
 	}
 }
 
