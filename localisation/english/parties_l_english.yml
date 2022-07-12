@@ -36,6 +36,9 @@
  islamic_democracy:0 "Islamic Democrat"
  islamic_democracy_noun:0 "Islamic Democracy"
  islamic_democracy_desc:0 "Opposed to both radicalism and secularism, proponents of §CIslamic Democracy§! advocate for a state guided by the teachings of the Quran, the hadith, and Prophet Muhammad, as well as local imams, ustads, and ulama, with democratically elected leaders and an emphasis on civil rights."
+ tridemism:0 "Tridemist"
+ tridemism_noun:0 "Tridemism"
+ tridemism_desc:0 "§CTridemism§! is a political philosophy developed by Sun Yat-sen as part of a philosophy to improve China. The three principles are often translated into and summarized as nationalism, democracy, and the livelihood of the people."
  # Communist Sub-Ideologies
  democratic_socialism:0 "Democratic Socialist"
  democratic_socialism_noun:0 "Democratic Socialism"

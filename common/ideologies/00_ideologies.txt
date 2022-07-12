@@ -27,6 +27,10 @@ ideologies = {
 			islamic_democracy = {
 				can_be_randomly_selected = no
 			}
+
+			tridemism = {
+				can_be_randomly_selected = no
+			}
 		}
 
 		dynamic_faction_names = {

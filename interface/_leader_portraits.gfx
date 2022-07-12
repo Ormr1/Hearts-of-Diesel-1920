@@ -1166,6 +1166,13 @@ spriteTypes = {
 	##########China###########
 	##########################
 
+	### ROC
+
+	spriteType = {
+		name = "GFX_portrait_roc_sun_yat_sen"
+		textureFile = "gfx/leaders/ROC/Portrait_ROC_Sun_Yat_Sen.png"
+	}
+
 	spriteType = {
 		name = "GFX_portrait_prc_mao_zedong"
 		texturefile = "gfx/leaders/CHI/portrait_prc_mao_zedong.dds"
