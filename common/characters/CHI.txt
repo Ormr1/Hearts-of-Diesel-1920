@@ -1,4 +1,18 @@
 characters={
+	CHI_yuan_keding={
+		name="Emperor Yuntai"
+		portraits={
+			civilian={
+				large=GFX_portrait_CHI_yuan_keding
+			}
+		}
+		country_leader={
+			ideology=benevolent_monarchy
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
 	CHI_chiang_kaishek={
 		name=CHI_chiang_kaishek
 		portraits={

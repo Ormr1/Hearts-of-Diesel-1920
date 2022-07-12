@@ -6355,7 +6355,7 @@ spriteTypes = {
 	
 	spriteType = {
 		name = "GFX_idea_fra_crn_company"
-		texturefile = "gfx/interface/ideas/fra_crn_company.dds"
+		texturefile = "gfx/interface/ideas/CRN/fra_crn_company.dds"
 	}
 	
 }

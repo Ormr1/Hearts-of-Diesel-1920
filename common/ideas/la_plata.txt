@@ -1,0 +1,50 @@
+ideas = {
+	country={
+		LAP_economic_devastation_1 = {
+			picture = great_depression
+			
+			modifier = {
+				stability_factor = -0.1
+				political_power_gain = -0.1
+				civilian_factory_use = 1
+				consumer_goods_factor = 0.1
+				recruitable_population_factor = -0.1
+				training_time_factor = 5.0
+				army_org_regain = -0.1
+			}
+		}
+		LAP_economic_devastation_2 = {
+			picture = great_depression
+			
+			modifier = {
+				stability_factor = -0.2
+				political_power_gain = -0.2
+				civilian_factory_use = 2
+				consumer_goods_factor = 0.1
+				recruitable_population_factor = -0.2
+				training_time_factor = 5.0
+				army_org_regain = -0.2
+			}
+		}
+		LAP_economic_devastation_3 = {
+			picture = great_depression
+			
+			modifier = {
+				stability_factor = -0.3
+				political_power_gain = -0.3
+				civilian_factory_use = 3
+				consumer_goods_factor = 0.1
+				recruitable_population_factor = -0.3
+				training_time_factor = 5.0
+				army_org_regain = -0.3
+			}
+		}
+		LAP_provincal_armies = {
+			picture = generic_army_problems
+			
+			modifier = {
+				army_defence_factor = -0.1
+			}
+		}
+	}
+}

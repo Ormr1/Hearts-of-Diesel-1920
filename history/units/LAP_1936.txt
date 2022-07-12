@@ -169,12 +169,12 @@ air_wings = {
 	278 = {
 		# Fighter Air Group -- Dewotine D.21s
 		fighter_equipment_0 =  {
-			owner = "ARG" 
+			owner = "LAP" 
 			amount = 18
 		}
 		# CAS Air Group -- Breguet 19s
 		CAS_equipment_1 =  {
-			owner = "ARG" 
+			owner = "LAP" 
 			amount = 12
 		}
 	}
@@ -185,19 +185,19 @@ instant_effect = {
 	add_equipment_production = {
 		equipment = {
 			type = infantry_equipment_0
-			creator = "ARG"
+			creator = "LAP"
 		}
 		requested_factories = 1
 		progress = 0.19
-		efficiency = 100
+		efficiency = 55
 	}
 	add_equipment_production = {
 		equipment = {
 			type = fighter_equipment_0
-			creator = "ARG"
+			creator = "LAP"
 		}
 		requested_factories = 1
 		progress = 0.44
-		efficiency = 100
+		efficiency = 55
 	}
 }

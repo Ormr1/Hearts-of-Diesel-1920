@@ -4,6 +4,73 @@
 
 add_namespace = la_plata
 
+country_event = { #La Plata enters recession
+	id = la_plata.1
+	title = la_plata.1.t
+	desc = la_plata.1.d
+	picture = GFX_report_event_hitler_handshake
+	
+	#is_triggered_only = yes
+	trigger={
+		date > 1920.04.18
+		tag = LAP
+	}
+	#mean_time_to_happen = { days = 30}
+	fire_only_once = yes
+	immediate = {
+		hidden_effect={
+			add_ideas = {LAP_economic_devastation_1}
+		}
+	}
+	
+	option = {
+		name = la_plata.1.a
+		country_event = {id = la_plata.2}
+	}
+}
+
+news_event = { #La Plata enters recession news
+	id = la_plata.2
+	title = la_plata.2.t
+	desc = la_plata.2.d
+	picture = GFX_report_event_hitler_handshake
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	major = yes
+	
+	option = {
+		name = la_plata.2.a
+	}
+}
+
+country_event = { #recession deepens
+	id = la_plata.3
+	title = la_plata.3.t
+	desc = la_plata.3.d
+	picture = GFX_report_event_hitler_handshake
+	
+	#is_triggered_only = yes
+	trigger={
+		date > 1920.05.01
+		has_idea = LAP_economic_devastation_1
+	}
+	mean_time_to_happen = { days = 15}
+	fire_only_once = yes
+	immediate = {
+		hidden_effect={
+			swap_ideas = {
+				remove_idea = LAP_economic_devastation_1
+				add_idea = LAP_economic_devastation_2
+			}
+		}
+	}
+	
+	option = {
+		name = la_plata.3.a
+	}
+}
+
 ##################################
 # start of the La Plata collapse #
 ##################################
@@ -17,6 +84,7 @@ country_event = { #Workers of rio grande do sul revolt
 	#is_triggered_only = yes
 	trigger={
 		date > 1921.01.08
+		tag = LAP
 	}
 	fire_only_once = yes
 	immediate = {
@@ -71,7 +139,7 @@ country_event = { #Patagonia
 				transfer_state = 986
 				load_oob = "PAT_1921"
 				set_politics = {
-					ruling_party = democratic
+					ruling_party = monarchy
 					last_election = "1921.1.1"
 					elections_allowed = no
 				}
@@ -79,7 +147,7 @@ country_event = { #Patagonia
 					democratic = 58
 					monarchy = 42
 				}
-				country_event = {id = la_plata.107 days = 18}
+				country_event = {id = la_plata.107 days = 98}
 			}
 			LAP={
 				declare_war_on = {
@@ -123,7 +191,7 @@ country_event = { #Uruguay
 					democratic = 72
 					fascism = 28
 				}
-				country_event = {id = la_plata.110 days = 28}
+				country_event = {id = la_plata.110 days = 108}
 			}
 			LAP={
 				declare_war_on = {
@@ -246,7 +314,7 @@ country_event = { #Paraguay succends
 				transfer_state = 301
 				transfer_state = 688
 				load_oob = "PAR_1921"
-				country_event = {id = la_plata.109 days = 34}
+				country_event = {id = la_plata.109 days = 124}
 			}
 			LAP={
 				declare_war_on = {
@@ -303,8 +371,8 @@ country_event = { #Patagonian civil war
 	immediate = {
 		hidden_effect={
 			start_civil_war = {
-				ideology = monarchy
-				size = 0.3
+				ideology = democratic
+				size = 0.5
 				only_own_territory = no
 				capital = 986
 				states = { 
@@ -312,6 +380,12 @@ country_event = { #Patagonian civil war
 				}
 				keep_political_leader = yes
 				keep_political_party_members = yes
+			}
+			LPT={
+				white_peace = PAT
+			}
+			LAP={
+				white_peace = PAT
 			}
 		}
 	}
@@ -388,6 +462,8 @@ country_event = { #Paraguayian civil war
 				keep_political_leader = no
 				keep_political_party_members = no
 			}
+			white_peace = LPT
+			white_peace = LAP
 		}
 	}
 	
@@ -415,6 +491,8 @@ country_event = { #Uruguayian civil war
 				keep_political_leader = yes
 				keep_political_party_members = yes
 			}
+			white_peace = LPT
+			white_peace = LAP
 		}
 	}
 	
