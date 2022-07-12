@@ -11,7 +11,10 @@ CHI_anti_imperialism = {
 CHI_army_reform = {
 	icon = army_reform
 	allowed = {
-		is_literally_china = yes
+		OR = {
+			is_literally_china = yes
+			original_tag = ROC
+		}
 	}
 
 	visible = {

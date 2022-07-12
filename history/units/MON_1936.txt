@@ -7,6 +7,8 @@
 		cavalry = { x = 0 y = 0 }
 		cavalry = { x = 0 y = 1 }
 		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
 	}
 }
 
@@ -68,41 +70,97 @@ units = {
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
 	}
-	#division = {
-	#	name = "6-p Morit Diviziin"
-	#	division_name = {    # New syntax for compatibility with name lists
-	#		is_name_ordered = yes
-	#		name_order = 6
-	#	}
-	#	location = 10575
-	#	division_template = "Morit Diviziin"
-	#	start_experience_factor = 0.1
-	#	start_equipment_factor = 0.5
-	#}
-	#division = {
-	#	name = "7-p Morit Diviziin"
-	#	division_name = {    # New syntax for compatibility with name lists
-	#		is_name_ordered = yes
-	#		name_order = 7
-	#	}
-	#	location = 4856
-	#	division_template = "Morit Diviziin"
-	#	start_experience_factor = 0.1
-	#	start_equipment_factor = 0.5
-    #
-	#}
-
-	#division = {
-	#	name = "8-p Morit Diviziin"
-	#	division_name = {    # New syntax for compatibility with name lists
-	#		is_name_ordered = yes
-	#		name_order = 8
-	#	}
-	#	location = 1723
-	#	division_template = "Morit Diviziin"
-	#	start_experience_factor = 0.1
-	#	start_equipment_factor = 0.5
-	#}
+	division = { # "1 Morit Diviziin"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 800
+		division_template = "Morit Diviziin"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division = { # "2 Morit Diviziin"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 11771
+		division_template = "Morit Diviziin"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division = { # "3 Morit Diviziin"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 3944
+		division_template = "Morit Diviziin"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "4 Morit Diviziin"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 4809
+		division_template = "Morit Diviziin"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division = { # "5 Morit Diviziin"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 3877
+		division_template = "Morit Diviziin"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division = { # "1 Morit Diviziin"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 800
+		division_template = "Morit Diviziin"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division = { # "2 Morit Diviziin"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 11771
+		division_template = "Morit Diviziin"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division = { # "3 Morit Diviziin"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 3944
+		division_template = "Morit Diviziin"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division = { # "4 Morit Diviziin"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 4809
+		division_template = "Morit Diviziin"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
 }
 
 

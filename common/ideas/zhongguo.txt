@@ -1,0 +1,23 @@
+ideas = {
+    country = {
+        ROC_revolutionary_fervor = {
+
+            picture = generic_morale_bonus
+		
+			allowed = {
+				always = no
+			}
+
+            allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_attack_factor = 0.25
+                army_defence_factor = 0.25
+			}
+        }
+    }
+}
