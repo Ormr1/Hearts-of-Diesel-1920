@@ -14,6 +14,39 @@ characters={
 		}
 	}
 
+	USA_william_mason = {
+		name = USA_william_mason
+		portraits = {
+			civilian = {
+				large = GFX_portrait_USA_william_mason_civilian
+			}
+			army = {
+				large = GFX_portrait_USA_william_mason
+			}
+		}
+	}
+
+	USA_george_mason = {
+		name = USA_george_mason
+		portraits = {
+			civilian = {
+				large = GFX_portrait_USA_george_mason
+			}
+			army = {
+				large = GFX_portrait_USA_george_mason
+			}
+		}
+		navy_leader={
+			traits = { navy_career_officer aviation_enthusiast air_controller politically_connected media_personality ironside }
+			skill=6
+			attack_skill=6
+			defense_skill=3
+			maneuvering_skill=3
+			coordination_skill=5
+			legacy_id=0
+		}
+	}
+
 	USA_franklin_delano_roosevelt={
 		name=USA_franklin_delano_roosevelt
 		portraits={

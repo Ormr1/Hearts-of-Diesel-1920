@@ -320,6 +320,8 @@ set_autonomy = {
 }
 
 recruit_character = USA_booker_t_washington
+recruit_character = USA_william_mason
+recruit_character = USA_george_mason
 recruit_character = USA_earl_browder
 recruit_character = USA_william_dudley_pelley
 recruit_character = USA_franklin_delano_roosevelt

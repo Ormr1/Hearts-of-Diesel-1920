@@ -73,6 +73,21 @@ spriteTypes = {
 	#### USA
 
 	spriteType = {
+		name = "GFX_portrait_USA_william_mason"
+		texturefile = "gfx/leaders/USA/Portrait_USA_William_Mason.png"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_USA_william_mason_civilian"
+		texturefile = "gfx/leaders/USA/Portrait_USA_William_Mason_Civilian.png"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_USA_george_mason"
+		texturefile = "gfx/leaders/USA/Portrait_USA_George_Mason.png"
+	}
+
+	spriteType = {
 		name = "GFX_portrait_USA_booker_t_washington"
 		texturefile = "gfx/leaders/USA/Portrait_USA_Booker_T_Washington.png"
 	}

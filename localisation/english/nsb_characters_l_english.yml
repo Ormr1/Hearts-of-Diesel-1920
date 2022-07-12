@@ -328,6 +328,8 @@
 
  #USA
  USA_booker_t_washington:0 "Booker T. Washington"
+ USA_william_mason:0 "William Mason"
+ USA_george_mason:0 "George Mason"
  USA_franklin_delano_roosevelt:0 "Franklin Delano Roosevelt"
  USA_william_dudley_pelley:0 "William Dudley Pelley"
  USA_earl_browder:0 "$earl_browder$"
