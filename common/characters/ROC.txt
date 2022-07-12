@@ -1,0 +1,16 @@
+characters = {
+    ROC_sun_yat_sen = {
+        name = ROC_sun_yat_sen
+        portraits = {
+            civilian = {
+                large = GFX_portrait_roc_sun_yat_sen
+            }
+        }
+        country_leader={
+			ideology=tridemism
+			traits={ }
+			expire="1947.1.1.1"
+			id=-1
+		}
+    }
+}
