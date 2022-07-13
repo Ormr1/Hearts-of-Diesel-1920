@@ -2,7 +2,7 @@ ideas = {
     country = {
         ROC_revolutionary_fervor = {
 
-            picture = generic_morale_bonus
+            picture = roc_revolutionary_fervor
 		
 			allowed = {
 				always = no

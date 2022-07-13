@@ -3,6 +3,17 @@
 oob = "ROC_1936"
 
 recruit_character = ROC_sun_yat_sen
+recruit_character = ROC_chiang_kaishek
+recruit_character = ROC_tu_yuming
+recruit_character = ROC_hsueh_yueh
+recruit_character = ROC_wang_yaowu
+recruit_character = ROC_tai_anlan
+recruit_character = ROC_hu_zongnan
+recruit_character = ROC_gu_zhutong
+recruit_character = ROC_wei_lihuang
+recruit_character = ROC_sun_li_jen
+recruit_character = ROC_chen_jitang
+recruit_character = ROC_lu_han
 
 declare_war_on = {
     target = CHI

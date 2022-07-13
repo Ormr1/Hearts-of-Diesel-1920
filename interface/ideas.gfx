@@ -1,6 +1,4 @@
-spriteTypes = {	
-
-
+spriteTypes = {
 
 	SpriteType = {
 		name = "GFX_idea_traits_strip"
@@ -2717,6 +2715,13 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_prc_low_popular_support"
 		texturefile = "gfx/interface/ideas/idea_prc_low_popular_support.dds"
+	}
+
+	### ZHONGGUO
+
+	spriteType = {
+		name = "GFX_idea_roc_revolutionary_fervor"
+		texturefile = "gfx/interface/ideas/ROC/ROC_idea_revolutionary_fervor.png"
 	}
 	
 	### CHINA 

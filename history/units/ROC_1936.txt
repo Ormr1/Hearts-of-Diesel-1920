@@ -31,16 +31,23 @@ division_template = {
 	priority = 0
 }
 division_template = {
-	name = "Sanjiao Jun"			# Represents three-division infantry corps (generally poorly-equipped militias)
+	name = "Gònghéguó Wèiduì"			# Elite infantry
 	division_names_group = CHI_INF_01
 
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
 		infantry = { x = 1 y = 0 }
 		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
 		infantry = { x = 2 y = 0 }
 		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+        engineer = { x = 0 y = 0 }
+        artillery = { x = 0 y = 1 }
 	}
 }
 division_template = {
@@ -65,7 +72,7 @@ units = {
 		location = 10404
 		start_experience_factor = 0.1
 		division_template = "Juntuán"
-		start_equipment_factor = 0.9
+		start_equipment_factor = 1.0
 	}
 	division = { # "63 Juntuán"
 		division_name = {
@@ -75,7 +82,7 @@ units = {
 		location = 1047
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.9
+		start_equipment_factor = 1.0
 	}
 	division = { # "64 Juntuán"
 		division_name = {
@@ -85,7 +92,7 @@ units = {
 		location = 7137
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.9
+		start_equipment_factor = 1.0
 	}
 	division = { # "65 Juntuán"
 		division_name = {
@@ -95,7 +102,7 @@ units = {
 		location = 9938
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.9
+		start_equipment_factor = 1.0
 	}
 	division = { # "66 Juntuán"
 		division_name = {
@@ -105,7 +112,7 @@ units = {
 		location = 994
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.9
+		start_equipment_factor = 1.0
 	}
 	division = { # "67 Juntuán"
 		division_name = {
@@ -115,201 +122,259 @@ units = {
 		location = 1047
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.9
+		start_equipment_factor = 1.0
 	}
 	division = {
 		name = "Guangzhou Jingbei"
 		location = 1047
 		division_template = "Juntuán"
-		start_equipment_factor = 0.8
+		start_equipment_factor = 1.0
 	}
 	division = {
 		name = "Hainan Jingbei"
 		location = 994
 		division_template = "Juntuán"
-		start_equipment_factor = 0.8
+		start_equipment_factor = 1.0
 	}
 	division = {
 		name = "Guilin Jingbei"
 		location = 10404
 		division_template = "Juntuán"
-		start_equipment_factor = 0.8
+		start_equipment_factor = 1.0
 	}
 	division = {
 		name = "Kunming Jingbei"
 		location = 12789
 		division_template = "Juntuán"
-		start_equipment_factor = 0.8
+		start_equipment_factor = 1.0
 	}
 	division = {
 		name = "Yunnan Baoan Ke"
 		location = 10346
 		division_template = "Juntuán"
-		start_equipment_factor = 0.8
+		start_equipment_factor = 1.0
 	}
 	division = {
 		name = "Dali Baoan Ke"
 		location = 10346
 		division_template = "Juntuán"
-		start_equipment_factor = 0.8
+		start_equipment_factor = 1.0
 	}
 	### City Uprisings
 	Division = {
 		name = "Beiping Rénmín Jun"
 		location = 9843
 		division_template = "Rénmín Jun"
-		start_equipment_factor = 0.8
+		start_equipment_factor = 1.0
 	}
 	Division = {
 		name = "Beiping Rénmín Jun"
 		location = 9843
 		division_template = "Rénmín Jun"
-		start_equipment_factor = 0.8
+		start_equipment_factor = 1.0
 	}
 	Division = {
 		name = "Nanjing Rénmín Jun"
 		location = 11913
 		division_template = "Rénmín Jun"
-		start_equipment_factor = 0.8
+		start_equipment_factor = 1.0
 	}
 	Division = {
 		name = "Nanjing Rénmín Jun"
 		location = 11913
 		division_template = "Rénmín Jun"
-		start_equipment_factor = 0.8
+		start_equipment_factor = 1.0
 	}
 	Division = {
 		name = "Nanjing Rénmín Jun"
 		location = 11913
 		division_template = "Rénmín Jun"
-		start_equipment_factor = 0.8
+		start_equipment_factor = 1.0
 	}
 	Division = {
 		name = "Chongqing Rénmín Jun"
 		location = 6999
 		division_template = "Rénmín Jun"
-		start_equipment_factor = 0.8
+		start_equipment_factor = 1.0
 	}
 	Division = {
 		name = "Chongqing Rénmín Jun"
 		location = 6999
 		division_template = "Rénmín Jun"
-		start_equipment_factor = 0.8
+		start_equipment_factor = 1.0
 	}
 	Division = {
 		name = "Chongqing Rénmín Jun"
 		location = 6999
 		division_template = "Rénmín Jun"
-		start_equipment_factor = 0.8
+		start_equipment_factor = 1.0
 	}
 	### Town Uprisings
 	Division = {
 		name = "Taiyuan Rénmín Jun"
 		location = 1519
 		division_template = "Rénmín Jun"
-		start_equipment_factor = 0.7
+		start_equipment_factor = 0.85
 	}
 	Division = {
 		name = "Jinan Rénmín Jun"
 		location = 1069
 		division_template = "Rénmín Jun"
-		start_equipment_factor = 0.7
+		start_equipment_factor = 0.85
 	}
 	Division = {
 		name = "Zhengzhou Rénmín Jun"
 		location = 10000
 		division_template = "Rénmín Jun"
-		start_equipment_factor = 0.7
+		start_equipment_factor = 0.85
 	}
 	Division = {
 		name = "Yan'an Rénmín Jun"
 		location = 8049
 		division_template = "Rénmín Jun"
-		start_equipment_factor = 0.7
+		start_equipment_factor = 0.85
 	}
 	Division = {
 		name = "Hefei Rénmín Jun"
 		location = 7222
 		division_template = "Rénmín Jun"
-		start_equipment_factor = 0.7
+		start_equipment_factor = 0.85
 	}
 	Division = {
 		name = "Suzhou Rénmín Jun"
 		location = 10076
 		division_template = "Rénmín Jun"
-		start_equipment_factor = 0.7
+		start_equipment_factor = 0.85
 	}
 	Division = {
 		name = "Huangshan Rénmín Jun"
 		location = 12019
 		division_template = "Rénmín Jun"
-		start_equipment_factor = 0.7
+		start_equipment_factor = 0.85
 	}
 	Division = {
 		name = "Wuhan Rénmín Jun"
 		location = 4619
 		division_template = "Rénmín Jun"
-		start_equipment_factor = 0.7
+		start_equipment_factor = 0.85
 	}
 	Division = {
 		name = "Nachang Rénmín Jun"
 		location = 3992
 		division_template = "Rénmín Jun"
-		start_equipment_factor = 0.7
+		start_equipment_factor = 0.85
 	}
 	Division = {
 		name = "Changsha Rénmín Jun"
 		location = 7097
 		division_template = "Rénmín Jun"
-		start_equipment_factor = 0.7
+		start_equipment_factor = 0.85
 	}
 	Division = {
 		name = "Changde Rénmín Jun"
 		location = 7101
 		division_template = "Rénmín Jun"
-		start_equipment_factor = 0.7
+		start_equipment_factor = 0.85
 	}
 	Division = {
 		name = "Zunyi Rénmín Jun"
 		location = 1010
 		division_template = "Rénmín Jun"
-		start_equipment_factor = 0.7
+		start_equipment_factor = 0.85
 	}
 	Division = {
 		name = "Kangding Rénmín Jun"
 		location = 4999
 		division_template = "Rénmín Jun"
-		start_equipment_factor = 0.7
+		start_equipment_factor = 0.85
 	}
 	Division = {
 		name = "Ya'an Rénmín Jun"
 		location = 12141
 		division_template = "Rénmín Jun"
-		start_equipment_factor = 0.7
+		start_equipment_factor = 0.85
 	}
 	Division = {
 		name = "Chengdu Rénmín Jun"
 		location = 4925
 		division_template = "Rénmín Jun"
-		start_equipment_factor = 0.7
+		start_equipment_factor = 0.85
 	}
 	Division = {
 		name = "Tianshui Rénmín Jun"
 		location = 2045
 		division_template = "Rénmín Jun"
-		start_equipment_factor = 0.7
+		start_equipment_factor = 0.85
 	}
 	Division = {
 		name = "Lanzhou Rénmín Jun"
 		location = 12732
 		division_template = "Rénmín Jun"
-		start_equipment_factor = 0.7
+		start_equipment_factor = 0.85
 	}
 	Division = {
 		name = "Golmud Rénmín Jun"
 		location = 17940
 		division_template = "Rénmín Jun"
-		start_equipment_factor = 0.7
+		start_equipment_factor = 0.85
+	}
+	### Usonian-Trained Divisions
+	division = {
+		name = "76 Gònghéguó Wèiduì"
+		location = 1047
+		division_template = "Gònghéguó Wèiduì"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 425
+		}
+		location = 10404
+		division_template = "Gònghéguó Wèiduì"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 427
+		}
+		location = 9938
+		division_template = "Gònghéguó Wèiduì"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 436
+		}
+		location = 7108
+		division_template = "Gònghéguó Wèiduì"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 487
+		}
+		location = 4504
+		division_template = "Gònghéguó Wèiduì"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 488
+		}
+		location = 1319
+		division_template = "Gònghéguó Wèiduì"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
 	}
 }
 
@@ -320,7 +385,7 @@ instant_effect = {
 			creator = "CHI"
 		}
 		requested_factories = 2
-		progress = 0.85
+		progress = 1.05
 		efficiency = 100
 	}
 	add_equipment_production = {
@@ -329,7 +394,7 @@ instant_effect = {
 			creator = "CHI"
 		}
 		requested_factories = 1
-		progress = 0.85
+		progress = 1.05
 		efficiency = 100
 	}	
 }
