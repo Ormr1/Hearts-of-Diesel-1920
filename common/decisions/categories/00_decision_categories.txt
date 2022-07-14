@@ -36,7 +36,7 @@ SAF_anti_colonialist_crusade = {
 military_mobilization = {
 	icon = generic_propaganda
 
-	priority = 100
+	priority = 1000
 	visible = {
 		always = yes
 	}

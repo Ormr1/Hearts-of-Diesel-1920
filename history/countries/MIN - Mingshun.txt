@@ -1,56 +1,7 @@
-﻿capital = 744 # Nanjing
+﻿capital = 592 # Guangzhou
 
-oob = "CHI_1936"
-if = {
-	limit = { has_dlc = "Man the Guns" }
-		set_naval_oob = "CHI_1936_naval_mtg"
-	else = {
-		set_naval_oob = "CHI_1936_naval_legacy"
-	}
-}
-
-recruit_character = CHI_yuan_keding
-recruit_character = CHI_chiang_kaishek
-recruit_character = CHI_zhang_guotao
-recruit_character = CHI_wang_jingwei
-recruit_character = CHI_weng_wenhao
-recruit_character = CHI_tu_yuming
-recruit_character = CHI_hsueh_yueh
-recruit_character = CHI_tai_anlan
-recruit_character = CHI_wang_yaowu
-recruit_character = CHI_sun_li_jen
-recruit_character = CHI_hu_zongnan
-recruit_character = CHI_gu_zhutong
-recruit_character = CHI_wei_lihuang
-recruit_character = CHI_fu_zuoyi
-recruit_character = CHI_zhang_xueliang
-recruit_character = CHI_fang_zeyi
-recruit_character = CHI_zhu_de
-recruit_character = CHI_chen_cheng
-recruit_character = CHI_li_zongren
-recruit_character = CHI_bo_yibo
-recruit_character = CHI_huang_shen
-recruit_character = CHI_chen_jitang
-recruit_character = CHI_wang_shuming
-recruit_character = CHI_bai_chongxi
-recruit_character = CHI_zhou_zhirou
-recruit_character = CHI_xiao_yisu
-recruit_character = CHI_chen_shaokuan
-recruit_character = CHI_xiao_jinguang
-recruit_character = CHI_yu_hanmou
-recruit_character = CHI_he_yingqin
-recruit_character = CHI_gao_zhihang
-recruit_character = CHI_h_h_kung
-recruit_character = CHI_chen_guofu
-recruit_character = CHI_chiang_ching_kuo
-recruit_character = CHI_chen_yi
-recruit_character = CHI_soong_mei_ling
-recruit_character = CHI_random_prince_of_terror
-recruit_character = CHI_lin_sen
-
-set_stability = 0.2
+set_stability = 0.5
 set_war_support = 0.5
-set_country_flag = unable_to_mobilize
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
@@ -96,18 +47,11 @@ if = {
 	}
 }
 
-add_ideas = {
-	german_advisors
-}
-
 if = {
 	limit = {
 		NOT = {
 			has_dlc = "Waking the Tiger"
 		}
-	}
-	add_ideas = {
-		CHI_communist_uprisings
 	}
 }
 
@@ -118,14 +62,12 @@ if = {
 	}		
 	add_ideas = {
 		CHI_nine_power_treaty
-		CHI_army_corruption_1
-		CHI_ineffective_bureaucracy
+		CHI_army_corruption_2
 		CHI_incompetent_officers
 		free_trade
 		CHI_hyper_inflation_1
 	}
 }
-save_global_event_target_as = WTT_current_china_leader
 
 set_convoys = 40
 
@@ -137,10 +79,13 @@ set_politics = {
 }
 
 set_popularities = {
-	monarchy = 100
+	monarchy = 50
+	democratic = 40
+	neutrality = 5
+	monarchy = 5
 }
 
-add_opinion_modifier = { target = PRC modifier = hostile_status }
+add_opinion_modifier = { target = CHI modifier = hostile_status }
 
 ### VARIANTS ###
 # 1936 Start #

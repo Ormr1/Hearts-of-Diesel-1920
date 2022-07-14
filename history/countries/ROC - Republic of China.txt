@@ -21,10 +21,12 @@ declare_war_on = {
 }
 
 set_stability = 0.5
-set_war_support = 0.5
+set_war_support = 1.0
+set_country_flag = unable_to_mobilize
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
+	tech_support = 1
 	gw_artillery = 1
 	interwar_antiair = 1
 	early_fighter = 1
@@ -93,7 +95,6 @@ if = {
 	add_ideas = {
 		CHI_nine_power_treaty
 		CHI_army_corruption_1
-		CHI_ineffective_bureaucracy
 		CHI_incompetent_officers
 		free_trade
 		CHI_hyper_inflation_1

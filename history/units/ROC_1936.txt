@@ -49,6 +49,8 @@ division_template = {
         engineer = { x = 0 y = 0 }
         artillery = { x = 0 y = 1 }
 	}
+
+	priority = 1
 }
 division_template = {
 	name = "Qibing Jun"		# Represents two-division cavalry corps (generally poorly-equipped)
@@ -120,6 +122,126 @@ units = {
 			name_order = 67
 		}
 		location = 1047
+		division_template = "Juntuán"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 68
+		}
+		location = 7965
+		division_template = "Juntuán"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 69
+		}
+		location = 7965
+		division_template = "Juntuán"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 70
+		}
+		location = 7549
+		division_template = "Juntuán"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 71
+		}
+		location = 10039
+		division_template = "Juntuán"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 72
+		}
+		location = 12407
+		division_template = "Juntuán"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 73
+		}
+		location = 9970
+		division_template = "Juntuán"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 74
+		}
+		location = 7128
+		division_template = "Juntuán"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 75
+		}
+		location = 11941
+		division_template = "Juntuán"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 76
+		}
+		location = 7141
+		division_template = "Juntuán"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 77
+		}
+		location = 1087
+		division_template = "Juntuán"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 78
+		}
+		location = 1087
+		division_template = "Juntuán"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 79
+		}
+		location = 7521
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1.0
@@ -295,6 +417,12 @@ units = {
 		start_equipment_factor = 0.85
 	}
 	Division = {
+		name = "Liangshan Rénmín Jun"
+		location = 7294
+		division_template = "Rénmín Jun"
+		start_equipment_factor = 0.85
+	}
+	Division = {
 		name = "Chengdu Rénmín Jun"
 		location = 4925
 		division_template = "Rénmín Jun"
@@ -350,6 +478,16 @@ units = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 436
+		}
+		location = 7108
+		division_template = "Gònghéguó Wèiduì"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 437
 		}
 		location = 7108
 		division_template = "Gònghéguó Wèiduì"

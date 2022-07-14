@@ -10,6 +10,7 @@ CHI_anti_imperialism = {
 
 CHI_army_reform = {
 	icon = army_reform
+	priority = 999
 	allowed = {
 		OR = {
 			is_literally_china = yes

@@ -8,7 +8,7 @@ ENG = {
 	color = rgb { 0 117 46 }
 	color_ui = rgb { 0 117 46 }
 }
-SOV = {
+SOV = {rgb { 2217  16  35 }
 	color = rgb { 125 13 24 }
 	color_ui = rgb { 163 17 31 }
 }
@@ -218,8 +218,8 @@ PHI = {
 	color_ui = rgb { 198 169 248 }
 }
 PRU = {
-	color = rgb { 196 189 204 }
-	color_ui = rgb { 255 246 255 }
+	color = rgb { 217  16  35 }
+	color_ui = rgb { 217  16  35 }
 }
 SAF = {
 	color = rgb { 195 107 160 }
@@ -315,6 +315,16 @@ PRC = {
 ROC = {
 	color = rgb { 5 85 166 }
 	color_ui = rgb { 5 85 166 }
+}
+
+WUH = {
+	color = rgb { 102 0 0 }
+	color_ui = rgb { 102 0 0 }
+}
+
+MIN = {
+	color = rgb { 255 242 0 }
+	color_ui = rgb { 255 242 0 }
 }
 
 GXC = {

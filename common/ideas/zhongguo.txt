@@ -17,6 +17,9 @@ ideas = {
 			modifier = {
 				army_attack_factor = 0.25
                 army_defence_factor = 0.25
+				out_of_supply_factor = -0.25
+				supply_consumption_factor = -0.15
+				no_supply_grace = 120
 			}
         }
     }
