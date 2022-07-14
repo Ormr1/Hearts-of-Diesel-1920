@@ -1,6 +1,6 @@
 ﻿capital = 517
 
-#oob = ""
+oob = "NAQ_1920"
 
 # Starting tech
 set_technology = {

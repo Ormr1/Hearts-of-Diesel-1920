@@ -19,6 +19,13 @@ starting_train_buffer = 2
 set_fuel_ratio = 0.8
 
 # starting_truck_buffer = 0.8
+1920.1.1={
+	set_truce = { target = SOV days = 1080 }
+	set_truce = { target = POL days = 1080 }
+	set_truce = { target = ENG days = 1080 }
+	set_truce = { target = NOR days = 1080 }
+	set_truce = { target = FRA days = 1080 }
+}
 
 # Starting tech
 set_technology = {
