@@ -290,7 +290,7 @@ set_popularities = {
 	fenris = 3
 }
 
-create_faction = "Rusviet"
+create_faction = "Moscow Accord"
 add_to_faction = SOV
 
 if = {

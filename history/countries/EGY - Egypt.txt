@@ -27,6 +27,8 @@ GRE={
 	}
 }
 
+set_cosmetic_tag = EGY_ROME
+
 set_politics = {
 	ruling_party = neutrality
 	last_election = "1936.1.1"

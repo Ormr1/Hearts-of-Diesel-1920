@@ -33,6 +33,10 @@
  MAL_autonomy_colony_DEF:0 "$OVERLORDADJ$ Malaya"
  MAL_autonomy_puppet_DEF:0 "$OVERLORDADJ$ Malaya"
 
+ EGY_ROME:0 "Province of Aegyptus"
+ EGY_ROME_DEF:0 "the Province of Aegyptus"
+ EGY_ROME_ADJ:0 "Egyptian"
+
  CAN_autonomy_dominion:0 "Dominion of Laurentia"
  CAN_autonomy_colony:0 "Canadian Confederation"
  CAN_autonomy_puppet:0 "Province of Laurentia"
