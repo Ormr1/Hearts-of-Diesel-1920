@@ -12,7 +12,7 @@ ideas = {
 				always = yes
 			}
 
-			removal_cost = -1
+			removal_cost = 0
 			
 			modifier = {
 				send_volunteer_divisions_required = -0.50
@@ -21,6 +21,42 @@ ideas = {
 			}
 			rule = {
 				can_send_volunteers = yes
+			}
+		}
+		usa_american_economic_development_council = {
+			picture = placeholder
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = 0
+
+			modifier = {
+				improve_relations_maintain_cost_factor = -0.25
+				trade_opinion_factor = 0.15
+			}
+		}
+		usonian_loans = {
+			picture = placeholder
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = 0
+
+			modifier = {
+				political_power_gain = -0.10
+				consumer_goods_factor = 0.05
 			}
 		}
 		great_depression = {

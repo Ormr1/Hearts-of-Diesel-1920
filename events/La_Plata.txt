@@ -105,7 +105,7 @@ country_event = { #Workers of rio grande do sul revolt
 			LAP={
 				declare_war_on = {
 					target = RGS
-					type = annex_everything
+					type = civil_war
 				}
 				set_country_flag = LAP_in_revolt
 				set_country_flag = unable_to_mobilize
@@ -152,7 +152,7 @@ country_event = { #Patagonia
 			LAP={
 				declare_war_on = {
 					target = PAT
-					type = annex_everything
+					type = civil_war
 				}
 			}
 		}
@@ -196,7 +196,7 @@ country_event = { #Uruguay
 			LAP={
 				declare_war_on = {
 					target = URG
-					type = annex_everything
+					type = civil_war
 				}
 			}
 		}
@@ -230,13 +230,13 @@ country_event = { #Chile Abanonds the union
 			LAP={
 				declare_war_on = {
 					target = CHL
-					type = annex_everything
+					type = civil_war
 				}
 			}
 			LPT={
 				declare_war_on = {
 					target = CHL
-					type = annex_everything
+					type = civil_war
 				}
 			}
 		}
@@ -275,7 +275,7 @@ country_event = { #Argentinia declare
 			LAP={
 				declare_war_on = {
 					target = ARG
-					type = annex_everything
+					type = civil_war
 				}
 				country_event = {id = la_plata.103 days = 1}#chile goes
 				country_event = {id = la_plata.102 days = 4}#as does uruguay
@@ -284,7 +284,7 @@ country_event = { #Argentinia declare
 			LPT={
 				declare_war_on = {
 					target = ARG
-					type = annex_everything
+					type = civil_war
 				}
 			}
 		}
@@ -319,7 +319,7 @@ country_event = { #Paraguay succends
 			LAP={
 				declare_war_on = {
 					target = PAR
-					type = annex_everything
+					type = civil_war
 				}
 			}
 		}
@@ -412,7 +412,7 @@ country_event = { #La Platan Liberals revolt
 				load_oob = "LPT_1921"
 				declare_war_on = {
 					target = RGS
-					type = annex_everything
+					type = civil_war
 				}
 				set_country_flag = unable_to_mobilize
 				add_manpower = 200000
@@ -420,13 +420,16 @@ country_event = { #La Platan Liberals revolt
 			LAP={
 				declare_war_on = {
 					target = LPT
-					type = annex_everything
+					type = civil_war
 				}
 				every_core_state={
 					add_core_of = LPT
 				}
 				add_civil_war_target = LPT
 				country_event = {id = la_plata.104 days = 20}#argetnians declare
+			}
+			USA = {
+				country_event = usa_la_plata.1
 			}
 		}
 	}
@@ -516,7 +519,7 @@ country_event = { #Argentinian Coilition collapses
 				add_ideas = {ARG_uncivil_war}
 				declare_war_on = {
 					target = ARG
-					type = annex_everything
+					type = civil_war
 				}
 				add_manpower = 200000
 			}
@@ -526,11 +529,11 @@ country_event = { #Argentinian Coilition collapses
 				add_ideas = {ARG_uncivil_war}
 				declare_war_on = {
 					target = ARG
-					type = annex_everything
+					type = civil_war
 				}
 				declare_war_on = {
 					target = UUA
-					type = annex_everything
+					type = civil_war
 				}
 				add_manpower = 200000
 			}
@@ -541,15 +544,15 @@ country_event = { #Argentinian Coilition collapses
 				add_ideas = {ARG_uncivil_war}
 				declare_war_on = {
 					target = ARG
-					type = annex_everything
+					type = civil_war
 				}
 				declare_war_on = {
 					target = UUA
-					type = annex_everything
+					type = civil_war
 				}
 				declare_war_on = {
 					target = ARC
-					type = annex_everything
+					type = civil_war
 				}
 				add_manpower = 150000
 			}
@@ -569,30 +572,30 @@ country_event = { #Argentinian Coilition collapses
 			LPT={
 				declare_war_on = {
 					target = ARC
-					type = annex_everything
+					type = civil_war
 				}
 				declare_war_on = {
 					target = UUA
-					type = annex_everything
+					type = civil_war
 				}
 				declare_war_on = {
 					target = ETR
-					type = annex_everything
+					type = civil_war
 				}
 				country_event = {id = la_plata.112}
 			}
 			LAP={
 				declare_war_on = {
 					target = ARC
-					type = annex_everything
+					type = civil_war
 				}
 				declare_war_on = {
 					target = UUA
-					type = annex_everything
+					type = civil_war
 				}
 				declare_war_on = {
 					target = ETR
-					type = annex_everything
+					type = civil_war
 				}
 				country_event = {id = la_plata.112}
 			}

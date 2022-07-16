@@ -3,6 +3,8 @@
 ###########################
 
 add_namespace = usa
+add_namespace = usa_la_plata
+add_namespace = usa_eco_development
 
 # Amelia Eartharts wants to join the USAAC
 country_event = {
@@ -1941,5 +1943,205 @@ country_event = {
 
 	immediate = {
 		play_arsenal_of_democracy_effect = yes
+	}
+}
+### ECONOMIC DEVELOPMENT
+country_event = { # Usonian Loans?
+	id = usa_eco_development.1
+	title = usa_eco_development.1.t
+	desc = usa_eco_development.1.desc
+	picture = placeholder
+	
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = { # Accept the loans
+		ai_will_do = {
+			base = 15
+			modifier = {
+				num_of_civilian_factories < 15
+				add = 100
+			}
+		}
+		name = usa_eco_development.1.a
+		add_timed_idea = {
+			idea = usonian_loans
+			days = 365
+		}
+		add_offsite_building = {
+			type = industrial_complex
+			level = 1
+		}
+		FROM = {
+			country_event = usa_eco_development.2
+		}
+		country_event = {
+			id = usa_eco_development.3
+			days = 365
+		}
+	}
+	option = { # Deny the loans
+		ai_will_do = {
+			base = 15
+			modifier = {
+				num_of_civilian_factories > 15
+				add = 100
+			}
+		}
+		name = usa_eco_development.1.b
+		add_political_power = 25
+	}
+}
+country_event = { # Loans Accepted
+	id = usa_eco_development.2
+	title = usa_eco_development.2.t
+	desc = usa_eco_development.2.desc
+	picture = placeholder
+	
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = { # Excellent
+		name = usa_eco_development.2.a
+		add_political_power = 10
+		add_opinion_modifier = {
+			target = FROM
+			modifier = medium_increase
+		}
+	}
+}
+country_event = { # Another loan?
+	id = usa_eco_development.3
+	title = usa_eco_development.3.t
+	desc = usa_eco_development.3.desc
+	picture = placeholder
+	
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = { # Take out another
+		ai_will_do = {
+			base = 15
+			modifier = {
+				num_of_civilian_factories < 15
+				add = 100
+			}
+		}
+		name = usa_eco_development.3.a
+		add_timed_idea = {
+			idea = usonian_loans
+			days = 365
+		}
+		add_offsite_building = {
+			type = industrial_complex
+			level = 1
+		}
+		FROM = {
+			country_event = usa_eco_development.4
+		}
+		country_event = {
+			id = usa_eco_development.3
+			days = 365
+		}
+	}
+	option = { # We don't need any more
+		ai_will_do = {
+			base = 15
+			modifier = {
+				num_of_civilian_factories > 15
+				add = 100
+			}
+		}
+		name = usa_eco_development.3.b
+		add_political_power = 25
+	}
+}
+country_event = { # They Took Out Another Loan
+	id = usa_eco_development.4
+	title = usa_eco_development.4.t
+	desc = usa_eco_development.4.desc
+	picture = placeholder
+	
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = { # Excellent
+		name = usa_eco_development.4.a
+		add_political_power = 10
+		add_opinion_modifier = {
+			target = FROM
+			modifier = medium_increase
+		}
+	}
+}
+
+### LA PLATA
+country_event = {
+	id = usa_la_plata.1
+	title = usa_la_plata.1.t
+	desc = usa_la_plata.1.desc
+	picture = placeholder
+	
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = usa_la_plata.1.a
+		complete_national_focus = USA_La_Platan_Civil_War
+	}
+}
+country_event = { # Guns from Usonia
+	id = usa_la_plata.2
+	title = usa_la_plata.2.t
+	desc = usa_la_plata.2.desc
+	picture = placeholder
+	
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = usa_la_plata.2.a
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 5000
+			producer = USA
+		}
+	}
+}
+country_event = { # Usonia Recognizes Us
+	id = usa_la_plata.3
+	title = usa_la_plata.3.t
+	desc = usa_la_plata.3.desc
+	picture = placeholder
+	
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = usa_la_plata.3.a
+		add_political_power = 150
+		add_stability = 0.10
+		add_war_support = 0.10
+	}
+}
+country_event = { # Usonia Occupies Falklands
+	id = usa_la_plata.4
+	title = usa_la_plata.4.t
+	desc = usa_la_plata.4.desc
+	picture = placeholder
+	
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = { # Snakes!
+		name = usa_la_plata.4.a
 	}
 }

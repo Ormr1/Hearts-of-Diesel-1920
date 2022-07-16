@@ -1,0 +1,271 @@
+### search_filters = {FOCUS_FILTER_POLITICAL}
+### search_filters = {FOCUS_FILTER_RESEARCH}
+### search_filters = {FOCUS_FILTER_INDUSTRY}
+### search_filters = {FOCUS_FILTER_STABILITY}
+### search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+### search_filters = {FOCUS_FILTER_MANPOWER}
+### search_filters = {FOCUS_FILTER_ANNEXATION}
+### search_filters = {FOCUS_FILTER_USA_CONGRESS}
+
+focus_tree = {
+    id = usonia_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = USA
+		}
+		
+		modifier = {
+			add = 10
+			original_tag = USA
+		}
+	}
+    continuous_focus_position = { x = 50 y = 1600 }
+    default = no
+    
+    ### POLITICS
+    focus = {
+        id = USA_1920_Elections
+        icon = placeholder
+        x = 14
+        y = 0
+        available = {
+            always = no
+        }
+        cost = 0
+        ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_government = democratic
+		}
+        search_filters = {FOCUS_FILTER_POLITICAL}
+        completion_reward = {
+            add_political_power = 150
+        }
+    }
+
+    ### FOREIGN AFFAIRS
+    focus = {
+		id = USA_Foreign_Affairs
+		icon = GFX_goal_generic_position_armies
+		x = 42
+		y = 0
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = available_chief_of_army
+			show_ideas_tooltip = walter_krueger
+			unlock_decision_category_tooltip = USA_war_plans
+		}
+	}
+    focus = {
+        id = USA_The_Americas
+        icon = GFX_goal_generic_occupy_states_ongoing_war
+        relative_position_id = USA_Foreign_Affairs
+        prerequisite = { focus = USA_Foreign_Affairs }
+        x = -8
+        y = 1
+        cost = 10
+        ai_will_do = {
+            factor = 1
+        }
+        completion_reward = {
+            add_political_power = 50
+        }
+    }
+    focus = {
+        id = USA_American_Economic_Development
+        icon = placeholder
+        relative_position_id = USA_The_Americas
+        prerequisite = { focus = USA_The_Americas }
+        x = -3
+        y = 1
+        cost = 10
+        ai_will_do = {
+            factor = 1
+        }
+        completion_reward = {
+            add_ideas = usa_american_economic_development_council
+        }
+    }
+    focus = {
+        id = USA_Loans_For_The_Americas
+        icon = placeholder
+        relative_position_id = USA_American_Economic_Development
+        prerequisite = { focus = USA_American_Economic_Development }
+        x = -1
+        y = 1
+        cost = 10
+        ai_will_do = {
+            factor = 1
+        }
+        completion_reward = {
+            every_other_country = {
+                limit = {
+                    OR = {
+                        capital_scope = {
+                            is_on_continent = north_america
+                        }
+                        capital_scope = {
+                            is_on_continent = south_america
+                        }
+                    }
+                }
+                country_event = usa_eco_development.1
+            }
+        }
+    }
+    focus = {
+        id = USA_La_Platan_Civil_War
+        icon = GFX_goal_generic_occupy_states_ongoing_war
+        relative_position_id = USA_The_Americas
+        prerequisite = { focus = USA_The_Americas }
+        x = 3
+        y = 1
+        available = {
+            always = no
+        }
+        bypass = {
+            LAP = {
+                has_civil_war = yes
+            }
+        }
+        cost = 0
+        completion_reward = {
+            add_war_support = 0.05
+        }
+    }
+    focus = {
+        id = USA_Guns_To_La_Platan_Liberals
+        icon = GFX_goal_generic_occupy_states_ongoing_war
+        relative_position_id = USA_La_Platan_Civil_War
+        prerequisite = { focus = USA_La_Platan_Civil_War }
+        x = -1
+        y = 1
+        available = {
+            LPT = {
+                exists = yes
+            }
+        }
+        cost = 10
+        completion_reward = {
+            LPT = {
+                country_event = usa_la_plata.2
+            }
+        }
+    }
+    focus = {
+        id = USA_Recognize_The_Liberals
+        icon = GFX_goal_generic_occupy_states_ongoing_war
+        relative_position_id = USA_La_Platan_Civil_War
+        prerequisite = { focus = USA_La_Platan_Civil_War }
+        x = 1
+        y = 1
+        available = {
+            LPT = {
+                exists = yes
+            }
+        }
+        cost = 10
+        completion_reward = {
+            LPT = {
+                country_event = usa_la_plata.3
+            }
+            diplomatic_relation = {
+                country = LAP
+                relation = guarantee
+                active = no
+            }
+            give_guarantee = LPT
+        }
+    }
+    focus = {
+        id = USA_Occupy_The_Falklands
+        icon = GFX_goal_generic_occupy_states_ongoing_war
+        relative_position_id = USA_La_Platan_Civil_War
+        prerequisite = { focus = USA_Guns_To_La_Platan_Liberals }
+        prerequisite = { focus = USA_Recognize_The_Liberals }
+        x = 0
+        y = 2
+        cost = 10
+        completion_reward = {
+            299 = {
+                controller = {
+                    country_event = usa_la_plata.4
+                }
+            }
+            transfer_state = 299
+        }
+    }
+    focus = {
+        id = USA_Operation_Inti
+        icon = GFX_goal_generic_occupy_states_ongoing_war
+        relative_position_id = USA_Occupy_The_Falklands
+        prerequisite = { focus = USA_Occupy_The_Falklands }
+        x = 0
+        y = 1
+        available = {
+            AND = {
+                date > 1922.01.01
+                LAP = {
+                    exists = yes
+                    has_civil_war = yes
+                }
+            }
+        }
+        cost = 10
+        completion_reward = {
+            custom_effect_tooltip = USA_Operation_Inti_tt
+            hidden_effect = {
+                if = {
+                    limit = {
+                        LPT = {
+                            exists = yes
+                        }
+                    }
+                    LPT = {
+                        every_enemy_country = {
+                            limit = {
+                                capital_scope = {
+                                    is_on_continent = south_america
+                                }
+                            }
+                            USA = {
+                                declare_war_on = {
+                                    target = PREV
+                                    type = topple_government
+                                }
+                            }
+                        }
+                    }
+                }
+                else = {
+                    USA = {
+                        declare_war_on = {
+                            target = LAP
+                            type = topple_government
+                        }
+                    }
+                }
+            }
+        }
+    }
+    focus = {
+        id = USA_The_Washington_Conference
+        icon = placeholder
+        relative_position_id = USA_Foreign_Affairs
+        prerequisite = { focus = USA_Foreign_Affairs }
+        x = 0
+        y = 1
+        cost = 10
+        completion_reward = {
+            add_political_power = 100
+        }
+    }
+}
