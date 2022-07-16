@@ -6,6 +6,18 @@ set_research_slots = 5
 set_stability = 0.75
 set_war_support = 0.50
 add_command_power = 20
+#bunker_system
+add_offsite_building = { type = industrial_complex level = 3 }
+add_to_variable = { FEN_total_bunker_slots = 4}
+set_variable = { var = FEN_covert_reveal_risk value = 13 }
+
+add_manpower = 20000
+add_ideas={
+	FEN_in_the_shadows
+	FEN_covert_forces
+	closed_economy
+	tot_economic_mobilisation
+}
 
 # Starting tech
 set_technology = {
@@ -62,6 +74,7 @@ create_intelligence_agency = {
     name = "Fenris"
     icon = GFX_intelligence_agency_logo_fenris
 }
+upgrade_intelligence_agency = upgrade_training_centers
 set_politics = {
 	ruling_party = fenris
 	elections_allowed = no

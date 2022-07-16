@@ -38,7 +38,7 @@ military_mobilization = {
 
 	priority = 1000
 	visible = {
-		always = yes
+		NOT={tag = FEN}
 	}
 }
 war_measures = {

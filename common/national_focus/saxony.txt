@@ -1,0 +1,177 @@
+﻿# search_filter_prios = {
+	# FOCUS_FILTER_POLITICAL = 1010
+
+	
+ 
+	
+	
+	# FOCUS_FILTER_RESEARCH = 522
+
+	
+	# FOCUS_FILTER_INDUSTRY = 509
+
+	# FOCUS_FILTER_SOV_POLITICAL_PARANOIA = 111
+	# FOCUS_FILTER_PROPAGANDA = 110
+	# FOCUS_FILTER_ARMY_XP = 103
+	# FOCUS_FILTER_NAVY_XP = 102
+	# FOCUS_FILTER_AIR_XP = 101
+
+# }
+
+focus_tree = {
+	id = generic_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = GER
+		}
+	}
+	
+	default = no
+	reset_on_civilwar = no
+
+	# initial_show_position = {
+		# focus = industrial_effort
+	# }
+
+	focus = {
+		id = GER_colonial_effort
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 4
+		y = 0
+		cost = 10
+		search_filters = {  FOCUS_FILTER_COLONIAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = GER_develop_kamerun
+		icon = GFX_focus_generic_africa_factory
+		relative_position_id = GER_colonial_effort
+		x = -4
+		y = 1
+		cost = 10
+		search_filters = {  FOCUS_FILTER_COLONIAL }
+		prerequisite = { focus = GER_colonial_effort}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			773={
+				add_extra_state_shared_building_slots = 1
+			}
+		}
+	}
+	focus = {
+		id = GER_develop_nambia
+		icon = GFX_focus_generic_africa_factory
+		relative_position_id = GER_colonial_effort
+		x = -2
+		y = 1
+		cost = 10
+		search_filters = {  FOCUS_FILTER_COLONIAL }
+		prerequisite = { focus = GER_colonial_effort}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			541={
+				add_extra_state_shared_building_slots = 1
+			}
+		}
+	}
+	focus = {
+		id = GER_develop_madagascar
+		icon = GFX_focus_generic_africa_factory
+		relative_position_id = GER_colonial_effort
+		x = 0
+		y = 1
+		cost = 10
+		search_filters = {  FOCUS_FILTER_COLONIAL }
+		prerequisite = { focus = GER_colonial_effort}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			543={
+				add_extra_state_shared_building_slots = 1
+			}
+		}
+	}
+	focus = {
+		id = GER_develop_greater_congo
+		icon = GFX_focus_generic_africa_factory
+		relative_position_id = GER_colonial_effort
+		x = 2
+		y = 1
+		cost = 10
+		search_filters = {  FOCUS_FILTER_COLONIAL }
+		prerequisite = { focus = GER_colonial_effort}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			295={
+				add_extra_state_shared_building_slots = 1
+			}
+		}
+	}
+	focus = {
+		id = GER_develop_somalia
+		icon = GFX_focus_generic_africa_factory
+		relative_position_id = GER_colonial_effort
+		x = 4
+		y = 1
+		cost = 10
+		search_filters = {  FOCUS_FILTER_COLONIAL }
+		prerequisite = { focus = GER_colonial_effort}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			269={
+				add_extra_state_shared_building_slots = 1
+			}
+		}
+	}
+
+	focus = {
+		id = GER_scars_of_the_great_war
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 12
+		y = 0
+		cost = 10
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = GER_begin_peace_talks
+		icon = GFX_goal_tripartite_pact
+		relative_position_id = GER_scars_of_the_great_war
+		x = 0
+		y = 1
+		cost = 10
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+		prerequisite = { focus = GER_scars_of_the_great_war}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+	
+
+}

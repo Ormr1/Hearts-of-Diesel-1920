@@ -1,0 +1,45 @@
+FEN_fenris_interests_cat = {
+	priority = 102
+
+	icon = SOV_paranoia
+	
+	allowed = {
+		original_tag = FEN
+	}
+
+	visible = {
+		is_puppet = no
+	}
+	visible_when_empty = yes
+}
+
+FEN_bunker_staff = {
+	priority = 101
+
+	icon = SOV_paranoia
+
+	scripted_gui = fen_bunker_staff_ui
+	
+	allowed = {
+		original_tag = FEN
+	}
+	
+	visible_when_empty = yes
+}
+
+FEN_bunker_industry_expansion = {
+	priority = 100
+
+	icon = SOV_paranoia
+
+	scripted_gui = fen_bunker_industry_expansion_ui
+	
+	allowed = {
+		original_tag = FEN
+	}
+
+	visible = {
+		is_puppet = no
+	}
+	visible_when_empty = yes
+}

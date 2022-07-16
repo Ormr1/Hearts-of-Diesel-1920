@@ -1,0 +1,615 @@
+FEN_fenris_interests_cat = {
+
+	FEN_instruct_paraguay_intervene_ARG = {
+
+		icon = generic_political_discourse
+
+		available = {
+			is_subject = no
+			PAR={
+				has_war = no
+			}
+		}
+
+		visible = {
+			PAR={
+				has_civil_war = no
+				has_government = fenris
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 150
+
+		modifier = {
+			
+		}
+
+		complete_effect = {
+			#add country event here
+		}
+	}
+	FEN_start_SOV_revolt = {
+
+		icon = generic_political_discourse
+
+		available = {
+			is_subject = no
+		}
+
+		visible = {
+			SOV={
+				has_civil_war = no
+				NOT={has_government = fenris}
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 150
+
+		modifier = {
+			
+		}
+
+		complete_effect = {
+			#add country event here
+		}
+	}
+	FEN_lay_low = {
+
+		icon = generic_political_discourse
+
+		available = {
+			is_subject = no
+		}
+
+		visible = {
+			check_variable = { var = FEN_covert_reveal_risk value = 50 compare = greater_than }
+		}
+
+		fire_only_once = no
+
+		cost = 50
+		
+		days_remove = 90
+
+		modifier = {
+			
+		}
+
+		complete_effect = {
+			hidden_effect={
+				remove_ideas = {
+					FEN_covert_forces
+				}
+				set_country_flag = FEN_laying_low
+			}
+			custom_effect_tooltip = FEN_laying_low_start
+		}
+		remove_effect = {
+			hidden_effect={
+				add_ideas = {
+					FEN_covert_forces
+				}
+				clr_country_flag = FEN_laying_low
+				set_variable = {FEN_covert_reveal_risk = 0}
+			}
+			custom_effect_tooltip = FEN_laying_low_end
+		}
+	}
+	FEN_quiet_rumors = {
+
+		icon = generic_political_discourse
+
+		available = {
+			is_subject = no
+		}
+
+		visible = {
+			check_variable = { var = FEN_covert_reveal_risk value = 10 compare = greater_than }
+		}
+
+		fire_only_once = no
+
+		cost = 200
+		
+		days_remove = 50
+		
+		days_re_enable = 310
+
+		modifier = {
+			
+		}
+
+		remove_effect = {
+			subtract_from_variable = { var = FEN_covert_reveal_risk value = 10 }
+			custom_effect_tooltip = FEN_reduce_sus_10
+			
+		}
+	}
+}
+FEN_bunker_staff = {
+
+	FEN_emergency_deployment = {
+
+		icon = generic_political_discourse
+
+		available = {
+			is_subject = no
+			has_war = yes
+		}
+
+		visible = {
+			#has_completed_focus = CHI_seek_japanese_support
+		}
+
+		fire_only_once = no
+
+		days_remove = 90
+
+		cost = 35
+
+		modifier = {
+			
+		}
+
+		complete_effect = {
+
+		}
+	}
+	FEN_train_covert_staff = {
+
+		icon = generic_political_discourse
+
+		available = {
+			has_manpower > 500
+		}
+
+		visible = {
+			#has_completed_focus = CHI_seek_japanese_support
+		}
+
+		fire_only_once = no
+
+		days_remove = 75
+
+		cost = 50
+
+		complete_effect = {
+			add_manpower = -500
+		}
+		remove_effect = {
+			custom_effect_tooltip = FEN_add_500_covert_staff
+			add_to_variable = {FEN_covert_staff = 500}
+		}
+	}
+	FEN_train_admin_staff = {
+
+		icon = generic_political_discourse
+
+		available = {
+			has_manpower > 500
+		}
+
+		visible = {
+			#has_completed_focus = CHI_seek_japanese_support
+		}
+
+		fire_only_once = no
+
+		days_remove = 75
+
+		cost = 50
+
+		complete_effect = {
+			add_manpower = -500
+		}
+		remove_effect = {
+			custom_effect_tooltip = FEN_add_500_admin_staff
+			add_to_variable = {FEN_admin_staff = 500}
+		}
+	}
+	FEN_train_research_staff = {
+
+		icon = generic_political_discourse
+
+		available = {
+			has_manpower > 500
+		}
+
+		visible = {
+			#has_completed_focus = CHI_seek_japanese_support
+		}
+
+		fire_only_once = no
+
+		days_remove = 150
+
+		cost = 50
+
+		complete_effect = {
+			add_manpower = -500
+		}
+		remove_effect = {
+			custom_effect_tooltip = FEN_add_500_research_staff
+			add_to_variable = {FEN_research_staff = 500}
+		}
+	}
+	FEN_start_covert_drafts = {
+
+		icon = generic_political_discourse
+
+		available = {
+			is_subject = no
+			NOT={has_country_flag = FEN_laying_low}
+		}
+
+		visible = {
+			NOT={has_active_mission = FEN_covert_draft_mission}
+		}
+
+		fire_only_once = no
+
+		#days_remove = 90
+
+		cost = 100
+		
+		remove_effect = {
+			activate_mission = FEN_covert_draft_mission
+		}
+	}
+	FEN_end_covert_drafts = {
+
+		icon = generic_political_discourse
+
+		available = {
+			is_subject = no
+		}
+
+		visible = {
+			has_active_mission = FEN_covert_draft_mission
+			NOT={has_country_flag = ended_covert_drafts}
+		}
+
+		fire_only_once = no
+
+		cost = 5
+		
+		ai_will_do = {
+			factor = 80
+			modifier = {
+				factor = 0
+				check_variable = { var = FEN_covert_draft_risk value = 100 compare = less_than }
+			}
+		}
+		
+		remove_effect = {
+			set_country_flag = ended_covert_drafts
+		}
+	}
+	FEN_covert_draft_mission = {
+
+		allowed = { always = no }
+
+		icon = ger_mefo_bills
+
+		available = {
+			has_political_power < 0
+			hidden_trigger = { always = no }
+		}
+
+		#cost = GER_mefo_bill_counter?10
+
+		days_mission_timeout = 90
+		is_good = yes
+		fire_only_once = yes
+
+		cancel_trigger = {
+			hidden_trigger = {
+				has_war = yes
+			}
+		}
+
+		days_remove = FEN_covert_draft_days?0
+		remove_effect = {
+		}
+
+		complete_effect = {
+		}
+		
+		timeout_effect = {
+			custom_effect_tooltip = FEN_suspicion_will_increase
+			#custom_effect_tooltip = GER_mefo_bills_effect_in_days
+			hidden_effect = {
+				set_variable = { FEN_covert_draft_days = days_mission_timeout@FEN_covert_draft_mission }
+			}
+			add_manpower = 1000
+			add_to_variable = { var = FEN_covert_reveal_risk value = 5 }
+			if={
+				limit={
+					NOT={has_country_flag = ended_covert_drafts}
+				}
+				hidden_effect = {
+					activate_mission = FEN_covert_draft_mission
+				}
+			}
+			else={
+				clr_country_flag = ended_covert_drafts
+			}
+		}
+
+		ai_will_do = {
+			factor = 200
+		}
+	}
+	FEN_pull_paraguay_volunteers = {
+
+		icon = generic_political_discourse
+
+		available = {
+			is_subject = no
+		}
+
+		visible = {
+			PAR={
+				has_civil_war = no
+				has_government = fenris
+			}
+			#has_completed_focus = FEN_establish_recruitment_centers_PAR
+		}
+
+		fire_only_once = no
+
+		days_remove = 90
+
+		cost = 100
+		
+		remove_effect = {
+			add_manpower = 2000
+		}
+	}
+}
+FEN_bunker_industry_expansion = {
+	FEN_repair_main_generator = {
+
+		icon = generic_political_discourse
+
+		available = {
+			#check_variable = { FEN_total_bunker_slots > FEN_used_bunker_slots}
+			#num_of_civilian_factories_available_for_projects > 2
+		}
+
+		visible = {
+			#has_completed_focus = CHI_seek_japanese_support
+		}
+
+		fire_only_once = yes
+
+		days_remove = 450
+
+		cost = 70
+
+		# modifier = {
+			# civilian_factory_use = 3
+		# }
+
+		remove_effect = {
+			add_offsite_building = { type = industrial_complex level = 1 }
+			set_country_flag = FEN_main_generator_repaired
+		}
+	}
+
+	FEN_expand_industry = {
+
+		icon = generic_political_discourse
+
+		available = {
+			check_variable = { FEN_total_bunker_slots > FEN_used_bunker_slots}
+			num_of_civilian_factories_available_for_projects > 2
+			#NOT={has_decision =FEN_expand_military_industry}
+		}
+
+		visible = {
+			#has_completed_focus = CHI_seek_japanese_support
+		}
+
+		fire_only_once = no
+
+		days_remove = 360
+
+		cost = 35
+
+		modifier = {
+			civilian_factory_use = 3
+		}
+		
+		complete_effect={
+			add_to_variable = { FEN_used_bunker_slots = 1}
+		}
+
+		remove_effect = {
+			add_offsite_building = { type = industrial_complex level = 1 }
+			custom_effect_tooltip = FEN_remove_bunker_building_slot
+		}
+	}
+	FEN_expend_manpower_to_hurry_civ = {
+
+		icon = generic_political_discourse
+
+		available = {
+			has_manpower > 2000
+		}
+
+		visible = {
+			has_decision = FEN_expand_industry
+		}
+
+		fire_only_once = no
+
+		days_remove = 20
+
+		cost = 35
+
+		complete_effect = {
+			add_manpower = -2000
+		}
+		remove_effect = {
+			add_days_remove  = {
+				decision = FEN_expand_industry
+				days = -50
+			}
+			add_manpower = 1000
+		}
+	}
+	FEN_expand_military_industry = {
+
+		icon = generic_political_discourse
+
+		available = {
+			check_variable = { FEN_total_bunker_slots > FEN_used_bunker_slots}
+			num_of_civilian_factories_available_for_projects > 2
+		}
+
+		visible = {
+			#has_completed_focus = CHI_seek_japanese_support
+		}
+
+		fire_only_once = no
+
+		days_remove = 360
+
+		cost = 35
+
+		modifier = {
+			civilian_factory_use = 3
+		}
+		
+		complete_effect={
+			add_to_variable = { FEN_used_bunker_slots = 1}
+		}
+
+		remove_effect = {
+			add_offsite_building = { type = arms_factory level = 1 }
+			custom_effect_tooltip = FEN_remove_bunker_building_slot
+		}
+	}
+	FEN_expend_manpower_to_hurry_mil = {
+
+		icon = generic_political_discourse
+
+		available = {
+			has_manpower > 2000
+		}
+
+		visible = {
+			has_decision = FEN_expand_military_industry
+		}
+
+		fire_only_once = no
+
+		days_remove = 20
+
+		cost = 35
+
+		complete_effect = {
+			add_manpower = -2000
+		}
+		remove_effect = {
+			add_days_remove  = {
+				decision = FEN_expand_military_industry
+				days = -50
+			}
+			add_manpower = 1000
+		}
+	}
+	FEN_rush_order_mil = {
+
+		icon = generic_political_discourse
+
+		available = {
+			num_of_civilian_factories_available_for_projects > 0
+		}
+
+		visible = {
+			has_decision = FEN_expand_military_industry
+			num_of_military_factories < 2
+		}
+
+		fire_only_once = no
+
+		days_remove = 50
+
+		cost = 200
+
+		modifier = {
+			civilian_factory_use = 1
+		}
+
+		remove_effect = {
+			add_days_remove  = {
+				decision = FEN_expand_military_industry
+				days = -80
+			}
+		}
+	}
+	FEN_expand_building_slots = {
+
+		icon = generic_political_discourse
+
+		available = {
+			is_subject = no
+			num_of_civilian_factories_available_for_projects > 2
+			has_country_flag = FEN_main_generator_repaired
+		}
+
+		visible = {
+			#has_completed_focus = CHI_seek_japanese_support
+		}
+
+		fire_only_once = no
+
+		days_remove = 360
+
+		cost = 35
+
+		modifier = {
+			civilian_factory_use = 3
+		}
+
+		remove_effect = {
+			custom_effect_tooltip = FEN_add_bunker_building_slot
+			add_to_variable = { FEN_total_bunker_slots = 1}
+		}
+	}
+	FEN_expend_manpower_to_hurry_slots = {
+
+		icon = generic_political_discourse
+
+		available = {
+			has_manpower > 2000
+		}
+
+		visible = {
+			has_decision = FEN_expand_building_slots
+		}
+
+		fire_only_once = no
+
+		days_remove = 20
+
+		cost = 35
+
+		complete_effect = {
+			add_manpower = -2000
+		}
+		remove_effect = {
+			add_days_remove  = {
+				decision = FEN_expand_building_slots
+				days = -50
+			}
+			add_manpower = 1000
+		}
+	}
+}

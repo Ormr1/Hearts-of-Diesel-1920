@@ -1,0 +1,21 @@
+scripted_gui = {
+
+	fen_bunker_staff_ui = {
+		context_type = decision_category
+		window_name = "fen_bunker_staff_ui_window"
+
+		properties = {
+			
+		}
+	}
+	
+	fen_bunker_industry_expansion_ui = {
+		context_type = decision_category
+		window_name = "fen_bunker_industry_expansion_ui_window"
+
+		properties = {
+			
+		}
+	}
+	
+}

@@ -1,0 +1,106 @@
+@POSTER_LEFT_X = 10
+@POSTER_CENTER_X = 170
+@POSTER_RIGHT_X = 325
+@BACKGROUND_X = -3 #Should be 0 but the UI moves to the right once after activating GUI or taking a dec
+@BACKGROUND_Y = 0
+@POSTERS_Y = 0
+@TEXT_LEFT_X = 15
+@TEXT_CENTER_X = 170
+@TEXT_RIGHT_X = 315
+@TEXTS_Y = 215
+
+guiTypes = {
+
+	containerWindowType = {
+		name = "fen_bunker_staff_ui_window"
+		position = { x = 0 y = 0 }
+		size = { width = 100% height= 250 }
+
+		#BACKGROUND
+		iconType = {
+			name ="propaganda_bg"
+			spriteType = "GFX_propaganda_bg"
+			position = { x=@BACKGROUND_X y=@BACKGROUND_Y }
+		}
+		instantTextBoxType = {
+			name ="sus_text"
+			position = { x = 0 y = 10 }
+			font = "hoi_18mbs"
+			text = "FEN_suspicion_txt"
+			tooltip = "FEN_suspicion_txt_tooltip"
+			format = center
+			maxWidth = 150
+			size = { width = 150 height= 20 }
+		}
+		instantTextBoxType = {
+			name ="left_text"
+			position = { x = 15 y = @TEXTS_Y }
+			font = "hoi_18mbs"
+			text = "FEN_covert_staff_txt"
+			tooltip = "FEN_covert_staff_txt_tooltip"
+			format = center
+			maxWidth = 150
+		}
+		instantTextBoxType = {
+			name ="center_text"
+			position = { x = @TEXT_CENTER_X y = @TEXTS_Y }
+			font = "hoi_18mbs"
+			text = "FEN_admin_staff_txt"
+			tooltip = "FEN_admin_staff_txt_tooltip"
+			format = center
+			maxWidth = 150
+		}
+		instantTextBoxType = {
+			name ="right_text"
+			position = { x = @TEXT_RIGHT_X y = @TEXTS_Y }
+			font = "hoi_18mbs"
+			text = "FEN_research_staff_txt"
+			tooltip = "FEN_research_staff_txt_tooltip"
+			format = center
+			maxWidth = 150
+		}
+
+		#POSTER LEFT
+		iconType = {
+			name ="propaganda_poster_left"
+			position = { x=@POSTER_LEFT_X	 y=@POSTERS_Y }
+			pdx_tooltip = SOV_PROPAGANDA_CAMPAIGN_TT_LEFT
+		}
+
+		#POSTER CENTER
+		iconType = {
+			name ="propaganda_poster_center"
+			position = { x=@POSTER_CENTER_X	 y=@POSTERS_Y }
+			pdx_tooltip = SOV_PROPAGANDA_CAMPAIGN_TT_CENTER
+		}
+
+		#POSTER RIGHT
+		iconType = {
+			name ="propaganda_poster_right"
+			position = { x=@POSTER_RIGHT_X	 y=@POSTERS_Y }
+			pdx_tooltip = SOV_PROPAGANDA_CAMPAIGN_TT_RIGHT
+		}
+	}
+	containerWindowType = {
+		name = "fen_bunker_industry_expansion_ui_window"
+		position = { x = 0 y = 0 }
+		size = { width = 100% height= 250 }
+
+		#BACKGROUND
+		iconType = {
+			name ="propaganda_bg"
+			spriteType = "GFX_propaganda_bg"
+			position = { x=@BACKGROUND_X y=@BACKGROUND_Y }
+		}
+		instantTextBoxType = {
+			name ="bunker_open_slots_text"
+			position = { x = 170 y = 0 }
+			font = "hoi_18mbs"
+			text = "FEN_bunker_open_slots_text"
+			format = center
+			maxWidth = 150
+		}
+
+	}
+	
+}

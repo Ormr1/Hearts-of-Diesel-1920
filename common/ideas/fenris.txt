@@ -1,0 +1,30 @@
+ideas = {
+	country={
+		FEN_in_the_shadows = {
+			picture = generic_army_problems
+			
+			modifier = {
+				encryption = 35
+				crypto_strength = 3
+				decryption = 1
+				own_operative_detection_chance = -20
+				enemy_operative_detection_chance = 10
+				operative_slot = 2
+			}
+			rule={
+				can_join_factions = no
+			}
+		}
+		FEN_covert_forces = {
+			picture = generic_army_problems
+			
+			modifier = {
+				send_volunteer_divisions_required = -1.5
+				send_volunteers_tension = -0.95
+			}
+			rule={
+				can_send_volunteers = yes
+			}
+		}
+	}
+}
