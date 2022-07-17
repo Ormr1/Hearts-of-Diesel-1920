@@ -5,6 +5,7 @@
 add_namespace = usa
 add_namespace = usa_la_plata
 add_namespace = usa_eco_development
+add_namespace = usa_united_states
 
 # Amelia Eartharts wants to join the USAAC
 country_event = {
@@ -1957,7 +1958,7 @@ country_event = { # Usonian Loans?
 	is_triggered_only = yes
 
 	option = { # Accept the loans
-		ai_will_do = {
+		ai_chance = {
 			base = 15
 			modifier = {
 				num_of_civilian_factories < 15
@@ -1982,7 +1983,7 @@ country_event = { # Usonian Loans?
 		}
 	}
 	option = { # Deny the loans
-		ai_will_do = {
+		ai_chance = {
 			base = 15
 			modifier = {
 				num_of_civilian_factories > 15
@@ -2023,7 +2024,7 @@ country_event = { # Another loan?
 	is_triggered_only = yes
 
 	option = { # Take out another
-		ai_will_do = {
+		ai_chance = {
 			base = 15
 			modifier = {
 				num_of_civilian_factories < 15
@@ -2048,7 +2049,7 @@ country_event = { # Another loan?
 		}
 	}
 	option = { # We don't need any more
-		ai_will_do = {
+		ai_chance = {
 			base = 15
 			modifier = {
 				num_of_civilian_factories > 15
@@ -2143,5 +2144,45 @@ country_event = { # Usonia Occupies Falklands
 
 	option = { # Snakes!
 		name = usa_la_plata.4.a
+	}
+}
+
+### UNITED STATES
+country_event = { # Invitation into the United States
+	id = usa_united_states.1
+	title = usa_united_states.1.t
+	desc = usa_united_states.1.desc
+	picture = placeholder
+	
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = { # Accept
+		name = usa_united_states.1.a
+		ai_chance = {
+			base = 15
+			modifier = {
+				is_subject_of = USA
+				add = 100
+			}
+		}
+		USA = {
+			add_to_faction = ROOT
+		}
+	}
+	option = { # Deny
+		name = usa_united_states.1.b
+		ai_chance = {
+			base = 10
+			modifier = {
+				is_in_faction = yes
+				add = 10
+			}
+			modifier = {
+				is_subject = yes
+				add = 10
+			}
+		}
 	}
 }

@@ -1,4 +1,20 @@
-
+USA_help_la_plata = {
+	allowed = {
+		tag = USA
+	}
+	enable = {
+		date > 1921.1.8
+		LPT = {
+			has_civil_war = yes
+		}
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "LPT"
+		value = 500
+	}
+}
 
 USA_ask_ENG_FRA_for_access_before_war = {
 	allowed = {

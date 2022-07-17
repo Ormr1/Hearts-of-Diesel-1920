@@ -65,11 +65,11 @@ focus_tree = {
 		}
 	}
     focus = {
-        id = USA_The_Americas
+        id = USA_The_New_World
         icon = GFX_goal_generic_occupy_states_ongoing_war
         relative_position_id = USA_Foreign_Affairs
         prerequisite = { focus = USA_Foreign_Affairs }
-        x = -8
+        x = -10
         y = 1
         cost = 10
         ai_will_do = {
@@ -82,8 +82,8 @@ focus_tree = {
     focus = {
         id = USA_American_Economic_Development
         icon = placeholder
-        relative_position_id = USA_The_Americas
-        prerequisite = { focus = USA_The_Americas }
+        relative_position_id = USA_The_New_World
+        prerequisite = { focus = USA_The_New_World }
         x = -3
         y = 1
         cost = 10
@@ -124,8 +124,8 @@ focus_tree = {
     focus = {
         id = USA_La_Platan_Civil_War
         icon = GFX_goal_generic_occupy_states_ongoing_war
-        relative_position_id = USA_The_Americas
-        prerequisite = { focus = USA_The_Americas }
+        relative_position_id = USA_The_New_World
+        prerequisite = { focus = USA_The_New_World }
         x = 3
         y = 1
         available = {
@@ -212,7 +212,7 @@ focus_tree = {
         y = 1
         available = {
             AND = {
-                date > 1922.01.01
+                date > 1925.01.01
                 LAP = {
                     exists = yes
                     has_civil_war = yes
@@ -264,8 +264,224 @@ focus_tree = {
         x = 0
         y = 1
         cost = 10
+        available = {
+            date > 1924.01.20
+        }
         completion_reward = {
             create_faction = FACTION_NAME_UNITED_STATES
+        }
+    }
+    focus = {
+        id = USA_Meet_With_American_Leaders
+        icon = placeholder
+        relative_position_id = USA_The_Washington_Conference
+        prerequisite = { focus = USA_The_Washington_Conference }
+        x = -5
+        y = 1
+        cost = 10
+        completion_reward = {
+            every_other_country = {
+                limit = {
+                    AND = {
+                        OR = {
+                            capital_scope = {
+                                is_on_continent = north_america
+                            }
+                            capital_scope = {
+                                is_on_continent = south_america
+                            }
+                        }
+                        has_government = democratic
+                    }
+                }
+                add_opinion_modifier = {
+                    target = USA
+                    modifier = washington_conference
+                }
+                reverse_add_opinion_modifier = {
+                    target = USA
+                    modifier = washington_conference
+                }
+            }
+        }
+    }
+    focus = {
+        id = USA_Meet_With_European_Leaders
+        icon = placeholder
+        relative_position_id = USA_The_Washington_Conference
+        prerequisite = { focus = USA_The_Washington_Conference }
+        x = -3
+        y = 1
+        cost = 10
+        completion_reward = {
+            every_other_country = {
+                limit = {
+                    AND = {
+                        OR = {
+                            capital_scope = {
+                                is_on_continent = europe
+                            }
+                        }
+                        has_government = democratic
+                    }
+                }
+                add_opinion_modifier = {
+                    target = USA
+                    modifier = washington_conference
+                }
+                reverse_add_opinion_modifier = {
+                    target = USA
+                    modifier = washington_conference
+                }
+            }
+        }
+    }
+    focus = {
+        id = USA_Meet_With_African_Leaders
+        icon = placeholder
+        relative_position_id = USA_The_Washington_Conference
+        prerequisite = { focus = USA_The_Washington_Conference }
+        x = -1
+        y = 1
+        cost = 10
+        completion_reward = {
+            every_other_country = {
+                limit = {
+                    AND = {
+                        OR = {
+                            capital_scope = {
+                                is_on_continent = africa
+                            }
+                        }
+                        has_government = democratic
+                    }
+                }
+                add_opinion_modifier = {
+                    target = USA
+                    modifier = washington_conference
+                }
+                reverse_add_opinion_modifier = {
+                    target = USA
+                    modifier = washington_conference
+                }
+            }
+        }
+    }
+    focus = {
+        id = USA_Meet_With_Middle_Eastern_Leaders
+        icon = placeholder
+        relative_position_id = USA_The_Washington_Conference
+        prerequisite = { focus = USA_The_Washington_Conference }
+        x = 1
+        y = 1
+        cost = 10
+        completion_reward = {
+            every_other_country = {
+                limit = {
+                    AND = {
+                        OR = {
+                            capital_scope = {
+                                is_on_continent = middle_east
+                            }
+                        }
+                        has_government = democratic
+                    }
+                }
+                add_opinion_modifier = {
+                    target = USA
+                    modifier = washington_conference
+                }
+                reverse_add_opinion_modifier = {
+                    target = USA
+                    modifier = washington_conference
+                }
+            }
+        }
+    }
+    focus = {
+        id = USA_Meet_With_Asian_Leaders
+        icon = placeholder
+        relative_position_id = USA_The_Washington_Conference
+        prerequisite = { focus = USA_The_Washington_Conference }
+        x = 3
+        y = 1
+        cost = 10
+        completion_reward = {
+            every_other_country = {
+                limit = {
+                    AND = {
+                        OR = {
+                            capital_scope = {
+                                is_on_continent = asia
+                            }
+                        }
+                        has_government = democratic
+                    }
+                }
+                add_opinion_modifier = {
+                    target = USA
+                    modifier = washington_conference
+                }
+                reverse_add_opinion_modifier = {
+                    target = USA
+                    modifier = washington_conference
+                }
+            }
+        }
+    }
+    focus = {
+        id = USA_Meet_With_Oceanian_Leaders
+        icon = placeholder
+        relative_position_id = USA_The_Washington_Conference
+        prerequisite = { focus = USA_The_Washington_Conference }
+        x = 5
+        y = 1
+        cost = 10
+        completion_reward = {
+            every_other_country = {
+                limit = {
+                    AND = {
+                        OR = {
+                            capital_scope = {
+                                is_on_continent = australia
+                            }
+                        }
+                        has_government = democratic
+                    }
+                }
+                add_opinion_modifier = {
+                    target = USA
+                    modifier = washington_conference
+                }
+                reverse_add_opinion_modifier = {
+                    target = USA
+                    modifier = washington_conference
+                }
+            }
+        }
+    }
+    focus = {
+        id = USA_Philadelphia_Convention
+        icon = placeholder
+        relative_position_id = USA_The_Washington_Conference
+        prerequisite = {
+            focus = USA_Meet_With_American_Leaders
+            focus = USA_Meet_With_European_Leaders
+            focus = USA_Meet_With_African_Leaders
+            focus = USA_Meet_With_Middle_Eastern_Leaders
+            focus = USA_Meet_With_Asian_Leaders
+            focus = USA_Meet_With_Oceanian_Leaders
+        }
+        x = 0
+        y = 2
+        cost = 10
+        completion_reward = {
+            every_other_country = {
+                limit = {
+                    has_opinion_modifier = washington_conference
+                }
+                country_event = usa_united_states.1
+            }
         }
     }
 }

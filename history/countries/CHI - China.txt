@@ -98,6 +98,7 @@ if = {
 
 add_ideas = {
 	german_advisors
+	CHI_imperial_army
 }
 
 if = {

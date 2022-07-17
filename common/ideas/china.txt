@@ -1,5 +1,24 @@
 ideas = {
 	country = {
+		CHI_imperial_army = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					has_government = communism
+				}
+			}
+
+			removal_cost = 0
+
+			modifier = {
+				army_core_attack_factor = 0.05
+				army_core_defence_factor = 0.05
+			}
+		}
 		german_advisors = {
 		
 			allowed = {
