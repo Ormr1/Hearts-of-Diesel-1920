@@ -69,7 +69,7 @@ if = {
 }
 
 add_ideas = {
-	german_advisors
+	hispanian_advisors
 }
 add_timed_idea = {
 	idea = ROC_revolutionary_fervor

@@ -1961,7 +1961,7 @@ country_event = { # Usonian Loans?
 		ai_chance = {
 			base = 15
 			modifier = {
-				num_of_civilian_factories < 15
+				num_of_civilian_factories < 20
 				add = 100
 			}
 		}
@@ -1986,7 +1986,7 @@ country_event = { # Usonian Loans?
 		ai_chance = {
 			base = 15
 			modifier = {
-				num_of_civilian_factories > 15
+				num_of_civilian_factories > 20
 				add = 100
 			}
 		}
@@ -2165,6 +2165,10 @@ country_event = { # Invitation into the United States
 			modifier = {
 				is_subject_of = USA
 				add = 100
+			}
+			modifier = {
+				is_in_faction_with = USA
+				add = 15
 			}
 		}
 		USA = {

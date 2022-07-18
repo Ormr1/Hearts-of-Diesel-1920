@@ -3,7 +3,7 @@ USA_help_la_plata = {
 		tag = USA
 	}
 	enable = {
-		date > 1921.1.8
+		date > 1921.3.10
 		LPT = {
 			has_civil_war = yes
 		}

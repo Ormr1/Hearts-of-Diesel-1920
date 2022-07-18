@@ -15,8 +15,8 @@ ideas = {
 			removal_cost = 0
 
 			modifier = {
-				army_core_attack_factor = 0.05
-				army_core_defence_factor = 0.05
+				army_core_attack_factor = 0.10
+				army_core_defence_factor = 0.10
 			}
 		}
 		german_advisors = {
@@ -35,6 +35,7 @@ ideas = {
 			
 			modifier = {
 				land_doctrine_cost_factor = -0.10
+				experience_gain_army_factor = 0.05
 			}
 		}
 
