@@ -100,6 +100,38 @@ guiTypes = {
 			format = center
 			maxWidth = 150
 		}
+		instantTextBoxType = {
+			name ="bunker_used_slots_text"
+			position = { x = 170 y = 25 }
+			font = "hoi_18mbs"
+			text = "FEN_bunker_used_slots_text"
+			format = center
+			maxWidth = 150
+		}
+		#depth
+		iconType = {
+			name ="depth_icon_bg"
+			position = { x=10 y=0 }
+			spriteType = "GFX_generic_text_bg_60"
+			
+			size = { width = 50 height= 50 }
+		}
+		iconType = {
+			name ="depth_icon"
+			position = { x=15 y=3 }
+			spriteType = "GFX_bunker_depth_icon"
+			pdx_tooltip = FEN_bunker_depth_tooltip
+		}
+		instantTextBoxType = {
+			name ="depth_text"
+			position = { x = 25 y = 5 }
+			font = "hoi_18mbs"
+			text = "FEN_bunker_depth_text"
+			pdx_tooltip = FEN_bunker_depth_tooltip
+			format = center
+			maxWidth = 50
+			maxHeight = 25
+		}
 
 	}
 	

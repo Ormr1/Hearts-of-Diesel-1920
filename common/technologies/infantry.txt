@@ -621,15 +621,53 @@ technologies = {
 			}
 		}
 	}
-	
+
 	marines2 = {
+
+		marine = {
+			max_organisation = 2
+			soft_attack = 0.025
+		}
+		path = {
+			leads_to_tech = marines3
+			research_cost_coeff = 1
+		}
+		
+
+		research_cost = 1.5
+		start_year = 1929
+		folder = {
+			name = infantry_folder
+			position = { x = 3 y = @1929 }
+		}
+		
+		categories = {
+			marine_tech
+		}
+		
+		ai_will_do = {
+			factor = 0.7
+			
+			modifier = {
+				factor = 3
+				tag = USA
+			}
+			
+			modifier = {
+				factor = 3
+				tag = JAP
+			}
+		}
+	}
+	
+	marines3 = {
 
 		marine = {
 			max_organisation = 5
 			soft_attack = 0.05
 		}
 		path = {
-			leads_to_tech = marines3
+			leads_to_tech = marines4
 			research_cost_coeff = 1
 		}
 		
@@ -660,7 +698,7 @@ technologies = {
 		}
 	}
 	
-	marines3 = {
+	marines4 = {
 
 		marine = {
 			max_organisation = 5
@@ -1836,7 +1874,7 @@ technologies = {
 		}
 
 		research_cost = 2
-		start_year = 1914
+		start_year = 1936
 		folder = {
 			name = infantry_folder
 			position = { x = 4 y = @1936 }

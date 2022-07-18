@@ -5,6 +5,7 @@
 
 #COUNTRY LEADERS
 recruit_character = SOV_tsar_nicholas
+recruit_character = SOV_rasputin #the great mistic and a part of [fenris]
 recruit_character = SOV_supreme_soviet #This is a fake character! Proper country leader role is added via focus
 if = {
 	limit = {

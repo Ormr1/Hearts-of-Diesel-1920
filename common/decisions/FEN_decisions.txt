@@ -36,6 +36,11 @@ FEN_fenris_interests_cat = {
 
 		available = {
 			is_subject = no
+			custom_trigger_tooltip={
+				tooltip = FEN_has_5000_covert_staff
+				check_variable = { FEN_covert_staff > 4999}
+			}
+			has_completed_focus = FEN_rasputins_play
 		}
 
 		visible = {
@@ -554,6 +559,51 @@ FEN_bunker_industry_expansion = {
 			}
 		}
 	}
+	FEN_agent_coordination_center = {
+
+		icon = generic_political_discourse
+
+		available = {
+			check_variable = { FEN_total_bunker_slots > FEN_used_bunker_slots}
+			num_of_civilian_factories_available_for_projects > 2
+			has_country_flag = FEN_main_generator_repaired
+			custom_trigger_tooltip = {
+                tooltip = FEN_has_1000_covert_staff
+                check_variable = {var = FEN_covert_staff value = 1000  compare = greater_than_or_equals}
+            }
+		}
+
+		visible = {
+			#has_completed_focus = CHI_seek_japanese_support
+			NOT={has_country_flag = FEN_ACC}
+		}
+
+		fire_only_once = yes
+
+		days_remove = 360
+
+		cost = 35
+
+		modifier = {
+			civilian_factory_use = 3
+		}
+
+		complete_effect={
+			add_to_variable = { FEN_used_bunker_slots = 1}
+			custom_effect_tooltip = FEN_remove_1000_covert_staff
+			subtract_from_variable = { FEN_covert_staff =1000}
+		}
+
+		remove_effect = {
+			hidden_effect={
+				add_ideas={FEN_acc_building}
+				set_country_flag = FEN_ACC
+				
+			}
+			custom_effect_tooltip = FEN_ACC_building_tooltip
+			custom_effect_tooltip = FEN_remove_bunker_building_slot
+		}
+	}
 	FEN_expand_building_slots = {
 
 		icon = generic_political_discourse
@@ -562,6 +612,10 @@ FEN_bunker_industry_expansion = {
 			is_subject = no
 			num_of_civilian_factories_available_for_projects > 2
 			has_country_flag = FEN_main_generator_repaired
+			custom_trigger_tooltip={
+				tooltip = FEN_bunker_depth_slots_required
+				check_variable = { FEN_bunker_depth_slots > FEN_total_bunker_slots}
+			}
 		}
 
 		visible = {
@@ -610,6 +664,50 @@ FEN_bunker_industry_expansion = {
 				days = -50
 			}
 			add_manpower = 1000
+		}
+	}
+	FEN_expand_bunker_depth = {
+
+		icon = generic_political_discourse
+
+		available = {
+			is_subject = no
+			num_of_civilian_factories_available_for_projects > 4
+			has_country_flag = FEN_main_generator_repaired
+			custom_trigger_tooltip={
+				tooltip = FEN_has_1000_admin_staff
+				check_variable = { FEN_admin_staff > 999}
+			}
+			custom_trigger_tooltip={
+				tooltip = FEN_has_1000_research_staff
+				check_variable = { FEN_research_staff > 999}
+			}
+		}
+
+		visible = {
+			#has_completed_focus = CHI_seek_japanese_support
+		}
+
+		fire_only_once = no
+
+		days_remove = 450
+
+		cost = 35
+
+		modifier = {
+			civilian_factory_use = 5
+		}
+		complete_effect={
+			custom_effect_tooltip = FEN_remove_1000_admin_staff
+			subtract_from_variable = { FEN_admin_staff = 1000}
+			custom_effect_tooltip = FEN_remove_1000_research_staff
+			subtract_from_variable = { FEN_research_staff = 1000}
+		}
+
+		remove_effect = {
+			custom_effect_tooltip = FEN_expand_bunker_down_1
+			add_to_variable = { FEN_bunker_depth_slots = 5}
+			add_to_variable = { FEN_bunker_depth = 1}
 		}
 	}
 }

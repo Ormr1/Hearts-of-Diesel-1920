@@ -1,0 +1,69 @@
+Light mech/self propelled artillery:
+	bi legged
+	quad legged
+
+	machine guns
+	light auto cannon
+	cannon
+	fixed cannon
+	grenade launchers
+	Katyusha rack
+	tesla coils(tesla)
+	
+	limbed
+	turret
+	fixed
+
+Medium:
+	bi legged
+	quad legged
+	
+	twin light cannons
+	cannon
+	Heavy Cannon
+	Nail gun
+	flame throwers
+	fixed quad cannon
+	chainguns(tesla)
+	
+	limbed
+	turret
+	fixed
+	
+	secondary machine guns
+
+Heavy:
+	bi legged
+	quad legged
+	octo legged(saxony?)
+
+	mortar
+	cannon
+	sickles
+	tesla coils(tesla)
+	
+	two manned turret
+	three manned turret
+	limbed
+	fixed
+	
+	secondary machine guns
+	Rockets
+
+Super Heavy:
+	bi legged
+	tri legged(tesla)
+	quad legged
+
+	Heavy Cannon
+	Fixed Heavy Cannon
+	Death Ray(Tesla/fenris)
+	Bag Cannons(albon)
+
+	secondary machine guns
+	rockets
+
+
+
+Exo-skeletons
+Exo-suits(tesla/fenris)

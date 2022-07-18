@@ -21,9 +21,28 @@ ideas = {
 			modifier = {
 				send_volunteer_divisions_required = -1.5
 				send_volunteers_tension = -0.95
+				send_volunteer_size = 1
 			}
 			rule={
 				can_send_volunteers = yes
+			}
+		}
+		FEN_flat_packing_idea= {
+			picture = generic_army_problems
+			
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.25
+				production_factory_start_efficiency_factor = 0.1
+				production_speed_buildings_factor = 0.1
+			}
+		}
+	}
+	hidden_ideas={
+		FEN_acc_building = {
+			picture = generic_army_problems
+			
+			modifier = {
+				operative_slot = 1
 			}
 		}
 	}

@@ -32,10 +32,10 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = GER_join_iron_harvest
+		id = FEN_join_iron_harvest
 		icon = GFX_goal_generic_allies_build_infantry
 		relative_position_id = FEN_last_of_the_great_war_profits
-		x = -4
+		x = -5
 		y = 1
 		cost = 10
 		search_filters = {   }
@@ -61,8 +61,69 @@ focus_tree = {
 			custom_effect_tooltip = FEN_suspicion_may_increase
 		}
 	}
+	focus = {
+		id = FEN_study_the_designs
+		icon = GFX_goal_generic_allies_build_infantry
+		relative_position_id = FEN_join_iron_harvest
+		x = 1
+		y = 1
+		cost = 10
+		search_filters = {   }
+		prerequisite = { focus = FEN_join_iron_harvest}
+
+        available={
+            custom_trigger_tooltip = {
+                tooltip = FEN_has_500_research_staff
+                check_variable = {var = FEN_research_staff value = 500  compare = greater_than_or_equals}
+            }
+        }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+            add_tech_bonus = {
+				bonus = 0.33
+				uses = 4
+				category = armor
+			}
+            subtract_from_variable = {FEN_research_staff = 500}
+            custom_effect_tooltip = FEN_remove_500_research_staff
+		}
+	}
+	focus = {
+		id = FEN_draft_scavengers
+		icon = GFX_goal_generic_allies_build_infantry
+		relative_position_id = FEN_join_iron_harvest
+		x = -1
+		y = 1
+		cost = 10
+		search_filters = {   }
+		prerequisite = { focus = FEN_join_iron_harvest}
+
+        available={
+            custom_trigger_tooltip = {
+                tooltip = FEN_has_500_covert_staff
+                check_variable = {var = FEN_covert_staff value = 500  compare = greater_than_or_equals}
+            }
+        }
+		
+		available_if_capitulated = yes
+
+		select_effect = {
+			subtract_from_variable = {FEN_covert_staff = 500}
+            custom_effect_tooltip = FEN_remove_500_covert_staff
+		}
+
+		completion_reward = {
+            add_manpower = 1500
+            add_to_variable = {FEN_covert_staff = 500}
+            custom_effect_tooltip = FEN_add_500_covert_staff
+			add_to_variable = {FEN_research_staff = 1000}
+            custom_effect_tooltip = FEN_add_1000_research_staff
+		}
+	}
     focus = {
-		id = GER_getting_the_generator_online
+		id = FEN_getting_the_generator_online
 		icon = GFX_goal_generic_allies_build_infantry
 		relative_position_id = FEN_last_of_the_great_war_profits
 		x = 0
@@ -87,14 +148,20 @@ focus_tree = {
 		}
 	}
     focus = {
-		id = GER_expanding_bunker_down
+		id = FEN_expanding_bunker_out
 		icon = GFX_goal_generic_allies_build_infantry
-		relative_position_id = GER_getting_the_generator_online
-		x = -1
+		relative_position_id = FEN_getting_the_generator_online
+		x = 0
 		y = 1
 		cost = 10
 		search_filters = {   }
-		prerequisite = { focus = GER_getting_the_generator_online}
+		available={
+			custom_trigger_tooltip={
+				tooltip = FEN_bunker_depth_slots_required
+				check_variable = { FEN_bunker_depth_slots > FEN_total_bunker_slots}
+			}
+		}
+		prerequisite = { focus = FEN_getting_the_generator_online}
 		
 		available_if_capitulated = yes
 
@@ -104,14 +171,14 @@ focus_tree = {
 		}
 	}
     focus = {
-		id = GER_streamline_administration
+		id = FEN_streamline_administration
 		icon = GFX_goal_generic_allies_build_infantry
-		relative_position_id = GER_getting_the_generator_online
-		x = 1
+		relative_position_id = FEN_getting_the_generator_online
+		x = -2
 		y = 1
 		cost = 10
 		search_filters = {   }
-		prerequisite = { focus = GER_getting_the_generator_online}
+		prerequisite = { focus = FEN_getting_the_generator_online}
 		
 		available_if_capitulated = yes
 
@@ -120,11 +187,30 @@ focus_tree = {
 			add_to_variable = {FEN_admin_staff = 500}
 		}
 	}
+	focus = {
+		id = FEN_flat_packing
+		icon = GFX_goal_generic_allies_build_infantry
+		relative_position_id = FEN_getting_the_generator_online
+		x = 2
+		y = 1
+		cost = 10
+		search_filters = {   }
+		prerequisite = { focus = FEN_getting_the_generator_online}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_timed_idea={
+				idea = FEN_flat_packing_idea
+				days = 720
+			}
+		}
+	}
     focus = {
-		id = GER_military_administration 
+		id = FEN_military_administration 
 		icon = GFX_goal_generic_allies_build_infantry
 		relative_position_id = FEN_last_of_the_great_war_profits
-		x = 8
+		x = 6
 		y = 1
 		cost = 10
 		search_filters = {   }
@@ -145,20 +231,233 @@ focus_tree = {
 		}
 	}
     focus = {
-		id = GER_recruiting_in_mercanary_ciricles
+		id = FEN_recruiting_in_mercanary_ciricles
 		icon = GFX_goal_generic_allies_build_infantry
-		relative_position_id = GER_military_administration
+		relative_position_id = FEN_military_administration
 		x = 2
 		y = 1
 		cost = 10
 		search_filters = {   }
-		prerequisite = { focus = GER_military_administration}
+		prerequisite = { focus = FEN_military_administration}
 		
 		available_if_capitulated = yes
 
 		completion_reward = {
 			add_manpower = 2500
             custom_effect_tooltip = FEN_suspicion_may_increase
+		}
+	}
+	focus = {
+		id = FEN_obtain_discarded_protoypes
+		icon = GFX_goal_generic_allies_build_infantry
+		relative_position_id = FEN_military_administration
+		x = 0
+		y = 1
+		cost = 10
+		search_filters = {   }
+		prerequisite = { focus = FEN_military_administration}
+		
+		available_if_capitulated = yes
+
+		available={
+            custom_trigger_tooltip = {
+                tooltip = FEN_has_500_covert_staff
+                check_variable = {var = FEN_covert_staff value = 500  compare = greater_than_or_equals}
+            }
+        }
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = infantry_tech
+			}
+			subtract_from_variable = {FEN_covert_staff = 500}
+            custom_effect_tooltip = FEN_remove_500_covert_staff
+		}
+	}
+	focus = {
+		id = FEN_fudge_rusviet_equipment_numbers
+		icon = GFX_goal_generic_allies_build_infantry
+		relative_position_id = FEN_obtain_discarded_protoypes
+		x = -1
+		y = 1
+		cost = 10
+		search_filters = {   }
+		prerequisite = { focus = FEN_obtain_discarded_protoypes}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			SOV={
+				hidden_effect={
+					send_equipment = {
+						equipment = infantry_equipment
+						amount = 750
+						target = ROOT
+					}
+				}
+				custom_effect_tooltip =FEN_fudge_stockpile_theft
+			}
+			custom_effect_tooltip = FEN_suspicion_may_increase
+		}
+	}
+	focus = {
+		id = FEN_fudge_polania_equipment_numbers
+		icon = GFX_goal_generic_allies_build_infantry
+		relative_position_id = FEN_obtain_discarded_protoypes
+		x = 1
+		y = 1
+		cost = 10
+		search_filters = {   }
+		prerequisite = { focus = FEN_obtain_discarded_protoypes}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			POL={
+				hidden_effect={
+					send_equipment = {
+						equipment = infantry_equipment
+						amount = 750
+						target = ROOT
+					}
+				}
+				custom_effect_tooltip =FEN_fudge_stockpile_theft
+			}
+			custom_effect_tooltip = FEN_suspicion_may_increase
+		}
+	}
+	focus = {
+		id = FEN_recruiting_in_contractor_ciricles
+		icon = GFX_goal_generic_allies_build_infantry
+		relative_position_id = FEN_military_administration
+		x = -2
+		y = 1
+		cost = 10
+		search_filters = {   }
+		prerequisite = { focus = FEN_military_administration}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_to_variable = {FEN_research_staff = 1000}
+            custom_effect_tooltip = FEN_add_1000_research_staff
+			add_manpower= 1500
+			custom_effect_tooltip = FEN_suspicion_may_increase
+		}
+	}
+	focus = {
+		id = FEN_international_intrigue
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 20
+		y = 0
+		cost = 10
+		search_filters = {   }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 200
+		}
+	}
+	focus = {
+		id = FEN_rasputins_play
+		icon = GFX_goal_generic_allies_build_infantry
+		relative_position_id = FEN_international_intrigue
+		x = -4
+		y = 1
+		cost = 10
+		search_filters = {   }
+
+		prerequisite = { focus = FEN_international_intrigue}
+		
+		available_if_capitulated = yes
+
+		available={
+			SOV={
+				has_character = SOV_rasputin
+			}
+		}
+
+		completion_reward = {
+			add_political_power = 200
+		}
+	}
+	focus = {
+		id = FEN_coup_successful
+		icon = GFX_goal_generic_allies_build_infantry
+		relative_position_id = FEN_rasputins_play
+		x = -1
+		y = 1
+		cost = 10
+		search_filters = {   }
+
+		prerequisite = { focus = FEN_rasputins_play}
+		
+		available_if_capitulated = yes
+
+		available={
+			SOV={
+				SOV_rasputin={
+					is_country_leader = yes
+				}
+			}
+		}
+
+		completion_reward = {
+			add_political_power = 200
+		}
+	}
+
+	focus = {
+		id = FEN_the_shining_prize
+		icon = GFX_goal_generic_allies_build_infantry
+		relative_position_id = FEN_international_intrigue
+		x = 0
+		y = 1
+		cost = 10
+		search_filters = {   }
+
+		prerequisite = { focus = FEN_international_intrigue}
+		
+		available_if_capitulated = yes
+
+		available={
+			always = no
+		}
+
+		completion_reward = {
+			add_political_power = 200
+		}
+	}
+	focus = {
+		id = FEN_the_paraguayian_move
+		icon = GFX_goal_generic_allies_build_infantry
+		relative_position_id = FEN_international_intrigue
+		x = 4
+		y = 1
+		cost = 10
+		search_filters = {   }
+
+		prerequisite = { focus = FEN_international_intrigue}
+		
+		available_if_capitulated = yes
+
+		available={
+			PAR={
+				has_civil_war = yes
+			}
+		}
+
+		completion_reward = {
+			fenris_paraguay = {
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 100
+					producer = FEN
+				}
+			}
 		}
 	}
 }

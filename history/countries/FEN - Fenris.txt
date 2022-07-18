@@ -8,7 +8,11 @@ set_war_support = 0.50
 add_command_power = 20
 #bunker_system
 add_offsite_building = { type = industrial_complex level = 3 }
-add_to_variable = { FEN_total_bunker_slots = 4}
+add_offsite_building = { type = arms_factory level = 1 }
+set_variable = { FEN_total_bunker_slots = 8}
+set_variable = { FEN_used_bunker_slots = 4}
+set_variable = { FEN_bunker_depth = 3}
+set_variable = { FEN_bunker_depth_slots = 15}
 set_variable = { var = FEN_covert_reveal_risk value = 13 }
 
 add_manpower = 20000

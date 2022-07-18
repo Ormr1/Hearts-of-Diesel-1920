@@ -1,0 +1,8 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_bunker_depth_icon"
+		texturefile = "gfx/interface/fenris/bunker_depth_icon.dds"
+	}
+
+}

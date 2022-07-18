@@ -464,6 +464,7 @@ country_event = { #Paraguayian civil war
 				}
 				keep_political_leader = no
 				keep_political_party_members = no
+				save_global_event_target_as = fenris_paraguay
 			}
 			white_peace = LPT
 			white_peace = LAP
