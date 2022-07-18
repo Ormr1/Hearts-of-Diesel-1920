@@ -258,7 +258,7 @@ focus_tree = {
     }
     focus = {
         id = USA_The_Washington_Conference
-        icon = placeholder
+        icon = GFX_focus_usa_washington_conference
         relative_position_id = USA_Foreign_Affairs
         prerequisite = { focus = USA_Foreign_Affairs }
         x = 0
@@ -273,7 +273,7 @@ focus_tree = {
     }
     focus = {
         id = USA_Meet_With_American_Leaders
-        icon = placeholder
+        icon = GFX_focus_usa_washington_conference
         relative_position_id = USA_The_Washington_Conference
         prerequisite = { focus = USA_The_Washington_Conference }
         x = -5
@@ -307,7 +307,7 @@ focus_tree = {
     }
     focus = {
         id = USA_Meet_With_European_Leaders
-        icon = placeholder
+        icon = GFX_focus_usa_washington_conference
         relative_position_id = USA_The_Washington_Conference
         prerequisite = { focus = USA_The_Washington_Conference }
         x = -3
@@ -338,7 +338,7 @@ focus_tree = {
     }
     focus = {
         id = USA_Meet_With_African_Leaders
-        icon = placeholder
+        icon = GFX_focus_usa_washington_conference
         relative_position_id = USA_The_Washington_Conference
         prerequisite = { focus = USA_The_Washington_Conference }
         x = -1
@@ -369,7 +369,7 @@ focus_tree = {
     }
     focus = {
         id = USA_Meet_With_Middle_Eastern_Leaders
-        icon = placeholder
+        icon = GFX_focus_usa_washington_conference
         relative_position_id = USA_The_Washington_Conference
         prerequisite = { focus = USA_The_Washington_Conference }
         x = 1
@@ -400,7 +400,7 @@ focus_tree = {
     }
     focus = {
         id = USA_Meet_With_Asian_Leaders
-        icon = placeholder
+        icon = GFX_focus_usa_washington_conference
         relative_position_id = USA_The_Washington_Conference
         prerequisite = { focus = USA_The_Washington_Conference }
         x = 3
@@ -431,7 +431,7 @@ focus_tree = {
     }
     focus = {
         id = USA_Meet_With_Oceanian_Leaders
-        icon = placeholder
+        icon = GFX_focus_usa_washington_conference
         relative_position_id = USA_The_Washington_Conference
         prerequisite = { focus = USA_The_Washington_Conference }
         x = 5
@@ -462,7 +462,7 @@ focus_tree = {
     }
     focus = {
         id = USA_Philadelphia_Convention
-        icon = placeholder
+        icon = GFX_focus_usa_washington_conference
         relative_position_id = USA_The_Washington_Conference
         prerequisite = {
             focus = USA_Meet_With_American_Leaders

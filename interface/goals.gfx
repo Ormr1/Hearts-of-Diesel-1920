@@ -1424,6 +1424,16 @@ spriteTypes = {
 	}
 	
 	### USA
+
+	SpriteType = { 
+		name = "GFX_focus_usa_washington_conference"
+		texturefile = "gfx/interface/goals/USA/focus_usa_washington_conference.png"
+	}
+
+	SpriteType = { 
+		name = "GFX_focus_usa_establish_us_peacekeepers"
+		texturefile = "gfx/interface/goals/USA/focus_usa_establish_us_peacekeepers.png"
+	}
 	
 	SpriteType = { 
 		name = "GFX_focus_usa_reestablish_the_gold_standard"
