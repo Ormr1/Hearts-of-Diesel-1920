@@ -1,11 +1,13 @@
 FEN_fenris_interests_cat = {
 	priority = 102
 
-	icon = SOV_paranoia
+	icon = generic_propaganda
 	
 	allowed = {
 		original_tag = FEN
 	}
+	
+	scripted_gui = fenris_interests_ui
 
 	visible = {
 		is_puppet = no
@@ -15,8 +17,8 @@ FEN_fenris_interests_cat = {
 
 FEN_bunker_staff = {
 	priority = 101
-
-	icon = SOV_paranoia
+  
+	icon = generic_crisis
 
 	scripted_gui = fen_bunker_staff_ui
 	
@@ -30,7 +32,7 @@ FEN_bunker_staff = {
 FEN_bunker_industry_expansion = {
 	priority = 100
 
-	icon = SOV_paranoia
+	icon = generic_merge_plant_materiel
 
 	scripted_gui = fen_bunker_industry_expansion_ui
 	

@@ -1,6 +1,4 @@
 Light mech/self propelled artillery:
-	bi legged
-	quad legged
 
 	machine guns
 	light auto cannon
@@ -12,11 +10,8 @@ Light mech/self propelled artillery:
 	
 	limbed
 	turret
-	fixed
 
 Medium:
-	bi legged
-	quad legged
 	
 	twin light cannons
 	cannon
@@ -27,33 +22,29 @@ Medium:
 	chainguns(tesla)
 	
 	limbed
-	turret
-	fixed
+	single manned turret
+	two manned turret
 	
 	secondary machine guns
 
 Heavy:
-	bi legged
-	quad legged
 	octo legged(saxony?)
 
 	mortar
-	cannon
+	Heavy cannon
 	sickles
 	tesla coils(tesla)
 	
+	single manned turret
 	two manned turret
 	three manned turret
 	limbed
-	fixed
 	
 	secondary machine guns
 	Rockets
 
 Super Heavy:
-	bi legged
 	tri legged(tesla)
-	quad legged
 
 	Heavy Cannon
 	Fixed Heavy Cannon
@@ -62,8 +53,15 @@ Super Heavy:
 
 	secondary machine guns
 	rockets
+	
+	three manned turret
+	four manned
 
-
+all:
+	bi legged
+	quad legged
+	
+	fixed
 
 Exo-skeletons
 Exo-suits(tesla/fenris)

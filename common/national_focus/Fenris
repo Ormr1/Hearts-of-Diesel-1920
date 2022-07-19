@@ -58,7 +58,7 @@ focus_tree = {
             }
             subtract_from_variable = {FEN_covert_staff = 1000}
             custom_effect_tooltip = FEN_remove_1000_covert_staff
-			custom_effect_tooltip = FEN_suspicion_may_increase
+			FEN_increase_suspicion_random = yes
 		}
 	}
 	focus = {
@@ -109,15 +109,8 @@ focus_tree = {
 		
 		available_if_capitulated = yes
 
-		select_effect = {
-			subtract_from_variable = {FEN_covert_staff = 500}
-            custom_effect_tooltip = FEN_remove_500_covert_staff
-		}
-
 		completion_reward = {
             add_manpower = 1500
-            add_to_variable = {FEN_covert_staff = 500}
-            custom_effect_tooltip = FEN_add_500_covert_staff
 			add_to_variable = {FEN_research_staff = 1000}
             custom_effect_tooltip = FEN_add_1000_research_staff
 		}
@@ -244,7 +237,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_manpower = 2500
-            custom_effect_tooltip = FEN_suspicion_may_increase
+           FEN_increase_suspicion_random = yes
 		}
 	}
 	focus = {
@@ -299,7 +292,7 @@ focus_tree = {
 				}
 				custom_effect_tooltip =FEN_fudge_stockpile_theft
 			}
-			custom_effect_tooltip = FEN_suspicion_may_increase
+			FEN_increase_suspicion_random = yes
 		}
 	}
 	focus = {
@@ -325,7 +318,7 @@ focus_tree = {
 				}
 				custom_effect_tooltip =FEN_fudge_stockpile_theft
 			}
-			custom_effect_tooltip = FEN_suspicion_may_increase
+			FEN_increase_suspicion_random = yes
 		}
 	}
 	focus = {
@@ -344,7 +337,7 @@ focus_tree = {
 			add_to_variable = {FEN_research_staff = 1000}
             custom_effect_tooltip = FEN_add_1000_research_staff
 			add_manpower= 1500
-			custom_effect_tooltip = FEN_suspicion_may_increase
+			FEN_increase_suspicion_random = yes
 		}
 	}
 	focus = {
@@ -365,7 +358,7 @@ focus_tree = {
 		id = FEN_rasputins_play
 		icon = GFX_goal_generic_allies_build_infantry
 		relative_position_id = FEN_international_intrigue
-		x = -4
+		x = 2
 		y = 1
 		cost = 10
 		search_filters = {   }
@@ -375,8 +368,9 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		available={
-			SOV={
-				has_character = SOV_rasputin
+			OR={
+				SOV={has_character = SOV_rasputin}
+				has_country_flag = FEN_influence_in_SOV
 			}
 		}
 
@@ -399,14 +393,94 @@ focus_tree = {
 
 		available={
 			SOV={
-				SOV_rasputin={
-					is_country_leader = yes
-				}
+				NOT={has_government = monarchy}
+				NOT={has_government = democratic}
 			}
 		}
 
 		completion_reward = {
 			add_political_power = 200
+		}
+	}
+	focus = {
+		id = FEN_usonian_desires
+		icon = GFX_goal_generic_allies_build_infantry
+		relative_position_id = FEN_international_intrigue
+		x = -2
+		y = 1
+		cost = 10
+		search_filters = {   }
+
+		prerequisite = { focus = FEN_international_intrigue}
+		
+		available_if_capitulated = yes
+
+		available={
+			OR={
+				USA={has_character = USA_george_mason}
+				has_country_flag = FEN_influence_in_USA
+			}
+			NOT={has_country_flag = FEN_laying_low}
+		}
+
+		completion_reward = {
+			#unlock usonian decisions
+		}
+	}
+	focus = {
+		id = FEN_alaskan_shell_companies
+		icon = GFX_goal_generic_allies_build_infantry
+		relative_position_id = FEN_usonian_desires
+		x = -1
+		y = 1
+		cost = 10
+		search_filters = {   }
+
+		prerequisite = { focus = FEN_usonian_desires}
+		
+		available_if_capitulated = yes
+
+		available={
+			USA={controls_state = 463}
+			NOT={has_country_flag = FEN_laying_low}
+		}
+
+		completion_reward = {
+			add_fuel = 100000
+		}
+	}
+	focus = {
+		id = FEN_kuwaiti_governer
+		icon = GFX_goal_generic_allies_build_infantry
+		relative_position_id = FEN_usonian_desires
+		x = 1
+		y = 1
+		cost = 10
+		search_filters = {   }
+
+		prerequisite = { focus = FEN_usonian_desires}
+		
+		available_if_capitulated = yes
+
+		available={
+			USA={
+				OR={
+					controls_state = 656
+					has_subject = KUW
+				}
+			}
+			custom_trigger_tooltip = {
+                tooltip = FEN_has_1000_covert_staff
+                check_variable = {var = FEN_covert_staff value = 1000  compare = greater_than_or_equals}
+            }
+			NOT={has_country_flag = FEN_laying_low}
+		}
+
+		completion_reward = {
+			give_resource_rights = { receiver = FEN state = 656 }
+			subtract_from_variable = {FEN_covert_staff = 1000}
+            custom_effect_tooltip = FEN_remove_1000_covert_staff
+			FEN_increase_suspicion_random = yes
 		}
 	}
 
@@ -424,7 +498,44 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		available={
-			always = no
+			date > 1923.1.1
+			has_army_manpower = {
+				size > 10000
+			}
+			custom_trigger_tooltip = {
+                tooltip = FEN_has_1000_covert_staff
+                check_variable = {var = FEN_covert_staff value = 1000  compare = greater_than_or_equals}
+            }
+			NOT={has_country_flag = FEN_laying_low}
+		}
+
+		completion_reward = {
+			add_political_power = 200
+			subtract_from_variable = {FEN_covert_staff = 1000}
+            custom_effect_tooltip = FEN_remove_1000_covert_staff
+			set_temp_variable = {FEN_suspicion_temp = 30}
+			FEN_increase_suspicion = yes
+		}
+	}
+	focus = {
+		id = FEN_teslas_annihilator
+		icon = GFX_goal_generic_allies_build_infantry
+		relative_position_id = FEN_the_shining_prize
+		x = 0
+		y = 2
+		cost = 10
+		search_filters = {   }
+
+		prerequisite = { focus = FEN_the_shining_prize}
+		
+		available_if_capitulated = yes
+
+		available={
+			OR={
+				has_country_flag = FEN_control_tesla
+				has_character = FAC_nikola_tesla
+			}
+			NOT={has_country_flag = FEN_laying_low}
 		}
 
 		completion_reward = {
@@ -441,6 +552,7 @@ focus_tree = {
 		search_filters = {   }
 
 		prerequisite = { focus = FEN_international_intrigue}
+		bypass = {PAR = {has_government = fenris}}
 		
 		available_if_capitulated = yes
 
@@ -448,16 +560,101 @@ focus_tree = {
 			PAR={
 				has_civil_war = yes
 			}
+			NOT={has_country_flag = FEN_laying_low}
 		}
 
 		completion_reward = {
-			fenris_paraguay = {
+			every_country={
+				limit={
+					tag = event_target:fenris_paraguay
+				}
 				add_equipment_to_stockpile = {
 					type = infantry_equipment
 					amount = 100
 					producer = FEN
 				}
+				add_manpower = 30000
 			}
+		}
+	}
+	focus = {
+		id = FEN_rhodesian_powderkeg
+		icon = GFX_goal_generic_allies_build_infantry
+		relative_position_id = FEN_international_intrigue
+		x = 6
+		y = 1
+		cost = 10
+		search_filters = {   }
+
+		prerequisite = { focus = FEN_international_intrigue}
+		
+		available_if_capitulated = yes
+
+		available={
+			RHO={
+				exists = yes
+			}
+			NOT={has_country_flag = FEN_laying_low}
+		}
+
+		completion_reward = {
+			#unlocks rhodeisan decisions
+		}
+	}
+	focus = {
+		id = FEN_a_austrailian_play
+		icon = GFX_goal_generic_allies_build_infantry
+		relative_position_id = FEN_international_intrigue
+		x = -4
+		y = 1
+		cost = 10
+		search_filters = {   }
+
+		prerequisite = { focus = FEN_international_intrigue}
+		
+		available_if_capitulated = yes
+
+		available={
+			always = no
+			NOT={has_country_flag = FEN_laying_low}
+			custom_trigger_tooltip = {
+                tooltip = FEN_has_1000_covert_staff
+                check_variable = {var = FEN_covert_staff value = 1000  compare = greater_than_or_equals}
+            }
+		}
+
+		completion_reward = {
+			subtract_from_variable = {FEN_covert_staff = 1000}
+            custom_effect_tooltip = FEN_remove_1000_covert_staff
+			#unlocks austrialian decisions
+		}
+	}
+	focus = {
+		id = FEN_agitate_aegyptus
+		icon = GFX_goal_generic_allies_build_infantry
+		relative_position_id = FEN_international_intrigue
+		x = -6
+		y = 1
+		cost = 10
+		search_filters = {   }
+
+		prerequisite = { focus = FEN_international_intrigue}
+		
+		available_if_capitulated = yes
+
+		available={
+			always = no
+			NOT={has_country_flag = FEN_laying_low}
+			custom_trigger_tooltip = {
+                tooltip = FEN_has_1000_covert_staff
+                check_variable = {var = FEN_covert_staff value = 1000  compare = greater_than_or_equals}
+            }
+		}
+
+		completion_reward = {
+			subtract_from_variable = {FEN_covert_staff = 1000}
+            custom_effect_tooltip = FEN_remove_1000_covert_staff
+			#unlocks aegyptian decisions
 		}
 	}
 }

@@ -4,5 +4,43 @@ spriteTypes = {
 		name = "GFX_bunker_depth_icon"
 		texturefile = "gfx/interface/fenris/bunker_depth_icon.dds"
 	}
+	spriteType = {
+		name = "GFX_FEN_suspicion_bg"
+		texturefile = "gfx/interface/fenris/FEN_suspicion_bg.dds"
+	}
+	spriteType = {
+		name = "GFX_FEN_suspicion_meter_icon"
+		texturefile = "gfx/interface/fenris/FEN_suspicion_meter.dds"
+		noOfFrames = 21
+	}
+	spriteType = {
+		name = "GFX_FEN_suspicion_needle_icon"
+		texturefile = "gfx/interface/fenris/FEN_suspicion_needle.dds"
+		noOfFrames = 21
+	}
+	spriteType = {
+		name = "GFX_staff_list_entry_bg"
+		texturefile = "gfx/interface/fenris/staff_list_entry_bg.dds"
+	}
+	spriteType = {
+		name = "GFX_bunker_staff_bg"
+		texturefile = "gfx/interface/fenris/bunker_staff_bg.dds"
+	}
+	spriteType = {
+		name = "GFX_FEN_map_bg"
+		texturefile = "gfx/interface/fenris/FEN_map_bg.dds"
+	}
+	spriteType = {
+		name = "GFX_FEN_bunker_construction_bg"
+		texturefile = "gfx/interface/fenris/bunker_construction_bg.dds"
+	}
+	spriteType = {
+		name = "GFX_fenris_map_location"
+		texturefile = "gfx/interface/fenris/fenris_map_location.dds"
+	}
+	spriteType = {
+		name = "GFX_fenris_construction_image"
+		texturefile = "gfx/interface/fenris/fenris_construction_image.dds"
+	}
 
 }

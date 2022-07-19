@@ -15,6 +15,16 @@ ideas = {
 				can_join_factions = no
 			}
 		}
+		FEN_shadow_cabal={
+			picture = generic_army_problems
+			
+			modifier = {
+				crypto_strength = 1
+				decryption = 1
+				enemy_operative_detection_chance = 10
+				operative_slot = 2
+			}
+		}
 		FEN_covert_forces = {
 			picture = generic_army_problems
 			

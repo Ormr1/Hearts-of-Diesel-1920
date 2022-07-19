@@ -1,30 +1,117 @@
 @POSTER_LEFT_X = 10
 @POSTER_CENTER_X = 170
 @POSTER_RIGHT_X = 325
-@BACKGROUND_X = -3 #Should be 0 but the UI moves to the right once after activating GUI or taking a dec
+@BACKGROUND_X = -5 #Should be 0 but the UI moves to the right once after activating GUI or taking a dec
 @BACKGROUND_Y = 0
 @POSTERS_Y = 0
-@TEXT_LEFT_X = 15
+@TEXT_LEFT_X = 25
 @TEXT_CENTER_X = 170
-@TEXT_RIGHT_X = 315
-@TEXTS_Y = 215
+@TEXT_RIGHT_X = 330
+@TEXTS_Y = 160
+
+@SUSMETER_MAIN_X = 185
+@SUSMETER_MAIN_Y = 50
+@SUSMETER_TEXT_X = 175
+@SUSMETER_TEXT_Y = 120
+@SUSMETER_BG_X = 144 #Needs to be -46 relative to MAIN
+@SUSMETER_BG_Y = -23 #Needs to be -73 relative to MAIN
 
 guiTypes = {
 
-	containerWindowType = {
+	containerWindowType = {#external
+		name = "fenris_interests_ui_window"
+		position = { x = 0 y = 0 }
+		size = { width = 100% height= 130 }
+		
+		#BACKGROUND
+
+
+		iconType = {
+			name ="fenris_map_bg"
+			spriteType = "GFX_FEN_map_bg"
+			position = { x=95 y=0 }
+		}
+		iconType = {
+			name ="factory_fenris_map_locator_rusviet"
+			spriteType = "GFX_fenris_map_location"
+			position = { x=278 y=15 }
+		}
+		iconType = {
+			name ="factory_fenris_map_locator_paraguay"
+			spriteType = "GFX_fenris_map_location"
+			position = { x=199 y=87 }
+		}
+		iconType = {
+			name ="factory_fenris_map_locator_kuwait"
+			spriteType = "GFX_fenris_map_location"
+			position = { x=294 y=49 }
+		}
+		iconType = {
+			name ="factory_fenris_map_locator_rhodesia"
+			spriteType = "GFX_fenris_map_location"
+			position = { x=272 y=87 }
+		}
+		iconType = {
+			name ="factory_fenris_map_locator_iwo_jima"
+			spriteType = "GFX_fenris_map_location"
+			position = { x=377 y=50 }
+		}
+		iconType = {
+			name ="factory_fenris_map_locator_factory"
+			spriteType = "GFX_fenris_map_location"
+			position = { x=274 y=30 }
+		}
+		iconType = {
+			name ="factory_fenris_map_locator_usonia"
+			spriteType = "GFX_fenris_map_location"
+			position = { x=183 y=27 }
+		}
+		iconType = {
+			name ="factory_fenris_map_locator_aegyptus"
+			spriteType = "GFX_fenris_map_location"
+			position = { x=275 y=50 }
+		}
+		iconType = {
+			name ="factory_fenris_map_locator_austrailia"
+			spriteType = "GFX_fenris_map_location"
+			position = { x=370 y=100 }
+		}
+	}
+	containerWindowType = {#staff
 		name = "fen_bunker_staff_ui_window"
 		position = { x = 0 y = 0 }
-		size = { width = 100% height= 250 }
+		size = { width = 100% height= 215 }
 
 		#BACKGROUND
 		iconType = {
 			name ="propaganda_bg"
-			spriteType = "GFX_propaganda_bg"
-			position = { x=@BACKGROUND_X y=@BACKGROUND_Y }
+			spriteType = "GFX_bunker_staff_bg"
+			position = { x=@BACKGROUND_X y=-20 }
+		}
+
+		#Sus meter
+		iconType = {
+			name ="suspicion_bg"
+			position = { x=@SUSMETER_BG_X	y=@SUSMETER_BG_Y }
+			pdx_tooltip = FEN_suspicion_txt_tooltip
+			spriteType = "GFX_FEN_suspicion_bg"
+			size = { width = 100% height= 250 }
+		}
+		iconType = {
+			name ="suspicion_main_paranoiameter"
+			spriteType = "GFX_FEN_suspicion_meter_icon"
+			position = { x=@SUSMETER_MAIN_X	 y=@SUSMETER_MAIN_Y }
+			pdx_tooltip = FEN_suspicion_txt_tooltip
+		}
+		iconType = {
+			name ="suspicion_main_needle"
+			spriteType = "GFX_FEN_suspicion_needle_icon"
+			position = { x=@SUSMETER_MAIN_X	 y=@SUSMETER_MAIN_Y }
+			pdx_tooltip = FEN_suspicion_txt_tooltip
 		}
 		instantTextBoxType = {
 			name ="sus_text"
-			position = { x = 0 y = 10 }
+			position = { x = @SUSMETER_TEXT_X y = @SUSMETER_TEXT_Y }
 			font = "hoi_18mbs"
 			text = "FEN_suspicion_txt"
 			tooltip = "FEN_suspicion_txt_tooltip"
@@ -32,6 +119,13 @@ guiTypes = {
 			maxWidth = 150
 			size = { width = 150 height= 20 }
 		}
+		
+		iconType = {
+			name ="text_bg"
+			spriteType = "GFX_staff_list_entry_bg"
+			position = { x=30 y=154 }
+		}
+
 		instantTextBoxType = {
 			name ="left_text"
 			position = { x = 15 y = @TEXTS_Y }
@@ -59,42 +153,31 @@ guiTypes = {
 			format = center
 			maxWidth = 150
 		}
-
-		#POSTER LEFT
-		iconType = {
-			name ="propaganda_poster_left"
-			position = { x=@POSTER_LEFT_X	 y=@POSTERS_Y }
-			pdx_tooltip = SOV_PROPAGANDA_CAMPAIGN_TT_LEFT
-		}
-
-		#POSTER CENTER
-		iconType = {
-			name ="propaganda_poster_center"
-			position = { x=@POSTER_CENTER_X	 y=@POSTERS_Y }
-			pdx_tooltip = SOV_PROPAGANDA_CAMPAIGN_TT_CENTER
-		}
-
-		#POSTER RIGHT
-		iconType = {
-			name ="propaganda_poster_right"
-			position = { x=@POSTER_RIGHT_X	 y=@POSTERS_Y }
-			pdx_tooltip = SOV_PROPAGANDA_CAMPAIGN_TT_RIGHT
-		}
 	}
-	containerWindowType = {
+	containerWindowType = {#construction
 		name = "fen_bunker_industry_expansion_ui_window"
 		position = { x = 0 y = 0 }
-		size = { width = 100% height= 250 }
+		size = { width = 100% height= 190 }
 
 		#BACKGROUND
 		iconType = {
 			name ="propaganda_bg"
-			spriteType = "GFX_propaganda_bg"
-			position = { x=@BACKGROUND_X y=@BACKGROUND_Y }
+			spriteType = "GFX_FEN_bunker_construction_bg"
+			position = { x=@BACKGROUND_X y=-20 }
+		}
+		iconType = {
+			name ="slot_text_bg"
+			spriteType = "GFX_generic_text_bg_325"
+			position = { x=115 y=78 }
+		}
+		iconType = {
+			name ="fenris_construction_image_bg"
+			spriteType = "GFX_fenris_construction_image"
+			position = { x=8 y=49 }
 		}
 		instantTextBoxType = {
 			name ="bunker_open_slots_text"
-			position = { x = 170 y = 0 }
+			position = { x = 120 y = 80 }
 			font = "hoi_18mbs"
 			text = "FEN_bunker_open_slots_text"
 			format = center
@@ -102,7 +185,7 @@ guiTypes = {
 		}
 		instantTextBoxType = {
 			name ="bunker_used_slots_text"
-			position = { x = 170 y = 25 }
+			position = { x = 280 y = 80 }
 			font = "hoi_18mbs"
 			text = "FEN_bunker_used_slots_text"
 			format = center
@@ -111,20 +194,20 @@ guiTypes = {
 		#depth
 		iconType = {
 			name ="depth_icon_bg"
-			position = { x=10 y=0 }
+			position = { x=115 y=50 }
 			spriteType = "GFX_generic_text_bg_60"
 			
 			size = { width = 50 height= 50 }
 		}
 		iconType = {
 			name ="depth_icon"
-			position = { x=15 y=3 }
+			position = { x=120 y=53 }
 			spriteType = "GFX_bunker_depth_icon"
 			pdx_tooltip = FEN_bunker_depth_tooltip
 		}
 		instantTextBoxType = {
 			name ="depth_text"
-			position = { x = 25 y = 5 }
+			position = { x = 140 y = 55 }
 			font = "hoi_18mbs"
 			text = "FEN_bunker_depth_text"
 			pdx_tooltip = FEN_bunker_depth_tooltip

@@ -14,6 +14,8 @@ set_variable = { FEN_used_bunker_slots = 4}
 set_variable = { FEN_bunker_depth = 3}
 set_variable = { FEN_bunker_depth_slots = 15}
 set_variable = { var = FEN_covert_reveal_risk value = 13 }
+set_variable = { var = FEN_covert_reveal_risk_percentile value = 1 }
+
 
 add_manpower = 20000
 add_ideas={
@@ -73,7 +75,7 @@ if = {
 recruit_character = FEN_louis_iv_merovech
 
 set_cosmetic_tag = FRA
-create_faction = "Fenris"
+#create_faction = "Fenris"
 create_intelligence_agency = {
     name = "Fenris"
     icon = GFX_intelligence_agency_logo_fenris

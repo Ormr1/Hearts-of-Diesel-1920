@@ -1,0 +1,72 @@
+FEN_increase_suspicion={
+	custom_effect_tooltip = FEN_suspicion_will_increase #vague so it does not need to dynamically update
+	add_to_variable = { var = FEN_covert_reveal_risk value = FEN_suspicion_temp }
+	set_temp_variable={ FEN_suspicion_temp = FEN_covert_reveal_risk}
+	divide_temp_variable = { FEN_suspicion_temp = 10 }
+	round_temp_variable = FEN_suspicion_temp
+	set_variable = {FEN_covert_reveal_risk_percentile = FEN_suspicion_temp}
+	if={
+		limit={
+			check_variable = {FEN_covert_reveal_risk_percentile > 20}
+		}
+		FEN_is_reveled_effect = yes
+	}
+}
+FEN_increase_suspicion_random={
+	custom_effect_tooltip = FEN_suspicion_may_increase #is a chance
+	set_temp_variable= {FEN_random_sus_chance = random}
+	if={
+		limit={
+			check_variable = {FEN_random_sus_chance > 0}
+		}
+		set_temp_variable = {FEN_suspicion_temp = 0}
+		randomize_temp_variable = {
+			var = FEN_suspicion_temp
+			distribution = uniform
+			min = 1
+			max = 15
+		}
+		round_temp_variable = FEN_suspicion_temp
+		add_to_variable = { var = FEN_covert_reveal_risk value = FEN_suspicion_temp}
+		set_temp_variable={ FEN_suspicion_temp = FEN_covert_reveal_risk}
+		divide_temp_variable = { FEN_suspicion_temp = 10 }
+		round_temp_variable = FEN_suspicion_temp
+		set_variable = {FEN_covert_reveal_risk_percentile = FEN_suspicion_temp}
+		if={
+			limit={
+				check_variable = {FEN_covert_reveal_risk_percentile > 20}
+			}
+			FEN_is_reveled_effect = yes
+		}
+	}
+}
+FEN_decrease_suspicion={
+	custom_effect_tooltip = FEN_suspicion_will_decrease_by #player does need to know how much this will decrease
+	subtract_from_variable = { var = FEN_covert_reveal_risk value = FEN_suspicion_temp }
+	clamp_variable = {
+		var = FEN_covert_reveal_risk
+		min = 0
+		max = 500
+	}
+	set_temp_variable={ FEN_suspicion_temp = FEN_covert_reveal_risk}
+	divide_temp_variable = { FEN_suspicion_temp = 10 }
+	round_temp_variable = FEN_suspicion_temp
+	subtract_from_variable = {FEN_covert_reveal_risk_percentile = FEN_suspicion_temp}
+	clamp_variable = {
+		var = FEN_covert_reveal_risk_percentile
+		min = 0
+		max = 21
+	}
+}
+FEN_is_reveled_effect={
+	custom_effect_tooltip = FEN_is_reveled
+	hidden_effect={
+		set_variable = {FEN_suspicion_temp = 0}
+		set_variable = {FEN_covert_reveal_risk_percentile = 0}
+		drop_cosmetic_tag = yes
+		swap_idea = {
+			remove_idea = FEN_in_the_shadows
+			add_idea = FEN_shadow_cabal
+		}
+	}
+}

@@ -5,7 +5,13 @@ scripted_gui = {
 		window_name = "fen_bunker_staff_ui_window"
 
 		properties = {
-			
+			suspicion_main_paranoiameter = {
+				frame = FEN_covert_reveal_risk_percentile
+			}
+
+			suspicion_main_needle = {
+				frame = FEN_covert_reveal_risk_percentile
+			}
 		}
 	}
 	
@@ -15,6 +21,52 @@ scripted_gui = {
 
 		properties = {
 			
+		}
+	}
+	
+	fenris_interests_ui = {
+		context_type = decision_category
+		window_name = "fenris_interests_ui_window"
+
+		triggers = {
+			factory_fenris_map_locator_rusviet_visible = {
+				OR={
+					SOV={has_character = SOV_rasputin}
+					has_country_flag = FEN_influence_in_SOV
+				}
+			}
+			factory_fenris_map_locator_usonia_visible = {
+				OR={
+					USA={has_character = USA_george_mason}
+					has_country_flag = FEN_influence_in_USA
+				}
+			}
+			factory_fenris_map_locator_paraguay_visible = {
+				PAR={
+					OR={
+						has_civil_war = yes
+						has_government = fenris
+					}
+				}
+			}
+			factory_fenris_map_locator_rhodesia_visible = {
+				has_country_flag = FEN_influence_in_rhodesia
+			}
+			factory_fenris_map_locator_kuwait_visible = {
+				has_country_flag = FEN_influence_in_kuwait
+			}
+			factory_fenris_map_locator_factory_visible = {
+				has_country_flag = FEN_holding_factory
+			}
+			factory_fenris_map_locator_iwo_jima_visible = {
+				has_country_flag = FEN_IWO_JIMA
+			}
+			factory_fenris_map_locator_austrailia_visible = {
+				has_country_flag = FEN_influence_in_austrailia
+			}
+			factory_fenris_map_locator_aegyptus_visible = {
+				has_country_flag = FEN_influence_in_aegyptus
+			}
 		}
 	}
 	

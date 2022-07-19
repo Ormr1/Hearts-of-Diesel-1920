@@ -456,7 +456,7 @@ country_event = { #Paraguayian civil war
 		hidden_effect={
 			start_civil_war = {
 				ideology = fenris
-				size = 0.5
+				size = 0.6
 				only_own_territory = no
 				capital = 688
 				states = { 
@@ -464,6 +464,12 @@ country_event = { #Paraguayian civil war
 				}
 				keep_political_leader = no
 				keep_political_party_members = no
+			}
+			random_other_country = {
+				limit = {
+					original_tag = PAR
+					has_government = fenris
+				}
 				save_global_event_target_as = fenris_paraguay
 			}
 			white_peace = LPT
