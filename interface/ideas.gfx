@@ -1800,6 +1800,11 @@ spriteTypes = {
 	
 	### SPAIN IDEAS
 	spriteType = {
+		name = "GFX_idea_hispanian_advisors"
+		texturefile = "gfx/interface/ideas/SPR/idea_hispanian_advisors.png"
+	}
+
+	spriteType = {
 		name = "GFX_idea_francisco_franco"
 		texturefile = "gfx/interface/ideas/idea_francisco_franco.dds"
 	}
@@ -2724,7 +2729,12 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/ROC/ROC_idea_revolutionary_fervor.png"
 	}
 	
-	### CHINA 
+	### CHINA
+
+	spriteType = {
+		name = "GFX_idea_chi_xin_imperial_army"
+		texturefile = "gfx/interface/ideas/CHI/idea_chi_xin_imperial_army.png"
+	}
 
 	spriteType = {
 		name = "GFX_idea_chi_forced_conscription"

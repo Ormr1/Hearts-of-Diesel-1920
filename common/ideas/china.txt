@@ -2,6 +2,8 @@ ideas = {
 	country = {
 		CHI_imperial_army = {
 
+			picture = chi_xin_imperial_army
+
 			allowed = {
 				always = no
 			}

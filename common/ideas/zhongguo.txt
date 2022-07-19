@@ -23,6 +23,8 @@ ideas = {
 			}
         }
 		hispanian_advisors = {
+
+			picture = hispanian_advisors
 		
 			allowed = {
 				always = no
