@@ -59,9 +59,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			custom_effect_tooltip = available_chief_of_army
-			show_ideas_tooltip = walter_krueger
-			unlock_decision_category_tooltip = USA_war_plans
+			add_political_power = 75
 		}
 	}
     focus = {
@@ -118,6 +116,1020 @@ focus_tree = {
                     }
                 }
                 country_event = usa_eco_development.1
+            }
+        }
+    }
+    focus = {
+        id = USA_Spread_The_Dollar
+        icon = placeholder
+        relative_position_id = USA_American_Economic_Development
+        prerequisite = { focus = USA_American_Economic_Development }
+        x = 1
+        y = 1
+        cost = 10
+        ai_will_do = {
+            factor = 1
+        }
+        completion_reward = {
+            every_other_country = {
+                limit = {
+                    OR = {
+                        capital_scope = {
+                            is_on_continent = north_america
+                        }
+                        capital_scope = {
+                            is_on_continent = south_america
+                        }
+                    }
+                }
+                country_event = usa_eco_development.5
+            }
+        }
+    }
+    focus = {
+        id = USA_Development_In_Aztlan
+        icon = placeholder
+        relative_position_id = USA_Loans_For_The_Americas
+        prerequisite = { focus = USA_Loans_For_The_Americas }
+        prerequisite = { focus = USA_Spread_The_Dollar }
+        available = {
+            MEX = {
+                has_civil_war = no
+            }
+        }
+        x = -2
+        y = 1
+        cost = 10
+        ai_will_do = {
+            factor = 1
+        }
+        completion_reward = {
+            MEX = {
+                add_opinion_modifier = {
+                    target = ROOT
+                    modifier = aided_industry
+                }
+                random_owned_controlled_state = {
+                    add_extra_state_shared_building_slots = 2
+                    add_building_construction = {
+                        type = industrial_complex
+                        level = 1
+                        instant_build = yes
+                    }
+                    add_building_construction = {
+                        type = industrial_complex
+                        level = 1
+                        instant_build = yes
+                    }
+                }
+                random_owned_controlled_state = {
+                    add_extra_state_shared_building_slots = 1
+                    add_building_construction = {
+                        type = industrial_complex
+                        level = 1
+                        instant_build = yes
+                    }
+                }
+                random_owned_controlled_state = {
+                    add_extra_state_shared_building_slots = 1
+                    add_building_construction = {
+                        type = dockyard
+                        level = 1
+                        instant_build = yes
+                    }
+                }
+                random_owned_controlled_state = {
+                    add_extra_state_shared_building_slots = 1
+                    add_building_construction = {
+                        type = dockyard
+                        level = 1
+                        instant_build = yes
+                    }
+                }
+                random_owned_controlled_state = {
+                    add_extra_state_shared_building_slots = 1
+                    add_building_construction = {
+                        type = arms_factory
+                        level = 1
+                        instant_build = yes
+                    }
+                }
+                if = {
+                    limit = {
+                        OR = {
+                            has_idea = transition_to_the_dollar
+                            has_idea = dollarzone_idea
+                        }
+                    }
+                    random_owned_controlled_state = {
+                        add_extra_state_shared_building_slots = 2
+                        add_building_construction = {
+                            type = industrial_complex
+                            level = 1
+                            instant_build = yes
+                        }
+                        add_building_construction = {
+                            type = industrial_complex
+                            level = 1
+                            instant_build = yes
+                        }
+                    }
+                    random_owned_controlled_state = {
+                        add_extra_state_shared_building_slots = 1
+                        add_building_construction = {
+                            type = industrial_complex
+                            level = 1
+                            instant_build = yes
+                        }
+                    }
+                    random_owned_controlled_state = {
+                        add_extra_state_shared_building_slots = 1
+                        add_building_construction = {
+                            type = dockyard
+                            level = 1
+                            instant_build = yes
+                        }
+                    }
+                    random_owned_controlled_state = {
+                        add_extra_state_shared_building_slots = 1
+                        add_building_construction = {
+                            type = dockyard
+                            level = 1
+                            instant_build = yes
+                        }
+                    }
+                    random_owned_controlled_state = {
+                        add_extra_state_shared_building_slots = 1
+                        add_building_construction = {
+                            type = arms_factory
+                            level = 1
+                            instant_build = yes
+                        }
+                    }
+                }
+            }
+        }
+    }
+    focus = {
+        id = USA_Development_In_Centroamerica
+        icon = placeholder
+        relative_position_id = USA_Loans_For_The_Americas
+        prerequisite = { focus = USA_Loans_For_The_Americas }
+        prerequisite = { focus = USA_Spread_The_Dollar }
+        available = {
+            GUA = {
+                has_civil_war = no
+            }
+        }
+        x = 0
+        y = 1
+        cost = 10
+        ai_will_do = {
+            factor = 1
+        }
+        completion_reward = {
+            GUA = {
+                add_opinion_modifier = {
+                    target = ROOT
+                    modifier = aided_industry
+                }
+                random_owned_controlled_state = {
+                    add_extra_state_shared_building_slots = 2
+                    add_building_construction = {
+                        type = industrial_complex
+                        level = 1
+                        instant_build = yes
+                    }
+                    add_building_construction = {
+                        type = industrial_complex
+                        level = 1
+                        instant_build = yes
+                    }
+                }
+                random_owned_controlled_state = {
+                    add_extra_state_shared_building_slots = 1
+                    add_building_construction = {
+                        type = industrial_complex
+                        level = 1
+                        instant_build = yes
+                    }
+                }
+                random_owned_controlled_state = {
+                    add_extra_state_shared_building_slots = 1
+                    add_building_construction = {
+                        type = dockyard
+                        level = 1
+                        instant_build = yes
+                    }
+                }
+                random_owned_controlled_state = {
+                    add_extra_state_shared_building_slots = 1
+                    add_building_construction = {
+                        type = dockyard
+                        level = 1
+                        instant_build = yes
+                    }
+                }
+                random_owned_controlled_state = {
+                    add_extra_state_shared_building_slots = 1
+                    add_building_construction = {
+                        type = arms_factory
+                        level = 1
+                        instant_build = yes
+                    }
+                }
+                if = {
+                    limit = {
+                        OR = {
+                            has_idea = transition_to_the_dollar
+                            has_idea = dollarzone_idea
+                        }
+                    }
+                    random_owned_controlled_state = {
+                        add_extra_state_shared_building_slots = 2
+                        add_building_construction = {
+                            type = industrial_complex
+                            level = 1
+                            instant_build = yes
+                        }
+                        add_building_construction = {
+                            type = industrial_complex
+                            level = 1
+                            instant_build = yes
+                        }
+                    }
+                    random_owned_controlled_state = {
+                        add_extra_state_shared_building_slots = 1
+                        add_building_construction = {
+                            type = industrial_complex
+                            level = 1
+                            instant_build = yes
+                        }
+                    }
+                    random_owned_controlled_state = {
+                        add_extra_state_shared_building_slots = 1
+                        add_building_construction = {
+                            type = dockyard
+                            level = 1
+                            instant_build = yes
+                        }
+                    }
+                    random_owned_controlled_state = {
+                        add_extra_state_shared_building_slots = 1
+                        add_building_construction = {
+                            type = dockyard
+                            level = 1
+                            instant_build = yes
+                        }
+                    }
+                    random_owned_controlled_state = {
+                        add_extra_state_shared_building_slots = 1
+                        add_building_construction = {
+                            type = arms_factory
+                            level = 1
+                            instant_build = yes
+                        }
+                    }
+                }
+            }
+        }
+    }
+    focus = {
+        id = USA_Development_In_Gran_Colombia
+        icon = placeholder
+        relative_position_id = USA_Spread_The_Dollar
+        prerequisite = { focus = USA_Loans_For_The_Americas }
+        prerequisite = { focus = USA_Spread_The_Dollar }
+        available = {
+            COL = {
+                has_civil_war = no
+            }
+        }
+        x = 0
+        y = 1
+        cost = 10
+        ai_will_do = {
+            factor = 1
+        }
+        completion_reward = {
+            COL = {
+                add_opinion_modifier = {
+                    target = ROOT
+                    modifier = aided_industry
+                }
+                random_owned_controlled_state = {
+                    add_extra_state_shared_building_slots = 2
+                    add_building_construction = {
+                        type = industrial_complex
+                        level = 1
+                        instant_build = yes
+                    }
+                    add_building_construction = {
+                        type = industrial_complex
+                        level = 1
+                        instant_build = yes
+                    }
+                }
+                random_owned_controlled_state = {
+                    add_extra_state_shared_building_slots = 1
+                    add_building_construction = {
+                        type = industrial_complex
+                        level = 1
+                        instant_build = yes
+                    }
+                }
+                random_owned_controlled_state = {
+                    add_extra_state_shared_building_slots = 1
+                    add_building_construction = {
+                        type = dockyard
+                        level = 1
+                        instant_build = yes
+                    }
+                }
+                random_owned_controlled_state = {
+                    add_extra_state_shared_building_slots = 1
+                    add_building_construction = {
+                        type = dockyard
+                        level = 1
+                        instant_build = yes
+                    }
+                }
+                random_owned_controlled_state = {
+                    add_extra_state_shared_building_slots = 1
+                    add_building_construction = {
+                        type = arms_factory
+                        level = 1
+                        instant_build = yes
+                    }
+                }
+                if = {
+                    limit = {
+                        OR = {
+                            has_idea = transition_to_the_dollar
+                            has_idea = dollarzone_idea
+                        }
+                    }
+                    random_owned_controlled_state = {
+                        add_extra_state_shared_building_slots = 2
+                        add_building_construction = {
+                            type = industrial_complex
+                            level = 1
+                            instant_build = yes
+                        }
+                        add_building_construction = {
+                            type = industrial_complex
+                            level = 1
+                            instant_build = yes
+                        }
+                    }
+                    random_owned_controlled_state = {
+                        add_extra_state_shared_building_slots = 1
+                        add_building_construction = {
+                            type = industrial_complex
+                            level = 1
+                            instant_build = yes
+                        }
+                    }
+                    random_owned_controlled_state = {
+                        add_extra_state_shared_building_slots = 1
+                        add_building_construction = {
+                            type = dockyard
+                            level = 1
+                            instant_build = yes
+                        }
+                    }
+                    random_owned_controlled_state = {
+                        add_extra_state_shared_building_slots = 1
+                        add_building_construction = {
+                            type = dockyard
+                            level = 1
+                            instant_build = yes
+                        }
+                    }
+                    random_owned_controlled_state = {
+                        add_extra_state_shared_building_slots = 1
+                        add_building_construction = {
+                            type = arms_factory
+                            level = 1
+                            instant_build = yes
+                        }
+                    }
+                }
+            }
+        }
+    }
+    focus = {
+        id = USA_Development_In_Brazil
+        icon = placeholder
+        relative_position_id = USA_Spread_The_Dollar
+        prerequisite = { focus = USA_Loans_For_The_Americas }
+        prerequisite = { focus = USA_Spread_The_Dollar }
+        available = {
+            BRA = {
+                has_civil_war = no
+            }
+        }
+        x = 2
+        y = 1
+        cost = 10
+        ai_will_do = {
+            factor = 1
+        }
+        completion_reward = {
+            BRA = {
+                add_opinion_modifier = {
+                    target = ROOT
+                    modifier = aided_industry
+                }
+                random_owned_controlled_state = {
+                    add_extra_state_shared_building_slots = 2
+                    add_building_construction = {
+                        type = industrial_complex
+                        level = 1
+                        instant_build = yes
+                    }
+                    add_building_construction = {
+                        type = industrial_complex
+                        level = 1
+                        instant_build = yes
+                    }
+                }
+                random_owned_controlled_state = {
+                    add_extra_state_shared_building_slots = 1
+                    add_building_construction = {
+                        type = industrial_complex
+                        level = 1
+                        instant_build = yes
+                    }
+                }
+                random_owned_controlled_state = {
+                    add_extra_state_shared_building_slots = 1
+                    add_building_construction = {
+                        type = dockyard
+                        level = 1
+                        instant_build = yes
+                    }
+                }
+                random_owned_controlled_state = {
+                    add_extra_state_shared_building_slots = 1
+                    add_building_construction = {
+                        type = dockyard
+                        level = 1
+                        instant_build = yes
+                    }
+                }
+                random_owned_controlled_state = {
+                    add_extra_state_shared_building_slots = 1
+                    add_building_construction = {
+                        type = arms_factory
+                        level = 1
+                        instant_build = yes
+                    }
+                }
+                if = {
+                    limit = {
+                        OR = {
+                            has_idea = transition_to_the_dollar
+                            has_idea = dollarzone_idea
+                        }
+                    }
+                    random_owned_controlled_state = {
+                        add_extra_state_shared_building_slots = 2
+                        add_building_construction = {
+                            type = industrial_complex
+                            level = 1
+                            instant_build = yes
+                        }
+                        add_building_construction = {
+                            type = industrial_complex
+                            level = 1
+                            instant_build = yes
+                        }
+                    }
+                    random_owned_controlled_state = {
+                        add_extra_state_shared_building_slots = 1
+                        add_building_construction = {
+                            type = industrial_complex
+                            level = 1
+                            instant_build = yes
+                        }
+                    }
+                    random_owned_controlled_state = {
+                        add_extra_state_shared_building_slots = 1
+                        add_building_construction = {
+                            type = dockyard
+                            level = 1
+                            instant_build = yes
+                        }
+                    }
+                    random_owned_controlled_state = {
+                        add_extra_state_shared_building_slots = 1
+                        add_building_construction = {
+                            type = dockyard
+                            level = 1
+                            instant_build = yes
+                        }
+                    }
+                    random_owned_controlled_state = {
+                        add_extra_state_shared_building_slots = 1
+                        add_building_construction = {
+                            type = arms_factory
+                            level = 1
+                            instant_build = yes
+                        }
+                    }
+                }
+            }
+        }
+    }
+    focus = {
+        id = USA_Development_In_Inca
+        icon = placeholder
+        relative_position_id = USA_Development_In_Centroamerica
+        prerequisite = { focus = USA_Loans_For_The_Americas }
+        prerequisite = { focus = USA_Spread_The_Dollar }
+        available = {
+            PRU = {
+                has_civil_war = no
+            }
+        }
+        x = -1
+        y = 1
+        cost = 10
+        ai_will_do = {
+            factor = 1
+        }
+        completion_reward = {
+            PRU = {
+                add_opinion_modifier = {
+                    target = ROOT
+                    modifier = aided_industry
+                }
+                random_owned_controlled_state = {
+                    add_extra_state_shared_building_slots = 2
+                    add_building_construction = {
+                        type = industrial_complex
+                        level = 1
+                        instant_build = yes
+                    }
+                    add_building_construction = {
+                        type = industrial_complex
+                        level = 1
+                        instant_build = yes
+                    }
+                }
+                random_owned_controlled_state = {
+                    add_extra_state_shared_building_slots = 1
+                    add_building_construction = {
+                        type = industrial_complex
+                        level = 1
+                        instant_build = yes
+                    }
+                }
+                random_owned_controlled_state = {
+                    add_extra_state_shared_building_slots = 1
+                    add_building_construction = {
+                        type = dockyard
+                        level = 1
+                        instant_build = yes
+                    }
+                }
+                random_owned_controlled_state = {
+                    add_extra_state_shared_building_slots = 1
+                    add_building_construction = {
+                        type = dockyard
+                        level = 1
+                        instant_build = yes
+                    }
+                }
+                random_owned_controlled_state = {
+                    add_extra_state_shared_building_slots = 1
+                    add_building_construction = {
+                        type = arms_factory
+                        level = 1
+                        instant_build = yes
+                    }
+                }
+                if = {
+                    limit = {
+                        OR = {
+                            has_idea = transition_to_the_dollar
+                            has_idea = dollarzone_idea
+                        }
+                    }
+                    random_owned_controlled_state = {
+                        add_extra_state_shared_building_slots = 2
+                        add_building_construction = {
+                            type = industrial_complex
+                            level = 1
+                            instant_build = yes
+                        }
+                        add_building_construction = {
+                            type = industrial_complex
+                            level = 1
+                            instant_build = yes
+                        }
+                    }
+                    random_owned_controlled_state = {
+                        add_extra_state_shared_building_slots = 1
+                        add_building_construction = {
+                            type = industrial_complex
+                            level = 1
+                            instant_build = yes
+                        }
+                    }
+                    random_owned_controlled_state = {
+                        add_extra_state_shared_building_slots = 1
+                        add_building_construction = {
+                            type = dockyard
+                            level = 1
+                            instant_build = yes
+                        }
+                    }
+                    random_owned_controlled_state = {
+                        add_extra_state_shared_building_slots = 1
+                        add_building_construction = {
+                            type = dockyard
+                            level = 1
+                            instant_build = yes
+                        }
+                    }
+                    random_owned_controlled_state = {
+                        add_extra_state_shared_building_slots = 1
+                        add_building_construction = {
+                            type = arms_factory
+                            level = 1
+                            instant_build = yes
+                        }
+                    }
+                }
+            }
+        }
+    }
+    focus = {
+        id = USA_Development_In_La_Plata
+        icon = placeholder
+        relative_position_id = USA_Development_In_Centroamerica
+        prerequisite = { focus = USA_Loans_For_The_Americas }
+        prerequisite = { focus = USA_Spread_The_Dollar }
+        available = {
+            LAP = {
+                has_civil_war = no
+            }
+        }
+        x = 1
+        y = 1
+        cost = 10
+        ai_will_do = {
+            factor = 1
+        }
+        completion_reward = {
+            if = {
+                limit = {
+                    AND = {
+                        LPT = {
+                            AND = {
+                                exists = yes
+                                has_civil_war = no
+                            }
+                        }
+                        has_completed_focus = USA_Recognize_The_Liberals
+                    }
+                }
+                LPT = {
+                    add_opinion_modifier = {
+                        target = ROOT
+                        modifier = aided_industry
+                    }
+                    random_owned_controlled_state = {
+                        add_extra_state_shared_building_slots = 2
+                        add_building_construction = {
+                            type = industrial_complex
+                            level = 1
+                            instant_build = yes
+                        }
+                        add_building_construction = {
+                            type = industrial_complex
+                            level = 1
+                            instant_build = yes
+                        }
+                    }
+                    random_owned_controlled_state = {
+                        add_extra_state_shared_building_slots = 1
+                        add_building_construction = {
+                            type = industrial_complex
+                            level = 1
+                            instant_build = yes
+                        }
+                    }
+                    random_owned_controlled_state = {
+                        add_extra_state_shared_building_slots = 1
+                        add_building_construction = {
+                            type = dockyard
+                            level = 1
+                            instant_build = yes
+                        }
+                    }
+                    random_owned_controlled_state = {
+                        add_extra_state_shared_building_slots = 1
+                        add_building_construction = {
+                            type = dockyard
+                            level = 1
+                            instant_build = yes
+                        }
+                    }
+                    random_owned_controlled_state = {
+                        add_extra_state_shared_building_slots = 1
+                        add_building_construction = {
+                            type = arms_factory
+                            level = 1
+                            instant_build = yes
+                        }
+                    }
+                    if = {
+                        limit = {
+                            OR = {
+                                has_idea = transition_to_the_dollar
+                                has_idea = dollarzone_idea
+                            }
+                        }
+                        random_owned_controlled_state = {
+                            add_extra_state_shared_building_slots = 2
+                            add_building_construction = {
+                                type = industrial_complex
+                                level = 1
+                                instant_build = yes
+                            }
+                            add_building_construction = {
+                                type = industrial_complex
+                                level = 1
+                                instant_build = yes
+                            }
+                        }
+                        random_owned_controlled_state = {
+                            add_extra_state_shared_building_slots = 1
+                            add_building_construction = {
+                                type = industrial_complex
+                                level = 1
+                                instant_build = yes
+                            }
+                        }
+                        random_owned_controlled_state = {
+                            add_extra_state_shared_building_slots = 1
+                            add_building_construction = {
+                                type = dockyard
+                                level = 1
+                                instant_build = yes
+                            }
+                        }
+                        random_owned_controlled_state = {
+                            add_extra_state_shared_building_slots = 1
+                            add_building_construction = {
+                                type = dockyard
+                                level = 1
+                                instant_build = yes
+                            }
+                        }
+                        random_owned_controlled_state = {
+                            add_extra_state_shared_building_slots = 1
+                            add_building_construction = {
+                                type = arms_factory
+                                level = 1
+                                instant_build = yes
+                            }
+                        }
+                    }
+                }
+            }
+            else = {
+                LAP = {
+                    add_opinion_modifier = {
+                        target = ROOT
+                        modifier = aided_industry
+                    }
+                    random_owned_controlled_state = {
+                        add_extra_state_shared_building_slots = 2
+                        add_building_construction = {
+                            type = industrial_complex
+                            level = 1
+                            instant_build = yes
+                        }
+                        add_building_construction = {
+                            type = industrial_complex
+                            level = 1
+                            instant_build = yes
+                        }
+                    }
+                    random_owned_controlled_state = {
+                        add_extra_state_shared_building_slots = 1
+                        add_building_construction = {
+                            type = industrial_complex
+                            level = 1
+                            instant_build = yes
+                        }
+                    }
+                    random_owned_controlled_state = {
+                        add_extra_state_shared_building_slots = 1
+                        add_building_construction = {
+                            type = dockyard
+                            level = 1
+                            instant_build = yes
+                        }
+                    }
+                    random_owned_controlled_state = {
+                        add_extra_state_shared_building_slots = 1
+                        add_building_construction = {
+                            type = dockyard
+                            level = 1
+                            instant_build = yes
+                        }
+                    }
+                    random_owned_controlled_state = {
+                        add_extra_state_shared_building_slots = 1
+                        add_building_construction = {
+                            type = arms_factory
+                            level = 1
+                            instant_build = yes
+                        }
+                    }
+                    if = {
+                        limit = {
+                            OR = {
+                                has_idea = transition_to_the_dollar
+                                has_idea = dollarzone_idea
+                            }
+                        }
+                        random_owned_controlled_state = {
+                            add_extra_state_shared_building_slots = 2
+                            add_building_construction = {
+                                type = industrial_complex
+                                level = 1
+                                instant_build = yes
+                            }
+                            add_building_construction = {
+                                type = industrial_complex
+                                level = 1
+                                instant_build = yes
+                            }
+                        }
+                        random_owned_controlled_state = {
+                            add_extra_state_shared_building_slots = 1
+                            add_building_construction = {
+                                type = industrial_complex
+                                level = 1
+                                instant_build = yes
+                            }
+                        }
+                        random_owned_controlled_state = {
+                            add_extra_state_shared_building_slots = 1
+                            add_building_construction = {
+                                type = dockyard
+                                level = 1
+                                instant_build = yes
+                            }
+                        }
+                        random_owned_controlled_state = {
+                            add_extra_state_shared_building_slots = 1
+                            add_building_construction = {
+                                type = dockyard
+                                level = 1
+                                instant_build = yes
+                            }
+                        }
+                        random_owned_controlled_state = {
+                            add_extra_state_shared_building_slots = 1
+                            add_building_construction = {
+                                type = arms_factory
+                                level = 1
+                                instant_build = yes
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    focus = {
+        id = USA_Development_In_Laurentia
+        icon = placeholder
+        relative_position_id = USA_Development_In_Gran_Colombia
+        prerequisite = { focus = USA_Loans_For_The_Americas }
+        prerequisite = { focus = USA_Spread_The_Dollar }
+        available = {
+            PRU = {
+                has_civil_war = no
+            }
+        }
+        x = 1
+        y = 1
+        cost = 10
+        ai_will_do = {
+            factor = 1
+        }
+        completion_reward = {
+            CAN = {
+                add_opinion_modifier = {
+                    target = ROOT
+                    modifier = aided_industry
+                }
+                random_owned_controlled_state = {
+                    add_extra_state_shared_building_slots = 2
+                    add_building_construction = {
+                        type = industrial_complex
+                        level = 1
+                        instant_build = yes
+                    }
+                    add_building_construction = {
+                        type = industrial_complex
+                        level = 1
+                        instant_build = yes
+                    }
+                }
+                random_owned_controlled_state = {
+                    add_extra_state_shared_building_slots = 1
+                    add_building_construction = {
+                        type = industrial_complex
+                        level = 1
+                        instant_build = yes
+                    }
+                }
+                random_owned_controlled_state = {
+                    add_extra_state_shared_building_slots = 1
+                    add_building_construction = {
+                        type = dockyard
+                        level = 1
+                        instant_build = yes
+                    }
+                }
+                random_owned_controlled_state = {
+                    add_extra_state_shared_building_slots = 1
+                    add_building_construction = {
+                        type = dockyard
+                        level = 1
+                        instant_build = yes
+                    }
+                }
+                random_owned_controlled_state = {
+                    add_extra_state_shared_building_slots = 1
+                    add_building_construction = {
+                        type = arms_factory
+                        level = 1
+                        instant_build = yes
+                    }
+                }
+                if = {
+                    limit = {
+                        OR = {
+                            has_idea = transition_to_the_dollar
+                            has_idea = dollarzone_idea
+                        }
+                    }
+                    random_owned_controlled_state = {
+                        add_extra_state_shared_building_slots = 2
+                        add_building_construction = {
+                            type = industrial_complex
+                            level = 1
+                            instant_build = yes
+                        }
+                        add_building_construction = {
+                            type = industrial_complex
+                            level = 1
+                            instant_build = yes
+                        }
+                    }
+                    random_owned_controlled_state = {
+                        add_extra_state_shared_building_slots = 1
+                        add_building_construction = {
+                            type = industrial_complex
+                            level = 1
+                            instant_build = yes
+                        }
+                    }
+                    random_owned_controlled_state = {
+                        add_extra_state_shared_building_slots = 1
+                        add_building_construction = {
+                            type = dockyard
+                            level = 1
+                            instant_build = yes
+                        }
+                    }
+                    random_owned_controlled_state = {
+                        add_extra_state_shared_building_slots = 1
+                        add_building_construction = {
+                            type = dockyard
+                            level = 1
+                            instant_build = yes
+                        }
+                    }
+                    random_owned_controlled_state = {
+                        add_extra_state_shared_building_slots = 1
+                        add_building_construction = {
+                            type = arms_factory
+                            level = 1
+                            instant_build = yes
+                        }
+                    }
+                }
             }
         }
     }
@@ -461,7 +1473,7 @@ focus_tree = {
         }
     }
     focus = {
-        id = USA_Philadelphia_Convention
+        id = USA_San_Francisco_Conference
         icon = GFX_focus_usa_washington_conference
         relative_position_id = USA_The_Washington_Conference
         prerequisite = {
@@ -482,6 +1494,37 @@ focus_tree = {
                 }
                 country_event = usa_united_states.1
             }
+        }
+    }
+    focus = {
+        id = USA_Establish_US_Peacekeepers
+        icon = GFX_focus_usa_establish_us_peacekeepers
+        relative_position_id = USA_San_Francisco_Conference
+        prerequisite = { focus = USA_San_Francisco_Conference }
+        x = -2
+        y = 1
+        cost = 10
+        completion_reward = {
+            add_ideas = us_peacekeepers
+            every_other_country = {
+                limit = {
+                    is_in_faction_with = ROOT
+                }
+                add_ideas = us_peacekeepers
+            }
+        }
+    }
+    focus = {
+        id = USA_The_US_General_Assembly
+        icon = GFX_focus_usa_washington_conference
+        relative_position_id = USA_San_Francisco_Conference
+        prerequisite = { focus = USA_San_Francisco_Conference }
+        x = 2
+        y = 1
+        cost = 10
+        completion_reward = {
+            add_political_power = 50
+            add_stability = 0.05
         }
     }
 }

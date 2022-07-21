@@ -41,6 +41,28 @@ ideas = {
 				trade_opinion_factor = 0.15
 			}
 		}
+		us_peacekeepers = {
+			picture = placeholder
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = 0
+			
+			modifier = {
+				send_volunteer_divisions_required = -0.25
+				send_volunteer_size = 1
+				send_volunteers_tension = -0.50
+			}
+			rule = {
+				can_send_volunteers = yes
+			}
+		}
 		usonian_loans = {
 			picture = placeholder
 
@@ -57,6 +79,48 @@ ideas = {
 			modifier = {
 				political_power_gain = -0.10
 				consumer_goods_factor = 0.05
+			}
+		}
+		transition_to_the_dollar = {
+			picture = placeholder
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = 0
+
+			modifier = {
+				custom_modifier_tooltip = usa_better_eco_development_tt
+				political_power_factor = -0.10
+				consumer_goods_factor = 0.10
+				production_speed_buildings_factor = -0.05
+				trade_opinion_factor = -0.15
+			}
+		}
+		dollarzone_idea = {
+			picture = placeholder
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = 0
+
+			modifier = {
+				custom_modifier_tooltip = usa_better_eco_development_tt
+				political_power_factor = 0.10
+				consumer_goods_factor = -0.10
+				production_speed_buildings_factor = 0.05
+				trade_opinion_factor = 0.15
 			}
 		}
 		great_depression = {

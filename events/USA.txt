@@ -1959,7 +1959,7 @@ country_event = { # Usonian Loans?
 
 	option = { # Accept the loans
 		ai_chance = {
-			base = 15
+			base = 20
 			modifier = {
 				num_of_civilian_factories < 20
 				add = 100
@@ -2076,6 +2076,86 @@ country_event = { # They Took Out Another Loan
 		add_opinion_modifier = {
 			target = FROM
 			modifier = medium_increase
+		}
+	}
+}
+country_event = { # Transition to the dollar?
+	id = usa_eco_development.5
+	title = usa_eco_development.5.t
+	desc = usa_eco_development.5.desc
+	picture = placeholder
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = { # The Dollar is better
+		name = usa_eco_development.5.a
+		ai_chance = {
+			base = 10
+			modifier = {
+				has_idea = great_depression
+				add = 100
+			}
+			modifier = {
+				has_idea = great_depression_2
+				add = 100
+			}
+			modifier = {
+				has_idea = great_depression_3
+				add = 100
+			}
+		}
+		add_timed_idea = {
+			idea = transition_to_the_dollar
+			days = 730
+		}
+		hidden_effect = {
+			country_event = {
+				id = usa_eco_development.6
+				days = 730
+			}
+		}
+	}
+	option = { # We prefer our own currency
+		ai_chance = {
+			base = 10
+		}
+		name = usa_eco_development.5.b
+	}
+}
+country_event = { # Transition to the dollar!
+	id = usa_eco_development.6
+	title = usa_eco_development.6.t
+	desc = usa_eco_development.6.desc
+	picture = placeholder
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = { # The Dollar is better
+		name = usa_eco_development.6.a
+		add_ideas = dollarzone_idea
+		if = {
+			limit = {
+				USA = {
+					NOT = {
+						has_idea = dollarzone_idea
+					}
+				}
+			}
+			USA = {
+				add_ideas = dollarzone
+			}
+		}
+		add_opinion_modifier = {
+			target = USA
+			modifier = dollarzone_member
+		}
+		reverse_add_opinion_modifier = {
+			target = USA
+			modifier = dollarzone_member
 		}
 	}
 }

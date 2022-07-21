@@ -1108,4 +1108,8 @@ opinion_modifiers = {
 	washington_conference = {
 		value = 15
 	}
+
+	dollarzone_member = {
+		value = 20
+	}
 }
