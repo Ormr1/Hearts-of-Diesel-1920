@@ -20,7 +20,9 @@ scripted_gui = {
 		window_name = "fen_bunker_industry_expansion_ui_window"
 
 		properties = {
-			
+			bunker_powered_status = {
+				frame = FEN_bunker_powered_status_num
+			}
 		}
 	}
 	
@@ -46,26 +48,30 @@ scripted_gui = {
 					OR={
 						has_civil_war = yes
 						has_government = fenris
+						 
 					}
 				}
 			}
 			factory_fenris_map_locator_rhodesia_visible = {
-				has_country_flag = FEN_influence_in_rhodesia
+				 has_country_flag = FEN_influence_in_rhodesia
 			}
 			factory_fenris_map_locator_kuwait_visible = {
-				has_country_flag = FEN_influence_in_kuwait
+				 has_country_flag = FEN_influence_in_kuwait
 			}
 			factory_fenris_map_locator_factory_visible = {
-				has_country_flag = FEN_holding_factory
+				OR={
+					has_country_flag = FEN_influence_in_factory
+					has_country_flag = FEN_holding_factory
+				 }
 			}
 			factory_fenris_map_locator_iwo_jima_visible = {
-				has_country_flag = FEN_IWO_JIMA
+				 has_country_flag = FEN_IWO_JIMA
 			}
 			factory_fenris_map_locator_austrailia_visible = {
-				has_country_flag = FEN_influence_in_austrailia
+				 has_country_flag = FEN_influence_in_austrailia
 			}
 			factory_fenris_map_locator_aegyptus_visible = {
-				has_country_flag = FEN_influence_in_aegyptus
+				 has_country_flag = FEN_influence_in_aegyptus
 			}
 		}
 	}

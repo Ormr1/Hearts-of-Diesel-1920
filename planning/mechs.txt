@@ -7,6 +7,7 @@ Light mech/self propelled artillery:
 	grenade launchers
 	Katyusha rack
 	tesla coils(tesla)
+	mortar
 	
 	limbed
 	turret
@@ -20,6 +21,7 @@ Medium:
 	flame throwers
 	fixed quad cannon
 	chainguns(tesla)
+	melee
 	
 	limbed
 	single manned turret
@@ -49,7 +51,7 @@ Super Heavy:
 	Heavy Cannon
 	Fixed Heavy Cannon
 	Death Ray(Tesla/fenris)
-	Bag Cannons(albon)
+	twin Heavy Cannon(albion)
 
 	secondary machine guns
 	rockets

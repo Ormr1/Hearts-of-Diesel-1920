@@ -3779,6 +3779,8 @@
  SIK_communism_subject_ADJ:0 "Sinkiang"
  BED:0 "Bedouin Tribes"
  FAC:0 "The Factory"
+ FAC_DEF:0 "Teslas Factory"
+ FAC_ADJ:0 "Factory"
  MAR_fascism:0 "Maratha"
  MAR_fascism_DEF:0 "the Maratha Empire"
  MAR_democratic:0 "Maratha"

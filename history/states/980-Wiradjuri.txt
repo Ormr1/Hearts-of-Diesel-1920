@@ -3,24 +3,29 @@ state={
 	id=980
 	name="STATE_980"
 	resources={
-		
+		steel = 43
 	}
 
 	history={
+		victory_points = {
+			5134 8
+		}
 		owner = WIR
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 1
+			arms_factory = 1
 			air_base = 1
 		}
 		add_core_of = WIR
 
+
 	}
 
 	provinces={
-		1570 7649 2163 8234 4453 4658 7471 4478 4500 7533 12968 2114 5134 4836 10455 10682 1861 1667 5161 2146 11019 12377 10427
+		8234 7533 12968 2114 5134 4836 10455 10682 1861 1667 5161 2146 11019 12377 10427
 	}
-	manpower=916800
+	manpower=824800
 	buildings_max_level_factor=1.000
 	state_category=town
 	local_supplies=0.000

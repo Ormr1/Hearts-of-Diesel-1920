@@ -9,9 +9,8 @@ state={
 	history={
 		owner = PAM
 		buildings = {
-			infrastructure = 3
+			infrastructure = 2
 			industrial_complex = 1
-			air_base = 1
 		}
 		add_core_of = PAM
 
@@ -20,7 +19,7 @@ state={
 	provinces={
 		1644 4648 10338 7506 10350 4505 10365 10378 7525 1501 12354 2166 2187 4520 7538 8230
 	}
-	manpower=916800
+	manpower=87500
 	buildings_max_level_factor=1.000
 	state_category=town
 	local_supplies=0.000

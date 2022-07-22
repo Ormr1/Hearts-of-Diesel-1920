@@ -68,5 +68,7 @@ FEN_is_reveled_effect={
 			remove_idea = FEN_in_the_shadows
 			add_idea = FEN_shadow_cabal
 		}
+		news_event = {id = fenris.2}
+		
 	}
 }

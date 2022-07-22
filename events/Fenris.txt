@@ -1,0 +1,121 @@
+﻿###########################
+# Fenris Events
+###########################
+
+add_namespace = fenris
+
+# 
+country_event = {#vensas letter
+	id = fenris.1
+	title = fenris.1.t
+	desc = fenris.1.d
+	picture = GFX_report_event_finnish_letter
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = fenris.1.a
+		trigger={ has_government = fenris }
+		set_temp_variable = {FEN_suspicion_temp=35}
+		FEN_increase_suspicion = yes
+	}
+	option = {
+		name = fenris.1.b
+		trigger={NOT={has_government = fenris}}
+	}
+	option = {
+		name = fenris.1.c
+		trigger={
+			NOT={
+				has_government = fenris
+				has_country_flag = FEN_infiltration
+				tag = RUS
+				tag = USA
+			}
+		}
+	}
+}
+
+# 
+news_event = {#Fenris reveled
+	id = fenris.2
+	title = fenris.2.t
+	desc = fenris.2.d
+	picture = GFX_report_event_second_vienna_award_pact
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = fenris.2.a
+		
+	}
+}
+
+country_event = {#first moves
+	id = fenris.3
+	title = fenris.3.t
+	desc = fenris.3.d
+	picture = GFX_report_event_finnish_letter
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = fenris.3.a
+		set_country_flag = FEN_factory_first_stage
+		set_country_flag = FEN_influence_in_factory
+	}
+}
+
+country_event = {#The Passcode
+	id = fenris.4
+	title = fenris.4.t
+	desc = fenris.4.d
+	picture = GFX_report_event_finnish_letter
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = fenris.4.a
+		set_country_flag = FEN_FAC_passcode_obtained
+	}
+}
+country_event = {#Route Obtained
+	id = fenris.5
+	title = fenris.5.t
+	desc = fenris.5.d
+	picture = GFX_report_event_finnish_letter
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = fenris.5.a
+		set_country_flag = FEN_FAC_map_obtained
+	}
+}
+country_event = {#Route op failed
+	id = fenris.6
+	title = fenris.6.t
+	desc = fenris.6.d
+	picture = GFX_report_event_finnish_letter
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = fenris.6.a
+		
+	}
+}
+country_event = {#Attack on the factory
+	id = fenris.7
+	title = fenris.7.t
+	desc = fenris.7.d
+	picture = GFX_report_event_finnish_letter
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = fenris.7.a
+		
+	}
+}

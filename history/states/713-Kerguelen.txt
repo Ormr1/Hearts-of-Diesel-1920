@@ -9,6 +9,7 @@ state={
 		add_core_of = FEN
 		buildings = {
 			infrastructure = 1
+			air_base = 2
 			2165 = {
 				naval_base = 1
 			}

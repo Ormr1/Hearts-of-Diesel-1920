@@ -21,7 +21,7 @@ technologies = {
 		}
 		
 		research_cost = 1.5
-		start_year = 1936
+		start_year = 1920
 		folder = {
 			name = industry_folder
 			position = { x = 0 y = 0 }
@@ -766,7 +766,7 @@ technologies = {
 		}
 		
 		research_cost = 1
-		start_year = 1936
+		start_year = 1920
 		folder = {
 			name = industry_folder
 			position = { x = 1 y = 0 }
@@ -1604,6 +1604,38 @@ technologies = {
 	}
 	#####################################
 	
+	construction0 = {
+		
+		production_speed_buildings_factor = 0.10
+		industry_repair_factor = 0.10
+
+		path = {
+			leads_to_tech = construction1
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 1920
+		categories = {
+			industry
+			construction_tech
+		}
+		
+		folder = {
+			name = industry_folder
+			position = { x = 0 y = 0 }
+		}
+		
+		ai_will_do = {
+			factor = 50
+			
+			modifier = {
+				factor = 5
+				date > "1937.1.1"
+			}
+		}
+	}
+	
 	construction1 = {
 		
 		production_speed_buildings_factor = 0.10
@@ -1619,7 +1651,7 @@ technologies = {
 		}
 		
 		research_cost = 2
-		start_year = 1936
+		start_year = 1932
 		categories = {
 			industry
 			construction_tech
@@ -1627,7 +1659,7 @@ technologies = {
 		
 		folder = {
 			name = industry_folder
-			position = { x = 0 y = 0 }
+			position = { x = 0 y = 2 }
 		}
 		
 		ai_will_do = {
@@ -1658,7 +1690,7 @@ technologies = {
 		
 		folder = {
 			name = industry_folder
-			position = { x = 2 y = 0 }
+			position = { x = 2 y = 2 }
 		}
 		
 		ai_will_do = {
@@ -1714,7 +1746,7 @@ technologies = {
 		
 		folder = {
 			name = industry_folder
-			position = { x = 0 y = 2 }
+			position = { x = 0 y = 4 }
 		}
 		
 		ai_will_do = {
@@ -1746,7 +1778,7 @@ technologies = {
 		
 		folder = {
 			name = industry_folder
-			position = { x = 2 y = 2 }
+			position = { x = 2 y = 4 }
 		}
 		
 		ai_will_do = {
@@ -1803,7 +1835,7 @@ technologies = {
 		
 		folder = {
 			name = industry_folder
-			position = { x = 0 y = 4 }
+			position = { x = 0 y = 6 }
 		}
 		
 		ai_will_do = {
@@ -1846,7 +1878,7 @@ technologies = {
 		
 		folder = {
 			name = industry_folder
-			position = { x = 2 y = 4 }
+			position = { x = 2 y = 6 }
 		}
 		
 		ai_will_do = {
@@ -1902,7 +1934,7 @@ technologies = {
 		
 		folder = {
 			name = industry_folder
-			position = { x = 0 y = 6 }
+			position = { x = 0 y = 8 }
 		}
 		
 		ai_will_do = {
@@ -1934,7 +1966,7 @@ technologies = {
 		
 		folder = {
 			name = industry_folder
-			position = { x = 2 y = 6 }
+			position = { x = 2 y = 8 }
 		}
 		
 		ai_will_do = {
@@ -1987,7 +2019,7 @@ technologies = {
 		
 		folder = {
 			name = industry_folder
-			position = { x = 0 y = 8 }
+			position = { x = 0 y = 10 }
 		}
 		
 		ai_will_do = {
@@ -2020,7 +2052,7 @@ technologies = {
 		
 		folder = {
 			name = industry_folder
-			position = { x = 2 y = 8 }
+			position = { x = 2 y = 10 }
 		}
 		
 		ai_will_do = {

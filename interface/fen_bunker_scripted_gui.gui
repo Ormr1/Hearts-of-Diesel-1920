@@ -13,7 +13,7 @@
 @SUSMETER_MAIN_Y = 50
 @SUSMETER_TEXT_X = 175
 @SUSMETER_TEXT_Y = 120
-@SUSMETER_BG_X = 144 #Needs to be -46 relative to MAIN
+@SUSMETER_BG_X = 139 #Needs to be -46 relative to MAIN
 @SUSMETER_BG_Y = -23 #Needs to be -73 relative to MAIN
 
 guiTypes = {
@@ -180,6 +180,7 @@ guiTypes = {
 			position = { x = 120 y = 80 }
 			font = "hoi_18mbs"
 			text = "FEN_bunker_open_slots_text"
+			pdx_tooltip = FEN_building_slots_breakdown_tooltip
 			format = center
 			maxWidth = 150
 		}
@@ -188,6 +189,7 @@ guiTypes = {
 			position = { x = 280 y = 80 }
 			font = "hoi_18mbs"
 			text = "FEN_bunker_used_slots_text"
+			pdx_tooltip = FEN_building_slots_breakdown_tooltip
 			format = center
 			maxWidth = 150
 		}
@@ -214,6 +216,13 @@ guiTypes = {
 			format = center
 			maxWidth = 50
 			maxHeight = 25
+		}
+		
+		iconType = {
+			name ="bunker_powered_status"
+			spriteType = "GFX_FEN_bunker_powered_icon"
+			pdx_tooltip = FEN_bunker_powered_status_tooltip
+			position = { x=180 y=48 }
 		}
 
 	}

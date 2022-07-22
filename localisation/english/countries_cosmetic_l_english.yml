@@ -1325,3 +1325,17 @@
  GRE_east_rome:0 "Eastern Rome"
  GRE_east_rome_DEF:0 "Eastern Rome"
  GRE_east_rome_ADJ:0 "Roman"
+ 
+ #saxon unrest
+ WGR_united:0 "Liberal Germania Front"
+ WGR_united_DEF:0 "Liberal Germania"
+ WGR_united_ADJ:0 "Germanian"
+ WGR_liberal_saxony:0 "Republic of Saxony"
+ WGR_liberal_saxony_DEF:0 "the Republic of Saxony"
+ WGR_liberal_saxony_ADJ:0 "Saxonian"
+ DDR_saxony_spartacist:0 "Spartacist Republic of Saxony"
+ DDR_saxony_spartacist_DEF:0 "the Spartacist Republic of Saxony"
+ DDR_saxony_spartacist_ADJ:0 "Saxonian"
+ DDR_saxony:0 "Saxon Democratic Republic"
+ DDR_saxony_DEF:0 "the Saxon Democratic Republic"
+ DDR_saxony_ADJ:0 "Saxonian"

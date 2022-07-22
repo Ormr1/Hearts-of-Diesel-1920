@@ -253,3 +253,31 @@ defined_text = {
 		localization_key = CHI_communist_infiltration_state_comma
 	}
 }
+
+defined_text = { # Fenris generator status
+	name = GetFenrisGenStatus
+	text = {
+		trigger = {			
+			has_country_flag = FEN_main_generator_repaired
+		}
+		localization_key = FEN_generator_online
+	}
+	text = {
+		localization_key = FEN_generator_offline
+	}
+}
+#Fenris Focii
+defined_text = { # 
+	name = GetFenrisClassified
+	text = {
+		trigger = {			
+			FEN={
+				is_ai = no
+			}
+		}
+		localization_key = FEN_unclassified
+	}
+	text = {
+		localization_key = FEN_classified_focii
+	}
+}

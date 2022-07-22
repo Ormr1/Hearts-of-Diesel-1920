@@ -42,5 +42,10 @@ spriteTypes = {
 		name = "GFX_fenris_construction_image"
 		texturefile = "gfx/interface/fenris/fenris_construction_image.dds"
 	}
+	spriteType = {
+		name = "GFX_FEN_bunker_powered_icon"
+		texturefile = "gfx/interface/fenris/bunker_powered_icon.dds"
+		noOfFrames = 2
+	}
 
 }

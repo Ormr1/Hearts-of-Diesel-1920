@@ -105,6 +105,201 @@ FEN_fenris_interests_cat = {
 			#add country event here
 		}
 	}
+	FEN_FAC_advance_to_stage_2 = {
+
+		icon = generic_political_discourse
+
+		available = {
+			custom_trigger_tooltip={
+				tooltip = FEN_has_2000_covert_staff
+				check_variable = { FEN_covert_staff > 1999}
+			}
+			has_country_flag = FEN_FAC_passcode_obtained
+			has_country_flag = FEN_FAC_map_obtained
+			NOT={has_country_flag = FEN_laying_low}
+		}
+
+		visible = {
+			has_country_flag = FEN_factory_first_stage
+		}
+
+		fire_only_once = yes
+
+		cost = 100
+
+		modifier = {
+			
+		}
+
+		complete_effect = {
+			country_event = {id= fenris.7}
+		}
+	}
+	FEN_FAC_obtain_passcode = {
+
+		icon = generic_political_discourse
+
+		available = {
+			OR={
+				network_strength = {#Get rusveit to do it for you
+					target = SOV
+					value > 50
+				}
+				network_strength = {#Professor Piotr Dybowski
+					target = POL
+					value > 50
+				}
+				network_strength = {#Heinrich Steinmetz
+					target = GER
+					value > 50
+				}
+				network_strength = {#just grab someone from the factory
+					target = FAC
+					value > 80
+				}
+				custom_trigger_tooltip={
+					tooltip = FEN_has_2500_covert_staff
+					check_variable = { FEN_covert_staff > 2499}
+				}
+			}
+			NOT={has_country_flag = FEN_laying_low}
+		}
+
+		visible = {
+			has_country_flag = FEN_factory_first_stage
+			NOT={has_country_flag = FEN_FAC_map_obtained}
+		}
+
+		fire_only_once = yes
+
+		cost = 100
+
+		modifier = {
+			
+		}
+
+		complete_effect = {
+			if={
+				limit={
+					NOT={
+						OR={
+							network_strength = {#Get rusveit to do it for you
+								target = SOV
+								value > 50
+							}
+							network_strength = {#Professor Piotr Dybowski
+								target = POL
+								value > 50
+							}
+							network_strength = {#Heinrich Steinmetz
+								target = GER
+								value > 50
+							}
+							network_strength = {#just grab someone from the factory
+								target = FAC
+								value > 80
+							}
+						}
+					}
+				}
+				subtract_from_variable = {FEN_covert_staff = 2500}
+				custom_effect_tooltip = FEN_remove_2500_covert_staff
+			}
+			country_event = {id= fenris.4}
+		}
+	}
+	FEN_FAC_obtain_recon_information = {
+
+		icon = generic_political_discourse
+
+		available = {
+			if={
+				limit={
+					check_variable = {FEN_covert_reveal_risk >149}
+				}
+				custom_trigger_tooltip={
+					tooltip = FEN_has_3500_covert_staff
+					check_variable = { FEN_covert_staff > 3499}
+				}
+			}
+			else_if={
+				limit={
+					check_variable = {FEN_covert_reveal_risk >99}
+				}
+				custom_trigger_tooltip={
+					tooltip = FEN_has_3000_covert_staff
+					check_variable = { FEN_covert_staff > 2999}
+				}
+			}
+			else_if={
+				limit={
+					check_variable = {FEN_covert_reveal_risk >49}
+				}
+				custom_trigger_tooltip={
+					tooltip = FEN_has_2500_covert_staff
+					check_variable = { FEN_covert_staff > 2499}
+				}
+			}
+			else={
+				custom_trigger_tooltip={
+					tooltip = FEN_has_2000_covert_staff
+					check_variable = { FEN_covert_staff > 1999}
+				}
+			}
+			custom_trigger_tooltip={
+				tooltip = FEN_has_1000_research_staff
+				check_variable = { FEN_research_staff > 999}
+			}
+			NOT={has_country_flag = FEN_laying_low}
+		}
+
+		visible = {
+			has_country_flag = FEN_factory_first_stage
+			NOT={has_country_flag = FEN_FAC_map_obtained}
+		}
+
+		fire_only_once = yes
+
+		cost = 100
+
+		modifier = {
+			
+		}
+
+		complete_effect = {
+			if={
+				limit={
+					check_variable = {FEN_covert_reveal_risk >149}
+				}
+				subtract_from_variable = {FEN_covert_staff = 3500}
+				custom_effect_tooltip = FEN_remove_3500_covert_staff
+			}
+			else_if={
+				limit={
+					check_variable = {FEN_covert_reveal_risk >99}
+				}
+				subtract_from_variable = {FEN_covert_staff = 3000}
+				custom_effect_tooltip = FEN_remove_3000_covert_staff
+			}
+			else_if={
+				limit={
+					check_variable = {FEN_covert_reveal_risk >49}
+				}
+				subtract_from_variable = {FEN_covert_staff = 2500}
+				custom_effect_tooltip = FEN_remove_2500_covert_staff
+			}
+			else={
+				subtract_from_variable = {FEN_covert_staff = 2000}
+				custom_effect_tooltip = FEN_remove_2000_covert_staff
+			}
+			
+			subtract_from_variable = {FEN_research_staff = 1000}
+			custom_effect_tooltip = FEN_remove_1000_research_staff
+			set_temp_variable = {FEN_suspicion_temp = 20}
+			FEN_increase_suspicion = yes
+			country_event = {id= fenris.5}
+		}
+	}
 	FEN_lay_low = {
 
 		icon = generic_political_discourse
@@ -448,6 +643,7 @@ FEN_bunker_industry_expansion = {
 		remove_effect = {
 			add_offsite_building = { type = industrial_complex level = 1 }
 			set_country_flag = FEN_main_generator_repaired
+			set_variable = {FEN_bunker_powered_status_num=2}
 		}
 	}
 
@@ -680,6 +876,35 @@ FEN_bunker_industry_expansion = {
 		remove_effect = {
 			add_offsite_building = { type = fuel_silo level = 1 }
 			custom_effect_tooltip = FEN_remove_bunker_building_slot
+		}
+	}
+	FEN_expend_manpower_to_hurry_silo = {
+
+		icon = generic_political_discourse
+
+		available = {
+			has_manpower > 2000
+		}
+
+		visible = {
+			has_decision = FEN_expand_oil_silos
+		}
+
+		fire_only_once = no
+
+		days_remove = 20
+
+		cost = 35
+
+		complete_effect = {
+			add_manpower = -2000
+		}
+		remove_effect = {
+			add_days_remove  = {
+				decision = FEN_expand_oil_silos
+				days = -50
+			}
+			add_manpower = 1000
 		}
 	}
 	FEN_expand_building_slots = {

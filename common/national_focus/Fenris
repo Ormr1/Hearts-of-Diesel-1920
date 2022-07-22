@@ -134,9 +134,14 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_days_remove  = {
-				decision = FEN_repair_main_generator
-				days = -150
+			if={
+				limit={
+					has_decision = FEN_repair_main_generator
+				}
+				add_days_remove  = {
+					decision = FEN_repair_main_generator
+					days = -150
+				}
 			}
 		}
 	}
@@ -379,7 +384,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = FEN_coup_successful
+		id = FEN_supporting_coup
 		icon = GFX_goal_generic_allies_build_infantry
 		relative_position_id = FEN_rasputins_play
 		x = -1
@@ -510,7 +515,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_political_power = 200
+			country_event = {id = fenris.3}
 			subtract_from_variable = {FEN_covert_staff = 1000}
             custom_effect_tooltip = FEN_remove_1000_covert_staff
 			set_temp_variable = {FEN_suspicion_temp = 30}
@@ -558,7 +563,7 @@ focus_tree = {
 
 		available={
 			PAR={
-				has_civil_war = yes
+				exists = yes
 			}
 			NOT={has_country_flag = FEN_laying_low}
 		}
@@ -643,7 +648,9 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		available={
-			always = no
+			EGY={
+				exists = yes
+			}
 			NOT={has_country_flag = FEN_laying_low}
 			custom_trigger_tooltip = {
                 tooltip = FEN_has_1000_covert_staff

@@ -157,10 +157,26 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = GER_iron_harvest
+		icon = GFX_goal_tripartite_pact
+		relative_position_id = GER_scars_of_the_great_war
+		x = -1
+		y = 1
+		cost = 10
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+		prerequisite = { focus = GER_scars_of_the_great_war}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
 		id = GER_begin_peace_talks
 		icon = GFX_goal_tripartite_pact
 		relative_position_id = GER_scars_of_the_great_war
-		x = 0
+		x = 1
 		y = 1
 		cost = 10
 		search_filters = {  FOCUS_FILTER_POLITICAL }

@@ -1,26 +1,25 @@
 
 state={
-	id=979
-	name="STATE_979"
+	id=988
+	name="STATE_988"
 	resources={
-		
+		steel = 15
 	}
 
 	history={
-		owner = MRR
+		owner = WIR
 		buildings = {
-			infrastructure = 3
+			infrastructure = 2
 			industrial_complex = 1
-			air_base = 1
 		}
-		add_core_of = MRR
+		add_core_of = WIR
 
 	}
 
 	provinces={
-		2116 2221 10941 10977 10991 12934
+		2163 1570 7649 4658 7471 4478 4500 4453
 	}
-	manpower=184000
+	manpower=173400
 	buildings_max_level_factor=1.000
 	state_category=town
 	local_supplies=0.000
