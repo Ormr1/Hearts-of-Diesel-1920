@@ -1203,6 +1203,13 @@ focus_tree = {
         relative_position_id = USA_La_Platan_Civil_War
         prerequisite = { focus = USA_Guns_To_La_Platan_Liberals }
         prerequisite = { focus = USA_Recognize_The_Liberals }
+        available = {
+            299 = {
+                controller = {
+                    has_civil_war = yes
+                }
+            }
+        }
         x = 0
         y = 2
         cost = 10
@@ -1303,7 +1310,11 @@ focus_tree = {
                                 is_on_continent = south_america
                             }
                         }
-                        has_government = democratic
+                        OR = {
+                            has_government = democratic
+                            has_government = neutrality
+                        }
+                        has_civil_war = no
                     }
                 }
                 add_opinion_modifier = {
@@ -1515,7 +1526,7 @@ focus_tree = {
         }
     }
     focus = {
-        id = USA_The_US_General_Assembly
+        id = USA_The_United_States_Economic_Association
         icon = GFX_focus_usa_washington_conference
         relative_position_id = USA_San_Francisco_Conference
         prerequisite = { focus = USA_San_Francisco_Conference }
