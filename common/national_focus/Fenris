@@ -503,12 +503,12 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		available={
-			date > 1923.1.1
+			date > 1926.1.1
 			has_army_manpower = {
-				size > 10000
+				size > 30000
 			}
 			custom_trigger_tooltip = {
-                tooltip = FEN_has_1000_covert_staff
+                tooltip = FEN_has_2000_covert_staff
                 check_variable = {var = FEN_covert_staff value = 1000  compare = greater_than_or_equals}
             }
 			NOT={has_country_flag = FEN_laying_low}
@@ -516,8 +516,8 @@ focus_tree = {
 
 		completion_reward = {
 			country_event = {id = fenris.3}
-			subtract_from_variable = {FEN_covert_staff = 1000}
-            custom_effect_tooltip = FEN_remove_1000_covert_staff
+			subtract_from_variable = {FEN_covert_staff = 2000}
+            custom_effect_tooltip = FEN_remove_2000_covert_staff
 			set_temp_variable = {FEN_suspicion_temp = 30}
 			FEN_increase_suspicion = yes
 		}
