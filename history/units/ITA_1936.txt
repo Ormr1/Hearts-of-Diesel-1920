@@ -294,23 +294,6 @@ units = {
 		start_experience_factor = 0.2 
 		start_equipment_factor = 0.7 
 	} 
-
-	##### Commando Superiore Africa #####
-	division = { # 
-		division_name = {
-			is_name_ordered = yes
-			name_order = 101
-		} #  "101a Divisione Coloniale 'Somalia'" 
-		location = 2020 
-		division_template = "Divisione Coloniale" # Colonial militia, lower training and equipment
-		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } } 
-	} 
-	division = { # 
-		name = "6a Divisione CC.NN. 'Tevere'" 
-		location = 2063 
-		division_template = "Divisione di Fanteria"	# CC.NN. militia, lower training and equipment
-		start_experience_factor = 0.2 
-	} 
 }
 
 

@@ -3261,3 +3261,10 @@
  la_plata.106.t:0 "Army fails to retake Porto Alegre"
  la_plata.101.t:0 "Patagonia Declares Independance"
  la_plata.104.t:0 "Argentinian Reformist Party Rises in Revolt"
+ 
+ IR_news.1.t:0 "The Iron Harvest"
+ IR_news.1.d:0 "The fighting has ended, just a month or so ago the guns fell silent all across europe as a cease-fire was declared. Now the belligerents dicuss the full peace terms, with the likely outcome being the drawing of the borders to the current frontlines. While this is seen as satifactory to most of the war weary powers, the Franks have exprested anger at this after losing paris only a few days before the cease-fire. Time will tell how long this peace lasts"
+ IR_news.1.a:0 "A End of bloodshed"
+ IR_news.1.b:0 "Time to talk"
+ IR_news.1.c:0 "We shall see"
+ IR_news.1.e:0 "Revanche!"

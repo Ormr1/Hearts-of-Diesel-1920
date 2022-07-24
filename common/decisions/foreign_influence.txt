@@ -516,9 +516,18 @@ foreign_influence = {
 			
 			modifier = {
 				# blocks our focus tree for libyan oil
-				tag = ITA
+				tag = GRE
 				FROM = {
 					tag = LBA
+				}
+				
+				factor = 0
+			}
+			modifier = {
+				# Carthage is rightful roman clay
+				tag = GRE
+				FROM = {
+					tag = TUS
 				}
 				
 				factor = 0

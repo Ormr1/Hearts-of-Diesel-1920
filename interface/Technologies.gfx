@@ -182,6 +182,10 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_infantry_weapons_medium"
 		texturefile = "gfx/interface/technologies/infantry_equipment_0.dds"
+	}	
+	SpriteType = {
+		name = "GFX_pre_gw_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment_0_1.dds"
 	}		
 	
 	SpriteType = {
@@ -471,12 +475,22 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_tech_engineers2_medium"
 		texturefile = "gfx/interface/technologies/engineers2.dds"
-	}	
+	}
 	
 	SpriteType = {
 		name = "GFX_tech_engineers_medium"
 		texturefile = "gfx/interface/technologies/engineers.dds"
-	}		
+	}
+
+	SpriteType = {
+		name = "GFX_support_weapons6_medium"
+		texturefile = "gfx/interface/technologies/support_weapons6.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_support_weapons5_medium"
+		texturefile = "gfx/interface/technologies/support_weapons5.dds"
+	}
 	
 	SpriteType = {
 		name = "GFX_support_weapons4_medium"

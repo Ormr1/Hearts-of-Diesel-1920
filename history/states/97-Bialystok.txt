@@ -5,6 +5,7 @@ state={
 
 	history={
 		owner = POL
+		set_demilitarized_zone = yes
 		victory_points = {
 			11301 3 
 		}

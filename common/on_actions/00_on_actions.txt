@@ -1084,6 +1084,14 @@ on_actions = {
 	#Not run on a specific country.
 	on_startup = {
 		effect = {
+			if={
+				limit={
+					date < 1920.1.2 
+				}
+				random_country = {
+					country_event = {id = IR_news.1}
+				}
+			}
 			GER = { #Axis and Poland just didn't get along
 				add_ai_strategy = {
 				   type = alliance

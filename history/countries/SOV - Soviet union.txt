@@ -178,6 +178,11 @@ if = {
 	}
 }
 
+1920.1.1={
+	set_truce = { target = POL days = 1080 }
+	set_truce = { target = CRI days = 1080 }
+}
+
 set_research_slots = 3
 set_stability = 0.5
 set_war_support = 0.3

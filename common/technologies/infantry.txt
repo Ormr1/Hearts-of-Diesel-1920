@@ -17,6 +17,37 @@ technologies = {
 	@1945 = 28
 	@1946 = 30
 
+	pre_gw_infantry_weapons = {
+
+		enable_equipments = {
+			infantry_equipment_0_1
+		}
+		
+		enable_subunits = {
+			infantry
+		}
+		
+		path = {
+			leads_to_tech = infantry_weapons
+			research_cost_coeff = 1
+		}		
+
+		research_cost = 1.5
+		start_year = 1912
+		folder = {
+			name = infantry_folder
+			position = { x = 0 y = -1 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
 	infantry_weapons = {
 
 		enable_equipments = {
@@ -29,12 +60,8 @@ technologies = {
 			additional_machine_guns
 		}
 		
-		enable_subunits = {
-			infantry
-		}
-		
 		path = {
-			leads_to_tech = infantry_weapons1
+			leads_to_tech = infantry_weapons0
 			research_cost_coeff = 1
 		}		
 
@@ -43,6 +70,33 @@ technologies = {
 		folder = {
 			name = infantry_folder
 			position = { x = 0 y = @1918 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	infantry_weapons0 = {
+
+		enable_equipments = {
+			infantry_equipment_0_5
+		}
+		
+		path = {
+			leads_to_tech = infantry_weapons1
+			research_cost_coeff = 1
+		}		
+
+		research_cost = 1.5
+		start_year = 1925
+		folder = {
+			name = infantry_folder
+			position = { x = 0 y = @1925 }
 		}
 		
 		categories = {

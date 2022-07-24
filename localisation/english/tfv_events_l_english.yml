@@ -469,3 +469,6 @@
  tfv_new_zealand.92.t:0 "[From.GetNameDefCap] Rejects"
  tfv_new_zealand.92.desc:0 "The [Root.GetAdjective] delegation to [From.GetNameDefCap] has returned with the disappointing news that [Root.GetNameDefCap] shall not be receiving any of [From.GetNameDefCap]’s Polynesian territories."
  tfv_new_zealand.92.a:0 "Damnation!"
+ australia.2.t:0 "Paman Counter-revolutionaries ask for aid"
+ australia.2.a:0 "Intervene"
+ australia.2.b:0 "Leave it be"
