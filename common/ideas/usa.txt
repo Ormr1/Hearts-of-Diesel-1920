@@ -41,6 +41,45 @@ ideas = {
 				trade_opinion_factor = 0.15
 			}
 		}
+		us_mobile_air_corps_integration = {
+			picture = placeholder
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = 0
+
+			modifier = {
+				custom_modifier_tooltip = USA_Integrate_The_Mobile_Air_Corps_tt
+			}
+		}
+		us_supplies_raided = {
+			picture = placeholder
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = 0
+
+			modifier = {
+				supply_node_range = -0.30
+				supply_factor = -0.15
+				supply_consumption_factor = 0.15
+				no_supply_grace = -24
+				out_of_supply_factor = 0.25
+				attrition = 0.25
+			}
+		}
 		us_peacekeepers = {
 			picture = placeholder
 

@@ -1,13 +1,20 @@
 ﻿l_english:
 ### TOOLTIPS
- USA_Operation_Inti_tt:0 "Declare war on all of [LPT.GetName]'s South American enemies"
+ USA_Operation_Inti_tt:0 "Declare §Rwar§! on all of [LPT.GetName]'s South American enemies"
  usa_better_eco_development_tt:0 "Bonuses from American Economic Development: §G+100%§!"
  us_joint_army_xp_gain_5_tt:0 "Gain §Y5§! extra §GArmy Experience§! for every faction member\n  Faction Army Experience Bonus: §G+[?mountain_hikes_xp_bonus]§!"
  us_joint_army_navy_xp_gain_2_tt:0 "Gain §Y2§! extra §GArmy Experience§! and §CNavy Experience§! for every faction member\n  Faction Army Experience Bonus: §G+[?great_lakes_xp_bonus]§!"
+ USA_Integrate_The_Mobile_Air_Corps_tt:0 "Peacekeeper Operation Efficiency: §G+15%§!\nPeacekeeper Operation Casualty Rate: §G-50%§!"
+ building_forward_operating_base:0 "Building Forward Operating Base"
 ### FACTION NAMES
  FACTION_NAME_UNITED_STATES:0 "United States"
 ### IDEAS
  us_peacekeepers:0 "U.S. Peacekeepers"
+ us_sof_peacekeepers_1:0 "U.S. Peacekeepers"
+ us_sof_peacekeepers_2:0 "U.S. Peacekeepers"
+ us_sof_peacekeepers_3:0 "U.S. Peacekeepers"
+ us_sof_peacekeepers_4:0 "U.S. Peacekeepers"
+ us_sof_peacekeepers_5:0 "U.S. Peacekeepers"
  usa_american_economic_development_council:0 "American Economic Development Council"
 ### NATIONAL FOCUS
  USA_Foreign_Affairs:0 "Foreign Affairs"
@@ -19,7 +26,7 @@
  USA_Loans_For_The_Americas:0 "Loans For The Americas"
  USA_Loans_For_The_Americas_desc:0 "Our neighboring countries are in dire need of cold hard cash to pay for the consts of modernization and industrialization. To alleviate this concern, we'll offer them cash loans straight from the federal budget that they'll have plenty of time to pay off."
  USA_Spread_The_Dollar:0 "Spread The Dollar"
- USA_Spread_The_Dollar_desc:0 "Some of our economists believe that if the poorer parts of the Americas were to adopt the Usonian Dollar, economic problems related to the instability of wages and prices will decline and their economies can return to a level of stability. We'll send an offer to our neighbors to help transition their economies to using the Usonian dollar, if they so chose."
+ USA_Spread_The_Dollar_desc:0 "Some of our economists believe that if the poorer parts of the Americas were to adopt the Usonian Dollar, economic problems related to the instability of wages and prices will decline and their economies can return to a level of stability. We'll send an offer to our neighbors to help transition their economies to using the Usonian Dollar, if they so chose."
  USA_Development_In_Aztlan:0 "Development In Aztlán"
  USA_Development_In_Aztlan_desc:0 "An investment in Aztlán's Industry and Shipyards will provide a boost to their economy and allow them to stand on their own two feet economically."
  USA_Development_In_Centroamerica:0 "Development In Centroamérica"

@@ -16,6 +16,25 @@ USA_united_states = {
 		is_in_faction_with = USA
 	}
 }
+USA_peacekeeper_special_operations = {
+	priority = 997
+	allowed = {
+		AND = {
+			is_in_faction_with = USA
+			USA = {
+				has_completed_focus = USA_SOF_Training
+			}
+		}
+	}
+	visible = {
+		AND = {
+			is_in_faction_with = USA
+			USA = {
+				has_completed_focus = USA_SOF_Training
+			}
+		}
+	}
+}
 USA_war_measures = {
 	
 	allowed = {

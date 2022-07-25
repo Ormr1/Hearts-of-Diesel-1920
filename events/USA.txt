@@ -6,6 +6,7 @@ add_namespace = usa
 add_namespace = usa_la_plata
 add_namespace = usa_eco_development
 add_namespace = usa_united_states
+add_namespace = us_peacekeeper_sof_operation
 
 # Amelia Eartharts wants to join the USAAC
 country_event = {
@@ -2267,6 +2268,59 @@ country_event = { # Invitation into the United States
 				is_subject = yes
 				add = 10
 			}
+		}
+	}
+}
+
+country_event = { # Peacekeeper Supply Raid Successful
+	id = us_peacekeeper_sof_operation.1
+	title = us_peacekeeper_sof_operation.1.t
+	desc = us_peacekeeper_sof_operation.1.desc
+	picture = placeholder
+
+	is_triggered_only = yes
+
+	option = { # Hell yes
+		name = us_peacekeeper_sof_operation.1.a
+	}
+}
+
+country_event = { # Peacekeeper Supply Raid Failed
+	id = us_peacekeeper_sof_operation.2
+	title = us_peacekeeper_sof_operation.2.t
+	desc = us_peacekeeper_sof_operation.2.desc
+	picture = placeholder
+
+	is_triggered_only = yes
+
+	option = { # Hell yes
+		name = us_peacekeeper_sof_operation.2.a
+		set_temp_variable = { us_peacekeeper_sof_operation_casualties = random }
+		multiply_temp_variable = { us_peacekeeper_sof_operation_casualties = -100 }
+		if = {
+			limit = {
+				has_completed_focus = USA_Integrate_The_Mobile_Air_Corps
+			}
+			divide_temp_variable = { us_peacekeeper_sof_operation_casualties = 2 }
+		}
+		round_temp_variable = us_peacekeeper_sof_operation_casualties
+		add_manpower = var:us_peacekeeper_sof_operation_casualties
+	}
+}
+
+country_event = { # Supplied Raided!
+	id = us_peacekeeper_sof_operation.3
+	title = us_peacekeeper_sof_operation.3.t
+	desc = us_peacekeeper_sof_operation.2.desc
+	picture = placeholder
+
+	is_triggered_only = yes
+
+	option = { # FUCK
+		name = us_peacekeeper_sof_operation.3.a
+		add_timed_idea = {
+			idea = us_supplies_raided
+			days = 30
 		}
 	}
 }

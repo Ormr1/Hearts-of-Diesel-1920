@@ -1523,6 +1523,7 @@ focus_tree = {
                     is_in_faction_with = ROOT
                 }
                 add_ideas = us_peacekeepers
+                set_country_flag = us_peacekeeper_program
             }
         }
     }
@@ -1618,6 +1619,7 @@ focus_tree = {
         cost = 10
         completion_reward = {
             USA_SOF_Focus_Count_Check = yes
+            add_ideas = us_mobile_air_corps_integration
         }
     }
     focus = {

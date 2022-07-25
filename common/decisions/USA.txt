@@ -33,6 +33,7 @@ USA_united_states = {
 
 		complete_effect = {
 			add_ideas = us_peacekeepers
+			set_country_flag = us_peacekeeper_program
 		}
 	}
 	USA_construct_forward_operating_base = {
@@ -46,6 +47,12 @@ USA_united_states = {
 			}
 		}
 		targets_dynamic = yes
+
+		available = {
+			NOT = {
+				has_country_flag = building_forward_operating_base
+			}
+		}
 
 		cost = 25
 
@@ -63,9 +70,14 @@ USA_united_states = {
 			civilian_factory_use = 3
 		}
 
+		complete_effect = {
+			set_country_flag = building_forward_operating_base
+		}
+
 		days_remove = 45
 		
 		remove_effect = {
+			clr_country_flag = building_forward_operating_base
 			FROM = {
 				random_owned_controlled_state = {
 					limit = {
@@ -96,6 +108,95 @@ USA_united_states = {
 						instant_build = yes
 					}
 					set_state_flag = us_forward_operating_base
+				}
+			}
+		}
+	}
+}
+USA_peacekeeper_special_operations = {
+	USA_peacekeeper_supply_raid = {
+		icon = generic_prepare_civil_war
+		available = {
+			AND = {
+				NOT = {
+					has_country_flag = us_peacekeeper_sof_operation_in_progress
+				}
+				has_war = no
+			}
+		}
+		custom_cost_trigger = {
+			command_power > 14
+		}
+		custom_cost_text = decision_cost_CP_15
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -15
+			}
+		}
+		days = 7
+		remove_effect = {
+			USA = {
+				set_temp_variable = { us_peacekeeper_sof_operation_casualties = random }
+				multiply_temp_variable = { us_peacekeeper_sof_operation_casualties = -100 }
+				if = {
+					limit = {
+						has_completed_focus = USA_Integrate_The_Mobile_Air_Corps
+					}
+					divide_temp_variable = { us_peacekeeper_sof_operation_casualties = 2 }
+				}
+				round_temp_variable = us_peacekeeper_sof_operation_casualties
+				add_manpower = var:us_peacekeeper_sof_operation_casualties
+			}
+			random_other_country = {
+				limit = {
+					is_in_faction_with = USA
+					has_country_flag = us_peacekeeper_program
+				}
+				set_temp_variable = { us_peacekeeper_sof_operation_casualties = random }
+				multiply_temp_variable = { us_peacekeeper_sof_operation_casualties = -100 }
+				if = {
+					limit = {
+						USA = {
+							has_completed_focus = USA_Integrate_The_Mobile_Air_Corps
+						}
+					}
+					divide_temp_variable = { us_peacekeeper_sof_operation_casualties = 2 }
+				}
+				round_temp_variable = us_peacekeeper_sof_operation_casualties
+				add_manpower = var:us_peacekeeper_sof_operation_casualties
+			}
+			random_other_country = {
+				limit = {
+					is_in_faction_with = USA
+					has_country_flag = us_peacekeeper_program
+				}
+				set_temp_variable = { us_peacekeeper_sof_operation_casualties = random }
+				multiply_temp_variable = { us_peacekeeper_sof_operation_casualties = -100 }
+				if = {
+					limit = {
+						USA = {
+							has_completed_focus = USA_Integrate_The_Mobile_Air_Corps
+						}
+					}
+					divide_temp_variable = { us_peacekeeper_sof_operation_casualties = 2 }
+				}
+				round_temp_variable = us_peacekeeper_sof_operation_casualties
+				add_manpower = var:us_peacekeeper_sof_operation_casualties
+			}
+			if = {
+				limit = {
+					has_completed_focus = USA_Integrate_The_Mobile_Air_Corps
+				}
+				random_list = {
+					75 = {
+						country_event = us_peacekeeper_sof_operation.1
+						random_enemy_country = {
+							country_event = us_peacekeeper_sof_operation.3
+						}
+					}
+					25 = {
+						country_event = us_peacekeeper_sof_operation.2
+					}
 				}
 			}
 		}
