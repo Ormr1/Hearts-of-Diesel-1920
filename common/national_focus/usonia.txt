@@ -1502,7 +1502,7 @@ focus_tree = {
             every_other_country = {
                 limit = {
                     has_opinion_modifier = washington_conference
-					has_war = no
+                    has_war = no
                 }
                 country_event = usa_united_states.1
             }
@@ -1728,6 +1728,7 @@ focus_tree = {
         cost = 10
         completion_reward = {
             USA_SOF_Focus_Count_Check = yes
+
         }
     }
     focus = {
