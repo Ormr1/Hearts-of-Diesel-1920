@@ -96,7 +96,7 @@ country_event = {#threats to murrawarri
 	mean_time_to_happen = { days = 200}
 	
 	fire_only_once = yes
-	
+	`
 	option = { 
 		name = australia.3.a # pettion to join MRC
 		MRC={country_event = {id = australia.4}}

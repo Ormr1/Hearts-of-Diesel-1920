@@ -20,6 +20,7 @@ state={
 
 		}
 		add_core_of = SYR
+		add_claim_by = KUR
 	}
 
 	provinces={

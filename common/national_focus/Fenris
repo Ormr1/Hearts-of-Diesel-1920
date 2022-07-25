@@ -30,6 +30,10 @@ focus_tree = {
 		completion_reward = {
 			add_political_power = 200
 		}
+		ai_will_do = {
+			factor = 24
+		}
+
 	}
 	focus = {
 		id = FEN_join_iron_harvest
@@ -60,6 +64,9 @@ focus_tree = {
             custom_effect_tooltip = FEN_remove_1000_covert_staff
 			FEN_increase_suspicion_random = yes
 		}
+		ai_will_do = {
+			factor = 24
+		}
 	}
 	focus = {
 		id = FEN_study_the_designs
@@ -89,6 +96,9 @@ focus_tree = {
             subtract_from_variable = {FEN_research_staff = 500}
             custom_effect_tooltip = FEN_remove_500_research_staff
 		}
+		ai_will_do = {
+			factor = 24
+		}
 	}
 	focus = {
 		id = FEN_draft_scavengers
@@ -113,6 +123,9 @@ focus_tree = {
             add_manpower = 1500
 			add_to_variable = {FEN_research_staff = 1000}
             custom_effect_tooltip = FEN_add_1000_research_staff
+		}
+		ai_will_do = {
+			factor = 24
 		}
 	}
     focus = {
@@ -143,6 +156,9 @@ focus_tree = {
 					days = -150
 				}
 			}
+		}
+		ai_will_do = {
+			factor = 100
 		}
 	}
     focus = {

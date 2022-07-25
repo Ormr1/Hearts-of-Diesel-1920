@@ -266,18 +266,4 @@ defined_text = { # Fenris generator status
 		localization_key = FEN_generator_offline
 	}
 }
-#Fenris Focii
-defined_text = { # 
-	name = GetFenrisClassified
-	text = {
-		trigger = {			
-			FEN={
-				is_ai = no
-			}
-		}
-		localization_key = FEN_unclassified
-	}
-	text = {
-		localization_key = FEN_classified_focii
-	}
-}
+
