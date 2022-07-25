@@ -645,6 +645,14 @@ FEN_bunker_industry_expansion = {
 			set_country_flag = FEN_main_generator_repaired
 			set_variable = {FEN_bunker_powered_status_num=2}
 		}
+		
+		ai_will_do = {
+			base = 10
+			modifier = {
+				add = 1
+				has_stability < 0.5
+			}
+		}
 	}
 
 	FEN_expand_industry = {
@@ -678,6 +686,14 @@ FEN_bunker_industry_expansion = {
 		remove_effect = {
 			add_offsite_building = { type = industrial_complex level = 1 }
 			custom_effect_tooltip = FEN_remove_bunker_building_slot
+		}
+		
+		ai_will_do = {
+			base = 10
+			modifier = {
+				add = 5
+				num_of_available_civilian_factories < 10
+			}
 		}
 	}
 	FEN_expend_manpower_to_hurry_civ = {
@@ -933,6 +949,18 @@ FEN_bunker_industry_expansion = {
 
 		modifier = {
 			civilian_factory_use = 3
+		}
+		
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 5
+				check_variable = {  FEN_used_bunker_slots = FEN_total_bunker_slots}
+			}
+			modifier = {
+				add = 5
+				num_of_civilian_factories_available_for_projects > 5
+			}
 		}
 
 		remove_effect = {

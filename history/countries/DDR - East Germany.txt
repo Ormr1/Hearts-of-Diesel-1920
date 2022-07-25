@@ -2,8 +2,8 @@ capital = 64
 
 # Starting tech
 set_technology = {
+	pre_gw_infantry_weapons = 1
 	infantry_weapons = 1
-	infantry_weapons1 = 1
 	tech_recon = 1
 	tech_support = 1		
 	tech_engineers = 1
@@ -112,7 +112,7 @@ set_stability = 0.75
 		interwar_artillery = 1
 		interwar_antitank = 1
 		infantry_weapons2 = 1
-		improved_infantry_weapons = 1
+		improved_pre_gw_infantry_weapons = 1
 		support_weapons = 1
 		support_weapons2 = 1
 		paratroopers = 1

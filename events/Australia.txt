@@ -70,6 +70,7 @@ country_event = {#anti-comunist counter-revolutionaries ask for saxon aid
 		981={
 			add_core_of = AST
 		}
+		leave_faction = yes
 	}
 	option = {#not in our interest
 		name = australia.2.a # 

@@ -418,6 +418,7 @@ country_event = { #La Platan Liberals revolt
 				add_manpower = 200000
 			}
 			LAP={
+				load_oob = "LAP_buenos_aires_irregulars"
 				declare_war_on = {
 					target = LPT
 					type = civil_war
@@ -649,5 +650,48 @@ country_event = { #Chile and RGS are unaccessable for now
 	option = {
 		name = la_plata.112.a
 
+	}
+}
+
+country_event = { #Argentine Civil war is over
+	id = la_plata.113
+	title = la_plata.113.t
+	desc = la_plata.113.d
+	picture = GFX_report_event_hitler_handshake
+	
+	#is_triggered_only = yes
+	trigger={
+		date > 1921.05.01
+		OR={
+			tag = ARG
+			tag = ARC
+			tag = UUA
+		}
+		has_civil_war = no
+	}
+	#mean_time_to_happen = { days = 30}
+	fire_only_once = yes
+	immediate = {
+		hidden_effect={
+			every_core_state = {
+				if={
+					limit={NOT={ROOT={tag = UUA}}}
+					remove_core_of = UUA
+				}
+				if={
+					limit={NOT={ROOT={tag = ARC}}}
+					remove_core_of = ARC
+				}
+				if={
+					limit={NOT={ROOT={tag = ARG}}}
+					remove_core_of = ARG
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = la_plata.113.a
+		
 	}
 }

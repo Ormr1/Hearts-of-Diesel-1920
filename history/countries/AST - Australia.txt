@@ -5,8 +5,8 @@ set_stability = 0.8
 set_war_support = 0.3
 # Starting tech
 set_technology = {
+	pre_gw_infantry_weapons = 1
 	infantry_weapons = 1
-	infantry_weapons1 = 1
 	tech_support = 1		
 	tech_engineers = 1
 	tech_recon = 1
@@ -113,23 +113,6 @@ recruit_character = AST_generic_fascist_demagogue
 recruit_character = AST_arthur_calwell
 
 set_cosmetic_tag = AST_Saxon
-
-if = {
-	limit = {
-		has_dlc = "Together for Victory"
-	}
-	recruit_character = AST_iven_mackay #Empty char can become unit leader via FT
-}
-
-
-if = {
-	limit = {
-		has_dlc = "Together for Victory"
-	}
-	add_ideas = AST_great_depression_1
-
-	add_to_tech_sharing_group = commonwealth_research
-}
 
 set_politics = {
 	ruling_party = neutrality

@@ -1502,6 +1502,7 @@ focus_tree = {
             every_other_country = {
                 limit = {
                     has_opinion_modifier = washington_conference
+					has_war = no
                 }
                 country_event = usa_united_states.1
             }

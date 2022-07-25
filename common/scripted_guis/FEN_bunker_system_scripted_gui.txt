@@ -76,4 +76,27 @@ scripted_gui = {
 		}
 	}
 	
+	fen_hidden_focus_tree = {
+		context_type = selected_country_context
+		parent_window_name = diplomacy_tab_top 
+		window_name = "fen_hidden_focus_tree_ui_window"
+		
+		triggers = {
+			fen_hidden_focus_tree_bg_visible = {
+				FROM={
+					tag = FEN
+					NOT={has_country_flag = FEN_is_reveled_flag}
+				}
+				NOT={ ROOT = {tag = FEN}}
+			}
+			fen_hidden_focus_tree_text_visible = {
+				FROM={
+					tag = FEN
+					NOT={has_country_flag = FEN_is_reveled_flag}
+				}
+				NOT={ ROOT = {tag = FEN}}
+			}
+		}
+	}
+	
 }

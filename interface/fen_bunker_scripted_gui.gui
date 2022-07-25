@@ -227,4 +227,27 @@ guiTypes = {
 
 	}
 	
+	containerWindowType = {#focus tree blocker
+		name = "fen_hidden_focus_tree_ui_window"
+		position = { x =144 y = 88 }
+		size = { width = 100% height= 130 }
+		
+		iconType = {
+			name ="fen_hidden_focus_tree_bg"
+			spriteType = "GFX_diplo_goal_button"
+			position = { x=103 y=7 }
+		}
+		instantTextBoxType = {
+			name ="fen_hidden_focus_tree_text"
+			position = { x = 146 y = 25 }
+			font = "hoi_18mbs"
+			text = "FEN_classified_focii"
+			format = center
+			maxWidth = 200
+			maxHeight = 25
+		}
+	}
+	
+	
+	
 }
