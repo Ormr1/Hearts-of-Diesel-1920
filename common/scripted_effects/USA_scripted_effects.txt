@@ -872,3 +872,64 @@ USA_set_president_effect = {
 		}
 	}
 }
+
+USA_SOF_Focus_Count_Check = {
+	add_to_variable = { sof_focus_count = 1 }
+	if = {
+		limit = {
+			check_variable = { sof_focus_count = 2 }
+		}
+		USA_SOF_Peacekeepers_Increase_Level = yes
+	}
+	else_if = {
+		limit = {
+			check_variable = { sof_focus_count = 4 }
+		}
+		USA_SOF_Peacekeepers_Increase_Level = yes
+	}
+	else_if = {
+		limit = {
+			check_variable = { sof_focus_count = 6 }
+		}
+		USA_SOF_Peacekeepers_Increase_Level = yes
+	}
+}
+
+USA_SOF_Peacekeepers_Increase_Level = {
+	if = {
+		limit = {
+			has_idea = us_sof_peacekeepers_1
+		}
+		swap_ideas = {
+			remove_idea = us_sof_peacekeepers_1
+			add_idea = us_sof_peacekeepers_2
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = us_sof_peacekeepers_2
+		}
+		swap_ideas = {
+			remove_idea = us_sof_peacekeepers_2
+			add_idea = us_sof_peacekeepers_3
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = us_sof_peacekeepers_3
+		}
+		swap_ideas = {
+			remove_idea = us_sof_peacekeepers_3
+			add_idea = us_sof_peacekeepers_4
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = us_sof_peacekeepers_4
+		}
+		swap_ideas = {
+			remove_idea = us_sof_peacekeepers_4
+			add_idea = us_sof_peacekeepers_5
+		}
+	}
+}

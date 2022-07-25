@@ -63,6 +63,158 @@ ideas = {
 				can_send_volunteers = yes
 			}
 		}
+		us_sof_peacekeepers_1 = {
+			picture = placeholder
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = 0
+			
+			modifier = {
+				send_volunteer_divisions_required = -0.25
+				send_volunteer_size = 1
+				send_volunteers_tension = -0.50
+				special_forces_attack_factor = 0.05
+				special_forces_defence_factor = 0.05
+			}
+			rule = {
+				can_send_volunteers = yes
+			}
+		}
+		us_sof_peacekeepers_2 = {
+			picture = placeholder
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = 0
+			
+			modifier = {
+				send_volunteer_divisions_required = -0.25
+				send_volunteer_size = 1
+				send_volunteers_tension = -0.50
+				special_forces_attack_factor = 0.10
+				special_forces_defence_factor = 0.10
+				special_forces_training_time_factor = 0.05
+			}
+			rule = {
+				can_send_volunteers = yes
+			}
+		}
+		us_sof_peacekeepers_3 = {
+			picture = placeholder
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = 0
+			
+			modifier = {
+				send_volunteer_divisions_required = -0.25
+				send_volunteer_size = 1
+				send_volunteers_tension = -0.50
+				special_forces_attack_factor = 0.10
+				special_forces_defence_factor = 0.10
+				special_forces_training_time_factor = 0.10
+				special_forces_out_of_supply_factor = -0.15
+			}
+			rule = {
+				can_send_volunteers = yes
+			}
+		}
+		us_sof_peacekeepers_4 = {
+			picture = placeholder
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = 0
+			
+			modifier = {
+				send_volunteer_divisions_required = -0.25
+				send_volunteer_size = 1
+				send_volunteers_tension = -0.50
+				special_forces_attack_factor = 0.15
+				special_forces_defence_factor = 0.15
+				special_forces_training_time_factor = 0.15
+				special_forces_out_of_supply_factor = -0.15
+			}
+			rule = {
+				can_send_volunteers = yes
+			}
+		}
+		us_sof_peacekeepers_5 = {
+			picture = placeholder
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = 0
+			
+			modifier = {
+				send_volunteer_divisions_required = -0.25
+				send_volunteer_size = 1
+				send_volunteers_tension = -0.50
+				special_forces_attack_factor = 0.20
+				special_forces_defence_factor = 0.20
+				special_forces_training_time_factor = 0.20
+				special_forces_out_of_supply_factor = -0.20
+				special_forces_no_supply_grace = 168
+			}
+			rule = {
+				can_send_volunteers = yes
+			}
+		}
+		us_police_peacekeepers_1 = {
+			picture = placeholder
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = 0
+			
+			modifier = {
+				send_volunteer_divisions_required = -0.25
+				send_volunteer_size = 1
+				send_volunteers_tension = -0.50
+				special_forces_cap = 0.10
+				resistance_activity = -0.25
+			}
+			rule = {
+				can_send_volunteers = yes
+			}
+		}
 		usonian_loans = {
 			picture = placeholder
 

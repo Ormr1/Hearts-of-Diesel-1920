@@ -1513,7 +1513,7 @@ focus_tree = {
         icon = GFX_focus_usa_establish_us_peacekeepers
         relative_position_id = USA_San_Francisco_Conference
         prerequisite = { focus = USA_San_Francisco_Conference }
-        x = -2
+        x = -3
         y = 1
         cost = 10
         completion_reward = {
@@ -1527,11 +1527,258 @@ focus_tree = {
         }
     }
     focus = {
+        id = USA_SOF_Training
+        icon = placeholder
+        relative_position_id = USA_Establish_US_Peacekeepers
+        prerequisite = { focus = USA_Establish_US_Peacekeepers }
+        mutually_exclusive = { focus = USA_Policing_Training }
+        x = -2
+        y = 1
+        cost = 10
+        completion_reward = {
+            army_experience = 15
+            swap_ideas = {
+                remove_idea = us_peacekeepers
+                add_idea = us_sof_peacekeepers_1
+            }
+            every_other_country = {
+                limit = {
+                    has_idea = us_peacekeepers
+                }
+                army_experience = 15
+                swap_ideas = {
+                    remove_idea = us_peacekeepers
+                    add_idea = us_sof_peacekeepers_1
+                }
+            }
+        }
+    }
+    focus = {
+        id = USA_Great_Lakes_Maneuvers
+        icon = placeholder
+        relative_position_id = USA_SOF_Training
+        prerequisite = { focus = USA_SOF_Training }
+        x = -2
+        y = 1
+        cost = 10
+        completion_reward = {
+            USA_SOF_Focus_Count_Check = yes
+            set_temp_variable = { great_lakes_xp_bonus = 0 }
+            hidden_effect = {
+                every_other_country = {
+                    limit = {
+                        is_in_faction_with = ROOT
+                    }
+                    ROOT = {
+                        add_to_temp_variable = { great_lakes_xp_bonus = 2 }
+                    }
+                }
+                army_experience = great_lakes_xp_bonus
+                navy_experience = great_lakes_xp_bonus
+            }
+            custom_effect_tooltip = us_joint_army_navy_xp_gain_2_tt
+            army_experience = 5
+            navy_experience = 5
+            add_tech_bonus = {
+                bonus = 0.5
+                uses = 1
+                category = tp_tech
+            }
+            every_other_country = {
+                limit = {
+                    is_in_faction_with = ROOT
+                }
+                add_tech_bonus = {
+                    bonus = 0.5
+                    uses = 1
+                    category = tp_tech
+                }
+            }
+        }
+    }
+    focus = {
+        id = USA_Air_Cavalry_Corps
+        icon = placeholder
+        relative_position_id = USA_Great_Lakes_Maneuvers
+        prerequisite = { focus = USA_Great_Lakes_Maneuvers }
+        x = -1
+        y = 1
+        cost = 10
+        completion_reward = {
+            USA_SOF_Focus_Count_Check = yes
+        }
+    }
+    focus = {
+        id = USA_Integrate_The_Mobile_Air_Corps
+        icon = placeholder
+        relative_position_id = USA_Air_Cavalry_Corps
+        prerequisite = { focus = USA_Air_Cavalry_Corps }
+        x = 0
+        y = 1
+        cost = 10
+        completion_reward = {
+            USA_SOF_Focus_Count_Check = yes
+        }
+    }
+    focus = {
+        id = USA_Mountain_Hikes
+        icon = placeholder
+        relative_position_id = USA_SOF_Training
+        prerequisite = { focus = USA_SOF_Training }
+        x = 0
+        y = 1
+        cost = 10
+        completion_reward = {
+            USA_SOF_Focus_Count_Check = yes
+            set_temp_variable = { mountain_hikes_xp_bonus = 0 }
+            hidden_effect = {
+                every_other_country = {
+                    limit = {
+                        is_in_faction_with = ROOT
+                    }
+                    ROOT = {
+                        add_to_temp_variable = { mountain_hikes_xp_bonus = 5 }
+                    }
+                }
+                army_experience = mountain_hikes_xp_bonus
+            }
+            custom_effect_tooltip = us_joint_army_xp_gain_5_tt
+            army_experience = 5
+            add_tech_bonus = {
+                bonus = 0.5
+                uses = 1
+                category = mountaineers_tech
+            }
+            every_other_country = {
+                limit = {
+                    is_in_faction_with = ROOT
+                }
+                add_tech_bonus = {
+                    bonus = 0.5
+                    uses = 1
+                    category = mountaineers_tech
+                }
+            }
+        }
+    }
+    focus = {
+        id = USA_Expeditionary_Courses
+        icon = placeholder
+        relative_position_id = USA_SOF_Training
+        prerequisite = {
+            focus = USA_SOF_Training
+            focus = USA_Policing_Training
+        }
+        x = 2
+        y = 1
+        cost = 10
+        completion_reward = {
+            USA_SOF_Focus_Count_Check = yes
+            army_experience = 10
+        }
+    }
+    focus = {
+        id = USA_Amphibious_Assault_Training_Bases
+        icon = placeholder
+        relative_position_id = USA_Mountain_Hikes
+        prerequisite = { focus = USA_Mountain_Hikes }
+        prerequisite = { focus = USA_Expeditionary_Courses }
+        x = 1
+        y = 1
+        cost = 10
+        completion_reward = {
+            USA_SOF_Focus_Count_Check = yes
+            army_experience = 10
+            navy_experience = 5
+            add_tech_bonus = {
+                bonus = 0.25
+                uses = 1
+                category = marine_tech
+            }
+            add_tech_bonus = {
+                bonus = 0.25
+                uses = 1
+                category = tp_tech
+            }
+            every_other_country = {
+                limit = {
+                    is_in_faction_with = ROOT
+                }
+                add_tech_bonus = {
+                    bonus = 0.25
+                    uses = 1
+                    category = marine_tech
+                }
+                add_tech_bonus = {
+                    bonus = 0.25
+                    uses = 1
+                    category = tp_tech
+                }
+            }
+        }
+    }
+    focus = {
+        id = USA_Naval_Forward_Operating_Bases
+        icon = placeholder
+        relative_position_id = USA_Mountain_Hikes
+        prerequisite = { focus = USA_Amphibious_Assault_Training_Bases }
+        prerequisite = { focus = USA_Great_Lakes_Maneuvers }
+        x = -1
+        y = 2
+        cost = 10
+        completion_reward = {
+            USA_SOF_Focus_Count_Check = yes
+        }
+    }
+    focus = {
+        id = USA_De_Oppresso_Liber
+        icon = placeholder
+        relative_position_id = USA_Naval_Forward_Operating_Bases
+        prerequisite = { focus = USA_Naval_Forward_Operating_Bases }
+        prerequisite = { focus = USA_Integrate_The_Mobile_Air_Corps }
+        x = -1
+        y = 1
+        cost = 10
+        completion_reward = {
+            swap_ideas = {
+                remove_idea = us_sof_peacekeepers_4
+                add_idea = us_sof_peacekeepers_5
+            }
+        }
+    }
+    focus = {
+        id = USA_Policing_Training
+        icon = placeholder
+        relative_position_id = USA_Establish_US_Peacekeepers
+        prerequisite = { focus = USA_Establish_US_Peacekeepers }
+        mutually_exclusive = { focus = USA_SOF_Training }
+        x = 2
+        y = 1
+        cost = 10
+        completion_reward = {
+            add_manpower = 10000
+            swap_ideas = {
+                remove_idea = us_peacekeepers
+                add_idea = us_police_peacekeepers_1
+            }
+            every_other_country = {
+                limit = {
+                    has_idea = us_peacekeepers
+                }
+                add_manpower = 10000
+                swap_ideas = {
+                    remove_idea = us_peacekeepers
+                    add_idea = us_police_peacekeepers_1
+                }
+            }
+        }
+    }
+    focus = {
         id = USA_The_United_States_Economic_Association
         icon = GFX_focus_usa_washington_conference
         relative_position_id = USA_San_Francisco_Conference
         prerequisite = { focus = USA_San_Francisco_Conference }
-        x = 2
+        x = 3
         y = 1
         cost = 10
         completion_reward = {

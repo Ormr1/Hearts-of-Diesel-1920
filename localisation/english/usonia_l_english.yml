@@ -2,6 +2,8 @@
 ### TOOLTIPS
  USA_Operation_Inti_tt:0 "Declare war on all of [LPT.GetName]'s South American enemies"
  usa_better_eco_development_tt:0 "Bonuses from American Economic Development: §G+100%§!"
+ us_joint_army_xp_gain_5_tt:0 "Gain §Y5§! extra §GArmy Experience§! for every faction member\n  Faction Army Experience Bonus: §G+[?mountain_hikes_xp_bonus]§!"
+ us_joint_army_navy_xp_gain_2_tt:0 "Gain §Y2§! extra §GArmy Experience§! and §CNavy Experience§! for every faction member\n  Faction Army Experience Bonus: §G+[?great_lakes_xp_bonus]§!"
 ### FACTION NAMES
  FACTION_NAME_UNITED_STATES:0 "United States"
 ### IDEAS

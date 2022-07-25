@@ -1,3 +1,106 @@
+USA_united_states = {
+	USA_join_peacekeeper_program = {
+		icon = generic_prepare_civil_war
+
+		available = {
+			AND = {
+				USA = {
+					has_completed_focus = USA_Establish_US_Peacekeepers
+				}
+				NOT = {
+					OR = {
+						has_idea = us_peacekeepers
+						has_idea = us_sof_peacekeepers_1
+						has_idea = us_sof_peacekeepers_2
+						has_idea = us_sof_peacekeepers_3
+						has_idea = us_sof_peacekeepers_4
+						has_idea = us_sof_peacekeepers_5
+					}
+				}
+			}
+		}
+		visible = {
+			USA = {
+				has_completed_focus = USA_The_Washington_Conference
+			}
+		}
+
+		cost = 0
+
+		ai_will_do = {
+			factor = 200
+		}
+
+		complete_effect = {
+			add_ideas = us_peacekeepers
+		}
+	}
+	USA_construct_forward_operating_base = {
+		icon = generic_prepare_civil_war
+		target_root_trigger = {
+			has_completed_focus = USA_Naval_Forward_Operating_Bases
+		}
+		target_trigger = {
+			FROM = {
+				is_in_faction_with = ROOT
+			}
+		}
+		targets_dynamic = yes
+
+		cost = 25
+
+		ai_will_do = {
+			factor = 50
+			modifier = {
+				FROM = {
+					naval_base > 0
+				}
+				add = 200
+			}
+		}
+
+		modifier = {
+			civilian_factory_use = 3
+		}
+
+		days_remove = 45
+		
+		remove_effect = {
+			FROM = {
+				random_owned_controlled_state = {
+					limit = {
+						AND = {
+							is_coastal = yes
+							NOT = {
+								has_state_flag = us_forward_operating_base
+							}
+						}
+					}
+					add_building_construction = {
+						type = naval_base
+						level = 1
+						instant_build = yes
+						province = {
+							all_provinces = yes
+							limit_to_naval_base = yes
+						}
+					}
+					add_building_construction = {
+						type = air_base
+						level = 1
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = anti_air_building
+						level = 1
+						instant_build = yes
+					}
+					set_state_flag = us_forward_operating_base
+				}
+			}
+		}
+	}
+}
 war_measures = {
 
 	USA_homeland_defense = {

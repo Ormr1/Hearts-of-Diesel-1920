@@ -2,13 +2,26 @@
 ##### USA ######
 ################
 
+USA_united_states = {
+	priority = 998
+	allowed = {
+		AND = {
+			is_in_faction_with = USA
+			USA = {
+				has_completed_focus = USA_The_Washington_Conference
+			}
+		}
+	}
+	visible = {
+		is_in_faction_with = USA
+	}
+}
 USA_war_measures = {
 	
 	allowed = {
 		original_tag = USA
 	}
 }
-
 USA_aid_britain = {
 
 	allowed = {
