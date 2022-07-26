@@ -375,7 +375,8 @@ set_politics = {
 	elections_allowed = no
 }
 set_popularities = {
-	neutrality = 100
+	neutrality = 54
+	fascism = 46
 }
 
 recruit_character = JAP_hideki_tojo
