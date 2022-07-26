@@ -67,7 +67,7 @@ focus_tree = {
         icon = GFX_goal_generic_occupy_states_ongoing_war
         relative_position_id = USA_Foreign_Affairs
         prerequisite = { focus = USA_Foreign_Affairs }
-        x = -10
+        x = -11
         y = 1
         cost = 10
         ai_will_do = {
@@ -1513,7 +1513,7 @@ focus_tree = {
         icon = GFX_focus_usa_establish_us_peacekeepers
         relative_position_id = USA_San_Francisco_Conference
         prerequisite = { focus = USA_San_Francisco_Conference }
-        x = -3
+        x = -4
         y = 1
         cost = 10
         completion_reward = {
@@ -1789,4 +1789,10 @@ focus_tree = {
             add_stability = 0.05
         }
     }
+
+    ### ARMY TREE ###
+
+    ### NAVY TREE ###
+
+    ### AIR TREE ###
 }
