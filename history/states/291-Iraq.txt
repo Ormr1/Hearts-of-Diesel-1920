@@ -35,6 +35,7 @@ state={
 
 		}
 		add_core_of = PER
+		add_core_of = IRQ
 		add_claim_by = KUR
 
 	}
