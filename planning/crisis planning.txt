@@ -13,7 +13,25 @@ bush war
 	john lyttelton gell allows elections in 1924
 	during the elections blacks attempt to vote in large numbers but are forced away thanks to property requirements, fueling unrest
 	charles coghlan(White Rhodesia) or Lawrence John Walter Keller(Labor) is elected
+	
+	
+	factions: ACRONYM (full name) [goal]
+		RFM (Rhodesian Federation Movement) [democratic united rhodesia]
+		RNG (Rhodesian National Government) [Non-Aligned united rhodesia]
+		
+		ZANU(Zimbawe African National Union) [Communist(maoist) Zimbabwe]
+		RNF (Rhodesian National Front) [Fascist Zimbabwe]
+		ZiR (Zimbabwe Rhodesia) [White zimbabwe]
+		ZAPU (Zimbabwe African Peoples Union) [Communist(soviet) Zimbabwe]
+		
+		ZRF (Zambian Republican Forces) [Communist zambia]
+		NRNU (Northern Rhodesian National Union) [white zambia]
+		FROLIZA (Front for the Liberation of Zambia) [non-aligned Zambia]
+		
+		NPU (Nyasaland Peoples Union) [Communist Malawi]
+		NAC (Nyasaland African Congress) [Non-aligned Malawi]
+		
 Fenris lore stuff
-	july 1923, rasputin revels himself as the leader of fenris
-	tesla excapes in october 23
-	WWII starts in march 24?
+	july 1927, rasputin revels himself as the leader of fenris
+	tesla excapes in october 27
+	WWII starts in march 28?

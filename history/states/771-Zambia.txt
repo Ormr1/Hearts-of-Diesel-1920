@@ -9,10 +9,8 @@ state={
 
 	history={
 		owner = RHO
+		add_core_of = RHO
 		add_core_of = ZAM
-		victory_points = {
-			5199 1 
-		}
 		buildings = {
 			infrastructure = 2
 
@@ -21,7 +19,7 @@ state={
 	}
 
 	provinces={
-		697 5199 7872 10538 12504 12677 
+		13306 12504 13309 13310 13308 13307
 	}
 	manpower=1000000
 	buildings_max_level_factor=1.000

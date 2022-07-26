@@ -1,0 +1,23 @@
+state={
+	id=1002
+	name="STATE_1002"
+
+	history={
+		owner = RHO
+		add_core_of = RHO
+		add_core_of = ZAM
+		buildings = {
+			infrastructure = 2
+
+		}
+
+	}
+
+	provinces={
+		13313 13321 13314 697 13315
+	}
+	manpower=69
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

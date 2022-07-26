@@ -1,0 +1,23 @@
+state={
+	id=994
+	name="STATE_994"
+
+	history={
+		owner = RHO
+		add_core_of = RHO
+		add_core_of = ZIM
+		buildings = {
+			infrastructure = 2
+
+		}
+
+	}
+
+	provinces={
+		4851 13291 13290
+	}
+	manpower=125300
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

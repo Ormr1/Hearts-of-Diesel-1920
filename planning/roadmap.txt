@@ -1,0 +1,58 @@
+Release
+	required FT:
+		Rusviet
+		Usonia
+		Saxony
+		Crimean Khanate
+		togawa shogunate
+		albion
+		polania
+		nordic kingdom
+		fenris
+		Factory/Vensa
+	good to have FT:
+		Franks
+		Hispania
+		Arabia
+		La Plata
+		Eastern Rome
+		Western Rome
+		
+Cradles of Man:
+	Required FT:
+		Maratha
+		Sassanids
+		Saxon Levant
+		Arabia
+		Eastern Rome
+	good to have FT:
+		Anatolia
+		Carnatic(Frankish Raj)
+		Aegyptus
+
+Empires of the East
+	Required FT:
+		Yuan
+		Xin
+		Zhongguo
+		Warlord
+		ZPR
+	good to have FT:
+		Poniente
+		Dai Viet
+		Rattanakosin
+
+Mare Nostrum:	
+	Required FT:
+		Franks
+		Western Rome
+		Hispania
+		Bulgaria
+		Balkania
+		
+Polynesian Voyages/Its Tonga Time
+	Required FT:
+		Tui Manua
+		New Holland
+		New Aquatine
+		Bromoan Timocracy
