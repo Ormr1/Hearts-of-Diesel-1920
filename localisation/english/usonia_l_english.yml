@@ -69,3 +69,8 @@
  USA_San_Francisco_Conference_desc:0 "Now that all of the delegates have been contacted, it's time to call a conference on international organization between the members of the new United States to set the rules of this new order and draft a charter stating our goals and ideals."
  USA_Establish_US_Peacekeepers:0 "Establish The U.S. Peacekeepers"
  USA_Establish_US_Peacekeepers_desc:0 "The United States needs an elite professional armed force that can swiftly and effectively enforce Security Council resolutions both within the territories of the U.S. and abroad."
+### EVENTS ###
+ usa_eco_development.1:0 "Usonian Loans?"
+ usa_eco_development.1.desc:0 "The government of Usonia has offered to grant loans to our nation in order to help develop our economies. The loans will be expensive to pay off but some have calculated that we will gain more from taking out the loans and allocating them properly than by denying them."
+ usa_eco_development.1.a:0 "Accept the loans"
+ usa_eco_development.1.b:0 "We don't need yankee money"

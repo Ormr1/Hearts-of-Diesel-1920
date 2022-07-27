@@ -7,6 +7,8 @@ add_namespace = usa_la_plata
 add_namespace = usa_eco_development
 add_namespace = usa_united_states
 add_namespace = us_peacekeeper_sof_operation
+add_namespace = usa_alaska
+add_namespace = usa_arabia
 
 # Amelia Eartharts wants to join the USAAC
 country_event = {
@@ -2225,6 +2227,164 @@ country_event = { # Usonia Occupies Falklands
 
 	option = { # Snakes!
 		name = usa_la_plata.4.a
+	}
+}
+
+### ALASKA
+country_event = {
+	id = usa_alaska.1
+	title = usa_alaska.1.t
+	desc = usa_alaska.1.desc
+	picture = placeholder
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = { # Accept Deal
+		name = usa_alaska.1.a
+		463 = {
+			transfer_state = USA
+		}
+		add_timed_idea = {
+			idea = sov_alaska_payments
+			days = 1825
+		}
+		USA = {
+			add_timed_idea = {
+				idea = usa_alaska_payments
+				days = 1825
+			}
+			country_event = usa_alaska.2
+		}
+	}
+	option = { # Refuse Deal
+		name = usa_alaska.1.b
+		USA = {
+			set_country_flag = usa_alaska_purchase_failed
+			country_event = usa_alaska.3
+		}
+	}
+}
+country_event = { # Rusviet Accepts Deal
+	id = usa_alaska.2
+	title = usa_alaska.2.t
+	desc = usa_alaska.2.desc
+	picture = placeholder
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = { # Wonderful
+		name = usa_alaska.2.a
+	}
+}
+country_event = { # Rusviet Refuses Deal
+	id = usa_alaska.3
+	title = usa_alaska.3.t
+	desc = usa_alaska.3.desc
+	picture = placeholder
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = { # Then we go in ourselves
+		name = usa_alaska.3.a
+	}
+}
+country_event = { # Alaska Goes To Usonia (Usonia Perspective)
+	id = usa_alaska.4
+	title = usa_alaska.4.t
+	desc = usa_alaska.4.desc
+	picture = placeholder
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = { # Then we go in ourselves
+		name = usa_alaska.4.a
+	}
+}
+country_event = { # Alaska Goes To Usonia (Rusviet Perspective)
+	id = usa_alaska.5
+	title = usa_alaska.5.t
+	desc = usa_alaska.5.desc
+	picture = placeholder
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = { # Then we go in ourselves
+		name = usa_alaska.5.a
+	}
+}
+country_event = { # Rusviet Holds Alaska (Usonia Perspective)
+	id = usa_alaska.6
+	title = usa_alaska.6.t
+	desc = usa_alaska.6.desc
+	picture = placeholder
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = { # Then we go in ourselves
+		name = usa_alaska.6.a
+	}
+}
+country_event = { # Rusviet Holds Alaska (Rusviet Perspective)
+	id = usa_alaska.7
+	title = usa_alaska.7.t
+	desc = usa_alaska.7.desc
+	picture = placeholder
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = { # Then we go in ourselves
+		name = usa_alaska.7.a
+	}
+}
+
+### ARABIA ###
+country_event = { # UEF Flies To Arabia
+	id = usa_arabia.1
+	title = usa_arabia.1.t
+	desc = usa_arabia.1.desc
+	picture = placeholder
+	
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = { # Wish them luck
+		name = usa_arabia.1.a
+		hidden_effect = {
+			country_event = {
+				id = usa_arabia.2
+				days = 21
+			}
+		}
+	}
+}
+country_event = { # Dropships Down!
+	id = usa_arabia.2
+	title = usa_arabia.2.t
+	desc = usa_arabia.2.desc
+	picture = placeholder
+	
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = { # Dear lord...
+		name = usa_arabia.2.a
+		add_manpower = -12
 	}
 }
 

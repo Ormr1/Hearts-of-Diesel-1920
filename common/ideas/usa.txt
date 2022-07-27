@@ -254,6 +254,60 @@ ideas = {
 				can_send_volunteers = yes
 			}
 		}
+		usa_alaska_payments = {
+			picture = placeholder
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = 0
+			
+			modifier = {
+				consumer_goods_factor = 0.10
+			}
+		}
+		sov_alaska_payments = {
+			picture = placeholder
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = 0
+			
+			modifier = {
+				consumer_goods_factor = -0.10
+			}
+		}
+		usa_alaska_preparations = {
+			picture = placeholder
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = 0
+			
+			targeted_modifier = {
+				tag = SOV
+				attack_bonus_against = 0.10
+				defense_bonus_against = 0.10
+				breakthrough_bonus_against = 0.10
+			}
+		}
 		usonian_loans = {
 			picture = placeholder
 
