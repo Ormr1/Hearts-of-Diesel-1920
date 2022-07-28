@@ -3,6 +3,8 @@
 ###########################
 
 add_namespace = france
+add_namespace = fra_revolution
+add_namespace = fra_monarchy
 
 # Japan demands Indochina
 country_event = {
@@ -2205,6 +2207,52 @@ news_event = {
 					is_subject_of = ENG
 				}
 			}
+		}
+	}
+}
+
+### FIGHT FOR YOUR FREEDOM
+country_event = { # Republicans In Bordeaux
+	id = fra_revolution.1
+	title = fra_revolution.1.t
+	desc = fra_revolution.1.desc
+
+	picture = placeholder
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = fra_revolution.1.a
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.5
+		}
+		add_popularity = {
+			ideology = communism
+			popularity = 0.5
+		}
+	}
+}
+country_event = { # Upholding the Monarchy
+	id = fra_monarchy.1
+	title = fra_monarchy.1.t
+	desc = fra_monarchy.1.desc
+
+	picture = placeholder
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = fra_monarchy.1.a
+		add_popularity = {
+			ideology = monarchy
+			popularity = 0.5
+		}
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.5
 		}
 	}
 }

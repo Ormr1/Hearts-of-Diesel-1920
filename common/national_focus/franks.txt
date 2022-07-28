@@ -1,0 +1,49 @@
+focus_tree = {
+    id=franks_focus
+
+    country = {
+        factor = 0
+        modifier = {
+            add = 10
+            tag = FRA 
+        }
+        modifier = {
+            add = 10
+            original_tag = FRA
+        }
+    }
+    continuous_focus_position = { x = 50 y = 1600}
+    default = no
+
+    ### POLITICS
+    focus = {
+        id = FRA_Fight_For_Your_Freedom
+        icon = placeholder
+        mutually_exclusive = { focus = FRA_Letat_Cest_Moi }
+        x = 10
+        y = 0
+        cost = 2
+        ai_will_do = {
+            factor = 10
+        }
+        search_filters = {FOCUS_FILTER_POLITICAL}
+        completion_reward = {
+            country_event = fra_revolution.1
+        }
+    }
+    focus = {
+        id = FRA_Letat_Cest_Moi
+        icon = placeholder
+        mutually_exclusive = { focus = FRA_Fight_For_Your_Freedom }
+        x = 20
+        y = 0
+        cost = 2
+        ai_will_do = {
+            factor = 10
+        }
+        search_filters = {FOCUS_FILTER_POLITICAL}
+        completion_reward = {
+            country_event = fra_monarchy.1
+        }
+    }
+}
