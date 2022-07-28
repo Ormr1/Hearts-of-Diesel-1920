@@ -1,0 +1,16 @@
+add_namespace = arabia_civil_war
+
+news_event = { # Death of the Arabian Royal family
+    id = arabia_civil_war.1
+    title = arabia_civil_war.1.t
+	desc = arabia_civil_war.1.desc
+	picture = placeholder
+
+	fire_only_once = yes
+
+    is_triggered_only = yes
+
+    option = { # Oh the humanity
+        name = arabia_civil_war.1.a
+    }
+}

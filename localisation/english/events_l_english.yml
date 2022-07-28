@@ -3268,3 +3268,7 @@
  IR_news.1.b:0 "Time to talk"
  IR_news.1.c:0 "We shall see"
  IR_news.1.e:0 "Revanche!"
+
+ arabia_civil_war.1.t:0 "Arabian Regicide"
+ arabia_civil_war.1.desc:0 "News reports are coming in from Arabia telling of the horrendous murder of the king of Arabia and his two sons, the successors to their realm. Following the line of succession, the last remaining direct heir should be the new monarch but the daughter, Sita al-Hadid, has gone missing. As a result, the old king's brother is now the new king of Arabia.\n\nRumors are circulating as to the disappearance of the princess of Arabia. Some think she's been kidnapped by the king's murderers but others report sightings of her leaving the capital city of Doha bound westward. Whatever the case may be, there's been a change in leadership in Arabia and the world waits to see how the new king will rule."
+ arabia_civil_war.1.a:0 "Oh the humanity!"
