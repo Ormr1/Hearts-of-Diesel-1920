@@ -1798,8 +1798,8 @@ ideas = {
 			
 			traits = { raiding_fleet_naval_manufacturer }
 		}
-	}
-	
+    }
+}
 	industrial_concern = {	
 		
 		famh = {
