@@ -1,4 +1,4 @@
-﻿capital = 765
+﻿capital = 679
 
 oob = "SAU_1936"
 
@@ -6,6 +6,8 @@ oob = "SAU_1936"
 set_technology = {
 	pre_gw_infantry_weapons = 1
 	gwtank = 1
+	tech_support = 1
+	gw_artillery = 1
 }
 
 if = {

@@ -2387,6 +2387,313 @@ country_event = { # Dropships Down!
 		add_manpower = -12
 	}
 }
+country_event = { # William's Plan
+	id = usa_arabia.3
+	title = usa_arabia.3.t
+	desc = usa_arabia.3.desc
+	picture = placeholder
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = usa_arabia.3.a
+		BED = {
+			add_manpower = 10000
+		}
+		send_equipment = {
+			type = infantry_equipment
+			amount 5000
+			target = BED
+		}
+		send_equipment = {
+			type = fighter_equipment
+			amount 25
+			target = BED
+		}
+		BED = {
+			country_event = usa_arabia.4
+		}
+	}
+}
+country_event = { # Mason Keeps His Promise
+	id = usa_arabia.4
+	title = usa_arabia.4.t
+	desc = usa_arabia.4.desc
+	picture = placeholder
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = usa_arabia.4.a
+		add_war_support = 0.025
+	}
+}
+country_event = { # George's Plan
+	id = usa_arabia.5
+	title = usa_arabia.5.t
+	desc = usa_arabia.5.desc
+	picture = placeholder
+
+	fire_only_once = yes
+
+	option = { # send the offer
+		name = usa_arabia.5.a
+		SAU = {
+			id = usa_arabia.6
+			days = 1
+		}
+	}
+}
+country_event = { # Usonia Gives A Better Offer
+	id = usa_arabia.6
+	title = usa_arabia.6.t
+	desc = usa_arabia.6.desc
+	picture = placeholder
+
+	fire_only_once = yes
+
+	option = { # Accept
+		name = usa_arabia.6.a
+		add_war_support = 0.025
+		add_manpower = 10000
+		USA = {
+			send_equipment = {
+				type = infantry_equipment
+				amount 5000
+				target = SAU
+			}
+			send_equipment = {
+				type = fighter_equipment
+				amount 25
+				target = SAU
+			}
+			set_country_flag = usa_supported_arab_monarchy
+		}
+	}
+
+	option = { # Deny
+		name = usa_arabia.6.b
+		USA = {
+			country_event = {
+				id = usa_arabia.7
+				days = 1
+			}
+		}
+	}
+}
+country_event = { # Arabia Denies
+	id = usa_arabia.7
+	title = usa_arabia.7.t
+	desc = usa_arabia.7.desc
+	picture = placeholder
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = { # Let's listen to William
+		name = usa_arabia.7.a
+		BED = {
+			add_manpower = 10000
+		}
+		send_equipment = {
+			type = infantry_equipment
+			amount 5000
+			target = BED
+		}
+		send_equipment = {
+			type = fighter_equipment
+			amount 25
+			target = BED
+		}
+		BED = {
+			country_event = usa_arabia.4
+		}
+		set_country_flag = usa_supported_bedouins
+	}
+}
+country_event = { # In Come The Airships
+	id = usa_arabia.8
+	title = usa_arabia.8.t
+	desc = usa_arabia.8.desc
+	picture = placeholder
+
+	fire_only_once = yes
+
+	option = { # Salvation!
+		name = usa_arabia.8.a
+		if = {
+			limit = {
+				NOT = {
+					has_tech = tech_logistics_company
+				}
+			}
+			set_technology = {
+				tech_logistics_company = 1
+			}
+		}
+		division_template = {
+			name = "Usonian Volunteers"
+			is_locked = yes
+			division_names_group = USA_INF_01
+			priority = 1
+			template_counter = 0
+			regiments = {
+				infantry = { x = 0 y = 0 }
+				infantry = { x = 0 y = 1 }
+				infantry = { x = 0 y = 2 }
+				infantry = { x = 0 y = 3 }
+				infantry = { x = 0 y = 4 }
+				infantry = { x = 1 y = 0 }
+				infantry = { x = 1 y = 1 }
+				infantry = { x = 1 y = 2 }
+				infantry = { x = 1 y = 3 }
+				infantry = { x = 1 y = 4 }
+				infantry = { x = 2 y = 0 }
+				infantry = { x = 2 y = 1 }
+				infantry = { x = 2 y = 2 }
+				infantry = { x = 2 y = 3 }
+				infantry = { x = 2 y = 4 }
+			}
+			support = {
+				artillery = { x = 0 y = 0 }
+				engineer = { x = 0 y = 1 }
+				logistics_company = { x = 0 y = 2 }
+			}
+		}
+		if = {
+			limit = {
+				USA = {
+					NOT = {
+						has_completed_focus = USA_Establish_US_Peacekeepers
+					}
+				}
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 2000
+				producer = GER
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 150
+				producer = GER
+			}
+			add_equipment_to_stockpile = {
+				type = artillery_equipment
+				amount = 36
+				producer = GER
+			}
+			add_equipment_to_stockpile = {
+				type = motorized_equipment
+				amount = 30
+				producer = GER
+			}
+			random_owned_controlled_state = {
+				create_unit = {
+					division = "name = \"Usonian Volunteers\" division_template = \"Usonian Volunteers\" start_experience_factor = 2 start_equipment_factor = 1 start_manpower_factor = 1"
+					owner = ROOT
+				}
+			}
+			random_owned_controlled_state = {
+				create_unit = {
+					division = "name = \"Usonian Volunteers\" division_template = \"Usonian Volunteers\" start_experience_factor = 2 start_equipment_factor = 1 start_manpower_factor = 1"
+					owner = ROOT
+				}
+			}
+			random_owned_controlled_state = {
+				create_unit = {
+					division = "name = \"Usonian Volunteers\" division_template = \"Usonian Volunteers\" start_experience_factor = 2 start_equipment_factor = 1 start_manpower_factor = 1"
+					owner = ROOT
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				USA = {
+					has_completed_focus = USA_Establish_US_Peacekeepers
+				}
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 3000
+				producer = GER
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 180
+				producer = GER
+			}
+			add_equipment_to_stockpile = {
+				type = artillery_equipment
+				amount = 48
+				producer = GER
+			}
+			add_equipment_to_stockpile = {
+				type = motorized_equipment
+				amount = 555
+				producer = GER
+			}
+			division_template = {
+				name = "MECOM Peacekeepers"
+				is_locked = yes
+				division_names_group = USA_INF_01
+				priority = 1
+				template_counter = 39
+				regiments = {
+					motorized = { x = 0 y = 0 }
+					motorized = { x = 0 y = 1 }
+					motorized = { x = 0 y = 2 }
+					motorized = { x = 0 y = 3 }
+					motorized = { x = 0 y = 4 }
+					motorized = { x = 1 y = 0 }
+					motorized = { x = 1 y = 1 }
+					motorized = { x = 1 y = 2 }
+					motorized = { x = 1 y = 3 }
+					motorized = { x = 1 y = 4 }
+					motorized = { x = 2 y = 0 }
+					motorized = { x = 2 y = 1 }
+					motorized = { x = 2 y = 2 }
+					motorized = { x = 2 y = 3 }
+					motorized = { x = 2 y = 4 }
+				}
+				support = {
+					artillery = { x = 0 y = 0 }
+					engineer = { x = 0 y = 1 }
+					logistics_company = { x = 0 y = 2 }
+				}
+			}
+			random_owned_controlled_state = {
+				create_unit = {
+					division = "name = \"MECOM Peacekeepers\" division_template = \"MECOM Peacekeepers\" start_experience_factor = 2 start_equipment_factor = 1 start_manpower_factor = 1"
+					owner = ROOT
+				}
+			}
+			random_owned_controlled_state = {
+				create_unit = {
+					division = "name = \"Usonian Volunteers\" division_template = \"Usonian Volunteers\" start_experience_factor = 2 start_equipment_factor = 1 start_manpower_factor = 1"
+					owner = ROOT
+				}
+			}
+			random_owned_controlled_state = {
+				create_unit = {
+					division = "name = \"Usonian Volunteers\" division_template = \"Usonian Volunteers\" start_experience_factor = 2 start_equipment_factor = 1 start_manpower_factor = 1"
+					owner = ROOT
+				}
+			}
+			random_owned_controlled_state = {
+				create_unit = {
+					division = "name = \"Usonian Volunteers\" division_template = \"Usonian Volunteers\" start_experience_factor = 2 start_equipment_factor = 1 start_manpower_factor = 1"
+					owner = ROOT
+				}
+			}
+		}
+	}
+}
 
 ### UNITED STATES
 country_event = { # Invitation into the United States

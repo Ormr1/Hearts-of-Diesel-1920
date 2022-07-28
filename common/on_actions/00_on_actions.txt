@@ -1090,6 +1090,10 @@ on_actions = {
 				}
 				random_country = {
 					country_event = {id = IR_news.1}
+					news_event = {
+						id = arabia_civil_war.1
+						days = 547
+					}
 				}
 			}
 			GER = { #Axis and Poland just didn't get along
