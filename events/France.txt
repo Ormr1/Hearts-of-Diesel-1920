@@ -2284,3 +2284,16 @@ country_event = { # FRA_Prepare_For_The_Fight
 		}
 	}
 }
+country_event = { # FRA_Spread_The_News
+	id = fra.revolution.3
+	title = fra_revolution.3.t
+	desc = fr_revolution.3.desc
+	
+	picture_placeholder
+	
+	is_triggered_only = no
+	fire_only_once yes
+	
+		}
+	}
+}
