@@ -15,27 +15,28 @@ focus_tree = {
     continuous_focus_position = { x = 50 y = 1600}
     default = no
 
-    ### POLITICS
+    ### ECONOMIC
     focus = {
-        id = FRA_Fight_For_Your_Freedom
+        id = FRA_The_Broken_Economy
         icon = placeholder
-        mutually_exclusive = { focus = FRA_Letat_Cest_Moi }
-        x = 5
+        x = 30
         y = 0
-        cost = 2
+        cost = 5
         ai_will_do = {
             factor = 10
         }
-        search_filters = {FOCUS_FILTER_POLITICAL}
+        search_filters = {FOCUS_FILTER_ECONOMIC}
         completion_reward = {
-            country_event = fra_revolution.1
+            country_event = fra_economic.1
         }
     }
+
+    ### HISTORICAL
     focus = {
         id = FRA_Letat_Cest_Moi
         icon = placeholder
         mutually_exclusive = { focus = FRA_Fight_For_Your_Freedom }
-        x = 10
+        x = 15
         y = 0
         cost = 2
         ai_will_do = {
@@ -46,4 +47,93 @@ focus_tree = {
             country_event = fra_monarchy.1
         }
     }
+    
+### REVOLUTIONARY
+    focus = {
+        id = FRA_Fight_For_Your_Freedom
+        icon = placeholder
+        mutually_exclusive = { focus = FRA_Letat_Cest_Moi }
+        x = 3
+        y = 0
+        cost = 2
+        ai_will_do = {
+            factor = 5
+        }
+        search_filters = {FOCUS_FILTER_POLITICAL}
+        completion_reward = {
+            country_event = fra_revolution.1
+        }
+    }
+    focus = {
+        id = FRA_Prepare_For_The_Fight
+        icon = placeholder
+        x = 2
+        y = 1.5
+        cost = 5
+        ai_will_do = {
+            factor = 5
+        }
+        search_filters = {FOCUS_FILTER_POLITICAL}
+        completion_reward = {
+            country_event = fra_revolution.2
+        }
+            prerequisite = {
+	    focus = FRA_Fight_For_Your_Freedom
+    }
+    }
+    focus = {
+        id = FRA_Spread_The_News
+        icon = placeholder
+        x = 4
+        y = 1.5
+        cost = 5
+        ai_will_do = {
+            factor = 5
+        }
+        search_filters = {FOCUS_FILTER_POLITICAL}
+        completion_reward = {
+            country_event = fra_revolution.3
+        }
+         prerequisite = {
+	    focus = FRA_Fight_For_Your_Freedom
+    }
+    }
+        focus = {
+        id = FRA_Sabotage_The_Factories
+        icon = placeholder
+        x = 6
+        y = 1.5
+        cost = 5
+        ai_will_do = {
+            factor = 5
+        }
+        search_filters = {FOCUS_FILTER_POLITICAL}
+        completion_reward = {
+            country_event = fra_revolution.3
+        }
+         prerequisite = {
+	focus = FRA_Fight_For_Your_Freedom
 }
+    }
+    focus = {
+        id = FRA_Arm_The_People
+        icon = placeholder
+        x = 3
+        y = 3
+        cost = 5
+        ai_will_do = {
+            factor = 5
+        }
+        search_filters = {FOCUS_FILTER_POLITICAL}
+        completion_reward = {
+            country_event = fra_revolution.3
+        }
+         prerequisite = {
+	focus = FRA_Prepare_For_The_Fight
+}
+prerequisite = {
+	focus = FRA_Spread_The_News
+}
+    }
+    }
+
