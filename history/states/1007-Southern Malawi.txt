@@ -1,0 +1,23 @@
+state={
+	id=1007
+	name="STATE_1007"
+
+	history={
+		owner = RHO
+		add_core_of = RHO
+		add_core_of = MLW
+		buildings = {
+			infrastructure = 2
+
+		}
+
+	}
+
+	provinces={
+		12908
+	}
+	manpower=635000
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

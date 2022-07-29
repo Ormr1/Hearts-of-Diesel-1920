@@ -1,0 +1,750 @@
+﻿###########################
+# Bulgarian Events
+###########################
+
+add_namespace = RHO_bush_war
+######################
+# start the bush war #
+######################
+
+country_event = { #revolt of the Rhodesian Native Front
+	id = RHO_bush_war.1
+	title = RHO_bush_war.1.t
+	desc = RHO_bush_war.1.d
+	picture = GFX_report_event_hitler_handshake
+	
+	#is_triggered_only = yes
+	trigger={
+		date > 1925.01.08
+		tag = RHO
+	}
+	fire_only_once = yes
+	immediate = {
+		hidden_effect={
+			ZIM={
+				every_core_state = {
+					add_core_of = ZIN
+					remove_core_of = ZIM
+				}
+			}
+			ZIN={
+				transfer_state = 997
+				transfer_state = 995
+				transfer_state = 993
+				transfer_state = 992
+				load_oob = "ZIN_FROLIZI"
+				set_cosmetic_tag = ZIM_FROLIZI
+				set_politics = {
+					ruling_party = communism
+					last_election = "1921.1.1"
+					elections_allowed = no
+				}
+				set_popularities = {
+					communism = 89
+					neutrality = 11
+				}
+			}
+			ZAM={
+				every_core_state = {
+					add_core_of = ZUN
+					remove_core_of = ZAM
+				}
+			}
+			ZUN={
+				transfer_state = 972
+				transfer_state = 1004
+				transfer_state = 1005
+				transfer_state = 1003
+				transfer_state = 771
+				transfer_state = 999
+				load_oob = "ZUN_FROLIZA"
+				set_cosmetic_tag = ZAM_FROLIZA
+				set_politics = {
+					ruling_party = communism
+					last_election = "1921.1.1"
+					elections_allowed = no
+				}
+				set_popularities = {
+					communism = 74
+					neutrality = 26
+				}
+			}
+			MLW={
+				every_core_state = {
+					add_core_of = NPU
+					remove_core_of = MLW
+				}
+			}
+			NPU={
+				transfer_state = 1006
+				transfer_state = 1007
+				load_oob = "NPU_FROLINY"
+				set_cosmetic_tag = MLW_FROLINY
+				set_politics = {
+					ruling_party = communism
+					last_election = "1921.1.1"
+					elections_allowed = no
+				}
+				set_popularities = {
+					communism = 55
+					neutrality = 45
+				}
+			}
+			RHO={
+				declare_war_on = {
+					target = ZIN
+					type = civil_war
+				}
+				declare_war_on = {
+					target = ZUN
+					type = civil_war
+				}
+				declare_war_on = {
+					target = NPU
+					type = civil_war
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = RHO_bush_war.1.a
+
+	}
+	option = {
+		name = RHO_bush_war.1.b
+		ZIN={
+			change_tag_from = RHO
+		}
+	}
+	option = {
+		name = RHO_bush_war.1.c
+		ZUN={
+			change_tag_from = RHO
+		}
+	}
+	option = {
+		name = RHO_bush_war.1.e
+		NPU={
+			change_tag_from = RHO
+		}
+	}
+}
+
+country_event = { #Collapse of the FROLIZA
+	id = RHO_bush_war.2
+	title = RHO_bush_war.2.t
+	desc = RHO_bush_war.2.d
+	picture = GFX_report_event_hitler_handshake
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+		hidden_effect={
+			ZUN={
+				every_core_state = {
+					add_core_of = ZRF
+					add_core_of = ZLF
+				}
+			}
+			ZRF={
+				transfer_state = 1003
+				transfer_state = 771
+				load_oob = "ZRF_1925"
+				ZUN={
+					every_enemy_country = {
+						declare_war_on = {
+							target = ZRF
+							type = civil_war
+						}
+						if={
+							limit={
+								NOT = {
+									OR={
+										tag = RFM
+										tag = RHO
+									}
+								}
+							}
+							add_civil_war_target = ZRF
+						}
+					}
+				}
+				declare_war_on = {
+					target = ZUN
+					type = civil_war
+				}
+				add_civil_war_target = ZUN
+			}
+			ZLF={
+				transfer_state = 1004
+				transfer_state = 972
+				load_oob = "ZLF_1925"
+				ZUN={
+					every_enemy_country = {
+						declare_war_on = {
+							target = ZLF
+							type = civil_war
+						}
+						if={
+							limit={
+								NOT = {
+									OR={
+										tag = RFM
+										tag = RHO
+									}
+								}
+							}
+							add_civil_war_target = ZLF
+						}
+					}
+				}
+				declare_war_on = {
+					target = ZUN
+					type = civil_war
+				}
+				add_civil_war_target = ZUN
+			}
+			ZUN={
+				load_oob = "ZUN_1925"
+				drop_cosmetic_tag = yes
+				set_politics = {
+					ruling_party = communism
+					last_election = "1921.1.1"
+					elections_allowed = no
+				}
+				set_popularities = {
+					communism = 100
+					neutrality = 0
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = RHO_bush_war.2.a
+
+	}
+	option = {
+		name = RHO_bush_war.2.b
+		ZLF={
+			change_tag_from = ZUN
+		}
+	}
+	option = {
+		name = RHO_bush_war.2.c
+		ZRF={
+			change_tag_from = ZUN
+		}
+	}
+}
+
+country_event = { #Collapse of the FROLIZI
+	id = RHO_bush_war.3
+	title = RHO_bush_war.3.t
+	desc = RHO_bush_war.3.d
+	picture = GFX_report_event_hitler_handshake
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+		hidden_effect={
+			ZIN={
+				every_core_state = {
+					add_core_of = ZIP
+				}
+			}
+			ZIP={
+				transfer_state = 992
+				transfer_state = 993
+				load_oob = "ZIP_1925"
+				ZIN={
+					every_enemy_country = {
+						declare_war_on = {
+							target = ZIP
+							type = civil_war
+						}
+						if={
+							limit={
+								NOT = {
+									OR={
+										tag = RFM
+										tag = RHO
+									}
+								}
+							}
+							add_civil_war_target = ZIP
+						}
+					}
+				}
+				declare_war_on = {
+					target = ZIN
+					type = civil_war
+				}
+				add_civil_war_target = ZIN
+			}
+			ZIN={
+				load_oob = "ZIN_1925"
+				drop_cosmetic_tag = yes
+				set_politics = {
+					ruling_party = communism
+					last_election = "1921.1.1"
+					elections_allowed = no
+				}
+				set_popularities = {
+					communism = 100
+					neutrality = 0
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = RHO_bush_war.3.a
+
+	}
+	option = {
+		name = RHO_bush_war.3.b
+		ZIP={
+			change_tag_from = ZIN
+		}
+	}
+}
+
+country_event = { #Collapse of the FROLINY
+	id = RHO_bush_war.4
+	title = RHO_bush_war.4.t
+	desc = RHO_bush_war.4.d
+	picture = GFX_report_event_hitler_handshake
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+		hidden_effect={
+			NPU={
+				every_core_state = {
+					add_core_of = NAC
+				}
+			}
+			NAC={
+				transfer_state = 1007
+				load_oob = "NAC_1925"
+			}
+			NPU={
+				load_oob = "NPU_1925"
+				drop_cosmetic_tag = yes
+				set_politics = {
+					ruling_party = communism
+					last_election = "1921.1.1"
+					elections_allowed = no
+				}
+				set_popularities = {
+					communism = 100
+					neutrality = 0
+				}
+				declare_war_on = {
+					target = NAC
+					type = civil_war
+				}
+				add_civil_war_target = NAC
+			}
+			RHO={
+				declare_war_on = {
+					target = NAC
+					type = civil_war
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = RHO_bush_war.4.a
+
+	}
+	option = {
+		name = RHO_bush_war.4.b
+		NAC={
+			change_tag_from = NPU
+		}
+	}
+}
+
+country_event = { #Collapse of Rhodesia
+	id = RHO_bush_war.5
+	title = RHO_bush_war.5.t
+	desc = RHO_bush_war.5.d
+	picture = GFX_report_event_hitler_handshake
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+		hidden_effect={
+			RHO={
+				every_core_state = {
+					add_core_of = RFM
+				}
+				set_country_flag = RHO_national_collapse
+			}
+			ZUN={
+				every_core_state = {
+					add_core_of = ZMW
+				}
+			}
+			ZIN={
+				every_core_state = {
+					add_core_of = ZIR
+					add_core_of = RNF
+				}
+			}
+			ZIR={
+				transfer_state = 991
+				transfer_state = 990
+				load_oob = "ZIR_1925"
+				ZIN={
+					every_enemy_country = {
+						declare_war_on = {
+							target = ZIR
+							type = civil_war
+						}
+						add_civil_war_target = ZIR
+					}
+				}
+				declare_war_on = {
+					target = ZIN
+					type = civil_war
+				}
+				add_civil_war_target = ZIN
+			}
+			RNF={
+				transfer_state = 996
+				load_oob = "RNF_1925"
+				ZIN={
+					every_enemy_country = {
+						declare_war_on = {
+							target = RNF
+							type = civil_war
+						}
+						add_civil_war_target = RNF
+					}
+				}
+				declare_war_on = {
+					target = ZIN
+					type = civil_war
+				}
+				add_civil_war_target = ZIN
+			}
+			ZMW={
+				transfer_state = 1000
+				transfer_state = 998
+				load_oob = "ZMW_1925"
+				ZUN={
+					every_enemy_country = {
+						declare_war_on = {
+							target = ZMW
+							type = civil_war
+						}
+						add_civil_war_target = ZMW
+					}
+				}
+				declare_war_on = {
+					target = ZUN
+					type = civil_war
+				}
+				add_civil_war_target = ZUN
+			}
+			RFM={
+				transfer_state = 994
+				transfer_state = 1001
+				load_oob = "RFM_1925"
+				RHO={
+					every_enemy_country = {
+						declare_war_on = {
+							target = RFM
+							type = civil_war
+						}
+					}
+				}
+				declare_war_on = {
+					target = RHO
+					type = civil_war
+				}
+				add_civil_war_target = RHO
+				add_civil_war_target = ZIN
+				add_civil_war_target = ZUN
+				add_civil_war_target = ZIR
+				add_civil_war_target = RNF
+			}
+		}
+	}
+	
+	option = {
+		name = RHO_bush_war.5.a
+
+	}
+	option = {
+		name = RHO_bush_war.5.b
+		ZIR={
+			change_tag_from = RHO
+		}
+	}
+	option = {
+		name = RHO_bush_war.5.c
+		ZMW={
+			change_tag_from = RHO
+		}
+	}
+	option = {
+		name = RHO_bush_war.5.e
+		RNF={
+			change_tag_from = RHO
+		}
+	}
+	option = {
+		name = RHO_bush_war.5.f
+		RFM={
+			change_tag_from = RHO
+		}
+	}
+}
+
+country_event = { #victory in zambia, independance
+	id = RHO_bush_war.6
+	title = RHO_bush_war.6.t
+	desc = RHO_bush_war.6.d
+	picture = GFX_report_event_hitler_handshake
+	
+	#is_triggered_only = yes
+	trigger={
+		OR={
+			original_tag = ZMW
+			original_tag = ZUN
+			original_tag = ZLF
+			original_tag = ZRF
+		}
+		ZUN={
+			all_core_states={
+				is_fully_controlled_by = ROOT
+			}
+		}
+	}
+	fire_only_once = yes
+	immediate = {
+		hidden_effect={
+			ZUN={
+				every_core_state = {
+					remove_core_of = ZMW
+					remove_core_of = ZUN
+					remove_core_of = ZLF
+					remove_core_of = ZRF
+					add_core_of = ROOT
+				}
+			}
+			set_country_flag = United_ZAM
+			save_global_event_target_as = ZAM_united
+			if={
+				limit={
+					orignal_tag = ZMW
+				}
+				set_cosmetic_tag = ZMW_united_ZAM
+			}
+			if={
+				limit={
+					orignal_tag = ZUN
+				}
+				set_cosmetic_tag = ZUN_united_ZAM
+			}
+			if={
+				limit={
+					orignal_tag = ZLF
+				}
+				set_cosmetic_tag = ZLF_united_ZAM
+			}
+			if={
+				limit={
+					orignal_tag = ZRF
+				}
+				set_cosmetic_tag = ZRF_united_ZAM
+			}
+		}
+	}
+	
+	option = {
+		name = RHO_bush_war.6.a
+		news_event = {id=RHO_bush_war.7}
+		white_peace = RHO
+		white_peace = RFM
+	}
+}
+
+news_event = { #Zambian independance news event
+	id = RHO_bush_war.7
+	title = RHO_bush_war.7.t
+	desc = RHO_bush_war.7.d
+	#picture = GFX_report_event_hitler_handshake
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = RHO_bush_war.7.a
+		
+	}
+	
+}
+
+country_event = { #victory in Nyasaland, independance
+	id = RHO_bush_war.8
+	title = RHO_bush_war.8.t
+	desc = RHO_bush_war.8.d
+	picture = GFX_report_event_hitler_handshake
+	
+	#is_triggered_only = yes
+	trigger={
+		OR={
+			original_tag = NAC
+			original_tag = NPU
+		}
+		NAC={
+			all_core_states={
+				is_owned_and_controlled_by = ROOT
+			}
+		}
+	}
+	fire_only_once = yes
+	immediate = {
+		hidden_effect={
+			NAC={
+				every_core_state = {
+					remove_core_of = NAC
+					remove_core_of = NPU
+					add_core_of = ROOT
+				}
+			}
+			set_country_flag = United_MLW
+			save_global_event_target_as = MLW_united
+			if={
+				limit={
+					orignal_tag = NAC
+				}
+				set_cosmetic_tag = NAC_united_MLW
+			}
+			if={
+				limit={
+					orignal_tag = NPU
+				}
+				set_cosmetic_tag = NPU_united_MLW
+			}
+		}
+	}
+	
+	option = {
+		name = RHO_bush_war.8.a
+		news_event = {id=RHO_bush_war.9}
+		white_peace = RHO
+		white_peace = RFM
+	}
+}
+
+news_event = { #Zambian independance news event
+	id = RHO_bush_war.9
+	title = RHO_bush_war.9.t
+	desc = RHO_bush_war.9.d
+	#picture = GFX_report_event_hitler_handshake
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = RHO_bush_war.9.a
+		
+	}
+	
+}
+
+country_event = { #victory in zimbabwe, independance
+	id = RHO_bush_war.10
+	title = RHO_bush_war.10.t
+	desc = RHO_bush_war.10.d
+	picture = GFX_report_event_hitler_handshake
+	
+	#is_triggered_only = yes
+	trigger={
+		OR={
+			original_tag = ZIR
+			original_tag = ZIP
+			original_tag = ZIN
+			original_tag = RNF
+		}
+		ZIN={
+			all_core_states={
+				is_fully_controlled_by = ROOT
+			}
+		}
+	}
+	fire_only_once = yes
+	immediate = {
+		hidden_effect={
+			ZIN={
+				every_core_state = {
+					remove_core_of = ZIR
+					remove_core_of = ZIP
+					remove_core_of = ZIN
+					remove_core_of = RNF
+					add_core_of = ROOT
+				}
+			}
+			set_country_flag = United_ZIM
+			save_global_event_target_as = ZIM_united
+			if={
+				limit={
+					orignal_tag = ZIR
+				}
+				set_cosmetic_tag = ZIR_united_ZIM
+			}
+			if={
+				limit={
+					orignal_tag = ZIP
+				}
+				set_cosmetic_tag = ZIP_united_ZIM
+			}
+			if={
+				limit={
+					orignal_tag = ZIN
+				}
+				set_cosmetic_tag = ZIN_united_ZIM
+			}
+			if={
+				limit={
+					orignal_tag = RNF
+				}
+				set_cosmetic_tag = RNF_united_ZIM
+			}
+		}
+	}
+	
+	option = {
+		name = RHO_bush_war.10.a
+		news_event = {id=RHO_bush_war.11}
+		white_peace = RHO
+		white_peace = RFM
+	}
+}
+
+news_event = { #Zambian independance news event
+	id = RHO_bush_war.11
+	title = RHO_bush_war.11.t
+	desc = RHO_bush_war.11.d
+	#picture = GFX_report_event_hitler_handshake
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = RHO_bush_war.11.a
+		
+	}
+	
+}

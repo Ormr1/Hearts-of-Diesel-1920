@@ -1,0 +1,17 @@
+characters = {
+	UUA_sebastian_marotta = {
+		name = "Sebastián Marotta" 
+		portraits = {
+			civilian = {
+				large = GFX_portrait_sebastian_marotta
+			}
+		}
+		country_leader = {
+			ideology = syndicalism
+			expire = "1967.1.1"
+			traits={  }
+			id = -1
+		}
+	}
+}
+	

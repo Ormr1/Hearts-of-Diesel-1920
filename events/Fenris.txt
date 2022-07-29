@@ -119,3 +119,29 @@ country_event = {#Attack on the factory
 		
 	}
 }
+country_event = {#Usonias wants
+	id = fenris.8
+	title = fenris.8.t
+	desc = fenris.8.d
+	picture = GFX_report_event_finnish_letter
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = fenris.8.a
+		
+	}
+}
+country_event = {#Rusviets divisions
+	id = fenris.9
+	title = fenris.9.t
+	desc = fenris.9.d
+	picture = GFX_report_event_finnish_letter
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = fenris.9.a
+		
+	}
+}

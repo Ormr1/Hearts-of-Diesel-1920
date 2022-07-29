@@ -107,6 +107,9 @@ ideologies = {
 
 			stalinism = {
 			}
+			
+			syndicalism = {
+			}
 
 			anti_revisionism = {
 			}
@@ -130,8 +133,6 @@ ideologies = {
 			"FACTION_NAME_COMMUNIST_3"
 			"FACTION_NAME_COMMUNIST_4"
 			"FACTION_NAME_COMMUNIST_5"
-			"R56_FACTION_NAME_COMMUNIST_1"
-			"R56_FACTION_NAME_COMMUNIST_2"
 		}
 
 		color = { 170 0 0 }

@@ -389,14 +389,17 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		available={
-			OR={
-				SOV={has_character = SOV_rasputin}
-				has_country_flag = FEN_influence_in_SOV
+			custom_trigger_tooltip={
+				tooltip = FEN_influence_in_SOV
+				OR={
+					SOV={has_character = SOV_rasputin}
+					has_country_flag = FEN_influence_in_SOV
+				}
 			}
 		}
 
 		completion_reward = {
-			add_political_power = 200
+			country_event = {id=fenris.9}
 		}
 	}
 	focus = {
@@ -437,15 +440,19 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		available={
-			OR={
-				USA={has_character = USA_george_mason}
-				has_country_flag = FEN_influence_in_USA
+			custom_trigger_tooltip = {
+				tooltip = FEN_influence_in_USA
+				OR={
+					USA={has_character = USA_george_mason}
+					has_country_flag = FEN_influence_in_USA
+				}
 			}
 			NOT={has_country_flag = FEN_laying_low}
 		}
 
 		completion_reward = {
 			#unlock usonian decisions
+			country_event = {id = fenris.8}
 		}
 	}
 	focus = {
@@ -595,6 +602,13 @@ focus_tree = {
 					producer = FEN
 				}
 				add_manpower = 30000
+			}
+			688={
+				add_building_construction = {
+					type = air_base
+					level = 1
+					instant_build = yes
+				}
 			}
 		}
 	}

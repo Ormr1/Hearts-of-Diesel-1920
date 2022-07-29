@@ -2098,6 +2098,31 @@ on_actions = {
 		effect = {
 			if = {
 				limit = {
+					has_civil_war = yes
+					FROM = {
+						OR={
+							tag = RHO
+							tag = RFM
+						}
+					}
+					FROM.FROM = { 
+						is_core_of = RHO 
+						OR = {
+							state = 1001
+							state = 1002
+							state = 770
+						}
+					}
+					RHO={
+						has_country_flag = RHO_national_collapse
+					}
+				}
+				FROM.FROM={
+					transfer_state_to = ROOT
+				}
+			}
+			if = {
+				limit = {
 					tag = FRA #to avoid third party taking over
 					FROM = {
 						is_in_faction_with = GER

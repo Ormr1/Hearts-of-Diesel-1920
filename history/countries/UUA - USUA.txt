@@ -43,7 +43,7 @@ if = {
 	}
 }
 
-#recruit_character = LAP_john_louis_sanfuentes
+recruit_character = UUA_sebastian_marotta
 
 
 set_country_flag = monroe_doctrine

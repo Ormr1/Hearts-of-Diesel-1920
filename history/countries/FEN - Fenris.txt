@@ -1,5 +1,7 @@
 capital = 713
 
+oob = "FEN_1920"
+
 starting_train_buffer = 5
 
 set_research_slots = 5
@@ -17,7 +19,7 @@ set_variable = { var = FEN_covert_reveal_risk value = 13 }
 set_variable = { var = FEN_covert_reveal_risk_percentile value = 1 }
 
 
-add_manpower = 20000
+add_manpower = 36000
 add_ideas={
 	FEN_in_the_shadows
 	FEN_covert_forces

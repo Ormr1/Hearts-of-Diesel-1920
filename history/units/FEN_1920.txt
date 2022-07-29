@@ -1,0 +1,68 @@
+﻿division_template = {
+	name = "Mercenary Brigade"			# Infantry Brigade
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+}
+# division_template = {
+	# name = "Fenris Exosuits"			# Exosuit Brigade
+
+	# regiments = {
+		# exo_infantry = { x = 0 y = 0 }
+		# exo_infantry = { x = 0 y = 1 }
+		# exo_infantry = { x = 0 y = 2 }
+		# exo_infantry = { x = 1 y = 0 }
+		# exo_infantry = { x = 1 y = 1 }
+		# exo_infantry = { x = 1 y = 2 }
+	# }
+# }
+
+
+units = {
+	######## LAND OOB ########
+	##### Kerguelen Bunker Garrison #####
+	division = {
+		name = "European Mercenaries"
+		location = 2165
+		division_template = "Mercenary Brigade"		
+		start_experience_factor = 0.8
+		start_equipment_factor = 1.0
+
+	}
+	division = {
+		name = "American Mercenaries"
+		location = 2165
+		division_template = "Mercenary Brigade"		
+		start_experience_factor = 0.8
+		start_equipment_factor = 1.0
+
+	}
+
+	######## No Naval OOB ########
+}
+
+air_wings = {
+	### Fenrisian Air Force ###
+	713 = {
+		# 
+		fighter_equipment_0 =  {
+			owner = "FEN" 
+			amount = 72
+		}
+		# 
+		CAS_equipment_1 =  {
+			owner = "FEN" 
+			amount = 48
+		}
+		transport_plane_equipment_1 =  {
+			owner = "FEN" 
+			amount = 15
+		}
+	}
+}
