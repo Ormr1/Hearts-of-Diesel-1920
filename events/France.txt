@@ -2261,6 +2261,7 @@ country_event = { # Republicans In Bordeaux
 		}
 	}
 }
+
 country_event = { # Destruction of the Economy
     id = fra_economic.1
     title = fra_economic.1.t
@@ -2270,6 +2271,7 @@ country_event = { # Destruction of the Economy
 
     is_triggered_only = no
     fire_only_once = yes
+
 } 
 country_event = { # FRA_Prepare_For_The_Fight
 	id = fra_sabotage.1
@@ -2280,6 +2282,7 @@ country_event = { # FRA_Prepare_For_The_Fight
 
 	is_triggered_only = no
 	fire_only_once yes
+
 }
 country_event = { # FRA_Spread_The_News
 	id = fra.revolution.3
@@ -2290,6 +2293,7 @@ country_event = { # FRA_Spread_The_News
 	
 	is_triggered_only = no
 	fire_only_once yes
+	
 }
 country_event = { # FRA_Prepare_For_The_Fight
 	id = fra.revolution.2
@@ -2300,6 +2304,7 @@ country_event = { # FRA_Prepare_For_The_Fight
 	
 	is_triggered only = no
 	fire_only_once yes
+
 }
 country_event = { # FRA_Arm_The_People
 	id = fra.revolution.4
@@ -2309,4 +2314,5 @@ country_event = { # FRA_Arm_The_People
 	picture_placeholder
 	is_triggered_only = no
 	fire_only_once yes
+
 }
