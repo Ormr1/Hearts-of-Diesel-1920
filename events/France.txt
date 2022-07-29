@@ -7,6 +7,7 @@ add_namespace = fra_revolution
 add_namespace = fra_monarchy
 add_namespace = fra_economic
 add_namespace = fra_sabotage
+add_namespace = fra_politicalalliance
 
 # Japan demands Indochina
 country_event = {
