@@ -2274,7 +2274,11 @@ country_event = { # Destruction of the Economy
 
 	option = {
 		name = fra_economic.1.a
-		general_production = 0.5
+		add_building_construction = {
+    		type = general_production
+    		level = 5
+    		instant_build = yes
+		}
 	}
 } 
 country_event = { # FRA_Spread_The_News
