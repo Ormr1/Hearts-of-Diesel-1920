@@ -2213,29 +2213,7 @@ news_event = {
 	}
 }
 
-### FIGHT FOR YOUR FREEDOM
-country_event = { # Republicans In Bordeaux
-	id = fra_revolution.1
-	title = fra_revolution.1.t
-	desc = fra_revolution.1.desc
-
-	picture = placeholder
-
-	is_triggered_only = yes
-	fire_only_once = yes
-
-	option = {
-		name = fra_revolution.1.a
-		add_popularity = {
-			ideology = democratic
-			popularity = 0.5
-		}
-		add_popularity = {
-			ideology = communism
-			popularity = 0.5
-		}
-	}
-}
+### HISTORICAL / MONARCHIST
 country_event = { # Upholding the Monarchy
 	id = fra_monarchy.1
 	title = fra_monarchy.1.t
@@ -2258,6 +2236,31 @@ country_event = { # Upholding the Monarchy
 		}
 	}
 }
+
+### FIGHT FOR YOUR FREEDOM
+country_event = { # Republicans In Bordeaux
+	id = fra_revolution.1
+	title = fra_revolution.1.t
+	desc = fra_revolution.1.desc
+
+	picture = placeholder
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = fra_revolution.1.a
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.5
+		}
+	option = {
+		add_popularity = {
+			ideology = communism
+			popularity = 0.5
+		}
+	}
+}
 country_event = { # Destruction of the Economy
     id = fra_economic.1
     title = fra_economic.1.t
@@ -2268,7 +2271,7 @@ country_event = { # Destruction of the Economy
     is_triggered_only = no
     fire_only_once = yes
 
-   	 }
+   		}
     }
 } 
 country_event = { # FRA_Prepare_For_The_Fight
@@ -2297,3 +2300,6 @@ country_event = { # FRA_Spread_The_News
 		}
 	}
 }
+country_event = { # FRA_Prepare_For_The_Fight
+	id = fra.revolution.2
+	title = fra_revolution}

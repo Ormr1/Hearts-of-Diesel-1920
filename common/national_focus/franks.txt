@@ -126,7 +126,7 @@ focus_tree = {
         }
         search_filters = {FOCUS_FILTER_POLITICAL}
         completion_reward = {
-            country_event = fra_revolution.3
+            country_event = fra_revolution.4
         }
          prerequisite = {
 	focus = FRA_Prepare_For_The_Fight
