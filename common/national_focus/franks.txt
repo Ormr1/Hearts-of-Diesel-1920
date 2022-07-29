@@ -82,6 +82,26 @@ focus_tree = {
     }
 }
     focus = {
+        id = FRA_Affect_The_Factories
+        icon = placeholder
+        x = 5
+        y = 3
+        cost = 5
+        ai_will_do = {
+            factor = 5
+        }
+        search_filters = {FOCUS_FILTER_POLITICAL}
+        completion_reward = {
+            country_event = fra_sabotage.2
+        prerequisite = {
+            FRA_Sabotage_The_Factories
+        }
+        }
+            prerequisite = {
+                focus = FRA_Spread_The_News
+}
+    }
+    focus = {
         id = FRA_Spread_The_News
         icon = placeholder
         x = 4
@@ -134,6 +154,5 @@ focus_tree = {
 prerequisite = {
 	focus = FRA_Spread_The_News
 }
+}
     }
-    }
-
