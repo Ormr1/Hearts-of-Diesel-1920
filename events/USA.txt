@@ -2097,6 +2097,10 @@ country_event = { # Transition to the dollar?
 		ai_chance = {
 			base = 10
 			modifier = {
+				num_of_civilian_factories < 30
+				add = 100
+			}
+			modifier = {
 				has_idea = great_depression
 				add = 100
 			}

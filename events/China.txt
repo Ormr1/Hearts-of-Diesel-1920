@@ -1490,23 +1490,3 @@ country_event = {
 		}
 	}
 }
-
-### KMT REBELS ###
-country_event = { # The counterattack
-	id = kmt_revolution.1
-	title = kmt_revolution.1.t
-	desc = kmt_revolution.1.desc
-	picture = placeholder
-
-	fire_only_once = yes
-
-	is_triggered_only = yes
-
-	option = {
-		name = kmt_revolution.1.a
-		add_timed_idea = {
-			idea = CHI_civil_war_counterattack
-			days = 270
-		}
-	}
-}

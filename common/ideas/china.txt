@@ -21,30 +21,6 @@ ideas = {
 				army_core_defence_factor = 0.10
 			}
 		}
-		CHI_civil_war_counterattack = {
-
-			picture = chi_xin_imperial_army
-
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				NOT = {
-					has_government = communism
-				}
-			}
-
-			removal_cost = 0
-
-			modifier = {
-				army_attack_factor = 0.25
-                army_defence_factor = 0.25
-				out_of_supply_factor = -0.25
-				supply_consumption_factor = -0.15
-				no_supply_grace = 120
-			}
-		}
 		german_advisors = {
 		
 			allowed = {

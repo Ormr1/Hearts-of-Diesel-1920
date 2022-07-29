@@ -5,6 +5,7 @@ news_event = { # Death of the Arabian Royal family
     title = arabia_civil_war.1.t
 	desc = arabia_civil_war.1.desc
 	picture = placeholder
+    major = yes
 
 	fire_only_once = yes
 
