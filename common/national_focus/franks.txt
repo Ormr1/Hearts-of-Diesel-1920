@@ -80,7 +80,7 @@ focus_tree = {
             prerequisite = {
 	    focus = FRA_Fight_For_Your_Freedom
     }
-    }
+}
     focus = {
         id = FRA_Spread_The_News
         icon = placeholder

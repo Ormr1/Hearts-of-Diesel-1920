@@ -2273,7 +2273,7 @@ country_event = { # Destruction of the Economy
     fire_only_once = yes
 
 	option = {
-		general_production = 1
+		general_production = 0.5
 	}
 } 
 country_event = { # FRA_Prepare_For_The_Fight
