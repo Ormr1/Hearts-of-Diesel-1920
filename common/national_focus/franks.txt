@@ -22,7 +22,7 @@ focus_tree = {
             original_tag = FRA
         }
     }
-    continuous_focus_position = { x = 50 y = 1600}
+    continuous_focus_position = { x = 1250 y = 3500}
     default = no
 
     ### ECONOMIC
@@ -46,7 +46,7 @@ focus_tree = {
         id = FRA_Letat_Cest_Moi
         icon = placeholder
         mutually_exclusive = { focus = FRA_Fight_For_Your_Freedom }
-        x = 20
+        x = 25
         y = 0
         cost = 2
         ai_will_do = {
@@ -300,6 +300,25 @@ focus_tree = {
             focus = FRA_Unite_The_Left
         }
     }
+    focus = {
+    id = FRA_Dismember_The_Monarchy
+    icon = placeholder
+    x = 6
+    y = 8
+    cost = 10
+    ai_will_do = {
+        factor = 5
+    }
+    search_filters = {FOCUS_FILTER_POLITICAL}
+    completion_reward = {
+        country_event = fra_civilwarignite.2
+    }
+    prerequisite = {
+        focus = FRA_Light_The_Torch
+    }
+    }
+
+}
         focus = {
         id = FRA_Bribe_Business_Owners
         icon = placeholder
@@ -335,4 +354,3 @@ focus_tree = {
 	focus = FRA_Bribe_Business_Owners
 }
 }
-    }
