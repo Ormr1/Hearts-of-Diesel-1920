@@ -732,7 +732,7 @@ country_event = { #victory in zimbabwe, independance
 	}
 }
 
-news_event = { #Zambian independance news event
+news_event = { #Zimbabwen independance news event
 	id = RHO_bush_war.11
 	title = RHO_bush_war.11.t
 	desc = RHO_bush_war.11.d

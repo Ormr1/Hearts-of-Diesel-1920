@@ -87,10 +87,10 @@ focus_tree = {
         completion_reward = {
             country_event = fra_revolution.2
         }
-            prerequisite = {
-	    focus = FRA_Fight_For_Your_Freedom
+        prerequisite = {
+            focus = FRA_Fight_For_Your_Freedom
+        }
     }
-}
     focus = {
         id = FRA_Gain_Political_Alliances
         icon = placeholder
@@ -116,13 +116,13 @@ focus_tree = {
         cost = 5
         ai_will_do = {
             factor = 5
+        }
         search_filters = {FOCUS_FILTER_POLITICAL}
         completion_reward = {
             country_event = fra_politicalalliance.2
         }
         prerequisite = {
             focus = FRA_Gain_Political_Alliances
-            }
         }
     }
     focus = {
@@ -183,7 +183,7 @@ focus_tree = {
             focus = FRA_Gain_Political_Alliances
         }
     }
-        focus = {
+    focus = {
         id = FRA_Train_The_Populous
         icon = placeholder
         x = 6
@@ -256,9 +256,9 @@ focus_tree = {
         completion_reward = {
             country_event = fra_sabotage.2
         }
-            prerequisite = {
-	focus = FRA_Bribe_Business_Owners
-}
+        prerequisite = {
+        focus = FRA_Bribe_Business_Owners
+    }
     }
     focus = {
         id = FRA_Spread_The_News
@@ -317,9 +317,7 @@ focus_tree = {
         focus = FRA_Light_The_Torch
     }
     }
-
-}
-        focus = {
+    focus = {
         id = FRA_Bribe_Business_Owners
         icon = placeholder
         x = 6
@@ -333,8 +331,8 @@ focus_tree = {
             country_event = fra_sabotage.1
         }
          prerequisite = {
-	focus = FRA_Fight_For_Your_Freedom
-}
+            focus = FRA_Fight_For_Your_Freedom
+        }
 
     }
     focus = {
@@ -350,7 +348,8 @@ focus_tree = {
         completion_reward = {
             country_event = fra_sabotage.3
         }
-         prerequisite = {
-	focus = FRA_Bribe_Business_Owners
-}
+        prerequisite = {
+            focus = FRA_Bribe_Business_Owners
+        }
+    }
 }
