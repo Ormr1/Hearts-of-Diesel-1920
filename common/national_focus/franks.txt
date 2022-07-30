@@ -1,3 +1,13 @@
+### search_filters = {FOCUS_FILTER_POLITICAL}
+### search_filters = {FOCUS_FILTER_RESEARCH}
+### search_filters = {FOCUS_FILTER_INDUSTRY}
+### search_filters = {FOCUS_FILTER_STABILITY}
+### search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+### search_filters = {FOCUS_FILTER_MANPOWER}
+### search_filters = {FOCUS_FILTER_ANNEXATION}
+### search_filters = {FOCUS_FILTER_FRA_PARLIAMENT}
+### search_filters = {FOCUS_FILTER_}
+
 focus_tree = {
     id=franks_focus
 
@@ -19,7 +29,7 @@ focus_tree = {
     focus = {
         id = FRA_The_Broken_Economy
         icon = placeholder
-        x = 30
+        x = 50
         y = 0
         cost = 5
         ai_will_do = {
@@ -36,7 +46,7 @@ focus_tree = {
         id = FRA_Letat_Cest_Moi
         icon = placeholder
         mutually_exclusive = { focus = FRA_Fight_For_Your_Freedom }
-        x = 15
+        x = 20
         y = 0
         cost = 2
         ai_will_do = {
@@ -67,7 +77,7 @@ focus_tree = {
     focus = {
         id = FRA_Prepare_For_The_Fight
         icon = placeholder
-        x = 2
+        x = 1
         y = 1.5
         cost = 5
         ai_will_do = {
@@ -82,10 +92,162 @@ focus_tree = {
     }
 }
     focus = {
-        id = FRA_Affect_The_Factories
+        id = FRA_Gain_Political_Alliances
+        icon = placeholder
+        x = 10.5
+        y = 1.5
+        cost = 5
+        ai_will_do = {
+            factor = 5
+        }
+        search_filters = {FOCUS_FILTER_POLITICAL}
+        completion_reward = {
+            country_event = fra_politicalalliance.1
+        }
+        prerequisite = {
+            focus = FRA_Fight_For_Your_Freedom
+        }
+    }
+    focus = {
+        id = FRA_Ally_The_Socialists
+        icon = placeholder
+        x = 12.5
+        y = 2.75
+        cost = 5
+        ai_will_do = {
+            factor = 5
+        search_filters = {FOCUS_FILTER_POLITICAL}
+        completion_reward = {
+            country_event = fra_politicalalliance.2
+        }
+        prerequisite = {
+            focus = FRA_Gain_Political_Alliances
+            }
+        }
+    }
+    focus = {
+        id = FRA_Gain_Support_Of_The_Anarchists
+        icon = placeholder
+        x = 8.75
+        y = 2.75
+        cost = 6
+        ai_will_do = {
+            factor = 5
+        }
+        search_filters = {FOCUS_FILTER_POLITICAL}
+        completion_reward = {
+            country_event = fra_politicalalliance.3
+        }
+        prerequisite = {
+            focus = FRA_Gain_Political_Alliances
+        }
+    }
+    focus = { 
+        id = FRA_Unite_The_Left
+        icon = placeholder
+        x = 10.5
+        y = 4.25
+        cost = 6
+        ai_will_do = {
+            factor = 5
+        }
+        cost = 7
+        search_filters = {FOCUS_FILTER_POLITICAL}
+        completion_reward = {
+            country_event = fra_politicalalliance.5
+        }
+        prerequisite = {
+            focus = FRA_Gain_Support_Of_The_Anarchists
+        }
+        prerequisite = {
+            focus = FRA_Befriend_The_Centrists
+        }
+        prerequisite = {
+            focus = FRA_Ally_The_Socialists
+        }
+    }
+    focus = {
+        id = FRA_Befriend_The_Democrats
+        icon = placeholder
+        x = 10.5
+        y = 2.75
+        cost = 6
+        ai_will_do = {
+            factor = 5
+        }
+        search_filters = {FOCUS_FILTER_POLITICAL}
+        completion_reward = {
+            country_event = fra_politicalalliance.4
+        }
+        prerequisite = {
+            focus = FRA_Gain_Political_Alliances
+        }
+    }
+        focus = {
+        id = FRA_Train_The_Populous
+        icon = placeholder
+        x = 6
+        y = 4.25
+        cost = 7
+        ai_will_do = {
+            factor = 5
+        }
+        search_filters = {FOCUS_FILTER_MANPOWER}
+        completion_reward = { 
+            country_event = fra.sabotage.4
+        }
+        prerequisite = {
+            focus = FRA_Nationalize_The_Industry
+        }
+        prerequisite = {
+            focus = FRA_Arm_The_People
+        }
+    }
+    focus = {
+        id = FRA_Gain_International_Support
+        icon = placeholder
+        x = 1
+        y = 2.75
+        cost = 7
+        ai_will_do = {
+            factor = 5
+        }
+        search_filters = {FOCUS_FILTER_POLITICAL}
+        completion_reward = {
+            country_event = fra.revolution.4
+        }
+        prerequisite = {
+            focus = FRA_Spread_The_News
+        }
+        prerequisite = {
+            focus = FRA_Prepare_For_The_Fight
+        }
+    }
+    focus = {
+        id = FRA_International_Arms_Market
+        icon = placeholder
+        x = 3
+        y = 4.25
+        cost = 5
+        ai_will_do = {
+            factor = 5
+        }
+        search_filters = {FOCUS_FILTER_MANPOWER}
+        completion_reward = {
+            country_event = fra.revolution.5
+        }
+        prerequisite = {
+            focus = FRA_Spread_The_News
+        }
+        prerequisite = {
+            focus = FRA_Gain_International_Support
+        }
+    }
+    focus = {
+        id = FRA_Nationalize_The_Industry
         icon = placeholder
         x = 5
-        y = 3
+        y = 2.75
         cost = 5
         ai_will_do = {
             factor = 5
@@ -93,18 +255,15 @@ focus_tree = {
         search_filters = {FOCUS_FILTER_POLITICAL}
         completion_reward = {
             country_event = fra_sabotage.2
-        prerequisite = {
-            FRA_Sabotage_The_Factories
-        }
         }
             prerequisite = {
-                focus = FRA_Spread_The_News
+	focus = FRA_Bribe_Business_Owners
 }
     }
     focus = {
         id = FRA_Spread_The_News
         icon = placeholder
-        x = 4
+        x = 3
         y = 1.5
         cost = 5
         ai_will_do = {
@@ -119,7 +278,30 @@ focus_tree = {
     }
     }
         focus = {
-        id = FRA_Sabotage_The_Factories
+        id = FRA_Light_The_Torch
+        icon = placeholder
+        x = 6
+        y = 6.5
+        cost = 2
+        ai_will_do = {
+            factor = 5
+        }
+        search_filters = {FOCUS_FILTER_POLITICAL}
+        completion_reward = {
+            country_event = fra_civilwarignite.1
+        }
+        prerequisite = {
+            focus = FRA_International_Arms_Market
+        }
+        prerequisite = {
+            focus = FRA_Train_The_Populous
+        }
+        prerequisite = {
+            focus = FRA_Unite_The_Left
+        }
+    }
+        focus = {
+        id = FRA_Bribe_Business_Owners
         icon = placeholder
         x = 6
         y = 1.5
@@ -134,25 +316,23 @@ focus_tree = {
          prerequisite = {
 	focus = FRA_Fight_For_Your_Freedom
 }
+
     }
     focus = {
         id = FRA_Arm_The_People
         icon = placeholder
-        x = 3
-        y = 3
+        x = 7
+        y = 2.75
         cost = 5
         ai_will_do = {
             factor = 5
         }
         search_filters = {FOCUS_FILTER_POLITICAL}
         completion_reward = {
-            country_event = fra_revolution.4
+            country_event = fra_sabotage.3
         }
          prerequisite = {
-	focus = FRA_Prepare_For_The_Fight
-}
-prerequisite = {
-	focus = FRA_Spread_The_News
+	focus = FRA_Bribe_Business_Owners
 }
 }
     }
