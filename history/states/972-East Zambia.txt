@@ -5,6 +5,7 @@ state={
 	history={
 		owner = RHO
 		add_core_of = ZAM
+		add_core_of = RHO
 		buildings = {
 			infrastructure = 2
 
@@ -13,7 +14,7 @@ state={
 	}
 
 	provinces={
-		1846
+		1846 13325 13326
 	}
 	manpower=76089
 	buildings_max_level_factor=1.000

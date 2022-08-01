@@ -25,6 +25,7 @@ add_ideas={
 	FEN_covert_forces
 	closed_economy
 	tot_economic_mobilisation
+	fenris_air_company
 }
 
 # Starting tech

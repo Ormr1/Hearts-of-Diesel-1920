@@ -5,6 +5,7 @@ state={
 	history={
 		owner = RHO
 		add_core_of = ZIM
+		add_core_of = RHO
 		buildings = {
 			infrastructure = 2
 

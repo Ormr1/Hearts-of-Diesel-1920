@@ -5,9 +5,11 @@
 # Starting tech
 set_technology = {
 	pre_gw_infantry_weapons = 1
+	motorised_infantry = 1
 }
 add_ideas={
-	SAF_history_of_segregation
+	RHO_White_Minority_Rule
+	RHO_African_Auxiliary_Units
 }
 
 set_convoys = 20

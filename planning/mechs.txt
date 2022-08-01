@@ -67,3 +67,69 @@ all:
 
 Exo-skeletons
 Exo-suits(tesla/fenris)
+
+
+FRA
+PMR Chevalieret 16 (light)*
+
+ITA
+L3 Sentinella (light)*
+T9 Testudo (medium)*
+M35 Bombarda (medium)*
+P41 Bastione (heavy)*
+PB Ariete (heavy)*
+
+POL
+PZM-9 Straznik (light)
+PZM-7 Smialy (light)
+PZM-13 Mocny (medium)
+PZM-11 Lowca (medium)
+PZM-16 Zółw (Heavy)
+PZM-24 Tur (Superheavy)
+
+GER
+Sd. KS 49 Grimbart (light)
+Sd. KS 78 Isegrim (medium)
+SLL 33 Erlkönig (light m.artillery)
+SKS 156 Wotan (Heavy)
+SKS 300 Kaiser (Superheavy)
+   Brunhilde (Superheavy)
+   
+SOV
+SHM-86 Kolokol (light)
+SHM-78 Ognivo (medium)
+SHM-70 Gulyay-Gorod (Heavy)
+SHM-79 Nagan (medium m.artillery)
+SHM-68 Nakovalnya (light m.artillery)
+SHM-69 Serp (Heavy)
+
+USA
+M-29 Salem (light)
+M-8 Attucks (light m.artillery)
+M-19 Knox (medium)
+M-22 Stark (medium)
+
+Vensa/tesla
+TF-377 Sluga (light)
+TF-987 čuvar (medium)
+Storm Catchers (medium)
+TF-1597 Icarus (Superheavy)
+
+Fenris
+Annihilator (Superheavy)
+
+NOR
+Skeggja (light)*
+Jotun (medium)*
+Fenrir (Heavy)*
+
+JAP
+Namazu (light)*
+Yuso Suru (medium)*
+
+
+ENG
+P15 Targe (medium)*
+AC Razorback (Heavy)*
+ (Superheavy)
+ 

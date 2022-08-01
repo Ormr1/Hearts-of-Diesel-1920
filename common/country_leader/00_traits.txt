@@ -4142,6 +4142,25 @@ leader_traits = {
 		}
 	}
 	
+	light_aircraft_manufacturer_fenris = { 
+		random = no
+		equipment_bonus = {
+			fighter_equipment = {
+				air_agility = 0.2 maximum_speed = 0.1
+			}
+			cv_fighter_equipment = {
+				air_agility = 0.2 maximum_speed = 0.1
+			}
+			transport_plane_equipment={
+				air_range = 7.5 maximum_speed = -0.25
+			}
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+	
 	
 	CAS_manufacturer = {
 		random = no

@@ -47,6 +47,32 @@ ideas = {
 			}
 		}
 	}
+	aircraft_manufacturer = { 
+			
+		designer = yes
+		
+		fenris_air_company = {
+			
+			picture = generic_air_manufacturer_3
+
+			
+			allowed = {
+				original_tag = FEN
+			}
+			
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { light_aircraft_manufacturer_fenris }
+			
+			# trainers for RAF, great handling
+				
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
 	hidden_ideas={
 		FEN_acc_building = {
 			picture = generic_army_problems
