@@ -347,10 +347,7 @@ focus_tree = {
         }
         search_filters = {FOCUS_FILTER_POLITICAL}
         completion_reward = {
-            start_civil_war = {
-                ideology = democratic
-                size = 0.3
-            }
+            add_namespace = fra_civilwarignite
         }
         prerequisite = {
             focus = FRA_International_Arms_Market
