@@ -1,16 +1,12 @@
-state=
-{
+
+state={
 	id=298
 	name="STATE_298"
-	manpower = 745000
-	
-	state_category = rural
 	resources={
-		rubber=6 # was: 7
-	}	
-	
+		rubber=6.000
+	}
 
-	history= {
+	history={
 		owner = LIB
 		buildings = {
 			infrastructure = 1
@@ -18,16 +14,34 @@ state=
 			industrial_complex = 1
 			7959 = {
 				naval_base = 2
+				bunker = 2
 			}
+			13341 = {
+				bunker = 1
+			}
+			13347 = {
+				bunker = 1
+			}
+
 		}
 		victory_points = {
-			7959 3
+			7959 5
+		}
+		victory_points = {
+			13341 3
+		}
+		victory_points = {
+			13347 2
 		}
 		add_core_of = LIB
-	}
-	provinces={
-		7959 8006
+
 	}
 
-	local_supplies=0.0 
+	provinces={
+		7959 13341 13347 
+	}
+	manpower=745000
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
 }
