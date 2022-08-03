@@ -347,7 +347,10 @@ focus_tree = {
         }
         search_filters = {FOCUS_FILTER_POLITICAL}
         completion_reward = {
-            country_event = fra_civilwarignite.1
+            start_civil_war = {
+                ideology = democratic
+                size = 0.3
+            }
         }
         prerequisite = {
             focus = FRA_International_Arms_Market
@@ -399,7 +402,7 @@ focus_tree = {
         id = FRA_Create_A_Political_Union
         icon = placeholder
         x = 6.25
-        y = 4.99
+        y = 4.85
         cost = 10
         ai_will_do = {
             factor = 5
