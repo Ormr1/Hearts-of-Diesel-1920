@@ -23,6 +23,23 @@ ideas = {
 				can_send_volunteers = yes
 			}
 		}
+		usa_usonian_aviation_industry = {
+			picture = placeholder
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = 0
+
+			modifier = {
+				
+			}
+		}
 		usa_american_economic_development_council = {
 			picture = placeholder
 
@@ -248,10 +265,160 @@ ideas = {
 				send_volunteer_size = 1
 				send_volunteers_tension = -0.50
 				special_forces_cap = 0.10
-				resistance_activity = -0.25
+				resistance_activity = -0.15
 			}
 			rule = {
 				can_send_volunteers = yes
+			}
+		}
+		us_police_peacekeepers_2 = {
+			picture = placeholder
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = 0
+			
+			modifier = {
+				send_volunteer_divisions_required = -0.25
+				send_volunteer_size = 1
+				send_volunteers_tension = -0.50
+				special_forces_cap = 0.10
+				resistance_activity = -0.15
+				compliance_growth = 0.10
+			}
+			rule = {
+				can_send_volunteers = yes
+			}
+		}
+		us_police_peacekeepers_2 = {
+			picture = placeholder
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = 0
+			
+			modifier = {
+				send_volunteer_divisions_required = -0.25
+				send_volunteer_size = 1
+				send_volunteers_tension = -0.50
+				special_forces_cap = 0.10
+				resistance_activity = -0.15
+				compliance_growth = 0.10
+				resistance_garrison_penetration_chance = -0.10
+			}
+			rule = {
+				can_send_volunteers = yes
+			}
+		}
+		us_police_peacekeepers_3 = {
+			picture = placeholder
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = 0
+			
+			modifier = {
+				send_volunteer_divisions_required = -0.25
+				send_volunteer_size = 1
+				send_volunteers_tension = -0.50
+				special_forces_cap = 0.10
+				resistance_activity = -0.15
+				compliance_growth = 0.15
+				resistance_garrison_penetration_chance = -0.15
+			}
+			rule = {
+				can_send_volunteers = yes
+			}
+		}
+		us_police_peacekeepers_4 = {
+			picture = placeholder
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = 0
+			
+			modifier = {
+				send_volunteer_divisions_required = -0.25
+				send_volunteer_size = 1
+				send_volunteers_tension = -0.50
+				special_forces_cap = 0.10
+				resistance_activity = -0.20
+				compliance_growth = 0.20
+				resistance_garrison_penetration_chance = -0.20
+			}
+			rule = {
+				can_send_volunteers = yes
+			}
+		}
+		us_police_peacekeepers_5 = {
+			picture = placeholder
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = 0
+			
+			modifier = {
+				send_volunteer_divisions_required = -0.25
+				send_volunteer_size = 1
+				send_volunteers_tension = -0.50
+				special_forces_cap = 0.10
+				resistance_activity = -0.25
+				compliance_growth = 0.25
+				resistance_garrison_penetration_chance = -0.25
+			}
+			rule = {
+				can_send_volunteers = yes
+			}
+		}
+		us_air_patrol = {
+			picture = placeholder
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = 0
+
+			modifier = {
+				air_volunteer_cap = 25
+				industry_air_damage_factor = -0.05
+				static_anti_air_damage_factor = 0.10
+				static_anti_air_hit_chance_factor = 0.10
+				tech_air_damage_factor = -0.05
 			}
 		}
 		usa_alaska_payments = {

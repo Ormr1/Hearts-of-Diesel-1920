@@ -1,0 +1,24 @@
+
+state={
+	id=1009
+	name="STATE_1009"
+	history={
+		owner = LIB
+		add_core_of = LIB
+		victory_points = {
+			13342 1
+		}
+		buildings = {
+			13342 = {
+				bunker = 1
+			}
+		}
+	}
+	provinces={
+		13342 13343 
+	}
+	manpower=100000
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

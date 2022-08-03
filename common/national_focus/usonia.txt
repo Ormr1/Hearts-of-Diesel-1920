@@ -68,7 +68,7 @@ focus_tree = {
         icon = GFX_goal_generic_occupy_states_ongoing_war
         relative_position_id = USA_Foreign_Affairs
         prerequisite = { focus = USA_Foreign_Affairs }
-        x = -11
+        x = -13
         y = 1
         cost = 10
         ai_will_do = {
@@ -1558,6 +1558,28 @@ focus_tree = {
         }
     }
     focus = {
+        id = USA_Expeditionary_Courses
+        icon = placeholder
+        relative_position_id = USA_SOF_Training
+        prerequisite = {
+            focus = USA_SOF_Training
+            focus = USA_Policing_Training
+        }
+        x = 2
+        y = 1
+        cost = 10
+        completion_reward = {
+            USA_SOF_Focus_Count_Check = yes
+            every_other_country = {
+                limit = {
+                    is_in_faction_with = ROOT
+                }
+                USA_SOF_Focus_Count_Check = yes
+            }
+            army_experience = 10
+        }
+    }
+    focus = {
         id = USA_Great_Lakes_Maneuvers
         icon = placeholder
         relative_position_id = USA_SOF_Training
@@ -1566,6 +1588,7 @@ focus_tree = {
         y = 1
         cost = 10
         completion_reward = {
+            USA_SOF_Peacekeepers_Increase_Level = yes
             USA_SOF_Focus_Count_Check = yes
             set_temp_variable = { great_lakes_xp_bonus = 0 }
             hidden_effect = {
@@ -1588,10 +1611,17 @@ focus_tree = {
                 uses = 1
                 category = tp_tech
             }
+            add_to_temp_variable = {
+                var = great_lakes_xp_bonus
+                value = 5
+            }
             every_other_country = {
                 limit = {
                     is_in_faction_with = ROOT
                 }
+                army_experience = great_lakes_xp_bonus
+                navy_experience = great_lakes_xp_bonus
+                USA_SOF_Peacekeepers_Increase_Level = yes
                 add_tech_bonus = {
                     bonus = 0.5
                     uses = 1
@@ -1609,7 +1639,14 @@ focus_tree = {
         y = 1
         cost = 10
         completion_reward = {
+            USA_SOF_Peacekeepers_Increase_Level = yes
             USA_SOF_Focus_Count_Check = yes
+            every_other_country = {
+                limit = {
+                    is_in_faction_with = ROOT
+                }
+                USA_SOF_Peacekeepers_Increase_Level = yes
+            }
         }
     }
     focus = {
@@ -1621,8 +1658,15 @@ focus_tree = {
         y = 1
         cost = 10
         completion_reward = {
+            USA_SOF_Peacekeepers_Increase_Level = yes
             USA_SOF_Focus_Count_Check = yes
             add_ideas = us_mobile_air_corps_integration
+            every_other_country = {
+                limit = {
+                    is_in_faction_with = ROOT
+                }
+                USA_SOF_Peacekeepers_Increase_Level = yes
+            }
         }
     }
     focus = {
@@ -1634,6 +1678,7 @@ focus_tree = {
         y = 1
         cost = 10
         completion_reward = {
+            USA_SOF_Peacekeepers_Increase_Level = yes
             USA_SOF_Focus_Count_Check = yes
             set_temp_variable = { mountain_hikes_xp_bonus = 0 }
             hidden_effect = {
@@ -1654,32 +1699,22 @@ focus_tree = {
                 uses = 1
                 category = mountaineers_tech
             }
+            add_to_temp_variable = {
+                var = mountain_hikes_xp_bonus
+                value = 5
+            }
             every_other_country = {
                 limit = {
                     is_in_faction_with = ROOT
                 }
+                army_experience = mountain_hikes_xp_bonus
+                USA_SOF_Peacekeepers_Increase_Level = yes
                 add_tech_bonus = {
                     bonus = 0.5
                     uses = 1
                     category = mountaineers_tech
                 }
             }
-        }
-    }
-    focus = {
-        id = USA_Expeditionary_Courses
-        icon = placeholder
-        relative_position_id = USA_SOF_Training
-        prerequisite = {
-            focus = USA_SOF_Training
-            focus = USA_Policing_Training
-        }
-        x = 2
-        y = 1
-        cost = 10
-        completion_reward = {
-            USA_SOF_Focus_Count_Check = yes
-            army_experience = 10
         }
     }
     focus = {
@@ -1692,6 +1727,7 @@ focus_tree = {
         y = 1
         cost = 10
         completion_reward = {
+            USA_SOF_Peacekeepers_Increase_Level = yes
             USA_SOF_Focus_Count_Check = yes
             army_experience = 10
             navy_experience = 5
@@ -1709,6 +1745,7 @@ focus_tree = {
                 limit = {
                     is_in_faction_with = ROOT
                 }
+                USA_SOF_Peacekeepers_Increase_Level = yes
                 add_tech_bonus = {
                     bonus = 0.25
                     uses = 1
@@ -1733,7 +1770,13 @@ focus_tree = {
         cost = 10
         completion_reward = {
             USA_SOF_Focus_Count_Check = yes
-
+            USA_SOF_Peacekeepers_Increase_Level = yes
+            every_other_country = {
+                limit = {
+                    is_in_faction_with = ROOT
+                }
+                USA_SOF_Peacekeepers_Increase_Level = yes
+            }
         }
     }
     focus = {
@@ -1779,6 +1822,225 @@ focus_tree = {
             }
         }
     }
+    focus = {
+        id = USA_De_Escalation_Classes
+        icon = placeholder
+        prerequisite = { focus = USA_Policing_Training }
+        relative_position_id = USA_Policing_Training
+        x = 2
+        y = 1
+        cost = 10
+        completion_reward = {
+            add_stability = 0.05
+            USA_Police_Peacekeepers_Increase_Level = yes
+            every_other_country = {
+                add_stability = 0.05
+                limit = {
+                    is_in_faction_with = ROOT
+                }
+                USA_Police_Peacekeepers_Increase_Level = yes
+            }
+        }
+    }
+    focus = {
+        id = USA_Aerial_Patrols
+        icon = placeholder
+        prerequisite = { focus = USA_De_Escalation_Classes }
+        relative_position_id = USA_De_Escalation_Classes
+        x = 1
+        y = 1
+        cost = 10
+        completion_reward = {
+            air_experience = 25
+            set_temp_variable = { aerial_patrols_xp_bonus = 0 }
+            hidden_effect = {
+                every_other_country = {
+                    limit = {
+                        is_in_faction_with = ROOT
+                    }
+                    ROOT = {
+                        add_to_temp_variable = { aerial_patrols_xp_bonus = 5 }
+                    }
+                }
+                air_experience = aerial_patrols_xp_bonus
+            }
+            custom_effect_tooltip = us_joint_air_xp_gain_5_tt
+            USA_Police_Peacekeepers_Increase_Level = yes
+            add_to_temp_variable = {
+                var = aerial_patrols_xp_bonus
+                value = 25
+            }
+            every_other_country = {
+                air_experience = aerial_patrols_xp_bonus
+                limit = {
+                    is_in_faction_with = ROOT
+                }
+                USA_Police_Peacekeepers_Increase_Level = yes
+            }
+        }
+    }
+    focus = {
+        id = USA_Establish_United_States_Air_Patrol
+        icon = placeholder
+        prerequisite = { focus = USA_Aerial_Patrols }
+        relative_position_id = USA_Aerial_Patrols
+        x = 0
+        y = 1
+        cost = 10
+        completion_reward = {
+            add_ideas = us_air_patrol
+            USA_Police_Peacekeepers_Increase_Level = yes
+            every_other_country = {
+                limit = {
+                    is_in_faction_with = ROOT
+                }
+                add_ideas = us_air_patrol
+                USA_Police_Peacekeepers_Increase_Level = yes
+            }
+        }
+    }
+    focus = {
+        id = USA_Language_Schools
+        icon = placeholder
+        prerequisite = { focus = USA_Policing_Training }
+        relative_position_id = USA_Policing_Training
+        x = 0
+        y = 1
+        cost = 10
+        completion_reward = {
+            USA_Police_Peacekeepers_Increase_Level = yes
+            USA_Police_PK_Focus_Count_Check = yes
+            every_other_country = {
+                limit = {
+                    is_in_faction_with = ROOT
+                }
+                USA_Police_Peacekeepers_Increase_Level = yes
+                add_opinion_modifier = {
+                    target = USA
+                    modifier = small_increase
+                }
+            }
+        }
+    }
+    focus = {
+        id = USA_Peacekeeper_Departments
+        icon = placeholder
+        prerequisite = { focus = USA_Expeditionary_Courses }
+        prerequisite = { focus = USA_Language_Schools }
+        relative_position_id = USA_Language_Schools
+        x = -1
+        y = 1
+        cost = 10
+        completion_reward = {
+            USA_Police_Peacekeepers_Increase_Level = yes
+            add_to_variable = {
+                var = police_pk_charges
+                value = 1
+            }
+            add_to_variable = {
+                var = police_pk_charges_max
+                value = 1
+            }
+            unlock_decision_category_tooltip = USA_peacekeeper_policing
+            every_other_country = {
+                limit = {
+                    is_in_faction_with = ROOT
+                }
+                USA_Police_Peacekeepers_Increase_Level = yes
+            }
+        }
+    }
+    focus = {
+        id = USA_Peacekeeper_Recruitment_Drive
+        icon = placeholder
+        prerequisite = { focus = USA_Peacekeeper_Departments }
+        prerequisite = { focus = USA_De_Escalation_Classes }
+        relative_position_id = USA_Language_Schools
+        x = 1
+        y = 2
+        cost = 10
+        completion_reward = {
+            USA_Police_Peacekeepers_Increase_Level = yes
+            add_to_variable = {
+                var = police_pk_charges
+                value = 1
+            }
+            add_to_variable = {
+                var = police_pk_charges_max
+                value = 1
+            }
+            custom_effect_tooltip = usa_pk_charge_increase_1_tt
+            every_other_country = {
+                limit = {
+                    is_in_faction_with = ROOT
+                }
+                USA_Police_Peacekeepers_Increase_Level = yes
+            }
+        }
+    }
+    focus = {
+        id = USA_The_Foreign_Legion
+        icon = placeholder
+        relative_position_id = USA_Peacekeeper_Recruitment_Drive
+        prerequisite = { focus = USA_Peacekeeper_Recruitment_Drive }
+        prerequisite = { focus = USA_Establish_United_States_Air_Patrol }
+        x = 1
+        y = 1
+        cost = 10
+        completion_reward = {
+            add_to_variable = {
+                var = police_pk_charges
+                value = 1
+            }
+            add_to_variable = {
+                var = police_pk_charges_max
+                value = 1
+            }
+            custom_effect_tooltip = usa_pk_charge_increase_1_tt
+            swap_ideas = {
+                remove_idea = us_police_peacekeepers_4
+                add_idea = us_police_peacekeepers_5
+            }
+        }
+    }
+    focus = {
+        id = USA_Joint_Naval_Exercises
+        icon = placeholder
+        relative_position_id = USA_Expeditionary_Courses
+        prerequisite = {
+            focus = USA_Amphibious_Assault_Training_Bases
+            focus = USA_Peacekeeper_Departments
+        }
+        x = 0
+        y = 2
+        cost = 10
+        completion_reward = {
+            set_temp_variable = { joint_naval_exercises_xp_bonus = 0 }
+            hidden_effect = {
+                every_other_country = {
+                    limit = {
+                        is_in_faction_with = ROOT
+                    }
+                    ROOT = {
+                        add_to_temp_variable = { joint_naval_exercises_xp_bonus = 5 }
+                    }
+                }
+                navy_experience = joint_naval_exercises_xp_bonus
+            }
+            custom_effect_tooltip = us_joint_navy_xp_gain_5_tt
+            navy_experience = 5
+            add_to_temp_variable = {
+                var = joint_naval_exercises_xp_bonus
+                value = 5
+            }
+            every_other_country = {
+                limit = {
+                    is_in_faction_with = ROOT
+                }
+                navy_experience = joint_naval_exercises_xp_bonus
+            }
+        }
+    }
 
     ### USEA ###
     focus = {
@@ -1786,7 +2048,7 @@ focus_tree = {
         icon = GFX_focus_usa_washington_conference
         relative_position_id = USA_San_Francisco_Conference
         prerequisite = { focus = USA_San_Francisco_Conference }
-        x = 3
+        x = 4
         y = 1
         cost = 10
         completion_reward = {
@@ -1801,7 +2063,7 @@ focus_tree = {
         icon = GFX_goal_generic_territory_or_war
         relative_position_id = USA_Foreign_Affairs
         prerequisite = { focus = USA_Foreign_Affairs }
-        x = 11
+        x = 13
         y = 1
         cost = 10
         ai_will_do = {
@@ -2003,7 +2265,23 @@ focus_tree = {
         y = 1
         cost = 10
         completion_reward = {
-
+            SPR = {
+                add_equipment_to_stockpile = {
+                    type = infantry_equipment
+                    amount = 5000
+                    producer = USA
+                }
+                add_equipment_to_stockpile = {
+                    type = artillery_equipment
+                    amount = 500
+                    producer = USA
+                }
+                add_equipment_to_stockpile = {
+                    type = support_equipment
+                    amount = 500
+                    producer = USA
+                }
+            }
         }
     }
     focus = {
@@ -2052,6 +2330,12 @@ focus_tree = {
         }
         completion_reward = {
             country_event = usa_arabia.1
+            hidden_effect = {
+                country_event = {
+                    id = usa_arabia.9
+                    days = 100
+                }
+            }
         }
     }
     focus = {
@@ -2070,7 +2354,7 @@ focus_tree = {
             factor = 1
         }
         completion_reward = {
-
+            country_event = usa_arabia.3
         }
     }
     focus = {
@@ -2089,7 +2373,7 @@ focus_tree = {
             factor = 1
         }
         completion_reward = {
-            
+            country_event = usa_arabia.5
         }
     }
     focus = {

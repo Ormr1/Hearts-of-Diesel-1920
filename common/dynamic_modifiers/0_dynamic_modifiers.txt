@@ -26,6 +26,45 @@
 #	can be added to countries, states or unit leaders
 #	will only updated daily, unless forced by force_update_dynamic_modifier effect
 
+us_peacekeeper_mission_1 = {
+	icon = GFX_modifiers_usa_peacekeeper_mission
+	resistance_target = -0.10
+	compliance_growth = 0.10
+}
+
+us_peacekeeper_mission_2 = {
+	icon = GFX_modifiers_usa_peacekeeper_mission
+	resistance_target = -0.15
+	resistance_growth = -0.10
+	compliance_growth = 0.15
+}
+
+us_peacekeeper_mission_3 = {
+	icon = GFX_modifiers_usa_peacekeeper_mission
+	resistance_target = -0.15
+	resistance_growth = -0.10
+	resistance_decay = 0.10
+	compliance_growth = 0.15
+}
+
+us_peacekeeper_mission_4 = {
+	icon = GFX_modifiers_usa_peacekeeper_mission
+	resistance_target = -0.15
+	resistance_growth = -0.10
+	resistance_decay = 0.10
+	compliance_growth = 0.15
+	compliance_gain	= 0.01
+}
+
+us_peacekeeper_mission_5 = {
+	icon = GFX_modifiers_usa_peacekeeper_mission
+	resistance_target = -0.20
+	resistance_growth = -0.15
+	resistance_decay = 0.15
+	compliance_growth = 0.20
+	compliance_gain	= 0.02
+}
+
 sabotaged_resources = {
 	remove_trigger = { 
 		has_resistance = no

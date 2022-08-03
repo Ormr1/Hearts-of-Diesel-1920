@@ -202,6 +202,72 @@ USA_peacekeeper_special_operations = {
 		}
 	}
 }
+USA_peacekeeper_policing = {
+	deploy_peacekeepers = {
+		icon = generic_prepare_civil_war
+		target_root_trigger = {
+			has_completed_focus = USA_Peacekeeper_Departments
+		}
+		target_trigger = {
+			FROM = {
+				is_in_faction_with = ROOT
+			}
+		}
+		targets_dynamic = yes
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = us_no_current_pk_mission_tt
+				FROM = {
+					NOT = {
+						OR = {
+							has_dynamic_modifier = {
+								modifier = us_peacekeeper_mission_1
+							}
+							has_dynamic_modifier = {
+								modifier = us_peacekeeper_mission_2
+							}
+							has_dynamic_modifier = {
+								modifier = us_peacekeeper_mission_3
+							}
+							has_dynamic_modifier = {
+								modifier = us_peacekeeper_mission_4
+							}
+							has_dynamic_modifier = {
+								modifier = us_peacekeeper_mission_5
+							}
+						}
+					}
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = available_pk_charges_tt
+				NOT = {
+					check_variable = { police_pk_charges < 1 }
+				}
+			}
+		}
+		cost = 0
+		ai_will_do = {
+			factor = 50
+		}
+		days_remove = 180
+		complete_effect = {
+			subtract_from_variable = {
+				var = police_pk_charges
+				value = 1
+			}
+			FROM = {
+				USA_Deploy_Police_PK = yes
+			}
+		}
+		remove_effect = {
+			add_to_variable = {
+				var = police_pk_charges
+				value = 1
+			}
+		}
+	}
+}
 war_measures = {
 
 	USA_homeland_defense = {
