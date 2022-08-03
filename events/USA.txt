@@ -2419,6 +2419,7 @@ country_event = { # William's Plan
 		BED = {
 			country_event = usa_arabia.4
 		}
+		set_country_flag = usa_supported_bedouins
 	}
 }
 country_event = { # Mason Keeps His Promise
@@ -2696,6 +2697,20 @@ country_event = { # In Come The Airships
 				}
 			}
 		}
+	}
+}
+country_event = { # Mason's first report
+	id = usa_arabia.9
+	title = usa_arabia.9.t
+	desc = usa_arabia.9.desc
+	picture = placeholder
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = { # Interesting...
+		name = usa_arabia.9.a
 	}
 }
 

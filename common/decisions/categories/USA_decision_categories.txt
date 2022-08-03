@@ -35,6 +35,25 @@ USA_peacekeeper_special_operations = {
 		}
 	}
 }
+USA_peacekeeper_policing = {
+	priority = 997
+	allowed = {
+		AND = {
+			is_in_faction_with = USA
+			USA = {
+				has_completed_focus = USA_Policing_Training
+			}
+		}
+	}
+	visible = {
+		AND = {
+			is_in_faction_with = USA
+			USA = {
+				has_completed_focus = USA_Policing_Training
+			}
+		}
+	}
+}
 USA_war_measures = {
 	
 	allowed = {

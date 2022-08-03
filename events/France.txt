@@ -2284,19 +2284,9 @@ country_event = { # Destruction of the Economy
 		}
 		add_extra_state_shared_building_slots = 2
 	}
-} 
-country_event = { # FRA_Spread_The_News
-	id = fra.revolution.3
-	title = fra_revolution.3.t
-	desc = fra_revolution.3.desc
-	
-	picture_placeholder
-	
-	is_triggered_only = no
-	fire_only_once yes
 }
 country_event = { # FRA_Prepare_For_The_Fight
-	id = fra.revolution.2
+	id = fra_revolution.2
 	title = fra_revolution.2.t
 	desc = fra_revolution.2.desc
 
@@ -2304,13 +2294,32 @@ country_event = { # FRA_Prepare_For_The_Fight
 	
 	is_triggered only = no
 	fire_only_once yes
+	option = {
+		name = fra_revolution.2.a
+	}
+}
+country_event = { # FRA_Spread_The_News
+	id = fra_revolution.3
+	title = fra_revolution.3.t
+	desc = fra_revolution.3.desc
+	
+	picture_placeholder
+	
+	is_triggered_only = no
+	fire_only_once yes
+	option = {
+		name = fra_revolution.3.a
+	}
 }
 country_event = { # FRA_Arm_The_People
-	id = fra.revolution.4
+	id = fra_revolution.4
 	title = fra_revolution.4.t
 	desc = fra_revolution.4.desc
 	
 	picture_placeholder
 	is_triggered_only = no
 	fire_only_once yes
+	option = {
+		name = fra_revolution.4.a
+	}
 }

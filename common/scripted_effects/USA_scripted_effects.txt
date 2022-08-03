@@ -933,3 +933,147 @@ USA_SOF_Peacekeepers_Increase_Level = {
 		}
 	}
 }
+
+USA_Police_PK_Focus_Count_Check = {
+	add_to_variable = { police_pk_focus_count = 1 }
+	if = {
+		limit = {
+			check_variable = { police_pk_focus_count = 2 }
+		}
+		USA_Police_Peacekeepers_Increase_Level = yes
+	}
+	else_if = {
+		limit = {
+			check_variable = { police_pk_focus_count = 4 }
+		}
+		USA_Police_Peacekeepers_Increase_Level = yes
+	}
+	else_if = {
+		limit = {
+			check_variable = { police_pk_focus_count = 6 }
+		}
+		USA_Police_Peacekeepers_Increase_Level = yes
+	}
+}
+
+USA_Police_Peacekeepers_Increase_Level = {
+	if = {
+		limit = {
+			has_idea = us_police_peacekeepers_1
+		}
+		swap_ideas = {
+			remove_idea = us_police_peacekeepers_1
+			add_idea = us_police_peacekeepers_2
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = us_police_peacekeepers_2
+		}
+		swap_ideas = {
+			remove_idea = us_police_peacekeepers_2
+			add_idea = us_police_peacekeepers_3
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = us_police_peacekeepers_3
+		}
+		swap_ideas = {
+			remove_idea = us_police_peacekeepers_3
+			add_idea = us_police_peacekeepers_4
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = us_police_peacekeepers_4
+		}
+		swap_ideas = {
+			remove_idea = us_police_peacekeepers_4
+			add_idea = us_police_peacekeepers_5
+		}
+	}
+}
+
+USA_Deploy_Police_PK = {
+	if = {
+		limit = {
+			USA = {
+				has_idea = us_police_peacekeepers_1
+			}
+		}
+		every_owned_state = {
+			limit = {
+				has_resistance = yes
+			}
+			add_dynamic_modifier = {
+				modifier = us_peacekeeper_mission_1
+				days = 180
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			USA = {
+				has_idea = us_police_peacekeepers_2
+			}
+		}
+		every_owned_state = {
+			limit = {
+				has_resistance = yes
+			}
+			add_dynamic_modifier = {
+				modifier = us_peacekeeper_mission_2
+				days = 180
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			USA = {
+				has_idea = us_police_peacekeepers_3
+			}
+		}
+		every_owned_state = {
+			limit = {
+				has_resistance = yes
+			}
+			add_dynamic_modifier = {
+				modifier = us_peacekeeper_mission_3
+				days = 180
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			USA = {
+				has_idea = us_police_peacekeepers_4
+			}
+		}
+		every_owned_state = {
+			limit = {
+				has_resistance = yes
+			}
+			add_dynamic_modifier = {
+				modifier = us_peacekeeper_mission_4
+				days = 180
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			USA = {
+				has_idea = us_police_peacekeepers_5
+			}
+		}
+		every_owned_state = {
+			limit = {
+				has_resistance = yes
+			}
+			add_dynamic_modifier = {
+				modifier = us_peacekeeper_mission_5
+				days = 180
+			}
+		}
+	}
+}
