@@ -2308,6 +2308,7 @@ country_event = { # FRA_Arm_The_People
 	desc = fra_revolution.4.desc
 	
 	picture_placeholder
+
 	is_triggered_only = no
 	fire_only_once yes
 	option = {
