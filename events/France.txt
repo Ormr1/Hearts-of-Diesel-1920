@@ -2258,6 +2258,7 @@ country_event = { # Republicans In Bordeaux
 			ideology = democratic
 			popularity = 0.5
 		}
+	}
 	option = {
 		add_popularity = {
 			ideology = communism
@@ -2266,22 +2267,12 @@ country_event = { # Republicans In Bordeaux
 	}
 }
 
-country_event = { # FRA_Spread_The_News
-	id = fra.revolution.3
-	title = fra_revolution.3.t
-	desc = fra_revolution.3.desc
-	
-	picture_placeholder
-	
-	is_triggered_only = no
-	fire_only_once yes
-}
 country_event = { # FRA_Prepare_For_The_Fight
 	id = fra_revolution.2
 	title = fra_revolution.2.t
 	desc = fra_revolution.2.desc
 
-	picture_placeholder
+	picture = placeholder
 	
 	is_triggered only = no
 	fire_only_once yes
@@ -2294,7 +2285,7 @@ country_event = { # FRA_Spread_The_News
 	title = fra_revolution.3.t
 	desc = fra_revolution.3.desc
 	
-	picture_placeholder
+	picture = placeholder
 	
 	is_triggered_only = no
 	fire_only_once yes
@@ -2307,8 +2298,8 @@ country_event = { # FRA_Arm_The_People
 	title = fra_revolution.4.t
 	desc = fra_revolution.4.desc
 	
-	picture_placeholder
-
+	picture = placeholder
+	
 	is_triggered_only = no
 	fire_only_once yes
 	option = {
