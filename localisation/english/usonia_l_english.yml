@@ -11,9 +11,13 @@
  us_no_current_pk_mission_tt:0 "Does not already have a Peacekeeper mission"
  available_pk_charges_tt:0 "Peacekeepers ready for a mission"
  usa_pk_charge_increase_1_tt:0 "§G+1§! Possible Peacekeeper Mission"
+ USA_The_United_States_Economic_Association_tt:0 "Add §YU.S.E.A.§!"
+ usea_resource_agreement_bonuses_tt:0 "Modify §YU.S.E.A.§! by\nPolitical Power Gain: §R-5%§!\nResource Gain Efficiency: §G+15%§!"
+ usea_civilian_agreement_bonuses_tt:0 "Modify §YU.S.E.A.§! by\nPolitical Power Gain: §R-5%§!\n: §G+15%§!"
 ### FACTION NAMES
  FACTION_NAME_UNITED_STATES:0 "United States"
 ### IDEAS
+ usea_idea:0 "U.S.E.A."
  us_peacekeepers:0 "U.S. Peacekeepers"
  us_sof_peacekeepers_1:0 "U.S. Peacekeepers"
  us_sof_peacekeepers_2:0 "U.S. Peacekeepers"

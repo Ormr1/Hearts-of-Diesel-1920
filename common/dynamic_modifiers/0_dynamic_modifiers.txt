@@ -26,6 +26,15 @@
 #	can be added to countries, states or unit leaders
 #	will only updated daily, unless forced by force_update_dynamic_modifier effect
 
+usea_idea = {
+	icon = placeholder
+	political_power_factor = USA.usea_pp_factor
+	consumer_goods_factor = USA.usea_cg_factor
+	production_speed_industrial_complex_factor = USA.usea_ic_factor
+	production_speed_arms_factory_factor = USA.usea_af_factor
+	local_resources_factor = USA.usea_lr_factor
+}
+
 us_peacekeeper_mission_1 = {
 	icon = GFX_modifiers_usa_peacekeeper_mission
 	resistance_target = -0.10

@@ -1516,7 +1516,7 @@ focus_tree = {
         icon = GFX_focus_usa_establish_us_peacekeepers
         relative_position_id = USA_San_Francisco_Conference
         prerequisite = { focus = USA_San_Francisco_Conference }
-        x = -4
+        x = -6
         y = 1
         cost = 10
         completion_reward = {
@@ -2052,8 +2052,99 @@ focus_tree = {
         y = 1
         cost = 10
         completion_reward = {
-            add_political_power = 50
-            add_stability = 0.05
+            custom_effect_tooltip = USA_The_United_States_Economic_Association_tt
+            hidden_effect = {
+                add_dynamic_modifier = {
+                    modifier = usea_idea
+                }
+                set_country_flag = joined_usea
+                every_other_country = {
+                    limit = {
+                        is_in_faction_with = USA
+                    }
+                    add_dynamic_modifier = {
+                        modifier = usea_idea
+                    }
+                    set_country_flag = joined_usea
+                }
+                set_variable = {
+                    var = usea_member_count
+                    value = 1
+                }
+                every_other_country = {
+                    limit = {
+                        is_in_faction_with = USA
+                    }
+                    USA = {
+                        add_to_variable = {
+                            var = usea_member_count
+                            value = 1
+                        }
+                    }
+                }
+            }
+        }
+    }
+    focus = {
+        id = USA_Resource_Trade_Amendment
+        icon = placeholder
+        relative_position_id = USA_The_United_States_Economic_Association
+        prerequisite = { focus = USA_The_United_States_Economic_Association }
+        x = -4
+        y = 1
+        cost = 2
+        select_effect = {
+            set_variable = {
+                var = usea_resource_exchange_votes
+                value = 1
+            }
+            every_other_country = {
+                limit = {
+                    is_in_faction_with = USA
+                    has_country_flag = joined_usea
+                }
+                country_event = usa_usea.1
+            }
+        }
+        completion_reward = {
+            set_temp_variable = {
+                var = usea_votes_needed
+                value = 1
+            }
+            every_other_country = {
+                limit = {
+                    is_in_faction_with = USA
+                    has_country_flag = joined_usea
+                }
+                USA = {
+                    add_to_temp_variable = {
+                        var = usea_votes_needed
+                        value = 1
+                    }
+                }
+            }
+            add_to_temp_variable = {
+                var = usea_votes_needed
+                value = 1
+            }
+            divide_temp_variable = {
+                var = usea_votes_needed
+                value = 2
+            }
+            round_temp_variable = usea_votes_needed
+            if = {
+                limit = {
+                    check_variable = {
+                        var = usea_resource_exchange_votes
+                        value = usea_votes_needed
+                        compare = greater_than_or_equals
+                    }
+                }
+                country_event = usa_usea.4
+            }
+            else = {
+                country_event = usa_usea.5
+            }
         }
     }
 

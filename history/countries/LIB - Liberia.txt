@@ -9,6 +9,7 @@ set_technology = {
 
 set_convoys = 10
 
+recruit_character = LIB_character_charles_db_king
 recruit_character = LIB_edgar_cailloux
 recruit_character = LIB_andre_fields
 recruit_character = LIB_james_brooks
@@ -79,17 +80,6 @@ set_politics = {
 }
 set_popularities = {
 	democratic = 100
-}
-
-create_country_leader = {
-	name = "Edwin Barclay"
-	desc = "POLITICS_EDWIN_BARCLAY_DESC"
-	picture = "GFX_portrait_lib_edwin_barclay"
-	expire = "1965.1.1"
-	ideology = conservatism
-	traits = {
-		#
-	}
 }
 
 1939.1.1 = {
