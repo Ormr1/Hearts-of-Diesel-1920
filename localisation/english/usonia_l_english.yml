@@ -13,7 +13,10 @@
  usa_pk_charge_increase_1_tt:0 "§G+1§! Possible Peacekeeper Mission"
  USA_The_United_States_Economic_Association_tt:0 "Add §YU.S.E.A.§!"
  usea_resource_agreement_bonuses_tt:0 "Modify §YU.S.E.A.§! by\nPolitical Power Gain: §R-5%§!\nResource Gain Efficiency: §G+15%§!"
- usea_civilian_agreement_bonuses_tt:0 "Modify §YU.S.E.A.§! by\nPolitical Power Gain: §R-5%§!\n: §G+15%§!"
+ usea_civilian_agreement_bonuses_tt:0 "Modify §YU.S.E.A.§! by\nPolitical Power Gain: §R-5%§!\n§YCivilian Factory§! construction speed: §G+10%§!"
+ usea_military_agreement_bonuses_tt:0 "Modify §YU.S.E.A.§! by\nPolitical Power Gain: §R-5%§!\n§YMilitary Factory§! construction speed: §G+10%§!"
+ usea_currency_agreement_bonuses_tt:0 "Modify §YU.S.E.A.§! by\nPolitical Power Gain: §R-5%§!\nConsumer Goods Factories: §Y-10%§!"
+ usea_isf_bonus_tt:0 "Modify §YU.S.E.A.§! by\nResearch Speed Factor: §G+5%§!"
 ### FACTION NAMES
  FACTION_NAME_UNITED_STATES:0 "United States"
 ### IDEAS
@@ -24,6 +27,11 @@
  us_sof_peacekeepers_3:0 "U.S. Peacekeepers"
  us_sof_peacekeepers_4:0 "U.S. Peacekeepers"
  us_sof_peacekeepers_5:0 "U.S. Peacekeepers"
+ us_police_peacekeepers_1:0 "U.S. Peacekeepers"
+ us_police_peacekeepers_2:0 "U.S. Peacekeepers"
+ us_police_peacekeepers_3:0 "U.S. Peacekeepers"
+ us_police_peacekeepers_4:0 "U.S. Peacekeepers"
+ us_police_peacekeepers_5:0 "U.S. Peacekeepers"
  usa_american_economic_development_council:0 "American Economic Development Council"
 ### NATIONAL FOCUS
  USA_Foreign_Affairs:0 "Foreign Affairs"
@@ -78,6 +86,8 @@
  USA_San_Francisco_Conference_desc:0 "Now that all of the delegates have been contacted, it's time to call a conference on international organization between the members of the new United States to set the rules of this new order and draft a charter stating our goals and ideals."
  USA_Establish_US_Peacekeepers:0 "Establish The U.S. Peacekeepers"
  USA_Establish_US_Peacekeepers_desc:0 "The United States needs an elite professional armed force that can swiftly and effectively enforce Security Council resolutions both within the territories of the U.S. and abroad."
+ USA_SOF_Training:0 "S.O.F. Training"
+ USA_SOF_Training_desc:0 "The Peacekeepers need to be well-prepared for their future missions. A proper special operations training regiment needs to be established in order to ensure the highest quality for our Peacekeepers."
 ### EVENTS ###
  usa_eco_development.1:0 "Usonian Loans?"
  usa_eco_development.1.desc:0 "The government of Usonia has offered to grant loans to our nation in order to help develop our economies. The loans will be expensive to pay off but some have calculated that we will gain more from taking out the loans and allocating them properly than by denying them."

@@ -33,6 +33,7 @@ usea_idea = {
 	production_speed_industrial_complex_factor = USA.usea_ic_factor
 	production_speed_arms_factory_factor = USA.usea_af_factor
 	local_resources_factor = USA.usea_lr_factor
+	research_speed_factor = USA.usea_research_factor
 }
 
 us_peacekeeper_mission_1 = {

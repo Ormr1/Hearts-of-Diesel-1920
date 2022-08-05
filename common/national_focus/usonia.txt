@@ -47,6 +47,32 @@ focus_tree = {
             add_political_power = 150
         }
     }
+    focus = {
+        id = USA_Cox_Wins
+        icon = placeholder
+        relative_position_id = USA_1920_Elections
+        prerequisite = { focus = USA_1920_Elections }
+        x = -4
+        y = 1
+        available = { always = no }
+        cost = 0
+        completion_reward = {
+            add_political_power = 100
+        }
+    }
+    focus = {
+        id = USA_Washington_Wins
+        icon = placeholder
+        relative_position_id = USA_1920_Elections
+        prerequisite = { focus = USA_1920_Elections }
+        x = 4
+        y = 1
+        available = { always = no }
+        cost = 0
+        completion_reward = {
+            add_political_power = 100
+        }
+    }
 
     ### FOREIGN AFFAIRS
     focus = {
@@ -68,7 +94,7 @@ focus_tree = {
         icon = GFX_goal_generic_occupy_states_ongoing_war
         relative_position_id = USA_Foreign_Affairs
         prerequisite = { focus = USA_Foreign_Affairs }
-        x = -13
+        x = -15
         y = 1
         cost = 10
         ai_will_do = {
@@ -1516,7 +1542,7 @@ focus_tree = {
         icon = GFX_focus_usa_establish_us_peacekeepers
         relative_position_id = USA_San_Francisco_Conference
         prerequisite = { focus = USA_San_Francisco_Conference }
-        x = -6
+        x = -5
         y = 1
         cost = 10
         completion_reward = {
@@ -2048,7 +2074,7 @@ focus_tree = {
         icon = GFX_focus_usa_washington_conference
         relative_position_id = USA_San_Francisco_Conference
         prerequisite = { focus = USA_San_Francisco_Conference }
-        x = 4
+        x = 5
         y = 1
         cost = 10
         completion_reward = {
@@ -2090,7 +2116,7 @@ focus_tree = {
         icon = placeholder
         relative_position_id = USA_The_United_States_Economic_Association
         prerequisite = { focus = USA_The_United_States_Economic_Association }
-        x = -4
+        x = -3
         y = 1
         cost = 2
         select_effect = {
@@ -2147,6 +2173,222 @@ focus_tree = {
             }
         }
     }
+    focus = {
+        id = USA_Civilian_Contractor_Agreement
+        icon = placeholder
+        relative_position_id = USA_The_United_States_Economic_Association
+        prerequisite = { focus = USA_The_United_States_Economic_Association }
+        x = -1
+        y = 1
+        cost = 2
+        select_effect = {
+            set_variable = {
+                var = usea_civilian_contractor_votes
+                value = 1
+            }
+            every_other_country = {
+                limit = {
+                    is_in_faction_with = USA
+                    has_country_flag = joined_usea
+                }
+                country_event = usa_usea.6
+            }
+        }
+        completion_reward = {
+            set_temp_variable = {
+                var = usea_votes_needed
+                value = 1
+            }
+            every_other_country = {
+                limit = {
+                    is_in_faction_with = USA
+                    has_country_flag = joined_usea
+                }
+                USA = {
+                    add_to_temp_variable = {
+                        var = usea_votes_needed
+                        value = 1
+                    }
+                }
+            }
+            add_to_temp_variable = {
+                var = usea_votes_needed
+                value = 1
+            }
+            divide_temp_variable = {
+                var = usea_votes_needed
+                value = 2
+            }
+            round_temp_variable = usea_votes_needed
+            if = {
+                limit = {
+                    check_variable = {
+                        var = usea_civilian_contractor_votes
+                        value = usea_votes_needed
+                        compare = greater_than_or_equals
+                    }
+                }
+                country_event = usa_usea.9
+            }
+            else = {
+                country_event = usa_usea.10
+            }
+        }
+    }
+    focus = {
+        id = USA_Military_Industry_Amendment
+        icon = placeholder
+        relative_position_id = USA_The_United_States_Economic_Association
+        prerequisite = { focus = USA_The_United_States_Economic_Association }
+        x = 1
+        y = 1
+        cost = 2
+        select_effect = {
+            set_variable = {
+                var = usea_military_industry_votes
+                value = 1
+            }
+            every_other_country = {
+                limit = {
+                    is_in_faction_with = USA
+                    has_country_flag = joined_usea
+                }
+                country_event = usa_usea.16
+            }
+        }
+        completion_reward = {
+            set_temp_variable = {
+                var = usea_votes_needed
+                value = 1
+            }
+            every_other_country = {
+                limit = {
+                    is_in_faction_with = USA
+                    has_country_flag = joined_usea
+                }
+                USA = {
+                    add_to_temp_variable = {
+                        var = usea_votes_needed
+                        value = 1
+                    }
+                }
+            }
+            add_to_temp_variable = {
+                var = usea_votes_needed
+                value = 1
+            }
+            divide_temp_variable = {
+                var = usea_votes_needed
+                value = 2
+            }
+            round_temp_variable = usea_votes_needed
+            if = {
+                limit = {
+                    check_variable = {
+                        var = usea_military_industry_votes
+                        value = usea_votes_needed
+                        compare = greater_than_or_equals
+                    }
+                }
+                country_event = usa_usea.14
+            }
+            else = {
+                country_event = usa_usea.15
+            }
+        }
+    }
+    focus = {
+        id = USA_Unified_Currency_Amendment
+        icon = placeholder
+        relative_position_id = USA_The_United_States_Economic_Association
+        prerequisite = { focus = USA_The_United_States_Economic_Association }
+        x = 3
+        y = 1
+        cost = 2
+        select_effect = {
+            set_variable = {
+                var = usea_unified_currency_votes
+                value = 1
+            }
+            every_other_country = {
+                limit = {
+                    is_in_faction_with = USA
+                    has_country_flag = joined_usea
+                }
+                country_event = usa_usea.16
+            }
+        }
+        completion_reward = {
+            set_temp_variable = {
+                var = usea_votes_needed
+                value = 1
+            }
+            every_other_country = {
+                limit = {
+                    is_in_faction_with = USA
+                    has_country_flag = joined_usea
+                }
+                USA = {
+                    add_to_temp_variable = {
+                        var = usea_votes_needed
+                        value = 1
+                    }
+                }
+            }
+            add_to_temp_variable = {
+                var = usea_votes_needed
+                value = 1
+            }
+            divide_temp_variable = {
+                var = usea_votes_needed
+                value = 2
+            }
+            round_temp_variable = usea_votes_needed
+            if = {
+                limit = {
+                    check_variable = {
+                        var = usea_unified_currency_votes
+                        value = usea_votes_needed
+                        compare = greater_than_or_equals
+                    }
+                }
+                country_event = usa_usea.19
+            }
+            else = {
+                country_event = usa_usea.20
+            }
+        }
+    }
+    focus = {
+        id = USA_International_Science_Foundation
+        icon = placeholder
+        relative_position_id = USA_The_United_States_Economic_Association
+        prerequisite = { focus = USA_Resource_Trade_Amendment }
+        prerequisite = { focus = USA_Civilian_Contractor_Agreement }
+        prerequisite = { focus = USA_Military_Industry_Amendment }
+        prerequisite = { focus = USA_Unified_Currency_Amendment }
+        x = 0
+        y = 2
+        cost = 10
+        ai_will_do = {
+            factor = 1
+        }
+        completion_reward = {
+            set_variable = {
+                var = usea_research_factor
+                value = 0.05
+            }
+            custom_effect_tooltip = usea_isf_bonus_tt
+            force_update_dynamic_modifier = yes
+            add_to_tech_sharing_group = usea_research
+            every_other_country = {
+                limit = {
+                    is_in_faction_with = USA
+                }
+                add_to_tech_sharing_group = usea_research
+            }
+        }
+    }
 
     ### OLD WORLD ###
     focus = {
@@ -2154,7 +2396,7 @@ focus_tree = {
         icon = GFX_goal_generic_territory_or_war
         relative_position_id = USA_Foreign_Affairs
         prerequisite = { focus = USA_Foreign_Affairs }
-        x = 13
+        x = 15
         y = 1
         cost = 10
         ai_will_do = {

@@ -1095,6 +1095,12 @@ on_actions = {
 						days = 547
 					}
 				}
+				USA = {
+					country_event = {
+						id = usa_elections.1
+						days = 307
+					}
+				}
 			}
 			GER = { #Axis and Poland just didn't get along
 				add_ai_strategy = {

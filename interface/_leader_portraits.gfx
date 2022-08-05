@@ -93,6 +93,26 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_portrait_USA_benjamin_o_davis_sr"
+		texturefile = "gfx/leaders/USA/Portrait_USA_Benjamin_O_Davis_Sr.png"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_USA_huey_long"
+		texturefile = "gfx/leaders/USA/Portrait_USA_Huey_Long.png"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_USA_james_m_cox"
+		texturefile = "gfx/leaders/USA/Portrait_USA_James_M_Cox.png"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_USA_james_w_ford"
+		texturefile = "gfx/leaders/USA/Portrait_USA_James_W_Ford.png"
+	}
+
+	spriteType = {
 		name = "GFX_portrait_USA_charles_lindbergh"
 		texturefile = "gfx/leaders/USA/portrait_USA_Generic_land_4.dds"
 	}
@@ -6914,6 +6934,11 @@ spriteTypes = {
 	spriteType = {
 		name = GFX_portrait_USA_franklin_delano_roosevelt
 		texturefile = "gfx/leaders/USA/Portrait_USA_Franklin_Roosevelt.dds"
+	}
+
+	spriteType = {
+		name = GFX_portrait_USA_franklin_delano_roosevelt_young
+		texturefile = "gfx/leaders/USA/Portrait_USA_Franklin_D_Roosevelt.png"
 	}
 
 	spriteType = {

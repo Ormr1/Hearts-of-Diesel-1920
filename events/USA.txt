@@ -10,6 +10,7 @@ add_namespace = us_peacekeeper_sof_operation
 add_namespace = usa_alaska
 add_namespace = usa_arabia
 add_namespace = usa_usea
+add_namespace = usa_elections
 
 # Amelia Eartharts wants to join the USAAC
 country_event = {
@@ -2832,7 +2833,8 @@ country_event = { # Resource trade amendment
 		USA = {
 			country_event = {
 				id = usa_usea.2
-				random_days = 13
+				days = 1
+				random_days = 12
 			}
 		}
 	}
@@ -2841,7 +2843,8 @@ country_event = { # Resource trade amendment
 		USA = {
 			country_event = {
 				id = usa_usea.3
-				random_days = 13
+				days = 1
+				random_days = 12
 			}
 		}
 	}
@@ -2923,7 +2926,8 @@ country_event = { # Civilian contractors amendment
 		USA = {
 			country_event = {
 				id = usa_usea.7
-				random_days = 13
+				days = 1
+				random_days = 12
 			}
 		}
 	}
@@ -2932,7 +2936,8 @@ country_event = { # Civilian contractors amendment
 		USA = {
 			country_event = {
 				id = usa_usea.8
-				random_days = 13
+				days = 1
+				random_days = 12
 			}
 		}
 	}
@@ -2977,7 +2982,7 @@ country_event = { # Civilian Contractor Amendment Passes!
 		}
 		add_to_variable = {
 			var = usea_ic_factor
-			value = 0.15
+			value = 0.10
 		}
 		force_update_dynamic_modifier = yes
 		custom_effect_tooltip = usea_civilian_agreement_bonuses_tt
@@ -2993,5 +2998,233 @@ country_event = { # Civilian Contractor Amendment Fails!
 
 	option = { # It was worth a try
 		name = usa_usea.10.a
+	}
+}
+country_event = { # Military industry amendment
+	id = usa_usea.11
+	title = usa_usea.11.t
+	desc = usa_usea.11.desc
+	picture = placeholder
+
+	is_triggered_only = yes
+
+	option = { # Vote Aye!
+		name = usa_usea.11.a
+		USA = {
+			add_to_variable = {
+				var = usea_military_industry_votes
+                value = 1
+			}
+		}
+		USA = {
+			country_event = {
+				id = usa_usea.12
+				days = 1
+				random_days = 12
+			}
+		}
+	}
+	option = { # Vote Nay!
+		name = usa_usea.1.b
+		USA = {
+			country_event = {
+				id = usa_usea.13
+				days = 1
+				random_days = 12
+			}
+		}
+	}
+}
+country_event = { # [FROM] Votes Aye!
+	id = usa_usea.12
+	title = usa_usea.12.t
+	desc = usa_usea.12.desc
+	picture = placeholder
+
+	is_triggered_only = yes
+
+	option = { # Wonderful
+		name = usa_usea.12.a
+	}
+}
+country_event = { # [FROM] Votes Nay!
+	id = usa_usea.13
+	title = usa_usea.13.t
+	desc = usa_usea.13.desc
+	picture = placeholder
+
+	is_triggered_only = yes
+
+	option = { # Damn
+		name = usa_usea.13.a
+	}
+}
+country_event = { # Military Industry Amendment Passes!
+	id = usa_usea.14
+	title = usa_usea.14.t
+	desc = usa_usea.14.desc
+	picture = placeholder
+
+	is_triggered_only = yes
+
+	option = { # Great Success!
+		name = usa_usea.14.a
+		add_to_variable = {
+			var = usea_pp_factor
+			value = -0.05
+		}
+		add_to_variable = {
+			var = usea_af_factor
+			value = 0.10
+		}
+		force_update_dynamic_modifier = yes
+		custom_effect_tooltip = usea_military_agreement_bonuses_tt
+	}
+}
+country_event = { # Military Industry Amendment Fails!
+	id = usa_usea.15
+	title = usa_usea.15.t
+	desc = usa_usea.15.desc
+	picture = placeholder
+
+	is_triggered_only = yes
+
+	option = { # It was worth a try
+		name = usa_usea.15.a
+	}
+}
+country_event = { # Unified Currency amendment
+	id = usa_usea.16
+	title = usa_usea.16.t
+	desc = usa_usea.16.desc
+	picture = placeholder
+
+	is_triggered_only = yes
+
+	option = { # Vote Aye!
+		name = usa_usea.16.a
+		USA = {
+			add_to_variable = {
+				var = usea_unified_currency_votes
+                value = 1
+			}
+		}
+		USA = {
+			country_event = {
+				id = usa_usea.17
+				days = 1
+				random_days = 12
+			}
+		}
+	}
+	option = { # Vote Nay!
+		name = usa_usea.1.b
+		USA = {
+			country_event = {
+				id = usa_usea.18
+				days = 1
+				random_days = 12
+			}
+		}
+	}
+}
+country_event = { # [FROM] Votes Aye!
+	id = usa_usea.17
+	title = usa_usea.17.t
+	desc = usa_usea.17.desc
+	picture = placeholder
+
+	is_triggered_only = yes
+
+	option = { # Wonderful
+		name = usa_usea.17.a
+	}
+}
+country_event = { # [FROM] Votes Nay!
+	id = usa_usea.18
+	title = usa_usea.18.t
+	desc = usa_usea.18.desc
+	picture = placeholder
+
+	is_triggered_only = yes
+
+	option = { # Damn
+		name = usa_usea.18.a
+	}
+}
+country_event = { # Unified Currency Amendment Passes!
+	id = usa_usea.19
+	title = usa_usea.19.t
+	desc = usa_usea.19.desc
+	picture = placeholder
+
+	is_triggered_only = yes
+
+	option = { # Great Success!
+		name = usa_usea.19.a
+		add_to_variable = {
+			var = usea_pp_factor
+			value = -0.05
+		}
+		add_to_variable = {
+			var = usea_cg_factor
+			value = -0.10
+		}
+		force_update_dynamic_modifier = yes
+		custom_effect_tooltip = usea_currency_agreement_bonuses_tt
+	}
+}
+country_event = { # Unified Currency Amendment Fails!
+	id = usa_usea.20
+	title = usa_usea.20.t
+	desc = usa_usea.20.desc
+	picture = placeholder
+
+	is_triggered_only = yes
+
+	option = { # It was worth a try
+		name = usa_usea.20.a
+	}
+}
+
+### ELECTIONS ###
+# 1920
+country_event = { # 1920 Election
+	id = usa_elections.1
+	title = usa_elections.1.t
+	desc = usa_elections.1.desc
+	picture = placeholder
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			# 1924 Election in 1464 days
+		}
+	}
+
+	option = { # Four More Years!
+		name = usa_elections.1.a
+		complete_national_focus = USA_Washington_Wins
+	}
+	option = { # Can't keep Cox in a box
+		name = usa_elections.1.b
+		complete_national_focus = USA_Cox_Wins
+		retire_country_leader = yes
+		USA_james_cox = {
+			add_country_leader_role = {
+				promote_leader = yes
+				country_leader = {
+					ideology = liberalism
+					expire = "1965.1.1.1"
+					traits = { }
+				}
+			}
+		}
+		set_party_name = {
+			ideology = democratic
+			long_name = USA_democratic_republican_party_long
+			name = USA_democratic_republican_party
+		}
 	}
 }

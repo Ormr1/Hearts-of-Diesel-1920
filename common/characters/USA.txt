@@ -45,6 +45,21 @@ characters={
 			coordination_skill=5
 			legacy_id=0
 		}
+		country_leader={
+			ideology=fenris_ideology
+			traits={ }
+			expire="1947.1.1.1"
+			id=-1
+		}
+	}
+
+	USA_james_cox = {
+		name = USA_james_cox
+		portraits = {
+			civilian = {
+				large = GFX_portrait_USA_james_m_cox
+			}
+		}
 	}
 
 	USA_franklin_delano_roosevelt={

@@ -295,8 +295,12 @@ set_politics = {
 	elections_allowed = yes
 }
 set_popularities = {
-	democratic = 99
-	communism = 1
+	democratic = 73
+	communism = 19
+	fascism = 3
+	neutrality = 3
+	monarchy = 1
+	fenris = 1
 }
 
 add_ideas = {
@@ -322,6 +326,7 @@ set_autonomy = {
 	}
 }
 
+recruit_character = USA_james_cox
 recruit_character = USA_booker_t_washington
 recruit_character = USA_william_mason
 recruit_character = USA_george_mason
