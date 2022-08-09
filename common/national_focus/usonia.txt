@@ -48,7 +48,7 @@ focus_tree = {
         }
     }
     focus = {
-        id = USA_Cox_Wins
+        id = USA_Johnson_Wins
         icon = placeholder
         relative_position_id = USA_1920_Elections
         prerequisite = { focus = USA_1920_Elections }
@@ -131,7 +131,7 @@ focus_tree = {
         }
     }
     focus = {
-        id = USA_Buffalo_Washington_Passenger_Line
+        id = USA_Washington_Buffalo_Passenger_Line
         icon = placeholder
         relative_position_id = USA_Look_More_Westward
         prerequisite = { focus = USA_Look_More_Westward }
@@ -140,7 +140,16 @@ focus_tree = {
         y = 1
         cost = 10
         completion_reward = {
-            
+            build_railway = {
+                level = 1
+                build_only_on_allied = no
+                controller_priority = {
+                    base = 1
+                }
+                fallback = yes
+                start_province = 3957
+                target_province = 11654
+            }
         }
     }
     focus = {
@@ -152,7 +161,57 @@ focus_tree = {
         y = 1
         cost = 10
         completion_reward = {
-
+            build_railway = {
+                level = 1
+                build_only_on_allied = no
+                controller_priority = {
+                    base = 1
+                }
+                fallback = yes
+                path = { 6845 3863 6882 3878 9847 6909 9832 11830 3906 6732 }
+            }
+            357 = {
+                add_building_construction = {
+                    type = infrastructure
+                    level = 1
+                    instant_build = yes
+                }
+            }
+            907 = {
+                add_building_construction = {
+                    type = infrastructure
+                    level = 1
+                    instant_build = yes
+                }
+            }
+            912 = {
+                add_building_construction = {
+                    type = infrastructure
+                    level = 1
+                    instant_build = yes
+                }
+            }
+            358 = {
+                add_building_construction = {
+                    type = infrastructure
+                    level = 1
+                    instant_build = yes
+                }
+            }
+            359 = {
+                add_building_construction = {
+                    type = infrastructure
+                    level = 1
+                    instant_build = yes
+                }
+            }
+            360 = {
+                add_building_construction = {
+                    type = infrastructure
+                    level = 1
+                    instant_build = yes
+                }
+            }
         }
     }
     focus = {
@@ -176,7 +235,22 @@ focus_tree = {
         y = 1
         cost = 10
         completion_reward = {
-
+            build_railway = {
+                level = 1
+                build_only_on_allied = no
+                controller_priority = {
+                    base = 1
+                }
+                fallback = yes
+                path = { 6845 3824 6984 }
+            }
+            361 = {
+                add_building_construction = {
+                    type = infrastructure
+                    level = 1
+                    instant_build = yes
+                }
+            }
         }
     }
     focus = {
@@ -188,7 +262,23 @@ focus_tree = {
         y = 1
         cost = 10
         completion_reward = {
-
+            build_railway = {
+                level = 1
+                build_only_on_allied = no
+                controller_priority = {
+                    base = 1
+                }
+                fallback = yes
+                start_province = 6845
+                target_province = 11800
+            }
+            360 = {
+                add_building_construction = {
+                    type = infrastructure
+                    level = 1
+                    instant_build = yes
+                }
+            }
         }
     }
     focus = {
@@ -201,7 +291,107 @@ focus_tree = {
         y = 1
         cost = 10
         completion_reward = {
-
+            build_railway = {
+                level = 1
+                build_only_on_allied = no
+                controller_priority = {
+                    base = 1
+                }
+                fallback = yes
+                start_province = 11800
+                target_province = 7361
+            }
+            361 = {
+                add_building_construction = {
+                    type = infrastructure
+                    level = 1
+                    instant_build = yes
+                }
+            }
+            360 = {
+                add_building_construction = {
+                    type = infrastructure
+                    level = 1
+                    instant_build = yes
+                }
+            }
+            359 = {
+                add_building_construction = {
+                    type = infrastructure
+                    level = 1
+                    instant_build = yes
+                }
+            }
+            358 = {
+                add_building_construction = {
+                    type = infrastructure
+                    level = 1
+                    instant_build = yes
+                }
+            }
+            357 = {
+                add_building_construction = {
+                    type = infrastructure
+                    level = 1
+                    instant_build = yes
+                }
+            }
+            907 = {
+                add_building_construction = {
+                    type = infrastructure
+                    level = 1
+                    instant_build = yes
+                }
+            }
+            912 = {
+                add_building_construction = {
+                    type = infrastructure
+                    level = 1
+                    instant_build = yes
+                }
+            }
+            908 = {
+                add_building_construction = {
+                    type = infrastructure
+                    level = 1
+                    instant_build = yes
+                }
+            }
+            909 = {
+                add_building_construction = {
+                    type = infrastructure
+                    level = 1
+                    instant_build = yes
+                }
+            }
+            910 = {
+                add_building_construction = {
+                    type = infrastructure
+                    level = 1
+                    instant_build = yes
+                }
+            }
+            911 = {
+                add_building_construction = {
+                    type = infrastructure
+                    level = 1
+                    instant_build = yes
+                }
+            }
+            465 = {
+                add_building_construction = {
+                    type = infrastructure
+                    level = 1
+                    instant_build = yes
+                }
+            }
+            464 = {
+                add_building_construction = {
+                    type = infrastructure
+                    level = 1
+                    instant_build = yes
+                }
+            }
         }
     }
 

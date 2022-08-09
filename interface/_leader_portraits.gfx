@@ -126,6 +126,13 @@ spriteTypes = {
 		name = "GFX_portrait_USA_alexander_vandegrift_small"
 		texturefile = "gfx/interface/ideas/idea_USA_generic_land_2.dds"
 	}
+	
+	### LIB
+
+	spriteType = {
+		name = "GFX_portrait_LIB_character_charles_db_king"
+		texturefile = "gfx/interface/leaders/LIB/Portrait_LIB_Charles_DB_King.png"
+	}
 
 	# Polish #######
 	spriteType = {

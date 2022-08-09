@@ -392,6 +392,8 @@
  USA_charles_coughlin:0 "$charles_coughlin$"
  USA_william_donovan:0 "$usa_william_donovan$"
  
+ #LIB
+ LIB_character_charles_db_king:0 "Charles D.B. King"
 
  #ITALY
  ITA_benito_augustulus:0 "Benito Augustulus"
