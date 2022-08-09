@@ -30,7 +30,7 @@ focus_tree = {
     focus = {
         id = USA_1920_Elections
         icon = placeholder
-        x = 14
+        x = 10
         y = 0
         available = {
             always = no
@@ -52,7 +52,7 @@ focus_tree = {
         icon = placeholder
         relative_position_id = USA_1920_Elections
         prerequisite = { focus = USA_1920_Elections }
-        x = -4
+        x = -5
         y = 1
         available = { always = no }
         cost = 0
@@ -65,12 +65,143 @@ focus_tree = {
         icon = placeholder
         relative_position_id = USA_1920_Elections
         prerequisite = { focus = USA_1920_Elections }
-        x = 4
+        x = 5
         y = 1
         available = { always = no }
         cost = 0
         completion_reward = {
             add_political_power = 100
+        }
+    }
+    focus = {
+        id = USA_Reform_Hamiltonianism
+        icon = placeholder
+        relative_position_id = USA_Washington_Wins
+        prerequisite = { focus = USA_Washington_Wins }
+        x = -2
+        y = 1
+        cost = 10
+        completion_reward = {
+
+        }
+    }
+    focus = {
+        id = USA_West_Coast_Factory_Subsidies
+        icon = placeholder
+        relative_position_id = USA_Reform_Hamiltonianism
+        prerequisite = { focus = USA_Reform_Hamiltonianism }
+        x = -1
+        y = 1
+    }
+    focus = {
+        id = USA_Look_More_Westward
+        icon = placeholder
+        relative_position_id = USA_Reform_Hamiltonianism
+        prerequisite = { focus = USA_Reform_Hamiltonianism }
+        x = 1
+        y = 1
+        cost = 10
+        completion_reward = {
+
+        }
+    }
+    focus = {
+        id = USA_Fund_Great_Lakes_Industries
+        icon = placeholder
+        relative_position_id = USA_Look_More_Westward
+        prerequisite = { focus = USA_Look_More_Westward }
+        prerequisite = { focus = USA_West_Coast_Factory_Subsidies }
+        x = -1
+        y = 1
+        cost = 10
+        completion_reward = {
+
+        }
+    }
+    focus = {
+        id = USA_The_Steel_Belt
+        icon = placeholder
+        relative_position_id = USA_Fund_Great_Lakes_Industries
+        prerequisite = { focus = USA_Fund_Great_Lakes_Industries }
+        x = 0
+        y = 1
+        cost = 10
+        completion_reward = {
+
+        }
+    }
+    focus = {
+        id = USA_Buffalo_Washington_Passenger_Line
+        icon = placeholder
+        relative_position_id = USA_Look_More_Westward
+        prerequisite = { focus = USA_Look_More_Westward }
+        prerequisite = { focus = USA_Northeastern_Boom }
+        x = 1
+        y = 1
+        cost = 10
+        completion_reward = {
+            
+        }
+    }
+    focus = {
+        id = USA_Boston_Washington_Passenger_Line
+        icon = placeholder
+        relative_position_id = USA_Washington_Wins
+        prerequisite = { focus = USA_Washington_Wins }
+        x = 2
+        y = 1
+        cost = 10
+        completion_reward = {
+
+        }
+    }
+    focus = {
+        id = USA_Northeastern_Boom
+        icon = placeholder
+        relative_position_id = USA_Boston_Washington_Passenger_Line
+        prerequisite = { focus = USA_Boston_Washington_Passenger_Line }
+        x = -1
+        y = 1
+        cost = 10
+        completion_reward = {
+
+        }
+    }
+    focus = {
+        id = USA_Extend_Line_To_Baltimore
+        icon = placeholder
+        relative_position_id = USA_Boston_Washington_Passenger_Line
+        prerequisite = { focus = USA_Boston_Washington_Passenger_Line }
+        x = 1
+        y = 1
+        cost = 10
+        completion_reward = {
+
+        }
+    }
+    focus = {
+        id = USA_Extend_Line_To_Pittsburgh
+        icon = placeholder
+        relative_position_id = USA_Extend_Line_To_Baltimore
+        prerequisite = { focus = USA_Extend_Line_To_Baltimore }
+        x = 0
+        y = 1
+        cost = 10
+        completion_reward = {
+
+        }
+    }
+    focus = {
+        id = USA_Connected_Northeast
+        icon = placeholder
+        relative_position_id = USA_Extend_Line_To_Pittsburgh
+        prerequisite = { focus = USA_Extend_Line_To_Pittsburgh }
+        prerequisite = { focus = USA_Northeastern_Boom }
+        x = -1
+        y = 1
+        cost = 10
+        completion_reward = {
+
         }
     }
 

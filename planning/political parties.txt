@@ -1,0 +1,12 @@
+USA:
+    Federalists:
+        - Centralization
+        - Hamiltonian Economics
+        - Traditionalist Conservatism
+    Democratic-Republicans:
+        - Agrarianism
+        - Anti-clericalism
+        - Liberalism
+        - De-centralization
+        - Populism
+        - Republicanism
