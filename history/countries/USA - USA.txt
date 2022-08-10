@@ -309,6 +309,7 @@ add_ideas = {
 	disarmed_nation
 	free_trade
 	home_of_the_free
+	usa_hamiltonian_economics
 }
 
 # DIPLOMACY

@@ -26,6 +26,12 @@
 #	can be added to countries, states or unit leaders
 #	will only updated daily, unless forced by force_update_dynamic_modifier effect
 
+local_economic_boom = {
+	state_production_speed_buildings_factor = 0.15
+	local_resources = 0.20
+	local_supplies = 0.10
+}
+
 usea_idea = {
 	icon = placeholder
 	political_power_factor = USA.usea_pp_factor

@@ -223,7 +223,84 @@ focus_tree = {
         y = 1
         cost = 10
         completion_reward = {
-
+            361 = {
+                add_dynamic_modifier = {
+                    modifier = local_economic_boom
+                    days = 1825
+                }
+            }
+            360 = {
+                add_dynamic_modifier = {
+                    modifier = local_economic_boom
+                    days = 1825
+                }
+            }
+            359 = {
+                add_dynamic_modifier = {
+                    modifier = local_economic_boom
+                    days = 1825
+                }
+            }
+            358 = {
+                add_dynamic_modifier = {
+                    modifier = local_economic_boom
+                    days = 1825
+                }
+            }
+            357 = {
+                add_dynamic_modifier = {
+                    modifier = local_economic_boom
+                    days = 1825
+                }
+            }
+            907 = {
+                add_dynamic_modifier = {
+                    modifier = local_economic_boom
+                    days = 1825
+                }
+            }
+            912 = {
+                add_dynamic_modifier = {
+                    modifier = local_economic_boom
+                    days = 1825
+                }
+            }
+            908 = {
+                add_dynamic_modifier = {
+                    modifier = local_economic_boom
+                    days = 1825
+                }
+            }
+            909 = {
+                add_dynamic_modifier = {
+                    modifier = local_economic_boom
+                    days = 1825
+                }
+            }
+            910 = {
+                add_dynamic_modifier = {
+                    modifier = local_economic_boom
+                    days = 1825
+                }
+            }
+            911 = {
+                add_dynamic_modifier = {
+                    modifier = local_economic_boom
+                    days = 1825
+                }
+            }
+            465 = {
+                add_dynamic_modifier = {
+                    modifier = local_economic_boom
+                    days = 1825
+                }
+            }
+            464 = {
+                add_dynamic_modifier = {
+                    modifier = local_economic_boom
+                    days = 1825
+                }
+            }
         }
     }
     focus = {
@@ -2816,6 +2893,11 @@ focus_tree = {
         icon = placeholder 
         relative_position_id = USA_Operation_Cold_Front
         prerequisite = { focus = USA_Operation_Cold_Front }
+        available = {
+            463 = {
+                is_owned_by = ROOT
+            }
+        }
         x = -1
         y = 1
         cost = 10
@@ -2854,6 +2936,11 @@ focus_tree = {
         icon = placeholder 
         relative_position_id = USA_Operation_Cold_Front
         prerequisite = { focus = USA_Operation_Cold_Front }
+        available = {
+            463 = {
+                is_owned_by = ROOT
+            }
+        }
         x = 1
         y = 1
         cost = 10

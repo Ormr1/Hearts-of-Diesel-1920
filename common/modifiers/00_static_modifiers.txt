@@ -657,9 +657,3 @@ SOV_for_the_common_good_relation = { #For Right Oppo allies
 	license_production_speed = 0.25 #speed  increase for being a license
 	license_tech_difference_speed = 0.25 #less cost increase for each tech level between the license and own tech level
 }
-
-local_economic_boom = {
-	state_production_speed_buildings_factor = 0.20
-	local_resources = 0.30
-	local_supplies = 0.10
-}
