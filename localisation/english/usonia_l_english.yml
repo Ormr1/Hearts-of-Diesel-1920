@@ -33,6 +33,11 @@
  us_police_peacekeepers_4:0 "U.S. Peacekeepers"
  us_police_peacekeepers_5:0 "U.S. Peacekeepers"
  usa_american_economic_development_council:0 "American Economic Development Council"
+ usa_agricultural_problems:0 "Agricultural Problems"
+ usa_underfunded_army:0 "Underfunded Army"
+ usa_underfunded_army_desc:0 "An all volunteer force, the Usonian Army is comparatively tiny next to the vast formations mobilized in Europa. It is not even the largest armed group in Usonia, outnumbered by the private security personnel within the Pinkerton National Detective Agency."
+ usa_usonian_esprit_de_corps:0 "Usonian Esprit De Corps"
+ usa_usonian_esprit_de_corps_desc:0 "When asked how the Empire would respond should a Usonian Expeditionary Force land on its shores, the Emperor of Saxony is said to have remarked that he would simply have them arrested. Yet such mockery overlooks the extraordinary esprit de corps presents across the Usonian military. Its soldiers have developed an international reputation for sheer nerve, and bravery bordering on recklessness. During the Great War, a Usonian volunteer regiment was ordered by its Frankish attache to retreat, and the response "Retreat? Hell we just got here" has become a rallying cry across the entire Usonian Army."
 ### NATIONAL FOCUS
  USA_Foreign_Affairs:0 "Foreign Affairs"
  USA_Foreign_Affairs_desc:0 "It's a dangerous world out there. We need to be prepared. Through diplomacy, intervention, economics, and Liberty's grace, we shall make the 20th century Usonia's century."

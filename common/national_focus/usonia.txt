@@ -74,7 +74,7 @@ focus_tree = {
         }
     }
     focus = {
-        id = USA_Reform_Hamiltonianism
+        id = USA_McNary_Haugen_Farm_Relief_Bill
         icon = placeholder
         relative_position_id = USA_Washington_Wins
         prerequisite = { focus = USA_Washington_Wins }
@@ -88,16 +88,20 @@ focus_tree = {
     focus = {
         id = USA_West_Coast_Factory_Subsidies
         icon = placeholder
-        relative_position_id = USA_Reform_Hamiltonianism
-        prerequisite = { focus = USA_Reform_Hamiltonianism }
+        relative_position_id = USA_McNary_Haugen_Farm_Relief_Bill
+        prerequisite = { focus = USA_McNary_Haugen_Farm_Relief_Bill }
         x = -1
         y = 1
+        cost = 10
+        completion_reward = {
+
+        }
     }
     focus = {
         id = USA_Look_More_Westward
         icon = placeholder
-        relative_position_id = USA_Reform_Hamiltonianism
-        prerequisite = { focus = USA_Reform_Hamiltonianism }
+        relative_position_id = USA_McNary_Haugen_Farm_Relief_Bill
+        prerequisite = { focus = USA_McNary_Haugen_Farm_Relief_Bill }
         x = 1
         y = 1
         cost = 10

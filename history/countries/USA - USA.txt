@@ -310,6 +310,9 @@ add_ideas = {
 	free_trade
 	home_of_the_free
 	usa_hamiltonian_economics
+	usa_agricultural_problems
+	usa_underfunded_army
+	usa_usonian_esprit_de_corps
 }
 
 # DIPLOMACY
