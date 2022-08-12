@@ -2977,7 +2977,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/focus_SOV_south_manchuria_railway.dds"
 	}
 
-	SpriteType = { 
+	SpriteType = {
 		name = "GFX_focus_SOV_international_union_of_soviet_republics"
 		texturefile = "gfx/interface/goals/focus_SOV_international_union_of_soviet_republics.dds"
 	}
@@ -2985,6 +2985,17 @@ spriteTypes = {
 	SpriteType = { 
 		name = "GFX_focus_SOV_approach_semyonov"
 		texturefile = "gfx/interface/goals/focus_SOV_approach_semyonov.dds"
+	}
+	
+	
+	
+	SpriteType = { 
+		name = "GFX_focus_FEN_skulking_threat"
+		texturefile = "gfx/interface/goals/FENRIS/focus_FEN_skulking_threat.dds"
+	}
+	SpriteType = { 
+		name = "GFX_focus_FEN_rasputin"
+		texturefile = "gfx/interface/goals/FENRIS/focus_FEN_rasputin.dds"
 	}
 
 }

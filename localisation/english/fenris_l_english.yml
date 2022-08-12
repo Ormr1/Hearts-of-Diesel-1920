@@ -110,3 +110,5 @@
  FEN_expand_military_industry:0 "Expand our Military Industry"
  FEN_expand_oil_silos:0 "Expand our Oil Silos"
  fenris_air_company:0 "Fenris Air Company"
+ FEN_bunker_depth_5:0 "The §OBunker Depth§! is at least 5"
+ FEN_bunker_depth_15:0 "The §OBunker Depth§! is at least 15"
