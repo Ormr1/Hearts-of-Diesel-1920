@@ -1744,6 +1744,31 @@ spriteTypes = {
 		name = "GFX_idea_usa_usonian_expeditionary_forces"
 		texturefile = "gfx/interface/ideas/USA/idea_usa_usonian_expeditionary_forces.png"
 	}
+
+	spriteType = {
+		name = "GFX_idea_usa_hamiltonian_economics"
+		texturefile = "gfx/interface/ideas/USA/idea_usa_hamiltonian_economics.png"
+	}
+
+	spriteType = {
+		name = "GFX_idea_usa_jeffersonian_economics"
+		texturefile = "gfx/interface/ideas/USA/idea_usa_jeffersonian_economics.png"
+	}
+
+	spriteType = {
+		name = "GFX_idea_usa_underfunded_army"
+		texturefile = "gfx/interface/ideas/USA/idea_usa_underfunded_army.png"
+	}
+
+	spriteType = {
+		name = "GFX_idea_usa_usonian_esprit_de_corps"
+		texturefile = "gfx/interface/ideas/USA/idea_usa_usonian_esprit_de_corps.png"
+	}
+
+	spriteType = {
+		name = "GFX_idea_usa_overfarming"
+		texturefile = "gfx/interface/ideas/USA/idea_usa_overfarming.png"
+	}
 	
 	spriteType = {
 		name = "GFX_idea_usa_great_depression_3"

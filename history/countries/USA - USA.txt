@@ -308,11 +308,12 @@ add_ideas = {
 	disarmed_nation
 	free_trade
 	home_of_the_free
-	usa_usonian_expeditionary_forces_1
 	usa_hamiltonian_economics
+	usa_usonian_expeditionary_forces_1
 	usa_agricultural_problems
 	usa_underfunded_army
 	usa_usonian_esprit_de_corps
+	usa_overfarming_2
 }
 
 # DIPLOMACY

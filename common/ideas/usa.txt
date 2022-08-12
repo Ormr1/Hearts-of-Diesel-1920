@@ -1,8 +1,30 @@
 ideas = {
 
 	country = {
-		usa_overfarming = {
-			picture = placeholder
+		usa_overfarming_1 = {
+			picture = usa_overfarming
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = 0
+
+			modifier = {
+				political_power_factor = 0.075
+				stability_factor = -0.025
+				consumer_goods_factor = 0.025
+				production_speed_buildings_factor = -0.025
+				monthly_population = -0.10
+				conscription_factor = -0.025
+			}
+		}
+		usa_overfarming_2 = {
+			picture = usa_overfarming
 
 			allowed = {
 				always = no
@@ -24,7 +46,7 @@ ideas = {
 			}
 		}
 		usa_underfunded_army = {
-			picture = placeholder
+			picture = usa_underfunded_army
 
 			allowed = {
 				always = no
@@ -44,7 +66,7 @@ ideas = {
 			}
 		}
 		usa_usonian_esprit_de_corps = {
-			picture = placeholder
+			picture = usa_usonian_esprit_de_corps
 
 			allowed = {
 				always = no
@@ -484,7 +506,7 @@ ideas = {
 			}
 		}
 		usa_hamiltonian_economics = {
-			picture = placeholder
+			picture = usa_hamiltonian_economics
 
 			allowed = {
 				always = no
@@ -505,7 +527,7 @@ ideas = {
 			}
 		}
 		usa_jeffersonian_economics = {
-			picture = placeholder
+			picture = usa_jeffersonian_economics
 
 			allowed = {
 				always = no

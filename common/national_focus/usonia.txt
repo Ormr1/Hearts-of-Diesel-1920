@@ -82,7 +82,10 @@ focus_tree = {
         y = 1
         cost = 10
         completion_reward = {
-
+            swap_ideas = {
+                remove_idea = usa_overfarming_2
+                add_idea = usa_overfarming_1
+            }
         }
     }
     focus = {
@@ -94,12 +97,103 @@ focus_tree = {
         y = 1
         cost = 10
         completion_reward = {
-            484 = {
-                add_extra_state_shared_building_slots = 1
-                add_building_construction = {
-                    type = industrial_complex
-                    level = 1
-                    instant_build = yes
+            custom_effect_tooltip = USA_West_Coast_Factory_Subsidies_tt
+            hidden_effect = {
+                random_list = {
+                    34 = {
+                        378 = {
+                            add_extra_state_shared_building_slots = 1
+                            add_building_construction = {
+                                type = industrial_complex
+                                level = 1
+                                instant_build = yes
+                            }
+                        }
+                    }
+                    33 = {
+                        484 = {
+                            add_extra_state_shared_building_slots = 1
+                            add_building_construction = {
+                                type = industrial_complex
+                                level = 1
+                                instant_build = yes
+                            }
+                        }
+                    }
+                    33 = {
+                        483 = {
+                            add_extra_state_shared_building_slots = 1
+                            add_building_construction = {
+                                type = industrial_complex
+                                level = 1
+                                instant_build = yes
+                            }
+                        }
+                    }
+                }
+                random_list = {
+                    34 = {
+                        914 = {
+                            add_extra_state_shared_building_slots = 1
+                            add_building_construction = {
+                                type = industrial_complex
+                                level = 1
+                                instant_build = yes
+                            }
+                        }
+                    }
+                    33 = {
+                        385 = {
+                            add_extra_state_shared_building_slots = 1
+                            add_building_construction = {
+                                type = industrial_complex
+                                level = 1
+                                instant_build = yes
+                            }
+                        }
+                    }
+                    33 = {
+                        386 = {
+                            add_extra_state_shared_building_slots = 1
+                            add_building_construction = {
+                                type = industrial_complex
+                                level = 1
+                                instant_build = yes
+                            }
+                        }
+                    }
+                }
+                random_list = {
+                    34 = {
+                        473 = {
+                            add_extra_state_shared_building_slots = 1
+                            add_building_construction = {
+                                type = industrial_complex
+                                level = 1
+                                instant_build = yes
+                            }
+                        }
+                    }
+                    33 = {
+                        740 = {
+                            add_extra_state_shared_building_slots = 1
+                            add_building_construction = {
+                                type = industrial_complex
+                                level = 1
+                                instant_build = yes
+                            }
+                        }
+                    }
+                    33 = {
+                        739 = {
+                            add_extra_state_shared_building_slots = 1
+                            add_building_construction = {
+                                type = industrial_complex
+                                level = 1
+                                instant_build = yes
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -113,7 +207,27 @@ focus_tree = {
         y = 1
         cost = 10
         completion_reward = {
-
+            261 = {
+                add_building_construction = {
+                    type = infrastructure
+                    level = 1
+                    instant_build = yes
+                }
+            }
+            816 = {
+                add_building_construction = {
+                    type = infrastructure
+                    level = 1
+                    instant_build = yes
+                }
+            }
+            369 = {
+                add_building_construction = {
+                    type = infrastructure
+                    level = 1
+                    instant_build = yes
+                }
+            }
         }
     }
     focus = {
@@ -126,7 +240,105 @@ focus_tree = {
         y = 1
         cost = 10
         completion_reward = {
-
+            custom_effect_tooltip = USA_Fund_Great_Lakes_Industries_tt
+            hidden_effect = {
+                random_list = {
+                    34 = {
+                        276 = {
+                            add_extra_state_shared_building_slots = 1
+                            add_building_construction = {
+                                type = industrial_complex
+                                level = 1
+                                instant_build = yes
+                            }
+                        }
+                    }
+                    33 = {
+                        682 = {
+                            add_extra_state_shared_building_slots = 1
+                            add_building_construction = {
+                                type = industrial_complex
+                                level = 1
+                                instant_build = yes
+                            }
+                        }
+                    }
+                    33 = {
+                        915 = {
+                            add_extra_state_shared_building_slots = 1
+                            add_building_construction = {
+                                type = industrial_complex
+                                level = 1
+                                instant_build = yes
+                            }
+                        }
+                    }
+                }
+                random_list = {
+                    34 = {
+                        393 = {
+                            add_extra_state_shared_building_slots = 1
+                            add_building_construction = {
+                                type = industrial_complex
+                                level = 1
+                                instant_build = yes
+                            }
+                        }
+                    }
+                    33 = {
+                        261 = {
+                            add_extra_state_shared_building_slots = 1
+                            add_building_construction = {
+                                type = industrial_complex
+                                level = 1
+                                instant_build = yes
+                            }
+                        }
+                    }
+                    33 = {
+                        396 = {
+                            add_extra_state_shared_building_slots = 1
+                            add_building_construction = {
+                                type = industrial_complex
+                                level = 1
+                                instant_build = yes
+                            }
+                        }
+                    }
+                }
+                random_list = {
+                    34 = {
+                        395 = {
+                            add_extra_state_shared_building_slots = 1
+                            add_building_construction = {
+                                type = industrial_complex
+                                level = 1
+                                instant_build = yes
+                            }
+                        }
+                    }
+                    33 = {
+                        394 = {
+                            add_extra_state_shared_building_slots = 1
+                            add_building_construction = {
+                                type = industrial_complex
+                                level = 1
+                                instant_build = yes
+                            }
+                        }
+                    }
+                    33 = {
+                        913 = {
+                            add_extra_state_shared_building_slots = 1
+                            add_building_construction = {
+                                type = industrial_complex
+                                level = 1
+                                instant_build = yes
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
     focus = {
@@ -138,7 +350,62 @@ focus_tree = {
         y = 1
         cost = 10
         completion_reward = {
-
+            358 = {
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 1
+                    instant_build = yes
+                }
+            }
+            360 = {
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 1
+                    instant_build = yes
+                }
+            }
+            261 = {
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 1
+                    instant_build = yes
+                }
+            }
+            393 = {
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 1
+                    instant_build = yes
+                }
+            }
+            396 = {
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 1
+                    instant_build = yes
+                }
+            }
+            395 = {
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 1
+                    instant_build = yes
+                }
+            }
+            394 = {
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 1
+                    instant_build = yes
+                }
+            }
         }
     }
     focus = {
@@ -149,7 +416,7 @@ focus_tree = {
         prerequisite = { focus = USA_Northeastern_Boom }
         x = 1
         y = 1
-        cost = 10
+        cost = 1
         completion_reward = {
             build_railway = {
                 level = 1
@@ -2002,7 +2269,7 @@ focus_tree = {
         }
         x = 2
         y = 1
-        cost = 10
+        cost = 5
         completion_reward = {
             USA_SOF_Focus_Count_Check = yes
             every_other_country = {
