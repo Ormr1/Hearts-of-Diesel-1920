@@ -241,6 +241,8 @@
  SPR_neutrality_DEF:0 "the Hispanian Empire"
  SPR_communism:0 "Hispanian Republic"
  SPR_communism_DEF:0 "the Hispanian Republic"
+ SPR_monarchy:0 "Kingdom of Hispania"
+ SPR_monarchy_DEF:0 "the Kingdom of Hispania"
  SPR_fascism_ADJ:0 "Hispanian"
  SPR_democratic_ADJ:0 "Hispanian"
  SPR_neutrality_ADJ:0 "Hispanian"
