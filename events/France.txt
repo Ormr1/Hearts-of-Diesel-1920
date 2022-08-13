@@ -2217,7 +2217,7 @@ news_event = {
 	}
 }
 
-### HISTORICAL / MONARCHIST
+### MONARCHIST
 country_event = { # Upholding the Monarchy
 	id = fra_monarchy.1
 	title = fra_monarchy.1.t
@@ -2234,14 +2234,33 @@ country_event = { # Upholding the Monarchy
 			ideology = monarchy
 			popularity = 0.5
 		}
+	}
+	option = {
+		name = fra_monarchy.1.b
 		add_popularity = {
 			ideology = fascism
 			popularity = 0.5
 		}
 	}
 }
+country_event = { # The King Gains Power
+	id = fra_monarchy.2
+	title = fra_monarchy.2.t
+	desc = fra_monarchy.2.desc
 
-### FIGHT FOR YOUR FREEDOM
+	picture = placeholder
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = fra_monarchy.2.a
+		activate_advisor = FRA_character_Fascist
+}
+
+	}
+}
+
+### HISTORICAL / FIGHT FOR YOUR FREEDOM
 country_event = { # Republicans In Bordeaux
 	id = fra_revolution.1
 	title = fra_revolution.1.t
@@ -2260,6 +2279,7 @@ country_event = { # Republicans In Bordeaux
 		}
 	}
 	option = {
+		name = fra_revolution.1.b
 		add_popularity = {
 			ideology = communism
 			popularity = 0.5
@@ -2278,6 +2298,7 @@ country_event = { # FRA_Prepare_For_The_Fight
 	fire_only_once yes
 	option = {
 		name = fra_revolution.2.a
+
 	}
 }
 country_event = { # FRA_Spread_The_News
