@@ -353,8 +353,8 @@ focus_tree = {
         }
         search_filters = {FOCUS_FILTER_POLITICAL}
         completion_reward = {
-            country_event = {id = fra_civilwarignite}
-            #add_namespace = fra_civilwarignite
+            country_event = {id = fra_civilwarignite.1}
+            #add_namespace = fra_civilwarignite.1
         }
         prerequisite = {
             focus = FRA_International_Arms_Market
