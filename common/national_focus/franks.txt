@@ -25,40 +25,78 @@ focus_tree = {
     continuous_focus_position = { x = 1250 y = 3500}
     default = no
 
-    ### ECONOMIC
-    focus = {
-        id = FRA_The_Broken_Economy
-        icon = placeholder
-        x = 50
-        y = 0
-        cost = 5
-        ai_will_do = {
-            factor = 10
-        }
-        search_filters = {FOCUS_FILTER_ECONOMIC}
-        completion_reward = {
-            country_event = fra_economic.1
-        }
+### ECONOMIC
+focus = {
+    id = FRA_The_Broken_Economy
+    icon = placeholder
+    x = 50
+    y = 0
+    cost = 5
+    ai_will_do = {
+        factor = 10
     }
+    search_filters = {FOCUS_FILTER_ECONOMIC}
+    completion_reward = {
+        country_event = fra_economic.1
+    }
+}
 
-    ### HISTORICAL
-    focus = {
-        id = FRA_Letat_Cest_Moi
-        icon = placeholder
-        mutually_exclusive = { focus = FRA_Fight_For_Your_Freedom }
-        x = 25
-        y = 0
-        cost = 2
-        ai_will_do = {
-            factor = 10
-        }
-        search_filters = {FOCUS_FILTER_POLITICAL}
-        completion_reward = {
-            country_event = fra_monarchy.1
-        }
+### MONARCHIST
+focus = {
+    id = FRA_Letat_Cest_Moi
+    icon = placeholder
+    mutually_exclusive = { focus = FRA_Fight_For_Your_Freedom }
+    x = 25
+    y = 0
+    cost = 2
+    ai_will_do = {
+        factor = 10
     }
-    
-### REVOLUTIONARY
+    search_filters = {FOCUS_FILTER_POLITICAL}
+    completion_reward = {
+        country_event = fra_monarchy.1
+    }
+}
+focus = {
+    id = FRA_Give_The_Monarch_Power
+    icon = placeholder
+    relative_position_id = FRA_Create_A_Political_Union
+    mutually_exclusive = { focus = FRA_Have_a_Fair_Monarch}
+    x = 18
+    y = -3
+    cost = 5
+    ai_will_do = {
+        factor = 5
+    }
+    search_filters = {FOCUS_FILTER_POLITICAL}
+    completion_reward = {
+        add_political_power 100
+        country_event = fra_monarchy.2
+    }
+    prerequisite = {
+        focus = FRA_Letat_Cest_Moi
+    }
+}
+focus = {
+    id = FRA_Have_a_Fair_Monarch
+    icon = placeholder
+    mutually_exclusive = { focus = FRA_Give_The_Monarch_Power}
+    x = 24
+    y = 1
+    cost = 5
+    ai_will_do = {
+        factor = 5
+    }
+    search_filters = {FOCUS_FILTER_POLITICAL}
+    completion_reward = {
+        add_political_power = 50
+        FRA = { country_event = fra_monarchy.3 }
+    }
+    prerequisite = {
+        focus = FRA_Letat_Cest_Moi
+    }
+}
+### REVOLUTIONARY / HISTORICAL
     focus = {
         id = FRA_Fight_For_Your_Freedom
         icon = placeholder
