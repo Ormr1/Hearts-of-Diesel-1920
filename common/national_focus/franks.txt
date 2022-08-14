@@ -62,9 +62,9 @@ focus = {
     icon = placeholder
     relative_position_id = FRA_Create_A_Political_Union
     mutually_exclusive = { focus = FRA_Have_a_Fair_Monarch}
-    x = 18
+    x = 22
     y = -3
-    cost = 5
+    cost = 7
     ai_will_do = {
         factor = 5
     }
@@ -80,10 +80,11 @@ focus = {
 focus = {
     id = FRA_Have_a_Fair_Monarch
     icon = placeholder
+    relative_position_id = FRA_Letat_Cest_Moi
     mutually_exclusive = { focus = FRA_Give_The_Monarch_Power}
-    x = 24
+    x = -5
     y = 1
-    cost = 5
+    cost = 7
     ai_will_do = {
         factor = 5
     }
@@ -94,6 +95,63 @@ focus = {
     }
     prerequisite = {
         focus = FRA_Letat_Cest_Moi
+    }
+    complete_national_focus = FRA_Letat_Cest_Moi
+}
+focus = { 
+    id = FRA_Slowly_Reap_From_The_Left
+    icon = placeholder
+    relative_position_id = FRA_Give_The_Monarch_Power
+    x = 1
+    y = 1
+    cost = 6
+    ai_will_do = {
+        factor = 5
+    }
+    search_filters = {FOCUS_FILTER_POLITICAL}
+    completion_reward = {
+        country_event = fra_monarchy.4
+    }
+    prerequisite = {
+        focus = FRA_Give_The_Monarch_Power
+    }
+}
+focus = {
+    id = FRA_Install_Secret_Civil_Police
+    icon = placeholder
+    relative_position_id = FRA_Slowly_Reap_From_The_Left
+    x = 2
+    y = 0
+    cost = 7
+    ai_will_do = {
+        factor = 5
+    }
+    search_filters = {FOCUS_FILTER_POLITICAL}
+    completion_reward = {
+        country_event = fra_monarchy.5
+    }
+    prerequisite = {
+        focus = FRA_Give_The_Monarch_Power
+    }
+}
+focus = {
+    id = FRA_Destroy_The_Unions
+    icon = placeholder
+    relative_position_id = FRA_Slowly_Reap_From_The_Left
+    x = 1
+    y = 1
+    ai_will_do = {
+        factor = 5
+    }
+        search_filters = {FOCUS_FILTER_POLITICAL}
+    completion_reward = {
+        country_event = fra_monarchy.5
+    }
+    prerequisite = {
+        focus = FRA_Install_Secret_Civil_Police
+    }
+    prerequisite = {
+        focus = FRA_Slowly_Reap_From_The_Left
     }
 }
 ### REVOLUTIONARY / HISTORICAL
