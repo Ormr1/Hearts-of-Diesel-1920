@@ -19,7 +19,7 @@ focus_tree = {
 
 	focus = {
 		id = FEN_last_of_the_great_war_profits
-		icon = GFX_focus_FEN_skulking_threat
+		icon = GFX_focus_FEN_last_GW_profits
 		x = 4
 		y = 0
 		cost = 10
@@ -37,7 +37,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FEN_join_iron_harvest
-		icon = GFX_focus_FEN_skulking_threat
+		icon = GFX_focus_generic_iron_harvest
 		relative_position_id = FEN_last_of_the_great_war_profits
 		x = -5
 		y = 1
@@ -130,7 +130,7 @@ focus_tree = {
 	}
     focus = {
 		id = FEN_getting_the_generator_online
-		icon = GFX_focus_FEN_skulking_threat
+		icon = GFX_focus_FEN_generator_repair
 		relative_position_id = FEN_last_of_the_great_war_profits
 		x = 0
 		y = 1
@@ -268,7 +268,7 @@ focus_tree = {
 	}
     focus = {
 		id = FEN_military_administration 
-		icon = GFX_focus_FEN_skulking_threat
+		icon = GFX_focus_FEN_military_administration
 		relative_position_id = FEN_last_of_the_great_war_profits
 		x = 6
 		y = 1
@@ -426,7 +426,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FEN_international_intrigue
-		icon = GFX_focus_FEN_skulking_threat
+		icon = GFX_focus_FEN_grasping_the_world
 		x = 20
 		y = 0
 		cost = 10

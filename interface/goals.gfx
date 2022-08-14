@@ -2986,16 +2986,36 @@ spriteTypes = {
 		name = "GFX_focus_SOV_approach_semyonov"
 		texturefile = "gfx/interface/goals/focus_SOV_approach_semyonov.dds"
 	}
-	
-	
-	
 	SpriteType = { 
+		name = "GFX_focus_generic_iron_harvest"
+		texturefile = "gfx/interface/goals/focus_generic_iron_harvest.dds"
+	}
+	
+	
+	
+	SpriteType = {
 		name = "GFX_focus_FEN_skulking_threat"
 		texturefile = "gfx/interface/goals/FENRIS/focus_FEN_skulking_threat.dds"
 	}
 	SpriteType = { 
 		name = "GFX_focus_FEN_rasputin"
 		texturefile = "gfx/interface/goals/FENRIS/focus_FEN_rasputin.dds"
+	}
+	SpriteType = { 
+		name = "GFX_focus_FEN_grasping_the_world"
+		texturefile = "gfx/interface/goals/FENRIS/focus_FEN_grasping_the_world.dds"
+	}
+	SpriteType = { 
+		name = "GFX_focus_FEN_military_administration"
+		texturefile = "gfx/interface/goals/FENRIS/focus_FEN_military_administration.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_FEN_last_GW_profits"
+		texturefile = "gfx/interface/goals/FENRIS/focus_FEN_last_GW_profits.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_FEN_generator_repair"
+		texturefile = "gfx/interface/goals/FENRIS/focus_FEN_generator_repair.dds"
 	}
 
 }

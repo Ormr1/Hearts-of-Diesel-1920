@@ -141,12 +141,28 @@ focus_tree = {
 			}
 		}
 	}
+	focus = {
+		id = GER_begin_peace_talks
+		icon = GFX_goal_tripartite_pact
+		x = 12
+		y = 0
+		cost = 1
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
 
 	focus = {
 		id = GER_scars_of_the_great_war
 		icon = GFX_goal_generic_allies_build_infantry
-		x = 12
-		y = 0
+		relative_position_id = GER_begin_peace_talks
+		prerequisite = { focus = GER_begin_peace_talks}
+		x = -2
+		y = 1
 		cost = 10
 		search_filters = {  FOCUS_FILTER_POLITICAL }
 		
@@ -158,13 +174,30 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_iron_harvest
-		icon = GFX_goal_tripartite_pact
+		icon = GFX_focus_generic_iron_harvest
 		relative_position_id = GER_scars_of_the_great_war
-		x = -1
+		x = 0
 		y = 1
 		cost = 10
 		search_filters = {  FOCUS_FILTER_POLITICAL }
 		prerequisite = { focus = GER_scars_of_the_great_war}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = GER_occupation_of_east_frankia
+		icon = GFX_goal_generic_allies_build_infantry
+		relative_position_id = GER_begin_peace_talks
+		prerequisite = { focus = GER_begin_peace_talks}
+		x = 2
+		y = 1
+		cost = 10
+		search_filters = {  FOCUS_FILTER_POLITICAL }
 		
 		available_if_capitulated = yes
 
@@ -173,14 +206,14 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = GER_begin_peace_talks
-		icon = GFX_goal_tripartite_pact
-		relative_position_id = GER_scars_of_the_great_war
-		x = 1
+		id = GER_occuption_of_venetia_et_histria
+		icon = GFX_goal_generic_allies_build_infantry
+		relative_position_id = GER_begin_peace_talks
+		prerequisite = { focus = GER_begin_peace_talks}
+		x = 4
 		y = 1
 		cost = 10
 		search_filters = {  FOCUS_FILTER_POLITICAL }
-		prerequisite = { focus = GER_scars_of_the_great_war}
 		
 		available_if_capitulated = yes
 
@@ -188,6 +221,39 @@ focus_tree = {
 			
 		}
 	}
+	focus = {
+		id = GER_increase_the_paris_garrison
+		icon = GFX_goal_generic_allies_build_infantry
+		relative_position_id = GER_occupation_of_east_frankia
+		prerequisite = { focus = GER_occupation_of_east_frankia}
+		x =-1
+		y = 1
+		cost = 10
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = GER_importance_of_the_seine
+		icon = GFX_goal_generic_allies_build_infantry
+		relative_position_id = GER_occupation_of_east_frankia
+		prerequisite = { focus = GER_occupation_of_east_frankia}
+		x =1
+		y = 1
+		cost = 10
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+	
 	
 
 }
