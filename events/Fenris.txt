@@ -18,6 +18,7 @@ country_event = {#vensas letter
 		trigger={ has_government = fenris }
 		set_temp_variable = {FEN_suspicion_temp=35}
 		FEN_increase_suspicion = yes
+		set_global_flag = FEN_vensas_letter
 	}
 	option = {
 		name = fenris.1.b

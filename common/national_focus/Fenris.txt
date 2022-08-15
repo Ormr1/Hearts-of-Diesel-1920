@@ -13,6 +13,8 @@ focus_tree = {
 	default = no
 	reset_on_civilwar = no
 
+	continuous_focus_position = { x = 50 y = 1500 }
+
 	# initial_show_position = {
 		# focus = industrial_effort
 	# }
@@ -42,7 +44,7 @@ focus_tree = {
 		x = -5
 		y = 1
 		cost = 10
-		search_filters = {   }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 		prerequisite = { focus = FEN_last_of_the_great_war_profits}
 
         available={
@@ -51,6 +53,11 @@ focus_tree = {
                 check_variable = {var = FEN_covert_staff value = 1000  compare = greater_than_or_equals}
             }
         }
+		select_effect = {
+			subtract_from_variable = {FEN_covert_staff = 1000}
+            custom_effect_tooltip = FEN_remove_1000_covert_staff
+		}
+		continue_if_invalid = yes
 		
 		available_if_capitulated = yes
 
@@ -60,8 +67,6 @@ focus_tree = {
                 amount = 5
                 state = 713
             }
-            subtract_from_variable = {FEN_covert_staff = 1000}
-            custom_effect_tooltip = FEN_remove_1000_covert_staff
 			FEN_increase_suspicion_random = yes
 		}
 		ai_will_do = {
@@ -70,12 +75,12 @@ focus_tree = {
 	}
 	focus = {
 		id = FEN_study_the_designs
-		icon = GFX_focus_FEN_skulking_threat
+		icon = GFX_focus_FEN_study_designs
 		relative_position_id = FEN_join_iron_harvest
 		x = 1
 		y = 1
 		cost = 10
-		search_filters = {   }
+		search_filters = {FOCUS_FILTER_RESEARCH}
 		prerequisite = { focus = FEN_join_iron_harvest}
 
         available={
@@ -84,6 +89,11 @@ focus_tree = {
                 check_variable = {var = FEN_research_staff value = 500  compare = greater_than_or_equals}
             }
         }
+		select_effect = {
+			subtract_from_variable = {FEN_research_staff = 500}
+            custom_effect_tooltip = FEN_remove_500_research_staff
+		}
+		continue_if_invalid = yes
 		
 		available_if_capitulated = yes
 
@@ -93,8 +103,7 @@ focus_tree = {
 				uses = 4
 				category = armor
 			}
-            subtract_from_variable = {FEN_research_staff = 500}
-            custom_effect_tooltip = FEN_remove_500_research_staff
+            
 		}
 		ai_will_do = {
 			factor = 24
@@ -107,7 +116,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		cost = 10
-		search_filters = {   }
+		search_filters = {FOCUS_FILTER_MANPOWER}
 		prerequisite = { focus = FEN_join_iron_harvest}
 
         available={
@@ -116,6 +125,11 @@ focus_tree = {
                 check_variable = {var = FEN_covert_staff value = 500  compare = greater_than_or_equals}
             }
         }
+		select_effect = {
+			subtract_from_variable = {FEN_covert_staff = 500}
+            custom_effect_tooltip = FEN_remove_500_covert_staff
+		}
+		continue_if_invalid = yes
 		
 		available_if_capitulated = yes
 
@@ -163,12 +177,12 @@ focus_tree = {
 	}
     focus = {
 		id = FEN_expanding_bunker_out
-		icon = GFX_focus_FEN_skulking_threat
+		icon = GFX_focus_FEN_bunker_building
 		relative_position_id = FEN_getting_the_generator_online
 		x = 0
 		y = 1
 		cost = 10
-		search_filters = {   }
+		search_filters = {FOCUS_FILTER_INDUSTRY}
 		available={
 			custom_trigger_tooltip={
 				tooltip = FEN_bunker_depth_slots_required
@@ -186,12 +200,12 @@ focus_tree = {
 	}
 	focus = {
 		id = FEN_plotting_deeper
-		icon = GFX_focus_FEN_skulking_threat
+		icon = GFX_focus_FEN_bunker_building
 		relative_position_id = FEN_expanding_bunker_out
 		x = 0
 		y = 1
 		cost = 10
-		search_filters = {   }
+		search_filters = {FOCUS_FILTER_INDUSTRY}
 		available={
 			custom_trigger_tooltip={
 				tooltip = FEN_bunker_depth_5
@@ -209,12 +223,12 @@ focus_tree = {
 	}
 	focus = {
 		id = FEN_dark_depths
-		icon = GFX_focus_FEN_skulking_threat
+		icon = GFX_focus_FEN_bunker_building
 		relative_position_id = FEN_plotting_deeper
 		x = 0
 		y = 3
 		cost = 10
-		search_filters = {   }
+		search_filters = {FOCUS_FILTER_INDUSTRY}
 		available={
 			custom_trigger_tooltip={
 				tooltip = FEN_bunker_depth_15
@@ -254,7 +268,7 @@ focus_tree = {
 		x = 2
 		y = 1
 		cost = 10
-		search_filters = {   }
+		search_filters = {FOCUS_FILTER_INDUSTRY}
 		prerequisite = { focus = FEN_getting_the_generator_online}
 		
 		available_if_capitulated = yes
@@ -273,7 +287,7 @@ focus_tree = {
 		x = 6
 		y = 1
 		cost = 10
-		search_filters = {   }
+		search_filters = {FOCUS_FILTER_WAR_SUPPORT}
 		prerequisite = { focus = FEN_last_of_the_great_war_profits}
         available={
             custom_trigger_tooltip = {
@@ -281,13 +295,16 @@ focus_tree = {
                 check_variable = {var = FEN_admin_staff value = 1000  compare = greater_than_or_equals}
             }
         }
+		select_effect = {
+			subtract_from_variable = {FEN_admin_staff = 1000}
+            custom_effect_tooltip = FEN_remove_1000_admin_staff
+		}
+		continue_if_invalid = yes
 		
 		available_if_capitulated = yes
 
 		completion_reward = {
 			army_experience =  25
-            subtract_from_variable = {FEN_admin_staff = 1000}
-            custom_effect_tooltip = FEN_remove_1000_admin_staff
 		}
 	}
     focus = {
@@ -297,7 +314,7 @@ focus_tree = {
 		x = 2
 		y = 1
 		cost = 10
-		search_filters = {   }
+		search_filters = {FOCUS_FILTER_MANPOWER}
 		prerequisite = { focus = FEN_military_administration}
 		
 		available_if_capitulated = yes
@@ -309,7 +326,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FEN_obtain_discarded_protoypes
-		icon = GFX_focus_FEN_skulking_threat
+		icon = GFX_focus_FEN_study_designs
 		relative_position_id = FEN_military_administration
 		x = 0
 		y = 1
@@ -325,6 +342,11 @@ focus_tree = {
                 check_variable = {var = FEN_covert_staff value = 500  compare = greater_than_or_equals}
             }
         }
+		select_effect = {
+			subtract_from_variable = {FEN_covert_staff = 500}
+            custom_effect_tooltip = FEN_remove_500_covert_staff
+		}
+		continue_if_invalid = yes
 
 		completion_reward = {
 			add_tech_bonus = {
@@ -332,8 +354,7 @@ focus_tree = {
 				uses = 1
 				category = infantry_tech
 			}
-			subtract_from_variable = {FEN_covert_staff = 500}
-            custom_effect_tooltip = FEN_remove_500_covert_staff
+			
 		}
 	}
 	focus = {
@@ -395,7 +416,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		cost = 10
-		search_filters = {   }
+		search_filters = {FOCUS_FILTER_RESEARCH}
 		prerequisite = { focus = FEN_obtain_discarded_protoypes}
 		prerequisite = { focus = FEN_plotting_deeper}
 		
@@ -412,7 +433,7 @@ focus_tree = {
 		x = -2
 		y = 1
 		cost = 10
-		search_filters = {   }
+		search_filters = {FOCUS_FILTER_MANPOWER}
 		prerequisite = { focus = FEN_military_administration}
 		
 		available_if_capitulated = yes
@@ -520,12 +541,12 @@ focus_tree = {
 	}
 	focus = {
 		id = FEN_alaskan_shell_companies
-		icon = GFX_focus_FEN_skulking_threat
+		icon = GFX_focus_FEN_alaskan_oil
 		relative_position_id = FEN_usonian_desires
 		x = -1
 		y = 1
 		cost = 10
-		search_filters = {   }
+		search_filters = {FOCUS_FILTER_INDUSTRY}
 
 		prerequisite = { focus = FEN_usonian_desires}
 		
@@ -547,7 +568,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		cost = 10
-		search_filters = {   }
+		search_filters = {FOCUS_FILTER_INDUSTRY}
 
 		prerequisite = { focus = FEN_usonian_desires}
 		
@@ -566,11 +587,14 @@ focus_tree = {
             }
 			NOT={has_country_flag = FEN_laying_low}
 		}
+		select_effect = {
+			subtract_from_variable = {FEN_covert_staff = 1000}
+            custom_effect_tooltip = FEN_remove_1000_covert_staff
+		}
+		continue_if_invalid = yes
 
 		completion_reward = {
 			give_resource_rights = { receiver = FEN state = 656 }
-			subtract_from_variable = {FEN_covert_staff = 1000}
-            custom_effect_tooltip = FEN_remove_1000_covert_staff
 			FEN_increase_suspicion_random = yes
 		}
 	}
@@ -600,10 +624,14 @@ focus_tree = {
 			NOT={has_country_flag = FEN_laying_low}
 		}
 
-		completion_reward = {
-			country_event = {id = fenris.3}
+		select_effect = {
 			subtract_from_variable = {FEN_covert_staff = 2000}
             custom_effect_tooltip = FEN_remove_2000_covert_staff
+		}
+		continue_if_invalid = yes
+
+		completion_reward = {
+			country_event = {id = fenris.3}
 			set_temp_variable = {FEN_suspicion_temp = 30}
 			FEN_increase_suspicion = yes
 		}
@@ -655,7 +683,7 @@ focus_tree = {
 		x = 2
 		y = 1
 		cost = 10
-		search_filters = {   }
+		search_filters = {FOCUS_FILTER_RESEARCH}
 
 		prerequisite = { focus = FEN_the_shining_prize}
 		
@@ -667,7 +695,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FEN_the_paraguayian_move
-		icon = GFX_focus_FEN_skulking_threat
+		icon = GFX_focus_FEN_paraguay_play
 		relative_position_id = FEN_international_intrigue
 		x = -6
 		y = 1
@@ -752,10 +780,14 @@ focus_tree = {
                 check_variable = {var = FEN_covert_staff value = 1000  compare = greater_than_or_equals}
             }
 		}
-
-		completion_reward = {
+		select_effect = {
 			subtract_from_variable = {FEN_covert_staff = 1000}
             custom_effect_tooltip = FEN_remove_1000_covert_staff
+		}
+		continue_if_invalid = yes
+
+		completion_reward = {
+			
 			#unlocks austrialian decisions
 		}
 	}
@@ -773,8 +805,16 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		available={
-			EGY={
-				exists = yes
+			if={
+				limit={GRE={has_subject = EGY}}
+				GRE={
+					has_stability < 0.5
+				}
+			}
+			else={
+				EGY={
+					has_stability < 0.5
+				}
 			}
 			NOT={has_country_flag = FEN_laying_low}
 			custom_trigger_tooltip = {
@@ -782,10 +822,13 @@ focus_tree = {
                 check_variable = {var = FEN_covert_staff value = 1000  compare = greater_than_or_equals}
             }
 		}
-
-		completion_reward = {
+		select_effect = {
 			subtract_from_variable = {FEN_covert_staff = 1000}
             custom_effect_tooltip = FEN_remove_1000_covert_staff
+		}
+		continue_if_invalid = yes
+
+		completion_reward = {
 			#unlocks aegyptian decisions
 		}
 	}

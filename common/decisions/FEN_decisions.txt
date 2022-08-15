@@ -105,6 +105,41 @@ FEN_fenris_interests_cat = {
 			#add country event here
 		}
 	}
+	FEN_USA_skim_buisness_profits = {
+
+		icon = generic_political_discourse
+
+		available = {
+			is_subject = no
+			has_completed_focus = FEN_usonian_desires
+			NOT={has_country_flag = FEN_laying_low}
+		}
+		
+		days_remove = 150
+
+		visible = {
+			USA={
+				has_civil_war = no
+				NOT={has_government = fenris}
+			}
+			OR={
+				USA={has_character = USA_george_mason}
+				has_country_flag = FEN_influence_in_USA
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 100
+
+		modifier = {
+			civilian_factory_use = -2
+		}
+
+		complete_effect = {
+			FEN_increase_suspicion_random = yes
+		}
+	}
 	FEN_FAC_advance_to_stage_2 = {
 
 		icon = generic_political_discourse

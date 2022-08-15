@@ -3017,5 +3017,21 @@ spriteTypes = {
 		name = "GFX_focus_FEN_generator_repair"
 		texturefile = "gfx/interface/goals/FENRIS/focus_FEN_generator_repair.dds"
 	}
+	SpriteType = {
+		name = "GFX_focus_FEN_bunker_building"
+		texturefile = "gfx/interface/goals/FENRIS/focus_FEN_bunker_building.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_FEN_paraguay_play"
+		texturefile = "gfx/interface/goals/FENRIS/focus_FEN_paraguay_play.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_FEN_study_designs"
+		texturefile = "gfx/interface/goals/FENRIS/focus_FEN_study_designs.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_FEN_alaskan_oil"
+		texturefile = "gfx/interface/goals/FENRIS/focus_FEN_alaskan_oil.dds"
+	}
 
 }
