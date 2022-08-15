@@ -32,6 +32,19 @@ local_economic_boom = {
 	local_supplies = 0.10
 }
 
+native_american_raids = {
+	icon = placeholder
+	army_speed_factor_for_controller = -0.10
+	attrition_for_controller = -0.10
+	compliance_growth = -0.10
+	local_building_slots_factor	= -0.20
+	local_factory_sabotage = 0.25
+	local_manpower = -0.20
+	state_resources_factor = -0.10
+	local_supplies = -0.10
+	resistance_growth = 0.10
+}
+
 usea_idea = {
 	icon = placeholder
 	political_power_factor = USA.usea_pp_factor
