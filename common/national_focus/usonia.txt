@@ -61,6 +61,76 @@ focus_tree = {
         }
     }
     focus = {
+        id = USA_Break_Up_Trusts
+        icon = placeholder
+        relative_position_id = USA_Johnson_Wins
+        prerequisite = { focus = USA_Johnson_Wins }
+        x = -2
+        y = 1
+        cost = 10
+        completion_reward = {
+
+        }
+    }
+    focus = {
+        id = USA_Direct_Democracy_Reforms
+        icon = placeholder
+        relative_position_id = USA_Break_Up_Trusts
+        prerequisite = { focus = USA_Break_Up_Trusts }
+        x = -1
+        y = 1
+        cost = 10
+        completion_reward = {
+
+        }
+    }
+    focus = {
+        id = USA_Eight_Hour_Workday
+        icon = placeholder
+        relative_position_id = USA_Direct_Democracy_Reforms
+        x = 1
+        y = 1
+        prerequisite = { focus = USA_Direct_Democracy_Reforms }
+        prerequisite = { focus = USA_Support_Small_Businesses }
+        cost = 10
+        completion_reward = {
+
+        }
+    }
+    focus = {
+        id = USA_Cut_Funds_To_Fat_Cats
+        icon = placeholder
+        relative_position_id = USA_Eight_Hour_Workday
+        x = 0
+        y = 1
+        prerequisite = { focus = USA_Eight_Hour_Workday }
+        cost = 10
+        completion_reward = {
+
+        }
+    }
+    focus = {
+        id = USA_Support_Small_Businesses
+        icon = placeholder
+        relative_position_id = USA_Break_Up_Trusts
+        prerequisite = { focus = USA_Break_Up_Trusts }
+        x = 1
+        y = 1
+        cost = 10
+        completion_reward = {
+
+        }
+    }
+    focus = {
+        id = USA_Nationalize_Railroads
+        icon = placeholder
+        relative_position_id = USA_Support_Small_Businesses
+        prerequisite = { focus = USA_Support_Small_Businesses }
+        prerequisite = { focus = USA_Western_Road_Construction }
+        x = 1
+        y = 2
+    }
+    focus = {
         id = USA_Subsidize_Western_Farms
         icon = placeholder
         relative_position_id = USA_Johnson_Wins
@@ -78,18 +148,6 @@ focus_tree = {
         relative_position_id = USA_Subsidize_Western_Farms
         prerequisite = { focus = USA_Subsidize_Western_Farms }
         x = -1
-        y = 1
-        cost = 10
-        completion_reward = {
-
-        }
-    }
-    focus = {
-        id = USA_Great_Plains_Roads
-        icon = placeholder
-        relative_position_id = USA_Western_Road_Construction
-        prerequisite = { focus = USA_Western_Road_Construction }
-        x = 0
         y = 1
         cost = 10
         completion_reward = {
@@ -128,10 +186,10 @@ focus_tree = {
     focus = {
         id = USA_Relief_For_Tennessee_River_Victims
         icon = placeholder
-        relative_position_id = USA_Great_Plains_Roads
-        prerequisite = { focus = USA_Great_Plains_Roads }
+        relative_position_id = USA_Garrison_The_Southwest
+        prerequisite = { focus = USA_Western_Road_Construction }
         prerequisite = { focus =  USA_Garrison_The_Southwest }
-        x = 1
+        x = -1
         y = 1
         cost = 10
         completion_reward = {

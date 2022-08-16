@@ -18,7 +18,12 @@ state={
 		victory_points = {
 			4975 1 
 		}
-
+		add_province_modifier = {
+			static_modifiers = { native_american_raids }
+			province = {
+				all_provinces = yes
+			}
+		}
 	}
 
 	provinces={
