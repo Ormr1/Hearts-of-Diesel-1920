@@ -138,8 +138,8 @@ BRA = {
 	color_ui = rgb { 99 189 82 }
 }
 CAN = {
-	color = rgb { 39 100 0 }
-	color_ui = rgb { 39 100 0 }
+	color = rgb { 106 17 17 }
+	color_ui = rgb { 106 17 17 }
 }
 CHI = {
 	color = rgb { 67 67 67 }
