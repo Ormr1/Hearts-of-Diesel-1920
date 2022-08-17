@@ -157,18 +157,6 @@ unplanned_offensive = { # on Province
 	local_org_regain = -0.5
 }
 
-native_american_raids = {
-	army_speed_factor_for_controller = -0.10
-	attrition_for_controller = -0.10
-	compliance_growth = -0.10
-	local_building_slots_factor	= -0.20
-	local_factory_sabotage = 0.25
-	local_manpower = -0.20
-	state_resources_factor = -0.10
-	local_supplies = -0.10
-	resistance_growth = 0.10
-}
-
 night = { # On province. Multiplied by amount of darkness.
 	air_bombing_targetting = -0.5
 	carrier_traffic = -1.0
