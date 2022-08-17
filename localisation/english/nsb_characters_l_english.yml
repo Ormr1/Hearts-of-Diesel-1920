@@ -395,6 +395,10 @@
  #LIB
  LIB_character_charles_db_king:0 "Charles D.B. King"
 
+ #EGY
+ USA_cleopatra:0 "Cleopatra Philopator"
+ USA_cleopatra_desc:0 "Famed as a star of Usonian silent films and as a burlesque dancer, both under the stage name "Cleo LaFay", recently returned to her homeland of Kemet (Aegyptus to Romans) with the goal of freeing it from the grip of the Byzantine Tyrants. Revolutionary propaganda touts that she is really none other than the Cleopatra VII, returned from the Duat (the Kemetic land of the dead) and reborn, with the intention of wreaking vengeful havoc on the Romans for their long past and present misdeeds. Undead or not, she has the hearts and minds of those who wish for the Romans gone in the grip of her hand."
+
  #ITALY
  ITA_benito_augustulus:0 "Benito Augustulus"
  ITA_ferruccio_parri:0 "Ferruccio Parri"

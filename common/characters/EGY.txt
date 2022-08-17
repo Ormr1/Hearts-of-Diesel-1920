@@ -1,0 +1,17 @@
+characters = {
+    USA_cleopatra = {
+		name = USA_cleopatra
+		portraits = {
+			civilian = {
+				large = GFX_portrait_egy_cleopatra
+			}
+		}
+		country_leader={
+			ideology=liberalism
+            desc = USA_cleopatra_desc
+			traits={ dislikes_germany }
+			expire="1947.1.1.1"
+			id=-1
+		}
+	}
+}

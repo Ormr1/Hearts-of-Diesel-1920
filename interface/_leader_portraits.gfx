@@ -126,13 +126,6 @@ spriteTypes = {
 		name = "GFX_portrait_USA_alexander_vandegrift_small"
 		texturefile = "gfx/interface/ideas/idea_USA_generic_land_2.dds"
 	}
-	
-	### LIB
-
-	spriteType = {
-		name = "GFX_portrait_LIB_character_charles_db_king"
-		texturefile = "gfx/interface/leaders/LIB/Portrait_LIB_Charles_DB_King.png"
-	}
 
 	# Polish #######
 	spriteType = {
@@ -1973,23 +1966,35 @@ spriteTypes = {
 		name = "GFX_portrait_kur_seyid_riza_small"
 		texturefile = "gfx/interface/ideas/idea_KUR_seyid_riza.dds"
 	}
+
+	### EGY
+
 	spriteType = {
 		name = "GFX_portrait_egy_faud_i"
 		texturefile = "gfx/leaders/EGY/portrait_EGY_faud_i.dds"
 	}
-
 	spriteType = {
 		name = "GFX_portrait_egy_faud_i_small"
 		texturefile = "gfx/interface/ideas/idea_EGY_faud_i.dds"
 	}
 	spriteType = {
+		name = "GFX_portrait_egy_cleopatra"
+		texturefile = "gfx/leaders/EGY/Portrait_EGY_Cleopatra.png"
+	}
+
+	### LIB
+
+	spriteType = {
 		name = "GFX_portrait_lib_edwin_barclay"
 		texturefile = "gfx/leaders/LIB/portrait_LIB_edwin_barclay.dds"
 	}
-
 	spriteType = {
 		name = "GFX_portrait_lib_edwin_barclay_small"
 		texturefile = "gfx/interface/ideas/idea_LIB_edwin_barclay.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_LIB_character_charles_db_king"
+		texturefile = "gfx/interface/leaders/LIB/Portrait_LIB_Charles_DB_King.png"
 	}
 
 	##### WTT #####

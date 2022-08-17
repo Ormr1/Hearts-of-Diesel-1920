@@ -2447,6 +2447,8 @@ country_event = { # George's Plan
 
 	fire_only_once = yes
 
+	is_triggered_only = yes
+
 	option = { # send the offer
 		name = usa_arabia.5.a
 		SAU = {
@@ -2462,6 +2464,8 @@ country_event = { # Usonia Gives A Better Offer
 	picture = placeholder
 
 	fire_only_once = yes
+
+	is_triggered_only = yes
 
 	option = { # Accept
 		name = usa_arabia.6.a
