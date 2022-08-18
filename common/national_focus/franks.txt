@@ -62,6 +62,7 @@ focus = {
     icon = placeholder
     relative_position_id = FRA_Create_A_Political_Union
     mutually_exclusive = { focus = FRA_Have_a_Fair_Monarch}
+    available = { always = no }
     x = 22
     y = -3
     cost = 7
@@ -82,6 +83,7 @@ focus = {
     icon = placeholder
     relative_position_id = FRA_Letat_Cest_Moi
     mutually_exclusive = { focus = FRA_Give_The_Monarch_Power}
+    available = { always = no }
     x = -5
     y = 1
     cost = 7
@@ -200,7 +202,7 @@ focus = {
         }
         search_filters = {FOCUS_FILTER_INDUSTRY}
         completion_reward = {
-            country_event = fra_underground_industry.1
+            country_event = fra_revolution.6
         }
         prerequisite = {
             focus = FRA_International_Arms_Market
@@ -219,7 +221,7 @@ focus = {
         }
         search_filters = {FOCUS_FILTER_INDUSTRY}
         completion_reward = {
-            country_event = fra_underground_industry.2
+            country_event = fra_revolution.8
         }
         prerequisite = {
             focus = FRA_Underground_Factories
@@ -238,7 +240,7 @@ focus = {
         }
         search_filters = {FOCUS_FILTER_INDUSTRY}
         completion_reward = {
-            country_event = fra_underground_industry.3
+            country_event = fra_revolution.7
         }
         prerequisite = {
             focus = FRA_Underground_Factories
@@ -256,7 +258,7 @@ focus = {
         }
         search_filters = {FOCUS_FILTER_POLITICAL}
         completion_reward = {
-            country_event = fra_politicalalliance.1
+            country_event = fra_revolution.14
         }
         prerequisite = {
             focus = FRA_Fight_For_Your_Freedom
@@ -292,7 +294,7 @@ focus = {
         }
         search_filters = {FOCUS_FILTER_POLITICAL}
         completion_reward = {
-            country_event = fra_politicalalliance.3
+            country_event = fra_revolution.15
         }
         prerequisite = {
             focus = FRA_Gain_Political_Alliances
@@ -311,7 +313,7 @@ focus = {
         cost = 7
         search_filters = {FOCUS_FILTER_POLITICAL}
         completion_reward = {
-            country_event = fra_politicalalliance.5
+            country_event = fra_revolution.16
         }
         prerequisite = {
             focus = FRA_Gain_Support_Of_The_Anarchists
@@ -353,7 +355,7 @@ focus = {
         }
         search_filters = {FOCUS_FILTER_MANPOWER}
         completion_reward = { 
-            country_event = fra.sabotage.4
+            country_event = fra.revolution.13
         }
         prerequisite = {
             focus = FRA_Nationalize_The_Industry
@@ -413,7 +415,7 @@ focus = {
         }
         search_filters = {FOCUS_FILTER_POLITICAL}
         completion_reward = {
-            country_event = fra_sabotage.2
+            country_event = fra_revolution.10
         }
         prerequisite = {
             focus = FRA_Bribe_Business_Owners
@@ -431,7 +433,14 @@ focus = {
         }
         search_filters = {FOCUS_FILTER_POLITICAL}
         completion_reward = {
-            country_event = fra_revolution.3
+            add_popularity = {
+                ideology = democratic
+                popularity = 0.05
+            }
+            add_popularity = {
+                ideology = communism
+                popularity = 0.05
+            }
         }
          prerequisite = {
 	    focus = FRA_Fight_For_Your_Freedom
@@ -493,7 +502,7 @@ focus = {
         }
         search_filters = {FOCUS_FILTER_POLITICAL}
         completion_reward = {
-            country_event = fra_sabotage.1
+            country_event = fra_revolution.9
         }
          prerequisite = {
             focus = FRA_Fight_For_Your_Freedom
@@ -512,7 +521,7 @@ focus = {
         }
         search_filters = {FOCUS_FILTER_POLITICAL}
         completion_reward = {
-            country_event = fra_politicalalliance.6
+            country_event = fra_revolution.17
         }
         prerequisite = {
             focus = FRA_Unite_The_Left
@@ -531,7 +540,7 @@ focus = {
         }
         search_filters = {FOCUS_FILTER_FRA_PARLIAMENT}
         completion_reward = {
-            country_event = fra_parliament.1
+            country_event = fra_revolution.19
         }
         prerequisite = {
             focus = FRA_Create_A_Political_Union
@@ -549,7 +558,7 @@ focus = {
         }
         search_filters = {FOCUS_FILTER_FRA_PARLIAMENT}
         completion_reward = {
-            country_event = fra_parliament.1
+            country_event = fra_revolution.18
         }
         prerequisite = {
             focus = FRA_Create_A_Political_Union
@@ -567,7 +576,7 @@ focus = {
         }
         search_filters = {FOCUS_FILTER_POLITICAL}
         completion_reward = {
-            country_event = fra_sabotage.3
+            country_event = revolution.12
         }
         prerequisite = {
             focus = FRA_Bribe_Business_Owners

@@ -2235,12 +2235,15 @@ country_event = { # Upholding the Monarchy
 			popularity = 0.5
 		}
 	}
+	unlock_national_focus = FRA_Have_a_Fair_Monarch
+
 	option = {
 		name = fra_monarchy.1.b
 		add_popularity = {
 			ideology = fascism
 			popularity = 0.5
 		}
+		unlock_national_focus = FRA_Give_The_Monarch_Power
 	}
 }
 country_event = { # The King Gains Power
@@ -2254,7 +2257,7 @@ country_event = { # The King Gains Power
 	fire_only_once = yes
 	option = {
 		name = fra_monarchy.2.a
-		activate_advisor = FRA_character_Fascist
+		
 }
 
 	}

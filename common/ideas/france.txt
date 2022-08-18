@@ -21,6 +21,14 @@ ideas = {
 				political_power_cost = 0.10
 			}
 		}
+		FRA_Disrupted_Economy = {
+			picture = placeholder
+
+			allowed = {
+				original_tag = FRA
+				always = no
+			}
+		}
 		FRA_full_employment = {
 			picture = generic_production_bonus
 			allowed = {
@@ -1744,7 +1752,7 @@ ideas = {
 			
 			traits = { aircraft_manufacturer }
 		}
-		
+
 	}
 	naval_manufacturer = {
 
