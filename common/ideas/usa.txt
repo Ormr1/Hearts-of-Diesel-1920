@@ -505,6 +505,167 @@ ideas = {
 				tech_air_damage_factor = -0.05
 			}
 		}
+		usa_tycoon_influence_extremely_high = {
+			picture = usa_hamiltonian_economics
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = 0
+
+			modifier = {
+				stability_factor = -0.15
+				war_support_factor = -0.15
+				drift_defence_factor = -0.30
+				production_speed_buildings_factor = -0.15
+				production_factory_efficiency_gain_factor = 0.15
+				industrial_capacity_factory = 0.15
+				industrial_capacity_dockyard = 0.15
+				consumer_goods_factor = -0.10
+			}
+		}
+		usa_tycoon_influence_high = {
+			picture = usa_hamiltonian_economics
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = 0
+
+			modifier = {
+				stability_factor = -0.10
+				war_support_factor = -0.10
+				drift_defence_factor = -0.20
+				production_speed_buildings_factor = -0.10
+				production_factory_efficiency_gain_factor = 0.10
+				industrial_capacity_factory = 0.10
+				industrial_capacity_dockyard = 0.10
+				consumer_goods_factor = -0.05
+			}
+		}
+		usa_tycoon_influence_somewhat_high = {
+			picture = usa_hamiltonian_economics
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = 0
+
+			modifier = {
+				stability_factor = -0.05
+				war_support_factor = -0.05
+				drift_defence_factor = -0.10
+				production_speed_buildings_factor = -0.05
+				production_factory_efficiency_gain_factor = 0.05
+				industrial_capacity_factory = 0.05
+				industrial_capacity_dockyard = 0.05
+				consumer_goods_factor = -0.025
+			}
+		}
+		usa_tycoon_influence_middling = {
+			picture = usa_hamiltonian_economics
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = 0
+
+			modifier = {
+				# NONE
+			}
+		}
+		usa_tycoon_influence_somewhat_low = {
+			picture = usa_hamiltonian_economics
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = 0
+
+			modifier = {
+				stability_factor = 0.05
+				war_support_factor = 0.05
+				drift_defence_factor = 0.10
+				production_speed_buildings_factor = 0.05
+				production_factory_efficiency_gain_factor = -0.05
+				industrial_capacity_factory = -0.05
+				industrial_capacity_dockyard = -0.05
+				consumer_goods_factor = 0.025
+			}
+		}
+		usa_tycoon_influence_low = {
+			picture = usa_hamiltonian_economics
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = 0
+
+			modifier = {
+				stability_factor = 0.10
+				war_support_factor = 0.10
+				drift_defence_factor = 0.20
+				production_speed_buildings_factor = 0.10
+				production_factory_efficiency_gain_factor = -0.10
+				industrial_capacity_factory = -0.10
+				industrial_capacity_dockyard = -0.10
+				consumer_goods_factor = 0.05
+			}
+		}
+		usa_tycoon_influence_extremely_low = {
+			picture = usa_hamiltonian_economics
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = 0
+
+			modifier = {
+				stability_factor = 0.15
+				war_support_factor = 0.15
+				drift_defence_factor = 0.30
+				production_speed_buildings_factor = 0.15
+				production_factory_efficiency_gain_factor = -0.15
+				industrial_capacity_factory = -0.15
+				industrial_capacity_dockyard = -0.15
+				consumer_goods_factor = 0.10
+			}
+		}
 		usa_hamiltonian_economics = {
 			picture = usa_hamiltonian_economics
 
@@ -562,6 +723,121 @@ ideas = {
 			
 			modifier = {
 				consumer_goods_factor = 0.10
+			}
+		}
+		usa_tennessee_victim_relief = {
+			picture = placeholder
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = 0
+			
+			modifier = {
+				stability_weekly = 0.005
+				political_power_factor = 0.05
+				consumer_goods_factor = 0.10
+			}
+		}
+		usa_nationalized_railroads = {
+			picture = placeholder
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = 0
+			
+			modifier = {
+				supply_node_range = -0.05
+				supply_factor = -0.05
+				production_speed_rail_way_factor = 0.10
+			}
+		}
+		usa_busted_trusts = {
+			picture = placeholder
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = 0
+
+			modifier = {
+				political_power_factor = 0.05
+				stability_factor = 0.05
+				production_speed_buildings_factor = 0.10
+				industrial_capacity_factory = -0.10
+				industrial_capacity_dockyard = -0.10
+			}
+		}
+		usa_direct_democracy_reform_effects = {
+			picture = placeholder
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = 0
+
+			modifier = {
+				democratic_drift = 0.05
+				stability_weekly = 0.001
+			}
+		}
+		usa_small_business_support = {
+			picture = placeholder
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = 0
+
+			modifier = {
+				production_speed_industrial_complex_factor = 0.10
+				consumer_goods_factor = 0.05
+			}
+		}
+		usa_eight_hour_workday = {
+			picture = placeholder
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = 0
+
+			modifier = {
+				stability_factor = 0.05
+				production_factory_efficiency_gain_factor = -0.10
+				production_factory_max_efficiency_factor = 0.10
+				consumer_goods_factor = 0.025
 			}
 		}
 		sov_alaska_payments = {

@@ -66,7 +66,10 @@ focus_tree = {
         y = 1
         cost = 10
         completion_reward = {
-
+            add_timed_idea = {
+                idea = usa_busted_trusts
+                days = 3650
+            }
         }
     }
     focus = {
@@ -78,7 +81,10 @@ focus_tree = {
         y = 1
         cost = 10
         completion_reward = {
-
+            add_timed_idea = {
+                idea = usa_direct_democracy_reform_effects
+                days = 1825
+            }
         }
     }
     focus = {
@@ -91,7 +97,7 @@ focus_tree = {
         prerequisite = { focus = USA_Support_Small_Businesses }
         cost = 10
         completion_reward = {
-
+            add_ideas = usa_eight_hour_workday
         }
     }
     focus = {
@@ -115,7 +121,10 @@ focus_tree = {
         y = 1
         cost = 10
         completion_reward = {
-
+            add_timed_idea = {
+                idea = usa_small_business_support
+                days = 730
+            }
         }
     }
     focus = {
@@ -128,7 +137,7 @@ focus_tree = {
         y = 2
         cost = 10
         completion_reward = {
-
+            add_ideas = usa_nationalized_railroads
         }
     }
     focus = {
@@ -435,7 +444,10 @@ focus_tree = {
 			factor = 1
 		}
         completion_reward = {
-            
+            add_timed_idea = {
+                idea = usa_tennessee_victim_relief
+                days = 180
+            }
         }
     }
     focus = {

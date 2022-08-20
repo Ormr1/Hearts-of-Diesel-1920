@@ -1077,3 +1077,129 @@ USA_Deploy_Police_PK = {
 		}
 	}
 }
+
+USA_Change_Economics_Hamilton = {
+	if = {
+		limit = {
+			has_idea = usa_jeffersonian_economics
+		}
+		swap_ideas = {
+			remove_idea = usa_jeffersonian_economics
+			add_idea = usa_hamiltonian_economics
+		}
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_idea = usa_hamiltonian_economics
+				has_idea = usa_jeffersonian_economics
+			}
+		}
+		add_idea = usa_hamiltonian_economics
+	}
+}
+
+USA_Change_Economics_Jefferson = {
+	if = {
+		limit = {
+			has_idea = usa_hamiltonian_economics
+		}
+		swap_ideas = {
+			remove_idea = usa_hamiltonian_economics
+			add_idea = usa_jeffersonian_economics
+		}
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_idea = usa_hamiltonian_economics
+				has_idea = usa_jeffersonian_economics
+			}
+		}
+		add_idea = usa_jeffersonian_economics
+	}
+}
+
+USA_Increase_Tycoon_Influence = {
+	if = {
+		limit = {
+			has_idea = usa_tycoon_influence_extremely_low
+		}
+		add_idea = usa_tycoon_influence_low
+	}
+	else_if = {
+		limit = {
+			has_idea = usa_tycoon_influence_low
+		}
+		add_idea = usa_tycoon_influence_somewhat_low
+	}
+	else_if = {
+		limit = {
+			has_idea = usa_tycoon_influence_somewhat_low
+		}
+		add_idea = usa_tycoon_influence_middling
+	}
+	else_if = {
+		limit = {
+			has_idea = usa_tycoon_influence_middling
+		}
+		add_idea = usa_tycoon_influence_somewhat_high
+	}
+	else_if = {
+		limit = {
+			has_idea = usa_tycoon_influence_somewhat_high
+		}
+		add_idea = usa_tycoon_influence_high
+	}
+	else_if = {
+		limit = {
+			has_idea = usa_tycoon_influence_high
+		}
+		add_idea = usa_tycoon_influence_extremely_high
+	}
+	else = {
+		add_political_power = 75
+	}
+}
+
+USA_Decrease_Tycoon_Influence = {
+	if = {
+		limit = {
+			has_idea = usa_tycoon_influence_extremely_high
+		}
+		add_idea = usa_tycoon_influence_high
+	}
+	else_if = {
+		limit = {
+			has_idea = usa_tycoon_influence_high
+		}
+		add_idea = usa_tycoon_influence_somewhat_high
+	}
+	else_if = {
+		limit = {
+			has_idea = usa_tycoon_influence_somewhat_high
+		}
+		add_idea = usa_tycoon_influence_middling
+	}
+	else_if = {
+		limit = {
+			has_idea = usa_tycoon_influence_middling
+		}
+		add_idea = usa_tycoon_influence_somewhat_low
+	}
+	else_if = {
+		limit = {
+			has_idea = usa_tycoon_influence_somewhat_low
+		}
+		add_idea = usa_tycoon_influence_low
+	}
+	else_if = {
+		limit = {
+			has_idea = usa_tycoon_influence_low
+		}
+		add_idea = usa_tycoon_influence_extremely_low
+	}
+	else = {
+		add_stability = 0.025
+	}
+}
