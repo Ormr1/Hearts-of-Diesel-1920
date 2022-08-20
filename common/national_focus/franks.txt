@@ -70,13 +70,10 @@ focus = {
         factor = 5
     }
     search_filters = {FOCUS_FILTER_POLITICAL}
-    completion_reward = {
-        add_political_power 100
-        country_event = fra_monarchy.2
-    }
     prerequisite = {
         focus = FRA_Letat_Cest_Moi
     }
+    complete_national_focus = FRA_Letat_Cest_Moi
 }
 focus = {
     id = FRA_Have_a_Fair_Monarch
@@ -91,10 +88,6 @@ focus = {
         factor = 5
     }
     search_filters = {FOCUS_FILTER_POLITICAL}
-    completion_reward = {
-        add_political_power = 50
-        FRA = { country_event = fra_monarchy.3 }
-    }
     prerequisite = {
         focus = FRA_Letat_Cest_Moi
     }
@@ -157,21 +150,21 @@ focus = {
     }
 }
 ### REVOLUTIONARY / HISTORICAL
-    focus = {
-        id = FRA_Fight_For_Your_Freedom
-        icon = placeholder
-        mutually_exclusive = { focus = FRA_Letat_Cest_Moi }
-        x = 3
-        y = 0
-        cost = 2
-        ai_will_do = {
-            factor = 5
-        }
-        search_filters = {FOCUS_FILTER_POLITICAL}
-        completion_reward = {
-            country_event = fra_revolution.1
-        }
+focus = {
+    id = FRA_Fight_For_Your_Freedom
+    icon = placeholder
+    mutually_exclusive = { focus = FRA_Letat_Cest_Moi }
+    x = 3
+    y = 0
+    cost = 2
+    ai_will_do = {
+        factor = 5
     }
+    search_filters = {FOCUS_FILTER_POLITICAL}
+    completion_reward = {
+        country_event = fra_revolution.1
+    }
+}
     focus = {
         id = FRA_Prepare_For_The_Fight
         icon = placeholder
@@ -258,7 +251,14 @@ focus = {
         }
         search_filters = {FOCUS_FILTER_POLITICAL}
         completion_reward = {
-            country_event = fra_revolution.14
+            add_popularity = {
+                ideology = democratic
+                popularity = 0.125
+            }
+            add_popularity = {
+                ideology = communism
+                popularity = 0.125
+            }
         }
         prerequisite = {
             focus = FRA_Fight_For_Your_Freedom
@@ -276,7 +276,10 @@ focus = {
         }
         search_filters = {FOCUS_FILTER_POLITICAL}
         completion_reward = {
-            country_event = fra_politicalalliance.2
+            add_popularity = {
+                ideology = communism
+                popularity = 0.1
+            }
         }
         prerequisite = {
             focus = FRA_Gain_Political_Alliances
@@ -294,7 +297,10 @@ focus = {
         }
         search_filters = {FOCUS_FILTER_POLITICAL}
         completion_reward = {
-            country_event = fra_revolution.15
+            add_popularity = {
+                ideology = anarchist
+                popularity = 1
+            }
         }
         prerequisite = {
             focus = FRA_Gain_Political_Alliances
@@ -337,7 +343,10 @@ focus = {
         }
         search_filters = {FOCUS_FILTER_POLITICAL}
         completion_reward = {
-            country_event = fra_politicalalliance.4
+            add_popularity = {
+                ideology = democratic
+                popularity = 0.05
+            }
         }
         prerequisite = {
             focus = FRA_Gain_Political_Alliances
@@ -376,7 +385,19 @@ focus = {
         }
         search_filters = {FOCUS_FILTER_POLITICAL}
         completion_reward = {
-            country_event = fra.revolution.4
+            every_other_country = {
+                limit = {
+                    has_government = democratic
+                }
+                add_opinion_modifier = {
+                    target = ROOT
+                    modifier = small_increase
+                }
+                reverse_add_opinion_modifier = {
+                    target = ROOT
+                    modifier = small_increase
+                }
+            }
         }
         prerequisite = {
             focus = FRA_Spread_The_News
@@ -450,9 +471,10 @@ focus = {
         id = FRA_Light_The_Torch
         icon = placeholder
         relative_position_id = FRA_Train_The_Populous
+        mutually_exclusive = { focus = FRA_Give_In_to_Their_Demands }
         x = 0
         y = 1
-        cost = 2
+        cost = 5
         ai_will_do = {
             factor = 5
         }
@@ -470,24 +492,6 @@ focus = {
         prerequisite = {
             focus = FRA_Unite_The_Left
         }
-    }
-    focus = {
-    id = FRA_Dismember_The_Monarchy
-    icon = placeholder
-    relative_position_id = FRA_Light_The_Torch
-    x = 0
-    y = 1
-    cost = 10
-    ai_will_do = {
-        factor = 5
-    }
-    search_filters = {FOCUS_FILTER_POLITICAL}
-    completion_reward = {
-        country_event = fra_DismemberMonarchy.1
-    }
-    prerequisite = {
-        focus = FRA_Light_The_Torch
-    }
     }
     
     focus = {

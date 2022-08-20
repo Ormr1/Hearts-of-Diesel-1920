@@ -2235,7 +2235,7 @@ country_event = { # Upholding the Monarchy
 			popularity = 0.5
 		}
 	}
-	unlock_national_focus = FRA_Have_a_Fair_Monarch
+	complete_national_focus = FRA_Have_a_Fair_Monarch
 
 	option = {
 		name = fra_monarchy.1.b
@@ -2243,7 +2243,7 @@ country_event = { # Upholding the Monarchy
 			ideology = fascism
 			popularity = 0.5
 		}
-		unlock_national_focus = FRA_Give_The_Monarch_Power
+		complete_national_focus = FRA_Give_The_Monarch_Power
 	}
 }
 country_event = { # The King Gains Power
@@ -2257,9 +2257,6 @@ country_event = { # The King Gains Power
 	fire_only_once = yes
 	option = {
 		name = fra_monarchy.2.a
-		
-}
-
 	}
 }
 
@@ -2278,14 +2275,14 @@ country_event = { # Republicans In Bordeaux
 		name = fra_revolution.1.a
 		add_popularity = {
 			ideology = democratic
-			popularity = 0.5
+			popularity = 0.25
 		}
 	}
 	option = {
 		name = fra_revolution.1.b
 		add_popularity = {
-			ideology = communism
-			popularity = 0.5
+			ideology = anarchist
+			popularity = 0.25
 		}
 	}
 }
@@ -2297,24 +2294,10 @@ country_event = { # FRA_Prepare_For_The_Fight
 
 	picture = placeholder
 	
-	is_triggered only = no
-	fire_only_once yes
+	is_triggered_only = yes
+	fire_only_once = yes
 	option = {
 		name = fra_revolution.2.a
-
-	}
-}
-country_event = { # FRA_Spread_The_News
-	id = fra_revolution.3
-	title = fra_revolution.3.t
-	desc = fra_revolution.3.desc
-	
-	picture = placeholder
-	
-	is_triggered_only = no
-	fire_only_once yes
-	option = {
-		name = fra_revolution.3.a
 	}
 }
 country_event = { # FRA_Arm_The_People
@@ -2324,8 +2307,8 @@ country_event = { # FRA_Arm_The_People
 	
 	picture = placeholder
 	
-	is_triggered_only = no
-	fire_only_once yes
+	is_triggered_only = yes
+	fire_only_once = yes
 	option = {
 		name = fra_revolution.4.a
 	}

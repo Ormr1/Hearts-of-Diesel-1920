@@ -123,6 +123,10 @@
  fenris_ideology:0 "Fenris"
  fenris_ideology_noun:0 "Fenris"
  fenris_ideology_desc:0 "Tied to no single entity, the organization works in the shadows and as such little is known about it. The few who discover them, like Nikola, rarely live to tell about it and oppose it. It is comprised of members from, very likely, all the nations of the world. They build power by undermining and destabilizing governments by starting wars, taking advantage of the following political turmoil to install their own members into governments and slowly remove their opponents."
+ # Anarchism
+ anarchism_ideology:0 "Anarchism"
+ anarchism_ideology_noun:0 "Anarchist"
+ anarchism_ideology_desc:0 "The people shall not be limited by the government that rules over said people, for the people are truly free to do whatever they please. They are ultimately self governing, and bear no legal responsibility to obey any law set by any nation, as long as they reside in this nation of freedom."
  # Unique Party Names
  GER_fascism_party:0 "NSSAP"
  GER_fascism_party_long:0 "Nationalsozialistische Sächsische Arbeiterpartei"
