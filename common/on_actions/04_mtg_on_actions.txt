@@ -523,10 +523,10 @@ on_actions = {
 					has_dlc = "Man the Guns"
 				}
 				MEX = {
-					give_resource_rights = { receiver = ENG state = 476 }
-					give_resource_rights = { receiver = ENG state = 477 }
-					give_resource_rights = { receiver = USA state = 479 }
-					give_resource_rights = { receiver = USA state = 480 }
+					give_resource_rights = { receiver = FRA state = 476 }
+					give_resource_rights = { receiver = GER state = 477 }
+					give_resource_rights = { receiver = SPR state = 479 }
+					give_resource_rights = { receiver = SPR state = 480 }
 				}
 			}
 			# Game Rules - Decolonization

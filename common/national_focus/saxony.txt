@@ -173,7 +173,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = GER_iron_harvest
+		id = GER_begin_iron_harvest
 		icon = GFX_focus_generic_iron_harvest
 		relative_position_id = GER_scars_of_the_great_war
 		x = 0
@@ -185,7 +185,12 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			capital_scope = {
+				add_resource = {
+					type = steel
+					amount = 25
+				}
+			}
 		}
 	}
 
@@ -194,7 +199,7 @@ focus_tree = {
 		icon = GFX_goal_generic_allies_build_infantry
 		relative_position_id = GER_begin_peace_talks
 		prerequisite = { focus = GER_begin_peace_talks}
-		x = 2
+		x = 3
 		y = 1
 		cost = 10
 		search_filters = {  FOCUS_FILTER_POLITICAL }
@@ -210,7 +215,7 @@ focus_tree = {
 		icon = GFX_goal_generic_allies_build_infantry
 		relative_position_id = GER_begin_peace_talks
 		prerequisite = { focus = GER_begin_peace_talks}
-		x = 4
+		x = 6
 		y = 1
 		cost = 10
 		search_filters = {  FOCUS_FILTER_POLITICAL }
@@ -226,6 +231,24 @@ focus_tree = {
 		icon = GFX_goal_generic_allies_build_infantry
 		relative_position_id = GER_occupation_of_east_frankia
 		prerequisite = { focus = GER_occupation_of_east_frankia}
+		x =-3
+		y = 1
+		cost = 10
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			977={
+				add_compliance = 25
+			}
+		}
+	}
+	focus = {
+		id = GER_importance_of_the_seine
+		icon = GFX_goal_generic_allies_build_infantry
+		relative_position_id = GER_occupation_of_east_frankia
+		prerequisite = { focus = GER_occupation_of_east_frankia}
 		x =-1
 		y = 1
 		cost = 10
@@ -234,15 +257,50 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			976={
+				add_compliance = 15
+			}
+			785={
+				add_compliance = 15
+			}
+			858={
+				add_compliance = 15
+			}
 		}
 	}
 	focus = {
-		id = GER_importance_of_the_seine
+		id = GER_intergrating_east_neustria
+		icon = GFX_goal_generic_allies_build_infantry
+		relative_position_id = GER_importance_of_the_seine
+		prerequisite = { focus = GER_importance_of_the_seine}
+		prerequisite = { focus = GER_increase_the_paris_garrison}
+		x =-1
+		y = 1
+		cost = 10
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		available = {
+			976={compliance > 70}
+			977={compliance > 70}
+			785={compliance > 70}
+			858={compliance > 70}
+		}
+
+		completion_reward = {
+			976={add_core_of = ROOT}
+			977={add_core_of = ROOT}
+			785={add_core_of = ROOT}
+			858={add_core_of = ROOT}
+		}
+	}
+	focus = {
+		id = GER_flemmish_administrators_in_calais
 		icon = GFX_goal_generic_allies_build_infantry
 		relative_position_id = GER_occupation_of_east_frankia
 		prerequisite = { focus = GER_occupation_of_east_frankia}
-		x =1
+		x = 1
 		y = 1
 		cost = 10
 		search_filters = {  FOCUS_FILTER_POLITICAL }
@@ -250,7 +308,65 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			29={
+				add_compliance = 25
+			}
+			857={
+				add_compliance = 15
+			}
+			859={
+				add_compliance = 15
+			}
+		}
+	}
+	focus = {
+		id = GER_increase_presence_in_verdun
+		icon = GFX_goal_generic_allies_build_infantry
+		relative_position_id = GER_occupation_of_east_frankia
+		prerequisite = { focus = GER_occupation_of_east_frankia}
+		x = 3
+		y = 1
+		cost = 10
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			856={
+				add_compliance = 15
+			}
+			855={
+				add_compliance = 15
+			}
+		}
+	}
+	focus = {
+		id = GER_intergrating_frankish_austrasia
+		icon = GFX_goal_generic_allies_build_infantry
+		relative_position_id = GER_flemmish_administrators_in_calais
+		prerequisite = { focus = GER_flemmish_administrators_in_calais}
+		prerequisite = { focus = GER_increase_presence_in_verdun}
+		x =1
+		y = 1
+		cost = 10
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		available = {
+			29={compliance > 70}
+			857={compliance > 70}
+			859={compliance > 70}
+			856={compliance > 70}
+			855={compliance > 70}
+		}
+
+		completion_reward = {
+			29={add_core_of = ROOT}
+			857={add_core_of = ROOT}
+			859={add_core_of = ROOT}
+			856={add_core_of = ROOT}
+			855={add_core_of = ROOT}
 		}
 	}
 	

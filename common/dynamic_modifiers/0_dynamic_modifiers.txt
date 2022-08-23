@@ -1261,3 +1261,14 @@ SOV_capital_of_the_tsars = {
 
 	state_production_speed_buildings_factor = 0.25
 }
+##time to weaken europe
+scars_of_the_great_war = {
+	enable = { always = yes }
+
+	icon = GFX_modifiers_sabotaged_resource
+	
+	recruitable_population_factor = -0.5
+	local_building_slots_factor = -0.25
+	state_resources_factor = -0.25
+	state_production_speed_buildings_factor = -0.25
+}

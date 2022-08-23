@@ -125,17 +125,6 @@ if = {
 	}
 }
 
-if = { 
-	limit = { NOT = { has_dlc = "Together for Victory" } }
-}
-if = {
-	limit = { has_dlc = "Together for Victory" }
-	add_ideas = CAN_great_depression_1
-	add_ideas = CAN_conscription_crisis
-
-	add_to_tech_sharing_group = commonwealth_research
-}
-
 1939.1.1 = {
 	add_political_power = 1198
 	add_command_power = 100
