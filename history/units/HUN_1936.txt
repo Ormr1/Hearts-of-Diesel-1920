@@ -1,20 +1,5 @@
 ﻿division_template = {
-	name = "Gyalogdandár"				# Infantry Brigade
-
-	division_names_group = HUN_INF_02
-
-	regiments = {
-		infantry = { x = 0 y = 0 }
-		infantry = { x = 0 y = 1 }
-		infantry = { x = 0 y = 2 }
-		infantry = { x = 1 y = 0 }
-		infantry = { x = 1 y = 1 }
-		infantry = { x = 1 y = 2 }
-	}
-}
-division_template = {
 	name = "Huszár Dandár" 					# Cavalry Brigade
-	# Note: has 2x bicycle inf bns added during 1938-40 mobilization
 
 	division_names_group = HUN_CAV_01
 
@@ -23,6 +8,12 @@ division_template = {
 		cavalry = { x = 0 y = 1 }
 		cavalry = { x = 0 y = 2 }
 		cavalry = { x = 0 y = 3 }
+		cavalry = { x = 0 y = 4 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 1 y = 2 }
+		cavalry = { x = 1 y = 3 }
+		cavalry = { x = 1 y = 4 }
 	}
 	support = {
 		recon = { x = 0 y = 0 }   # recon bn of tankettes, ACs, mot inf
@@ -59,25 +50,25 @@ units = {
 
 	# I Hadtest
 	division= {	
-		#name = "1. Gyalogdandár"
+		#name = "3. Huszár Dandár"
 		division_name = {    # New syntax for compatibility with name lists
 			is_name_ordered = yes
-			name_order = 1
+			name_order = 3
 		}
 		location = 9660
-		division_template = "Gyalogdandár"
+		division_template = "Huszár Dandár"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
 
 	}
 	division= {	
-		#name = "2. Gyalogdandár"
+		#name = "4. Huszár Dandár"
 		division_name = {    # New syntax for compatibility with name lists
 			is_name_ordered = yes
-			name_order = 2
+			name_order = 4
 		}
 		location = 9660
-		division_template = "Gyalogdandár"
+		division_template = "Huszár Dandár"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
 
@@ -85,25 +76,25 @@ units = {
 
 	# II Hadtest
 	division= {	
-		#name = "3. Gyalogdandár"
+		#name = "5. Huszár Dandár"
 		division_name = {    # New syntax for compatibility with name lists
 			is_name_ordered = yes
-			name_order = 3
+			name_order = 5
 		}
 		location = 701
-		division_template = "Gyalogdandár"
+		division_template = "Huszár Dandár"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
 
 	}
 	division= {	
-		#name = "4. Gyalogdandár"
+		#name = "6. Huszár Dandár"
 		division_name = {    # New syntax for compatibility with name lists
 			is_name_ordered = yes
-			name_order = 4
+			name_order = 6
 		}
 		location = 701
-		division_template = "Gyalogdandár"
+		division_template = "Huszár Dandár"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
 
@@ -111,25 +102,25 @@ units = {
 
 	# III Hadtest
 	division= {	
-		#name = "5. Gyalogdandár"
+		#name = "7. Huszár Dandár"
 		division_name = {    # New syntax for compatibility with name lists
 			is_name_ordered = yes
-			name_order = 5
+			name_order = 7
 		}
 		location = 11627
-		division_template = "Gyalogdandár"
+		division_template = "Huszár Dandár"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
 
 	}
 	division= {	
-		#name = "6. Gyalogdandár"
+		#name = "8. Huszár Dandár"
 		division_name = {    # New syntax for compatibility with name lists
 			is_name_ordered = yes
-			name_order = 6
+			name_order = 8
 		}
 		location = 11627
-		division_template = "Gyalogdandár"
+		division_template = "Huszár Dandár"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
 
@@ -137,25 +128,25 @@ units = {
 
 	# IV Hadtest
 	division= {	
-		#name = "7. Gyalogdandár"
+		#name = "9. Huszár Dandár"
 		division_name = {    # New syntax for compatibility with name lists
 			is_name_ordered = yes
-			name_order = 7
+			name_order = 9
 		}
 		location = 11610
-		division_template = "Gyalogdandár"
+		division_template = "Huszár Dandár"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
 
 	}
 	division= {	
-		#name = "8. Gyalogdandár"
+		#name = "10. Huszár Dandár"
 		division_name = {    # New syntax for compatibility with name lists
 			is_name_ordered = yes
-			name_order = 8
+			name_order = 10
 		}
 		location = 11610
-		division_template = "Gyalogdandár"
+		division_template = "Huszár Dandár"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
 
@@ -163,25 +154,25 @@ units = {
 
 	# V Hadtest
 	division= {	
-		#name = "9. Gyalogdandár"
+		#name = "11. Huszár Dandár"
 		division_name = {    # New syntax for compatibility with name lists
 			is_name_ordered = yes
-			name_order = 9
+			name_order = 11
 		}
 		location = 679
-		division_template = "Gyalogdandár"
+		division_template = "Huszár Dandár"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
 
 	}
 	division= {	
-		#name = "10. Gyalogdandár"
+		#name = "12. Huszár Dandár"
 		division_name = {    # New syntax for compatibility with name lists
 			is_name_ordered = yes
-			name_order = 10
+			name_order = 12
 		}
 		location = 679
-		division_template = "Gyalogdandár"
+		division_template = "Huszár Dandár"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
 
@@ -189,25 +180,25 @@ units = {
 
 	# VI Hadtest
 	division= {	
-		#name = "11. Gyalogdandár"
+		#name = "13. Huszár Dandár"
 		division_name = {    # New syntax for compatibility with name lists
 			is_name_ordered = yes
-			name_order = 11
+			name_order = 13
 		}
 		location = 11659
-		division_template = "Gyalogdandár"
+		division_template = "Huszár Dandár"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
 
 	}
 	division= {	
-		#name = "12. Gyalogdandár"
+		#name = "14. Huszár Dandár"
 		division_name = {    # New syntax for compatibility with name lists
 			is_name_ordered = yes
-			name_order = 12
+			name_order = 14
 		}
 		location = 11659
-		division_template = "Gyalogdandár"
+		division_template = "Huszár Dandár"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
 
@@ -215,57 +206,30 @@ units = {
 
 	# VII Hadtest
 	division= {	
-		#name = "13. Gyalogdandár"
+		#name = "15. Huszár Dandár"
 		division_name = {    # New syntax for compatibility with name lists
 			is_name_ordered = yes
-			name_order = 13
+			name_order = 15
 		}		
 		location = 6751
-		division_template = "Gyalogdandár"
+		division_template = "Huszár Dandár"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
 
 	}
 	division= {	
-		#name = "14. Gyalogdandár"
+		#name = "16. Huszár Dandár"
 		division_name = {    # New syntax for compatibility with name lists
 			is_name_ordered = yes
-			name_order = 14
+			name_order = 16
 		}		
 		location = 6751
-		division_template = "Gyalogdandár"
+		division_template = "Huszár Dandár"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
 
 	}
 }
-
-### Magyar Légiero ###
-air_wings = {
-	43 = {
-		# 1. Légi Ezred -- Fiat CR.32 fighters
-		# 2. Légi Ezred -- Fiat CR.32 fighters
-		fighter_equipment_0 = {
-			owner = "HUN" 
-			creator = "ITA"
-				amount = 72
-		}
-
-	}
-	154 = {
-		# 3. Légi Ezred -- Caproni Ca.101, WM-16 Budapest light bombers
-		CAS_equipment_1 = {
-			owner = "HUN" 
-			amount = 12
-		}
-		tac_bomber_equipment_0 = {
-			owner = "HUN" 
-			creator = "ITA"
-			amount = 12
-		}
-	}
-}
-
 
 ### Starting Production ###
 instant_effect = {

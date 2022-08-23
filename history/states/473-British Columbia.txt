@@ -9,13 +9,12 @@ state={
 	history={
 		owner = USA
 		buildings = {
-			infrastructure = 3
+			infrastructure = 2
 			arms_factory = 1
 			industrial_complex = 1
-			dockyard = 1
-			air_base = 3
+			air_base = 1
 			1408 = {
-				naval_base = 5
+				naval_base = 3
 
 			}
 			10548 = {
@@ -32,7 +31,7 @@ state={
 	}
 
 	provinces={
-		917 1323 1393 1408 1411 1799 1858 1872 4385 4413 4678 4870 10228 10258 10273 10548 12231 12508 12571 
+		917 1323 1393 1408 1411 1799 1858 1872 4385 4413 4678 4870 5403 10228 10258 10273 10548 12231 12508 12571 
 	}
 	manpower=638165
 	buildings_max_level_factor=1.000

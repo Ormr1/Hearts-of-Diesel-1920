@@ -1,0 +1,116 @@
+Usonia:
+    Massachusetts:
+        1 Military Factory
+    Vermont:
+        1 Civilian Factory
+    Connecticut:
+        1 Civilian Factory
+    Maine:
+        1 Dockyard
+    New York:
+        1 Military Factory
+        4 Civilian Factory
+        3 Civilian Factories
+        2 Dockyards
+    New Jersey:
+        3 Civilian Factories
+        2 Dockyards
+    Pennsylvania:
+        2 Civilian Factories
+        1 Dockyard
+    Maryland:
+        4 Civilian Factories
+        2 Dockyards
+    Virginia:
+        2 Civilian Factories
+        3 Dockyards
+    North Carolina:
+        1 Civilian Factory
+    South Carolina:
+        1 Civilian Factory
+    Georgia:
+        1 Civilian Factory
+    Florida:
+        1 Civilian Factory
+    Ohio:
+        1 Military Factory
+        4 Civilian Factories
+    Kentucky:
+        2 Civilian Factories
+    Tennessee:
+        1 Civilian Factories
+    Alabama:
+        1 Civilian Factory
+        1 Dockyard Factory
+    Mississippi:
+        1 Civilian Factory
+        1 Dockyard Factory
+    Michigan:
+        1 Military Factory
+        2 Civilian Factories
+    Indiana:
+        2 Civilian Factories
+    Wisconsin:
+        1 Civilian Factory
+    Illinois:
+        1 Military Factory
+        3 Civilian Factories
+    Western Minnesota:
+        1 Civilian Factory
+    Iowa:
+        2 Civilian Factories
+    Missouri:
+        1 Civilian Factory
+    Louisiana:
+        1 Civilian Factory
+        1 Dockyard
+    Northern Texas:
+        1 Civilian Factory
+        1 Dockyard
+    Southern Texas:
+        1 Civilian Factory
+    Oklahoma:
+        1 Civilian Factory
+    Kansas:
+        1 Civilian Factory
+    South Dakota:
+        1 Civilian Factory
+    New Aztlan:
+        1 Civilian Factory
+    Washington:
+        1 Military Factory
+        1 Civilian Factory
+        1 Dockyard
+    Oregon:
+        1 Civilian Factory
+    Jefferson:
+        1 Civilian Factory
+    California:
+        1 Military Factory
+        1 Civilian Factory
+        3 Dockyards
+    New Brunswick:
+        1 Civilian Factory
+    Nova Scotia:
+        1 Dockyard
+    Southern Ontario:
+        1 Military Factory
+        1 Civilian Factory
+    Northern Ontario:
+        1 Civilian Factory
+    Manitoba:
+        1 Civilian Factory
+    Cascadia:
+        1 Civilian Factory
+        1 Military Factory
+    Cuba:
+        2 Civilian Factories
+        1 Dockyard
+    Jamaica:
+        1 Military Factory
+    Haiti:
+        1 Civilian Factory
+    Santo Domingo:
+        1 Civilian Factory
+    Baja California:
+        1 Military Factory

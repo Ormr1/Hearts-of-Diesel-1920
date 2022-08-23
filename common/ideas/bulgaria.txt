@@ -20,7 +20,26 @@ ideas = {
 
 
 	country = { #DLC
+		BUL_master_of_the_balkans = {
+			picture = placeholder
 
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = 0
+
+			modifier = {
+				stability_factor = 0.10
+				political_power_gain = 0.15
+				war_support_factor = -0.10
+				land_doctrine_cost_factor = 0.25
+			}
+		}
 		BUL_army_restrictions = {
 			picture = tfv_can_conscription_crisis
 

@@ -109,7 +109,7 @@ focus_tree = {
         prerequisite = { focus = USA_Eight_Hour_Workday }
         cost = 10
         completion_reward = {
-
+            USA_Decrease_Tycoon_Influence = yes
         }
     }
     focus = {
@@ -2161,7 +2161,7 @@ focus_tree = {
         prerequisite = { focus = USA_Loans_For_The_Americas }
         prerequisite = { focus = USA_Spread_The_Dollar }
         available = {
-            PRU = {
+            CAN = {
                 has_civil_war = no
             }
         }

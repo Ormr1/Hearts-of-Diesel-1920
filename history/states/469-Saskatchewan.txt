@@ -6,8 +6,7 @@ state={
 	history={
 		owner = USA
 		buildings = {
-			infrastructure = 2
-			industrial_complex = 1
+			infrastructure = 1
 
 		}
 		add_core_of = USA
@@ -15,7 +14,7 @@ state={
 	}
 
 	provinces={
-		736 1671 1804 3498 3800 4695 5239 6779 7348 10585 12682 13168 13183 13185 13187 
+		736 1671 1804 3498 3800 4695 5239 6779 7348 10585 12682 13167 13168 13183 13185 13187 13192 
 	}
 	manpower=865605
 	buildings_max_level_factor=1.000

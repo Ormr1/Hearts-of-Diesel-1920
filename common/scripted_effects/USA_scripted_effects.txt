@@ -1125,37 +1125,55 @@ USA_Increase_Tycoon_Influence = {
 		limit = {
 			has_idea = usa_tycoon_influence_extremely_low
 		}
-		add_idea = usa_tycoon_influence_low
+		swap_ideas = {
+			remove_idea
+			add_idea = usa_tycoon_influence_low
+		}
 	}
 	else_if = {
 		limit = {
 			has_idea = usa_tycoon_influence_low
 		}
-		add_idea = usa_tycoon_influence_somewhat_low
+		swap_ideas = {
+			remove_idea = usa_tycoon_influence_low
+			add_idea = usa_tycoon_influence_somewhat_low
+		}
 	}
 	else_if = {
 		limit = {
 			has_idea = usa_tycoon_influence_somewhat_low
 		}
-		add_idea = usa_tycoon_influence_middling
+		swap_ideas = {
+			remove_idea = usa_tycoon_influence_somewhat_low
+			add_idea = usa_tycoon_influence_middling
+		}
 	}
 	else_if = {
 		limit = {
 			has_idea = usa_tycoon_influence_middling
 		}
-		add_idea = usa_tycoon_influence_somewhat_high
+		swap_ideas = {
+			remove_idea = usa_tycoon_influence_middling
+			add_idea = usa_tycoon_influence_somewhat_high
+		}
 	}
 	else_if = {
 		limit = {
 			has_idea = usa_tycoon_influence_somewhat_high
 		}
-		add_idea = usa_tycoon_influence_high
+		swap_ideas = {
+			remove_idea = usa_tycoon_influence_somewhat_high
+			add_idea = usa_tycoon_influence_high
+		}
 	}
 	else_if = {
 		limit = {
 			has_idea = usa_tycoon_influence_high
 		}
-		add_idea = usa_tycoon_influence_extremely_high
+		swap_ideas = {
+			remove_idea = usa_tycoon_influence_high
+			add_idea = usa_tycoon_influence_extremely_high
+		}
 	}
 	else = {
 		add_political_power = 75
@@ -1167,37 +1185,55 @@ USA_Decrease_Tycoon_Influence = {
 		limit = {
 			has_idea = usa_tycoon_influence_extremely_high
 		}
-		add_idea = usa_tycoon_influence_high
+		swap_ideas = {
+			remove_idea = usa_tycoon_influence_extremely_high
+			add_idea = usa_tycoon_influence_high
+		}
 	}
 	else_if = {
 		limit = {
 			has_idea = usa_tycoon_influence_high
 		}
-		add_idea = usa_tycoon_influence_somewhat_high
+		swap_ideas = {
+			remove_idea = usa_tycoon_influence_high
+			add_idea = usa_tycoon_influence_somewhat_high
+		}
 	}
 	else_if = {
 		limit = {
 			has_idea = usa_tycoon_influence_somewhat_high
 		}
-		add_idea = usa_tycoon_influence_middling
+		swap_ideas = {
+			remove_idea = usa_tycoon_influence_somewhat_high
+			add_idea = usa_tycoon_influence_middling
+		}
 	}
 	else_if = {
 		limit = {
 			has_idea = usa_tycoon_influence_middling
 		}
-		add_idea = usa_tycoon_influence_somewhat_low
+		swap_ideas = {
+			remove_idea = usa_tycoon_influence_middling
+			add_idea = usa_tycoon_influence_somewhat_low
+		}
 	}
 	else_if = {
 		limit = {
 			has_idea = usa_tycoon_influence_somewhat_low
 		}
-		add_idea = usa_tycoon_influence_low
+		swap_ideas = {
+			remove_idea = usa_tycoon_influence_somewhat_low
+			add_idea = usa_tycoon_influence_low
+		}
 	}
 	else_if = {
 		limit = {
 			has_idea = usa_tycoon_influence_low
 		}
-		add_idea = usa_tycoon_influence_extremely_low
+		swap_ideas = {
+			remove_idea = usa_tycoon_influence_low
+			add_idea = usa_tycoon_influence_extremely_low
+		}
 	}
 	else = {
 		add_stability = 0.025

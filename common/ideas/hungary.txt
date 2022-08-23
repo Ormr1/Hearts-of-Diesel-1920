@@ -2,6 +2,48 @@ ideas = {
 
 	country = {
 
+		HUN_hussar_culture = {
+			picture = placeholder
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = 0
+
+			modifier = {
+				cavalry_attack_factor = 0.30
+				cavalry_defence_factor = 0.30
+				army_speed_factor = 0.15
+				army_attack_factor = -0.15
+				army_defence_factor = -0.15
+				industrial_capacity_dockyard = -0.20
+			}
+		}
+		HUN_army_without_a_state = {
+			picture = placeholder
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = 0
+
+			modifier = {
+				stability_factor = -0.25
+				war_support_factor = 0.20
+				surrender_limit = 1.00
+				political_power_gain = -0.10
+			}
+		}
 		HUN_treaty_of_triannon = {
 			allowed = {
 				original_tag = HUN

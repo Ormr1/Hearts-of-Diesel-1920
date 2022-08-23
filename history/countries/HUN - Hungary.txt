@@ -45,8 +45,9 @@ if = {
 		has_dlc = "Death or Dishonor"
 	}
 	add_ideas = {
-		disarmed_nation
-		HUN_treaty_of_triannon
+		HUN_hussar_culture
+		extensive_conscription
+		partial_economic_mobilisation
 	}
 }
 
