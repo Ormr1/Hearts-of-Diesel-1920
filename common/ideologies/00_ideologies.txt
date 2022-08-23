@@ -20,6 +20,10 @@ ideologies = {
 			centrism_democratic = {
 			}
 
+			anarchist-capitalism = {
+
+			}
+
 			islamic_democracy = {
 				can_be_randomly_selected = no
 			}
@@ -387,48 +391,5 @@ ideologies = {
 		faction_impact_on_world_tension = 1.0
 
 		ai_fascist = yes # uses the fascist AI behaviour
-	}
-	anarchism = {
-
-		types = {
-			anarcho_communism = { }
-
-			anarcho_capitalism = { }
-		}
-
-		dynamic_faction_names = {
-			"FACTION_NAME_ANARCHISM_1"
-			"FACTION_NAME_ANARCHISM_2"
-			"FACTION_NAME_ANARCHISM_3"
-			"FACTION_NAME_ANARCHISM_4"
-			"FACTION_NAME_ANARCHISM_5"
-		}
-
-		color = { 169 42 42 }
-
-		rules = {
-			can_declare_war_on_same_ideology = yes
-			can_force_government = no
-			can_send_volunteers = yes
-			can_puppet = no
-			can_lower_tension = no
-			can_only_justify_war_on_threat_country = no
-			can_guarantee_other_ideologies = no
-			
-			can_join_factions = yes
-			can_create_factions = yes
-		}
-
-		modifiers = {
-			join_faction_tension = -1
-			lend_lease_tension = 0
-			send_volunteers_tension = -0.5
-			guarantee_tension = 10000
-		}
-
-		war_impact_on_world_tension = 1.0
-		faction_impact_on_world_tension = 1.0
-
-		ai_anarchist = yes # uses the anarchist AI behaviour
 	}
 }

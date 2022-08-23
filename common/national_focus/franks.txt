@@ -40,6 +40,9 @@ focus = {
         country_event = fra_economic.1
     }
 }
+focus = {
+    id = FRA_
+}
 
 ### MONARCHIST
 focus = {
@@ -165,425 +168,425 @@ focus = {
         country_event = fra_revolution.1
     }
 }
-    focus = {
-        id = FRA_Prepare_For_The_Fight
-        icon = placeholder
-        relative_position_id = FRA_Fight_For_Your_Freedom
-        x = -5
-        y = 1
-        cost = 5
-        ai_will_do = {
-            factor = 5
+focus = {
+    id = FRA_Prepare_For_The_Fight
+    icon = placeholder
+    relative_position_id = FRA_Fight_For_Your_Freedom
+    x = -5
+    y = 1
+    cost = 5
+    ai_will_do = {
+        factor = 5
+    }
+    search_filters = {FOCUS_FILTER_POLITICAL}
+    completion_reward = {
+        country_event = fra_revolution.2
+    }
+    prerequisite = {
+        focus = FRA_Fight_For_Your_Freedom
+    }
+}
+focus = {
+    id = FRA_Underground_Factories
+    relative_position_id = FRA_International_Arms_Market
+    icon = placeholder
+    x = 0
+    y = 1
+    cost = 5
+    ai_will_do = {
+        factor = 5
+    }
+    search_filters = {FOCUS_FILTER_INDUSTRY}
+    completion_reward = {
+        country_event = fra_revolution.6
+    }
+    prerequisite = {
+        focus = FRA_International_Arms_Market
+    }
+}
+focus = {
+    id = FRA_Mimic_Foreign_Equipment
+    icon = placeholder
+    mutually_exclusive = { focus = FRA_Make_Our_Own_Guns }
+    relative_position_id = FRA_Underground_Factories
+    x = 1
+    y = 1
+    cost = 7
+    ai_will_do = {
+        factor = 5
+    }
+    search_filters = {FOCUS_FILTER_INDUSTRY}
+    completion_reward = {
+        country_event = fra_revolution.8
+    }
+    prerequisite = {
+        focus = FRA_Underground_Factories
+    }
+}
+focus = {
+    id = FRA_Make_Our_Own_Guns
+    icon = placeholder
+    mutually_exclusive = { focus = FRA_Mimic_Foreign_Equipment }
+    relative_position_id = FRA_Underground_Factories
+    x = -1
+    y = 1
+    cost = 5
+    ai_will_do = {
+        factor = 5
+    }
+    search_filters = {FOCUS_FILTER_INDUSTRY}
+    completion_reward = {
+        country_event = fra_revolution.7
+    }
+    prerequisite = {
+        focus = FRA_Underground_Factories
+    }
+}
+focus = {
+    id = FRA_Gain_Political_Alliances
+    icon = placeholder
+    relative_position_id = FRA_Fight_For_Your_Freedom
+    x = 5
+    y = 1
+    cost = 5
+    ai_will_do = {
+        factor = 5
+    }
+    search_filters = {FOCUS_FILTER_POLITICAL}
+    completion_reward = {
+        add_popularity = {
+            ideology = democratic
+            popularity = 0.125
         }
-        search_filters = {FOCUS_FILTER_POLITICAL}
-        completion_reward = {
-            country_event = fra_revolution.2
-        }
-        prerequisite = {
-            focus = FRA_Fight_For_Your_Freedom
+        add_popularity = {
+            ideology = communism
+            popularity = 0.125
         }
     }
-    focus = {
-        id = FRA_Underground_Factories
-        relative_position_id = FRA_International_Arms_Market
-        icon = placeholder
-        x = 0
-        y = 1
-        cost = 5
-        ai_will_do = {
-            factor = 5
-        }
-        search_filters = {FOCUS_FILTER_INDUSTRY}
-        completion_reward = {
-            country_event = fra_revolution.6
-        }
-        prerequisite = {
-            focus = FRA_International_Arms_Market
+    prerequisite = {
+        focus = FRA_Fight_For_Your_Freedom
+    }
+}
+focus = {
+    id = FRA_Ally_The_Socialists
+    icon = placeholder
+    relative_position_id = FRA_Gain_Political_Alliances
+    x = 2
+    y = 1
+    cost = 6
+    ai_will_do = {
+        factor = 5
+    }
+    search_filters = {FOCUS_FILTER_POLITICAL}
+    completion_reward = {
+        add_popularity = {
+            ideology = communism
+            popularity = 0.1
         }
     }
-    focus = {
-        id = FRA_Mimic_Foreign_Equipment
-        icon = placeholder
-        mutually_exclusive = { focus = FRA_Make_Our_Own_Guns }
-        relative_position_id = FRA_Underground_Factories
-        x = 1
-        y = 1
-        cost = 7
-        ai_will_do = {
-            factor = 5
-        }
-        search_filters = {FOCUS_FILTER_INDUSTRY}
-        completion_reward = {
-            country_event = fra_revolution.8
-        }
-        prerequisite = {
-            focus = FRA_Underground_Factories
+    prerequisite = {
+        focus = FRA_Gain_Political_Alliances
+    }
+}
+focus = {
+    id = FRA_Gain_Support_Of_The_Anarchists
+    icon = placeholder
+    relative_position_id = FRA_Gain_Political_Alliances
+    x = -2
+    y = 1
+    cost = 6
+    ai_will_do = {
+        factor = 5
+    }
+    search_filters = {FOCUS_FILTER_POLITICAL}
+    completion_reward = {
+        add_popularity = {
+            ideology = neutral
+            popularity = 0.1
         }
     }
-    focus = {
-        id = FRA_Make_Our_Own_Guns
-        icon = placeholder
-        mutually_exclusive = { focus = FRA_Mimic_Foreign_Equipment }
-        relative_position_id = FRA_Underground_Factories
-        x = -1
-        y = 1
-        cost = 5
-        ai_will_do = {
-            factor = 5
-        }
-        search_filters = {FOCUS_FILTER_INDUSTRY}
-        completion_reward = {
-            country_event = fra_revolution.7
-        }
-        prerequisite = {
-            focus = FRA_Underground_Factories
+    prerequisite = {
+        focus = FRA_Gain_Political_Alliances
+    }
+}
+focus = { 
+    id = FRA_Unite_The_Left
+    icon = placeholder
+    relative_position_id = FRA_Befriend_The_Democrats
+    x = 0
+    y = 1
+    cost = 6
+    ai_will_do = {
+        factor = 5
+    }
+    cost = 7
+    search_filters = {FOCUS_FILTER_POLITICAL}
+    completion_reward = {
+        country_event = fra_revolution.16
+    }
+    prerequisite = {
+        focus = FRA_Gain_Support_Of_The_Anarchists
+    }
+    prerequisite = {
+        focus = FRA_Befriend_The_Democrats
+    }
+    prerequisite = {
+        focus = FRA_Ally_The_Socialists
+    }
+}
+focus = {
+    id = FRA_Befriend_The_Democrats
+    icon = placeholder
+    relative_position_id = FRA_Gain_Political_Alliances
+    x = 0
+    y = 1
+    cost = 6
+    ai_will_do = {
+        factor = 5
+    }
+    search_filters = {FOCUS_FILTER_POLITICAL}
+    completion_reward = {
+        add_popularity = {
+            ideology = democratic
+            popularity = 0.05
         }
     }
-    focus = {
-        id = FRA_Gain_Political_Alliances
-        icon = placeholder
-        relative_position_id = FRA_Fight_For_Your_Freedom
-        x = 5
-        y = 1
-        cost = 5
-        ai_will_do = {
-            factor = 5
-        }
-        search_filters = {FOCUS_FILTER_POLITICAL}
-        completion_reward = {
-            add_popularity = {
-                ideology = democratic
-                popularity = 0.125
+    prerequisite = {
+        focus = FRA_Gain_Political_Alliances
+    }
+}
+focus = {
+    id = FRA_Train_The_Populous
+    icon = placeholder
+    relative_position_id = FRA_Nationalize_The_Industry
+    x = 1
+    y = 1
+    cost = 7
+    ai_will_do = {
+        factor = 5
+    }
+    search_filters = {FOCUS_FILTER_MANPOWER}
+    completion_reward = { 
+        country_event = fra.revolution.13
+    }
+    prerequisite = {
+        focus = FRA_Nationalize_The_Industry
+    }
+    prerequisite = {
+        focus = FRA_Arm_The_People
+    }
+}
+focus = {
+    id = FRA_Gain_International_Support
+    icon = placeholder
+    relative_position_id = FRA_Prepare_For_The_Fight
+    x = 1
+    y = 1
+    cost = 7
+    ai_will_do = {
+        factor = 5
+    }
+    search_filters = {FOCUS_FILTER_POLITICAL}
+    completion_reward = {
+        every_other_country = {
+            limit = {
+                has_government = democratic
             }
-            add_popularity = {
-                ideology = communism
-                popularity = 0.125
+            add_opinion_modifier = {
+                target = ROOT
+                modifier = small_increase
             }
-        }
-        prerequisite = {
-            focus = FRA_Fight_For_Your_Freedom
-        }
-    }
-    focus = {
-        id = FRA_Ally_The_Socialists
-        icon = placeholder
-        relative_position_id = FRA_Gain_Political_Alliances
-        x = 2
-        y = 1
-        cost = 6
-        ai_will_do = {
-            factor = 5
-        }
-        search_filters = {FOCUS_FILTER_POLITICAL}
-        completion_reward = {
-            add_popularity = {
-                ideology = communism
-                popularity = 0.1
-            }
-        }
-        prerequisite = {
-            focus = FRA_Gain_Political_Alliances
-        }
-    }
-    focus = {
-        id = FRA_Gain_Support_Of_The_Anarchists
-        icon = placeholder
-        relative_position_id = FRA_Gain_Political_Alliances
-        x = -2
-        y = 1
-        cost = 6
-        ai_will_do = {
-            factor = 5
-        }
-        search_filters = {FOCUS_FILTER_POLITICAL}
-        completion_reward = {
-            add_popularity = {
-                ideology = anarchist
-                popularity = 1
-            }
-        }
-        prerequisite = {
-            focus = FRA_Gain_Political_Alliances
-        }
-    }
-    focus = { 
-        id = FRA_Unite_The_Left
-        icon = placeholder
-        relative_position_id = FRA_Befriend_The_Democrats
-        x = 0
-        y = 1
-        cost = 6
-        ai_will_do = {
-            factor = 5
-        }
-        cost = 7
-        search_filters = {FOCUS_FILTER_POLITICAL}
-        completion_reward = {
-            country_event = fra_revolution.16
-        }
-        prerequisite = {
-            focus = FRA_Gain_Support_Of_The_Anarchists
-        }
-        prerequisite = {
-            focus = FRA_Befriend_The_Democrats
-        }
-        prerequisite = {
-            focus = FRA_Ally_The_Socialists
-        }
-    }
-    focus = {
-        id = FRA_Befriend_The_Democrats
-        icon = placeholder
-        relative_position_id = FRA_Gain_Political_Alliances
-        x = 0
-        y = 1
-        cost = 6
-        ai_will_do = {
-            factor = 5
-        }
-        search_filters = {FOCUS_FILTER_POLITICAL}
-        completion_reward = {
-            add_popularity = {
-                ideology = democratic
-                popularity = 0.05
-            }
-        }
-        prerequisite = {
-            focus = FRA_Gain_Political_Alliances
-        }
-    }
-    focus = {
-        id = FRA_Train_The_Populous
-        icon = placeholder
-        relative_position_id = FRA_Nationalize_The_Industry
-        x = 1
-        y = 1
-        cost = 7
-        ai_will_do = {
-            factor = 5
-        }
-        search_filters = {FOCUS_FILTER_MANPOWER}
-        completion_reward = { 
-            country_event = fra.revolution.13
-        }
-        prerequisite = {
-            focus = FRA_Nationalize_The_Industry
-        }
-        prerequisite = {
-            focus = FRA_Arm_The_People
-        }
-    }
-    focus = {
-        id = FRA_Gain_International_Support
-        icon = placeholder
-        relative_position_id = FRA_Prepare_For_The_Fight
-        x = 1
-        y = 1
-        cost = 7
-        ai_will_do = {
-            factor = 5
-        }
-        search_filters = {FOCUS_FILTER_POLITICAL}
-        completion_reward = {
-            every_other_country = {
-                limit = {
-                    has_government = democratic
-                }
-                add_opinion_modifier = {
-                    target = ROOT
-                    modifier = small_increase
-                }
-                reverse_add_opinion_modifier = {
-                    target = ROOT
-                    modifier = small_increase
-                }
-            }
-        }
-        prerequisite = {
-            focus = FRA_Spread_The_News
-        }
-        prerequisite = {
-            focus = FRA_Prepare_For_The_Fight
-        }
-    }
-    focus = {
-        id = FRA_International_Arms_Market
-        icon = placeholder
-        relative_position_id = FRA_Gain_International_Support
-        x = 0
-        y = 1
-        cost = 5
-        ai_will_do = {
-            factor = 5
-        }
-        search_filters = {FOCUS_FILTER_MANPOWER}
-        completion_reward = {
-            country_event = fra.revolution.5
-        }
-        prerequisite = {
-            focus = FRA_Gain_International_Support
-        }
-    }
-    focus = {
-        id = FRA_Nationalize_The_Industry
-        icon = placeholder
-        relative_position_id = FRA_Bribe_Business_Owners
-        x = -1
-        y = 1
-        cost = 5
-        ai_will_do = {
-            factor = 5
-        }
-        search_filters = {FOCUS_FILTER_POLITICAL}
-        completion_reward = {
-            country_event = fra_revolution.10
-        }
-        prerequisite = {
-            focus = FRA_Bribe_Business_Owners
-        }
-    }
-    focus = {
-        id = FRA_Spread_The_News
-        icon = placeholder
-        relative_position_id = FRA_Fight_For_Your_Freedom
-        x = -3
-        y = 1
-        cost = 5
-        ai_will_do = {
-            factor = 5
-        }
-        search_filters = {FOCUS_FILTER_POLITICAL}
-        completion_reward = {
-            add_popularity = {
-                ideology = democratic
-                popularity = 0.05
-            }
-            add_popularity = {
-                ideology = communism
-                popularity = 0.05
+            reverse_add_opinion_modifier = {
+                target = ROOT
+                modifier = small_increase
             }
         }
-         prerequisite = {
-	    focus = FRA_Fight_For_Your_Freedom
     }
+    prerequisite = {
+        focus = FRA_Spread_The_News
     }
-    focus = {
-        id = FRA_Light_The_Torch
-        icon = placeholder
-        relative_position_id = FRA_Train_The_Populous
-        mutually_exclusive = { focus = FRA_Give_In_to_Their_Demands }
-        x = 0
-        y = 1
-        cost = 5
-        ai_will_do = {
-            factor = 5
+    prerequisite = {
+        focus = FRA_Prepare_For_The_Fight
+    }
+}
+focus = {
+    id = FRA_International_Arms_Market
+    icon = placeholder
+    relative_position_id = FRA_Gain_International_Support
+    x = 0
+    y = 1
+    cost = 5
+    ai_will_do = {
+        factor = 5
+    }
+    search_filters = {FOCUS_FILTER_MANPOWER}
+    completion_reward = {
+        country_event = fra.revolution.5
+    }
+    prerequisite = {
+        focus = FRA_Gain_International_Support
+    }
+}
+focus = {
+    id = FRA_Nationalize_The_Industry
+    icon = placeholder
+    relative_position_id = FRA_Bribe_Business_Owners
+    x = -1
+    y = 1
+    cost = 5
+    ai_will_do = {
+        factor = 5
+    }
+    search_filters = {FOCUS_FILTER_POLITICAL}
+    completion_reward = {
+        country_event = fra_revolution.10
+    }
+    prerequisite = {
+        focus = FRA_Bribe_Business_Owners
+    }
+}
+focus = {
+    id = FRA_Spread_The_News
+    icon = placeholder
+    relative_position_id = FRA_Fight_For_Your_Freedom
+    x = -3
+    y = 1
+    cost = 5
+    ai_will_do = {
+        factor = 5
+    }
+    search_filters = {FOCUS_FILTER_POLITICAL}
+    completion_reward = {
+        add_popularity = {
+            ideology = democratic
+            popularity = 0.05
         }
-        search_filters = {FOCUS_FILTER_POLITICAL}
-        completion_reward = {
-            country_event = {id = fra_civilwarignite.1}
-            #add_namespace = fra_civilwarignite.1
-        }
-        prerequisite = {
-            focus = FRA_International_Arms_Market
-        }
-        prerequisite = {
-            focus = FRA_Train_The_Populous
-        }
-        prerequisite = {
-            focus = FRA_Unite_The_Left
+        add_popularity = {
+            ideology = communism
+            popularity = 0.05
         }
     }
+        prerequisite = {
+    focus = FRA_Fight_For_Your_Freedom
+    }
+}
+focus = {
+    id = FRA_Light_The_Torch
+    icon = placeholder
+    relative_position_id = FRA_Train_The_Populous
+    mutually_exclusive = { focus = FRA_Give_In_to_Their_Demands }
+    x = 0
+    y = 1
+    cost = 5
+    ai_will_do = {
+        factor = 5
+    }
+    search_filters = {FOCUS_FILTER_POLITICAL}
+    completion_reward = {
+        country_event = {id = fra_civilwarignite.1}
+        #add_namespace = fra_civilwarignite.1
+    }
+    prerequisite = {
+        focus = FRA_International_Arms_Market
+    }
+    prerequisite = {
+        focus = FRA_Train_The_Populous
+    }
+    prerequisite = {
+        focus = FRA_Unite_The_Left
+    }
+}
     
-    focus = {
-        id = FRA_Bribe_Business_Owners
-        icon = placeholder
-        relative_position_id = FRA_Fight_For_Your_Freedom
-        x = 0
-        y = 1
-        cost = 5
-        ai_will_do = {
-            factor = 5
-        }
-        search_filters = {FOCUS_FILTER_POLITICAL}
-        completion_reward = {
-            country_event = fra_revolution.9
-        }
-         prerequisite = {
-            focus = FRA_Fight_For_Your_Freedom
-        }
+focus = {
+    id = FRA_Bribe_Business_Owners
+    icon = placeholder
+    relative_position_id = FRA_Fight_For_Your_Freedom
+    x = 0
+    y = 1
+    cost = 5
+    ai_will_do = {
+        factor = 5
+    }
+    search_filters = {FOCUS_FILTER_POLITICAL}
+    completion_reward = {
+        country_event = fra_revolution.9
+    }
+        prerequisite = {
+        focus = FRA_Fight_For_Your_Freedom
+    }
 
+}
+focus = {
+    id = FRA_Create_A_Political_Union
+    icon = placeholder
+    relative_position_id = FRA_Unite_The_Left
+    x = 0
+    y = 1
+    cost = 10
+    ai_will_do = {
+        factor = 5
     }
-    focus = {
-        id = FRA_Create_A_Political_Union
-        icon = placeholder
-        relative_position_id = FRA_Unite_The_Left
-        x = 0
-        y = 1
-        cost = 10
-        ai_will_do = {
-            factor = 5
-        }
-        search_filters = {FOCUS_FILTER_POLITICAL}
-        completion_reward = {
-            country_event = fra_revolution.17
-        }
-        prerequisite = {
-            focus = FRA_Unite_The_Left
-        }
+    search_filters = {FOCUS_FILTER_POLITICAL}
+    completion_reward = {
+        country_event = fra_revolution.17
     }
-    focus = {
-        id = FRA_Allow_For_Political_Autonomy
-        icon = placeholder
-        relative_position_id = FRA_Create_A_Political_Union
-        mutually_exclusive = { focus = FRA_Even_More_Political_Unity }
-        x = 1
-        y = 1
-        cost = 3
-        ai_will_do = {
-            factor = 5
-        }
-        search_filters = {FOCUS_FILTER_FRA_PARLIAMENT}
-        completion_reward = {
-            country_event = fra_revolution.19
-        }
-        prerequisite = {
-            focus = FRA_Create_A_Political_Union
-        }
+    prerequisite = {
+        focus = FRA_Unite_The_Left
     }
-    focus = {
-        id = FRA_Even_More_Political_Unity
-        icon = placeholder
-        relative_position_id = FRA_Create_A_Political_Union
-        mutually_exclusive = { focus = FRA_Allow_For_Political_Autonomy }
-        x = -1
-        y = 1
-        ai_will_do = {
-            factor = 5
-        }
-        search_filters = {FOCUS_FILTER_FRA_PARLIAMENT}
-        completion_reward = {
-            country_event = fra_revolution.18
-        }
-        prerequisite = {
-            focus = FRA_Create_A_Political_Union
-        }
+}
+focus = {
+    id = FRA_Allow_For_Political_Autonomy
+    icon = placeholder
+    relative_position_id = FRA_Create_A_Political_Union
+    mutually_exclusive = { focus = FRA_Even_More_Political_Unity }
+    x = 1
+    y = 1
+    cost = 3
+    ai_will_do = {
+        factor = 5
     }
-    focus = {
-        id = FRA_Arm_The_People
-        icon = placeholder
-        relative_position_id = FRA_Bribe_Business_Owners
-        x = 1
-        y = 1
-        cost = 5
-        ai_will_do = {
-            factor = 5
-        }
-        search_filters = {FOCUS_FILTER_POLITICAL}
-        completion_reward = {
-            country_event = revolution.12
-        }
-        prerequisite = {
-            focus = FRA_Bribe_Business_Owners
-        }
+    search_filters = {FOCUS_FILTER_FRA_PARLIAMENT}
+    completion_reward = {
+        country_event = fra_revolution.19
     }
+    prerequisite = {
+        focus = FRA_Create_A_Political_Union
+    }
+}
+focus = {
+    id = FRA_Even_More_Political_Unity
+    icon = placeholder
+    relative_position_id = FRA_Create_A_Political_Union
+    mutually_exclusive = { focus = FRA_Allow_For_Political_Autonomy }
+    x = -1
+    y = 1
+    ai_will_do = {
+        factor = 5
+    }
+    search_filters = {FOCUS_FILTER_FRA_PARLIAMENT}
+    completion_reward = {
+        country_event = fra_revolution.18
+    }
+    prerequisite = {
+        focus = FRA_Create_A_Political_Union
+    }
+}
+focus = {
+    id = FRA_Arm_The_People
+    icon = placeholder
+    relative_position_id = FRA_Bribe_Business_Owners
+    x = 1
+    y = 1
+    cost = 5
+    ai_will_do = {
+        factor = 5
+    }
+    search_filters = {FOCUS_FILTER_POLITICAL}
+    completion_reward = {
+        country_event = revolution.12
+    }
+    prerequisite = {
+        focus = FRA_Bribe_Business_Owners
+    }
+}
 }
