@@ -36,6 +36,10 @@
  EGY_ROME:0 "Province of Aegyptus"
  EGY_ROME_DEF:0 "the Province of Aegyptus"
  EGY_ROME_ADJ:0 "Egyptian"
+ 
+ HUN_horde:0 "Magyar Horde"
+ HUN_horde_DEF:0 "the Magyar Horde"
+ HUN_horde_ADJ:0 "Magyar"
 
  CAN_autonomy_dominion:0 "Dominion of Laurentia"
  CAN_autonomy_colony:0 "Canadian Confederation"

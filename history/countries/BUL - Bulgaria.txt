@@ -7,7 +7,7 @@ set_convoys = 5 #VANILLA & DLC
 		#SET UP IDEAS
 		add_ideas = { #VANILLA
 			BUL_master_of_the_balkans
-			BUL_prussia_of_the_balkans_01
+			BUL_saxony_of_the_balkans_01
 			limited_conscription
 		}
 

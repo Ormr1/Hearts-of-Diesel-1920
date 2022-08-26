@@ -203,7 +203,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 9
 		} #  "9a Divisione Autotrasportabile 'Pasubio'" 
-		location = 11735 
+		location = 6793 
 		division_template = "Divisione di Fanteria"	
 		start_experience_factor = 0.2 
 		start_equipment_factor = 0.7 
@@ -215,7 +215,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 8
 		} #  "8a Divisione Motorizzata 'Po'" 
-		location = 628 
+		location = 11734 
 		division_template = "Divisione di Fanteria"	
 		start_experience_factor = 0.2 
 		start_equipment_factor = 0.7 
@@ -225,7 +225,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 3
 		} #  "3a Divisione Alpina 'Julia'" 
-		location = 628 
+		location = 6790 
 		division_template = "Divisione Alpina" 
 		start_experience_factor = 0.3 
 	} 
@@ -236,7 +236,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 2
 		} #  "2° Reggimento 'Piemonte Cavalleria'" 
-		location = 6626 
+		location = 6606 
 		division_template = "Reggimento di Cavalleria" 
 		start_experience_factor = 0.2 
 		start_equipment_factor = 0.7 
@@ -249,7 +249,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 1
 		} #  "1a Divisione Celere 'Eugenio di Savoia'" 
-		location = 11584 
+		location = 6635 
 		division_template = "Divisione Celere" 
 		start_experience_factor = 0.3 
 	} 
@@ -258,7 +258,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 2
 		} #  "2a Divisione Celere 'Emanuele Filiberto'" 
-		location = 11584 
+		location = 158 
 		division_template = "Divisione Celere" 
 		start_experience_factor = 0.3 
 	} 
@@ -267,7 +267,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 3
 		} #  "3a Divisione Celere 'Principe Amedeo'" 
-		location = 11584 
+		location = 6790 
 		division_template = "Divisione Celere" 
 		start_experience_factor = 0.3 
 	} 

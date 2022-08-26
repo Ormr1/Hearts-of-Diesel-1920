@@ -1,0 +1,15 @@
+- Suez Canal
+- Bosphorus Strait
+- Gibraltar
+- Indian Treaty Ports (2)
+- Chinese Treaty Ports (11)
+- Singapore
+- New York
+
+Bonuses per Center of Trade:
++2% Construction Speed
++5% Factory/Dockyard Output
++2% Research Speed
++5% Production Efficiency Growth
++5% Production Efficiency Cap
+-2% Consumer Goods

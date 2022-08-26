@@ -813,7 +813,7 @@ ideas = {
 			}
 		}
 
-		BUL_prussia_of_the_balkans_01 = {
+		BUL_saxony_of_the_balkans_01 = {
 			picture = bul_prussia_of_the_balkans
 
 			allowed = {
@@ -842,8 +842,8 @@ ideas = {
 			}
 		}
 
-		BUL_prussia_of_the_balkans_02 = {
-			name = BUL_prussia_of_the_balkans_01
+		BUL_saxony_of_the_balkans_02 = {
+			name = BUL_saxony_of_the_balkans_01
 
 			picture = bul_prussia_of_the_balkans
 
@@ -874,8 +874,8 @@ ideas = {
 			}
 		}
 
-		BUL_prussia_of_the_balkans_03 = {
-			name = BUL_prussia_of_the_balkans_01
+		BUL_saxony_of_the_balkans_03 = {
+			name = BUL_saxony_of_the_balkans_01
 
 			picture = bul_prussia_of_the_balkans
 
@@ -906,8 +906,8 @@ ideas = {
 			}
 		}
 
-		BUL_prussia_of_the_balkans_04 = {
-			name = BUL_prussia_of_the_balkans_01
+		BUL_saxony_of_the_balkans_04 = {
+			name = BUL_saxony_of_the_balkans_01
 
 			picture = bul_prussia_of_the_balkans
 
@@ -938,8 +938,8 @@ ideas = {
 			}
 		}
 
-		BUL_prussia_of_the_balkans_weakened_01 = {
-			name = BUL_prussia_of_the_balkans_01
+		BUL_saxony_of_the_balkans_weakened_01 = {
+			name = BUL_saxony_of_the_balkans_01
 
 			picture = bul_prussia_of_the_balkans
 
@@ -968,8 +968,8 @@ ideas = {
 			}
 		}
 
-		BUL_prussia_of_the_balkans_weakened_02 = {
-			name = BUL_prussia_of_the_balkans_01
+		BUL_saxony_of_the_balkans_weakened_02 = {
+			name = BUL_saxony_of_the_balkans_01
 
 			picture = bul_prussia_of_the_balkans
 
@@ -994,8 +994,8 @@ ideas = {
 			}
 		}
 
-		BUL_prussia_of_the_balkans_weakened_03 = {
-			name = BUL_prussia_of_the_balkans_01
+		BUL_saxony_of_the_balkans_weakened_03 = {
+			name = BUL_saxony_of_the_balkans_01
 
 			picture = bul_prussia_of_the_balkans
 
@@ -2529,7 +2529,7 @@ ideas = {
 			}
 
 			visible = {
-				NOT = { has_completed_focus = BUL_prussia_of_the_balkans }
+				NOT = { has_completed_focus = BUL_saxony_of_the_balkans }
 			}
 
 			available = {
@@ -2562,7 +2562,7 @@ ideas = {
 			}
 
 			visible = {
-				has_completed_focus = BUL_prussia_of_the_balkans
+				has_completed_focus = BUL_saxony_of_the_balkans
 			}
 
 			available = {
@@ -2592,7 +2592,7 @@ ideas = {
 			}
 
 			visible = {
-				NOT = { has_completed_focus = BUL_prussia_of_the_balkans }
+				NOT = { has_completed_focus = BUL_saxony_of_the_balkans }
 			}
 
 			available = {
@@ -2621,7 +2621,7 @@ ideas = {
 			}
 
 			visible = {
-				has_completed_focus = BUL_prussia_of_the_balkans
+				has_completed_focus = BUL_saxony_of_the_balkans
 			}
 
 			available = {
@@ -2892,7 +2892,7 @@ ideas = {
 			}
 
 			visible = {
-				NOT = { has_completed_focus = BUL_prussia_of_the_balkans }
+				NOT = { has_completed_focus = BUL_saxony_of_the_balkans }
 			}
 
 			available = {
@@ -2921,7 +2921,7 @@ ideas = {
 			}
 
 			visible = {
-				has_completed_focus = BUL_prussia_of_the_balkans
+				has_completed_focus = BUL_saxony_of_the_balkans
 			}
 
 			available = {
@@ -2950,7 +2950,7 @@ ideas = {
 			}
 
 			visible = {
-				NOT = { has_completed_focus = BUL_prussia_of_the_balkans }
+				NOT = { has_completed_focus = BUL_saxony_of_the_balkans }
 			}
 
 			available = {
@@ -2979,7 +2979,7 @@ ideas = {
 			}
 
 			visible = {
-				has_completed_focus = BUL_prussia_of_the_balkans
+				has_completed_focus = BUL_saxony_of_the_balkans
 			}
 
 			available = {

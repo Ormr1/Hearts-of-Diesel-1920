@@ -70,6 +70,8 @@ if = {
 85 = {
 	add_dynamic_modifier = { modifier = international_city }
 }
+give_military_access = SOV
+
 set_convoys = 10
 
 set_politics = {

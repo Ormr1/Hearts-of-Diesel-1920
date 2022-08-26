@@ -85,7 +85,7 @@ units = {
 		location = 11586
 		division_template = "Pesadijska Divizija"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.8
 
 	}
 	division = {
@@ -108,7 +108,7 @@ units = {
 		location = 3924
 		division_template = "Pesadijska Divizija"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.8
 	}
 
 	### 6. Armija ###
@@ -121,7 +121,7 @@ units = {
 		location = 3614
 		division_template = "Pesadijska Divizija"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.8
 
 	}
 
@@ -136,33 +136,31 @@ units = {
 		location = 11581
 		division_template = "Pesadijska Divizija"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.8
 
 	}
 
 	### 7. Armija ###
 	division = {
-		#name = "Triglavski Odred"
 		division_name = {    # New syntax for compatibility with name lists
 			is_name_ordered = yes
 			name_order = 1
 		}
-		location = 3631
+		location = 3984
 		division_template = "Gorska Pesadija"
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.7
+		start_equipment_factor = 1
 
 	}
 	division = {
-		#name = "Risnajaski Odred" 							# Rinajaski if we get font support
 		division_name = {    # New syntax for compatibility with name lists
 			is_name_ordered = yes
 			name_order = 2
 		}
-		location = 9596
+		location = 11787
 		division_template = "Gorska Pesadija"
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.7
+		start_equipment_factor = 1
 
 	}
 	division = {
@@ -171,10 +169,10 @@ units = {
 			is_name_ordered = yes
 			name_order = 1
 		}
-		location = 9627
+		location = 11564
 		division_template = "Konjička Divizija"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.8
 
 	}
 
@@ -189,7 +187,7 @@ units = {
 		location = 6643
 		division_template = "Pesadijska Divizija"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.8
 
 	}
 	division = {
@@ -201,7 +199,7 @@ units = {
 		location = 614
 		division_template = "Konjička Divizija"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.8
 
 	}
 
@@ -215,7 +213,7 @@ units = {
 		location = 3627
 		division_template = "Pesadijska Divizija"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.8
 
 	}
 	division = {
@@ -227,7 +225,7 @@ units = {
 		location = 3623
 		division_template = "Pesadijska Divizija"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.8
 
 	}
 
@@ -242,7 +240,7 @@ units = {
 		location = 6913
 		division_template = "Pesadijska Divizija"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.8
 
 	}
 	division = {
@@ -254,7 +252,7 @@ units = {
 		location = 9809
 		division_template = "Pesadijska Divizija"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.8
 
 	}
 }  # Neboja if we get font support

@@ -26,6 +26,7 @@ set_fuel_ratio = 0.8
 	set_truce = { target = NOR days = 1080 }
 	set_truce = { target = FRA days = 1080 }
 }
+give_guarantee = CRI
 977 = {
 	start_resistance = yes
 	set_compliance = 10
