@@ -678,7 +678,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FEN_secrets_of_the_automachines
-		icon = GFX_focus_FEN_skulking_threat
+		icon = GFX_focus_FEN_study_designs
 		relative_position_id = FEN_the_shining_prize
 		x = 2
 		y = 1

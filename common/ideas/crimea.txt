@@ -1,0 +1,45 @@
+ideas = {
+	country = { 
+		CRI_agrarian_society = {
+				
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = generic_agrarian_society
+				
+			removal_cost = -1
+				
+			modifier = {
+				industrial_capacity_factory = -0.30
+				conscription_factor = -0.45
+			}
+		}
+		CRI_KSMVA_domination = {
+				
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = KSMVA_domination
+				
+			removal_cost = -1
+				
+			modifier = {
+				consumer_goods_factor = -0.10
+			}
+			targeted_modifier={
+				tag = GER
+				trade_cost_for_target_factor = -0.5
+			}
+		}
+	}
+}

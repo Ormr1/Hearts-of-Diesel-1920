@@ -24,6 +24,10 @@ set_technology = {
 	mass_assault = 1
 	fleet_in_being = 1
 }
+add_ideas = {
+	CRI_agrarian_society
+	CRI_KSMVA_domination
+}
 
 if = {
 	limit = {

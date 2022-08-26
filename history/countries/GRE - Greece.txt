@@ -84,6 +84,7 @@ set_popularities = {
 
 add_ideas = {
 	GRE_phoenix_call
+	limited_conscription
 }
 
 if = {

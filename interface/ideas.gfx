@@ -6397,5 +6397,9 @@ spriteTypes = {
 		name = "GFX_idea_fra_crn_company"
 		texturefile = "gfx/interface/ideas/CRN/fra_crn_company.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_KSMVA_domination"
+		texturefile = "gfx/interface/ideas/GER/KSMVA_domination.dds"
+	}
 	
 }

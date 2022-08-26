@@ -529,6 +529,10 @@ on_actions = {
 					give_resource_rights = { receiver = SPR state = 480 }
 				}
 			}
+			#crimean oil concessions
+				CRI={
+					give_resource_rights = { receiver = GER state = 229 }
+				}
 			# Game Rules - Decolonization
 			if = {
 				limit = {
