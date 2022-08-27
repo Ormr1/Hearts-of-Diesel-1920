@@ -2217,6 +2217,47 @@ news_event = {
 	}
 }
 
+### ECONOMIC 
+country_event = {
+	id = fra_economic.1
+	title = fra_economic.1.t
+	desc = fr_economic.1.desc 
+
+	option = {
+		name = fra_economic.1.a
+		add_popularity = {
+			ideology = neutral
+			popularity = 0.05
+		}
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.05
+		}
+		add_popularity = {
+			ideology = communism
+			popularity = 0.05
+		}
+		complete_national_focus = FRA_Placeholders_Plan_1
+	}
+
+	option = {
+		name = fra_economic.1.b 
+		add_popularity = {
+			ideology = monarchy
+			popularity = 0.05
+		}
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.05
+		}
+		complete_national_focus = FRA_Placeholders_Plan_2
+	}
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+}
+
+
 ### MONARCHIST
 country_event = { # Upholding the Monarchy
 	id = fra_monarchy.1
@@ -2234,8 +2275,9 @@ country_event = { # Upholding the Monarchy
 			ideology = monarchy
 			popularity = 0.5
 		}
+		complete_national_focus = FRA_Have_a_Fair_Monarch
 	}
-	complete_national_focus = FRA_Have_a_Fair_Monarch
+	
 
 	option = {
 		name = fra_monarchy.1.b

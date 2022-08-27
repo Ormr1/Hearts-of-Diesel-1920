@@ -21,14 +21,6 @@ ideas = {
 				political_power_cost = 0.10
 			}
 		}
-		FRA_Disrupted_Economy = {
-			picture = placeholder
-
-			allowed = {
-				original_tag = FRA
-				always = no
-			}
-		}
 		FRA_full_employment = {
 			picture = generic_production_bonus
 			allowed = {
@@ -100,6 +92,9 @@ ideas = {
 			modifier = {
 				industrial_capacity_factory = -0.2
 				industrial_capacity_dockyard = -0.2
+				stability_factor = -0.5
+				monarchy_drift = -0.1
+				political_power_cost = 1
 			}
 		}
 		FRA_political_violence = {
@@ -120,6 +115,27 @@ ideas = {
 			
 			modifier = {
 				
+			}
+		}
+		FRA_Spreading_News = {
+			picture = placeholder
+			allowed = {
+				original_tag = FRA
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				communism_drift = 0.1
+				democratic_drift = 0.1
+				neutrality_drift = 0.1
+				monarchy_drift = -0.1
+				fascism_drift = -0.1
 			}
 		}
 		FRA_devalue_the_franc = {
