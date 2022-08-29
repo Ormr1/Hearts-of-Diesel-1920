@@ -66,6 +66,7 @@ if = {
 		mtg_transport = 1
 	}
 }
+starting_train_buffer = 4
 
 set_convoys = 10
 

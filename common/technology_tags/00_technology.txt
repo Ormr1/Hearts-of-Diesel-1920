@@ -133,6 +133,7 @@ technology_folders = {
 		}
 		ledger = navy
 	}
+	armaments_folder
 	industry_folder = {
 		ledger = civilian
 	}
