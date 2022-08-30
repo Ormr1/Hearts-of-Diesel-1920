@@ -227,6 +227,10 @@ if = {
 	}
 }
 
+add_ideas = {
+	SPR_colonial_obession
+}
+
 set_research_slots = 3
 
 set_technology = {

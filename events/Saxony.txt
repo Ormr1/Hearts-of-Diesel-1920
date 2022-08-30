@@ -1,0 +1,101 @@
+﻿###########################
+# Saxonian Events
+###########################
+
+add_namespace = saxonian
+
+# Discussions at Warsaw
+country_event = {
+	id = saxonian.1
+	title = saxonian.1.t
+	desc = saxonian.1.d
+	picture = GFX_report_event_finnish_letter
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = saxonian.1.a
+		every_country={
+			limit={
+				OR={
+					original_tag = FRA
+					original_tag = ENG
+					original_tag = SOV
+					original_tag = CRI
+					original_tag = POL
+					original_tag = GER
+				}
+			}
+			country_event={id = saxonian.2}
+		}
+	}
+}
+
+## Treaty of Warsaw
+#signatories get effects based on who they are
+country_event = {
+	id = saxonian.2
+	title = saxonian.2.t
+	desc = saxonian.2.d
+	picture = GFX_report_event_finnish_letter
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = saxonian.2.ger
+		trigger={
+			tag = GER
+		}
+		news_event = saxonian.3
+	}
+	option = {
+		name = saxonian.2.pol
+		trigger={
+			tag  = POL
+		}
+		97 = {set_demilitarized_zone = no}
+		886 = {set_demilitarized_zone = no}
+		884 = {set_demilitarized_zone = no}
+		814 = {set_demilitarized_zone = no}
+		784 = {set_demilitarized_zone = no}
+	}
+	option = {
+		name = saxonian.2.eng
+		trigger={
+			tag  = ENG
+		}
+	}
+	option = {
+		name = saxonian.2.sov
+		trigger={
+			tag  = SOV
+		}
+	}
+	option = {
+		name = saxonian.2.cri
+		trigger={
+			tag  = CRI
+		}
+	}
+	option = {
+		name = saxonian.2.fra
+		trigger={
+			tag  = FRA
+		}
+	}
+}
+#world news event
+news_event = { 
+	id = saxonian.3
+	title = saxonian.3.t
+	desc = saxonian.3.d
+	picture = GFX_report_event_finnish_letter
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = saxonian.3.a
+	}
+}

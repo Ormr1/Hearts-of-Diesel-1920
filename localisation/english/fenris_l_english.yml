@@ -117,6 +117,7 @@
  FEN_join_iron_harvest:0 "Join the Iron Harvest"
  FEN_striking_tesla:0 "Striking Tesla"
  FEN_rasputins_play:0 "Rasputins Play"
+ FEN_usonian_desires:0 "Usonian Desires"
  FEN_USA_skim_buisness_profits:0 "Skim profits from our Usonian Companies"
  FEN_start_SOV_revolt:0 "Start a revolt against [SOV.GetName]"
  FEN_USA_buisness_plot:0 "Begin the Business Plot aganist [USA.GetName]"

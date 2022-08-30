@@ -7,6 +7,10 @@ set_stability = 0.75
 set_war_support = 0.50
 add_command_power = 20
 
+add_ideas={
+	MAR_memories_of_confederation
+}
+
 # Starting tech
 set_technology = {
 	pre_gw_infantry_weapons = 1

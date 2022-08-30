@@ -142,7 +142,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = GER_begin_peace_talks
+		id = GER_finish_peace_talks
 		icon = GFX_goal_tripartite_pact
 		x = 12
 		y = 0
@@ -152,15 +152,15 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			country_event = {id=saxonian.1}
 		}
 	}
 
 	focus = {
 		id = GER_scars_of_the_great_war
 		icon = GFX_goal_generic_allies_build_infantry
-		relative_position_id = GER_begin_peace_talks
-		prerequisite = { focus = GER_begin_peace_talks}
+		relative_position_id = GER_finish_peace_talks
+		prerequisite = { focus = GER_finish_peace_talks}
 		x = -2
 		y = 1
 		cost = 10
@@ -197,8 +197,8 @@ focus_tree = {
 	focus = {
 		id = GER_occupation_of_east_frankia
 		icon = GFX_goal_generic_allies_build_infantry
-		relative_position_id = GER_begin_peace_talks
-		prerequisite = { focus = GER_begin_peace_talks}
+		relative_position_id = GER_finish_peace_talks
+		prerequisite = { focus = GER_finish_peace_talks}
 		x = 3
 		y = 1
 		cost = 10
@@ -213,8 +213,8 @@ focus_tree = {
 	focus = {
 		id = GER_occuption_of_venetia_et_histria
 		icon = GFX_goal_generic_allies_build_infantry
-		relative_position_id = GER_begin_peace_talks
-		prerequisite = { focus = GER_begin_peace_talks}
+		relative_position_id = GER_finish_peace_talks
+		prerequisite = { focus = GER_finish_peace_talks}
 		x = 6
 		y = 1
 		cost = 10
@@ -367,6 +367,20 @@ focus_tree = {
 			859={add_core_of = ROOT}
 			856={add_core_of = ROOT}
 			855={add_core_of = ROOT}
+		}
+	}
+	focus = {
+		id = GER_post_war_reconstruction
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 20
+		y = 0
+		cost = 10
+		search_filters = {  FOCUS_FILTER_COLONIAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
 		}
 	}
 	

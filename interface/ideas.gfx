@@ -6401,5 +6401,21 @@ spriteTypes = {
 		name = "GFX_idea_KSMVA_domination"
 		texturefile = "gfx/interface/ideas/GER/KSMVA_domination.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_machine_politics"
+		texturefile = "gfx/interface/ideas/LAP/idea_machine_politics.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_COL_el_libertador"
+		texturefile = "gfx/interface/ideas/COL/idea_COL_el_libertador.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_USC_banana_republic"
+		texturefile = "gfx/interface/ideas/USC/idea_USC_banana_republic.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_USC_walkers_ghost"
+		texturefile = "gfx/interface/ideas/USC/idea_USC_walkers_ghost.dds"
+	}
 	
 }

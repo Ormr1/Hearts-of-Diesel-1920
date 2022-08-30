@@ -1,0 +1,46 @@
+ideas = {
+
+	country = {
+		ELS_walkers_ghost_idea = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = USC_walkers_ghost
+			
+			modifier = {
+				war_support_factor = 0.1
+			}
+			targeted_modifier={
+				
+			}
+		}
+		ELS_banana_states_idea = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = USC_banana_republic
+			
+			modifier = {
+				consumer_goods_factor = -0.1
+				stability_factor = -0.1
+				min_export = 0.7
+			}
+		}
+	}
+}

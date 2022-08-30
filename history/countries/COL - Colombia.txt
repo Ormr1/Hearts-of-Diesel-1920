@@ -19,6 +19,9 @@ set_technology = {
 	early_fighter = 1
 	cv_early_fighter = 1
 }
+add_ideas={
+	COL_leagacy_of_bolivar_idea
+}
 if = {
 	limit = { not = { has_dlc = "Man the Guns" } }
 	set_technology = {

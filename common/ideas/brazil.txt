@@ -1,2 +1,26 @@
 ideas = {
+
+	country = {
+		BRA_untrustworthy_military_idea = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = chi_war_of_resistance
+			
+			modifier = {
+				army_org_factor = -0.15
+				command_power_gain = -0.5
+				custom_modifier_tooltip = SPR_military_disloyalty_tt
+				military_leader_cost_factor = 1.00
+			}
+		}
+	}
 }
