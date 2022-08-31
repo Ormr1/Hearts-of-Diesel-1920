@@ -3,7 +3,7 @@ characters={
 		name = LIB_character_charles_db_king
 		portraits = {
 			civilian = {
-				large = GFX_portrait_LIB_character_charles_db_king
+				large = "GFX_portrait_LIB_character_charles_db_king"
 			}
 		}
 		country_leader={

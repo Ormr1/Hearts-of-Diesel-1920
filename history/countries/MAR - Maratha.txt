@@ -9,6 +9,7 @@ add_command_power = 20
 
 add_ideas={
 	MAR_memories_of_confederation
+	MAR_peshwa_system
 }
 
 # Starting tech

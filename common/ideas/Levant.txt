@@ -1,0 +1,59 @@
+ideas = {
+
+	country = {
+		SYR_lebanon_unrest_balanced_idea = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = SYR_lebanon_leaning_balanced
+			
+			modifier = {
+				stability_factor = -0.05
+			}
+		}
+		SYR_lebanon_unrest_c_idea = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = SYR_lebanon_leaning_catholic
+			
+			modifier = {
+				stability_factor = -0.1
+			}
+		}
+		SYR_lebanon_unrest_m_idea = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = SYR_lebanon_leaning_muslim
+			
+			modifier = {
+				stability_factor = -0.1
+			}
+		}
+	}
+}

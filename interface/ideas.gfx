@@ -6417,5 +6417,25 @@ spriteTypes = {
 		name = "GFX_idea_USC_walkers_ghost"
 		texturefile = "gfx/interface/ideas/USC/idea_USC_walkers_ghost.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_SYR_lebanon_leaning_balanced"
+		texturefile = "gfx/interface/ideas/SYR/syr_lebanon_unrest_balanced.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_SYR_lebanon_leaning_catholic"
+		texturefile = "gfx/interface/ideas/SYR/syr_lebanon_leaning_catholic.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_SYR_lebanon_leaning_muslim"
+		texturefile = "gfx/interface/ideas/SYR/syr_lebanon_leaning_muslim.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_MLI_tettering_on_collapse"
+		texturefile = "gfx/interface/ideas/MLI/MLI_tettering_on_collapse.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_MLI_legacy_of_mansa"
+		texturefile = "gfx/interface/ideas/MLI/MLI_legacy_of_mansa.dds"
+	}
 	
 }

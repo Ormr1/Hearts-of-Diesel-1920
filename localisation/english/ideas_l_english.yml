@@ -2712,7 +2712,14 @@
  BRA_untrustworthy_military_idea_desc:0 "Todo"
  
  COL_leagacy_of_bolivar_idea:0 "Legacy of Bolívar"
- COL_leagacy_of_bolivar_idea_desc:0 "Simón Bolívar, El Libertador, who won the freedom of most of the americas from Hispania was the founder of our state. He was able to overcome the chalanges on both the field and in the government leaving us our institutions that are still in place today. Changing them in any way however will be next to impossible."
+ COL_leagacy_of_bolivar_idea_desc:0 "Simón Bolívar, El Libertador, who won the freedom of most of the americas from Hispania was the founder of our state. He was able to overcome the challanges on both the field and in the government leaving us our institutions that are still in place today. Changing them in any way however will be next to impossible."
  
  MAR_memories_of_confederation:0 "Memories of the Confederation"
  MAR_memories_of_confederation_desc:0 "Todo"
+ 
+ SYR_lebanon_unrest_balanced_idea:0 "Lebanese Unrest - Balanced"
+ SYR_lebanon_unrest_balanced_idea_desc:0 "The province of Lebanon has always been contentious even before the Saxonian takeover. The two major populations, Sunni Muslims and Chalcedonians, are nearly the same size and are in constant religious strife with each other. We must find a solution to this before Lebanon goes up in flames"
+ SYR_lebanon_unrest_c_idea:0 "Lebanese Unrest - Chalcedonians Winning"
+ SYR_lebanon_unrest_c_idea_desc:0 "The province of Lebanon has always been contentious even before the Saxonian takeover. The two major populations, Sunni Muslims and Chalcedonians, are nearly the same size and are in constant religious strife with each other. We must find a solution to this before Lebanon goes up in flames"
+ SYR_lebanon_unrest_m_idea:0 "Lebanese Unrest - Muslims Winning"
+ SYR_lebanon_unrest_m_idea_desc:0 "The province of Lebanon has always been contentious even before the Saxonian takeover. The two major populations, Sunni Muslims and Chalcedonians, are nearly the same size and are in constant religious strife with each other. We must find a solution to this before Lebanon goes up in flames"

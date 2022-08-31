@@ -1,2 +1,40 @@
 ideas = {
+	country = {
+		MLI_tettering_on_collapse_idea = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = MLI_tettering_on_collapse
+			
+			modifier = {
+				stability_factor = -0.05
+			}
+		}
+		MLI_leagacy_of_mansa_idea = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = MLI_legacy_of_mansa
+			
+			modifier = {
+				stability_factor = -0.05
+			}
+		}
+	}
 }

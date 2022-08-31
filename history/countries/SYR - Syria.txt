@@ -8,6 +8,10 @@ set_technology = {
 
 set_convoys = 5
 
+add_ideas ={
+	SYR_lebanon_unrest_balanced_idea
+}
+
 1939.1.1 = {
 
 	add_political_power = 1198

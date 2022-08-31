@@ -28,6 +28,11 @@ recruit_character = MLI_pot
 recruit_character = MLI_nccr
 recruit_character = MLI_aco2
 
+add_ideas = {
+	MLI_tettering_on_collapse_idea
+	MLI_leagacy_of_mansa_idea
+}
+
 1939.1.1 = {
 	
 	#generic focuses
