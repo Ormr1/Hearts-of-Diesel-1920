@@ -59,6 +59,7 @@ focus = {
     prerequisite = {
         focus = FRA_State_Of_The_Economy
     }
+    complete_national_focus = FRA_State_Of_The_Economy
 }
 focus = {
     id = FRA_Placeholders_Plan_2
@@ -79,6 +80,7 @@ focus = {
     prerequisite = {
         focus = FRA_State_Of_The_Economy
     }
+    complete_national_focus = FRA_State_Of_The_Economy
 }
 focus = {
     id = FRA_Tax_Breaks_For_The_Rich
@@ -243,8 +245,8 @@ focus = {
 }
 focus = {
     id = FRA_Underground_Factories
-    relative_position_id = FRA_International_Arms_Market
     icon = placeholder
+    relative_position_id = FRA_International_Arms_Market
     x = 0
     y = 1
     cost = 5
@@ -525,8 +527,8 @@ focus = {
             popularity = 0.05
         }
     }
-        prerequisite = {
-    focus = FRA_Fight_For_Your_Freedom
+    prerequisite = {
+        focus = FRA_Fight_For_Your_Freedom
     }
 }
 focus = {
@@ -537,6 +539,7 @@ focus = {
     x = 0
     y = 1
     cost = 5
+    num_of_factories > 75
     ai_will_do = {
         factor = 10
     }
@@ -556,7 +559,27 @@ focus = {
         focus = FRA_Unite_The_Left
     }
 }
-    
+focus = {
+    id = FRA_Birth_Of_A_New_Nation
+    icon = placeholder
+    relative_position_id = FRA_Light_The_Torch
+    x = 0
+    y = 2
+    cost = 8
+    ai_will_do = {
+        factor = 10
+    }
+    search_filters = {FOCUS_FILTER_POLITICAL}
+    completion_reward = {
+        add_ideas = {
+            idea = FRA_Recovering_From_The_Civil_War
+        }
+    }
+    prerequisite = {
+        focus = FRA_Light_The_Torch
+    }
+    has_civil_war = no
+} 
 focus = {
     id = FRA_Bribe_Business_Owners
     icon = placeholder
@@ -574,8 +597,8 @@ focus = {
         prerequisite = {
         focus = FRA_Fight_For_Your_Freedom
     }
-
 }
+
 focus = {
     id = FRA_Create_A_Political_Union
     icon = placeholder
@@ -612,6 +635,11 @@ focus = {
     prerequisite = {
         focus = FRA_Create_A_Political_Union
     }
+    focus_progress = {
+        focus = FRA_Light_The_Torch
+        progress > 0.99
+    }
+    has_civil_war = no
 }
 focus = {
     id = FRA_Even_More_Political_Unity
@@ -630,6 +658,11 @@ focus = {
     prerequisite = {
         focus = FRA_Create_A_Political_Union
     }
+    focus_progress = {
+        focus = FRA_Light_The_Torch
+        progress > 0.99
+    }
+    has_civil_war = no
 }
 focus = {
     id = FRA_Arm_The_People

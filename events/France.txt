@@ -2355,3 +2355,33 @@ country_event = { # FRA_Arm_The_People
 		name = fra_revolution.4.a
 	}
 }
+country_event = { # fra_civilwarignite.1
+    id = fra_civilwarignite.1
+    title = fra_civilwarignite.1.t
+    desc - fra_civilwarignite.1.desc
+    
+    picture = placeholder
+    
+    is_triggered_only = yes
+	fire_only_once = yes
+    option = {
+        name = fra_civilwarignite
+        FRA = { 
+            start_civil_war = {
+                ruling_party = democratic
+                ideology = ROOT
+                size = 0.5
+                only_own_territory = yes
+                capital = 9737
+                states = { 
+                    27 17 28 24 16 15 30 19 23 18 33
+                }
+                keep_unit_leaders = {
+                    750 751 752
+                }
+                keep_political_leader = yes
+                keep_political_party_members = yes
+            }
+        }
+    }
+}
