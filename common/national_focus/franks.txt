@@ -59,7 +59,7 @@ focus = {
     prerequisite = {
         focus = FRA_State_Of_The_Economy
     }
-    complete_national_focus = FRA_State_Of_The_Economy
+    #complete_national_focus = FRA_State_Of_The_Economy
 }
 focus = {
     id = FRA_Placeholders_Plan_2
@@ -80,7 +80,7 @@ focus = {
     prerequisite = {
         focus = FRA_State_Of_The_Economy
     }
-    complete_national_focus = FRA_State_Of_The_Economy
+    #complete_national_focus = FRA_State_Of_The_Economy
 }
 focus = {
     id = FRA_Tax_Breaks_For_The_Rich
@@ -120,11 +120,11 @@ focus = {
 focus = {
     id = FRA_Give_The_Monarch_Power
     icon = placeholder
-    relative_position_id = FRA_Create_A_Political_Union
+    relative_position_id = FRA_Letat_Cest_Moi
     mutually_exclusive = { focus = FRA_Have_a_Fair_Monarch }
     available = { always = no }
-    x = 22
-    y = -3
+    x =-3
+    y = 1
     cost = 7
     ai_will_do = {
         factor = 5
@@ -133,7 +133,7 @@ focus = {
     prerequisite = {
         focus = FRA_Letat_Cest_Moi
     }
-    complete_national_focus = FRA_Letat_Cest_Moi
+    #complete_national_focus = FRA_Letat_Cest_Moi
 }
 focus = {
     id = FRA_Have_a_Fair_Monarch
@@ -151,7 +151,7 @@ focus = {
     prerequisite = {
         focus = FRA_Letat_Cest_Moi
     }
-    complete_national_focus = FRA_Letat_Cest_Moi
+    #complete_national_focus = FRA_Letat_Cest_Moi
 }
 focus = { 
     id = FRA_Slowly_Reap_From_The_Left
@@ -198,7 +198,7 @@ focus = {
     ai_will_do = {
         factor = 5
     }
-        search_filters = {FOCUS_FILTER_POLITICAL}
+    search_filters = {FOCUS_FILTER_POLITICAL}
     completion_reward = {
         country_event = fra_monarchy.5
     }
@@ -358,7 +358,7 @@ focus = {
     search_filters = {FOCUS_FILTER_POLITICAL}
     completion_reward = {
         add_popularity = {
-            ideology = neutral
+            ideology = communism
             popularity = 0.1
         }
     }
@@ -539,7 +539,9 @@ focus = {
     x = 0
     y = 1
     cost = 5
-    num_of_factories > 75
+    available={
+        num_of_factories > 75
+    }
     ai_will_do = {
         factor = 10
     }
@@ -547,7 +549,7 @@ focus = {
     completion_reward = {
         country_event = {id = fra_civilwarignite.1}
         #add_namespace = fra_civilwarignite.1
-        remove_ideas
+        remove_ideas ={}
     }
     prerequisite = {
         focus = FRA_International_Arms_Market
@@ -569,16 +571,18 @@ focus = {
     ai_will_do = {
         factor = 10
     }
+    available={
+        has_civil_war = no
+    }
     search_filters = {FOCUS_FILTER_POLITICAL}
     completion_reward = {
         add_ideas = {
-            idea = FRA_Recovering_From_The_Civil_War
+            FRA_Recovering_From_The_Civil_War
         }
     }
     prerequisite = {
         focus = FRA_Light_The_Torch
     }
-    has_civil_war = no
 } 
 focus = {
     id = FRA_Bribe_Business_Owners
@@ -594,7 +598,7 @@ focus = {
     completion_reward = {
         country_event = fra_revolution.9
     }
-        prerequisite = {
+    prerequisite = {
         focus = FRA_Fight_For_Your_Freedom
     }
 }
@@ -639,7 +643,9 @@ focus = {
         focus = FRA_Light_The_Torch
         progress > 0.99
     }
-    has_civil_war = no
+    available={
+        has_civil_war = no
+    }
 }
 focus = {
     id = FRA_Even_More_Political_Unity
@@ -662,7 +668,9 @@ focus = {
         focus = FRA_Light_The_Torch
         progress > 0.99
     }
-    has_civil_war = no
+    available={
+        has_civil_war = no
+    }
 }
 focus = {
     id = FRA_Arm_The_People

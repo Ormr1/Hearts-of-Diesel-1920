@@ -2326,6 +2326,7 @@ country_event = { # Republicans In Bordeaux
 		add_popularity = {
 			ideology = neutral
 			popularity = 0.15
+		}
 	}
 }
 
@@ -2342,6 +2343,7 @@ country_event = { # FRA_Prepare_For_The_Fight
 		name = fra_revolution.2.a
 	}
 }
+
 country_event = { # FRA_Arm_The_People
 	id = fra_revolution.4
 	title = fra_revolution.4.t
@@ -2355,6 +2357,7 @@ country_event = { # FRA_Arm_The_People
 		name = fra_revolution.4.a
 	}
 }
+
 country_event = { # fra_civilwarignite.1
     id = fra_civilwarignite.1
     title = fra_civilwarignite.1.t

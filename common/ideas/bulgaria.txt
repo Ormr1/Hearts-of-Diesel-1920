@@ -21,7 +21,7 @@ ideas = {
 
 	country = { #DLC
 		BUL_master_of_the_balkans = {
-			picture = placeholder
+			picture = bul_the_fate_of_the_balkans
 
 			allowed = {
 				always = no
