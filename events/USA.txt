@@ -3252,6 +3252,7 @@ country_event = { # 1920 Election
 
 	immediate = {
 		hidden_effect = {
+			complete_national_focus = USA_1920_Elections
 			# 1924 Election in 1464 days
 		}
 	}

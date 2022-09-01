@@ -23,7 +23,7 @@ focus_tree = {
 			original_tag = USA
 		}
 	}
-    continuous_focus_position = { x = 50 y = 1600 }
+    continuous_focus_position = { x = 50 y = 2000 }
     default = no
     
     ### POLITICS
@@ -464,7 +464,84 @@ focus_tree = {
 			factor = 1
 		}
         completion_reward = {
-
+            483 = {
+                add_dynamic_modifier = {
+                    modifier = local_economic_boom
+                    days = 1825
+                }
+            }
+            484 = {
+                add_dynamic_modifier = {
+                    modifier = local_economic_boom
+                    days = 1825
+                }
+            }
+            378 = {
+                add_dynamic_modifier = {
+                    modifier = local_economic_boom
+                    days = 1825
+                }
+            }
+            914 = {
+                add_dynamic_modifier = {
+                    modifier = local_economic_boom
+                    days = 1825
+                }
+            }
+            385 = {
+                add_dynamic_modifier = {
+                    modifier = local_economic_boom
+                    days = 1825
+                }
+            }
+            907 = {
+                add_dynamic_modifier = {
+                    modifier = local_economic_boom
+                    days = 1825
+                }
+            }
+            386 = {
+                add_dynamic_modifier = {
+                    modifier = local_economic_boom
+                    days = 1825
+                }
+            }
+            740 = {
+                add_dynamic_modifier = {
+                    modifier = local_economic_boom
+                    days = 1825
+                }
+            }
+            473 = {
+                add_dynamic_modifier = {
+                    modifier = local_economic_boom
+                    days = 1825
+                }
+            }
+            739 = {
+                add_dynamic_modifier = {
+                    modifier = local_economic_boom
+                    days = 1825
+                }
+            }
+            471 = {
+                add_dynamic_modifier = {
+                    modifier = local_economic_boom
+                    days = 1825
+                }
+            }
+            379 = {
+                add_dynamic_modifier = {
+                    modifier = local_economic_boom
+                    days = 1825
+                }
+            }
+            377 = {
+                add_dynamic_modifier = {
+                    modifier = local_economic_boom
+                    days = 1825
+                }
+            }
         }
     }
     focus = {
@@ -1170,7 +1247,54 @@ focus_tree = {
 			factor = 1
 		}
         completion_reward = {
-
+            random_owned_controlled_state = {
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 1
+                    instant_build = yes
+                }
+            }
+            random_owned_controlled_state = {
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 1
+                    instant_build = yes
+                }
+            }
+            random_owned_controlled_state = {
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 1
+                    instant_build = yes
+                }
+            }
+            random_owned_controlled_state = {
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 1
+                    instant_build = yes
+                }
+            }
+            random_owned_controlled_state = {
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 1
+                    instant_build = yes
+                }
+            }
+            random_owned_controlled_state = {
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 1
+                    instant_build = yes
+                }
+            }
         }
     }
     focus = {
@@ -3785,11 +3909,6 @@ focus_tree = {
         icon = placeholder
         relative_position_id = USA_The_Old_World
         prerequisite = { focus = USA_The_Old_World }
-        available = {
-            SOV = {
-                has_country_flag = rusviet_revolution_started
-            }
-        }
         x = 4
         y = 1
         cost = 10
