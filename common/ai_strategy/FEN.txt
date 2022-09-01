@@ -3,15 +3,12 @@ FEN_help_paraguay = {
 		tag = FEN
 	}
 	enable = {
-		date > 1921.3.10
-		PAR = {
-			has_civil_war = yes
-		}
+		country_exists = PAF
 	}
 	abort_when_not_enabled = yes
 	ai_strategy = {
 		type = send_volunteers_desire
-		id = "PAR"
+		id = "PAF"
 		value = 500
 	}
 }

@@ -584,6 +584,10 @@ is_available_to_collaboration_government = { # occupied_countries.1 should be up
 			FROM = { original_tag = DNZ }
 			original_tag = POL
 		}
+		AND = {
+			FROM = { original_tag = ALG }
+			original_tag = FRA
+		}
 		TUR_cannot_form_kurdish_collaboration_government = yes
 		any_country_with_original_tag = {
 			original_tag_to_check = FROM

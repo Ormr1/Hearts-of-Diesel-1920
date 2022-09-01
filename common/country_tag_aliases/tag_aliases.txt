@@ -45,6 +45,11 @@
 #	# ...
 #}
 
+PAF = {
+	original_tag = PAR
+	has_country_flag = PAR_fenris_flag
+}
+
 SPA = {
 	original_tag = SPR
 	OR = {

@@ -16,6 +16,9 @@ state={
 		}
 		add_core_of = PAT
 		add_core_of = LAP
+		victory_points = {
+			10953 1 
+		}
 	}
 
 	provinces={

@@ -56,5 +56,14 @@ ideas = {
 				neutrality_drift = 0.02
 			}
 		}
+		LAP_distater_in_rio_grande_do_sul = {
+			picture = generic_army_problems
+			
+			modifier = {
+				army_org_factor = -0.2
+				army_morale_factor = -0.05
+				war_support_factor = -0.1
+			}
+		}
 	}
 }

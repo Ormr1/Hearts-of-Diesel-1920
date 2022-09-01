@@ -358,7 +358,10 @@ country_event = { #failier to retake rio grande
 	
 	option = {#blame the general
 		name = la_plata.106.a
-		add_stability = -0.1
+		add_timed_idea = {
+			idea = LAP_distater_in_rio_grande_do_sul
+			days = 720
+		}
 	}
 }
 country_event = { #Patagonian civil war
@@ -472,6 +475,8 @@ country_event = { #Paraguayian civil war
 					has_government = fenris
 				}
 				save_global_event_target_as = fenris_paraguay
+				set_country_flag = PAR_fenris_flag
+				add_manpower = 40000
 			}
 			white_peace = LPT
 			white_peace = LAP

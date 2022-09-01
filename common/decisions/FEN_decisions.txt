@@ -6,17 +6,14 @@ FEN_fenris_interests_cat = {
 
 		available = {
 			is_subject = no
-			PAR={
+			PAF={
 				has_war = no
 			}
 			NOT={has_country_flag = FEN_laying_low}
 		}
 
 		visible = {
-			PAR={
-				has_civil_war = no
-				has_government = fenris
-			}
+			country_exists = PAF
 		}
 
 		fire_only_once = yes
@@ -29,6 +26,80 @@ FEN_fenris_interests_cat = {
 
 		complete_effect = {
 			#add country event here
+		}
+	}
+	FEN_more_troops_to_PAF = {
+
+		icon = generic_political_discourse
+
+		available = {
+			is_subject = no
+			has_manpower > 5000
+			PAF={
+				has_war = yes
+			}
+			NOT={has_country_flag = FEN_laying_low}
+		}
+
+		visible = {
+			country_exists = PAF
+		}
+
+		fire_only_once = yes
+		
+		days_re_enable = 120
+
+		cost = 50
+
+		modifier = {
+			
+		}
+
+		complete_effect = {
+			PAF={add_manpower = 5000}
+		}
+		ai_will_do = {
+			base = 80
+		}
+	}
+	FEN_more_weapons_to_PAF = {
+
+		icon = generic_political_discourse
+
+		available = {
+			is_subject = no
+			has_equipment = {
+				infantry_equipment > 500
+			}
+			PAF={
+				has_war = yes
+			}
+			NOT={has_country_flag = FEN_laying_low}
+		}
+
+		visible = {
+			country_exists = PAF
+		}
+
+		fire_only_once = yes
+		
+		days_re_enable = 120
+
+		cost = 50
+
+		modifier = {
+			
+		}
+
+		complete_effect = {
+			send_equipment = {
+				equipment = infantry_equipment
+				amount = 100
+				target = PAF
+			}
+		}
+		ai_will_do = {
+			base = 80
 		}
 	}
 	FEN_start_SOV_revolt = {
@@ -169,6 +240,9 @@ FEN_fenris_interests_cat = {
 		complete_effect = {
 			country_event = {id= fenris.7}
 		}
+		ai_will_do = {
+			base = 100
+		}
 	}
 	FEN_FAC_obtain_passcode = {
 
@@ -241,6 +315,9 @@ FEN_fenris_interests_cat = {
 				custom_effect_tooltip = FEN_remove_2500_covert_staff
 			}
 			country_event = {id= fenris.4}
+		}
+		ai_will_do = {
+			base = 100
 		}
 	}
 	FEN_FAC_obtain_recon_information = {
@@ -334,6 +411,9 @@ FEN_fenris_interests_cat = {
 			FEN_increase_suspicion = yes
 			country_event = {id= fenris.5}
 		}
+		ai_will_do = {
+			base = 100
+		}
 	}
 	FEN_lay_low = {
 
@@ -407,6 +487,21 @@ FEN_fenris_interests_cat = {
 			FEN_decrease_suspicion = yes
 			
 		}
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 5
+				check_variable = {  FEN_covert_reveal_risk > 20 }
+			}
+			modifier = {
+				add = 10
+				check_variable = {  FEN_covert_reveal_risk > 40 }
+			}
+			modifier = {
+				add = 10
+				check_variable = {  FEN_covert_reveal_risk > 60 }
+			}
+		}
 	}
 }
 FEN_bunker_staff = {
@@ -463,6 +558,17 @@ FEN_bunker_staff = {
 			custom_effect_tooltip = FEN_add_500_covert_staff
 			add_to_variable = {FEN_covert_staff = 500}
 		}
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 5
+				check_variable = {  FEN_covert_staff < 500}
+			}
+			modifier = {
+				add = 5
+				check_variable = {  FEN_covert_staff < 1000}
+			}
+		}
 	}
 	FEN_train_admin_staff = {
 
@@ -488,6 +594,17 @@ FEN_bunker_staff = {
 		remove_effect = {
 			custom_effect_tooltip = FEN_add_500_admin_staff
 			add_to_variable = {FEN_admin_staff = 500}
+		}
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 5
+				check_variable = {  FEN_admin_staff < 500}
+			}
+			modifier = {
+				add = 5
+				check_variable = {  FEN_admin_staff < 1000}
+			}
 		}
 	}
 	FEN_train_research_staff = {
@@ -515,6 +632,17 @@ FEN_bunker_staff = {
 			custom_effect_tooltip = FEN_add_500_research_staff
 			add_to_variable = {FEN_research_staff = 500}
 		}
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 5
+				check_variable = {  FEN_admin_staff < 500}
+			}
+			modifier = {
+				add = 5
+				check_variable = {  FEN_admin_staff < 1000}
+			}
+		}
 	}
 	FEN_start_covert_drafts = {
 
@@ -538,6 +666,14 @@ FEN_bunker_staff = {
 		remove_effect = {
 			activate_mission = FEN_covert_draft_mission
 		}
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 100
+				has_manpower < 5000
+				check_variable = { var = FEN_covert_reveal_risk value = 100 compare = less_than }
+			}
+		}
 	}
 	FEN_end_covert_drafts = {
 
@@ -560,6 +696,7 @@ FEN_bunker_staff = {
 			factor = 80
 			modifier = {
 				factor = 0
+				check_variable = { var = FEN_covert_reveal_risk value = 100 compare = less_than }
 				check_variable = { var = FEN_covert_draft_risk value = 100 compare = less_than }
 			}
 		}
@@ -633,7 +770,7 @@ FEN_bunker_staff = {
 		}
 
 		visible = {
-			PAR={
+			PAF={
 				has_civil_war = no
 				has_government = fenris
 			}
@@ -648,6 +785,14 @@ FEN_bunker_staff = {
 		
 		remove_effect = {
 			add_manpower = 2000
+		}
+		
+		ai_will_do = {
+			factor = 80
+			modifier = {
+				factor = 0
+				has_manpower > 30000
+			}
 		}
 	}
 }
@@ -682,7 +827,7 @@ FEN_bunker_industry_expansion = {
 		}
 		
 		ai_will_do = {
-			base = 10
+			base = 100
 			modifier = {
 				add = 1
 				has_stability < 0.5
@@ -790,6 +935,17 @@ FEN_bunker_industry_expansion = {
 		remove_effect = {
 			add_offsite_building = { type = arms_factory level = 1 }
 			custom_effect_tooltip = FEN_remove_bunker_building_slot
+		}
+		ai_will_do = {
+			base = 10
+			modifier = {
+				add = 5
+				num_of_available_civilian_factories < 10
+			}
+			modifier = {
+				factor = 0
+				num_of_available_civilian_factories < 4
+			}
 		}
 	}
 	FEN_expend_manpower_to_hurry_mil = {
@@ -1075,5 +1231,17 @@ FEN_bunker_industry_expansion = {
 			add_to_variable = { FEN_bunker_depth_slots = 5}
 			add_to_variable = { FEN_bunker_depth = 1}
 		}
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 25
+				check_variable = {  FEN_total_bunker_slots = FEN_bunker_depth_slots}
+			}
+			modifier = {
+				add = 5
+				num_of_civilian_factories_available_for_projects > 10
+			}
+		}
+		
 	}
 }
