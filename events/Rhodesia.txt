@@ -93,15 +93,15 @@ country_event = { #revolt of the Rhodesian Native Front
 			RHO={
 				declare_war_on = {
 					target = ZIN
-					type = civil_war
+					type = annex_everything
 				}
 				declare_war_on = {
 					target = ZUN
-					type = civil_war
+					type = annex_everything
 				}
 				declare_war_on = {
 					target = NPU
-					type = civil_war
+					type = annex_everything
 				}
 			}
 		}
@@ -631,13 +631,13 @@ country_event = { #victory in Nyasaland, independance
 			original_tag = NPU
 		}
 		1007={
-			is_owned_and_controlled_by = ROOT
+			is_fully_controlled_by = ROOT
 		}
 		770={
-			is_owned_and_controlled_by = ROOT
+			is_fully_controlled_by = ROOT
 		}
 		1006={
-			is_owned_and_controlled_by = ROOT
+			is_fully_controlled_by = ROOT
 		}
 	}
 	fire_only_once = yes

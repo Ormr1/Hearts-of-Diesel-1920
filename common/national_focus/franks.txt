@@ -139,7 +139,6 @@ focus = {
         focus = FRA_The_Money_Question
     }
 }
-focus = 
 
 ### MONARCHIST
 focus = {

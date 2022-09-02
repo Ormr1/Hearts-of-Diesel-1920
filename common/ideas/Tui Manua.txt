@@ -1,0 +1,53 @@
+ideas = {
+	country = {
+		SAM_holy_keels = {
+
+			allowed = {
+				original_tag = SAM
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			available = {
+				is_subject = no 
+			}
+
+			removal_cost = -1
+
+			picture = generic_navy_bonus
+
+			modifier = {
+				navy_max_range_factor = 0.5
+				naval_speed_factor = 0.1
+				navy_fuel_consumption_factor = -0.15
+			}
+		}
+		SAM_empire_of_the_sea = {
+
+			allowed = {
+				original_tag = SAM
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			available = {
+				is_subject = no 
+			}
+
+			removal_cost = -1
+
+			picture = generic_sea_focused_navy
+
+			modifier = {
+				industrial_capacity_dockyard = 0.15
+				transport_capacity = -0.3
+				ship_hull_carrier_design_cost_factor = -0.1
+				ship_hull_heavy_design_cost_factor = -0.1
+				ship_hull_cruiser_design_cost_factor = -0.2
+				ship_hull_light_design_cost_factor = -0.2
+			}
+		}
+	}
+}

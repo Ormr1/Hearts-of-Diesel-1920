@@ -15,7 +15,7 @@ ideas = {
 			picture = MLI_tettering_on_collapse
 			
 			modifier = {
-				stability_factor = -0.05
+				stability_factor = -0.15
 			}
 		}
 		MLI_leagacy_of_mansa_idea = {
@@ -33,7 +33,7 @@ ideas = {
 			picture = MLI_legacy_of_mansa
 			
 			modifier = {
-				stability_factor = -0.05
+				consumer_goods_factor = -0.05
 			}
 		}
 	}

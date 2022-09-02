@@ -6,6 +6,10 @@ oob = "SAM_1920"
 set_technology = {
 	pre_gw_infantry_weapons = 1
 }
+add_ideas = {
+	SAM_holy_keels
+	SAM_empire_of_the_sea
+}
 
 set_convoys = 20
 

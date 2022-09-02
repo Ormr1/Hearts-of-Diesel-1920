@@ -750,7 +750,7 @@ focus_tree = {
 
 		available={
 			RHO={
-				exists = yes
+				always = no
 			}
 			NOT={has_country_flag = FEN_laying_low}
 		}
