@@ -1500,6 +1500,94 @@ ideas = {
 			}
 		}
 		
+		
+		
+		FRA_demand_for_resources_1 = {
+			picture = generic_production_bonus
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					has_government = fascism
+				}
+			}
+
+			modifier = {
+				local_resources_factor = 0.3
+			}
+		}
+		FRA_demand_for_resources_2 = {
+			picture = generic_production_bonus
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					has_government = fascism
+				}
+			}
+
+			modifier = {
+				local_resources_factor = 0.45
+				production_lack_of_resource_penalty_factor = -0.05
+			}
+		}
+		FRA_harsh_labor_laws = {
+			picture = generic_production_bonus
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					has_government = fascism
+				}
+			}
+
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.1
+				production_factory_max_efficiency_factor = 0.1
+				production_factory_start_efficiency_factor = 0.1
+			}
+		}
+		FRA_reduced_labour_age = {
+			picture = generic_production_bonus
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					has_government = fascism
+				}
+			}
+
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.25
+				production_factory_max_efficiency_factor = 0.25
+				production_factory_start_efficiency_factor = 0.25
+			}
+		}
+		FRA_more_with_workers = {
+			picture = generic_production_bonus
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					has_government = fascism
+				}
+			}
+
+			modifier = {
+				production_speed_buildings_factor = 0.15
+			}
+		}
+		
 	}
 	
 	tank_manufacturer = {

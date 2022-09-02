@@ -66,7 +66,7 @@ focus = {
     icon = placeholder
     relative_position_id = FRA_Placeholders_Plan_1
     x = 2
-    y = 2
+    y = 1
     cost = 1
     ai_will_do = {
         factor = 7
@@ -74,9 +74,6 @@ focus = {
     search_filters = {FOCUS_FILTER_ECONOMIC}
     completion_reward = {
         country_event = fra_economic.17
-    }
-    prerequisite = {
-        focus = FRA_State_Of_The_Economy
     }
     prerequisite = {
         focus = FRA_Placeholders_Plan_1
@@ -107,18 +104,15 @@ focus = {
 focus = {
     id = FRA_The_Money_Question
     icon = placeholder
-    relative_position_id = FRA_State_Of_The_Economy
-    x = 4
-    y = 3
+    relative_position_id = FRA_Placeholders_Plan_2
+    x = -2
+    y = 1
     ai_will_do = {
         factor = 1
     }
     search_filters = {FOCUS_FILTER_ECONOMIC}
     completion_reward = {
         country_event = fra_economic.4
-    }
-    prerequisite = {
-        focus = FRA_State_Of_The_Economy
     }
     prerequisite = {
         focus = FRA_Placeholders_Plan_2
@@ -161,8 +155,6 @@ focus = {
     }
     prerequisite = {
         focus = FRA_The_Money_Question
-    }
-    prerequisite = {
         focus = FRA_The_Money_Question_2
     }
 }
@@ -176,7 +168,7 @@ focus = {
     ai_will_do = {
         factor = 7
     }
-    search_filters {FOCUS_FILTER_ECONOMIC}
+    search_filters = {FOCUS_FILTER_ECONOMIC}
     completion_reward = { 
         country_event = fra_economic.7
     }
@@ -215,7 +207,7 @@ focus = {
     search_filters = {FOCUS_FILTER_INDUSTRY}
     completion_reward = {
         country_event = fra_economic.20
-        production_speed_buildings_factor = 1.15
+        add_ideas ={FRA_more_with_workers}
     }
     prerequisite = {
         focus = FRA_Flexible_With_The_Labor_Laws
@@ -231,7 +223,7 @@ focus = {
     ai_will_do = {
         factor = 7
     }
-    search_filters {FOCUS_FILTER_ECONOMIC}
+    search_filters = {FOCUS_FILTER_ECONOMIC}
     completion_reward = { 
         country_event = fra_economic.8
     }
@@ -252,7 +244,7 @@ focus = {
     ai_will_do = {
         factor = 7
     }
-    search_filters {FOCUS_FILTER_ECONOMIC}
+    search_filters = {FOCUS_FILTER_ECONOMIC}
     completion_reward = { 
         country_event = fra_economic.9
     }
@@ -270,7 +262,7 @@ focus = {
     ai_will_do = {
         factor = 7
     }
-    search_filters {FOCUS_FILTER_ECONOMIC}
+    search_filters = {FOCUS_FILTER_ECONOMIC}
     completion_reward = { 
         country_event = fra_economic.10
     }
@@ -288,33 +280,12 @@ focus = {
     ai_will_do = {
         factor = 7
     }
-    search_filters {FOCUS_FILTER_ECONOMIC}
+    search_filters = {FOCUS_FILTER_ECONOMIC}
     completion_reward = { 
         country_event = fra_economic.11
     }
     prerequisite = {
         focus = FRA_The_Slavery_Issue
-    }
-    prerequisite = {
-        focus = FRA_Rethink_The_Liberalization
-    }
-}
-focus = {
-    id = FRA_Allow_Unpaid_Labor
-    icon = placeholder
-    relative_position_id = FRA_The_Slavery_Issue
-    x = -1
-    y = 1
-    cost = 8
-    ai_will_do = {
-        factor = 7
-    }
-    search_filters {FOCUS_FILTER_ECONOMIC}
-    completion_reward = { 
-        country_event = fra_economic.12
-    }
-    prerequisite = {
-        focus = FRA_Allow_Unpaid_Labor
     }
 }
 focus = {
@@ -327,7 +298,7 @@ focus = {
     ai_will_do = {
         factor = 7
     }
-    search_filters {FOCUS_FILTER_ECONOMIC}
+    search_filters = {FOCUS_FILTER_ECONOMIC}
     completion_reward = { 
         country_event = fra_economic.13
     }
@@ -346,27 +317,8 @@ focus = {
         factor = 7
     }
     completion_reward = {
-        local_resources_factor = 1.3
-        complete_national_focus = fra_economic.14
-    }
-    prerequisite = {
-        focus = FRA_Privatize_Everything
-    }
-}
-focus = {
-    id = FRA_Demand_For_Resources
-    icon = placeholder
-    relative_position_id = FRA_Privatize_Everything
-    x = 1
-    y = 1
-    cost = 6
-    ai_will_do = {
-        factor = 7
-    }
-    completion_reward = {
-        local_resources_factor = 1.3
-        production_lack_of_resource_penalty_factor = 1.25
-        complete_national_focus = fra_economic.15
+        add_ideas={FRA_demand_for_resources_1}
+        country_event = fra_economic.14
     }
     prerequisite = {
         focus = FRA_Privatize_Everything
@@ -383,8 +335,11 @@ focus = {
         factor = 7
     }
     completion_reward = {
-        local_resources_factor = 1.15
-        production_lack_of_resource_penalty_factor = 1.05
+        country_event = fra_economic.15
+        swap_ideas={
+            add_idea = FRA_demand_for_resources_2
+            remove_idea = FRA_demand_for_resources_1
+        }
     }
     prerequisite = {
         focus = FRA_Demand_For_Resources
@@ -404,16 +359,11 @@ focus = {
         factor = 7
     }
     completion_reward = {
-        production_factory_efficiency_gain_factor = 1.1
-        production_factory_max_efficiency_factor = 1.1
-        production_factory_start_efficiency_factor = 1.1
+        add_ideas = {FRA_harsh_labor_laws}
         country_event = fra_economic.17
     }
     prerequisite = {
         focus = FRA_Privatize_Everything
-    }
-    prerequisite = {
-        focus = FRA_Rethink_The_Liberalization
     }
 }
 focus = {
@@ -427,9 +377,8 @@ focus = {
         factor = 7
     }
     completion_reward = {
-        production_factory_efficiency_gain_factor = 1.25
-        production_factory_max_efficiency_factor = 1.25
-        production_factory_start_efficiency_factor = 1.25
+        country_event = fra_economic.12
+        add_ideas={FRA_reduced_labour_age}
     }
     prerequisite = {
         focus = FRA_Increase_Work_Time
@@ -458,9 +407,9 @@ focus = {
         focus = FRA_Increase_Demand
     }
 }
-focus = {
+#focus = {
 
-}
+#}
 
 ### MONARCHIST
 focus = {
