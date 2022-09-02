@@ -83,14 +83,13 @@ focus = {
     #complete_national_focus = FRA_State_Of_The_Economy
 }
 focus = {
-    id = FRA_Tax_Breaks_For_The_Rich
+    id = FRA_The_Money_Question
     icon = placeholder
     relative_position_id = FRA_Placeholders_Plan_2
     x = 1
     y = 1
-    cost = 1
-    ai_will_do {
-        factor = 10
+    ai_will_do = {
+        factor = 1
     }
     search_filters = {FOCUS_FILTER_ECONOMIC}
     completion_reward = {
@@ -100,6 +99,47 @@ focus = {
         focus = FRA_Placeholders_Plan_2
     }
 }
+focus = {
+    id = FRA_Tax_Breaks_For_The_Rich
+    icon = placeholder
+    relative_position_id = FRA_Placeholders_Plan_2
+    mutually_exclusive = { focus = FRA_Bank_Off_Of_The_Wealthy }
+    available = { always = no }
+    x = 2
+    y = 2
+    cost = 1
+    ai_will_do = {
+        factor = 10
+    }
+    search_filters = {FOCUS_FILTER_ECONOMIC}
+    completion_reward = {
+        country_event = fra_economic.5
+    }
+    prerequisite = {
+        focus = FRA_The_Money_Question
+    }
+}
+focus = {
+    id = FRA_Bank_Off_Of_The_Wealthy
+    icon = placeholder
+    relative_position_id = FRA_The_Money_Question
+    mutually_exclusive = { focus = FRA_Tax_Breaks_For_The_Rich }
+    available = { always = no }
+    x = -1
+    y = 1
+    cost = 1
+    ai_will_do = {
+        factor = 10
+    }
+    search_filters = {FOCUS_FILTER_ECONOMIC}
+    completion_reward {
+        country_event = fra_economic.6
+    }
+    prerequisite = {
+        focus = FRA_The_Money_Question
+    }
+}
+focus = 
 
 ### MONARCHIST
 focus = {
@@ -118,12 +158,12 @@ focus = {
     }
 }
 focus = {
-    id = FRA_Give_The_Monarch_Power
+    id = FRA_Install_Royal_Dictatorship
     icon = placeholder
     relative_position_id = FRA_Letat_Cest_Moi
     mutually_exclusive = { focus = FRA_Have_a_Fair_Monarch }
     available = { always = no }
-    x =-3
+    x = 3
     y = 1
     cost = 7
     ai_will_do = {
@@ -139,9 +179,9 @@ focus = {
     id = FRA_Have_a_Fair_Monarch
     icon = placeholder
     relative_position_id = FRA_Letat_Cest_Moi
-    mutually_exclusive = { focus = FRA_Give_The_Monarch_Power}
+    mutually_exclusive = { focus = FRA_Install_Royal_Dictatorship}
     available = { always = no }
-    x = -5
+    x = -3
     y = 1
     cost = 7
     ai_will_do = {
@@ -156,7 +196,7 @@ focus = {
 focus = { 
     id = FRA_Slowly_Reap_From_The_Left
     icon = placeholder
-    relative_position_id = FRA_Give_The_Monarch_Power
+    relative_position_id = FRA_Install_Royal_Dictatorship
     x = 1
     y = 1
     cost = 6
@@ -168,7 +208,7 @@ focus = {
         country_event = fra_monarchy.4
     }
     prerequisite = {
-        focus = FRA_Give_The_Monarch_Power
+        focus = FRA_Install_Royal_Dictatorship
     }
 }
 focus = {
@@ -186,7 +226,7 @@ focus = {
         country_event = fra_monarchy.5
     }
     prerequisite = {
-        focus = FRA_Give_The_Monarch_Power
+        focus = FRA_Install_Royal_Dictatorship
     }
 }
 focus = {

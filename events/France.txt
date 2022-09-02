@@ -2257,6 +2257,24 @@ country_event = {
 	fire_only_once = yes
 }
 
+country_event = {
+	id = fra_economic.4
+	title = fra_economic.4.t
+	desc = fr_economic.4.desc 
+
+	option = {
+		name = fra_economic.4.a
+		monthly_population = 0.5
+		complete_national_focus = FRA_Tax_Breaks_For_The_Rich
+	}
+
+	option = {
+		name = fra_economic.4.b
+		stability_factor = -0.05
+		complete_national_focus = FRA_Bank_Off_Of_The_Wealthy
+	}
+}
+
 
 ### MONARCHIST
 country_event = { # Upholding the Monarchy
