@@ -2263,10 +2263,11 @@ country_event = {
 	desc = fr_economic.4.desc 
 	
 	is_triggered_only = yes
+	fire_only_once = yes
 
 	option = {
 		name = fra_economic.4.a
-		monthly_population = 0.5
+		monthly_population = -0.5
 		complete_national_focus = FRA_Tax_Breaks_For_The_Rich
 	}
 
@@ -2274,6 +2275,24 @@ country_event = {
 		name = fra_economic.4.b
 		stability_factor = -0.05
 		complete_national_focus = FRA_Bank_Off_Of_The_Wealthy
+	}
+}
+
+country_event = {
+	id = fra_economic.17
+	title = fra_economic.17.t
+	desc = fra_economic.17.desc
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = fra_economic.17.a
+		complete_national_focus = FRA_Bank_Off_Of_The_Wealthy
+	}
+	option = {
+		name = fra.economic.17.b
+		complete_national_focus = FRA_Even_The_Economic_Playing_Field
 	}
 }
 

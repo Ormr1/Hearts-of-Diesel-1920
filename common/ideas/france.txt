@@ -1515,7 +1515,7 @@ ideas = {
 			}
 
 			modifier = {
-				local_resources_factor = 0.3
+				local_resources_factor = 0.25
 			}
 		}
 		FRA_demand_for_resources_2 = {
@@ -1531,7 +1531,7 @@ ideas = {
 			}
 
 			modifier = {
-				local_resources_factor = 0.45
+				local_resources_factor = 0.4
 				production_lack_of_resource_penalty_factor = -0.05
 			}
 		}
