@@ -2267,13 +2267,13 @@ country_event = {
 
 	option = {
 		name = fra_economic.4.a
-		monthly_population = -0.5
+		#monthly_population = -0.5 //move to idea
 		complete_national_focus = FRA_Tax_Breaks_For_The_Rich
 	}
 
 	option = {
 		name = fra_economic.4.b
-		stability_factor = -0.05
+		add_stability = -0.05
 		complete_national_focus = FRA_Bank_Off_Of_The_Wealthy
 	}
 }

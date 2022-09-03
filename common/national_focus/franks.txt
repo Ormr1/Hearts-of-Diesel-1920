@@ -488,7 +488,7 @@ focus = {
 }
 focus = {
     id = FRA_Hard_Working_Lower_Class
-    iconn = placeholder
+    icon = placeholder
     relative_position_id = FRA_The_Slavery_Issue
     X = -4
     Y = 1
@@ -803,6 +803,42 @@ focus = {
         focus = FRA_Fight_For_Your_Freedom
     }
 }
+focus = {
+    id = FRA_Bribe_Business_Owners
+    icon = placeholder
+    relative_position_id = FRA_Fight_For_Your_Freedom
+    x = 0
+    y = 1
+    cost = 5
+    ai_will_do = {
+        factor = 10
+    }
+    search_filters = {FOCUS_FILTER_POLITICAL}
+    completion_reward = {
+        country_event = fra_revolution.9
+    }
+    prerequisite = {
+        focus = FRA_Fight_For_Your_Freedom
+    }
+}
+focus = {
+    id = FRA_Arm_The_People
+    icon = placeholder
+    relative_position_id = FRA_Bribe_Business_Owners
+    x = 1
+    y = 1
+    cost = 5
+    ai_will_do = {
+        factor = 10
+    }
+    search_filters = {FOCUS_FILTER_POLITICAL}
+    completion_reward = {
+        country_event = revolution.12
+    }
+    prerequisite = {
+        focus = FRA_Bribe_Business_Owners
+    }
+}
 ### Underground Factories - Think of the Manchuria focus as you try to escape Japanese rule, where you could get free offmap factories, and cheaper guns, for less reliable guns, but less overpowerd ofc
 focus = {
     id = FRA_Underground_Factories
@@ -1111,7 +1147,7 @@ focus = {
     cost = 5
     available={
         num_of_factories > 100
-        has_completed_focus
+        #has_completed_focus = Fra_Right_Wing_Economy
     }
     ai_will_do = {
         factor = 10
@@ -1264,24 +1300,6 @@ focus = {
         focus = FRA_The_Workers_Paradise
     }
 }
-focus = {
-    id = FRA_Bribe_Business_Owners
-    icon = placeholder
-    relative_position_id = FRA_Fight_For_Your_Freedom
-    x = 0
-    y = 1
-    cost = 5
-    ai_will_do = {
-        factor = 10
-    }
-    search_filters = {FOCUS_FILTER_POLITICAL}
-    completion_reward = {
-        country_event = fra_revolution.9
-    }
-    prerequisite = {
-        focus = FRA_Fight_For_Your_Freedom
-    }
-}
 
 focus = {
     id = FRA_Create_A_Political_Union
@@ -1320,10 +1338,10 @@ focus = {
     prerequisite = {
         focus = FRA_Create_A_Political_Union
     }
-    focus_progress = {
-        focus = FRA_Light_The_Torch
-        progress > 0.99
-    }
+    # focus_progress = {
+        # focus = FRA_Light_The_Torch
+        # progress > 0.99
+    # }
     available={
         has_civil_war = no
     }
@@ -1346,30 +1364,13 @@ focus = {
     prerequisite = {
         focus = FRA_Create_A_Political_Union
     }
-    focus_progress = {
-        focus = FRA_Light_The_Torch
-        progress > 0.99
-    }
+    # focus_progress = {
+        # focus = FRA_Light_The_Torch
+        # progress > 0.99
+    # }
     available={
         has_civil_war = no
     }
 }
-focus = {
-    id = FRA_Arm_The_People
-    icon = placeholder
-    relative_position_id = FRA_Bribe_Business_Owners
-    x = 1
-    y = 1
-    cost = 5
-    ai_will_do = {
-        factor = 10
-    }
-    search_filters = {FOCUS_FILTER_POLITICAL}
-    completion_reward = {
-        country_event = revolution.12
-    }
-    prerequisite = {
-        focus = FRA_Bribe_Business_Owners
-    }
-}
+
 }
