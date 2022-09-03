@@ -138,6 +138,7 @@ focus = {
         focus = FRA_Placeholders_Plan_2
     }
 }
+### Bank Off of The Wealthy - Lets the player pick a middle path if they don't want to go with the left and right path, this one will be a mix of the two.
 focus = {
     id = FRA_Bank_Off_Of_The_Wealthy
     icon = placeholder
@@ -158,6 +159,7 @@ focus = {
         focus = FRA_The_Money_Question_2
     }
 }
+### Flexible With the Labor Laws - Additional Economy stuff (Same with left version of this), plus some after the merging focus
 focus = {
     id = FRA_Flexible_With_The_Labor_Laws
     icon = placeholder
@@ -387,6 +389,7 @@ focus = {
         focus = FRA_Allow_Unpaid_Labor
     }
 }
+### This focus and the Left Wing version of this will lead to a new focus that gets rid of the effects of the Great War. Completion of that focus will let the "Ignite the Flame" Focus to be started and completed
 focus = {
     id = Fra_Right_Wing_Economy
     icon = placeholder
@@ -553,6 +556,7 @@ focus = {
         focus = FRA_Fight_For_Your_Freedom
     }
 }
+### Underground Factories - Think of the Manchuria focus as you try to escape Japanese rule, where you could get free offmap factories, and cheaper guns, for less reliable guns, but less overpowerd ofc
 focus = {
     id = FRA_Underground_Factories
     icon = placeholder
@@ -571,6 +575,7 @@ focus = {
         focus = FRA_International_Arms_Market
     }
 }
+### Mimic Foregin Equipment - Easier for France to license equipment from Democratic and Communist countries
 focus = {
     id = FRA_Mimic_Foreign_Equipment
     icon = placeholder
@@ -590,6 +595,7 @@ focus = {
         focus = FRA_Underground_Factories
     }
 }
+### Make Our Own Guns - Maybe cheaper + stronger guns for much less reliability?
 focus = {
     id = FRA_Make_Our_Own_Guns
     icon = placeholder
@@ -634,6 +640,7 @@ focus = {
         focus = FRA_Fight_For_Your_Freedom
     }
 }
+### Ally the Socialists, Democrats, and Anarchists - Increased Communist, Democrat, and Anarchist ticking for a certain time?
 focus = {
     id = FRA_Ally_The_Socialists
     icon = placeholder
@@ -722,6 +729,7 @@ focus = {
         focus = FRA_Gain_Political_Alliances
     }
 }
+### Train The Populous - Increased manpower and/or less training time?
 focus = {
     id = FRA_Train_The_Populous
     icon = placeholder
@@ -776,6 +784,7 @@ focus = {
         focus = FRA_Prepare_For_The_Fight
     }
 }
+### International Arms Market - Like the mod, the Franks can buy weapons from democratic and communist countries (USA, Rusviet Tsardom (Maybe), so on and so forth), but maybe it could be recommended to have that mod on for the Franks
 focus = {
     id = FRA_International_Arms_Market
     icon = placeholder
@@ -794,6 +803,7 @@ focus = {
         focus = FRA_Gain_International_Support
     }
 }
+### Nationalize the Industry - Easier to get factories, plus free factories upon completion?
 focus = {
     id = FRA_Nationalize_The_Industry
     icon = placeholder
@@ -812,6 +822,8 @@ focus = {
         focus = FRA_Bribe_Business_Owners
     }
 }
+### Spread The News - Adds spirit that increases democratic, communist, and non-alighed ideologies, ticking at roughly 0.10 popularity per day each, for 1 or so years.
+### Subcomment - Could also act like those Spanish Civil War decisions from the base game/La Resistance
 focus = {
     id = FRA_Spread_The_News
     icon = placeholder
@@ -841,6 +853,7 @@ focus = {
         focus = FRA_Fight_For_Your_Freedom
     }
 }
+### Light The Torch - Required end(ish) focus from Economic part before the ability to do this focus, so the industry isn't complete ass when the civil war starts. Yes, the economy might be a bit ruined, but the goal is to make sure the effects of the Great War not as bad.
 focus = {
     id = FRA_Light_The_Torch
     icon = placeholder
@@ -871,6 +884,7 @@ focus = {
         focus = FRA_Unite_The_Left
     }
 }
+### Birth Of a New Nation - Could give National Spirit/Idea that lets France recover/gain political party stuff/Stability, or anything else that helps
 focus = {
     id = FRA_Birth_Of_A_New_Nation
     icon = placeholder
@@ -931,6 +945,7 @@ focus = {
         focus = FRA_Unite_The_Left
     }
 }
+### Allow Political Autonomy - Alternate history path, needing the player to manage each political party, so the state does not fail. If they do not do this, then France will either be Anarchist, or fall into a multi-way Civil War. can only be done after first civil war
 focus = {
     id = FRA_Allow_For_Political_Autonomy
     icon = placeholder
@@ -957,6 +972,7 @@ focus = {
         has_civil_war = no
     }
 }
+### Even More Political Unity - Opposite of Political Autonomy, where all of the parties (Mainly communism, democracy, and anarchism) combine to form a single party, as an attemp to stabilize the country more, can only be done after civil war
 focus = {
     id = FRA_Even_More_Political_Unity
     icon = placeholder
