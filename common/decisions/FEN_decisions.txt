@@ -26,6 +26,23 @@ FEN_fenris_interests_cat = {
 
 		complete_effect = {
 			#add country event here
+			country_event = fenris.10
+		}
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 25
+				PAF={
+					any_neighbor_country={
+						NOT={tag = BRA}
+						NOT={tag = PRU}
+						strength_ratio = {
+							tag = PAF
+							ratio < 1.0
+						}
+					}
+				}
+			}
 		}
 	}
 	FEN_more_troops_to_PAF = {
@@ -35,14 +52,14 @@ FEN_fenris_interests_cat = {
 		available = {
 			is_subject = no
 			has_manpower > 5000
-			PAF={
-				has_war = yes
-			}
 			NOT={has_country_flag = FEN_laying_low}
 		}
 
 		visible = {
 			country_exists = PAF
+			PAF={
+				has_war = yes
+			}
 		}
 
 		fire_only_once = yes
@@ -71,14 +88,14 @@ FEN_fenris_interests_cat = {
 			has_equipment = {
 				infantry_equipment > 500
 			}
-			PAF={
-				has_war = yes
-			}
 			NOT={has_country_flag = FEN_laying_low}
 		}
 
 		visible = {
 			country_exists = PAF
+			PAF={
+				has_war = yes
+			}
 		}
 
 		fire_only_once = yes
@@ -673,6 +690,11 @@ FEN_bunker_staff = {
 				has_manpower < 5000
 				check_variable = { var = FEN_covert_reveal_risk value = 100 compare = less_than }
 			}
+			modifier = {
+				add = 5
+				has_manpower < 15000
+				check_variable = { var = FEN_covert_reveal_risk value = 50 compare = less_than }
+			}
 		}
 	}
 	FEN_end_covert_drafts = {
@@ -697,7 +719,6 @@ FEN_bunker_staff = {
 			modifier = {
 				factor = 0
 				check_variable = { var = FEN_covert_reveal_risk value = 100 compare = less_than }
-				check_variable = { var = FEN_covert_draft_risk value = 100 compare = less_than }
 			}
 		}
 		
@@ -767,6 +788,7 @@ FEN_bunker_staff = {
 
 		available = {
 			is_subject = no
+			PAF ={has_stability > 0.3}
 		}
 
 		visible = {
@@ -785,6 +807,9 @@ FEN_bunker_staff = {
 		
 		remove_effect = {
 			add_manpower = 2000
+			PAF={
+				add_stability = -0.001
+			}
 		}
 		
 		ai_will_do = {
@@ -792,6 +817,10 @@ FEN_bunker_staff = {
 			modifier = {
 				factor = 0
 				has_manpower > 30000
+			}
+			modifier = {
+				factor = 0
+				PAF ={has_stability < 0.4}
 			}
 		}
 	}
@@ -1186,6 +1215,17 @@ FEN_bunker_industry_expansion = {
 				days = -50
 			}
 			add_manpower = 1000
+		}
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 25
+				has_manpower > 20000
+			}
+			modifier = {
+				add = 5
+				has_manpower > 10000
+			}
 		}
 	}
 	FEN_expand_bunker_depth = {

@@ -146,3 +146,42 @@ country_event = {#Rusviets divisions
 		
 	}
 }
+country_event = {#Paraguay to strike south
+	id = fenris.10
+	title = fenris.10.t
+	desc = fenris.10.d
+	picture = GFX_report_event_finnish_letter
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = fenris.10.a
+		trigger={
+			PAF={is_neighbor_of = LAP}
+		}
+	}
+	option = {
+		name = fenris.10.b
+		trigger={
+			PAF={is_neighbor_of = LPT}
+		}
+	}
+	option = {
+		name = fenris.10.c
+		trigger={
+			PAF={is_neighbor_of = ARG}
+		}
+	}
+	option = {
+		name = fenris.10.e
+		trigger={
+			PAF={is_neighbor_of = ARC}
+		}
+	}
+	option = {
+		name = fenris.10.f
+		trigger={
+			PAF={is_neighbor_of = ETR}
+		}
+	}
+}

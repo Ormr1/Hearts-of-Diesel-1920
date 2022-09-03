@@ -46,6 +46,66 @@ ideas = {
 				production_speed_buildings_factor = 0.1
 			}
 		}
+		FEN_quality_rifles_idea= {
+			picture = generic_army_problems
+			
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = 0.2
+					soft_attack = 0.75
+					instant = yes
+				}
+			}
+		}
+		FEN_focusing_elite_troops_idea= {
+			picture = generic_army_problems
+			
+			modifier = {
+				army_org_factor = 0.1
+				experience_gain_army_unit_factor = 0.1
+			}
+		}
+		FEN_focusing_elite_troops_idea_2= {
+			picture = generic_army_problems
+			
+			modifier = {
+				army_org_factor = 0.15
+				army_defence_factor = 0.05
+				experience_gain_army_unit_factor = 0.1
+			}
+		}
+		FEN_focusing_elite_troops_idea_3= {
+			picture = generic_army_problems
+			
+			modifier = {
+				army_org_factor = 0.15
+				army_defence_factor = 0.05
+				experience_gain_army_unit_factor = 0.1
+				special_forces_cap = 0.15
+			}
+		}
+		FEN_focusing_mercenaries_idea= {
+			picture = generic_army_problems
+			
+			modifier = {
+				weekly_manpower = 50
+			}
+		}
+		FEN_focusing_mercenaries_idea_2= {
+			picture = generic_army_problems
+			
+			modifier = {
+				weekly_manpower = 75
+			}
+		}
+		FEN_focusing_mercenaries_idea_3= {
+			picture = generic_army_problems
+			
+			modifier = {
+				weekly_manpower = 75
+				army_infantry_defence_factor = 0.10
+			}
+		}
 	}
 	aircraft_manufacturer = { 
 			
