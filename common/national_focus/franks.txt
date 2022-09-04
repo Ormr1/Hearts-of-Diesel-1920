@@ -122,6 +122,9 @@ focus = {
     relative_position_id = FRA_Legalize_Unions
     x = 1
     y = 1
+    prerequisite = {
+        focus = FRA_Legalize_Unions
+    }
 }
 focus = {
     id = FRA_Demonize_the_Rich
@@ -142,25 +145,25 @@ focus = {
         focus = FRA_Bank_Off_Of_the_Wealthy
     }
 }
-focus = {
-    id = FRA_Demonize_the_Rich
-    icon = placeholder
-    relative_position_id = FRA_Bank_Off_Of_the_Wealthy
-    mutually_exclusive = { focus = FRA_Even_the_Economic_Playing_Field }
-    x = 4
-    y = 1
-    cost = 5
-    ai_will_do = {
-        factor = 7
-    }
-    completion_reward = {
-        country_event = fra_economic.26
-    }
-    prerequisite = {
-        focus = FRA_the_Money_Question_2
-        focus = FRA_Bank_Off_Of_the_Wealthy
-    }
-}
+#focus = {
+#    id = FRA_Demonize_the_Rich
+#    icon = placeholder
+#    relative_position_id = FRA_Bank_Off_Of_the_Wealthy
+#    mutually_exclusive = { focus = FRA_Even_the_Economic_Playing_Field }
+#    x = 4
+#    y = 1
+#    cost = 5
+#    ai_will_do = {
+#        factor = 7
+#    }
+#    completion_reward = {
+#        country_event = fra_economic.26
+#    }
+#    prerequisite = {
+#        focus = FRA_the_Money_Question_2
+#        focus = FRA_Bank_Off_Of_the_Wealthy
+#    }
+#}
 ### Communal Autarky - Please note that any completion reward that would normally require a national spirit/idea is just a placeholder, since I don't know how to add/modify ideas just yet
 focus = {
     id = FRA_Communal_Autarky
@@ -174,7 +177,7 @@ focus = {
     }
     completion_reward = {
         country_event = fra_economic.27
-        local_resources_factor = 0.25
+        #local_resources_factor = 0.25
     }
     prerequisite = {
         focus = FRA_Demonize_the_Rich
@@ -260,7 +263,7 @@ focus = {
     relative_position_id = FRA_Frankish_Housing_Plan
     x = 1
     y = 1
-        cost = 5
+    cost = 5
     ai_will_do = {
         factor = 7
     }
@@ -277,7 +280,7 @@ focus = {
     relative_position_id = FRA_Frankish_Housing_Plan
     x = -1
     y = 1
-        cost = 5
+    cost = 5
     ai_will_do = {
         factor = 7
     }
@@ -310,6 +313,7 @@ focus = {
 }
 focus = {
     id = FRA_Left_Wing_Economy
+    icon = placeholder
     relative_position_id = FRA_More_and_More_Houses
     x = 2
     y = 1
@@ -495,7 +499,7 @@ focus = {
     search_filters = {FOCUS_FILTER_INDUSTRY}
     completion_reward = {
         country_event = fra_economic.20
-        production_speed_buildings_factor = 1.05
+        #production_speed_buildings_factor = 1.05
     }
     prerequisite = {
         focus = FRA_Create_Construction_Jobs
@@ -628,11 +632,7 @@ focus = {
     x = 1
     y = 1
     cost = 5
-<<<<<<< Updated upstream
-    ai_will_do={
-=======
     ai_will_do = {
->>>>>>> Stashed changes
         factor = 5
     }
     search_filters = {FOCUS_FILTER_RESEARCH}
@@ -721,15 +721,10 @@ focus = {
 }
 focus = {
     id = FRA_Hard_Working_Lower_Class
-<<<<<<< Updated upstream
     icon = placeholder
-    relative_position_id = FRA_The_Slavery_Issue
-=======
-    iconn = placeholder
     relative_position_id = FRA_the_Slavery_Issue
->>>>>>> Stashed changes
-    X = -4
-    Y = 1
+    x = -4
+    y = 1
     cost = 5
     ai_will_do = {
         factor = 7
