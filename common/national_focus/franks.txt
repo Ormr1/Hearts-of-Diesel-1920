@@ -511,6 +511,7 @@ focus = {
     x = 1
     y = 1
     cost = 5
+    ai_will_do={
         factor = 5
     }
     search_filters = {FOCUS_FILTER_RESEARCH}
@@ -599,7 +600,7 @@ focus = {
 }
 focus = {
     id = FRA_Hard_Working_Lower_Class
-    iconn = placeholder
+    icon = placeholder
     relative_position_id = FRA_The_Slavery_Issue
     X = -4
     Y = 1
