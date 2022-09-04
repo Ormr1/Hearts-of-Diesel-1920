@@ -46,7 +46,7 @@ focus = {
     relative_position_id = FRA_State_Of_the_Economy
     mutually_exclusive = { focus = FRA_Placeholders_Plan_2 }
     available = { always = no }
-    x = -7
+    x = -10
     y = 1
     cost = 1
     ai_will_do = {
@@ -117,6 +117,71 @@ focus = {
     }
 }
 focus = {
+    id = FRA_Better_Workplace_Social_Norms
+    icon = placeholder
+    relative_position_id = FRA_Legalize_Unions
+    x = -1
+    y = 1
+    prerequisite = {
+        focus = FRA_Legalize_Unions
+    }
+}
+focus = {
+    id = FRA_No_to_Child_Labor
+    icon = placeholder
+    relative_position_id = FRA_Better_Workplace_Social_Norms
+    x = -1
+    y = 1
+    prerequisite = {
+        focus = FRA_Better_Workplace_Social_Norms
+    }
+}
+focus = {
+    id = FRA_Value_Teachers
+    icon = placeholder
+    relative_position_id = FRA_No_to_Child_Labor
+    x = -1
+    y = 2
+    prerequisite = {
+        focus = FRA_Teach_How_To_Work
+        focus = FRA_No_to_Child_Labor
+    }
+}
+focus = {
+    id = FRA_Teach_How_To_Work
+    icon = placeholder
+    relative_position_id = FRA_No_to_Child_Labor
+    x = 1
+    y = 1
+    prerequisite = {
+        focus = FRA_No_to_Child_Labor
+        focus = FRA_Collectivized_Industry
+    }
+}
+### Spelled as "Better Schooling, Better Future"
+focus = {
+    id = FRA_Better_Schooling_Better_Future
+    icon = placeholder
+    relative_position_id = FRA_Teach_How_To_Work
+    x = 0
+    y = 2
+    prerequisite = {
+        focus = FRA_Teach_How_To_Work
+        focus = FRA_Prepare_for_the_Real_World
+    }
+}
+focus = {
+    id = FRA_Prepare_for_the_Real_World
+    icon = placeholder
+    relative_position_id = FRA_Teach_How_To_Work
+    x = 1
+    y = 1
+    prerequisite = {
+        focus = FRA_Teach_How_To_Work
+        focus = FRA_Cleaner_Workplace
+    }
+}
+focus = {
     id = FRA_Begin_the_Process_of_Unionization
     icon = placeholder
     relative_position_id = FRA_Legalize_Unions
@@ -124,6 +189,65 @@ focus = {
     y = 1
     prerequisite = {
         focus = FRA_Legalize_Unions
+    }
+}
+### Collectivized Industry - Same as FRA_Flexibile_Workforce, but with Concentrated
+focus = {
+    id = FRA_Collectivized_Industry
+    icon = placeholder
+    relative_position_id = FRA_Begin_the_Process_of_Unionization
+    x = -1
+    y = 1
+    prerequisite = {
+        focus = FRA_Begin_the_Process_of_Unionization
+        focus = FRA_Better_Workplace_Social_Norms
+    }
+}
+
+focus = {
+    id = FRA_Cleaner_Workplace
+    icon = placeholder
+    relative_position_id = FRA_Begin_the_Process_of_Unionization
+    x = 0
+    y = 2
+    available = {
+        has_not_completed_focus = FRA_Flexibile_Workforce
+    }
+    prerequisite = {
+        focus = FRA_Begin_the_Process_of_Unionization
+        focus = FRA_The_Demands_of_Workers
+    }
+}
+
+focus = {
+    id = FRA_The_Demands_of_Workers
+    icon = placeholder
+    relative_position_id = FRA_Begin_the_Process_of_Unionization
+    x = 1
+    y = 1
+    prerequisite = {
+        focus = FRA_Begin_the_Process_of_Unionization
+    }
+}
+focus = {
+    id = FRA_40_Hour_Work_Week
+    icon = placeholder
+    relative_position_id = FRA_The_Demands_of_Workers
+    x = 1
+    y = 1
+    prerequisite = {
+        focus = FRA_The_Demands_of_Workers
+    }
+}
+### Flexible Workforce - Gives research buff to Dispersed Industry
+focus = {
+    id = FRA_Flexibile_Workforce
+    icon = placeholder
+    relative_position_id = FRA_40_Hour_Work_Week
+    x = 1
+    y = 1
+    prerequisite = {
+        focus = FRA_40_Hour_Work_Week
     }
 }
 focus = {
@@ -350,12 +474,54 @@ focus = {
     }
 }
 focus = {
+    id = FRA_Industrialize_Farmland
+    icon = placeholder
+    relative_position_id = FRA_Pay_A_Fair_Share
+    x = 1
+    y = 1
+    prerequisite = {
+        focus = FRA_Pay_A_Fair_Share
+    }
+}
+focus = {
+    id = FRA_Make_Sure_the_People_are_Fed
+    icon = placeholder
+    relative_position_id = FRA_Industrialize_Farmland
+    x = 0
+    y = 1
+    prerequisite = {
+        focus = FRA_Industrialize_Farmland
+    }
+}
+focus = {
+    id = FRA_Restrict_Corporation_Control
+    icon = placeholder
+    relative_position_id = FRA_Pay_A_Fair_Share
+    x = -1
+    y = 1
+    prerequisite = {
+        focus = FRA_Pay_A_Fair_Share
+        focus = FRA_Fill_the_Factories
+    }
+}
+focus = {
+    id = FRA_House_the_Homeless
+    icon = placeholder
+    relative_position_id = FRA_Restrict_Corporation_Control
+    x = 0
+    y = 1
+    prerequisite = {
+        focus = FRA_Restrict_Corporation_Control
+        focus = FRA_Industrialize_Farmland
+    }
+}
+focus = {
     id = FRA_Placeholders_Plan_2
     icon = placeholder
     relative_position_id = FRA_State_Of_the_Economy
     mutually_exclusive = { focus = FRA_Placeholders_Plan_1 }
     available = { always = no }
-    x = 7
+    x = 10
     y = 1
     cost = 1
     ai_will_do = {
@@ -415,7 +581,7 @@ focus = {
     mutually_exclusive = { focus = FRA_Rethink_the_Liberalization }
     mutually_exclusive = { focus = FRA_Demonize_the_Rich }
     available = { always = no }
-    x = -5
+    x = -8
     y = 1
     cost = 1
     ai_will_do = {
@@ -428,6 +594,132 @@ focus = {
     prerequisite = {
         focus = FRA_the_Money_Question
         focus = FRA_the_Money_Question_2
+    }
+}
+### Autarkic Ways - Allows for an event to fire, where you can choose for increasing immigrant protection, or to focus on the people born in Frankia
+focus = {
+    id = FRA_Autarkic_Ways
+    icon = placeholder
+    relative_position_id = FRA_Even_the_Economic_Playing_Field
+    x = 0
+    y = 1
+    completion_reward = {
+        country_event = fra_economic.36
+    }
+    prerequisite = {
+        focus = FRA_Even_the_Economic_Playing_Field
+    }
+    #complete_national_focus = FRA_Autarkic_Ways
+}
+### Allows for the government to focus on what's at home
+focus = {
+    id = FRA_The_Frankish_Man
+    icon = placeholder
+    relative_position_id = FRA_Autarkic_Ways
+    available = { always = no }
+    mutually_exclusive = { focus = FRA_Move_into_Prosperity }
+    x = 1
+    y = 1
+    prerequisite = {
+        focus = FRA_Autarkic_Ways
+    }
+}
+### Move Into Prosperity - Allows for more tourism/immigration, which in turn could make the government improve the economy
+focus = {
+    id = FRA_Move_into_Prosperity
+    icon = placeholder
+    relative_position_id = FRA_Autarkic_Ways
+    mutually_exclusive = { focus = FRA_The_Frankish_Man }
+    x = -1
+    y = 1
+    prerequisite = {
+        focus = FRA_Autarkic_Ways
+    }
+}
+focus = {
+    id = FRA_Appeal_to_Tourists
+    icon = placeholder
+    relative_position_id = FRA_Move_into_Prosperity
+    x = 0
+    y = 3
+    prerequisite = {
+        focus = FRA_Move_into_Prosperity
+    }
+}
+### Allow Settling - Increases monthly population
+focus = {
+    id = FRA_Allow_Settling
+    icon = placeholder
+    relative_position_id = FRA_Appeal_to_Tourists
+    x = -5
+    y = 7
+    prerequisite = {
+        focus = FRA_Appeal_to_Tourists
+    }
+}
+focus = {
+    id = FRA_Brighten_Advertising
+    icon = placeholder
+    relative_position_id = FRA_Allow_Settling
+    x = -2
+    y = 0
+    prerequisite = {
+        focus = FRA_Appeal_to_Tourists
+    }
+}
+focus = {
+    id = FRA_Internal_Plague
+    icon = placeholder
+    relative_position_id = FRA_Appeal_to_Tourists
+    x = -6
+    y = 1
+    prerequisite = {
+        focus = FRA_Appeal_to_Tourists
+    }
+}
+focus = {
+    id = FRA_Pressure_Companies
+    icon = placeholder
+    relative_position_id = FRA_Internal_Plague
+    x = -1
+    y = 1
+    prerequisite = {
+        FRA_Internal_Plague
+    }
+}
+### Loss to Rights - Happens if companies don't get their shit together in a certain amount of time, but only if the Great War economic focus is still there
+focus = {
+    id = FRA_Sometimes_a_Loss_to_Rights_is_Necessary
+    icon = placeholder
+    relative_position_id = FRA_Pressure_Companies
+    x = -1
+    y = 1
+    prerequisite = {
+        focus = FRA_Pressure_Companies
+    }
+}
+### Spelled as "Fine, I'll do it Myself," Mutually exclusive with prev focus, but only if ideology is communist
+focus = {
+    id = FRA_Fine_Ill_Do_it_Myself
+    icon = placeholder
+    relative_position_id = FRA_Pressure_Companies
+    x = 1
+    y = 1
+    available = {
+        ideology = communism
+    }
+}
+focus = {
+    id = FRA_Pick_up_the_Slack
+    icon = placeholder
+    relative_position_id = FRA_Brighten_Advertising
+    x = 1
+    y = 1 
+    prerequisite = {
+        focus = FRA_Brighten_Advertising
+    }
+    prerequisite = {
+        focus = FRA_Allow_Settling
     }
 }
 ### Flexible With the Labor Laws - Additional Economy stuff (Same with left version of this), plus some after the merging focus
@@ -738,6 +1030,51 @@ focus = {
     }
 }
 focus = {
+    id = FRA_Insentivize_Individualism
+    icon = placeholder
+    relative_position_id = FRA_Hard_Working_Lower_Class
+    x = -1
+    y = 1
+    prerequisite = {
+        focus = FRA_Hard_Working_Lower_Class
+    }
+}
+### Spelled as "The Lower the Mind, the Higher the Yield" - Decreases research speed, but increases production and construction
+focus = {
+    id = FRA_The_Lower_the_Mind_the_Higher_the_Yield
+    icon = placeholder
+    relative_position_id = FRA_Hard_Working_Lower_Class
+    x = 1
+    y = 1
+    prerequisite = {
+        focus = FRA_Hard_Working_Lower_Class
+        focus = FRA_Allow_Unpaid_Labor
+    }
+}
+### Restrict the Mouths - Think of "Insert Press Censorship" decision
+focus = {
+    id = FRA_Restrict_the_Mouths
+    icon = placeholder
+    relative_position_id = FRA_Insentivize_Individualism
+    x = 0
+    y = 1
+    prerequisite = {
+        focus = FRA_Insentivize_Individualism
+    }
+}
+### Lower the Standards - Decreases cost of equipment while decreasing strength or reliability
+focus = {
+    id = FRA_Lower_the_Standards
+    icon = placeholder
+    relative_position_id = FRA_Insentivize_Individualism
+    x = 2
+    y = 1 
+    prerequisite = {
+        focus = FRA_Insentivize_Individualism
+        focus = FRA_The_Lower_the_Mind_the_Higher_the_Yield
+    }
+}
+focus = {
     id = FRA_Allow_Unpaid_Labor
     icon = placeholder
     relative_position_id = FRA_the_Slavery_Issue
@@ -872,9 +1209,21 @@ focus = {
         focus = FRA_Allow_Unpaid_Labor
     }
 }
+### Heart of the Nation - The focus that lets you do the civil war
+focus = {
+    id = FRA_Heart_of_the_Nation
+    icon = placeholder
+    relative_position_id = FRA_State_Of_the_Economy
+    x = 0
+    y = 15
+    prerequisite = {
+        focus = FRA_Right_Wing_Economy
+        focus = FRA_Left_Wing_Economy
+    }
+}
 ### This focus and the Left Wing version of this will lead to a new focus that gets rid of the effects of the Great War. Completion of that focus will let the "Ignite the Flame" Focus to be started and completed
 focus = {
-    id = Fra_Right_Wing_Economy
+    id = FRA_Right_Wing_Economy
     icon = placeholder
     relative_position_id = FRA_Rethink_the_Liberalization
     x = 0
@@ -884,7 +1233,7 @@ focus = {
         factor = 7
     }
     completion_reward = {
-        country_event = fra_econmic.18
+        country_event = fra_economic.18
     }
     prerequisite = {
         focus = FRA_Reduce_Labor_Age
@@ -1342,8 +1691,9 @@ focus = {
     x = 0
     y = 1
     cost = 5
-    available={
+    available = {
         num_of_factories > 100
+        has_completed_focus = FRA_Heart_of_the_Nation
     }
     ai_will_do = {
         factor = 10
@@ -1352,7 +1702,7 @@ focus = {
     completion_reward = {
         country_event = {id = fra_civilwarignite.1}
         #add_namespace = fra_civilwarignite.1
-        remove_ideas ={}
+        remove_ideas = {}
     }
     prerequisite = {
         focus = FRA_International_Arms_Market
@@ -1407,7 +1757,7 @@ focus = {
     }
 }
 focus = {
-    id = Fra_Power_to_the_People
+    id = FRA_Power_to_the_People
     icon = placeholder
     relative_position_id = FRA_the_Power_Scenario
     x = 10
@@ -1427,7 +1777,7 @@ focus = {
 focus = {
     id = A_Caplitalists_Dream
     icon = placeholder
-    relative_position_id = Fra_Power_to_the_People
+    relative_position_id = FRA_Power_to_the_People
     x = -6
     y = 1
     cost = 3
@@ -1438,13 +1788,13 @@ focus = {
         country_event = fra_parliament.9
     }
     prerequisite = {
-        focus = Fra_Power_to_the_People
+        focus = FRA_Power_to_the_People
     }
 }
 focus = {
     id = FRA_the_Workers_Paradise
     icon = placeholder
-    relative_position_id = Fra_Power_to_the_People
+    relative_position_id = FRA_Power_to_the_People
     x = 6
     y = 1
     cost = 3
@@ -1455,7 +1805,7 @@ focus = {
         country_event = fra_parliament.8
     }
     prerequisite = {
-        focus = Fra_Power_to_the_People
+        focus = FRA_Power_to_the_People
     }
 }
 ### Balance - Communism

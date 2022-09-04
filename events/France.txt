@@ -2391,11 +2391,31 @@ country_event = { # FRA_Arm_The_People
 	
 	is_triggered_only = yes
 	fire_only_once = yes
+
 	option = {
 		name = fra_revolution.4.a
 	}
 }
 
+country_event = {
+	id = fra_economic.36
+	title = fra_economic.36.t
+	desc = fra_economic.36.desc
+
+	picture = placeholder
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = fra_economic.36.a
+		complete_national_focus = FRA_Move_into_Prosperity
+	}
+	option = {
+		name = fra_economic.36.b
+		complete_national_focus = FRA_The_Frankish_Man
+	}
+}
 country_event = { # fra_civilwarignite.1
     id = fra_civilwarignite.1
     title = fra_civilwarignite.1.t
