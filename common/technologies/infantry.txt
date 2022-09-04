@@ -1827,7 +1827,7 @@ technologies = {
 		}
 		
 		path = {
-			leads_to_tech = mechanised_infantry
+			leads_to_tech = motorised_infantry_2
 			research_cost_coeff = 1
 		}
 
@@ -1846,10 +1846,6 @@ technologies = {
 		folder = {
 			name = support_folder
 			position = { x = 7 y = 9 }
-		}
-		
-		sub_technologies = {
-			motorized_rocket_unit
 		}
 		
 		categories = {
@@ -1903,6 +1899,69 @@ technologies = {
 		
 		categories = {
 			mot_rockets
+		}
+	}
+	
+	motorised_infantry_2 = {
+
+		enable_equipments = {
+			motorized_equipment_2
+		}
+
+		on_research_complete_limit = {
+			NOT = {
+				has_template_containing_unit = motorized
+			}
+		}
+		on_research_complete = {
+			hidden_effect = {
+				load_oob = "unlock_motorized"
+			}			
+			custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
+		}
+		
+		path = {
+			leads_to_tech = mechanised_infantry
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1936
+		folder = {
+			name = infantry_folder
+			position = { x = 0 y = @1936 }
+		}
+		
+		categories = {
+			motorized_equipment
+			infantry_tech
+		}
+		
+		sub_technologies = {
+			motorized_rocket_unit
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				date > "1937.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1938.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1939.1.1"
+			}
+			modifier = {
+				is_major = no
+				factor = 0.5
+			}
 		}
 	}
 	

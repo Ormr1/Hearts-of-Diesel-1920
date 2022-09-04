@@ -3033,5 +3033,13 @@ spriteTypes = {
 		name = "GFX_focus_FEN_alaskan_oil"
 		texturefile = "gfx/interface/goals/FENRIS/focus_FEN_alaskan_oil.dds"
 	}
+	SpriteType = {
+		name = "GFX_focus_FEN_mercenaries"
+		texturefile = "gfx/interface/goals/FENRIS/focus_FEN_mercenaries.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_FEN_elite_contractors"
+		texturefile = "gfx/interface/goals/FENRIS/focus_FEN_elite_contractors.dds"
+	}
 
 }

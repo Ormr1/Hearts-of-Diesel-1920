@@ -536,9 +536,9 @@ instant_effect = {
 
 	add_equipment_production = {
 		equipment = {
-			type = light_tank_chassis_2
+			type = light_tank_chassis_1
 			creator = "GER" 
-			version_name = "Panzer II Ausf. a"
+			version_name = "Sd. KS 49"
 		}
 		requested_factories = 2
 		progress = 0.4

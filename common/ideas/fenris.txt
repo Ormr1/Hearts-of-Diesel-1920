@@ -57,6 +57,17 @@ ideas = {
 				}
 			}
 		}
+		FEN_worldwide_transports_idea= {
+			picture = generic_army_problems
+			
+			equipment_bonus = {
+				transport_plane_equipment={
+					air_range = 7.5 
+					maximum_speed = -0.25
+					instant = yes
+				}
+			}
+		}
 		FEN_focusing_elite_troops_idea= {
 			picture = generic_army_problems
 			

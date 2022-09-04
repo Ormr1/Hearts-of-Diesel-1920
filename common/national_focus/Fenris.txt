@@ -309,7 +309,7 @@ focus_tree = {
 	}
     focus = {
 		id = FEN_recruiting_in_mercanary_ciricles
-		icon = GFX_focus_FEN_skulking_threat
+		icon = GFX_focus_FEN_mercenaries
 		relative_position_id = FEN_military_administration
 		x = 2
 		y = 1
@@ -636,13 +636,61 @@ focus_tree = {
 			FEN_increase_suspicion = yes
 		}
 	}
+
+	focus = {
+		id = FEN_new_global_focus
+		icon = GFX_focus_FEN_grasping_the_world
+		x = 20
+		y = 8
+		cost = 10
+		search_filters = {   }
+
+		prerequisite = { 
+			focus = FEN_the_shining_prize
+			focus = FEN_distater_in_romania
+		}
+		
+		available_if_capitulated = yes
+
+		available={
+			
+		}
+
+		completion_reward = {
+			add_political_power = 200
+		}
+	}
+	focus = {
+		id = FEN_distater_in_romania
+		icon = GFX_focus_FEN_skulking_threat
+		relative_position_id = FEN_new_global_focus
+		x = -3
+		y = -3
+		cost = 10
+		search_filters = {   }
+
+		mutually_exclusive = {focus = FEN_the_shining_prize}
+		
+		available_if_capitulated = yes
+
+		available={
+			has_country_flag = failed_in_factory
+		}
+
+		completion_reward = {
+			
+		}
+	}
 	focus = {
 		id = FEN_the_shining_prize
 		icon = GFX_focus_FEN_skulking_threat
-		x = 20
-		y = 5
+		relative_position_id = FEN_new_global_focus
+		x = 3
+		y = -3
 		cost = 10
 		search_filters = {   }
+
+		mutually_exclusive = {focus = FEN_distater_in_romania}
 		
 		available_if_capitulated = yes
 
@@ -693,6 +741,8 @@ focus_tree = {
 			add_political_power = 200
 		}
 	}
+
+	
 	focus = {
 		id = FEN_the_paraguayian_move
 		icon = GFX_focus_FEN_paraguay_play
@@ -851,7 +901,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FEN_focus_on_mercenaries
-		icon = GFX_focus_FEN_skulking_threat
+		icon = GFX_focus_FEN_mercenaries
 		relative_position_id = FEN_military_expansion
 		x = 3
 		y = 1
@@ -874,7 +924,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FEN_secret_contracts
-		icon = GFX_focus_FEN_skulking_threat
+		icon = GFX_focus_FEN_mercenaries
 		relative_position_id = FEN_focus_on_mercenaries
 		x = 0
 		y = 1
@@ -948,7 +998,7 @@ focus_tree = {
 
 	focus = {
 		id = FEN_focus_on_elte_troops
-		icon = GFX_focus_FEN_skulking_threat
+		icon = GFX_focus_FEN_elite_contractors
 		relative_position_id = FEN_military_expansion
 		x = -3
 		y = 1
@@ -1020,7 +1070,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FEN_every_man_a_SAS
-		icon = GFX_focus_FEN_skulking_threat
+		icon = GFX_focus_FEN_elite_contractors
 		relative_position_id = FEN_hidden_talent_hunters
 		x = 1
 		y = 1

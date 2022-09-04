@@ -16,22 +16,13 @@ state={
 			6595 1 
 		}
 		buildings = {
-			infrastructure = 3
+			infrastructure = 2
 			industrial_complex = 1
-			air_base = 6
+			arms_factory = 1
 
 		}
 		add_core_of = GER
 		add_core_of = SIL
-		1939.1.1 = {
-			buildings = {
-				air_base = 10
-				arms_factory = 3
-				industrial_complex = 3
-
-			}
-
-		}
 
 	}
 
