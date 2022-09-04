@@ -456,7 +456,7 @@ focus = {
     }
 }
 focus = {
-    id = FRA_Pay_A_Fair_Share
+    id = FRA_Pay_a_Fair_Share
     icon = placeholder
     relative_position_id = FRA_Communal_Autarky
     x = 4
@@ -476,11 +476,11 @@ focus = {
 focus = {
     id = FRA_Industrialize_Farmland
     icon = placeholder
-    relative_position_id = FRA_Pay_A_Fair_Share
+    relative_position_id = FRA_Pay_a_Fair_Share
     x = 1
     y = 1
     prerequisite = {
-        focus = FRA_Pay_A_Fair_Share
+        focus = FRA_Pay_a_Fair_Share
     }
 }
 focus = {
@@ -494,13 +494,33 @@ focus = {
     }
 }
 focus = {
+    id = FRA_Insert_Programs
+    icon = placeholder
+    relative_position_id = FRA_Make_Sure_the_People_are_Fed
+    x = 1
+    y = 1
+    prerequisite = {
+        focus = FRA_Make_Sure_the_People_are_Fed
+    }
+}
+focus = {
+    id = FRA_Food_and_Housing_Program
+    icon = placeholder
+    relative_position_id = FRA_Insert_Programs
+    x = 0
+    y = 1
+    prerequisite = {
+        focus = FRA_Insert_Programs
+    }
+}
+focus = {
     id = FRA_Restrict_Corporation_Control
     icon = placeholder
-    relative_position_id = FRA_Pay_A_Fair_Share
+    relative_position_id = FRA_Pay_a_Fair_Share
     x = -1
     y = 1
     prerequisite = {
-        focus = FRA_Pay_A_Fair_Share
+        focus = FRA_Pay_a_Fair_Share
         focus = FRA_Fill_the_Factories
     }
 }
@@ -512,7 +532,50 @@ focus = {
     y = 1
     prerequisite = {
         focus = FRA_Restrict_Corporation_Control
+    }
+    prerequisite = {
         focus = FRA_Industrialize_Farmland
+    }
+}
+focus = {
+    id = FRA_Walkable_Towns_and_Cities
+    icon = placeholder
+    relative_position_id = FRA_House_the_Homeless
+    x = 1
+    y = 1
+    prerequisite ={
+        focus = FRA_House_the_Homeless
+        focus = FRA_Make_Sure_the_People_are_Fed
+    }
+}
+focus = {
+    id = FRA_Cars_for_Necessity
+    icon = placeholder
+    relative_position_id = FRA_Walkable_Towns_and_Cities
+    x = 0
+    y = 1
+    prerequisite = {
+        focus = FRA_Walkable_Towns_and_Cities
+    }
+}
+focus = {
+    id = FRA_Lively_Neighborhoods
+    icon = placeholder
+    relative_position_id = FRA_House_the_Homeless
+    x = -1
+    y = 1
+    prerequisite = {
+        focus = FRA_House_the_Homeless
+    }
+}
+focus = {
+    id = FRA_Restore_Plants_One_by_One
+    icon = placeholder
+    relative_position_id = FRA_Lively_Neighborhoods
+    x = 0
+    y = 1
+    prerequisite = {
+        focus = FRA_Lively_Neighborhoods
     }
 }
 focus = {
@@ -596,7 +659,7 @@ focus = {
         focus = FRA_the_Money_Question_2
     }
 }
-### Autarkic Ways - Allows for an event to fire, where you can choose for increasing immigrant protection, or to focus on the people born in Frankia
+### Autarkic Ways - Allows for an event to fire, where you can choose for a mixed economy, or letting companies have their free will
 focus = {
     id = FRA_Autarkic_Ways
     icon = placeholder
@@ -611,115 +674,98 @@ focus = {
     }
     #complete_national_focus = FRA_Autarkic_Ways
 }
-### Allows for the government to focus on what's at home
+### Allows for the government to let the companies roam free, not letting the government stop FRA_the_Money_Question
+### Subcomment - Allows for decisions to be made, all of which increase production, increasing fascist popularity, while decreasing monthly population
 focus = {
     id = FRA_The_Frankish_Man
     icon = placeholder
     relative_position_id = FRA_Autarkic_Ways
     available = { always = no }
     mutually_exclusive = { focus = FRA_Move_into_Prosperity }
-    x = 1
+    x = 2
     y = 1
     prerequisite = {
         focus = FRA_Autarkic_Ways
     }
 }
-### Move Into Prosperity - Allows for more tourism/immigration, which in turn could make the government improve the economy
+### Move Into Prosperity - Allows to push companies and corporations into putting more left wing policies into effect
+### Subcomment - Creats decisions to punish corporations for being too big, doing so will slightly decrease production for a certain amount of time, but also increase communist and democratic support
 focus = {
     id = FRA_Move_into_Prosperity
     icon = placeholder
     relative_position_id = FRA_Autarkic_Ways
     mutually_exclusive = { focus = FRA_The_Frankish_Man }
-    x = -1
+    x = -2
     y = 1
     prerequisite = {
         focus = FRA_Autarkic_Ways
     }
 }
+### Create a Tax - Decreases production for a moment, but always increases monthly population gain
 focus = {
-    id = FRA_Appeal_to_Tourists
+    id = FRA_Create_a_Tax
     icon = placeholder
     relative_position_id = FRA_Move_into_Prosperity
-    x = 0
-    y = 3
+    x = -1
+    y = 1
     prerequisite = {
         focus = FRA_Move_into_Prosperity
     }
 }
-### Allow Settling - Increases monthly population
 focus = {
-    id = FRA_Allow_Settling
+    id = FRA_Demand_More_From_Corporations
     icon = placeholder
-    relative_position_id = FRA_Appeal_to_Tourists
-    x = -5
-    y = 7
-    prerequisite = {
-        focus = FRA_Appeal_to_Tourists
-    }
-}
-focus = {
-    id = FRA_Brighten_Advertising
-    icon = placeholder
-    relative_position_id = FRA_Allow_Settling
-    x = -2
-    y = 0
-    prerequisite = {
-        focus = FRA_Appeal_to_Tourists
-    }
-}
-focus = {
-    id = FRA_Internal_Plague
-    icon = placeholder
-    relative_position_id = FRA_Appeal_to_Tourists
-    x = -6
-    y = 1
-    prerequisite = {
-        focus = FRA_Appeal_to_Tourists
-    }
-}
-focus = {
-    id = FRA_Pressure_Companies
-    icon = placeholder
-    relative_position_id = FRA_Internal_Plague
-    x = -1
-    y = 1
-    prerequisite = {
-        FRA_Internal_Plague
-    }
-}
-### Loss to Rights - Happens if companies don't get their shit together in a certain amount of time, but only if the Great War economic focus is still there
-focus = {
-    id = FRA_Sometimes_a_Loss_to_Rights_is_Necessary
-    icon = placeholder
-    relative_position_id = FRA_Pressure_Companies
-    x = -1
-    y = 1
-    prerequisite = {
-        focus = FRA_Pressure_Companies
-    }
-}
-### Spelled as "Fine, I'll do it Myself," Mutually exclusive with prev focus, but only if ideology is communist
-focus = {
-    id = FRA_Fine_Ill_Do_it_Myself
-    icon = placeholder
-    relative_position_id = FRA_Pressure_Companies
+    relative_position_id = FRA_Move_into_Prosperity
     x = 1
     y = 1
-    available = {
-        ideology = communism
+    prerequisite = {
+        focus = FRA_Move_into_Prosperity
     }
 }
 focus = {
-    id = FRA_Pick_up_the_Slack
+    id = FRA_Quarterly_Report
     icon = placeholder
-    relative_position_id = FRA_Brighten_Advertising
+    relative_position_id = FRA_Create_a_Tax
     x = 1
-    y = 1 
+    y = 1
     prerequisite = {
-        focus = FRA_Brighten_Advertising
+        focus = FRA_Demand_More_From_Corporations
     }
     prerequisite = {
-        focus = FRA_Allow_Settling
+        focus = FRA_Create_a_Tax
+    }
+}
+focus = {
+    id = FRA_Hold_High_Standards
+    icon = placeholder
+    relative_position_id = FRA_Demand_More_From_Corporations
+    x = 0
+    y = 2
+    prerequisite = {
+        focus = FRA_Quarterly_Report
+    }
+}
+focus = {
+    id = FRA_Specialize_in_Economic_Law_and_Order
+    icon = placeholder
+    relative_position_id = FRA_Create_a_Tax
+    x = 0
+    y = 2
+    prerequisite = {
+        focus = FRA_Quarterly_Report
+    }
+}
+focus = {
+    id = FRA_Hold_Them_Accountable
+    icon = placeholder
+    relative_position_id = FRA_Specialize_in_Economic_Law_and_Order
+    x = 1
+    y = 1
+    prerequisite = {
+        focus = FRA_Specialize_in_Economic_Law_and_Order
+    }
+    prerequisite = {
+        focus = FRA_Hold_High_Standards
     }
 }
 ### Flexible With the Labor Laws - Additional Economy stuff (Same with left version of this), plus some after the merging focus
@@ -824,7 +870,7 @@ focus = {
 focus = {
     id = FRA_Workplace_Livelyhood
     icon = placeholder
-    relative_position_id = FRA_Create_A_Dependancy
+    relative_position_id = FRA_Create_a_Dependancy
     x =-1
     y = 1
     cost = 6
@@ -836,7 +882,7 @@ focus = {
         country_event = fra_economic.21
     }
     prerequisite = {
-        focus = FRA_Create_A_Dependancy
+        focus = FRA_Create_a_Dependancy
         focus = FRA_Construct_More_Jobs
     }
 }
@@ -937,7 +983,7 @@ focus = {
     }
 }
 focus = {
-    id = FRA_Create_A_Dependancy
+    id = FRA_Create_a_Dependancy
     icon = placeholder
     relative_position_id = FRA_Create_Construction_Jobs
     x = 1
@@ -957,7 +1003,7 @@ focus = {
 focus = {
     id = FRA_Work_Day_And_Night
     icon = placeholder
-    relative_position_id = FRA_Create_A_Dependancy
+    relative_position_id = FRA_Create_a_Dependancy
     x = 1
     y = 2
     cost = 5
@@ -970,7 +1016,7 @@ focus = {
     }
     prerequisite = {
         focus = FRA_Workplace_Livelyhood
-        focus = FRA_Create_A_Dependancy
+        focus = FRA_Create_a_Dependancy
     }
 }
 focus = {
@@ -1716,7 +1762,7 @@ focus = {
 }
 ### Birth Of a New Nation - Could give National Spirit/Idea that lets France recover/gain political party stuff/Stability, or anything else that helps
 focus = {
-    id = FRA_Birth_Of_A_New_Nation
+    id = FRA_Birth_Of_a_New_Nation
     icon = placeholder
     relative_position_id = FRA_Light_the_Torch
     x = 0
@@ -1742,7 +1788,7 @@ focus = {
 focus = {
     id = FRA_the_Power_Scenario
     icon = placeholder
-    relative_position_id = FRA_Birth_Of_A_New_Nation
+    relative_position_id = FRA_Birth_Of_a_New_Nation
     x = 0
     y = 1
     cost = 8
@@ -1753,7 +1799,7 @@ focus = {
         country_event = fra_parliament.3
     }
     prerequisite = {
-        focus = FRA_Birth_Of_A_New_Nation
+        focus = FRA_Birth_Of_a_New_Nation
     }
 }
 focus = {
@@ -1813,7 +1859,7 @@ focus = {
     id = FRA_Balance_Between_the_Government_and_the_People
     icon = placeholder
     relative_position_id = FRA_the_Workers_Paradise
-    mutually_exclusive = { focus = FRA_Truly_A_Free_Country }
+    mutually_exclusive = { focus = FRA_Truly_a_Free_Country }
     x = -4
     y = 1
     cost = 3
@@ -1829,7 +1875,7 @@ focus = {
 }
 ### Truly a Free Country - Anarcho-Communism
 focus = {
-    id = FRA_Truly_A_Free_Country
+    id = FRA_Truly_a_Free_Country
     icon = placeholder
     relative_position_id = FRA_the_Workers_Paradise
     mutually_exclusive = { focus = FRA_Balance_Between_the_Government_and_the_People }
@@ -1866,7 +1912,7 @@ focus = {
 }
 
 focus = {
-    id = FRA_Create_A_Political_Union
+    id = FRA_Create_a_Political_Union
     icon = placeholder
     relative_position_id = FRA_Unite_the_Left
     x = 0
@@ -1887,7 +1933,7 @@ focus = {
 focus = {
     id = FRA_Allow_For_Political_Autonomy
     icon = placeholder
-    relative_position_id = FRA_Create_A_Political_Union
+    relative_position_id = FRA_Create_a_Political_Union
     mutually_exclusive = { focus = FRA_Even_More_Political_Unity }
     x = 1
     y = 1
@@ -1900,7 +1946,7 @@ focus = {
         country_event = fra_parliament.2
     }
     prerequisite = {
-        focus = FRA_Create_A_Political_Union
+        focus = FRA_Create_a_Political_Union
     }
     focus_progress = {
         focus = FRA_Light_the_Torch
@@ -1908,13 +1954,14 @@ focus = {
     }
     available={
         has_civil_war = no
+        has_completed_focus = FRA_Light_the_Torch
     }
 }
 ### Even More Political Unity - Opposite of Political Autonomy, where all of the parties (Mainly communism, democracy, and anarchism) combine to form a single party, as an attemp to stabilize the country more, can only be done after civil war
 focus = {
     id = FRA_Even_More_Political_Unity
     icon = placeholder
-    relative_position_id = FRA_Create_A_Political_Union
+    relative_position_id = FRA_Create_a_Political_Union
     mutually_exclusive = { focus = FRA_Allow_For_Political_Autonomy }
     x = -1
     y = 1
@@ -1926,7 +1973,7 @@ focus = {
         country_event = fra_parliament.1
     }
     prerequisite = {
-        focus = FRA_Create_A_Political_Union
+        focus = FRA_Create_a_Political_Union
     }
     focus_progress = {
         focus = FRA_Light_the_Torch
@@ -1934,6 +1981,7 @@ focus = {
     }
     available={
         has_civil_war = no
+        has_completed_focus = FRA_Light_the_Torch
     }
 }
 focus = {
