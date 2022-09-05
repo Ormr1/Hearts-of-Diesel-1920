@@ -22,7 +22,7 @@ focus_tree = {
             original_tag = FRA
         }
     }
-    continuous_focus_position = { x = 1250 y = 3500}
+    continuous_focus_position = { x = 0 y = 5000 }
     default = no
 
 ### ECONOMIC
@@ -506,7 +506,7 @@ focus = {
     relative_position_id = FRA_Industrialize_Farmland
     x = 0
     y = 1
-    cost = 8
+    cost = 7
     prerequisite = {
         focus = FRA_Industrialize_Farmland
     }
@@ -554,7 +554,7 @@ focus = {
     relative_position_id = FRA_Restrict_Corporation_Control
     x = 0
     y = 1
-    cost = 8
+    cost = 7
     prerequisite = {
         focus = FRA_Restrict_Corporation_Control
     }
@@ -568,7 +568,7 @@ focus = {
     relative_position_id = FRA_House_the_Homeless
     x = 1
     y = 1
-    cost = 8
+    cost = 6
     prerequisite ={
         focus = FRA_House_the_Homeless
         focus = FRA_Make_Sure_the_People_are_Fed
@@ -591,7 +591,7 @@ focus = {
     relative_position_id = FRA_House_the_Homeless
     x = -1
     y = 1
-    cost = 3
+    cost = 5
     prerequisite = {
         focus = FRA_House_the_Homeless
     }
@@ -602,7 +602,7 @@ focus = {
     relative_position_id = FRA_Lively_Neighborhoods
     x = 0
     y = 1
-    cost = 7
+    cost = 4
     prerequisite = {
         focus = FRA_Lively_Neighborhoods
     }
@@ -613,7 +613,7 @@ focus = {
     relative_position_id = FRA_Restore_Plants_One_by_One
     x = 1
     y = 1
-    cost = 5
+    cost = 8
     prerequisite = {
         focus = FRA_Restore_Plants_One_by_One
     }
@@ -627,7 +627,7 @@ focus = {
     relative_position_id = FRA_Cars_for_Necessity
     x = 1
     y = 1
-    cost = 3
+    cost = 5
     prerequisite = {
         focus = FRA_Cars_for_Necessity
     }
@@ -747,12 +747,12 @@ focus = {
     }
 }
 focus = {
-    id = FRA_The_Ideal_Standards
+    id = FRA_Set_The_Ideal_Standards
     icon = placeholder
     relative_position_id = FRA_The_Frankish_Man
     x = 1
     y = 1
-    cost = 5
+    cost = 7
     prerequisite = {
         focus = FRA_The_Frankish_Man
     }
@@ -775,7 +775,7 @@ focus = {
     relative_position_id = FRA_Women_in_the_Nation
     x = 1
     y = 1
-    cost = 8
+    cost = 7
     prerequisite = {
         focus = FRA_Women_in_the_Nation
     }
@@ -790,7 +790,7 @@ focus = {
     relative_position_id = FRA_Mass_Segregation
     x = 1
     y = 1
-    cost = 5
+    cost = 8
     prerequisite = {
         focus = FRA_Mass_Segregation
     }
@@ -801,7 +801,7 @@ focus = {
     relative_position_id = FRA_Mass_Segregation
     x = -1
     y = 1
-    cost = 7
+    cost = 6
     prerequisite = {
         focus = FRA_Mass_Segregation
     }
@@ -812,7 +812,7 @@ focus = {
     relative_position_id = FRA_Mass_Segregation
     x = 0
     y = 2
-    cost = 3
+    cost = 5
     prerequisite = {
         focus = FRA_Workplace_Autocracy
     }
@@ -863,7 +863,7 @@ focus = {
     relative_position_id = FRA_Create_a_Tax
     x = 1
     y = 1
-    cost = 6
+    cost = 7
     prerequisite = {
         focus = FRA_Demand_More_From_Corporations
     }
@@ -877,7 +877,7 @@ focus = {
     relative_position_id = FRA_Demand_More_From_Corporations
     x = 0
     y = 2
-    cost = 4
+    cost = 6
     prerequisite = {
         focus = FRA_Quarterly_Report
     }
@@ -913,7 +913,7 @@ focus = {
     relative_position_id = FRA_Hold_Them_Accountable
     x = 2
     y = 1
-    cost = 3
+    cost = 5
     prerequisite = {
         focus = FRA_Hold_Them_Accountable
     }
@@ -1234,7 +1234,7 @@ focus = {
     relative_position_id = FRA_Hard_Working_Lower_Class
     x = -1
     y = 1
-    cost = 3
+    cost = 7
     prerequisite = {
         focus = FRA_Hard_Working_Lower_Class
     }
@@ -1246,7 +1246,7 @@ focus = {
     relative_position_id = FRA_Hard_Working_Lower_Class
     x = 1
     y = 1
-    cost = 5
+    cost = 6
     prerequisite = {
         focus = FRA_Hard_Working_Lower_Class
         focus = FRA_Allow_Unpaid_Labor
@@ -1326,7 +1326,7 @@ focus = {
     relative_position_id = FRA_Lower_the_Standards
     x = 1
     y = 1
-    cost = 5
+    cost = 8
     prerequisite = {
         focus = FRA_Lower_the_Standards
     }
@@ -1337,7 +1337,7 @@ focus = {
     relative_position_id = FRA_Harbor_the_Elites
     x = 0
     y = 1
-    cost = 4
+    cost = 6
     prerequisite = {
         focus = FRA_Harbor_the_Elites
     }
@@ -1361,7 +1361,7 @@ focus = {
     relative_position_id = FRA_Unskilled_Labor_is_Key
     x = 0
     y = 1
-    cost = 8
+    cost = 5
     prerequisite = {
         focus = FRA_Unskilled_Labor_is_Key
     }
@@ -2046,16 +2046,16 @@ focus = {
         focus = FRA_Light_the_Torch
     }
 } 
-### the Power Scenario - Lets you pick between Anarchism and Democracy, Anarchism part can pick Anarcho-Capitalism, Anarcho-Communism, and Reg Communism. Might change Communism to be its own path but idk
+### The Power Scenario - Each ideology chosen gets a set of decisions to help settle down the political situation, and let the chosen ideology be the one that rules the nation
 focus = {
-    id = FRA_the_Power_Scenario
+    id = FRA_The_Power_Scenario
     icon = placeholder
     relative_position_id = FRA_Birth_Of_a_New_Nation
     x = 0
     y = 1
     cost = 8
     ai_will_do = {
-        factor = 8
+        factor = 5
     }
     completion_reward = {
         country_event = fra_parliament.3
@@ -2065,9 +2065,56 @@ focus = {
     }
 }
 focus = {
+    id = FRA_More_to_the_Government
+    icon = placeholder
+    mutually_exclusive = { focus = FRA_Power_to_the_People }
+    available = { always = no }
+    relative_position_id = FRA_The_Power_Scenario
+    x = -10
+    y = 1
+    cost = 8
+    ai_will_do = {
+        factor = 5
+    }
+    completion_reward = {
+        country_event = fra_parliament.5
+    }
+    prerequisite = {
+        focus = FRA_The_Power_Scenario
+    }
+}
+focus = {
+    id = FRA_Workers_Tied_to_an_Autocracy
+    icon = placeholder
+    mutually_exclusive = { focus = FRA_Let_the_People_Decide }
+    available = { always = no }
+    relative_position_id = FRA_More_to_the_Government
+    x = -6
+    y = 1
+    cost = 0
+    prerequisite = {
+        focus = FRA_More_to_the_Government
+    }
+}
+focus = {
+    id = FRA_Let_the_People_Decide
+    icon = placeholder
+    mutually_exclusive = { focus = FRA_Workers_Tied_to_an_Autocracy }
+    available = { always = no }
+    relative_position_id = FRA_More_to_the_Government
+    x = 6
+    y = 1
+    cost = 0
+    prerequisite = {
+        focus = FRA_More_to_the_Government
+    }
+}
+focus = {
     id = FRA_Power_to_the_People
     icon = placeholder
-    relative_position_id = FRA_the_Power_Scenario
+    mutually_exclusive = { focus = FRA_More_to_the_Government }
+    available = { always = no }
+    relative_position_id = FRA_The_Power_Scenario
     x = 10
     y = 1
     cost = 1
@@ -2075,33 +2122,18 @@ focus = {
         factor = 8
     }
     completion_reward = {
-        country_event = fra_parliament.6
+        country_event = fra_parliament.4
     }
     prerequisite = {
-        focus = FRA_the_Power_Scenario
+        focus = FRA_The_Power_Scenario
     }
 }
 ### A Capitalists Dream - AnCap Moment
 focus = {
-    id = A_Caplitalists_Dream
+    id = FRA_A_Caplitalists_Dream
     icon = placeholder
-    relative_position_id = FRA_Power_to_the_People
-    x = -6
-    y = 1
-    cost = 3
-    ai_will_do = {
-        factor = 8
-    }
-    completion_reward = {
-        country_event = fra_parliament.9
-    }
-    prerequisite = {
-        focus = FRA_Power_to_the_People
-    }
-}
-focus = {
-    id = FRA_the_Workers_Paradise
-    icon = placeholder
+    mutually_exclusive = { focus = FRA_The_Workers_Paradise }
+    available = { always = no }
     relative_position_id = FRA_Power_to_the_People
     x = 6
     y = 1
@@ -2109,49 +2141,24 @@ focus = {
     ai_will_do = {
         factor = 8
     }
-    completion_reward = {
-        country_event = fra_parliament.8
-    }
     prerequisite = {
         focus = FRA_Power_to_the_People
     }
 }
-### Balance - Communism
 focus = {
-    id = FRA_Balance_Between_the_Government_and_the_People
+    id = FRA_The_Workers_Paradise
     icon = placeholder
-    relative_position_id = FRA_the_Workers_Paradise
-    mutually_exclusive = { focus = FRA_Truly_a_Free_Country }
-    x = -4
+    mutually_exclusive = { focus = FRA_A_Caplitalists_Dream }
+    available = { always = no }
+    relative_position_id = FRA_Power_to_the_People
+    x = -6
     y = 1
     cost = 3
     ai_will_do = {
         factor = 8
     }
-    completion_reward = {
-        country_event = fra_parliament.3
-    }
     prerequisite = {
-        focus = FRA_the_Workers_Paradise
-    }
-}
-### Truly a Free Country - Anarcho-Communism
-focus = {
-    id = FRA_Truly_a_Free_Country
-    icon = placeholder
-    relative_position_id = FRA_the_Workers_Paradise
-    mutually_exclusive = { focus = FRA_Balance_Between_the_Government_and_the_People }
-    x = 4
-    y = 1
-    cost = 3
-    ai_will_do = {
-        factor = 8
-    }
-    completion_reward = {
-        country_event = fra_parliament.3
-    }
-    prerequisite = {
-        focus = FRA_the_Workers_Paradise
+        focus = FRA_Power_to_the_People
     }
 }
 focus = {

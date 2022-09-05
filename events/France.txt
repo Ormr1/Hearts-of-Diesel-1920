@@ -2397,7 +2397,7 @@ country_event = { # FRA_Arm_The_People
 	}
 }
 
-country_event = {
+country_event = { # Autarkic Ways
 	id = fra_economic.36
 	title = fra_economic.36.t
 	desc = fra_economic.36.desc
@@ -2416,10 +2416,68 @@ country_event = {
 		complete_national_focus = FRA_The_Frankish_Man
 	}
 }
+country_event = { # Power Struggle
+	id = fra_parliament.3
+	title = fra_parliament.3.t
+	desc = fra_parliament.3.desc
+
+	picture = placeholder
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = fra_parliament.3.a
+		unlock_national_focus = FRA_More_to_the_Government
+	}
+	option = {
+		name = fra_parliament.3.b
+		unlock_national_focus = FRA_Power_to_the_People
+	}
+}
+
+country_event = { # Anarchism
+	id = fra_parliament.4
+	title = fra_parliament.4.t
+	desc = fra_parliament.4.desc
+
+	picture = placeholder
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = fra_parliament.4.a
+		complete_national_focus = FRA_The_Workers_Paradise
+	}
+	option = {
+		name = fra_parliament.4.b
+		complete_national_focus = FRA_A_Caplitalists_Dream
+	}
+}
+
+country_event = { # More to the Government
+	id = fra_parliament.5
+	title = fra_parliament.5.t
+	desc = fra_parliament.5.desc
+
+	picture = placeholder
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = fra_parliament.5.a
+		complete_national_focus = FRA_The_Workers_Paradise
+	}
+	option = {
+		name = fra_parliament.5.b
+		complete_national_focus = FRA_A_Caplitalists_Dream
+	}
+}
+
+
 country_event = { # fra_civilwarignite.1
     id = fra_civilwarignite.1
     title = fra_civilwarignite.1.t
-    desc - fra_civilwarignite.1.desc
+    desc = fra_civilwarignite.1.desc
     
     picture = placeholder
     
