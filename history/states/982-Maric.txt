@@ -4,6 +4,7 @@ state={
 	name="STATE_982"
 	resources={
 		tungsten=18.000
+		copper=9
 	}
 
 	history={

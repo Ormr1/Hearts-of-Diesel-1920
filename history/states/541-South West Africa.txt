@@ -4,6 +4,10 @@ state={
 	name="STATE_541"
 	manpower = 462000
 	
+	resources={
+		copper=8
+	}
+	
 	state_category = wasteland
 
 	history={

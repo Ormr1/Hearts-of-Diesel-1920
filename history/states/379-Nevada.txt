@@ -6,6 +6,7 @@ state={
 		steel=70.000
 		tungsten=32.000
 		aluminium=25.000
+		copper=16
 	}
 
 	history={

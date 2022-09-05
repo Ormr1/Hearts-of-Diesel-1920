@@ -1,0 +1,27 @@
+
+state={
+	id=1018
+	name="STATE_1018"
+	resources={
+		copper=47
+	}
+	history={
+		owner = LAP
+		add_core_of = LAP
+		add_core_of = CHL
+		add_claim_by = PRU
+		buildings = {
+			infrastructure = 2
+			5228 = {
+				naval_base = 1
+			}
+		}
+	}
+	provinces={
+		5171 11000 5192 12914 5228
+	}
+	manpower=77800
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

@@ -412,6 +412,7 @@ country_event = { #La Platan Liberals revolt
 				transfer_state = 511
 				transfer_state = 508
 				transfer_state = 509
+				transfer_state = 1018
 				load_oob = "LPT_1921"
 				declare_war_on = {
 					target = RGS
@@ -649,6 +650,9 @@ country_event = { #Chile and RGS are unaccessable for now
 		hidden_effect={
 			white_peace = CHL
 			white_peace = RGS
+			CHL={
+				transfer_state = 1018
+			}
 		}
 	}
 	
