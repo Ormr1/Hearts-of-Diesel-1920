@@ -2,6 +2,10 @@ state = {
 	id = 822
 	name = "STATE_822" #Chukotka
 
+	resources={
+		copper = 1.000
+	}
+
 	history = {
 		owner = SOV
 		victory_points = {

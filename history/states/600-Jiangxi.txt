@@ -1,6 +1,9 @@
 state={
 	id=600
 	name="STATE_600"
+	resources={
+		copper = 1.000
+	}
 
 	history={
 		owner = CHI

@@ -44,7 +44,7 @@ if = {
 	}
 	set_technology = {
 		basic_light_tank_chassis = 1
-		gwtank_chassis = 1
+		converted_automachine_chassis = 1
 	}
 }
 if = {

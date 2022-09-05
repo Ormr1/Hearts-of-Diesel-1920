@@ -2,6 +2,10 @@ state={
 	id=960
 	name="STATE_960"
 
+	resources={
+		copper = 9.000
+	}
+
 	history={
 		owner = MAL
 		victory_points = {

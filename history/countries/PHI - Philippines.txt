@@ -102,7 +102,7 @@ recruit_character = PHI_sergio_osmena
 			
 		}
 		set_technology = {
-			gwtank_chassis = 1
+			converted_automachine_chassis = 1
 			basic_light_tank_chassis = 1
 		}
 	}

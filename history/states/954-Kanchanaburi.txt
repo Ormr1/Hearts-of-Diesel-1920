@@ -2,6 +2,10 @@ state={
 	id=954
 	name="STATE_954"
 
+	resources={
+		copper = 1.000
+	}
+
 	history={
 		owner = SIA
 		buildings = {
