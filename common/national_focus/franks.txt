@@ -122,6 +122,7 @@ focus = {
     relative_position_id = FRA_Legalize_Unions
     x = -1
     y = 1
+    cost = 7
     prerequisite = {
         focus = FRA_Legalize_Unions
     }
@@ -132,16 +133,19 @@ focus = {
     relative_position_id = FRA_Better_Workplace_Social_Norms
     x = -1
     y = 1
+    cost = 8
     prerequisite = {
         focus = FRA_Better_Workplace_Social_Norms
     }
 }
+### Value Teachers, Teach How to Work, and Better Schooling, Better Future - Adds research speed
 focus = {
     id = FRA_Value_Teachers
     icon = placeholder
     relative_position_id = FRA_No_to_Child_Labor
     x = -1
     y = 2
+    cost = 6
     prerequisite = {
         focus = FRA_Teach_How_To_Work
         focus = FRA_No_to_Child_Labor
@@ -153,6 +157,7 @@ focus = {
     relative_position_id = FRA_No_to_Child_Labor
     x = 1
     y = 1
+    cost = 6
     prerequisite = {
         focus = FRA_No_to_Child_Labor
         focus = FRA_Collectivized_Industry
@@ -165,6 +170,7 @@ focus = {
     relative_position_id = FRA_Teach_How_To_Work
     x = 0
     y = 2
+    cost = 5
     prerequisite = {
         focus = FRA_Teach_How_To_Work
         focus = FRA_Prepare_for_the_Real_World
@@ -176,6 +182,7 @@ focus = {
     relative_position_id = FRA_Teach_How_To_Work
     x = 1
     y = 1
+    cost = 5
     prerequisite = {
         focus = FRA_Teach_How_To_Work
         focus = FRA_Cleaner_Workplace
@@ -187,6 +194,7 @@ focus = {
     relative_position_id = FRA_Legalize_Unions
     x = 1
     y = 1
+    cost = 6
     prerequisite = {
         focus = FRA_Legalize_Unions
     }
@@ -198,6 +206,10 @@ focus = {
     relative_position_id = FRA_Begin_the_Process_of_Unionization
     x = -1
     y = 1
+    cost = 5
+    available = {
+        has_completed_focus = FRA_Flexibile_Workforce
+    }
     prerequisite = {
         focus = FRA_Begin_the_Process_of_Unionization
         focus = FRA_Better_Workplace_Social_Norms
@@ -210,11 +222,9 @@ focus = {
     relative_position_id = FRA_Begin_the_Process_of_Unionization
     x = 0
     y = 2
-    available = {
-        has_not_completed_focus = FRA_Flexibile_Workforce
-    }
+    cost = 7
     prerequisite = {
-        focus = FRA_Begin_the_Process_of_Unionization
+        focus = FRA_Collectivized_Industry
         focus = FRA_The_Demands_of_Workers
     }
 }
@@ -225,6 +235,7 @@ focus = {
     relative_position_id = FRA_Begin_the_Process_of_Unionization
     x = 1
     y = 1
+    cost = 6
     prerequisite = {
         focus = FRA_Begin_the_Process_of_Unionization
     }
@@ -235,6 +246,7 @@ focus = {
     relative_position_id = FRA_The_Demands_of_Workers
     x = 1
     y = 1
+    cost = 8
     prerequisite = {
         focus = FRA_The_Demands_of_Workers
     }
@@ -246,6 +258,10 @@ focus = {
     relative_position_id = FRA_40_Hour_Work_Week
     x = 1
     y = 1
+    cost = 5
+    available = {
+        has_completed_focus = FRA_Flexibile_Workforce
+    }
     prerequisite = {
         focus = FRA_40_Hour_Work_Week
     }
@@ -461,7 +477,7 @@ focus = {
     relative_position_id = FRA_Communal_Autarky
     x = 4
     y = 1
-        cost = 5
+    cost = 5
     ai_will_do = {
         factor = 7
     }
@@ -479,6 +495,7 @@ focus = {
     relative_position_id = FRA_Pay_a_Fair_Share
     x = 1
     y = 1
+    cost = 6
     prerequisite = {
         focus = FRA_Pay_a_Fair_Share
     }
@@ -489,8 +506,12 @@ focus = {
     relative_position_id = FRA_Industrialize_Farmland
     x = 0
     y = 1
+    cost = 8
     prerequisite = {
         focus = FRA_Industrialize_Farmland
+    }
+    prerequisite = {
+        focus = FRA_Restrict_Corporation_Control
     }
 }
 focus = {
@@ -499,6 +520,7 @@ focus = {
     relative_position_id = FRA_Make_Sure_the_People_are_Fed
     x = 1
     y = 1
+    cost = 8
     prerequisite = {
         focus = FRA_Make_Sure_the_People_are_Fed
     }
@@ -509,6 +531,7 @@ focus = {
     relative_position_id = FRA_Insert_Programs
     x = 0
     y = 1
+    cost = 6
     prerequisite = {
         focus = FRA_Insert_Programs
     }
@@ -519,6 +542,7 @@ focus = {
     relative_position_id = FRA_Pay_a_Fair_Share
     x = -1
     y = 1
+    cost = 7
     prerequisite = {
         focus = FRA_Pay_a_Fair_Share
         focus = FRA_Fill_the_Factories
@@ -530,6 +554,7 @@ focus = {
     relative_position_id = FRA_Restrict_Corporation_Control
     x = 0
     y = 1
+    cost = 8
     prerequisite = {
         focus = FRA_Restrict_Corporation_Control
     }
@@ -543,6 +568,7 @@ focus = {
     relative_position_id = FRA_House_the_Homeless
     x = 1
     y = 1
+    cost = 8
     prerequisite ={
         focus = FRA_House_the_Homeless
         focus = FRA_Make_Sure_the_People_are_Fed
@@ -554,6 +580,7 @@ focus = {
     relative_position_id = FRA_Walkable_Towns_and_Cities
     x = 0
     y = 1
+    cost = 5
     prerequisite = {
         focus = FRA_Walkable_Towns_and_Cities
     }
@@ -564,6 +591,7 @@ focus = {
     relative_position_id = FRA_House_the_Homeless
     x = -1
     y = 1
+    cost = 3
     prerequisite = {
         focus = FRA_House_the_Homeless
     }
@@ -574,8 +602,37 @@ focus = {
     relative_position_id = FRA_Lively_Neighborhoods
     x = 0
     y = 1
+    cost = 7
     prerequisite = {
         focus = FRA_Lively_Neighborhoods
+    }
+}
+focus = {
+    id = FRA_Save_the_Environment
+    icon = placeholder
+    relative_position_id = FRA_Restore_Plants_One_by_One
+    x = 1
+    y = 1
+    cost = 5
+    prerequisite = {
+        focus = FRA_Restore_Plants_One_by_One
+    }
+    prerequisite = {
+        focus = FRA_Cars_for_Necessity
+    }
+}
+focus = {
+    id = FRA_A_Healthy_Populous
+    icon = placeholder
+    relative_position_id = FRA_Cars_for_Necessity
+    x = 1
+    y = 1
+    cost = 3
+    prerequisite = {
+        focus = FRA_Cars_for_Necessity
+    }
+    prerequisite = {
+        focus = FRA_Food_and_Housing_Program
     }
 }
 focus = {
@@ -684,8 +741,83 @@ focus = {
     mutually_exclusive = { focus = FRA_Move_into_Prosperity }
     x = 2
     y = 1
+    cost = 0
     prerequisite = {
         focus = FRA_Autarkic_Ways
+    }
+}
+focus = {
+    id = FRA_The_Ideal_Standards
+    icon = placeholder
+    relative_position_id = FRA_The_Frankish_Man
+    x = 1
+    y = 1
+    cost = 5
+    prerequisite = {
+        focus = FRA_The_Frankish_Man
+    }
+}
+### Women in the Nation - Adds event to decide whether or not Women should hold power. Yes - Adds stability and pp gain slightly / No - Increases PP gain and ticking popularity mediocrely
+focus = {
+    id = FRA_Women_in_the_Nation
+    icon = placeholder
+    relative_position_id = FRA_The_Frankish_Man
+    x = -1
+    y = 1
+    cost = 6
+    prerequisite = {
+        focus = FRA_The_Frankish_Man
+    }
+}
+focus = {
+    id = FRA_Mass_Segregation
+    icon = placeholder
+    relative_position_id = FRA_Women_in_the_Nation
+    x = 1
+    y = 1
+    cost = 8
+    prerequisite = {
+        focus = FRA_Women_in_the_Nation
+    }
+    prerequisite = {
+        focus = FRA_The_Ideal_Standards
+    }
+}
+### Threats of Deportation - Increases production efficiency while decreasing war support, stability, and party popularity
+focus = {
+    id = FRA_Threats_of_Deportation
+    icon = placeholder
+    relative_position_id = FRA_Mass_Segregation
+    x = 1
+    y = 1
+    cost = 5
+    prerequisite = {
+        focus = FRA_Mass_Segregation
+    }
+}
+focus = {
+    id = FRA_Workplace_Autocracy
+    icon = placeholder
+    relative_position_id = FRA_Mass_Segregation
+    x = -1
+    y = 1
+    cost = 7
+    prerequisite = {
+        focus = FRA_Mass_Segregation
+    }
+}
+focus = {
+    id = FRA_White_Man_as_the_Role_Model
+    icon = placeholder
+    relative_position_id = FRA_Mass_Segregation
+    x = 0
+    y = 2
+    cost = 3
+    prerequisite = {
+        focus = FRA_Workplace_Autocracy
+    }
+    prerequisite = {
+        focus = FRA_Threats_of_Deportation
     }
 }
 ### Move Into Prosperity - Allows to push companies and corporations into putting more left wing policies into effect
@@ -697,6 +829,7 @@ focus = {
     mutually_exclusive = { focus = FRA_The_Frankish_Man }
     x = -2
     y = 1
+    cost = 0
     prerequisite = {
         focus = FRA_Autarkic_Ways
     }
@@ -708,6 +841,7 @@ focus = {
     relative_position_id = FRA_Move_into_Prosperity
     x = -1
     y = 1
+    cost = 6
     prerequisite = {
         focus = FRA_Move_into_Prosperity
     }
@@ -718,6 +852,7 @@ focus = {
     relative_position_id = FRA_Move_into_Prosperity
     x = 1
     y = 1
+    cost = 7
     prerequisite = {
         focus = FRA_Move_into_Prosperity
     }
@@ -728,6 +863,7 @@ focus = {
     relative_position_id = FRA_Create_a_Tax
     x = 1
     y = 1
+    cost = 6
     prerequisite = {
         focus = FRA_Demand_More_From_Corporations
     }
@@ -741,6 +877,7 @@ focus = {
     relative_position_id = FRA_Demand_More_From_Corporations
     x = 0
     y = 2
+    cost = 4
     prerequisite = {
         focus = FRA_Quarterly_Report
     }
@@ -751,6 +888,7 @@ focus = {
     relative_position_id = FRA_Create_a_Tax
     x = 0
     y = 2
+    cost = 8
     prerequisite = {
         focus = FRA_Quarterly_Report
     }
@@ -761,11 +899,26 @@ focus = {
     relative_position_id = FRA_Specialize_in_Economic_Law_and_Order
     x = 1
     y = 1
+    cost = 5
     prerequisite = {
         focus = FRA_Specialize_in_Economic_Law_and_Order
     }
     prerequisite = {
         focus = FRA_Hold_High_Standards
+    }
+}
+focus = {
+    id = FRA_Centrist_Economy
+    icon = placeholder
+    relative_position_id = FRA_Hold_Them_Accountable
+    x = 2
+    y = 1
+    cost = 3
+    prerequisite = {
+        focus = FRA_Hold_Them_Accountable
+    }
+    prerequisite = {
+        focus = FRA_White_Man_as_the_Role_Model
     }
 }
 ### Flexible With the Labor Laws - Additional Economy stuff (Same with left version of this), plus some after the merging focus
@@ -1081,6 +1234,7 @@ focus = {
     relative_position_id = FRA_Hard_Working_Lower_Class
     x = -1
     y = 1
+    cost = 3
     prerequisite = {
         focus = FRA_Hard_Working_Lower_Class
     }
@@ -1092,32 +1246,139 @@ focus = {
     relative_position_id = FRA_Hard_Working_Lower_Class
     x = 1
     y = 1
+    cost = 5
     prerequisite = {
         focus = FRA_Hard_Working_Lower_Class
         focus = FRA_Allow_Unpaid_Labor
     }
 }
-### Restrict the Mouths - Think of "Insert Press Censorship" decision
+### Restrict the Mouths, Prevent Mutinies, and Propagandize Poorer Standards - Think of "Insert Press Censorship" decision, that. and adds slight stability per week
 focus = {
     id = FRA_Restrict_the_Mouths
     icon = placeholder
     relative_position_id = FRA_Insentivize_Individualism
     x = 0
     y = 1
+    cost = 7
     prerequisite = {
         focus = FRA_Insentivize_Individualism
     }
+    prerequisite = {
+        focus = FRA_The_Lower_the_Mind_the_Higher_the_Yield
+    }
 }
-### Lower the Standards - Decreases cost of equipment while decreasing strength or reliability
+focus = {
+    id = FRA_Prevent_Mutinies
+    icon = placeholder
+    relative_position_id = FRA_Restrict_the_Mouths
+    x = -1
+    y = 1
+    cost = 5
+    prerequisite = {
+        focus = FRA_Restrict_the_Mouths
+    }
+}
+focus = {
+    id = FRA_Propagandize_Poorer_Standards
+    icon = placeholder
+    relative_position_id = FRA_Prevent_Mutinies
+    x = 0
+    y = 1
+    cost = 4
+    prerequisite = {
+        focus = FRA_Prevent_Mutinies
+    }
+}
+### A Dictator's Wet Dream - Adds idea that gives extra pp and ticking party popularity
+focus = {
+    id = FRA_A_Dictators_Wet_Dream
+    icon = placeholder
+    relative_position_id = FRA_Propagandize_Poorer_Standards
+    x = 1
+    y = 1
+    cost = 8
+    prerequisite = {
+        focus = FRA_Propagandize_Poorer_Standards
+    }
+    prerequisite = {
+        focus = FRA_Higher_Racial_Bias
+    }
+}
+### Lower the Standards - Decreases cost of equipment while decreasing strength and/or reliability
 focus = {
     id = FRA_Lower_the_Standards
     icon = placeholder
     relative_position_id = FRA_Insentivize_Individualism
     x = 2
     y = 1 
+    cost = 7
     prerequisite = {
         focus = FRA_Insentivize_Individualism
+    }
+    prerequisite = {
         focus = FRA_The_Lower_the_Mind_the_Higher_the_Yield
+    }
+}
+### Harbor the Elites and Wealthy Over the Commoner - Increased construction speed
+focus = {
+    id = FRA_Harbor_the_Elites
+    icon = placeholder
+    relative_position_id = FRA_Lower_the_Standards
+    x = 1
+    y = 1
+    cost = 5
+    prerequisite = {
+        focus = FRA_Lower_the_Standards
+    }
+}
+focus = {
+    id = FRA_Wealthy_Over_the_Commoner
+    icon = placeholder
+    relative_position_id = FRA_Harbor_the_Elites
+    x = 0
+    y = 1
+    cost = 4
+    prerequisite = {
+        focus = FRA_Harbor_the_Elites
+    }
+}
+focus = {
+    id = FRA_Unskilled_Labor_is_Key
+    icon = placeholder
+    relative_position_id = FRA_Lower_the_Standards
+    x = -1
+    y = 1
+    cost = 6
+    prerequisite = {
+        focus = FRA_Restrict_the_Mouths
+        focus = FRA_Lower_the_Standards
+    }
+}
+### Racial Bias in Jobs - Reduces conscription factor (-20%) while increasing production (~10-15%)
+focus = {
+    id = FRA_Higher_Racial_Bias
+    icon = placeholder
+    relative_position_id = FRA_Unskilled_Labor_is_Key
+    x = 0
+    y = 1
+    cost = 8
+    prerequisite = {
+        focus = FRA_Unskilled_Labor_is_Key
+    }
+}
+### FRA_Desegregate_the_Armed_Forces - Increases conscription factor (40%). along with an additonal ~1.50% manpower. Can only be done when losing a war heavily
+focus = {
+    id = FRA_Desegregate_the_Armed_Forces
+    icon = placeholder
+    relative_position_id = FRA_Higher_Racial_Bias
+    x = 1
+    y = 1
+    cost = 5
+    prerequisite = {
+        focus = FRA_Higher_Racial_Bias
+    }
+    prerequisite = {
+        focus = FRA_Wealthy_Over_the_Commoner
     }
 }
 focus = {
@@ -1261,10 +1522,11 @@ focus = {
     icon = placeholder
     relative_position_id = FRA_State_Of_the_Economy
     x = 0
-    y = 15
+    y = 12
     prerequisite = {
         focus = FRA_Right_Wing_Economy
         focus = FRA_Left_Wing_Economy
+        focus = FRA_Centrist_Economy
     }
 }
 ### This focus and the Left Wing version of this will lead to a new focus that gets rid of the effects of the Great War. Completion of that focus will let the "Ignite the Flame" Focus to be started and completed
