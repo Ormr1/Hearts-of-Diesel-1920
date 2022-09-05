@@ -2,6 +2,10 @@ state={
 	id=800
 	name="STATE_800" #Van
 
+	resources={
+		copper=15
+	}
+
 	history={
 		owner = PER
 		add_core_of = PER

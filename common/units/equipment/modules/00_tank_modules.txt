@@ -1399,6 +1399,9 @@ equipment_modules = {
 			defense = 0.25
 			breakthrough = 0.15
 		}
+		build_cost_resources = {
+			copper = 1
+		}
 	}
 
 	tank_radio_2 = {
@@ -1415,6 +1418,9 @@ equipment_modules = {
 			defense = 0.45
 			breakthrough = 0.30
 		}
+		build_cost_resources = {
+			copper = 1
+		}
 	}
 
 	tank_radio_3 = {
@@ -1430,6 +1436,9 @@ equipment_modules = {
 		multiply_stats = {
 			defense = 0.65
 			breakthrough = 0.45
+		}
+		build_cost_resources = {
+			copper = 1
 		}
 	}
 

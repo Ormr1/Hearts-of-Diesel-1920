@@ -5,6 +5,10 @@ state={
 	manpower = 796396
 	state_category = rural
 
+	resources={
+		copper=17
+	}
+
 	history={
 		owner = PER
 		victory_points = {

@@ -4,7 +4,7 @@ state=
 	name="STATE_518"
 	manpower = 224000
 	resources={
-		copper = 3.000
+		copper = 13.000
 	}
 	
 	state_category = small_island

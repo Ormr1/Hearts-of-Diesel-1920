@@ -3,6 +3,10 @@ state = {
 	id = 405
 	name = "STATE_405" #Tashkent
 
+	resources={
+		copper=9
+	}
+
 	history = {
 	
 		owner = SOV

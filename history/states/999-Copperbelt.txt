@@ -3,7 +3,7 @@ state={
 	name="STATE_999"
 	
 	resources={
-		copper = 45.000
+		copper = 67.000
 		tungsten=8.000
 	}
 
