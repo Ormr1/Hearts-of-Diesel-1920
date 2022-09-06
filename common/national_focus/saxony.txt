@@ -40,8 +40,10 @@ focus_tree = {
 	focus = {
 		id = GER_colonial_effort
 		icon = GFX_goal_generic_allies_build_infantry
-		x = 4
-		y = 0
+		prerequisite = { focus = GER_post_war_reconstruction }
+		relative_position_id = GER_post_war_reconstruction
+		x = 12
+		y = 1
 		cost = 10
 		search_filters = {  FOCUS_FILTER_COLONIAL }
 		
@@ -144,7 +146,7 @@ focus_tree = {
 	focus = {
 		id = GER_finish_peace_talks
 		icon = GFX_goal_tripartite_pact
-		x = 12
+		x = 4
 		y = 0
 		cost = 1
 		search_filters = {  FOCUS_FILTER_POLITICAL }
@@ -161,7 +163,7 @@ focus_tree = {
 		icon = GFX_goal_generic_allies_build_infantry
 		relative_position_id = GER_finish_peace_talks
 		prerequisite = { focus = GER_finish_peace_talks}
-		x = -2
+		x = 0
 		y = 1
 		cost = 10
 		search_filters = {  FOCUS_FILTER_POLITICAL }
@@ -176,7 +178,7 @@ focus_tree = {
 		id = GER_begin_iron_harvest
 		icon = GFX_focus_generic_iron_harvest
 		relative_position_id = GER_scars_of_the_great_war
-		x = 0
+		x = -2
 		y = 1
 		cost = 10
 		search_filters = {  FOCUS_FILTER_POLITICAL }
@@ -197,9 +199,9 @@ focus_tree = {
 	focus = {
 		id = GER_occupation_of_east_frankia
 		icon = GFX_goal_generic_allies_build_infantry
-		relative_position_id = GER_finish_peace_talks
-		prerequisite = { focus = GER_finish_peace_talks}
-		x = 3
+		relative_position_id = GER_scars_of_the_great_war
+		prerequisite = { focus = GER_scars_of_the_great_war}
+		x = 0
 		y = 1
 		cost = 10
 		search_filters = {  FOCUS_FILTER_POLITICAL }
@@ -213,9 +215,9 @@ focus_tree = {
 	focus = {
 		id = GER_occuption_of_venetia_et_histria
 		icon = GFX_goal_generic_allies_build_infantry
-		relative_position_id = GER_finish_peace_talks
-		prerequisite = { focus = GER_finish_peace_talks}
-		x = 6
+		relative_position_id = GER_scars_of_the_great_war
+		prerequisite = { focus = GER_scars_of_the_great_war}
+		x = 2
 		y = 1
 		cost = 10
 		search_filters = {  FOCUS_FILTER_POLITICAL }
@@ -372,10 +374,11 @@ focus_tree = {
 	focus = {
 		id = GER_post_war_reconstruction
 		icon = GFX_goal_generic_allies_build_infantry
-		x = 24
+		x = 16
 		y = 0
 		cost = 10
 		search_filters = {  FOCUS_FILTER_COLONIAL }
+		available={has_completed_focus = GER_scars_of_the_great_war }
 		
 		available_if_capitulated = yes
 
@@ -384,7 +387,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = GER_problems_of_war_debt
+		id = GER_dealing_with_war_debt
 		icon = GFX_goal_generic_allies_build_infantry
 		relative_position_id = GER_post_war_reconstruction
 		prerequisite = { focus = GER_post_war_reconstruction}
@@ -399,7 +402,284 @@ focus_tree = {
 			
 		}
 	}
+	focus = {
+		id = GER_problems_with_the_papiermark
+		icon = GFX_goal_generic_allies_build_infantry
+		relative_position_id = GER_dealing_with_war_debt
+		prerequisite = { focus = GER_dealing_with_war_debt}
+		x = 0
+		y = 1
+		cost = 10
+		search_filters = {  FOCUS_FILTER_COLONIAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = GER_keep_it_fiat
+		icon = GFX_goal_generic_allies_build_infantry
+		relative_position_id = GER_problems_with_the_papiermark
+		prerequisite = { focus = GER_problems_with_the_papiermark}
+		mutually_exclusive = {focus = GER_return_to_the_goldmark}
+		x = -1
+		y = 1
+		cost = 10
+		search_filters = {  FOCUS_FILTER_COLONIAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = GER_return_to_the_goldmark
+		icon = GFX_goal_generic_allies_build_infantry
+		relative_position_id = GER_problems_with_the_papiermark
+		prerequisite = { focus = GER_problems_with_the_papiermark}
+		mutually_exclusive = {focus = GER_keep_it_fiat}
+		x = 1
+		y = 1
+		cost = 10
+		search_filters = {  FOCUS_FILTER_COLONIAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = GER_issue_of_war_bonds
+		icon = GFX_goal_generic_allies_build_infantry
+		relative_position_id = GER_dealing_with_war_debt
+		prerequisite = { focus = GER_dealing_with_war_debt}
+		x = 5
+		y = 1
+		cost = 10
+		search_filters = {  FOCUS_FILTER_COLONIAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = GER_use_colonial_production
+		icon = GFX_goal_generic_allies_build_infantry
+		relative_position_id = GER_issue_of_war_bonds
+		prerequisite = { focus = GER_issue_of_war_bonds}
+		x = 4
+		y = 1
+		cost = 10
+		search_filters = {  FOCUS_FILTER_COLONIAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = GER_levantine_oil
+		icon = GFX_goal_generic_allies_build_infantry
+		relative_position_id = GER_use_colonial_production
+		prerequisite = { focus = GER_use_colonial_production}
+		x = 2
+		y = 1
+		cost = 10
+		search_filters = {  FOCUS_FILTER_COLONIAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = GER_wealth_of_south_africa
+		icon = GFX_goal_generic_allies_build_infantry
+		relative_position_id = GER_use_colonial_production
+		prerequisite = { focus = GER_use_colonial_production}
+		x = 0
+		y = 1
+		cost = 10
+		search_filters = {  FOCUS_FILTER_COLONIAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = GER_new_holland_gold
+		icon = GFX_goal_generic_allies_build_infantry
+		relative_position_id = GER_use_colonial_production
+		prerequisite = { focus = GER_use_colonial_production}
+		x = -2
+		y = 1
+		cost = 10
+		search_filters = {  FOCUS_FILTER_COLONIAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = GER_dealing_with_external_loans
+		icon = GFX_goal_generic_allies_build_infantry
+		relative_position_id = GER_dealing_with_war_debt
+		prerequisite = { focus = GER_dealing_with_war_debt}
+		x = -5
+		y = 1
+		cost = 10
+		search_filters = {  FOCUS_FILTER_COLONIAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = GER_brazilian_payment_plan
+		icon = GFX_goal_generic_allies_build_infantry
+		relative_position_id = GER_dealing_with_external_loans
+		prerequisite = { focus = GER_dealing_with_external_loans}
+		x = 2
+		y = 1
+		cost = 10
+		search_filters = {  FOCUS_FILTER_COLONIAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = GER_colombian_payment_plan
+		icon = GFX_goal_generic_allies_build_infantry
+		relative_position_id = GER_dealing_with_external_loans
+		prerequisite = { focus = GER_dealing_with_external_loans}
+		x = 0
+		y = 1
+		cost = 10
+		search_filters = {  FOCUS_FILTER_COLONIAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = GER_roman_payment_plan
+		icon = GFX_goal_generic_allies_build_infantry
+		relative_position_id = GER_dealing_with_external_loans
+		prerequisite = { focus = GER_dealing_with_external_loans}
+		x = -2
+		y = 1
+		cost = 10
+		search_filters = {  FOCUS_FILTER_COLONIAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = GER_bulgarian_payment_plan
+		icon = GFX_goal_generic_allies_build_infantry
+		relative_position_id = GER_dealing_with_external_loans
+		prerequisite = { focus = GER_dealing_with_external_loans}
+		x = -1
+		y = 2
+		cost = 10
+		search_filters = {  FOCUS_FILTER_COLONIAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = GER_hispanian_payment_plan
+		icon = GFX_goal_generic_allies_build_infantry
+		relative_position_id = GER_dealing_with_external_loans
+		prerequisite = { focus = GER_dealing_with_external_loans}
+		x = 1
+		y = 2
+		cost = 10
+		search_filters = {  FOCUS_FILTER_COLONIAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
 	
-	
+	focus = {
+		id = GER_dealing_with_hyperinflation
+		icon = GFX_goal_generic_allies_build_infantry
+		#relative_position_id = GER_keep_it_fiat
+		#prerequisite = { focus = GER_keep_it_fiat}
+		x = 32
+		y = 0
+		cost = 10
+		search_filters = {  FOCUS_FILTER_COLONIAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = GER_establish_rentenmark
+		icon = GFX_goal_generic_allies_build_infantry
+		relative_position_id = GER_dealing_with_hyperinflation
+		prerequisite = { focus = GER_dealing_with_hyperinflation}
+		mutually_exclusive = {focus = GER_establish_roggenmark}
+		x = -1
+		y = 1
+		cost = 10
+		search_filters = {  FOCUS_FILTER_COLONIAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = GER_establish_roggenmark
+		icon = GFX_goal_generic_allies_build_infantry
+		relative_position_id = GER_dealing_with_hyperinflation
+		prerequisite = { focus = GER_dealing_with_hyperinflation}
+		mutually_exclusive = {focus = GER_establish_rentenmark}
+		x = 1
+		y = 1
+		cost = 10
+		search_filters = {  FOCUS_FILTER_COLONIAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
 
 }
