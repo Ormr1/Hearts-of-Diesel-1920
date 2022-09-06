@@ -372,8 +372,24 @@ focus_tree = {
 	focus = {
 		id = GER_post_war_reconstruction
 		icon = GFX_goal_generic_allies_build_infantry
-		x = 20
+		x = 24
 		y = 0
+		cost = 10
+		search_filters = {  FOCUS_FILTER_COLONIAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = GER_problems_of_war_debt
+		icon = GFX_goal_generic_allies_build_infantry
+		relative_position_id = GER_post_war_reconstruction
+		prerequisite = { focus = GER_post_war_reconstruction}
+		x = 0
+		y = 1
 		cost = 10
 		search_filters = {  FOCUS_FILTER_COLONIAL }
 		
