@@ -627,6 +627,12 @@ country_event = {
 					target = GRE
 					type = independence_wargoal
 				}
+				set_party_name = {
+					ideology = neutrality
+					long_name = ITA_roman_liberation_front
+					name = ITA_roman_liberation_front
+				}
+				set_cosmetic_tag = ITA_liberation_front
 			}
 		}
 	}

@@ -8,6 +8,7 @@ state={
 
 	history={
 		owner = GRE
+		add_core_of = CTH
 		
 		victory_points = {
 			1130 5 

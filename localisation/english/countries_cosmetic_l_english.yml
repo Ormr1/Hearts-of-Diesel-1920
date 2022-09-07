@@ -1322,10 +1322,13 @@
  ITA_autonomy_integrated_puppet_DEF:0 "the $OVERLORDADJ$ Italy"
  ITA_subject:0 "$OVERLORDADJ$ Italy"
  ITA_subject_DEF:0 "$OVERLORDADJ$ Italy"
-
  ITA_west_rome:0 "Western Rome"
  ITA_west_rome_DEF:0 "Western Rome"
  ITA_west_rome_ADJ:0 "Roman"
+ ITA_liberation_front:0 "Roman Liberation Front"
+ ITA_liberation_front_DEF:0 "the Roman Liberation Front"
+ ITA_liberation_front_ADJ:0 "Roman"
+
  GRE_east_rome:0 "Eastern Rome"
  GRE_east_rome_DEF:0 "Eastern Rome"
  GRE_east_rome_ADJ:0 "Roman"
