@@ -45,7 +45,7 @@ focus_tree = {
         }
     }
     focus = {
-        id = USA_Johnson_Wins
+        id = USA_Cox_Wins
         icon = placeholder
         relative_position_id = USA_1920_Elections
         prerequisite = { focus = USA_1920_Elections }
@@ -60,8 +60,8 @@ focus_tree = {
     focus = {
         id = USA_Break_Up_Trusts
         icon = placeholder
-        relative_position_id = USA_Johnson_Wins
-        prerequisite = { focus = USA_Johnson_Wins }
+        relative_position_id = USA_Cox_Wins
+        prerequisite = { focus = USA_Cox_Wins }
         x = -2
         y = 1
         cost = 10
@@ -88,7 +88,7 @@ focus_tree = {
         }
     }
     focus = {
-        id = USA_Eight_Hour_Workday
+        id = USA_Push_For_Eight_Hour_Workday
         icon = placeholder
         relative_position_id = USA_Direct_Democracy_Reforms
         x = 1
@@ -103,10 +103,10 @@ focus_tree = {
     focus = {
         id = USA_Cut_Funds_To_Fat_Cats
         icon = placeholder
-        relative_position_id = USA_Eight_Hour_Workday
+        relative_position_id = USA_Push_For_Eight_Hour_Workday
         x = 0
         y = 1
-        prerequisite = { focus = USA_Eight_Hour_Workday }
+        prerequisite = { focus = USA_Push_For_Eight_Hour_Workday }
         cost = 10
         completion_reward = {
             USA_Decrease_Tycoon_Influence = yes
@@ -143,8 +143,8 @@ focus_tree = {
     focus = {
         id = USA_Subsidize_Western_Farms
         icon = placeholder
-        relative_position_id = USA_Johnson_Wins
-        prerequisite = { focus = USA_Johnson_Wins }
+        relative_position_id = USA_Cox_Wins
+        prerequisite = { focus = USA_Cox_Wins }
         x = 2
         y = 1
         cost = 10

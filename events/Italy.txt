@@ -3,6 +3,7 @@
 ###########################
 
 add_namespace = italy
+add_namespace = roman_civil_war
 
 # Albania Yields
 country_event = {
@@ -597,3 +598,45 @@ country_event = {
 	}
 }
 
+country_event = {
+	id = roman_civil_war.1
+	title = roman_civil_war.1.t
+	desc = roman_civil_war.1.desc
+	picture = placeholder
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			ITA = {
+				start_civil_war = {
+					ruling_party = ROOT
+					ideology = neutrality
+					size = 0.5
+					capital = 864
+					states = { 864 161 162 158 }
+					keep_political_leader = yes
+    				keep_political_party_members = yes
+				}
+			}
+			864 = {
+				owner = {
+					save_global_event_target_as = roman_republic
+				}
+			}
+			event_target:roman_republic = {
+				declare_war_on = {
+					target = GRE
+					type = independence_wargoal
+				}
+			}
+		}
+	}
+	option = { # For The Republic! For Roma!
+		name = roman_civil_war.1.a
+		event_target:roman_republic = {
+			change_tag_from = ROOT
+		}
+	}
+	option = { # Long Live The King!
+		name = roman_civil_war.1.b
+	}
+}
