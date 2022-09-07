@@ -36,6 +36,7 @@ ideas = {
 			modifier = {
 				army_org_Factor = 0.05
 				planning_speed = 0.25
+				max_planning_factor = 0.15
 			}
 		}
 

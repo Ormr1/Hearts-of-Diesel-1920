@@ -1,5 +1,9 @@
 ﻿capital = 10
 
+add_ideas = {
+	treaty_of_brest_litovsk
+}
+
 oob = "POL_1936"
 if = {
 	limit = { has_dlc = "Man the Guns" }

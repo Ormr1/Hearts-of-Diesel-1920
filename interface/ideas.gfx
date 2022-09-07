@@ -675,6 +675,11 @@ spriteTypes = {
 		name = "GFX_idea_generic_spy_coup"
 		texturefile = "gfx/interface/ideas/generic_spy_coup.dds"
 	}
+
+	spriteType = {
+		name = "GFX_idea_generic_peace_treaty"
+		texturefile = "gfx/interface/ideas/idea_generic_peace_treaty.png"
+	}
 	
 	### GENERIC economic ideas
 
@@ -1768,6 +1773,41 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_usa_overfarming"
 		texturefile = "gfx/interface/ideas/USA/idea_usa_overfarming.png"
+	}
+
+	spriteType = {
+		name = "GFX_idea_usa_tycoon_influence_extremely_high"
+		texturefile = "gfx/interface/ideas/USA/idea_usa_overfarming.png"
+	}
+
+	spriteType = {
+		name = "GFX_idea_usa_tycoon_influence_high"
+		texturefile = "gfx/interface/ideas/USA/idea_usa_tycoon_influence_high.png"
+	}
+
+	spriteType = {
+		name = "GFX_idea_usa_tycoon_influence_somewhat_high"
+		texturefile = "gfx/interface/ideas/USA/usa_tycoon_influence_somewhat_high.png"
+	}
+
+	spriteType = {
+		name = "GFX_idea_usa_tycoon_influence_middling"
+		texturefile = "gfx/interface/ideas/USA/usa_tycoon_influence_middling.png"
+	}
+
+	spriteType = {
+		name = "GFX_idea_usa_tycoon_influence_somewhat_low"
+		texturefile = "gfx/interface/ideas/USA/usa_tycoon_influence_somewhat_low.png"
+	}
+
+	spriteType = {
+		name = "GFX_idea_usa_tycoon_influence_low"
+		texturefile = "gfx/interface/ideas/USA/usa_tycoon_influence_low.png"
+	}
+
+	spriteType = {
+		name = "GFX_idea_usa_tycoon_influence_extremely_low"
+		texturefile = "gfx/interface/ideas/USA/usa_tycoon_influence_extremely_low.png"
 	}
 	
 	spriteType = {

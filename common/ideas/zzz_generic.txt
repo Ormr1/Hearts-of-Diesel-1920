@@ -101,7 +101,38 @@ ideas = {
 
 	# Special ones that can be applied on other countries through focus system.
 	country = {
-	
+		treaty_of_versailles = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = 0
+			picture = generic_peace_treaty
+			modifier = {
+				training_time_army_factor = 50
+				justify_war_goal_time = 1.50
+				war_support_factor = -0.15
+				stability_factor = 0.15
+			}
+		}
+		treaty_of_brest_litovsk = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = 0
+			picture = generic_peace_treaty
+			modifier = {
+				training_time_army_factor = 50
+				justify_war_goal_time = 1.50
+				war_support_factor = -0.15
+				stability_factor = 0.15
+			}
+		}
 		nationalism = {
 			
 			allowed = {
