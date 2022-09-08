@@ -1,8 +1,8 @@
-Release
+Release (The Iron Harvest)
 	required FT:
 		Rusviet
 		Usonia
-		Saxony
+		Saxony: "I've won...but at what cost?"
 		Crimean Khanate
 		togawa shogunate
 		albion

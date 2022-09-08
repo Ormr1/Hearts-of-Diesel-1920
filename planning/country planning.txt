@@ -18,7 +18,8 @@ Albion:
 Polania:
     - Be independent
 Nordic Kingdoms:
-    - 
+    - Protect Suomi
+    - Resist Saxony
 Crimea:
     - Don't be annexed by Rusviet
     - Modernize...everything
