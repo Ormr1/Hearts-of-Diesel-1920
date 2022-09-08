@@ -42,7 +42,7 @@ focus_tree = {
 		icon = GFX_goal_generic_allies_build_infantry
 		prerequisite = { focus = GER_post_war_reconstruction }
 		relative_position_id = GER_post_war_reconstruction
-		x = 12
+		x = 4
 		y = 1
 		cost = 10
 		search_filters = {  FOCUS_FILTER_COLONIAL }
@@ -146,7 +146,7 @@ focus_tree = {
 	focus = {
 		id = GER_finish_peace_talks
 		icon = GFX_goal_tripartite_pact
-		x = 4
+		x = 3
 		y = 0
 		cost = 1
 		search_filters = {  FOCUS_FILTER_POLITICAL }
@@ -374,10 +374,10 @@ focus_tree = {
 	focus = {
 		id = GER_post_war_reconstruction
 		icon = GFX_goal_generic_allies_build_infantry
-		x = 16
+		x = 22
 		y = 0
 		cost = 10
-		search_filters = {  FOCUS_FILTER_COLONIAL }
+		search_filters = {  FOCUS_FILTER_ECONOMIC }
 		available={has_completed_focus = GER_scars_of_the_great_war }
 		
 		available_if_capitulated = yes
@@ -390,11 +390,11 @@ focus_tree = {
 		id = GER_dealing_with_war_debt
 		icon = GFX_goal_generic_allies_build_infantry
 		relative_position_id = GER_post_war_reconstruction
-		prerequisite = { focus = GER_post_war_reconstruction}
-		x = 0
+		prerequisite = { focus = GER_post_war_reconstruction }
+		x = -7
 		y = 1
 		cost = 10
-		search_filters = {  FOCUS_FILTER_COLONIAL }
+		search_filters = {  FOCUS_FILTER_ECONOMIC }
 		
 		available_if_capitulated = yes
 
@@ -410,7 +410,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		cost = 10
-		search_filters = {  FOCUS_FILTER_COLONIAL }
+		search_filters = {  FOCUS_FILTER_ECONOMIC }
 		
 		available_if_capitulated = yes
 
@@ -427,7 +427,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		cost = 10
-		search_filters = {  FOCUS_FILTER_COLONIAL }
+		search_filters = {  FOCUS_FILTER_ECONOMIC }
 		
 		available_if_capitulated = yes
 
@@ -444,7 +444,27 @@ focus_tree = {
 		x = 1
 		y = 1
 		cost = 10
-		search_filters = {  FOCUS_FILTER_COLONIAL }
+		search_filters = {  FOCUS_FILTER_ECONOMIC }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = GER_curbing_inflation
+		icon = GFX_goal_generic_allies_build_infantry
+		relative_position_id = GER_return_to_the_goldmark
+		prerequisite = { 
+			focus = GER_return_to_the_goldmark
+			focus = GER_keep_it_fiat
+		}
+		x = -1
+		y = 1
+		cost = 10
+		search_filters = {  FOCUS_FILTER_ECONOMIC }
 		
 		available_if_capitulated = yes
 
@@ -460,7 +480,7 @@ focus_tree = {
 		x = 5
 		y = 1
 		cost = 10
-		search_filters = {  FOCUS_FILTER_COLONIAL }
+		search_filters = {  FOCUS_FILTER_ECONOMIC }
 		
 		available_if_capitulated = yes
 
@@ -476,7 +496,7 @@ focus_tree = {
 		x = 4
 		y = 1
 		cost = 10
-		search_filters = {  FOCUS_FILTER_COLONIAL }
+		search_filters = {  FOCUS_FILTER_ECONOMIC }
 		
 		available_if_capitulated = yes
 
@@ -492,7 +512,23 @@ focus_tree = {
 		x = 2
 		y = 1
 		cost = 10
-		search_filters = {  FOCUS_FILTER_COLONIAL }
+		search_filters = {  FOCUS_FILTER_ECONOMIC }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = GER_sway_arabia
+		icon = GFX_goal_generic_allies_build_infantry
+		relative_position_id = GER_levantine_oil
+		prerequisite = { focus = GER_levantine_oil}
+		x = 0
+		y = 1
+		cost = 10
+		search_filters = {  FOCUS_FILTER_ECONOMIC }
 		
 		available_if_capitulated = yes
 
@@ -508,7 +544,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		cost = 10
-		search_filters = {  FOCUS_FILTER_COLONIAL }
+		search_filters = {  FOCUS_FILTER_ECONOMIC }
 		
 		available_if_capitulated = yes
 
@@ -524,7 +560,40 @@ focus_tree = {
 		x = -2
 		y = 1
 		cost = 10
-		search_filters = {  FOCUS_FILTER_COLONIAL }
+		search_filters = {  FOCUS_FILTER_ECONOMIC }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = GER_feeding_the_rhineland
+		icon = GFX_goal_generic_allies_build_infantry
+		relative_position_id = GER_issue_of_war_bonds
+		prerequisite = { focus = GER_issue_of_war_bonds}
+		x = -2
+		y = 1
+		cost = 10
+		search_filters = {  FOCUS_FILTER_ECONOMIC }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = GER_cut_military_funding
+		icon = GFX_goal_generic_allies_build_infantry
+		relative_position_id = GER_issue_of_war_bonds
+		prerequisite = { focus = GER_issue_of_war_bonds}
+		x = 0
+		y = 1
+		cost = 10
+		search_filters = {  FOCUS_FILTER_ECONOMIC }
 		
 		available_if_capitulated = yes
 
@@ -541,7 +610,7 @@ focus_tree = {
 		x = -5
 		y = 1
 		cost = 10
-		search_filters = {  FOCUS_FILTER_COLONIAL }
+		search_filters = {  FOCUS_FILTER_ECONOMIC }
 		
 		available_if_capitulated = yes
 
@@ -557,7 +626,7 @@ focus_tree = {
 		x = 2
 		y = 1
 		cost = 10
-		search_filters = {  FOCUS_FILTER_COLONIAL }
+		search_filters = {  FOCUS_FILTER_ECONOMIC }
 		
 		available_if_capitulated = yes
 
@@ -573,7 +642,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		cost = 10
-		search_filters = {  FOCUS_FILTER_COLONIAL }
+		search_filters = {  FOCUS_FILTER_ECONOMIC }
 		
 		available_if_capitulated = yes
 
@@ -589,7 +658,7 @@ focus_tree = {
 		x = -2
 		y = 1
 		cost = 10
-		search_filters = {  FOCUS_FILTER_COLONIAL }
+		search_filters = {  FOCUS_FILTER_ECONOMIC }
 		
 		available_if_capitulated = yes
 
@@ -605,7 +674,7 @@ focus_tree = {
 		x = -1
 		y = 2
 		cost = 10
-		search_filters = {  FOCUS_FILTER_COLONIAL }
+		search_filters = {  FOCUS_FILTER_ECONOMIC }
 		
 		available_if_capitulated = yes
 
@@ -621,7 +690,7 @@ focus_tree = {
 		x = 1
 		y = 2
 		cost = 10
-		search_filters = {  FOCUS_FILTER_COLONIAL }
+		search_filters = {  FOCUS_FILTER_ECONOMIC }
 		
 		available_if_capitulated = yes
 
@@ -636,10 +705,13 @@ focus_tree = {
 		icon = GFX_goal_generic_allies_build_infantry
 		#relative_position_id = GER_keep_it_fiat
 		#prerequisite = { focus = GER_keep_it_fiat}
-		x = 32
+		x = 31
 		y = 0
 		cost = 10
-		search_filters = {  FOCUS_FILTER_COLONIAL }
+		search_filters = {  FOCUS_FILTER_ECONOMIC }
+		allow_branch={
+			has_country_flag = GER_hyper_inflation
+		}
 		
 		available_if_capitulated = yes
 
@@ -656,7 +728,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		cost = 10
-		search_filters = {  FOCUS_FILTER_COLONIAL }
+		search_filters = {  FOCUS_FILTER_ECONOMIC }
 		
 		available_if_capitulated = yes
 
@@ -673,7 +745,177 @@ focus_tree = {
 		x = 1
 		y = 1
 		cost = 10
-		search_filters = {  FOCUS_FILTER_COLONIAL }
+		search_filters = {  FOCUS_FILTER_ECONOMIC }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = GER_a_steady_helm
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 35
+		y = 0
+		cost = 10
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+		available={has_completed_focus = GER_scars_of_the_great_war }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = GER_military_matters
+		icon = GFX_goal_generic_allies_build_infantry
+		relative_position_id = GER_a_steady_helm
+		prerequisite = { focus = GER_a_steady_helm}
+		x = 0
+		y = 1
+		cost = 10
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = GER_faith_in_the_son
+		icon = GFX_goal_generic_allies_build_infantry
+		relative_position_id = GER_military_matters
+		prerequisite = { focus = GER_military_matters}
+		mutually_exclusive = {focus = GER_trust_in_gunter}
+		x = 1
+		y = 1
+		cost = 10
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = GER_wispers_of_fenris
+		icon = GFX_goal_generic_allies_build_infantry
+		relative_position_id = GER_faith_in_the_son
+		prerequisite = { focus = GER_faith_in_the_son}
+		x = 1
+		y = 1
+		cost = 10
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = GER_trust_in_gunter
+		icon = GFX_goal_generic_allies_build_infantry
+		relative_position_id = GER_military_matters
+		prerequisite = { focus = GER_military_matters}
+		mutually_exclusive = {focus = GER_faith_in_the_son}
+		x = -1
+		y = 1
+		cost = 10
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = GER_delegation_to_the_factory
+		icon = GFX_goal_generic_allies_build_infantry
+		relative_position_id = GER_trust_in_gunter
+		prerequisite = { focus = GER_trust_in_gunter}
+		x = -1
+		y = 1
+		cost = 10
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = GER_bolster_trust_in_saxon_crown
+		icon = GFX_goal_generic_allies_build_infantry
+		relative_position_id = GER_trust_in_gunter
+		prerequisite = { 
+			focus = GER_trust_in_gunter
+			focus = GER_faith_in_the_son
+		}
+		x = 1
+		y = 1
+		cost = 10
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = GER_shift_blame
+		icon = GFX_goal_generic_allies_build_infantry
+		relative_position_id = GER_bolster_trust_in_saxon_crown
+		prerequisite = { 
+			focus = GER_bolster_trust_in_saxon_crown
+		}
+		x = 0
+		y = 1
+		cost = 10
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = GER_propagandia_aganist_the_socialists
+		icon = GFX_goal_generic_allies_build_infantry
+		relative_position_id = GER_shift_blame
+		prerequisite = { 
+			focus = GER_shift_blame
+		}
+		x = -1
+		y = 1
+		cost = 10
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = GER_propagandia_aganist_the_liberals
+		icon = GFX_goal_generic_allies_build_infantry
+		relative_position_id = GER_shift_blame
+		prerequisite = { 
+			focus = GER_shift_blame
+		}
+		x = 1
+		y = 1
+		cost = 10
+		search_filters = {  FOCUS_FILTER_POLITICAL }
 		
 		available_if_capitulated = yes
 
