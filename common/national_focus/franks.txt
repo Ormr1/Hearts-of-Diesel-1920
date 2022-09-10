@@ -25,11 +25,299 @@ focus_tree = {
     continuous_focus_position = { x = 0 y = 5000 }
     default = no
 
+
+focus = { ### POLITICAL - Can only do when political stability has been achieved
+    id = FRA_The_Outside_World
+    icon = placeholder
+    x = 75
+    y = 0
+    cost = 8
+    ai_will_do = {
+        factor = 5
+    }
+    available = {
+        focus = FRA_Light_the_Torch
+        has_civil_war = no
+    }
+}
+focus = { ### Alliance FRA_Privatize_Everything
+    id = FRA_Frankish_Albion_Issue
+    icon = placeholder
+    relative_position_id = FRA_The_Outside_World
+    x = 10
+    y = 1
+    cost = 5
+    ai_will_do = {
+        factor = 5
+    }
+    prerequisite = {
+        focus = FRA_The_Outside_World
+    }
+}
+focus = {
+    id = FRA_Stick_With_our_Northern_Neighbor
+    icon = placeholder
+    relative_position_id = FRA_Frankish_Albion_Issue
+    x = -5
+    y = 1
+    cost = 5
+    ai_will_do = {
+        factor = 5
+    }
+    prerequisite = {
+        focus = FRA_Frankish_Albion_Issue
+    }
+}
+focus = {
+    id = FRA_Find_New_Allies
+    icon = placeholder
+    relative_position_id = FRA_Frankish_Albion_Issue
+    x = 5
+    y = 1
+    cost = 5
+    ai_will_do = {
+        factor = 5
+    }
+    prerequisite = {
+        focus = FRA_Frankish_Albion_Issue
+    }
+}
+focus = {
+    id = FRA_Search_for_Democracy
+    icon = placeholder
+    relative_position_id = FRA_Find_New_Allies
+    x = 3
+    y = 1
+    cost = 6
+    ai_will_do = {
+        factor = 5
+    }
+    available = {
+        has_government = democratic
+        has_government = ROOT
+        has_government = neutral
+        has_government = ROOT
+    }
+    prerequisite = {
+        focus = FRA_Find_New_Allies
+    }
+}
+focus = {
+    id = FRA_The_Land_of_Hispania
+    icon = placeholder
+    relative_position_id = FRA_Search_for_Democracy
+    x = 3
+    y = 1
+    cost = 5
+    ai_will_do = {
+        factor = 5
+    }
+    prerequisite = {
+        focus = FRA_Search_for_Democracy
+    }
+}
+focus = {
+    id = FRA_Turn_the_Usionians_into_Allies
+    icon = placeholder
+    relative_position_id = FRA_Search_for_Democracy
+    x = 5
+    y = 1
+    cost = 5
+    ai_will_do = {
+        factor = 5
+    }
+    prerequisite = {
+        focus = FRA_Search_for_Democracy
+    }
+}
+focus = {
+    id = FRA_The_True_China
+    icon = placeholder
+    relative_position_id = FRA_Search_for_Democracy
+    x = 1
+    y = 1
+    cost = 5
+    ai_will_do = {
+        factor = 5
+    }
+    prerequisite = {
+        focus = FRA_Search_for_Democracy
+    }
+}
+focus = {
+    id = FRA_Issue_with_Laurentia
+    icon = placeholder
+    relative_position_id = FRA_Search_for_Democracy
+    x = -1
+    y = 1
+    cost = 5
+    ai_will_do = {
+        factor = 5
+    }
+    completion_reward = {
+        country_event = fra_politicalalliance.1
+    }
+    prerequisite = {
+        focus = FRA_Search_for_Democracy
+    }
+}
+focus = {
+    id = FRA_Allies_of_the_Workforce
+    icon = placeholder
+    relative_position_id = FRA_Find_New_Allies
+    x = -3
+    y = 1
+    cost = 6
+    ai_will_do = {
+        factor = 5
+    }
+    available = {
+        has_government = communism
+        has_government = ROOT
+        has_government = neutral
+        has_government = ROOT
+    }
+    prerequisite = {
+        focus = FRA_Find_New_Allies
+    }
+}
+focus = { ### Sends event to Rusviet Tsardom on whether or not to ally Frankia
+    id = FRA_Man_of_the_East
+    icon = placeholder
+    relative_position_id = FRA_Allies_of_the_Workforce
+    x = 3
+    y = 1
+    cost = 3
+    ai_will_do = {
+        factor = 5
+    }
+    available = {
+        has_completed_focus = FRA_Alliance_of_European_Socialists
+    }
+    prerequisite = {
+        focus = FRA_Allies_of_the_Workforce
+        focus = FRA_Search_for_Democracy
+    }
+}
+focus = {
+    id = FRA_Become_Desperate
+    icon = placeholder
+    relative_position_id = FRA_Man_of_the_East
+    x = 0
+    y = 2
+    cost = 3
+    ai_will_do = {
+        factor = 5
+    }
+    prerequisite = {
+        focus = FRA_Man_of_the_East
+    }
+}
+focus = {
+    id = FRA_Ally_the_Monarchies
+    icon = placeholder
+    relative_position_id = FRA_Become_Desperate
+    x = 1
+    y = 1
+    cost = 3
+    ai_will_do = {
+        factor = 5
+    }
+    available = {
+        has_not_completed_focus = FRA_Spread_the_Revolution
+        has_government = democratic
+        has_government = ROOT
+        has_government = neutrality
+    }
+    prerequisite = {
+        focus = FRA_Become_Desperate
+    }
+}
+focus = {
+    id = FRA_Loosen_Left_Wing_Standards
+    icon = placeholder
+    relative_position_id = FRA_Become_Desperate
+    x = -1
+    y = 1
+    cost = 3
+    ai_will_do = {
+        factor = 5
+    }
+    available = {
+        has_government = democratic
+        has_government = ROOT
+        has_government = neutrality
+        has_government = communism
+    }
+    prerequisite = {
+        focus = FRA_Become_Desperate
+    }
+}
+focus = {
+    id = FRA_Lack_of_Allies
+    icon = placeholder
+    relative_position_id = FRA_Allies_of_the_Workforce
+    x = -3
+    y = 1
+    cost = 3
+    ai_will_do = {
+        factor = 5
+    }
+    prerequisite = {
+        focus = FRA_Allies_of_the_Workforce
+    }
+}
+focus = { ### Unlocks decisions to do coups on other countries - namely in Europe - in hopes that one of them will win
+    id = FRA_Spread_the_Revolution
+    icon = placeholder
+    relative_position_id = FRA_The_Outside_World
+    x = 0
+    y = 5
+    cost = 7
+    ai_will_do = {
+        factor = 5
+    }
+    prerequisite = {
+        focus = FRA_Lack_of_Allies
+    }
+}
+focus = {
+    id = FRA_Newfound_Socialists
+    icon = placeholder
+    relative_position_id = FRA_Lack_of_Allies
+    x = 0
+    y = 2
+    cost = 7
+    ai_will_do = {
+        factor = 5
+    }
+    prerequisite = {
+        focus = FRA_Lack_of_Allies
+    }
+    prerequisite = {
+        focus = FRA_Alliance_of_European_Socialists
+    }
+}
+
+focus = { ### Create Alliance with the same name as the focus
+    id = FRA_Alliance_of_European_Socialists
+    icon = placeholder
+    relative_position_id = FRA_Newfound_Socialists
+    x = -2
+    y = 0
+    cost = 5
+    ai_will_do = {
+        factor = 5
+    }
+    prerequisite = {
+        focus = FRA_Spread_the_Revolution
+    }
+}
 ### ECONOMIC
 focus = {
     id = FRA_State_Of_the_Economy
     icon = placeholder
-    x = 100
+    x = 125
     y = 0
     cost = 5
     ai_will_do = {
@@ -80,8 +368,8 @@ focus = {
     }
     #complete_national_focus = FRA_the_Money_Question_2
 }
-### Bank Off of the Wealthy - Same thing as Tax Breaks For the Rich, but the left wing version of that part of the tree-
-focus = {
+
+focus = { ### Same thing as Tax Breaks For the Rich, but the left wing version of that part of the tree-
     id = FRA_Bank_Off_Of_the_Wealthy
     icon = placeholder
     relative_position_id = FRA_Placeholders_Plan_1
@@ -138,8 +426,8 @@ focus = {
         focus = FRA_Better_Workplace_Social_Norms
     }
 }
-### Value Teachers, Teach How to Work, and Better Schooling, Better Future - Adds research speed
-focus = {
+
+focus = { ### Teach How to Work, and Better Schooling, Better Future - Adds research speed
     id = FRA_Value_Teachers
     icon = placeholder
     relative_position_id = FRA_No_to_Child_Labor
@@ -163,8 +451,8 @@ focus = {
         focus = FRA_Collectivized_Industry
     }
 }
-### Spelled as "Better Schooling, Better Future"
-focus = {
+
+focus = { ### Spelled as "Better Schooling, Better Future"
     id = FRA_Better_Schooling_Better_Future
     icon = placeholder
     relative_position_id = FRA_Teach_How_To_Work
@@ -199,8 +487,8 @@ focus = {
         focus = FRA_Legalize_Unions
     }
 }
-### Collectivized Industry - Same as FRA_Flexibile_Workforce, but with Concentrated
-focus = {
+
+focus = { ### Same as FRA_Flexibile_Workforce, but with Concentrated
     id = FRA_Collectivized_Industry
     icon = placeholder
     relative_position_id = FRA_Begin_the_Process_of_Unionization
@@ -251,8 +539,8 @@ focus = {
         focus = FRA_The_Demands_of_Workers
     }
 }
-### Flexible Workforce - Gives research buff to Dispersed Industry
-focus = {
+
+focus = { ### Gives research buff to Dispersed Industry
     id = FRA_Flexibile_Workforce
     icon = placeholder
     relative_position_id = FRA_40_Hour_Work_Week
@@ -304,8 +592,8 @@ focus = {
 #        focus = FRA_Bank_Off_Of_the_Wealthy
 #    }
 #}
-### Communal Autarky - Please note that any completion reward that would normally require a national spirit/idea is just a placeholder, since I don't know how to add/modify ideas just yet
-focus = {
+
+focus = { ### Please note that any completion reward that would normally require a national spirit/idea is just a placeholder, since I don't know how to add/modify ideas just yet
     id = FRA_Communal_Autarky
     icon = placeholder
     relative_position_id = FRA_Demonize_the_Rich
@@ -323,8 +611,8 @@ focus = {
         focus = FRA_Demonize_the_Rich
     }
 }
-### Industrialize the Interior - Adds factories/increases construction speed?
-focus = {
+
+focus = { ### Adds factories/increases construction speed?
     id = FRA_Industrialize_the_Interior
     icon = placeholder
     relative_position_id = FRA_Communal_Autarky
@@ -342,8 +630,8 @@ focus = {
     }
 }
 
-### Fill the Factories - Increases Production by a lot, but maybe decreases reliability and manpower?
-focus = {
+
+focus = { ### Increases Production by a lot, but maybe decreases reliability and manpower?
     id = FRA_Fill_the_Factories
     icon = placeholder
     relative_position_id = FRA_Communal_Autarky
@@ -693,8 +981,8 @@ focus = {
         focus = FRA_Placeholders_Plan_2
     }
 }
-### Even the Economic Playing Field - Lets the player pick a middle path if they don't want to go with the left and right path, this one will be a mix of the two.
-focus = {
+
+focus = { ### Lets the player pick a middle path if they don't want to go with the left and right path, this one will be a mix of the two.
     id = FRA_Even_the_Economic_Playing_Field
     icon = placeholder
     relative_position_id = FRA_the_Money_Question
@@ -716,8 +1004,8 @@ focus = {
         focus = FRA_the_Money_Question_2
     }
 }
-### Autarkic Ways - Allows for an event to fire, where you can choose for a mixed economy, or letting companies have their free will
-focus = {
+
+focus = { ### Allows for an event to fire, where you can choose for a mixed economy, or letting companies have their free will
     id = FRA_Autarkic_Ways
     icon = placeholder
     relative_position_id = FRA_Even_the_Economic_Playing_Field
@@ -757,8 +1045,8 @@ focus = {
         focus = FRA_The_Frankish_Man
     }
 }
-### Women in the Nation - Adds event to decide whether or not Women should hold power. Yes - Adds stability and pp gain slightly / No - Increases PP gain and ticking popularity mediocrely
-focus = {
+
+focus = { ### Adds event to decide whether or not Women should hold power. Yes - Adds stability and pp gain slightly / No - Increases PP gain and ticking popularity mediocrely
     id = FRA_Women_in_the_Nation
     icon = placeholder
     relative_position_id = FRA_The_Frankish_Man
@@ -783,8 +1071,8 @@ focus = {
         focus = FRA_The_Ideal_Standards
     }
 }
-### Threats of Deportation - Increases production efficiency while decreasing war support, stability, and party popularity
-focus = {
+
+focus = { ### Increases production efficiency while decreasing war support, stability, and party popularity
     id = FRA_Threats_of_Deportation
     icon = placeholder
     relative_position_id = FRA_Mass_Segregation
@@ -820,6 +1108,7 @@ focus = {
         focus = FRA_Threats_of_Deportation
     }
 }
+
 ### Move Into Prosperity - Allows to push companies and corporations into putting more left wing policies into effect
 ### Subcomment - Creats decisions to punish corporations for being too big, doing so will slightly decrease production for a certain amount of time, but also increase communist and democratic support
 focus = {
@@ -834,8 +1123,8 @@ focus = {
         focus = FRA_Autarkic_Ways
     }
 }
-### Create a Tax - Decreases production for a moment, but always increases monthly population gain
-focus = {
+
+focus = { ### Decreases production for a moment, but always increases monthly population gain
     id = FRA_Create_a_Tax
     icon = placeholder
     relative_position_id = FRA_Move_into_Prosperity
@@ -921,8 +1210,8 @@ focus = {
         focus = FRA_White_Man_as_the_Role_Model
     }
 }
-### Flexible With the Labor Laws - Additional Economy stuff (Same with left version of this), plus some after the merging focus
-focus = {
+
+focus = { ### Additional Economy stuff (Same with left version of this), plus some after the merging focus
     id = FRA_Flexible_With_the_Labor_Laws
     icon = placeholder
     relative_position_id = FRA_Tax_Breaks_For_the_Rich
@@ -1039,8 +1328,8 @@ focus = {
         focus = FRA_Construct_More_Jobs
     }
 }
-### Better Stronger Guns - Bonush research speed for guns, maybe 3x 50%?
-focus = {
+
+focus = { ### Bonus research speed for guns, maybe 3x 50%?
     id = FRA_Better_Stronger_Guns
     icon = placeholder
     relative_position_id = FRA_Incentivize_Work
@@ -1058,8 +1347,8 @@ focus = {
         focus = FRA_Incentivize_Work
     }
 }
-### Bigger Artillery to Pair - Same as previous focus, but for Artillery
-focus = {
+
+focus = { ### Same as previous focus, but for Artillery
     id = FRA_Bigger_Artillery_To_Pair
     icon = placeholder
     relative_position_id = FRA_Better_Stronger_Guns
@@ -1096,8 +1385,8 @@ focus = {
         focus = FRA_Construct_More_Jobs
     }
 }
-### Competetive Equipment Prices - Self explanatory, makes guns cheaper via national spirit
-focus = {
+
+focus = { ### Self explanatory, makes guns cheaper via national spirit
     id = FRA_Competitive_Equipment_Prices
     icon = placeholder
     relative_position_id = FRA_Add_More_To_the_Product_Line
@@ -1239,8 +1528,8 @@ focus = {
         focus = FRA_Hard_Working_Lower_Class
     }
 }
-### Spelled as "The Lower the Mind, the Higher the Yield" - Decreases research speed, but increases production and construction
-focus = {
+
+focus = { ### Spelled as "The Lower the Mind, the Higher the Yield" - Decreases research speed, but increases production and construction
     id = FRA_The_Lower_the_Mind_the_Higher_the_Yield
     icon = placeholder
     relative_position_id = FRA_Hard_Working_Lower_Class
@@ -1252,8 +1541,8 @@ focus = {
         focus = FRA_Allow_Unpaid_Labor
     }
 }
-### Restrict the Mouths, Prevent Mutinies, and Propagandize Poorer Standards - Think of "Insert Press Censorship" decision, that. and adds slight stability per week
-focus = {
+
+focus = { ### Restrict the Mouths, Prevent Mutinies, and Propagandize Poorer Standards - Think of "Insert Press Censorship" decision, that. and adds slight stability per week
     id = FRA_Restrict_the_Mouths
     icon = placeholder
     relative_position_id = FRA_Insentivize_Individualism
@@ -1289,8 +1578,8 @@ focus = {
         focus = FRA_Prevent_Mutinies
     }
 }
-### A Dictator's Wet Dream - Adds idea that gives extra pp and ticking party popularity
-focus = {
+
+focus = { ### Adds idea that gives extra pp and ticking party popularity
     id = FRA_A_Dictators_Wet_Dream
     icon = placeholder
     relative_position_id = FRA_Propagandize_Poorer_Standards
@@ -1304,8 +1593,8 @@ focus = {
         focus = FRA_Higher_Racial_Bias
     }
 }
-### Lower the Standards - Decreases cost of equipment while decreasing strength and/or reliability
-focus = {
+
+focus = { ### Decreases cost of equipment while decreasing strength and/or reliability
     id = FRA_Lower_the_Standards
     icon = placeholder
     relative_position_id = FRA_Insentivize_Individualism
@@ -1319,8 +1608,8 @@ focus = {
         focus = FRA_The_Lower_the_Mind_the_Higher_the_Yield
     }
 }
-### Harbor the Elites and Wealthy Over the Commoner - Increased construction speed
-focus = {
+
+focus = { ### Harbor the Elites and Wealthy Over the Commoner - Increased construction speed
     id = FRA_Harbor_the_Elites
     icon = placeholder
     relative_position_id = FRA_Lower_the_Standards
@@ -1354,8 +1643,8 @@ focus = {
         focus = FRA_Lower_the_Standards
     }
 }
-### Racial Bias in Jobs - Reduces conscription factor (-20%) while increasing production (~10-15%)
-focus = {
+
+focus = { ### Reduces conscription factor (-20%) while increasing production (~10-15%)
     id = FRA_Higher_Racial_Bias
     icon = placeholder
     relative_position_id = FRA_Unskilled_Labor_is_Key
@@ -1366,8 +1655,8 @@ focus = {
         focus = FRA_Unskilled_Labor_is_Key
     }
 }
-### FRA_Desegregate_the_Armed_Forces - Increases conscription factor (40%). along with an additonal ~1.50% manpower. Can only be done when losing a war heavily
-focus = {
+
+focus = { ### Increases conscription factor (40%). along with an additonal ~1.50% manpower. Can only be done when losing a war heavily
     id = FRA_Desegregate_the_Armed_Forces
     icon = placeholder
     relative_position_id = FRA_Higher_Racial_Bias
@@ -1516,8 +1805,8 @@ focus = {
         focus = FRA_Allow_Unpaid_Labor
     }
 }
-### Heart of the Nation - The focus that lets you do the civil war
-focus = {
+
+focus = { ### The focus that lets you do the civil war
     id = FRA_Heart_of_the_Nation
     icon = placeholder
     relative_position_id = FRA_State_Of_the_Economy
@@ -1529,8 +1818,8 @@ focus = {
         focus = FRA_Centrist_Economy
     }
 }
-### This focus and the Left Wing version of this will lead to a new focus that gets rid of the effects of the Great War. Completion of that focus will let the "Ignite the Flame" Focus to be started and completed
-focus = {
+ 
+focus = { ### This focus and the Left Wing version of this will lead to a new focus that gets rid of the effects of the Great War. Completion of that focus will let the "Ignite the Flame" Focus to be started and completed
     id = FRA_Right_Wing_Economy
     icon = placeholder
     relative_position_id = FRA_Rethink_the_Liberalization
@@ -1693,8 +1982,8 @@ focus = {
         focus = FRA_Fight_For_Your_Freedom
     }
 }
-### Underground Factories - Think of the Manchuria focus as you try to escape Japanese rule, where you could get free offmap factories, and cheaper guns, for less reliable guns, but less overpowerd ofc
-focus = {
+
+focus = { ### Think of the Manchuria focus as you try to escape Japanese rule, where you could get free offmap factories, and cheaper guns, for less reliable guns, but less overpowered ofc
     id = FRA_Underground_Factories
     icon = placeholder
     relative_position_id = FRA_International_Arms_Market
@@ -1712,8 +2001,8 @@ focus = {
         focus = FRA_International_Arms_Market
     }
 }
-### Mimic Foregin Equipment - Easier for France to license equipment from Democratic and Communist countries
-focus = {
+
+focus = { ### Easier for France to license equipment from Democratic and Communist countries
     id = FRA_Mimic_Foreign_Equipment
     icon = placeholder
     mutually_exclusive = { focus = FRA_Make_Our_Own_Guns }
@@ -1732,8 +2021,8 @@ focus = {
         focus = FRA_Underground_Factories
     }
 }
-### Make Our Own Guns - Maybe cheaper + stronger guns for much less reliability?
-focus = {
+
+focus = { ### Maybe cheaper + stronger guns for much less reliability?
     id = FRA_Make_Our_Own_Guns
     icon = placeholder
     mutually_exclusive = { focus = FRA_Mimic_Foreign_Equipment }
@@ -1866,8 +2155,8 @@ focus = {
         focus = FRA_Gain_Political_Alliances
     }
 }
-### Train the Populous - Increased manpower and/or less training time?
-focus = {
+
+focus = { ### Increased manpower and/or less training time?
     id = FRA_Train_the_Populous
     icon = placeholder
     relative_position_id = FRA_Nationalize_the_Industry
@@ -1921,8 +2210,8 @@ focus = {
         focus = FRA_Prepare_For_the_Fight
     }
 }
-### International Arms Market - Like the mod, the Franks can buy weapons from democratic and communist countries (USA, Rusviet Tsardom (Maybe), so on and so forth), but maybe it could be recommended to have that mod on for the Franks
-focus = {
+
+focus = { ### Like the mod, the Franks can buy weapons from democratic and communist countries (USA, Rusviet Tsardom (Maybe), so on and so forth), but maybe it could be recommended to have that mod on for the Franks
     id = FRA_International_Arms_Market
     icon = placeholder
     relative_position_id = FRA_Gain_International_Support
@@ -1940,8 +2229,8 @@ focus = {
         focus = FRA_Gain_International_Support
     }
 }
-### Nationalize the Industry - Easier to get factories, plus free factories upon completion?
-focus = {
+
+focus = { ### Easier to get factories, plus free factories upon completion?
     id = FRA_Nationalize_the_Industry
     icon = placeholder
     relative_position_id = FRA_Bribe_Business_Owners
@@ -1990,7 +2279,7 @@ focus = {
         focus = FRA_Fight_For_Your_Freedom
     }
 }
-### Light the Torch - Required end(ish) focus from Economic part before the ability to do this focus, so the industry isn't complete ass when the civil war starts. Yes, the economy might be a bit ruined, but the goal is to make sure the effects of the Great War not as bad.
+
 focus = {
     id = FRA_Light_the_Torch
     icon = placeholder
@@ -2022,8 +2311,8 @@ focus = {
         focus = FRA_Unite_the_Left
     }
 }
-### Birth Of a New Nation - Could give National Spirit/Idea that lets France recover/gain political party stuff/Stability, or anything else that helps
-focus = {
+
+focus = { ### Birth Of a New Nation - Could give National Spirit/Idea that lets France recover/gain political party stuff/Stability, or anything else that helps
     id = FRA_Birth_Of_a_New_Nation
     icon = placeholder
     relative_position_id = FRA_Light_the_Torch
@@ -2046,8 +2335,8 @@ focus = {
         focus = FRA_Light_the_Torch
     }
 } 
-### The Power Scenario - Each ideology chosen gets a set of decisions to help settle down the political situation, and let the chosen ideology be the one that rules the nation
-focus = {
+
+focus = { ### The Power Scenario - Each ideology chosen gets a set of decisions to help settle down the political situation, and let the chosen ideology be the one that rules the nation
     id = FRA_The_Power_Scenario
     icon = placeholder
     relative_position_id = FRA_Birth_Of_a_New_Nation
@@ -2068,7 +2357,7 @@ focus = {
     id = FRA_More_to_the_Government
     icon = placeholder
     mutually_exclusive = { focus = FRA_Power_to_the_People }
-    available = { always = no }
+    available = { has_country_flag = FRA_flag_name }
     relative_position_id = FRA_The_Power_Scenario
     x = -10
     y = 1
@@ -2113,7 +2402,7 @@ focus = {
     id = FRA_Power_to_the_People
     icon = placeholder
     mutually_exclusive = { focus = FRA_More_to_the_Government }
-    available = { always = no }
+    available = { has_country_flag = FRA_flag_name }
     relative_position_id = FRA_The_Power_Scenario
     x = 10
     y = 1
@@ -2128,8 +2417,8 @@ focus = {
         focus = FRA_The_Power_Scenario
     }
 }
-### A Capitalists Dream - AnCap Moment
-focus = {
+
+focus = { ### AnCap Moment
     id = FRA_A_Caplitalists_Dream
     icon = placeholder
     mutually_exclusive = { focus = FRA_The_Workers_Paradise }
@@ -2159,6 +2448,92 @@ focus = {
     }
     prerequisite = {
         focus = FRA_Power_to_the_People
+    }
+}
+
+focus = { ### Begins countdown to get rid of poltiical instability. If not completed in time, a civil war will start
+    id = FRA_Red_Tension
+    icon = placeholder
+    relative_position_id = FRA_The_Workers_Paradise
+    x = 0
+    y = 1
+    cost = 8
+    ai_will_do = {
+        factor = 10
+    }
+    prerequisite = {
+        focus = FRA_The_Workers_Paradise
+    }
+}
+focus = {
+    id = FRA_Replace_Ministers_With_Anarchists
+    icon = placeholder
+    relative_position_id = FRA_Red_Tension
+    x = 1
+    y = 1
+    cost = 8
+    ai_will_do = {
+        factor = 10
+    }
+    prerequisite = {
+        focus = FRA_Red_Tension
+    }
+}
+focus = {
+    id = FRA_Grants_to_the_Lower_Class
+    icon = placeholder
+    relative_position_id = FRA_Red_Tension
+    x = 3
+    y = 1
+    cost = 6
+    ai_will_do = {
+        factor = 10
+    }
+    prerequisite = {
+        focus = FRA_Red_Tension
+    }
+}
+focus = {
+    id = FRA_Free_Up_Government_Jobs
+    icon = placeholder
+    relative_position_id = FRA_Red_Tension
+    x = -1
+    y = 1
+    cost = 6
+    ai_will_do = {
+        factor = 10
+    }
+    prerequisite = {
+        focus = FRA_Red_Tension
+    }
+}
+focus = {
+    id = FRA_Reduce_the_Effects_of_Money
+    icon = placeholder
+    relative_position_id = FRA_Red_Tension
+    x = -3
+    y = 1
+    cost = 6
+    ai_will_do = {
+        factor = 10
+    }
+    prerequisite = {
+        focus = FRA_Red_Tension
+    }
+}
+
+focus = { ### Focus that rids the nation of Political Instability (in this ideology path)
+    id = FRA_Liberate_the_Working_Class
+    icon = placeholder
+    relative_position_id = FRA_The_Workers_Paradise
+    x = 0
+    y = 10
+    cost = 3
+    ai_will_do = {
+        factor = 10
+    }
+    prerequisite = {
+        focus = FRA_The_Workers_Paradise
     }
 }
 focus = {
@@ -2198,8 +2573,8 @@ focus = {
         focus = FRA_Unite_the_Left
     }
 }
-### Allow Political Autonomy - Alternate history path, needing the player to manage each political party, so the state does not fail. If they do not do this, then France will either be Anarchist, or fall into a multi-way Civil War. can only be done after first civil war
-focus = {
+
+focus = { ### Alternate history path, needing the player to manage each political party, so the state does not fail. If they do not do this, then France will either be Anarchist, or fall into a multi-way Civil War. can only be done after first civil war
     id = FRA_Allow_For_Political_Autonomy
     icon = placeholder
     relative_position_id = FRA_Create_a_Political_Union
@@ -2217,18 +2592,18 @@ focus = {
     prerequisite = {
         focus = FRA_Create_a_Political_Union
     }
-    focus_progress = {
+    available = {
         focus = FRA_Light_the_Torch
-        progress > 0.99
+        has_civil_war = no
     }
     available={
         has_civil_war = no
         has_completed_focus = FRA_Light_the_Torch
     }
 }
-### Even More Political Unity - Opposite of Political Autonomy, where all of the parties (Mainly communism, democracy, and anarchism) combine to form a single party, as an attemp to stabilize the country more, can only be done after civil war
-focus = {
-    id = FRA_Even_More_Political_Unity
+
+focus = { ### Opposite of Political Autonomy, where all of the parties (Mainly communism, democracy, and anarchism) combine to form a single party, as an attemp to stabilize the country more, can only be done after civil war
+    id = FRA_Even_More_Political_Unity 
     icon = placeholder
     relative_position_id = FRA_Create_a_Political_Union
     mutually_exclusive = { focus = FRA_Allow_For_Political_Autonomy }
@@ -2244,9 +2619,9 @@ focus = {
     prerequisite = {
         focus = FRA_Create_a_Political_Union
     }
-    focus_progress = {
+    available = {
         focus = FRA_Light_the_Torch
-        progress > 0.99
+        has_civil_war = no
     }
     available={
         has_civil_war = no
@@ -2272,3 +2647,5 @@ focus = {
     }
 }
 }
+
+

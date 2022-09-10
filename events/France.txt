@@ -2427,11 +2427,11 @@ country_event = { # Power Struggle
 	fire_only_once = yes
 	option = {
 		name = fra_parliament.3.a
-		unlock_national_focus = FRA_More_to_the_Government
+		set_country_flag = FRA_flag_name
 	}
 	option = {
 		name = fra_parliament.3.b
-		unlock_national_focus = FRA_Power_to_the_People
+		set_country_flag = FRA_flag_name
 	}
 }
 
@@ -2473,6 +2473,23 @@ country_event = { # More to the Government
 	}
 }
 
+country_event = {
+	id = fra_politicalalliance.1
+	title = fra_politicalalliance.1.t 
+	desc = fra_politicalalliance.1.desc
+	picture = placeholder
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = fra_politicalalliance.1.a
+		set_country_flag = FRA_flag_name
+	}
+	option = {
+		name = fra_politicalalliance.1.b
+		set_country_flag = FRA_flag_name
+	}
+}
 
 country_event = { # fra_civilwarignite.1
     id = fra_civilwarignite.1
