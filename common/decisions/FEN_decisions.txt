@@ -125,12 +125,11 @@ FEN_fenris_interests_cat = {
 
 		available = {
 			is_subject = no
-			custom_trigger_tooltip={
-				tooltip = FEN_has_5000_covert_staff
-				check_variable = { FEN_covert_staff > 4999}
-			}
 			has_completed_focus = FEN_rasputins_play
 			NOT={has_country_flag = FEN_laying_low}
+			SOV={
+				has_stability < 0.4
+			}
 		}
 
 		visible = {
