@@ -40,6 +40,7 @@ country_event = {
 	picture = GFX_report_event_finnish_letter
 	
 	is_triggered_only = yes
+	fire_only_once = yes
 	
 	option = {
 		name = saxonian.2.ger
@@ -94,6 +95,7 @@ news_event = {
 	major = yes
 	
 	is_triggered_only = yes
+	fire_only_once = yes
 	
 	option = {
 		name = saxonian.3.a
