@@ -29,7 +29,7 @@ focus_tree = {
 focus = { ### POLITICAL - Can only do when political stability has been achieved
     id = FRA_The_Outside_World
     icon = placeholder
-    x = 75
+    x = 100
     y = 0
     cost = 8
     ai_will_do = {
@@ -49,11 +49,6 @@ focus = { ### Alliance FRA_Privatize_Everything
     cost = 5
     ai_will_do = {
         factor = 5
-    }
-    available = {
-        has_government = communism
-        has_government = neutrality
-        has_government = democratic
     }
     prerequisite = {
         focus = FRA_The_Outside_World
@@ -83,7 +78,7 @@ focus = {
     icon = placeholder
     relative_position_id = FRA_Stick_With_our_Northern_Neighbor
     mutually_exclusive = { focus = FRA_We_Can_Do_This_Alone }
-    x = 4
+    x = 6
     y = 1
     cost = 5
     ai_will_do = {
@@ -111,9 +106,9 @@ focus = { ### Add visible text "With Usonia on our side, chances are, more Ameri
     id = FRA_Bring_Usonia_into_the_Fold
     icon = placeholder
     relative_position_id = FRA_Continent_by_Continent
-    x = 1
+    x = 0
     y = 1
-    cost = 3
+    cost = 5
     ai_will_do = {
         factor = 5
     }
@@ -125,7 +120,7 @@ focus = {
     id = FRA_Asian_Alliances
     icon = placeholder
     relative_position_id = FRA_Continent_by_Continent
-    x = 3
+    x = 2
     y = 1
     cost = 3
     ai_will_do = {
@@ -139,7 +134,7 @@ Focus = {
     id = FRA_African_Associates
     icon = placeholder
     relative_position_id = FRA_Continent_by_Continent
-    x = 5
+    x = 4
     y = 1
     cost = 3
     ai_will_do = {
@@ -149,11 +144,287 @@ Focus = {
         focus = FRA_Continent_by_Continent
     }
 }
+
+focus = { ### Gets event, option 1 being to release as puppets, option 2 to release as fully independant nations
+    id = FRA_Freedom_for_the_Colonises
+    icon = placeholder
+    relative_position_id = FRA_Issue_with_Laurentia
+    x = 4
+    y = 1
+    cost = 3
+    ai_will_do = {
+        factor = 5
+    }
+    available = {
+        has_government = communism
+        has_government = neutrality
+        has_government = democratic
+    }
+    prerequisite = {
+        focus = FRA_Issue_with_Laurentia
+    }
+}
+focus = {
+    id = FRA_Pressure_Deconolization
+    icon = placeholder
+    relative_position_id = FRA_Freedom_for_the_Colonises
+    x = 1
+    y = 1
+    cost = 3
+    ai_will_do = {
+        factor = 5
+    }
+    available = {
+        has_completed_focus = FRA_A_Rise_in_Patriotism
+    }
+    prerequisite = {
+        focus = FRA_Freedom_for_the_Colonises
+    }
+}
+focus = { ### Future focuses gain wargoals on Colonial countries
+    id = FRA_Potential_Isolation
+    icon = placeholder
+    relative_position_id = FRA_Pressure_Deconolization
+    x = 5
+    y = 1
+    cost = 3
+    ai_will_do = {
+        factor = 5
+    }
+    prerequisite = {
+        focus = FRA_Pressure_Deconolization
+    }
+}
+focus = {
+    id = FRA_European_Sector
+    icon = placeholder
+    relative_position_id = FRA_Potential_Isolation
+    x = 5
+    y = 1
+    cost = 5
+    ai_will_do = {
+        factor = 5
+    }
+    prerequisite = {
+        focus = FRA_Potential_Isolation
+    }
+}
+focus = {
+    id = FRA_Polanian_Help
+    icon = placeholder
+    relative_position_id = FRA_European_Sector
+    x = 0
+    y = 1
+    cost = 5
+    ai_will_do = {
+        factor = 5
+    }
+    prerequisite = {
+        focus = FRA_European_Sector
+    }
+}
+focus = {
+    id = FRA_Defracture_Albion_Colonies
+    icon = placeholder
+    relative_position_id = FRA_Polanian_Help
+    x = 3
+    y = 1
+    cost = 5
+    ai_will_do = {
+        factor = 5
+    }
+    prerequisite = {
+        focus = FRA_Polanian_Help
+    }
+}
+focus = {
+    id = FRA_Banish_Nordic_Overseas_Territories
+    icon = placeholder
+    relative_position_id = FRA_Defracture_Albion_Colonies
+    x = -1
+    y = 1
+    cost = 5
+    ai_will_do = {
+        factor = 5
+    }
+    prerequisite = {
+        focus = FRA_Defracture_Albion_Colonies
+        focus = FRA_Rid_the_Roman_Colonial_Holdings
+    }
+}
+focus = {
+    id = FRA_Demolish_Saxon_Dominions
+    relative_position_id = FRA_Polanian_Help
+    x = -1
+    y = 1
+    cost = 5
+    ai_will_do = {
+        factor = 5
+    }
+    prerequisite = {
+        focus = FRA_Polanian_Help
+    }
+}
+focus = { ### Has not completed "The Land of Hispania"
+    id = FRA_Breakup_Hispanic_Settlements
+    icon = placeholder
+    relative_position_id = FRA_Polanian_Help
+    x = -3
+    y = 1
+    cost = 5
+    ai_will_do = {
+        factor = 5
+    }
+    prerequisite = {
+        focus = FRA_Polanian_Help
+    }
+}
+focus = {
+    id = FRA_South_Slavic_Freedoms
+    icon = placeholder
+    relative_position_id = FRA_Breakup_Hispanic_Settlements
+    x = 1
+    y = 1
+    cost = 5
+    ai_will_do = {
+        factor = 5
+    }
+    prerequisite = {
+        focus = FRA_Breakup_Hispanic_Settlements
+        focus = FRA_Demolish_Saxon_Dominions
+    }
+}
+focus = {
+    id = FRA_Rid_the_Roman_Colonial_Holdings
+    icon = placeholder
+    relative_position_id = FRA_Polanian_Help
+    x = 1
+    y = 1
+    cost = 5
+    ai_will_do = {
+        factor = 5
+    }
+    prerequisite = {
+        focus = FRA_Polanian_Help
+    }
+}
+focus = {
+    id = FRA_Asian_Sector
+    icon = placeholder
+    relative_position_id = FRA_Potential_Isolation
+    x = -5
+    y = 1
+    cost = 5
+    ai_will_do = {
+        factor = 5
+    }
+    prerequisite = {
+        focus = FRA_Potential_Isolation
+    }
+}
+focus = {
+    id = FRA_Persian_Persuasion
+    icon = placeholder
+    relative_position_id = FRA_Free_the_Caucasus
+    x = -2
+    y = 1
+    cost = 5
+    ai_will_do = {
+        factor = 5
+    }
+    prerequisite = {
+        focus = FRA_Free_the_Caucasus
+    }
+}
+focus = {
+    id = FRA_Central_Asian_Controversy
+    icon = placeholder
+    relative_position_id = FRA_Persian_Persuasion
+    x = 1
+    y = 1
+    cost = 5
+    ai_will_do = {
+        factor = 5
+    }
+    prerequisite = {
+        focus = FRA_Persian_Persuasion
+    }
+}
+focus = {
+    id = FRA_Indian_Princely_States
+    icon = placeholder
+    relative_position_id = FRA_Persian_Persuasion
+    x = -1
+    y = 1
+    cost = 5
+    ai_will_do = {
+        factor = 5
+    }
+    prerequisite = {
+        focus = FRA_Persian_Persuasion
+    }
+}
+focus = {
+    id = FRA_Disrupt_Japanese_Holdings
+    icon = placeholder
+    relative_position_id = FRA_Run_Amuk_in_Yuan_Outposts
+    x = -1
+    y = 1
+    cost = 5
+    ai_will_do = {
+        factor = 5
+    }
+    prerequisite = {
+        focus = FRA_Run_Amuk_in_Yuan_Outposts
+    }
+}
+focus = {
+    id = FRA_Run_Amuk_in_Yuan_Outposts
+    icon = placeholder
+    relative_position_id = FRA_Free_the_Caucasus
+    x = 2
+    y = 1
+    cost = 5
+    ai_will_do = {
+        factor = 5
+    }
+    prerequisite = {
+        focus = FRA_Free_the_Caucasus
+    }
+}
+focus = {
+    id = FRA_Free_Siberia
+    icon = placeholder
+    relative_position_id = FRA_Run_Amuk_in_Yuan_Outposts
+    x = 1
+    y = 1
+    cost = 5
+    ai_will_do = {
+        factor = 5
+    }
+    prerequisite = {
+        focus = FRA_Run_Amuk_in_Yuan_Outposts
+    }
+}
+focus = {
+    id = FRA_Free_the_Caucasus
+    icon = placeholder
+    relative_position_id = FRA_Asian_Sector
+    x = 0
+    y = 1
+    cost = 5
+    ai_will_do = {
+        factor = 5
+    }
+    prerequisite = {
+        focus = FRA_Asian_Sector
+    }
+}
 focus = {
     id = FRA_Oceanic_Obligations
     icon = placeholder
     relative_position_id = FRA_Continent_by_Continent
-    x = -1
+    x = -2
     y = 1
     cost = 3
     ai_will_do = {
@@ -178,10 +449,133 @@ focus = {
     }
 }
 focus = {
+    id = FRA_Either_With_Us_or_Against_Us
+    icon = placeholder
+    relative_position_id = FRA_American_Asssociates
+    x = 0
+    y = 2
+    cost = 5
+    ai_will_do = {
+        factor = 5
+    }
+    prerequisite = {
+        focus = FRA_American_Asssociates
+    }
+    prerequisite = {
+        focus = FRA_Oceanic_Obligations
+    }
+    prerequisite = {
+        focus = FRA_European_Benefactors
+    }
+    prerequisite = {
+        focus = FRA_Asian_Alliances
+    }
+    prerequisite = {
+        focus = FRA_African_Associates
+    }
+}
+focus = { ### Allows decisions to aid allies with equipment, and adds an idea that increases construction in allied territory (Is that possible?)
+    id = FRA_Mutual_Aid
+    icon = placeholder
+    relative_position_id = FRA_Either_With_Us_or_Against_Us
+    x = 0
+    y = 1
+    cost = 7
+    ai_will_do = {
+        factor = 5
+    }
+    prerequisite = {
+        focus = FRA_Either_With_Us_or_Against_Us
+    }
+}
+focus = {
+    id = FRA_Convince_For_Territorial_Concensions
+    icon = placeholder
+    relative_position_id = FRA_Mutual_Aid
+    x = 0
+    y = 1
+    cost = 6
+    ai_will_do = {
+        factor = 5
+    }
+    prerequisite = {
+        focus = FRA_Mutual_Aid
+    }
+}
+focus = {
+    id = FRA_Power_into_the_World_Stage
+    icon = placeholder
+    relative_position_id = FRA_Either_With_Us_or_Against_Us
+    x = -3
+    y = 1
+    cost = 7
+    ai_will_do = {
+        factor = 5
+    }
+    prerequisite = {
+        focus = FRA_Either_With_Us_or_Against_Us
+    }
+}
+focus = {
+    id = FRA_Intervene_in_La_Plata_Civil_War
+    relative_position_id = FRA_Power_into_the_World_Stage
+    x = 0
+    y = 1
+    cost = 5
+    ai_will_do = {
+        factor = 5
+    }
+    prerequisite = {
+        focus = FRA_Power_into_the_World_Stage
+    }
+}
+focus = {
+    id = FRA_Make_More_of_an_Enemy_out_of_Saxony
+    icon = placeholder
+    relative_position_id = FRA_Either_With_Us_or_Against_Us
+    x = 3
+    y = 1
+    cost = 6
+    ai_will_do = {
+        factor = 5
+    }
+    prerequisite = {
+        focus = FRA_Either_With_Us_or_Against_Us
+    }
+}
+focus = { ### Reduced relations with Saxony
+    id = FRA_Deny_Saxon_Ambitions
+    icon = placeholder
+    relative_position_id = FRA_Make_More_of_an_Enemy_out_of_Saxony
+    x = 0
+    y = 1
+    cost = 5
+    ai_will_do = {
+        factor = 5
+    }
+    prerequisite = {
+        focus = FRA_Make_More_of_an_Enemy_out_of_Saxony
+    }
+}
+focus = {
+    id = FRA_A_Rise_in_Patriotism
+    icon = placeholder
+    relative_position_id = FRA_The_Outside_World
+    x = -20
+    y = 1
+    cost = 3
+    ai_will_do = {
+        factor = 5
+    }
+    prerequisite = {
+        focus = FRA_The_Outside_World
+    }
+}
+focus = {
     id = FRA_European_Benefactors
     icon = placeholder
     relative_position_id = FRA_Continent_by_Continent
-    x = -3
+    x = -4
     y = 1
     cost = 3
     ai_will_do = {
@@ -197,7 +591,7 @@ focus = {
     icon = placeholder
     relative_position_id = FRA_Stick_With_our_Northern_Neighbor
     mutually_exclusive = { focus = FRA_Bring_More_into_The_Alliance }
-    x = -4
+    x = -6
     y = 1
     cost = 5
     ai_will_do = {
@@ -288,7 +682,7 @@ focus = {
     icon = placeholder
     relative_position_id = FRA_Search_for_Democracy
     x = 0
-    y = 1
+    y = 2
     cost = 5
     ai_will_do = {
         factor = 5
@@ -342,7 +736,6 @@ focus = {
     }
     available = {
         has_government = communism
-        has_government = ROOT
         has_government = neutrality
     }
     prerequisite = {
@@ -657,7 +1050,7 @@ focus = { ### Each continent (Americas count as 1) becomes a puppet of EU,
 focus = {
     id = FRA_State_Of_the_Economy
     icon = placeholder
-    x = 150
+    x = 200
     y = 0
     cost = 5
     ai_will_do = {
