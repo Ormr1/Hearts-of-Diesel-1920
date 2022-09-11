@@ -2427,11 +2427,11 @@ country_event = { # Power Struggle
 	fire_only_once = yes
 	option = {
 		name = fra_parliament.3.a
-		set_country_flag = FRA_flag_name
+		set_cosmetic_tag = FRA_cosmetic_tag_democratic
 	}
 	option = {
 		name = fra_parliament.3.b
-		set_country_flag = FRA_flag_name
+		set_cosmetic_tag = FRA_cosmetic_tag_communist
 	}
 }
 
@@ -2483,11 +2483,11 @@ country_event = {
 	fire_only_once = yes
 	option = {
 		name = fra_politicalalliance.1.a
-		set_country_flag = FRA_flag_name
+		set_cosmetic_tag = FRA_cosmetic_tag_democratic
 	}
 	option = {
 		name = fra_politicalalliance.1.b
-		set_country_flag = FRA_flag_name
+		set_cosmetic_tag = FRA_cosmetic_tag_communism
 	}
 }
 

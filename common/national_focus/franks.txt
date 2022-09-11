@@ -44,11 +44,16 @@ focus = { ### Alliance FRA_Privatize_Everything
     id = FRA_Frankish_Albion_Issue
     icon = placeholder
     relative_position_id = FRA_The_Outside_World
-    x = 10
+    x = 20
     y = 1
     cost = 5
     ai_will_do = {
         factor = 5
+    }
+    available = {
+        has_government = communism
+        has_government = neutrality
+        has_government = democratic
     }
     prerequisite = {
         focus = FRA_The_Outside_World
@@ -58,21 +63,155 @@ focus = {
     id = FRA_Stick_With_our_Northern_Neighbor
     icon = placeholder
     relative_position_id = FRA_Frankish_Albion_Issue
-    x = -5
+    x = -12
     y = 1
     cost = 5
     ai_will_do = {
         factor = 5
+    }
+    available = {
+        has_government = democratic
+        has_government = ROOT
+        has_government = fascism
     }
     prerequisite = {
         focus = FRA_Frankish_Albion_Issue
     }
 }
 focus = {
+    id = FRA_Bring_More_into_The_Alliance
+    icon = placeholder
+    relative_position_id = FRA_Stick_With_our_Northern_Neighbor
+    mutually_exclusive = { focus = FRA_We_Can_Do_This_Alone }
+    x = 4
+    y = 1
+    cost = 5
+    ai_will_do = {
+        factor = 5
+    }
+    prerequisite = {
+        focus = FRA_Stick_With_our_Northern_Neighbor
+    }
+}
+focus = { ### Allows decisions to ally nations in each continent, requiring a certain amount of relations. Each focus will unlock alliances for each continent
+    id = FRA_Continent_by_Continent
+    icon = placeholder
+    relative_position_id = FRA_Bring_More_into_The_Alliance
+    x = 1
+    y = 1
+    cost = 3
+    ai_will_do = {
+        factor = 5
+    }
+    prerequisite = {
+        focus = FRA_Bring_More_into_The_Alliance
+    }
+}
+focus = { ### Add visible text "With Usonia on our side, chances are, more American countries will be our allies" or something like that
+    id = FRA_Bring_Usonia_into_the_Fold
+    icon = placeholder
+    relative_position_id = FRA_Continent_by_Continent
+    x = 1
+    y = 1
+    cost = 3
+    ai_will_do = {
+        factor = 5
+    }
+    prerequisite = {
+        focus = FRA_Continent_by_Continent
+    }
+}
+focus = {
+    id = FRA_Asian_Alliances
+    icon = placeholder
+    relative_position_id = FRA_Continent_by_Continent
+    x = 3
+    y = 1
+    cost = 3
+    ai_will_do = {
+        factor = 5
+    }
+    prerequisite = {
+        focus = FRA_Continent_by_Continent
+    }
+}
+Focus = {
+    id = FRA_African_Associates
+    icon = placeholder
+    relative_position_id = FRA_Continent_by_Continent
+    x = 5
+    y = 1
+    cost = 3
+    ai_will_do = {
+        factor = 5
+    }
+    prerequisite = {
+        focus = FRA_Continent_by_Continent
+    }
+}
+focus = {
+    id = FRA_Oceanic_Obligations
+    icon = placeholder
+    relative_position_id = FRA_Continent_by_Continent
+    x = -1
+    y = 1
+    cost = 3
+    ai_will_do = {
+        factor = 5
+    }
+    prerequisite = {
+        focus = FRA_Continent_by_Continent
+    }
+}
+focus = {
+    id = FRA_American_Asssociates
+    icon = placeholder
+    relative_position_id = FRA_Bring_Usonia_into_the_Fold
+    x = 0
+    y = 1
+    cost = 3
+    ai_will_do = {
+        factor = 5
+    }
+    prerequisite = {
+        focus = FRA_Bring_Usonia_into_the_Fold
+    }
+}
+focus = {
+    id = FRA_European_Benefactors
+    icon = placeholder
+    relative_position_id = FRA_Continent_by_Continent
+    x = -3
+    y = 1
+    cost = 3
+    ai_will_do = {
+        factor = 5
+    }
+    prerequisite = {
+        focus = FRA_Continent_by_Continent
+    }
+}
+
+focus = {
+    id = FRA_We_Can_Do_This_Alone
+    icon = placeholder
+    relative_position_id = FRA_Stick_With_our_Northern_Neighbor
+    mutually_exclusive = { focus = FRA_Bring_More_into_The_Alliance }
+    x = -4
+    y = 1
+    cost = 5
+    ai_will_do = {
+        factor = 5
+    }
+    prerequisite = {
+        focus = FRA_Stick_With_our_Northern_Neighbor
+    }
+}
+focus = {
     id = FRA_Find_New_Allies
     icon = placeholder
     relative_position_id = FRA_Frankish_Albion_Issue
-    x = 5
+    x = 12
     y = 1
     cost = 5
     ai_will_do = {
@@ -95,7 +234,7 @@ focus = {
     available = {
         has_government = democratic
         has_government = ROOT
-        has_government = neutral
+        has_government = neutrality
         has_government = ROOT
     }
     prerequisite = {
@@ -106,7 +245,7 @@ focus = {
     id = FRA_The_Land_of_Hispania
     icon = placeholder
     relative_position_id = FRA_Search_for_Democracy
-    x = 3
+    x = 4
     y = 1
     cost = 5
     ai_will_do = {
@@ -120,7 +259,7 @@ focus = {
     id = FRA_Turn_the_Usionians_into_Allies
     icon = placeholder
     relative_position_id = FRA_Search_for_Democracy
-    x = 5
+    x = 6
     y = 1
     cost = 5
     ai_will_do = {
@@ -130,11 +269,11 @@ focus = {
         focus = FRA_Search_for_Democracy
     }
 }
-focus = {
+focus = { ### Potential to ally Zhongguo when they're not in the civil war (And are still alive)
     id = FRA_The_True_China
     icon = placeholder
     relative_position_id = FRA_Search_for_Democracy
-    x = 1
+    x = 2
     y = 1
     cost = 5
     ai_will_do = {
@@ -148,7 +287,7 @@ focus = {
     id = FRA_Issue_with_Laurentia
     icon = placeholder
     relative_position_id = FRA_Search_for_Democracy
-    x = -1
+    x = 0
     y = 1
     cost = 5
     ai_will_do = {
@@ -159,6 +298,36 @@ focus = {
     }
     prerequisite = {
         focus = FRA_Search_for_Democracy
+    }
+}
+focus = {
+    id = FRA_Laurentian_Ally
+    icon = placeholder
+    relative_position_id = FRA_Issue_with_Laurentia
+    mutually_exclusive = { focus = FRA_Let_Them_Choose_Their_Own_Path }
+    x = -1
+    y = 1
+    cost = 5
+    ai_will_do = {
+        factor = 5
+    }
+    prerequisite = {
+        focus = FRA_Issue_with_Laurentia
+    }
+}
+focus = {
+    id = FRA_Let_Them_Choose_Their_Own_Path
+    icon = placeholder
+    relative_position_id = FRA_Issue_with_Laurentia
+    mutually_exclusive = { focus = FRA_Laurentian_Ally }
+    x = 1
+    y = 1
+    cost = 5
+    ai_will_do = {
+        factor = 5
+    }
+    prerequisite = {
+        focus = FRA_Issue_with_Laurentia
     }
 }
 focus = {
@@ -174,8 +343,7 @@ focus = {
     available = {
         has_government = communism
         has_government = ROOT
-        has_government = neutral
-        has_government = ROOT
+        has_government = neutrality
     }
     prerequisite = {
         focus = FRA_Find_New_Allies
@@ -203,6 +371,7 @@ focus = {
     id = FRA_Become_Desperate
     icon = placeholder
     relative_position_id = FRA_Man_of_the_East
+    mutually_exclusive = { focus = FRA_Spread_the_Revolution }
     x = 0
     y = 2
     cost = 3
@@ -212,13 +381,16 @@ focus = {
     prerequisite = {
         focus = FRA_Man_of_the_East
     }
+    prerequisite = {
+        focus = FRA_Lack_of_Allies
+    }
 }
 focus = {
     id = FRA_Ally_the_Monarchies
     icon = placeholder
     relative_position_id = FRA_Become_Desperate
-    x = 1
-    y = 1
+    x = 2
+    y = 2
     cost = 3
     ai_will_do = {
         factor = 5
@@ -237,15 +409,14 @@ focus = {
     id = FRA_Loosen_Left_Wing_Standards
     icon = placeholder
     relative_position_id = FRA_Become_Desperate
-    x = -1
-    y = 1
+    x = 0
+    y = 2
     cost = 3
     ai_will_do = {
         factor = 5
     }
     available = {
         has_government = democratic
-        has_government = ROOT
         has_government = neutrality
         has_government = communism
     }
@@ -267,13 +438,14 @@ focus = {
         focus = FRA_Allies_of_the_Workforce
     }
 }
-focus = { ### Unlocks decisions to do coups on other countries - namely in Europe - in hopes that one of them will win
+focus = { ### Unlocks decisions to do coups on other countries - Firstly, in Europe - in hopes that one of them will win
     id = FRA_Spread_the_Revolution
     icon = placeholder
-    relative_position_id = FRA_The_Outside_World
+    relative_position_id = FRA_Lack_of_Allies
+    mutually_exclusive = { focus = FRA_Become_Desperate }
     x = 0
-    y = 5
-    cost = 7
+    y = 2
+    cost = 8
     ai_will_do = {
         factor = 5
     }
@@ -282,23 +454,97 @@ focus = { ### Unlocks decisions to do coups on other countries - namely in Europ
     }
 }
 focus = {
+    id = FRA_More_American_Revolutions
+    icon = placeholder
+    relative_position_id = FRA_Spread_the_Revolution
+    x = 2
+    y = 2
+    cost = 8
+    ai_will_do = {
+        factor = 5
+    }
+    available = {
+        has_completed_focus = FRA_Newfound_Socialists
+    }
+    prerequisite = {
+        focus = FRA_Spread_the_Revolution
+    }
+}
+focus = { ### Decisions to ally communist countries in the Americas
+    id = FRA_American_Allies
+    icon = placeholder
+    relative_position_id = FRA_More_American_Revolutions
+    x = 1
+    y = 1
+    cost = 5
+    ai_will_do = {
+        factor = 5
+    }
+    prerequisite = {
+        focus = FRA_More_American_Revolutions
+    }
+}
+focus = { ### Allows for more concentrated, dedicated decisions for getting the Communist Usonia coup
+    id = FRA_Trouble_with_Usonia
+    icon = placeholder
+    relative_position_id = FRA_American_Allies
+    mutually_exclusive = { focus = FRA_Attempt_to_Negotiate }    
+    x = 1
+    y = 1
+    cost = 5
+    ai_will_do = {
+        factor = 5
+    }
+    prerequisite = {
+        focus = FRA_American_Allies
+    }
+}
+focus = { ### Decision to give Usonia an Event w/ three options. One with them going through the process of going communist, second being that they say no, but ally/befriend Franks anyway, third being they say no, in which, Franks get a war goal
+    id = FRA_Attempt_to_Negotiate
+    icon = placeholder
+    relative_position_id = FRA_American_Allies
+        mutually_exclusive = { focus = FRA_Trouble_with_Usonia }    
+    x = -1
+    y = 1
+    cost = 5
+    ai_will_do = {
+        factor = 5
+    }
+    prerequisite = {
+        focus = FRA_American_Allies
+    }
+}
+focus = { ### Gains wargoal on Usonia if Cuba and/or Mexico are communist
+    id = FRA_Communism_at_Usonias_Doorstep
+    icon = placeholder
+    relative_position_id = FRA_Trouble_with_Usonia
+    x = 1
+    y = 1
+    cost = 4
+    ai_will_do = {
+        factor = 5
+    }
+    prerequisite = {
+        focus = FRA_Trouble_with_Usonia
+    }
+}
+focus = {
     id = FRA_Newfound_Socialists
     icon = placeholder
-    relative_position_id = FRA_Lack_of_Allies
+    relative_position_id = FRA_Spread_the_Revolution
     x = 0
     y = 2
     cost = 7
     ai_will_do = {
         factor = 5
     }
+    available = {
+        has_completed_focus = FRA_Alliance_of_European_Socialists
+    }
     prerequisite = {
         focus = FRA_Lack_of_Allies
     }
-    prerequisite = {
-        focus = FRA_Alliance_of_European_Socialists
-    }
 }
-
 focus = { ### Create Alliance with the same name as the focus
     id = FRA_Alliance_of_European_Socialists
     icon = placeholder
@@ -313,11 +559,105 @@ focus = { ### Create Alliance with the same name as the focus
         focus = FRA_Spread_the_Revolution
     }
 }
+focus = { ### Changes Alliance name to the name of the focus
+    id = FRA_Global_Socialist_Alliance
+    icon = placeholder
+    relative_position_id = FRA_Alliance_of_European_Socialists
+    x = 1
+    y = 2
+    cost = 5
+    ai_will_do = {
+        factor = 5
+    }
+    prerequisite = {
+        focus = FRA_Alliance_of_European_Socialists
+    }
+    prerequisite = {
+        focus = FRA_More_American_Revolutions
+    }
+}
+focus = {
+    id = FRA_Create_a_European_Union
+    icon = placeholder
+    relative_position_id = FRA_Alliance_of_European_Socialists
+    x = -2
+    y = 1
+    cost = 8
+    ai_will_do = {
+        factor = 5
+    }
+    prerequisite = {
+        focus = FRA_Alliance_of_European_Socialists
+    }
+}
+focus = { ### Gains event to change capital, gains cores on the country that originally had the capital (and the tag), while releasing every other country as a puppet, every one having the same deep blue
+    id = FRA_Country_Autonomy
+    icon = placeholder
+    relative_position_id = FRA_Create_a_European_Union
+    mutually_exclusive = { focus = FRA_Unity_Among_the_Union }
+    x = -1
+    y = 1
+    cost = 7
+    ai_will_do = {
+        factor = 5
+    }
+    prerequisite = {
+        focus = FRA_Create_a_European_Union
+    }
+}
+focus = { ### Gains decisions to core all of Europe
+    id = FRA_Unity_Among_the_Union
+    icon = placeholder
+    relative_position_id = FRA_Create_a_European_Union
+    mutually_exclusive = { focus = FRA_Country_Autonomy }    
+    x = 1
+    y = 1
+    cost = 7
+    ai_will_do = {
+        factor = 5
+    }
+    prerequisite = {
+        focus = FRA_Create_a_European_Union
+    }
+}
+focus = { ### Same as Unity Among the Union, but with the entire world
+    id = FRA_Global_Unity
+    icon = placeholder
+    relative_position_id = FRA_Unity_Among_the_Union
+    x = 1
+    y = 2
+    cost = 10
+    ai_will_do = {
+        factor = 5
+    }
+    prerequisite = {
+        focus = FRA_Country_Autonomy
+        focus = FRA_Unity_Among_the_Union
+        focus = FRA_Global_Socialist_Alliance
+    }
+}
+focus = { ### Each continent (Americas count as 1) becomes a puppet of EU,
+    id = FRA_Continental_Unity
+    icon = placeholder
+    relative_position_id = FRA_Unity_Among_the_Union
+    x = 3
+    y = 2
+    cost = 10
+    ai_will_do = {
+        factor = 5
+    }
+    prerequisite = {
+        focus = FRA_Country_Autonomy
+        focus = FRA_Unity_Among_the_Union
+        focus = FRA_Global_Socialist_Alliance
+    }
+}
+
 ### ECONOMIC
 focus = {
     id = FRA_State_Of_the_Economy
     icon = placeholder
-    x = 125
+    x = 150
     y = 0
     cost = 5
     ai_will_do = {
@@ -1260,7 +1600,7 @@ focus = {
     search_filters = {FOCUS_FILTER_INDUSTRY}
     completion_reward = {
         country_event = fra_economic.20
-        add_ideas ={FRA_more_with_workers}
+        add_ideas ={ FRA_More_with_Workers }
     }
     prerequisite = {
         focus = FRA_Flexible_With_the_Labor_Laws
