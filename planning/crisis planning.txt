@@ -35,3 +35,38 @@ Fenris lore stuff
 	july 1927, rasputin revels himself as the leader of fenris
 	tesla excapes in october 27
 	WWII starts in march 28?
+	
+	
+Rasputins coup:
+	
+	
+	factions: ACRONYM/Full Name (full name) [goal, 1st formable, 2nd formable] {TAG}
+		Rusviet Union (-) [Rasputin controlled Rusviet] {SOV}
+		Sovdepia (-) [lenin-trotsky Rusviet, Sovdepian Union] {RSF}
+		Rusviet Democratic Movement (-) [Democratic Rusviet, Rusviet Republic] {RDM}
+		Tsars Provisional Government  (-) [Restoration of the Tsar, Rusviet Tsardom] {TPG}
+		Chitan Republic (-) [communist alianed east, Far Eastern Republic, Sovdepian Union] {FAR}
+		White Siberia (-) [Olgas movement to restore the tsar, Far Eastern Tsardom, Rusviet Tsardom] {YAK}
+		Omsk Republic (-) [Decemberist Siberia, Far Eastern Republic, Rusviet Federation] {OMS}
+		Cossakia (-) [Independance, but will support a Rusviet Republic] {DON}
+		Kalmyk (-) [Independance] {KAL}
+		Volga Saxonia (-) [German/Saxon controlled volga, Ostsachsen Republic] {VGE}
+		Tatarstan (-) [Independance] {TAT}
+		Ural Republic (-) [Independance] {BSK}
+		Republic of Livonia and Lithuania (-) [Republician Independance] {RLL}
+		USRB (United Soviet Republics of the Baltics) [Soviet Independance, will support Sovdepian Union] {SRB}
+		Great Estonia (-) [Nordic allined baltics] {EST}
+		Terra Mariana (-) [Saxonian allined baltics] {TMR}
+		Altai (-) [Independance] {---}
+		Alash (-) [Independance] {---}
+		Karakalpak (-) [Independance] {---}
+		Khiva (-) [Independance] {---}
+		Turkestan (-) [Unite the Turks] {---}
+		Bukhara (-) [Independance] {---}
+		Uzbekistan (-) [Unite Uzbekistan] {---}
+		Polotsk (-) [Will settle for Independance, otherwise Rusviet State] {---}
+		National Republic of Ukrazhia (-) [Independance] {UKR}
+		- (-) [-] {---}
+		
+		
+letunvia

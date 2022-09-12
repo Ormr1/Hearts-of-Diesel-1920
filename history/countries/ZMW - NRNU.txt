@@ -1,13 +1,6 @@
 ﻿capital = 998
 
 #oob = "LAP_1936"
-if = {
-	limit = { has_dlc = "Man the Guns" }
-		set_naval_oob = "ARG_1936_naval_mtg"
-	else = {
-		set_naval_oob = "ARG_1936_naval_legacy"
-	}
-}
 
 # Starting tech
 set_technology = {
