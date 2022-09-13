@@ -20,10 +20,6 @@ ideologies = {
 			centrism_democratic = {
 			}
 
-			anarchist-capitalism = {
-
-			}
-
 			islamic_democracy = {
 				can_be_randomly_selected = no
 			}
@@ -76,6 +72,7 @@ ideologies = {
 			airforce_intel_to_others = 5
 		}
 
+		can_collaborate = yes
 		faction_modifiers = {
 			faction_trade_opinion_factor = 0.50 #Plus 50% trade opinion.
 		}
@@ -255,6 +252,9 @@ ideologies = {
 			}
 
 			technocracy = {
+			}
+
+			anarchist-capitalism = {
 			}
 		}
 
