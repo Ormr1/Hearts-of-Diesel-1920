@@ -1466,6 +1466,21 @@ focus = {
     }
 }
 focus = {
+    id = FRA_Leftism_at_its_Finest
+    icon = placeholder 
+    relative_position_id = FRA_Colonial_Issue
+    x = 2
+    y = 1
+    cost = 5
+    ai_will_do = {
+        factor = 5
+    }
+    prerequisite = {
+        focus = FRA_Colonial_Issue
+        focus = FRA_Semi_Autonomy_for_Colonies
+    }
+}
+focus = {
     id = FRA_Dual_Monarchy
     icon = placeholder 
     relative_position_id = FRA_Influence_Their_Politics
@@ -1633,6 +1648,21 @@ focus = {
     }
 }
 focus = {
+    id = FRA_Unite_for_the_Better
+    icon = placeholder 
+    relative_position_id = FRA_Either_With_Us_or_Against_Us
+    x = 0
+    y = -2
+    cost = 5
+    ai_will_do = {
+        factor = 5
+    }
+    prerequisite = {
+        focus = FRA_Leftism_at_its_Finest
+        focus = FRA_Rightism_at_its_Finest
+    }
+}
+focus = {
     id = FRA_Foregin_Investments
     icon = placeholder 
     relative_position_id = FRA_Mutual_Symbiotism
@@ -1648,7 +1678,7 @@ focus = {
     }
 }
 focus = {
-    FRA_Invites_to_Around_the_World
+    id = FRA_Invites_to_Around_the_World
     icon = placeholder 
     relative_position_id = FRA_Foregin_Investments
     x = -1
@@ -1659,6 +1689,21 @@ focus = {
     }
     prerequisite = {
         focus = FRA_Foregin_Investments
+    }
+}
+focus = {
+    id = FRA_Rightism_at_its_Finest
+    icon = placeholder 
+    relative_position_id = FRA_Bulk_of_the_Industry
+    x = -2
+    y = 1
+    cost = 5
+    ai_will_do = {
+        factor = 5
+    }
+    prerequisite = {
+        focus = FRA_Invites_to_Around_the_World
+        focus = FRA_Bulk_of_the_Industry
     }
 }
 focus = {
