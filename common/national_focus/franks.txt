@@ -78,7 +78,7 @@ focus = {
     icon = placeholder
     relative_position_id = FRA_Stick_With_our_Northern_Neighbor
     mutually_exclusive = { focus = FRA_We_Can_Do_This_Alone }
-    x = 10
+    x = 13
     y = 1
     cost = 5
     ai_will_do = {
@@ -120,7 +120,7 @@ focus = {
     id = FRA_Asian_Alliances
     icon = placeholder
     relative_position_id = FRA_Continent_by_Continent
-    x = 10
+    x = 4
     y = 1
     cost = 3
     ai_will_do = {
@@ -134,7 +134,7 @@ Focus = {
     id = FRA_African_Acquaintances
     icon = placeholder
     relative_position_id = FRA_Continent_by_Continent
-    x = 5
+    x = 2
     y = 1
     cost = 3
     ai_will_do = {
@@ -511,7 +511,7 @@ focus = {
     id = FRA_Oceanic_Obligations
     icon = placeholder
     relative_position_id = FRA_Continent_by_Continent
-    x = -5
+    x = -2
     y = 1
     cost = 3
     ai_will_do = {
@@ -539,8 +539,8 @@ focus = {
     id = FRA_Either_With_Us_or_Against_Us
     icon = placeholder
     relative_position_id = FRA_Put_in_the_Work
-    x = -12
-    y = 1
+    x = -13
+    y = 3
     cost = 5
     ai_will_do = {
         factor = 5
@@ -548,13 +548,16 @@ focus = {
     prerequisite = {
         focus = FRA_Put_in_the_Work
     }
+    prerequisite = {
+        focus = FRA_Developed_Colonies
+    }
 }
 focus = {
     id = FRA_Put_in_the_Work
     icon = placeholder
     relative_position_id = FRA_American_Asssociates
     x = 0
-    y = 2
+    y = 5
     cost = 5
     ai_will_do = {
         factor = 5
@@ -1191,7 +1194,7 @@ focus = {
     id = FRA_European_Benefactors
     icon = placeholder
     relative_position_id = FRA_Continent_by_Continent
-    x = -10
+    x = -4
     y = 1
     cost = 3
     ai_will_do = {
@@ -1207,7 +1210,7 @@ focus = {
     icon = placeholder
     relative_position_id = FRA_Stick_With_our_Northern_Neighbor
     mutually_exclusive = { focus = FRA_Bring_More_into_The_Alliance }
-    x = -10
+    x = -13
     y = 1
     cost = 5
     ai_will_do = {
@@ -1232,6 +1235,20 @@ focus = {
     }
 }
 focus = {
+    id = FRA_Focus_on_the_Little_we_Have
+    icon = placeholder
+    relative_position_id = FRA_Benefit_from_Franco_Albion_Colonies
+    x = 2
+    y = 1
+    cost = 5
+    ai_will_do = {
+        factor = 5
+    }
+    prerequisite = {
+        focus = FRA_Benefit_from_Franco_Albion_Colonies
+    }
+}
+focus = {
     id = FRA_Spend_More_on_Laurentia
     icon = placeholder
     relative_position_id = FRA_Benefit_from_Franco_Albion_Colonies
@@ -1245,6 +1262,485 @@ focus = {
         NOT = {
             has_completed_focus = FRA_Issue_with_Laurentia
         }
+    }
+    prerequisite = {
+        focus = FRA_Benefit_from_Franco_Albion_Colonies
+    }
+}
+focus = { ### Has won the Second World War
+    id = FRA_Franco_Albion_Unity
+    icon = placeholder
+    relative_position_id = FRA_Stick_With_our_Northern_Neighbor
+    x = 0
+    y = 2
+    cost = 5
+    ai_will_do = {
+        factor = 5
+    }
+    available = {
+        OR = {
+            has_completed_focus = FRA_Developed_Colonies
+            has_completed_focus = FRA_Put_in_the_Work
+        }
+    }
+    prerequisite = {
+        focus = FRA_Stick_With_our_Northern_Neighbor
+    }
+}
+focus = {
+    id = FRA_Argue_with_Political_Differences
+    icon = placeholder
+    relative_position_id = FRA_Franco_Albion_Unity
+    x = 0
+    y = 1
+    cost = 5
+    ai_will_do = {
+        factor = 5
+    }
+    prerequisite = {
+        focus = FRA_Franco_Albion_Unity
+    }
+}
+focus = {
+    id = FRA_Influence_Their_Politics
+    icon = placeholder
+    relative_position_id = FRA_Argue_with_Political_Differences
+    mutually_exclusive = { focus = FRA_Find_Unity_Within_Ourselves }
+    x = 4
+    y = 1
+    cost = 5
+    ai_will_do = {
+        factor = 5
+    }
+    prerequisite = {
+        focus = FRA_Argue_with_Political_Differences
+    }
+}
+focus = {
+    id = FRA_Left_Wing_Confederation
+    icon = placeholder 
+    relative_position_id = FRA_Influence_Their_Politics
+    mutually_exclusive = { focus = FRA_Dual_Monarchy }
+    x = 1
+    y = 1
+    cost = 5
+    ai_will_do = {
+        factor = 5
+    }
+    available = {
+        has_government = communism
+        has_government = neutrality
+        has_government = democratic
+    }
+    prerequisite = {
+        focus = FRA_Influence_Their_Politics
+    }
+}
+focus = {
+    id = FRA_Ideology_of_the_Confederation
+    icon = placeholder 
+    relative_position_id = FRA_Left_Wing_Confederation
+    x = 5
+    y = 1
+    cost = 5
+    ai_will_do = {
+        factor = 5
+    }
+    prerequisite = {
+        focus = FRA_Left_Wing_Confederation
+    }
+}
+focus = {
+    id = FRA_Split_the_Means_of_Production
+    icon = placeholder 
+    relative_position_id = FRA_Ideology_of_the_Confederation
+    x = 2
+    y = 1
+    cost = 5
+    ai_will_do = {
+        factor = 5
+    }
+    prerequisite = {
+        focus = FRA_Ideology_of_the_Confederation
+    }
+}
+focus = {
+    id = FRA_Decisions_Made_by_the_People
+    icon = placeholder 
+    relative_position_id = FRA_Ideology_of_the_Confederation
+    x = 0
+    y = 1
+    cost = 5
+    ai_will_do = {
+        factor = 5
+    }
+    prerequisite = {
+        focus = FRA_Ideology_of_the_Confederation
+    }
+}
+focus = {
+    id = FRA_Let_the_People_Rule_Themselves
+    icon = placeholder 
+    relative_position_id = FRA_Ideology_of_the_Confederation
+    x = -2
+    y = 1
+    cost = 5
+    ai_will_do = {
+        factor = 5
+    }
+    prerequisite = {
+        focus = FRA_Ideology_of_the_Confederation
+    }
+}
+focus = {
+    id = FRA_Divide_the_Duo
+    icon = placeholder 
+    relative_position_id = FRA_Left_Wing_Confederation
+    x = -1
+    y = 1
+    cost = 5
+    ai_will_do = {
+        factor = 5
+    }
+    prerequisite = {
+        focus = FRA_Left_Wing_Confederation
+        focus = FRA_Dual_Monarchy
+    }
+}
+focus = {
+    id = FRA_Fragment_one_Another
+    icon = placeholder 
+    relative_position_id = FRA_Divide_the_Duo
+    mutually_exclusive = { focus = FRA_Our_Current_Borders }
+    x = 1
+    y = 1
+    cost = 5
+    ai_will_do = {
+        factor = 5
+    }
+    prerequisite = {
+        focus = FRA_Divide_the_Duo
+    }
+}
+focus = {
+    id = FRA_Semi_Autonomy_for_Colonies
+    icon = placeholder 
+    relative_position_id = FRA_Fragment_one_Another
+    x = 1
+    y = 1
+    cost = 5
+    ai_will_do = {
+        factor = 5
+    }
+    prerequisite = {
+        focus = FRA_Fragment_one_Another
+    }
+}
+focus = {
+    id = FRA_Our_Current_Borders
+    icon = placeholder 
+    relative_position_id = FRA_Divide_the_Duo
+    mutually_exclusive = { focus = FRA_Fragment_one_Another }
+    x = -1
+    y = 1
+    cost = 5
+    ai_will_do = {
+        factor = 5
+    }
+    prerequisite = {
+        focus = FRA_Divide_the_Duo
+    }
+}
+focus = {
+    id = FRA_Colonial_Issue
+    icon = placeholder 
+    relative_position_id = FRA_Our_Current_Borders
+    x = -1
+    y = 1
+    cost = 5
+    ai_will_do = {
+        factor = 5
+    }
+    prerequisite = {
+        focus = FRA_Our_Current_Borders
+    }
+}
+focus = {
+    id = FRA_Dual_Monarchy
+    icon = placeholder 
+    relative_position_id = FRA_Influence_Their_Politics
+    mutually_exclusive = { focus = FRA_Left_Wing_Confederation }
+    x = -1
+    y = 1
+    cost = 5
+    ai_will_do = {
+        factor = 5
+    }
+    available = {
+        has_government = fascism
+        has_government = neutrality
+        has_government = ROOT
+    }
+    prerequisite = {
+        focus = FRA_Influence_Their_Politics
+    }
+}
+focus = {
+    id = FRA_Find_Unity_Within_Ourselves
+    icon = placeholder
+    relative_position_id = FRA_Argue_with_Political_Differences
+    mutually_exclusive = { focus = FRA_Influence_Their_Politics }
+    x = -4
+    y = 1
+    cost = 5
+    ai_will_do = {
+        factor = 5
+    }
+    prerequisite = {
+        focus = FRA_Argue_with_Political_Differences
+    }
+}
+focus = {
+    id = FRA_Our_Problems_can_Become_One
+    icon = placeholder 
+    relative_position_id = FRA_Find_Unity_Within_Ourselves
+    mutually_exclusive = { focus = FRA_Help_Starts_from_Unity }
+    x = -1
+    y = 1
+    cost = 5
+    ai_will_do = {
+        factor = 5
+    }
+    prerequisite = {
+        focus = FRA_Find_Unity_Within_Ourselves
+    }
+}
+focus = {
+    id = FRA_Inter_and_Intra_National_Issues
+    icon = placeholder 
+    relative_position_id = FRA_Our_Problems_can_Become_One
+    x = -5
+    y = 1
+    cost = 5
+    ai_will_do = {
+        factor = 5
+    }
+    prerequisite = {
+        focus = FRA_Our_Problems_can_Become_One
+    }
+}
+focus = {
+    id = FRA_Lack_of_Resource_Variety
+    icon = placeholder 
+    relative_position_id = FRA_Inter_and_Intra_National_Issues
+    x = 0
+    y = 1
+    cost = 5
+    ai_will_do = {
+        factor = 5
+    }
+    prerequisite = {
+        focus = FRA_Inter_and_Intra_National_Issues
+    }
+}
+focus = {
+    id = FRA_Foreign_Realization
+    icon = placeholder 
+    relative_position_id = FRA_Inter_and_Intra_National_Issues
+    x = 2
+    y = 1
+    cost = 5
+    ai_will_do = {
+        factor = 5
+    }
+    prerequisite = {
+        focus = FRA_Inter_and_Intra_National_Issues
+    }
+}
+focus = {
+    id = FRA_Internal_Division
+    icon = placeholder 
+    relative_position_id = FRA_Inter_and_Intra_National_Issues
+    x = -2
+    y = 1
+    cost = 5
+    ai_will_do = {
+        factor = 5
+    }
+    prerequisite = {
+        focus = FRA_Inter_and_Intra_National_Issues
+    }
+}
+focus = {
+    id = FRA_Help_Starts_from_Unity
+    icon = placeholder 
+    relative_position_id = FRA_Find_Unity_Within_Ourselves
+    mutually_exclusive = { focus = FRA_Our_Problems_can_Become_One }
+    x = 1
+    y = 1
+    cost = 5
+    ai_will_do = {
+        factor = 5
+    }
+    prerequisite = {
+        focus = FRA_Find_Unity_Within_Ourselves
+    }
+}
+focus = {
+    id = FRA_Mutual_Symbiotism
+    icon = placeholder 
+    relative_position_id = FRA_Our_Problems_can_Become_One
+    x = 1
+    y = 1
+    cost = 5
+    ai_will_do = {
+        factor = 5
+    }
+    prerequisite = {
+        focus = FRA_Help_Starts_from_Unity
+    }
+    prerequisite = {
+        focus = FRA_Our_Problems_can_Become_One
+    }
+}
+focus = {
+    id = FRA_Build_in_Metropolitan_Frankia
+    icon = placeholder 
+    relative_position_id = FRA_Mutual_Symbiotism
+    mutually_exclusive = { focus = FRA_Foregin_Investments }
+    x = 1
+    y = 1
+    cost = 5
+    ai_will_do = {
+        factor = 5
+    }
+    prerequisite = {
+        focus = FRA_Mutual_Symbiotism
+    }
+}
+focus = {
+    id = FRA_Bulk_of_the_Industry
+    icon = placeholder 
+    relative_position_id = FRA_Build_in_Metropolitan_Frankia
+    x = 1
+    y = 1
+    cost = 5
+    ai_will_do = {
+        factor = 5
+    }
+    prerequisite = {
+        focus = FRA_Build_in_Metropolitan_Frankia
+    }
+}
+focus = {
+    id = FRA_Foregin_Investments
+    icon = placeholder 
+    relative_position_id = FRA_Mutual_Symbiotism
+    mutually_exclusive = { focus = FRA_Build_in_Metropolitan_Frankia }
+    x = -1
+    y = 1
+    cost = 5
+    ai_will_do = {
+        factor = 5
+    }
+    prerequisite = {
+        focus = FRA_Mutual_Symbiotism
+    }
+}
+focus = {
+    FRA_Invites_to_Around_the_World
+    icon = placeholder 
+    relative_position_id = FRA_Foregin_Investments
+    x = -1
+    y = 1
+    cost = 5
+    ai_will_do = {
+        factor = 5
+    }
+    prerequisite = {
+        focus = FRA_Foregin_Investments
+    }
+}
+focus = {
+    id = FRA_Small_Asian_Outposts
+    icon = placeholder
+    relative_position_id = FRA_Benefit_from_Franco_Albion_Colonies
+    x = 4
+    y = 1
+    cost = 5
+    ai_will_do = {
+        factor = 5
+    }
+    prerequisite = {
+        focus = FRA_Benefit_from_Franco_Albion_Colonies
+    }
+}
+focus = {
+    id = FRA_Buy_up_American_Ports
+    icon = placeholder
+    relative_position_id = FRA_Benefit_from_Franco_Albion_Colonies
+    x = -2
+    y = 1
+    cost = 5
+    ai_will_do = {
+        factor = 5
+    }
+    prerequisite = {
+        focus = FRA_Benefit_from_Franco_Albion_Colonies
+    }
+}
+focus = {
+    id = FRA_Offer_to_Buy_Mozambique
+    icon = placeholder
+    relative_position_id = FRA_Benefit_from_Franco_Albion_Colonies
+    x = -4
+    y = 1
+    cost = 5
+    ai_will_do = {
+        factor = 5
+    }
+    prerequisite = {
+        focus = FRA_Benefit_from_Franco_Albion_Colonies
+    }
+}
+focus = {
+    id = FRA_Bonus_to_American_Infrastructure
+    icon = placeholder
+    relative_position_id = FRA_Spend_More_on_Laurentia
+    x = 0
+    y = 1
+    cost = 5
+    ai_will_do = {
+        factor = 5
+    }
+    prerequisite = {
+        focus = FRA_Spend_More_on_Laurentia
+    }
+}
+focus = {
+    id = FRA_Developed_Colonies
+    icon = placeholder
+    relative_position_id = FRA_Bonus_to_American_Infrastructure
+    x = 0
+    y = 5
+    cost = 5
+    ai_will_do = {
+        factor = 5
+    }
+    prerequisite = {
+        focus = FRA_Offer_to_Buy_Mozambique
+    }
+    prerequisite = {
+        focus = FRA_Buy_up_American_Ports
+    }
+    prerequisite = {
+        focus = FRA_Bonus_to_American_Infrastructure
+    }
+    prerequisite = {
+        focus = FRA_Focus_on_the_Little_we_Have
+    }
+    prerequisite = {
+        focus = FRA_Small_Asian_Outposts
     }
 }
 focus = {
