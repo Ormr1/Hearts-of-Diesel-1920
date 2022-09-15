@@ -278,7 +278,7 @@ FRE = "countries/Freedonia.txt"
 SPU = "countries/SPU.txt"
 #
 WOL = "countries/Wolof.txt"
-TRZ = "countries/Traza.txt"
+TRZ = "countries/Trarza.txt"
 KAA = "countries/Kaarta.txt"
 SEG = "countries/Segu.txt"
 MOP = "countries/Mopti.txt"
