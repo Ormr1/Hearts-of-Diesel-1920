@@ -146,6 +146,7 @@ if = {
 set_technology = {
 	synth_oil_experiments = 1
 }
+give_guarantee = NOR
 
 
 ####
@@ -184,7 +185,7 @@ if = {
 }
 
 set_research_slots = 3
-set_stability = 0.1
+set_stability = 0.45
 set_war_support = 0.3
 # Starting tech
 set_technology = { #WARNING: Do not just remove techs from here -> It can impact a lot of stuff. Before removing, double check that content does not count on these techs being researched
@@ -210,6 +211,21 @@ set_technology = { #WARNING: Do not just remove techs from here -> It can impact
 	fuel_refining = 1
 	basic_train = 1
 }
+
+set_variable = {var_SOV_factions_RSDLP_loyalty = 23}
+set_variable = {var_SOV_factions_SR_loyalty = 42}
+set_variable = {var_SOV_factions_T_loyalty = 95}
+set_variable = {var_SOV_factions_Kd_loyalty = 72}
+set_variable = {var_SOV_factions_O_loyalty = 80}
+set_variable = {var_SOV_current_army_controller = 5}
+resize_array = {
+	array = var_SOV_factions_ARMY_loyalty
+	value = 0
+	size = 5
+}
+set_variable = {var_SOV_factions_ARMY_loyalty^2 = 39}
+set_variable = {var_SOV_factions_ARMY_loyalty^5 = 53}
+set_variable = {var_SOV_factions_ARMY_loyalty^4 = 7}
 
 if = {
 	limit = {
@@ -278,8 +294,9 @@ if = {
 set_country_flag = SOV_TEST_REMOVE_VANILLA_ADVISORS_flag
 
 add_ideas = {
-	treaty_of_brest_litovsk
+	petrograd_soviet_idea
 }
+activate_advisor = SOV_rasputin
 
 set_convoys = 50
 

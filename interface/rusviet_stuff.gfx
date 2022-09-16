@@ -1,0 +1,21 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_rusviet_party_frame_icon"
+		texturefile = "gfx/interface/rusviet_politics/party_frame.dds"
+	}
+	spriteType = {
+		name = "GFX_rusviet_party_frame_army_icon"
+		texturefile = "gfx/interface/rusviet_politics/party_frame_army.dds"
+	}
+	spriteType = {
+		name = "GFX_rusviet_party_icon"
+		texturefile = "gfx/interface/rusviet_politics/party_icon.dds"
+		noOfFrames = 6
+	}
+	spriteType = {
+		name = "GFX_rusviet_party_icon_small"
+		texturefile = "gfx/interface/rusviet_politics/party_icon_small.dds"
+		noOfFrames = 5
+	}
+}

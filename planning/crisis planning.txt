@@ -38,7 +38,15 @@ Fenris lore stuff
 	
 	
 Rasputins coup:
-	
+	factions within the duma
+		
+		RSDLP, Russian Social Democratic Labour Party - Lenin, Trotsky
+		SR, Socialist Revolutionary Party - Puppets of Rasputin
+		K-D, Constitutional Democratic Party - liberals
+		Octoberists, - conservatives
+		
+		Tsarists, -  tsar loyalists
+		Rusviet Imperial Army -  loyalty of the army
 	
 	factions: ACRONYM/Full Name (full name) [goal, 1st formable, 2nd formable] {TAG}
 		Rusviet Union (-) [Rasputin controlled Rusviet] {SOV}

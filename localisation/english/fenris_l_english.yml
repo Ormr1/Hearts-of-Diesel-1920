@@ -138,3 +138,5 @@
  fenris.10.c:0 "Strike [ARG.GetName]"
  fenris.10.e:0 "Strike [ARC.GetName]"
  fenris.10.f:0 "Strike [ETR.GetName]"
+ FEN_provoke_reprisals_SOV:0 "Provoke Tsarist Reprisals"
+ FEN_stage_tsar_crackdown_SOV:0 "Stage a Tsarist Crackdown"

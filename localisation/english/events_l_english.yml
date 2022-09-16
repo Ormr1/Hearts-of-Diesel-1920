@@ -3272,3 +3272,12 @@
  arabia_civil_war.1.t:0 "Arabian Regicide"
  arabia_civil_war.1.desc:0 "News reports are coming in from Arabia telling of the horrendous murder of the king of Arabia and his two sons, the successors to their realm. Following the line of succession, the last remaining direct heir should be the new monarch but the daughter, Sita al-Hadid, has gone missing. As a result, the old king's brother is now the new king of Arabia.\n\nRumors are circulating as to the disappearance of the princess of Arabia. Some think she's been kidnapped by the king's murderers but others report sightings of her leaving the capital city of Doha bound westward. Whatever the case may be, there's been a change in leadership in Arabia and the world waits to see how the new king will rule."
  arabia_civil_war.1.a:0 "Oh the humanity!"
+ 
+ SOV_civil_war.1.t:0 "Rebels Take the Palace"
+ SOV_civil_war.2.t:0 "Soviet Order 24b"
+ SOV_civil_war.2.d:0 "Soviet Order 24b"
+ SOV_civil_war.3.t:0 "Unsanctioned Reprisals"
+ SOV_civil_war.3.d:0 "A seemingly rogue Division commander has been breaking down the doors of dissidents and vanishing with them into the night. This is being seen by various factions as a direct attack by the tsar, we could disuade them of this but in response it will likely require a serious crackdown by us on our own troops."
+ SOV_civil_war.3.a:0 "Let them continue"
+ SOV_civil_war.3.b:0 "Root out the rouge elements"
+ SOV_civil_war.3.c:0 "Give Concessions in way of apology"

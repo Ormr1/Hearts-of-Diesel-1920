@@ -1,0 +1,381 @@
+#####
+##### Faction System #####
+#####
+SOV_reduce_rsdlp_loyalty = {
+	#parse temp var: var_SOV_temp_reduce_loyalty
+	custom_effect_tooltip = SOV_reduce_rsdlp_loyalty_amount
+	subtract_from_variable = {var_SOV_factions_RSDLP_loyalty = var_SOV_temp_reduce_loyalty}
+}
+SOV_reduce_sr_loyalty = {
+	#parse temp var: var_SOV_temp_reduce_loyalty
+	custom_effect_tooltip = SOV_reduce_sr_loyalty_amount
+	subtract_from_variable = {var_SOV_factions_SR_loyalty = var_SOV_temp_reduce_loyalty}
+}
+SOV_reduce_kd_loyalty = {
+	#parse temp var: var_SOV_temp_reduce_loyalty
+	custom_effect_tooltip = SOV_reduce_kd_loyalty_amount
+	subtract_from_variable = {var_SOV_factions_Kd_loyalty = var_SOV_temp_reduce_loyalty}
+}
+SOV_reduce_o_loyalty = {
+	#parse temp var: var_SOV_temp_reduce_loyalty
+	custom_effect_tooltip = SOV_reduce_o_loyalty_amount
+	subtract_from_variable = {var_SOV_factions_O_loyalty = var_SOV_temp_reduce_loyalty}
+}
+SOV_reduce_t_loyalty = {
+	#parse temp var: var_SOV_temp_reduce_loyalty
+	custom_effect_tooltip = SOV_reduce_t_loyalty_amount
+	subtract_from_variable = {var_SOV_factions_T_loyalty = var_SOV_temp_reduce_loyalty}
+}
+SOV_increase_rsdlp_loyalty = {
+	#parse temp var: var_SOV_temp_increase_loyalty
+	custom_effect_tooltip = SOV_increase_rsdlp_loyalty_amount
+	add_to_variable = {var_SOV_factions_RSDLP_loyalty = var_SOV_temp_increase_loyalty}
+}
+SOV_increase_sr_loyalty = {
+	#parse temp var: var_SOV_temp_increase_loyalty
+	custom_effect_tooltip = SOV_increase_sr_loyalty_amount
+	add_to_variable = {var_SOV_factions_SR_loyalty = var_SOV_temp_increase_loyalty}
+}
+SOV_increase_kd_loyalty = {
+	#parse temp var: var_SOV_temp_increase_loyalty
+	custom_effect_tooltip = SOV_increase_kd_loyalty_amount
+	add_to_variable = {var_SOV_factions_Kd_loyalty = var_SOV_temp_increase_loyalty}
+}
+SOV_increase_o_loyalty = {
+	#parse temp var: var_SOV_temp_increase_loyalty
+	custom_effect_tooltip = SOV_increase_o_loyalty_amount
+	add_to_variable = {var_SOV_factions_O_loyalty = var_SOV_temp_increase_loyalty}
+}
+SOV_increase_t_loyalty = {
+	#parse temp var: var_SOV_temp_increase_loyalty
+	custom_effect_tooltip = SOV_increase_t_loyalty_amount
+	add_to_variable = {var_SOV_factions_T_loyalty = var_SOV_temp_increase_loyalty}
+}
+SOV_reduce_army_control = {
+	#parse temp var: var_SOV_temp_reduce_loyalty and var_SOV_temp_reduce_controller var_SOV_temp_increase_controller
+	custom_effect_tooltip = SOV_reduce_army_control_amount
+	subtract_from_variable = {var_SOV_factions_ARMY_loyalty^var_SOV_temp_reduce_controller = var_SOV_temp_reduce_loyalty}
+	add_to_variable = {var_SOV_factions_ARMY_loyalty^var_SOV_temp_increase_controller = var_SOV_temp_reduce_loyalty}
+	SOV_check_army_control = yes
+}
+SOV_increase_army_control = {
+	#parse temp var: var_SOV_temp_reduce_loyalty and var_SOV_temp_reduce_controller var_SOV_temp_increase_controller
+	
+	if={
+		limit={
+			check_variable = {var_SOV_temp_reduce_controller > 0}
+		}
+		if={
+			limit = {
+				check_variable = {var_SOV_factions_ARMY_loyalty^var_SOV_temp_reduce_controller > var_SOV_temp_reduce_loyalty}
+			}
+			subtract_from_variable = {var_SOV_factions_ARMY_loyalty^var_SOV_temp_reduce_controller = var_SOV_temp_reduce_loyalty}
+			add_to_variable = {var_SOV_factions_ARMY_loyalty^var_SOV_temp_increase_controller = var_SOV_temp_reduce_loyalty}
+		}
+		else={
+			subtract_from_temp_variable = {var_SOV_temp_reduce_loyalty = var_SOV_factions_ARMY_loyalty^var_SOV_temp_reduce_controller}
+			set_variable = {var_SOV_factions_ARMY_loyalty^var_SOV_temp_reduce_controller = 0}
+			add_to_variable = {var_SOV_factions_ARMY_loyalty^var_SOV_temp_increase_controller = var_SOV_temp_reduce_loyalty}
+			SOV_increase_army_control_runoff = yes
+		}
+		custom_effect_tooltip = SOV_increase_army_control_amount
+	}
+	else={
+		add_to_variable = {
+			var_SOV_factions_ARMY_loyalty^var_SOV_temp_increase_controller = var_SOV_temp_reduce_loyalty
+			tooltip = SOV_increase_army_control_amount_undirected
+		}
+		SOV_increase_army_control_runoff = yes
+	}
+	SOV_normalize_army_control = yes
+	SOV_check_army_control = yes
+}
+SOV_decrease_army_control = {
+	#parse temp var: var_SOV_temp_reduce_loyalty and var_SOV_temp_reduce_controller var_SOV_temp_increase_controller
+	
+	if={
+		limit={
+			check_variable = {var_SOV_temp_increase_controller > 0}
+		}
+		if={
+			limit = {
+				check_variable = {var_SOV_factions_ARMY_loyalty^var_SOV_temp_reduce_controller > var_SOV_temp_reduce_loyalty}
+			}
+			add_to_variable = {var_SOV_factions_ARMY_loyalty^var_SOV_temp_reduce_controller = var_SOV_temp_reduce_loyalty}
+			subtract_from_variable = {var_SOV_factions_ARMY_loyalty^var_SOV_temp_reduce_controller = var_SOV_temp_reduce_loyalty}
+		}
+		else={
+			add_to_temp_variable = {var_SOV_temp_reduce_loyalty = var_SOV_factions_ARMY_loyalty^var_SOV_temp_reduce_controller}
+			set_variable = {var_SOV_factions_ARMY_loyalty^var_SOV_temp_reduce_controller = 0}
+			subtract_from_variable = {var_SOV_factions_ARMY_loyalty^var_SOV_temp_reduce_controller = var_SOV_temp_reduce_loyalty}
+			SOV_decrease_army_control_runoff = yes
+		}
+		custom_effect_tooltip = SOV_reduce_army_control_amount
+	}
+	else={
+		subtract_from_variable = {
+			var_SOV_factions_ARMY_loyalty^var_SOV_temp_reduce_controller = var_SOV_temp_reduce_loyalty
+			tooltip = SOV_reduce_army_control_amount_undirected
+		}
+		SOV_decrease_army_control_runoff = yes
+	}
+	SOV_normalize_army_control = yes
+	SOV_check_army_control = yes
+}
+SOV_check_army_control={
+	set_temp_variable = {temp_i = 1}
+	set_temp_variable = {temp_i_highest_value = var_SOV_factions_ARMY_loyalty^1}
+	if={
+		limit={
+			check_variable = {temp_i_highest_value < var_SOV_factions_ARMY_loyalty^2}
+		}
+		set_temp_variable = {temp_i_highest_value = var_SOV_factions_ARMY_loyalty^2}
+		set_temp_variable = {temp_i = 2}
+	}
+	if={
+		limit={
+			check_variable = {temp_i_highest_value < var_SOV_factions_ARMY_loyalty^3}
+		}
+		set_temp_variable = {temp_i_highest_value = var_SOV_factions_ARMY_loyalty^3}
+		set_temp_variable = {temp_i = 3}
+	}
+	if={
+		limit={
+			check_variable = {temp_i_highest_value < var_SOV_factions_ARMY_loyalty^4}
+		}
+		set_temp_variable = {temp_i_highest_value = var_SOV_factions_ARMY_loyalty^4}
+		set_temp_variable = {temp_i = 4}
+	}
+	if={
+		limit={
+			check_variable = {temp_i_highest_value < var_SOV_factions_ARMY_loyalty^5}
+		}
+		set_temp_variable = {temp_i_highest_value = var_SOV_factions_ARMY_loyalty^5}
+		set_temp_variable = {temp_i = 5}
+	}
+	if={
+		limit={
+			NOT={check_variable = {var_SOV_current_army_controller = temp_i}}
+		}
+		#add_to_temp_variable = {temp_i = 1}
+		set_variable = {var_SOV_current_army_controller = temp_i}
+		custom_effect_tooltip = SOV_army_control_changed
+	}
+	else={
+		#set_variable = {var_SOV_current_army_controller = i}
+		#custom_effect_tooltip = SOV_army_control_changed
+	}
+}
+
+SOV_increase_army_control_runoff = {
+	#Get the total percentage
+	set_temp_variable = { total_percentage_uncontrolled = 0 }
+	if={
+		limit={#factions that control the army and are not gaining
+			NOT={check_variable = {var_SOV_temp_increase_controller = 1}}
+			check_variable = {var_SOV_factions_ARMY_loyalty^1 > 0}
+		}
+		add_to_temp_variable = {total_percentage_uncontrolled = var_SOV_factions_ARMY_loyalty^1}
+	}
+	if={
+		limit={#factions that control the army and are not gaining
+			NOT={check_variable = {var_SOV_temp_increase_controller = 2}}
+			check_variable = {var_SOV_factions_ARMY_loyalty^2 > 0}
+		}
+		add_to_temp_variable = {total_percentage_uncontrolled = var_SOV_factions_ARMY_loyalty^2}
+	}
+	if={
+		limit={#factions that control the army and are not gaining
+			NOT={check_variable = {var_SOV_temp_increase_controller = 3}}
+			check_variable = {var_SOV_factions_ARMY_loyalty^3 > 0}
+		}
+		add_to_temp_variable = {total_percentage_uncontrolled = var_SOV_factions_ARMY_loyalty^3}
+	}
+	if={
+		limit={#factions that control the army and are not gaining
+			NOT={check_variable = {var_SOV_temp_increase_controller = 4}}
+			check_variable = {var_SOV_factions_ARMY_loyalty^4 > 0}
+		}
+		add_to_temp_variable = {total_percentage_uncontrolled = var_SOV_factions_ARMY_loyalty^4}
+	}
+	if={
+		limit={#factions that control the army and are not gaining
+			NOT={check_variable = {var_SOV_temp_increase_controller = 5}}
+			check_variable = {var_SOV_factions_ARMY_loyalty^5 > 0}
+		}
+		add_to_temp_variable = {total_percentage_uncontrolled = var_SOV_factions_ARMY_loyalty^5}
+	}
+	
+	if={
+		limit={#factions that control the army and are not gaining
+			NOT={check_variable = {var_SOV_temp_increase_controller = 1}}
+			check_variable = {var_SOV_factions_ARMY_loyalty^1 > 0}
+		}
+		set_temp_variable = { total_uncontrolled_ratio_calc = var_SOV_factions_ARMY_loyalty^1 }
+		divide_temp_variable = {total_uncontrolled_ratio_calc = total_percentage_uncontrolled}
+		multiply_temp_variable = {total_uncontrolled_ratio_calc = var_SOV_temp_reduce_loyalty}
+		subtract_from_variable = {var_SOV_factions_ARMY_loyalty^1 = total_uncontrolled_ratio_calc}
+		round_variable = var_SOV_factions_ARMY_loyalty^1
+	}
+	if={
+		limit={#factions that control the army and are not gaining
+			NOT={check_variable = {var_SOV_temp_increase_controller = 2}}
+			check_variable = {var_SOV_factions_ARMY_loyalty^2 > 0}
+		}
+		set_temp_variable = { total_uncontrolled_ratio_calc = var_SOV_factions_ARMY_loyalty^2 }
+		divide_temp_variable = {total_uncontrolled_ratio_calc = total_percentage_uncontrolled}
+		multiply_temp_variable = {total_uncontrolled_ratio_calc = var_SOV_temp_reduce_loyalty}
+		subtract_from_variable = {var_SOV_factions_ARMY_loyalty^2 = total_uncontrolled_ratio_calc}
+		round_variable = var_SOV_factions_ARMY_loyalty^2
+	}
+	if={
+		limit={#factions that control the army and are not gaining
+			NOT={check_variable = {var_SOV_temp_increase_controller = 3}}
+			check_variable = {var_SOV_factions_ARMY_loyalty^3 > 0}
+		}
+		set_temp_variable = { total_uncontrolled_ratio_calc = var_SOV_factions_ARMY_loyalty^3 }
+		divide_temp_variable = {total_uncontrolled_ratio_calc = total_percentage_uncontrolled}
+		multiply_temp_variable = {total_uncontrolled_ratio_calc = var_SOV_temp_reduce_loyalty}
+		subtract_from_variable = {var_SOV_factions_ARMY_loyalty^3 = total_uncontrolled_ratio_calc}
+		round_variable = var_SOV_factions_ARMY_loyalty^3
+	}
+	if={
+		limit={#factions that control the army and are not gaining
+			NOT={check_variable = {var_SOV_temp_increase_controller = 4}}
+			check_variable = {var_SOV_factions_ARMY_loyalty^4 > 0}
+		}
+		set_temp_variable = { total_uncontrolled_ratio_calc = var_SOV_factions_ARMY_loyalty^4 }
+		divide_temp_variable = {total_uncontrolled_ratio_calc = total_percentage_uncontrolled}
+		multiply_temp_variable = {total_uncontrolled_ratio_calc = var_SOV_temp_reduce_loyalty}
+		subtract_from_variable = {var_SOV_factions_ARMY_loyalty^4 = total_uncontrolled_ratio_calc}
+		round_variable = var_SOV_factions_ARMY_loyalty^4
+	}
+	if={
+		limit={#factions that control the army and are not gaining
+			NOT={check_variable = {var_SOV_temp_increase_controller = 5}}
+			check_variable = {var_SOV_factions_ARMY_loyalty^5 > 0}
+		}
+		set_temp_variable = { total_uncontrolled_ratio_calc = var_SOV_factions_ARMY_loyalty^5 }
+		divide_temp_variable = {total_uncontrolled_ratio_calc = total_percentage_uncontrolled}
+		multiply_temp_variable = {total_uncontrolled_ratio_calc = var_SOV_temp_reduce_loyalty}
+		subtract_from_variable = {var_SOV_factions_ARMY_loyalty^5 = total_uncontrolled_ratio_calc}
+		set_temp_variable = {var_temp_round_issue_fix= var_SOV_factions_ARMY_loyalty^5}
+		round_variable = var_SOV_factions_ARMY_loyalty^5
+	}
+}
+SOV_decrease_army_control_runoff = {
+	#Get the total percentage
+	set_temp_variable = { total_percentage_uncontrolled = 0 }
+	if={
+		limit={#factions that control the army and are not gaining
+			NOT={check_variable = {var_SOV_temp_reduce_controller = 1}}
+			check_variable = {var_SOV_factions_ARMY_loyalty^1 > 0}
+		}
+		add_to_temp_variable = {total_percentage_uncontrolled = var_SOV_factions_ARMY_loyalty^1}
+	}
+	if={
+		limit={#factions that control the army and are not gaining
+			NOT={check_variable = {var_SOV_temp_reduce_controller = 2}}
+			check_variable = {var_SOV_factions_ARMY_loyalty^2 > 0}
+		}
+		add_to_temp_variable = {total_percentage_uncontrolled = var_SOV_factions_ARMY_loyalty^2}
+	}
+	if={
+		limit={#factions that control the army and are not gaining
+			NOT={check_variable = {var_SOV_temp_reduce_controller = 3}}
+			check_variable = {var_SOV_factions_ARMY_loyalty^3 > 0}
+		}
+		add_to_temp_variable = {total_percentage_uncontrolled = var_SOV_factions_ARMY_loyalty^3}
+	}
+	if={
+		limit={#factions that control the army and are not gaining
+			NOT={check_variable = {var_SOV_temp_reduce_controller = 4}}
+			check_variable = {var_SOV_factions_ARMY_loyalty^4 > 0}
+		}
+		add_to_temp_variable = {total_percentage_uncontrolled = var_SOV_factions_ARMY_loyalty^4}
+	}
+	if={
+		limit={#factions that control the army and are not gaining
+			NOT={check_variable = {var_SOV_temp_reduce_controller = 5}}
+			check_variable = {var_SOV_factions_ARMY_loyalty^5 > 0}
+		}
+		add_to_temp_variable = {total_percentage_uncontrolled = var_SOV_factions_ARMY_loyalty^5}
+	}
+	
+	if={
+		limit={#factions that control the army and are not gaining
+			NOT={check_variable = {var_SOV_temp_reduce_controller = 1}}
+			check_variable = {var_SOV_factions_ARMY_loyalty^1 > 0}
+		}
+		set_temp_variable = { total_uncontrolled_ratio_calc = var_SOV_factions_ARMY_loyalty^1 }
+		divide_temp_variable = {total_uncontrolled_ratio_calc = total_percentage_uncontrolled}
+		multiply_temp_variable = {total_uncontrolled_ratio_calc = var_SOV_temp_reduce_loyalty}
+		add_to_variable = {var_SOV_factions_ARMY_loyalty^1 = total_uncontrolled_ratio_calc}
+		round_variable = var_SOV_factions_ARMY_loyalty^1
+	}
+	if={
+		limit={#factions that control the army and are not gaining
+			NOT={check_variable = {var_SOV_temp_reduce_controller = 2}}
+			check_variable = {var_SOV_factions_ARMY_loyalty^2 > 0}
+		}
+		set_temp_variable = { total_uncontrolled_ratio_calc = var_SOV_factions_ARMY_loyalty^2 }
+		divide_temp_variable = {total_uncontrolled_ratio_calc = total_percentage_uncontrolled}
+		multiply_temp_variable = {total_uncontrolled_ratio_calc = var_SOV_temp_reduce_loyalty}
+		add_to_variable = {var_SOV_factions_ARMY_loyalty^2 = total_uncontrolled_ratio_calc}
+		round_variable = var_SOV_factions_ARMY_loyalty^2
+	}
+	if={
+		limit={#factions that control the army and are not gaining
+			NOT={check_variable = {var_SOV_temp_reduce_controller = 3}}
+			check_variable = {var_SOV_factions_ARMY_loyalty^3 > 0}
+		}
+		set_temp_variable = { total_uncontrolled_ratio_calc = var_SOV_factions_ARMY_loyalty^3 }
+		divide_temp_variable = {total_uncontrolled_ratio_calc = total_percentage_uncontrolled}
+		multiply_temp_variable = {total_uncontrolled_ratio_calc = var_SOV_temp_reduce_loyalty}
+		add_to_variable = {var_SOV_factions_ARMY_loyalty^3 = total_uncontrolled_ratio_calc}
+		round_variable = var_SOV_factions_ARMY_loyalty^3
+	}
+	if={
+		limit={#factions that control the army and are not gaining
+			NOT={check_variable = {var_SOV_temp_reduce_controller = 4}}
+			check_variable = {var_SOV_factions_ARMY_loyalty^4 > 0}
+		}
+		set_temp_variable = { total_uncontrolled_ratio_calc = var_SOV_factions_ARMY_loyalty^4 }
+		divide_temp_variable = {total_uncontrolled_ratio_calc = total_percentage_uncontrolled}
+		multiply_temp_variable = {total_uncontrolled_ratio_calc = var_SOV_temp_reduce_loyalty}
+		add_to_variable = {var_SOV_factions_ARMY_loyalty^4 = total_uncontrolled_ratio_calc}
+		round_variable = var_SOV_factions_ARMY_loyalty^4
+	}
+	if={
+		limit={#factions that control the army and are not gaining
+			NOT={check_variable = {var_SOV_temp_reduce_controller = 5}}
+			check_variable = {var_SOV_factions_ARMY_loyalty^5 > 0}
+		}
+		set_temp_variable = { total_uncontrolled_ratio_calc = var_SOV_factions_ARMY_loyalty^5 }
+		divide_temp_variable = {total_uncontrolled_ratio_calc = total_percentage_uncontrolled}
+		multiply_temp_variable = {total_uncontrolled_ratio_calc = var_SOV_temp_reduce_loyalty}
+		add_to_variable = {var_SOV_factions_ARMY_loyalty^5 = total_uncontrolled_ratio_calc}
+		set_temp_variable = {var_temp_round_issue_fix= var_SOV_factions_ARMY_loyalty^5}
+		round_variable = var_SOV_factions_ARMY_loyalty^5
+	}
+}
+SOV_normalize_army_control={
+	set_temp_variable = { temp_army_loyalty_check = 0 }
+	add_to_temp_variable = { temp_army_loyalty_check = var_SOV_factions_ARMY_loyalty^1}
+	add_to_temp_variable = { temp_army_loyalty_check = var_SOV_factions_ARMY_loyalty^2}
+	add_to_temp_variable = { temp_army_loyalty_check = var_SOV_factions_ARMY_loyalty^3}
+	add_to_temp_variable = { temp_army_loyalty_check = var_SOV_factions_ARMY_loyalty^4}
+	add_to_temp_variable = { temp_army_loyalty_check = var_SOV_factions_ARMY_loyalty^5}
+	if={
+		limit = {
+			check_variable = {temp_army_loyalty_check > 100}
+		}
+		subtract_from_temp_variable = {temp_army_loyalty_check = 100}
+		subtract_from_variable = {var_SOV_factions_ARMY_loyalty^var_SOV_current_army_controller = temp_army_loyalty_check}
+	}
+	else={
+		set_temp_variable = { temp_army_loyalty_check_2 = 100 }
+		subtract_from_temp_variable = {temp_army_loyalty_check_2 = temp_army_loyalty_check}
+		add_to_variable = {var_SOV_factions_ARMY_loyalty^var_SOV_current_army_controller = temp_army_loyalty_check_2}
+	}
+}

@@ -4,6 +4,25 @@
 
 ####### NO STEP BACK! #######
 
+SOV_rusviet_factions_system = {
+
+	priority = 101
+
+	icon = SOV_paranoia
+
+	scripted_gui = rusviet_factions_ui
+
+	allowed = {
+		original_tag = SOV
+	}
+
+	visible = {
+		always = yes
+	}
+
+	visible_when_empty = yes
+}
+
 SOV_paranoia_system = {
 
 	priority = 101

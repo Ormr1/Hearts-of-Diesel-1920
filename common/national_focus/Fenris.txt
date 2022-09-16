@@ -758,8 +758,16 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		available={
-			PAF={
-				exists = yes
+			if={
+				limit={
+					PAR={has_war = yes}
+				}
+				PAF={
+					exists = yes
+				}
+			}
+			else={
+				always = no
 			}
 			NOT={has_country_flag = FEN_laying_low}
 		}

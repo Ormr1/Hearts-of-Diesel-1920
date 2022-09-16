@@ -266,4 +266,375 @@ defined_text = { # Fenris generator status
 		localization_key = FEN_generator_offline
 	}
 }
-
+defined_text = { # Rusviet RSDLP
+	name = GetRusvietRsdlpLoyalty
+	text = {
+		trigger = {			
+			has_country_flag = SOV_RSDLP_defeated
+		}
+		localization_key = SOV_factions_RSDLP_loyalty_dead
+	}
+	text = {
+		trigger = {			
+			check_variable = {var_SOV_factions_RSDLP_loyalty > 60}
+		}
+		localization_key = SOV_factions_RSDLP_loyalty_green
+	}
+	text = {
+		trigger = {			
+			check_variable = {var_SOV_factions_RSDLP_loyalty < 40}
+		}
+		localization_key = SOV_factions_RSDLP_loyalty_red
+	}
+	text = {
+		localization_key = SOV_factions_RSDLP_loyalty_neutral
+	}
+}
+defined_text = { # Rusviet SR
+	name = GetRusvietSrLoyalty
+	text = {
+		trigger = {			
+			has_country_flag = SOV_SR_defeated
+		}
+		localization_key = SOV_factions_SR_loyalty_dead
+	}
+	text = {
+		trigger = {			
+			check_variable = {var_SOV_factions_SR_loyalty > 60}
+		}
+		localization_key = SOV_factions_SR_loyalty_green
+	}
+	text = {
+		trigger = {			
+			check_variable = {var_SOV_factions_SR_loyalty < 40}
+		}
+		localization_key = SOV_factions_SR_loyalty_red
+	}
+	text = {
+		localization_key = SOV_factions_SR_loyalty_neutral
+	}
+}
+defined_text = { # Rusviet T
+	name = GetRusvietTLoyalty
+	text = {
+		trigger = {			
+			has_country_flag = SOV_T_defeated
+		}
+		localization_key = SOV_factions_T_loyalty_dead
+	}
+	text = {
+		trigger = {			
+			check_variable = {var_SOV_factions_T_loyalty > 60}
+		}
+		localization_key = SOV_factions_T_loyalty_green
+	}
+	text = {
+		trigger = {			
+			check_variable = {var_SOV_factions_T_loyalty < 40}
+		}
+		localization_key = SOV_factions_T_loyalty_red
+	}
+	text = {
+		localization_key = SOV_factions_KD_loyalty_neutral
+	}
+}
+defined_text = { # Rusviet KD
+	name = GetRusvietKdLoyalty
+	text = {
+		trigger = {			
+			has_country_flag = SOV_KD_defeated
+		}
+		localization_key = SOV_factions_KD_loyalty_dead
+	}
+	text = {
+		trigger = {			
+			check_variable = {var_SOV_factions_KD_loyalty > 60}
+		}
+		localization_key = SOV_factions_KD_loyalty_green
+	}
+	text = {
+		trigger = {			
+			check_variable = {var_SOV_factions_KD_loyalty < 40}
+		}
+		localization_key = SOV_factions_KD_loyalty_red
+	}
+	text = {
+		localization_key = SOV_factions_KD_loyalty_neutral
+	}
+}
+defined_text = { # Rusviet O
+	name = GetRusvietOLoyalty
+	text = {
+		trigger = {			
+			has_country_flag = SOV_O_defeated
+		}
+		localization_key = SOV_factions_O_loyalty_dead
+	}
+	text = {
+		trigger = {			
+			check_variable = {var_SOV_factions_O_loyalty > 60}
+		}
+		localization_key = SOV_factions_O_loyalty_green
+	}
+	text = {
+		trigger = {			
+			check_variable = {var_SOV_factions_O_loyalty < 40}
+		}
+		localization_key = SOV_factions_O_loyalty_red
+	}
+	text = {
+		localization_key = SOV_factions_O_loyalty_neutral
+	}
+}
+defined_text = { # Rusviet ARMY
+	name = GetRusvietARMYLoyalty
+	text = {
+		trigger = {			
+			has_country_flag = SOV_ARMY_defeated
+		}
+		localization_key = SOV_factions_ARMY_loyalty_dead
+	}
+	text = {
+		trigger = {			
+			check_variable = {var_SOV_factions_ARMY_loyalty^var_SOV_current_army_controller > 75}
+		}
+		localization_key = SOV_factions_ARMY_loyalty_green
+	}
+	text = {
+		trigger = {			
+			check_variable = {var_SOV_factions_ARMY_loyalty^var_SOV_current_army_controller < 60}
+		}
+		localization_key = SOV_factions_ARMY_loyalty_red
+	}
+	text = {
+		localization_key = SOV_factions_ARMY_loyalty_neutral
+	}
+}
+SOVGetArmyController = { # Rusviet ARMY controller
+	name = SOVGetArmyController
+	text = {
+		trigger = {			
+			check_variable = {var_SOV_current_army_controller = 5}
+		}
+		localization_key = SOV_factions_T_name
+	}
+	text = {
+		trigger = {			
+			check_variable = {var_SOV_current_army_controller = 4}
+		}
+		localization_key = SOV_factions_O_name
+	}
+	text = {
+		trigger = {			
+			check_variable = {var_SOV_current_army_controller = 3}
+		}
+		localization_key = SOV_factions_KD_name
+	}
+	text = {
+		trigger = {			
+			check_variable = {var_SOV_current_army_controller = 2}
+		}
+		localization_key = SOV_factions_SR_name
+	}
+	text = {
+		trigger = {			
+			check_variable = {var_SOV_current_army_controller = 1}
+		}
+		localization_key = SOV_factions_RSDLP_name
+	}
+	text = {
+		localization_key = "Rogue Army"
+	}
+}
+defined_text = { # Rusviet O is loyal
+	name = GetRusvietOIsLoyal
+	text = {
+		trigger = {			
+			has_country_flag = SOV_O_defeated
+		}
+		localization_key = SOV_factions_is_dead
+	}
+	text = {
+		trigger = {			
+			check_variable = {var_SOV_factions_O_loyalty > 60}
+		}
+		localization_key = SOV_factions_is_loyal
+	}
+	text = {
+		trigger = {			
+			check_variable = {var_SOV_factions_O_loyalty < 40}
+		}
+		localization_key = SOV_factions_is_disloyal
+	}
+	text = {
+		localization_key = SOV_factions_is_neutral
+	}
+}
+defined_text = { # Rusviet KD is loyal
+	name = GetRusvietKDIsLoyal
+	text = {
+		trigger = {			
+			has_country_flag = SOV_KD_defeated
+		}
+		localization_key = SOV_factions_is_dead
+	}
+	text = {
+		trigger = {			
+			check_variable = {var_SOV_factions_KD_loyalty > 60}
+		}
+		localization_key = SOV_factions_is_loyal
+	}
+	text = {
+		trigger = {			
+			check_variable = {var_SOV_factions_KD_loyalty < 40}
+		}
+		localization_key = SOV_factions_is_disloyal
+	}
+	text = {
+		localization_key = SOV_factions_is_neutral
+	}
+}
+defined_text = { # Rusviet T is loyal
+	name = GetRusvietTIsLoyal
+	text = {
+		trigger = {			
+			has_country_flag = SOV_T_defeated
+		}
+		localization_key = SOV_factions_is_dead
+	}
+	text = {
+		trigger = {			
+			check_variable = {var_SOV_factions_T_loyalty > 60}
+		}
+		localization_key = SOV_factions_is_loyal
+	}
+	text = {
+		trigger = {			
+			check_variable = {var_SOV_factions_T_loyalty < 40}
+		}
+		localization_key = SOV_factions_is_disloyal
+	}
+	text = {
+		localization_key = SOV_factions_is_neutral
+	}
+}
+defined_text = { # Rusviet SR is loyal
+	name = GetRusvietSRIsLoyal
+	text = {
+		trigger = {			
+			has_country_flag = SOV_SR_defeated
+		}
+		localization_key = SOV_factions_is_dead
+	}
+	text = {
+		trigger = {			
+			check_variable = {var_SOV_factions_SR_loyalty > 60}
+		}
+		localization_key = SOV_factions_is_loyal
+	}
+	text = {
+		trigger = {			
+			check_variable = {var_SOV_factions_SR_loyalty < 40}
+		}
+		localization_key = SOV_factions_is_disloyal
+	}
+	text = {
+		localization_key = SOV_factions_is_neutral
+	}
+}
+defined_text = { # Rusviet RSDLP is loyal
+	name = GetRusvietRSDLPIsLoyal
+	text = {
+		trigger = {			
+			has_country_flag = SOV_RSDLP_defeated
+		}
+		localization_key = SOV_factions_is_dead
+	}
+	text = {
+		trigger = {			
+			check_variable = {var_SOV_factions_RSDLP_loyalty > 60}
+		}
+		localization_key = SOV_factions_is_loyal
+	}
+	text = {
+		trigger = {			
+			check_variable = {var_SOV_factions_RSDLP_loyalty < 40}
+		}
+		localization_key = SOV_factions_is_disloyal
+	}
+	text = {
+		localization_key = SOV_factions_is_neutral
+	}
+}
+SOVGetArmyControllerLoser = { # 
+	name = SOVGetArmyControllerLoser
+	text = {
+		trigger = {			
+			check_variable = {var_SOV_temp_reduce_controller = 5}
+		}
+		localization_key = SOV_factions_T_name
+	}
+	text = {
+		trigger = {			
+			check_variable = {var_SOV_temp_reduce_controller = 4}
+		}
+		localization_key = SOV_factions_O_name
+	}
+	text = {
+		trigger = {			
+			check_variable = {var_SOV_temp_reduce_controller = 3}
+		}
+		localization_key = SOV_factions_KD_name
+	}
+	text = {
+		trigger = {			
+			check_variable = {var_SOV_temp_reduce_controller = 2}
+		}
+		localization_key = SOV_factions_SR_name
+	}
+	text = {
+		trigger = {			
+			check_variable = {var_SOV_temp_reduce_controller = 1}
+		}
+		localization_key = SOV_factions_RSDLP_name
+	}
+	text = {
+		localization_key = "Rogue Elements"
+	}
+}
+SOVGetArmyControllerWinner = { #
+	name = SOVGetArmyControllerWinner
+	text = {
+		trigger = {			
+			check_variable = {var_SOV_temp_increase_controller = 5}
+		}
+		localization_key = SOV_factions_T_name
+	}
+	text = {
+		trigger = {			
+			check_variable = {var_SOV_temp_increase_controller = 4}
+		}
+		localization_key = SOV_factions_O_name
+	}
+	text = {
+		trigger = {			
+			check_variable = {var_SOV_temp_increase_controller = 3}
+		}
+		localization_key = SOV_factions_KD_name
+	}
+	text = {
+		trigger = {			
+			check_variable = {var_SOV_temp_increase_controller = 2}
+		}
+		localization_key = SOV_factions_SR_name
+	}
+	text = {
+		trigger = {			
+			check_variable = {var_SOV_temp_increase_controller = 1}
+		}
+		localization_key = SOV_factions_RSDLP_name
+	}
+	text = {
+		localization_key = "Rogue Elements"
+	}
+}

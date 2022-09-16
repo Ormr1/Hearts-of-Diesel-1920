@@ -6432,6 +6432,10 @@ spriteTypes = {
 		name = "GFX_idea_sov_blyukher"
 		texturefile = "gfx/interface/ideas/idea_sov_blyukher.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_petrograd_soviet"
+		texturefile = "gfx/interface/ideas/RUS/petrograd_soviet.dds"
+	}
 	
 	spriteType = {
 		name = "GFX_idea_fra_crn_company"

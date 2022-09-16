@@ -1,0 +1,114 @@
+﻿###########################
+# Rusviet Civil war
+###########################
+
+add_namespace = SOV_civil_war
+
+# Rasputin marches on St Petersburg
+country_event = {
+	id = SOV_civil_war.1
+	title = SOV_civil_war.1.t
+	desc = SOV_civil_war.1.d
+	picture = GFX_report_event_hitler_handshake
+	
+	is_triggered_only = yes
+	
+	immediate={
+		
+	}
+	
+	option = {#flee east with olga
+		name = SOV_civil_war.1.a
+		
+	}
+	option = {#Flee north
+		name = SOV_civil_war.1.b
+		
+	}
+	option = {#Stand and fight
+		name = SOV_civil_war.1.c
+		
+	}
+}
+#
+country_event = {#order 24b
+	id = SOV_civil_war.2
+	title = SOV_civil_war.2.t
+	desc = SOV_civil_war.2.d
+	picture = GFX_report_event_hitler_handshake
+	
+	is_triggered_only = yes
+	
+	option = {#ban it
+		name = SOV_civil_war.2.a
+		add_stability = -0.1
+	}
+	option = {#we will have to suffer it
+		name = SOV_civil_war.2.b
+		add_timed_idea = {
+			idea = SOV_order_24
+			days = 720
+		}
+	}
+}
+#Unsanctioned Reprisals
+country_event = {
+	id = SOV_civil_war.3
+	title = SOV_civil_war.3.t
+	desc = SOV_civil_war.3.d
+	picture = GFX_report_event_hitler_handshake
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = SOV_civil_war.3.a
+		#angers K-D and RSDLP
+		set_temp_variable = {var_SOV_temp_reduce_loyalty = 5}
+		SOV_reduce_rsdlp_loyalty = yes
+		SOV_reduce_sr_loyalty = yes
+		SOV_reduce_kd_loyalty = yes
+		add_stability = -0.05
+	}
+	option = {
+		name = SOV_civil_war.3.b
+		trigger = {
+			has_manpower > 14999
+		}
+		add_manpower = -15000
+		#angers the military
+		set_temp_variable = {var_SOV_temp_reduce_loyalty = 5}
+		#set_temp_variable = {var_SOV_temp_reduce_controller = 5}
+		set_temp_variable = {var_SOV_temp_reduce_controller = 5}
+		SOV_decrease_army_control = yes
+	}
+	option = {
+		name = SOV_civil_war.3.c
+		trigger = {
+			has_political_power > 149
+		}
+		#angers Octoberists and Tsarists
+		set_temp_variable = {var_SOV_temp_reduce_loyalty = 5}
+		set_temp_variable = {var_SOV_temp_increase_loyalty = 5}
+		SOV_reduce_t_loyalty = yes
+		SOV_increase_sr_loyalty = yes
+		SOV_increase_kd_loyalty = yes
+		add_political_power = -150
+	}
+}
+country_event = {
+	id = SOV_civil_war.4
+	title = SOV_civil_war.4.t
+	desc = SOV_civil_war.4.d
+	picture = GFX_report_event_hitler_handshake
+	
+	is_triggered_only = yes
+	
+	immediate={
+		
+	}
+	
+	option = {#flee east with olga
+		name = SOV_civil_war.4.a
+		SOV_check_army_control = yes
+	}
+}

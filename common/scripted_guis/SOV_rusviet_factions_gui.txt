@@ -1,0 +1,31 @@
+scripted_gui = {
+
+	rusviet_factions_ui = {
+		context_type = decision_category
+		window_name = "rusviet_factions_ui_window"
+
+		properties = {
+			rusviet_factions_rsdlp_icon = {
+				frame = 1
+			}
+			rusviet_factions_sr_icon = {
+				frame = 2
+			}
+			rusviet_factions_kd_icon = {
+				frame = 3
+			}
+			rusviet_factions_o_icon = {
+				frame = 4
+			}
+			rusviet_factions_t_icon = {
+				frame = 5
+			}
+			rusviet_factions_army_icon = {
+				frame = 6
+			}
+			rusviet_factions_army_controller_icon = {
+				frame = var_SOV_current_army_controller
+			}
+		}
+	}
+}
