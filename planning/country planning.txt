@@ -20,6 +20,7 @@ Polania:
 Nordic Kingdoms:
     - Protect Suomi
     - Resist Saxony
+    - Work with the Tsar
 Crimea:
     - Don't be annexed by Rusviet
     - Modernize...everything

@@ -1,3 +1,504 @@
+USA_congress = {
+	USA_small_lobby_effort = {
+		icon = generic_political_discourse
+		available = {
+			OR = {
+				check_variable = { senators_support < senators_total }
+				check_variable = { representatives_support < representatives_total }
+			}
+			not = {
+				has_decision = USA_medium_lobby_effort
+			}
+			OR = {
+				political_power_daily > 0.3
+				has_political_power > 10
+			}
+		}
+		cost = 0
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				congress_medium_support_trigger = yes
+				factor = 0.5
+			}
+			modifier = {
+				congress_low_support_trigger = yes
+				factor = 0.5
+			}
+			modifier = {
+				congress_high_support_trigger = yes
+				factor = 0
+			}
+		}
+		modifier = {
+			political_power_gain = -0.3
+		}
+		days_remove = 30
+		remove_effect = {
+			USA_congress_small_support = yes
+		}
+	}
+	USA_medium_lobby_effort = {
+		icon = generic_political_discourse
+		available = {
+			OR = {
+				check_variable = { senators_support < senators_total }
+				check_variable = { representatives_support < representatives_total }
+			}
+			not = {
+				has_decision = USA_small_lobby_effort
+			}
+			OR = {
+				political_power_daily > 0.75
+				has_political_power > 35
+			}
+		}
+		cost = 0
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				congress_medium_support_trigger = yes
+				factor = 0.5
+			}
+			modifier = {
+				congress_low_support_trigger = yes
+				factor = 0.5
+			}
+			modifier = {
+				congress_high_support_trigger = yes
+				factor = 0
+			}
+		}
+		days_remove = 45
+		modifier = {
+			political_power_gain = -0.75
+		}
+		remove_effect = {
+			USA_congress_medium_support = yes
+		}
+	}
+	USA_special_measures = {
+		icon = ger_mefo_bills
+		available = {
+			OR = {
+				check_variable = { senators_support < senators_total }
+				check_variable = { representatives_support < representatives_total }
+			}
+		}
+		cost = 50
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				congress_low_support_trigger = yes
+				factor = 0
+			}
+		}
+		days_re_enable = 90
+		complete_effect = {
+			USA_congress_small_support = yes
+		}
+	}
+	USA_use_huac = {
+		icon = oppression
+		available = {
+			has_idea = USA_joseph_mccarthy
+			OR = {
+				check_variable = { senators_support < senators_total }
+				check_variable = { representatives_support < representatives_total }
+			}
+		}
+		visible = {
+			has_completed_focus = USA_empower_the_huac
+		}
+		cost = 10
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				congress_low_support_trigger = yes
+				factor = 0
+			}
+		}
+		days_re_enable = 90
+		complete_effect = {
+			USA_congress_small_support = yes
+			add_stability = -0.05
+		}
+	}
+	USA_beat_up_opposition = {
+		icon = oppression
+		available = {
+			has_government = democratic
+		}
+		visible = { has_completed_focus = USA_ally_with_the_silver_shirts }
+		cost = 10
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				congress_low_support_trigger = yes
+				factor = 0
+			}
+		}
+		days_re_enable = 90
+		complete_effect = {
+			add_stability = -0.1
+			USA_congress_small_support = yes
+			add_popularity = { ideology = fascism popularity = 0.02 }
+		}
+	}
+	USA_pay_farm_subsidies = {
+		icon = ger_mefo_bills
+		available = {
+			has_government = democratic
+			OR = {
+				check_variable = { senators_support < senators_total }
+				check_variable = { representatives_support < representatives_total }
+			}
+		}
+		visible = { has_completed_focus = USA_agricultural_adjustment_act }
+		cost = 0
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				congress_low_support_trigger = yes
+				factor = 0
+			}
+		}
+		days_remove = 90
+		modifier = { consumer_goods_factor = 0.03 }
+		remove_effect = {
+			USA_congress_small_support = yes
+		}
+	}
+	USA_give_tax_break = {
+		icon = ger_mefo_bills
+		available = {
+			has_government = democratic
+			OR = {
+				check_variable = { senators_support < senators_total }
+				check_variable = { representatives_support < representatives_total }
+			}
+		}
+		visible = { has_completed_focus = USA_income_tax_reform }
+		cost = 0
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				congress_low_support_trigger = yes
+				factor = 0
+			}
+		}
+		days_remove = 90
+		modifier = { consumer_goods_factor = 0.03 }
+		remove_effect = {
+			USA_congress_small_support = yes
+		}
+	}
+	USA_amend_the_budget = {
+		icon = ger_mefo_bills
+		available = {
+			congress_medium_support_trigger = yes
+		}
+		visible = {has_government = democratic }
+		cost = 25
+		days_remove = 90
+		days_re_enable = 275
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				congress_low_support_trigger = yes
+				factor = 0
+			}
+		}
+		modifier = { consumer_goods_factor = -0.05 }
+		remove_effect = {
+			USA_congress_medium_opposition = yes
+		}
+	}
+	USA_research_grants = {
+		icon = ger_mefo_bills
+		available = {
+			congress_medium_support_trigger = yes
+		}
+		visible = {has_government = democratic }
+		cost = 25
+		days_remove = 90
+		days_re_enable = 275
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				congress_low_support_trigger = yes
+				factor = 0
+			}
+		}
+		modifier = { research_speed_factor = 0.08 }
+		remove_effect = {
+			USA_congress_medium_opposition = yes
+		}
+	}
+	USA_invest_in_state_factory = {
+		icon = generic_construction
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = USA_congress_invest_in_state_factory_tt
+				any_owned_state = {
+					has_state_flag = USA_congress_build_factory
+					check_variable = { factory_goal = industrial_complex_level }
+				}
+			}
+		}
+
+		highlight_states = {
+			highlight_states_trigger = {
+				has_state_flag = USA_congress_build_factory
+			}
+		}
+
+		days_mission_timeout = 360
+		is_good = no
+		activation = {
+			any_owned_state = {
+				has_state_flag = USA_congress_build_factory
+			}
+		}
+		timeout_effect = {
+			random_owned_state = {
+				limit = {
+					has_state_flag = USA_congress_build_factory
+				}
+				clr_state_flag = USA_congress_build_factory
+				clear_variable = factory_goal
+			}
+			
+			USA_congress_small_opposition = yes 
+			clr_country_flag = USA_congress_investment
+		}
+		complete_effect = {
+			random_owned_state = {
+				limit = {
+					has_state_flag = USA_congress_build_factory
+				}
+				clr_state_flag = USA_congress_build_factory
+				clear_variable = factory_goal
+			}
+			ROOT = {
+				USA_congress_medium_support = yes 
+				clr_country_flag = USA_congress_investment
+			}
+			
+		}
+	}
+	USA_invest_in_state_arms_factory = {
+		icon = generic_construction
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = USA_congress_invest_in_state_arms_factory_tt
+				any_owned_state = {
+					has_state_flag = USA_congress_build_arms_factory
+					check_variable = { arms_factory_goal = arms_factory_level }
+				}
+			}
+		}
+
+		highlight_states = {
+			highlight_states_trigger = {
+				has_state_flag = USA_congress_build_arms_factory
+			}
+		}
+
+
+		days_mission_timeout = 360
+		is_good = no
+		activation = {
+			any_owned_state = {
+				has_state_flag = USA_congress_build_arms_factory
+			}
+		}
+		timeout_effect = {
+			random_owned_state = {
+				limit = {
+					has_state_flag = USA_congress_build_arms_factory
+				}
+				clr_state_flag = USA_congress_build_arms_factory
+				clear_variable = arms_factory_goal
+			}
+			
+			USA_congress_small_opposition = yes 
+			clr_country_flag = USA_congress_investment
+		}
+		complete_effect = {
+			random_owned_state = {
+				limit = {
+					has_state_flag = USA_congress_build_arms_factory
+				}
+				clr_state_flag = USA_congress_build_arms_factory
+				clear_variable = arms_factory_goal
+			}
+			ROOT = {
+				USA_congress_medium_support = yes 
+				clr_country_flag = USA_congress_investment
+			}
+			
+		}
+	}
+	USA_invest_in_state_dockyard = {
+		icon = generic_construction
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = USA_congress_invest_in_dockyard_tooltip
+				any_owned_state = {
+					has_state_flag = USA_congress_build_dockyard
+					check_variable = { dockyard_goal = building_level@dockyard }
+				}
+			}
+		}
+
+		highlight_states = {
+			highlight_states_trigger = {
+				has_state_flag = USA_congress_build_dockyard
+			}
+		}
+
+		days_mission_timeout = 360
+		is_good = no
+		activation = {
+			any_owned_state = {
+				has_state_flag = USA_congress_build_dockyard
+			}
+		}
+		timeout_effect = {
+			random_owned_state = {
+				limit = {
+					has_state_flag = USA_congress_build_dockyard
+				}
+				clr_state_flag = USA_congress_build_dockyard
+				clear_variable = dockyard_goal
+			}
+			USA_congress_small_opposition = yes 
+			clr_country_flag = USA_congress_investment
+		}
+		complete_effect = {
+			random_owned_state = {
+				limit = {
+					has_state_flag = USA_congress_build_dockyard
+				}
+				clr_state_flag = USA_congress_build_dockyard
+				clear_variable = dockyard_goal
+			}
+			ROOT = {
+				USA_congress_medium_support = yes 
+				clr_country_flag = USA_congress_investment
+			}
+		}
+	}
+	USA_invest_in_state_infrastructure = {
+		icon = generic_construction
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = USA_congress_invest_in_state_infrastructure_tt
+				any_owned_state = {
+					has_state_flag = USA_congress_build_infrastructure
+					check_variable = { infrastructure_goal = infrastructure_level }
+				}
+			}
+		}
+		highlight_states = {
+			highlight_states_trigger = {
+				has_state_flag = USA_congress_build_infrastructure
+			}
+		}
+		days_mission_timeout = 360
+		is_good = no
+		activation = {
+			any_owned_state = {
+				has_state_flag = USA_congress_build_infrastructure
+			}
+		}
+		timeout_effect = {
+			random_owned_state = {
+				limit = {
+					has_state_flag = USA_congress_build_infrastructure
+				}
+				clr_state_flag = USA_congress_build_infrastructure
+				clear_variable = infrastructure_goal
+			}
+			
+			USA_congress_small_opposition = yes 
+			clr_country_flag = USA_congress_investment
+		}
+		complete_effect = {
+			random_owned_state = {
+				limit = {
+					has_state_flag = USA_congress_build_infrastructure
+				}
+				clr_state_flag = USA_congress_build_infrastructure
+				clear_variable = infrastructure_goal
+			}
+			ROOT = {
+				USA_congress_medium_support = yes 
+				clr_country_flag = USA_congress_investment
+			}
+			
+		}
+	}
+	USA_readmit_state = {
+		icon = infiltrate_state
+		available = {	
+			political_power_daily > 0.1
+		}
+		visible = {
+			any_owned_state = {
+				is_core_of = FRE
+				not = { is_core_of = ROOT }
+				is_claimed_by = ROOT
+			}
+			has_completed_focus = USA_reintegration
+		}
+		ai_will_do = {
+			factor = 1	
+		}
+		days_remove = 120
+		cost = 25
+		modifier = {
+			political_power_gain = -0.1
+		}
+		complete_effect = {
+			random_state = {
+				limit = {
+					is_controlled_by = ROOT
+					is_core_of = FRE
+					not = { is_core_of = ROOT }
+					is_claimed_by = ROOT
+				}
+				set_state_flag = USA_state_admit
+				custom_effect_tooltip = USA_readmit_state_tt
+			}
+		}
+		remove_effect = {
+			USA_congress_add_state = yes
+			random_owned_state = {
+				limit = { has_state_flag = USA_state_admit }
+				ROOT = {
+					add_state_core = PREV
+				}
+				clr_state_flag = USA_state_admit
+			}			
+		}
+	}
+	USA_reshuffle_congress = {
+		available = {
+
+		}
+		visible = {
+			has_completed_focus = USA_union_representation_act
+		}
+		days_re_enable = 180
+		cost = 50
+		complete_effect = {
+			add_stability = -0.05
+			USA_return_majority = yes
+		}
+	}
+}
 USA_united_states = {
 	USA_join_peacekeeper_program = {
 		icon = generic_prepare_civil_war
@@ -297,7 +798,7 @@ war_measures = {
 
 		visible = {
 			has_defensive_war = yes
-			CSA = {
+			FRE = {
 				exists = no
 			}
 		}
@@ -417,7 +918,7 @@ war_measures = {
 			OR = {
 				AND = {
 					has_war = yes
-					has_cosmetic_tag = USA_CSA
+					has_cosmetic_tag = USA_FRE
 				}
 				has_civil_war = yes
 			}
@@ -682,17 +1183,17 @@ war_measures = {
 			}
 		}
 	}
-	USA_CSA_set_up_provisional_government = { 
+	USA_FRE_set_up_provisional_government = { 
 
 		allowed = {
-			original_tag = CSA
+			original_tag = FRE
 		}
 		available = {
 			any_controlled_state = {
 				is_core_of = USA
 				is_fully_controlled_by = ROOT
-				hidden_trigger = { NOT = { has_state_flag = CSA_is_coring_this_state } }
-				hidden_trigger = { NOT = { has_state_flag = CSA_is_coring_this_state1 } }
+				hidden_trigger = { NOT = { has_state_flag = FRE_is_coring_this_state } }
+				hidden_trigger = { NOT = { has_state_flag = FRE_is_coring_this_state1 } }
 			}
 		}
 		visible = {
@@ -713,10 +1214,10 @@ war_measures = {
 					not = { is_core_of = ROOT }
 					is_core_of = USA
 					is_fully_controlled_by = ROOT
-					NOT = { has_state_flag = CSA_is_coring_this_state }
-					NOT = { has_state_flag = CSA_is_coring_this_state1 }
+					NOT = { has_state_flag = FRE_is_coring_this_state }
+					NOT = { has_state_flag = FRE_is_coring_this_state1 }
 				}
-			set_state_flag = CSA_is_coring_this_state1
+			set_state_flag = FRE_is_coring_this_state1
 			}
 		}
 		remove_effect = {
@@ -725,12 +1226,12 @@ war_measures = {
 					not = { is_core_of = ROOT }
 					is_core_of = USA
 					is_fully_controlled_by = ROOT
-					has_state_flag = CSA_is_coring_this_state
-					has_state_flag = CSA_is_coring_this_state1
+					has_state_flag = FRE_is_coring_this_state
+					has_state_flag = FRE_is_coring_this_state1
 				}
 				remove_core_of = USA
 				add_claim_by = USA
-				add_core_of = CSA
+				add_core_of = FRE
 				save_event_target_as = USA_state_government_created
 			}
 			USA = {
@@ -738,18 +1239,18 @@ war_measures = {
 			}
 		}
 	}
-	USA_CSA_set_up_provisional_government2 = { 
-		allowed = { original_tag = CSA }
+	USA_FRE_set_up_provisional_government2 = { 
+		allowed = { original_tag = FRE }
 		available = {
 			any_controlled_state = {
 				is_core_of = USA
 				is_fully_controlled_by = ROOT
-				NOT = { has_state_flag = CSA_is_coring_this_state }
-				NOT = { has_state_flag = CSA_is_coring_this_state2 }
+				NOT = { has_state_flag = FRE_is_coring_this_state }
+				NOT = { has_state_flag = FRE_is_coring_this_state2 }
 			}
 		}
 		visible = {
-			original_tag = CSA
+			original_tag = FRE
 			has_war_with = USA
 		}
 		cost = 0
@@ -767,11 +1268,11 @@ war_measures = {
 					not = { is_core_of = ROOT }
 					is_core_of = USA
 					is_fully_controlled_by = ROOT
-					hidden_trigger = { NOT = { has_state_flag = CSA_is_coring_this_state } }
-					hidden_trigger = { NOT = { has_state_flag = CSA_is_coring_this_state2 } }
+					hidden_trigger = { NOT = { has_state_flag = FRE_is_coring_this_state } }
+					hidden_trigger = { NOT = { has_state_flag = FRE_is_coring_this_state2 } }
 				}
-			set_state_flag = CSA_is_coring_this_state
-			set_state_flag = CSA_is_coring_this_state2
+			set_state_flag = FRE_is_coring_this_state
+			set_state_flag = FRE_is_coring_this_state2
 			}
 		}
 		remove_effect = {
@@ -780,11 +1281,11 @@ war_measures = {
 					not = { is_core_of = ROOT }
 					is_core_of = USA
 					is_fully_controlled_by = ROOT
-					has_state_flag = CSA_is_coring_this_state2
+					has_state_flag = FRE_is_coring_this_state2
 				}
 				remove_core_of = USA
 				add_claim_by = USA
-				add_core_of = CSA
+				add_core_of = FRE
 				save_event_target_as = USA_state_government_created
 			}
 			USA = {
@@ -792,18 +1293,18 @@ war_measures = {
 			}
 		}
 	}
-	USA_CSA_set_up_provisional_government3 = { 
-		allowed = { original_tag = CSA }
+	USA_FRE_set_up_provisional_government3 = { 
+		allowed = { original_tag = FRE }
 		available = {
 			any_controlled_state = {
 				is_core_of = USA
 				is_fully_controlled_by = ROOT
-				hidden_trigger = { NOT = { has_state_flag = CSA_is_coring_this_state } }
-				hidden_trigger = { NOT = { has_state_flag = CSA_is_coring_this_state3 } }
+				hidden_trigger = { NOT = { has_state_flag = FRE_is_coring_this_state } }
+				hidden_trigger = { NOT = { has_state_flag = FRE_is_coring_this_state3 } }
 			}
 		}
 		visible = {
-			original_tag = CSA
+			original_tag = FRE
 			has_war_with = USA
 		}
 		cost = 0
@@ -821,11 +1322,11 @@ war_measures = {
 					not = { is_core_of = ROOT }
 					is_core_of = USA
 					is_fully_controlled_by = ROOT
-					NOT = { has_state_flag = CSA_is_coring_this_state }
-					NOT = { has_state_flag = CSA_is_coring_this_state3 }
+					NOT = { has_state_flag = FRE_is_coring_this_state }
+					NOT = { has_state_flag = FRE_is_coring_this_state3 }
 				}
-			set_state_flag = CSA_is_coring_this_state
-			set_state_flag = CSA_is_coring_this_state3
+			set_state_flag = FRE_is_coring_this_state
+			set_state_flag = FRE_is_coring_this_state3
 			}
 		}
 		remove_effect = {
@@ -834,11 +1335,11 @@ war_measures = {
 					not = { is_core_of = ROOT }
 					is_core_of = USA
 					is_fully_controlled_by = ROOT
-					has_state_flag = CSA_is_coring_this_state3
+					has_state_flag = FRE_is_coring_this_state3
 				}
 				remove_core_of = USA
 				add_claim_by = USA
-				add_core_of = CSA
+				add_core_of = FRE
 				save_event_target_as = USA_state_government_created
 			}
 			USA = {
@@ -850,7 +1351,7 @@ war_measures = {
 		icon = generic_prepare_civil_war
 		allowed = {
 			OR = {
-				original_tag = CSA
+				original_tag = FRE
 				original_tag = USA
 			}
 		}
@@ -907,7 +1408,7 @@ war_measures = {
 		icon = ger_military_buildup
 		allowed = {
 			OR = {
-				original_tag = CSA
+				original_tag = FRE
 				original_tag = USA
 			}
 		}
@@ -964,7 +1465,7 @@ war_measures = {
 		icon = generic_air
 		allowed = {
 			OR = {
-				original_tag = CSA
+				original_tag = FRE
 				original_tag = USA
 			}
 		}
@@ -1021,7 +1522,7 @@ war_measures = {
 		icon = generic_air
 		allowed = {
 			OR = {
-				original_tag = CSA
+				original_tag = FRE
 				original_tag = USA
 			}
 		}
@@ -1582,21 +2083,21 @@ USA_honor_the_confederacy = {
 		complete_effect = {
 			add_stability = 0.05
 			add_popularity = { ideology = fascism popularity = 0.05 }
-			set_cosmetic_tag = USA_CSA
+			set_cosmetic_tag = USA_FRE
 			if = {
 				limit = {
 					not = {
-						has_country_flag = USA_CSA_legitimacy
+						has_country_flag = USA_FRE_legitimacy
 					}
 				}
 				set_country_flag = {
-					flag = USA_CSA_legitimacy
+					flag = USA_FRE_legitimacy
 					value = 1
 				}
 			}
 			else = {
 				modify_country_flag = {
-					flag = USA_CSA_legitimacy
+					flag = USA_FRE_legitimacy
 					value = 1
 				}
 			}
@@ -1626,17 +2127,17 @@ USA_honor_the_confederacy = {
 			if = {
 				limit = {
 					not = {
-						has_country_flag = USA_CSA_legitimacy
+						has_country_flag = USA_FRE_legitimacy
 					}
 				}
 				set_country_flag = {
-					flag = USA_CSA_legitimacy
+					flag = USA_FRE_legitimacy
 					value = 1
 				}
 			}
 			else = {
 				modify_country_flag = {
-					flag = USA_CSA_legitimacy
+					flag = USA_FRE_legitimacy
 					value = 1
 				}
 			}
@@ -1645,7 +2146,7 @@ USA_honor_the_confederacy = {
 	USA_secure_state_rights = {
 		icon = generic_nationalism
 		available = {
-			has_cosmetic_tag = USA_CSA 
+			has_cosmetic_tag = USA_FRE 
 		}
 		visible = {
 			
@@ -1661,17 +2162,17 @@ USA_honor_the_confederacy = {
 			if = {
 				limit = {
 					not = {
-						has_country_flag = USA_CSA_legitimacy
+						has_country_flag = USA_FRE_legitimacy
 					}
 				}
 				set_country_flag = {
-					flag = USA_CSA_legitimacy
+					flag = USA_FRE_legitimacy
 					value = 1
 				}
 			}
 			else = {
 				modify_country_flag = {
-					flag = USA_CSA_legitimacy
+					flag = USA_FRE_legitimacy
 					value = 1
 				}
 			}
@@ -1680,11 +2181,11 @@ USA_honor_the_confederacy = {
 	USA_permit_confederate_flags = {
 		icon = generic_nationalism
 		available = {
-			has_cosmetic_tag = USA_CSA
+			has_cosmetic_tag = USA_FRE
 		}
 		visible = {
 			has_country_flag = {
-				flag = USA_CSA_legitimacy
+				flag = USA_FRE_legitimacy
 				value > 2
 			}
 		}
@@ -1700,17 +2201,17 @@ USA_honor_the_confederacy = {
 			if = {
 				limit = {
 					not = {
-						has_country_flag = USA_CSA_legitimacy
+						has_country_flag = USA_FRE_legitimacy
 					}
 				}
 				set_country_flag = {
-					flag = USA_CSA_legitimacy
+					flag = USA_FRE_legitimacy
 					value = 1
 				}
 			}
 			else = {
 				modify_country_flag = {
-					flag = USA_CSA_legitimacy
+					flag = USA_FRE_legitimacy
 					value = 1
 				}
 			}
@@ -1723,10 +2224,10 @@ USA_honor_the_confederacy = {
 		}
 		visible = {
 			has_country_flag = {
-				flag = USA_CSA_legitimacy
+				flag = USA_FRE_legitimacy
 				value > 2
 			}
-			has_cosmetic_tag = USA_CSA
+			has_cosmetic_tag = USA_FRE
 		}
 		cost = 100
 		fire_only_once = yes
