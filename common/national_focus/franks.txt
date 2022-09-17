@@ -29,7 +29,7 @@ focus_tree = {
 focus = { ### POLITICAL - Can only do when political stability has been achieved
     id = FRA_The_Outside_World
     icon = placeholder
-    x = 100
+    x = 150
     y = 0
     cost = 8
     ai_will_do = {
@@ -44,7 +44,7 @@ focus = { ### Alliance FRA_Privatize_Everything
     id = FRA_Frankish_Albion_Issue
     icon = placeholder
     relative_position_id = FRA_The_Outside_World
-    x = 28
+    x = 45
     y = 1
     cost = 5
     ai_will_do = {
@@ -58,7 +58,7 @@ focus = {
     id = FRA_Stick_With_our_Northern_Neighbor
     icon = placeholder
     relative_position_id = FRA_Frankish_Albion_Issue
-    x = -25
+    x = -18
     y = 1
     cost = 5
     ai_will_do = {
@@ -292,7 +292,7 @@ focus = {
 focus = { ### War goal on Clan Albion
     id = FRA_Defracture_Albion_Colonies
     icon = placeholder
-    relative_position_id = FRA_Rid_the_Roman_Colonial_Holdings
+    relative_position_id = FRA_Free_the_Egyptians
     x = 1
     y = 1
     cost = 5
@@ -300,13 +300,13 @@ focus = { ### War goal on Clan Albion
         factor = 5
     }
     prerequisite = {
-        focus = FRA_Rid_the_Roman_Colonial_Holdings
+        focus = FRA_Free_the_Egyptians
     }
 }
 focus = { ### War goal on Nordic Kingdoms
     id = FRA_Banish_Nordic_Overseas_Territories
     icon = placeholder
-    relative_position_id = FRA_Rid_the_Roman_Colonial_Holdings
+    relative_position_id = FRA_Free_the_Egyptians
     x = -1
     y = 1
     cost = 5
@@ -319,7 +319,7 @@ focus = { ### War goal on Nordic Kingdoms
         }
     }
     prerequisite = {
-        focus = FRA_Rid_the_Roman_Colonial_Holdings
+        focus = FRA_Free_the_Egyptians
     }
 }
 focus = { ### War goal on Saxony - Has not completed war goal on A Rise in Patriotism path
@@ -1176,11 +1176,12 @@ focus = {
         focus = FRA_Franco_Saxon_Rivalry
     }
 }
+### Main warring path
 focus = {
     id = FRA_A_Rise_in_Patriotism
     icon = placeholder
     relative_position_id = FRA_The_Outside_World
-    x = -28
+    x = -45
     y = 1
     cost = 3
     ai_will_do = {
@@ -1188,6 +1189,253 @@ focus = {
     }
     prerequisite = {
         focus = FRA_The_Outside_World
+    }
+}
+focus = {
+    id = FRA_Prepare_the_People
+    icon = placeholder
+    relative_position_id = FRA_A_Rise_in_Patriotism
+    x = 18
+    y = 1
+    cost = 3
+    ai_will_do = {
+        factor = 5
+    }
+    prerequisite = {
+        focus = FRA_A_Rise_in_Patriotism
+    }
+}
+focus = {
+    id = FRA_5_Year_Plan
+    icon = placeholder
+    relative_position_id = FRA_Prepare_the_People
+    x = -10
+    y = 1
+    cost = 3
+    ai_will_do = {
+        factor = 5
+    }
+    prerequisite = {
+        focus = FRA_Prepare_the_People
+    }
+}
+focus = {
+    id = FRA_Industrialize_the_South
+    icon = placeholder
+    relative_position_id = FRA_5_Year_Plan
+    x = 5
+    y = 1
+    cost = 3
+    ai_will_do = {
+        factor = 5
+    }
+    prerequisite = {
+        focus = FRA_5_Year_Plan
+    }
+}
+focus = {
+    id = FRA_Industrialize_the_North
+    icon = placeholder
+    relative_position_id = FRA_5_Year_Plan
+    x = -5
+    y = 1
+    cost = 3
+    ai_will_do = {
+        factor = 5
+    }
+    prerequisite = {
+        focus = FRA_5_Year_Plan
+    }
+}
+focus = {
+    id = FRA_Ramp_up_the_Military
+    icon = placeholder
+    relative_position_id = FRA_Industrialize_the_North
+    x = 5
+    y = 1
+    cost = 3
+    ai_will_do = {
+        factor = 5
+    }
+    prerequisite = {
+        focus = FRA_Industrialize_the_North
+        focus = FRA_Industrialize_the_South
+    }
+}
+focus = {
+    id = Keep_the_Factories_Running
+    icon = placeholder
+    relative_position_id = FRA_Ramp_up_the_Military
+    x = 5
+    y = 1
+    cost = 3
+    ai_will_do = {
+        factor = 5
+    }
+    prerequisite = {
+        focus = FRA_Ramp_up_the_Military
+    }
+}
+focus = {
+    id = FRA_Even_During_War
+    icon = placeholder
+    relative_position_id = Keep_the_Factories_Running
+    x = -1
+    y = 1
+    cost = 3
+    ai_will_do = {
+        factor = 5
+    }
+    prerequisite = {
+        focus = Keep_the_Factories_Running
+    }
+}
+focus = {
+    id = FRA_Maximum_Security_Factories
+    icon = placeholder
+    relative_position_id = FRA_Even_During_War
+    x = -1
+    y = 1
+    cost = 3
+    ai_will_do = {
+        factor = 5
+    }
+    prerequisite = {
+        focus = FRA_Even_During_War
+    }
+}
+focus = {
+    id = FRA_The_Problem_with_Unions
+    icon = placeholder
+    relative_position_id = FRA_Maximum_Security_Factories
+    x = 5
+    y = 1
+    cost = 3
+    ai_will_do = {
+        factor = 5
+    }
+    prerequisite = {
+        focus = FRA_Maximum_Security_Factories
+    }
+    prerequisite = {
+        focus = FRA_Train_and_Work_Harder
+    }
+}
+focus = {
+    id = FRA_Demonize_and_Delegalize_Unions
+    icon = placeholder
+    mutually_exclusive = { focus = FRA_Unions_Stay_for_the_Better}
+    relative_position_id = FRA_The_Problem_with_Unions
+    x = -1
+    y = 1
+    cost = 3
+    ai_will_do = {
+        factor = 5
+    }
+    available = {
+        NOT = {
+            has_completed_focus = FRA_Legalize_Unions
+        }
+    }
+    prerequisite = {
+        focus = FRA_The_Problem_with_Unions
+    }
+}
+focus = {
+    id = FRA_Let_the_Workers_Have_a_Say
+    icon = placeholder
+    mutually_exclusive = { focus = FRA_Demonize_and_Delegalize_Unions }
+    relative_position_id = FRA_Demonize_and_Delegalize_Unions
+    x = 2
+    y = 0
+    cost = 3
+    ai_will_do = {
+        factor = 5
+    }
+    available = {
+        NOT = {
+            has_completed_focus = FRA_Legalize_Unions
+        }
+    }
+    prerequisite = {
+        focus = FRA_The_Problem_with_Unions
+    }
+}
+focus = {
+    id = FRA_Train_and_Work_Harder
+    icon = placeholder
+    relative_position_id = Keep_the_Factories_Running
+    x = 5
+    y = 1
+    cost = 3
+    ai_will_do = {
+        factor = 5
+    }
+    prerequisite = {
+        focus = Keep_the_Factories_Running
+    }
+    prerequisite = {
+        focus = FRA_Army_Training_Preparations
+    }
+}
+focus = {
+    id = FRA_Army_Resolution
+    icon = placeholder
+    relative_position_id = FRA_Prepare_the_People
+    x = 10
+    y = 1
+    cost = 3
+    ai_will_do = {
+        factor = 5
+    }
+    prerequisite = {
+        focus = FRA_Prepare_the_People
+    }
+}
+focus = {
+    id = FRA_Lower_the_Standards_for_the_Army
+    icon = placeholder
+    mutually_exclusive = { focus = FRA_Maintain_a_Professional_Army }
+    relative_position_id = FRA_Army_Resolution
+    x = 5
+    y = 1
+    cost = 3
+    ai_will_do = {
+        factor = 5
+    }
+    prerequisite = {
+        focus = FRA_Army_Resolution
+    }
+}
+
+focus = {
+    id = FRA_Maintain_a_Professional_Army
+    icon = placeholder
+    relative_position_id = FRA_Army_Resolution
+    mutually_exclusive = { focus = FRA_Lower_the_Standards_for_the_Army }
+    x = -5
+    y = 1
+    cost = 3
+    ai_will_do = {
+        factor = 5
+    }
+    prerequisite = {
+        focus = FRA_Army_Resolution
+    }
+}
+focus = {
+    id = FRA_Army_Training_Preparations
+    icon = placeholder
+    relative_position_id = FRA_Army_Resolution
+    x = 0
+    y = 2
+    cost = 3
+    ai_will_do = {
+        factor = 5
+    }
+    prerequisite = {
+        focus = FRA_Maintain_a_Professional_Army
+        focus = FRA_Lower_the_Standards_for_the_Army
     }
 }
 focus = {
@@ -1792,7 +2040,7 @@ focus = {
     id = FRA_Find_New_Allies
     icon = placeholder
     relative_position_id = FRA_Frankish_Albion_Issue
-    x = 25
+    x = 18
     y = 1
     cost = 5
     ai_will_do = {
@@ -2060,7 +2308,7 @@ focus = { ### Completion effect changes upon which focus you choose. Either you 
     }
 }
 focus = {
-    id = FRA_Rid_the_Roman_Colonial_Holdings
+    id = FRA_Free_the_Egyptians
     icon = placeholder
     relative_position_id = FRA_Ally_the_Monarchies
     x = -1
@@ -2380,7 +2628,7 @@ focus = { ### Each continent (Americas count as 1) becomes a puppet of EU,
 focus = {
     id = FRA_State_Of_the_Economy
     icon = placeholder
-    x = 225
+    x = 275
     y = 0
     cost = 5
     ai_will_do = {
