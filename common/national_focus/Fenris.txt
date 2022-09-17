@@ -661,6 +661,256 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = FEN_burying_mali
+		icon = GFX_focus_FEN_skulking_threat
+		relative_position_id = FEN_new_global_focus
+		x = 3
+		y = 1
+		cost = 10
+		search_filters = {   }
+
+		prerequisite = { 
+			focus = FEN_new_global_focus
+		}
+		
+		available_if_capitulated = yes
+		available={
+			always = no
+			NOT={has_country_flag = FEN_laying_low}
+			custom_trigger_tooltip = {
+                tooltip = FEN_has_1000_covert_staff
+                check_variable = {var = FEN_covert_staff value = 1000  compare = greater_than_or_equals}
+            }
+		}
+		select_effect = {
+			subtract_from_variable = {FEN_covert_staff = 1000}
+            custom_effect_tooltip = FEN_remove_1000_covert_staff
+		}
+		continue_if_invalid = yes
+
+		completion_reward = {
+			#unlocks mailian decisions
+		}
+	}
+	focus = {
+		id = FEN_a_austrailian_play
+		icon = GFX_focus_FEN_skulking_threat
+		relative_position_id = FEN_new_global_focus
+		x = -3
+		y = 1
+		cost = 10
+		search_filters = {   }
+
+		prerequisite = { focus = FEN_new_global_focus}
+		
+		available_if_capitulated = yes
+
+		available={
+			always = no
+			NOT={has_country_flag = FEN_laying_low}
+			custom_trigger_tooltip = {
+                tooltip = FEN_has_1000_covert_staff
+                check_variable = {var = FEN_covert_staff value = 1000  compare = greater_than_or_equals}
+            }
+		}
+		select_effect = {
+			subtract_from_variable = {FEN_covert_staff = 1000}
+            custom_effect_tooltip = FEN_remove_1000_covert_staff
+		}
+		continue_if_invalid = yes
+
+		completion_reward = {
+			
+			#unlocks austrialian decisions
+		}
+	}
+	focus = {
+		id = FEN_deals_with_chinese_warlords
+		icon = GFX_focus_FEN_skulking_threat
+		relative_position_id = FEN_new_global_focus
+		x = -5
+		y = 1
+		cost = 10
+		search_filters = {   }
+
+		prerequisite = { focus = FEN_new_global_focus}
+		
+		available_if_capitulated = yes
+
+		available={
+			always = no
+			NOT={has_country_flag = FEN_laying_low}
+			custom_trigger_tooltip = {
+                tooltip = FEN_has_1000_covert_staff
+                check_variable = {var = FEN_covert_staff value = 1000  compare = greater_than_or_equals}
+            }
+		}
+		select_effect = {
+			subtract_from_variable = {FEN_covert_staff = 1000}
+            custom_effect_tooltip = FEN_remove_1000_covert_staff
+		}
+		continue_if_invalid = yes
+
+		completion_reward = {
+			
+			#unlocks interactions with chinese warlords
+		}
+	}
+	focus = {
+		id = FEN_inflitrate_togawa
+		icon = GFX_focus_FEN_skulking_threat
+		relative_position_id = FEN_new_global_focus
+		x = 5
+		y = 1
+		cost = 10
+		search_filters = {   }
+
+		prerequisite = { focus = FEN_new_global_focus}
+		
+		available_if_capitulated = yes
+
+		available={
+			always = no
+			NOT={has_country_flag = FEN_laying_low}
+			custom_trigger_tooltip = {
+                tooltip = FEN_has_1000_covert_staff
+                check_variable = {var = FEN_covert_staff value = 1000  compare = greater_than_or_equals}
+            }
+		}
+		select_effect = {
+			subtract_from_variable = {FEN_covert_staff = 1000}
+            custom_effect_tooltip = FEN_remove_1000_covert_staff
+		}
+		continue_if_invalid = yes
+
+		completion_reward = {
+			
+			#unlocks togawan decisions
+		}
+	}
+	focus = {
+		id = FEN_driving_a_wedge_into_rome
+		icon = GFX_focus_FEN_skulking_threat
+		relative_position_id = FEN_new_global_focus
+		x = 0
+		y = 1
+		cost = 10
+		search_filters = {   }
+
+		prerequisite = { focus = FEN_new_global_focus}
+		
+		available_if_capitulated = yes
+
+		available={
+			always = no
+			NOT={has_country_flag = FEN_laying_low}
+			custom_trigger_tooltip = {
+                tooltip = FEN_has_1000_covert_staff
+                check_variable = {var = FEN_covert_staff value = 1000  compare = greater_than_or_equals}
+            }
+		}
+		select_effect = {
+			subtract_from_variable = {FEN_covert_staff = 1000}
+            custom_effect_tooltip = FEN_remove_1000_covert_staff
+		}
+		continue_if_invalid = yes
+
+		completion_reward = {
+			
+			#unlocks roman decisions
+		}
+	}
+	focus = {
+		id = FEN_up_the_greens
+		icon = GFX_focus_FEN_skulking_threat
+		relative_position_id = FEN_driving_a_wedge_into_rome
+		x = 0
+		y = 1
+		cost = 10
+		search_filters = {   }
+
+		prerequisite = { focus = FEN_driving_a_wedge_into_rome}
+		mutually_exclusive = {
+			focus = FEN_up_the_whites
+			focus = FEN_up_the_reds
+		}
+		
+		available_if_capitulated = yes
+
+		available={
+			BUL={
+				exists = yes
+				has_idea = BUL_master_of_the_balkans
+			}
+			NOT={has_country_flag = FEN_laying_low}
+		}
+
+		completion_reward = {
+			
+			#gives bonuses to bulgaria
+		}
+	}
+	focus = {
+		id = FEN_up_the_whites
+		icon = GFX_focus_FEN_skulking_threat
+		relative_position_id = FEN_driving_a_wedge_into_rome
+		x = 2
+		y = 1
+		cost = 10
+		search_filters = {   }
+
+		mutually_exclusive = {
+			focus = FEN_up_the_reds
+			focus = FEN_up_the_greens
+		}
+
+		prerequisite = { focus = FEN_driving_a_wedge_into_rome}
+		
+		available_if_capitulated = yes
+
+		available={
+			GRE={
+				any_owned_state={
+					is_core_of = CTH
+				}
+			}
+			NOT={has_country_flag = FEN_laying_low}
+		}
+
+		completion_reward = {
+			
+			#unlocks decisions in eastern rome
+		}
+	}
+	focus = {
+		id = FEN_up_the_reds
+		icon = GFX_focus_FEN_skulking_threat
+		relative_position_id = FEN_driving_a_wedge_into_rome
+		x = -2
+		y = 1
+		cost = 10
+		search_filters = {   }
+
+		mutually_exclusive = {
+			focus = FEN_up_the_whites
+			focus = FEN_up_the_greens
+		}
+
+		prerequisite = { focus = FEN_driving_a_wedge_into_rome}
+		
+		available_if_capitulated = yes
+
+		available={
+			ITA={is_subject_of = GRE}
+			NOT={has_country_flag = FEN_laying_low}
+		}
+
+		completion_reward = {
+			
+			#unlocks decisions in western rome
+		}
+	}
+	focus = {
 		id = FEN_distater_in_romania
 		icon = GFX_focus_FEN_skulking_threat
 		relative_position_id = FEN_new_global_focus
@@ -679,6 +929,30 @@ focus_tree = {
 
 		completion_reward = {
 			
+		}
+	}
+	focus = {
+		id = FEN_damage_control
+		icon = GFX_focus_FEN_skulking_threat
+		relative_position_id = FEN_distater_in_romania
+		x = 0
+		y = 1
+		cost = 10
+		search_filters = {   }
+
+		prerequisite = { 
+			focus = FEN_distater_in_romania
+		}
+		
+		available_if_capitulated = yes
+
+		available={
+			
+		}
+
+		completion_reward = {
+			set_temp_variable = {FEN_suspicion_temp = 15}
+			FEN_decrease_suspicion = yes
 		}
 	}
 	focus = {
@@ -818,7 +1092,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = FEN_a_austrailian_play
+		id = FEN_a_marathan_peshwa_of_our_own
 		icon = GFX_focus_FEN_skulking_threat
 		relative_position_id = FEN_international_intrigue
 		x = -4
@@ -831,7 +1105,9 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		available={
-			always = no
+			MAR={
+				has_country_flag= MAR_selecting_a_new_peshwa
+			}
 			NOT={has_country_flag = FEN_laying_low}
 			custom_trigger_tooltip = {
                 tooltip = FEN_has_1000_covert_staff

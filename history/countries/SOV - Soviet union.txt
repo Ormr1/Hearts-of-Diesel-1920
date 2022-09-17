@@ -224,7 +224,7 @@ resize_array = {
 	size = 5
 }
 set_variable = {var_SOV_factions_ARMY_loyalty^2 = 39}
-set_variable = {var_SOV_factions_ARMY_loyalty^5 = 53}
+set_variable = {var_SOV_factions_ARMY_loyalty^5 = 54}
 set_variable = {var_SOV_factions_ARMY_loyalty^4 = 7}
 
 if = {

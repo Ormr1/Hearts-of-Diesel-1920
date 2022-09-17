@@ -7,7 +7,6 @@ state={
 
 	history={
 		owner = GRE
-		add_core_of = CTH
 		buildings = {
 			infrastructure = 1
 		}

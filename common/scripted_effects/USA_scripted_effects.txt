@@ -1502,3 +1502,76 @@ USA_Decrease_Tycoon_Influence = {
 		add_stability = 0.025
 	}
 }
+USA_senate_calc_effect={
+	resize_array = {
+	    array = seats_federal
+	    value = 1
+	    size = federal_seats
+	}
+	resize_array = {
+	    array = seats_d_r
+	    value = 1
+	    size = d_r_seats
+	}
+	resize_array = {
+	    array = seats_spu
+	    value = 1
+	    size = spu_seats
+	}
+	resize_array = {
+	    array = seats_pp
+	    value = 1
+	    size = pp_seats
+	}
+	resize_array = {
+	    array = seats_new_federal
+	    value = 1
+	    size = new_federal_seats
+	}
+	set_temp_variable = { current_seat_posistion = 0 }
+	for_each_loop = {
+		array = seats_federal
+		value = ipp_v
+		index = ipp_i
+			
+		set_variable = { USA_Senate_Frame^current_seat_posistion = 3 }
+		add_to_temp_variable = {current_seat_posistion = 1}
+			
+	}
+	for_each_loop = {
+		array = seats_d_r
+		value = ipp_v
+		index = ipp_i
+			
+		set_variable = { USA_Senate_Frame^current_seat_posistion = 2 }
+		add_to_temp_variable = {current_seat_posistion = 1}
+			
+	}
+	for_each_loop = {
+		array = seats_spu
+		value = ipp_v
+		index = ipp_i
+			
+		set_variable = { USA_Senate_Frame^current_seat_posistion = 1 }
+		add_to_temp_variable = {current_seat_posistion = 1}
+			
+	}
+	for_each_loop = {
+		array = seats_pp
+		value = ipp_v
+		index = ipp_i
+			
+		set_variable = { USA_Senate_Frame^current_seat_posistion = 4 }
+		add_to_temp_variable = {current_seat_posistion = 1}
+			
+	}
+	for_each_loop = {
+		array = seats_new_federal
+		value = ipp_v
+		index = ipp_i
+			
+		set_variable = { USA_Senate_Frame^current_seat_posistion = 5 }
+		add_to_temp_variable = {current_seat_posistion = 1}
+			
+	}
+}

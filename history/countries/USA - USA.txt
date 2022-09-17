@@ -66,6 +66,12 @@ set_variable = { var = police_pk_charges value = 0 }
 set_variable = { var = police_pk_charges_max value = 0 }
 USA_recalc_congress_icon_frames = yes
 USA_initialize_senate_positions = yes
+set_variable = { var = federal_seats value = 63 }
+set_variable = { var = d_r_seats value = 63 }
+set_variable = { var = spu_seats value = 2 }
+set_variable = { var = pp_seats value = 1 }
+set_variable = { var = new_federal_seats value = 1 }
+USA_senate_calc_effect = yes
 USA = {
 	country_event = { id = usa.50 days = 2 }
 	country_event = { id = usa.51 days = 2 }

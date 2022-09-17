@@ -42,6 +42,8 @@ country_event = {#order 24b
 	option = {#ban it
 		name = SOV_civil_war.2.a
 		add_stability = -0.1
+		set_temp_variable = {var_SOV_temp_reduce_loyalty = 5}
+		SOV_reduce_sr_loyalty = yes
 	}
 	option = {#we will have to suffer it
 		name = SOV_civil_war.2.b
@@ -109,6 +111,8 @@ country_event = {
 	
 	option = {#flee east with olga
 		name = SOV_civil_war.4.a
-		SOV_check_army_control = yes
+		USA_senate_calc_effect = yes
+		#SOV_normalize_army_control = yes
+		#SOV_check_army_control = yes
 	}
 }
