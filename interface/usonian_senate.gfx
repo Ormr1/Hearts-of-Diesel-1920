@@ -1,0 +1,8 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "USA_Senate_icon"
+		texturefile = "gfx/interface/usa_senate/USA_Senate_icon.dds"
+		noOfFrames = 5
+	}
+}
