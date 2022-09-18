@@ -8252,4 +8252,13 @@ spriteTypes = {
 		name = GFX_portrait_FAC_nikola_tesla
 		texturefile = "gfx/leaders/FAC/Portrait_FAC_Nikola_Tesla.dds"
 	}
+	
+	spriteType = {
+		name = GFX_portrait_SOV_rasputin
+		texturefile = "gfx/leaders/FEN/Portrait_Rasputin.dds"
+	}
+	spriteType = {
+		name = GFX_portrait_SOV_rasputin_small
+		texturefile = "gfx/leaders/FEN/Portrait_Rasputin_small.dds"
+	}
 }

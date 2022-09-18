@@ -27,58 +27,161 @@ guiTypes = {
 		iconType = {
 			name ="fenris_map_bg_bg"
 			spriteType = "GFX_FEN_map_bg_bg"
-			position = { x=73 y=-22 }
+			position = { x=0 y=-22 }
 		}
 
 		iconType = {
 			name ="fenris_map_bg"
 			spriteType = "GFX_FEN_map_bg"
-			position = { x=95 y=0 }
+			position = { x=22 y=0 }
+		}
+		iconType = {
+			name ="FEN_map_rusviet_sr_influence_screen"
+			spriteType = "GFX_FEN_map_rusviet_sr_influence"
+			position = { x=335 y=-10 }
+			pdx_tooltip = "FEN_map_rusviet_sr_influence_tooltip"
+			pdx_tooltip_delayed  = "FEN_map_rusviet_sr_influence_tooltip_delayed"
+		}
+		iconType = {
+			name ="FEN_map_rusviet_sr_influence_icon"
+			spriteType = "GFX_rusviet_party_icon_small"
+			position = { x=355 y=59 }
+			frame = 2
+		}
+		instantTextBoxType = {
+			name ="FEN_map_rusviet_sr_influence_icon_text"
+			position = { x = 383 y = 68 }
+			font = "hoi_16mbs"
+			text = "[?FEN_rusviet_sr_influence]"
+			#tooltip = "FEN_suspicion_txt_tooltip"
+			format = center
+			maxWidth = 30
+			alwaystransparent = yes
+		}
+		instantTextBoxType = {
+			name ="fenris_map_name_text"
+			position = { x = 29 y = 164 }
+			font = "hoi_16mbs"
+			text = "Countries under Influence"
+			#tooltip = "FEN_suspicion_txt_tooltip"
+			format = center
+			maxWidth = 175
+		}
+		instantTextBoxType = {
+			name ="fenris_map_control_type_text"
+			position = { x = 205 y = 164 }
+			font = "hoi_16mbs"
+			text = "Control Type"
+			tooltip = "FEN_map_control_type_txt_tooltip"
+			format = center
+			maxWidth = 92
+		}
+		instantTextBoxType = {
+			name ="fenris_influence_level_text"
+			position = { x = 297 y = 164 }
+			font = "hoi_16mbs"
+			text = "%"
+			#tooltip = "FEN_suspicion_txt_tooltip"
+			format = center
+			maxWidth = 42
+		}
+		gridboxtype = {
+			name = "FEN_controlled_country_list"
+			position = { x= 29	 y = 188 }
+			size = { width = 261 height = 96 }
+			slotsize = { width = 261 height = 24 }
+			max_slots_horizontal = 1
+			add_horizontal = no
 		}
 		iconType = {
 			name ="factory_fenris_map_locator_rusviet"
 			spriteType = "GFX_fenris_map_location"
-			position = { x=278 y=15 }
+			position = { x=205 y=15 }
 		}
 		iconType = {
 			name ="factory_fenris_map_locator_paraguay"
 			spriteType = "GFX_fenris_map_location"
-			position = { x=199 y=87 }
+			position = { x=126 y=87 }
 		}
 		iconType = {
 			name ="factory_fenris_map_locator_kuwait"
 			spriteType = "GFX_fenris_map_location"
-			position = { x=294 y=49 }
+			position = { x=221 y=49 }
 		}
 		iconType = {
 			name ="factory_fenris_map_locator_rhodesia"
 			spriteType = "GFX_fenris_map_location"
-			position = { x=272 y=87 }
+			position = { x=199 y=87 }
 		}
 		iconType = {
 			name ="factory_fenris_map_locator_iwo_jima"
 			spriteType = "GFX_fenris_map_location"
-			position = { x=377 y=50 }
+			position = { x=304 y=50 }
 		}
 		iconType = {
 			name ="factory_fenris_map_locator_factory"
 			spriteType = "GFX_fenris_map_location"
-			position = { x=274 y=30 }
+			position = { x=201 y=30 }
 		}
 		iconType = {
 			name ="factory_fenris_map_locator_usonia"
 			spriteType = "GFX_fenris_map_location"
-			position = { x=183 y=27 }
+			position = { x=110 y=27 }
 		}
 		iconType = {
 			name ="factory_fenris_map_locator_aegyptus"
 			spriteType = "GFX_fenris_map_location"
-			position = { x=275 y=50 }
+			position = { x=202 y=50 }
 		}
 		iconType = {
 			name ="factory_fenris_map_locator_austrailia"
 			spriteType = "GFX_fenris_map_location"
-			position = { x=370 y=100 }
+			position = { x=297 y=100 }
+		}
+		iconType = {
+			name ="factory_fenris_map_locator_maratha"
+			spriteType = "GFX_fenris_map_location"
+			position = { x=248 y=57 }
+		}
+		iconType = {
+			name ="factory_fenris_map_locator_china"
+			spriteType = "GFX_fenris_map_location"
+			position = { x=278 y=50 }
+		}
+		iconType = {
+			name ="factory_fenris_map_locator_italy"
+			spriteType = "GFX_fenris_map_location"
+			position = { x=190 y=37 }
+		}
+		iconType = {
+			name ="factory_fenris_map_locator_carthage"
+			spriteType = "GFX_fenris_map_location"
+			position = { x=187 y=46 }
+		}
+		iconType = {
+			name ="factory_fenris_map_locator_mali"
+			spriteType = "GFX_fenris_map_location"
+			position = { x=174 y=60 }
+		}
+		iconType = {
+			name ="factory_fenris_map_locator_togawa"
+			spriteType = "GFX_fenris_map_location"
+			position = { x=303 y=46 }
+		}
+		iconType = {
+			name ="factory_fenris_map_locator_bulgaria"
+			spriteType = "GFX_fenris_map_location"
+			position = { x=199 y=35 }
+		}
+		iconType = {
+			name ="factory_fenris_map_locator_saxony"
+			spriteType = "GFX_fenris_map_location"
+			position = { x=188 y=26 }
+		}
+		iconType = {
+			name ="factory_fenris_map_locator_hispania"
+			spriteType = "GFX_fenris_map_location"
+			position = { x=172 y=38 }
 		}
 	}
 	containerWindowType = {#staff
@@ -121,7 +224,6 @@ guiTypes = {
 			tooltip = "FEN_suspicion_txt_tooltip"
 			format = center
 			maxWidth = 150
-			size = { width = 150 height= 20 }
 		}
 		
 		iconType = {
@@ -251,7 +353,40 @@ guiTypes = {
 			maxHeight = 25
 		}
 	}
-	
+	containerWindowType = {#external
+		name = "FEN_controlled_country_container"
+		position = { x = 0 y = 0 }
+		size = { width = 100% height= 24 }
+		
+		#BACKGROUND
+		instantTextBoxType = {
+			name ="fenris_map_name_text"
+			position = { x = 0 y = 0 }
+			font = "hoi_16mbs"
+			text = "FEN_map_target_country_name"
+			#tooltip = "FEN_suspicion_txt_tooltip"
+			format = center
+			maxWidth = 175
+		}
+		instantTextBoxType = {
+			name ="fenris_map_control_type_text"
+			position = { x = 176 y = 0 }
+			font = "hoi_16mbs"
+			text = "FEN_map_target_country_influence_type"
+			tooltip = "test"
+			format = center
+			maxWidth = 92
+		}
+		instantTextBoxType = {
+			name ="fenris_influence_level_text"
+			position = { x = 268 y = 0 }
+			font = "hoi_16mbs"
+			text = "FEN_map_target_country_influence"
+			#tooltip = "FEN_suspicion_txt_tooltip"
+			format = center
+			maxWidth = 42
+		}
+	}
 	
 	
 }

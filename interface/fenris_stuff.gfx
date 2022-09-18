@@ -51,5 +51,14 @@ spriteTypes = {
 		texturefile = "gfx/interface/fenris/bunker_powered_icon.dds"
 		noOfFrames = 2
 	}
+	spriteType = {
+		name = "GFX_FEN_map_rusviet_sr_influence"
+		texturefile = "gfx/interface/fenris/FEN_map_rusviet_sr_influence.dds"
+	}
+	spriteType = {
+		name = "GFX_FEN_map_fenris_influence"
+		texturefile = "gfx/interface/fenris/FEN_map_fenris_influence.dds"
+	}
+	
 
 }

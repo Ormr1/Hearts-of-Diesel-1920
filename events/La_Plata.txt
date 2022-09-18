@@ -481,6 +481,11 @@ country_event = { #Paraguayian civil war
 			}
 			white_peace = LPT
 			white_peace = LAP
+			FEN={
+				add_to_array = {FEN_controlled_country = PREV}
+				add_to_array = {FEN_controlled_country_type = 2}
+				add_to_array = {FEN_controlled_country_amount = 78}
+			}
 		}
 	}
 	

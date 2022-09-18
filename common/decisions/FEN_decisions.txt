@@ -129,6 +129,13 @@ FEN_fenris_interests_cat = {
 			NOT={has_country_flag = FEN_laying_low}
 			SOV={
 				has_stability < 0.25
+				OR={
+					custom_trigger_tooltip = {
+						tooltip = FEN_sr_hold_greater_than_loyalty
+						check_variable = {var_SOV_factions_SR_loyalty < FEN.FEN_rusviet_sr_influence}
+					}
+					has_character = SOV_rasputin
+				}
 			}
 		}
 
@@ -157,7 +164,7 @@ FEN_fenris_interests_cat = {
 	}
 	FEN_provoke_reprisals_SOV = {
 
-		icon = generic_political_discourse
+		icon = generic_political_rally
 
 		available = {
 			is_subject = no
@@ -190,7 +197,7 @@ FEN_fenris_interests_cat = {
 	}
 	FEN_stage_tsar_crackdown_SOV = {
 
-		icon = generic_political_discourse
+		icon = generic_prepare_civil_war
 
 		available = {
 			is_subject = no
@@ -223,7 +230,7 @@ FEN_fenris_interests_cat = {
 	}
 	FEN_use_sr_to_denouce_SOV = {
 
-		icon = generic_political_discourse
+		icon = generic_speech
 
 		available = {
 			is_subject = no
@@ -232,8 +239,8 @@ FEN_fenris_interests_cat = {
 				OR={
 					has_stability < 0.33
 					custom_trigger_tooltip = {
-						tooltip = SOV_has_faction_SR_loyalty_50_or_less
-						check_variable = {var_SOV_factions_SR_loyalty < 50}
+						tooltip = FEN_sr_hold_greater_than_loyalty
+						check_variable = {var_SOV_factions_SR_loyalty < FEN.FEN_rusviet_sr_influence}
 					}
 				}
 			}
@@ -249,6 +256,7 @@ FEN_fenris_interests_cat = {
 				SOV={has_character = SOV_rasputin}
 				has_country_flag = FEN_influence_in_SOV
 			}
+			check_variable = { FEN_rusviet_sr_influence > 0 }
 		}
 
 		fire_only_once = yes
@@ -261,6 +269,53 @@ FEN_fenris_interests_cat = {
 
 		complete_effect = {
 			SOV={country_event = {id = SOV_civil_war.5}}
+			subtract_from_variable = {
+				FEN_rusviet_sr_influence = 5
+				tooltip = FEN_loses_hold_over_sr_by
+			}
+		}
+	}
+	FEN_increase_our_hold_over_sr_SOV = {
+
+		icon = generic_political_discourse
+
+		available = {
+			is_subject = no
+			NOT={has_country_flag = FEN_laying_low}
+			
+			SOV={
+				has_stability < 0.65
+			}
+		}
+
+		visible = {
+			SOV={
+				has_civil_war = no
+				NOT={has_government = fenris}
+			}
+			has_completed_focus = FEN_rasputins_play
+			OR={
+				SOV={has_character = SOV_rasputin}
+				has_country_flag = FEN_influence_in_SOV
+			}
+			check_variable = { FEN_rusviet_sr_influence > 0 }
+		}
+
+		#fire_only_once = yes
+
+		cost = 100
+		
+		days_re_enable = 360
+
+		modifier = {
+			
+		}
+
+		complete_effect = {
+			add_to_variable = {
+				FEN_rusviet_sr_influence = 10
+				tooltip = FEN_increase_hold_over_sr_by
+			}
 		}
 	}
 	FEN_USA_buisness_plot = {
@@ -625,6 +680,106 @@ FEN_fenris_interests_cat = {
 				add = 10
 				check_variable = {  FEN_covert_reveal_risk > 60 }
 			}
+		}
+	}
+	FEN_pull_rasputin_from_SOV = {
+
+		icon = generic_political_discourse
+
+		available = {
+			is_subject = no
+			SOV={
+				has_character = SOV_rasputin
+			}
+		}
+
+		visible = {
+			SOV={
+				NOT={has_government = fenris}
+				has_character = SOV_rasputin
+			}
+		}
+
+		fire_only_once = yes
+
+		#cost = 100
+		
+		#days_re_enable = 360
+
+		complete_effect = {
+			custom_effect_tooltip = FEN_damage_SOV_operations
+			set_temp_variable = {FEN_suspicion_temp = 35}
+			FEN_increase_suspicion = yes
+			SOV={
+				deactivate_advisor = SOV_rasputin
+				remove_advisor_role = {
+				  character = "SOV_rasputin"
+				  slot = political_advisor
+				}
+				SOV_rasputin={
+					add_corps_commander_role={
+						skill = 3
+						attack_skill = 2
+						defense_skill = 2
+						planning_skill = 5
+						logistics_skill = 4
+					}
+					set_nationality = FEN
+				}
+			}
+			SOV_rasputin={
+				add_country_leader_role = {
+					promote_leader = yes
+					country_leader = {
+						ideology = fenris
+						expire = "1965.1.1.1"
+						traits = { war_industrialist }
+					}
+				}
+				promote_character = yes
+			}
+			subtract_from_variable = {
+				FEN_rusviet_sr_influence = 20
+				tooltip = FEN_loses_hold_over_sr_by
+			}
+			for_each_loop = {
+				array = FEN_controlled_country
+				value = vv
+				index = ii
+				break = break_var
+				if={
+					limit={
+						check_variable = {vv = SOV}
+						set_temp_variable = {SOV_ii = ii}
+						set_variable = {break_var = 1}
+					}
+				}
+			}
+			subtract_from_variable = {FEN_controlled_country_amount^SOV_ii = 33}
+			if={
+				limit={
+					check_variable = {FEN_controlled_country_amount^SOV_ii < 1}
+				}
+				remove_from_array = {
+					array = FEN_controlled_country
+					index = SOV_ii
+				}
+				remove_from_array = {
+					array = FEN_controlled_country_type
+					index = SOV_ii
+				}
+				remove_from_array = {
+					array = FEN_controlled_country_amount
+					index = SOV_ii
+				}
+				clr_country_flag = FEN_influence_in_SOV
+				clear_variable = FEN_rusviet_sr_influence
+			}
+			
+			
+		}
+		ai_will_do = {
+			factor = 0
 		}
 	}
 }

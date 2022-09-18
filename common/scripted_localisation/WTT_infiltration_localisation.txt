@@ -410,7 +410,7 @@ defined_text = { # Rusviet ARMY
 		localization_key = SOV_factions_ARMY_loyalty_neutral
 	}
 }
-SOVGetArmyController = { # Rusviet ARMY controller
+defined_text = { # Rusviet ARMY controller
 	name = SOVGetArmyController
 	text = {
 		trigger = {			
@@ -566,7 +566,7 @@ defined_text = { # Rusviet RSDLP is loyal
 		localization_key = SOV_factions_is_neutral
 	}
 }
-SOVGetArmyControllerLoser = { # 
+defined_text = { # 
 	name = SOVGetArmyControllerLoser
 	text = {
 		trigger = {			
@@ -602,7 +602,7 @@ SOVGetArmyControllerLoser = { #
 		localization_key = "Rogue Elements"
 	}
 }
-SOVGetArmyControllerWinner = { #
+defined_text = { #
 	name = SOVGetArmyControllerWinner
 	text = {
 		trigger = {			
@@ -636,5 +636,29 @@ SOVGetArmyControllerWinner = { #
 	}
 	text = {
 		localization_key = "Rogue Elements"
+	}
+}
+defined_text = { #
+	name = FENGetCountryControlType
+	text = {
+		trigger = {			
+			check_variable = {FEN_controlled_country_type^FEN_map_idx = 1}
+		}
+		localization_key = FEN_control_of_cilivian
+	}
+	text = {
+		trigger = {			
+			check_variable = {FEN_controlled_country_type^FEN_map_idx = 2}
+		}
+		localization_key = FEN_control_of_army
+	}
+	text = {
+		trigger = {			
+			check_variable = {FEN_controlled_country_type^FEN_map_idx = 3}
+		}
+		localization_key = FEN_control_of_wealth
+	}
+	text = {
+		localization_key = "Direct"
 	}
 }

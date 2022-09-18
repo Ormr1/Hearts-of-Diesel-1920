@@ -35,7 +35,7 @@ characters = {
 		name = "Rasputin"
 		portraits = {
 			civilian = {
-				large = "gfx/leaders/SOV/Portrait_Rasputin.dds"
+				large = GFX_portrait_SOV_rasputin
 			}
 			army = {
 				large = GFX_portrait_SOV_rasputin

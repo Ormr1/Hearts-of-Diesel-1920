@@ -17,6 +17,25 @@ set_variable = { FEN_bunker_depth = 3}
 set_variable = { FEN_bunker_depth_slots = 15}
 set_variable = { var = FEN_covert_reveal_risk value = 13 }
 set_variable = { var = FEN_covert_reveal_risk_percentile value = 1 }
+set_variable = { var = FEN_rusviet_sr_influence value = 52 }
+set_country_flag = FEN_influence_in_SOV
+set_country_flag = FEN_influence_in_USA
+
+
+USA={
+	FEN={
+		add_to_array = {FEN_controlled_country = PREV}
+	}
+}
+add_to_array = {FEN_controlled_country_type = 3}
+add_to_array = {FEN_controlled_country_amount = 37}
+SOV={
+	FEN={
+		add_to_array = {FEN_controlled_country = PREV}
+	}
+}
+add_to_array = {FEN_controlled_country_type = 1}
+add_to_array = {FEN_controlled_country_amount = 48}
 
 
 add_manpower = 36000

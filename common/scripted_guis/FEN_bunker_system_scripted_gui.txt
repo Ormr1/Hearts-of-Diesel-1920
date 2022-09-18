@@ -37,6 +37,24 @@ scripted_gui = {
 					has_country_flag = FEN_influence_in_SOV
 				}
 			}
+			FEN_map_rusviet_sr_influence_screen_visible = {
+				OR={
+					SOV={has_character = SOV_rasputin}
+					has_country_flag = FEN_influence_in_SOV
+				}
+			}
+			FEN_map_rusviet_sr_influence_icon_visible = {
+				OR={
+					SOV={has_character = SOV_rasputin}
+					has_country_flag = FEN_influence_in_SOV
+				}
+			}
+			FEN_map_rusviet_sr_influence_icon_text_visible = {
+				OR={
+					SOV={has_character = SOV_rasputin}
+					has_country_flag = FEN_influence_in_SOV
+				}
+			}
 			factory_fenris_map_locator_usonia_visible = {
 				OR={
 					USA={has_character = USA_george_mason}
@@ -62,7 +80,7 @@ scripted_gui = {
 				OR={
 					has_country_flag = FEN_influence_in_factory
 					has_country_flag = FEN_holding_factory
-				 }
+				}
 			}
 			factory_fenris_map_locator_iwo_jima_visible = {
 				 has_country_flag = FEN_IWO_JIMA
@@ -72,6 +90,41 @@ scripted_gui = {
 			}
 			factory_fenris_map_locator_aegyptus_visible = {
 				 has_country_flag = FEN_influence_in_aegyptus
+			}
+			factory_fenris_map_locator_maratha_visible = {
+				 has_country_flag = FEN_influence_in_maratha
+			}
+			factory_fenris_map_locator_china_visible = {
+				 has_country_flag = FEN_influence_in_china
+			}
+			factory_fenris_map_locator_italy_visible = {
+				 has_country_flag = FEN_influence_in_italy
+			}
+			factory_fenris_map_locator_carthage_visible = {
+				 has_country_flag = FEN_influence_in_cathage
+			}
+			factory_fenris_map_locator_mali_visible = {
+				 has_country_flag = FEN_influence_in_mali
+			}
+			factory_fenris_map_locator_togawa_visible = {
+				 has_country_flag = FEN_influence_in_togawa
+			}
+			factory_fenris_map_locator_saxony_visible = {
+				 has_country_flag = FEN_influence_in_GER
+			}
+			factory_fenris_map_locator_bulgaria_visible = {
+				 has_country_flag = FEN_influence_in_BUL
+			}
+			factory_fenris_map_locator_hispania_visible = {
+				 has_country_flag = FEN_influence_in_SPR
+			}
+		}
+		dynamic_lists = {
+			FEN_controlled_country_list = {
+				array = FEN_controlled_country
+				entry_container = FEN_controlled_country_container
+				change_scope = no
+				index = FEN_map_idx
 			}
 		}
 	}
