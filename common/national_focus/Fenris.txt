@@ -244,6 +244,33 @@ focus_tree = {
 			add_to_variable = { FEN_total_bunker_slots = 1}
 		}
 	}
+	focus = {
+		id = FEN_improved_production_routing
+		icon = GFX_focus_FEN_bunker_building
+		relative_position_id = FEN_plotting_deeper
+		x = -2
+		y = 1
+		cost = 10
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		available={
+			custom_trigger_tooltip={
+				tooltip = FEN_has_bunker_building_slot
+				check_variable = { FEN_total_bunker_slots > FEN_used_bunker_slots}
+			}
+		}
+		select_effect = {
+			add_to_variable = { FEN_used_bunker_slots = 1}
+		}
+		continue_if_invalid = yes
+		prerequisite = { focus = FEN_plotting_deeper}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			custom_effect_tooltip = FEN_remove_bunker_building_slot
+			add_offsite_building = { type = industrial_complex level = 1 }
+		}
+	}
     focus = {
 		id = FEN_streamline_administration
 		icon = GFX_focus_FEN_skulking_threat
@@ -983,7 +1010,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FEN_teslas_annihilator
-		icon = GFX_focus_FEN_skulking_threat
+		icon = GFX_focus_FEN_annihilator
 		relative_position_id = FEN_the_shining_prize
 		x = 0
 		y = 1
@@ -1012,7 +1039,11 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_political_power = 200
+			add_tech_bonus = {
+				bonus = 0.50
+				uses = 3
+				category = armor
+			}
 		}
 	}
 

@@ -67,3 +67,9 @@
  SOV_reduce_army_control_amount:0 "[SOVGetArmyControllerLoser] loses [?var_SOV_temp_reduce_loyalty]% of army control to [SOVGetArmyControllerWinner]"
  SOV_reduce_army_control_amount_undirected:0 "[SOVGetArmyControllerLoser] loses §R$RIGHT$%§! control of the military"
  SOV_army_control_changed:0 "[SOVGetArmyControllerWinner] §Rwill gain enough to exert major control over the army!§!"
+ SOV_civil_war.5.t:0 "Members of the §tSR§! denouce the Tsar"
+ SOV_civil_war.5.d:0 "Today several members of the §tSR§! stood up in the duma and scathingly denouced the Tsar and his politices, citing our many failures in both the great war and on the home front. Even worse is that it seems to be winning over members from other parties, we will have to do something before it snowballs"
+ SOV_civil_war.5.a:0 "We can't afford to alinate the rest of §tSR§!"
+ SOV_civil_war.5.b:0 "Use allied duma members to cut the §tSR§!s time off"
+ SOV_has_faction_SR_loyalty_50_or_less:0 "§tSR§! has less loyalty than §Y50§!"
+ 

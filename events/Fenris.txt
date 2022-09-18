@@ -185,3 +185,16 @@ country_event = {#Paraguay to strike south
 		}
 	}
 }
+country_event = {#disdents arrive
+	id = fenris.11
+	title = fenris.11.t
+	desc = fenris.11.d
+	picture = GFX_report_event_finnish_letter
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = fenris.11.a
+		add_manpower = 1000
+	}
+}

@@ -70,6 +70,9 @@ country_event = {
 		SOV_reduce_sr_loyalty = yes
 		SOV_reduce_kd_loyalty = yes
 		add_stability = -0.05
+		hidden_effect={
+			FEN={country_event = {id = fenris.11}}
+		}
 	}
 	option = {
 		name = SOV_civil_war.3.b
@@ -82,6 +85,9 @@ country_event = {
 		#set_temp_variable = {var_SOV_temp_reduce_controller = 5}
 		set_temp_variable = {var_SOV_temp_reduce_controller = 5}
 		SOV_decrease_army_control = yes
+		hidden_effect={
+			FEN={country_event = {id = fenris.11}}
+		}
 	}
 	option = {
 		name = SOV_civil_war.3.c
@@ -95,6 +101,9 @@ country_event = {
 		SOV_increase_sr_loyalty = yes
 		SOV_increase_kd_loyalty = yes
 		add_political_power = -150
+		hidden_effect={
+			FEN={country_event = {id = fenris.11}}
+		}
 	}
 }
 country_event = {
@@ -114,5 +123,32 @@ country_event = {
 		USA_senate_calc_effect = yes
 		#SOV_normalize_army_control = yes
 		#SOV_check_army_control = yes
+	}
+}
+#SR memeber denouces the Tsar
+country_event = {
+	id = SOV_civil_war.5
+	title = SOV_civil_war.5.t
+	desc = SOV_civil_war.5.d
+	picture = GFX_report_event_hitler_handshake
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = SOV_civil_war.5.a
+		#angers everyone and lowers stab
+		set_temp_variable = {var_SOV_temp_reduce_loyalty = 2}
+		SOV_reduce_rsdlp_loyalty = yes
+		SOV_reduce_sr_loyalty = yes
+		SOV_reduce_kd_loyalty = yes
+		SOV_reduce_o_loyalty = yes
+		add_stability = -0.02
+	}
+	option = {
+		name = SOV_civil_war.5.b
+		#angers SR
+		set_temp_variable = {var_SOV_temp_reduce_loyalty = 5}
+		SOV_reduce_sr_loyalty = yes
+		add_political_power = -50
 	}
 }

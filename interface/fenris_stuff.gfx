@@ -31,6 +31,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/fenris/FEN_map_bg.dds"
 	}
 	spriteType = {
+		name = "GFX_FEN_map_bg_bg"
+		texturefile = "gfx/interface/fenris/FEN_map_bg_bg.dds"
+	}
+	spriteType = {
 		name = "GFX_FEN_bunker_construction_bg"
 		texturefile = "gfx/interface/fenris/bunker_construction_bg.dds"
 	}

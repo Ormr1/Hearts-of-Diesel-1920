@@ -3041,5 +3041,9 @@ spriteTypes = {
 		name = "GFX_focus_FEN_elite_contractors"
 		texturefile = "gfx/interface/goals/FENRIS/focus_FEN_elite_contractors.dds"
 	}
+	SpriteType = {
+		name = "GFX_focus_FEN_annihilator"
+		texturefile = "gfx/interface/goals/FENRIS/focus_FEN_annihilator.dds"
+	}
 
 }

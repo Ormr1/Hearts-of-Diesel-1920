@@ -1,0 +1,652 @@
+﻿# Division template historical names system. Is a new method of naming the divisions based on the names-group assigned to it's template.
+# If we run out of all historical names, the names will be assigned in the old way.
+#
+# Each group has a made up tag. Use it if you want to append more, or replace existing names with the extra txt files (modding).
+#
+# for_countries - lists all countries that SAF use it. If empty, or entire tag is missing, all countries in the world SAF use it.
+#
+# can_use - is a trigger that locks/unlocks the group under specific circumstances. The trigger is in a country scope.
+#
+# division_types - is a list of tokens to corresponding unit types. A player SAF in fact use any group of names for a div.template
+#                  however this tag is a helper for an automated choice (for AI, or if the group must switch on it's own, because
+#                  for example the current one is no longer available due to the can_use trigger saying so).
+#                  In automated choice, the division template must have at leSAF 1 of the following types for it to be chosen.
+#
+# fallback_name - Is going to be used if we run out of the scripted historical names. If you want to use the old division naming
+#                 mechanics to be used for fallbacks, then just skip this option.
+#
+# unordered - It's a list of historical division names that did not have a number. Regardless if such names happened in history or not
+#             this option is available here mainly for a mods.
+#
+# ordered - Is a list of all historical names. 
+#           Numbers must start from 1 and up. 
+#           Numbers can't repeat in one scope.
+#           If you script the name for this group, at the same number (for example in a mod in another file), the name will be override.
+#           All arguments between the brackets must be separated by spaces. Each argument is wrapped in "quotas".
+#           1st argument = The name. It must contain either: 
+#                          %d (for decimal number placement)
+#                          %s (for string number placement - ROMAN numbers like XIV).
+#           2nd argument is optional = A localizable text describing this historical division. The text will be visible in the tooltip
+#                                      where you choose the historical division name.
+#           3rd argument is optional = An URL preferably pointing to the WIKI. It's a future feature that is not currently working in
+#                                      the current game version.
+
+RHO_INF_01 = 
+{
+	name = "Infantry Divisions"
+
+	for_countries = { RHO }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { GER_Gar_01 }
+
+	fallback_name = "%d Rhodesian Infantry Div."
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "%dst Rhodesian Infantry Div." }
+		2 = { "%dnd Rhodesian Infantry Div." }
+		3 = { "%drd Rhodesian Infantry Div." }
+		4 = { "%dth Rhodesian Infantry Div." }
+		5 = { "%dth Rhodesian Infantry Div." }
+		6 = { "%dth Rhodesian Infantry Div." }
+		7 = { "%dth Rhodesian Infantry Div." }
+		8 = { "%dth Rhodesian Infantry Div." }
+		9 = { "%dth Rhodesian Infantry Div." }
+		10 = { "%dth Rhodesian Infantry Div." }
+		11 = { "%dth Rhodesian Infantry Div." }
+		12 = { "%dth Rhodesian Infantry Div." }
+		13 = { "%dth Rhodesian Infantry Div." }
+		14 = { "%dth Rhodesian Infantry Div." }
+		15 = { "%dth Rhodesian Infantry Div." }
+		16 = { "%dth Rhodesian Infantry Div." }
+		17 = { "%dth Rhodesian Infantry Div." }
+		18 = { "%dth Rhodesian Infantry Div." }
+		19 = { "%dth Rhodesian Infantry Div." }
+		20 = { "%dth Rhodesian Infantry Div." }
+		21 = { "%dst Rhodesian Infantry Div." }
+		22 = { "%dnd Rhodesian Infantry Div." }
+		23 = { "%drd Rhodesian Infantry Div." }
+		24 = { "%dth Rhodesian Infantry Div." }
+		25 = { "%dth Rhodesian Infantry Div." }
+		26 = { "%dth Rhodesian Infantry Div." }
+		27 = { "%dth Rhodesian Infantry Div." }
+		28 = { "%dth Rhodesian Infantry Div." }
+		29 = { "%dth Rhodesian Infantry Div." }
+		30 = { "%dth Rhodesian Infantry Div." }
+		31 = { "%dst Rhodesian Infantry Div." }
+		32 = { "%dnd Rhodesian Infantry Div." }
+		33 = { "%drd Rhodesian Infantry Div." }
+		34 = { "%dth Rhodesian Infantry Div." }
+		35 = { "%dth Rhodesian Infantry Div." }
+		36 = { "%dth Rhodesian Infantry Div." }
+		37 = { "%dth Rhodesian Infantry Div." }
+		38 = { "%dth Rhodesian Infantry Div." }
+		39 = { "%dth Rhodesian Infantry Div." }
+		40 = { "%dth Rhodesian Infantry Div." }
+		41 = { "%dst Rhodesian Infantry Div." }
+		42 = { "%dnd Rhodesian Infantry Div." }
+		43 = { "%drd Rhodesian Infantry Div." }
+		44 = { "%dth Rhodesian Infantry Div." }
+		45 = { "%dth Rhodesian Infantry Div." }
+		46 = { "%dth Rhodesian Infantry Div." }
+		47 = { "%dth Rhodesian Infantry Div." }
+		48 = { "%dth Rhodesian Infantry Div." }
+		49 = { "%dth Rhodesian Infantry Div." }
+		50 = { "%dth Rhodesian Infantry Div." }
+		51 = { "%dst Rhodesian Infantry Div." }
+		52 = { "%dnd Rhodesian Infantry Div." }
+		53 = { "%drd Rhodesian Infantry Div." }
+		54 = { "%dth Rhodesian Infantry Div." }
+		55 = { "%dth Rhodesian Infantry Div." }
+		56 = { "%dth Rhodesian Infantry Div." }
+		57 = { "%dth Rhodesian Infantry Div." }
+		58 = { "%dth Rhodesian Infantry Div." }
+		59 = { "%dth Rhodesian Infantry Div." }
+		60 = { "%dth Rhodesian Infantry Div." }
+		61 = { "%dst Rhodesian Infantry Div." }
+		62 = { "%dnd Rhodesian Infantry Div." }
+		63 = { "%drd Rhodesian Infantry Div." }
+		64 = { "%dth Rhodesian Infantry Div." }
+		65 = { "%dth Rhodesian Infantry Div." }
+		66 = { "%dth Rhodesian Infantry Div." }
+		67 = { "%dth Rhodesian Infantry Div." }
+		68 = { "%dth Rhodesian Infantry Div." }
+		69 = { "%dth Rhodesian Infantry Div." }
+		70 = { "%dth Rhodesian Infantry Div." }
+		71 = { "%dst Rhodesian Infantry Div." }
+		72 = { "%dnd Rhodesian Infantry Div." }
+		73 = { "%drd Rhodesian Infantry Div." }
+		74 = { "%dth Rhodesian Infantry Div." }
+		75 = { "%dth Rhodesian Infantry Div." }
+		76 = { "%dth Rhodesian Infantry Div." }
+		77 = { "%dth Rhodesian Infantry Div." }
+		78 = { "%dth Rhodesian Infantry Div." }
+		79 = { "%dth Rhodesian Infantry Div." }
+		80 = { "%dth Rhodesian Infantry Div." }
+		81 = { "%dst Rhodesian Infantry Div." }
+		82 = { "%dnd Rhodesian Infantry Div." }
+		83 = { "%drd Rhodesian Infantry Div." }
+		84 = { "%dth Rhodesian Infantry Div." }
+		85 = { "%dth Rhodesian Infantry Div." }
+		86 = { "%dth Rhodesian Infantry Div." }
+		87 = { "%dth Rhodesian Infantry Div." }
+		88 = { "%dth Rhodesian Infantry Div." }
+		89 = { "%dth Rhodesian Infantry Div." }
+		90 = { "%dth Rhodesian Infantry Div." }
+		91 = { "%dst Rhodesian Infantry Div." }
+		92 = { "%dnd Rhodesian Infantry Div." }
+		93 = { "%drd Rhodesian Infantry Div." }
+		94 = { "%dth Rhodesian Infantry Div." }
+		95 = { "%dth Rhodesian Infantry Div." }
+		96 = { "%dth Rhodesian Infantry Div." }
+		97 = { "%dth Rhodesian Infantry Div." }
+		98 = { "%dth Rhodesian Infantry Div." }
+		99 = { "%dth Rhodesian Infantry Div." }
+
+		# RHO only had three historically, but just in case!
+	}
+}
+
+RHO_CAV_01 = 
+{
+	name = "Cavalry Divisions"
+
+	for_countries = { RHO }
+
+	can_use = { always = yes }
+
+	division_types = { "cavalry" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { GER_Gar_01 }
+
+	fallback_name = "%d Rhodesian Cavalry Div."
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "%dst Rhodesian Cavalry Div." }
+		2 = { "%dnd Rhodesian Cavalry Div." }
+		3 = { "%drd Rhodesian Cavalry Div." }
+		4 = { "%dth Rhodesian Cavalry Div." }
+		5 = { "%dth Rhodesian Cavalry Div." }
+		6 = { "%dth Rhodesian Cavalry Div." }
+		7 = { "%dth Rhodesian Cavalry Div." }
+		8 = { "%dth Rhodesian Cavalry Div." }
+		9 = { "%dth Rhodesian Cavalry Div." }
+		10 = { "%dth Rhodesian Cavalry Div." }
+		11 = { "%dth Rhodesian Cavalry Div." }
+		12 = { "%dth Rhodesian Cavalry Div." }
+		13 = { "%dth Rhodesian Cavalry Div." }
+		14 = { "%dth Rhodesian Cavalry Div." }
+		15 = { "%dth Rhodesian Cavalry Div." }
+		16 = { "%dth Rhodesian Cavalry Div." }
+		17 = { "%dth Rhodesian Cavalry Div." }
+		18 = { "%dth Rhodesian Cavalry Div." }
+		19 = { "%dth Rhodesian Cavalry Div." }
+		20 = { "%dth Rhodesian Cavalry Div." }
+		21 = { "%dst Rhodesian Cavalry Div." }
+		22 = { "%dnd Rhodesian Cavalry Div." }
+		23 = { "%drd Rhodesian Cavalry Div." }
+		24 = { "%dth Rhodesian Cavalry Div." }
+		25 = { "%dth Rhodesian Cavalry Div." }
+		26 = { "%dth Rhodesian Cavalry Div." }
+		27 = { "%dth Rhodesian Cavalry Div." }
+		28 = { "%dth Rhodesian Cavalry Div." }
+		29 = { "%dth Rhodesian Cavalry Div." }
+		30 = { "%dth Rhodesian Cavalry Div." }
+		31 = { "%dst Rhodesian Cavalry Div." }
+		32 = { "%dnd Rhodesian Cavalry Div." }
+		33 = { "%drd Rhodesian Cavalry Div." }
+		34 = { "%dth Rhodesian Cavalry Div." }
+		35 = { "%dth Rhodesian Cavalry Div." }
+		36 = { "%dth Rhodesian Cavalry Div." }
+		37 = { "%dth Rhodesian Cavalry Div." }
+		38 = { "%dth Rhodesian Cavalry Div." }
+		39 = { "%dth Rhodesian Cavalry Div." }
+		40 = { "%dth Rhodesian Cavalry Div." }
+		41 = { "%dst Rhodesian Cavalry Div." }
+		42 = { "%dnd Rhodesian Cavalry Div." }
+		43 = { "%drd Rhodesian Cavalry Div." }
+		44 = { "%dth Rhodesian Cavalry Div." }
+		45 = { "%dth Rhodesian Cavalry Div." }
+		46 = { "%dth Rhodesian Cavalry Div." }
+		47 = { "%dth Rhodesian Cavalry Div." }
+		48 = { "%dth Rhodesian Cavalry Div." }
+		49 = { "%dth Rhodesian Cavalry Div." }
+		50 = { "%dth Rhodesian Cavalry Div." }
+		51 = { "%dst Rhodesian Cavalry Div." }
+		52 = { "%dnd Rhodesian Cavalry Div." }
+		53 = { "%drd Rhodesian Cavalry Div." }
+
+		# Historically, there's no way SAF would have had 53 Cav divisions the list taken this far because of cav's suppression role in-game.
+	}
+}
+
+RHO_MOT_01 = 
+{
+	name = "Motorised Divisions"
+
+	for_countries = { RHO }
+
+	can_use = { always = yes }
+
+	division_types = { "motorized" }
+
+	# Number reservation system will tie to another group.
+	link_numbering_with = { RHO_INF_01 }
+
+	fallback_name = "%d Rhodesian Rifle Div."
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "%dst Rhodesian Rifle Div." }
+		2 = { "%dnd Rhodesian Rifle Div." }
+		3 = { "%drd Rhodesian Rifle Div." }
+		4 = { "%dth Rhodesian Rifle Div." }
+		5 = { "%dth Rhodesian Rifle Div." }
+		6 = { "%dth Rhodesian Rifle Div." }
+		7 = { "%dth Rhodesian Rifle Div." }
+		8 = { "%dth Rhodesian Rifle Div." }
+		9 = { "%dth Rhodesian Rifle Div." }
+		10 = { "%dth Rhodesian Rifle Div." }
+		11 = { "%dth Rhodesian Rifle Div." }
+		12 = { "%dth Rhodesian Rifle Div." }
+		13 = { "%dth Rhodesian Rifle Div." }
+		14 = { "%dth Rhodesian Rifle Div." }
+		15 = { "%dth Rhodesian Rifle Div." }
+		16 = { "%dth Rhodesian Rifle Div." }
+		17 = { "%dth Rhodesian Rifle Div." }
+		18 = { "%dth Rhodesian Rifle Div." }
+		19 = { "%dth Rhodesian Rifle Div." }
+		20 = { "%dth Rhodesian Rifle Div." }
+		21 = { "%dst Rhodesian Rifle Div." }
+		22 = { "%dnd Rhodesian Rifle Div." }
+		23 = { "%drd Rhodesian Rifle Div." }
+		24 = { "%dth Rhodesian Rifle Div." }
+		25 = { "%dth Rhodesian Rifle Div." }
+		26 = { "%dth Rhodesian Rifle Div." }
+		27 = { "%dth Rhodesian Rifle Div." }
+		28 = { "%dth Rhodesian Rifle Div." }
+		29 = { "%dth Rhodesian Rifle Div." }
+		30 = { "%dth Rhodesian Rifle Div." }
+		31 = { "%dst Rhodesian Rifle Div." }
+		32 = { "%dnd Rhodesian Rifle Div." }
+		33 = { "%drd Rhodesian Rifle Div." }
+
+	}
+}
+
+RHO_ARM_01 = 
+{
+	name = "Armoured Divisions"
+
+	for_countries = { RHO }
+
+	can_use = { always = yes }
+
+	division_types = { "light_armor" "medium_armor" "heavy_armor" "modern_armor" }
+
+	# Number reservation system will tie to another group.
+	link_numbering_with = { RHO_INF_01  }
+
+	fallback_name = "%d Rhodesian Armoured Div."
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		6 = { "%dth Rhodesian Armoured Div." }
+		7 = { "%dth Rhodesian Armoured Div." }
+		8 = { "%dth Rhodesian Armoured Div." }
+		9 = { "%dth Rhodesian Armoured Div." }
+		10 = { "%dth Rhodesian Armoured Div." }
+		11 = { "%dth Rhodesian Armoured Div." }
+		12 = { "%dth Rhodesian Armoured Div." }
+		13 = { "%dth Rhodesian Armoured Div." }
+		14 = { "%dth Rhodesian Armoured Div." }
+		15 = { "%dth Rhodesian Armoured Div." }
+		16 = { "%dth Rhodesian Armoured Div." }
+		17 = { "%dth Rhodesian Armoured Div." }
+		18 = { "%dth Rhodesian Armoured Div." }
+		19 = { "%dth Rhodesian Armoured Div." }
+		20 = { "%dth Rhodesian Armoured Div." }
+		21 = { "%dst Rhodesian Armoured Div." }
+		22 = { "%dnd Rhodesian Armoured Div." }
+		23 = { "%drd Rhodesian Armoured Div." }
+		24 = { "%dth Rhodesian Armoured Div." }
+		25 = { "%dth Rhodesian Armoured Div." }
+		26 = { "%dth Rhodesian Armoured Div." }
+		27 = { "%dth Rhodesian Armoured Div." }
+		28 = { "%dth Rhodesian Armoured Div." }
+		29 = { "%dth Rhodesian Armoured Div." }
+		30 = { "%dth Rhodesian Armoured Div." }
+		31 = { "%dst Rhodesian Armoured Div." }
+		32 = { "%dnd Rhodesian Armoured Div." }
+		33 = { "%drd Rhodesian Armoured Div." }
+
+		# Historically, only the 6th was armoured, but suspect they intended to have a linked number system (as per the Canadians) but started their armoured units a bit later in the sequence - this is a guess though.
+	}
+}
+
+RHO_MEC_01 = 
+{
+	name = "Mechanised Divisions"
+
+	for_countries = { RHO }
+
+	can_use = { always = yes }
+
+	division_types = { "mechanized"  }
+
+	# Number reservation system will tie to another group.
+	link_numbering_with = { RHO_INF_01  }
+
+	fallback_name = "%d Rhodesian Mechanised Div."
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		6 = { "%dth Rhodesian Mechanised Div." }
+		7 = { "%dth Rhodesian Mechanised Div." }
+		8 = { "%dth Rhodesian Mechanised Div." }
+		9 = { "%dth Rhodesian Mechanised Div." }
+		10 = { "%dth Rhodesian Mechanised Div." }
+		11 = { "%dth Rhodesian Mechanised Div." }
+		12 = { "%dth Rhodesian Mechanised Div." }
+		13 = { "%dth Rhodesian Mechanised Div." }
+		14 = { "%dth Rhodesian Mechanised Div." }
+		15 = { "%dth Rhodesian Mechanised Div." }
+		16 = { "%dth Rhodesian Mechanised Div." }
+		17 = { "%dth Rhodesian Mechanised Div." }
+		18 = { "%dth Rhodesian Mechanised Div." }
+		19 = { "%dth Rhodesian Mechanised Div." }
+		20 = { "%dth Rhodesian Mechanised Div." }
+		21 = { "%dst Rhodesian Mechanised Div." }
+		22 = { "%dnd Rhodesian Mechanised Div." }
+		23 = { "%drd Rhodesian Mechanised Div." }
+		24 = { "%dth Rhodesian Mechanised Div." }
+		25 = { "%dth Rhodesian Mechanised Div." }
+		26 = { "%dth Rhodesian Mechanised Div." }
+		27 = { "%dth Rhodesian Mechanised Div." }
+		28 = { "%dth Rhodesian Mechanised Div." }
+		29 = { "%dth Rhodesian Mechanised Div." }
+		30 = { "%dth Rhodesian Mechanised Div." }
+		31 = { "%dst Rhodesian Mechanised Div." }
+		32 = { "%dnd Rhodesian Mechanised Div." }
+		33 = { "%drd Rhodesian Mechanised Div." }
+
+		# None historically. List starts from 6 to be consistent with armoured list starting at the same spot.
+	}
+}
+
+RHO_GAR_01 = 
+{
+	name = "Garrison Divisions"
+
+	for_countries = { RHO }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { SAF_INF_01 }
+
+	fallback_name = "%d District Force"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "Salisbury Command" }
+		2 = { "Nyasaland Command" }
+		3 = { "West Zambian Command" }
+		4 = { "Eastern Zambian Cmd." }
+		5 = { "Matabeleland Command" }
+		6 = { "Mashonaland Command" }
+		7 = { "%dth District Force" }
+		8 = { "%dth District Force" }
+		9 = { "%dth District Force" }
+		10 = { "%dth District Force" }
+		11 = { "%dth District Force" }
+		12 = { "%dth District Force" }
+		13 = { "%dth District Force" }
+		14 = { "%dth District Force" }
+		15 = { "%dth District Force" }
+		16 = { "%dth District Force" }
+		17 = { "%dth District Force" }
+		18 = { "%dth District Force" }
+		19 = { "%dth District Force" }
+		20 = { "%dth District Force" }
+		21 = { "%dst District Force" }
+		22 = { "%dnd District Force" }
+		23 = { "%drd District Force" }
+		24 = { "%dth District Force" }
+		25 = { "%dth District Force" }
+		26 = { "%dth District Force" }
+		27 = { "%dth District Force" }
+		28 = { "%dth District Force" }
+		29 = { "%dth District Force" }
+		30 = { "%dth District Force" }
+		31 = { "%dst District Force" }
+		32 = { "%dnd District Force" }
+		33 = { "%drd District Force" }
+		34 = { "%dth District Force" }
+		35 = { "%dth District Force" }
+		36 = { "%dth District Force" }
+		37 = { "%dth District Force" }
+		38 = { "%dth District Force" }
+		39 = { "%dth District Force" }
+		40 = { "%dth District Force" }
+		41 = { "%dst District Force" }
+		42 = { "%dnd District Force" }
+		43 = { "%drd District Force" }
+		44 = { "%dth District Force" }
+		45 = { "%dth District Force" }
+		46 = { "%dth District Force" }
+		47 = { "%dth District Force" }
+		48 = { "%dth District Force" }
+		49 = { "%dth District Force" }
+		51 = { "%dst District Force" }
+		52 = { "%dnd District Force" }
+		53 = { "%drd District Force" }
+
+		# SAF has six named 'commands' that were more-or-less garrison forces. After that, have used a generic 'xth District Force' structure.
+	}
+}
+
+RHO_MAR_01 = 
+{
+	name = "Marine Divisions"
+
+	for_countries = { RHO }
+
+	can_use = { always = yes }
+
+	division_types = { "marine" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { SAF_GAR_01 }
+
+	fallback_name = "%d Rhodesian Marine Commando Division"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "%dst Rhodesian Marine Commando Division" }
+		2 = { "%dnd Rhodesian Marine Commando Division" }
+		3 = { "%drd Rhodesian Marine Commando Division" }
+		4 = { "%dth Rhodesian Marine Commando Division" }
+		5 = { "%dth Rhodesian Marine Commando Division" }
+		6 = { "%dth Rhodesian Marine Commando Division" }
+		7 = { "%dth Rhodesian Marine Commando Division" }
+		8 = { "%dth Rhodesian Marine Commando Division" }
+		9 = { "%dth Rhodesian Marine Commando Division" }
+		10 = { "%dth Rhodesian Marine Commando Division" }
+		11 = { "%dth Rhodesian Marine Commando Division" }
+		12 = { "%dth Rhodesian Marine Commando Division" }
+		13 = { "%dth Rhodesian Marine Commando Division" }
+		14 = { "%dth Rhodesian Marine Commando Division" }
+		15 = { "%dth Rhodesian Marine Commando Division" }
+		16 = { "%dth Rhodesian Marine Commando Division" }
+		17 = { "%dth Rhodesian Marine Commando Division" }
+		18 = { "%dth Rhodesian Marine Commando Division" }
+		19 = { "%dth Rhodesian Marine Commando Division" }
+		20 = { "%dth Rhodesian Marine Commando Division" }
+		21 = { "%dst Rhodesian Marine Commando Division" }
+		22 = { "%dnd Rhodesian Marine Commando Division" }
+		23 = { "%drd Rhodesian Marine Commando Division" }
+		24 = { "%dth Rhodesian Marine Commando Division" }
+		25 = { "%dth Rhodesian Marine Commando Division" }
+		26 = { "%dth Rhodesian Marine Commando Division" }
+		27 = { "%dth Rhodesian Marine Commando Division" }
+		28 = { "%dth Rhodesian Marine Commando Division" }
+		29 = { "%dth Rhodesian Marine Commando Division" }
+		30 = { "%dth Rhodesian Marine Commando Division" }
+
+		# SAF didn't have any Marine divisions, these are all fictional.  Based on HoI3 lists, numbering independent of main sequence.
+	}
+}
+
+RHO_MTN_01 = 
+{
+	name = "Mountain Divisions"
+
+	for_countries = { RHO }
+
+	can_use = { always = yes }
+
+	division_types = { "mountaineers" }
+
+	# Number reservation system will tie to another group.
+	link_numbering_with = { RHO_INF_01  }
+
+	fallback_name = "%d Rhodesian Infantry Div."
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "%dst Rhodesian Infantry Div." }
+		2 = { "%dnd Rhodesian Infantry Div." }
+		3 = { "%drd Rhodesian Infantry Div." }
+		4 = { "%dth Rhodesian Infantry Div." }
+		5 = { "%dth Rhodesian Infantry Div." }
+		6 = { "%dth Rhodesian Infantry Div." }
+		7 = { "%dth Rhodesian Infantry Div." }
+		8 = { "%dth Rhodesian Infantry Div." }
+		9 = { "%dth Rhodesian Infantry Div." }
+		10 = { "%dth Rhodesian Infantry Div." }
+		11 = { "%dth Rhodesian Infantry Div." }
+		12 = { "%dth Rhodesian Infantry Div." }
+		13 = { "%dth Rhodesian Infantry Div." }
+		14 = { "%dth Rhodesian Infantry Div." }
+		15 = { "%dth Rhodesian Infantry Div." }
+		16 = { "%dth Rhodesian Infantry Div." }
+		17 = { "%dth Rhodesian Infantry Div." }
+		18 = { "%dth Rhodesian Infantry Div." }
+		19 = { "%dth Rhodesian Infantry Div." }
+		20 = { "%dth Rhodesian Infantry Div." }
+		21 = { "%dst Rhodesian Infantry Div." }
+		22 = { "%dnd Rhodesian Infantry Div." }
+		23 = { "%drd Rhodesian Infantry Div." }
+		24 = { "%dth Rhodesian Infantry Div." }
+		25 = { "%dth Rhodesian Infantry Div." }
+		26 = { "%dth Rhodesian Infantry Div." }
+		27 = { "%dth Rhodesian Infantry Div." }
+		28 = { "%dth Rhodesian Infantry Div." }
+		29 = { "%dth Rhodesian Infantry Div." }
+		30 = { "%dth Rhodesian Infantry Div." }
+		31 = { "%dst Rhodesian Infantry Div." }
+		32 = { "%dnd Rhodesian Infantry Div." }
+		33 = { "%drd Rhodesian Infantry Div." }
+		34 = { "%dth Rhodesian Infantry Div." }
+		35 = { "%dth Rhodesian Infantry Div." }
+		36 = { "%dth Rhodesian Infantry Div." }
+		37 = { "%dth Rhodesian Infantry Div." }
+		38 = { "%dth Rhodesian Infantry Div." }
+		39 = { "%dth Rhodesian Infantry Div." }
+		40 = { "%dth Rhodesian Infantry Div." }
+		41 = { "%dst Rhodesian Infantry Div." }
+		42 = { "%dnd Rhodesian Infantry Div." }
+		43 = { "%drd Rhodesian Infantry Div." }
+		44 = { "%dth Rhodesian Infantry Div." }
+		45 = { "%dth Rhodesian Infantry Div." }
+		46 = { "%dth Rhodesian Infantry Div." }
+		47 = { "%dth Rhodesian Infantry Div." }
+		48 = { "%dth Rhodesian Infantry Div." }
+		49 = { "%dth Rhodesian Infantry Div." }
+		50 = { "%dth Rhodesian Infantry Div." }
+		51 = { "%dst Rhodesian Infantry Div." }
+		52 = { "%dnd Rhodesian Infantry Div." }
+		53 = { "%drd Rhodesian Infantry Div." }
+
+		# None in service historically.  Uses main division sequencing.  Approach consistent with ENG and CAN.
+	}
+}
+
+RHO_PAR_01 = 
+{
+	name = "Airborne Divisions"
+
+	for_countries = { RHO }
+
+	can_use = { always = yes }
+
+	division_types = { "paratrooper" }
+
+	# Number reservation system will tie to another group.
+
+	fallback_name = "%d Rhodesian Airborne Commando Div."
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "%dst Rhodesian Airborne Commando Div." }
+		2 = { "%dnd Rhodesian Airborne Commando Div." }
+		3 = { "%drd Rhodesian Airborne Commando Div." }
+		4 = { "%dth Rhodesian Airborne Commando Div." }
+		5 = { "%dth Rhodesian Airborne Commando Div." }
+		6 = { "%dth Rhodesian Airborne Commando Div." }
+		7 = { "%dth Rhodesian Airborne Commando Div." }
+		8 = { "%dth Rhodesian Airborne Commando Div." }
+		9 = { "%dth Rhodesian Airborne Commando Div." }
+		10 = { "%dth Rhodesian Airborne Commando Div." }
+		11 = { "%dth Rhodesian Airborne Commando Div." }
+		12 = { "%dth Rhodesian Airborne Commando Div." }
+		13 = { "%dth Rhodesian Airborne Commando Div." }
+		14 = { "%dth Rhodesian Airborne Commando Div." }
+		15 = { "%dth Rhodesian Airborne Commando Div." }
+		16 = { "%dth Rhodesian Airborne Commando Div." }
+		17 = { "%dth Rhodesian Airborne Commando Div." }
+		18 = { "%dth Rhodesian Airborne Commando Div." }
+		19 = { "%dth Rhodesian Airborne Commando Div." }
+		20 = { "%dth Rhodesian Airborne Commando Div." }
+		21 = { "%dst Rhodesian Airborne Commando Div." }
+		22 = { "%dnd Rhodesian Airborne Commando Div." }
+		23 = { "%drd Rhodesian Airborne Commando Div." }
+		24 = { "%dth Rhodesian Airborne Commando Div." }
+		25 = { "%dth Rhodesian Airborne Commando Div." }
+		26 = { "%dth Rhodesian Airborne Commando Div." }
+		27 = { "%dth Rhodesian Airborne Commando Div." }
+		28 = { "%dth Rhodesian Airborne Commando Div." }
+		29 = { "%dth Rhodesian Airborne Commando Div." }
+		30 = { "%dth Rhodesian Airborne Commando Div." }
+
+		# SAF didn't have any Airborne divisions.  Have independent sequence.
+	}
+}

@@ -2,7 +2,7 @@ FEN_fenris_interests_cat = {
 
 	FEN_instruct_paraguay_intervene_ARG = {
 
-		icon = generic_political_discourse
+		icon = generic_operation
 
 		available = {
 			is_subject = no
@@ -121,7 +121,7 @@ FEN_fenris_interests_cat = {
 	}
 	FEN_start_SOV_revolt = {
 
-		icon = generic_political_discourse
+		icon = generic_nationalism
 
 		available = {
 			is_subject = no
@@ -221,9 +221,51 @@ FEN_fenris_interests_cat = {
 			SOV={country_event = {id = SOV_civil_war.3}}
 		}
 	}
-	FEN_USA_buisness_plot = {
+	FEN_use_sr_to_denouce_SOV = {
 
 		icon = generic_political_discourse
+
+		available = {
+			is_subject = no
+			NOT={has_country_flag = FEN_laying_low}
+			SOV={
+				OR={
+					has_stability < 0.33
+					custom_trigger_tooltip = {
+						tooltip = SOV_has_faction_SR_loyalty_50_or_less
+						check_variable = {var_SOV_factions_SR_loyalty < 50}
+					}
+				}
+			}
+		}
+
+		visible = {
+			SOV={
+				has_civil_war = no
+				NOT={has_government = fenris}
+			}
+			has_completed_focus = FEN_rasputins_play
+			OR={
+				SOV={has_character = SOV_rasputin}
+				has_country_flag = FEN_influence_in_SOV
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 50
+
+		modifier = {
+			
+		}
+
+		complete_effect = {
+			SOV={country_event = {id = SOV_civil_war.5}}
+		}
+	}
+	FEN_USA_buisness_plot = {
+
+		icon = generic_nationalism
 
 		available = {
 			is_subject = no
@@ -260,7 +302,7 @@ FEN_fenris_interests_cat = {
 	}
 	FEN_USA_skim_buisness_profits = {
 
-		icon = generic_political_discourse
+		icon = gre_paying_ifc_debt
 
 		available = {
 			is_subject = no
@@ -295,7 +337,7 @@ FEN_fenris_interests_cat = {
 	}
 	FEN_FAC_advance_to_stage_2 = {
 
-		icon = generic_political_discourse
+		icon = generic_operation
 
 		available = {
 			custom_trigger_tooltip={
@@ -328,7 +370,7 @@ FEN_fenris_interests_cat = {
 	}
 	FEN_FAC_obtain_passcode = {
 
-		icon = generic_political_discourse
+		icon = generic_operation
 
 		available = {
 			OR={
@@ -404,7 +446,7 @@ FEN_fenris_interests_cat = {
 	}
 	FEN_FAC_obtain_recon_information = {
 
-		icon = generic_political_discourse
+		icon =generic_operation
 
 		available = {
 			if={
@@ -499,7 +541,7 @@ FEN_fenris_interests_cat = {
 	}
 	FEN_lay_low = {
 
-		icon = generic_political_discourse
+		icon = recruit_operative
 
 		available = {
 			is_subject = no
@@ -542,7 +584,7 @@ FEN_fenris_interests_cat = {
 	}
 	FEN_quiet_rumors = {
 
-		icon = generic_political_discourse
+		icon = recruit_operative
 
 		available = {
 			is_subject = no
@@ -728,7 +770,7 @@ FEN_bunker_staff = {
 	}
 	FEN_start_covert_drafts = {
 
-		icon = generic_political_discourse
+		icon = generic_operation
 
 		available = {
 			is_subject = no
@@ -795,7 +837,7 @@ FEN_bunker_staff = {
 
 		allowed = { always = no }
 
-		icon = ger_mefo_bills
+		icon = generic_military
 
 		available = {
 			has_political_power < 0
@@ -849,7 +891,7 @@ FEN_bunker_staff = {
 	}
 	FEN_pull_paraguay_volunteers = {
 
-		icon = generic_political_discourse
+		icon = generic_military
 
 		available = {
 			is_subject = no
@@ -893,7 +935,7 @@ FEN_bunker_staff = {
 FEN_bunker_industry_expansion = {
 	FEN_repair_main_generator = {
 
-		icon = generic_political_discourse
+		icon = generic_wreckers
 
 		available = {
 			#check_variable = { FEN_total_bunker_slots > FEN_used_bunker_slots}
@@ -931,7 +973,7 @@ FEN_bunker_industry_expansion = {
 
 	FEN_expand_industry = {
 
-		icon = generic_political_discourse
+		icon = generic_factory
 
 		available = {
 			check_variable = { FEN_total_bunker_slots > FEN_used_bunker_slots}
@@ -972,7 +1014,7 @@ FEN_bunker_industry_expansion = {
 	}
 	FEN_expend_manpower_to_hurry_civ = {
 
-		icon = generic_political_discourse
+		icon = generic_wreckers
 
 		available = {
 			has_manpower > 2000
@@ -1001,7 +1043,7 @@ FEN_bunker_industry_expansion = {
 	}
 	FEN_expand_military_industry = {
 
-		icon = generic_political_discourse
+		icon = generic_industry
 
 		available = {
 			check_variable = { FEN_total_bunker_slots > FEN_used_bunker_slots}
@@ -1044,7 +1086,7 @@ FEN_bunker_industry_expansion = {
 	}
 	FEN_expend_manpower_to_hurry_mil = {
 
-		icon = generic_political_discourse
+		icon = generic_wreckers
 
 		available = {
 			has_manpower > 2000
@@ -1073,7 +1115,7 @@ FEN_bunker_industry_expansion = {
 	}
 	FEN_rush_order_mil = {
 
-		icon = generic_political_discourse
+		icon = generic_wreckers
 
 		available = {
 			num_of_civilian_factories_available_for_projects > 0
@@ -1103,7 +1145,7 @@ FEN_bunker_industry_expansion = {
 	}
 	FEN_agent_coordination_center = {
 
-		icon = generic_political_discourse
+		icon = generic_intelligence_operation
 
 		available = {
 			check_variable = { FEN_total_bunker_slots > FEN_used_bunker_slots}
@@ -1148,8 +1190,8 @@ FEN_bunker_industry_expansion = {
 	}
 	FEN_expand_oil_silos = {
 
-		icon = generic_political_discourse
-
+		icon = oil
+		
 		available = {
 			check_variable = { FEN_total_bunker_slots > FEN_used_bunker_slots}
 			num_of_civilian_factories_available_for_projects > 2
@@ -1181,7 +1223,7 @@ FEN_bunker_industry_expansion = {
 	}
 	FEN_expend_manpower_to_hurry_silo = {
 
-		icon = generic_political_discourse
+		icon = generic_wreckers
 
 		available = {
 			has_manpower > 2000
@@ -1210,7 +1252,7 @@ FEN_bunker_industry_expansion = {
 	}
 	FEN_expand_building_slots = {
 
-		icon = generic_political_discourse
+		icon = generic_construction
 
 		available = {
 			is_subject = no
@@ -1255,7 +1297,7 @@ FEN_bunker_industry_expansion = {
 	}
 	FEN_expend_manpower_to_hurry_slots = {
 
-		icon = generic_political_discourse
+		icon = generic_wreckers
 
 		available = {
 			has_manpower > 2000
@@ -1295,7 +1337,7 @@ FEN_bunker_industry_expansion = {
 	}
 	FEN_expand_bunker_depth = {
 
-		icon = generic_political_discourse
+		icon = generic_construction
 
 		available = {
 			is_subject = no
