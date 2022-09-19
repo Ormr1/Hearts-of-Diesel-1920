@@ -1,0 +1,40 @@
+ideas = {
+    country = {
+        SPR_idea_alfonso_xiii = {
+            name = SPR_idea_alfonso_xiii
+
+			picture = alfonso_xiii
+
+			allowed = {
+				original_tag = SPR
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				stability_factor = 0.10
+			}
+        }
+        SPR_idea_galaten_raids = {
+            name = SPR_idea_galaten_raids
+
+            picture = galaten_raids
+
+            allowed = {
+				original_tag = SPR
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+            modifier = {
+                stability_factor = -0.10
+                consumer_goods_factor = 0.10
+                weekly_manpower = -10
+            }
+        }
+    }
+}

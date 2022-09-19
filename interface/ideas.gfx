@@ -1868,6 +1868,14 @@ spriteTypes = {
 		name = "GFX_idea_hispanian_advisors"
 		texturefile = "gfx/interface/ideas/SPR/idea_hispanian_advisors.png"
 	}
+	spriteType = {
+		name = "GFX_idea_alfonso_xiii"
+		texturefile = "gfx/interface/ideas/SPR/idea_alfonso_xiii.png"
+	}
+	spriteType = {
+		name = "GFX_idea_galaten_raids"
+		texturefile = "gfx/interface/ideas/SPR/idea_galaten_raids.png"
+	}
 
 	spriteType = {
 		name = "GFX_idea_francisco_franco"

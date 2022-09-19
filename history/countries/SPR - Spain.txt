@@ -195,6 +195,8 @@ if = {
 
 add_ideas = {
 	SPR_colonial_obession
+	SPR_idea_alfonso_xiii
+	SPR_idea_galaten_raids
 }
 
 set_research_slots = 3
@@ -445,6 +447,11 @@ if = {
 	limit = {
 		has_dlc = "La Resistance"
 	}
+}
+
+declare_war_on = {
+	target = VIN
+	type = annex_everything
 }
 
 ### VARIANTS ###

@@ -18,11 +18,21 @@ state={
 			air_base = 2
 			4401 = {
 				naval_base = 4
-
 			}
-
 		}
-
+		SPR = {
+			set_province_controller = 12232
+			set_province_controller = 4401
+			set_province_controller = 10261
+			set_province_controller = 1396
+			set_province_controller = 1423
+			set_province_controller = 7303
+			set_province_controller = 12133
+			set_province_controller = 4223
+			set_province_controller = 7331
+			set_province_controller = 4284
+			set_province_controller = 4341
+		}
 	}
 
 	provinces={
