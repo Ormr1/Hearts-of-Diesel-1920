@@ -27,6 +27,9 @@ add_ideas={
 set_convoys = 20
 
 recruit_character = RHO_philip_lyttelton_gell
+recruit_character = RHO_d_s_h_sommerville
+recruit_character = RHO_john_sydney_morris
+
 set_politics = {
 	ruling_party = neutrality
 	last_election = "1899.1.1"
