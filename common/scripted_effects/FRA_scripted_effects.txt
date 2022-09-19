@@ -589,3 +589,63 @@ FRA_transfer_western_africa_effect = {
 		transfer_state = 557
 	}
 }
+
+#Important to put LOWEST first
+FRA_Spreading_News_level_down = {
+	if = {
+		limit = { has_idea = FRA_Spreading_News_7 }
+		custom_effect_tooltip = USA_great_depression_down_tt
+		swap_ideas = {
+			remove_idea = FRA_Spreading_News_7
+			add_idea = FRA_Spreading_News_6
+		}
+	}
+	if = {
+		limit = { has_idea = FRA_Spreading_News_6 }
+		custom_effect_tooltip = USA_great_depression_down_tt
+		swap_ideas = {
+			remove_idea = FRA_Spreading_News_6
+			add_idea = FRA_Spreading_News_5
+		}
+	}
+	if = {
+		limit = { has_idea = FRA_Spreading_News_6 }
+		custom_effect_tooltip = USA_great_depression_down_tt
+		swap_ideas = {
+			remove_idea = FRA_Spreading_News_6
+			add_idea = FRA_Spreading_News_5
+		}
+	}
+	if = {
+		limit = { has_idea = FRA_Spreading_News_5 }
+		custom_effect_tooltip = USA_great_depression_down_tt
+		swap_ideas = {
+			remove_idea = FRA_Spreading_News_5
+			add_idea = FRA_Spreading_News_4
+		}
+	}
+	if = {
+		limit = { has_idea = FRA_Spreading_News_4 }
+		custom_effect_tooltip = USA_great_depression_down_tt
+		swap_ideas = {
+			remove_idea = FRA_Spreading_News_4
+			add_idea = FRA_Spreading_News_3
+		}
+	}
+	if = {
+		limit = { has_idea = FRA_Spreading_News_3 }
+		custom_effect_tooltip = USA_great_depression_down_tt
+		swap_ideas = {
+			remove_idea = FRA_Spreading_News_3
+			add_idea = FRA_Spreading_News_2
+		}
+	}
+	if = {
+		limit = { has_idea = FRA_Spreading_News_2 }
+		custom_effect_tooltip = USA_great_depression_down_tt
+		swap_ideas = {
+			remove_idea = FRA_Spreading_News_2
+			add_idea = FRA_Spreading_News_
+		}
+	}
+}

@@ -4260,7 +4260,8 @@ focus = {
     }
 }
 ### REVOLUTIONARY / HISTORICAL
-focus = {
+### Note - Before the Civil War starts, the Frankish Player will have an Anti-Monarchist National Idea, thing is, i don't know how to code that-
+focus = { 
     id = FRA_Fight_For_Your_Freedom
     icon = placeholder
     mutually_exclusive = { focus = FRA_Letat_Cest_Moi }
@@ -4352,7 +4353,7 @@ focus = { ### Maybe cheaper + stronger guns for much less reliability?
         focus = FRA_Underground_Factories
     }
 }
-focus = {
+focus = { ### Add idea that increases with each focus in this path
     id = FRA_Gain_Political_Alliances
     icon = placeholder
     relative_position_id = FRA_Fight_For_Your_Freedom
@@ -4362,15 +4363,14 @@ focus = {
     ai_will_do = {
         factor = 10
     }
+    available = {
+        has_completed_focus = FRA_Gain_International_Support
+    }
     search_filters = {FOCUS_FILTER_POLITICAL}
     completion_reward = {
-        add_popularity = {
-            ideology = democratic
-            popularity = 0.125
-        }
-        add_popularity = {
-            ideology = communism
-            popularity = 0.125
+        swap_ideas = {
+            remove_idea = FRA_Spreading_News
+            add_idea = FRA_Political_Connections
         }
     }
     prerequisite = {
@@ -4388,11 +4388,14 @@ focus = {
     ai_will_do = {
         factor = 10
     }
+    available = {
+        has_completed_focus = FRA_Befriend_the_Democrats
+    }
     search_filters = {FOCUS_FILTER_POLITICAL}
     completion_reward = {
-        add_popularity = {
-            ideology = communism
-            popularity = 0.1
+        swap_ideas = {
+            remove_idea = FRA_Mixed_Political_Connections
+            add_idea = FRA_Authoritarian_Political_Connections
         }
     }
     prerequisite = {
@@ -4411,9 +4414,9 @@ focus = {
     }
     search_filters = {FOCUS_FILTER_POLITICAL}
     completion_reward = {
-        add_popularity = {
-            ideology = communism
-            popularity = 0.1
+        swap_ideas = {
+            remove_idea = FRA_Political_Connections
+            add_idea = FRA_Free_Political_Connections
         }
     }
     prerequisite = {
@@ -4433,7 +4436,10 @@ focus = {
     cost = 7
     search_filters = {FOCUS_FILTER_POLITICAL}
     completion_reward = {
-        country_event = fra_revolution.16
+        swap_ideas = {
+            remove_idea = FRA_Mixed_Political_Connections
+            add_idea = FRA_United_Political_Connections
+        }
     }
     prerequisite = {
         focus = FRA_Gain_Support_Of_the_Anarchists
@@ -4455,11 +4461,14 @@ focus = {
     ai_will_do = {
         factor = 10
     }
+    available = {
+        has_completed_focus = FRA_Gain_Support_Of_the_Anarchists
+    }
     search_filters = {FOCUS_FILTER_POLITICAL}
     completion_reward = {
-        add_popularity = {
-            ideology = democratic
-            popularity = 0.05
+        swap_ideas = {
+            remove_idea = FRA_Free_Political_Connections
+            add_idea = FRA_Mixed_Political_Connections
         }
     }
     prerequisite = {
@@ -4573,18 +4582,7 @@ focus = {
     }
     search_filters = {FOCUS_FILTER_POLITICAL}
     completion_reward = {
-        add_timed_idea = {
-            idea = FRA_Spreading_News
-            days = 365
-        }
-        add_popularity = {
-            ideology = democratic
-            popularity = 0.05
-        }
-        add_popularity = {
-            ideology = communism
-            popularity = 0.05
-        }
+        FRA_spreading_news_level_down = yes
     }
     prerequisite = {
         focus = FRA_Fight_For_Your_Freedom
@@ -4638,8 +4636,9 @@ focus = { ### Birth Of a New Nation - Could give National Spirit/Idea that lets 
     }
     search_filters = {FOCUS_FILTER_POLITICAL}
     completion_reward = {
-        add_ideas = {
-            FRA_Recovering_From_the_Civil_War
+        add_timed_idea = {
+            idea = FRA_Recovering_From_the_Civil_War
+            days = 1095
         }
     }
     prerequisite = {
@@ -4847,7 +4846,7 @@ focus = { ### Focus that rids the nation of Political Instability (in this ideol
         focus = FRA_The_Workers_Paradise
     }
 }
-focus = {
+focus = { ### Add base stability, and slightly increased ideology for Dem, NA, and Com?
     id = FRA_Bribe_Business_Owners
     icon = placeholder
     relative_position_id = FRA_Fight_For_Your_Freedom
@@ -4880,6 +4879,10 @@ focus = {
     completion_reward = {
         country_event = fra_revolution.17
     }
+    available = {
+        focus = FRA_Light_the_Torch
+        has_civil_war = no
+    }
     prerequisite = {
         focus = FRA_Unite_the_Left
     }
@@ -4903,14 +4906,6 @@ focus = { ### Alternate history path, needing the player to manage each politica
     prerequisite = {
         focus = FRA_Create_a_Political_Union
     }
-    available = {
-        focus = FRA_Light_the_Torch
-        has_civil_war = no
-    }
-    available={
-        has_civil_war = no
-        has_completed_focus = FRA_Light_the_Torch
-    }
 }
 
 focus = { ### Opposite of Political Autonomy, where all of the parties (Mainly communism, democracy, and anarchism) combine to form a single party, as an attemp to stabilize the country more, can only be done after civil war
@@ -4929,14 +4924,6 @@ focus = { ### Opposite of Political Autonomy, where all of the parties (Mainly c
     }
     prerequisite = {
         focus = FRA_Create_a_Political_Union
-    }
-    available = {
-        focus = FRA_Light_the_Torch
-        has_civil_war = no
-    }
-    available={
-        has_civil_war = no
-        has_completed_focus = FRA_Light_the_Torch
     }
 }
 focus = {
