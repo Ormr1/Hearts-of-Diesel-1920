@@ -5,7 +5,13 @@ scripted_gui = {
 		window_name = "USA_Senate_GUI"
 
 		dynamic_lists = {
-			parliament_diagram = {
+			house_diagram = {
+				array = HOUSE_POS_X
+				change_scope = no
+				entry_container = USA_House_container
+				index = house_seat_idx
+			}
+			senate_diagram = {
 				array = USA_Senate_X
 				change_scope = no
 				entry_container = USA_Senate_container
@@ -14,7 +20,12 @@ scripted_gui = {
 		}
 
 		properties = {
-			parliament_dot_icon = {
+			house_dot_icon = {
+				x = HOUSE_POS_X^house_seat_idx
+				y = HOUSE_POS_Y^house_seat_idx
+				frame = USA_HOUSE_Frame^house_seat_idx
+			}
+			senate_dot_icon = {
 				x = USA_Senate_X^seat_idx
 				y = USA_Senate_Y^seat_idx
 				frame = USA_Senate_Frame^seat_idx
