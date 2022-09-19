@@ -194,6 +194,9 @@ FEN_fenris_interests_cat = {
 		complete_effect = {
 			SOV={country_event = {id = SOV_civil_war.2}}
 		}
+		ai_will_do = {
+			base = 20
+		}
 	}
 	FEN_stage_tsar_crackdown_SOV = {
 
@@ -226,6 +229,9 @@ FEN_fenris_interests_cat = {
 
 		complete_effect = {
 			SOV={country_event = {id = SOV_civil_war.3}}
+		}
+		ai_will_do = {
+			base = 20
 		}
 	}
 	FEN_use_sr_to_denouce_SOV = {
@@ -274,6 +280,13 @@ FEN_fenris_interests_cat = {
 				tooltip = FEN_loses_hold_over_sr_by
 			}
 		}
+		ai_will_do = {
+			base = 25
+			modifier = {
+				factor = 0
+				check_variable = {SOV.var_SOV_factions_SR_loyalty > FEN.FEN_rusviet_sr_influence}
+			}
+		}
 	}
 	FEN_increase_our_hold_over_sr_SOV = {
 
@@ -315,6 +328,13 @@ FEN_fenris_interests_cat = {
 			add_to_variable = {
 				FEN_rusviet_sr_influence = 10
 				tooltip = FEN_increase_hold_over_sr_by
+			}
+		}
+		ai_will_do = {
+			base = 35
+			modifier = {
+				factor = 0
+				check_variable = {SOV.var_SOV_factions_SR_loyalty < FEN.FEN_rusviet_sr_influence}
 			}
 		}
 	}
@@ -388,6 +408,9 @@ FEN_fenris_interests_cat = {
 
 		complete_effect = {
 			FEN_increase_suspicion_random = yes
+		}
+		ai_will_do = {
+			factor = 10
 		}
 	}
 	FEN_FAC_advance_to_stage_2 = {

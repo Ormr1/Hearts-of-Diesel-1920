@@ -183,6 +183,11 @@ guiTypes = {
 			spriteType = "GFX_fenris_map_location"
 			position = { x=172 y=38 }
 		}
+		iconType = {
+			name ="factory_fenris_map_locator_kerguelen"
+			spriteType = "GFX_fenris_map_location"
+			position = { x=240 y=114 }
+		}
 	}
 	containerWindowType = {#staff
 		name = "fen_bunker_staff_ui_window"

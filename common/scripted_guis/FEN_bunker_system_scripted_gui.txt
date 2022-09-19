@@ -118,6 +118,9 @@ scripted_gui = {
 			factory_fenris_map_locator_hispania_visible = {
 				 has_country_flag = FEN_influence_in_SPR
 			}
+			factory_fenris_map_locator_kerguelen_visible = {
+				owns_state = 713
+			}
 		}
 		dynamic_lists = {
 			FEN_controlled_country_list = {

@@ -8213,6 +8213,10 @@ spriteTypes = {
 		texturefile = gfx/leaders/RHO/Portrait_philip_lyttelton_gell.dds
 	}
 	spriteType = {
+		name = GFX_portrait_john_sydney_morris
+		texturefile = gfx/leaders/RHO/Portrait_john_sydney_morris.dds
+	}
+	spriteType = {
 		name = GFX_portrait_jimmy_clements
 		texturefile = gfx/leaders/WIR/Portrait_jimmy_clements.dds
 	}

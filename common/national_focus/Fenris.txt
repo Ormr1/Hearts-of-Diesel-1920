@@ -512,6 +512,9 @@ focus_tree = {
 		completion_reward = {
 			country_event = {id=fenris.9}
 		}
+		ai_will_do={
+			factor = 50
+		}
 	}
 	focus = {
 		id = FEN_supporting_coup
@@ -564,6 +567,9 @@ focus_tree = {
 		completion_reward = {
 			#unlock usonian decisions
 			country_event = {id = fenris.8}
+		}
+		ai_will_do={
+			factor = 50
 		}
 	}
 	focus = {
@@ -1015,7 +1021,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		cost = 10
-		search_filters = {   }
+		search_filters = {FOCUS_FILTER_RESEARCH}
 
 		prerequisite = { focus = FEN_the_shining_prize}
 		
@@ -1043,6 +1049,29 @@ focus_tree = {
 				bonus = 0.50
 				uses = 3
 				category = armor
+			}
+		}
+	}
+	focus = {
+		id = FEN_Teslas_airship_fleet
+		icon = GFX_focus_FEN_study_designs
+		relative_position_id = FEN_the_shining_prize
+		x = -2
+		y = 1
+		cost = 10
+		search_filters = {FOCUS_FILTER_RESEARCH}
+
+		prerequisite = { focus = FEN_the_shining_prize}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.25
+				uses = 3
+				category = light_air
+				category = medium_air
+				category = heavy_air
 			}
 		}
 	}
@@ -1096,6 +1125,9 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
+		}
+		ai_will_do={
+			factor = 25
 		}
 	}
 	focus = {
@@ -1215,13 +1247,49 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = FEN_airships
+		icon = GFX_goal_generic_air_doctrine
+		x = 40
+		y = 0
+		cost = 10
+		search_filters = {   }
+
+		available={has_completed_focus = FEN_military_administration}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas= {FEN_worldwide_transports_idea}
+		}
+	}
+	focus = {
+		id = FEN_covert_ship_divertions
+		relative_position_id = FEN_airships
+		icon = GFX_goal_generic_air_doctrine
+		prerequisite = { focus = FEN_airships}
+		x = 1
+		y = 1
+		cost = 10
+		search_filters = {   }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = convoy
+				amount = 10
+				producer = USA
+			}
+		}
+	}
+	focus = {
 		id = FEN_focus_on_mercenaries
 		icon = GFX_focus_FEN_mercenaries
 		relative_position_id = FEN_military_expansion
 		x = 3
 		y = 1
 		cost = 10
-		search_filters = {   }
+		search_filters = {FOCUS_FILTER_MANPOWER}
 
 		prerequisite = { focus = FEN_military_expansion}
 		
@@ -1244,7 +1312,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		cost = 10
-		search_filters = {   }
+		search_filters = {FOCUS_FILTER_MANPOWER}
 
 		prerequisite = { focus = FEN_focus_on_mercenaries}
 		
@@ -1268,7 +1336,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		cost = 10
-		search_filters = {   }
+		search_filters = {FOCUS_FILTER_RESEARCH}
 
 		prerequisite = { focus = FEN_secret_contracts}
 		
@@ -1363,7 +1431,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		cost = 10
-		search_filters = {   }
+		search_filters = {FOCUS_FILTER_RESEARCH }
 
 		prerequisite = { focus = FEN_hidden_talent_hunters}
 		
@@ -1433,7 +1501,7 @@ focus_tree = {
 		x = 1
 		y = 2
 		cost = 10
-		search_filters = {   }
+		search_filters = {FOCUS_FILTER_MANPOWER}
 
 		prerequisite = { 
 			focus = FEN_focus_on_elte_troops
@@ -1457,7 +1525,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		cost = 10
-		search_filters = {   }
+		search_filters = {FOCUS_FILTER_MANPOWER}
 
 		prerequisite = { 
 			focus = FEN_the_problem_of_unemployed_troops
@@ -1493,7 +1561,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		cost = 10
-		search_filters = {   }
+		search_filters = {FOCUS_FILTER_RESEARCH}
 
 		prerequisite = { 
 			focus = FEN_organise_more_troops

@@ -163,7 +163,7 @@ units = {
 	}
 	division= {	
 		name = "3ème Brigade de Chars de Combat"
-		location = 11502
+		location = 9523
 		division_template = "Brigade de Chars de Combat" 		# FT-17s
 		start_experience_factor = 0.2
 		force_equipment_variants = { gw_tank_equipment = { owner = "FRA" } }
@@ -248,7 +248,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 1
 		}
-		location = 11483
+		location = 3549
 		division_template = "Division d'Infanterie Motorisée" 	# All motorized are frontline, best equipment
 		start_experience_factor = 0.3
 	}
@@ -257,7 +257,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 7
 		}
-		location = 575
+		location = 6599
 		division_template = "Division d'Infanterie" 	# Second line, reserve equipment
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
@@ -896,43 +896,6 @@ units = {
 		division_template = "Brigade Coloniale" 	# Miltia unit, reserve equipment
 		force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
 		start_equipment_factor = 0.15
-
-	}
-
-
-	##### Indochina Theatre #####
-	### Army Group: Troupes d'Indochine ### -- Saigon
-	division= {	# "Division de Tonkin"
-		division_name = {
-			is_name_ordered = yes
-			name_order = 91
-		}
-		location = 4401
-		division_template = "Division Coloniale"	# Colonial unit, reserve equipment
-		force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
-
-	}
-	division= {	# "Division de Cochinchine-Cambodge"
-		division_name = {
-			is_name_ordered = yes
-			name_order = 92
-		}
-		location = 4075
-		division_template = "Division Coloniale" 	# Colonial unit, reserve equipment
-		force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
-
-	}
-	division= {	
-		name = "Brigade d'Annam-Laos"	
-		location = 7376
-		division_template = "Brigade Coloniale" 	# Colonial unit, reserve equipment
-		force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
 
 	}
 }
