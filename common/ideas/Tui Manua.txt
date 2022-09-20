@@ -3,7 +3,7 @@ ideas = {
 		SAM_holy_keels = {
 
 			allowed = {
-				original_tag = SAM
+				always = no
 			}
 
 			allowed_civil_war = {
@@ -26,7 +26,7 @@ ideas = {
 		SAM_empire_of_the_sea = {
 
 			allowed = {
-				original_tag = SAM
+				always = no
 			}
 
 			allowed_civil_war = {

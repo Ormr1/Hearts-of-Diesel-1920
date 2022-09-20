@@ -20,6 +20,7 @@ set_variable = { var = FEN_covert_reveal_risk_percentile value = 1 }
 set_variable = { var = FEN_rusviet_sr_influence value = 52 }
 set_country_flag = FEN_influence_in_SOV
 set_country_flag = FEN_influence_in_USA
+set_country_flag = FEN_rogue_carnavon
 
 
 USA={

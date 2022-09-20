@@ -198,3 +198,110 @@ country_event = {#disdents arrive
 		add_manpower = 1000
 	}
 }
+country_event = {#Discovered Carnavons location
+	id = fenris.12
+	title = fenris.12.t
+	desc = fenris.12.d
+	picture = GFX_report_event_finnish_letter
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = fenris.12.a
+		set_country_flag = FEN_discovered_carnavon_location
+	}
+}
+country_event = {#killed carnavon
+	id = fenris.13
+	title = fenris.13.t
+	desc = fenris.13.d
+	picture = GFX_report_event_finnish_letter
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = fenris.13.a
+		add_political_power = 100
+		hidden_effect={
+			clr_country_flag = FEN_rogue_carnavon
+			EGY={
+				news_event = fenris.15
+				#remove "the broker" and any related mechanics
+			}
+			ENG={#simply a flavour event
+				news_event = fenris.16
+			}
+		}
+	}
+}
+country_event = {#carnavon_escapes
+	id = fenris.14
+	title = fenris.14.t
+	desc = fenris.14.d
+	picture = GFX_report_event_finnish_letter
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = fenris.14.a
+		
+	}
+}
+
+news_event = {#carnavon dies - EGY
+	id = fenris.15
+	title = {
+		text = fenris.15.t.a
+		trigger = {
+			has_country_flag = EGY_the_broker #update this later
+		}
+	}
+	title = {
+		text = fenris.15.t.b
+		trigger = {
+			NOT={has_country_flag = EGY_the_broker} #update this later
+		}
+	}
+	desc = {
+		text = fenris.15.da
+		trigger = {
+			has_country_flag = EGY_the_broker #update this later
+		}
+	}
+	desc = {
+		text = fenris.15.d
+		trigger = {
+			NOT={has_country_flag = EGY_the_broker} #update this later
+		}
+	}
+	picture = GFX_news_event_generic_ruins
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = fenris.15.a
+		trigger={
+			has_country_flag = EGY_the_broker #update this later
+		}
+		clr_country_flag = EGY_the_broker #update this later
+	}
+	option = {
+		name = fenris.15.b
+		trigger={
+			NOT={has_country_flag = EGY_the_broker }#update this later
+		}
+	}
+}
+news_event = {#carnavon dies - ENG
+	id = fenris.16
+	title = fenris.16.t
+	desc = fenris.16.d
+	picture = GFX_news_event_generic_ruins
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = fenris.16.a
+		
+	}
+}

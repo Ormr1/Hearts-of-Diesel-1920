@@ -102,6 +102,110 @@ map_factory_routes = { ### 1/25
 	}
 }
 
+plan_bomb_near_carnavon = { ### 1/25
+	icon = GFX_raid_trotskys_villa
+	map_icon = GFX_raid_trotskys_villa_map
+	name = fenris_recon_factory_op
+	desc = fenris_recon_factory_op_desc
+	days = 60
+
+	priority = 11
+
+	allowed = {
+		original_tag = FEN
+	}
+	available = { 
+		NOT = { has_country_flag = FEN_carnavon_dead }
+	}
+	visible = {
+		has_country_flag = FEN_discovered_carnavon_location
+		NOT = { has_country_flag = FEN_carnavon_dead }
+		FROM = {
+			controls_state = 447
+		}
+		network_national_coverage = {
+			target = FROM
+			value > 0
+		}
+	}
+
+	operatives = 2
+
+	# Integer [0-100] - Every operation has a hard requirement of network strength in the target country
+	network_strength = 25
+
+	equipment = {
+		support_equipment = 25
+	}
+
+	on_start = {  # SCOPE_OPERATION
+		
+	}
+
+	outcome_modifiers = { operation_outcome }
+	cost_modifiers = { operation_cost }
+	risk_modifiers = { operation_risk }
+
+	outcome_potential = {
+		custom_effect_tooltip = map_factory_routes_outcome_tt
+	}
+	risk_chance = 0.30
+	experience = 3
+	# outcome is an effect that runs when the operation has completed
+	outcome_execute = { # SCOPE_OPERATION
+		ROOT = { country_event = { id = fenris.13 } } #SUCCESS - obtained maps
+	}
+
+	outcome_extra_chance = 0.33
+
+	outcome_extra_execute = {
+		ROOT = { country_event = { id = fenris.14 } } #FAILURE - unable to map area
+	}
+
+	# This is where all the separate phases are defined
+	# Each phase for an operation may have a single actual phase assigned to it, which is determined here
+	phases = { #infiltration 
+		infiltration_border = { base = 60 }
+		infiltration_submarine = { base = 20 }
+		infiltration_diplomatic = {
+			base = 20
+			modifier = {
+				FROM = {
+					has_war_with = ROOT
+				}
+				factor = 0
+			}
+		}
+	}
+	phases = { 
+		infiltrate_military_bribe = { base = 40 }
+		infiltrate_military_seduction = { base = 20 }
+		infiltrate_military_ideological_supporter = {
+			base = 40
+			modifier = {
+				FROM = { has_government = ROOT }
+				factor = 0
+			}
+		}
+	}
+	phases = { 
+		exfiltration_border = { base = 40 }
+		exfiltration_go_to_ground = { base = 30 }
+		exfiltration_submarine_pickup = { base = 20 }
+		exfiltration_air_pickup = { 
+			base = 10
+			modifier = {
+				ROOT = { 
+					has_equipment = {
+						transport_plane_equipment < 1
+					}
+				}
+				factor = 0 #less likely if we have no transports
+			}
+		}
+	}
+}
+
 
 #operation_infiltrate_risk
 #operation_infiltrate_outcome

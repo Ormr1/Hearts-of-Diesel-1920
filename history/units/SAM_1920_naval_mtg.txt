@@ -1,0 +1,102 @@
+﻿
+
+units = {
+	
+	##### Naval OOB #####
+	fleet = {
+		name = "Tele Fua"			
+		naval_base = 7290 # Apia
+		task_force = {
+			name = "Tele Fua"
+			location = 7290 # Apia
+			ship = { name = "TMRS Samoa" pride_of_the_fleet = yes definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = SAM version_name = "Samoa Class"} } }
+			ship = { name = "TMRS Tonga" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = SAM version_name = "Samoa Class"} } }
+			ship = { name = "TMRS Fa'aeau'u" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = SAM version_name = "Fa aeanu u Class"} } }
+			ship = { name = "TMRS Visala" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = SAM version_name = "Fa aeanu u Class"} } }
+			ship = { name = "TMRS Alalamua" definition = battleship start_experience_factor = 0.4 equipment = { ship_hull_pre_dreadnought = { amount = 1 owner = SAM version_name = "Alalamua Class"} } }
+			ship = { name = "TMRS Tuli Fetu" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = SAM version_name = "Tuli Fetu Class"} } }
+			ship = { name = "TMRS Talita" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = SAM version_name = "Tuli Fetu Class"} } }
+			
+			ship = { name = "TMRS Fa'amaualuga" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SAM version_name = "Fa amaualuga Class"} } }
+			ship = { name = "TMRS Pa'a" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SAM version_name = "Fa amaualuga Class"} } }
+			ship = { name = "TMRS Maunu" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SAM version_name = "Fa amaualuga Class"} } }
+			ship = { name = "TMRS I'a Pelu" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SAM version_name = "Fa amaualuga Class"} } }
+			ship = { name = "TMRS Tulaga Tasi" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SAM version_name = "Fa amaualuga Class"} } }	
+			ship = { name = "TMRS Piko" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SAM version_name = "Fa amaualuga Class"} } }
+			ship = { name = "TMRS Tagata Tulimanu" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SAM version_name = "Tagata Tulimanu Class"} } }
+			ship = { name = "TMRS Va'aiga" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SAM version_name = "Tagata Tulimanu Class"} } }
+		}
+	}
+	fleet = {
+		name = "2nd Tele Fua"			
+		naval_base = 4543 # Auckland
+		task_force = {				
+			name = "Fua Aotearoua"			
+			location = 4543 # Auckland
+			ship = { name = "TMRS Makelita" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = SAM version_name = "Fa aeau u Class"} } }
+			ship = { name = "TMRS A'o Mamao" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = SAM version_name = "Tuli Fetu Class"} } }
+			ship = { name = "TMRS Apia" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = SAM version_name = "Tuli Fetu Class"} } }
+			ship = { name = "TMRS Asau" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = SAM version_name = "Tuli Fetu Class"} } }
+			ship = { name = "TMRS Lino" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SAM version_name = "Tagata Tulimanu Class"} } }
+			ship = { name = "TMRS Matau" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SAM version_name = "Tagata Tulimanu Class"} } }
+			ship = { name = "TMRS Nafanua" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SAM version_name = "Fa amaualuga Class"} } }
+		}				
+	}
+}
+instant_effect = {
+
+	### Ships Under Contruction ###
+	# 
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_heavy_1
+			creator = "SAM" 
+			version_name = "Samoa Class"
+		}
+		name = "TMRS Tahiti"
+		requested_factories = 1
+		progress = 0.75
+		amount = 1
+	}
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_heavy_1
+			creator = "SAM" 
+			version_name = "Samoa Class"
+		}
+		name = "TMRS Aoutearoua"
+		requested_factories = 1
+		progress = 0.58
+		amount = 1
+	}
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_light_1
+			creator = "SAM" 
+			version_name = "Tagata Tulimanu Class"
+		}
+		requested_factories = 1
+		progress = 0.6
+		amount = 2
+	}
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_light_1
+			creator = "SAM" 
+			version_name = "Tagata Tulimanu Class"
+		}
+		requested_factories = 1
+		progress = 0.6
+		amount = 2
+	}
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_light_1
+			creator = "SAM" 
+			version_name = "Tagata Tulimanu Class"
+		}
+		requested_factories = 1
+		progress = 0.4
+		amount = 2
+	}
+}

@@ -1,0 +1,91 @@
+﻿##### Tui Manua NAME LISTS #####
+### REGULAR DESTROYER NAMES###
+SAM_DD_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_DESTROYERS
+
+	for_countries = { SAM }
+
+	can_use = {
+		not = { has_government = communism }
+	}
+
+	type = ship
+	ship_types = { ship_hull_light destroyer }			
+
+	prefix = "TMRS "							
+	fallback_name = "%d. Fa'aleaga"					
+
+	unique = {											
+		# 
+		"Matagi" "Tagata Folau" "Fa'amaualuga" "Pa'a" "Maunu" "I'a Pelu" "Tulaga Tasi" "Piko" "Tagata Tulimanu" "Va'aiga" "Lino" "Matau" "Nafanua" "Ulu o le tao" "U'a'i" "Apelu" "Manaia" "Apatu"
+	}
+}
+
+### LIGHT CRUISER NAMES###
+SAM_CL_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_CL
+
+	for_countries = { SAM }
+
+	can_use = { 
+		not = { has_government = communism }
+	}
+
+	type = ship
+	ship_types = { ship_hull_cruiser light_cruiser heavy_cruiser }
+	
+	prefix = "TMRS "							
+	fallback_name = "%d. Tagata Folau"
+
+	unique = {
+		#major cites
+		"Nuku'alofa" "Avarua" "Pirae" "Mahina" "Paea" "Papao" "Tafuna"
+	}
+}
+
+### BATTLESHIP NAMES ###
+SAM_BB_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_BB
+
+	for_countries = { SAM }
+
+	can_use = { 
+		not = { has_government = communism }
+	}
+
+	type = ship
+	ship_types = { ship_hull_heavy battleship }
+	
+	prefix = "TMRS "							
+	fallback_name = "%d. Vaa tau"		
+
+	unique = {
+        #monarchs
+		"Makelita" "Tauveve" "Fagaese" "Uʻuolelaoa" "Seiuli" "Tupalo" "Seuea" "Salofi" "Puipuipo" "Tui Oligo" "Saoluaga" "Saoloa" "Maui Tagote" "Satiailemoa"
+        #Gods
+		"Fehuluni" "Tui Tofua" "Maui" "Hina"
+		#Provinces
+		"Viti" "Samoa" "Tonga" "Kiritimati" "Puka" "Rapa Nui" "Akamaru" "Aoutearoua" "Vanautu"
+	}
+}
+
+### AIRCRAFT CARRIER NAMES ###
+SAM_CV_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_CARRIERS
+
+	for_countries = { SAM }
+
+	can_use = { 
+		not = { has_government = communism }
+	}
+
+	type = ship
+	ship_types = { ship_hull_carrier carrier }
+	
+	prefix = "TMRS "							
+	fallback_name = "%d. Va'ava'a"		
+
+	unique = {
+		"Hawaiki" "Rangi" "Faʻamatai"
+	}
+}

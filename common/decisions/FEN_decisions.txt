@@ -805,6 +805,38 @@ FEN_fenris_interests_cat = {
 			factor = 0
 		}
 	}
+	FEN_track_down_carnavon = {
+
+		icon = generic_nationalism
+
+		available = {
+			is_subject = no
+			custom_trigger_tooltip={
+				tooltip = FEN_has_500_covert_staff
+				check_variable = { FEN_covert_staff > 499}
+			}
+			NOT={has_country_flag = FEN_laying_low}
+			has_country_flag = FEN_rogue_carnavon
+		}
+
+		visible = {
+			has_country_flag = FEN_rogue_carnavon
+		}
+
+		fire_only_once = yes
+
+		cost = 50
+		days_remove = 50
+
+		modifier = {
+			
+		}
+
+		remove_effect = {
+			#add country event here
+			country_event = {id = fenris.12}
+		}
+	}
 }
 FEN_bunker_staff = {
 
@@ -1219,6 +1251,7 @@ FEN_bunker_industry_expansion = {
 			add_manpower = 1000
 		}
 	}
+
 	FEN_expand_military_industry = {
 
 		icon = generic_industry
