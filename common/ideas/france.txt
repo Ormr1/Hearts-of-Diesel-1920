@@ -16,9 +16,11 @@ ideas = {
 			removal_cost = 0
 
 			modifier = {
-				stability_factor = -0.10
+				stability_factor = -0.3
 				monarchy_drift = -0.01
 				political_power_cost = 0.10
+				consumer_goods_factor = 0.3
+				war_support_factor = -0.5
 			}
 		}
 
@@ -133,8 +135,8 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				communism_drift = 0.5
-				democratic_drift = 0.5
+				communism_drift = 0.05
+				democratic_drift = 0.05
 				neutrality_drift = 0.03
 			}
 		}
