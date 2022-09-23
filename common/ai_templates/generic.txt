@@ -20,7 +20,7 @@ armor_generic = {
 			factor = 7
 			OR = {
 				has_tech = basic_medium_tank
-				has_tech = basic_medium_tank_chassis
+				has_tech = medium_tank_chassis_1
 			}
 		}
 		
@@ -234,7 +234,7 @@ armor_generic = {
 				factor = 4
 				OR = {
 					has_tech = basic_medium_tank
-					has_tech = basic_medium_tank_chassis
+					has_tech = medium_tank_chassis_1
 				}
 			}
 		}

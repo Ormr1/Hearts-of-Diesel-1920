@@ -22,6 +22,53 @@ ideas = {
 				conscription = 0.01
 			}
 		}
+		
+		GRE_PER_treaty_of_perpetual_peace = {
+				
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = generic_victors_of_ww1
+				
+			removal_cost = -1
+				
+			modifier = {
+				stability_factor = 0.1
+				army_core_defence_factor = 0.05
+				conscription = 0.01
+			}
+			targeted_modifier={
+				
+			}
+		}
+		PER_GRE_treaty_of_perpetual_peace = {
+				
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = generic_victors_of_ww1
+				
+			removal_cost = -1
+				
+			modifier = {
+				stability_factor = 0.1
+				army_core_defence_factor = 0.05
+				conscription = 0.01
+			}
+			targeted_modifier={
+				
+			}
+		}
 
 		GRE_agrarian_society = {
 				

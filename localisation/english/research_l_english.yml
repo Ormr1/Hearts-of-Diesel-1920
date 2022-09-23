@@ -219,6 +219,7 @@
  support_weapons6_desc:0 "With the increased use of assault rifles, developing reliable automatic weapons that can be used in any environment by all soldiers is a priority for a modern army."
  support_weapons5:0 "Support Weapons V"
  support_weapons6:0 "Support Weapons VI"
+ support_weapons7:0 "Support Weapons VII"
  paratroopers:0 "Paratroopers I"
  paratroopers_desc:0 "By incorporating airborne forces into our army, we can make forced entries and position key troops in previously inaccessible areas, allowing for new tactical opportunities."
  paratroopers2:0 "Paratroopers II"
@@ -1078,3 +1079,8 @@
  #Non-MTG naval techs that require loc (they may be granted via effects)
  basic_heavy_cruiser:0 "Basic Heavy Cruiser (Heavy Cruiser II)"
  early_carrier:0 "Early Carrier (Carrier I)"
+ DEATH_RAY_REQUIREMENTS:0 "This Tech also §YRequires§! one of the following to be true:\n Has completed §CProject Icarus§!\n Has completed §OProject Annihilation§!"
+ death_ray:0 "Teslas Death Ray"
+ tesla_coils:0 "Tesla Coils"
+ coilguns:0 "Coilguns"
+ tesla_blueprints:0 "Tesla's Blueprints"

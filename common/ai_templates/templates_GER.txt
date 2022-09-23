@@ -17,7 +17,7 @@ armored_GER = {
 			factor = 5
 			OR = {
 				has_tech = basic_medium_tank
-				has_tech = basic_medium_tank_chassis
+				has_tech = medium_tank_chassis_1
 			}
 		}
 		
@@ -224,7 +224,7 @@ armored_GER = {
 				factor = 10
 				OR = {
 					has_tech = basic_medium_tank
-					has_tech = basic_medium_tank_chassis
+					has_tech = medium_tank_chassis_1
 				}
 				NOT = {
 					has_tech = main_battle_tank
@@ -341,7 +341,7 @@ armored_GER = {
 				factor = 30
 				OR = {
 					has_tech = basic_medium_tank
-					has_tech = basic_medium_tank_chassis
+					has_tech = medium_tank_chassis_1
 				}
 				NOT = {
 					has_tech = main_battle_tank
@@ -779,7 +779,7 @@ infantry_GER = {
 				has_tech = basic_medium_tank
 			}
 			NOT = {
-				has_tech = basic_medium_tank_chassis
+				has_tech = medium_tank_chassis_1
 			}
 		}
 	}

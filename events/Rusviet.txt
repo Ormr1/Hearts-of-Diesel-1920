@@ -14,19 +14,62 @@ country_event = {
 	is_triggered_only = yes
 	
 	immediate={
-		
+		set_politics = {
+			ruling_party = fenris
+			last_election = "1921.1.1"
+			elections_allowed = no
+		}
+		set_variable = {var_SOV_factions_SR_loyalty = FEN.FEN_rusviet_sr_influence}
+		set_temp_variable = {var_SOV_temp_reduce_loyalty = 20}
+		SOV_reduce_rsdlp_loyalty = yes
+		set_temp_variable = {var_SOV_temp_reduce_loyalty = 60}
+		SOV_reduce_kd_loyalty = yes
+		SOV_reduce_o_loyalty = yes
+		SOV_reduce_t_loyalty = yes
+		add_country_leader_role = {
+		  character = SOV_rasputin
+		  promote_leader = yes
+		  country_leader = {
+			ideology = fenris_ideology
+			expire = "1965.1.1.1"
+			traits = {  }
+		  }
+		}
+		SOV_rasputin ={
+			promote_character = fenris
+		}
+		set_popularities = {
+			communism = 44
+			fenris = 56
+		}
+		remove_ideas = {petrograd_soviet_idea}
+		every_owned_state = {#army goes rouge, also balance for the war
+			SOV={
+				delete_unit = {
+					state = PREV
+					disband = yes #will refund equipment and manpower
+				}
+			}
+		}
+		every_owned_state = {
+			limit={
+				NOT={state = 208}
+				NOT={state = 195}
+				NOT={state = 244}
+				NOT={state = 209}
+				NOT={state = 263}
+			}
+			set_demilitarized_zone = yes
+		}
+		country_event = {id = SOV_civil_war.6 days = 18}
 	}
-	
-	option = {#flee east with olga
+	#an earlier decision will dicate which side you flip to
+	option = {#We must fight this
 		name = SOV_civil_war.1.a
 		
 	}
-	option = {#Flee north
+	option = {#flee east
 		name = SOV_civil_war.1.b
-		
-	}
-	option = {#Stand and fight
-		name = SOV_civil_war.1.c
 		
 	}
 }
@@ -150,5 +193,460 @@ country_event = {
 		set_temp_variable = {var_SOV_temp_reduce_loyalty = 5}
 		SOV_reduce_sr_loyalty = yes
 		add_political_power = -50
+	}
+}
+country_event = {
+	id = SOV_civil_war.6
+	title = SOV_civil_war.6.t
+	desc = SOV_civil_war.6.d
+	picture = GFX_report_event_hitler_handshake
+	
+	is_triggered_only = yes
+	
+	immediate={
+		hidden_effect = {
+			SOV={#main western Conteners
+				every_core_state = {
+					add_core_of = TPG
+					add_core_of = RSF
+					add_core_of = RDM
+				}
+			}
+			TPG={#Absolute Tsarists
+				transfer_state = 216
+				transfer_state = 947
+				transfer_state = 213
+				transfer_state = 722
+				transfer_state = 215
+				transfer_state = 214
+				transfer_state = 923
+				transfer_state = 397
+				transfer_state = 262
+				transfer_state = 825
+				transfer_state = 581
+				transfer_state = 205
+				transfer_state = 242
+				transfer_state = 243
+				
+				load_oob = "TPG_RCW"
+				# set_cosmetic_tag = ZIM_FROLIZI
+				# set_politics = {
+					# ruling_party = communism
+					# last_election = "1921.1.1"
+					# elections_allowed = no
+				# }
+				# set_popularities = {
+					# communism = 89
+					# neutrality = 11
+				# }
+				declare_war_on = {
+					target = SOV
+					type = civil_war
+				}
+			}
+			RSF={#RSDLP
+				transfer_state = 219
+				transfer_state = 253
+				transfer_state = 252
+				transfer_state = 925
+				transfer_state = 924
+				transfer_state = 351
+				transfer_state = 248
+				transfer_state = 254
+				transfer_state = 223
+				transfer_state = 258
+				transfer_state = 222
+				transfer_state = 220
+				transfer_state = 240
+				
+				load_oob = "RSF_RCW"
+				# set_cosmetic_tag = ZIM_FROLIZI
+				# set_politics = {
+					# ruling_party = communism
+					# last_election = "1921.1.1"
+					# elections_allowed = no
+				# }
+				# set_popularities = {
+					# communism = 89
+					# neutrality = 11
+				# }
+				declare_war_on = {
+					target = SOV
+					type = civil_war
+				}
+				declare_war_on = {
+					target = TPG
+					type = civil_war
+				}
+			}
+			RDM={#K-D
+				transfer_state = 224
+				transfer_state = 260
+				transfer_state = 471
+				transfer_state = 255
+				transfer_state = 926
+				transfer_state = 250
+				transfer_state = 239
+				transfer_state = 257
+				transfer_state = 241
+				
+				load_oob = "RDM_RCW"
+				# set_cosmetic_tag = ZIM_FROLIZI
+				# set_politics = {
+					# ruling_party = communism
+					# last_election = "1921.1.1"
+					# elections_allowed = no
+				# }
+				# set_popularities = {
+					# communism = 89
+					# neutrality = 11
+				# }
+				declare_war_on = {
+					target = SOV
+					type = civil_war
+				}
+				declare_war_on = {
+					target = RSF
+					type = civil_war
+				}
+				declare_war_on = {
+					target = TPG
+					type = civil_war
+				}
+			}
+			release = UKR
+			UKR={#Inpendance revolt
+				transfer_state = 94
+				transfer_state = 96
+				
+				load_oob = "RDM_RCW"
+				# set_cosmetic_tag = ZIM_FROLIZI
+				# set_politics = {
+					# ruling_party = communism
+					# last_election = "1921.1.1"
+					# elections_allowed = no
+				# }
+				# set_popularities = {
+					# communism = 89
+					# neutrality = 11
+				# }
+			}
+			RLL={#baltics, explodes shortly
+				transfer_state = 811
+				add_state_core = 811
+				transfer_state = 812
+				add_state_core = 812
+				transfer_state = 813
+				add_state_core = 813
+				transfer_state = 13
+				add_state_core = 13
+				transfer_state = 191
+				add_state_core = 191
+				transfer_state = 12
+				add_state_core = 12
+				transfer_state = 810
+				add_state_core = 810
+				transfer_state = 808
+				add_state_core = 808
+				transfer_state = 809
+				add_state_core = 809
+				transfer_state = 190
+				add_state_core = 190
+				transfer_state = 815
+				add_state_core = 815
+				transfer_state = 11
+				add_state_core = 11
+				transfer_state = 189
+				add_state_core = 189
+				transfer_state = 188
+				add_state_core = 188
+				
+				load_oob = "RLL_RCW"
+				country_event={id=SOV_civil_war.7 days = 37}
+			}
+			release = KAZ
+			KAZ={#Alash inpendenace
+				transfer_state = 823
+				load_oob = "KAZ_RCW"
+				set_cosmetic_tag = KAZ_alash
+				# set_politics = {
+					# ruling_party = communism
+					# last_election = "1921.1.1"
+					# elections_allowed = no
+				# }
+				# set_popularities = {
+					# communism = 89
+					# neutrality = 11
+				# }
+			}
+			FER={#Far Eastern Republic, coalition of rusviet loyaltist (although not nessicerly tsarists) that flee east, falls into its own civil war pretty quickly
+				transfer_state = 562
+				add_state_core = 562
+				transfer_state = 637
+				add_state_core = 637
+				transfer_state = 822
+				add_state_core = 822
+				transfer_state = 644
+				add_state_core = 644
+				transfer_state = 574
+				add_state_core = 574
+				transfer_state = 563
+				add_state_core = 563
+				transfer_state = 564
+				add_state_core = 564
+				transfer_state = 565
+				add_state_core = 565
+				transfer_state = 575
+				add_state_core = 575
+				transfer_state = 516
+				add_state_core = 516
+				transfer_state = 576
+				add_state_core = 576
+				transfer_state = 566
+				add_state_core = 566
+				transfer_state = 567
+				add_state_core = 567
+				transfer_state = 568
+				add_state_core = 568
+				transfer_state = 569
+				add_state_core = 569
+				transfer_state = 654
+				add_state_core = 654
+				transfer_state = 40
+				add_state_core = 40
+				transfer_state = 570
+				add_state_core = 570
+				transfer_state = 578
+				add_state_core = 578
+				transfer_state = 577
+				add_state_core = 577
+				transfer_state = 824
+				add_state_core = 824
+				transfer_state = 579
+				add_state_core = 579
+				transfer_state = 580
+				add_state_core = 580
+				transfer_state = 571
+				add_state_core = 571
+				transfer_state = 403
+				add_state_core = 403
+				transfer_state = 655
+				add_state_core = 655
+				transfer_state = 537
+				add_state_core = 537
+				
+				load_oob = "FER_RCW"
+			}
+			KAL={#buffer state
+				transfer_state = 237
+				transfer_state = 236
+				add_state_core = 236
+			}
+			DON={#buffer state
+				transfer_state = 218
+				add_state_core = 218
+				transfer_state = 245
+				add_state_core = 245
+				transfer_state = 238
+				add_state_core = 238
+				transfer_state = 265
+				add_state_core = 265
+				transfer_state = 217
+				add_state_core = 217
+			}
+			VGE={#Saxon ethic government
+				transfer_state = 829
+				add_state_core = 829
+				transfer_state = 401
+				add_state_core = 401
+				transfer_state = 251
+				add_state_core = 251
+				transfer_state = 652
+				add_state_core = 652
+			}
+			TMS={#Turks
+				transfer_state = 584
+				transfer_state = 832
+				transfer_state = 831
+				transfer_state = 585
+				transfer_state = 830
+				transfer_state = 742
+				transfer_state = 732
+				transfer_state = 405
+			}
+			TAT={#buffer state of tatars
+				transfer_state = 398
+				transfer_state = 399
+				transfer_state = 249
+				transfer_state = 256
+				transfer_state = 833
+				transfer_state = 400
+			}
+			BSK={#Octoberists that don't coalition with the east
+				transfer_state = 653
+				transfer_state = 651
+				transfer_state = 572
+				transfer_state = 573
+				transfer_state = 905
+				transfer_state = 582
+				set_cosmetic_tag = BSK_ural_republic
+			}
+		}
+	}
+	#an early event will dicate which side you flip to
+	option = {#flee east
+		name = SOV_civil_war.6.a
+	}
+	option = {#Stronghold in the west
+		name = SOV_civil_war.6.b
+		
+	}
+	option = {#Slava Ukrania
+		name = SOV_civil_war.6.c
+		switch_tag = UKR
+	}
+}
+country_event = {#L-L collapses
+	id = SOV_civil_war.7
+	title = SOV_civil_war.7.t
+	desc = SOV_civil_war.7.d
+	picture = GFX_report_event_hitler_handshake
+	
+	is_triggered_only = yes
+	
+	immediate={
+		hidden_effect={
+		RLL={#main western Conteners
+			every_core_state = {
+				add_core_of = TMR
+				add_core_of = SRB
+			}
+		}
+		EST={#Greater Estonia, Nordic allied
+			transfer_state = 811
+			add_state_core = 811
+			transfer_state = 812
+			add_state_core = 812
+			transfer_state = 813
+			add_state_core = 813
+			add_state_core = 191
+			add_state_core = 13
+			declare_war_on = {
+				target = RLL
+				type = civil_war
+			}
+		}
+		TMR={#Pro-Saxonian , Saxon allied
+			transfer_state = 188
+			transfer_state = 189
+			transfer_state = 808
+			declare_war_on = {
+				target = RLL
+				type = civil_war
+			}
+			declare_war_on = {
+				target = EST
+				type = civil_war
+			}
+		}
+		SRB={#Communist
+			transfer_state = 810
+			transfer_state = 12
+			transfer_state = 191
+			declare_war_on = {
+				target = RLL
+				type = civil_war
+			}
+			declare_war_on = {
+				target = TMR
+				type = civil_war
+			}
+			declare_war_on = {
+				target = EST
+				type = civil_war
+			}
+		}
+		}
+	}
+	#an early event will dicate which side you flip to
+	option = {#
+		name = SOV_civil_war.7.a
+	}
+	option = {#
+		name = SOV_civil_war.7.b
+		switch_tag = TMR
+	}
+	option = {#
+		name = SOV_civil_war.7.c
+		switch_tag = SRB
+	}
+	option = {#
+		name = SOV_civil_war.7.e
+		switch_tag = EST
+	}
+}
+country_event = {#FER collapses
+	id = SOV_civil_war.8
+	title = SOV_civil_war.8.t
+	desc = SOV_civil_war.8.d
+	picture = GFX_report_event_hitler_handshake
+	
+	is_triggered_only = yes
+	
+	immediate={
+		FER={#main eastern Conteners
+			every_core_state = {
+				add_core_of = OMS
+				add_core_of = YAK
+			}
+		}
+		OMS={#Eastern K-D
+			transfer_state = 579
+			transfer_state = 824
+			transfer_state = 580
+			transfer_state = 403
+			transfer_state = 571
+			transfer_state = 570
+			transfer_state = 569
+			transfer_state = 578
+			transfer_state = 577
+			declare_war_on = {
+				target = FER
+				type = civil_war
+			}
+		}
+		YAK={#Olgas tsarists
+			transfer_state = 568
+			transfer_state = 576
+			transfer_state = 575
+			transfer_state = 566
+			transfer_state = 644
+			transfer_state = 822
+			transfer_state = 567
+			transfer_state = 516
+			declare_war_on = {
+				target = FER
+				type = civil_war
+			}
+			declare_war_on = {
+				target = OMS
+				type = civil_war
+			}
+		}
+		FER={#SR not allined to Fenris
+			
+		}
+		release = ALT
+	}
+	option = {#
+		name = SOV_civil_war.8.a
+	}
+	option = {#
+		name = SOV_civil_war.8.b
+		switch_tag = OMS
+	}
+	option = {#
+		name = SOV_civil_war.8.c
+		switch_tag = YAK
 	}
 }

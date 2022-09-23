@@ -105,8 +105,8 @@ map_factory_routes = { ### 1/25
 plan_bomb_near_carnavon = { ### 1/25
 	icon = GFX_raid_trotskys_villa
 	map_icon = GFX_raid_trotskys_villa_map
-	name = fenris_recon_factory_op
-	desc = fenris_recon_factory_op_desc
+	name = plan_bomb_near_carnavon_op
+	desc = plan_bomb_near_carnavon_op_desc
 	days = 60
 
 	priority = 11

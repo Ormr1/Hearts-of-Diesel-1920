@@ -1065,7 +1065,7 @@ defined_text = {
 		trigger = {
 			OR ={
 					has_tech = basic_medium_tank
-					has_tech = basic_medium_tank_chassis
+					has_tech = medium_tank_chassis_1
 				}
 		}
 		localization_key = EQUIPMENT_WEIGHT_MEDIUM
@@ -1074,7 +1074,7 @@ defined_text = {
 		trigger = {
 			OR ={
 					NOT= {has_tech = basic_medium_tank}
-					NOT= {has_tech = basic_medium_tank_chassis}
+					NOT= {has_tech = medium_tank_chassis_1}
 				}
 		}
 		localization_key = EQUIPMENT_WEIGHT_LIGHT

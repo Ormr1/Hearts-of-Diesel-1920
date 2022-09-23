@@ -537,7 +537,11 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_political_power = 200
+			send_equipment = {
+				equipment = infantry_equipment_coilgun
+				amount = 1000
+				target = SOV
+			}
 		}
 	}
 	focus = {
@@ -1230,7 +1234,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = FEN_funding_the_muslium_brotherhood
+		id = FEN_funding_the_muslium_brotherhood #backing Rashid Rida
 		icon = GFX_focus_FEN_skulking_threat
 		relative_position_id = FEN_agitate_aegyptus
 		x = 0
@@ -1569,6 +1573,7 @@ focus_tree = {
 				create_unit = {
 					division = "name = \"Mercenaries\" division_template = \"Mercenary Brigade\" start_experience_factor = 0.0 start_manpower_factor = 0.01"
 					allow_spawning_on_enemy_provs = no
+					force_equipment_variants = { infantry_equipment_0 = { owner = "FEN" } }
 					owner = ROOT
 					id = draft_infantry_id
 				}
@@ -1623,19 +1628,25 @@ focus_tree = {
 	}
 
 	focus = {
-		id = FEN_military_expansion
-		icon = GFX_focus_FEN_military_administration
-		x = 32
+		id = FEN_paraguayian_management
+		icon = GFX_focus_FEN_skulking_threat
+		x = 45
 		y = 0
-		cost = 10
+		cost = 5
 		search_filters = {   }
-
-		available={has_completed_focus = FEN_military_administration}
+		available = {
+			PAR={
+				has_civil_war = no
+				has_government = fenris
+			}
+		}
 		
 		available_if_capitulated = yes
 
 		completion_reward = {
-			army_experience = 25
+			PAR={
+				add_political_power = 100
+			}
 		}
 	}
 }

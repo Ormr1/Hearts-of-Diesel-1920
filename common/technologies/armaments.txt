@@ -1324,8 +1324,7 @@ technologies = {
 		}
 
 		categories = {
-			naval_equipment
-			ship_modules_tech
+			armor
 		}
 	}
 	
@@ -2124,6 +2123,215 @@ technologies = {
 		categories = {
 			naval_equipment
 			ship_modules_tech
+		}
+	}
+	#################################
+	
+	
+	
+	
+	scythes = {
+
+		research_cost = 1
+
+		start_year = 1912
+
+		enable_equipment_modules = {
+			
+		}
+		allow = {
+			OR={
+				tag = SOV
+				has_country_flag = SOV_scythes
+			}
+		}
+
+
+		folder = {
+			name = armaments_folder
+			position = { x = 2 y = 23 }
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				OR = {
+					has_tech = early_ship_hull_light
+					has_tech = early_ship_hull_cruiser
+					has_tech = early_ship_hull_heavy
+				}
+				factor = 500
+			}
+		}
+
+		categories = {
+			armor
+		}
+	}
+	tesla_coils = {
+
+		research_cost = 1
+
+		start_year = 1915
+
+		enable_equipment_modules = {
+			tank_tesla_coils
+			tank_tesla_dyanmo_engine
+		}
+		dependencies={
+			tesla_blueprints = 1
+		}
+		path = {
+			leads_to_tech = coilguns
+			research_cost_coeff = 1
+		}
+
+		folder = {
+			name = armaments_folder
+			position = { x = 4 y = 23 }
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				OR = {
+					has_tech = early_ship_hull_light
+					has_tech = early_ship_hull_cruiser
+					has_tech = early_ship_hull_heavy
+				}
+				factor = 500
+			}
+		}
+
+		categories = {
+			armor
+		}
+	}
+	coilguns = {
+
+		research_cost = 1
+
+		start_year = 1920
+
+		enable_equipment_modules = {
+			tank_coilgun
+		}
+		dependencies={
+			tesla_blueprints = 1
+		}
+		path = {
+			leads_to_tech = death_ray
+			research_cost_coeff = 1
+		}
+
+		folder = {
+			name = armaments_folder
+			position = { x = 4 y = 25 }
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				OR = {
+					has_tech = early_ship_hull_light
+					has_tech = early_ship_hull_cruiser
+					has_tech = early_ship_hull_heavy
+				}
+				factor = 500
+			}
+		}
+
+		categories = {
+			naval_equipment
+			armor
+		}
+	}
+	death_ray = {
+
+		research_cost = 1
+
+		start_year = 1926
+
+		enable_equipment_modules = {
+			tank_super_heavy_death_ray
+			mech_tri_legged_suspension
+		}
+		dependencies={
+			tesla_blueprints = 1
+		}
+		allow = {
+			OR={
+				has_country_flag = FAC_project_icarus
+				has_country_flag = FEN_annihilator
+			}
+		}
+		on_research_complete = {
+			custom_effect_tooltip = DEATH_RAY_REQUIREMENTS
+		}
+
+		folder = {
+			name = armaments_folder
+			position = { x = 4 y = 27 }
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				OR = {
+					has_tech = early_ship_hull_light
+					has_tech = early_ship_hull_cruiser
+					has_tech = early_ship_hull_heavy
+				}
+				factor = 500
+			}
+		}
+
+		categories = {
+			armor
+		}
+	}
+	katyusha_rack = {
+
+		research_cost = 1
+
+		start_year = 1920
+
+		enable_equipment_modules = {
+			
+		}
+		allow = {
+			OR={
+				tag = SOV
+				has_country_flag = SOV_katyusha_rack
+			}
+		}
+
+
+		folder = {
+			name = armaments_folder
+			position = { x = 2 y = 25 }
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				OR = {
+					has_tech = early_ship_hull_light
+					has_tech = early_ship_hull_cruiser
+					has_tech = early_ship_hull_heavy
+				}
+				factor = 500
+			}
+		}
+
+		categories = {
+			armor
+		}
+	}
+	
+	tesla_blueprints = {	
+		allow={
+			always = no
 		}
 	}
 }

@@ -15,7 +15,7 @@ units = {
 	division= {	# "1era División de Infantería"
 		division_name = {
 				is_name_ordered = yes
-				name_order = 12
+				name_order = 13
 		}
 		location = 12942 # 
 		division_template = "División de Cordoba"
@@ -26,7 +26,7 @@ units = {
 	division= {	# "2da División de Infantería"
 		division_name = {
 				is_name_ordered = yes
-				name_order = 13
+				name_order = 14
 		}
 		location = 11022 # 
 		division_template = "División de Cordoba"
@@ -37,7 +37,7 @@ units = {
 	division= {	# "2da División de Infantería"
 		division_name = {
 				is_name_ordered = yes
-				name_order = 14
+				name_order = 15
 		}
 		location = 7500 # 
 		division_template = "División de Cordoba"
@@ -48,7 +48,7 @@ units = {
 	division= {	# "2da División de Infantería"
 		division_name = {
 				is_name_ordered = yes
-				name_order = 15
+				name_order = 16
 		}
 		location = 10985 # 
 		division_template = "División de Cordoba"
@@ -59,7 +59,7 @@ units = {
 	division= {	# "2da División de Infantería"
 		division_name = {
 				is_name_ordered = yes
-				name_order = 16
+				name_order = 17
 		}
 		location = 5163 # 
 		division_template = "División de Cordoba"

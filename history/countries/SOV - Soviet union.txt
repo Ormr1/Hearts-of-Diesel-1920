@@ -153,7 +153,7 @@ give_guarantee = NOR
 #### VANILLA ####
 ####
 
-capital = 219
+capital = 195
 
 starting_train_buffer = 3.0
 

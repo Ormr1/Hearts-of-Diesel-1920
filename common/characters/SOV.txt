@@ -32,7 +32,7 @@ characters = {
 	}
 	
 	SOV_rasputin = {
-		name = "Rasputin"
+		name = "Grigori Rasputin"
 		portraits = {
 			civilian = {
 				large = GFX_portrait_SOV_rasputin

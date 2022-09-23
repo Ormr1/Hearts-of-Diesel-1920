@@ -78,4 +78,37 @@ units = {
 		start_equipment_factor = 0.9
 
 	}
+	division= {	# "2da División de Infantería"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 7
+		}
+		location = 2195 # 
+		division_template = "División de Infanteria"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+
+	}
+	division= {	# "2da División de Infantería"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 8
+		}
+		location = 11023 # 
+		division_template = "División de Infanteria"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+
+	}
+	division= {	# "2da División de Infantería"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 9
+		}
+		location = 12901 # 
+		division_template = "División de Infanteria"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+
+	}
 }

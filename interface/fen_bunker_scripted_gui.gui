@@ -35,6 +35,7 @@ guiTypes = {
 			spriteType = "GFX_FEN_map_bg"
 			position = { x=22 y=0 }
 		}
+		
 		iconType = {
 			name ="FEN_map_rusviet_sr_influence_screen"
 			spriteType = "GFX_FEN_map_rusviet_sr_influence"

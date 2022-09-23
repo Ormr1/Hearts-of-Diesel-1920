@@ -134,4 +134,15 @@ units = {
 		start_equipment_factor = 0.9
 
 	}
+	division= {	# "2da División de Infantería"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 12
+		}
+		location = 12942 # 
+		division_template = "División de Liberal"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+
+	}
 }

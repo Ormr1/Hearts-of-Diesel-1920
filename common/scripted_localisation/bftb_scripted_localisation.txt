@@ -1688,8 +1688,8 @@ defined_text = {
 						NOT = { has_tech = basic_heavy_tank }
 					}
 					AND = {
-						has_tech = basic_medium_tank_chassis
-						NOT = { has_tech = basic_heavy_tank_chassis }
+						has_tech = medium_tank_chassis_1
+						NOT = { has_tech = heavy_tank_chassis_1 }
 					}
 				}
 			}
@@ -1705,8 +1705,8 @@ defined_text = {
 						has_tech = basic_heavy_tank
 					}
 					AND = {
-						NOT = { has_tech = basic_medium_tank_chassis }
-						has_tech = basic_heavy_tank_chassis
+						NOT = { has_tech = medium_tank_chassis_1 }
+						has_tech = heavy_tank_chassis_1
 					}
 				}
 			}
@@ -1722,8 +1722,8 @@ defined_text = {
 						has_tech = basic_heavy_tank
 					}
 					AND = {
-						has_tech = basic_medium_tank_chassis
-						has_tech = basic_heavy_tank_chassis
+						has_tech = medium_tank_chassis_1
+						has_tech = heavy_tank_chassis_1
 					}
 				}
 			}

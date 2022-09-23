@@ -19,7 +19,7 @@ ITA_light_tanks = {
 		priority = {
 			factor = 1
 			modifier = { 
-				has_tech = basic_light_tank_chassis
+				has_tech = light_tank_chassis_1
 				factor = 0 #let's not waste XP here
 			}
 		}
@@ -63,7 +63,7 @@ ITA_light_tanks = {
 		priority = {
 			factor = 100
 			modifier = { 
-				has_tech = improved_light_tank_chassis 
+				has_tech = light_tank_chassis_2 
 				factor = 0 #let's not waste XP here
 			}
 		}
@@ -218,9 +218,9 @@ ITA_light_tank_destroyers = {
 	priority = {
 		factor = 100
 		modifier = {
-			NOT = { has_tech = basic_medium_tank_chassis } 
+			NOT = { has_tech = medium_tank_chassis_1 } 
 			any_enemy_country = {
-				has_tech = basic_medium_tank_chassis
+				has_tech = medium_tank_chassis_1
 			}
 			factor = 15
 		}
@@ -649,7 +649,7 @@ ITA_medium_tanks = {
 		priority = {
 			factor = 10
 			modifier = { 
-				has_tech = improved_medium_tank_chassis
+				has_tech = medium_tank_chassis_2
 				factor = 0 #let's not waste XP here
 			}
 		}
@@ -831,9 +831,9 @@ ITA_medium_tank_destroyer = {
 	priority = {
 		factor = 500
 		modifier = {
-			NOT = { has_tech = basic_heavy_tank_chassis } 
+			NOT = { has_tech = heavy_tank_chassis_1 } 
 			any_enemy_country = {
-				has_tech = basic_heavy_tank_chassis
+				has_tech = heavy_tank_chassis_1
 			}
 			factor = 3
 		}
@@ -1337,7 +1337,7 @@ ITA_heavy_tanks = {
 		priority = {
 			factor = 10
 			modifier = { 
-				has_tech = improved_heavy_tank_chassis 
+				has_tech = heavy_tank_chassis_2 
 				factor = 0 #let's not waste XP here
 			}
 			
@@ -1541,9 +1541,9 @@ ITA_heavy_tank_destroyer = {
 	priority = {
 		factor = 500
 		modifier = {
-			NOT = { has_tech = basic_heavy_tank_chassis } 
+			NOT = { has_tech = heavy_tank_chassis_1 } 
 			any_enemy_country = {
-				has_tech = basic_heavy_tank_chassis
+				has_tech = heavy_tank_chassis_1
 			}
 			factor = 3
 		}

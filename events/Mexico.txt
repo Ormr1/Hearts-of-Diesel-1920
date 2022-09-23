@@ -3269,7 +3269,7 @@ country_event = {
 				}
 				else_if = {
 					limit = {
-						has_tech = basic_light_tank_chassis
+						has_tech = light_tank_chassis_1
 					}
 					create_production_license = {
 						target = MEX
@@ -3305,7 +3305,7 @@ country_event = {
 				}
 				else_if = {
 					limit = {
-						has_tech = basic_medium_tank_chassis
+						has_tech = medium_tank_chassis_1
 					}
 					create_production_license = {
 						target = MEX
@@ -3629,7 +3629,7 @@ country_event = {
 				}
 				else_if = {
 					limit = {
-						has_tech = basic_light_tank_chassis
+						has_tech = light_tank_chassis_1
 						
 					}
 					create_production_license = {
@@ -3667,7 +3667,7 @@ country_event = {
 				}
 				else_if = {
 					limit = {
-						has_tech = basic_medium_tank_chassis
+						has_tech = medium_tank_chassis_1
 					
 					}
 					create_production_license = {

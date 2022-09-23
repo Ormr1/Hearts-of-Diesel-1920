@@ -10,18 +10,17 @@
 		infantry = { x = 1 y = 2 }
 	}
 }
-# division_template = {
-	# name = "Fenris Exosuits"			# Exosuit Brigade
+division_template = {
+	name = "Fenris Exosuits"			# Exosuit Brigade
 
-	# regiments = {
-		# exo_infantry = { x = 0 y = 0 }
-		# exo_infantry = { x = 0 y = 1 }
-		# exo_infantry = { x = 0 y = 2 }
-		# exo_infantry = { x = 1 y = 0 }
-		# exo_infantry = { x = 1 y = 1 }
-		# exo_infantry = { x = 1 y = 2 }
-	# }
-# }
+	regiments = {
+		exo_suits = { x = 0 y = 0 }
+		exo_suits = { x = 0 y = 1 }
+		exo_suits = { x = 0 y = 2 }
+		exo_suits = { x = 1 y = 0 }
+		exo_suits = { x = 1 y = 1 }
+	}
+}
 
 
 units = {
@@ -31,16 +30,27 @@ units = {
 		name = "European Mercenaries"
 		location = 2165
 		division_template = "Mercenary Brigade"		
-		start_experience_factor = 0.8
+		start_experience_factor = 0.6
 		start_equipment_factor = 1.0
+		force_equipment_variants = { infantry_equipment_0 = { owner = "GER" } }
 
 	}
 	division = {
 		name = "American Mercenaries"
 		location = 2165
 		division_template = "Mercenary Brigade"		
-		start_experience_factor = 0.8
+		start_experience_factor = 0.6
 		start_equipment_factor = 1.0
+		force_equipment_variants = { infantry_equipment_0 = { owner = "USA" } }
+
+	}
+	division = {
+		name = "Strike Team Alpha"
+		location = 2165
+		division_template = "Fenris Exosuits"		
+		start_experience_factor = 0.85
+		start_equipment_factor = 1.0
+		force_equipment_variants = { infantry_equipment_coilgun = { owner = "FEN" } }
 
 	}
 
@@ -64,5 +74,27 @@ air_wings = {
 			owner = "FEN" 
 			amount = 15
 		}
+	}
+}
+
+##### Starting Production #####
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_coilgun
+			creator = "FEN"
+		}
+		requested_factories = 1
+		progress = 0.75
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = exo_suit_equipment_2
+			creator = "FEN"
+		}
+		requested_factories = 1
+		progress = 0.75
+		efficiency = 75
 	}
 }

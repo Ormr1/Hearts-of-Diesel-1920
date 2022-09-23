@@ -57,3 +57,5 @@ set_popularities = {
 	democratic = 2
 	communism = 98
 }
+
+add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 1000 producer = LAP }

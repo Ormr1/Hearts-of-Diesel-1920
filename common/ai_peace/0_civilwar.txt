@@ -11,6 +11,24 @@ civilwar_peace = {
 			FROM = {
 				original_tag = ROOT
 			}
+			AND={
+				OR={
+					original_tag = LPT
+					original_tag = ARC
+					original_tag = ARG
+					original_tag = LAP
+				}
+				FROM = {
+					OR={
+						original_tag = ARC
+						original_tag = ARG
+						original_tag = UUA
+						original_tag = ETR
+						original_tag = LPT
+						original_tag = LAP
+					}
+				}
+			}
 		}
 	}
 

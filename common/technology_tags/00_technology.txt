@@ -92,6 +92,7 @@ technology_categories = {
 	cat_production
 	cat_synth_rubber
 	cat_synth_oil
+	exo_suits_tech
 }
 
 technology_folders = {

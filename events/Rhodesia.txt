@@ -562,6 +562,7 @@ country_event = { #victory in zambia, independance
 					remove_core_of = ZLF
 					remove_core_of = ZRF
 					add_core_of = ROOT
+					transfer_state_to = ROOT
 				}
 			}
 			set_country_flag = United_ZAM
@@ -643,11 +644,12 @@ country_event = { #victory in Nyasaland, independance
 	fire_only_once = yes
 	immediate = {
 		hidden_effect={
-			NAC={
+			NPU={
 				every_core_state = {
 					remove_core_of = NAC
 					remove_core_of = NPU
 					add_core_of = ROOT
+					transfer_state_to = ROOT
 				}
 			}
 			set_country_flag = United_MLW
@@ -747,6 +749,7 @@ country_event = { #victory in zimbabwe, independance
 					remove_core_of = ZIN
 					remove_core_of = RNF
 					add_core_of = ROOT
+					transfer_state_to = ROOT
 				}
 			}
 			set_country_flag = United_ZIM

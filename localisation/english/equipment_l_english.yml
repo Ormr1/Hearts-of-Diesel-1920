@@ -3932,3 +3932,24 @@
  LAT_scout_plane_equipment_2_short:0 "KOD-2"
  ##### Train Equipment #####
  LAT_train_equipment_1:0 "Type 1-1-1"
+ 
+ infantry_equipment_coilgun:0 "Coilgun"
+ infantry_equipment_coilgun_desc:0 "Teslas coilgun, a advanced Rifle using the power of electricity to propel projectiles with much greater force than simple gunpowder.
+ infantry_equipment_coilgun_1:0 "Coilgun II"
+ infantry_equipment_coilgun_1_desc:0 "Teslas coilgun, a advanced Rifle using the power of electricity to propel projectiles with much greater force than simple gunpowder.
+ exo_suit_equipment_0:0 "Basic Exo Suits"
+ exo_suit_equipment_1:0 "Simple Exo Suits"
+ exo_suit_equipment_2:0 "Improved Exo Suits"
+ exo_suit_equipment_3:0 "Advanced Exo Suits"
+ GER_exo_suit_equipment_0:0 "Pkp 17 Eisenhans"
+ GER_exo_suit_equipment_0_short:0 "Pkp 17"
+ POL_exo_suit_equipment_0:0 "PZM-2 Rycerz"
+ POL_exo_suit_equipment_0_short:0 "PZM-2"
+ SOV_exo_suit_equipment_0:0 "SHM-60 Groza"
+ SOV_exo_suit_equipment_0_short:0 "SHM-60"
+ USA_exo_suit_equipment_0:0 "S3-55 Ward"
+ USA_exo_suit_equipment_0_short:0 "S3-55"
+ FAC_exo_suit_equipment_2:0 "TF-233 šetač"
+ FAC_exo_suit_equipment_2_short:0 "TF-233"
+ FEN_exo_suit_equipment_2:0 "TF-233 šetač"
+ FEN_exo_suit_equipment_2_short:0 "TF-233"

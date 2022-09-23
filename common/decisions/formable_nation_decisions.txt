@@ -3548,420 +3548,420 @@ form_transcaucasus_category = {
 
 
 
-form_siberia_category = {
+# form_siberia_category = {
 	
-	form_siberian_republic = { 
+	# form_siberian_republic = { 
 
-		icon = generic_form_nation
+		# icon = generic_form_nation
 
-		allowed = {
-			OR = {
-				original_tag = YAK # Yakutia
-				original_tag = FER # Far Eastern Republic
-				original_tag = CKK # Chukotka
-				original_tag = VLA # Vladivostok
-				original_tag = BYA # Buryatia
-				original_tag = TAY # Taymyria
-				original_tag = ALT # Altai
-				original_tag = YAM # Yamalia
-				original_tag = OVO # Ostyak-Vogulia
-				original_tag = TAN # Tannu Tuva
-			}
-		}
+		# allowed = {
+			# OR = {
+				# original_tag = YAK # Yakutia
+				# original_tag = FER # Far Eastern Republic
+				# original_tag = CKK # Chukotka
+				# original_tag = VLA # Vladivostok
+				# original_tag = BYA # Buryatia
+				# original_tag = TAY # Taymyria
+				# original_tag = ALT # Altai
+				# original_tag = YAM # Yamalia
+				# original_tag = OVO # Ostyak-Vogulia
+				# original_tag = TAN # Tannu Tuva
+			# }
+		# }
 
-		available = {
-			controls_state = 564 # Buryatia
-			controls_state = 563 # Chita
-			controls_state = 574 # Yakutsk
-			controls_state = 516 # Taymyria
-			controls_state = 644 # Northeast Siberia
-		}
+		# available = {
+			# controls_state = 564 # Buryatia
+			# controls_state = 563 # Chita
+			# controls_state = 574 # Yakutsk
+			# controls_state = 516 # Taymyria
+			# controls_state = 644 # Northeast Siberia
+		# }
 
-		visible = {
-			OR = {
-				original_tag = YAK # Yakutia
-				original_tag = FER # Far Eastern Republic
-				original_tag = CKK # Chukotka
-				original_tag = VLA # Vladivostok
-				original_tag = BYA # Buryatia
-				original_tag = TAY # Taymyria
-				original_tag = ALT # Altai
-				original_tag = YAM # Yamalia
-				original_tag = OVO # Ostyak-Vogulia
-				original_tag = TAN # Tannu Tuva
-			}
-			NOT = { has_global_flag = form_siberian_republic_flag }
+		# visible = {
+			# OR = {
+				# original_tag = YAK # Yakutia
+				# original_tag = FER # Far Eastern Republic
+				# original_tag = CKK # Chukotka
+				# original_tag = VLA # Vladivostok
+				# original_tag = BYA # Buryatia
+				# original_tag = TAY # Taymyria
+				# original_tag = ALT # Altai
+				# original_tag = YAM # Yamalia
+				# original_tag = OVO # Ostyak-Vogulia
+				# original_tag = TAN # Tannu Tuva
+			# }
+			# NOT = { has_global_flag = form_siberian_republic_flag }
 
-				has_dlc = "No Step Back"
-		}
+				# has_dlc = "No Step Back"
+		# }
 
-		complete_effect = {
-			set_cosmetic_tag = siberia_unified
+		# complete_effect = {
+			# set_cosmetic_tag = siberia_unified
 			
-			custom_effect_tooltip = form_siberia_russian_siberia_coring_states_tt
+			# custom_effect_tooltip = form_siberia_russian_siberia_coring_states_tt
 			
-			custom_effect_tooltip = form_siberia_yakutia_coring_states_tt
+			# custom_effect_tooltip = form_siberia_yakutia_coring_states_tt
 			
-			custom_effect_tooltip = form_siberia_altai_coring_states_tt
+			# custom_effect_tooltip = form_siberia_altai_coring_states_tt
 			
-			custom_effect_tooltip = form_siberia_ostyak_coring_states_tt
+			# custom_effect_tooltip = form_siberia_ostyak_coring_states_tt
 			
-			custom_effect_tooltip = form_siberia_yamalia_coring_states_tt
+			# custom_effect_tooltip = form_siberia_yamalia_coring_states_tt
 			
-			# Taymyria
-			516 = { add_core_of = ROOT }
+			# # Taymyria
+			# 516 = { add_core_of = ROOT }
 			
-			# Buryatia
-			564 = { add_core_of = ROOT }
+			# # Buryatia
+			# 564 = { add_core_of = ROOT }
 			
-			# Tannu Tuva
-			329 = { add_core_of = ROOT }
+			# # Tannu Tuva
+			# 329 = { add_core_of = ROOT }
 			
-			# Chita
-			563 = { add_core_of = ROOT }
+			# # Chita
+			# 563 = { add_core_of = ROOT }
 			
 			
-			#add_ideas = soldiers_of_the_steppe
+			# #add_ideas = soldiers_of_the_steppe
 			
-			hidden_effect = { 
+			# hidden_effect = { 
 			
-				# Yakutsk
-				574 = { add_core_of = ROOT }
+				# # Yakutsk
+				# 574 = { add_core_of = ROOT }
 				
-				# Northeast Siberia
-				644 = { add_core_of = ROOT }
+				# # Northeast Siberia
+				# 644 = { add_core_of = ROOT }
 				
-				# Oyrot Region
-				654 = { add_core_of = ROOT }
+				# # Oyrot Region
+				# 654 = { add_core_of = ROOT }
 				
-				# Altai Krai
-				40 = { add_core_of = ROOT }
+				# # Altai Krai
+				# 40 = { add_core_of = ROOT }
 				
-				# Surgut
-				577 = { add_core_of = ROOT }
+				# # Surgut
+				# 577 = { add_core_of = ROOT }
 				
-				# Tobolsk
-				580 = { add_core_of = ROOT }
+				# # Tobolsk
+				# 580 = { add_core_of = ROOT }
 				
-				# Yamalia
-				824 = { add_core_of = ROOT }
+				# # Yamalia
+				# 824 = { add_core_of = ROOT }
 				
-				# Salekhard
-				579 = { add_core_of = ROOT }
+				# # Salekhard
+				# 579 = { add_core_of = ROOT }
 				
-				# Tyumen
-				403 = { add_core_of = ROOT }
+				# # Tyumen
+				# 403 = { add_core_of = ROOT }
 				
-				# Omsk
-				571 = { add_core_of = ROOT }
+				# # Omsk
+				# 571 = { add_core_of = ROOT }
 				
-				# Tomsk
-				578 = { add_core_of = ROOT }
+				# # Tomsk
+				# 578 = { add_core_of = ROOT }
 				
-				# Novosibirsk
-				570 = { add_core_of = ROOT }
+				# # Novosibirsk
+				# 570 = { add_core_of = ROOT }
 				
-				# Yeniseisk
-				576 = { add_core_of = ROOT }
+				# # Yeniseisk
+				# 576 = { add_core_of = ROOT }
 				
-				# Kemerovo
-				569 = { add_core_of = ROOT }
+				# # Kemerovo
+				# 569 = { add_core_of = ROOT }
 				
-				# Krasnoyarsk
-				568 = { add_core_of = ROOT }
+				# # Krasnoyarsk
+				# 568 = { add_core_of = ROOT }
 				
-				# Bratsk
-				567 = { add_core_of = ROOT }
+				# # Bratsk
+				# 567 = { add_core_of = ROOT }
 				
-				# Irkutsk
-				566 = { add_core_of = ROOT }
+				# # Irkutsk
+				# 566 = { add_core_of = ROOT }
 				
-				# Kirensk
-				575 = { add_core_of = ROOT }
+				# # Kirensk
+				# 575 = { add_core_of = ROOT }
 				
-				# Boyadbo
-				565 = { add_core_of = ROOT }
+				# # Boyadbo
+				# 565 = { add_core_of = ROOT }
 				
-				news_event = { id = nsb_news.303 hours = 8 }
+				# news_event = { id = nsb_news.303 hours = 8 }
 				
-				set_global_flag = form_siberian_republic_flag
+				# set_global_flag = form_siberian_republic_flag
 				
-			}
-		}
+			# }
+		# }
 
-		ai_will_do = {
-			factor = 200
-			modifier = {
-				factor = 0
-				is_historical_focus_on = yes
-			}
-		}
-	}
-	
-	
-	conquer_the_fareast = { 
-
-		icon = generic_form_nation
-
-		allowed = {
-			OR = {
-				original_tag = YAK # Yakutia
-				original_tag = FER # Far Eastern Republic
-				original_tag = CKK # Chukotka
-				original_tag = VLA # Vladivostok
-				original_tag = BYA # Buryatia
-				original_tag = TAY # Taymyria
-				original_tag = ALT # Altai
-				original_tag = YAM # Yamalia
-				original_tag = OVO # Ostyak-Vogulia
-				original_tag = TAN # Tannu Tuva
-			}
-		}
-
-		available = {
-			controls_state = 822 # Chukotka
-			controls_state = 637 # Kamchatka
-			controls_state = 562 # Okhotsk
-			controls_state = 560 # Nikolayevsk
-			controls_state = 655 # North Sakhalin
-			controls_state = 561 # Amur
-			controls_state = 657 # Birobidzhan
-			controls_state = 409 # Khabravosk
-			controls_state = 408 # Vladivostok
-		}
-
-		visible = {
-			OR = {
-				original_tag = YAK # Yakutia
-				original_tag = FER # Far Eastern Republic
-				original_tag = CKK # Chukotka
-				original_tag = VLA # Vladivostok
-				original_tag = BYA # Buryatia
-				original_tag = TAY # Taymyria
-				original_tag = ALT # Altai
-				original_tag = YAM # Yamalia
-				original_tag = OVO # Ostyak-Vogulia
-				original_tag = TAN # Tannu Tuva
-			}
-			
-			has_global_flag = form_siberian_republic_flag
-			NOT = { has_global_flag = far_east_integrated_flag }
-
-				has_dlc = "No Step Back"
-		}
-
-		complete_effect = {
-			
-			custom_effect_tooltip = far_eastern_states_coring_states_tt
-			
-			#add_ideas = soldiers_of_the_steppe
-			
-			hidden_effect = { 
-			
-				# Chukotka
-				822 = { add_core_of = ROOT }
-				
-				# Kamchatka
-				637 = { add_core_of = ROOT }
-				
-				# Okhotsk
-				562 = { add_core_of = ROOT }
-				
-				# Amur
-				561 = { add_core_of = ROOT }
-				
-				# Birobidzhan
-				657 = { add_core_of = ROOT }
-				
-				# Nikolayevsk
-				560 = { add_core_of = ROOT }
-				
-				# North Sakhalin
-				655 = { add_core_of = ROOT }
-				
-				# Khabravosk
-				409 = { add_core_of = ROOT }
-				
-				# Vladivostok
-				408 = { add_core_of = ROOT }
-				
-				set_global_flag = far_east_integrated_flag
-				
-			}
-		}
-
-		ai_will_do = {
-			factor = 200
-			modifier = {
-				factor = 0
-				is_historical_focus_on = yes
-			}
-		}
-	}
+		# ai_will_do = {
+			# factor = 200
+			# modifier = {
+				# factor = 0
+				# is_historical_focus_on = yes
+			# }
+		# }
+	# }
 	
 	
-	push_to_the_urals = { 
+	# conquer_the_fareast = { 
 
-		icon = generic_form_nation
+		# icon = generic_form_nation
 
-		allowed = {
-			OR = {
-				original_tag = YAK # Yakutia
-				original_tag = FER # Far Eastern Republic
-				original_tag = CKK # Chukotka
-				original_tag = VLA # Vladivostok
-				original_tag = BYA # Buryatia
-				original_tag = TAY # Taymyria
-				original_tag = ALT # Altai
-				original_tag = YAM # Yamalia
-				original_tag = OVO # Ostyak-Vogulia
-				original_tag = TAN # Tannu Tuva
-			}
-		}
+		# allowed = {
+			# OR = {
+				# original_tag = YAK # Yakutia
+				# original_tag = FER # Far Eastern Republic
+				# original_tag = CKK # Chukotka
+				# original_tag = VLA # Vladivostok
+				# original_tag = BYA # Buryatia
+				# original_tag = TAY # Taymyria
+				# original_tag = ALT # Altai
+				# original_tag = YAM # Yamalia
+				# original_tag = OVO # Ostyak-Vogulia
+				# original_tag = TAN # Tannu Tuva
+			# }
+		# }
 
-		available = {
-			controls_state = 653 # Sverdlovsk
-			controls_state = 572 # Chelyabinsk
-			controls_state = 582 # Magnitogorsk
-			controls_state = 573 # Zlatoust
-			controls_state = 398 # Perm
-			controls_state = 581 # Northern Urals
-		}
+		# available = {
+			# controls_state = 822 # Chukotka
+			# controls_state = 637 # Kamchatka
+			# controls_state = 562 # Okhotsk
+			# controls_state = 560 # Nikolayevsk
+			# controls_state = 655 # North Sakhalin
+			# controls_state = 561 # Amur
+			# controls_state = 657 # Birobidzhan
+			# controls_state = 409 # Khabravosk
+			# controls_state = 408 # Vladivostok
+		# }
 
-		visible = {
-			OR = {
-				original_tag = YAK # Yakutia
-				original_tag = FER # Far Eastern Republic
-				original_tag = CKK # Chukotka
-				original_tag = VLA # Vladivostok
-				original_tag = BYA # Buryatia
-				original_tag = TAY # Taymyria
-				original_tag = ALT # Altai
-				original_tag = YAM # Yamalia
-				original_tag = OVO # Ostyak-Vogulia
-				original_tag = TAN # Tannu Tuva
-			}
+		# visible = {
+			# OR = {
+				# original_tag = YAK # Yakutia
+				# original_tag = FER # Far Eastern Republic
+				# original_tag = CKK # Chukotka
+				# original_tag = VLA # Vladivostok
+				# original_tag = BYA # Buryatia
+				# original_tag = TAY # Taymyria
+				# original_tag = ALT # Altai
+				# original_tag = YAM # Yamalia
+				# original_tag = OVO # Ostyak-Vogulia
+				# original_tag = TAN # Tannu Tuva
+			# }
 			
-			has_global_flag = form_siberian_republic_flag
-			NOT = { has_global_flag = urals_integrated_flag }
+			# has_global_flag = form_siberian_republic_flag
+			# NOT = { has_global_flag = far_east_integrated_flag }
 
-				has_dlc = "No Step Back"
-		}
+				# has_dlc = "No Step Back"
+		# }
 
-		complete_effect = {
+		# complete_effect = {
+			
+			# custom_effect_tooltip = far_eastern_states_coring_states_tt
+			
+			# #add_ideas = soldiers_of_the_steppe
+			
+			# hidden_effect = { 
+			
+				# # Chukotka
+				# 822 = { add_core_of = ROOT }
+				
+				# # Kamchatka
+				# 637 = { add_core_of = ROOT }
+				
+				# # Okhotsk
+				# 562 = { add_core_of = ROOT }
+				
+				# # Amur
+				# 561 = { add_core_of = ROOT }
+				
+				# # Birobidzhan
+				# 657 = { add_core_of = ROOT }
+				
+				# # Nikolayevsk
+				# 560 = { add_core_of = ROOT }
+				
+				# # North Sakhalin
+				# 655 = { add_core_of = ROOT }
+				
+				# # Khabravosk
+				# 409 = { add_core_of = ROOT }
+				
+				# # Vladivostok
+				# 408 = { add_core_of = ROOT }
+				
+				# set_global_flag = far_east_integrated_flag
+				
+			# }
+		# }
+
+		# ai_will_do = {
+			# factor = 200
+			# modifier = {
+				# factor = 0
+				# is_historical_focus_on = yes
+			# }
+		# }
+	# }
+	
+	
+	# push_to_the_urals = { 
+
+		# icon = generic_form_nation
+
+		# allowed = {
+			# OR = {
+				# original_tag = YAK # Yakutia
+				# original_tag = FER # Far Eastern Republic
+				# original_tag = CKK # Chukotka
+				# original_tag = VLA # Vladivostok
+				# original_tag = BYA # Buryatia
+				# original_tag = TAY # Taymyria
+				# original_tag = ALT # Altai
+				# original_tag = YAM # Yamalia
+				# original_tag = OVO # Ostyak-Vogulia
+				# original_tag = TAN # Tannu Tuva
+			# }
+		# }
+
+		# available = {
+			# controls_state = 653 # Sverdlovsk
+			# controls_state = 572 # Chelyabinsk
+			# controls_state = 582 # Magnitogorsk
+			# controls_state = 573 # Zlatoust
+			# controls_state = 398 # Perm
+			# controls_state = 581 # Northern Urals
+		# }
+
+		# visible = {
+			# OR = {
+				# original_tag = YAK # Yakutia
+				# original_tag = FER # Far Eastern Republic
+				# original_tag = CKK # Chukotka
+				# original_tag = VLA # Vladivostok
+				# original_tag = BYA # Buryatia
+				# original_tag = TAY # Taymyria
+				# original_tag = ALT # Altai
+				# original_tag = YAM # Yamalia
+				# original_tag = OVO # Ostyak-Vogulia
+				# original_tag = TAN # Tannu Tuva
+			# }
+			
+			# has_global_flag = form_siberian_republic_flag
+			# NOT = { has_global_flag = urals_integrated_flag }
+
+				# has_dlc = "No Step Back"
+		# }
+
+		# complete_effect = {
 		
-				# Sverdlovsk
-				653 = { add_core_of = ROOT }
+				# # Sverdlovsk
+				# 653 = { add_core_of = ROOT }
 				
-				# Chelyabinsk
-				572 = { add_core_of = ROOT }
+				# # Chelyabinsk
+				# 572 = { add_core_of = ROOT }
 				
-				# Magnitogorsk
-				582 = { add_core_of = ROOT }
+				# # Magnitogorsk
+				# 582 = { add_core_of = ROOT }
 				
-				# Zlatoust
-				573 = { add_core_of = ROOT }
+				# # Zlatoust
+				# 573 = { add_core_of = ROOT }
 				
-				# Perm
-				398 = { add_core_of = ROOT }
+				# # Perm
+				# 398 = { add_core_of = ROOT }
 				
-				# Northern Urals
-				581 = { add_core_of = ROOT }
+				# # Northern Urals
+				# 581 = { add_core_of = ROOT }
 			
 			
-			#add_ideas = soldiers_of_the_steppe
+			# #add_ideas = soldiers_of_the_steppe
 			
-			hidden_effect = { 
+			# hidden_effect = { 
 				
-				set_global_flag = urals_integrated_flag
+				# set_global_flag = urals_integrated_flag
 				
-			}
-		}
+			# }
+		# }
 
-		ai_will_do = {
-			factor = 200
-			modifier = {
-				factor = 0
-				is_historical_focus_on = yes
-			}
-		}
-	}
+		# ai_will_do = {
+			# factor = 200
+			# modifier = {
+				# factor = 0
+				# is_historical_focus_on = yes
+			# }
+		# }
+	# }
 	
 	
-	liberate_the_ainu = { 
+	# liberate_the_ainu = { 
 
-		icon = generic_form_nation
+		# icon = generic_form_nation
 
-		allowed = {
-			OR = {
-				original_tag = YAK # Yakutia
-				original_tag = FER # Far Eastern Republic
-				original_tag = CKK # Chukotka
-				original_tag = VLA # Vladivostok
-				original_tag = BYA # Buryatia
-				original_tag = TAY # Taymyria
-				original_tag = ALT # Altai
-				original_tag = YAM # Yamalia
-				original_tag = OVO # Ostyak-Vogulia
-				original_tag = TAN # Tannu Tuva
-			}
-		}
+		# allowed = {
+			# OR = {
+				# original_tag = YAK # Yakutia
+				# original_tag = FER # Far Eastern Republic
+				# original_tag = CKK # Chukotka
+				# original_tag = VLA # Vladivostok
+				# original_tag = BYA # Buryatia
+				# original_tag = TAY # Taymyria
+				# original_tag = ALT # Altai
+				# original_tag = YAM # Yamalia
+				# original_tag = OVO # Ostyak-Vogulia
+				# original_tag = TAN # Tannu Tuva
+			# }
+		# }
 
-		available = {
-			controls_state = 537 # South Sakhalin
-			controls_state = 555 # Kuril Islands
-			controls_state = 536 # Hokkaido
-		}
+		# available = {
+			# controls_state = 537 # South Sakhalin
+			# controls_state = 555 # Kuril Islands
+			# controls_state = 536 # Hokkaido
+		# }
 
-		visible = {
-			OR = {
-				original_tag = YAK # Yakutia
-				original_tag = FER # Far Eastern Republic
-				original_tag = CKK # Chukotka
-				original_tag = VLA # Vladivostok
-				original_tag = BYA # Buryatia
-				original_tag = TAY # Taymyria
-				original_tag = ALT # Altai
-				original_tag = YAM # Yamalia
-				original_tag = OVO # Ostyak-Vogulia
-				original_tag = TAN # Tannu Tuva
-			}
+		# visible = {
+			# OR = {
+				# original_tag = YAK # Yakutia
+				# original_tag = FER # Far Eastern Republic
+				# original_tag = CKK # Chukotka
+				# original_tag = VLA # Vladivostok
+				# original_tag = BYA # Buryatia
+				# original_tag = TAY # Taymyria
+				# original_tag = ALT # Altai
+				# original_tag = YAM # Yamalia
+				# original_tag = OVO # Ostyak-Vogulia
+				# original_tag = TAN # Tannu Tuva
+			# }
 			
-			has_global_flag = form_siberian_republic_flag
-			NOT = { has_global_flag = ainu_integrated_flag }
+			# has_global_flag = form_siberian_republic_flag
+			# NOT = { has_global_flag = ainu_integrated_flag }
 
-				has_dlc = "No Step Back"
-		}
+				# has_dlc = "No Step Back"
+		# }
 
-		complete_effect = {
+		# complete_effect = {
 		
-				# South Sakhalin
-				537 = { add_core_of = ROOT }
+				# # South Sakhalin
+				# 537 = { add_core_of = ROOT }
 				
-				# Kuril Islands
-				555 = { add_core_of = ROOT }
+				# # Kuril Islands
+				# 555 = { add_core_of = ROOT }
 				
-				# Hokkaido
-				536 = { add_core_of = ROOT }
+				# # Hokkaido
+				# 536 = { add_core_of = ROOT }
 			
-			#add_ideas = soldiers_of_the_steppe
+			# #add_ideas = soldiers_of_the_steppe
 			
-			hidden_effect = { 
+			# hidden_effect = { 
 				
-				set_global_flag = ainu_integrated_flag
+				# set_global_flag = ainu_integrated_flag
 				
-			}
-		}
+			# }
+		# }
 
-		ai_will_do = {
-			factor = 200
-			modifier = {
-				factor = 0
-				is_historical_focus_on = yes
-			}
-		}
-	}
-}
+		# ai_will_do = {
+			# factor = 200
+			# modifier = {
+				# factor = 0
+				# is_historical_focus_on = yes
+			# }
+		# }
+	# }
+# }
 
 
 

@@ -487,6 +487,11 @@ spriteTypes = {
 	}
 
 	SpriteType = {
+		name = "GFX_support_weapons7_medium"
+		texturefile = "gfx/interface/technologies/support_weapons7.dds"
+	}
+	
+	SpriteType = {
 		name = "GFX_support_weapons6_medium"
 		texturefile = "gfx/interface/technologies/support_weapons6.dds"
 	}
@@ -6203,4 +6208,13 @@ spriteTypes = {
 		name = GFX_SPR_adv_heavy_tank
 		texturefile = gfx/interface/technologies/spr_adv_heavy_tank.dds
 	}
+	spriteType = {
+		name = GFX_infantry_coilguns_medium
+		texturefile = gfx/interface/technologies/infantry_weapons_coilguns.dds
+	}
+	spriteType = {
+		name = GFX_infantry_coilguns_2_medium
+		texturefile = gfx/interface/technologies/infantry_weapons_coilguns_1.dds
+	}
+	
 }

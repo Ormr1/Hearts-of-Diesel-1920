@@ -8265,4 +8265,12 @@ spriteTypes = {
 		name = GFX_portrait_SOV_rasputin_small
 		texturefile = "gfx/leaders/FEN/Portrait_Rasputin_small.dds"
 	}
+	frameAnimatedSpriteType = {
+		name = GFX_portrait_EGY_cleopatra_osiris
+		texturefile = "gfx/leaders/EGY/Portrait_EGY_Cleopatra_Osiris_2.png"
+		noOfFrames = 105
+		animation_rate_fps = 20
+		looping = yes
+		play_on_show = yes
+	}
 }
