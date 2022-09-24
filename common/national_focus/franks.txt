@@ -4307,8 +4307,151 @@ focus = { ### Think of the Manchuria focus as you try to escape Japanese rule, w
     }
     search_filters = {FOCUS_FILTER_INDUSTRY}
     completion_reward = {
-        country_event = fra_revolution.6
-    }
+        unlock_decision_tooltip = MAN_divert_machine_tools
+			if = {
+				limit = { 892 = { is_fully_controlled_by = ROOT } }
+				892 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+					add_extra_state_shared_building_slots = 1
+				}
+			}
+			if = {
+				limit = { 31 = { is_fully_controlled_by = ROOT } }
+				31 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+					add_extra_state_shared_building_slots = 1
+				}
+			}
+			if = {
+				limit = { 806 = { is_fully_controlled_by = ROOT } }
+				806 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+					add_extra_state_shared_building_slots = 1
+				}
+			}
+			if = {
+				limit = { 328 = { is_fully_controlled_by = ROOT } }
+				328 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+					add_extra_state_shared_building_slots = 1
+				} 
+			}
+            if = {
+				limit = { 33 = { is_fully_controlled_by = ROOT } }
+				33 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+					add_extra_state_shared_building_slots = 1
+				} 
+			}
+            if = {
+				limit = { 26 = { is_fully_controlled_by = ROOT } }
+				26 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+					add_extra_state_shared_building_slots = 1
+				} 
+			}
+            if = {
+				limit = { 32 = { is_fully_controlled_by = ROOT } }
+				32 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+					add_extra_state_shared_building_slots = 1
+				} 
+			}
+            if = {
+				limit = { 20 = { is_fully_controlled_by = ROOT } }
+				20 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+					add_extra_state_shared_building_slots = 1
+				} 
+			}
+            if = {
+				limit = { 21 = { is_fully_controlled_by = ROOT } }
+				21 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+					add_extra_state_shared_building_slots = 1
+				} 
+			}
+            if = {
+				limit = { 22 = { is_fully_controlled_by = ROOT } }
+				22 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+					add_extra_state_shared_building_slots = 1
+				} 
+			}
+            if = {
+				limit = { 891 = { is_fully_controlled_by = ROOT } }
+				891 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+					add_extra_state_shared_building_slots = 1
+				} 
+			}
+            if = {
+				limit = { 902 = { is_fully_controlled_by = ROOT } }
+				902 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+					add_extra_state_shared_building_slots = 1
+				} 
+			}
+            if = {
+				limit = { 735 = { is_fully_controlled_by = ROOT } }
+				735 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+					add_extra_state_shared_building_slots = 1
+				} 
+			}
+        }
     prerequisite = {
         focus = FRA_International_Arms_Market
     }
@@ -4368,10 +4511,7 @@ focus = { ### Add idea that increases with each focus in this path
     }
     search_filters = {FOCUS_FILTER_POLITICAL}
     completion_reward = {
-        swap_ideas = {
-            remove_idea = FRA_Spreading_News
-            add_idea = FRA_Political_Connections
-        }
+        FRA_Ideological_Protests_level_Down = yes
     }
     prerequisite = {
         focus = FRA_Fight_For_Your_Freedom
@@ -4379,7 +4519,7 @@ focus = { ### Add idea that increases with each focus in this path
 }
 ### Ally the Socialists, Democrats, and Anarchists - Increased Communist, Democrat, and Anarchist ticking for a certain time?
 focus = {
-    id = FRA_Ally_the_Socialists
+    id = FRA_Socialist_Ideas
     icon = placeholder
     relative_position_id = FRA_Gain_Political_Alliances
     x = 2
@@ -4393,17 +4533,14 @@ focus = {
     }
     search_filters = {FOCUS_FILTER_POLITICAL}
     completion_reward = {
-        swap_ideas = {
-            remove_idea = FRA_Mixed_Political_Connections
-            add_idea = FRA_Authoritarian_Political_Connections
-        }
+        FRA_Ideological_Protests_level_Down = yes
     }
     prerequisite = {
         focus = FRA_Gain_Political_Alliances
     }
 }
 focus = {
-    id = FRA_Gain_Support_Of_the_Anarchists
+    id = FRA_Look_into_the_Riots
     icon = placeholder
     relative_position_id = FRA_Gain_Political_Alliances
     x = -2
@@ -4414,10 +4551,7 @@ focus = {
     }
     search_filters = {FOCUS_FILTER_POLITICAL}
     completion_reward = {
-        swap_ideas = {
-            remove_idea = FRA_Political_Connections
-            add_idea = FRA_Free_Political_Connections
-        }
+        FRA_Ideological_Protests_level_Down = yes
     }
     prerequisite = {
         focus = FRA_Gain_Political_Alliances
@@ -4426,7 +4560,7 @@ focus = {
 focus = { 
     id = FRA_Unite_the_Left
     icon = placeholder
-    relative_position_id = FRA_Befriend_the_Democrats
+    relative_position_id = FRA_Question_the_Monarchy
     x = 0
     y = 1
     cost = 6
@@ -4436,23 +4570,20 @@ focus = {
     cost = 7
     search_filters = {FOCUS_FILTER_POLITICAL}
     completion_reward = {
-        swap_ideas = {
-            remove_idea = FRA_Mixed_Political_Connections
-            add_idea = FRA_United_Political_Connections
-        }
+        FRA_Ideological_Protests_level_Down = yes
     }
     prerequisite = {
-        focus = FRA_Gain_Support_Of_the_Anarchists
+        focus = FRA_Question_the_Monarchy
     }
     prerequisite = {
-        focus = FRA_Befriend_the_Democrats
+        focus = FRA_Look_into_the_Riots
     }
     prerequisite = {
-        focus = FRA_Ally_the_Socialists
+        focus = FRA_Socialist_Ideas
     }
 }
 focus = {
-    id = FRA_Befriend_the_Democrats
+    id = FRA_Question_the_Monarchy
     icon = placeholder
     relative_position_id = FRA_Gain_Political_Alliances
     x = 0
@@ -4466,10 +4597,7 @@ focus = {
     }
     search_filters = {FOCUS_FILTER_POLITICAL}
     completion_reward = {
-        swap_ideas = {
-            remove_idea = FRA_Free_Political_Connections
-            add_idea = FRA_Mixed_Political_Connections
-        }
+        FRA_Ideological_Protests_level_Down = yes
     }
     prerequisite = {
         focus = FRA_Gain_Political_Alliances
@@ -4582,7 +4710,7 @@ focus = {
     }
     search_filters = {FOCUS_FILTER_POLITICAL}
     completion_reward = {
-        FRA_spreading_news_level_down = yes
+			add_ideas = { FRA_Spreading_News }
     }
     prerequisite = {
         focus = FRA_Fight_For_Your_Freedom

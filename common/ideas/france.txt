@@ -23,6 +23,7 @@ ideas = {
 				war_support_factor = -0.5
 			}
 		}
+		
 
 		FRA_full_employment = {
 			picture = generic_production_bonus
@@ -121,86 +122,27 @@ ideas = {
 			}
 		}
 		
-		FRA_Spreading_News_7 = {
-			picture = placeholder
-			allowed = {
-				original_tag = FRA
-				always = yes
-			}
-
-			allowed_civil_war = {
-				always = no
-			}
-
-			removal_cost = -1
-
-			modifier = {
-				communism_drift = 0.05
-				democratic_drift = 0.05
-				neutrality_drift = 0.03
-			}
-		}
-
-		FRA_Spreading_News_6 = {
-			picture = placeholder
-			allowed = {
-				original_tag = FRA
-				always = yes
-			}
-
-			allowed_civil_war = {
-				always = no
-			}
-
-			removal_cost = -1
-
-			modifier = {
-				communism_drift = 0.1
-				democratic_drift = 0.1
-				neutrality_drift = 0.08
-			}
-		}
-		FRA_Spreading_News_5 = {
-			picture = placeholder
-				allowed = {
-					original_tag = FRA
-					always = yes
-				}
-
-				allowed_civil_war = {
-					always = no
-				}
-
-				removal_cost = -1
-
-				modifier = {
-					communism_drift = 0.15
-					democratic_drift = 0.15
-					neutrality_drift = 0.13
-				}
-		}
-
 		FRA_Spreading_News = {
 			picture = placeholder
-				allowed = {
-					original_tag = FRA
-					always = yes
-				}
+			allowed = {
+				original_tag = FRA
+				always = yes
+			}
 
-				allowed_civil_war = {
-					always = no
-				}
+			allowed_civil_war = {
+				always = no
+			}
 
-				removal_cost = -1
+			removal_cost = -1
 
-				modifier = {
-					communism_drift = 0.35
-					democratic_drift = 0.35
-					neutrality_drift = 0.32
-				}
+			modifier = {
+				communism_drift = 0.07
+				democratic_drift = 0.1
+				neutrality_drift = 0.05
+			}
 		}
 
-		FRA_Spreading_News_2 = {
+		FRA_Ideological_Protests_5 = {
 			picture = placeholder
 				allowed = {
 					original_tag = FRA
@@ -214,13 +156,14 @@ ideas = {
 				removal_cost = -1
 
 				modifier = {
-					communism_drift = 0.3
-					democratic_drift = 0.3
-					neutrality_drift = 0.28
+					communism_drift = 0.03
+					democratic_drift = 0.05
+					neutrality_drift = 0.01
+					stability_factor = -0.05
 				}
 		}
 
-		FRA_Spreading_News_3 = {
+		FRA_Ideological_Protests = {
 			picture = placeholder
 				allowed = {
 					original_tag = FRA
@@ -234,13 +177,15 @@ ideas = {
 				removal_cost = -1
 
 				modifier = {
-					communism_drift = 0.25
+					communism_drift = 0.23
 					democratic_drift = 0.25
-					neutrality_drift = 0.23
+					neutrality_drift = 0.21
+					stability_factor = -0.15
+					war_support_factor = -0.1
 				}
 		}
 
-		FRA_Spreading_News_4 = {
+		FRA_Ideological_Protests_2 = {
 			picture = placeholder
 				allowed = {
 					original_tag = FRA
@@ -254,9 +199,54 @@ ideas = {
 				removal_cost = -1
 
 				modifier = {
-					communism_drift = 0.2
+					communism_drift = 0.18
 					democratic_drift = 0.2
-					neutrality_drift = 0.18
+					neutrality_drift = 0.16
+					stability_factor = -0.12
+					war_support_factor = -0.07
+				}
+		}
+
+		FRA_Ideological_Protests_3 = {
+			picture = placeholder
+				allowed = {
+					original_tag = FRA
+					always = yes
+				}
+
+				allowed_civil_war = {
+					always = no
+				}
+
+				removal_cost = -1
+
+				modifier = {
+					communism_drift = 0.13
+					democratic_drift = 0.15
+					neutrality_drift = 0.11
+					stability_factor = -0.1
+					war_support_factor = -0.05
+				}
+		}
+
+		FRA_Ideological_Protests_4 = {
+			picture = placeholder
+				allowed = {
+					original_tag = FRA
+					always = yes
+				}
+
+				allowed_civil_war = {
+					always = no
+				}
+
+				removal_cost = -1
+
+				modifier = {
+					communism_drift = 0.08
+					democratic_drift = 0.1
+					neutrality_drift = 0.6
+					stability_factor = -0.07
 				}
 		}
 
