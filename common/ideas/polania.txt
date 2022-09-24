@@ -2,6 +2,74 @@ ideas = {
 
 country = {
 
+	POL_home_of_the_enlightenment = {
+		picture = placeholder
+		allowed = {
+			original_tag = POL
+			always = no
+		}
+		allowed_civil_war = {
+			always = yes
+		}
+		removal_cost = 0
+		modifier = {
+			democratic_drift = 0.05
+			democratic_acceptance = 50
+		}
+	}
+
+	POL_sanation_government = {
+		picture = placeholder
+		allowed = {
+			original_tag = POL
+			always = no
+		}
+		allowed_civil_war = {
+			always = yes
+		}
+		removal_cost = 0
+		modifier = {
+			drift_defence_factor = 0.75
+			stability_factor = 0.05
+			political_power_factor = 0.05
+		}
+	}
+
+	POL_kościuszkos_legacy = {
+		picture = placeholder
+		allowed = {
+			original_tag = POL
+			always = no
+		}
+		allowed_civil_war = {
+			always = yes
+		}
+		removal_cost = 0
+		modifier = {
+			monarchy_drift = 0.01
+			army_core_attack_factor = 0.10
+			army_core_attack_factor = 0.10
+		}
+	}
+
+	POL_russophobia = {
+		picture = placeholder
+		allowed = {
+			original_tag = POL
+			always = no
+		}
+		allowed_civil_war = {
+			always = yes
+		}
+		removal_cost = 0
+		targeted_modifier = {
+			SOV = {
+				attack_bonus_against = 0.05
+				defense_bonus_against = 0.05
+			}
+		}
+	}
+
 	POL_new_military_academy_idea = {
 
 		allowed = {

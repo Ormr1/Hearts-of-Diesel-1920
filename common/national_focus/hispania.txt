@@ -1,0 +1,280 @@
+focus_tree = {
+    id = hispania_focus
+
+    country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = SPR
+		}
+		
+		modifier = {
+			add = 10
+			original_tag = SPR
+		}
+	}
+    continuous_focus_position = { x = 50 y = 2000 }
+    default = no
+    ### CRISIS OF 1920
+    focus = {
+        id = SPR_Crisis_Of_1920
+        icon = placeholder
+        available = {
+            always = no
+        }
+        x = 0
+        y = 0
+        cost = 0
+        completion_reward = {
+            # Event explaining the crisis
+        }
+    }
+    focus = {
+        id = SPR_Elections_Of_1920
+        icon = placeholder
+        relative_position_id = SPR_Crisis_Of_1920
+        prerequisite = { focus = SPR_Crisis_Of_1920da }
+        available = {
+            always = no
+        }
+        x = 0
+        y = 1
+        cost = 10
+        completion_reward = {
+            # Event to decide who wins the elections
+                # Union of Christ (Christian Democrats)
+                # Liberal Democratic Party (Social Liberals)
+                # Labor Party (Progressives)
+        }
+    }
+    focus = {
+        id = SPR_Labor_Victory
+        icon = placeholder
+        relative_position_id = SPR_Elections_Of_1920
+        prerequisite = { focus = SPR_Elections_Of_1920 }
+        available = { always = no }
+        x = -4
+        y = 1
+        cost = 0
+        completion_reward = {
+
+        }
+    }
+    focus = {
+        id = SPR_Repair_Our_Infrastructure
+        icon = placeholder
+        relative_position_id = SPR_Labor_Victory
+        prerequisite = { focus = SPR_Labor_Victory }
+        x = -1
+        y = 1
+        cost = 10
+        completion_reward = {
+
+        }
+    }
+    focus = {
+        id = SPR_Link_Small_Towns_To_Cities
+        icon = placeholder
+        relative_position_id = SPR_Repair_Our_Infrastructure
+        x = -1
+        y = 1
+        cost = 10
+        completion_reward = {
+
+        }
+    }
+    focus = {
+        id = SPR_Rail_Worker_Employment_Program
+        icon = placeholder
+        relative_position_id = SPR_Repair_Our_Infrastructure
+        x = 1
+        y = 1
+        cost = 7
+        completion_reward = {
+            # Add an idea
+        }
+    }
+    focus = {
+        id = SPR_Metropolitan_Transit_Initiative
+        icon = placeholder
+        relative_position_id = SPR_Repair_Our_Infrastructure
+        prerequisite = { focus = SPR_Link_Small_Towns_To_Cities }
+        prerequisite = { focus = SPR_Rail_Worker_Employment_Program }        
+        x = 0
+        y = 2
+        cost = 10
+        completion_reward = {
+
+        }
+    }
+    focus = {
+        id = SPR_Institute_A_Church_Tax
+        icon = placeholder
+        relative_position_id = SPR_Labor_Victory
+        prerequisite = { focus = SPR_Labor_Victory }
+        x = 1
+        y = 1
+        cost = 10
+        completion_reward = {
+            # Idea + Event with people not liking the tax
+        }
+    }
+    focus = {
+        id = SPR_Institute_An_Estate_Tax
+        icon = placeholder
+        relative_position_id = SPR_Institute_A_Church_Tax
+        prerequisite = { focus = SPR_Institute_A_Church_Tax }
+        x = 0
+        y = 2
+        cost = 10
+        completion_reward = {
+
+        }
+    }
+    focus = {
+        id = SPR_Liberal_Democratic_Victory
+        icon = placeholder
+        relative_position_id = SPR_Elections_Of_1920
+        prerequisite = { focus = SPR_Elections_Of_1920 }
+        available = { always = no }
+        x = 0
+        y = 1
+        completion_reward = {
+
+        }
+    }
+    focus = {
+        id = SPR_Union_Of_Christ_Victory
+        icon = placeholder
+        relative_position_id = SPR_Elections_Of_1920
+        prerequisite = { focus = SPR_Elections_Of_1920 }
+        available = { always = no }
+        x = 4
+        y = 1
+        completion_reward = {
+
+        }
+    }
+
+    ### VANAM EXPEDITION
+    # VICTORY
+    focus = {
+        id = SPR_Victory_In_Vanam
+        icon = placeholder
+        x = 20
+        y = 0
+        mutually_exclusive = { focus = SPR_Victory_In_Vanam }
+        available = {
+            286 = {
+                owner = {
+                    OR = {
+                        original_tag = SPR
+                        is_subject_of = SPR
+                    }
+                }
+            }
+        }
+        cost = 1
+        completion_reward = {
+
+        }
+    }
+    focus = {
+        id = SPR_Install_A_Catholic_Governor
+        icon = placeholder
+        relative_position_id = SPR_Victory_In_Vanam
+        prerequisite = { focus = SPR_Victory_In_Vanam }
+        x = -1
+        y = 1
+        cost = 6
+        completion_reward = {
+
+        }
+    }
+    focus = {
+        id = SPR_Send_Missionaries_To_Vanam
+        icon = placeholder
+        relative_position_id = SPR_Install_A_Catholic_Governor
+        prerequisite = { focus = SPR_Install_A_Catholic_Governor }
+        x = 0
+        y = 1
+        cost = 7
+        completion_reward = {
+
+        }
+    }
+    focus = {
+        id = SPR_Move_In_Mining_Companies
+        icon = placeholder
+        relative_position_id = SPR_Victory_In_Vanam
+        prerequisite = { focus = SPR_Victory_In_Vanam }
+        x = 1
+        y = 1
+        cost = 7
+        completion_reward = {
+
+        }
+    }
+    focus = {
+        id = SPR_From_The_Mines_To_The_Ports
+        icon = placeholder
+        relative_position_id = SPR_Move_In_Mining_Companies
+        prerequisite = { focus = SPR_Move_In_Mining_Companies }
+        x = 0
+        y = 1
+        cost = 7
+        completion_reward = {
+
+        }
+    }
+    focus = {
+        id = SPR_Full_Vanamese_Integration
+        icon = placeholder
+        relative_position_id = SPR_Victory_In_Vanam
+        prerequisite = { focus = SPR_Send_Missionaries_To_Vanam }
+        prerequisite = { focus = SPR_From_The_Mines_To_The_Ports }
+        available = {
+            286 = {
+                compliance > 80
+            }
+        }
+        x = 0
+        y = 3
+        cost = 7
+        completion_reward = {
+            286 = {
+                add_core_of = SPR
+            }
+        }
+    }
+    # DEFEAT
+    focus = {
+        id = SPR_Defeat_In_Vanam
+        icon = placeholder
+        x = 24
+        y = 0
+        mutually_exclusive = { focus = SPR_Victory_In_Vanam }
+        available = {
+            AND = {
+                NOT = {
+                    has_war_with = VIN
+                }
+                NOT = {
+                    286 = {
+                        owner = {
+                            OR = {
+                                original_tag = SPR
+                                is_subject_of = SPR
+                            }
+                        }
+                    }  
+                }
+            }
+        }
+        cost = 1
+        completion_reward = {
+
+        }
+    }
+}

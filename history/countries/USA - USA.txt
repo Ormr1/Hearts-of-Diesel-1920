@@ -366,6 +366,7 @@ add_ideas = {
 	usa_underfunded_army
 	usa_usonian_esprit_de_corps
 	usa_overfarming_2
+	usa_usonian_film_industry
 }
 
 # DIPLOMACY

@@ -2,6 +2,9 @@
 
 add_ideas = {
 	treaty_of_brest_litovsk
+	POL_home_of_the_enlightenment
+	POL_sanation_government
+	POL_kościuszkos_legacy
 }
 
 oob = "POL_1936"
