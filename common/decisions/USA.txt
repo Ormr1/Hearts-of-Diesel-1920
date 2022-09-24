@@ -2281,6 +2281,42 @@ economy_decisions = {
 }
 
 foreign_politics = {
+	USA_initiate_operation_cold_front = {
+		icon = placeholder
+		allowed = {
+			original_tag = USA
+		}
+		available = {
+			has_completed_focus = USA_Operation_Cold_Front
+		}
+		visible = {
+			AND = {
+				has_completed_focus = USA_Operation_Cold_Front
+				SOV = {
+					owns_state = 463
+				}
+			}
+		}
+		war_with_target_on_complete = SOV
+		fire_only_once = yes
+		complete_effect = {
+			start_border_war = {
+                change_state_after_war = yes
+                attacker = {
+                    state = 471
+                    num_provinces = 3
+                    on_win = usa_alaska.4
+                    on_lose = usa_alaska.6
+                }     
+                defender = {
+                    state = 463
+                    num_provinces = 3
+                    on_win = usa_alaska.7
+                    on_lose = usa_alaska.5
+                }
+            }
+		}
+	}
 	USA_guns_for_the_anti_bolshevist_war = {
 
 		icon = generic_prepare_civil_war
