@@ -191,6 +191,39 @@ units = {
 
 	}
 	division= {	# "4da División de Infantería"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 16
+		}
+		location = 10992 # Montevideo
+		division_template = "Peoples Infantry"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+
+	}
+	division= {	# "4da División de Infantería"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 17
+		}
+		location = 7550 # Montevideo
+		division_template = "Peoples Infantry"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+
+	}
+	division= {	# "4da División de Infantería"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 18
+		}
+		location = 5184 # Montevideo
+		division_template = "Peoples Infantry"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+
+	}
+	division= {	# "4da División de Infantería"
 		name = "1st Peoples Mountainers"
 		location = 10992 # Montevideo
 		division_template = "Mounaineer Division"

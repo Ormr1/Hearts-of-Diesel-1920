@@ -161,6 +161,9 @@ FEN_fenris_interests_cat = {
 		complete_effect = {
 			SOV={country_event = {id = SOV_civil_war.1}}
 		}
+		ai_will_do = {
+			base = 1000
+		}
 	}
 	FEN_provoke_reprisals_SOV = {
 
@@ -373,6 +376,9 @@ FEN_fenris_interests_cat = {
 
 		complete_effect = {
 			#add country event here
+		}
+		ai_will_do = {
+			base = 1000
 		}
 	}
 	FEN_USA_skim_buisness_profits = {

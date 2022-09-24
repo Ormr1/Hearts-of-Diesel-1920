@@ -35,7 +35,7 @@ country = {
 		}
 	}
 
-	POL_kościuszkos_legacy = {
+	POL_kosciuszkos_legacy = {
 		picture = placeholder
 		allowed = {
 			original_tag = POL
