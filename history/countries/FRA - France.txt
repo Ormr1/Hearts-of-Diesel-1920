@@ -132,6 +132,7 @@ if = {
 	}
 	add_ideas = {
 		FRA_loss_to_saxony
+		FRA_Ideological_Protests_6
 	}
 }
 if = {

@@ -2901,4 +2901,59 @@ FRA_decolonization = {
 			}
 		}
 	}
+	FRA_Begin_the_Revolution = {
+		available = {
+
+		}
+		visible = {
+			has_completed_focus = FRA_Light_the_Torch
+			not = {
+				has_country_flag =  { 
+					flag = FRA_cosmetic_tag_democratic 
+					value = 4
+				}
+			}
+		}
+		complete_effect = {
+        	add_ideas = FRA_Revolutionary_Ideals
+		}
+    }
+
+		remove_effect = {
+			if = {
+				limit = {
+					not = {
+						has_country_flag = FRA_cosmetic_tag_democratic
+					}
+				}
+				set_country_flag = {
+					flag = FRA_cosmetic_tag_democratic
+					value = 1
+				}
+			}
+			else = {
+				modify_country_flag = {
+					flag = FRA_cosmetic_tag_democratic
+					value = 1
+				}
+			}
+		}
+	}
+	FRA_Begin_the_Revolution = {
+		available = {
+
+		}
+		visible = {
+			has_completed_focus = FRA_Mimic_Foreign_Equipment
+			not = {
+				has_country_flag =  { 
+					flag = FRA_cosmetic_tag_democratic 
+					value = 4
+				}
+			}
+		}
+		complete_effect = {
+        	add_ideas = FRA_Revolutionary_Ideals
+		}
+	}
 }

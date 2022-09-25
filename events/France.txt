@@ -2502,63 +2502,62 @@ country_event = { # fra_civilwarignite.1
 	fire_only_once = yes
     option = {
         name = fra_civilwarignite
-        FRA = { 
-            start_civil_war = {
-                ruling_party = democratic
-                ideology = ROOT
-				set_capital = { state = 55 }
-                size = 0.5
-                only_own_territory = yes
-                capital = 9737
-                states = { 
-                    27 17 28 24 16 15 30 19 23 18 33
-                }
-				capital = 55
-                keep_unit_leaders = {
-                    750 751 752
-                }
-                keep_political_leader = yes
-                keep_political_party_members = yes
-				hidden_effect = {
-					ruling_party = democratic
-					ideology = ROOT
-					set_capital = { state = 15 }
-					size = 0.5
-					only_own_territory = yes
-					capital = 9737
-					states = { 
-						27 17 28 24 16 15 30 19 23 18 33 539 772 660 514 513 459 460
-					}
-				}
-				add_popularity = {
-					ideology = communism
-					popularity = 0.33
-				}
-				add_popularity = {
-					ideology = democratic
-					popularity = 0.33
-				}
-				add_popularity = {
-					ideology = neutrality
-					popularity = 0.33
-				}
-				add_popularity = {
-					ideology = fascism
-					popularity = 0
-				}	
-				add_popularity = {
-					ideology = ROOT
-					popularity = 0.01
-				}
-				set_stability = 0.5
-				set_war_support = 0.4
-				}
-				random_other_country = {
-				limit = {
-					original_tag = d01
-					has_government = ROOT
-				}
+		set_capital = { state = 902 }
+		start_civil_war = {
+			ruling_party = democratic
+			ideology = ROOT
+			set_capital = { state = 15 }
+			size = 0.5
+			only_own_territory = yes
+			states = { 
+				27 17 28 24 16 15 30 19 23 18
 			}
-        }
+			keep_unit_leaders = {
+				750 751 752
+			}
+			keep_political_leader = yes
+			keep_political_party_members = yes
+			}
+		}
+		add_popularity = {
+				ideology = communism
+				popularity = 0.33
+			}
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.33
+			}
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.33
+			}
+			add_popularity = {
+				ideology = ROOT
+				popularity = 0.01
+			}	
+			set_stability = 0.9
+			set_war_support = 0.8
     }
+}
+
+country_event = {
+	id = fra_civilwarignite.2
+	title = fra_civilwarignite.2.t 
+	desc = fra_civilwarignite.2.desc 
+
+	picture = placeholder
+
+	trigger = {
+		has_civil_war = yes
+	}
+
+	is_triggered_only = no
+	fire_only_once = yes
+
+	option = {
+		name = FRA_Revolutionary 
+		FRA = {
+			add_ideas = { FRA_Revolutionary_Ideals }
+		}
+	}
 }
