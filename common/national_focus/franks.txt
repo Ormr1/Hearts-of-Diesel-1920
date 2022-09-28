@@ -4736,7 +4736,6 @@ focus = {
     }
     search_filters = {FOCUS_FILTER_POLITICAL}
     completion_reward = {
-        unlock_decision_tooltip = FRA_Begin_the_Revolution
         country_event = {id = fra_civilwarignite.1}
         #add_namespace = fra_civilwarignite.1
         remove_ideas = {}
@@ -4768,7 +4767,7 @@ focus = { ### Birth Of a New Nation - Could give National Spirit/Idea that lets 
     search_filters = {FOCUS_FILTER_POLITICAL}
     completion_reward = {
         add_timed_idea = {
-            idea = FRA_Recovering_From_the_Civil_War
+            idea = FRA_Beauty_of_a_Democratic_Frankia
             days = 1095
         }
     }
@@ -4886,6 +4885,12 @@ focus = {
     cost = 3
     ai_will_do = {
         factor = 8
+    }
+    completion_reward = {
+        swap_ideas = {
+            remove_idea = FRA_Beauty_of_a_Democratic_Frankia
+            add_idea = FRA_Focus_on_the_Anarcho_Communists
+        }
     }
     prerequisite = {
         focus = FRA_Power_to_the_People
