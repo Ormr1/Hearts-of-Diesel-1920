@@ -2910,7 +2910,7 @@ FRA_decolonization = {
 			not = {
 				has_country_flag =  { 
 					flag = FRA_cosmetic_tag_democratic 
-					value = 4
+					value = 1
 				}
 			}
 		}
@@ -2944,7 +2944,7 @@ FRA_decolonization = {
 
 		}
 		visible = {
-			has_completed_focus = FRA_Mimic_Foreign_Equipment
+			has_completed_focus = FRA_Light_the_Torch
 			not = {
 				has_country_flag =  { 
 					flag = FRA_cosmetic_tag_democratic 
@@ -2954,6 +2954,36 @@ FRA_decolonization = {
 		}
 		complete_effect = {
         	add_ideas = FRA_Revolutionary_Ideals
+		}
+	}
+	FRA_Ditto_Equipment = {
+		available = {
+
+		}
+		visible = {
+			has_completed_focus = FRA_Mimic_Foreign_Equipment
+		}
+		complete_effect = {
+			add_opinion_modifier = {
+				target = USA
+				modifier = huge_increase
+			}
+			add_opinion_modifier = {
+				target = SOV
+				modifier = huge_increase
+			}
+			add_opinion_modifier = {
+				target = SPR
+				modifier = huge_increase
+			}
+			add_opinion_modifier = {
+				target = GRE
+				modifier = huge_increase
+			}
+			add_opinion_modifier = {
+				target = ITA
+				modifier = huge_increase
+			}
 		}
 	}
 }
