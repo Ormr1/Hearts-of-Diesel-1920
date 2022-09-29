@@ -2519,7 +2519,6 @@ country_event = { # fra_civilwarignite.1
 			keep_political_party_members = yes
 			}
 		}
-		add_ideas = FRA_Revolutionary_Ideals
 		add_popularity = {
 				ideology = communism
 				popularity = 0.33
@@ -2549,8 +2548,7 @@ country_event = {
 	picture = placeholder
 
 	trigger = {
-		has_civil_war = no
-		has_completed_focus = FRA_Light_the_Torch
+		has_civil_war = yes
 	}
 
 	is_triggered_only = no
@@ -2559,10 +2557,7 @@ country_event = {
 	option = {
 		name = FRA_Revolutionary 
 		FRA = {
-			add_timed_idea = {
-				idea = FRA_Recovering_From_the_Civil_War
-				days = 1095
-			}
+			add_ideas = { FRA_Revolutionary_Ideals }
 		}
 	}
 }
