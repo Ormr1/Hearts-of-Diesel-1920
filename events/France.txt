@@ -6,7 +6,7 @@ add_namespace = france
 add_namespace = fra_revolution
 add_namespace = fra_monarchy
 add_namespace = fra_economic
-add_namespace = fra_sabotage
+add_namespace = fra_anarchist
 add_namespace = fra_politicalalliance
 add_namespace = fra_civilwarignite
 add_namespace = fra_parliament
@@ -2557,12 +2557,56 @@ country_event = {
 	fire_only_once = yes
 
 	option = {
-		name = FRA_Revolutionary 
+		name = FRA_Revolutionary.a
 		FRA = {
 			add_timed_idea = {
 				idea = FRA_Recovering_From_the_Civil_War
 				days = 1095
 			}
 		}
+	}
+}
+
+country_event = {
+	id = FRA_Anarchist.1
+	title = fra_anarchist.1.t 
+	desc = fra_anarchist.1.desc 
+
+	picture = placeholder
+
+	trigger = {
+		
+	}
+
+	is_triggered_only = no
+	fire_only_once = yes
+
+	option = {
+		name = FRA_anarchist.1.a 
+		remove_ideas = { FRA_Beauty_of_a_Democratic_Frankia }
+	}
+}
+
+country_event = {
+	id = FRA_Anarchist.2
+	title = fra_anarchist.2.t 
+	desc = fra_anarchist.2.desc 
+
+	picture = placeholder
+
+	trigger = {
+		
+	}
+
+	is_triggered_only = no
+	fire_only_once = yes
+
+	option = {
+		name = FRA_anarchist.2.a 
+		set_cosmetic_tag = FRA_cosmetic_tag_communism
+	}
+	option = {
+		name = FRA_anarchist.2.b
+		set_cosmetic_tag = FRA_cosmetic_tag_democratic
 	}
 }

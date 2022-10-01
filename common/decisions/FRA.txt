@@ -2931,4 +2931,32 @@ FRA_decolonization = {
 			}
 		}
 	}
+	FRA_Red_Tension = {
+		activation = {
+			has_civil_war = yes
+		}
+    available = {
+       
+    }
+	visible = {
+		has_completed_focus = FRA_Red_Tension
+		has_idea = FRA_Tensions_Between_the_Ideologies
+	}
+    cancel_trigger = {
+        has_war = no
+    }
+    icon = mission_icon     # For GFX_decision_mission_icon
+    is_good = yes
+    war_with_on_timeout = FRA
+    days_mission_timeout = 1095
+    selectable_mission = yes
+    complete_effect = {
+        remove_idea 
+    }
+    timeout_effect = {
+        declare_war_on = {
+            target = FRA
+            type = annex_everything
+        }
+    }
 }

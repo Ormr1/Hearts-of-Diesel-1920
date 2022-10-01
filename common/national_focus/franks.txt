@@ -4797,9 +4797,9 @@ focus = {
     id = FRA_More_to_the_Government
     icon = placeholder
     mutually_exclusive = { focus = FRA_Power_to_the_People }
-    available = { has_country_flag = FRA_flag_name }
+    available = { has_country_flag = FRA_cosmetic_tag_communism }
     relative_position_id = FRA_The_Power_Scenario
-    x = -10
+    x = -20
     y = 1
     cost = 8
     ai_will_do = {
@@ -4842,9 +4842,9 @@ focus = {
     id = FRA_Power_to_the_People
     icon = placeholder
     mutually_exclusive = { focus = FRA_More_to_the_Government }
-    available = { has_country_flag = FRA_flag_name }
+    available = { has_country_flag = FRA_cosmetic_tag_democratic }
     relative_position_id = FRA_The_Power_Scenario
-    x = 10
+    x = 20
     y = 1
     cost = 1
     ai_will_do = {
@@ -4864,7 +4864,7 @@ focus = { ### AnCap Moment
     mutually_exclusive = { focus = FRA_The_Workers_Paradise }
     available = { always = no }
     relative_position_id = FRA_Power_to_the_People
-    x = 6
+    x = 10
     y = 1
     cost = 3
     ai_will_do = {
@@ -4880,17 +4880,15 @@ focus = {
     mutually_exclusive = { focus = FRA_A_Caplitalists_Dream }
     available = { always = no }
     relative_position_id = FRA_Power_to_the_People
-    x = -6
+    x = -10
     y = 1
     cost = 3
     ai_will_do = {
         factor = 8
     }
     completion_reward = {
-        swap_ideas = {
-            remove_idea = FRA_Beauty_of_a_Democratic_Frankia
-            add_idea = FRA_Focus_on_the_Anarcho_Communists
-        }
+        add_ideas = { idea = FRA_Focus_on_the_Anarcho_Communists }
+        country_event = FRA_Anarchist.1
     }
     prerequisite = {
         focus = FRA_Power_to_the_People
@@ -4910,12 +4908,18 @@ focus = { ### Begins countdown to get rid of poltiical instability. If not compl
     prerequisite = {
         focus = FRA_The_Workers_Paradise
     }
+    completion_reward = {
+        swap_ideas = {
+            remove_idea = FRA_Focus_on_the_Anarcho_Communists
+            add_idea = FRA_Tensions_Between_the_Ideologies
+        }
+    }
 }
 focus = {
     id = FRA_Replace_Ministers_With_Anarchists
     icon = placeholder
     relative_position_id = FRA_Red_Tension
-    x = 1
+    x = 5
     y = 1
     cost = 8
     ai_will_do = {
@@ -4929,7 +4933,7 @@ focus = {
     id = FRA_Grants_to_the_Lower_Class
     icon = placeholder
     relative_position_id = FRA_Red_Tension
-    x = 3
+    x = 10
     y = 1
     cost = 6
     ai_will_do = {
@@ -4943,7 +4947,7 @@ focus = {
     id = FRA_Free_Up_Government_Jobs
     icon = placeholder
     relative_position_id = FRA_Red_Tension
-    x = -1
+    x = -5
     y = 1
     cost = 6
     ai_will_do = {
@@ -4957,7 +4961,7 @@ focus = {
     id = FRA_Reduce_the_Effects_of_Money
     icon = placeholder
     relative_position_id = FRA_Red_Tension
-    x = -3
+    x = -12
     y = 1
     cost = 6
     ai_will_do = {
@@ -4966,8 +4970,196 @@ focus = {
     prerequisite = {
         focus = FRA_Red_Tension
     }
+    completion_reward = {
+		add_ideas = { FRA_Reduction_of_Currency }
+    }
 }
-
+focus = {
+    id = FRA_Devalued_Economy
+    icon = placeholder
+    relative_position_id = FRA_Reduce_the_Effects_of_Money
+    x = 4
+    y = 1
+    cost = 6
+    ai_will_do = {
+        factor = 10
+    }
+    prerequisite = {
+        focus = FRA_Reduce_the_Effects_of_Money
+    }
+}
+focus = {
+    id = FRA_Except_on_an_International_Scale
+    icon = placeholder
+    relative_position_id = FRA_Reduce_the_Effects_of_Money
+    x = -1
+    y = 1
+    cost = 6
+    ai_will_do = {
+        factor = 10
+    }
+    prerequisite = {
+        focus = FRA_Reduce_the_Effects_of_Money
+    }
+    completion_reward = {
+        swap_ideas = {
+            remove_idea = FRA_Reduction_of_Currency
+            add_idea = FRA_International_Wealth
+        }
+    }
+}
+focus = {
+    id = FRA_Rely_on_the_Production_of_Workers
+    icon = placeholder
+    relative_position_id = FRA_Except_on_an_International_Scale
+    x = 3
+    y = 1
+    cost = 6
+    ai_will_do = {
+        factor = 10
+    }
+    prerequisite = {
+        focus = FRA_Except_on_an_International_Scale
+    }
+    prerequisite = {
+        focus = FRA_Devalued_Economy
+    }
+}
+focus = {
+    id = FRA_Increase_the_Value_of_Production
+    icon = placeholder
+    relative_position_id = FRA_Rely_on_the_Production_of_Workers
+    x = 1
+    y = 1
+    cost = 6
+    ai_will_do = {
+        factor = 10
+    }
+    prerequisite = {
+        focus = FRA_Rely_on_the_Production_of_Workers
+    }
+}
+focus = {
+    id = FRA_Free_Farming
+    icon = placeholder
+    relative_position_id = FRA_Rely_on_the_Production_of_Workers
+    x = -1
+    y = 1
+    cost = 6
+    ai_will_do = {
+        factor = 10
+    }
+    prerequisite = {
+        focus = FRA_Rely_on_the_Production_of_Workers
+    }
+}
+focus = {
+    id = FRA_Shipping_Companies
+    icon = placeholder
+    relative_position_id = FRA_Major_Trading_Deposits
+    x = -4
+    y = 0
+    cost = 6
+    ai_will_do = {
+        factor = 10
+    }
+    available = {
+        has_completed_focus = FRA_Major_Trading_Deposits
+    }
+    prerequisite = {
+        focus = FRA_Except_on_an_International_Scale
+    }
+}
+focus = {
+    id = FRA_Mass_Exports
+    icon = placeholder
+    relative_position_id = FRA_Shipping_Companies
+    x = 2
+    y = 1
+    cost = 6
+    ai_will_do = {
+        factor = 10
+    }
+    completion_reward = {
+        add_ideas = free_trade
+    }
+    prerequisite = {
+        focus = FRA_Shipping_Companies
+    }
+    prerequisite = {
+        focus = FRA_Major_Trading_Deposits
+    }
+}
+focus = {
+    id = FRA_Major_Trading_Deposits
+    icon = placeholder
+    relative_position_id = FRA_Except_on_an_International_Scale
+    x = -1
+    y = 1
+    cost = 6
+    ai_will_do = {
+        factor = 10
+    }
+    completion_reward = {
+        add_timed_idea = {
+            ideas = FRA_Major_Trading_Deposits
+            days = 1095
+        }
+    }
+    prerequisite = {
+        focus = FRA_Except_on_an_International_Scale
+    }
+}
+focus = {
+    id = FRA_New_Ways_of_Wealth
+    icon = placeholder
+    relative_position_id = FRA_Major_Trading_Deposits
+    x = 1
+    y = 1
+    cost = 6
+    ai_will_do = {
+        factor = 10
+    }
+    prerequisite = {
+        focus = FRA_Major_Trading_Deposits
+    }
+    completion_reward = {
+        country_event = fra_anarchist.2
+    }
+}
+focus = {
+    id = FRA_Sieze_the_Means
+    icon = placeholder
+    mutually_exclusive = { focus = FRA_Invest_the_Underdeveloped }
+    relative_position_id = FRA_New_Ways_of_Wealth
+    x = -5
+    y = 1
+    cost = 0
+    ai_will_do = {
+        factor = 10
+    }
+    prerequisite = {
+        focus = FRA_New_Ways_of_Wealth
+    }
+    prerequisite = {
+        focus = FRA_Mass_Exports
+    }
+}
+focus = {
+    id = FRA_Invest_the_Underdeveloped
+    icon = placeholder
+    mutually_exclusive = { focus = FRA_Sieze_the_Means }
+    relative_position_id = FRA_New_Ways_of_Wealth
+    x = 5
+    y = 1
+    cost = 0
+    ai_will_do = {
+        factor = 10
+    }
+    prerequisite = {
+        focus = FRA_New_Ways_of_Wealth
+    }
+}
 focus = { ### Focus that rids the nation of Political Instability (in this ideology path)
     id = FRA_Liberate_the_Working_Class
     icon = placeholder

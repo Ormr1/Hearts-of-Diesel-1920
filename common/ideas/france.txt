@@ -469,7 +469,7 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				stability_factor = -0.12
+				stability_factor = 0.12
 				drift_defence_factor = 0.15
 				war_support_factor = 0.1
 				communism_drift = 0.1
@@ -618,6 +618,120 @@ ideas = {
 				political_power_gain = 0.1
 				conscription = 0.015
 				conscription_factor = 0.05
+			}
+		}
+
+		FRA_Focus_on_the_Anarcho_Communists = {
+			picture = placeholder
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				drift_defence_factor = -0.15
+				war_support_factor = 0.25
+				research_speed_factor = -0.1
+				conscription = 0.025
+				conscription_factor = 0.15
+				stability_weekly = -0.005
+				communism_drift = 0.01
+			}
+		}
+
+		FRA_Tensions_Between_the_Ideologies = {
+			picture = placeholder
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				drift_defence_factor = -0.25
+				war_support_factor = 0.35
+				research_speed_factor = -0.25
+				conscription = 0.03
+				conscription_factor = 0.25
+				stability_weekly = -0.01
+				communism_drift = 0.05
+				democratic_drift = 0.025
+			}
+		}
+
+		FRA_Reduction_of_Currency = {
+			picture = placeholder
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				research_speed_factor = -0.1
+				conscription_factor = -0.15
+				stability_factor = -0.05
+				stability_weekly = 0.005
+				production_factory_efficiency_gain_factor = 0.1
+				production_factory_max_efficiency_factor = 0.1
+				production_lack_of_resource_penalty_factor = -0.1
+				land_doctrine_cost_factor = 0.5
+			}
+		}
+
+		FRA_International_Wealth = {
+			picture = placeholder
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				research_speed_factor = 0.1
+				conscription_factor = -0.05
+				stability_factor = 0.05
+				stability_weekly = 0.005
+				production_factory_efficiency_gain_factor = 0.2
+				production_factory_max_efficiency_factor = 0.2
+				production_lack_of_resource_penalty_factor = -0.2
+				land_doctrine_cost_factor = 0.25
+			}
+		}
+
+		FRA_Major_Trading_Deposits = {
+			picture = placeholder
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				research_speed_factor = 0.1
+				production_lack_of_resource_penalty_factor = -0.2
+				local_resources_factor = 0.35
 			}
 		}
 
