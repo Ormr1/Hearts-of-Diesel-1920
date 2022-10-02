@@ -65,9 +65,11 @@ focus = {
         factor = 5
     }
     available = {
-        has_government = democratic
-        has_government = ROOT
-        has_government = fascism
+        OR = {
+            has_government = democratic
+            has_government = ROOT
+            has_government = fascism
+        }
     }
     prerequisite = {
         focus = FRA_Frankish_Albion_Issue
@@ -1983,7 +1985,7 @@ focus = {
     }
 }
 focus = {
-    id = FRA_Offer_to_Buy_Mozambique
+    id = FRA_Offer_to_Purchase_Brazilian_Colonies
     icon = placeholder
     relative_position_id = FRA_Benefit_from_Franco_Albion_Colonies
     x = -4
@@ -2045,6 +2047,13 @@ focus = {
     cost = 5
     ai_will_do = {
         factor = 5
+    }
+    available = {
+        OR = {
+            has_government = democratic
+            has_government = neutral
+            has_government = communist
+        }
     }
     prerequisite = {
         focus = FRA_Frankish_Albion_Issue
@@ -4064,7 +4073,7 @@ focus = {
     }
     completion_reward = {
         country_event = fra_economic.15
-        swap_ideas={
+        swap_ideas = {
             add_idea = FRA_demand_for_resources_2
             remove_idea = FRA_demand_for_resources_1
         }
@@ -4285,18 +4294,96 @@ focus = {
     ai_will_do = {
         factor = 10
     }
-    search_filters = {FOCUS_FILTER_POLITICAL}
+    search_filters = {FOCUS_FILTER_POLITICAL} 
     completion_reward = {
         swap_ideas = {
             remove_idea = FRA_Spreading_News
             add_idea = FRA_Civil_War_Preparations
         }
+        FRA = {
+				add_manpower = 10000
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 2500
+					producer = FRA
+				}
+			}
     }
     prerequisite = {
         focus = FRA_Fight_For_Your_Freedom
     }
 }
-
+### Spread the News - Adds spirit that increases democratic, communist, and non-alighed ideologies, ticking at roughly 0.10 popularity per day each, for 1 or so years.
+### Subcomment - Could also act like those Spanish Civil War decisions from the base game/La Resistance
+focus = {
+    id = FRA_Spread_the_News
+    icon = placeholder
+    relative_position_id = FRA_Fight_For_Your_Freedom
+    x = -3
+    y = 1
+    cost = 5
+    ai_will_do = {
+        factor = 10
+    }
+    search_filters = {FOCUS_FILTER_POLITICAL}
+    completion_reward = {
+		add_ideas = { FRA_Spreading_News }
+    }
+    prerequisite = {
+        focus = FRA_Fight_For_Your_Freedom
+    }
+}
+focus = {
+    id = FRA_Gain_International_Support
+    icon = placeholder
+    relative_position_id = FRA_Prepare_For_the_Fight
+    x = 1
+    y = 1
+    cost = 7
+    ai_will_do = {
+        factor = 10
+    }
+    search_filters = {FOCUS_FILTER_POLITICAL}
+    completion_reward = {
+        every_other_country = {
+            limit = {
+                has_government = democratic
+            }
+            add_opinion_modifier = {
+                target = ROOT
+                modifier = small_increase
+            }
+            reverse_add_opinion_modifier = {
+                target = ROOT
+                modifier = small_increase
+            }
+        }
+    }
+    prerequisite = {
+        focus = FRA_Spread_the_News
+    }
+    prerequisite = {
+        focus = FRA_Prepare_For_the_Fight
+    }
+}
+focus = { ### Like the mod, the Franks can buy weapons from democratic and communist countries (USA, Rusviet Tsardom (Maybe), so on and so forth), but maybe it could be recommended to have that mod on for the Franks
+    id = FRA_International_Arms_Market
+    icon = placeholder
+    relative_position_id = FRA_Gain_International_Support
+    x = 0
+    y = 1
+    cost = 5
+    ai_will_do = {
+        factor = 10
+    }
+    search_filters = {FOCUS_FILTER_MANPOWER FOCUS_FILTER_INDUSTRY}
+    completion_reward = {
+        country_event = fra.revolution.5
+    }
+    prerequisite = {
+        focus = FRA_Gain_International_Support
+    }
+}
 focus = { ### Think of the Manchuria focus as you try to escape Japanese rule, where you could get free offmap factories, and cheaper guns, for less reliable guns, but less overpowered ofc
     id = FRA_Underground_Factories
     icon = placeholder
@@ -4498,7 +4585,109 @@ focus = { ### Maybe cheaper + stronger guns for much less reliability?
         focus = FRA_Underground_Factories
     }
 }
-focus = { ### Add idea that increases with each focus in this path
+
+focus = { ### Middle Civil War path
+    id = FRA_Bribe_Business_Owners
+    icon = placeholder
+    relative_position_id = FRA_Fight_For_Your_Freedom
+    x = 0
+    y = 1
+    cost = 5
+    ai_will_do = {
+        factor = 10
+    }
+    search_filters = {FOCUS_FILTER_INDUSTRY}
+    completion_reward = {
+        add_ideas = { FRA_Money_Spent_on_Temporary_Corruption }
+    }
+    prerequisite = {
+        focus = FRA_Fight_For_Your_Freedom
+    }
+}
+focus = { ### Easier to get factories, plus free factories upon completion?
+    id = FRA_Nationalize_the_Industry
+    icon = placeholder
+    relative_position_id = FRA_Bribe_Business_Owners
+    x = -1
+    y = 1
+    cost = 5
+    ai_will_do = {
+        factor = 10
+    }
+    search_filters = {FOCUS_FILTER_INDUSTRY}
+    completion_reward = {
+        swap_ideas = {
+            remove_idea = FRA_Money_Spent_on_Temporary_Corruption
+            add_idea = FRA_Nationalized_Industry
+        }
+        random_owned_state = {
+				limit = {
+					is_controlled_by = ROOT
+					is_core_of = ROOT
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+    }
+    prerequisite = {
+        focus = FRA_Bribe_Business_Owners
+    }
+}
+focus = {
+    id = FRA_Arm_the_People
+    icon = placeholder
+    relative_position_id = FRA_Bribe_Business_Owners
+    x = 1
+    y = 1
+    cost = 5
+    ai_will_do = {
+        factor = 10
+    }
+    search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+    completion_reward = {
+        add_timed_idea = {
+            idea = FRA_Arming_the_People
+            days = 3650
+        }
+    }
+    prerequisite = {
+        focus = FRA_Bribe_Business_Owners
+    }
+}
+focus = { ### Increased manpower and/or less training time?
+    id = FRA_Train_the_Populous
+    icon = placeholder
+    relative_position_id = FRA_Nationalize_the_Industry
+    x = 1
+    y = 1
+    cost = 7
+    ai_will_do = {
+        factor = 10
+    }
+    search_filters = {FOCUS_FILTER_MANPOWER FOCUS_FILTER_WAR_SUPPORT}
+    completion_reward = { 
+        swap_ideas = {
+            remove_idea = FRA_Arming_the_People
+            add_idea = FRA_Greater_Revolutionaries
+        }
+    }
+    prerequisite = {
+        focus = FRA_Nationalize_the_Industry
+    }
+    prerequisite = {
+        focus = FRA_Arm_the_People
+    }
+}
+focus = { ### Right Civil War path
     id = FRA_Gain_Political_Alliances
     icon = placeholder
     relative_position_id = FRA_Fight_For_Your_Freedom
@@ -4517,6 +4706,42 @@ focus = { ### Add idea that increases with each focus in this path
     }
     prerequisite = {
         focus = FRA_Fight_For_Your_Freedom
+    }
+}
+focus = {
+    id = FRA_Look_into_the_Riots
+    icon = placeholder
+    relative_position_id = FRA_Gain_Political_Alliances
+    x = -2
+    y = 1
+    cost = 6
+    ai_will_do = {
+        factor = 10
+    }
+    search_filters = {FOCUS_FILTER_POLITICAL}
+    completion_reward = {
+        FRA_Ideological_Protests_level_Down = yes
+    }
+    prerequisite = {
+        focus = FRA_Gain_Political_Alliances
+    }
+}
+focus = {
+    id = FRA_Question_the_Monarchy
+    icon = placeholder
+    relative_position_id = FRA_Gain_Political_Alliances
+    x = 0
+    y = 1
+    cost = 6
+    ai_will_do = {
+        factor = 10
+    }
+    search_filters = {FOCUS_FILTER_POLITICAL}
+    completion_reward = {
+        FRA_Ideological_Protests_level_Down = yes
+    }
+    prerequisite = {
+        focus = FRA_Gain_Political_Alliances
     }
 }
 ### Ally the Socialists, Democrats, and Anarchists - Increased Communist, Democrat, and Anarchist ticking for a certain time?
@@ -4538,24 +4763,7 @@ focus = {
         focus = FRA_Gain_Political_Alliances
     }
 }
-focus = {
-    id = FRA_Look_into_the_Riots
-    icon = placeholder
-    relative_position_id = FRA_Gain_Political_Alliances
-    x = -2
-    y = 1
-    cost = 6
-    ai_will_do = {
-        factor = 10
-    }
-    search_filters = {FOCUS_FILTER_POLITICAL}
-    completion_reward = {
-        FRA_Ideological_Protests_level_Down = yes
-    }
-    prerequisite = {
-        focus = FRA_Gain_Political_Alliances
-    }
-}
+
 focus = { 
     id = FRA_Unite_the_Left
     icon = placeholder
@@ -4582,144 +4790,101 @@ focus = {
     }
 }
 focus = {
-    id = FRA_Question_the_Monarchy
+    id = FRA_Create_a_Political_Union
     icon = placeholder
-    relative_position_id = FRA_Gain_Political_Alliances
+    relative_position_id = FRA_Unite_the_Left
     x = 0
     y = 1
-    cost = 6
+    cost = 10
     ai_will_do = {
         factor = 10
     }
     search_filters = {FOCUS_FILTER_POLITICAL}
     completion_reward = {
-        FRA_Ideological_Protests_level_Down = yes
+        add_ideas = { FRA_Political_Unionization }
+    }
+    available = {
+        focus = FRA_Light_the_Torch
     }
     prerequisite = {
-        focus = FRA_Gain_Political_Alliances
+        focus = FRA_Unite_the_Left
     }
 }
-
-focus = { ### Increased manpower and/or less training time?
-    id = FRA_Train_the_Populous
+focus = { ### Opposite of Political Autonomy, where all of the parties (Mainly communism, democracy, and anarchism) combine to form a single party, as an attemp to stabilize the country more, can only be done after civil war
+    id = FRA_Even_More_Political_Unity 
     icon = placeholder
-    relative_position_id = FRA_Nationalize_the_Industry
-    x = 1
-    y = 1
-    cost = 7
-    ai_will_do = {
-        factor = 10
-    }
-    search_filters = {FOCUS_FILTER_MANPOWER}
-    completion_reward = { 
-        swap_ideas = {
-            remove_idea = FRA_Arming_the_People
-            add_idea = FRA_Greater_Revolutionaries
-        }
-    }
-    prerequisite = {
-        focus = FRA_Nationalize_the_Industry
-    }
-    prerequisite = {
-        focus = FRA_Arm_the_People
-    }
-}
-focus = {
-    id = FRA_Gain_International_Support
-    icon = placeholder
-    relative_position_id = FRA_Prepare_For_the_Fight
-    x = 1
-    y = 1
-    cost = 7
-    ai_will_do = {
-        factor = 10
-    }
-    search_filters = {FOCUS_FILTER_POLITICAL}
-    completion_reward = {
-        every_other_country = {
-            limit = {
-                has_government = democratic
-            }
-            add_opinion_modifier = {
-                target = ROOT
-                modifier = small_increase
-            }
-            reverse_add_opinion_modifier = {
-                target = ROOT
-                modifier = small_increase
-            }
-        }
-    }
-    prerequisite = {
-        focus = FRA_Spread_the_News
-    }
-    prerequisite = {
-        focus = FRA_Prepare_For_the_Fight
-    }
-}
-
-focus = { ### Like the mod, the Franks can buy weapons from democratic and communist countries (USA, Rusviet Tsardom (Maybe), so on and so forth), but maybe it could be recommended to have that mod on for the Franks
-    id = FRA_International_Arms_Market
-    icon = placeholder
-    relative_position_id = FRA_Gain_International_Support
-    x = 0
-    y = 1
-    cost = 5
-    ai_will_do = {
-        factor = 10
-    }
-    search_filters = {FOCUS_FILTER_MANPOWER}
-    completion_reward = {
-        country_event = fra.revolution.5
-    }
-    prerequisite = {
-        focus = FRA_Gain_International_Support
-    }
-}
-
-focus = { ### Easier to get factories, plus free factories upon completion?
-    id = FRA_Nationalize_the_Industry
-    icon = placeholder
-    relative_position_id = FRA_Bribe_Business_Owners
+    relative_position_id = FRA_Create_a_Political_Union
+    mutually_exclusive = { focus = FRA_Allow_For_Political_Autonomy }
     x = -1
     y = 1
-    cost = 5
+    cost = 3
     ai_will_do = {
         factor = 10
     }
-    search_filters = {FOCUS_FILTER_POLITICAL}
+    available = {
+        has_government = democratic
+        has_government = communism
+    }
+    search_filters = {FOCUS_FILTER_FRA_PARLIAMENT}
     completion_reward = {
         swap_ideas = {
-            remove_idea = FRA_Money_Spent_on_Temporary_Corruption
-            add_idea = FRA_Nationalized_Industry
+            remove_idea = FRA_Political_Unionization
+            add_idea = FRA_Increasing_Teamwork_in_Government
         }
     }
     prerequisite = {
-        focus = FRA_Bribe_Business_Owners
+        focus = FRA_Create_a_Political_Union
     }
 }
-### Spread the News - Adds spirit that increases democratic, communist, and non-alighed ideologies, ticking at roughly 0.10 popularity per day each, for 1 or so years.
-### Subcomment - Could also act like those Spanish Civil War decisions from the base game/La Resistance
 focus = {
-    id = FRA_Spread_the_News
+    id = FRA_Political_Unionization
     icon = placeholder
-    relative_position_id = FRA_Fight_For_Your_Freedom
-    x = -3
+    relative_position_id = FRA_Even_More_Political_Unity
+    x = -1
     y = 1
-    cost = 5
+    cost = 3
     ai_will_do = {
         factor = 10
     }
-    search_filters = {FOCUS_FILTER_POLITICAL}
+    available = {
+        has_government = democratic
+        has_government = communism
+    }
+    search_filters = {FOCUS_FILTER_FRA_PARLIAMENT}
     completion_reward = {
-		add_ideas = { FRA_Spreading_News }
+        swap_ideas = {
+            remove_idea = FRA_Increasing_Teamwork_in_Government
+            add_idea = FRA_Full_Government_Unification
+        }
     }
     prerequisite = {
-        focus = FRA_Fight_For_Your_Freedom
+        focus = FRA_Even_More_Political_Unity
+    }
+}
+focus = { ### Alternate history path, needing the player to manage each political party, so the state does not fail. If they do not do this, then France will either be Anarchist, or fall into a multi-way Civil War. can only be done after first civil war
+    id = FRA_Allow_For_Political_Autonomy
+    icon = placeholder
+    relative_position_id = FRA_Create_a_Political_Union
+    mutually_exclusive = { focus = FRA_Even_More_Political_Unity }
+    x = 1
+    y = 1
+    cost = 3
+    ai_will_do = {
+        factor = 10
+    }
+    search_filters = {FOCUS_FILTER_FRA_PARLIAMENT}
+    completion_reward = {
+        swap_ideas = {
+            remove_idea = FRA_Political_Unionization
+            add_idea = FRA_Autonomous_Political_Stage
+        }
+    }
+    prerequisite = {
+        focus = FRA_Create_a_Political_Union
     }
 }
 
-focus = {
+focus = { ### Civil War
     id = FRA_Light_the_Torch
     icon = placeholder
     relative_position_id = FRA_Train_the_Populous
@@ -4786,6 +4951,7 @@ focus = { ### The Power Scenario - Each ideology chosen gets a set of decisions 
     ai_will_do = {
         factor = 5
     }
+    search_filters = {FOCUS_FILTER_FRA_PARLIAMENT}
     completion_reward = {
         country_event = fra_parliament.3
     }
@@ -4793,18 +4959,19 @@ focus = { ### The Power Scenario - Each ideology chosen gets a set of decisions 
         focus = FRA_Birth_Of_a_New_Nation
     }
 }
-focus = {
+focus = { ### Commie and Democratic Path
     id = FRA_More_to_the_Government
     icon = placeholder
     mutually_exclusive = { focus = FRA_Power_to_the_People }
     available = { has_country_flag = FRA_cosmetic_tag_communism }
     relative_position_id = FRA_The_Power_Scenario
-    x = -20
+    x = -30
     y = 1
     cost = 8
     ai_will_do = {
         factor = 5
     }
+    search_filters = {FOCUS_FILTER_FRA_PARLIAMENT}
     completion_reward = {
         country_event = fra_parliament.5
     }
@@ -4812,7 +4979,7 @@ focus = {
         focus = FRA_The_Power_Scenario
     }
 }
-focus = {
+focus = { ### Communist
     id = FRA_Workers_Tied_to_an_Autocracy
     icon = placeholder
     mutually_exclusive = { focus = FRA_Let_the_People_Decide }
@@ -4821,11 +4988,15 @@ focus = {
     x = -6
     y = 1
     cost = 0
+    ai_will_do = {
+        factor = 5
+    }
+    search_filters = {FOCUS_FILTER_FRA_PARLIAMENT}
     prerequisite = {
         focus = FRA_More_to_the_Government
     }
 }
-focus = {
+focus = { ### Democratic
     id = FRA_Let_the_People_Decide
     icon = placeholder
     mutually_exclusive = { focus = FRA_Workers_Tied_to_an_Autocracy }
@@ -4834,22 +5005,27 @@ focus = {
     x = 6
     y = 1
     cost = 0
+    ai_will_do = {
+        factor = 5
+    }
+    search_filters = {FOCUS_FILTER_FRA_PARLIAMENT}
     prerequisite = {
         focus = FRA_More_to_the_Government
     }
 }
-focus = {
+focus = { ### Anarchism Path
     id = FRA_Power_to_the_People
     icon = placeholder
     mutually_exclusive = { focus = FRA_More_to_the_Government }
     available = { has_country_flag = FRA_cosmetic_tag_democratic }
     relative_position_id = FRA_The_Power_Scenario
-    x = 20
+    x = 30
     y = 1
     cost = 1
     ai_will_do = {
         factor = 8
     }
+    search_filters = {FOCUS_FILTER_FRA_PARLIAMENT}
     completion_reward = {
         country_event = fra_parliament.4
     }
@@ -4858,34 +5034,20 @@ focus = {
     }
 }
 
-focus = { ### AnCap Moment
-    id = FRA_A_Caplitalists_Dream
-    icon = placeholder
-    mutually_exclusive = { focus = FRA_The_Workers_Paradise }
-    available = { always = no }
-    relative_position_id = FRA_Power_to_the_People
-    x = 10
-    y = 1
-    cost = 3
-    ai_will_do = {
-        factor = 8
-    }
-    prerequisite = {
-        focus = FRA_Power_to_the_People
-    }
-}
+
 focus = {
     id = FRA_The_Workers_Paradise
     icon = placeholder
     mutually_exclusive = { focus = FRA_A_Caplitalists_Dream }
     available = { always = no }
     relative_position_id = FRA_Power_to_the_People
-    x = -10
+    x = -15
     y = 1
     cost = 3
     ai_will_do = {
         factor = 8
     }
+    search_filters = {FOCUS_FILTER_FRA_PARLIAMENT}
     completion_reward = {
         add_ideas = { idea = FRA_Focus_on_the_Anarcho_Communists }
         country_event = FRA_Anarchist.1
@@ -4911,7 +5073,7 @@ focus = { ### Begins countdown to get rid of poltiical instability. If not compl
     completion_reward = {
         swap_ideas = {
             remove_idea = FRA_Focus_on_the_Anarcho_Communists
-            add_idea = FRA_Tensions_Between_the_Ideologies
+            add_ideas = FRA_Tensions_Between_the_Ideologies
         }
     }
 }
@@ -5053,7 +5215,7 @@ focus = {
         focus = FRA_Rely_on_the_Production_of_Workers
     }
 }
-focus = {
+focus = { ### Unlocks Designer Company that reduces convoy cost
     id = FRA_Shipping_Companies
     icon = placeholder
     relative_position_id = FRA_Major_Trading_Deposits
@@ -5068,6 +5230,302 @@ focus = {
     }
     prerequisite = {
         focus = FRA_Except_on_an_International_Scale
+    }
+}
+focus = {
+    id = FRA_Afford_the_Expensive_Trade
+    icon = placeholder
+    relative_position_id = FRA_Shipping_Companies
+    x = -4
+    y = 1
+    cost = 6
+    ai_will_do = {
+        factor = 10
+    }
+    completion_reward = {
+        limit = {
+            free_building_slots = {
+                building = industrial_complex
+                size > 1
+                include_locked = yes
+            }
+            is_core_of = ROOT
+        }
+        add_extra_state_shared_building_slots = 2
+        add_building_construction = {
+            type = industrial_complex
+            level = 2
+            instant_build = yes
+        }
+    }
+    prerequisite = {
+        focus = FRA_Shipping_Companies
+    }
+}
+focus = { ### Research Path
+    id = FRA_Open_the_Window_for_Innovation
+    icon = placeholder
+    relative_position_id = FRA_Afford_the_Expensive_Trade
+    x = -10
+    y = 1
+    cost = 6
+    ai_will_do = {
+        factor = 10
+    }
+    completion_reward = {
+        add_ideas = { FRA_Opened_the_Innovation_Window }
+        add_research_slot = 1
+    }
+    prerequisite = {
+        focus = FRA_Afford_the_Expensive_Trade
+    }
+}
+focus = { ### Medical Research Path
+    id = FRA_Medical_Focus
+    icon = placeholder
+    relative_position_id = FRA_Open_the_Window_for_Innovation
+    x = -5
+    y = 1
+    cost = 6
+    ai_will_do = {
+        factor = 10
+    }
+    completion_reward = {
+        add_timed_ideas = { 
+            ideas = FRA_Medical_Focus_1
+            days = 365
+        }
+        add_tech_bonus = {
+            name = support_bonus
+            bonus = 0.25
+            uses = 4
+            category = support_equipment
+        }
+    }
+    prerequisite = {
+        focus = FRA_Open_the_Window_for_Innovation
+    }
+}
+focus = {
+    id = FRA_Safer_Roads
+    icon = placeholder
+    relative_position_id = FRA_Medical_Focus
+    x = -2
+    y = 1
+    cost = 6
+    ai_will_do = {
+        factor = 10
+    }
+    completion_reward = {
+        add_timed_ideas = { 
+            ideas = FRA_Improved_Roads
+            days = 365
+        }
+        random_owned_state = {
+            limit = { 
+                is_core_of = ROOT 
+                infrastructure < 4
+                not = { has_state_flag = FRA_autoroutes_target }
+            }
+            add_building_construction = {
+                type = infrastructure
+                level = 1
+                instant_build = yes
+            }
+            set_state_flag = FRA_autoroutes_target
+        }
+        random_owned_state = {
+            limit = { 
+                is_core_of = ROOT 
+                infrastructure < 4
+                not = { has_state_flag = FRA_autoroutes_target }
+            }
+            add_building_construction = {
+                type = infrastructure
+                level = 1
+                instant_build = yes
+            }
+            set_state_flag = FRA_autoroutes_target
+        }
+        random_owned_state = {
+            limit = { 
+                is_core_of = ROOT 
+                infrastructure < 4
+                not = { has_state_flag = FRA_autoroutes_target }
+            }
+            add_building_construction = {
+                type = infrastructure
+                level = 1
+                instant_build = yes
+            }
+            set_state_flag = FRA_autoroutes_target
+        }
+        random_owned_state = {
+            limit = { 
+                is_core_of = ROOT 
+                infrastructure < 4
+                not = { has_state_flag = FRA_autoroutes_target }
+            }
+            add_building_construction = {
+                type = infrastructure
+                level = 1
+                instant_build = yes
+            }
+            set_state_flag = FRA_autoroutes_target
+        }
+    }
+    prerequisite = {
+        focus = FRA_Medical_Focus
+    }
+}
+focus = {
+    id = FRA_Increased_Army_Standards
+    icon = placeholder
+    relative_position_id = FRA_Medical_Focus
+    x = 0
+    y = 1
+    cost = 6
+    ai_will_do = {
+        factor = 10
+    }
+    completion_reward = {
+        add_timed_ideas = { 
+            ideas = FRA_Increased_Army_Standards
+            days = 365
+        }
+        add_tech_bonus = {
+            name = support_bonus
+            bonus = 1.0
+            uses = 4
+            category = support_equipment
+        }
+    }
+    prerequisite = {
+        focus = FRA_Medical_Focus
+    }
+}
+focus = {
+    id = FRA_Save_the_Navy
+    icon = placeholder
+    relative_position_id = FRA_Medical_Focus
+    x = 2
+    y = 1
+    cost = 6
+    ai_will_do = {
+        factor = 10
+    }
+    completion_reward = {
+        add_timed_ideas = { 
+            ideas = FRA_Saving_the_Navy
+            days = 365
+        }
+        navy_experience = 25
+        country_event = fra_medicalfocus.3
+    }
+    prerequisite = {
+        focus = FRA_Medical_Focus
+    }
+}
+focus = {
+    id = FRA_Additional_Medicinal_Supplies
+    icon = placeholder
+    relative_position_id = FRA_Increased_Army_Standards
+    x = 0
+    y = 2
+    cost = 6
+    ai_will_do = {
+        factor = 10
+    }
+    completion_reward = {
+        swap_ideas = {
+            remove_idea = FRA_Medical_Focus_1
+            add_idea = FRA_Medical_Focus_2
+        }
+    }
+    prerequisite = {
+        focus = FRA_Safer_Roads
+    }
+    prerequisite = {
+        focus = FRA_Increased_Army_Standards
+    }
+    prerequisite = {
+        focus = FRA_Save_the_Navy
+    }
+}
+focus = {
+    id = FRA_Ensure_Workplace_Safety
+    icon = placeholder
+    relative_position_id = FRA_Open_the_Window_for_Innovation
+    x = 0
+    y = 2
+    cost = 6
+    ai_will_do = {
+        factor = 10
+    }
+    completion_reward = {
+        add_timed_ideas = { 
+            ideas = FRA_Ensured_Safety
+            days = 365
+        }
+        add_tech_bonus = {
+            name = dispersed_bonus
+            bonus = 1.0
+            uses = 4
+            category = industry
+        }
+    }
+    prerequisite = {
+        focus = FRA_Medical_Focus
+    }
+    prerequisite = {
+        focus = FRA_Production_Focus
+    }
+}
+focus = {
+    id = FRA_Bolster_Research
+    icon = placeholder
+    relative_position_id = FRA_Ensure_Workplace_Safety
+    x = 0
+    y = 2
+    cost = 6
+    ai_will_do = {
+        factor = 10
+    }
+    completion_reward = {
+        add_research_slot = 1
+    }
+    prerequisite = {
+        focus = FRA_Ensure_Workplace_Safety
+    }
+}
+focus = { ### Guns and Industry Research Path
+    id = FRA_Production_Focus
+    icon = placeholder
+    relative_position_id = FRA_Open_the_Window_for_Innovation
+    x = 5
+    y = 1
+    cost = 6
+    ai_will_do = {
+        factor = 10
+    }
+    completion_reward = {
+        add_timed_ideas = { 
+            ideas = FRA_Production_Focus
+            days = 365
+        }
+        add_tech_bonus = {
+            name = industrial_bonus
+            bonus = 1.0
+            uses = 4
+            category = industry
+            category = motorized_equipment
+            category = artillery
+            category = infantry_equipment
+            category = construction_tech
+        }
+    }
+    prerequisite = {
+        focus = FRA_Open_the_Window_for_Innovation
     }
 }
 focus = {
@@ -5174,144 +5632,24 @@ focus = { ### Focus that rids the nation of Political Instability (in this ideol
         focus = FRA_The_Workers_Paradise
     }
 }
-focus = { ### Add base stability, and slightly increased ideology for Dem, NA, and Com?
-    id = FRA_Bribe_Business_Owners
+focus = { ### AnCap Moment
+    id = FRA_A_Caplitalists_Dream
     icon = placeholder
-    relative_position_id = FRA_Fight_For_Your_Freedom
-    x = 0
-    y = 1
-    cost = 5
-    ai_will_do = {
-        factor = 10
-    }
-    search_filters = {FOCUS_FILTER_POLITICAL}
-    completion_reward = {
-        add_ideas = { FRA_Money_Spent_on_Temporary_Corruption }
-    }
-    prerequisite = {
-        focus = FRA_Fight_For_Your_Freedom
-    }
-}
-
-focus = {
-    id = FRA_Create_a_Political_Union
-    icon = placeholder
-    relative_position_id = FRA_Unite_the_Left
-    x = 0
-    y = 1
-    cost = 10
-    ai_will_do = {
-        factor = 10
-    }
-    search_filters = {FOCUS_FILTER_POLITICAL}
-    completion_reward = {
-        add_ideas = { FRA_Political_Unionization }
-    }
-    available = {
-        focus = FRA_Light_the_Torch
-    }
-    prerequisite = {
-        focus = FRA_Unite_the_Left
-    }
-}
-
-focus = { ### Alternate history path, needing the player to manage each political party, so the state does not fail. If they do not do this, then France will either be Anarchist, or fall into a multi-way Civil War. can only be done after first civil war
-    id = FRA_Allow_For_Political_Autonomy
-    icon = placeholder
-    relative_position_id = FRA_Create_a_Political_Union
-    mutually_exclusive = { focus = FRA_Even_More_Political_Unity }
-    x = 1
+    mutually_exclusive = { focus = FRA_The_Workers_Paradise }
+    available = { always = no }
+    relative_position_id = FRA_Power_to_the_People
+    x = 15
     y = 1
     cost = 3
     ai_will_do = {
-        factor = 10
+        factor = 8
     }
     search_filters = {FOCUS_FILTER_FRA_PARLIAMENT}
-    completion_reward = {
-        swap_ideas = {
-            remove_idea = FRA_Political_Unionization
-            add_idea = FRA_Autonomous_Political_Stage
-        }
-    }
     prerequisite = {
-        focus = FRA_Create_a_Political_Union
+        focus = FRA_Power_to_the_People
     }
 }
 
-focus = { ### Opposite of Political Autonomy, where all of the parties (Mainly communism, democracy, and anarchism) combine to form a single party, as an attemp to stabilize the country more, can only be done after civil war
-    id = FRA_Even_More_Political_Unity 
-    icon = placeholder
-    relative_position_id = FRA_Create_a_Political_Union
-    mutually_exclusive = { focus = FRA_Allow_For_Political_Autonomy }
-    x = -1
-    y = 1
-    cost = 3
-    ai_will_do = {
-        factor = 10
-    }
-    available = {
-        has_government = democratic
-        has_government = communism
-    }
-    search_filters = {FOCUS_FILTER_FRA_PARLIAMENT}
-    completion_reward = {
-        swap_ideas = {
-            remove_idea = FRA_Political_Unionization
-            add_idea = FRA_Increasing_Teamwork_in_Government
-        }
-    }
-    prerequisite = {
-        focus = FRA_Create_a_Political_Union
-    }
-}
-
-focus = {
-    id = FRA_Political_Unionization
-    icon = placeholder
-    relative_position_id = FRA_Even_More_Political_Unity
-    x = -1
-    y = 1
-    cost = 3
-    ai_will_do = {
-        factor = 10
-    }
-    available = {
-        has_government = democratic
-        has_government = communism
-    }
-    search_filters = {FOCUS_FILTER_FRA_PARLIAMENT}
-    completion_reward = {
-        swap_ideas = {
-            remove_idea = FRA_Increasing_Teamwork_in_Government
-            add_idea = FRA_Full_Government_Unification
-        }
-    }
-    prerequisite = {
-        focus = FRA_Even_More_Political_Unity
-    }
-}
-
-focus = {
-    id = FRA_Arm_the_People
-    icon = placeholder
-    relative_position_id = FRA_Bribe_Business_Owners
-    x = 1
-    y = 1
-    cost = 5
-    ai_will_do = {
-        factor = 10
-    }
-    search_filters = {FOCUS_FILTER_POLITICAL}
-    completion_reward = {
-        add_timed_idea = {
-            idea = FRA_Arming_the_People
-            days = 3650
-        }
-    }
-    prerequisite = {
-        focus = FRA_Bribe_Business_Owners
-    }
-}
-}
+} ### This is needed and I don't know why
 
 

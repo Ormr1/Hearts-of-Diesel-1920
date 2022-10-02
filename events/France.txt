@@ -7,7 +7,7 @@ add_namespace = fra_revolution
 add_namespace = fra_monarchy
 add_namespace = fra_economic
 add_namespace = fra_anarchist
-add_namespace = fra_politicalalliance
+add_namespace = fra_medicalfocus
 add_namespace = fra_civilwarignite
 add_namespace = fra_parliament
 
@@ -2521,23 +2521,62 @@ country_event = { # fra_civilwarignite.1
 		}
 		add_ideas = FRA_Revolutionary_Ideals
 		add_popularity = {
-				ideology = communism
-				popularity = 0.33
+			ideology = communism
+			popularity = 0.33
+		}
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.33
+		}
+		add_popularity = {
+			ideology = neutrality
+			popularity = 0.33
+		}
+		add_popularity = {
+			ideology = ROOT
+			popularity = 0.01
+		}	
+		set_stability = 0.9
+		set_war_support = 0.8
+    }
+	option = { ### Same as Previous option, but focused on Bordeaux instead of having the borders of Vichy France. I'm too lazy-
+        name = fra_civilwarignite
+		set_capital = { state = 902 }
+		start_civil_war = {
+			ruling_party = democratic
+			ideology = ROOT
+			set_capital = { state = 15 }
+			size = 0.5
+			only_own_territory = yes
+			states = { 
+				27 17 28 24 16 15 30 19 23 18
 			}
-			add_popularity = {
-				ideology = democratic
-				popularity = 0.33
+			keep_unit_leaders = {
+				750 751 752
 			}
-			add_popularity = {
-				ideology = neutrality
-				popularity = 0.33
+			keep_political_leader = yes
+			keep_political_party_members = yes
 			}
-			add_popularity = {
-				ideology = ROOT
-				popularity = 0.01
-			}	
-			set_stability = 0.9
-			set_war_support = 0.8
+		}
+		add_ideas = FRA_Revolutionary_Ideals
+		add_popularity = {
+			ideology = communism
+			popularity = 0.33
+		}
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.33
+		}
+		add_popularity = {
+			ideology = neutrality
+			popularity = 0.33
+		}
+		add_popularity = {
+			ideology = ROOT
+			popularity = 0.01
+		}	
+		set_stability = 0.9
+		set_war_support = 0.8
     }
 }
 
@@ -2608,5 +2647,155 @@ country_event = {
 	option = {
 		name = FRA_anarchist.2.b
 		set_cosmetic_tag = FRA_cosmetic_tag_democratic
+	}
+}
+
+country_event = {
+	id = fra_medicalfocus.1
+	title = fra_medicalfocus.1.t 
+	desc = fra_medicalfocus.1.desc 
+
+	picture = placeholder
+
+	trigger = {
+		NOT = { has_idea = FRA_Increased_Army_Standards }
+	}
+
+	is_triggered_only = no
+	fire_only_once = yes
+
+	option = {
+		name = fra_medicalfocus.1.a 
+		add_ideas = { FRA_Increased_Army_Standards_Done }
+	}
+}
+
+country_event = {
+	id = fra_medicalfocus.2
+	title = fra_medicalfocus.2.t 
+	desc = fra_medicalfocus.2.desc 
+
+	picture = placeholder
+
+	trigger = {
+		NOT = { has_idea = FRA_Improved_Roads }
+	}
+
+	is_triggered_only = no
+	fire_only_once = yes
+
+	option = {
+		name = fra_medicalfocus.2.a 
+		add_ideas = { FRA_Improved_Roads_Done }
+	}
+}
+
+country_event = {
+	id = fra_medicalfocus.3
+	title = fra_medicalfocus.3.t 
+	desc = fra_medicalfocus.3.desc 
+
+	picture = placeholder
+
+	trigger = {
+		
+	}
+
+	is_triggered_only = no
+	fire_only_once = yes
+
+	option = {
+		name = fra_medicalfocus.3.a 
+		country_event = fra_medicalfocus.4
+	}
+	option = {
+		name = fra_medicalfocus.3.b 
+		country_event = fra_medicalfocus.5
+	}
+}
+country_event = {
+	id = fra_medicalfocus.4
+	title = fra_medicalfocus.4.t 
+	desc = fra_medicalfocus.4.desc 
+
+	picture = placeholder
+
+	trigger = {
+		
+	}
+
+	is_triggered_only = no
+	fire_only_once = yes
+
+	option = {
+		name = fra_medicalfocus.4.a 
+		add_tech_bonus = {
+			name = FRA_undersea_combat
+			bonus = 1.0
+			uses = 2
+			category = ss_tech
+		}
+	}
+	option = {
+		name = fra_medicalfocus.4.b
+		add_tech_bonus = {
+			name = FRA_surface_combat
+			bonus = 2.0
+			uses = 1
+			category = dd_tech
+		}
+	}
+}
+country_event = {
+	id = fra_medicalfocus.5
+	title = fra_medicalfocus.5.t 
+	desc = fra_medicalfocus.5.desc 
+
+	picture = placeholder
+
+	trigger = {
+		
+	}
+
+	is_triggered_only = no
+	fire_only_once = yes
+
+	option = {
+		name = fra_medicalfocus.5.a 
+		add_tech_bonus = {
+			name = FRA_improved_screen_ships
+			bonus = 2.0
+			uses = 1
+			category = cl_tech
+		}
+	}
+	option = {
+		name = fra_medicalfocus.5.b
+		add_tech_bonus = {
+			name = FRA_capital_ship_focus
+			bonus = 1.0
+			uses = 2
+			category = bb_tech
+			category = bc_tech
+		}
+	}
+}
+country_event = {
+	id = fra_medicalfocus.6
+	title = fra_medicalfocus.6.t 
+	desc = fra_medicalfocus.6.desc 
+
+	picture = placeholder
+
+	trigger = {
+		NOT = { has_idea = FRA_Saving_the_Navy }
+	}
+
+	is_triggered_only = no
+	fire_only_once = yes
+
+	option = {
+		name = fra_medicalfocus.6.a 
+		add_ideas = { FRA_Saving_the_Navy_Done }
 	}
 }

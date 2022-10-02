@@ -21,6 +21,8 @@ ideas = {
 				political_power_cost = 0.10
 				consumer_goods_factor = 0.3
 				war_support_factor = -0.5
+				economy_cost_factor = 1.5
+				political_advisor_cost_factor = 1.5
 			}
 		}
 		
@@ -77,6 +79,8 @@ ideas = {
 			modifier = {
 				industrial_capacity_factory = -0.1
 				industrial_capacity_dockyard = -0.1
+				consumer_goods_factor = 0.15
+				economy_cost_factor = 1.5
 			}
 		}
 		FRA_inefficient_economy_2 = {
@@ -99,6 +103,8 @@ ideas = {
 				stability_factor = -0.5
 				monarchy_drift = -0.1
 				political_power_cost = 1
+				consumer_goods_factor = 3
+				economy_cost_factor = 3
 			}
 		}
 		FRA_political_violence = {
@@ -605,7 +611,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				always = yes
+				always = no
 			}
 
 			removal_cost = -1
@@ -723,7 +729,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				always = yes
+				always = no
 			}
 
 			removal_cost = -1
@@ -732,6 +738,411 @@ ideas = {
 				research_speed_factor = 0.1
 				production_lack_of_resource_penalty_factor = -0.2
 				local_resources_factor = 0.35
+			}
+		}
+
+		FRA_Opened_the_Innovation_Window = {
+			picture = placeholder
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				research_speed_factor = 0.25
+			}
+		}
+
+		FRA_Medical_Focus_1 = {
+			picture = placeholder
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				monthly_population = 0.02
+				dig_in_speed_factor = 0.5
+				planning_speed = 0.05
+				repair_speed_factor = 0.05
+				production_speed_bunker_factor = 0.1
+				production_speed_coastal_bunker_factor = 0.1
+			}
+		}
+
+		FRA_Medical_Focus_2 = {
+			picture = placeholder
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				monthly_population = 0.04
+				dig_in_speed_factor = 0.5
+				planning_speed = 0.1
+				repair_speed_factor = 0.1
+				production_speed_bunker_factor = 0.2
+				production_speed_coastal_bunker_factor = 0.2
+			}
+		}
+
+		FRA_Medical_Focus_3 = {
+			picture = placeholder
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				monthly_population = 0.06
+				dig_in_speed_factor = 0.5
+				planning_speed = 0.15
+				repair_speed_factor = 0.15
+				production_speed_bunker_factor = 0.3
+				production_speed_coastal_bunker_factor = 0.3
+			}
+		}
+
+		FRA_Medical_Focus_4 = {
+			picture = placeholder
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				monthly_population = 0.08
+				dig_in_speed_factor = 0.5
+				planning_speed = 0.2
+				repair_speed_factor = 0.2
+				production_speed_bunker_factor = 0.4
+				production_speed_coastal_bunker_factor = 0.4
+			}
+		}
+
+		FRA_Medical_Focus_5 = {
+			picture = placeholder
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				monthly_population = 0.10
+				dig_in_speed_factor = 0.5
+				planning_speed = 0.25
+				repair_speed_factor = 0.25
+				production_speed_bunker_factor = 0.5
+				production_speed_coastal_bunker_factor = 0.5
+			}
+		}
+
+		
+
+		FRA_Improved_Roads = {
+			picture = placeholder
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				production_speed_infrastructure_factor = -0.15
+			}
+		}
+
+		FRA_Improved_Roads_Done = {
+			picture = placeholder
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				production_speed_infrastructure_factor = 0.25
+			}
+		}
+
+		FRA_Increased_Army_Standards = {
+			picture = placeholder
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				conversion_cost_civ_to_mil_factor = 1.5
+				conversion_cost_mil_to_civ_factor = 1.5
+				land_equipment_upgrade_xp_cost = 1.2
+				naval_equipment_upgrade_xp_cost = 1.2
+				mobilization_laws_cost_factor = 0.2
+				high_command_cost_factor = 0.2
+				experience_gain_army_factor = -0.75
+				equipment_bonus = {
+					infantry_equipment = {
+						build_cost_ic = 0.05
+						instant = yes
+					}
+					artillery_equipment = {
+						build_cost_ic = 0.05
+						instant = yes
+					}
+				}
+			}
+		}
+
+		FRA_Increased_Army_Standards_Done = {
+			picture = placeholder
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				conversion_cost_civ_to_mil_factor = -0.25
+				conversion_cost_mil_to_civ_factor = -0.25
+				land_equipment_upgrade_xp_cost = -0.2
+				naval_equipment_upgrade_xp_cost = -0.2
+				production_factory_efficiency_gain_factor = 0.25
+				production_lack_of_resource_penalty_factor = 0.2
+				equipment_bonus = {
+					infantry_equipment = {
+						build_cost_ic = 0.1
+						instant = yes
+					}
+					artillery_equipment = {
+						build_cost_ic = -0.1
+						instant = yes
+					}
+				}
+			}
+		}
+
+		FRA_Saving_the_Navy = {
+			picture = placeholder
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				naval_equipment_upgrade_xp_cost = 1.5
+				navy_refit_speed = -1
+				experience_gain_navy_factor = -0.75
+				experience_gain_navy_unit_factor = -0.25
+				navy_fuel_consumption_factor = 0.5
+				training_time_factor = 0.5
+				navy_leader_cost_factor = 1.5
+				offence = -0.5
+				defence = -0.5
+				naval_morale_factor = -0.5
+				naval_night_attack = -2.5
+				naval_retreat_chance = 0.5
+			}
+		}
+
+		FRA_Saving_the_Navy_Done = {
+			picture = placeholder
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				navy_refit_speed = 0.25
+				experience_gain_navy_factor = 0.5
+				experience_gain_navy_unit_factor = 0.5
+				training_time_factor = -0.1
+				offence = 0.15
+				defence = 0.15
+				naval_morale_factor = 0.15
+				naval_night_attack = 0.25
+			}
+		}
+
+		FRA_Ensured_Safety = {
+			picture = placeholder
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				naval_retreat_speed = -0.5
+				naval_speed_factor = -0.15
+				repair_speed_factor = -0.25
+			}
+		}
+
+		FRA_Production_Focus_1 = {
+			picture = placeholder
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.3
+				production_factory_max_efficiency_factor = 0.3
+				production_lack_of_resource_penalty_factor = -0.3
+				equipment_conversion_speed = 0.05
+				research_speed_factor = 0.05
+				
+			}
+		}
+
+		FRA_Production_Focus_2 = {
+			picture = placeholder
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.6
+				production_factory_max_efficiency_factor = 0.6
+				production_lack_of_resource_penalty_factor = -0.6
+				equipment_conversion_speed = 0.1
+				research_speed_factor = 0.1
+			}
+		}
+
+		FRA_Production_Focus_3 = {
+			picture = placeholder
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.9
+				production_factory_max_efficiency_factor = 0.9
+				production_lack_of_resource_penalty_factor = -0.9
+				equipment_conversion_speed = 0.15
+				research_speed_factor = 0.15
+			}
+		}
+
+		FRA_Production_Focus_4 = {
+			picture = placeholder
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.12
+				production_factory_max_efficiency_factor = 0.12
+				production_lack_of_resource_penalty_factor = -0.12
+				equipment_conversion_speed = 0.2
+				research_speed_factor = 0.2
+			}
+		}
+
+		FRA_Production_Focus_5 = {
+			picture = placeholder
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.15
+				production_factory_max_efficiency_factor = 0.15
+				production_lack_of_resource_penalty_factor = -0.15
+				equipment_conversion_speed = 0.25
+				research_speed_factor = 0.25
 			}
 		}
 
