@@ -958,7 +958,7 @@ ideas = {
 				production_lack_of_resource_penalty_factor = 0.2
 				equipment_bonus = {
 					infantry_equipment = {
-						build_cost_ic = 0.1
+						build_cost_ic = -0.1
 						instant = yes
 					}
 					artillery_equipment = {
@@ -1143,6 +1143,109 @@ ideas = {
 				production_lack_of_resource_penalty_factor = -0.15
 				equipment_conversion_speed = 0.25
 				research_speed_factor = 0.25
+			}
+		}
+
+		FRA_New_Ways_of_Production = {
+			picture = placeholder
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				production_factory_efficiency_gain_factor = -0.5
+				production_factory_max_efficiency_factor = -0.5
+				production_lack_of_resource_penalty_factor = 0.5
+				equipment_conversion_speed = -0.75
+			}
+		}
+
+		FRA_New_Ways_of_Production_Done = {
+			picture = placeholder
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.33
+				production_factory_max_efficiency_factor = 0.33
+				production_lack_of_resource_penalty_factor = 0.33
+				equipment_conversion_speed = 0.5
+			}
+
+		FRA_New_Gun_Use = {
+			picture = placeholder
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				research_speed_factor = -0.25
+				conversion_cost_civ_to_mil_factor = 0.5
+				conversion_cost_mil_to_civ_factor = 0.5
+				land_equipment_upgrade_xp_cost = 0.5
+				production_factory_efficiency_gain_factor = -0.5
+				production_lack_of_resource_penalty_factor = -0.33
+				equipment_bonus = {
+					infantry_equipment = {
+						build_cost_ic = 0.1
+						instant = yes
+					}
+					artillery_equipment = {
+						build_cost_ic = 0.1
+						instant = yes
+					}
+				}
+			}
+		}
+
+		FRA_New_Gun_Use_Done = {
+			picture = placeholder
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				research_speed_factor = 0.15
+				conversion_cost_civ_to_mil_factor = -0.25
+				conversion_cost_mil_to_civ_factor = -0.25
+				land_equipment_upgrade_xp_cost = -0.25
+				production_factory_efficiency_gain_factor = -0.5
+				production_lack_of_resource_penalty_factor = -0.33
+				equipment_bonus = {
+					infantry_equipment = {
+						build_cost_ic = 0.1
+						instant = yes
+					}
+					artillery_equipment = {
+						build_cost_ic = 0.1
+						instant = yes
+					}
+				}
 			}
 		}
 

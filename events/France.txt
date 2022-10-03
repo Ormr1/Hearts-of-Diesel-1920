@@ -2799,3 +2799,22 @@ country_event = {
 		add_ideas = { FRA_Saving_the_Navy_Done }
 	}
 }
+country_event = {
+	id = fra_medicalfocus.7
+	title = fra_medicalfocus.7.t 
+	desc = fra_medicalfocus.7.desc 
+
+	picture = placeholder
+
+	trigger = {
+		NOT = { has_idea = FRA_New_Ways_of_Production }
+	}
+
+	is_triggered_only = no
+	fire_only_once = yes
+
+	option = {
+		name = fra_medicalfocus.6.a 
+		add_ideas = { FRA_New_Ways_of_Production_Done }
+	}
+}
