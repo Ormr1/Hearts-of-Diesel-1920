@@ -539,7 +539,7 @@ NMapIcons = {
 },
 
 NAirGfx = {
-	AIRPLANES_ANIMATION_GLOBAL_SPEED_PER_GAMESPEED = { 0.3, 0.35, 0.40, 0.45, 0.50, 0.55 }, -- Speed factor for each game speed (begin with paused). Larger value = faster animation.
+	AIRPLANES_ANIMATION_GLOBAL_SPEED_PER_GAMESPEED = { 0.22, 0.28, 0.32, 0.38, 0.44, 0.50 }, -- Speed factor for each game speed (begin with paused). Larger value = faster animation.
 	ROCKET_SPEED = 15.0,							-- Speed of rockets launched from rocket sites
 	AIRPLANES_CURVE_POINT_DENSITY = 2.0, 			-- Higher value = more midpoints in the flight path.
 	AIRPLANES_CURVE_MAX_EXTRAPOLATION = 20.0, 		-- It's the limit value that avoid making gigantic curves that may happen when flight path is very long.
