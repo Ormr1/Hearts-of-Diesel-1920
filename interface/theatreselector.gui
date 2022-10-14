@@ -543,7 +543,7 @@ guiTypes = {
 	
 	containerWindowType = {
 		name = "strategic_region_item"
-		position = { x = 430 y = 8 }
+		position = { x = 430 y = 17 }
 		size = { width=300 height=50 }
 		
 		buttonType = {
@@ -868,6 +868,7 @@ guiTypes = {
 			text = 9999
 			alwaystransparent = yes
 		}
+	}
 
 
 ###############################
