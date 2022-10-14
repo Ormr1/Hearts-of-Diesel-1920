@@ -130,14 +130,14 @@ if = {
 		mtg_transport = 1
 		cruiser_submarines = 1
 	}
-	add_ideas = {
+}
+add_ideas = {
 		FRA_loss_to_saxony
 		FRA_Ideological_Protests_6
 		FRA_Crippled_Navy
 		FRA_Incompetent_Army
 		FRA_Rapidly_Rising_Inflation
 	}
-}
 if = {
 	limit = {
 		has_dlc = "La Resistance"
