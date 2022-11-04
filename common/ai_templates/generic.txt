@@ -1,14 +1,5 @@
 armor_generic = {
 
-	blocked_for = {
-		GER
-		JAP
-		ENG
-		USA
-		ITA
-		SOV
-	}
-
 	roles = {
 		armor
 	}
@@ -499,15 +490,6 @@ armor_generic = {
 }
 
 garrison_generic = {
-
-	blocked_for = {
-		GER
-		JAP
-		ENG
-		USA
-		ITA
-		SOV
-	}
 	
 	roles = {
 		garrison
@@ -707,24 +689,6 @@ suppression_generic = {
 
 infantry_generic = {
 
-	blocked_for = {
-		GER
-		JAP
-		ENG
-		USA
-		ITA
-		SOV
-		CHI
-		PRC 
-		GXC
-		YUN
-		SHX
-		XSM
-		SIK
-		MEN
-		MAN
-	}
-
 	roles = {
 		infantry
 	}
@@ -824,24 +788,6 @@ infantry_generic = {
 }
 
 infantry_big_generic = {
-
-	blocked_for = {
-		GER
-		JAP
-		ENG
-		USA
-		ITA
-		SOV
-		CHI
-		PRC 
-		GXC
-		YUN
-		SHX
-		XSM
-		SIK
-		MEN
-		MAN
-	}
 
 	roles = {
 		infantry
@@ -958,16 +904,107 @@ infantry_big_generic = {
 	}
 }
 
-mountaineers_generic = {
+exo_suits_generic = {
 
-	blocked_for = {
-		GER
-		JAP
-		ENG
-		USA
-		ITA
-		SOV
+	roles = {
+		exo_suits
 	}
+	
+	upgrade_prio = {
+		factor = 2
+
+		modifier = {
+			factor = 0
+			NOT = {
+				has_tech = tech_exo_suits
+			}
+		}
+	}
+	
+	match_to_count = 0.45
+
+	exo_suits_default = {
+	
+		upgrade_prio = {
+			factor = 2
+
+			modifier = {
+				factor = 1
+			}
+		}
+	
+		target_width = 20.0
+		width_weight = 2.0
+		column_swap_factor = 0.2
+		
+		stat_weights = {
+			0 #-- default_morale
+			1 #-- defense
+			1 #-- breakthrough
+			0 #-- hardness
+			2 #-- soft_attack
+			0 #-- hard_attack
+			0 #-- recon
+			0 #-- entrenchment
+			0 #-- initiative
+			0 #-- casualty_trickleback
+			0  #-- supply_consumption_factor
+			0 #-- supply_consumption
+			0 #-- suppression
+			0 #-- suppression_factor
+			0 #-- experience_loss_factor
+			0 #-- equipment_capture_factor
+			0.00 #-- fuel_capacity
+			#-- Air Values
+			0 #-- air_attack
+			#-- Common Values
+			1 #-- max_organisation
+			1 #-- max_strength
+			0 #-- maximum_speed
+			0 #-- armor_value
+			0 #-- ap_attack
+			0 #-- reliability
+			0 #-- reliability_factor
+			0.00 #-- weight
+			0.00 #-- fuel_consumption
+			0.00 #-- fuel_consumption_factor
+			0.00 #-- strat_attack
+			0.00 #-- carrier_size
+			0.00 #-- acc_hot_gain
+			0.00 #-- acc_cold_gain
+			-0.1 #-- build_cost_ic
+		}
+
+		target_template = {
+			weight = 0.5
+			match_value = 3000.0
+			
+			support = {
+				engineer = 1
+				artillery = 1
+				anti_tank = 1
+				logistics_company = 1
+			}
+			
+			regiments = {
+				exo_suits = 8
+				artillery_brigade = 2
+			}
+		}
+		
+		allowed_types = {
+			exo_suits
+			artillery
+			recon
+			signal_company
+			field_hospital
+			logistics_company
+			anti_tank
+		}
+	}
+}
+
+mountaineers_generic = {
 
 	roles = {
 		mountaineers
@@ -1068,15 +1105,6 @@ mountaineers_generic = {
 }
 
 marines_generic = {
-
-	blocked_for = {
-		GER
-		JAP
-		ENG
-		USA
-		ITA
-		SOV
-	}
 
 	roles = {
 		marines
@@ -1262,15 +1290,6 @@ marines_generic = {
 
 paratrooper_generic = {
 
-	blocked_for = {
-		GER
-		JAP
-		ENG
-		USA
-		ITA
-		SOV
-	}
-
 	roles = {
 		paratrooper
 	}
@@ -1375,6 +1394,7 @@ paratrooper_generic = {
 
 # REGIMENTS:
 #infantry
+#exo_suit
 #light_armor
 #super_heavy_armor
 #modern_armor
