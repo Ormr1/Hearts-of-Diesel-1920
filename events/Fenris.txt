@@ -305,3 +305,16 @@ news_event = {#carnavon dies - ENG
 		
 	}
 }
+news_event = {#Disaperance of Rasputin - FEN
+	id = fenris.17
+	title = fenris.17.t
+	desc = fenris.17.d
+	picture = GFX_news_event_generic_ruins
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = fenris.17.a
+		
+	}
+}

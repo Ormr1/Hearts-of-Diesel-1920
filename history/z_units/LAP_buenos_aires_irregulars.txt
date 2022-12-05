@@ -1,0 +1,33 @@
+﻿division_template = {
+	name = "División de Irregular"		# Infantry Division
+	division_names_group = SPAN_INF_02
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+	}
+}
+
+units = {
+	division= {	
+		name = "1a Destacamento de Irregular"
+		location = 12364 # Salta
+		division_template = "División de Irregular"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.75
+	}
+	division= {	
+		name = "2a Destacamento de Irregular"
+		location = 12364 # Salta
+		division_template = "División de Irregular"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.75
+	}
+	division= {	
+		name = "3a Destacamento de Irregular"
+		location = 10375 # Salta
+		division_template = "División de Irregular"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.75
+	}
+}

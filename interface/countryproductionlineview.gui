@@ -2685,7 +2685,7 @@ guiTypes = {
 			borderSize = {x = 0 y = 0}
 			maxWidth = 167
 			maxHeight = 20
-			fixedsize = yes
+			multiline = no
 			format = left
 			alwaystransparent = yes
 		}

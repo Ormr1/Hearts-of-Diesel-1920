@@ -739,34 +739,37 @@ FEN_fenris_interests_cat = {
 			custom_effect_tooltip = FEN_damage_SOV_operations
 			set_temp_variable = {FEN_suspicion_temp = 35}
 			FEN_increase_suspicion = yes
-			SOV={
-				deactivate_advisor = SOV_rasputin
-				remove_advisor_role = {
-				  character = "SOV_rasputin"
-				  slot = political_advisor
+			hidden_effect={
+				SOV={
+					deactivate_advisor = SOV_rasputin
+					remove_advisor_role = {
+					  character = "SOV_rasputin"
+					  slot = political_advisor
+					}
+					SOV_rasputin={
+						add_corps_commander_role={
+							skill = 3
+							attack_skill = 2
+							defense_skill = 2
+							planning_skill = 5
+							logistics_skill = 4
+						}
+						set_nationality = FEN
+					}
 				}
 				SOV_rasputin={
-					add_corps_commander_role={
-						skill = 3
-						attack_skill = 2
-						defense_skill = 2
-						planning_skill = 5
-						logistics_skill = 4
+					add_country_leader_role = {
+						promote_leader = yes
+						country_leader = {
+							ideology = fenris
+							expire = "1965.1.1.1"
+							traits = { war_industrialist }
+						}
 					}
-					set_nationality = FEN
+					promote_character = yes
 				}
 			}
-			SOV_rasputin={
-				add_country_leader_role = {
-					promote_leader = yes
-					country_leader = {
-						ideology = fenris
-						expire = "1965.1.1.1"
-						traits = { war_industrialist }
-					}
-				}
-				promote_character = yes
-			}
+			SOV = {country_event = {id = fenris.17}}
 			subtract_from_variable = {
 				FEN_rusviet_sr_influence = 20
 				tooltip = FEN_loses_hold_over_sr_by

@@ -1,13 +1,6 @@
 ﻿capital = 770
 
 #oob = "LAP_1936"
-if = {
-	limit = { has_dlc = "Man the Guns" }
-		set_naval_oob = "ARG_1936_naval_mtg"
-	else = {
-		set_naval_oob = "ARG_1936_naval_legacy"
-	}
-}
 
 # Starting tech
 set_technology = {
@@ -52,8 +45,6 @@ if = {
 
 #recruit_character = LAP_john_louis_sanfuentes
 
-
-set_country_flag = monroe_doctrine
 
 set_convoys = 120
 set_politics = {

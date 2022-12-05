@@ -2882,23 +2882,23 @@ FRA_decolonization = {
 					value = 1
 				}
 			}
-			892, 31, 806, 328, 33, 26, 32, 20, 21, 22, 891, 735, 902 = {
-				limit = {
-					is_core_of = ROOT 	
-					is_fully_controlled_by = ROOT
-					free_building_slots = {
-						building = industrial_complex
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
+			# 892, 31, 806, 328, 33, 26, 32, 20, 21, 22, 891, 735, 902 = {
+				# limit = {
+					# is_core_of = ROOT 	
+					# is_fully_controlled_by = ROOT
+					# free_building_slots = {
+						# building = industrial_complex
+						# size > 1
+						# include_locked = yes
+					# }
+				# }
+				# add_extra_state_shared_building_slots = 1
+				# add_building_construction = {
+					# type = industrial_complex
+					# level = 1
+					# instant_build = yes
+				# }
+			# }
 		}
 	}
 	FRA_Ditto_Equipment = {

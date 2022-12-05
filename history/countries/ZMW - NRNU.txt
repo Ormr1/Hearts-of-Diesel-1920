@@ -45,9 +45,6 @@ if = {
 
 #recruit_character = LAP_john_louis_sanfuentes
 
-
-set_country_flag = monroe_doctrine
-
 set_convoys = 120
 set_politics = {
 	ruling_party = neutrality
