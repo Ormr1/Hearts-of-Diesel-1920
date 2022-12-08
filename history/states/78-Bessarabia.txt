@@ -5,6 +5,7 @@ state={
 
 	history={
 		add_core_of = POL
+		add_core_of = MOL
 		owner = POL
 		victory_points = {
 			3707 5 

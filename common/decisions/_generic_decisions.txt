@@ -76,6 +76,14 @@ political_actions = {
 					has_idea = SPR_political_violence
 				}
 			}
+			if = {
+				limit = {
+					tag = SOV
+				}
+				NOT = {
+					has_idea = petrograd_soviet_idea
+				}
+			}
 		}
 
 		visible = {
@@ -128,6 +136,14 @@ political_actions = {
 				}
 				NOT = {
 					has_idea = SPR_political_violence
+				}
+			}
+			if = {
+				limit = {
+					tag = SOV
+				}
+				NOT = {
+					has_idea = petrograd_soviet_idea
 				}
 			}
 		}
