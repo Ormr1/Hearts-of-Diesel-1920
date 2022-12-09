@@ -297,3 +297,5 @@ RLL = "countries/Livonia Lithuania.txt"
 SRB = "countries/USRB.txt"
 TMR = "countries/Terra Mariana.txt"
 PLK = "countries/Polotsk.txt"
+
+MIT = "countries/Mittelafrika.txt"

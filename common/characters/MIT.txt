@@ -1,0 +1,28 @@
+characters = {
+	MIT_paul_von_lettow_vorbeck = {
+		name = "Paul von Lettow-Vorbeck" 
+		portraits = {
+			civilian = {
+				large = GFX_portrait_paul_von_lettow_vorbeck
+			}
+		}
+		country_leader = {
+			ideology = oligarchism
+			expire = "1927.1.1.1"
+			traits={ lion_of_africa }
+			id = -1
+		}
+		corps_commander={
+			traits={ career_officer war_hero }
+			skill=2
+			attack_skill=3
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=2
+			legacy_id=0
+		}
+	}
+
+}
+	
+	

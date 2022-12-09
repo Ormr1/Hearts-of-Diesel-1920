@@ -8273,4 +8273,9 @@ spriteTypes = {
 		looping = yes
 		play_on_show = yes
 	}
+	spriteType = {
+		name = GFX_portrait_paul_von_lettow_vorbeck
+		texturefile = "gfx/leaders/MIT/MIT_paul_von_lettow_vorbeck.png"
+	}
+	
 }

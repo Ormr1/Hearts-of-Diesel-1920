@@ -4710,6 +4710,11 @@ leader_traits = {
 		}
 	}
 	
+	lion_of_africa = {
+		random = no
+		resistance_damage_to_garrison = -0.15
+	}
+	
 	### Military Minister Traits
 	
 	# 1 is worst, 3 is best 
