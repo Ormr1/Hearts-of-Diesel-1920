@@ -147,6 +147,8 @@
  POL_democratic_party:0 "PSL"
  POL_democratic_party_long:0 "Polskie Stronnictwo Ludowe"
  POL_neutrality_party:0 "Sanacja"
+ POL_monarchy_party:0 "Akcja Polska"
+ POL_monarchy_party_long:0 "Akcja Polska"
  POL_OZON_party:0 "OZN"
  POL_OZON_party_long:0 "Obóz Zjednoczenia Narodowego" #Camp of National Unity
  POL_POS_party:0 "POS"
