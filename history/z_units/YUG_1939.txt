@@ -417,11 +417,11 @@ air_wings = {
 		tac_bomber_equipment_1 = { owner = "YUG" amount = 60 }					# 3. Vazduhoplovna Brigada  -- Do 17Ks
 	}
 	104 = {																# Bosnia
-		heavy_fighter_equipment_1 = { owner = "YUG" creator = "ENG" amount = 48 }					# I/4. Vazduhoplovna Brigada  -- Blenheim Is
+		heavy_fighter_equipment_1 = { owner = "YUG" creator = "SCO" amount = 48 }					# I/4. Vazduhoplovna Brigada  -- Blenheim Is
 		tac_bomber_equipment_1 = { owner = "YUG" amount = 40 }			# II/4. Vazduhoplovna Brigada  -- SM.79s
 	}
 	106 = {																# Macedonia
-		fighter_equipment_1 = { owner = "YUG" creator = "ENG" amount = 40 }				# 2. Vazduhoplovna Brigada  -- Hurricane Is
+		fighter_equipment_1 = { owner = "YUG" creator = "SCO" amount = 40 }				# 2. Vazduhoplovna Brigada  -- Hurricane Is
 	}
 }
 

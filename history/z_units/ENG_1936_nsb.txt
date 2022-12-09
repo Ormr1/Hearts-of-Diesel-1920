@@ -1,6 +1,6 @@
 ﻿division_template = {
 	name = "Infantry Division"			# 1st - 5th divisions = fully equipped, others = reserve divisions
-	division_names_group = ENG_INF_01
+	division_names_group = SCO_INF_01
 
 	regiments = {
 		infantry = { x = 0 y = 0 }
@@ -20,7 +20,7 @@
 }
 division_template = {
 	name = "Cavalry Brigade"
-	division_names_group = ENG_CAV_02
+	division_names_group = SCO_CAV_02
 
 	regiments = {
 		cavalry = { x = 0 y = 0 }
@@ -34,7 +34,7 @@ division_template = {
 }
 division_template = {
 	name = "Tank Brigade"
-	division_names_group = ENG_ARM_02
+	division_names_group = SCO_ARM_02
 	regiments = {
 		light_armor = { x = 0 y = 0 }
 		light_armor = { x = 0 y = 1 }
@@ -43,7 +43,7 @@ division_template = {
 }
 division_template = {
 	name = "Colonial Garrison"
-	division_names_group = ENG_COL_01
+	division_names_group = SCO_COL_01
 	
 	regiments = {
 		infantry = { x = 0 y = 0 }
@@ -220,7 +220,7 @@ units = {
 		location = 9239
 		division_template = "Tank Brigade"
 		start_experience_factor = 0.3
-		force_equipment_variants = { light_tank_chassis_1 = { owner = "ENG" version_name = "Light Tank Mk. IV" } }
+		force_equipment_variants = { light_tank_chassis_1 = { owner = "SCO" version_name = "Light Tank Mk. IV" } }
 	}
 	division= {	# "3rd Infantry Division"
 		division_name = {
@@ -263,28 +263,28 @@ air_wings = {
 	129 = { 
 		### No. 11 Fighter Command, Middlesex area -- Hawker Demons, Furys, Gloster Gauntlets
 		fighter_equipment_0 = {
-			owner = "ENG" 
+			owner = "SCO" 
 			amount = 216
 		}
 	}
 	130 = { 
 		### No. 11 Fighter Command, Essex area -- Hawker Demons, Furys, Gloster Gauntlets
 		fighter_equipment_0 = {
-			owner = "ENG" 
+			owner = "SCO" 
 			amount = 144
 		}
 	}	
 	127 = { 
 		### No. 12 Fighter Command, Nottingham area -- Hawker Demons, Furys, Gloster Gauntlets
 		fighter_equipment_0 = {
-			owner = "ENG" 
+			owner = "SCO" 
 			amount = 96
 		}
 	}	
 	131 = { 
 		### No. 13 Fighter Command, Newcastle -- Hawker Demons, Furys, Gloster Gauntlets
 		fighter_equipment_0 = {
-			owner = "ENG" 
+			owner = "SCO" 
 			amount = 72
 		}
 		
@@ -294,35 +294,35 @@ air_wings = {
 	125 = { 
 		### No. 1 Bomber Command, East Anglia area -- Fairey Gordons, Battles
 		CAS_equipment_1 = {
-			owner = "ENG" 
+			owner = "SCO" 
 			amount = 64
 		}
 	}
 	125 = { 
 		### No. 2 Bomber Command, East Anglia area -- HP Heyford, Harrows, AW Whitleys
 		tac_bomber_equipment_0 = {
-			owner = "ENG" 
+			owner = "SCO" 
 			amount = 48
 		}
 	}
 	126 = { 
 		### No. 3 Bomber Command, Suffolk area -- HP Heyford, Harrows, AW Whitleys
 		tac_bomber_equipment_0 = {
-			owner = "ENG" 
+			owner = "SCO" 
 			amount = 64
 		}
 	}
 	130 = { 
 		### No. 4 Bomber Command, York area -- HP Heyford, Harrows, AW Whitleys
 		tac_bomber_equipment_0 = {
-			owner = "ENG" 
+			owner = "SCO" 
 			amount = 80
 		}
 	}
 	128 = { 
 		### No. 5 Bomber Command, Lincoln area -- Fairey Gordons, Battles
 		CAS_equipment_1 = {
-			owner = "ENG" 
+			owner = "SCO" 
 			amount = 64
 		}
 	}
@@ -331,7 +331,7 @@ air_wings = {
 	130 = { 
 		### No. 16 Coastal Command -- Vickers Vildebeests
 		nav_bomber_equipment_1 = {
-			owner = "ENG" 
+			owner = "SCO" 
 			amount = 24
 		}
 	}
@@ -340,33 +340,33 @@ air_wings = {
 	447 = { 
 		### AHQ Egypt
 		fighter_equipment_0 = {
-			owner = "ENG" 
+			owner = "SCO" 
 			amount = 72
 		}
 		tac_bomber_equipment_0 = {
-			owner = "ENG" 
+			owner = "SCO" 
 			amount = 48
 		}
 		CAS_equipment_1 = {
-			owner = "ENG" 
+			owner = "SCO" 
 			amount = 64
 		}
 	}
 	454 = { 
 		### RAF Palestine & Iraq
 		CAS_equipment_1 = {
-			owner = "ENG" 
+			owner = "SCO" 
 			amount = 32
 		}
 	}
 	659 = { 
 		### RAF Aden
 		fighter_equipment_0 = {
-			owner = "ENG" 
+			owner = "SCO" 
 			amount = 24
 		}
 		CAS_equipment_1 = {
-			owner = "ENG" 
+			owner = "SCO" 
 			amount = 16
 		}
 	}
@@ -375,11 +375,11 @@ air_wings = {
 	336 = { 
 		### RAF Far East
 		nav_bomber_equipment_1 = {
-			owner = "ENG" 
+			owner = "SCO" 
 			amount = 24
 		}
 		CAS_equipment_1 = {
-			owner = "ENG" 
+			owner = "SCO" 
 			amount = 64
 		}
 	}
@@ -394,7 +394,7 @@ instant_effect = {
 	add_equipment_production = {
 		equipment = {
 			type = infantry_equipment_1
-			creator = "ENG"
+			creator = "SCO"
 		}
 		requested_factories = 3
 		progress = 0.1
@@ -403,7 +403,7 @@ instant_effect = {
 	add_equipment_production = {
 		equipment = {
 			type = artillery_equipment_1
-			creator = "ENG"
+			creator = "SCO"
 		}
 		requested_factories = 2
 		progress = 0.1
@@ -413,7 +413,7 @@ instant_effect = {
 	add_equipment_production = {
 		equipment = {
 			type = support_equipment_1
-			creator = "ENG" 
+			creator = "SCO" 
 		}
 		requested_factories = 1
 		progress = 0.3
@@ -423,7 +423,7 @@ instant_effect = {
 	add_equipment_production = {
 		equipment = {
 			type = light_tank_chassis_1
-			creator = "ENG" 
+			creator = "SCO" 
 			version_name = "Light Tank Mk. VI"
 		}
 		requested_factories = 1
@@ -434,7 +434,7 @@ instant_effect = {
 	add_equipment_production = {
 		equipment = {
 			type = fighter_equipment_0
-			creator = "ENG" 
+			creator = "SCO" 
 		}
 		requested_factories = 1
 		progress = 0.15
@@ -444,7 +444,7 @@ instant_effect = {
 	add_equipment_production = {
 		equipment = {
 			type = tac_bomber_equipment_0
-			creator = "ENG" 
+			creator = "SCO" 
 		}
 		requested_factories = 1
 		progress = 0.1

@@ -4,7 +4,7 @@ state={
 	name="STATE_14"
 
 	history={
-		owner = ENG
+		owner = SCO
 		victory_points = {
 			3552 20 
 		}
@@ -42,7 +42,7 @@ state={
 
 		}
 		add_claim_by = FRA
-		add_core_of = ENG
+		add_core_of = SCO
 		1939.1.1 = {
 			buildings = {
 				dockyard = 5

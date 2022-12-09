@@ -11,7 +11,7 @@ state= {
 	}
 
 	history= {
-		owner = ENG
+		owner = SCO
 		victory_points = {
 			6384 30 
 		}
@@ -29,6 +29,7 @@ state= {
 				naval_base = 5
 			}
 		}
+		add_core_of = SCO
 		add_core_of = ENG
 		1939.1.1 = {
 			buildings = {
