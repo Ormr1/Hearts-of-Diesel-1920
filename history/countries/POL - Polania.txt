@@ -104,6 +104,7 @@ set_popularities = {
 	}
 }
 
+recruit_character = POL_jozef_pilsudski
 recruit_character = POL_ignacy_moscicki
 recruit_character = POL_wladyslaw_sikorski
 recruit_character = POL_boleslaw_wieniawa_glugoszowski

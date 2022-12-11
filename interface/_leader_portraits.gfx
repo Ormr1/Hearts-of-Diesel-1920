@@ -129,6 +129,11 @@ spriteTypes = {
 
 	# Polish #######
 	spriteType = {
+		name = "GFX_portrait_POL_jozef_pilsudski"
+		texturefile = "gfx/leaders/POL/portrait_POL_jozef_pulsudski.dds"
+	}
+
+	spriteType = {
 		name = "GFX_portrait_POL_ignacy_moscicki"
 		texturefile = "gfx/leaders/POL/Portrait_Poland_Ignacy_Moscicki.dds"
 	}
