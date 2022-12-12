@@ -1,0 +1,55 @@
+﻿division_template = {
+	name = "Peoples Infantry"		#ZPF, Infantry Division
+	division_names_group = SPAN_INF_02
+
+	regiments = {
+		militia = { x = 0 y = 0 }
+		militia = { x = 0 y = 1 }
+	}
+	is_locked = yes
+}
+
+units = {
+	division= {	
+		name = "1. Peoples Infantry"
+		location = 13324 # Salta
+		division_template = "Peoples Infantry"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.75
+	}
+	division= {	
+		name = "2. Peoples Infantry"
+		location = 13326 # Salta
+		division_template = "Peoples Infantry"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.75
+	}
+	division= {	
+		name = "3. Peoples Infantry"
+		location = 1846 # Salta
+		division_template = "Peoples Infantry"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.75
+	}
+	division= {	
+		name = "4. Peoples Infantry"
+		location = 10594 # Salta
+		division_template = "Peoples Infantry"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.75
+	}
+	division= {	
+		name = "5. Peoples Infantry"
+		location = 13326 # Salta
+		division_template = "Peoples Infantry"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.75
+	}
+	division= {	
+		name = "6. Peoples Infantry"
+		location = 13324 # Salta
+		division_template = "Peoples Infantry"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.75
+	}
+}

@@ -318,3 +318,18 @@ news_event = {#Disaperance of Rasputin - FEN
 		
 	}
 }
+country_event = {#economic aid from fenris
+	id = fenris.18
+	title = fenris.18.t
+	desc = fenris.18.d
+	picture = GFX_report_event_finnish_letter
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = fenris.18.a
+		301={
+			add_extra_state_shared_building_slots = 1
+		}
+	}
+}

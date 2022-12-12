@@ -285,6 +285,10 @@ country_event = { #Collapse of the FROLIZI
 			}
 			ZIN={
 				load_oob = "ZIN_1925"
+				delete_units = {
+					division_template = "People's Revolutionary Division"
+					disband = no
+				}
 				drop_cosmetic_tag = yes
 				set_politics = {
 					ruling_party = communism
