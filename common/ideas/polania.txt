@@ -1,6 +1,21 @@
 ideas = {
 
 country = {
+	POL_polania_is_not_yet_lost = {
+		picture = placeholder
+		allowed = {
+			original_tag = POL
+			always = no
+		}
+		allowed_civil_war = {
+			always = yes
+		}
+		removal_cost = 0
+		modifier = {
+			resistance_growth_on_our_occupied_states = 0.50
+			compliance_growth_on_our_occupied_states = -0.50
+		}
+	}
 
 	POL_home_of_the_enlightenment = {
 		picture = placeholder

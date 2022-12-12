@@ -5,7 +5,14 @@ POL_disarm_radical_militias_decisions = {
 			tag = POL
 		}
 		state_target = yes
+		ai_will_do = {
+			base = 100
+		}
+		on_map_mode = map_only
 		available = {
+			NOT = {
+				has_country_flag = POL_disarming_militias
+			}
 			has_capitulated = no
 			FROM = {
 				owner = {
@@ -14,7 +21,7 @@ POL_disarm_radical_militias_decisions = {
 				}
 			}
 			has_equipment = {
-				infantry_equipment > 150
+				infantry_equipment > 149
 			}
 		}
 		visible = {
@@ -24,6 +31,10 @@ POL_disarm_radical_militias_decisions = {
 		}
 		days_remove = 28
 		complete_effect = {
+			set_country_flag = POL_disarming_militias
+		}
+		remove_effect = {
+			clr_country_flag = POL_disarming_militias
 			set_temp_variable = { pol_num_soldiers_lost = random }
 			multiply_temp_variable = { pol_num_soldiers_lost = 200 }
 			round_temp_variable = pol_num_soldiers_lost
@@ -48,7 +59,14 @@ POL_disarm_radical_militias_decisions = {
 			tag = POL
 		}
 		state_target = yes
+		ai_will_do = {
+			base = 100
+		}
+		on_map_mode = map_only
 		available = {
+			NOT = {
+				has_country_flag = POL_disarming_militias
+			}
 			has_capitulated = no
 			FROM = {
 				owner = {
@@ -57,7 +75,7 @@ POL_disarm_radical_militias_decisions = {
 				}
 			}
 			has_equipment = {
-				infantry_equipment > 150
+				infantry_equipment > 149
 			}
 		}
 		visible = {
@@ -67,6 +85,10 @@ POL_disarm_radical_militias_decisions = {
 		}
 		days_remove = 28
 		complete_effect = {
+			set_country_flag = POL_disarming_militias
+		}
+		remove_effect = {
+			clr_country_flag = POL_disarming_militias
 			set_temp_variable = { pol_num_soldiers_lost = random }
 			multiply_temp_variable = { pol_num_soldiers_lost = 200 }
 			round_temp_variable = pol_num_soldiers_lost
@@ -91,7 +113,14 @@ POL_disarm_radical_militias_decisions = {
 			tag = POL
 		}
 		state_target = yes
+		ai_will_do = {
+			base = 100
+		}
+		on_map_mode = map_only
 		available = {
+			NOT = {
+				has_country_flag = POL_disarming_militias
+			}
 			has_capitulated = no
 			FROM = {
 				owner = {
@@ -100,7 +129,7 @@ POL_disarm_radical_militias_decisions = {
 				}
 			}
 			has_equipment = {
-				infantry_equipment > 150
+				infantry_equipment > 149
 			}
 		}
 		visible = {
@@ -110,6 +139,10 @@ POL_disarm_radical_militias_decisions = {
 		}
 		days_remove = 28
 		complete_effect = {
+			set_country_flag = POL_disarming_militias
+		}
+		remove_effect = {
+			clr_country_flag = POL_disarming_militias
 			set_temp_variable = { pol_num_soldiers_lost = random }
 			multiply_temp_variable = { pol_num_soldiers_lost = 200 }
 			round_temp_variable = pol_num_soldiers_lost
@@ -134,22 +167,17 @@ POL_disarm_radical_militias_decisions = {
 			tag = POL
 		}
 		state_target = yes
+		ai_will_do = {
+			base = 100
+		}
 		available = {
 			has_capitulated = no
+			has_completed_focus = POL_increase_danzig_garrison
 			FROM = {
-				state = 85
 				owner = {
 					has_capitulated = no
 					controls_state = PREV
 				}
-			}
-			has_equipment = {
-				infantry_equipment > 150
-			}
-		}
-		visible = {
-			FROM = {
-				has_dynamic_modifier = { modifier = saxon_nationalist_militias }
 			}
 			every_owned_state = {
 				limit = {
@@ -161,8 +189,17 @@ POL_disarm_radical_militias_decisions = {
 					has_dynamic_modifier = { modifier = saxon_nationalist_militias }
 				}
 			}
+			has_equipment = {
+				infantry_equipment > 149
+			}
 		}
-		complete_effect = {
+		visible = {
+			FROM = {
+				state = 85
+				has_dynamic_modifier = { saxon_nationalist_militias }
+			}
+		}
+		remove_effect = {
 			set_temp_variable = { pol_num_soldiers_lost = random }
 			multiply_temp_variable = { pol_num_soldiers_lost = 200 }
 			round_temp_variable = pol_num_soldiers_lost
@@ -179,12 +216,7 @@ POL_disarm_radical_militias_decisions = {
 			FROM = {
 				remove_dynamic_modifier = { modifier = saxon_nationalist_militias }
 				set_demilitarized_zone = no
-				remove_dynamic_modifier = {
-					modifier = international_city_2
-				}
-				add_dynamic_modifier = {
-					modifier = international_city_3
-				}
+				POL_increase_danzig_control = yes
 			}
 		}
 	}

@@ -56,18 +56,24 @@ focus_tree = {
             85 = {
                 add_resistance = -5
                 add_compliance = 5
-                remove_dynamic_modifier = {
-					modifier = international_city
-				}
-				add_dynamic_modifier = {
-					modifier = international_city_2
-				}
+                POL_increase_danzig_control = yes
             }
         }
     }
     focus = {
         id = POL_hold_new_elections
         icon = placeholder
+        available = {
+            NOT = {
+                any_owned_state = {
+                    OR = {
+                        has_dynamic_modifier = { modifier = saxon_nationalist_militias }
+                        has_dynamic_modifier = { modifier = ukraizhian_nationalist_militias }
+                        has_dynamic_modifier = { modifier = moldovan_nationalist_militias }
+                    }
+                }
+            }
+        }
         prerequisite = { focus = POL_disarm_radical_militias }
         prerequisite = { focus = POL_increase_danzig_garrison }
         relative_position_id = POL_stabilizing_the_country
@@ -86,16 +92,161 @@ focus_tree = {
         }
     }
     focus = {
-        id = POL_democrats_win
+        id = POL_socialists_win
         icon = placeholder
         prerequisite = { focus = POL_hold_new_elections }
         relative_position_id = POL_hold_new_elections
-        available = { always = no }
-        x = -9
+        x = -12
         y = 1
         cost = 0
         completion_reward = {
 
+        }
+    }
+    focus = {
+        id = POL_agrarianists_win
+        icon = placeholder
+        prerequisite = { focus = POL_hold_new_elections }
+        relative_position_id = POL_hold_new_elections
+        available = { always = no }
+        x = -6
+        y = 1
+        cost = 0
+        completion_reward = {
+
+        }
+    }
+    focus = {
+        id = POL_draft_a_democratic_constitution
+        icon = placeholder
+        prerequisite = { focus = POL_agrarianists_win }
+        relative_position_id = POL_agrarianists_win
+        x = -2
+        y = 1
+        cost = 5
+        completion_reward = {
+
+        }
+    }
+    focus = {
+        id = POL_hold_parliamentary_elections
+        icon = placeholder
+        prerequisite = { focus = POL_draft_a_democratic_constitution }
+        relative_position_id = POL_draft_a_democratic_constitution
+        x = -1
+        y = 1
+        cost = 10
+        completion_reward = {
+            
+        }
+    }
+    focus = {
+        id = POL_codify_checks_and_balances
+        icon = placeholder
+        prerequisite = { focus = POL_draft_a_democratic_constitution }
+        relative_position_id = POL_draft_a_democratic_constitution
+        x = 1
+        y = 1
+        cost = 10
+        completion_reward = {
+            
+        }
+    }
+    focus = {
+        id = POL_secure_independent_judiciary
+        icon = placeholder
+        prerequisite = { focus = POL_hold_parliamentary_elections }
+        prerequisite = { focus = POL_codify_checks_and_balances }
+        relative_position_id = POL_draft_a_democratic_constitution
+        x = 0
+        y = 2
+        cost = 10
+        completion_reward = {
+            
+        }
+    }
+    focus = {
+        id = POL_rebirth_of_the_enlightenment
+        icon = placeholder
+        prerequisite = { focus = POL_secure_independent_judiciary }
+        relative_position_id = POL_secure_independent_judiciary
+        x = 0
+        y = 1
+        cost = 10
+        completion_reward = {
+            
+        }
+    }
+    focus = {
+        id = POL_begin_agrarian_reform
+        icon = placeholder
+        prerequisite = { focus = POL_agrarianists_win }
+        relative_position_id = POL_agrarianists_win
+        x = 2
+        y = 1
+        cost = 5
+        completion_reward = {
+
+        }
+    }
+    focus = {
+        id = POL_subsidize_farmers
+        icon = placeholder
+        prerequisite = { focus = POL_begin_agrarian_reform }
+        relative_position_id = POL_begin_agrarian_reform
+        x = -1
+        y = 1
+        cost = 10
+        completion_reward = {
+
+        }
+    }
+    focus = {
+        id = POL_break_up_agricultural_monopolies
+        icon = placeholder
+        prerequisite = { focus = POL_subsidize_farmers }
+        relative_position_id = POL_subsidize_farmers
+        x = 0
+        y = 1
+        cost = 10
+        completion_reward = {
+
+        }
+    }
+    focus = {
+        id = POL_local_farm_collectives
+        icon = placeholder
+        prerequisite = { focus = POL_break_up_agricultural_monopolies }
+        relative_position_id = POL_break_up_agricultural_monopolies
+        x = -1
+        y = 1
+        cost = 10
+        completion_reward = {
+
+        }
+    }
+    focus = {
+        id = POL_agricultural_autarky
+        icon = placeholder
+        prerequisite = { focus = POL_break_up_agricultural_monopolies }
+        relative_position_id = POL_break_up_agricultural_monopolies
+        x = 1
+        y = 1
+        cost = 10
+        completion_reward = {
+
+        }
+    }
+    focus = {
+        id = POL_tariff_foreign_grain_imports
+        icon = placeholder
+        prerequisite = { focus = POL_begin_agrarian_reform }
+        relative_position_id = POL_begin_agrarian_reform
+        x = 1
+        y = 1
+        cost = 10
+        completion_reward = {
+            
         }
     }
     focus = {
@@ -104,7 +255,7 @@ focus_tree = {
         prerequisite = { focus = POL_hold_new_elections }
         relative_position_id = POL_hold_new_elections
         available = { always = no }
-        x = -3
+        x = 0
         y = 1
         cost = 0
         completion_reward = {
@@ -117,7 +268,7 @@ focus_tree = {
         prerequisite = { focus = POL_hold_new_elections }
         relative_position_id = POL_hold_new_elections
         available = { always = no }
-        x = 3
+        x = 6
         y = 1
         cost = 0
         completion_reward = {
@@ -130,7 +281,7 @@ focus_tree = {
         prerequisite = { focus = POL_hold_new_elections }
         relative_position_id = POL_hold_new_elections
         available = { always = no }
-        x = 9
+        x = 12
         y = 1
         cost = 0
         completion_reward = {
@@ -144,7 +295,7 @@ focus_tree = {
     focus = {
         id = POL_looking_outward
         icon = placeholder
-        x = 35
+        x = 40
         y = 0
         cost = 5
         completion_reward = {

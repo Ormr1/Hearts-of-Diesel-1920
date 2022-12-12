@@ -7,6 +7,7 @@ state={
 		add_core_of = POL
 		add_core_of = MOL
 		owner = POL
+		# has_dynamic_modifier = { modifier = ukraizhian_nationalist_militias }
 		victory_points = {
 			3707 5 
 		}
@@ -15,7 +16,6 @@ state={
 			air_base = 2
 
 		}
-
 	}
 
 	provinces={
