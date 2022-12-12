@@ -1,3 +1,194 @@
+POL_disarm_radical_militias_decisions = {
+	POL_disarm_saxon_militias_in_state = {
+		icon = placeholder
+		allowed = {
+			tag = POL
+		}
+		state_target = yes
+		available = {
+			has_capitulated = no
+			FROM = {
+				owner = {
+					has_capitulated = no
+					controls_state = PREV
+				}
+			}
+			has_equipment = {
+				infantry_equipment > 150
+			}
+		}
+		visible = {
+			FROM = {
+				has_dynamic_modifier = { modifier = saxon_nationalist_militias }
+			}
+		}
+		days_remove = 28
+		complete_effect = {
+			set_temp_variable = { pol_num_soldiers_lost = random }
+			multiply_temp_variable = { pol_num_soldiers_lost = 200 }
+			round_temp_variable = pol_num_soldiers_lost
+			multiply_temp_variable = {
+				tooltip = pol_num_soldiers_lost_tt
+				pol_num_soldiers_lost = -1 
+			}
+			add_manpower = pol_num_soldiers_lost
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -150
+				producer = POL
+			}
+			FROM = {
+				remove_dynamic_modifier = { modifier = saxon_nationalist_militias }
+			}
+		}
+	}
+	POL_disarm_ukraizhian_militias_in_state = {
+		icon = placeholder
+		allowed = {
+			tag = POL
+		}
+		state_target = yes
+		available = {
+			has_capitulated = no
+			FROM = {
+				owner = {
+					has_capitulated = no
+					controls_state = PREV
+				}
+			}
+			has_equipment = {
+				infantry_equipment > 150
+			}
+		}
+		visible = {
+			FROM = {
+				has_dynamic_modifier = { modifier = ukraizhian_nationalist_militias }
+			}
+		}
+		days_remove = 28
+		complete_effect = {
+			set_temp_variable = { pol_num_soldiers_lost = random }
+			multiply_temp_variable = { pol_num_soldiers_lost = 200 }
+			round_temp_variable = pol_num_soldiers_lost
+			multiply_temp_variable = {
+				tooltip = pol_num_soldiers_lost_tt
+				pol_num_soldiers_lost = -1 
+			}
+			add_manpower = pol_num_soldiers_lost
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -150
+				producer = POL
+			}
+			FROM = {
+				remove_dynamic_modifier = { modifier = ukraizhian_nationalist_militias }
+			}
+		}
+	}
+	POL_disarm_moldovan_militias_in_state = {
+		icon = placeholder
+		allowed = {
+			tag = POL
+		}
+		state_target = yes
+		available = {
+			has_capitulated = no
+			FROM = {
+				owner = {
+					has_capitulated = no
+					controls_state = PREV
+				}
+			}
+			has_equipment = {
+				infantry_equipment > 150
+			}
+		}
+		visible = {
+			FROM = {
+				has_dynamic_modifier = { modifier = moldovan_nationalist_militias }
+			}
+		}
+		days_remove = 28
+		complete_effect = {
+			set_temp_variable = { pol_num_soldiers_lost = random }
+			multiply_temp_variable = { pol_num_soldiers_lost = 200 }
+			round_temp_variable = pol_num_soldiers_lost
+			multiply_temp_variable = {
+				tooltip = pol_num_soldiers_lost_tt
+				pol_num_soldiers_lost = -1 
+			}
+			add_manpower = pol_num_soldiers_lost
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -150
+				producer = POL
+			}
+			FROM = {
+				remove_dynamic_modifier = { modifier = moldovan_nationalist_militias }
+			}
+		}
+	}
+	POL_move_into_danzig = {
+		icon = placeholder
+		allowed = {
+			tag = POL
+		}
+		state_target = yes
+		available = {
+			has_capitulated = no
+			FROM = {
+				state = 85
+				owner = {
+					has_capitulated = no
+					controls_state = PREV
+				}
+			}
+			has_equipment = {
+				infantry_equipment > 150
+			}
+		}
+		visible = {
+			FROM = {
+				has_dynamic_modifier = { modifier = saxon_nationalist_militias }
+			}
+			every_owned_state = {
+				limit = {
+					NOT = {
+						state = 85
+					}
+				}
+				NOT = {
+					has_dynamic_modifier = { modifier = saxon_nationalist_militias }
+				}
+			}
+		}
+		complete_effect = {
+			set_temp_variable = { pol_num_soldiers_lost = random }
+			multiply_temp_variable = { pol_num_soldiers_lost = 200 }
+			round_temp_variable = pol_num_soldiers_lost
+			multiply_temp_variable = {
+				tooltip = pol_num_soldiers_lost_tt
+				pol_num_soldiers_lost = -1 
+			}
+			add_manpower = pol_num_soldiers_lost
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -150
+				producer = POL
+			}
+			FROM = {
+				remove_dynamic_modifier = { modifier = saxon_nationalist_militias }
+				set_demilitarized_zone = no
+				remove_dynamic_modifier = {
+					modifier = international_city_2
+				}
+				add_dynamic_modifier = {
+					modifier = international_city_3
+				}
+			}
+		}
+	}
+}
 POL_danzig_decisions = {
 
 	POL_unification_propaganda = {

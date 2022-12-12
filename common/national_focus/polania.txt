@@ -37,6 +37,7 @@ focus_tree = {
             factor = 100
         }
         completion_reward = {
+            unlock_decision_category_tooltip = POL_disarm_radical_militias_decisions
             # Unlock decisions to disarm radical militias
         }
     }
@@ -85,7 +86,7 @@ focus_tree = {
         }
     }
     focus = {
-        id = POL_agrarian_democrats_win
+        id = POL_democrats_win
         icon = placeholder
         prerequisite = { focus = POL_hold_new_elections }
         relative_position_id = POL_hold_new_elections
@@ -98,7 +99,7 @@ focus_tree = {
         }
     }
     focus = {
-        id = POL_nationalist_democrats_win
+        id = POL_technocrats_win
         icon = placeholder
         prerequisite = { focus = POL_hold_new_elections }
         relative_position_id = POL_hold_new_elections
@@ -153,13 +154,23 @@ focus_tree = {
     focus = {
         id = POL_towards_saxony
         icon = placeholder
+        mutually_exclusive = { focus = POL_polania_bows_to_none }
+        mutually_exclusive = { focus = POL_towards_rusviet }
         prerequisite = { focus = POL_looking_outward }
         relative_position_id = POL_looking_outward
         x = -4
         y = 1
         cost = 5
         completion_reward = {
-
+            add_political_power = 25
+            add_opinion_modifier = {
+                target = GER
+                modifier = medium_increase
+            }
+            reverse_add_opinion_modifier = {
+                target = GER
+                modifier = medium_increase
+            }
         }
     }
     focus = {
@@ -287,13 +298,16 @@ focus_tree = {
     focus = {
         id = POL_polania_bows_to_none
         icon = placeholder
+        mutually_exclusive = { focus = POL_towards_saxony }
+        mutually_exclusive = { focus = POL_towards_rusviet }
         prerequisite = { focus = POL_looking_outward }
         relative_position_id = POL_looking_outward
         x = 0
         y = 1
         cost = 5
         completion_reward = {
-
+            add_political_power = 75
+            add_stability = 0.05
         }
     }
     focus = {
@@ -748,13 +762,23 @@ focus_tree = {
     focus = {
         id = POL_towards_rusviet
         icon = placeholder
+        mutually_exclusive = { focus = POL_polania_bows_to_none }
+        mutually_exclusive = { focus = POL_towards_saxony }
         prerequisite = { focus = POL_looking_outward }
         relative_position_id = POL_looking_outward
         x = 4
         y = 1
         cost = 5
         completion_reward = {
-
+            add_political_power = 25
+            add_opinion_modifier = {
+                target = SOV
+                modifier = medium_increase
+            }
+            reverse_add_opinion_modifier = {
+                target = SOV
+                modifier = medium_increase
+            }
         }
     }
     focus = {

@@ -1,0 +1,106 @@
+local_economic_boom = {
+	state_production_speed_buildings_factor = 0.15
+	local_resources = 0.20
+	local_supplies = 0.10
+}
+
+usea_idea = {
+	icon = placeholder
+	political_power_factor = USA.usea_pp_factor
+	consumer_goods_factor = USA.usea_cg_factor
+	production_speed_industrial_complex_factor = USA.usea_ic_factor
+	production_speed_arms_factory_factor = USA.usea_af_factor
+	local_resources_factor = USA.usea_lr_factor
+	research_speed_factor = USA.usea_research_factor
+}
+
+us_peacekeeper_mission_1 = {
+	icon = GFX_modifiers_usa_peacekeeper_mission
+	resistance_target = -0.10
+	compliance_growth = 0.10
+}
+
+us_peacekeeper_mission_2 = {
+	icon = GFX_modifiers_usa_peacekeeper_mission
+	resistance_target = -0.15
+	resistance_growth = -0.10
+	compliance_growth = 0.15
+}
+
+us_peacekeeper_mission_3 = {
+	icon = GFX_modifiers_usa_peacekeeper_mission
+	resistance_target = -0.15
+	resistance_growth = -0.10
+	resistance_decay = 0.10
+	compliance_growth = 0.15
+}
+
+us_peacekeeper_mission_4 = {
+	icon = GFX_modifiers_usa_peacekeeper_mission
+	resistance_target = -0.15
+	resistance_growth = -0.10
+	resistance_decay = 0.10
+	compliance_growth = 0.15
+	compliance_gain	= 0.01
+}
+
+us_peacekeeper_mission_5 = {
+	icon = GFX_modifiers_usa_peacekeeper_mission
+	resistance_target = -0.20
+	resistance_growth = -0.15
+	resistance_decay = 0.15
+	compliance_growth = 0.20
+	compliance_gain	= 0.02
+}
+
+native_american_raids = {
+	icon = placeholder
+	army_speed_factor_for_controller = -0.10
+	attrition_for_controller = -0.10
+	compliance_growth = -0.10
+	local_building_slots_factor	= -0.20
+	local_factory_sabotage = 0.25
+	local_manpower = -0.20
+	state_resources_factor = -0.10
+	local_supplies = -0.10
+	resistance_growth = 0.10
+}
+
+saxon_nationalist_militias = {
+	icon = placeholder
+	army_speed_factor_for_controller = -0.10
+	attrition_for_controller = -0.10
+	compliance_growth = -0.10
+	local_building_slots_factor	= -0.20
+	local_factory_sabotage = 0.25
+	local_manpower = -0.20
+	state_resources_factor = -0.10
+	local_supplies = -0.10
+	resistance_growth = 0.10
+}
+
+ukraizhian_nationalist_militias = {
+	icon = placeholder
+	army_speed_factor_for_controller = -0.10
+	attrition_for_controller = -0.10
+	compliance_growth = -0.10
+	local_building_slots_factor	= -0.20
+	local_factory_sabotage = 0.25
+	local_manpower = -0.20
+	state_resources_factor = -0.10
+	local_supplies = -0.10
+	resistance_growth = 0.10
+}
+
+moldovan_nationalist_militias = {
+	icon = placeholder
+	army_speed_factor_for_controller = -0.10
+	attrition_for_controller = -0.10
+	compliance_growth = -0.10
+	local_building_slots_factor	= -0.20
+	local_factory_sabotage = 0.25
+	local_manpower = -0.20
+	state_resources_factor = -0.10
+	local_supplies = -0.10
+	resistance_growth = 0.10
+}
