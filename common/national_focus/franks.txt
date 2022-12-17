@@ -29,7 +29,7 @@ focus_tree = {
 focus = { ### POLITICAL - Can only do when political stability has been achieved
     id = FRA_The_Outside_World
     icon = placeholder
-    x = 100
+    x = 75
     y = 0
     cost = 8
     ai_will_do = {
@@ -45,7 +45,7 @@ focus = { ### POLITICAL - Can only do when political stability has been achieved
 focus = {
     id = FRA_State_Of_the_Economy
     icon = placeholder
-    x = 150
+    x = 125
     y = 0
     cost = 5
     ai_will_do = {
@@ -2675,19 +2675,19 @@ focus = {
 focus = { ### Research Path
     id = FRA_Open_the_Window_for_Innovation
     icon = placeholder
-    relative_position_id = FRA_Afford_the_Expensive_Trade
-    x = -10
-    y = 1
+    relative_position_id = FRA_Heart_of_the_Nation
+    x = 0
+    y = 3
     cost = 6
     ai_will_do = {
         factor = 10
     }
+    available = {
+        has_completed_focus = FRA_Heart_of_the_Nation
+    }
     completion_reward = {
         add_ideas = { FRA_Opened_the_Innovation_Window }
         add_research_slot = 1
-    }
-    prerequisite = {
-        focus = FRA_Afford_the_Expensive_Trade
     }
 }
 focus = { ### Medical Research Path
