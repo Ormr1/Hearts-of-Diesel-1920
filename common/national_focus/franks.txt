@@ -663,6 +663,12 @@ focus = {
     ai_will_do = {
         factor = 10
     }
+    trigger = {
+        has_game_rule = {
+            rule = obsolete_focus_branches_visibility
+            option = HIDE
+        }
+    }
     search_filters = {FOCUS_FILTER_ECONOMIC}
     completion_reward = {
         country_event = fra_economic.3
@@ -1579,6 +1585,13 @@ focus = {
     ai_will_do = {
         factor = 5
     }
+    trigger = {
+        has_game_rule = {
+            rule = obsolete_focus_branches_visibility
+            option = HIDE
+        }
+        has_completed_focus = FRA_Fight_For_Your_Freedom
+    }
     search_filters = {FOCUS_FILTER_POLITICAL}
     completion_reward = {
         country_event = fra_monarchy.1
@@ -1687,6 +1700,13 @@ focus = {
     cost = 2
     ai_will_do = {
         factor = 10
+    }
+    trigger = {
+        has_game_rule = {
+            rule = obsolete_focus_branches_visibility
+            option = HIDE
+        }
+        has_completed_focus = FRA_Letat_Cest_Moi
     }
     search_filters = {FOCUS_FILTER_POLITICAL}
     completion_reward = {
@@ -2381,6 +2401,13 @@ focus = { ### Commie and Democratic Path
     ai_will_do = {
         factor = 5
     }
+    trigger = {
+        has_game_rule = {
+            rule = obsolete_focus_branches_visibility
+            option = HIDE
+        }
+        has_completed_focus = FRA_Power_to_the_People
+    }
     search_filters = {FOCUS_FILTER_FRA_PARLIAMENT}
     completion_reward = {
         country_event = fra_parliament.5
@@ -2395,6 +2422,28 @@ focus = { ### Communist
     mutually_exclusive = { focus = FRA_Let_the_People_Decide }
     available = { always = no }
     relative_position_id = FRA_More_to_the_Government
+    x = 6
+    y = 1
+    cost = 0
+    ai_will_do = {
+        factor = 5
+    }
+    trigger = {
+        has_game_rule = {
+            rule = obsolete_focus_branches_visibility
+            option = HIDE
+        }
+        has_completed_focus = FRA_Let_the_People_Decide
+    }
+    search_filters = {FOCUS_FILTER_FRA_PARLIAMENT}
+    prerequisite = {
+        focus = FRA_More_to_the_Government
+    }
+}
+focus = { 
+    id = FRA_Stability_Within_Politics
+    icon = placeholder
+    relative_position_id = FRA_Workers_Tied_to_an_Autocracy
     x = -6
     y = 1
     cost = 0
@@ -2403,7 +2452,8 @@ focus = { ### Communist
     }
     search_filters = {FOCUS_FILTER_FRA_PARLIAMENT}
     prerequisite = {
-        focus = FRA_More_to_the_Government
+        focus = FRA_Workers_Tied_to_an_Autocracy
+        focus = FRA_Let_the_People_Decide
     }
 }
 focus = { ### Democratic
@@ -2412,11 +2462,18 @@ focus = { ### Democratic
     mutually_exclusive = { focus = FRA_Workers_Tied_to_an_Autocracy }
     available = { always = no }
     relative_position_id = FRA_More_to_the_Government
-    x = 6
+    x = -6
     y = 1
     cost = 0
     ai_will_do = {
         factor = 5
+    }
+    trigger = {
+        has_game_rule = {
+            rule = obsolete_focus_branches_visibility
+            option = HIDE
+        }
+        has_completed_focus = FRA_Workers_Tied_to_an_Autocracy
     }
     search_filters = {FOCUS_FILTER_FRA_PARLIAMENT}
     prerequisite = {
@@ -2434,6 +2491,13 @@ focus = { ### Anarchism Path
     cost = 1
     ai_will_do = {
         factor = 8
+    }
+    trigger = {
+        has_game_rule = {
+            rule = obsolete_focus_branches_visibility
+            option = HIDE
+        }
+        has_completed_focus = FRA_More_to_the_Government
     }
     search_filters = {FOCUS_FILTER_FRA_PARLIAMENT}
     completion_reward = {
@@ -2456,6 +2520,13 @@ focus = {
     cost = 3
     ai_will_do = {
         factor = 8
+    }
+    trigger = {
+        has_game_rule = {
+            rule = obsolete_focus_branches_visibility
+            option = HIDE
+        }
+        has_completed_focus = FRA_A_Caplitalists_Dream
     }
     search_filters = {FOCUS_FILTER_FRA_PARLIAMENT}
     completion_reward = {
@@ -2533,14 +2604,18 @@ focus = {
     id = FRA_Reduce_the_Effects_of_Money
     icon = placeholder
     relative_position_id = FRA_Red_Tension
-    x = -12
+    x = -23
     y = 1
     cost = 6
     ai_will_do = {
         factor = 10
     }
+    available = {
+        has_government = communism
+    }
     prerequisite = {
         focus = FRA_Red_Tension
+        focus = FRA_Stability_Within_Politics
     }
     completion_reward = {
 		add_ideas = { FRA_Reduction_of_Currency }
@@ -2998,9 +3073,6 @@ focus = {
     }
 }
 focus = {
-    id = FRA_
-}
-focus = {
     id = FRA_Mass_Exports
     icon = placeholder
     relative_position_id = FRA_Shipping_Companies
@@ -3115,6 +3187,13 @@ focus = { ### AnCap Moment
     cost = 3
     ai_will_do = {
         factor = 8
+    }
+    trigger = {
+        has_game_rule = {
+            rule = obsolete_focus_branches_visibility
+            option = HIDE
+        }
+        has_completed_focus = FRA_The_Workers_Paradise
     }
     search_filters = {FOCUS_FILTER_FRA_PARLIAMENT}
     prerequisite = {
