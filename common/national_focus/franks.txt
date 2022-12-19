@@ -2576,14 +2576,18 @@ focus = {
     id = FRA_Grants_to_the_Lower_Class
     icon = placeholder
     relative_position_id = FRA_Red_Tension
-    x = 10
+    x = -17
     y = 1
     cost = 6
     ai_will_do = {
         factor = 10
     }
+    available = {
+        has_government = communism
+    }
     prerequisite = {
         focus = FRA_Red_Tension
+        focus = FRA_Stability_Within_Politics
     }
 }
 focus = {
@@ -2604,7 +2608,7 @@ focus = {
     id = FRA_Reduce_the_Effects_of_Money
     icon = placeholder
     relative_position_id = FRA_Red_Tension
-    x = -23
+    x = -27
     y = 1
     cost = 6
     ai_will_do = {
