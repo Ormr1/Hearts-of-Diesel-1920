@@ -253,9 +253,12 @@ create_faction = GER_dresden_pakt
 add_to_faction = GER
 add_to_faction = AST
 
+set_variable = { GER_war_loan_amount_M = 207237}
 
 add_ideas = {
 	general_staff
+	GER_papiermark
+	GER_war_debt
 	limited_exports
 	limited_conscription
 	partial_economic_mobilisation

@@ -765,3 +765,20 @@ MR_pact_transfer_faction_state_effect = {
 		}
 	}
 }
+
+GER_decrease_debt={
+	subtract_from_variable={
+		tooltip = GER_pay_war_debt_tooltip
+		GER_war_loan_amount_M = GER_tmp_decrease_loan_var
+	}
+	if={
+		limit={
+			check_variable = {
+				GER_war_loan_amount_M < 1
+			}
+		}
+		remove_ideas = {
+			GER_war_debt
+		}
+	}
+}

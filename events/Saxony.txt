@@ -99,3 +99,107 @@ news_event = {
 		name = saxonian.3.a
 	}
 }
+
+country_event = {#Saxony pays their debt
+	id = saxonian.4
+	title = saxonian.4.t
+	desc = saxonian.4.d
+	picture = GFX_report_event_finnish_letter
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = saxonian.4.e.COL
+		trigger = {
+			tag = COL
+		}
+	}
+	option = {
+		name = saxonian.4.e.ITA
+		trigger = {
+			tag = ITA
+		}
+	}
+	option = {
+		name = saxonian.4.e.BRA
+		trigger = {
+			tag = BRA
+		}
+	}
+	option = {
+		name = saxonian.4.e.BUL
+		trigger = {
+			tag = BUL
+		}
+	}
+	option = {
+		name = saxonian.4.e.SPR
+		trigger = {
+			tag = SPR
+		}
+	}
+	option = {
+		name = saxonian.4.e.COL
+		trigger = {
+			NOT={
+				tag = COL
+				tag = ITA
+				tag = BRA
+				tag = BUL
+				tag = SPR
+			}
+		}
+	}
+}
+country_event = {#GER info - Report on the Post war Papiermark (Papiermark problems)
+	id = saxonian.5
+	title = saxonian.5.t
+	desc = saxonian.5.d
+	picture = GFX_report_event_finnish_letter
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = saxonian.5.a
+	}
+}
+country_event = {#GER info - Report on the Imperial Debt (war bond problems)
+	id = saxonian.6
+	title = saxonian.6.t
+	desc = saxonian.6.d
+	picture = GFX_report_event_finnish_letter
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = saxonian.6.a
+	}
+}
+country_event = {#GER info - wolf of the shadows (fenris)
+	id = saxonian.7
+	title = saxonian.7.t
+	desc = saxonian.7.d
+	picture = GFX_report_event_finnish_letter
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = saxonian.7.a
+		hidden_effect={
+			FEN={country_event = {id = saxonian.8}}
+		}
+	}
+}
+country_event = {#FEN info - Wilhelms Suspision
+	id = saxonian.8
+	title = saxonian.8.t
+	desc = saxonian.8.d
+	picture = GFX_report_event_finnish_letter
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = saxonian.8.a
+		FEN_increase_suspicion_random = yes
+	}
+}

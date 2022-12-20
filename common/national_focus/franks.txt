@@ -26,36 +26,36 @@ focus_tree = {
     default = no
 
 
-focus = { ### POLITICAL - Can only do when political stability has been achieved
-    id = FRA_The_Outside_World
-    icon = placeholder
-    x = 75
-    y = 0
-    cost = 8
-    ai_will_do = {
-        factor = 5
-    }
-    available = {
-        focus = FRA_Light_the_Torch
-        has_civil_war = no
-    }
-}
+	focus = { ### POLITICAL - Can only do when political stability has been achieved
+		id = FRA_The_Outside_World
+		icon = placeholder
+		x = 75
+		y = 0
+		cost = 8
+		ai_will_do = {
+			factor = 5
+		}
+		available = {
+			focus = FRA_Light_the_Torch
+			has_civil_war = no
+		}
+	}
 
-### ECONOMIC
-focus = {
-    id = FRA_State_Of_the_Economy
-    icon = placeholder
-    x = 125
-    y = 0
-    cost = 5
-    ai_will_do = {
-        factor = 10
-    }
-    search_filters = {FOCUS_FILTER_ECONOMIC}
-    completion_reward = {
-        country_event = fra_economic.1
-    }
-}
+	### ECONOMIC
+	focus = {
+		id = FRA_State_Of_the_Economy
+		icon = placeholder
+		x = 125
+		y = 0
+		cost = 5
+		ai_will_do = {
+			factor = 10
+		}
+		search_filters = {FOCUS_FILTER_ECONOMIC}
+		completion_reward = {
+			country_event = fra_economic.1
+		}
+	}
 focus = {
     id = FRA_Placeholders_Plan_1
     icon = placeholder
@@ -801,9 +801,9 @@ focus = {
     prerequisite = {
         focus = FRA_Women_in_the_Nation
     }
-    prerequisite = {
-        focus = FRA_The_Ideal_Standards
-    }
+    # prerequisite = { 
+    #    focus = FRA_The_Ideal_Standards #missing
+    #}
 }
 
 focus = { ### Increases production efficiency while decreasing war support, stability, and party popularity
@@ -1496,9 +1496,9 @@ focus = {
     prerequisite = {
         focus = FRA_Demand_For_Resources
     }
-    prerequisite = {
-        focus = FRA_Incrase_Factory_Production
-    }
+    #prerequisite = {
+    #    focus = FRA_Incrase_Factory_Production #missing
+    #}
 }
 focus = {
     id = FRA_Harsher_Labor_Laws
@@ -1730,13 +1730,13 @@ focus = {
             add_idea = FRA_Civil_War_Preparations
         }
         FRA = {
-				add_manpower = 10000
-				add_equipment_to_stockpile = {
-					type = infantry_equipment
-					amount = 2500
-					producer = FRA
-				}
+			add_manpower = 10000
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 2500
+				producer = FRA
 			}
+		}
     }
     prerequisite = {
         focus = FRA_Fight_For_Your_Freedom
@@ -2317,7 +2317,7 @@ focus = { ### Civil War
     id = FRA_Light_the_Torch
     icon = placeholder
     relative_position_id = FRA_Train_the_Populous
-    mutually_exclusive = { focus = FRA_Give_In_to_their_Demands }
+    #mutually_exclusive = { focus = FRA_Give_In_to_their_Demands } #missing
     x = 0
     y = 1
     cost = 5
@@ -2554,7 +2554,7 @@ focus = { ### Begins countdown to get rid of poltiical instability. If not compl
     completion_reward = {
         swap_ideas = {
             remove_idea = FRA_Focus_on_the_Anarcho_Communists
-            add_ideas = FRA_Tensions_Between_the_Ideologies
+            add_idea = FRA_Tensions_Between_the_Ideologies
         }
     }
 }
@@ -3108,7 +3108,7 @@ focus = {
     }
     completion_reward = {
         add_timed_idea = {
-            ideas = FRA_Major_Trading_Deposits
+            idea = FRA_Major_Trading_Deposits_idea
             days = 1095
         }
     }

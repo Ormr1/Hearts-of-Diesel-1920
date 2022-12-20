@@ -721,7 +721,7 @@ ideas = {
 			}
 		}
 
-		FRA_Major_Trading_Deposits = {
+		FRA_Major_Trading_Deposits_idea = {
 			picture = placeholder
 			allowed = {
 				always = yes
@@ -1183,7 +1183,8 @@ ideas = {
 				production_lack_of_resource_penalty_factor = 0.33
 				equipment_conversion_speed = 0.5
 			}
-
+		}
+		
 		FRA_New_Gun_Use = {
 			picture = placeholder
 			allowed = {
@@ -3021,7 +3022,6 @@ ideas = {
 			traits = { raiding_fleet_naval_manufacturer }
 		}
     }
-}
 	industrial_concern = {	
 		
 		famh = {

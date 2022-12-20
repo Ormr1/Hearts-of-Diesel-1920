@@ -62,6 +62,18 @@ units = {
 		start_equipment_factor = 0.7
 
 	}
+	division= {	
+		#name = "9th Infantry Division"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 4543 # 
+		division_template = "Marine Division"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.7
+
+	}
 	# 2nd Military District -- New Zealand
 	division= {	
 		#name = "2nd Infantry Division"

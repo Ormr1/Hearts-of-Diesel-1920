@@ -1,6 +1,37 @@
 ideas = {
 
 	country = {
+	
+		GER_papiermark = {
+			name = GER_papiermark
+			allowed = {
+				original_tag = GER
+			}
+
+			removal_cost = -1
+
+			picture = ger_mefo_bills
+
+			modifier = {
+				consumer_goods_factor = -0.05
+				stability_factor = -0.05
+			}
+		}
+		GER_war_debt = {
+			name = GER_war_debt
+			allowed = {
+				original_tag = GER
+			}
+
+			removal_cost = -1
+
+			picture = great_depression
+
+			modifier = {
+				consumer_goods_factor = 0.1
+			}
+		}
+	
 		sour_loser = {
 			
 			allowed = {

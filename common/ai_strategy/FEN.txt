@@ -1,14 +1,40 @@
-FEN_help_paraguay = {
+RGS_help_paraguay = {
 	allowed = {
-		tag = FEN
+		tag = RGS
 	}
 	enable = {
 		country_exists = PAF
+		PAR = {has_war_with = PAF}
 	}
 	abort_when_not_enabled = yes
 	ai_strategy = {
 		type = send_volunteers_desire
-		id = "PAF"
+		id = "PAR"
 		value = 500
 	}
+	ai_strategy = {
+        type = support
+        id = "PAR"
+        value = 50
+    }
+}
+RGS_help_USUA = {
+	allowed = {
+		tag = RGS
+	}
+	enable = {
+		country_exists = UUA
+		UUA={has_war = yes}
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "UUA"
+		value = 500
+	}
+	ai_strategy = {
+        type = support
+        id = "UUA"
+        value = 150
+    }
 }
