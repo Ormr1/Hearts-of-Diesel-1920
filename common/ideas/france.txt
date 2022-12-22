@@ -152,7 +152,6 @@ ideas = {
 			picture = placeholder
 			allowed = {
 				original_tag = FRA
-				always = yes
 			}
 
 			allowed_civil_war = {
@@ -174,7 +173,6 @@ ideas = {
 			picture = placeholder
 			allowed = {
 				original_tag = FRA
-				always = yes
 			}
 
 			allowed_civil_war = {
@@ -197,7 +195,6 @@ ideas = {
 			picture = placeholder
 				allowed = {
 					original_tag = FRA
-					always = yes
 				}
 
 				allowed_civil_war = {
@@ -219,7 +216,6 @@ ideas = {
 			picture = placeholder
 				allowed = {
 					original_tag = FRA
-					always = yes
 				}
 
 				allowed_civil_war = {
@@ -241,7 +237,6 @@ ideas = {
 			picture = placeholder
 				allowed = {
 					original_tag = FRA
-					always = yes
 				}
 
 				allowed_civil_war = {
@@ -262,7 +257,6 @@ ideas = {
 			picture = placeholder
 			allowed = {
 				original_tag = FRA
-				always = yes
 			}
 
 			allowed_civil_war = {
@@ -319,7 +313,6 @@ ideas = {
 			picture = placeholder
 			allowed = {
 				original_tag = FRA
-				always = yes
 			}
 
 			allowed_civil_war = {
@@ -339,7 +332,6 @@ ideas = {
 			picture = placeholder
 			allowed = {
 				original_tag = FRA
-				always = yes
 			}
 
 			allowed_civil_war = {
@@ -360,7 +352,6 @@ ideas = {
 			picture = placeholder
 			allowed = {
 				original_tag = FRA
-				always = yes
 			}
 
 			allowed_civil_war = {
@@ -372,15 +363,15 @@ ideas = {
 			modifier = {
 				training_time_factor = -0.1
 				weekly_manpower = 250
-				equipment_bonus = {
-					artillery = {
-						instant = yes
-						build_cost_ic = -0.05
-					}
-					infantry_equipment = {
-						instant = yes
-						build_cost_ic = -0.2
-					}
+			}
+			equipment_bonus = {
+				artillery = {
+					instant = yes
+					build_cost_ic = -0.05
+				}
+				infantry_equipment = {
+					instant = yes
+					build_cost_ic = -0.2
 				}
 			}
 		}
@@ -389,7 +380,6 @@ ideas = {
 			picture = placeholder
 			allowed = {
 				original_tag = FRA
-				always = yes
 			}
 
 			allowed_civil_war = {
@@ -405,17 +395,17 @@ ideas = {
 				industrial_capacity_factory = 0.1
 				training_time_factor = -0.1
 				weekly_manpower = 250
-				equipment_bonus = {
-					artillery = {
-						instant = yes
-						build_cost_ic = -0.05
-						soft_attack = 0.1
-					}
-					infantry_equipment = {
-						instant = yes
-						build_cost_ic = -0.2
-						soft_attack = 0.1
-					}
+			}
+			equipment_bonus = {
+				artillery = {
+					instant = yes
+					build_cost_ic = -0.05
+					soft_attack = 0.1
+				}
+				infantry_equipment = {
+					instant = yes
+					build_cost_ic = -0.2
+					soft_attack = 0.1
 				}
 			}
 		}
@@ -424,7 +414,6 @@ ideas = {
 		FRA_Revolutionary_Ideals = {
 			picture = placeholder
 			allowed = {
-				original_tag = 	FRA 
 				always = no
 			}
 
@@ -444,7 +433,6 @@ ideas = {
 		FRA_Political_Unionization = {
 			picture = placeholder
 			allowed = {
-				original_tag = FRA
 				always = no
 			}
 
@@ -567,11 +555,11 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				navy_refit_speed = -0.5
+				#navy_refit_speed = -0.5
 				naval_accidents_chance = 0.5
 				naval_coordination = -0.5
 				naval_equipment_upgrade_xp_cost = 2
-				navy_refit_ic_cost = 2
+				#navy_refit_ic_cost = 2
 				naval_enemy_fleet_size_ratio_penalty_factor = -0.5
 				naval_detection = -0.25
 				experience_gain_navy_factor = -0.5
@@ -581,11 +569,10 @@ ideas = {
 			}
 		}
 
-		FRA_Rapidly_Rising_Inflation - {
+		FRA_Rapidly_Rising_Inflation = {
 			picture = placeholder
 			allowed = {
 				original_tag = FRA
-				always = yes
 			}
 
 			allowed_civil_war = {
@@ -923,15 +910,15 @@ ideas = {
 				mobilization_laws_cost_factor = 0.2
 				high_command_cost_factor = 0.2
 				experience_gain_army_factor = -0.75
-				equipment_bonus = {
-					infantry_equipment = {
-						build_cost_ic = 0.05
-						instant = yes
-					}
-					artillery_equipment = {
-						build_cost_ic = 0.05
-						instant = yes
-					}
+			}
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = 0.05
+					instant = yes
+				}
+				artillery_equipment = {
+					build_cost_ic = 0.05
+					instant = yes
 				}
 			}
 		}
@@ -955,15 +942,15 @@ ideas = {
 				naval_equipment_upgrade_xp_cost = -0.2
 				production_factory_efficiency_gain_factor = 0.25
 				production_lack_of_resource_penalty_factor = 0.2
-				equipment_bonus = {
-					infantry_equipment = {
-						build_cost_ic = -0.1
-						instant = yes
-					}
-					artillery_equipment = {
-						build_cost_ic = -0.1
-						instant = yes
-					}
+			}
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+				artillery_equipment = {
+					build_cost_ic = -0.1
+					instant = yes
 				}
 			}
 		}
@@ -1009,7 +996,7 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				navy_refit_speed = 0.25
+				#navy_refit_speed = 0.25
 				experience_gain_navy_factor = 0.5
 				experience_gain_navy_unit_factor = 0.5
 				training_time_factor = -0.1
@@ -1204,15 +1191,15 @@ ideas = {
 				land_equipment_upgrade_xp_cost = 0.5
 				production_factory_efficiency_gain_factor = -0.5
 				production_lack_of_resource_penalty_factor = -0.33
-				equipment_bonus = {
-					infantry_equipment = {
-						build_cost_ic = 0.1
-						instant = yes
-					}
-					artillery_equipment = {
-						build_cost_ic = 0.1
-						instant = yes
-					}
+			}
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = 0.1
+					instant = yes
+				}
+				artillery_equipment = {
+					build_cost_ic = 0.1
+					instant = yes
 				}
 			}
 		}
@@ -1236,15 +1223,15 @@ ideas = {
 				land_equipment_upgrade_xp_cost = -0.25
 				production_factory_efficiency_gain_factor = -0.5
 				production_lack_of_resource_penalty_factor = -0.33
-				equipment_bonus = {
-					infantry_equipment = {
-						build_cost_ic = 0.1
-						instant = yes
-					}
-					artillery_equipment = {
-						build_cost_ic = 0.1
-						instant = yes
-					}
+			}
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = 0.1
+					instant = yes
+				}
+				artillery_equipment = {
+					build_cost_ic = 0.1
+					instant = yes
 				}
 			}
 		}
@@ -2727,7 +2714,8 @@ ideas = {
 			picture = generic_tank_manufacturer_2
 
 			available = {
-				has_completed_focus = FRA_army_reform
+				#has_completed_focus = FRA_army_reform
+				always = no
 			}
 						
 			allowed = {
@@ -2746,7 +2734,8 @@ ideas = {
 			picture = generic_tank_manufacturer_3
 
 			available = {
-				has_completed_focus = FRA_infantry_tanks
+				#has_completed_focus = FRA_infantry_tanks
+				always = no
 			}
 						
 			allowed = {
@@ -2907,7 +2896,10 @@ ideas = {
 			allowed = {
 				original_tag = FRA
 			}
-			visible = { has_completed_focus = FRA_reorganize_the_aviation_industry }	
+			visible = { 
+				#has_completed_focus = FRA_reorganize_the_aviation_industry 
+				always = no
+			}	
 			available = { has_country_flag = FRA_SNCAN_formed }	
 			research_bonus = {
 				air_equipment = 0.2
@@ -2920,7 +2912,10 @@ ideas = {
 			allowed = {
 				original_tag = FRA
 			}
-			visible = { has_completed_focus = FRA_reorganize_the_aviation_industry }	
+			visible = { 
+				#has_completed_focus = FRA_reorganize_the_aviation_industry
+				always = no				
+			}	
 			available = { has_country_flag = FRA_SNCAO_formed }	
 			research_bonus = {
 				air_equipment = 0.2
@@ -2933,7 +2928,10 @@ ideas = {
 			allowed = {
 				original_tag = FRA
 			}
-			visible = { has_completed_focus = FRA_reorganize_the_aviation_industry }	
+			visible = { 
+				#has_completed_focus = FRA_reorganize_the_aviation_industry 
+				always = no
+			}	
 			available = { has_country_flag = FRA_SNCASE_formed }	
 			research_bonus = {
 				air_equipment = 0.2
@@ -2946,7 +2944,10 @@ ideas = {
 			allowed = {
 				original_tag = FRA
 			}
-			visible = { has_completed_focus = FRA_reorganize_the_aviation_industry }	
+			visible = { 
+				#has_completed_focus = FRA_reorganize_the_aviation_industry
+				always = no
+			}	
 			available = { has_country_flag = FRA_SNCASO_formed }	
 			research_bonus = {
 				air_equipment = 0.2
@@ -2959,7 +2960,10 @@ ideas = {
 			allowed = {
 				original_tag = FRA
 			}
-			visible = { has_completed_focus = FRA_reorganize_the_aviation_industry }	
+			visible = { 
+				#has_completed_focus = FRA_reorganize_the_aviation_industry
+				always = no
+			}	
 			available = { has_country_flag = FRA_SNCAC_formed }	
 			research_bonus = {
 				air_equipment = 0.3

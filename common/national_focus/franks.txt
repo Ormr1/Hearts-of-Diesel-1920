@@ -1,4 +1,4 @@
-### search_filters = {FOCUS_FILTER_POLITICAL}
+﻿### search_filters = {FOCUS_FILTER_POLITICAL}
 ### search_filters = {FOCUS_FILTER_RESEARCH}
 ### search_filters = {FOCUS_FILTER_INDUSTRY}
 ### search_filters = {FOCUS_FILTER_STABILITY}
@@ -9,7 +9,7 @@
 ### search_filters = {FOCUS_FILTER_}
 
 focus_tree = {
-    id=franks_focus
+    id = franks_focus
 
     country = {
         factor = 0
@@ -22,8 +22,10 @@ focus_tree = {
             original_tag = FRA
         }
     }
-    continuous_focus_position = { x = 0 y = 5000 }
     default = no
+    reset_on_civilwar = no
+
+    continuous_focus_position = { x = 0 y = 5000 }
 
 
 	focus = { ### POLITICAL - Can only do when political stability has been achieved
@@ -36,7 +38,7 @@ focus_tree = {
 			factor = 5
 		}
 		available = {
-			focus = FRA_Light_the_Torch
+			has_completed_focus = FRA_Light_the_Torch
 			has_civil_war = no
 		}
 	}
@@ -663,7 +665,7 @@ focus = {
     ai_will_do = {
         factor = 10
     }
-    trigger = {
+    available = {#allow_branch = {
         has_game_rule = {
             rule = obsolete_focus_branches_visibility
             option = HIDE
@@ -1044,6 +1046,24 @@ focus = {
     }
 }
 focus = {
+    id = FRA_Create_a_Dependancy
+    icon = placeholder
+    relative_position_id = FRA_Create_Construction_Jobs
+    x = 1
+    y = 1
+    cost = 5
+    ai_will_do = {
+        factor = 5
+    }
+    search_filters = {FOCUS_FILTER_INDUSTRY}
+    completion_reward = {
+        country_event = fra_economic.22
+    }
+    prerequisite = {
+        focus = FRA_Create_Construction_Jobs
+    }
+}
+focus = {
     id = FRA_Workplace_Livelyhood
     icon = placeholder
     relative_position_id = FRA_Create_a_Dependancy
@@ -1158,24 +1178,7 @@ focus = {
         focus = FRA_Add_More_To_the_Product_Line
     }
 }
-focus = {
-    id = FRA_Create_a_Dependancy
-    icon = placeholder
-    relative_position_id = FRA_Create_Construction_Jobs
-    x = 1
-    y = 1
-    cost = 5
-    ai_will_do = {
-        factor = 5
-    }
-    search_filters = {FOCUS_FILTER_INDUSTRY}
-    completion_reward = {
-        country_event = fra_economic.22
-    }
-    prerequisite = {
-        focus = FRA_Create_Construction_Jobs
-    }
-}
+
 focus = {
     id = FRA_Work_Day_And_Night
     icon = placeholder
@@ -1585,12 +1588,12 @@ focus = {
     ai_will_do = {
         factor = 5
     }
-    trigger = {
-        has_game_rule = {
-            rule = obsolete_focus_branches_visibility
-            option = HIDE
-        }
-        has_completed_focus = FRA_Fight_For_Your_Freedom
+    available = {
+        #has_game_rule = {
+        #    rule = obsolete_focus_branches_visibility
+        #    option = HIDE
+        #}
+        #has_completed_focus = FRA_Fight_For_Your_Freedom
     }
     search_filters = {FOCUS_FILTER_POLITICAL}
     completion_reward = {
@@ -1701,12 +1704,12 @@ focus = {
     ai_will_do = {
         factor = 10
     }
-    trigger = {
-        has_game_rule = {
-            rule = obsolete_focus_branches_visibility
-            option = HIDE
-        }
-        has_completed_focus = FRA_Letat_Cest_Moi
+    available = {
+        #has_game_rule = {
+        #    rule = obsolete_focus_branches_visibility
+        #    option = HIDE
+        #}
+        #has_completed_focus = FRA_Letat_Cest_Moi
     }
     search_filters = {FOCUS_FILTER_POLITICAL}
     completion_reward = {
@@ -1725,10 +1728,10 @@ focus = {
     }
     search_filters = {FOCUS_FILTER_POLITICAL} 
     completion_reward = {
-        swap_ideas = {
-            remove_idea = FRA_Spreading_News
-            add_idea = FRA_Civil_War_Preparations
-        }
+        #swap_ideas = {
+        #    remove_idea = FRA_Spreading_News
+        #    add_idea = FRA_Civil_War_Preparations #idea does not exist
+        #}
         FRA = {
 			add_manpower = 10000
 			add_equipment_to_stockpile = {
@@ -2251,8 +2254,10 @@ focus = { ### Opposite of Political Autonomy, where all of the parties (Mainly c
         factor = 10
     }
     available = {
-        has_government = democratic
-        has_government = communism
+        OR={
+            has_government = democratic
+            has_government = communism
+        }
     }
     search_filters = {FOCUS_FILTER_FRA_PARLIAMENT}
     completion_reward = {
@@ -2276,8 +2281,10 @@ focus = {
         factor = 10
     }
     available = {
-        has_government = democratic
-        has_government = communism
+        OR={
+            has_government = democratic
+            has_government = communism
+        }
     }
     search_filters = {FOCUS_FILTER_FRA_PARLIAMENT}
     completion_reward = {
@@ -2333,7 +2340,7 @@ focus = { ### Civil War
     completion_reward = {
         country_event = {id = fra_civilwarignite.1}
         #add_namespace = fra_civilwarignite.1
-        remove_ideas = {}
+        #remove_ideas = {}
     }
     prerequisite = {
         focus = FRA_International_Arms_Market
@@ -2704,6 +2711,26 @@ focus = {
         focus = FRA_Rely_on_the_Production_of_Workers
     }
 }
+focus = {
+    id = FRA_Major_Trading_Deposits
+    icon = placeholder
+    relative_position_id = FRA_Except_on_an_International_Scale
+    x = -1
+    y = 1
+    cost = 6
+    ai_will_do = {
+        factor = 10
+    }
+    completion_reward = {
+        add_timed_idea = {
+            idea = FRA_Major_Trading_Deposits_idea
+            days = 1095
+        }
+    }
+    prerequisite = {
+        focus = FRA_Except_on_an_International_Scale
+    }
+}
 focus = { ### Unlocks Designer Company that reduces convoy cost
     id = FRA_Shipping_Companies
     icon = placeholder
@@ -2732,19 +2759,21 @@ focus = {
         factor = 10
     }
     completion_reward = {
-        limit = {
-            free_building_slots = {
-                building = industrial_complex
-                size > 1
-                include_locked = yes
+        random_owned_state={
+            limit = {
+                free_building_slots = {
+                    building = industrial_complex
+                    size > 1
+                    include_locked = yes
+                }
+                is_core_of = ROOT
             }
-            is_core_of = ROOT
-        }
-        add_extra_state_shared_building_slots = 2
-        add_building_construction = {
-            type = industrial_complex
-            level = 2
-            instant_build = yes
+            add_extra_state_shared_building_slots = 2
+            add_building_construction = {
+                type = industrial_complex
+                level = 2
+                instant_build = yes
+            }
         }
     }
     prerequisite = {
@@ -2780,8 +2809,8 @@ focus = { ### Medical Research Path
         factor = 10
     }
     completion_reward = {
-        add_timed_ideas = { 
-            ideas = FRA_Medical_Focus_1
+        add_timed_idea = { 
+            idea = FRA_Medical_Focus_1
             days = 365
         }
         add_tech_bonus = {
@@ -2806,8 +2835,8 @@ focus = {
         factor = 10
     }
     completion_reward = {
-        add_timed_ideas = { 
-            ideas = FRA_Improved_Roads
+        add_timed_idea = { 
+            idea = FRA_Improved_Roads
             days = 365
         }
         add_tech_bonus = {
@@ -2884,8 +2913,8 @@ focus = {
         factor = 10
     }
     completion_reward = {
-        add_timed_ideas = { 
-            ideas = FRA_Increased_Army_Standards
+        add_timed_idea = { 
+            idea = FRA_Increased_Army_Standards
             days = 365
         }
         add_tech_bonus = {
@@ -2910,8 +2939,8 @@ focus = {
         factor = 10
     }
     completion_reward = {
-        add_timed_ideas = { 
-            ideas = FRA_Saving_the_Navy
+        add_timed_idea = { 
+            idea = FRA_Saving_the_Navy
             days = 365
         }
         navy_experience = 25
@@ -2958,8 +2987,8 @@ focus = {
         factor = 10
     }
     completion_reward = {
-        add_timed_ideas = { 
-            ideas = FRA_Ensured_Safety
+        add_timed_idea = { 
+            idea = FRA_Ensured_Safety
             days = 365
         }
         add_tech_bonus = {
@@ -3004,8 +3033,8 @@ focus = { ### Guns and Industry Research Path
         factor = 10
     }
     completion_reward = {
-        add_timed_ideas = { 
-            ideas = FRA_Production_Focus
+        add_timed_idea = { 
+            idea = FRA_Production_Focus_1 #FRA_Production_Focus but did not exist, is this right?
             days = 365
         }
         add_tech_bonus = {
@@ -3034,8 +3063,8 @@ focus = {
         factor = 10
     }
     completion_reward = {
-        add_timed_ideas = { 
-            ideas = FRA_New_Ways_of_Production
+        add_timed_idea = { 
+            idea = FRA_New_Ways_of_Production
             days = 365
         }
         add_tech_bonus = {
@@ -3061,8 +3090,8 @@ focus = {
         factor = 10
     }
     completion_reward = {
-        add_timed_ideas = { 
-            ideas = FRA_New_Gun_Use
+        add_timed_idea = { 
+            idea = FRA_New_Gun_Use
             days = 365
         }
         add_doctrine_cost_reduction = {
@@ -3087,7 +3116,7 @@ focus = {
         factor = 10
     }
     completion_reward = {
-        add_ideas = free_trade
+        add_ideas = {free_trade}
     }
     prerequisite = {
         focus = FRA_Shipping_Companies
@@ -3096,26 +3125,7 @@ focus = {
         focus = FRA_Major_Trading_Deposits
     }
 }
-focus = {
-    id = FRA_Major_Trading_Deposits
-    icon = placeholder
-    relative_position_id = FRA_Except_on_an_International_Scale
-    x = -1
-    y = 1
-    cost = 6
-    ai_will_do = {
-        factor = 10
-    }
-    completion_reward = {
-        add_timed_idea = {
-            idea = FRA_Major_Trading_Deposits_idea
-            days = 1095
-        }
-    }
-    prerequisite = {
-        focus = FRA_Except_on_an_International_Scale
-    }
-}
+
 focus = {
     id = FRA_New_Ways_of_Wealth
     icon = placeholder
@@ -3192,11 +3202,11 @@ focus = { ### AnCap Moment
     ai_will_do = {
         factor = 8
     }
-    trigger = {
-        has_game_rule = {
-            rule = obsolete_focus_branches_visibility
-            option = HIDE
-        }
+    available = {
+        #has_game_rule = {
+        #    rule = obsolete_focus_branches_visibility
+        #    option = HIDE
+       # }
         has_completed_focus = FRA_The_Workers_Paradise
     }
     search_filters = {FOCUS_FILTER_FRA_PARLIAMENT}

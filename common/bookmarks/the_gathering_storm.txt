@@ -23,24 +23,20 @@ bookmarks = {
 		}
 		"SCO"={
 			history = "ENG_GATHERING_STORM_DESC"
-			ideology = democratic
+			ideology = monarchy
 			available = { has_dlc = "Man the Guns" }
 			ideas = {
-				stiff_upper_lip
-				ENG_the_war_to_end_all_wars
-				george_v
+				
 			}
 			focuses = {
-				ENG_imperial_federation
-				ENG_the_kings_party
-				ENG_organize_the_blackshirts
+				
 			}
 		}
 		"GER"={
 			history = "GER_GATHERING_STORM_DESC"
-			ideology = fascism
+			ideology = monarchy
 			ideas = {
-				
+				GER_papiermark
 			}
 			focuses = {
 				
@@ -48,7 +44,7 @@ bookmarks = {
 		}
 		"JAP"={
 			history = "JAP_GATHERING_STORM_DESC"
-			ideology = fascism
+			ideology = neutrality
 			ideas = {
 
 			}	
@@ -57,7 +53,7 @@ bookmarks = {
 			}			
 		}
 		"POL"={
-			history = "JAP_GATHERING_STORM_DESC"
+			history = "POL_IRON_HARVEST_DESC"
 			ideology = neutrality
 			ideas = {
 
@@ -67,8 +63,8 @@ bookmarks = {
 			}			
 		}
 		"CRI"={
-			history = "JAP_GATHERING_STORM_DESC"
-			ideology = neutrality
+			history = "CRI_IRON_HARVEST_DESC"
+			ideology = monarchy
 			ideas = {
 
 			}	
@@ -77,8 +73,8 @@ bookmarks = {
 			}			
 		}
 		"NOR"={
-			history = "JAP_GATHERING_STORM_DESC"
-			ideology = neutrality
+			history = "NOR_IRON_HARVEST_DESC"
+			ideology = monarchy
 			ideas = {
 
 			}	
@@ -87,8 +83,8 @@ bookmarks = {
 			}			
 		}
 		"SOV"={
-			history = "SOV_GATHERING_STORM_DESC"
-			ideology = communism
+			history = "SOV_IRON_HARVEST_DESC"
+			ideology = monarchy
 			ideas = {
 				
 			}
@@ -101,8 +97,19 @@ bookmarks = {
 			history = "OTHER_GATHERING_STORM_DESC"
 		}
 
-
 		# minors from DLC ####
+		
+		"SPR"={
+			minor = yes
+			history = "SPR_IRON_HARVEST_DESC"
+			ideology = democratic
+			ideas = {
+				
+			}
+			focuses = {
+				
+			}
+		}
 		
 		effect = {
 			randomize_weather = 22345 # <- Obligatory in every bookmark !
