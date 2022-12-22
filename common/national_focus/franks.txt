@@ -2331,7 +2331,7 @@ focus = { ### Civil War
     available = {
         num_of_factories > 100
         has_completed_focus = FRA_Heart_of_the_Nation
-        date < 1927.1.1
+        date > 1927.1.1
     }
     ai_will_do = {
         factor = 10

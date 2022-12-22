@@ -529,15 +529,15 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				army_attack_factor = -0.25
-				army_attack_speed_factor = -025
-				army_defence_factor = -0.25
-				army_speed_factor = -0.25
-				breakthrough_factor = -0.25
-				army_org = -12.5
-				experience_gain_army_unit_factor = -0.5
-				max_planning_factor = -0.5
-				training_time_factor = 0.2
+				army_attack_factor = -0.125
+				army_attack_speed_factor = -0.125
+				army_defence_factor = -0.125
+				army_speed_factor = -0.125
+				breakthrough_factor = -0.125
+				army_org = -6.25
+				experience_gain_army_unit_factor = -0.25
+				max_planning_factor = -0.25
+				training_time_factor = 0.1
 			}
 		}
 
@@ -555,6 +555,7 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
+<<<<<<< Updated upstream
 				#navy_refit_speed = -0.5
 				naval_accidents_chance = 0.5
 				naval_coordination = -0.5
@@ -566,6 +567,19 @@ ideas = {
 				experience_gain_navy_unit_factor = -0.5
 				naval_defense_factor = -0.5
 				naval_damage_factor = -0.5
+=======
+				navy_refit_speed = -0.25
+				naval_accidents_chance = 0.25
+				naval_coordination = -0.25
+				naval_equipment_upgrade_xp_cost = 1.5
+				navy_refit_ic_cost = 1.5
+				naval_enemy_fleet_size_ratio_penalty_factor = -0.25
+				naval_detection = -0.125
+				experience_gain_navy_factor = -0.25
+				experience_gain_navy_unit_factor = -0.25
+				naval_defense_factor = -0.25
+				naval_damage_factor = -0.25
+>>>>>>> Stashed changes
 			}
 		}
 

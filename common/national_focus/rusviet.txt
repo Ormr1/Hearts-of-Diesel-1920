@@ -1,0 +1,100 @@
+### search_filters = {FOCUS_FILTER_POLITICAL}
+### search_filters = {FOCUS_FILTER_RESEARCH}
+### search_filters = {FOCUS_FILTER_INDUSTRY}
+### search_filters = {FOCUS_FILTER_STABILITY}
+### search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+### search_filters = {FOCUS_FILTER_MANPOWER}
+### search_filters = {FOCUS_FILTER_ANNEXATION}
+
+focus_tree = {
+    id=rusviet_focus
+
+	country = {
+        factor = 0
+        modifier = {
+            add = 10
+            tag = SOV 
+        }
+        modifier = {
+            add = 10
+            original_tag = SOV
+        }
+    }
+    continuous_focus_position = { x = 0 y = 5000 }
+    default = no
+
+	### Economic
+	focus = {
+		id = SOV_Question_the_Economy
+		icon = placeholder
+		x = 0
+		y = 0
+		cost = 5
+		ai_will_do = {
+			factor = 5
+		}
+	}
+
+	focus = {
+		id = SOV_Needs_of_the_People
+		icon = placeholder
+		relative_position_id = SOV_Question_the_Economy
+		x = 0
+		y = 1
+		cost = 8
+		ai_will_do = {
+			factor = 5
+		}
+		prerequisite = {
+			focus = SOV_Question_the_Economy
+		}
+		completion_reward = {
+			country_event = {id = sov_peoples_say_in_economy.1} 
+		}
+	}
+
+	focus = { # Skipped via event
+		id = SOV_The_People_Have_Spoken
+		icon = placeholder
+		relative_position_id = SOV_Needs_of_the_People
+		x = 0
+		y = 1
+		cost = 8
+		ai_will_do = {
+			factor = 5
+		}
+		prerequisite = {
+			focus = SOV_Needs_of_the_People
+		}
+	}
+
+	focus = { # Available if chosen to minimize control
+		id = SOV_Lower_Economic_Control
+		icon = placeholder
+		relative_position_id = SOV_The_People_Have_Spoken
+		x = -1
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 5
+		}
+		prerequisite = {
+			focus = SOV_The_People_Have_Spoken
+		}
+	}
+
+	focus = { # Available if chosen to emphasize control
+		id = SOV_Governmental_Additives_in_Industry
+		icon = placeholder
+		relative_position_id = SOV_The_People_Have_Spoken
+		x = 1
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 5
+		}
+		prerequisite = {
+			focus = SOV_The_People_Have_Spoken
+		}
+	}
+}

@@ -649,4 +649,24 @@ country_event = {#FER collapses
 		name = SOV_civil_war.8.c
 		switch_tag = YAK
 	}
+
+	country_event = {
+		id = sov_peoples_say_in_economy.1
+		title = SOV_civil_war.8.t
+		desc = SOV_civil_war.8.d
+		picture = placeholder
+	
+		is_triggered_only = yes
+
+		option = {
+			name = sov_peoples_say_in_economy.1.a
+			complete_national_focus = SOV_Lower_Economic_Control
+			# hidden effect: changes flag to SOV_Lower_Economic_Control (flag visually doesn't change, just another name in code so you ccan only do 1 focus)
+		}
+		option = {
+			name = sov_peoples_say_in_economy.1.b
+			complete_national_focus = SOV_Governmental_Additives_in_Industry
+			# hidden effect: changes flag to SOV_Governmental_Additives_in_Industry (flag visually doesn't change, just another name in code so you ccan only do 1 focus)
+		}
+	}
 }
