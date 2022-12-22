@@ -4,6 +4,8 @@
 
 add_namespace = SOV_civil_war
 
+add_namespace = SOV_Peoples_Say_in_the_Economy
+
 # Rasputin marches on St Petersburg
 country_event = {
 	id = SOV_civil_war.1
@@ -650,6 +652,11 @@ country_event = {#FER collapses
 		switch_tag = YAK
 	}
 
+	###########################
+	# Rusviet Economy
+	###########################
+
+
 	country_event = {
 		id = sov_peoples_say_in_economy.1
 		title = SOV_civil_war.8.t
@@ -660,11 +667,31 @@ country_event = {#FER collapses
 
 		option = {
 			name = sov_peoples_say_in_economy.1.a
+			complete_national_focus = SOV_The_People_Have_Spoken
+			# hidden effect: changes flag to SOV_The_People_Have_Spoken (flag visually doesn't change, just another name in code so you ccan only do 1 focus)
+		}
+		option = { # Historical
+			name = sov_peoples_say_in_economy.1.b
+			complete_national_focus = SOV_Ignore_the_People
+			# hidden effect: changes flag to SOV_Ignore_the_People (flag visually doesn't change, just another name in code so you ccan only do 1 focus)
+		}
+	}
+
+	country_event = {
+		id = sov_peoples_say_in_economy.2
+		title = SOV_civil_war.8.t "Prioritize the People"
+		desc = SOV_civil_war.8.d 
+		picture = placeholder
+	
+		is_triggered_only = yes
+
+		option = {
+			name = sov_peoples_say_in_economy.2.a
 			complete_national_focus = SOV_Lower_Economic_Control
 			# hidden effect: changes flag to SOV_Lower_Economic_Control (flag visually doesn't change, just another name in code so you ccan only do 1 focus)
 		}
 		option = {
-			name = sov_peoples_say_in_economy.1.b
+			name = sov_peoples_say_in_economy.2.b
 			complete_national_focus = SOV_Governmental_Additives_in_Industry
 			# hidden effect: changes flag to SOV_Governmental_Additives_in_Industry (flag visually doesn't change, just another name in code so you ccan only do 1 focus)
 		}
