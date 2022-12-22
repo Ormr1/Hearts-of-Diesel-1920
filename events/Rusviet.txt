@@ -4,7 +4,7 @@
 
 add_namespace = SOV_civil_war
 
-add_namespace = SOV_Peoples_Say_in_the_Economy
+add_namespace = SOV_peoples_say_in_the_economy
 
 # Rasputin marches on St Petersburg
 country_event = {
