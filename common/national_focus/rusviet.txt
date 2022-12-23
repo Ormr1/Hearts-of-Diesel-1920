@@ -49,7 +49,7 @@ focus_tree = {
 			focus = SOV_Question_the_Economy
 		}
 		completion_reward = {
-			country_event = {id = SOV_peoples_say_in_the_economy.1}
+			country_event = {id = SOV_peoples_say_in_economy.1}
 		}
 	}
 
@@ -67,7 +67,7 @@ focus_tree = {
 			focus = SOV_Needs_of_the_People
 		}
 		completion_reward = {
-			country_event = {id = SOV_peoples_say_in_the_economy.2}
+			country_event = {id = SOV_peoples_say_in_economy.2}
 		}
 	}
 
