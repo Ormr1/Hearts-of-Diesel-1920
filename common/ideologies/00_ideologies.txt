@@ -27,6 +27,9 @@ ideologies = {
 			tridemism = {
 				can_be_randomly_selected = no
 			}
+
+			democratic_democratic_socialism = {
+			}
 		}
 
 		dynamic_faction_names = {

@@ -84,6 +84,147 @@ country = {
 		}
 	}
 
+	POL_democratic_constitution_1 = {
+		picture = placeholder
+		allowed = {
+			original_tag = POL
+			always = no
+		}
+		allowed_civil_war = {
+			always = yes
+		}
+		removal_cost = 0
+		modifier = {
+			democratic_drift = 0.05
+		}
+	}
+
+	POL_democratic_constitution_2 = {
+		picture = placeholder
+		allowed = {
+			original_tag = POL
+			always = no
+		}
+		allowed_civil_war = {
+			always = yes
+		}
+		removal_cost = 0
+		modifier = {
+			democratic_drift = 0.05
+			stability_factor = 0.05
+			political_power_gain = -0.10
+		}
+	}
+
+	POL_democratic_constitution_3 = {
+		picture = placeholder
+		allowed = {
+			original_tag = POL
+			always = no
+		}
+		allowed_civil_war = {
+			always = yes
+		}
+		removal_cost = 0
+		modifier = {
+			democratic_drift = 0.05
+			stability_factor = 0.075
+			war_support_factor = 0.05
+			political_power_gain = -0.10
+		}
+	}
+
+	POL_agrarian_reform_1 = {
+		picture = placeholder
+		allowed = {
+			original_tag = POL
+			always = no
+		}
+		allowed_civil_war = {
+			always = yes
+		}
+		removal_cost = 0
+		modifier = {
+			consumer_goods_factor = 0.15
+			political_power_gain = -0.15
+			stability_factor = 0.01
+			monthly_population = 0.01
+			production_speed_industrial_complex_factor = 0.01
+		}
+	}
+
+	POL_agrarian_reform_2 = {
+		picture = placeholder
+		allowed = {
+			original_tag = POL
+			always = no
+		}
+		allowed_civil_war = {
+			always = yes
+		}
+		removal_cost = 0
+		modifier = {
+			consumer_goods_factor = 0.10
+			political_power_gain = -0.10
+			stability_factor = 0.05
+			monthly_population = 0.05
+			production_speed_industrial_complex_factor = 0.05
+		}
+	}
+
+	POL_agrarian_reform_3 = {
+		picture = placeholder
+		allowed = {
+			original_tag = POL
+			always = no
+		}
+		allowed_civil_war = {
+			always = yes
+		}
+		removal_cost = 0
+		modifier = {
+			consumer_goods_factor = 0.05
+			political_power_gain = -0.05
+			stability_factor = 0.10
+			monthly_population = 0.10
+			production_speed_industrial_complex_factor = 0.10
+		}
+	}
+
+	POL_agrarian_reform_4 = {
+		picture = placeholder
+		allowed = {
+			original_tag = POL
+			always = no
+		}
+		allowed_civil_war = {
+			always = yes
+		}
+		removal_cost = 0
+		modifier = {
+			stability_factor = 0.15
+			monthly_population = 0.15
+			production_speed_industrial_complex_factor = 0.15
+		}
+	}
+
+	POL_government_accountability = {
+		picture = placeholder
+		allowed = {
+			original_tag = POL
+			always = no
+		}
+		allowed_civil_war = {
+			always = yes
+		}
+		removal_cost = 0
+		modifier = {
+			stability_factor = 0.05
+			political_power_factor = -0.05
+			democratic_drift = 0.25
+		}
+	}
+
 	POL_saxon_military_training = {
 		picture = placeholder
 		allowed = {
