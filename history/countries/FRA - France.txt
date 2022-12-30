@@ -148,24 +148,6 @@ if = {
 }
 set_convoys = 300
 
-if = {
-	limit = {
-		OR = {
-			has_dlc = "Together for Victory"
-			has_dlc = "Man the Guns"
-		}
-	}
-	set_autonomy = {
-		target = CAN
-		autonomous_state = autonomy_dominion
-		freedom_level = 0.4
-	}
-	else = {
-		puppet = CAN
-	}
-}
-
-
 set_politics = {
 	ruling_party = monarchy
 	last_election = "1932.5.1"
@@ -192,12 +174,16 @@ if = {
 		autonomous_state = autonomy_colony
 		freedom_level = 0.4
 	}
+	set_autonomy = {
+		target = CAN
+		autonomous_state = autonomy_dominion
+		freedom_level = 0.4
+	}
 	else = {
 		puppet = NAQ
+		puppet = CAN
 	}
 }
-
-give_guarantee = CZE
 
 recruit_character = FRA_louis_iv_merovech
 recruit_character = FRA_philippe_petain

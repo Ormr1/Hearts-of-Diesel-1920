@@ -5,7 +5,6 @@ ideas = {
 			picture = FRA_loss_to_saxony
 			
 			allowed = {
-				original_tag = FRA
 				always = no
 			}
 
@@ -30,7 +29,6 @@ ideas = {
 		FRA_full_employment = {
 			picture = generic_production_bonus
 			allowed = {
-				original_tag = FRA
 				always = no
 			}
 
@@ -47,7 +45,6 @@ ideas = {
 		FRA_worker_shortage = {
 			picture = FRA_factory_strikes
 			allowed = {
-				original_tag = FRA
 				always = no
 			}
 
@@ -66,7 +63,6 @@ ideas = {
 		FRA_inefficient_economy_1 = {
 			picture = generic_local_self_management
 			allowed = {
-				original_tag = FRA
 				always = no
 			}
 
@@ -87,7 +83,6 @@ ideas = {
 			picture = generic_local_self_management
 			name = FRA_inefficient_economy_1
 			allowed = {
-				original_tag = FRA
 				always = no
 			}
 
@@ -110,7 +105,6 @@ ideas = {
 		FRA_political_violence = {
 
 			allowed = {
-				original_tag = FRA
 				always = no
 			}
 
@@ -131,8 +125,7 @@ ideas = {
 		FRA_Spreading_News = {
 			picture = placeholder
 			allowed = {
-				original_tag = FRA
-				always = yes
+				always = no
 			}
 
 			allowed_civil_war = {
@@ -149,9 +142,9 @@ ideas = {
 		}
 
 		FRA_Ideological_Protests = {
-			picture = placeholder
+			picture = FRA_political_violence
 			allowed = {
-				original_tag = FRA
+				always = no
 			}
 
 			allowed_civil_war = {
@@ -170,9 +163,9 @@ ideas = {
 		}
 
 		FRA_Ideological_Protests_2 = {
-			picture = placeholder
+			picture = FRA_political_violence
 			allowed = {
-				original_tag = FRA
+				always = no
 			}
 
 			allowed_civil_war = {
@@ -192,10 +185,10 @@ ideas = {
 		
 
 		FRA_Ideological_Protests_3 = {
-			picture = placeholder
-				allowed = {
-					original_tag = FRA
-				}
+			picture = FRA_political_violence
+			allowed = {
+				always = no
+			}
 
 				allowed_civil_war = {
 					always = no
@@ -213,10 +206,10 @@ ideas = {
 		}
 
 		FRA_Ideological_Protests_4 = {
-			picture = placeholder
-				allowed = {
-					original_tag = FRA
-				}
+			picture = FRA_political_violence
+			allowed = {
+				always = no
+			}
 
 				allowed_civil_war = {
 					always = no
@@ -234,9 +227,9 @@ ideas = {
 		}
 
 		FRA_Ideological_Protests_5 = {
-			picture = placeholder
+			picture = FRA_political_violence
 				allowed = {
-					original_tag = FRA
+					always = no
 				}
 
 				allowed_civil_war = {
@@ -254,9 +247,9 @@ ideas = {
 		}
 
 		FRA_Ideological_Protests_6 = {
-			picture = placeholder
+			picture = FRA_political_violence
 			allowed = {
-				original_tag = FRA
+				always = no
 			}
 
 			allowed_civil_war = {
@@ -276,12 +269,7 @@ ideas = {
 		FRA_Recovering_From_the_Civil_War = {
 			picture = placeholder
 			allowed = {
-				original_tag = FRA
-				OR = {
-					has_government = democratic
-					has_government = neutrality
-					has_government = communism
-				}
+				always = no
 			}
 
 			allowed_civil_war = {
@@ -312,7 +300,7 @@ ideas = {
 		FRA_Money_Spent_on_Temporary_Corruption = {
 			picture = placeholder
 			allowed = {
-				original_tag = FRA
+				always = no
 			}
 
 			allowed_civil_war = {
@@ -331,7 +319,7 @@ ideas = {
 		FRA_Nationalized_Industry = {
 			picture = placeholder
 			allowed = {
-				original_tag = FRA
+				always = no
 			}
 
 			allowed_civil_war = {
@@ -351,7 +339,7 @@ ideas = {
 		FRA_Arming_the_People = {
 			picture = placeholder
 			allowed = {
-				original_tag = FRA
+				always = no
 			}
 
 			allowed_civil_war = {
@@ -379,7 +367,7 @@ ideas = {
 		FRA_Greater_Revolutionaries - {
 			picture = placeholder
 			allowed = {
-				original_tag = FRA
+				always = no
 			}
 
 			allowed_civil_war = {
@@ -452,7 +440,6 @@ ideas = {
 		FRA_Increasing_Teamwork_in_Government = {
 			picture = placeholder
 			allowed = {
-				original_tag = FRA
 				always = no
 			}
 
@@ -475,7 +462,6 @@ ideas = {
 		FRA_Full_Government_Unification = {
 			picture = placeholder
 			allowed = {
-				original_tag = FRA
 				always = no
 			}
 
@@ -498,7 +484,6 @@ ideas = {
 		FRA_Autonomous_Political_Stage = {
 			picture = placeholder
 			allowed = {
-				original_tag = FRA
 				always = no
 			}
 
@@ -516,10 +501,9 @@ ideas = {
 		}
 
 		FRA_Incompetent_Army = {
-			picture = placeholder
+			picture = chi_incompetent_officers
 			allowed = {
 				original_tag = FRA
-				always = yes
 			}
 
 			allowed_civil_war = {
@@ -545,7 +529,6 @@ ideas = {
 			picture = placeholder
 			allowed = {
 				original_tag = FRA
-				always = yes
 			}
 
 			allowed_civil_war = {
@@ -555,36 +538,22 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-<<<<<<< Updated upstream
-				#navy_refit_speed = -0.5
-				naval_accidents_chance = 0.5
-				naval_coordination = -0.5
-				naval_equipment_upgrade_xp_cost = 2
-				#navy_refit_ic_cost = 2
-				naval_enemy_fleet_size_ratio_penalty_factor = -0.5
-				naval_detection = -0.25
-				experience_gain_navy_factor = -0.5
-				experience_gain_navy_unit_factor = -0.5
-				naval_defense_factor = -0.5
-				naval_damage_factor = -0.5
-=======
-				navy_refit_speed = -0.25
+				#navy_refit_speed = -0.25
 				naval_accidents_chance = 0.25
 				naval_coordination = -0.25
 				naval_equipment_upgrade_xp_cost = 1.5
-				navy_refit_ic_cost = 1.5
+				#navy_refit_ic_cost = 1.5
 				naval_enemy_fleet_size_ratio_penalty_factor = -0.25
 				naval_detection = -0.125
 				experience_gain_navy_factor = -0.25
 				experience_gain_navy_unit_factor = -0.25
 				naval_defense_factor = -0.25
 				naval_damage_factor = -0.25
->>>>>>> Stashed changes
 			}
 		}
 
 		FRA_Rapidly_Rising_Inflation = {
-			picture = placeholder
+			picture = chi_hyper_inflation3
 			allowed = {
 				original_tag = FRA
 			}
