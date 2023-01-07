@@ -2854,7 +2854,7 @@ FRA_decolonization = {
 			has_completed_focus = FRA_Underground_Factories
 			not = {
 				has_country_flag =  { 
-					flag = FRA_cosmetic_tag_democratic 
+					flag = FRA_cosmetic_tag_rising_democratic_opposition # same look as monarchist, just different name in code so this works
 					value = 4
 				}
 			}
