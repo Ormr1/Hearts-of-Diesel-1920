@@ -79,6 +79,28 @@ if = {
 85 = {
 	add_dynamic_modifier = { modifier = international_city }
 }
+199 = {
+	add_dynamic_modifier = { modifier = ukraizhian_nationalist_militias }
+}
+78 = {
+	add_dynamic_modifier = { modifier = moldovan_nationalist_militias }
+}
+80 = {
+	add_dynamic_modifier = { modifier = ukraizhian_nationalist_militias }
+}
+834 = {
+	add_dynamic_modifier = { modifier = ukraizhian_nationalist_militias }
+	add_dynamic_modifier = { modifier = moldovan_nationalist_militias }
+}
+879 = {
+	add_dynamic_modifier = { modifier = ukraizhian_nationalist_militias }
+}
+89 = {
+	add_dynamic_modifier = { modifier = ukraizhian_nationalist_militias }
+}
+91 = {
+	add_dynamic_modifier = { modifier = ukraizhian_nationalist_militias }
+}
 give_military_access = SOV
 
 set_convoys = 10
