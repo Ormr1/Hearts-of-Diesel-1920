@@ -17,7 +17,7 @@ state={
 		}
 		add_core_of = POL
 		add_claim_by = UKR
-		add_dynamic_modifier = { modifier = ukraizhian_nationalist_militias }
+		# has_dynamic_modifier = { modifier = ukraizhian_nationalist_militias }
 	}
 	provinces={
 		577 9548
