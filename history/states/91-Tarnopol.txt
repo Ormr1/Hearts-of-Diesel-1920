@@ -20,7 +20,7 @@ state={
 		}
 		add_core_of = POL
 		add_core_of = UKR
-		# has_dynamic_modifier = { modifier = ukraizhian_nationalist_militias }
+		add_dynamic_modifier = { modifier = ukraizhian_nationalist_militias }
 	}
 
 	provinces={
