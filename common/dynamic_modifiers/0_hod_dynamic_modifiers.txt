@@ -80,7 +80,10 @@ saxon_nationalist_militias = {
 }
 
 ukraizhian_nationalist_militias = {
+	enable = { always = yes }
+	
 	icon = GFX_modifiers_ukraizhian_nationalist_militias
+	
 	army_speed_factor_for_controller = -0.05
 	attrition_for_controller = 0.05
 	compliance_growth = -0.05

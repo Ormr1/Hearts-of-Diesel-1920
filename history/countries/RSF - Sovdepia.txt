@@ -43,7 +43,8 @@ if = {
 	}
 }
 
-#recruit_character = LAP_john_louis_sanfuentes
+recruit_character = SOV_vladimir_lenin
+recruit_character = SOV_iosif_stalin
 
 set_convoys = 120
 set_politics = {

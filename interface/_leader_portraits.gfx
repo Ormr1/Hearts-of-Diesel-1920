@@ -2796,12 +2796,16 @@ spriteTypes = {
 	}
 
 
+	spriteType = {
+		name = "GFX_portrait_SOV_vladimir_lenin"
+		texturefile = "gfx/leaders/SOV/Portrait_SOV_vladimir_lenin.dds"
+	}
 
 	spriteType = {
 		name = "GFX_portrait_SOV_grigory_zinovyev"
 		texturefile = "gfx/leaders/SOV/portrait_SOV_grigory_zinovyev.dds"
 	}
-
+	
 	spriteType = {
 		name = "GFX_portrait_SOV_grigory_zinovyev_small"
 		texturefile = "gfx/interface/ideas/idea_SOV_grigory_zinovyev.dds"

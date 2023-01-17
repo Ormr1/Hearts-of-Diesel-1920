@@ -5,6 +5,7 @@ state={
 	resources={
 		tungsten=8.000
 		copper=7
+		steel = 3
 	}
 
 	history={
