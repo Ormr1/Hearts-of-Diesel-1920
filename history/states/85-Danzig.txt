@@ -25,9 +25,7 @@ state={
 		add_core_of = DNZ
 		add_core_of = KSH
 		add_core_of = GER
-		add_dynamic_modifier = { modifier = saxon_nationalist_militias }
-		set_resistance = 40
-		set_compliance = 30
+		
 	}
 
 	provinces={

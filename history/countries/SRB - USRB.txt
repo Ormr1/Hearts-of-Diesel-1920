@@ -47,14 +47,14 @@ if = {
 
 set_convoys = 120
 set_politics = {
-	ruling_party = neutrality
-	last_election = "1915.12.17"
-	election_frequency = 60
+	ruling_party = communism
+	last_election = "1921.12.17"
+	election_frequency = 240
 	elections_allowed = yes
 }
 set_popularities = {
 	democratic = 0
 	fascism = 0
-	communism = 0
-	neutrality = 100
+	communism = 100
+	neutrality = 0
 }

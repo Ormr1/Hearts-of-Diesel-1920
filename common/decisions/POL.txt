@@ -221,6 +221,7 @@ POL_disarm_radical_militias_decisions = {
 		}
 	}
 }
+
 POL_danzig_decisions = {
 
 	POL_unification_propaganda = {

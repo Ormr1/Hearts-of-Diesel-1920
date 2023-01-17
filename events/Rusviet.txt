@@ -653,21 +653,6 @@ country_event = {#FER collapses
 	}
 }
 
-country_event = {#FER collapses
-	id = SOV_civil_war.9
-	title = SOV_civil_war.9.t
-	desc = SOV_civil_war.9.d
-	picture = GFX_report_event_hitler_handshake
-	option = {#
-		name = SOV_civil_war.9.a
-		89={
-			add_dynamic_modifier = { 
-				modifier = ukraizhian_nationalist_militias
-				scope = POL
-			}
-		}
-	}
-}
 	###########################
 	# Rusviet Economy
 	###########################

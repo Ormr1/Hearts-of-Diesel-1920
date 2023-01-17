@@ -78,6 +78,9 @@ if = {
 
 85 = {
 	add_dynamic_modifier = { modifier = international_city }
+	add_dynamic_modifier = { modifier = saxon_nationalist_militias }
+	set_resistance = 40
+	set_compliance = 30
 }
 199 = {
 	add_dynamic_modifier = { modifier = ukraizhian_nationalist_militias }
@@ -99,6 +102,9 @@ if = {
 	add_dynamic_modifier = { modifier = ukraizhian_nationalist_militias }
 }
 91 = {
+	add_dynamic_modifier = { modifier = ukraizhian_nationalist_militias }
+}
+198={
 	add_dynamic_modifier = { modifier = ukraizhian_nationalist_militias }
 }
 give_military_access = SOV
