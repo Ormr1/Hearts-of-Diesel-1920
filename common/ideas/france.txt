@@ -364,7 +364,7 @@ ideas = {
 			}
 		}
 
-		FRA_Greater_Revolutionaries - {
+		FRA_Greater_Revolutionaries = {
 			picture = placeholder
 			allowed = {
 				always = no

@@ -17,7 +17,7 @@ characters={
 		name="Princess Sita"
 		portraits={
 			civilian={
-				large="gfx/leader/SAU/Portrait_Princess_Sita"
+				large="gfx/leader/SAU/Portrait_Princess_Sita.dds"
 			}
 		}
 		country_leader = {
