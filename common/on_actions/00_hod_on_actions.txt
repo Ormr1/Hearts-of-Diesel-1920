@@ -1,0 +1,15 @@
+on_actions = {
+    on_startup = {
+        effect = {
+            POL = {
+                country_event = polania_startup.1
+            }
+            USA = {
+                country_event = usa_startup.1
+            }
+            GER = {
+                country_event = saxony_startup.1
+            }
+        }
+    }
+}

@@ -11,4 +11,8 @@ spriteTypes = {
         name = "GFX_modifiers_ukraizhian_nationalist_militias"
         texturefile = "gfx/interface/state_modifiers/modifiers_ukraizhian_nationalist_militias.png"
     }
+    SpriteType = {
+        name = "GFX_modifiers_frankish_resistance"
+        texturefile = "gfx/interface/state_modifiers/modifiers_frankish_resistance.png"
+    }
 }

@@ -17,7 +17,7 @@ focus_tree = {
     focus = {
         id = POL_stabilizing_the_country
         icon = placeholder
-        x = 16
+        x = 11
         y = 0
         cost = 5
         ai_will_do = {
@@ -98,7 +98,7 @@ focus_tree = {
         icon = placeholder
         prerequisite = { focus = POL_hold_new_elections }
         relative_position_id = POL_hold_new_elections
-        x = -12
+        x = -16
         y = 1
         cost = 0
         completion_reward = {
@@ -111,7 +111,7 @@ focus_tree = {
         prerequisite = { focus = POL_hold_new_elections }
         relative_position_id = POL_hold_new_elections
         available = { always = no }
-        x = -6
+        x = -8
         y = 1
         cost = 0
         completion_reward = {
@@ -303,12 +303,60 @@ focus_tree = {
         }
     }
     focus = {
+        id = POL_staff_government_with_elites
+        icon = placeholders
+        prerequisite = { focus = POL_technocrats_win }
+        relative_position_id = POL_technocrats_win
+        x = -2
+        y = 1
+        cost = 5
+        completion_reward = {
+
+        }
+    }
+    focus = {
+        id = POL_invite_industrialists_to_government
+        icon = placeholders
+        prerequisite = { focus = POL_staff_government_with_elites }
+        relative_position_id = POL_staff_government_with_elites
+        x = -1
+        y = 1
+        cost = 5
+        completion_reward = {
+
+        }
+    }
+    focus = {
+        id = POL_loosen_trade_regulations
+        icon = placeholders
+        prerequisite = { focus = POL_invite_industrialists_to_government }
+        relative_position_id = POL_invite_industrialists_to_government
+        x = 0
+        y = 1
+        cost = 5
+        completion_reward = {
+            add_ideas = free_trade
+        }
+    }
+    focus = {
+        id = POL_invite_intellectuals_to_government
+        icon = placeholders
+        prerequisite = { focus = POL_staff_government_with_elites }
+        relative_position_id = POL_staff_government_with_elites
+        x = 1
+        y = 1
+        cost = 5
+        completion_reward = {
+
+        }
+    }
+    focus = {
         id = POL_monarchists_win
         icon = placeholder
         prerequisite = { focus = POL_hold_new_elections }
         relative_position_id = POL_hold_new_elections
         available = { always = no }
-        x = 6
+        x = 8
         y = 1
         cost = 0
         completion_reward = {
@@ -321,7 +369,7 @@ focus_tree = {
         prerequisite = { focus = POL_hold_new_elections }
         relative_position_id = POL_hold_new_elections
         available = { always = no }
-        x = 12
+        x = 16
         y = 1
         cost = 0
         completion_reward = {
@@ -339,7 +387,7 @@ focus_tree = {
         y = 0
         cost = 5
         completion_reward = {
-
+            add_political_power = 75
         }
     }
     focus = {

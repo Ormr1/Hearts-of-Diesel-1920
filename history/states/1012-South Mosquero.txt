@@ -4,12 +4,6 @@ state={
 	name="STATE_1012"
 	history={
 		owner = USA
-		add_province_modifier = {
-			static_modifiers = { native_american_raids }
-			province = {
-				all_provinces = yes
-			}
-		}
 	}
 	provinces={
 		1954 5038 10740 10894 

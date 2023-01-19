@@ -5,7 +5,7 @@
  
 ### IDEAS
  POL_home_of_the_enlightenment:0 "Home of the Enlightenment"
- POL_home_of_the_enlightenment_desc:0 "Polania was the nation that most championed the ideals of the Enlightenment in Europe. It's constitution was the first of Europe and the rights it granted are second to none on the continent. Liberty flows through the people of Polania and keeping that spirit quenched will be extraordinarily difficult."
+ POL_home_of_the_enlightenment_desc:0 "Polania was the nation that most championed the ideals of the Enlightenment in Europe. Its constitution was the first of Europe and the rights it granted are second to none on the continent. Liberty flows through the people of Polania and keeping that spirit quenched will be extraordinarily difficult."
  POL_sanation_government:0 "Sanation Government"
  POL_sanation_government_desc:0 "Following the end of the Great War, Polania was in chaos. Though it had withstood the Saxon assaults from the west, the Rusviet tide from the east was unbearably fierce. Polania's armies were forced extremely far back, save for a single salient that was staunchly held until the armistice went into effect. The following Treaty of Brest-Litovsk allowed the Rusviets free military passage through Polania and caused a massive uproar among the populace of Polania. To them, allowing the Rusviets free passage through their lands was the same as annexation and subjugation though the Polanian government insisted otherwise. In the wake of the mass protests that erupted across the country, threatening to tear it apart, the Polanian marshal Józef Piłsudski led a coup against the government and established a so-called "Sanationist Government" to restore order to Polania and to "heal the political system.""
  POL_kosciuszkos_legacy:0 "Kościuszko's Legacy"
@@ -17,4 +17,8 @@
 ### EVENTS ###
  
 ### DECISION CATEGORIES ###
- 
+
+## DECISIONS ##
+POL_disarm_saxon_militias_in_state: "Disarm Saxon Militias in [FROM.GetName]"
+POL_disarm_ukraizhian_militias_in_state: "Disarm Ukraizhian Militias in [FROM.GetName]"
+POL_disarm_moldovan_militias_in_state: "Disarm Moldovan Militias in [FROM.GetName]"

@@ -3,6 +3,7 @@
 ###########################
 
 add_namespace = usa
+add_namespace = usa_startup
 add_namespace = usa_native_americans
 add_namespace = usa_la_plata
 add_namespace = usa_eco_development
@@ -12,6 +13,37 @@ add_namespace = usa_alaska
 add_namespace = usa_arabia
 add_namespace = usa_usea
 add_namespace = usa_elections
+
+country_event = {
+	id = usa_startup.1
+	title = usa_startup.1.t
+	desc = usa_startup.1.desc
+	picture = placeholder
+	hidden = yes
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			920 = {
+				add_dynamic_modifier = { modifier = native_american_raids }
+			}
+			1012 = {
+				add_dynamic_modifier = { modifier = native_american_raids }
+			}
+			376 = {
+				add_dynamic_modifier = { modifier = native_american_raids }
+			}
+			377 = {
+				add_dynamic_modifier = { modifier = native_american_raids }
+			}
+			483 = {
+				add_dynamic_modifier = { modifier = native_american_raids }
+			}
+			484 = {
+				add_dynamic_modifier = { modifier = native_american_raids }
+			}
+		}
+	}
+}
 
 # Amelia Eartharts wants to join the USAAC
 country_event = {
@@ -3189,54 +3221,6 @@ country_event = { # Unified Currency Amendment Fails!
 
 	option = { # It was worth a try
 		name = usa_usea.20.a
-	}
-}
-country_event = { # Anti-Government Violence Starts Up
-	id = usa_native_americans.1
-	title = usa_native_americans.1.t
-	desc = usa_native_americans.1.desc
-	picture = placeholder
-	
-	is_triggered_only = yes
-
-	option = { # This'll be devastating...
-		name = usa_native_americans.1.a
-		920 = {
-			add_dynamic_modifier = {
-				modifier = native_american_raids
-				days = 3650
-			}
-		}
-		1012 = {
-			add_dynamic_modifier = {
-				modifier = native_american_raids
-				days = 3650
-			}
-		}
-		376 = {
-			add_dynamic_modifier = {
-				modifier = native_american_raids
-				days = 3650
-			}
-		}
-		377 = {
-			add_dynamic_modifier = {
-				modifier = native_american_raids
-				days = 3650
-			}
-		}
-		483 = {
-			add_dynamic_modifier = {
-				modifier = native_american_raids
-				days = 3650
-			}
-		}
-		484 = {
-			add_dynamic_modifier = {
-				modifier = native_american_raids
-				days = 3650
-			}
-		}
 	}
 }
 

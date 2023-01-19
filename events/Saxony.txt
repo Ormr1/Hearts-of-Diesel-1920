@@ -3,6 +3,47 @@
 ###########################
 
 add_namespace = saxonian
+add_namespace = saxony_startup
+
+country_event = {
+	id = saxony_startup.1
+	title = saxony_startup.1.t
+	desc = saxony_startup.1.desc
+	picture = placeholder
+	hidden = yes
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			855 = {
+				add_dynamic_modifier = { modifier = frankish_resistance }
+			}
+			856 = {
+				add_dynamic_modifier = { modifier = frankish_resistance }
+			}
+			858 = {
+				add_dynamic_modifier = { modifier = frankish_resistance }
+			}
+			859 = {
+				add_dynamic_modifier = { modifier = frankish_resistance }
+			}
+			29 = {
+				add_dynamic_modifier = { modifier = frankish_resistance }
+			}
+			857 = {
+				add_dynamic_modifier = { modifier = frankish_resistance }
+			}
+			785 = {
+				add_dynamic_modifier = { modifier = frankish_resistance }
+			}
+			976 = {
+				add_dynamic_modifier = { modifier = frankish_resistance }
+			}
+			977 = {
+				add_dynamic_modifier = { modifier = frankish_resistance }
+			}
+		}
+	}
+}
 
 # Discussions at Warsaw
 country_event = {

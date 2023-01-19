@@ -4,10 +4,9 @@ state={
 	name="STATE_78"
 
 	history={
-		add_core_of = POL
+		add_claim_by = POL
 		add_core_of = MOL
 		owner = POL
-		# has_dynamic_modifier = { modifier = ukraizhian_nationalist_militias }
 		victory_points = {
 			3707 5 
 		}
