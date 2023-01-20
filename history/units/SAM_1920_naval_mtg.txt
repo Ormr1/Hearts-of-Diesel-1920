@@ -9,22 +9,66 @@ units = {
 		task_force = {
 			name = "Tele Fua"
 			location = 7290 # Apia
-			ship = { name = "TMRS Samoa" pride_of_the_fleet = yes definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = SAM version_name = "Samoa Class"} } }
-			ship = { name = "TMRS Tonga" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = SAM version_name = "Samoa Class"} } }
+			ship = { name = "TMRS Samoa" pride_of_the_fleet = yes definition = battleship equipment = { ship_hull_heavy_2 = { amount = 1 owner = SAM version_name = "Samoa Class"} } }
+			ship = { name = "TMRS Tonga" definition = battleship equipment = { ship_hull_heavy_2 = { amount = 1 owner = SAM version_name = "Samoa Class"} } }
 			ship = { name = "TMRS Fa'aeau'u" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = SAM version_name = "Fa aeanu u Class"} } }
 			ship = { name = "TMRS Visala" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = SAM version_name = "Fa aeanu u Class"} } }
+			ship = { name = "TMRS Seiuli" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = SAM version_name = "Fa aeanu u Class"} } }
+			ship = { name = "TMRS Salofi" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = SAM version_name = "Fa aeanu u Class"} } }
+			ship = { name = "TMRS Tui Tofua" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = SAM version_name = "Fa aeanu u Class"} } }
+			ship = { name = "TMRS Maui Tagote" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = SAM version_name = "Fa aeanu u Class"} } }
 			ship = { name = "TMRS Alalamua" definition = battleship start_experience_factor = 0.4 equipment = { ship_hull_pre_dreadnought = { amount = 1 owner = SAM version_name = "Alalamua Class"} } }
+			
+			ship = { name = "TMRS Tagata Su'esu'e" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = SAM version_name = "Tagata Su esu e Class"} } }
 			ship = { name = "TMRS Tuli Fetu" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = SAM version_name = "Tuli Fetu Class"} } }
 			ship = { name = "TMRS Talita" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = SAM version_name = "Tuli Fetu Class"} } }
+			ship = { name = "TMRS Vaai Mamao" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = SAM version_name = "Tuli Fetu Class"} } }
 			
-			ship = { name = "TMRS Fa'amaualuga" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SAM version_name = "Fa amaualuga Class"} } }
-			ship = { name = "TMRS Pa'a" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SAM version_name = "Fa amaualuga Class"} } }
-			ship = { name = "TMRS Maunu" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SAM version_name = "Fa amaualuga Class"} } }
-			ship = { name = "TMRS I'a Pelu" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SAM version_name = "Fa amaualuga Class"} } }
-			ship = { name = "TMRS Tulaga Tasi" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SAM version_name = "Fa amaualuga Class"} } }	
-			ship = { name = "TMRS Piko" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SAM version_name = "Fa amaualuga Class"} } }
-			ship = { name = "TMRS Tagata Tulimanu" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SAM version_name = "Tagata Tulimanu Class"} } }
+			ship = { name = "TMRS Fa'amanualuga" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SAM version_name = "Fa amanualuga Class"} } }
+			ship = { name = "TMRS Pa'a" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SAM version_name = "Fa amanualuga Class"} } }
+			ship = { name = "TMRS Maunu" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SAM version_name = "Fa amanualuga Class"} } }
+			ship = { name = "TMRS I'a Pelu" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SAM version_name = "Fa amanualuga Class"} } }
+			ship = { name = "TMRS Tulaga Tasi" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SAM version_name = "Fa amanualuga Class"} } }	
+			ship = { name = "TMRS Piko" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SAM version_name = "Fa amanualuga Class"} } }
+			ship = { name = "TMRS Natia" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SAM version_name = "Fa amanualuga Class"} } }
+			ship = { name = "TMRS Taiala Fetu" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SAM version_name = "Fa amanualuga Class"} } }
+			ship = { name = "TMRS Tumutumu Sami" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SAM version_name = "Fa amanualuga Class"} } }
+			ship = { name = "TMRS Apaau Fetu" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SAM version_name = "Fa amanualuga Class"} } }
+			ship = { name = "TMRS Suamalie" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SAM version_name = "Fa amanualuga Class"} } }
+			
 			ship = { name = "TMRS Va'aiga" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SAM version_name = "Tagata Tulimanu Class"} } }
+			ship = { name = "TMRS Pu'e Loloto" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SAM version_name = "Tagata Tulimanu Class"} } }
+			ship = { name = "TMRS Sami Fa'afefe" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SAM version_name = "Tagata Tulimanu Class"} } }
+		}
+		task_force = {
+			name = "1 Fa'atofu Taula" # 
+			location = 7290  #Apia
+			#Kaidai-class Submarines
+			ship = { name = "V-15" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = {amount = 1 owner = SAM version_name = "Taula Class"} } }
+			ship = { name = "V-17" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = {amount = 1 owner = SAM version_name = "Taula Class"} } }		
+			ship = { name = "V-18" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = {amount = 1 owner = SAM version_name = "Taula Class"} } }			
+			ship = { name = "V-19" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = {amount = 1 owner = SAM version_name = "Taula Class"} } }	
+			ship = { name = "V-21" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = {amount = 1 owner = SAM version_name = "Taula Class"} } }	
+			ship = { name = "V-22" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = {amount = 1 owner = SAM version_name = "Taula Class"} } }
+			ship = { name = "V-23" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = {amount = 1 owner = SAM version_name = "Taula Class"} } }	
+			ship = { name = "V-24" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = {amount = 1 owner = SAM version_name = "Taula Class"} } }
+			ship = { name = "V-25" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = {amount = 1 owner = SAM version_name = "Taula Class"} } }
+			ship = { name = "V-26" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = {amount = 1 owner = SAM version_name = "Taula Class"} } }
+			ship = { name = "V-27" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = {amount = 1 owner = SAM version_name = "Taula Class"} } }
+			ship = { name = "V-28" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = {amount = 1 owner = SAM version_name = "Taula Class"} } }	
+			ship = { name = "V-29" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = {amount = 1 owner = SAM version_name = "Taula Class"} } }	
+			ship = { name = "V-30" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = {amount = 1 owner = SAM version_name = "Taula Class"} } }
+			ship = { name = "V-31" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = {amount = 1 owner = SAM version_name = "Taula Class"} } }	
+			ship = { name = "V-33" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = {amount = 1 owner = SAM version_name = "Taula Class"} } }	
+			ship = { name = "V-38" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = {amount = 1 owner = SAM version_name = "Taula Class"} } }
+			ship = { name = "V-39" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = {amount = 1 owner = SAM version_name = "Taula Class"} } }
+		}
+		task_force = {
+			name = "Fua Maua i'a Loloto" # 
+			location = 7290  #Apia
+			ship = { name = "TMRS Tagata Tulimanu" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SAM version_name = "Tagata Tulimanu Class"} } }
+			ship = { name = "TMRS Tagata Soli Fetu" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SAM version_name = "Tagata Tulimanu Class"} } }
+			ship = { name = "TMRS Meaalofa a Seila" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SAM version_name = "Tagata Tulimanu Class"} } }
 		}
 	}
 	fleet = {
@@ -34,12 +78,31 @@ units = {
 			name = "Fua Aotearoua"			
 			location = 4543 # Auckland
 			ship = { name = "TMRS Makelita" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = SAM version_name = "Fa aeau u Class"} } }
+			
 			ship = { name = "TMRS A'o Mamao" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = SAM version_name = "Tuli Fetu Class"} } }
 			ship = { name = "TMRS Apia" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = SAM version_name = "Tuli Fetu Class"} } }
 			ship = { name = "TMRS Asau" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = SAM version_name = "Tuli Fetu Class"} } }
+			
 			ship = { name = "TMRS Lino" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SAM version_name = "Tagata Tulimanu Class"} } }
 			ship = { name = "TMRS Matau" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SAM version_name = "Tagata Tulimanu Class"} } }
-			ship = { name = "TMRS Nafanua" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SAM version_name = "Fa amaualuga Class"} } }
+			
+			ship = { name = "TMRS Nafanua" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SAM version_name = "Fa amanualuga Class"} } }
+			ship = { name = "TMRS Kalapu" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SAM version_name = "Fa amanualuga Class"} } }
+			ship = { name = "TMRS Kea" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SAM version_name = "Fa amanualuga Class"} } }
+			ship = { name = "TMRS Kiwi" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SAM version_name = "Fa amanualuga Class"} } }
+		}				
+	}
+	fleet = {
+		name = "3rd Tele Fua"			
+		naval_base = 7564 # Meanjin
+		task_force = {				
+			name = "Fua Ausetalia"			
+			location = 7564 # Meanjin
+			ship = { name = "TMRS Maui" definition = battleship start_experience_factor = 0.4 equipment = { ship_hull_pre_dreadnought = { amount = 1 owner = SAM version_name = "Alalamua Class"} } }
+			ship = { name = "TMRS Matai" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = SAM version_name = "Tuli Fetu Class"} } }
+			ship = { name = "TMRS Upega" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SAM version_name = "Fa amanualuga Class"} } }
+			ship = { name = "TMRS Sikauti" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SAM version_name = "Fa amanualuga Class"} } }
+			ship = { name = "TMRS Tao Fagota" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SAM version_name = "Fa amanualuga Class"} } }
 		}				
 	}
 }
@@ -49,7 +112,7 @@ instant_effect = {
 	# 
 	add_equipment_production = {
 		equipment = {
-			type = ship_hull_heavy_1
+			type = ship_hull_heavy_2
 			creator = "SAM" 
 			version_name = "Samoa Class"
 		}

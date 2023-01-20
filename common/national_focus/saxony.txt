@@ -537,7 +537,17 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			reverse_add_opinion_modifier = {
+				target = SYR
+				modifier = tyrant_overlord
+			}
+			SYR={
+				country_event = {id=saxonian.12}#
+			}
+			set_temp_variable = {
+				GER_tmp_decrease_loan_var = 1795
+			}
+			GER_decrease_debt = yes
 		}
 	}
 	focus = {
@@ -557,7 +567,17 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			reverse_add_opinion_modifier = {
+				target = SAF
+				modifier = tyrant_overlord
+			}
+			SAF={
+				country_event = {id=saxonian.11}#
+			}
+			set_temp_variable = {
+				GER_tmp_decrease_loan_var = 1271
+			}
+			GER_decrease_debt = yes
 		}
 	}
 	focus = {
@@ -577,7 +597,17 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			reverse_add_opinion_modifier = {
+				target = MIT
+				modifier = tyrant_overlord
+			}
+			MIT={
+				country_event = {id=saxonian.10} #
+			}
+			set_temp_variable = {
+				GER_tmp_decrease_loan_var = 971
+			}
+			GER_decrease_debt = yes
 		}
 	}
 	focus = {
@@ -597,7 +627,17 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			reverse_add_opinion_modifier = {
+				target = AST
+				modifier = tyrant_overlord
+			}
+			AST={
+				country_event = {id=saxonian.9} #
+			}
+			set_temp_variable = {
+				GER_tmp_decrease_loan_var = 1504
+			}
+			GER_decrease_debt = yes
 		}
 	}
 

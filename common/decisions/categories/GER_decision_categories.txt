@@ -58,6 +58,17 @@ GER_military_buildup = {
 	}
 }
 
+GER_warbond_administration = {
+	icon = generic_political_actions
+
+	allowed = {
+		original_tag = GER
+	}
+	visible = {
+
+	}
+}
+
 GER_aid_hun_rom_democratic_civil_war = {
 	allowed = {
 		original_tag = GER

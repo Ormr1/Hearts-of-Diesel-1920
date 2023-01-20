@@ -1,14 +1,29 @@
 characters={
+
+	MLI_daba_keita = {
+		name = "Daba Keïta" 
+		portraits = {
+			civilian = {
+				large = GFX_portrait_daba_keita
+			}
+		}
+		country_leader = {
+			ideology = benevolent_monarchy
+			traits={  }
+			expire = "1922.1.1.1"
+			id = -1
+		}
+	}
 	MLI_coi={
 		advisor={
 			slot = political_advisor
 			idea_token = MLI_coi
-			allowed  = {
-					original_tag  = MLI
-				}
-				traits  = {
-					captain_of_industry 
-				}
+			allowed = {
+				original_tag  = MLI
+			}
+			traits = {
+				captain_of_industry 
+			}
 		}
 # TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
 		portraits={

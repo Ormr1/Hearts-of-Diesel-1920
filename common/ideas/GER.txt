@@ -31,6 +31,27 @@ ideas = {
 				consumer_goods_factor = 0.1
 			}
 		}
+		GER_austerity_idea = {
+			name = GER_austerity_idea
+			allowed = {
+				original_tag = GER
+			}
+
+			removal_cost = -1
+
+			picture = great_depression
+
+			modifier = {
+				consumer_goods_factor = 0.2
+				political_power_gain = -0.1
+				drift_defence_factor = -0.5
+				production_speed_arms_factory_factor = -0.25
+				production_speed_dockyard_factor = -0.25
+				war_support_factor = -0.05
+				stability_weekly_factor = -0.3
+				stability_weekly = -0.01
+			}
+		}
 	
 		sour_loser = {
 			

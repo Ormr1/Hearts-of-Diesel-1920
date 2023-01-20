@@ -214,6 +214,7 @@ country_event = {#GER info - Report on the Imperial Debt (war bond problems)
 	
 	option = {
 		name = saxonian.6.a
+		set_country_flag = GER_debt_repayment_authorised
 	}
 }
 country_event = {#GER info - wolf of the shadows (fenris)
@@ -242,5 +243,57 @@ country_event = {#FEN info - Wilhelms Suspision
 	option = {
 		name = saxonian.8.a
 		FEN_increase_suspicion_random = yes
+	}
+}
+country_event = {#AST info - saxony leavies gold tariffs
+	id = saxonian.9
+	title = saxonian.9.t
+	desc = saxonian.9.d
+	picture = GFX_report_event_finnish_letter
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = saxonian.9.a
+		
+	}
+}
+country_event = {#MIT info - saxony increases tariffs
+	id = saxonian.10
+	title = saxonian.10.t
+	desc = saxonian.10.d
+	picture = GFX_report_event_finnish_letter
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = saxonian.10.a
+		
+	}
+}
+country_event = {#SAF info - saxony leavies tariffs on diamonds and gold
+	id = saxonian.11
+	title = saxonian.11.t
+	desc = saxonian.11.d
+	picture = GFX_report_event_finnish_letter
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = saxonian.11.a
+		
+	}
+}
+country_event = {#SYR info - saxony seises control over oilfields
+	id = saxonian.12
+	title = saxonian.12.t
+	desc = saxonian.12.d
+	picture = GFX_report_event_finnish_letter
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = saxonian.12.a
+		
 	}
 }

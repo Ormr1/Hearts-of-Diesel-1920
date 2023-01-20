@@ -145,7 +145,7 @@ if = {
 	}
 	
 	create_equipment_variant = {
-		name = "Canberra Class"
+		name = "Dornengebusch Class"
 		type = heavy_cruiser_1
 		upgrades = {
 			ship_reliability_upgrade = 2
@@ -161,7 +161,7 @@ if = {
 	### Ship Variants ###
 	# Light Cruisers #
 	create_equipment_variant = {
-		name = "Sydney Class"
+		name = "Lieberfreund Class"
 		type = ship_hull_cruiser_2
 		name_group = AST_CL_HISTORICAL
 		parent_version = 0
@@ -198,7 +198,7 @@ if = {
 	}
 	# Heavy Cruisers #
 	create_equipment_variant = {
-		name = "Canberra Class"
+		name = "Dornengebusch Class"
 		type = ship_hull_cruiser_1
 		name_group = AST_CA_HISTORICAL
 		parent_version = 0

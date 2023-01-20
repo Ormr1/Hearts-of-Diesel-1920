@@ -27,6 +27,7 @@ if = {
 		early_ship_hull_light = 1
 		early_ship_hull_cruiser = 1
 		early_ship_hull_heavy = 1
+		basic_ship_hull_heavy = 1
 		pre_dreadnoughts = 1
 		early_ship_hull_submarine = 1
 		mtg_transport = 1
@@ -37,8 +38,25 @@ if = {
 		improved_secondary_battery = 1
 		basic_depth_charges = 1
 		sonar = 1
-		early_ship_hull_carrier = 1
 		standardised_calibers = 1
+	}
+	create_equipment_variant = {
+		name = "Tagata Su esu e Class"
+		type = ship_hull_cruiser_1
+		name_group = SAM_CL_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_medium_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = ship_radar_1
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_armor_slot = ship_armor_cruiser_1
+			fixed_ship_secondaries_slot = ship_secondaries_1
+			mid_1_custom_slot = ship_mine_layer_1
+			mid_2_custom_slot = ship_secondaries_1
+			rear_1_custom_slot = ship_medium_battery_1
+		}
 	}
 	create_equipment_variant = {
 		name = "Fa amanualuga Class"
@@ -91,7 +109,7 @@ if = {
 	}
 	create_equipment_variant = {
 		name = "Samoa Class"
-		type = ship_hull_heavy_1
+		type = ship_hull_heavy_2
 		name_group = SAM_BB_HISTORICAL
 		parent_version = 0
 		modules = {

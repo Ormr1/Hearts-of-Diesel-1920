@@ -1382,192 +1382,6 @@ special_projects = {
 			}
 		}
 	}
-	GER_dismantle_czechoslovakian_forts = {
-
-		icon = generic_construction
-
-		available = {
-			#has_war = yes
-			controls_state = 69 # Sudetenland
-			controls_state = 74 # Eastern Sudetenland
-			controls_state = 9 # Bohemia
-			controls_state = 75 # Moravia
-		}
-
-		cost = 50
-		fire_only_once = yes
-
-		ai_will_do = {
-			factor = 0
-		}
-		visible = {
-			#has_war = yes
-			controls_state = 69 # Sudetenland
-			controls_state = 74 # Eastern Sudetenland
-			controls_state = 9 # Bohemia
-			controls_state = 75 # Moravia
-		}
-		days_remove = 180
-		modifier = {
-			civilian_factory_use = 3
-		}
-		remove_effect = {
-			69 = {
-				set_building_level = {
-					type = bunker
-					level = 1
-					province = {
-						all_provinces = yes
-						limit_to_border = no
-						level > 1
-					}
-				}
-			}
-			74 = {
-				set_building_level = {
-					type = bunker
-					level = 1
-					province = {
-						all_provinces = yes
-						limit_to_border = no
-						level > 1
-					}
-				}
-			}
-			9 = {
-				set_building_level = {
-					type = bunker
-					level = 1
-					province = {
-						all_provinces = yes
-						limit_to_border = no
-						level > 1
-					}
-				}
-			}
-			75 = {
-				set_building_level = {
-					type = bunker
-					level = 1
-					province = {
-						all_provinces = yes
-						limit_to_border = no
-						level > 1
-					}
-				}
-			}
-			if = {
-				limit = {
-					72 = {
-						controller = {
-							OR = {
-								tag = ROOT
-								is_subject_of = ROOT
-							}
-						}
-					}
-					71 = {
-						controller = {
-							OR = {
-								tag = ROOT
-								is_subject_of = ROOT
-							}
-						}
-					}
-				}
-				72 = {
-					set_building_level = {
-						type = bunker
-						level = 1
-						province = {
-							all_provinces = yes
-							limit_to_border = no
-							level > 1
-						}
-					}
-				}
-				71 = {
-					set_building_level = {
-						type = bunker
-						level = 1
-						province = {
-							all_provinces = yes
-							limit_to_border = no
-							level > 1
-						}
-					}
-				}
-			}
-			if = {
-				limit = {
-					70 = {
-						controller = {
-							OR = {
-								tag = ROOT
-								is_subject_of = ROOT
-							}
-						}
-					}
-				}
-				70 = {
-					set_building_level = {
-						type = bunker
-						level = 1
-						province = {
-							all_provinces = yes
-							limit_to_border = no
-							level > 1
-						}
-					}
-				}
-			}
-			if = {
-				limit = {
-					73 = {
-						controller = {
-							OR = {
-								tag = ROOT
-								is_subject_of = ROOT
-							}
-						}
-					}
-					664 = {
-						controller = {
-							OR = {
-								tag = ROOT
-								is_subject_of = ROOT
-							}
-						}
-					}
-				}
-				73 = {
-					set_building_level = {
-						type = bunker
-						level = 1
-						province = {
-							all_provinces = yes
-							limit_to_border = no
-							level > 1
-						}
-					}
-				}
-				664 = {
-					set_building_level = {
-						type = bunker
-						level = 1
-						province = {
-							all_provinces = yes
-							limit_to_border = no
-							level > 1
-						}
-					}
-				}
-			}
-		}
-		complete_effect = {
-			add_timed_idea = { idea = GER_dismantle_czechoslovakian_forts days = 180 }
-		}
-	}
 }
 
 GER_aid_hun_rom_democratic_civil_war = {
@@ -1773,6 +1587,141 @@ GER_austro_hungarian_empire = {
 				HUN = { country_event = { id = wtt_germany.68 hours = 1 } }
 				AUS = { country_event = { id = wtt_germany.68 hours = 3 } }
 			}
+		}
+	}
+}
+
+
+
+GER_warbond_administration={
+
+	GER_austerity_mission = {
+
+		allowed = { always = no }
+
+		icon = ger_mefo_bills
+
+		available = {
+			
+			hidden_trigger = { always = no }
+		}
+
+		#cost = GER_mefo_bill_counter?10
+
+		days_mission_timeout = 180
+		is_good = yes
+		fire_only_once = yes
+
+		cancel_trigger = {
+			hidden_trigger = {
+				OR = {
+					NOT = { has_idea = GER_austerity_idea }
+					has_idea = GER_austerity_idea
+				}
+			}
+		}
+
+		days_remove = GER_extend_mefo_bills_days?0
+		remove_effect = {
+		}
+
+		complete_effect = {
+		}
+
+		timeout_effect = {
+			set_temp_variable = {
+				GER_tmp_decrease_loan_var = 300
+			}
+			GER_decrease_debt = yes
+			if = {
+				limit = {
+					has_country_flag = ger_has_ended_austerity
+				}
+				#GER_end_austerity = yes
+				if={
+					limit={
+						has_idea = GER_austerity_idea
+					}
+					remove_ideas = {GER_austerity_idea}
+				}
+			}
+			else = {
+				
+
+				hidden_effect = {
+					activate_mission = GER_austerity_mission
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 200
+		}
+	}
+	GER_end_austerity = {
+
+		icon = ger_mefo_bills
+
+		available = {
+			hidden_trigger = {
+				has_country_flag = GER_austerity_started
+			}
+		}
+
+		cost = 0
+
+		fire_only_once = no
+
+		visible = {
+			hidden_trigger = {
+				has_country_flag = GER_austerity_started
+			}
+		}
+
+		cancel_if_not_visible = yes
+
+		remove_effect = {
+			clr_country_flag = GER_austerity_started
+			clr_country_flag = GER_debt_repayment_authorised
+			set_country_flag = ger_has_ended_austerity
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	GER_begin_austerity = {
+
+		icon = ger_mefo_bills
+
+		available = {
+			has_idea = GER_war_debt
+		}
+
+		cost = 100
+
+		fire_only_once = yes
+
+		visible = {
+			hidden_trigger = {
+				has_country_flag = GER_debt_repayment_authorised
+			}
+		}
+
+		cancel_if_not_visible = yes
+
+		complete_effect = {
+			activate_mission = GER_austerity_mission
+			set_country_flag = GER_austerity_started
+			add_ideas = {GER_austerity_idea}
+		}
+		modifier={
+			
+		}
+
+		ai_will_do = {
+			factor = 0
 		}
 	}
 }

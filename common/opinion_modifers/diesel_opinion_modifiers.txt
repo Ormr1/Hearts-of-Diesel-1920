@@ -1,0 +1,6 @@
+opinion_modifiers = {
+	
+	tyrant_overlord = {
+		value = -50
+	}
+}

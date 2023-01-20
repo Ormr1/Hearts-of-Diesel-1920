@@ -154,7 +154,7 @@ units = {
 				is_name_ordered = yes
 				name_order = 8
 		}
-		location = 758  # La Coruña
+		location = 11805  # La Coruña
 		division_template = "División de Infantería"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.8
@@ -191,7 +191,7 @@ units = {
 	}			
 	division = {			
 		name = "Brigada Mixta Montaña"		
-		location = 11707  #Oviedo
+		location = 6996  #Guarda
 		division_template = "Brigada Montaña"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.8
