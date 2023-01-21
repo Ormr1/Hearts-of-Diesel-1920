@@ -351,6 +351,30 @@ focus_tree = {
         }
     }
     focus = {
+        id = POL_boost_university_funding
+        icon = placeholder
+        prerequisite = { focus = POL_technocrats_win }
+        relative_position_id = POL_technocrats_win
+        x = 2
+        y = 1
+        cost = 5
+        completion_reward = {
+
+        }
+    }
+    focus = {
+        id = POL_weapons_research_and_development_bureau
+        icon = placeholder
+        prerequisite = { focus = POL_boost_university_funding }
+        relative_position_id = POL_boost_university_funding
+        x = -1
+        y = 1
+        cost = 5
+        completion_reward = {
+
+        }
+    }
+    focus = {
         id = POL_monarchists_win
         icon = placeholder
         prerequisite = { focus = POL_hold_new_elections }

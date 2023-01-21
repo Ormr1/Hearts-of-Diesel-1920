@@ -20,6 +20,7 @@ state=
 			}
 		}
 		add_core_of = CRI
+		add_core_of = UKR
 	}
 	provinces=
 	{
