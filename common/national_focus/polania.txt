@@ -458,7 +458,7 @@ focus_tree = {
         y = 2
         cost = 5
         completion_reward = {
-            
+
         }
     }
     focus = {
@@ -473,6 +473,164 @@ focus_tree = {
         completion_reward = {
             
         }
+    }
+    focus = {
+        id = POL_coronation_of_tadeusz_kosciuszko_ii
+        icon = placeholder
+        prerequisite = { focus = POL_monarchists_win }
+        relative_position_id = POL_monarchists_win
+        x = 0
+        y = 1
+        cost = 5
+        completion_reward = {
+
+        }
+    }
+    focus = {
+        id = POL_reestablish_the_imperial_guard
+        icon = placeholder
+        prerequisite = { focus = POL_coronation_of_tadeusz_kosciuszko_ii }
+        relative_position_id = POL_coronation_of_tadeusz_kosciuszko_ii
+        x = -3
+        y = 1
+        cost = 5
+        completion_reward = {
+
+        }
+    }
+    focus = {
+        id = POL_the_royal_hussars
+        icon = placeholder
+        prerequisite = { focus = POL_reestablish_the_imperial_guard }
+        relative_position_id = POL_reestablish_the_imperial_guard
+        x = 0
+        y = 2
+        cost = 5
+        completion_reward = {
+
+        }
+    }
+    focus = {
+        id = POL_promote_imperial_legacy
+        icon = placeholder
+        prerequisite = { focus = POL_coronation_of_tadeusz_kosciuszko_ii }
+        relative_position_id = POL_coronation_of_tadeusz_kosciuszko_ii
+        x = -1
+        y = 1
+        cost = 5
+        completion_reward = {
+
+        }
+    }
+    focus = {
+        id = POL_restore_the_imperial_army
+        icon = placeholder
+        prerequisite = { focus = POL_reestablish_the_imperial_guard }
+        prerequisite = { focus = POL_promote_imperial_legacy }
+        relative_position_id = POL_reestablish_the_imperial_guard
+        x = 1
+        y = 1
+        cost = 5
+        completion_reward = {
+
+        }
+        
+    }
+    focus = {
+        id = POL_centralize_government
+        icon = placeholder
+        prerequisite = { focus = POL_coronation_of_tadeusz_kosciuszko_ii }
+        relative_position_id = POL_coronation_of_tadeusz_kosciuszko_ii
+        x = 1
+        y = 1
+        cost = 5
+        completion_reward = {
+
+        }
+    }
+    focus = {
+        id = POL_restoration_of_the_imperial_palace
+        icon = placeholder
+        prerequisite = { focus = POL_promote_imperial_legacy }
+        prerequisite = { focus = POL_centralize_government }
+        relative_position_id = POL_promote_imperial_legacy
+        x = 1
+        y = 1
+        cost = 5
+        completion_reward = {
+
+        }
+    }
+    focus = {
+        id = POL_royal_parades
+        icon = placeholder
+        prerequisite = { focus = POL_restore_the_imperial_army }
+        prerequisite = { focus = POL_restoration_of_the_imperial_palace }
+        relative_position_id = POL_restore_the_imperial_army
+        x = 1
+        y = 1
+        cost = 5
+        completion_reward = {
+
+        }
+    }
+    focus = {
+        id = POL_commonwealth_dreams
+        icon = placeholder
+        prerequisite = { focus = POL_coronation_of_tadeusz_kosciuszko_ii }
+        relative_position_id = POL_coronation_of_tadeusz_kosciuszko_ii
+        x = 3
+        y = 1
+        cost = 5
+        completion_reward = {
+
+        }
+    }
+    focus = {
+        id = POL_imperial_glory
+        icon = placeholder
+        prerequisite = { focus = POL_commonwealth_dreams }
+        relative_position_id = POL_commonwealth_dreams
+        x = 0
+        y = 2
+        cost = 5
+        completion_reward = {
+            
+        }
+    }
+    focus = {
+        id = POL_commonwealth_propaganda
+        icon = placeholder
+        prerequisite = { focus = POL_centralize_government }
+        prerequisite = { focus = POL_commonwealth_dreams }
+        relative_position_id = POL_centralize_government
+        x = 1
+        y = 1
+        cost = 5
+        completion_reward = {
+
+        }
+    }
+    focus = {
+        id = POL_reach_out_to_other_monarchies
+        icon = placeholder
+        prerequisite = { focus = POL_restoration_of_the_imperial_palace }
+        prerequisite = { focus = POL_commonwealth_propaganda }
+        relative_position_id = POL_restoration_of_the_imperial_palace
+        x = 1
+        y = 1
+        completion_reward = {
+
+        }
+    }
+    focus = {
+        id = POL_the_second_polanian_empire
+        icon = placeholder
+        prerequisite = { focus = POL_royal_parades }
+        prerequisite = { focus = POL_reach_out_to_other_monarchies }
+        relative_position_id = POL_coronation_of_tadeusz_kosciuszko_ii
+        x = 0
+        y = 4
     }
     focus = {
         id = POL_falangists_win
