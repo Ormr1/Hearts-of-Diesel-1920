@@ -363,6 +363,30 @@ focus_tree = {
         }
     }
     focus = {
+        id = POL_public_education_program
+        icon = placeholder
+        prerequisite = { focus = POL_boost_university_funding }
+        relative_position_id = POL_boost_university_funding
+        x = 1
+        y = 1
+        cost = 5
+        completion_reward = {
+
+        }
+    }
+    focus = {
+        id = POL_foreign_student_program
+        icon = placeholder
+        prerequisite = { focus = POL_public_education_program }
+        relative_position_id = POL_public_education_program
+        x = 0
+        y = 1
+        cost = 5
+        completion_reward = {
+
+        }
+    }
+    focus = {
         id = POL_weapons_research_and_development_bureau
         icon = placeholder
         prerequisite = { focus = POL_boost_university_funding }
@@ -372,6 +396,69 @@ focus_tree = {
         cost = 5
         completion_reward = {
 
+        }
+    }
+    focus = {
+        id = POL_invite_factory_scientists
+        icon = placeholder
+        prerequisite = { focus = POL_invite_intellectuals_to_government }
+        prerequisite = { focus = POL_weapons_research_and_development_bureau }
+        relative_position_id = POL_technocrats_win
+        x = 0
+        y = 3
+        cost = 5
+        completion_reward = {
+
+        }
+    }
+    focus = {
+        id = POL_factory_tools
+        icon = placeholder
+        prerequisite = { focus = POL_invite_factory_scientists }
+        relative_position_id = POL_invite_factory_scientists
+        x = -2
+        y = 1
+        cost = 5
+        completion_reward = {
+
+        }
+    }
+    focus = {
+        id = POL_factory_rifles
+        icon = placeholder
+        prerequisite = { focus = POL_invite_factory_scientists }
+        relative_position_id = POL_invite_factory_scientists
+        x = 0
+        y = 1
+        cost = 5
+        completion_reward = {
+
+        }
+    }
+    focus = {
+        id = POL_factory_armor
+        icon = placeholder
+        prerequisite = { focus = POL_invite_factory_scientists }
+        relative_position_id = POL_invite_factory_scientists
+        x = 2
+        y = 1
+        cost = 5
+        completion_reward = {
+
+        }
+    }
+    focus = {
+        id = POL_hub_of_innovation
+        icon = placeholder
+        prerequisite = { focus = POL_factory_tools }
+        prerequisite = { focus = POL_factory_rifles }
+        prerequisite = { focus = POL_factory_armor }
+        relative_position_id = POL_invite_factory_scientists
+        x = 0
+        y = 2
+        cost = 5
+        completion_reward = {
+            
         }
     }
     focus = {
