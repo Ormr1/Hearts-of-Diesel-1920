@@ -1,0 +1,49 @@
+﻿division_template = {
+	name = "District Milita"			# For 1-brigade Military Districts
+
+	division_names_group = SAF_GAR_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+	}
+}
+
+##### OOB #####
+units = {
+	division= {	
+		#name = ""
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 10929
+		division_template = "District Milita"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.4
+
+	}
+	division= {	
+		#name = ""
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 13286
+		division_template = "District Milita"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.4
+
+	}
+	division= {	
+		#name = ""
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 5199
+		division_template = "District Milita"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.4
+
+	}
+}

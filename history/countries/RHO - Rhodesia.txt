@@ -44,4 +44,18 @@ set_popularities = {
 	fenris = 7
 }
 
-#set_cosmetic_tag = SAM_confederacy
+add_opinion_modifier = { 
+	target = BRA
+	modifier = TUR_reliable_trade_partner
+}
+give_guarantee = BRA
+give_military_access = BRA
+	
+BRA={
+	add_opinion_modifier = { 
+		target = RHO
+		modifier = TUR_reliable_trade_partner
+	}
+	give_guarantee = RHO
+	give_military_access = RHO
+}

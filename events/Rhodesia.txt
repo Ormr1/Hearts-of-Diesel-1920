@@ -103,6 +103,7 @@ country_event = { #revolt of the Rhodesian Native Front
 					target = NPU
 					type = annex_everything
 				}
+				load_oob = "RHO_starting_milita"
 			}
 		}
 	}
@@ -142,9 +143,14 @@ country_event = { #Collapse of the FROLIZA
 	immediate = {
 		hidden_effect={
 			ZUN={
+				drop_cosmetic_tag = yes
 				every_core_state = {
 					add_core_of = ZRF
 					add_core_of = ZLF
+				}
+				delete_units = {
+					division_template = "Zambian Republican Infantry"
+					disband = no
 				}
 			}
 			ZRF={
@@ -207,7 +213,6 @@ country_event = { #Collapse of the FROLIZA
 			}
 			ZUN={
 				load_oob = "ZUN_1925"
-				drop_cosmetic_tag = yes
 				set_politics = {
 					ruling_party = communism
 					last_election = "1921.1.1"

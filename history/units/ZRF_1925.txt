@@ -1,0 +1,49 @@
+﻿division_template = {
+	name = "Zambian Republican Infantry"		#ZRF, Infantry Division
+	division_names_group = SPAN_INF_02
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		militia = { x = 1 y = 0 }
+	}
+	is_locked = yes
+}
+
+units = {
+	division= {	
+		name = "1. Zambian Regiment"
+		location = 13306 # Salta
+		division_template = "Zambian Republican Infantry"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.75
+	}
+	division= {	
+		name = "2. Zambian Regiment"
+		location = 13309 # Salta
+		division_template = "Zambian Republican Infantry"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.75
+	}
+	division= {	
+		name = "3. Zambian Regiment"
+		location = 12504 # Salta
+		division_template = "Zambian Republican Infantry"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.75
+	}
+	division= {	
+		name = "4. Zambian Regiment"
+		location = 13310 # Salta
+		division_template = "Zambian Republican Infantry"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.75
+	}
+	division= {	
+		name = "5. Zambian Regiment"
+		location = 13320 # Salta
+		division_template = "Zambian Republican Infantry"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.75
+	}
+}

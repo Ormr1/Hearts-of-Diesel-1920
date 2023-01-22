@@ -8,19 +8,137 @@ units= {
 		task_force = {				
 			name = "Hochseeflotte"
 			location = 241  # Wilhemshaven
+			
+			ship = { name = "Friedrich der Grosse" pride_of_the_fleet = yes definition = battleship start_experience_factor = 0.2 equipment = { ship_hull_heavy_2 = { amount = 1 owner = GER version_name = "Kaiser Class" } } }
+			ship = { name = "König Albert" definition = battleship equipment = { ship_hull_heavy_2 = { amount = 1 owner = GER version_name = "Kaiser Class" } } }
+			ship = { name = "Kaiserin" definition = battleship equipment = { ship_hull_heavy_2 = { amount = 1 owner = GER version_name = "Kaiser Class" } } }
+			ship = { name = "Kaiser" definition = battleship equipment = { ship_hull_heavy_2 = { amount = 1 owner = GER version_name = "Kaiser Class" } } }
+			ship = { name = "Prinzregent Luitpold" definition = battleship equipment = { ship_hull_heavy_2 = { amount = 1 owner = GER version_name = "Kaiser Class" } } }
+			
+			ship = { name = "König" definition = battleship equipment = { ship_hull_heavy_2 = { amount = 1 owner = GER version_name = "Kaiser Class" } } }
+			ship = { name = "Grosser Kurfürst" definition = battleship equipment = { ship_hull_heavy_2 = { amount = 1 owner = GER version_name = "Kaiser Class" } } }
+			ship = { name = "Markgraf" definition = battleship equipment = { ship_hull_heavy_2 = { amount = 1 owner = GER version_name = "Kaiser Class" } } }
+			ship = { name = "Kronprinz" definition = battleship equipment = { ship_hull_heavy_2 = { amount = 1 owner = GER version_name = "Kaiser Class" } } }
+			
+			ship = { name = "Posen" definition = battleship start_experience_factor = 0.2 equipment = { ship_hull_heavy_1 = { amount = 1 owner = GER version_name = "Nassau Class" } } }
+			ship = { name = "Nassau" definition = battleship start_experience_factor = 0.2 equipment = { ship_hull_heavy_1 = { amount = 1 owner = GER version_name = "Nassau Class" } } }
+			ship = { name = "Rheinland" definition = battleship start_experience_factor = 0.2 equipment = { ship_hull_heavy_1 = { amount = 1 owner = GER version_name = "Nassau Class" } } }
+			ship = { name = "Westfalen" definition = battleship start_experience_factor = 0.2 equipment = { ship_hull_heavy_1 = { amount = 1 owner = GER version_name = "Nassau Class" } } }
+			
+			ship = { name = "Ostfriesland" definition = battleship start_experience_factor = 0.2 equipment = { ship_hull_heavy_1 = { amount = 1 owner = GER version_name = "Helgoland Class" } } }
+			ship = { name = "Helgoland" definition = battleship start_experience_factor = 0.2 equipment = { ship_hull_heavy_1 = { amount = 1 owner = GER version_name = "Helgoland Class" } } }
+			ship = { name = "Oldenburg" definition = battleship start_experience_factor = 0.2 equipment = { ship_hull_heavy_1 = { amount = 1 owner = GER version_name = "Helgoland Class" } } }
+			ship = { name = "Thüringen" definition = battleship start_experience_factor = 0.2 equipment = { ship_hull_heavy_1 = { amount = 1 owner = GER version_name = "Helgoland Class" } } }
+			
 			ship = { name = "Deutschland" definition = heavy_cruiser start_experience_factor = 0.3 equipment = { ship_hull_cruiser_panzerschiff = { amount = 1 owner = GER version_name = "Deutschland Class" } } }	
-			ship = { name = "Admiral Scheer" pride_of_the_fleet = yes definition = heavy_cruiser start_experience_factor = 0.3 equipment = { ship_hull_cruiser_panzerschiff = { amount = 1 owner = GER version_name = "Deutschland Class" } } }
+			ship = { name = "Admiral Scheer" definition = heavy_cruiser start_experience_factor = 0.3 equipment = { ship_hull_cruiser_panzerschiff = { amount = 1 owner = GER version_name = "Deutschland Class" } } }
 			ship = { name = "Nürnberg" definition = light_cruiser start_experience_factor = 0.3 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = GER version_name = "Leipzig Class" } } } 		
 			ship = { name = "Leipzig" definition = light_cruiser start_experience_factor = 0.3 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = GER version_name = "Leipzig Class" } } }		
 			ship = { name = "Königsberg" definition = light_cruiser start_experience_factor = 0.3 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = GER version_name = "Königsberg Class" } } }			
 			ship = { name = "Karlsruhe" definition = light_cruiser start_experience_factor = 0.3 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = GER version_name = "Königsberg Class" } } }	
 			ship = { name = "Köln" definition = light_cruiser start_experience_factor = 0.3 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = GER version_name = "Königsberg Class" } } }			
 			ship = { name = "Emden" definition = light_cruiser start_experience_factor = 0.2 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = GER version_name = "Emden Class" } } }
+			
+			ship = { name = "Coln" definition = light_cruiser start_experience_factor = 0.2 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = GER version_name = "Emden Class" } } }
+			ship = { name = "Kolberg" definition = light_cruiser start_experience_factor = 0.2 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = GER version_name = "Emden Class" } } }
+			ship = { name = "Mainz" definition = light_cruiser start_experience_factor = 0.2 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = GER version_name = "Emden Class" } } }
+			ship = { name = "Rostock" definition = light_cruiser start_experience_factor = 0.2 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = GER version_name = "Emden Class" } } }
+			ship = { name = "Stralsund" definition = light_cruiser start_experience_factor = 0.2 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = GER version_name = "Emden Class" } } }
+			ship = { name = "Strassburg" definition = light_cruiser start_experience_factor = 0.2 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = GER version_name = "Emden Class" } } }
+			ship = { name = "Munchen" definition = light_cruiser start_experience_factor = 0.2 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = GER version_name = "Emden Class" } } }
+			ship = { name = "Danzig" definition = light_cruiser start_experience_factor = 0.2 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = GER version_name = "Emden Class" } } }
+			ship = { name = "Frauenlob" definition = light_cruiser start_experience_factor = 0.2 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = GER version_name = "Emden Class" } } }
+			ship = { name = "Yorck" definition = light_cruiser start_experience_factor = 0.2 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = GER version_name = "Emden Class" } } }
+			ship = { name = "Stuttgart" definition = light_cruiser start_experience_factor = 0.2 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = GER version_name = "Emden Class" } } }
+			ship = { name = "Roon" definition = light_cruiser start_experience_factor = 0.2 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = GER version_name = "Emden Class" } } }
 			# 1. Torpedobootflottille
-			ship = { name = "Jaguar" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "Type 24 Class" } } }
-			ship = { name = "Leopard" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "Type 24 Class" } } }
-			ship = { name = "Luchs" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "Type 24 Class" } } }
-			ship = { name = "Tiger" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "Type 24 Class" } } }
+			ship = { name = "V187" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "S138 Class Class" } } }
+			ship = { name = "V188" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "S138 Class Class" } } }
+			ship = { name = "V189" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "S138 Class Class" } } }
+			ship = { name = "V190" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "S138 Class Class" } } }
+			ship = { name = "V191" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "S138 Class Class" } } }
+			ship = { name = "G197" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "S138 Class Class" } } }
+			ship = { name = "G192" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "S138 Class Class" } } }
+			ship = { name = "G193" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "S138 Class Class" } } }
+			ship = { name = "G194" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "S138 Class Class" } } }
+			ship = { name = "G195" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "S138 Class Class" } } }
+			ship = { name = "G196" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "S138 Class Class" } } }
+			ship = { name = "S149" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "S138 Class Class" } } }
+			ship = { name = "S139" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "S138 Class Class" } } }
+			ship = { name = "S140" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "S138 Class Class" } } }
+			ship = { name = "S141" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "S138 Class Class" } } }
+			ship = { name = "S142" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "S138 Class Class" } } }
+			ship = { name = "S143" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "S138 Class Class" } } }
+			ship = { name = "S144" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "S138 Class Class" } } }
+			ship = { name = "S145" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "S138 Class Class" } } }
+			ship = { name = "S146" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "S138 Class Class" } } }
+			ship = { name = "S147" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "S138 Class Class" } } }
+			ship = { name = "S148" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "S138 Class Class" } } }
+			ship = { name = "S167" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "S138 Class Class" } } }
+			ship = { name = "V162" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "S138 Class Class" } } }
+			ship = { name = "V163" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "S138 Class Class" } } }
+			ship = { name = "V164" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "S138 Class Class" } } }
+			ship = { name = "V165" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "S138 Class Class" } } }
+			ship = { name = "V166" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "S138 Class Class" } } }
+			ship = { name = "S168" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "S138 Class Class" } } }
+			ship = { name = "S169" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "S138 Class Class" } } }
+			ship = { name = "S170" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "S138 Class Class" } } }
+			ship = { name = "S172" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "S138 Class Class" } } }
+			ship = { name = "S173" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "S138 Class Class" } } }
+			ship = { name = "G113" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "S138 Class Class" } } }
+			ship = { name = "S115" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "S138 Class Class" } } }
+			ship = { name = "S116" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "S138 Class Class" } } }
+			ship = { name = "S117" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "S138 Class Class" } } }
+			ship = { name = "S118" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "S138 Class Class" } } }
+			ship = { name = "S119" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "S138 Class Class" } } }
+			ship = { name = "G108" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "S138 Class Class" } } }
+			ship = { name = "G109" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "S138 Class Class" } } }
+			ship = { name = "G110" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "S138 Class Class" } } }
+			ship = { name = "G111" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "S138 Class Class" } } }
+			ship = { name = "G112" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "S138 Class Class" } } }
+			ship = { name = "G12" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "S138 Class Class" } } }
+			ship = { name = "V2" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "S138 Class Class" } } }
+			ship = { name = "V3" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "S138 Class Class" } } }
+			ship = { name = "V4" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "S138 Class Class" } } }
+			ship = { name = "V5" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "S138 Class Class" } } }
+			ship = { name = "G7" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "S138 Class Class" } } }
+			ship = { name = "G8" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "S138 Class Class" } } }
+			ship = { name = "G9" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "S138 Class Class" } } }
+			ship = { name = "G10" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "S138 Class Class" } } }
+			ship = { name = "G11" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "S138 Class Class" } } }
+			ship = { name = "V161" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "S138 Class Class" } } }
+			ship = { name = "V151" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "S138 Class Class" } } }
+			ship = { name = "V152" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "S138 Class Class" } } }
+			ship = { name = "V153" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "S138 Class Class" } } }
+			ship = { name = "V154" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "S138 Class Class" } } }
+			ship = { name = "V155" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "S138 Class Class" } } }
+			ship = { name = "V156" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "S138 Class Class" } } }
+			ship = { name = "V157" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "S138 Class Class" } } }
+			ship = { name = "V158" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "S138 Class Class" } } }
+			ship = { name = "V159" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "S138 Class Class" } } }
+			ship = { name = "V160" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "S138 Class Class" } } }
+			ship = { name = "S24" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "S138 Class Class" } } }
+			ship = { name = "S14" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "S138 Class Class" } } }
+			ship = { name = "S15" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "S138 Class Class" } } }
+			ship = { name = "S16" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "S138 Class Class" } } }
+			ship = { name = "S17" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "S138 Class Class" } } }
+			ship = { name = "S18" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "S138 Class Class" } } }
+			ship = { name = "S19" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "S138 Class Class" } } }
+			ship = { name = "S20" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "S138 Class Class" } } }
+			ship = { name = "S21" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "S138 Class Class" } } }
+			ship = { name = "S22" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "S138 Class Class" } } }
+			ship = { name = "S23" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "S138 Class Class" } } }
+			ship = { name = "G175" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "S138 Class Class" } } }
+			ship = { name = "S121" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "S138 Class Class" } } }
+			ship = { name = "S126" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "S138 Class Class" } } }
+			ship = { name = "S128" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "S138 Class Class" } } }
+			ship = { name = "S130" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "S138 Class Class" } } }
+			ship = { name = "S131" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "S138 Class Class" } } }
+			ship = { name = "S120" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "S138 Class Class" } } }
+			ship = { name = "G134" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "S138 Class Class" } } }
+			ship = { name = "S176" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "S138 Class Class" } } }
+			ship = { name = "S177" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "S138 Class Class" } } }
+			ship = { name = "S179" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "S138 Class Class" } } }
 		}
 		task_force = {
 			name = "Ostseeflotte"
@@ -28,15 +146,15 @@ units= {
 			ship = { name = "Schleswig-Holstein" definition = battleship start_experience_factor = 0.2 equipment = { ship_hull_pre_dreadnought = { amount = 1 owner = GER version_name = "Deutschland Class" } } }
 			ship = { name = "Schlesien" definition = battleship start_experience_factor = 0.2 equipment = { ship_hull_pre_dreadnought = { amount = 1 owner = GER version_name = "Deutschland Class" } } }			
 			# 2. Torpedobootflottille
-			ship = { name = "Möwe" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "Type 24 Class" } } }
-			ship = { name = "Albatros" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "Type 24 Class" } } }
-			ship = { name = "Seeadler" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "Type 24 Class" } } }
-			ship = { name = "Greif" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "Type 24 Class" } } }
+			ship = { name = "Möwe" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "S138 Class Class" } } }
+			ship = { name = "Albatros" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "S138 Class Class" } } }
+			ship = { name = "Seeadler" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "S138 Class Class" } } }
+			ship = { name = "Greif" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "S138 Class Class" } } }
 			# 3. Torpedobootflottille
-			ship = { name = "Falke" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "Type 24 Class" } } }
-			ship = { name = "Kondor" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "Type 24 Class" } } }
-			ship = { name = "Wolf" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "Type 24 Class" } } }
-			ship = { name = "Iltis" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "Type 24 Class" } } }
+			ship = { name = "Falke" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "S138 Class Class" } } }
+			ship = { name = "Kondor" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "S138 Class Class" } } }
+			ship = { name = "Wolf" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "S138 Class Class" } } }
+			ship = { name = "Iltis" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "S138 Class Class" } } }
 		}
 		task_force = {
 			name = "Marineschule Kiel"
@@ -52,28 +170,126 @@ units= {
 			name = "I. U-Boots Flottille Weddigen"
 			location = 6389  # Kiel
 			# 1. Unterseebootsflottille
-			ship = { name = "U-7" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GER version_name = "Type II Class" } } }
-			ship = { name = "U-8" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GER version_name = "Type II Class" } } }
-			ship = { name = "U-9" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GER version_name = "Type II Class" } } }
-			ship = { name = "U-10" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GER version_name = "Type II Class" } } }
+			ship = { name = "U-7" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GER version_name = "Type U-5 Class" } } }
+			ship = { name = "U-8" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GER version_name = "Type U-5 Class" } } }
+			ship = { name = "U-9" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GER version_name = "Type U-5 Class" } } }
+			ship = { name = "U-10" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GER version_name = "Type U-5 Class" } } }
 			# 4. Unterseebootsflottille
-			ship = { name = "U-11" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GER version_name = "Type II Class" } } }
-			ship = { name = "U-12" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GER version_name = "Type II Class" } } }
-			ship = { name = "U-13" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GER version_name = "Type II Class" } } }
-			ship = { name = "U-17" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GER version_name = "Type II Class" } } }
+			ship = { name = "U-11" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GER version_name = "Type U-5 Class" } } }
+			ship = { name = "U-12" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GER version_name = "Type U-5 Class" } } }
+			ship = { name = "U-13" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GER version_name = "Type U-5 Class" } } }
+			ship = { name = "U-17" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GER version_name = "Type U-5 Class" } } }
 		}
 		task_force = {
 			name = "II. U-Boots-Ausbildungs-Gruppe"
 			location = 241  # Wilhemshaven
 			# 2. Unterseebootsflottille
-			ship = { name = "U-1" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GER version_name = "Type II Class" } } }
-			ship = { name = "U-2" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GER version_name = "Type II Class" } } }
-			ship = { name = "U-3" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GER version_name = "Type II Class" } } }
+			ship = { name = "U-1" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GER version_name = "Type U-5 Class" } } }
+			ship = { name = "U-2" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GER version_name = "Type U-5 Class" } } }
+			ship = { name = "U-3" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GER version_name = "Type U-5 Class" } } }
 			# 3. Unterseebootsflottille
-			ship = { name = "U-4" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GER version_name = "Type II Class" } } }
-			ship = { name = "U-5" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GER version_name = "Type II Class" } } }
-			ship = { name = "U-6" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GER version_name = "Type II Class" } } }
+			ship = { name = "U-4" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GER version_name = "Type U-5 Class" } } }
+			ship = { name = "U-5" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GER version_name = "Type U-5 Class" } } }
+			ship = { name = "U-6" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GER version_name = "Type U-5 Class" } } }
 		}
+	}
+	fleet = {
+		name = "Koninklijke Marine"			
+		naval_base = 3314  # Amsterdam
+		task_force = {				
+			name = "Koninklijke Vloot"			
+			location = 3314  # Amsterdam
+			ship = { name = "HrMs Hertog Hendrik" definition = heavy_cruiser equipment = { ship_hull_cruiser_coastal_defense_ship = { amount = 1 owner = HOL version_name = "Hertog Hendrik Class" } } }		
+			ship = { name = "HrMs Jacob van Heemskerck" definition = heavy_cruiser equipment = { ship_hull_cruiser_coastal_defense_ship = { amount = 1 owner = HOL version_name = "Soerabaja Class" } } }		
+			ship = { name = "HrMs Van Galen" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = HOL version_name = "Van Galen Class" } } }		
+		}				
+		task_force = {				
+			name = "Koninklijke Onderzeeboot Smaldeel"			
+			location = 3314  # Amsterdam
+			ship = { name = "HrMs O-8" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = HOL version_name = "K-III Class" } } }
+			ship = { ordered_name = 9 definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = HOL version_name = "O9 Class" } } }
+			ship = { ordered_name = 10 definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = HOL version_name = "O9 Class" } } }
+			ship = { ordered_name = 11 definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = HOL version_name = "O9 Class" } } }
+			ship = { ordered_name = 12 definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = HOL version_name = "O9 Class" } } }
+			ship = { ordered_name = 13 definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = HOL version_name = "O9 Class" } } }
+			ship = { ordered_name = 14 definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = HOL version_name = "O9 Class" } } }
+			ship = { ordered_name = 15 definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = HOL version_name = "O9 Class" } } }
+		}				
+	}
+	fleet = {
+		name = "Adratic Kriegsmarine"			
+		naval_base = 6626  # Trieste
+		task_force = {				
+			name = "Adratic Kriegsmarine"			
+			location = 6626  # Trieste
+			ship = { name = "Ersatz Monarch" definition = battleship start_experience_factor = 0.2 equipment = { ship_hull_heavy_2 = { amount = 1 owner = GER version_name = "Kaiser Class" } } }
+			
+			ship = { name = "Viribus Unitis" definition = battleship start_experience_factor = 0.2 equipment = { ship_hull_heavy_1 = { amount = 1 owner = GER version_name = "Nassau Class" } } }
+			ship = { name = "Tegetthoff" definition = battleship start_experience_factor = 0.2 equipment = { ship_hull_heavy_1 = { amount = 1 owner = GER version_name = "Nassau Class" } } }
+			ship = { name = "Prinz Eugen" definition = battleship start_experience_factor = 0.2 equipment = { ship_hull_heavy_1 = { amount = 1 owner = GER version_name = "Nassau Class" } } }
+			ship = { name = "Szent István" definition = battleship start_experience_factor = 0.2 equipment = { ship_hull_heavy_1 = { amount = 1 owner = GER version_name = "Nassau Class" } } }
+			
+			ship = { name = "Csikos" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "S138 Class Class" } } }
+			ship = { name = "Dinara" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "S138 Class Class" } } }
+			ship = { name = "Huszar" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "S138 Class Class" } } }
+			ship = { name = "Pandur" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "S138 Class Class" } } }
+			ship = { name = "Reka" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "S138 Class Class" } } }
+			ship = { name = "Scharfschutze" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "S138 Class Class" } } }
+			ship = { name = "Streiter" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "S138 Class Class" } } }
+			ship = { name = "Turul" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "S138 Class Class" } } }
+			ship = { name = "Ulan" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "S138 Class Class" } } }
+			ship = { name = "Uskoke" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "S138 Class Class" } } }
+			ship = { name = "Velebit" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "S138 Class Class" } } }
+			ship = { name = "Warasdiner" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "S138 Class Class" } } }
+			ship = { name = "Wildfang" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "S138 Class Class" } } }
+			ship = { name = "Balaton" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "S138 Class Class" } } }
+			ship = { name = "Csepel" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "S138 Class Class" } } }
+			ship = { name = "Lika" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "S138 Class Class" } } }
+			ship = { name = "Orjen" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "S138 Class Class" } } }
+			ship = { name = "Tatra" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "S138 Class Class" } } }
+			ship = { name = "Triglav" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "S138 Class Class" } } }
+			ship = { name = "Dukla" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "S138 Class Class" } } }
+			ship = { name = "Uzsok" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "S138 Class Class" } } }
+			ship = { name = "Python" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "S138 Class Class" } } }
+			ship = { name = "Kigyo" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "S138 Class Class" } } }
+			ship = { name = "Boa" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "S138 Class Class" } } }
+			ship = { name = "Cobra" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "S138 Class Class" } } }
+		task_force = {
+			name = "III. U-Boots-Ausbildungs-Gruppe"
+			location = 6626  # Trieste
+			
+			ship = { name = "SM U-1" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GER version_name = "Type U-5 Class" } } }
+			ship = { name = "SM U-2" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GER version_name = "Type U-5 Class" } } }
+			ship = { name = "SM U-3" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GER version_name = "Type U-5 Class" } } }
+			ship = { name = "SM U-4" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GER version_name = "Type U-5 Class" } } }
+			ship = { name = "SM U-5" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GER version_name = "Type U-5 Class" } } }
+			ship = { name = "SM U-6" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GER version_name = "Type U-5 Class" } } }
+			ship = { name = "SM U-7" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GER version_name = "Type U-5 Class" } } }
+			ship = { name = "SM U-8" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GER version_name = "Type U-5 Class" } } }
+			ship = { name = "SM U-9" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GER version_name = "Type U-5 Class" } } }
+			ship = { name = "SM U-10" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GER version_name = "Type U-5 Class" } } }
+			ship = { name = "SM U-11" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GER version_name = "Type U-5 Class" } } }
+			ship = { name = "SM U-12" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GER version_name = "Type U-5 Class" } } }
+			ship = { name = "SM U-13" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GER version_name = "Type U-5 Class" } } }
+			ship = { name = "SM U-14" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GER version_name = "Type U-5 Class" } } }
+			ship = { name = "SM U-15" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GER version_name = "Type U-5 Class" } } }
+			ship = { name = "SM U-16" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GER version_name = "Type U-5 Class" } } }
+			ship = { name = "SM U-17" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GER version_name = "Type U-5 Class" } } }
+			ship = { name = "SM U-20" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GER version_name = "Type U-5 Class" } } }
+			ship = { name = "SM U-21" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GER version_name = "Type U-5 Class" } } }
+			ship = { name = "SM U-22" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GER version_name = "Type U-5 Class" } } }
+			ship = { name = "SM U-23" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GER version_name = "Type U-5 Class" } } }
+			ship = { name = "SM U-27" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GER version_name = "Type U-5 Class" } } }
+			ship = { name = "SM U-28" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GER version_name = "Type U-5 Class" } } }
+			ship = { name = "SM U-29" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GER version_name = "Type U-5 Class" } } }
+			ship = { name = "SM U-30" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GER version_name = "Type U-5 Class" } } }
+			ship = { name = "SM U-31" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GER version_name = "Type U-5 Class" } } }
+			ship = { name = "SM U-32" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GER version_name = "Type U-5 Class" } } }
+			ship = { name = "SM U-40" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GER version_name = "Type U-5 Class" } } }
+			ship = { name = "SM U-41" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GER version_name = "Type U-5 Class" } } }
+			ship = { name = "SM U-43" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GER version_name = "Type U-5 Class" } } }
+			ship = { name = "SM U-47" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GER version_name = "Type U-5 Class" } } }
+		}								
 	}
 }
 
@@ -127,27 +343,6 @@ instant_effect = {
 		progress = 0.45
 		amount = 2
 	}
-	# DD: 1934 class (x4) ("Z1" "Z2" "Z3" "Z4")
-	add_equipment_production = {
-		equipment = {
-			type = ship_hull_light_2
-			creator = "GER"
-			version_name = "Zerstörer 1934 Class"
-		}
-		requested_factories = 1
-		progress = 0.75
-		amount = 2
-	}
-	add_equipment_production = {
-		equipment = {
-			type = ship_hull_light_2
-			creator = "GER"
-			version_name = "Zerstörer 1934 Class"
-		}
-		requested_factories = 1
-		progress = 0.65
-		amount = 2
-	}
 	
 	# CA: "Graf Spee"
 	add_equipment_production = {
@@ -170,61 +365,6 @@ instant_effect = {
 		requested_factories = 1
 		progress = 0.25
 		amount = 1
-	}
-	# Scharnhorst
-	add_equipment_production = {
-		equipment = {
-			type = ship_hull_heavy_2
-			creator = "GER"
-			version_name = "Scharnhorst Class"
-		}
-		requested_factories = 1
-		progress = 0.35
-		amount = 1
-	}
-	# Gneisenau
-	add_equipment_production = {
-		equipment = {
-			type = ship_hull_heavy_2
-			creator = "GER"
-			version_name = "Scharnhorst Class"
-		}
-		requested_factories = 1
-		progress = 0.25
-		amount = 1
-	}
-	# DD: 1934A class (x12) ("Z5"-"Z16")
-	add_equipment_production = {
-		equipment = {
-			type = ship_hull_light_2
-			creator = "GER"
-			version_name = "Zerstörer 1934A Class"
-		}
-		requested_factories = 1
-		progress = 0.25
-		amount = 4
-	}
-	# DD: 1934A class (x12) ("Z5"-"Z16")
-	add_equipment_production = {
-		equipment = {
-			type = ship_hull_light_2
-			creator = "GER"
-			version_name = "Zerstörer 1934A Class"
-		}
-		requested_factories = 1
-		progress = 0.25
-		amount = 4
-	}
-	# DD: 1934A class (x12) ("Z5"-"Z16")
-	add_equipment_production = {
-		equipment = {
-			type = ship_hull_light_2
-			creator = "GER"
-			version_name = "Zerstörer 1934A Class"
-		}
-		requested_factories = 1
-		progress = 0.25
-		amount = 4
 	}
 }
 
