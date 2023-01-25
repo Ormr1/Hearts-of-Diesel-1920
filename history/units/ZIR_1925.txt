@@ -1,0 +1,78 @@
+﻿division_template = {
+	name = "United Corps"			# For 1-brigade Military Districts
+
+	division_names_group = SAF_GAR_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+	}
+}
+division_template = {
+	name = "Irregular Brigade"			# For 1-brigade Military Districts
+
+	division_names_group = SAF_GAR_01
+
+	regiments = {
+		militia = { x = 0 y = 0 }
+		militia = { x = 0 y = 1 }
+	}
+}
+
+##### OOB #####
+units = {
+	division= {	
+		name = "Mixed National Guardians"
+		# division_name = {    # New syntax for compatibility with name lists
+			# is_name_ordered = yes
+			# name_order = 1
+		# }
+		location = 7842
+		division_template = "United Corps"
+
+	}
+	division= {	
+		name = "Liberal Guard"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 13298
+		division_template = "United Corps"
+
+	}
+	division= {	
+		#name = 
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 13322
+		division_template = "Irregular Brigade"
+
+	}
+	division= {	
+		#name = 
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 13298
+		division_template = "Irregular Brigade"
+
+	}
+	division= {	
+		#name = 
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 13297
+		division_template = "Irregular Brigade"
+
+	}
+
+
+	##### No Naval OOB #####
+}

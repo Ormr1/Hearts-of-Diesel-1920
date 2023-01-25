@@ -46,4 +46,28 @@ units = {
 		start_equipment_factor = 0.4
 
 	}
+	division= {	
+		#name = ""
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 13321
+		division_template = "District Milita"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.4
+
+	}
+	division= {	
+		#name = ""
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 13296
+		division_template = "District Milita"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.4
+
+	}
 }

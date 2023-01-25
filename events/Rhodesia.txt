@@ -17,10 +17,12 @@ country_event = { #revolt of the Rhodesian Native Front
 	trigger={
 		date > 1925.01.08
 		tag = RHO
+		NOT={has_global_flag = RHO_bush_war_happened}
 	}
 	fire_only_once = yes
 	immediate = {
 		hidden_effect={
+			set_global_flag = RHO_bush_war_happened
 			ZIM={
 				every_core_state = {
 					add_core_of = ZIN
@@ -341,6 +343,10 @@ country_event = { #Collapse of the FROLINY
 			}
 			NPU={
 				load_oob = "NPU_1925"
+				delete_units = {
+					division_template = "North Nyasaland Infantry"
+					disband = no
+				}
 				drop_cosmetic_tag = yes
 				set_politics = {
 					ruling_party = communism

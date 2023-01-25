@@ -17,6 +17,8 @@
 		artillery = { x = 0 y = 1 }
 		mot_recon = {x = 0 y = 2 }
 	}
+	
+	is_locked = yes
 }
 division_template = {
 	name = "District Brigade"			# For 1-brigade Military Districts

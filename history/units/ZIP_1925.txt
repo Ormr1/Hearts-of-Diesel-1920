@@ -47,21 +47,21 @@ units = {
 	}
 	division= {	
 		name = "6. ZIPRA Infantry"
-		location = 12364 # Salta
+		location = 13295 # Salta
 		division_template = "People's Revolutionary Division"
 		start_experience_factor = 0.0
 		start_equipment_factor = 0.75
 	}
 	division= {	
 		name = "7. ZIPRA Infantry"
-		location = 12364 # Salta
+		location = 2151 # Salta
 		division_template = "People's Revolutionary Division"
 		start_experience_factor = 0.0
 		start_equipment_factor = 0.75
 	}
 	division= {	
 		name = "8. ZIPRA Infantry"
-		location = 12364 # Salta
+		location = 13293 # Salta
 		division_template = "People's Revolutionary Division"
 		start_experience_factor = 0.0
 		start_equipment_factor = 0.75

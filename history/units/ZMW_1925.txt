@@ -1,0 +1,68 @@
+﻿division_template = {
+	name = "Northern Rhodesian Brigade"			# For 1-brigade Military Districts
+
+	division_names_group = SAF_GAR_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+	}
+}
+
+##### OOB #####
+units = {
+	division= {	
+		#name = 
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 5199
+		division_template = "Northern Rhodesian Brigade"
+
+	}
+	division= {	
+		#name = 
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 5199
+		division_template = "Northern Rhodesian Brigade"
+
+	}
+	division= {	
+		#name = 
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 13302
+		division_template = "Northern Rhodesian Brigade"
+
+	}
+	division= {	
+		#name = 
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 13303
+		division_template = "Northern Rhodesian Brigade"
+
+	}
+	division= {	
+		#name = 
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 7872
+		division_template = "Northern Rhodesian Brigade"
+
+	}
+
+
+	##### No Naval OOB #####
+}
