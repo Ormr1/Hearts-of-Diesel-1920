@@ -148,3 +148,11 @@ murder_trotsky_attack = {
 	icon = "GFX_phase_murder_trotsky_small"
 	picture = "GFX_phase_murder_trotsky"
 }
+
+murder_carnavon_attack = {
+	name = murder_carnavon_attack
+	desc = murder_carnavon_attack_desc
+	outcome = murder_carnavon_attack_outcome
+	icon = "GFX_phase_targeted_sabotage_plant_explosives_small"
+	picture = "GFX_phase_targeted_sabotage_plant_explosives"
+}

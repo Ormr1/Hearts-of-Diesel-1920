@@ -333,3 +333,24 @@ country_event = {#economic aid from fenris
 		}
 	}
 }
+country_event = {#powderkeg of africa
+	id = fenris.19
+	title = fenris.19.t
+	desc = fenris.19.d
+	picture = GFX_report_event_finnish_letter
+	
+	is_triggered_only = yes
+	
+	option = {#gain supporters in the rhodesian government
+		name = fenris.19.a
+		
+	}
+	option = {#embed ourselves in the SRN
+		name = fenris.19.b
+		
+	}
+	option = {#too chaotic, even for us
+		name = fenris.19.c
+		
+	}
+}

@@ -1,6 +1,6 @@
-RGS_help_paraguay = {
+FEN_help_paraguay = {
 	allowed = {
-		tag = RGS
+		tag = FEN
 	}
 	enable = {
 		country_exists = PAF

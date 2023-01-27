@@ -178,15 +178,7 @@ plan_bomb_near_carnavon = { ### 1/25
 		}
 	}
 	phases = { 
-		infiltrate_military_bribe = { base = 40 }
-		infiltrate_military_seduction = { base = 20 }
-		infiltrate_military_ideological_supporter = {
-			base = 40
-			modifier = {
-				FROM = { has_government = ROOT }
-				factor = 0
-			}
-		}
+		murder_carnavon_attack = { base = 100 }
 	}
 	phases = { 
 		exfiltration_border = { base = 40 }

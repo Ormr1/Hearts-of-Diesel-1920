@@ -1,0 +1,138 @@
+### search_filters = {FOCUS_FILTER_POLITICAL}
+### search_filters = {FOCUS_FILTER_RESEARCH}
+### search_filters = {FOCUS_FILTER_INDUSTRY}
+### search_filters = {FOCUS_FILTER_STABILITY}
+### search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+### search_filters = {FOCUS_FILTER_MANPOWER}
+### search_filters = {FOCUS_FILTER_ANNEXATION}
+
+focus_tree = {
+    id=togawa_focus
+
+	country = {
+        factor = 0
+        modifier = {
+            add = 10
+            tag = JAP 
+        }
+        modifier = {
+            add = 10
+            original_tag = JAP
+        }
+    }
+    continuous_focus_position = { x = 0 y = 5000 }
+    default = no
+
+	### political
+	focus = {
+		id = JAP_1920_election
+		icon = placeholder
+		x = 0
+		y = 0
+		cost = 5
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	focus = {
+		id = JAP_rikken_seiyukai_victory
+		icon = placeholder
+		relative_position_id = JAP_1920_election
+		prerequisite = {
+			focus = JAP_1920_election
+		}
+		x = 0
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	focus = {
+		id = JAP_the_prince_regent
+		icon = placeholder
+		relative_position_id = JAP_1920_election
+		prerequisite = {
+			focus = JAP_1920_election
+		}
+		x = 2
+		y = 2
+		cost = 5
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	focus = {
+		id = JAP_1924_election
+		icon = placeholder
+		x = 0
+		y = 3
+		cost = 5
+		available = {
+			date > 1924.1.1
+		}
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	focus = {
+		id = JAP_1st_coalition_government
+		icon = placeholder
+		relative_position_id = JAP_1924_election
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = JAP_1924_election
+		}
+		cost = 5
+		ai_will_do = {
+			factor = 5
+		}
+	}
+
+
+	focus = {
+		id = JAP_pass_general_election_law
+		icon = placeholder
+		relative_position_id = JAP_1st_coalition_government
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = JAP_1st_coalition_government
+		}
+		cost = 5
+		ai_will_do = {
+			factor = 5
+		}
+	}
+
+	focus = {
+		id = JAP_peace_preservation_law
+		icon = placeholder
+		relative_position_id = JAP_pass_general_election_law
+		x = 0
+		y = 1
+		cost = 8
+		ai_will_do = {
+			factor = 5
+		}
+		prerequisite = {
+			focus = JAP_pass_general_election_law
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = JAP_korean_management
+		icon = placeholder
+		x = 5
+		y = 0
+		cost = 5
+		ai_will_do = {
+			factor = 5
+		}
+	}
+
+}

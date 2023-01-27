@@ -1186,13 +1186,19 @@ focus_tree = {
 
 		available={
 			RHO={
-				always = no
+				OR={
+					always = no
+					has_global_flag = RHO_bush_war_happened
+				}
 			}
 			NOT={has_country_flag = FEN_laying_low}
 		}
 
 		completion_reward = {
 			#unlocks rhodeisan decisions
+			country_event={
+				id = fenris.19
+			}
 		}
 	}
 	focus = {

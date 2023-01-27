@@ -206,3 +206,6 @@
  FEN_pull_paraguay_volunteers:0 "Pull Volunteers from Paraguay"
  FEN_lay_low:0 "Lay Low"
  FEN_lay_low_desc:0 "If our suspicion has risen to high we can attempt to reset it by breaking off all external operations for a period of time."
+ murder_carnavon_attack: "Plant the Bomb"
+ murder_carnavon_attack_desc: "Our Agents will discretly plant a bomb close to Lord Carnarvon and then disguse it as acendental gas leak"
+ murder_carnavon_attack_outcome: ""

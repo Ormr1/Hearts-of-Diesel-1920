@@ -3,7 +3,6 @@
 ###########################
 
 add_namespace = SOV_civil_war
-
 add_namespace = SOV_peoples_say_in_the_economy
 
 # Rasputin marches on St Petersburg
@@ -320,8 +319,18 @@ country_event = {
 			UKR={#Inpendance revolt
 				transfer_state = 94
 				transfer_state = 96
+				if={
+					limit={SOV={owns_state = 886}}
+					transfer_state = 886
+					add_state_core = 886
+				}
+				if={
+					limit={SOV={owns_state = 97}}
+					transfer_state = 97
+					add_state_core = 97
+				}
 				
-				load_oob = "RDM_RCW"
+				load_oob = "UKR_RCW"
 				# set_cosmetic_tag = ZIM_FROLIZI
 				# set_politics = {
 					# ruling_party = communism
@@ -362,6 +371,21 @@ country_event = {
 				add_state_core = 189
 				transfer_state = 188
 				add_state_core = 188
+				if={
+					limit={SOV={owns_state = 784}}
+					transfer_state = 784
+					add_state_core = 784
+				}
+				if={
+					limit={SOV={owns_state = 814}}
+					transfer_state = 814
+					add_state_core = 814
+				}
+				if={
+					limit={SOV={owns_state = 884}}
+					transfer_state = 884
+					add_state_core = 884
+				}
 				
 				load_oob = "RLL_RCW"
 				country_event={id=SOV_civil_war.7 days = 37}
@@ -636,9 +660,8 @@ country_event = {#FER collapses
 			}
 		}
 		FER={#SR not allined to Fenris
-			
+			release = ALT
 		}
-		release = ALT
 	}
 	option = {#
 		name = SOV_civil_war.8.a

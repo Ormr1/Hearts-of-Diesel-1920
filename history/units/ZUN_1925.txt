@@ -1,0 +1,23 @@
+﻿units = {
+	division= {	
+		name = "7. ANC Infantry"
+		location = 13328 # Salta
+		division_template = "Zambian National Volunteers"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.75
+	}
+	division= {	
+		name = "8. ANC Infantry"
+		location = 13327 # Salta
+		division_template = "Zambian National Volunteers"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.75
+	}
+	division= {	
+		name = "9. ANC Infantry"
+		location = 13311 # Salta
+		division_template = "Zambian National Volunteers"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.75
+	}
+}

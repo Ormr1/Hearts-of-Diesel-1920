@@ -1,0 +1,84 @@
+
+FEN_build_intel_network_in_FAC_strat = {
+	allowed = {
+		tag = FEN
+	}
+	
+	enable = {
+		tag = FEN
+		has_completed_focus = FEN_striking_tesla
+	}
+	
+	abort_when_not_enabled = yes
+		
+	ai_strategy = {
+		type = operative_mission
+		mission = build_intel_network
+		value = 1000
+		mission_target = FAC
+	}
+}
+
+FEN_map_factory_routes_strat = {
+	allowed = {
+		tag = FEN
+	}
+	
+	enable = {
+		tag = FEN
+		has_country_flag = FEN_factory_first_stage
+		NOT = { has_country_flag = FEN_FAC_map_obtained }
+	}
+	
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+		type = operative_operation
+		operation = map_factory_routes
+		value = 1200
+		operation_target = FAC
+	}
+}
+
+FEN_find_carnavon_in_EGY_strat = {
+	allowed = {
+		tag = FEN
+	}
+	
+	enable = {
+		tag = FEN
+		has_country_flag = FEN_rogue_carnavon
+		NOT = { has_country_flag = FEN_carnavon_dead }
+	}
+	
+	abort_when_not_enabled = yes
+		
+	ai_strategy = {
+		type = operative_mission
+		mission = build_intel_network
+		value = 1000
+		mission_target = EGY
+	}
+}
+
+FEN_plan_bomb_near_carnavon_strat = {
+	allowed = {
+		tag = FEN
+	}
+	
+	enable = {
+		tag = FEN
+		has_country_flag = FEN_discovered_carnavon_location
+		NOT = { has_country_flag = FEN_carnavon_dead }
+	}
+	
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+		type = operative_operation
+		operation = plan_bomb_near_carnavon
+		value = 1200
+		operation_target = EGY
+	}
+}
+

@@ -85,6 +85,7 @@ country_event = { #Workers of rio grande do sul revolt
 	trigger={
 		date > 1921.01.08
 		tag = LAP
+		RGS={exists = no}
 	}
 	fire_only_once = yes
 	immediate = {
