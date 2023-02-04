@@ -50,6 +50,40 @@ country = {
 		}
 	}
 
+	POL_weak_executive = {
+		picture = placeholder
+		allowed = {
+			original_tag = POL
+			always = no
+		}
+		allowed_civil_war = {
+			always = yes
+		}
+		removal_cost = 0
+		modifier = {
+			drift_defence_factor = -0.75
+			war_support_factor = -0.05
+			political_power_factor = -0.05
+		}
+	}
+
+	POL_strong_sejm = {
+		picture = placeholder
+		allowed = {
+			original_tag = POL
+			always = no
+		}
+		allowed_civil_war = {
+			always = yes
+		}
+		removal_cost = 0
+		modifier = {
+			democratic_drift = 0.02
+			stability_factor = 0.05
+			conscription_factor = 0.02
+		}
+	}
+
 	POL_kosciuszkos_legacy = {
 		picture = placeholder
 		allowed = {
@@ -205,6 +239,91 @@ country = {
 			stability_factor = 0.15
 			monthly_population = 0.15
 			production_speed_industrial_complex_factor = 0.15
+		}
+	}
+
+	POL_agricultural_price_stabilization_idea = {
+		picture = placeholder
+		allowed = {
+			original_tag = POL
+			always = no
+		}
+		allowed_civil_war = {
+			always = yes
+		}
+		removal_cost = 0
+		modifier = {
+			consumer_goods_factor = -0.10
+			production_speed_buildings_factor = 0.05
+			production_speed_industrial_complex_factor = 0.05
+		}
+	}
+
+	POL_technocracy_1 = {
+		picture = placeholder
+		allowed = {
+			original_tag = POL
+			always = no
+		}
+		allowed_civil_war = {
+			always = yes
+		}
+		removal_cost = 0
+		modifier = {
+			consumer_goods_factor = 0.02
+			production_speed_buildings_factor = -0.02
+			research_speed_factor = 0.02
+		}
+	}
+
+	POL_technocracy_2 = {
+		picture = placeholder
+		allowed = {
+			original_tag = POL
+			always = no
+		}
+		allowed_civil_war = {
+			always = yes
+		}
+		removal_cost = 0
+		modifier = {
+			consumer_goods_factor = 0.04
+			production_speed_buildings_factor = -0.04
+			research_speed_factor = 0.04
+		}
+	}
+
+	POL_technocracy_3 = {
+		picture = placeholder
+		allowed = {
+			original_tag = POL
+			always = no
+		}
+		allowed_civil_war = {
+			always = yes
+		}
+		removal_cost = 0
+		modifier = {
+			consumer_goods_factor = 0.06
+			production_speed_buildings_factor = -0.06
+			research_speed_factor = 0.06
+		}
+	}
+
+	POL_foreign_student_program_idea = {
+		picture = placeholder
+		allowed = {
+			original_tag = POL
+			always = no
+		}
+		allowed_civil_war = {
+			always = yes
+		}
+		removal_cost = 0
+		modifier = {
+			weekly_manpower = 200
+			civilian_intel_factor = 0.25
+			neutrality_drift = -0.01
 		}
 	}
 

@@ -63,7 +63,7 @@ focus_tree = {
         }
     }
     focus = {
-        id = POL_hold_new_elections
+        id = POL_1924_elections
         icon = placeholder
         available = {
             NOT = {
@@ -96,8 +96,8 @@ focus_tree = {
     focus = {
         id = POL_marxists_win
         icon = placeholder
-        prerequisite = { focus = POL_hold_new_elections }
-        relative_position_id = POL_hold_new_elections
+        prerequisite = { focus = POL_1924_elections }
+        relative_position_id = POL_1924_elections
         x = -16
         y = 1
         cost = 0
@@ -108,8 +108,8 @@ focus_tree = {
     focus = {
         id = POL_social_democrats_win
         icon = placeholder
-        prerequisite = { focus = POL_hold_new_elections }
-        relative_position_id = POL_hold_new_elections
+        prerequisite = { focus = POL_1924_elections }
+        relative_position_id = POL_1924_elections
         available = { always = no }
         x = -8
         y = 1
@@ -131,7 +131,7 @@ focus_tree = {
         }
     }
     focus = {
-        id = POL_hold_parliamentary_elections
+        id = POL_strengthen_the_sejm
         icon = placeholder
         prerequisite = { focus = POL_draft_a_democratic_constitution }
         relative_position_id = POL_draft_a_democratic_constitution
@@ -139,7 +139,7 @@ focus_tree = {
         y = 1
         cost = 10
         completion_reward = {
-            # Create Polanian Parliament + Decisions
+            add_ideas = POL_strong_sejm
         }
     }
     focus = {
@@ -236,7 +236,21 @@ focus_tree = {
         y = 1
         cost = 10
         completion_reward = {
-
+            random_owned_controlled_state = {
+                add_extra_state_shared_building_slots = 1
+            }
+            random_owned_controlled_state = {
+                add_extra_state_shared_building_slots = 1
+            }
+            random_owned_controlled_state = {
+                add_extra_state_shared_building_slots = 1
+            }
+            random_owned_controlled_state = {
+                add_extra_state_shared_building_slots = 1
+            }
+            random_owned_controlled_state = {
+                add_extra_state_shared_building_slots = 1
+            }
         }
     }
     focus = {
@@ -248,7 +262,7 @@ focus_tree = {
         y = 1
         cost = 10
         completion_reward = {
-            
+            add_ideas = limited_exports
         }
     }
     focus = {
@@ -260,7 +274,10 @@ focus_tree = {
         y = 1
         cost = 10
         completion_reward = {
-
+            add_timed_idea = {
+                idea = POL_agricultural_price_stabilization_idea
+                days = 1460
+            }
         }
     }
     focus = {
@@ -277,6 +294,7 @@ focus_tree = {
                 remove_idea = POL_agrarian_reform_3
                 add_idea = POL_agrarian_reform_4
             }
+            add_research_slot = 1
         }
     }
     focus = {
@@ -288,12 +306,15 @@ focus_tree = {
         relative_position_id = POL_local_farm_collectives
         x = 0
         y = 1
+        completion_reward = {
+
+        }
     }
     focus = {
         id = POL_technocrats_win
         icon = placeholder
-        prerequisite = { focus = POL_hold_new_elections }
-        relative_position_id = POL_hold_new_elections
+        prerequisite = { focus = POL_1924_elections }
+        relative_position_id = POL_1924_elections
         available = { always = no }
         x = 0
         y = 1
@@ -311,7 +332,9 @@ focus_tree = {
         y = 1
         cost = 5
         completion_reward = {
-
+            add_stability = -0.01
+            add_political_power = 150
+            custom_effect_tooltip = unlock_new_advisors_tt
         }
     }
     focus = {
@@ -323,7 +346,9 @@ focus_tree = {
         y = 1
         cost = 5
         completion_reward = {
-
+            add_stability = -0.01
+            add_political_power = 150
+            custom_effect_tooltip = unlock_new_advisors_tt
         }
     }
     focus = {
@@ -347,7 +372,9 @@ focus_tree = {
         y = 1
         cost = 5
         completion_reward = {
-
+            add_stability = -0.01
+            add_political_power = 150
+            custom_effect_tooltip = unlock_new_advisors_tt
         }
     }
     focus = {
@@ -359,7 +386,7 @@ focus_tree = {
         y = 1
         cost = 5
         completion_reward = {
-
+            add_ideas = POL_technocracy_1
         }
     }
     focus = {
@@ -371,7 +398,10 @@ focus_tree = {
         y = 1
         cost = 5
         completion_reward = {
-
+            swap_ideas = {
+                remove_idea = POL_technocracy_1
+                add_idea = POL_technocracy_2
+            }
         }
     }
     focus = {
@@ -383,7 +413,14 @@ focus_tree = {
         y = 1
         cost = 5
         completion_reward = {
-
+            swap_ideas = {
+                remove_idea = POL_technocracy_2
+                add_idea = POL_technocracy_3
+            }
+            add_timed_idea = {
+                idea = POL_foreign_student_program_idea
+                days = 730
+            }
         }
     }
     focus = {
@@ -395,7 +432,21 @@ focus_tree = {
         y = 1
         cost = 5
         completion_reward = {
-
+            add_tech_bonus = {
+                bonus = 0.25
+                uses = 1
+                category = infantry_weapons
+            }
+            add_tech_bonus = {
+                bonus = 0.25
+                uses = 1
+                category = artillery
+            }
+            add_tech_bonus = {
+                bonus = 0.25
+                uses = 1
+                category = armor
+            }
         }
     }
     focus = {
@@ -408,7 +459,7 @@ focus_tree = {
         y = 3
         cost = 5
         completion_reward = {
-
+            add_research_slot = 1
         }
     }
     focus = {
@@ -420,7 +471,11 @@ focus_tree = {
         y = 1
         cost = 5
         completion_reward = {
-
+            add_tech_bonus = {
+                bonus = 1.0
+                uses = 1
+                category = industry
+            }
         }
     }
     focus = {
@@ -432,7 +487,11 @@ focus_tree = {
         y = 1
         cost = 5
         completion_reward = {
-
+            add_tech_bonus = {
+                bonus = 1.0
+                uses = 1
+                category = infantry_weapons
+            }
         }
     }
     focus = {
@@ -444,7 +503,16 @@ focus_tree = {
         y = 1
         cost = 5
         completion_reward = {
-
+            add_tech_bonus = {
+                bonus = 0.5
+                uses = 1
+                category = armor
+            }
+            add_tech_bonus = {
+                bonus = 0.5
+                uses = 1
+                category = exo_suits_tech
+            }
         }
     }
     focus = {
@@ -458,14 +526,14 @@ focus_tree = {
         y = 2
         cost = 5
         completion_reward = {
-
+            add_research_slot = 1
         }
     }
     focus = {
         id = POL_monarchists_win
         icon = placeholder
-        prerequisite = { focus = POL_hold_new_elections }
-        relative_position_id = POL_hold_new_elections
+        prerequisite = { focus = POL_1924_elections }
+        relative_position_id = POL_1924_elections
         available = { always = no }
         x = 8
         y = 1
@@ -635,8 +703,8 @@ focus_tree = {
     focus = {
         id = POL_falangists_win
         icon = placeholder
-        prerequisite = { focus = POL_hold_new_elections }
-        relative_position_id = POL_hold_new_elections
+        prerequisite = { focus = POL_1924_elections }
+        relative_position_id = POL_1924_elections
         available = { always = no }
         x = 16
         y = 1

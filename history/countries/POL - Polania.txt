@@ -4,7 +4,7 @@ add_ideas = {
 	treaty_of_brest_litovsk
 	POL_polania_is_not_yet_lost
 	POL_home_of_the_enlightenment
-	POL_sanation_government
+	POL_weak_executive
 	POL_kosciuszkos_legacy
 	POL_russophobia
 }

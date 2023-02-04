@@ -1131,10 +1131,10 @@ characters = {
 					has_dlc = "No Step Back"
 				}
 				available = {
-					has_completed_focus = POL_reassemble_the_sejm 
+					has_completed_focus = POL_invite_intellectuals_to_government 
 				}
 				traits = {
-					socdem_reformist 
+					socdem_reformist_elite 
 				}
 				ai_will_do = {
 					factor = 0.000
@@ -1202,14 +1202,14 @@ characters = {
 			slot = political_advisor
 			idea_token = POL_henryk_floyar_rajchman
 			available = {
-				has_completed_focus = POL_the_sanation_right 
+				has_completed_focus = POL_invite_industrialists_to_government 
 			}
 			allowed = {
 				original_tag = POL
 				has_dlc = "No Step Back"
 			}
 			traits = {
-				right_industrialist 
+				right_industrialist_elite 
 			}
 		}
 	}
@@ -1518,11 +1518,14 @@ characters = {
 		advisor={
 			slot = political_advisor
 			idea_token = POL_eugeniusz_kwiatkowiski
+			available = {
+				has_completed_focus = POL_invite_industrialists_to_government
+			}
 			allowed = {
 				original_tag = POL
 			}
 			traits = {
-				captain_of_industry 
+				captain_of_industry_elite 
 			}
 		}
 	}
@@ -1539,20 +1542,32 @@ characters = {
 			idea_token = POL_stanislaw_wojciechowski
 			available = {
 				OR = {
-					has_completed_focus = POL_modus_vivendi 
-					has_completed_focus = POL_reassemble_the_sejm 
-					has_completed_focus = POL_assemble_the_regency_council 
+					has_completed_focus = POL_invite_intellectuals_to_government
 				}
 			}
-			allowed = {
-				original_tag = POL
+			traits = {
+				technocrat_elite 
+			}
+		}
+	}
+
+	POL_gabriel_narutowicz={
+		name=POL_gabriel_narutowicz
+		portraits={
+			army={
+				small="GFX_idea_POL_gabriel_narutowicz"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = POL_gabriel_narutowicz
+			available = {
 				OR = {
-					has_dlc = "Poland: United and Ready"
-					has_dlc = "No Step Back"
-				}			
+					has_completed_focus = POL_invite_intellectuals_to_government
+				}
 			}
 			traits = {
-				noble_beurocrat 
+				polytechnic_engineer_elite 
 			}
 		}
 	}
