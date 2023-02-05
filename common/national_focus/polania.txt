@@ -63,7 +63,7 @@ focus_tree = {
         }
     }
     focus = {
-        id = POL_1924_elections
+        id = POL_1922_elections
         icon = placeholder
         available = {
             NOT = {
@@ -96,8 +96,9 @@ focus_tree = {
     focus = {
         id = POL_marxists_win
         icon = placeholder
-        prerequisite = { focus = POL_1924_elections }
-        relative_position_id = POL_1924_elections
+        prerequisite = { focus = POL_1922_elections }
+        relative_position_id = POL_1922_elections
+        available = { always = no }
         x = -16
         y = 1
         cost = 0
@@ -108,8 +109,8 @@ focus_tree = {
     focus = {
         id = POL_social_democrats_win
         icon = placeholder
-        prerequisite = { focus = POL_1924_elections }
-        relative_position_id = POL_1924_elections
+        prerequisite = { focus = POL_1922_elections }
+        relative_position_id = POL_1922_elections
         available = { always = no }
         x = -8
         y = 1
@@ -313,8 +314,8 @@ focus_tree = {
     focus = {
         id = POL_technocrats_win
         icon = placeholder
-        prerequisite = { focus = POL_1924_elections }
-        relative_position_id = POL_1924_elections
+        prerequisite = { focus = POL_1922_elections }
+        relative_position_id = POL_1922_elections
         available = { always = no }
         x = 0
         y = 1
@@ -532,8 +533,8 @@ focus_tree = {
     focus = {
         id = POL_monarchists_win
         icon = placeholder
-        prerequisite = { focus = POL_1924_elections }
-        relative_position_id = POL_1924_elections
+        prerequisite = { focus = POL_1922_elections }
+        relative_position_id = POL_1922_elections
         available = { always = no }
         x = 8
         y = 1
@@ -703,8 +704,8 @@ focus_tree = {
     focus = {
         id = POL_falangists_win
         icon = placeholder
-        prerequisite = { focus = POL_1924_elections }
-        relative_position_id = POL_1924_elections
+        prerequisite = { focus = POL_1922_elections }
+        relative_position_id = POL_1922_elections
         available = { always = no }
         x = 16
         y = 1
