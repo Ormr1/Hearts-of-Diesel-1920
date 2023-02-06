@@ -51,12 +51,53 @@ focus_tree = {
 			country_event = {id=saxonian.1}
 		}
 	}
+	focus = {
+		id = GER_demobilisation
+		icon = GFX_goal_generic_allies_build_infantry
+		relative_position_id = GER_finish_peace_talks
+		prerequisite = { focus = GER_finish_peace_talks}
+		x = 0
+		y = 1
+		cost = 5
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			if={
+				limit={
+					NOT={
+						has_idea = civilian_economy
+					}
+				}
+				add_ideas = {
+					civilian_economy
+				}
+			}
+			else={
+				add_political_power = 50
+			}
+			if={
+				limit={
+					NOT={
+						has_idea = limited_conscription
+					}
+				}
+				add_ideas = {
+					limited_conscription
+				}
+			}
+			else={
+				add_political_power = 50
+			}
+		}
+	}
 
 	focus = {
 		id = GER_scars_of_the_great_war
 		icon = GFX_goal_generic_allies_build_infantry
-		relative_position_id = GER_finish_peace_talks
-		prerequisite = { focus = GER_finish_peace_talks}
+		relative_position_id = GER_demobilisation
+		prerequisite = { focus = GER_demobilisation}
 		x = 0
 		y = 1
 		cost = 10
@@ -72,7 +113,7 @@ focus_tree = {
 		id = GER_begin_iron_harvest
 		icon = GFX_focus_generic_iron_harvest
 		relative_position_id = GER_scars_of_the_great_war
-		x = -2
+		x = 0
 		y = 1
 		cost = 10
 		search_filters = {  FOCUS_FILTER_ECONOMIC }
@@ -91,11 +132,142 @@ focus_tree = {
 	}
 
 	focus = {
+		id = GER_continued_demobilisation
+		icon = GFX_goal_generic_allies_build_infantry
+		relative_position_id = GER_scars_of_the_great_war
+		x = -3
+		y = 1
+		cost = 10
+		search_filters = {  FOCUS_FILTER_ECONOMIC }
+		prerequisite = { focus = GER_scars_of_the_great_war}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_stability = 0.1
+		}
+	}
+	focus = {
+		id = GER_adressing_the_armies_issues
+		icon = GFX_goal_generic_allies_build_infantry
+		relative_position_id = GER_continued_demobilisation
+		prerequisite = { focus = GER_continued_demobilisation}
+		x =-1
+		y = 1
+		cost = 20
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			swap_ideas={
+				add_idea = GER_army_unrest
+				remove_idea = GER_army_on_verge_of_munity
+			}
+		}
+	}
+	focus = {
+		id = GER_returning_automachines_to_fields
+		icon = GFX_goal_generic_allies_build_infantry
+		relative_position_id = GER_adressing_the_armies_issues
+		prerequisite = { focus = GER_adressing_the_armies_issues}
+		x =0
+		y = 1
+		cost = 10
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			delete_units = {
+				division_template = "Converted Automachines"
+				disband = no
+			}
+		}
+	}
+	focus = {
+		id = GER_adressing_the_navies_issues
+		icon = GFX_goal_generic_allies_build_infantry
+		relative_position_id = GER_continued_demobilisation
+		prerequisite = { focus = GER_continued_demobilisation}
+		x = 2
+		y = 1
+		cost = 20
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			swap_ideas={
+				add_idea = GER_navy_unrest
+				remove_idea = GER_navy_on_verge_of_munity
+			}
+		}
+	}
+	focus = {
+		id = GER_returning_requisitioned_convoys
+		icon = GFX_goal_generic_allies_build_infantry
+		relative_position_id = GER_adressing_the_navies_issues
+		prerequisite = { focus = GER_adressing_the_navies_issues}
+		x =-1
+		y = 1
+		cost = 10
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = convoy
+				amount = -100
+				producer = GER
+			}
+		}
+	}
+	focus = {
+		id = GER_scaling_back_naval_construction
+		icon = GFX_goal_generic_allies_build_infantry
+		relative_position_id = GER_adressing_the_navies_issues
+		prerequisite = { focus = GER_adressing_the_navies_issues}
+		x =1
+		y = 1
+		cost = 10
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = GER_calming_the_sailors
+		icon = GFX_goal_generic_allies_build_infantry
+		relative_position_id = GER_adressing_the_navies_issues
+		prerequisite = { focus = GER_scaling_back_naval_construction}
+		prerequisite = { focus = GER_returning_requisitioned_convoys}
+		x =0
+		y = 2
+		cost = 10
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			remove_ideas = GER_navy_unrest
+			add_timed_idea = {
+				idea = GER_navy_light_unrest
+				days = 1440
+			}
+		}
+	}
+
+	focus = {
 		id = GER_occupation_of_east_frankia
 		icon = GFX_goal_generic_allies_build_infantry
 		relative_position_id = GER_scars_of_the_great_war
 		prerequisite = { focus = GER_scars_of_the_great_war}
-		x = 0
+		x = 4
 		y = 1
 		cost = 10
 		search_filters = {  FOCUS_FILTER_POLITICAL }
@@ -129,7 +301,7 @@ focus_tree = {
 		prerequisite = { focus = GER_occupation_of_east_frankia}
 		x =-3
 		y = 1
-		cost = 10
+		cost = 20
 		search_filters = {  FOCUS_FILTER_POLITICAL }
 		
 		available_if_capitulated = yes
@@ -147,7 +319,7 @@ focus_tree = {
 		prerequisite = { focus = GER_occupation_of_east_frankia}
 		x =-1
 		y = 1
-		cost = 10
+		cost = 20
 		search_filters = {  FOCUS_FILTER_POLITICAL }
 		
 		available_if_capitulated = yes
@@ -198,7 +370,7 @@ focus_tree = {
 		prerequisite = { focus = GER_occupation_of_east_frankia}
 		x = 1
 		y = 1
-		cost = 10
+		cost = 20
 		search_filters = {  FOCUS_FILTER_POLITICAL }
 		
 		available_if_capitulated = yes
@@ -222,7 +394,7 @@ focus_tree = {
 		prerequisite = { focus = GER_occupation_of_east_frankia}
 		x = 3
 		y = 1
-		cost = 10
+		cost = 20
 		search_filters = {  FOCUS_FILTER_POLITICAL }
 		
 		available_if_capitulated = yes
@@ -268,7 +440,7 @@ focus_tree = {
 	focus = {
 		id = GER_post_war_reconstruction
 		icon = GFX_goal_generic_allies_build_infantry
-		x = 21
+		x = 25
 		y = 0
 		cost = 10
 		search_filters = {  FOCUS_FILTER_ECONOMIC }
@@ -863,7 +1035,7 @@ focus_tree = {
 	focus = {
 		id = GER_a_steady_helm
 		icon = GFX_goal_generic_allies_build_infantry
-		x = 30
+		x = 34
 		y = 0
 		cost = 10
 		search_filters = {  FOCUS_FILTER_POLITICAL }
@@ -888,7 +1060,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			army_experience = 25
 		}
 	}
 	focus = {
@@ -1016,7 +1188,10 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			add_popularity = {
+				ideology = communism
+				popularity = -0.1
+			}
 		}
 	}
 	focus = {
@@ -1034,7 +1209,10 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			add_popularity = {
+				ideology = democratic
+				popularity = -0.1
+			}
 		}
 	}
 	focus = {
@@ -1059,6 +1237,24 @@ focus_tree = {
 			focus = GER_foreign_sphere
 		}
 		x = 2
+		y = 1
+		cost = 10
+		search_filters = {  FOCUS_FILTER_COLONIAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = GER_oil_speculation_in_syria
+		icon = GFX_goal_generic_allies_build_infantry
+		relative_position_id = GER_securing_the_levant
+		prerequisite = { 
+			focus = GER_securing_the_levant
+		}
+		x = -1
 		y = 1
 		cost = 10
 		search_filters = {  FOCUS_FILTER_COLONIAL }
@@ -1119,8 +1315,48 @@ focus_tree = {
 		
 		available_if_capitulated = yes
 
+		available = {
+			has_completed_focus = GER_fully_nationise_KSMVA
+		}
+
 		completion_reward = {
-			
+			#unlocks KSMVA decisions
+		}
+	}
+	focus = {
+		id = GER_opening_gambit_in_persia
+		icon = GFX_goal_generic_allies_build_infantry
+		relative_position_id = GER_expanding_the_KSMVA
+		prerequisite = { 
+			focus = GER_expanding_the_KSMVA
+		}
+		x = -1
+		y = 1
+		cost = 10
+		search_filters = {  FOCUS_FILTER_COLONIAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			#unlocks KSMVA decisions
+		}
+	}
+	focus = {
+		id = GER_bromoan_timocracy_play
+		icon = GFX_goal_generic_allies_build_infantry
+		relative_position_id = GER_expanding_the_KSMVA
+		prerequisite = { 
+			focus = GER_expanding_the_KSMVA
+		}
+		x = 1
+		y = 1
+		cost = 10
+		search_filters = {  FOCUS_FILTER_COLONIAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			#unlocks KSMVA decisions
 		}
 	}
 

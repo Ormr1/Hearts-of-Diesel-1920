@@ -2,6 +2,8 @@ capital = 980
 
 starting_train_buffer = 5
 
+set_oob = "WIR_1920"
+
 set_research_slots = 5
 set_stability = 0.75
 set_war_support = 0.50

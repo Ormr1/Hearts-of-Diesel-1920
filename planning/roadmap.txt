@@ -1,15 +1,17 @@
 Release (The Iron Harvest)
 	required FT:
+		fenris
+		Factory/Vensa
+		polania
 		Rusviet
 		Usonia
 		Saxony: "I've won...but at what cost?"
+	prefered to have FT:
 		Crimean Khanate
 		togawa shogunate
 		albion
-		polania
 		nordic kingdom
-		fenris
-		Factory/Vensa
+		
 	good to have FT:
 		Franks
 		Hispania

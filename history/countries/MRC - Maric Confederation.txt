@@ -1,5 +1,7 @@
 capital = 982
 
+set_oob = "MRC_1920"
+
 starting_train_buffer = 5
 
 set_research_slots = 5

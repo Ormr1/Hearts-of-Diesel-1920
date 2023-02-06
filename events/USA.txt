@@ -2567,6 +2567,8 @@ country_event = { # In Come The Airships
 	picture = placeholder
 
 	fire_only_once = yes
+	
+	is_triggered_only = yes
 
 	option = { # Salvation!
 		name = usa_arabia.8.a

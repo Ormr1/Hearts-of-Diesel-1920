@@ -12,4 +12,57 @@ on_actions = {
             }
         }
     }
+	on_capitulation_immediate={
+		effect = {
+			if = {
+				limit = {
+					original_tag = VIN
+					has_war_with = SPR
+				}
+				set_state_controller = 286
+				set_state_controller = 671
+				SPR = {
+					set_autonomy = {
+						target = VIN
+						autonomy_state = autonomy_colony
+						end_wars = yes
+						end_civil_wars = no
+					}
+				}
+				set_politics = {
+					ruling_party = monarchy
+				}
+				set_popularities = {
+					democratic = 30
+					neutrality = 10
+					fascism = 5
+					monarchy = 55
+				}
+			}
+			if = {
+				limit = {
+					original_tag = ROC
+					has_war_with = CHI
+				}
+				CHI={
+					annex_country = {
+						target = ROOT
+						transfer_troops = no
+					}
+				}
+			}
+			if = {
+				limit = {
+					original_tag = CHI
+					has_war_with = ROC
+				}
+				ROC={
+					annex_country = {
+						target = ROOT
+						transfer_troops = no
+					}
+				}
+			}
+		}
+	}
 }

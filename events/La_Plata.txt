@@ -148,6 +148,11 @@ country_event = { #Patagonia
 					democratic = 58
 					monarchy = 42
 				}
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 2000
+					producer = LAP
+				}
 				country_event = {id = la_plata.107 days = 98}
 			}
 			LAP={
@@ -192,6 +197,11 @@ country_event = { #Uruguay
 					democratic = 72
 					fascism = 28
 				}
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 2000
+					producer = LAP
+				}
 				country_event = {id = la_plata.110 days = 108}
 			}
 			LAP={
@@ -227,6 +237,11 @@ country_event = { #Chile Abanonds the union
 				transfer_state = 279
 				transfer_state = 507
 				load_oob = "CHL_1921"
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 2000
+					producer = LAP
+				}
 			}
 			LAP={
 				declare_war_on = {
@@ -272,6 +287,11 @@ country_event = { #Argentinia declare
 				load_oob = "ARG_1921"
 				country_event = {id = la_plata.111 days = 34}#coilition collapse
 				add_manpower = 200000
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 2000
+					producer = LAP
+				}
 			}
 			LAP={
 				declare_war_on = {
@@ -316,6 +336,11 @@ country_event = { #Paraguay succends
 				transfer_state = 688
 				load_oob = "PAR_1921"
 				country_event = {id = la_plata.109 days = 124}
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 2000
+					producer = LAP
+				}
 			}
 			LAP={
 				declare_war_on = {
@@ -421,6 +446,11 @@ country_event = { #La Platan Liberals revolt
 				}
 				set_country_flag = unable_to_mobilize
 				add_manpower = 200000
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 5000
+					producer = LAP
+				}
 			}
 			LAP={
 				load_oob = "LAP_buenos_aires_irregulars"
@@ -542,6 +572,11 @@ country_event = { #Argentinian Coilition collapses
 					type = civil_war
 				}
 				add_manpower = 200000
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 4000
+					producer = LAP
+				}
 			}
 			ARC={
 				transfer_state = 509
@@ -556,6 +591,11 @@ country_event = { #Argentinian Coilition collapses
 					type = civil_war
 				}
 				add_manpower = 200000
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 4000
+					producer = LAP
+				}
 			}
 			ETR={
 				transfer_state = 510
@@ -575,6 +615,11 @@ country_event = { #Argentinian Coilition collapses
 					type = civil_war
 				}
 				add_manpower = 150000
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 2000
+					producer = LAP
+				}
 			}
 			510={
 				add_core_of = ETR
@@ -588,6 +633,11 @@ country_event = { #Argentinian Coilition collapses
 				load_oob = "ARG_reneforcement"
 				add_civil_war_target = UUA
 				add_civil_war_target = ARC
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 1000
+					producer = LAP
+				}
 			}
 			LPT={
 				declare_war_on = {

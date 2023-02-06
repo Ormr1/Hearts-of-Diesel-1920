@@ -194,7 +194,7 @@ if = {
 
 set_research_slots = 4
 set_convoys = 200
-set_stability = 0.75 
+set_stability = 0.65 
 set_war_support = 0.3
 
 if = {
@@ -225,7 +225,6 @@ if = {
 		freedom_level = 0.2
 	}
 	else = {
-		puppet = SAU
 		puppet = SYR
 		puppet = AST
 		puppet = SAF
@@ -255,10 +254,15 @@ add_ideas = {
 	general_staff
 	GER_papiermark
 	GER_war_debt
+	GER_army_on_verge_of_munity
+	GER_navy_on_verge_of_munity
 	limited_exports
-	limited_conscription
-	partial_economic_mobilisation
+	service_by_requirement
+	war_economy
 }
+add_manpower = -2500000
+set_country_flag = already_mobilized
+
 #add_ideas = GER_mefo_bills_1
 
 #activate_mission = GER_mefo_bills_mission

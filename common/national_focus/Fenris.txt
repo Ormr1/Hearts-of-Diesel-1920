@@ -688,8 +688,16 @@ focus_tree = {
 
 		available={
 			date > 1926.1.1
-			has_army_manpower = {
-				size > 30000
+			OR={
+				AND={
+					is_ai = yes
+					has_army_manpower = {
+						size > 15000
+					}
+				}
+				has_army_manpower = {
+					size > 30000
+				}
 			}
 			custom_trigger_tooltip = {
                 tooltip = FEN_has_2000_covert_staff

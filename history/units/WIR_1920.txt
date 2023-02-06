@@ -1,0 +1,26 @@
+﻿division_template = {
+	name = "Wiradjuri Infantry"		#
+	division_names_group = SPAN_INF_02
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+	}
+}
+
+units = {
+	division= {	
+		name = "1. Wiradjuri Infantry"
+		location = 5134 # 
+		division_template = "Wiradjuri Infantry"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.75
+	}
+	division= {	
+		name = "2. Wiradjuri Infantry"
+		location = 4453 # 
+		division_template = "Wiradjuri Infantry"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.75
+	}
+}

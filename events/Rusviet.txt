@@ -62,6 +62,7 @@ country_event = {
 			}
 			set_demilitarized_zone = yes
 		}
+		set_country_flag = rusviet_revolution_started
 		country_event = {id = SOV_civil_war.6 days = 18}
 	}
 	#an earlier decision will dicate which side you flip to
@@ -283,7 +284,6 @@ country_event = {
 			RDM={#K-D
 				transfer_state = 224
 				transfer_state = 260
-				transfer_state = 471
 				transfer_state = 255
 				transfer_state = 926
 				transfer_state = 250

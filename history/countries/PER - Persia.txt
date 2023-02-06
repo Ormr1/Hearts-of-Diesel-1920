@@ -33,6 +33,10 @@ recruit_character = PER_ali_zohayli
 recruit_character = PER_mahmud_jam
 recruit_character = PER_ali_khan_mansour
 
+add_ideas = {
+	PER_GRE_treaty_of_perpetual_peace
+}
+
 1939.1.1 = {
 
 	add_political_power = 1198

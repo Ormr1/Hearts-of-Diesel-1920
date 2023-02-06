@@ -52,6 +52,103 @@ ideas = {
 				stability_weekly = -0.01
 			}
 		}
+		
+		GER_army_on_verge_of_munity = {
+			
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			picture = generic_army_problems
+
+			modifier = {
+				stability_factor = -0.10
+				war_support_factor = -0.15 
+				army_org_factor = -0.3
+			}
+		}
+		GER_army_unrest = {
+			
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			picture = generic_army_problems
+
+			modifier = {
+				stability_factor = -0.10
+				war_support_factor = -0.1 
+				army_org_factor = -0.2
+			}
+		}
+		GER_army_light_unrest = {
+			
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			picture = generic_army_problems
+
+			modifier = {
+				stability_factor = -0.5
+				war_support_factor = -0.05 
+				army_org_factor = -0.1
+			}
+		}
+		GER_navy_on_verge_of_munity = {
+			
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			picture = generic_army_problems
+
+			modifier = {
+				stability_factor = -0.10
+				war_support_factor = -0.15
+				navy_org_factor = -0.3
+			}
+		}
+		GER_navy_unrest = {
+			
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			picture = generic_army_problems
+
+			modifier = {
+				stability_factor = -0.1
+				war_support_factor = -0.10
+				navy_org_factor = -0.2
+			}
+		}
+		GER_navy_light_unrest = {
+			
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			picture = generic_army_problems
+
+			modifier = {
+				stability_factor = -0.05
+				war_support_factor = -0.05
+				navy_org_factor = -0.1
+			}
+		}
 	
 		sour_loser = {
 			

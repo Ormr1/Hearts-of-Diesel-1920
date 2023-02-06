@@ -121,6 +121,8 @@ set_popularities = {
 
 add_ideas = {
 	GRE_phoenix_call
+	GRE_PER_treaty_of_perpetual_peace
+	GRE_tetrarchy_compromise
 	limited_conscription
 }
 

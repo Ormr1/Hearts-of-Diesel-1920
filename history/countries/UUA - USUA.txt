@@ -58,4 +58,4 @@ set_popularities = {
 	communism = 98
 }
 
-add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 1000 producer = LAP }
+add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 20000 producer = LAP }

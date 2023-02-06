@@ -2517,7 +2517,6 @@ country_event = { # fra_civilwarignite.1
 			}
 			keep_political_leader = yes
 			keep_political_party_members = yes
-			}
 		}
 		add_ideas = FRA_Revolutionary_Ideals
 		add_popularity = {
@@ -2556,7 +2555,6 @@ country_event = { # fra_civilwarignite.1
 			}
 			keep_political_leader = yes
 			keep_political_party_members = yes
-			}
 		}
 		add_ideas = FRA_Revolutionary_Ideals
 		add_popularity = {
@@ -2659,6 +2657,7 @@ country_event = {
 
 	trigger = {
 		NOT = { has_idea = FRA_Increased_Army_Standards }
+		tag = FRA
 	}
 
 	is_triggered_only = no
@@ -2679,6 +2678,7 @@ country_event = {
 
 	trigger = {
 		NOT = { has_idea = FRA_Improved_Roads }
+		tag = FRA
 	}
 
 	is_triggered_only = no
@@ -2701,7 +2701,7 @@ country_event = {
 		
 	}
 
-	is_triggered_only = no
+	is_triggered_only = yes
 	fire_only_once = yes
 
 	option = {
@@ -2724,7 +2724,7 @@ country_event = {
 		
 	}
 
-	is_triggered_only = no
+	is_triggered_only = yes
 	fire_only_once = yes
 
 	option = {
@@ -2757,7 +2757,7 @@ country_event = {
 		
 	}
 
-	is_triggered_only = no
+	is_triggered_only = yes
 	fire_only_once = yes
 
 	option = {
@@ -2789,9 +2789,10 @@ country_event = {
 
 	trigger = {
 		NOT = { has_idea = FRA_Saving_the_Navy }
+		tag = FRA
 	}
 
-	is_triggered_only = no
+	is_triggered_only = yes
 	fire_only_once = yes
 
 	option = {
@@ -2808,9 +2809,10 @@ country_event = {
 
 	trigger = {
 		NOT = { has_idea = FRA_New_Ways_of_Production }
+		tag = FRA
 	}
 
-	is_triggered_only = no
+	is_triggered_only = yes
 	fire_only_once = yes
 
 	option = {

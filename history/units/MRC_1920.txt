@@ -1,0 +1,33 @@
+﻿division_template = {
+	name = "Confederate Infantry"		#
+	division_names_group = SPAN_INF_02
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+	}
+}
+
+units = {
+	division= {	
+		name = "1. Maric Infantry"
+		location = 12949 # 
+		division_template = "Confederate Infantry"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.75
+	}
+	division= {	
+		name = "2. Maric Infantry"
+		location = 10460 # 
+		division_template = "Confederate Infantry"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.75
+	}
+	division= {	
+		name = "3. Maric Infantry"
+		location = 12308 # 
+		division_template = "Confederate Infantry"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.75
+	}
+}
