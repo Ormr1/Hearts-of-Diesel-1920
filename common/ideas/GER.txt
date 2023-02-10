@@ -188,6 +188,26 @@ ideas = {
 				max_planning_factor = 0.15
 			}
 		}
+		
+		spariticus_unrest = {
+		
+			picture = home_of_the_revolution
+			
+			allowed = {
+				original_tag = GER
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.05
+				communism_drift = 0.01
+			}
+		}
 
 		triumphant_will = {
 			

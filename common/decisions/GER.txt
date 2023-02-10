@@ -945,137 +945,1192 @@ GER_reichskommissariats = {
 
 political_actions = {
 
-	# Reinstate Wilhelm IV into the line of succession
-	reinstate_wilhelm_iv_succession_rights = {
+	
+	# fighting the revolts
+	GER_crush_revolution_in_berlin = {
 
 		allowed = {
 			original_tag = GER
 		}
+		
 
 		available = {
-
+			has_stability > 0.5
+			has_manpower > 20000
+			has_full_control_of_state = 64
+			840={is_demilitarized_zone = no}
+			837={is_demilitarized_zone = no}
+			68={is_demilitarized_zone = no}
 		}
+		
+		icon = oppression
+		
+		highlight_states = {
+			highlight_state_targets = { state = 64 } 
+		}
+		cancel_if_not_visible = yes
+
+		on_map_mode = map_only
 
 		cost = 100
 
 		fire_only_once = yes
+		days_remove = 20
 
 		ai_will_do = {
-			factor = 0
+			factor = 10
 		}
 
 		visible = {
 			has_war = no
-			has_government = neutrality
-			has_country_flag = backed_down_netherlands_kaiser
+			64={is_core_of = DDR}
+			NOT={has_country_flag = GER_saxon_civil_war}
 		}
 
-		complete_effect = {
-			add_stability = -0.10
-			add_popularity = { ideology = neutrality popularity = -0.05 }
-			custom_effect_tooltip = reinstate_wilhelm_iv_succession_rights_tt
-			hidden_effect = {
-				set_country_flag = reinstated_wilhelm_iv_succession_rights
+		remove_effect = {
+			64={
+				remove_core_of = DDR
+				set_demilitarized_zone = no
+			}
+			add_manpower = -20000
+			add_popularity = {
+				ideology = communism
+				popularity = -0.05
 			}
 		}
 	}
-
-	# Agnatic-Cognatic Primogeniture
-	modernize_the_succession_laws = {
+	GER_retake_brandenburg = {
 
 		allowed = {
 			original_tag = GER
 		}
+		
+		icon = oppression
 
 		available = {
-
+			has_stability > 0.45
+			has_manpower > 10000
 		}
-
-		cost = 150
-
-		fire_only_once = yes
-
-		ai_will_do = {
-			factor = 0
+		
+		highlight_states = {
+			highlight_state_targets = { state = 840 } 
 		}
+		cancel_if_not_visible = yes
 
-		visible = {
-			has_war = no
-			has_government = neutrality
-			has_country_flag = reinstated_wilhelm_iv_succession_rights
-		}
-
-		complete_effect = {
-			add_stability = 0.05
-			custom_effect_tooltip = modernize_the_succession_laws_tt
-			hidden_effect = {
-				set_country_flag = modernized_succession_laws
-			}
-		}
-	}
-
-	recall_von_lettow_vorbeck = {
-
-		allowed = {
-			original_tag = GER
-		}
-		available = {
-			has_civil_war = no
-		}
-		visible = {
-			OR = {
-				has_country_leader = { ruling_only = yes character = GER_wilhelm_ii }
-				has_country_leader = { ruling_only = yes character = GER_wilhelm_iii }
-				has_country_leader = { ruling_only = yes character = GER_victoria }
-			}
-		}
-		cost = 25
-		fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		complete_effect = {
-			create_corps_commander = {
-				name = "Paul von Lettow-Vorbeck"
-				gfx = GFX_portrait_ger_von_lettow_vorbeck
-				traits = { trickster war_hero media_personality jungle_rat}
-				skill = 4
-				id = 499
-				attack_skill = 3
-				defense_skill = 3
-				planning_skill = 2
-				logistics_skill = 5
-			}
-		}
-	}
-
-	# Safety regulations
-	GER_sharpen_air_safety_regulations = {
-
-		allowed = {
-			original_tag = GER
-			has_dlc = "Waking the Tiger"
-		}
-
-		available = {
-
-		}
+		on_map_mode = map_only
 
 		cost = 50
 
 		fire_only_once = yes
+		days_remove = 50
 
 		ai_will_do = {
-			factor = 0
+			factor = 10
 		}
 
 		visible = {
-			has_government = neutrality
+			has_war = no
+			840={is_core_of = DDR}
+			NOT={has_country_flag = GER_saxon_civil_war}
 		}
 
+		remove_effect = {
+			add_popularity = {
+				ideology = communism
+				popularity = -0.05
+			}
+			840={
+				remove_core_of = DDR
+				set_demilitarized_zone = no
+			}
+			add_manpower = -10000
+		}
+	}
+	GER_retake_stettin = {
+
+		allowed = {
+			original_tag = GER
+		}
+		
+		icon = oppression
+
+		available = {
+			has_stability > 0.45
+			has_manpower > 10000
+		}
+
+		cost = 50
+		
+		highlight_states = {
+			highlight_state_targets = { state = 837 } 
+		}
+		cancel_if_not_visible = yes
+
+		on_map_mode = map_only
+
+		fire_only_once = yes
+		days_remove = 50
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		visible = {
+			has_war = no
+			837={is_core_of = DDR}
+			NOT={has_country_flag = GER_saxon_civil_war}
+		}
+
+		remove_effect = {
+			add_popularity = {
+				ideology = communism
+				popularity = -0.05
+			}
+			837={
+				remove_core_of = DDR
+				set_demilitarized_zone = no
+			}
+			add_manpower = -10000
+		}
+	}
+	GER_retake_west_bank_rhine = {
+
+		allowed = {
+			original_tag = GER
+		}
+		
+		icon = oppression
+
+		available = {
+			has_stability > 0.40
+			has_manpower > 10000
+		}
+
+		cost = 50
+		
+		highlight_states = {
+			highlight_state_targets = { state = 51 } 
+		}
+		cancel_if_not_visible = yes
+
+		on_map_mode = map_only
+
+		fire_only_once = yes
+		days_remove = 50
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		visible = {
+			has_war = no
+			51={is_core_of = DDR}
+			NOT={has_country_flag = GER_saxon_civil_war}
+		}
+
+		remove_effect = {
+			add_popularity = {
+				ideology = communism
+				popularity = -0.02
+			}
+			51={
+				remove_core_of = DDR
+				set_demilitarized_zone = no
+			}
+			add_manpower = -10000
+		}
+	}
+	GER_retake_east_bank_rhine = {
+
+		allowed = {
+			original_tag = GER
+		}
+
+		available = {
+			has_stability > 0.40
+			has_manpower > 10000
+		}
+		
+		icon = oppression
+		
+		highlight_states = {
+			highlight_state_targets = { state = 838 } 
+		}
+		cancel_if_not_visible = yes
+
+		on_map_mode = map_only
+
+		cost = 50
+
+		fire_only_once = yes
+		days_remove = 50
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		visible = {
+			has_war = no
+			838={is_core_of = DDR}
+			NOT={has_country_flag = GER_saxon_civil_war}
+		}
+
+		remove_effect = {
+			add_popularity = {
+				ideology = communism
+				popularity = -0.02
+			}
+			838={
+				remove_core_of = DDR
+				set_demilitarized_zone = no
+			}
+			add_manpower = -10000
+		}
+	}
+	GER_retake_westmark = {
+
+		allowed = {
+			original_tag = GER
+		}
+
+		available = {
+			has_stability > 0.40
+			has_manpower > 10000
+		}
+		
+		icon = oppression
+		
+		highlight_states = {
+			highlight_state_targets = { state = 42 } 
+		}
+		cancel_if_not_visible = yes
+
+		on_map_mode = map_only
+
+		cost = 50
+
+		fire_only_once = yes
+		days_remove = 50
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		visible = {
+			has_war = no
+			42={is_core_of = DDR}
+			NOT={has_country_flag = GER_saxon_civil_war}
+		}
+
+		remove_effect = {
+			add_popularity = {
+				ideology = communism
+				popularity = -0.02
+			}
+			42={
+				remove_core_of = DDR
+				set_demilitarized_zone = no
+			}
+			add_manpower = -10000
+		}
+	}
+	GER_retake_ostmark = {
+
+		allowed = {
+			original_tag = GER
+		}
+
+		available = {
+			has_stability > 0.40
+			has_manpower > 10000
+		}
+		
+		icon = oppression
+		
+		highlight_states = {
+			highlight_state_targets = { state = 68 } 
+		}
+		cancel_if_not_visible = yes
+
+		on_map_mode = map_only
+
+		cost = 50
+
+		fire_only_once = yes
+		days_remove = 50
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		visible = {
+			has_war = no
+			68={is_core_of = DDR}
+			NOT={has_country_flag = GER_saxon_civil_war}
+		}
+
+		remove_effect = {
+			add_popularity = {
+				ideology = communism
+				popularity = -0.02
+			}
+			68={
+				remove_core_of = DDR
+				set_demilitarized_zone = no
+			}
+			add_manpower = -10000
+		}
+	}
+	GER_retake_vlaanderen = {
+
+		allowed = {
+			original_tag = GER
+		}
+
+		available = {
+			has_stability > 0.40
+			has_manpower > 10000
+		}
+		
+		icon = oppression
+		
+		highlight_states = {
+			highlight_state_targets = { state = 6 } 
+		}
+		cancel_if_not_visible = yes
+
+		on_map_mode = map_only
+
+		cost = 50
+
+		fire_only_once = yes
+		days_remove = 50
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		visible = {
+			has_war = no
+			6={is_core_of = WGR}
+			NOT={has_country_flag = GER_saxon_civil_war}
+		}
+
+		remove_effect = {
+			add_popularity = {
+				ideology = democratic
+				popularity = -0.02
+			}
+			6={
+				remove_core_of = WGR
+				set_demilitarized_zone = no
+			}
+			add_manpower = -10000
+		}
+	}
+	GER_retake_brabant = {
+
+		allowed = {
+			original_tag = GER
+		}
+
+		available = {
+			has_stability > 0.40
+			has_manpower > 10000
+		}
+		
+		icon = oppression
+		
+		highlight_states = {
+			highlight_state_targets = { state = 35 } 
+		}
+		cancel_if_not_visible = yes
+
+		on_map_mode = map_only
+
+		cost = 50
+
+		fire_only_once = yes
+		days_remove = 50
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		visible = {
+			has_war = no
+			35={is_core_of = WGR}
+			NOT={has_country_flag = GER_saxon_civil_war}
+		}
+
+		remove_effect = {
+			add_popularity = {
+				ideology = democratic
+				popularity = -0.02
+			}
+			35={
+				remove_core_of = WGR
+				set_demilitarized_zone = no
+			}
+			add_manpower = -10000
+		}
+	}
+	GER_retake_zeeland = {
+
+		allowed = {
+			original_tag = GER
+		}
+
+		available = {
+			has_stability > 0.40
+			has_manpower > 10000
+		}
+		
+		icon = oppression
+		
+		highlight_states = {
+			highlight_state_targets = { state = 949 } 
+		}
+		cancel_if_not_visible = yes
+
+		on_map_mode = map_only
+
+		cost = 50
+
+		fire_only_once = yes
+		days_remove = 50
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		visible = {
+			has_war = no
+			949={is_core_of = WGR}
+			NOT={has_country_flag = GER_saxon_civil_war}
+		}
+
+		remove_effect = {
+			add_popularity = {
+				ideology = democratic
+				popularity = -0.02
+			}
+			949={
+				remove_core_of = WGR
+				set_demilitarized_zone = no
+			}
+			add_manpower = -10000
+		}
+	}
+	GER_crush_revolution_in_holland = {
+
+		allowed = {
+			original_tag = GER
+		}
+
+		available = {
+			has_stability > 0.50
+			has_manpower > 20000
+			has_full_control_of_state = 7
+			36={is_demilitarized_zone = no}
+			950={is_demilitarized_zone = no}
+			35={is_demilitarized_zone = no}
+			6={is_demilitarized_zone = no}
+			949={is_demilitarized_zone = no}
+		}
+		
+		icon = oppression
+		
+		highlight_states = {
+			highlight_state_targets = { state = 7 } 
+		}
+		cancel_if_not_visible = yes
+
+		on_map_mode = map_only
+
+		cost = 50
+
+		fire_only_once = yes
+		days_remove = 50
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		visible = {
+			has_war = no
+			7={is_core_of = WGR}
+			NOT={has_country_flag = GER_saxon_civil_war}
+		}
+
+		remove_effect = {
+			add_popularity = {
+				ideology = democratic
+				popularity = -0.02
+			}
+			7={
+				remove_core_of = WGR
+				set_demilitarized_zone = no
+			}
+			add_manpower = -20000
+		}
+	}
+	GER_retake_west_friesland = {
+
+		allowed = {
+			original_tag = GER
+		}
+
+		available = {
+			has_stability > 0.40
+			has_manpower > 10000
+		}
+		
+		icon = oppression
+		
+		highlight_states = {
+			highlight_state_targets = { state = 36 } 
+		}
+		cancel_if_not_visible = yes
+
+		on_map_mode = map_only
+
+		cost = 50
+
+		fire_only_once = yes
+		days_remove = 50
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		visible = {
+			has_war = no
+			36={is_core_of = WGR}
+			NOT={has_country_flag = GER_saxon_civil_war}
+		}
+
+		remove_effect = {
+			add_popularity = {
+				ideology = democratic
+				popularity = -0.02
+			}
+			36={
+				remove_core_of = WGR
+				set_demilitarized_zone = no
+			}
+			add_manpower = -10000
+		}
+	}
+	GER_retake_ost_friesland = {
+
+		allowed = {
+			original_tag = GER
+		}
+
+		available = {
+			has_stability > 0.40
+			has_manpower > 10000
+		}
+		
+		icon = oppression
+		
+		highlight_states = {
+			highlight_state_targets = { state = 950 } 
+		}
+		cancel_if_not_visible = yes
+
+		on_map_mode = map_only
+
+		cost = 50
+
+		fire_only_once = yes
+		days_remove = 50
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		visible = {
+			has_war = no
+			950={is_core_of = WGR}
+			NOT={has_country_flag = GER_saxon_civil_war}
+		}
+
+		remove_effect = {
+			add_popularity = {
+				ideology = democratic
+				popularity = -0.02
+			}
+			950={
+				remove_core_of = WGR
+				set_demilitarized_zone = no
+			}
+			add_manpower = -10000
+		}
+	}
+	GER_crush_revolution_in_prague = {
+
+		allowed = {
+			original_tag = GER
+		}
+
+		available = {
+			has_stability > 0.50
+			has_manpower > 10000
+			has_full_control_of_state = 9
+			69={is_demilitarized_zone = no}
+			74={is_demilitarized_zone = no}
+			946={is_demilitarized_zone = no}
+			75={is_demilitarized_zone = no}
+		}
+		
+		icon = oppression
+		
+		highlight_states = {
+			highlight_state_targets = { state = 9 } 
+		}
+		cancel_if_not_visible = yes
+
+		on_map_mode = map_only
+
+		cost = 100
+
+		fire_only_once = yes
+		days_remove = 50
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		visible = {
+			has_war = no
+			9={is_core_of = WGR}
+			NOT={has_country_flag = GER_saxon_civil_war}
+		}
+
+		remove_effect = {
+			add_popularity = {
+				ideology = democratic
+				popularity = -0.02
+			}
+			9={
+				remove_core_of = WGR
+				set_demilitarized_zone = no
+			}
+			add_manpower = -10000
+		}
+	}
+	GER_retake_sudetenland = {
+
+		allowed = {
+			original_tag = GER
+		}
+
+		available = {
+			has_stability > 0.40
+			has_manpower > 10000
+		}
+		
+		icon = oppression
+		
+		highlight_states = {
+			highlight_state_targets = { state = 69 } 
+		}
+		cancel_if_not_visible = yes
+
+		on_map_mode = map_only
+
+		cost = 50
+
+		fire_only_once = yes
+		days_remove = 50
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		visible = {
+			has_war = no
+			69={is_core_of = WGR}
+			NOT={has_country_flag = GER_saxon_civil_war}
+		}
+
+		remove_effect = {
+			add_popularity = {
+				ideology = democratic
+				popularity = -0.02
+			}
+			69={
+				remove_core_of = WGR
+				set_demilitarized_zone = no
+			}
+			add_manpower = -10000
+		}
+	}
+	GER_retake_south_sudetenland = {
+
+		allowed = {
+			original_tag = GER
+		}
+
+		available = {
+			has_stability > 0.40
+			has_manpower > 10000
+		}
+		
+		icon = oppression
+		
+		highlight_states = {
+			highlight_state_targets = { state = 946 } 
+		}
+		cancel_if_not_visible = yes
+
+		on_map_mode = map_only
+
+		cost = 50
+
+		fire_only_once = yes
+		days_remove = 50
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		visible = {
+			has_war = no
+			946={is_core_of = WGR}
+			NOT={has_country_flag = GER_saxon_civil_war}
+		}
+
+		remove_effect = {
+			add_popularity = {
+				ideology = democratic
+				popularity = -0.02
+			}
+			946={
+				remove_core_of = WGR
+				set_demilitarized_zone = no
+			}
+			add_manpower = -10000
+		}
+	}
+	GER_retake_east_sudetenland = {
+
+		allowed = {
+			original_tag = GER
+		}
+
+		available = {
+			has_stability > 0.40
+			has_manpower > 10000
+		}
+		
+		icon = oppression
+		
+		highlight_states = {
+			highlight_state_targets = { state = 74 } 
+		}
+		cancel_if_not_visible = yes
+
+		on_map_mode = map_only
+
+		cost = 50
+
+		fire_only_once = yes
+		days_remove = 50
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		visible = {
+			has_war = no
+			74={is_core_of = WGR}
+			NOT={has_country_flag = GER_saxon_civil_war}
+		}
+
+		remove_effect = {
+			add_popularity = {
+				ideology = democratic
+				popularity = -0.02
+			}
+			74={
+				remove_core_of = WGR
+				set_demilitarized_zone = no
+			}
+			add_manpower = -10000
+		}
+	}
+	GER_retake_moravia = {
+
+		allowed = {
+			original_tag = GER
+		}
+
+		available = {
+			has_stability > 0.40
+			has_manpower > 10000
+		}
+		
+		icon = oppression
+		
+		highlight_states = {
+			highlight_state_targets = { state = 75 } 
+		}
+		cancel_if_not_visible = yes
+
+		on_map_mode = map_only
+
+		cost = 50
+
+		fire_only_once = yes
+		days_remove = 50
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		visible = {
+			has_war = no
+			75={is_core_of = WGR}
+			NOT={has_country_flag = GER_saxon_civil_war}
+		}
+
+		remove_effect = {
+			add_popularity = {
+				ideology = democratic
+				popularity = -0.02
+			}
+			75={
+				remove_core_of = WGR
+				set_demilitarized_zone = no
+			}
+			add_manpower = -10000
+		}
+	}
+	GER_retake_austria = {
+
+		allowed = {
+			original_tag = GER
+		}
+
+		available = {
+			has_stability > 0.50
+			has_manpower > 50000
+			has_full_control_of_state = 4
+		}
+		
+		icon = oppression
+		
+		highlight_states = {
+			highlight_state_targets = { 
+				state = 4 
+			} 
+		}
+		cancel_if_not_visible = yes
+
+		on_map_mode = map_only
+
+		cost = 100
+
+		fire_only_once = yes
+		days_remove = 50
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		visible = {
+			has_war = no
+			4={is_core_of = AUS}
+			NOT={has_country_flag = GER_saxon_civil_war}
+		}
+
+		remove_effect = {
+			add_popularity = {
+				ideology = fascism
+				popularity = -0.02
+			}
+			4={
+				remove_core_of = AUS
+				set_demilitarized_zone = no
+			}
+			152={
+				remove_core_of = AUS
+				set_demilitarized_zone = no
+			}
+			851={
+				remove_core_of = AUS
+				set_demilitarized_zone = no
+			}
+			852={
+				remove_core_of = AUS
+				set_demilitarized_zone = no
+			}
+			add_manpower = -50000
+		}
+	}
+	GER_retake_franken = {
+
+		allowed = {
+			original_tag = GER
+		}
+
+		available = {
+			has_stability > 0.40
+			has_manpower > 10000
+			OR={
+				has_full_control_of_state = 54
+				BAY={has_full_control_of_state = 54}
+			}
+			if={
+				limit={
+					BAY={has_full_control_of_state = 54}
+				}
+				has_full_control_of_state = 60
+			}
+		}
+		
+		icon = oppression
+		
+		highlight_states = {
+			highlight_state_targets = { state = 54 } 
+		}
+		cancel_if_not_visible = yes
+
+		on_map_mode = map_only
+
+		cost = 50
+
+		fire_only_once = yes
+		days_remove = 50
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		visible = {
+			has_war = no
+			54={is_core_of = BAY}
+			NOT={has_country_flag = GER_saxon_civil_war}
+		}
+
+		remove_effect = {
+			if={
+				limit={
+					BAY={exists = no}
+				}
+				54={
+					remove_core_of = BAY
+					set_demilitarized_zone = no
+				}
+			}
+			else={
+				start_border_war = {
+					change_state_after_war = yes
+					attacker = {
+						state = 60
+						num_provinces = 3
+						on_win = saxonian.21
+						on_lose = saxonian.22
+						on_cancel = saxonian.23
+						modifier = 0.1
+						dig_in_factor = 0
+						terrain_factor = 0
+					}	
+					defender = {
+						state = 54
+						num_provinces = 4
+						on_win = saxonian.22
+						on_lose = saxonian.21
+						on_cancel = saxonian.23
+					}
+				}
+			}
+			add_manpower = -10000
+		}
+	}
+	GER_retake_niederbayern = {
+
+		allowed = {
+			original_tag = GER
+		}
+
+		available = {
+			has_stability > 0.40
+			has_manpower > 10000
+			OR={
+				has_full_control_of_state = 53
+				BAY={has_full_control_of_state = 53}
+			}
+			if={
+				limit={
+					BAY={has_full_control_of_state = 53}
+				}
+				has_full_control_of_state = 54
+			}
+		}
+		
+		icon = oppression
+		
+		highlight_states = {
+			highlight_state_targets = { state = 53 } 
+		}
+		cancel_if_not_visible = yes
+
+		on_map_mode = map_only
+
+		cost = 50
+
+		fire_only_once = yes
+		days_remove = 50
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		visible = {
+			has_war = no
+			53={is_core_of = BAY}
+			NOT={has_country_flag = GER_saxon_civil_war}
+		}
+
+		remove_effect = {
+			if={
+				limit={
+					BAY={exists = no}
+				}
+				53={
+					remove_core_of = BAY
+					set_demilitarized_zone = no
+				}
+			}
+			else={
+				start_border_war = {
+					change_state_after_war = yes
+					attacker = {
+						state = 54
+						num_provinces = 3
+						on_win = saxonian.21
+						on_lose = saxonian.22
+						on_cancel = saxonian.23
+						modifier = 0.1
+						dig_in_factor = 0
+						terrain_factor = 0
+					}	
+					defender = {
+						state = 53
+						num_provinces = 3
+						on_win = saxonian.22
+						on_lose = saxonian.21
+						on_cancel = saxonian.23
+					}
+				}
+			}
+			add_manpower = -10000
+		}
+	}
+	GER_crush_revolution_in_munich = {
+
+		allowed = {
+			original_tag = GER
+		}
+		
+
+		available = {
+			has_full_control_of_state = 52
+			has_stability > 0.5
+			has_manpower > 20000
+			845={is_demilitarized_zone = no}
+			850={is_demilitarized_zone = no}
+			53={is_demilitarized_zone = no}
+			54={is_demilitarized_zone = no}
+		}
+		
+		icon = oppression
+		
+		highlight_states = {
+			highlight_state_targets = { state = 52 } 
+		}
+		cancel_if_not_visible = yes
+
+		on_map_mode = map_only
+
+		cost = 100
+
+		fire_only_once = yes
+		days_remove = 20
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		visible = {
+			has_war = no
+			52={is_core_of = BAY}
+			NOT={has_country_flag = GER_saxon_civil_war}
+		}
+
+		remove_effect = {
+			52={
+				remove_core_of = BAY
+				set_demilitarized_zone = no
+			}
+			add_manpower = -20000
+			add_popularity = {
+				ideology = communism
+				popularity = -0.05
+			}
+		}
+	}
+	GER_civil_war_countdown = {
+
+		icon = generic_operation
+
+		allowed = {
+			original_tag = GER
+		}
+
+		available = {
+			has_stability > 0.1
+			custom_trigger_tooltip={
+				tooltip = GER_monarchy_more_popular_than_communism
+				monarchy > party_popularity@communism
+			}
+			custom_trigger_tooltip={
+				tooltip = GER_monarchy_more_popular_than_republicanism
+				monarchy > party_popularity@democratic
+			}
+			
+		}
+
+		days_mission_timeout = 180
+		fire_only_once = yes
+
+		activation = {
+			OR={
+				has_stability < 0.1
+				monarchy < party_popularity@communism
+				monarchy < party_popularity@democratic
+			}
+			BAY={exists = yes}
+		}
+
+		is_good = no
+
 		complete_effect = {
-			add_timed_idea = { idea = GER_air_safety_regulations days = 1095 }
-			set_global_flag = GER_air_safety_regulations_flag
+			add_stability = 0.1
+			#custom_effect_tooltip = barbarossa_mission_tt
+		}
+
+		timeout_effect = {
+			custom_effect_tooltip = GER_civil_war_mission_tt
+			set_country_flag = GER_saxon_civil_war
+		}
+
+		ai_will_do = {
+			factor = 1
 		}
 	}
 }

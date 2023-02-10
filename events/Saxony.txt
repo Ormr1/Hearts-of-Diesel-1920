@@ -14,6 +14,7 @@ country_event = {
 	is_triggered_only = yes
 	immediate = {
 		hidden_effect = {
+			add_manpower = -5000000
 			855 = {
 				add_dynamic_modifier = { modifier = frankish_resistance }
 			}
@@ -294,6 +295,401 @@ country_event = {#SYR info - saxony seises control over oilfields
 	
 	option = {
 		name = saxonian.12.a
+		
+	}
+}
+country_event = {#socialist movements in bavaria
+	id = saxonian.13
+	title = saxonian.13.t
+	desc = saxonian.13.d
+	picture = GFX_report_event_finnish_letter
+	
+	#is_triggered_only = yes
+	fire_only_once = yes
+	trigger={
+		date < 1922.01.01
+		has_stability < 0.4
+		64={
+			is_core_of = DDR
+		}
+		OR={
+			tag = GER
+			original_tag = GER
+		}
+	}
+	mean_time_to_happen = { days = 100 }
+	
+	option = {
+		name = saxonian.13.a
+		add_popularity = {
+			ideology = communism
+			popularity = 0.05
+		}
+		add_stability = -0.03
+		54={
+			set_demilitarized_zone = yes
+			add_core_of = BAY
+		}
+		53={
+			set_demilitarized_zone = yes
+			add_core_of = BAY
+		}
+		52={
+			set_demilitarized_zone = yes
+			add_core_of = BAY
+		}
+		845={
+			set_demilitarized_zone = yes
+			add_core_of = BAY
+		}
+		850={
+			set_demilitarized_zone = yes
+			add_core_of = BAY
+		}
+		hidden_effect={
+			BAY={
+				set_politics = {
+					ruling_party = communism
+				}
+				set_popularities = {
+					communism = 100
+				}
+			}
+		}
+	}
+}
+country_event = {#spartacus threat, first in the chain
+	id = saxonian.14
+	title = saxonian.14.t
+	desc = saxonian.14.d
+	picture = GFX_report_event_finnish_letter
+	
+	#is_triggered_only = yes
+	fire_only_once = yes
+	trigger={
+		date < 1922.01.01
+		has_stability < 0.50
+		OR={
+			tag = GER
+			original_tag = GER
+		}
+	}
+	mean_time_to_happen = { days = 100 }
+	
+	option = {
+		name = saxonian.14.a
+		GER={
+			add_ideas = {spariticus_unrest}
+		}
+		64={
+			set_demilitarized_zone = yes
+			add_core_of = DDR
+		}
+		hidden_effect={
+			DDR={
+				set_cosmetic_tag = GER_spartacus
+			}
+			country_event = {id = saxonian.16 days = 20 random = 200}
+		}
+	}
+}
+country_event = {#austrian black shirts
+	id = saxonian.15
+	title = saxonian.15.t
+	desc = saxonian.15.d
+	picture = GFX_report_event_finnish_letter
+	
+	#is_triggered_only = yes
+	fire_only_once = yes
+	trigger={
+		52={
+			is_core_of = BAY
+		}
+		OR={
+			tag = GER
+			original_tag = GER
+		}
+	}
+	mean_time_to_happen = { days = 200 }
+	
+	option = {
+		name = saxonian.15.a
+		add_stability = -0.05
+		152={
+			set_demilitarized_zone = yes
+			add_core_of = AUS
+		}
+		852={
+			set_demilitarized_zone = yes
+			add_core_of = AUS
+		}
+		4={
+			set_demilitarized_zone = yes
+			add_core_of = AUS
+		}
+		851={
+			set_demilitarized_zone = yes
+			add_core_of = AUS
+		}
+	}
+}
+country_event = {#spartacus threat spreads to the rest of brandenburg
+	id = saxonian.16
+	title = saxonian.16.t
+	desc = saxonian.16.d
+	picture = GFX_report_event_finnish_letter
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = saxonian.16.a
+		add_stability = -0.05
+		840={
+			set_demilitarized_zone = yes
+			add_core_of = DDR
+		}
+		837={
+			set_demilitarized_zone = yes
+			add_core_of = DDR
+		}
+		68={
+			set_demilitarized_zone = yes
+			add_core_of = DDR
+		}
+	}
+}
+
+country_event = {#SPS dominates the bohemian election
+	id = saxonian.17
+	title = saxonian.17.t
+	desc = saxonian.17.d
+	picture = GFX_report_event_finnish_letter
+	
+	#is_triggered_only = yes
+	fire_only_once = yes
+	trigger={
+		date < 1922.01.01
+		OR={
+			tag = GER
+			original_tag = GER
+		}
+	}
+	mean_time_to_happen = { days = 250 }
+	
+	option = {
+		name = saxonian.17.a
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.05
+		}
+		add_stability = -0.05
+		9={
+			set_demilitarized_zone = yes
+			add_core_of = WGR
+		}
+		69={
+			set_demilitarized_zone = yes
+			add_core_of = WGR
+		}
+		75={
+			set_demilitarized_zone = yes
+			add_core_of = WGR
+		}
+		946={
+			set_demilitarized_zone = yes
+			add_core_of = WGR
+		}
+		74={
+			set_demilitarized_zone = yes
+			add_core_of = WGR
+		}
+		hidden_effect={
+			WGR={
+				set_cosmetic_tag = WGR_saxon_democratic_movement
+				set_politics = {
+					ruling_party = democratic
+				}
+				set_popularities = {
+					democratic = 100
+				}
+			}
+		}
+	}
+}
+country_event = {#Dutch pro-SPS protests erupt across the Lowlands
+	id = saxonian.18
+	title = saxonian.18.t
+	desc = saxonian.18.d
+	picture = GFX_report_event_finnish_letter
+	
+	#is_triggered_only = yes
+	fire_only_once = yes
+	trigger={
+		date < 1922.01.01
+		9={
+			is_core_of = WGR
+		}
+		has_stability < 0.27
+		OR={
+			tag = GER
+			original_tag = GER
+		}
+	}
+	mean_time_to_happen = { days = 300 }
+	
+	option = {
+		name = saxonian.18.a
+		add_stability = -0.05
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.05
+		}
+		36={
+			set_demilitarized_zone = yes
+			add_core_of = WGR
+		}
+		950={
+			set_demilitarized_zone = yes
+			add_core_of = WGR
+		}
+		35={
+			set_demilitarized_zone = yes
+			add_core_of = WGR
+		}
+		7={
+			set_demilitarized_zone = yes
+			add_core_of = WGR
+		}
+		6={
+			set_demilitarized_zone = yes
+			add_core_of = WGR
+		}
+		949={
+			set_demilitarized_zone = yes
+			add_core_of = WGR
+		}
+	}
+}
+
+country_event = {#spartacus unrest along the rhine 
+	id = saxonian.19
+	title = saxonian.19.t
+	desc = saxonian.19.d
+	picture = GFX_report_event_finnish_letter
+	
+	fire_only_once = yes
+	trigger={
+		date < 1922.01.01
+		64={
+			is_core_of = DDR
+		}
+		has_stability < 0.32
+		OR={
+			tag = GER
+			original_tag = GER
+		}
+	}
+	
+	option = {
+		name = saxonian.19.a
+		add_stability = -0.03
+		51={
+			set_demilitarized_zone = yes
+			add_core_of = DDR
+		}
+		838={
+			set_demilitarized_zone = yes
+			add_core_of = DDR
+		}
+		42={
+			set_demilitarized_zone = yes
+			add_core_of = DDR
+		}
+	}
+}
+country_event = {#People's State of Bavaria
+	id = saxonian.20
+	title = saxonian.20.t
+	desc = saxonian.20.d
+	picture = GFX_report_event_finnish_letter
+	
+	#is_triggered_only = yes
+	fire_only_once = yes
+	trigger={
+		has_stability < 0.15
+		52={
+			is_core_of = BAY
+		}
+		OR={
+			tag = GER
+			original_tag = GER
+		}
+	}
+	mean_time_to_happen = { days = 100 }
+	
+	option = {
+		name = saxonian.20.a
+		BAY={
+			set_cosmetic_tag = BAV_peoples_republic
+		}
+		54={
+			set_demilitarized_zone = no
+			transfer_state_to = BAY
+		}
+		53={
+			set_demilitarized_zone = no
+			transfer_state_to = BAY
+		}
+		52={
+			set_demilitarized_zone = no
+			transfer_state_to = BAY
+		}
+		845={
+			set_demilitarized_zone = no
+			transfer_state_to = BAY
+		}
+		850={
+			set_demilitarized_zone = no
+			transfer_state_to = BAY
+		}
+	}
+}
+country_event = {#victory in franken
+	id = saxonian.21
+	title = saxonian.21.t
+	desc = saxonian.21.d
+	picture = GFX_report_event_finnish_letter
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = saxonian.21.a
+		
+	}
+}
+country_event = {#loss in franken
+	id = saxonian.22
+	title = saxonian.22.t
+	desc = saxonian.22.d
+	picture = GFX_report_event_finnish_letter
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = saxonian.21.a
+		
+	}
+}
+country_event = {#stalemate in franken
+	id = saxonian.23
+	title = saxonian.23.t
+	desc = saxonian.23.d
+	picture = GFX_report_event_finnish_letter
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = saxonian.21.a
 		
 	}
 }

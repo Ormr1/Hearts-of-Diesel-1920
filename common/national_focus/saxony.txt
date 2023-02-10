@@ -50,6 +50,9 @@ focus_tree = {
 		completion_reward = {
 			country_event = {id=saxonian.1}
 		}
+		ai_will_do={
+			factor = 100
+		}
 	}
 	focus = {
 		id = GER_demobilisation
@@ -91,6 +94,9 @@ focus_tree = {
 				add_political_power = 50
 			}
 		}
+		ai_will_do={
+			factor = 100
+		}
 	}
 
 	focus = {
@@ -107,6 +113,9 @@ focus_tree = {
 
 		completion_reward = {
 			
+		}
+		ai_will_do={
+			factor = 50
 		}
 	}
 	focus = {
@@ -145,6 +154,9 @@ focus_tree = {
 
 		completion_reward = {
 			add_stability = 0.1
+		}
+		ai_will_do={
+			factor = 10
 		}
 	}
 	focus = {
@@ -449,7 +461,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			add_political_power = 100
 		}
 	}
 	focus = {

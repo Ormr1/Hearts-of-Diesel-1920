@@ -1411,3 +1411,13 @@
  KAZ_alash:0 "Alash"
  KAZ_alash_DEF:0 "Alash"
  KAZ_alash_ADJ:0 "Alash"
+ 
+ GER_spartacus:0 "Spartacus League"
+ GER_spartacus_DEF:0 "Spartacus League"
+ GER_spartacus_ADJ:0 "Spartacus"
+ WGR_saxon_democratic_movement:0 "Saxon Democracy Movement"
+ WGR_saxon_democratic_movement_DEF:0 "Saxon Democracy Movement"
+ WGR_saxon_democratic_movement_ADJ:0 "SPS"
+ BAV_peoples_republic:0 "People's State of Bavaria"
+ BAV_peoples_republic_DEF:0 "People's State of Bavaria"
+ BAV_peoples_republic_ADJ:0 "Bavarian"

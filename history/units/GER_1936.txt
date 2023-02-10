@@ -750,6 +750,24 @@ units = {
 		division_template = "Conscript Division"
 		start_experience_factor = 0.3
 	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 22
+		}
+		location = 317
+		division_template = "Conscript Division"
+		start_experience_factor = 0.3
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 22
+		}
+		location = 11366
+		division_template = "Conscript Division"
+		start_experience_factor = 0.3
+	}
 }
 
 ### Air oob in its own file
