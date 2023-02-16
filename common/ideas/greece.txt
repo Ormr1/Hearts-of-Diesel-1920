@@ -33,7 +33,7 @@ ideas = {
 				always = yes
 			}
 
-			picture = generic_victors_of_ww1
+			picture = GRE_perpetual_peace
 				
 			removal_cost = -1
 				
@@ -54,7 +54,7 @@ ideas = {
 				always = yes
 			}
 
-			picture = generic_victors_of_ww1
+			picture = GRE_perpetual_peace
 				
 			removal_cost = -1
 				

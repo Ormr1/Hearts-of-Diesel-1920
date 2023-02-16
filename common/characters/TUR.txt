@@ -303,6 +303,12 @@ characters={
 				large="GFX_portrait_tur_abdulmejid_ii" #Can become country leader later (Non-Aligned -> Despotism)
 			}
 		}
+		country_leader={
+			ideology=absolute_monarchy
+			traits={  }
+			expire="1944.1.1.1"
+			id=-1
+		}
 	}
 
 	TUR_izzettin_chalishlar={

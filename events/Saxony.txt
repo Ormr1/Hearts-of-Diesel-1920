@@ -525,7 +525,7 @@ country_event = {#Dutch pro-SPS protests erupt across the Lowlands
 	#is_triggered_only = yes
 	fire_only_once = yes
 	trigger={
-		date < 1922.01.01
+		date < 1925.01.01
 		9={
 			is_core_of = WGR
 		}
@@ -535,7 +535,7 @@ country_event = {#Dutch pro-SPS protests erupt across the Lowlands
 			original_tag = GER
 		}
 	}
-	mean_time_to_happen = { days = 300 }
+	mean_time_to_happen = { days = 100 }
 	
 	option = {
 		name = saxonian.18.a
@@ -691,5 +691,57 @@ country_event = {#stalemate in franken
 	option = {
 		name = saxonian.21.a
 		
+	}
+}
+country_event = {#miriacle on the rhine
+	id = saxonian.24
+	title = saxonian.24.t
+	desc = saxonian.24.d
+	picture = GFX_report_event_finnish_letter
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = saxonian.24.a
+		
+	}
+}
+country_event = {#GER info - Report on our external loans
+	id = saxonian.25
+	title = saxonian.25.t
+	desc = saxonian.25.d
+	picture = GFX_report_event_finnish_letter
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = saxonian.25.a
+	}
+}
+country_event = {#SAU - Eye of Saxony turns to the middle east
+	id = saxonian.26
+	title = saxonian.26.t
+	desc = saxonian.26.d
+	picture = GFX_report_event_finnish_letter
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = saxonian.26.a
+	}
+}
+country_event = {#SAU - Saxony offers protection
+	id = saxonian.27
+	title = saxonian.27.t
+	desc = saxonian.27.d
+	picture = GFX_report_event_finnish_letter
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = saxonian.27.a
+	}
+	option = {
+		name = saxonian.27.b
 	}
 }

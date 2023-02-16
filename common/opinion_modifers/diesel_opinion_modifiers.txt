@@ -1,6 +1,6 @@
 opinion_modifiers = {
 	
-	tyrant_overlord = {
+	GER_tyrant_overlord = {
 		value = -50
 	}
 }

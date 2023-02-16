@@ -17,6 +17,21 @@ ideas = {
 				stability_factor = -0.05
 			}
 		}
+		GER_papiermark_improved = {
+			name = GER_papiermark
+			allowed = {
+				original_tag = GER
+			}
+
+			removal_cost = -1
+
+			picture = ger_mefo_bills
+
+			modifier = {
+				consumer_goods_factor = -0.075
+				stability_factor = -0.05
+			}
+		}
 		GER_war_debt = {
 			name = GER_war_debt
 			allowed = {
@@ -96,7 +111,7 @@ ideas = {
 			picture = generic_army_problems
 
 			modifier = {
-				stability_factor = -0.5
+				stability_factor = -0.05
 				war_support_factor = -0.05 
 				army_org_factor = -0.1
 			}
@@ -191,7 +206,7 @@ ideas = {
 		
 		spariticus_unrest = {
 		
-			picture = home_of_the_revolution
+			picture = generic_communist_army
 			
 			allowed = {
 				original_tag = GER

@@ -782,3 +782,9 @@ GER_decrease_debt={
 		}
 	}
 }
+GER_increase_debt={
+	add_to_variable={
+		tooltip = GER_take_debt_tooltip
+		GER_war_loan_amount_M = GER_tmp_increase_loan_var
+	}
+}

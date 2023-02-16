@@ -5,6 +5,7 @@ oob = "ELS_1936"
 # Starting tech
 set_technology = {
 	pre_gw_infantry_weapons = 1
+	gw_artillery = 1
 	early_fighter = 1
 }
 
@@ -32,8 +33,13 @@ recruit_character = ELS_jose_maria_cuellar
 
 
 set_country_flag = monroe_doctrine
+set_cosmetic_tag = USC_UNIFIED
 set_war_support = 0.1
 set_convoys = 5
+add_ideas = {
+	ELS_walkers_ghost_idea
+	ELS_banana_states_idea
+}
 
 1939.1.1 = {
 	add_political_power = 1198
@@ -81,13 +87,14 @@ set_convoys = 5
 }
 
 set_politics = {
-	ruling_party = fascism
-	last_election = "1935.1.15"
+	ruling_party = neutrality
+	last_election = "1917.2.8"
 	election_frequency = 48
-	elections_allowed = yes
+	elections_allowed = no
 }
 set_popularities = {
-	fascism = 100
+	democratic = 30
+	neutrality = 70
 }
 
 1939.1.1 = {

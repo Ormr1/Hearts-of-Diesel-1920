@@ -2779,4 +2779,53 @@ GER_warbond_administration={
 			factor = 0
 		}
 	}
+	GER_miricle_on_rhine_mission = {
+
+		allowed = { always = no }
+
+		icon = ger_mefo_bills
+
+		available = {
+			
+			hidden_trigger = { always = no }
+		}
+
+		#cost = GER_mefo_bill_counter?10
+
+		days_mission_timeout = 360
+		is_good = yes
+		fire_only_once = yes
+
+		cancel_trigger = {
+			OR={
+				NOT={has_full_control_of_state = 51}
+				51={
+					is_demilitarized_zone = yes
+				}
+				NOT={has_full_control_of_state = 838}
+				838={
+					is_demilitarized_zone = yes
+				}
+			}
+		}
+
+		days_remove = 360
+		remove_effect = {
+		}
+
+		complete_effect = {
+		}
+
+		timeout_effect = {
+			set_temp_variable = {
+				GER_tmp_decrease_loan_var = 1000
+			}
+			GER_decrease_debt = yes
+			country_event = saxonian.24
+		}
+
+		ai_will_do = {
+			factor = 200
+		}
+	}
 }
