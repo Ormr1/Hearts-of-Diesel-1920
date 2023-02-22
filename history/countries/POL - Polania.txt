@@ -113,6 +113,7 @@ recruit_character = POL_wincenty_witos
 recruit_character = POL_wladyslaw_raczkiewicz
 recruit_character = POL_boleslaw_piasecki
 recruit_character = POL_edward_rydzsmigly
+recruit_character = POL_tadeusz_kosciuszko_ii
 recruit_character = POL_wladyslaw_bortnowski
 recruit_character = POL_stanislaw_kopanski
 recruit_character = POL_marian_kukiel
@@ -158,6 +159,7 @@ recruit_character = POL_friedrich_christian
 recruit_character = POL_rudinger_von_der_goltz
 recruit_character = POL_vladislav_korchits
 recruit_character = POL_wojtek
+recruit_character = POL_sejmik_regency
 
 if = {
 	limit = {
@@ -178,7 +180,6 @@ if = {
 		has_dlc = "No Step Back"
 	}
 	recruit_character = POL_henryk_floyar_rajchman
-	recruit_character = POL_sejmik_regency
 }
 
 if = {

@@ -20,51 +20,6 @@ characters = {
 			expire="1935.5.12.1"
 		}
 	}
-	
-	POL_anna_andersson = {
-		name="Anastasia Romanov"
-		portraits = {
-			civilian = {
-				large="GFX_portrait_POL_anna_anderson"
-			}
-		}
-		country_leader = {
-			ideology=despotism
-			traits = { the_last_romanov_maybe }
-			expire="1965.1.1.1"
-			id=-1
-		}
-	}
-
-	POL_karl_albrecht = {
-		name=POL_karl_albrecht
-		portraits = {
-			civilian = {
-				large="GFX_portrait_POL_karl_albrecht"
-			}
-		}
-		country_leader = {
-			ideology=despotism
-			traits = { patriot_king }
-			expire="1965.1.1.1"
-			id=-1
-		}
-	}
-
-	POL_friedrich_christian = {
-		name=POL_friedrich_christian
-		portraits = {
-			civilian = {
-				large="GFX_portrait_POL_friedrich_christian"
-			}
-		}
-		country_leader = {
-			ideology=despotism
-			expire="1965.1.1.1"
-			id=-1
-			traits = { royal_legitimist }
-		}
-	}
 
 	POL_sejmik_regency = {
 		name=POL_sejmik_regency
@@ -74,7 +29,7 @@ characters = {
 			}
 		}
 		country_leader = {
-			ideology=despotism
+			ideology=constitutional_monarchy
 			expire="1965.1.1.1"
 			id=-1
 		}
@@ -452,6 +407,18 @@ characters = {
 			planning_skill=4
 			logistics_skill=3
 			legacy_id=-1
+		}
+	}
+
+	POL_tadeusz_kosciuszko_ii = {
+		name = POL_tadeusz_kosciuszko_ii
+		portraits = {
+			army = {
+				large = "GFX_portrait_POL_tadeusz_kosciuszko_ii"
+			}
+			civilian = {
+				large = "GFX_portrait_POL_tadeusz_kosciuszko_ii"
+			}
 		}
 	}
 

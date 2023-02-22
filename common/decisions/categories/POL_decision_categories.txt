@@ -1,6 +1,17 @@
 ################
 ##### POL ######
 ################
+POL_imperial_glory = {
+	icon = generic_formable_nations
+	picture = GFX_decision_cat_generic_commonwealth
+	allowed = {
+		original_tag = POL
+	}
+	visible = {
+		has_completed_focus = POL_imperial_glory
+	}
+	priority = 101
+}
 POL_disarm_radical_militias_decisions = {
 	icon = placeholder
 	allowed = {

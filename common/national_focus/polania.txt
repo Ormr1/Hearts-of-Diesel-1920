@@ -552,7 +552,16 @@ focus_tree = {
         y = 1
         cost = 5
         completion_reward = {
-
+            POL_tadeusz_kosciuszko_ii = {
+                add_country_leader_role = {
+                    promote_leader = yes
+                    country_leader = {
+                        ideology=benevolent_monarchy
+                        traits = { patriot_king great_war_hero }
+                        expire="1965.1.1.1"
+                    }
+                }
+            }
         }
     }
     focus = {
@@ -664,7 +673,7 @@ focus_tree = {
         y = 2
         cost = 5
         completion_reward = {
-            
+            set_variable = { pol_imperial_cores_added = 0 }
         }
     }
     focus = {

@@ -1,3 +1,118 @@
+POL_imperial_glory = {
+	POL_integrate_imperial_territory = {
+		icon = placeholder
+		allowed = {
+			tag = POL
+		}
+		state_target = yes
+		ai_will_do = {
+			base = 100
+		}
+		on_map_mode = map_only
+		available = {
+			NOT = {
+				has_country_flag = POL_integrating_imperial_territory
+			}
+			has_capitulated = no
+			FROM = {
+				owner = {
+					has_capitulated = no
+					controls_state = PREV
+				}
+			}
+		}
+		visible = {
+			FROM = {
+				AND = {
+					is_owned_by = ROOT
+					OR = {
+						state = 853
+						state = 847
+						state = 67
+						state = 5
+						state = 763
+						state = 188
+						state = 11
+						state = 815
+						state = 189
+						state = 96
+						state = 95
+						state = 93
+						state = 94
+						state = 948
+						state = 190
+						state = 809
+						state = 12
+						state = 808
+						state = 810
+						state = 191
+						state = 811
+						state = 812
+						state = 813
+						state = 13
+						state = 209
+						state = 210
+						state = 207
+						state = 906
+						state = 206
+						state = 204
+						state = 194
+						state = 201
+						state = 202
+						state = 203
+						state = 242
+						state = 243
+						state = 241
+						state = 224
+						state = 193
+						state = 259
+						state = 226
+						state = 225
+						state = 220
+						state = 222
+						state = 240
+						state = 221
+					}
+				}
+			}
+		}
+		days_remove = 14
+		modifier = {
+			political_power_gain = -0.05
+		}
+		complete_effect = {
+			set_country_flag = POL_integrating_imperial_territory
+		}
+		remove_effect = {
+			clr_country_flag = POL_integrating_imperial_territory
+			FROM = {
+				add_core_of = ROOT
+			}
+			add_to_variable = { pol_imperial_cores_added = 1 }
+		}
+	}
+	POL_proclaim_the_old_empire = {
+		icon = placeholder
+		allowed = {
+			tag = POL
+		}
+		ai_will_do = {
+			base = 100
+		}
+		available = {
+			check_variable = {
+				var = pol_imperial_cores_added
+				value = 10
+				compare = greater_than_or_equals
+			}
+		}
+		complete_effect = {
+			add_political_power = 300
+			add_stability = 0.05
+			# change cosmetic tag to POL_empire
+		}
+	}
+}
 POL_disarm_radical_militias_decisions = {
 	POL_disarm_saxon_militias_in_state = {
 		icon = placeholder

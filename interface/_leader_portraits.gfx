@@ -225,11 +225,16 @@ spriteTypes = {
 		name = "GFX_portrait_POL_edward_rydz_smigly"
 		texturefile = "gfx/leaders/POL/portrait_POL_edward_rydz_smigly.dds"
 	}
-
 	spriteType = {
 		name = "GFX_portrait_POL_edward_rydz_smigly_small"
 		texturefile = "gfx/interface/ideas/idea_POL_edward_rydz_smigly.dds"
 	}
+
+	spriteType = {
+		name = "GFX_portrait_POL_tadeusz_kosciuszko_ii"
+		texturefile = "gfx/leaders/POL/GFX_portrait_POL_tadeusz_kosciuszko_ii.dds"
+	}
+
 	spriteType = {
 		name = "GFX_portrait_POL_marian_kukiel"
 		texturefile = "gfx/leaders/POL/portrait_POL_marian_kukiel.dds"
