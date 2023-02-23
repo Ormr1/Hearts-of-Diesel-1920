@@ -178,7 +178,7 @@ units = {
 			"Rudolf Schmidt"
 		}
 		location = 11506
-		division_template = "Panzer-Division"
+		division_template = "Converted Automachines"
 		start_experience_factor = 0.3
 		force_equipment_variants = { light_tank_chassis_1 = { owner = "GER" version_name = "Panzer I Ausf. A" } }
 	}
@@ -197,7 +197,7 @@ units = {
 		#	}
 		#}
 		location = 3380
-		division_template = "Panzer-Division"
+		division_template = "Converted Automachines"
 		start_experience_factor = 0.3
 		force_equipment_variants = { light_tank_chassis_1 = { owner = "GER" version_name = "Panzer I Ausf. A" } }
 	}
@@ -210,7 +210,7 @@ units = {
 			"Ernst Fessmann"
 		}
 		location = 6521
-		division_template = "Panzer-Division"
+		division_template = "Converted Automachines"
 		start_experience_factor = 0.3
 		force_equipment_variants = { light_tank_chassis_1 = { owner = "GER" version_name = "Panzer I Ausf. A" } }
 	}

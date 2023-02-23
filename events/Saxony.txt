@@ -295,7 +295,11 @@ country_event = {#SYR info - saxony seises control over oilfields
 	
 	option = {
 		name = saxonian.12.a
-		
+		give_resource_rights = {
+			receiver = GER
+			state = 680
+			resources = { oil }
+		}
 	}
 }
 country_event = {#socialist movements in bavaria
@@ -742,6 +746,24 @@ country_event = {#SAU - Saxony offers protection
 		name = saxonian.27.a
 	}
 	option = {
+		name = saxonian.27.b
+	}
+}
+country_event = {#CRI - saxon invation to dresden pact
+	id = saxonian.28
+	title = saxonian.28.t
+	desc = saxonian.28.d
+	picture = GFX_report_event_finnish_letter
+	
+	is_triggered_only = yes
+	
+	option = {#of course
+		name = saxonian.27.a
+		FROM={
+			add_to_faction = ROOT
+		}
+	}
+	option = {#refuse
 		name = saxonian.27.b
 	}
 }

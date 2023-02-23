@@ -955,7 +955,7 @@ political_actions = {
 		
 
 		available = {
-			has_stability > 0.5
+			has_stability > 0.6
 			has_manpower > 20000
 			has_full_control_of_state = 64
 			840={is_demilitarized_zone = no}
@@ -1093,6 +1093,54 @@ political_actions = {
 			add_manpower = -10000
 		}
 	}
+	GER_retake_ostmark = {
+
+		allowed = {
+			original_tag = GER
+		}
+
+		available = {
+			has_stability > 0.40
+			has_manpower > 10000
+		}
+		
+		icon = oppression
+		
+		highlight_states = {
+			highlight_state_targets = { state = 68 } 
+		}
+		cancel_if_not_visible = yes
+
+		on_map_mode = map_only
+
+		cost = 50
+
+		fire_only_once = yes
+		days_remove = 50
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		visible = {
+			has_war = no
+			68={is_core_of = DDR}
+			NOT={has_country_flag = GER_saxon_civil_war}
+		}
+
+		remove_effect = {
+			add_popularity = {
+				ideology = communism
+				popularity = -0.02
+			}
+			68={
+				remove_core_of = DDR
+				set_demilitarized_zone = no
+			}
+			add_manpower = -10000
+		}
+	}
+
 	GER_retake_west_bank_rhine = {
 
 		allowed = {
@@ -1234,21 +1282,28 @@ political_actions = {
 			add_manpower = -10000
 		}
 	}
-	GER_retake_ostmark = {
+
+	GER_crush_revolution_in_holland = {
 
 		allowed = {
 			original_tag = GER
 		}
 
 		available = {
-			has_stability > 0.40
-			has_manpower > 10000
+			has_stability > 0.60
+			has_manpower > 20000
+			has_full_control_of_state = 7
+			36={is_demilitarized_zone = no}
+			950={is_demilitarized_zone = no}
+			35={is_demilitarized_zone = no}
+			6={is_demilitarized_zone = no}
+			949={is_demilitarized_zone = no}
 		}
 		
 		icon = oppression
 		
 		highlight_states = {
-			highlight_state_targets = { state = 68 } 
+			highlight_state_targets = { state = 7 } 
 		}
 		cancel_if_not_visible = yes
 
@@ -1265,20 +1320,20 @@ political_actions = {
 
 		visible = {
 			has_war = no
-			68={is_core_of = DDR}
+			7={is_core_of = WGR}
 			NOT={has_country_flag = GER_saxon_civil_war}
 		}
 
 		remove_effect = {
 			add_popularity = {
-				ideology = communism
+				ideology = democratic
 				popularity = -0.02
 			}
-			68={
-				remove_core_of = DDR
+			7={
+				remove_core_of = WGR
 				set_demilitarized_zone = no
 			}
-			add_manpower = -10000
+			add_manpower = -20000
 		}
 	}
 	GER_retake_vlaanderen = {
@@ -1422,59 +1477,6 @@ political_actions = {
 			add_manpower = -10000
 		}
 	}
-	GER_crush_revolution_in_holland = {
-
-		allowed = {
-			original_tag = GER
-		}
-
-		available = {
-			has_stability > 0.50
-			has_manpower > 20000
-			has_full_control_of_state = 7
-			36={is_demilitarized_zone = no}
-			950={is_demilitarized_zone = no}
-			35={is_demilitarized_zone = no}
-			6={is_demilitarized_zone = no}
-			949={is_demilitarized_zone = no}
-		}
-		
-		icon = oppression
-		
-		highlight_states = {
-			highlight_state_targets = { state = 7 } 
-		}
-		cancel_if_not_visible = yes
-
-		on_map_mode = map_only
-
-		cost = 50
-
-		fire_only_once = yes
-		days_remove = 50
-
-		ai_will_do = {
-			factor = 10
-		}
-
-		visible = {
-			has_war = no
-			7={is_core_of = WGR}
-			NOT={has_country_flag = GER_saxon_civil_war}
-		}
-
-		remove_effect = {
-			add_popularity = {
-				ideology = democratic
-				popularity = -0.02
-			}
-			7={
-				remove_core_of = WGR
-				set_demilitarized_zone = no
-			}
-			add_manpower = -20000
-		}
-	}
 	GER_retake_west_friesland = {
 
 		allowed = {
@@ -1569,6 +1571,7 @@ political_actions = {
 			add_manpower = -10000
 		}
 	}
+
 	GER_crush_revolution_in_prague = {
 
 		allowed = {
@@ -1576,7 +1579,7 @@ political_actions = {
 		}
 
 		available = {
-			has_stability > 0.50
+			has_stability > 0.60
 			has_manpower > 10000
 			has_full_control_of_state = 9
 			69={is_demilitarized_zone = no}
@@ -1809,6 +1812,7 @@ political_actions = {
 			add_manpower = -10000
 		}
 	}
+
 	GER_retake_austria = {
 
 		allowed = {
@@ -2040,7 +2044,7 @@ political_actions = {
 
 		available = {
 			has_full_control_of_state = 52
-			has_stability > 0.5
+			has_stability > 0.6
 			has_manpower > 20000
 			845={is_demilitarized_zone = no}
 			850={is_demilitarized_zone = no}
@@ -2084,6 +2088,7 @@ political_actions = {
 			}
 		}
 	}
+
 	GER_civil_war_countdown = {
 
 		icon = generic_operation
@@ -2777,6 +2782,44 @@ GER_warbond_administration={
 
 		ai_will_do = {
 			factor = 0
+		}
+	}
+	
+	GER_redem_a_portion_of_bonds = {
+
+		icon = ger_mefo_bills
+
+		available = {
+			has_idea = GER_war_debt
+			num_of_civilian_factories_available_for_projects > 4
+		}
+
+		cost = 50
+		visible = {
+			hidden_trigger = {
+				has_country_flag = GER_debt_repayment_authorised
+			}
+		}
+		days_remove = 180
+
+		cancel_if_not_visible = yes
+
+		remove_effect = {
+			set_temp_variable = {
+				GER_tmp_decrease_loan_var = 150
+			}
+			GER_decrease_debt = yes
+		}
+		modifier={
+			civilian_factory_use = 5
+		}
+
+		ai_will_do = {
+			factor = 2
+			modifier={
+				factor = 0
+				has_war = yes
+			}
 		}
 	}
 	GER_miricle_on_rhine_mission = {

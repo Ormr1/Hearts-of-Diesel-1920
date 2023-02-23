@@ -193,7 +193,7 @@ if = {
 }
 
 set_research_slots = 4
-set_convoys = 200
+set_convoys = 700
 set_stability = 0.55 
 set_war_support = 0.3
 

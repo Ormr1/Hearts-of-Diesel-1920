@@ -2612,7 +2612,7 @@ country_event = {
 	picture = placeholder
 
 	trigger = {
-		
+		always = no#please fix this
 	}
 
 	is_triggered_only = no
@@ -2632,7 +2632,7 @@ country_event = {
 	picture = placeholder
 
 	trigger = {
-		
+		always = no#please fix this
 	}
 
 	is_triggered_only = no

@@ -2972,7 +2972,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/focus_SOV_baltic_security.dds"
 	}
 
-	SpriteType = { 
+	SpriteType = {
 		name = "GFX_focus_SOV_south_manchuria_railway"
 		texturefile = "gfx/interface/goals/focus_SOV_south_manchuria_railway.dds"
 	}
@@ -2985,6 +2985,14 @@ spriteTypes = {
 	SpriteType = { 
 		name = "GFX_focus_SOV_approach_semyonov"
 		texturefile = "gfx/interface/goals/focus_SOV_approach_semyonov.dds"
+	}
+	SpriteType = { 
+		name = "GFX_focus_SWI_issue_war_bonds"
+		texturefile = "gfx/interface/goals/focus_SWI_issue_war_bonds.dds"
+	}
+	SpriteType = { 
+		name = "GFX_focus_generic_refit_civilian_ships"
+		texturefile = "gfx/interface/goals/focus_generic_refit_civilian_ships.dds"
 	}
 	SpriteType = { 
 		name = "GFX_focus_generic_iron_harvest"
@@ -3044,6 +3052,51 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_focus_FEN_annihilator"
 		texturefile = "gfx/interface/goals/FENRIS/focus_FEN_annihilator.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_GER_levantine_oil"
+		texturefile = "gfx/interface/goals/SAXONY/focus_GER_levantine_oil.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_GER_new_holland_gold"
+		texturefile = "gfx/interface/goals/SAXONY/focus_GER_new_holland_gold.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_GER_riches_of_mittleafrika"
+		texturefile = "gfx/interface/goals/SAXONY/focus_GER_riches_of_mittleafrika.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_GER_wealth_of_south_africa"
+		texturefile = "gfx/interface/goals/SAXONY/focus_GER_wealth_of_south_africa.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_GER_debt_administration"
+		texturefile = "gfx/interface/goals/SAXONY/focus_GER_debt_administration.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_GER_finish_peace_talks"
+		texturefile = "gfx/interface/goals/SAXONY/focus_GER_finish_peace_talks.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_GER_occupation_of_frankia"
+		texturefile = "gfx/interface/goals/SAXONY/focus_GER_occupation_of_frankia.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_GER_securing_the_levant"
+		texturefile = "gfx/interface/goals/SAXONY/focus_GER_securing_the_levant.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_GER_nationalise_ksmva"
+		texturefile = "gfx/interface/goals/SAXONY/focus_GER_nationalise_ksmva.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_GER_expand_ksmva"
+		texturefile = "gfx/interface/goals/SAXONY/focus_GER_expand_ksmva.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_GER_feeding_rhineland"
+		texturefile = "gfx/interface/goals/SAXONY/focus_GER_feeding_rhineland.dds"
 	}
 
 }
