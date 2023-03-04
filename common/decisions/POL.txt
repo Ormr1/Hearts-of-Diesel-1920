@@ -112,6 +112,49 @@ POL_imperial_glory = {
 			# change cosmetic tag to POL_empire
 		}
 	}
+	POL_hold_royal_parade = {
+		icon = placeholder
+		allowed = {
+			tag = POL
+		}
+		ai_will_do = {
+			base = 100
+		}
+		available = {
+			has_completed_focus = POL_royal_guard
+		}
+		visible = {
+			has_completed_focus = POL_royal_guard
+		}
+		days_remove = 14
+		modifier = {
+			consumer_goods_factor = 0.05
+		}
+		complete_effect = {
+			add_political_power = -50
+		}
+		remove_effect = {
+			random_list = {
+				25 = {
+					add_political_power = 25
+				}
+				25 = {
+					add_political_power = 25
+					add_stability = 0.01
+				}
+				25 = {
+					add_political_power = 50
+					add_stability = 0.01
+					add_war_support = 0.01
+				}
+				25 = {
+					add_political_power = 75
+					add_stability = 0.02
+					add_war_support = 0.02
+				}
+			}
+		}
+	}
 }
 POL_disarm_radical_militias_decisions = {
 	POL_disarm_saxon_militias_in_state = {

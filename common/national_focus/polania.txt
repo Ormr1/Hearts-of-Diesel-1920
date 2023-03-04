@@ -158,7 +158,7 @@ focus_tree = {
     focus = {
         id = POL_secure_independent_judiciary
         icon = placeholder
-        prerequisite = { focus = POL_hold_parliamentary_elections }
+        prerequisite = { focus = POL_strengthen_the_sejm }
         prerequisite = { focus = POL_codify_checks_and_balances }
         relative_position_id = POL_draft_a_democratic_constitution
         x = 0
@@ -562,6 +562,7 @@ focus_tree = {
                     }
                 }
             }
+            set_cosmetic_tag = POL_commonwealth
         }
     }
     focus = {
@@ -573,7 +574,36 @@ focus_tree = {
         y = 1
         cost = 5
         completion_reward = {
-
+            division_template = {
+                name = "Imperial Guard"
+                is_locked = no
+                division_names_group = POL_INF_01
+                priority = 1
+                template_counter = 61
+                regiments = {
+                    infantry = { x = 0 y = 0 }
+                    infantry = { x = 0 y = 1 }
+                    infantry = { x = 0 y = 2 }
+                    infantry = { x = 0 y = 3 }
+                    artillery = { x = 0 y = 4 }
+                    infantry = { x = 1 y = 0 }
+                    infantry = { x = 1 y = 1 }
+                    infantry = { x = 1 y = 2 }
+                    artillery = { x = 1 y = 3 }
+                }
+                support = {
+                    artillery = { x = 0 y = 0 }
+                }
+            }
+            every_owned_state = {
+                limit = {
+                    is_capital = yes
+                }
+                create_unit = {
+                    division = "name = \"The Old Guard\" division_template = \"Imperial Guard\" start_experience_factor = 5"
+                    owner = ROOT
+                }
+            }
         }
     }
     focus = {
@@ -585,7 +615,45 @@ focus_tree = {
         y = 2
         cost = 5
         completion_reward = {
-
+            division_template = {
+                name = "Royal Hussars"
+                is_locked = no
+                division_names_group = POL_INF_01
+                priority = 1
+                template_counter = 16
+                regiments = {
+                    cavalry = { x = 0 y = 0 }
+                    cavalry = { x = 0 y = 1 }
+                    cavalry = { x = 0 y = 2 }
+                    cavalry = { x = 0 y = 3 }
+                    cavalry = { x = 0 y = 4 }
+                    cavalry = { x = 1 y = 0 }
+                    cavalry = { x = 1 y = 1 }
+                    cavalry = { x = 1 y = 2 }
+                    cavalry = { x = 1 y = 3 }
+                    cavalry = { x = 1 y = 4 }
+                    cavalry = { x = 2 y = 0 }
+                    cavalry = { x = 2 y = 1 }
+                    cavalry = { x = 2 y = 2 }
+                    cavalry = { x = 2 y = 3 }
+                    cavalry = { x = 2 y = 4 }
+                }
+                support = {
+                    artillery = { x = 0 y = 0 }
+                    anti_air = { x = 0 y = 1 }
+                    engineer = { x = 0 y = 2 }
+                    recon = { x = 0 y = 3 }
+                }
+            }
+            every_owned_state = {
+                limit = {
+                    is_capital = yes
+                }
+                create_unit = {
+                    division = "name = \"Vistula Guard\" division_template = \"Royal Hussars\" start_experience_factor = 5"
+                    owner = ROOT
+                }
+            }
         }
     }
     focus = {
@@ -597,7 +665,7 @@ focus_tree = {
         y = 1
         cost = 5
         completion_reward = {
-
+            add_ideas = POL_imperial_legacy_1
         }
     }
     focus = {
@@ -610,7 +678,7 @@ focus_tree = {
         y = 1
         cost = 5
         completion_reward = {
-
+            add_ideas = POL_army_of_the_polanian_empire
         }
         
     }
@@ -623,7 +691,7 @@ focus_tree = {
         y = 1
         cost = 5
         completion_reward = {
-
+            remove_ideas = POL_weak_executive
         }
     }
     focus = {
@@ -636,12 +704,17 @@ focus_tree = {
         y = 1
         cost = 5
         completion_reward = {
-
+            swap_ideas = {
+                remove_idea = POL_imperial_legacy_1
+                add_idea = POL_imperial_legacy_2
+            }
+            add_research_slot = 1
         }
     }
     focus = {
         id = POL_royal_parades
         icon = placeholder
+        available = { has_completed_focus = POL_imperial_glory }
         prerequisite = { focus = POL_restore_the_imperial_army }
         prerequisite = { focus = POL_restoration_of_the_imperial_palace }
         relative_position_id = POL_restore_the_imperial_army
@@ -649,7 +722,7 @@ focus_tree = {
         y = 1
         cost = 5
         completion_reward = {
-
+            unlock_decision_tooltip = POL_hold_royal_parade
         }
     }
     focus = {
@@ -661,7 +734,55 @@ focus_tree = {
         y = 1
         cost = 5
         completion_reward = {
-
+            custom_effect_tooltip = POL_commonwealth_dreams_tt
+            hidden_effect = {
+                853 = { add_core_of = ROOT }
+                847 = { add_core_of = ROOT }
+                67 = { add_core_of = ROOT }
+                5 = { add_core_of = ROOT }
+                763 = { add_core_of = ROOT }
+                188 = { add_core_of = ROOT }
+                11 = { add_core_of = ROOT }
+                815 = { add_core_of = ROOT }
+                189 = { add_core_of = ROOT }
+                96 = { add_core_of = ROOT }
+                95 = { add_core_of = ROOT }
+                93 = { add_core_of = ROOT }
+                94 = { add_core_of = ROOT }
+                948 = { add_core_of = ROOT }
+                190 = { add_core_of = ROOT }
+                809 = { add_core_of = ROOT }
+                12 = { add_core_of = ROOT }
+                808 = { add_core_of = ROOT }
+                810 = { add_core_of = ROOT }
+                191 = { add_core_of = ROOT }
+                811 = { add_core_of = ROOT }
+                812 = { add_core_of = ROOT }
+                813 = { add_core_of = ROOT }
+                13 = { add_core_of = ROOT }
+                209 = { add_core_of = ROOT }
+                210 = { add_core_of = ROOT }
+                207 = { add_core_of = ROOT }
+                906 = { add_core_of = ROOT }
+                206 = { add_core_of = ROOT }
+                204 = { add_core_of = ROOT }
+                194 = { add_core_of = ROOT }
+                201 = { add_core_of = ROOT }
+                202 = { add_core_of = ROOT }
+                203 = { add_core_of = ROOT }
+                242 = { add_core_of = ROOT }
+                243 = { add_core_of = ROOT }
+                241 = { add_core_of = ROOT }
+                224 = { add_core_of = ROOT }
+                193 = { add_core_of = ROOT }
+                259 = { add_core_of = ROOT }
+                226 = { add_core_of = ROOT }
+                225 = { add_core_of = ROOT }
+                220 = { add_core_of = ROOT }
+                222 = { add_core_of = ROOT }
+                240 = { add_core_of = ROOT }
+                221 = { add_core_of = ROOT }
+            }
         }
     }
     focus = {
@@ -673,6 +794,7 @@ focus_tree = {
         y = 2
         cost = 5
         completion_reward = {
+            unlock_decision_category_tooltip = POL_imperial_glory
             set_variable = { pol_imperial_cores_added = 0 }
         }
     }
@@ -686,7 +808,7 @@ focus_tree = {
         y = 1
         cost = 5
         completion_reward = {
-
+            add_ideas = POL_commonwealth_propaganda
         }
     }
     focus = {
@@ -695,10 +817,23 @@ focus_tree = {
         prerequisite = { focus = POL_restoration_of_the_imperial_palace }
         prerequisite = { focus = POL_commonwealth_propaganda }
         relative_position_id = POL_restoration_of_the_imperial_palace
+        cost = 5
         x = 1
         y = 1
         completion_reward = {
-
+            every_other_country = {
+                limit = {
+                    has_government = monarchy
+                }
+                add_opinion_modifier  = {
+                    target = ROOT
+                    modifier = large_increase
+                }
+                reverse_add_opinion_modifier  = {
+                    target = ROOT
+                    modifier = large_increase
+                }
+            }
         }
     }
     focus = {
@@ -707,8 +842,15 @@ focus_tree = {
         prerequisite = { focus = POL_royal_parades }
         prerequisite = { focus = POL_reach_out_to_other_monarchies }
         relative_position_id = POL_coronation_of_tadeusz_kosciuszko_ii
+        cost = 10
         x = 0
         y = 4
+        completion_reward = {
+            swap_ideas = {
+                remove_idea = POL_imperial_legacy_2
+                add_idea = POL_imperial_legacy_3
+            }
+        }
     }
     focus = {
         id = POL_falangists_win

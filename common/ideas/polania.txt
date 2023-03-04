@@ -426,6 +426,90 @@ country = {
 		}
 	}
 
+	POL_imperial_legacy_1 = {
+		picture = placeholder
+		allowed = {
+			original_tag = POL
+			always = no
+		}
+		allowed_civil_war = {
+			always = yes
+		}
+		removal_cost = 0
+		modifier = {
+			monarchy_drift = 0.01
+			stability_factor = 0.025
+		}
+	}
+
+	POL_imperial_legacy_2 = {
+		picture = placeholder
+		allowed = {
+			original_tag = POL
+			always = no
+		}
+		allowed_civil_war = {
+			always = yes
+		}
+		removal_cost = 0
+		modifier = {
+			monarchy_drift = 0.01
+			stability_factor = 0.025
+			army_attack_factor = 0.025
+			army_defence_factor = 0.025
+		}
+	}
+	
+	POL_imperial_legacy_3 = {
+		picture = placeholder
+		allowed = {
+			original_tag = POL
+			always = no
+		}
+		allowed_civil_war = {
+			always = yes
+		}
+		removal_cost = 0
+		modifier = {
+			monarchy_drift = 0.01
+			war_support_factor = 0.05
+			stability_factor = 0.05
+			army_attack_factor = 0.05
+			army_defence_factor = 0.05
+		}
+	}
+
+	POL_commonwealth_propaganda = {
+		picture = placeholder
+		allowed = {
+			original_tag = POL
+			always = no
+		}
+		allowed_civil_war = {
+			always = yes
+		}
+		removal_cost = 0
+		modifier = {
+			political_power_factor = 0.05
+			annex_cost_factor = -0.10
+		}
+	}
+
+	POL_army_of_the_polanian_empire = {
+		picture = placeholder
+		allowed = {
+			original_tag = POL
+			always = no
+		}
+		allowed_civil_war = {
+			always = yes
+		}
+		removal_cost = 0
+		modifier = {
+			mobilization_speed = 0.2
+		}
+	}
+
 	POL_new_military_academy_idea = {
 
 		allowed = {

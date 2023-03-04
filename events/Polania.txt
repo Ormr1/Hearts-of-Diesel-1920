@@ -19,34 +19,54 @@ country_event = {
             }
             807 = {
                 add_dynamic_modifier = { modifier = saxon_nationalist_militias }
+                set_resistance = 10
+                set_compliance = 50
             }
             762 = {
                 add_dynamic_modifier = { modifier = saxon_nationalist_militias }
+                set_resistance = 10
+                set_compliance = 50
             }
             199 = {
                 add_dynamic_modifier = { modifier = ukraizhian_nationalist_militias }
+                set_resistance = 10
+                set_compliance = 50
             }
             78 = {
                 add_dynamic_modifier = { modifier = moldovan_nationalist_militias }
+                set_resistance = 10
+                set_compliance = 50
             }
             80 = {
                 add_dynamic_modifier = { modifier = ukraizhian_nationalist_militias }
+                set_resistance = 10
+                set_compliance = 50
             }
             834 = {
                 add_dynamic_modifier = { modifier = ukraizhian_nationalist_militias }
                 add_dynamic_modifier = { modifier = moldovan_nationalist_militias }
+                set_resistance = 20
+                set_compliance = 30
             }
             879 = {
                 add_dynamic_modifier = { modifier = ukraizhian_nationalist_militias }
+                set_resistance = 10
+                set_compliance = 50
             }
             89 = {
                 add_dynamic_modifier = { modifier = ukraizhian_nationalist_militias }
+                set_resistance = 10
+                set_compliance = 50
             }
             91 = {
                 add_dynamic_modifier = { modifier = ukraizhian_nationalist_militias }
+                set_resistance = 10
+                set_compliance = 50
             }
             198 = {
                 add_dynamic_modifier = { modifier = ukraizhian_nationalist_militias }
+                set_resistance = 10
+                set_compliance = 50
             }
         }
     }
