@@ -529,6 +529,21 @@ on_actions = {
 					give_resource_rights = { receiver = USA state = 480 }
 				}
 			}
+			#Crimean KSMVA control
+			if = {
+				limit = {
+					OR={
+						has_dlc = "Man the Guns"
+						has_dlc = "Battle for the Bosporus"
+					}
+					CRI={
+						has_idea = CRI_KSMVA_domination
+					}
+				}
+				CRI = {
+					give_resource_rights = { receiver = GER state = 229 }
+				}
+			}
 			# Game Rules - Decolonization
 			if = {
 				limit = {

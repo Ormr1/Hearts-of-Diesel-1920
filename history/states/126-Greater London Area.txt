@@ -1,12 +1,12 @@
 state={
 	id=126
 	name="STATE_126"
-	manpower=9824296
+	manpower=7386755
 	
 	state_category = megalopolis
 
 	history={
-		owner = SCO
+		owner = CSL
 		victory_points = {
 			6103 50 
 		}
@@ -18,11 +18,12 @@ state={
 			anti_air_building = 5
 			radar_station = 1
 			air_base = 10
-			11374 = {
+			6103 = {
 				naval_base = 10
 			}
 		}
-		add_core_of = SCO
+		add_core_of = CSL
+		
 		add_core_of = ENG
 		1939.1.1 = {
 			buildings = {
@@ -33,7 +34,7 @@ state={
 	}
 
 	provinces={
-		6103 9239 11333 11374 
+		6103   
 	}
 
 	local_supplies=0.0 

@@ -472,7 +472,6 @@ country_event = {#SPS dominates the bohemian election
 	#is_triggered_only = yes
 	fire_only_once = yes
 	trigger={
-		date < 1922.01.01
 		OR={
 			tag = GER
 			original_tag = GER
@@ -765,5 +764,107 @@ country_event = {#CRI - saxon invation to dresden pact
 	}
 	option = {#refuse
 		name = saxonian.27.b
+	}
+}
+country_event = {#TMR - saxon aid arrives
+	id = saxonian.29
+	title = saxonian.29.t
+	desc = saxonian.29.d
+	picture = GFX_report_event_finnish_letter
+	
+	is_triggered_only = yes
+	
+	option = {#of course
+		name = saxonian.29.a
+		FROM={
+			send_equipment = {
+				equipment = infantry_equipment
+				amount = 200
+				target = ROOT
+			}
+		}
+		add_manpower = 10000
+		load_oob = TMR_saxon_aid
+	}
+}
+country_event = {#GER - saxon civil war
+	id = saxonian.30
+	title = saxonian.30.t
+	desc = saxonian.30.d
+	picture = GFX_report_event_finnish_letter
+	
+	is_triggered_only = yes
+	
+	immediate={
+		DDR={
+			every_core_state={
+				transfer_state_to = DDR
+			}
+		}
+		WGR={
+			every_core_state={
+				transfer_state_to = WGR
+			}
+			declare_war_on = {
+				target = WGR
+				type = civil_war
+			}
+			add_civil_war_target = DDR
+		}
+		AUS={
+			every_core_state={
+				transfer_state_to = AUS
+			}
+		}
+		if={
+			limit={
+				BAY = {exists = yes}
+			}
+			declare_war_on = {
+				target = BAY
+				type = civil_war
+			}
+			AUS={
+				declare_war_on = {
+					target = BAY
+					type = civil_war
+				}
+			}
+		}
+		every_core_state={
+			add_core_of = WGR
+			add_core_of = DDR
+		}
+		declare_war_on = {
+			target = WGR
+			type = civil_war
+		}
+		add_civil_war_target = WGR
+		declare_war_on = {
+			target = DDR
+			type = civil_war
+		}
+		add_civil_war_target = DRR
+		declare_war_on = {
+			target = AUS
+			type = civil_war
+		}
+	}
+	
+	option = {#Stay the course
+		name = saxonian.30.a
+		
+	}
+	option = {#communist
+		name = saxonian.30.b
+		DDR={
+			change_tag_from = GER
+		}
+	}
+	option = {#democratic
+		name = saxonian.30.c
+		WGR={
+			change_tag_from = GER
+		}
 	}
 }

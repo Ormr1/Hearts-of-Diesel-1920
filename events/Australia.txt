@@ -293,7 +293,15 @@ country_event = {#new holland rejects demands
 				}
 			}
 			leave_faction = yes
-			AST={leave_faction = yes}
+			every_core_state={
+				add_core_of = AST
+			}
+			AST={
+				leave_faction = yes
+				every_core_state={
+					add_core_of = NAQ
+				}
+			}
 		}
 		add_war_support = 0.25
 		declare_war_on = {

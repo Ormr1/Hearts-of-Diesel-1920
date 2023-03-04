@@ -18,23 +18,144 @@ FEN_help_paraguay = {
         value = 50
     }
 }
-RGS_help_USUA = {
+FEN_help_rusviet = {
 	allowed = {
-		tag = RGS
+		tag = FEN
 	}
 	enable = {
-		country_exists = UUA
-		UUA={has_war = yes}
+		country_exists = SOV
+		SOV = {
+			has_war = yes
+			has_country_leader = SOV_rasputin
+		}
 	}
 	abort_when_not_enabled = yes
 	ai_strategy = {
 		type = send_volunteers_desire
-		id = "UUA"
+		id = "SOV"
 		value = 500
 	}
 	ai_strategy = {
         type = support
-        id = "UUA"
-        value = 150
+        id = "SOV"
+        value = 50
     }
+}
+FEN_unit_production = {
+	allowed = {
+		original_tag = FEN
+	}
+	enable = {
+		always = yes
+	}
+	abort = {
+		always = no
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = garrison
+		value = 1
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = paratroopers
+		value = 4
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = mountaineers
+		value = 0
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = marines
+		value = 2
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = cavalry
+		value = -100
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = motorized
+		value = 5 #because doctrine this = 2
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = mechanized
+		value = 5 #because doctrine this = 0
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = armor
+		value = 10 #because doctrine this = 3
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = infantry
+		value = 5 #88 to 70
+	}
+
+	# Naval unit factors
+	ai_strategy = {
+		type = unit_ratio
+		id = capital_ship
+		value = 15
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = infantry
+		value = 5 #30 to 50
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = anti_tank
+		value = 20
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = anti_air
+		value = 25
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = artillery
+		value = 100 #20 to 40
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = armor
+		value = -10
+	}
+	ai_strategy = {
+		type = equipment_production_factor
+		id = motorized
+		value = -10
+	}
+	ai_strategy = {
+		type = equipment_production_min_factories #Build these up over time, don't stall
+		id = anti_air
+		value = 2
+	}
+	ai_strategy = {
+		type = equipment_production_min_factories
+		id = artillery
+		value = 4
+	}
+
 }

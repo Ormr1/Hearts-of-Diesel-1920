@@ -169,4 +169,5 @@ SOV_rusviet_factions_system = {
 				GRE_political_instability_update_effect = yes
 			}
 		}
-	}}
+	}
+}

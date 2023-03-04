@@ -124,7 +124,7 @@ focus_tree = {
 		relative_position_id = GER_scars_of_the_great_war
 		x = 0
 		y = 1
-		cost = 10
+		cost = 5
 		search_filters = {  FOCUS_FILTER_ECONOMIC }
 		prerequisite = { focus = GER_scars_of_the_great_war}
 		
@@ -146,7 +146,7 @@ focus_tree = {
 		relative_position_id = GER_scars_of_the_great_war
 		x = -3
 		y = 1
-		cost = 10
+		cost = 5
 		search_filters = {  FOCUS_FILTER_ECONOMIC }
 		prerequisite = { focus = GER_scars_of_the_great_war}
 		
@@ -166,7 +166,7 @@ focus_tree = {
 		prerequisite = { focus = GER_continued_demobilisation}
 		x =-1
 		y = 1
-		cost = 20
+		cost = 10
 		search_filters = {  FOCUS_FILTER_POLITICAL }
 		
 		available_if_capitulated = yes
@@ -185,7 +185,7 @@ focus_tree = {
 		prerequisite = { focus = GER_adressing_the_armies_issues}
 		x =0
 		y = 1
-		cost = 10
+		cost = 5
 		search_filters = {  FOCUS_FILTER_POLITICAL }
 		
 		available_if_capitulated = yes
@@ -204,7 +204,7 @@ focus_tree = {
 		prerequisite = { focus = GER_returning_automachines_to_fields}
 		x =0
 		y = 1
-		cost = 10
+		cost = 5
 		search_filters = {  FOCUS_FILTER_POLITICAL }
 		
 		available_if_capitulated = yes
@@ -224,7 +224,7 @@ focus_tree = {
 		prerequisite = { focus = GER_continued_demobilisation}
 		x = 2
 		y = 1
-		cost = 20
+		cost = 10
 		search_filters = {  FOCUS_FILTER_POLITICAL }
 		
 		available_if_capitulated = yes
@@ -243,7 +243,7 @@ focus_tree = {
 		prerequisite = { focus = GER_adressing_the_navies_issues}
 		x =-1
 		y = 1
-		cost = 10
+		cost = 5
 		search_filters = {  FOCUS_FILTER_POLITICAL }
 		
 		available_if_capitulated = yes
@@ -263,7 +263,7 @@ focus_tree = {
 		prerequisite = { focus = GER_adressing_the_navies_issues}
 		x =1
 		y = 1
-		cost = 10
+		cost = 5
 		search_filters = {  FOCUS_FILTER_POLITICAL }
 		
 		available_if_capitulated = yes
@@ -280,7 +280,7 @@ focus_tree = {
 		prerequisite = { focus = GER_returning_requisitioned_convoys}
 		x =0
 		y = 2
-		cost = 10
+		cost = 5
 		search_filters = {  FOCUS_FILTER_POLITICAL }
 		
 		available_if_capitulated = yes
@@ -301,7 +301,7 @@ focus_tree = {
 		prerequisite = { focus = GER_scars_of_the_great_war}
 		x = 4
 		y = 1
-		cost = 10
+		cost = 5
 		search_filters = {  FOCUS_FILTER_POLITICAL }
 		
 		available_if_capitulated = yes
@@ -317,7 +317,7 @@ focus_tree = {
 		prerequisite = { focus = GER_occupation_of_east_frankia}
 		x =-3
 		y = 1
-		cost = 20
+		cost = 10
 		search_filters = {  FOCUS_FILTER_POLITICAL }
 		
 		available_if_capitulated = yes
@@ -335,7 +335,7 @@ focus_tree = {
 		prerequisite = { focus = GER_occupation_of_east_frankia}
 		x =-1
 		y = 1
-		cost = 20
+		cost = 10
 		search_filters = {  FOCUS_FILTER_POLITICAL }
 		
 		available_if_capitulated = yes
@@ -360,7 +360,7 @@ focus_tree = {
 		prerequisite = { focus = GER_increase_the_paris_garrison}
 		x =-1
 		y = 1
-		cost = 10
+		cost = 5
 		search_filters = {  FOCUS_FILTER_POLITICAL }
 		
 		available_if_capitulated = yes
@@ -386,7 +386,7 @@ focus_tree = {
 		prerequisite = { focus = GER_occupation_of_east_frankia}
 		x = 1
 		y = 1
-		cost = 20
+		cost = 10
 		search_filters = {  FOCUS_FILTER_POLITICAL }
 		
 		available_if_capitulated = yes
@@ -410,7 +410,7 @@ focus_tree = {
 		prerequisite = { focus = GER_occupation_of_east_frankia}
 		x = 3
 		y = 1
-		cost = 20
+		cost = 10
 		search_filters = {  FOCUS_FILTER_POLITICAL }
 		
 		available_if_capitulated = yes
@@ -432,7 +432,7 @@ focus_tree = {
 		prerequisite = { focus = GER_increase_presence_in_verdun}
 		x =1
 		y = 1
-		cost = 10
+		cost = 5
 		search_filters = {  FOCUS_FILTER_POLITICAL }
 		
 		available_if_capitulated = yes
@@ -458,7 +458,7 @@ focus_tree = {
 		icon = GFX_focus_generic_self_management
 		x = 25
 		y = 0
-		cost = 10
+		cost = 5
 		search_filters = {  FOCUS_FILTER_ECONOMIC }
 		available={has_completed_focus = GER_scars_of_the_great_war }
 		
@@ -475,13 +475,13 @@ focus_tree = {
 		prerequisite = { focus = GER_post_war_reconstruction }
 		x = 7
 		y = 1
-		cost = 10
+		cost = 5
 		search_filters = {  FOCUS_FILTER_ECONOMIC }
 		
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			add_ideas = KSMVA
 		}
 	}
 	focus = {
@@ -491,7 +491,7 @@ focus_tree = {
 		relative_position_id = GER_post_war_reconstruction
 		x = 4
 		y = 1
-		cost = 10
+		cost = 5
 		search_filters = {  FOCUS_FILTER_COLONIAL }
 		
 		available_if_capitulated = yes
@@ -506,7 +506,7 @@ focus_tree = {
 		relative_position_id = GER_colonial_development
 		x = -2
 		y = 1
-		cost = 10
+		cost = 5
 		search_filters = {  FOCUS_FILTER_COLONIAL }
 		prerequisite = { focus = GER_colonial_development}
 		
@@ -524,7 +524,7 @@ focus_tree = {
 		relative_position_id = GER_colonial_development
 		x = -1
 		y = 2
-		cost = 10
+		cost = 5
 		search_filters = {  FOCUS_FILTER_COLONIAL }
 		prerequisite = { focus = GER_colonial_development}
 		
@@ -542,7 +542,7 @@ focus_tree = {
 		relative_position_id = GER_colonial_development
 		x = 0
 		y = 1
-		cost = 10
+		cost = 5
 		search_filters = {  FOCUS_FILTER_COLONIAL }
 		prerequisite = { focus = GER_colonial_development}
 		
@@ -560,7 +560,7 @@ focus_tree = {
 		relative_position_id = GER_colonial_development
 		x = 1
 		y = 2
-		cost = 10
+		cost = 5
 		search_filters = {  FOCUS_FILTER_COLONIAL }
 		prerequisite = { focus = GER_colonial_development}
 		
@@ -578,7 +578,7 @@ focus_tree = {
 		relative_position_id = GER_colonial_development
 		x = 2
 		y = 1
-		cost = 10
+		cost = 5
 		search_filters = {  FOCUS_FILTER_COLONIAL }
 		prerequisite = { focus = GER_colonial_development}
 		
@@ -597,7 +597,7 @@ focus_tree = {
 		prerequisite = { focus = GER_post_war_reconstruction }
 		x = -5
 		y = 1
-		cost = 10
+		cost = 5
 		search_filters = {  FOCUS_FILTER_ECONOMIC }
 		
 		available_if_capitulated = yes
@@ -608,12 +608,12 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_problems_with_the_papiermark
-		icon = GFX_goal_generic_allies_build_infantry
+		icon = GFX_focus_GER_papiermark_problems
 		relative_position_id = GER_dealing_with_war_debt
 		prerequisite = { focus = GER_dealing_with_war_debt}
 		x = 5
 		y = 1
-		cost = 10
+		cost = 5
 		search_filters = {  FOCUS_FILTER_ECONOMIC }
 		
 		available_if_capitulated = yes
@@ -624,13 +624,13 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_keep_it_fiat
-		icon = GFX_goal_generic_allies_build_infantry
+		icon = GFX_focus_GER_keep_paipermark
 		relative_position_id = GER_problems_with_the_papiermark
 		prerequisite = { focus = GER_problems_with_the_papiermark}
 		mutually_exclusive = {focus = GER_return_to_the_goldmark}
 		x = -1
 		y = 1
-		cost = 10
+		cost = 5
 		search_filters = {  FOCUS_FILTER_ECONOMIC }
 		
 		available_if_capitulated = yes
@@ -645,13 +645,13 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_return_to_the_goldmark
-		icon = GFX_goal_generic_allies_build_infantry
+		icon = GFX_focus_GER_return_to_goldmark
 		relative_position_id = GER_problems_with_the_papiermark
 		prerequisite = { focus = GER_problems_with_the_papiermark}
 		mutually_exclusive = {focus = GER_keep_it_fiat}
 		x = 1
 		y = 1
-		cost = 10
+		cost = 5
 		search_filters = {  FOCUS_FILTER_ECONOMIC }
 		
 		available_if_capitulated = yes
@@ -667,7 +667,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_curbing_inflation
-		icon = GFX_goal_generic_allies_build_infantry
+		icon = GFX_focus_GER_curb_inflation
 		relative_position_id = GER_return_to_the_goldmark
 		prerequisite = { 
 			focus = GER_return_to_the_goldmark
@@ -675,7 +675,7 @@ focus_tree = {
 		}
 		x = -1
 		y = 1
-		cost = 10
+		cost = 5
 		search_filters = {  FOCUS_FILTER_ECONOMIC }
 		
 		available_if_capitulated = yes
@@ -691,7 +691,7 @@ focus_tree = {
 		prerequisite = { focus = GER_dealing_with_war_debt}
 		x = 0
 		y = 1
-		cost = 10
+		cost = 5
 		search_filters = {  FOCUS_FILTER_ECONOMIC }
 		
 		available_if_capitulated = yes
@@ -707,7 +707,7 @@ focus_tree = {
 		prerequisite = { focus = GER_issue_of_war_bonds}
 		x = 0
 		y = 1
-		cost = 10
+		cost = 5
 		search_filters = {  FOCUS_FILTER_ECONOMIC }
 		
 		available_if_capitulated = yes
@@ -723,7 +723,7 @@ focus_tree = {
 		prerequisite = { focus = GER_use_colonial_production}
 		x = 3
 		y = 1
-		cost = 10
+		cost = 5
 		search_filters = {  FOCUS_FILTER_ECONOMIC }
 		
 		available_if_capitulated = yes
@@ -759,7 +759,7 @@ focus_tree = {
 		prerequisite = { focus = GER_use_colonial_production}
 		x = 1
 		y = 1
-		cost = 10
+		cost = 5
 		search_filters = {  FOCUS_FILTER_ECONOMIC }
 
 		available = {
@@ -789,7 +789,7 @@ focus_tree = {
 		prerequisite = { focus = GER_use_colonial_production}
 		x = -1
 		y = 1
-		cost = 10
+		cost = 5
 		search_filters = {  FOCUS_FILTER_ECONOMIC }
 
 		available = {
@@ -819,7 +819,7 @@ focus_tree = {
 		prerequisite = { focus = GER_use_colonial_production}
 		x = -3
 		y = 1
-		cost = 10
+		cost = 5
 		search_filters = {  FOCUS_FILTER_ECONOMIC }
 
 		available = {
@@ -850,7 +850,7 @@ focus_tree = {
 		prerequisite = { focus = GER_issue_of_war_bonds}
 		x = -2
 		y = 1
-		cost = 10
+		cost = 5
 		search_filters = {  FOCUS_FILTER_ECONOMIC }
 
 		available={
@@ -883,7 +883,7 @@ focus_tree = {
 		prerequisite = { focus = GER_issue_of_war_bonds}
 		x = 2
 		y = 1
-		cost = 30
+		cost = 15
 		search_filters = {  FOCUS_FILTER_ECONOMIC }
 		
 		available_if_capitulated = yes
@@ -922,7 +922,7 @@ focus_tree = {
 		prerequisite = { focus = GER_dealing_with_war_debt}
 		x = -6
 		y = 1
-		cost = 10
+		cost = 5
 		search_filters = {  FOCUS_FILTER_ECONOMIC }
 		
 		available_if_capitulated = yes
@@ -938,7 +938,7 @@ focus_tree = {
 		prerequisite = { focus = GER_dealing_with_external_loans}
 		x = 2
 		y = 1
-		cost = 20
+		cost = 10
 		search_filters = {  FOCUS_FILTER_ECONOMIC }
 		
 		available_if_capitulated = yes
@@ -961,7 +961,7 @@ focus_tree = {
 		prerequisite = { focus = GER_dealing_with_external_loans}
 		x = 0
 		y = 1
-		cost = 20
+		cost = 10
 		search_filters = {  FOCUS_FILTER_ECONOMIC }
 		
 		available_if_capitulated = yes
@@ -984,7 +984,7 @@ focus_tree = {
 		prerequisite = { focus = GER_dealing_with_external_loans}
 		x = -2
 		y = 1
-		cost = 20
+		cost = 10
 		search_filters = {  FOCUS_FILTER_ECONOMIC }
 		
 		available_if_capitulated = yes
@@ -1007,7 +1007,7 @@ focus_tree = {
 		prerequisite = { focus = GER_dealing_with_external_loans}
 		x = -1
 		y = 2
-		cost = 20
+		cost = 10
 		search_filters = {  FOCUS_FILTER_ECONOMIC }
 		
 		available_if_capitulated = yes
@@ -1030,7 +1030,7 @@ focus_tree = {
 		prerequisite = { focus = GER_dealing_with_external_loans}
 		x = 1
 		y = 2
-		cost = 20
+		cost = 10
 		search_filters = {  FOCUS_FILTER_ECONOMIC }
 		
 		available_if_capitulated = yes
@@ -1106,7 +1106,7 @@ focus_tree = {
 		icon = GFX_focus_ger_return_of_the_kaiser
 		x = 34
 		y = 0
-		cost = 10
+		cost = 5
 		search_filters = {  FOCUS_FILTER_POLITICAL }
 		available={has_completed_focus = GER_scars_of_the_great_war }
 		
@@ -1123,7 +1123,7 @@ focus_tree = {
 		prerequisite = { focus = GER_a_steady_helm}
 		x = 0
 		y = 1
-		cost = 10
+		cost = 5
 		search_filters = {  FOCUS_FILTER_POLITICAL }
 		
 		available_if_capitulated = yes
@@ -1140,7 +1140,7 @@ focus_tree = {
 		mutually_exclusive = {focus = GER_trust_in_gunter}
 		x = 1
 		y = 1
-		cost = 10
+		cost = 5
 		search_filters = {  FOCUS_FILTER_POLITICAL }
 		
 		available_if_capitulated = yes
@@ -1151,12 +1151,12 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_wispers_of_fenris
-		icon = GFX_focus_generic_conspiracy
+		icon = GFX_focus_GER_wispers_fenris
 		relative_position_id = GER_faith_in_the_son
 		prerequisite = { focus = GER_faith_in_the_son}
 		x = 1
 		y = 1
-		cost = 10
+		cost = 5
 		search_filters = {  FOCUS_FILTER_POLITICAL }
 		
 		available_if_capitulated = yes
@@ -1173,7 +1173,7 @@ focus_tree = {
 		mutually_exclusive = {focus = GER_faith_in_the_son}
 		x = -1
 		y = 1
-		cost = 10
+		cost = 5
 		search_filters = {  FOCUS_FILTER_POLITICAL }
 		
 		available_if_capitulated = yes
@@ -1189,7 +1189,7 @@ focus_tree = {
 		prerequisite = { focus = GER_trust_in_gunter}
 		x = -1
 		y = 1
-		cost = 10
+		cost = 5
 		search_filters = {  FOCUS_FILTER_POLITICAL }
 		
 		available_if_capitulated = yes
@@ -1215,7 +1215,7 @@ focus_tree = {
 		}
 		x = 1
 		y = 1
-		cost = 10
+		cost = 5
 		search_filters = {  FOCUS_FILTER_POLITICAL }
 		
 		available_if_capitulated = yes
@@ -1233,13 +1233,16 @@ focus_tree = {
 		}
 		x = 0
 		y = 1
-		cost = 10
+		cost = 5
 		search_filters = {  FOCUS_FILTER_POLITICAL }
 		
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			add_popularity = {
+				ideology = monarchy
+				popularity = 0.05
+			}
 		}
 	}
 	focus = {
@@ -1251,7 +1254,7 @@ focus_tree = {
 		}
 		x = -1
 		y = 1
-		cost = 10
+		cost = 5
 		search_filters = {  FOCUS_FILTER_POLITICAL }
 		
 		available_if_capitulated = yes
@@ -1272,7 +1275,7 @@ focus_tree = {
 		}
 		x = 1
 		y = 1
-		cost = 10
+		cost = 5
 		search_filters = {  FOCUS_FILTER_POLITICAL }
 		
 		available_if_capitulated = yes
@@ -1289,7 +1292,7 @@ focus_tree = {
 		icon = GFX_goal_generic_allies_build_infantry
 		x = 40
 		y = 0
-		cost = 10
+		cost = 5
 		search_filters = {  FOCUS_FILTER_COLONIAL }
 		available={has_completed_focus = GER_scars_of_the_great_war }
 		
@@ -1308,7 +1311,7 @@ focus_tree = {
 		}
 		x = 2
 		y = 1
-		cost = 10
+		cost = 5
 		search_filters = {  FOCUS_FILTER_COLONIAL }
 
 		available={
@@ -1335,7 +1338,7 @@ focus_tree = {
 		}
 		x = -1
 		y = 1
-		cost = 10
+		cost = 5
 		search_filters = {  FOCUS_FILTER_COLONIAL }
 		
 		available_if_capitulated = yes
@@ -1375,7 +1378,7 @@ focus_tree = {
 		}
 		x = 1
 		y = 1
-		cost = 10
+		cost = 5
 		search_filters = {  FOCUS_FILTER_COLONIAL }
 
 		available={
@@ -1409,7 +1412,7 @@ focus_tree = {
 		}
 		x = 0
 		y = 1
-		cost = 10
+		cost = 5
 		search_filters = {  FOCUS_FILTER_COLONIAL }
 		
 		available_if_capitulated = yes
@@ -1429,7 +1432,7 @@ focus_tree = {
 		}
 		x = -2
 		y = 1
-		cost = 10
+		cost = 5
 		search_filters = {  FOCUS_FILTER_COLONIAL }
 		
 		available_if_capitulated = yes
@@ -1451,7 +1454,7 @@ focus_tree = {
 		}
 		x = -1
 		y = 1
-		cost = 10
+		cost = 5
 		search_filters = {  FOCUS_FILTER_COLONIAL }
 		available={PER={exists = yes}}
 		
@@ -1470,7 +1473,7 @@ focus_tree = {
 		}
 		x = 1
 		y = 1
-		cost = 10
+		cost = 5
 		search_filters = {  FOCUS_FILTER_COLONIAL }
 		available={INS={exists = yes}}
 		
@@ -1490,7 +1493,7 @@ focus_tree = {
 		}
 		x = 5
 		y = 1
-		cost = 10
+		cost = 5
 		search_filters = {  FOCUS_FILTER_COLONIAL }
 
 		available={
@@ -1512,7 +1515,7 @@ focus_tree = {
 		icon = GFX_goal_generic_army_doctrines
 		x = 20
 		y = 6
-		cost = 10
+		cost = 5
 		search_filters = {  FOCUS_FILTER_COLONIAL }
 		available={
 			has_completed_focus = GER_military_matters
@@ -1537,7 +1540,7 @@ focus_tree = {
 		}
 		x = 3
 		y = 1
-		cost = 10
+		cost = 5
 		search_filters = {  FOCUS_FILTER_COLONIAL }
 		available={
 			OR={
@@ -1548,7 +1551,6 @@ focus_tree = {
 				OR={
 					has_idea = GER_navy_on_verge_of_munity
 					has_idea = GER_navy_unrest
-					has_idea = GER_navy_light_unrest
 				}
 			}
 		}
@@ -1569,7 +1571,7 @@ focus_tree = {
 		}
 		x = -3
 		y = 1
-		cost = 10
+		cost = 5
 		search_filters = {  FOCUS_FILTER_COLONIAL }
 		available={
 			OR={
@@ -1580,7 +1582,6 @@ focus_tree = {
 				OR={
 					has_idea = GER_army_on_verge_of_munity
 					has_idea = GER_army_unrest
-					has_idea = GER_army_light_unrest
 				}
 			}
 		}
@@ -1601,7 +1602,7 @@ focus_tree = {
 		}
 		x = 0
 		y = 1
-		cost = 10
+		cost = 5
 		search_filters = {  FOCUS_FILTER_COLONIAL }
 		available={
 			OR={

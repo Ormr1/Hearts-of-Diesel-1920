@@ -3098,5 +3098,25 @@ spriteTypes = {
 		name = "GFX_focus_GER_feeding_rhineland"
 		texturefile = "gfx/interface/goals/SAXONY/focus_GER_feeding_rhineland.dds"
 	}
+	SpriteType = {
+		name = "GFX_focus_GER_papiermark_problems"
+		texturefile = "gfx/interface/goals/SAXONY/focus_GER_papiermark_problems.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_GER_return_to_goldmark"
+		texturefile = "gfx/interface/goals/SAXONY/focus_GER_return_to_goldmark.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_GER_keep_paipermark"
+		texturefile = "gfx/interface/goals/SAXONY/focus_GER_keep_paipermark.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_GER_curb_inflation"
+		texturefile = "gfx/interface/goals/SAXONY/focus_GER_curb_inflation.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_GER_wispers_fenris"
+		texturefile = "gfx/interface/goals/SAXONY/focus_GER_wispers_fenris.dds"
+	}
 
 }

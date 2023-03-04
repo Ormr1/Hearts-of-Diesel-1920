@@ -2039,12 +2039,31 @@ ideas = {
 		ksmva = {
 			
 			allowed = {
-				original_tag = GER
+				OR={
+					original_tag = GER
+					original_tag = CRI
+				}
 			}
 			
 			research_bonus = {
-				industry = 0.05
-				synth_resources = 0.15
+				industry = 0.1
+				synth_resources = 0.1
+			}
+			available = {
+				if={
+					limit={
+						original_tag = CRI
+					}
+					has_idea = CRI_KSMVA_domination
+				}
+			}
+			
+			modifier = {
+				fuel_gain = 0.5
+			}
+			
+			allowed_to_remove={
+				NOT={has_completed_focus = GER_fully_nationalise_KSMVA}
 			}
 			
 			traits = { refinery_concern }

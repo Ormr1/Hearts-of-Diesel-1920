@@ -1,0 +1,36 @@
+﻿division_template = {
+	name = "Saxon Infanterie-Division"
+
+	division_names_group = GER_Inf_01
+	is_locked = yes
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+        infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+        infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	
+	support = {
+        engineer = { x = 0 y = 0 }
+        artillery = { x = 0 y = 1 }
+	}
+}
+
+
+units = {
+	##### Ejercito de Uruguay #####
+	division= {	# "1era División de Infantería"
+		name = "Saxon Mercenaries"
+		location = 9340 # Riga
+		division_template = "Saxon Infanterie-Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+
+	}
+}

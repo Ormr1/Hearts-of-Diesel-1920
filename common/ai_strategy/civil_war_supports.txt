@@ -1,0 +1,61 @@
+RGS_help_USUA = {
+	allowed = {
+		tag = RGS
+	}
+	enable = {
+		country_exists = UUA
+		UUA={has_war = yes}
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "UUA"
+		value = 500
+	}
+	ai_strategy = {
+        type = support
+        id = "UUA"
+        value = 150
+    }
+}
+#GPs help baltic allies
+GER_help_TMR = {
+	allowed = {
+		tag = GER
+	}
+	enable = {
+		country_exists = TMR
+		TMR={has_war_with = RLL}
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "TMR"
+		value = 100
+	}
+	ai_strategy = {
+        type = support
+        id = "TMR"
+        value = 50
+    }
+}
+NOR_help_EST = {
+	allowed = {
+		tag = NOR
+	}
+	enable = {
+		country_exists = EST
+		EST={has_war_with = RLL}
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "EST"
+		value = 100
+	}
+	ai_strategy = {
+        type = support
+        id = "EST"
+        value = 50
+    }
+}
