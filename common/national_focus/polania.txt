@@ -335,7 +335,6 @@ focus_tree = {
         completion_reward = {
             add_stability = -0.01
             add_political_power = 150
-            custom_effect_tooltip = unlock_new_advisors_tt
         }
     }
     focus = {
@@ -349,7 +348,10 @@ focus_tree = {
         completion_reward = {
             add_stability = -0.01
             add_political_power = 150
-            custom_effect_tooltip = unlock_new_advisors_tt
+            custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = POL_henryk_floyar_rajchman
+            custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = POL_eugeniusz_kwiatkowiski
         }
     }
     focus = {
@@ -375,7 +377,10 @@ focus_tree = {
         completion_reward = {
             add_stability = -0.01
             add_political_power = 150
-            custom_effect_tooltip = unlock_new_advisors_tt
+            custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = POL_stanislaw_wojciechowski
+            custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = POL_mieczyslaw_michalowicz
         }
     }
     focus = {
@@ -863,6 +868,188 @@ focus_tree = {
         cost = 0
         completion_reward = {
             
+        }
+    }
+    focus = {
+        id = POL_strengthen_endecja
+        icon = placeholder
+        prerequisite = { focus = POL_falangists_win }
+        relative_position_id = POL_falangists_win
+        x = -2
+        y = 1
+        cost = 5
+        completion_reward = {
+            add_political_power = 120
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = POL_joachim_stefan_bartoszewicz
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = POL_tadeusz_bielecki
+        }
+    }
+    focus = {
+        id = POL_court_the_polanian_upper_class
+        icon = placeholder
+        prerequisite = { focus = POL_falangists_win }
+        relative_position_id = POL_falangists_win
+        x = 0
+        y = 1
+        cost = 5
+        completion_reward = {
+
+        }
+    }
+    focus = {
+        id = POL_strengthen_falanga
+        icon = placeholder
+        prerequisite = { focus = POL_falangists_win }
+        relative_position_id = POL_falangists_win
+        x = 2
+        y = 1
+        cost = 5
+        completion_reward = {
+            
+        }
+    }
+    focus = {
+        id = POL_emergency_powers_act
+        icon = placeholder
+        prerequisite = { focus = POL_strengthen_endecja }
+        prerequisite = { focus = POL_strengthen_falanga }
+        prerequisite = { focus = POL_court_the_polanian_upper_class }
+        relative_position_id = POL_falangists_win
+        x = 0
+        y = 2
+        cost = 5
+        completion_reward = {
+            effect_tooltip = {
+				set_politics = {
+					ruling_party = fascism
+					elections_allowed = no
+				}
+				promote_character = POL_boleslaw_piasecki
+			}
+        }
+    }
+    focus = {
+        id = POL_empower_catholic_church
+        icon = placeholder
+        prerequisite = { focus = POL_emergency_powers_act }
+        relative_position_id = POL_emergency_powers_act
+        x = -3
+        y = 1
+        cost = 5
+        completion_reward = {
+            add_ideas = POL_state_catholicism_1
+        }
+    }
+    focus = {
+        id = POL_ban_non_catholic_religions
+        icon = placeholder
+        prerequisite = { focus = POL_empower_catholic_church }
+        relative_position_id = POL_empower_catholic_church
+        x = 0
+        y = 1
+        cost = 5
+        completion_reward = {
+            swap_ideas = {
+                remove_idea = POL_state_catholicism_1
+                add_idea = POL_state_catholicism_2
+            }
+        }
+    }
+    focus = {
+        id = POL_claims_on_silesia
+        icon = placeholder
+        prerequisite = { focus = POL_emergency_powers_act }
+        relative_position_id = POL_emergency_powers_act
+        x = -1
+        y = 1
+        cost = 5
+        completion_reward = {
+
+        }
+    }
+    focus = {
+        id = POL_claims_on_east_prussia
+        icon = placeholder
+        prerequisite = { focus = POL_claims_on_silesia }
+        relative_position_id = POL_claims_on_silesia
+        x = 0
+        y = 1
+        cost = 5
+        completion_reward = {
+
+        }
+    }
+    focus = {
+        id = POL_integrate_falangist_paramilitaries
+        icon = placeholder
+        prerequisite = { focus = POL_emergency_powers_act }
+        relative_position_id = POL_emergency_powers_act
+        x = 1
+        y = 1
+        cost = 5
+        completion_reward = {
+            
+        }
+    }
+    focus = {
+        id = POL_seize_foreign_assets
+        icon = placeholder
+        prerequisite = { focus = POL_integrate_falangist_paramilitaries }
+        relative_position_id = POL_integrate_falangist_paramilitaries
+        x = 0
+        y = 1
+        cost = 5
+        completion_reward = {
+            
+        }
+    }
+    focus = {
+        id = POL_arm_polanian_minorities_in_neighbors
+        icon = placeholder
+        prerequisite = { focus = POL_claims_on_east_prussia }
+        prerequisite = { focus = POL_seize_foreign_assets }
+        relative_position_id = POL_emergency_powers_act
+        x = 0
+        y = 3
+        cost = 5
+        completion_reward = {
+            add_ideas = POL_armed_anti_saxons
+        }
+    }
+    focus = {
+        id = POL_establish_falangist_international
+        icon = placeholder
+        prerequisite = { focus = POL_emergency_powers_act }
+        relative_position_id = POL_emergency_powers_act
+        x = 3
+        y = 1
+        cost = 5
+        completion_reward = {
+            # Decisions
+            set_rule = { can_create_factions = yes }
+			if = {
+				limit = {
+					is_faction_leader = no
+				}
+				create_faction = POL_falangist_international
+			}
+			else = {
+				set_faction_name = POL_falangist_international
+			}
+        }
+    }
+    focus = {
+        id = POL_reach_out_to_saxon_catholics
+        icon = placeholder
+        prerequisite = { focus = POL_establish_falangist_international }
+        relative_position_id = POL_establish_falangist_international
+        x = 0
+        y = 1
+        cost = 5
+        completion_reward = {
+            # Decisions
         }
     }
 

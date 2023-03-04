@@ -490,7 +490,7 @@ country = {
 		}
 		removal_cost = 0
 		modifier = {
-			political_power_factor = 0.05
+			compliance_growth = 0.05
 			annex_cost_factor = -0.10
 		}
 	}
@@ -507,6 +507,104 @@ country = {
 		removal_cost = 0
 		modifier = {
 			mobilization_speed = 0.2
+		}
+	}
+
+	POL_support_from_the_upper_class = {
+		picture = placeholder
+		allowed = {
+			original_tag = POL
+			always = no
+		}
+		allowed_civil_war = {
+			always = yes
+		}
+		removal_cost = 0
+		modifier = {
+			stability_factor = 0.10
+			global_building_slots_factor = 0.20
+			resistance_growth = 0.10
+		}
+	}
+
+	POL_falangist_paramilitaries = {
+		picture = generic_fascism_drift_2
+		allowed = {
+			original_tag = POL
+			always = no
+		}
+		allowed_civil_war = {
+			always = yes
+		}
+		removal_cost = 0
+		modifier = {
+			conscription = 0.02
+			training_time_army_factor = -0.1
+			fascism_drift = 0.02
+		}
+	}
+
+	POL_nationalized_industry = {
+		picture = generic_goods_red_bonus
+		allowed = {
+			original_tag = POL
+			always = no
+		}
+		allowed_civil_war = {
+			always = yes
+		}
+		removal_cost = 0
+		modifier = {
+			consumer_goods_factor = -0.02
+		}
+	}
+
+	POL_state_catholicism_1 = {
+		picture = MEX_church_power_5
+		allowed = {
+			original_tag = POL
+			always = no
+		}
+		allowed_civil_war = {
+			always = yes
+		}
+		removal_cost = 0
+		modifier = {
+			stability_factor = 0.1
+			consumer_goods_factor = -0.05
+		}
+	}
+
+	POL_state_catholicism_2 = {
+		picture = MEX_church_power_5
+		allowed = {
+			original_tag = POL
+			always = no
+		}
+		allowed_civil_war = {
+			always = yes
+		}
+		removal_cost = 0
+		modifier = {
+			stability_factor = 0.15
+			consumer_goods_factor = -0.75
+		}
+	}
+
+	POL_armed_anti_saxons = {
+		picture = FRA_matignon_agreements
+		allowed = {
+			original_tag = POL
+			always = no
+		}
+		allowed_civil_war = {
+			always = yes
+		}
+		removal_cost = 0
+		targeted_modifier = {
+			tag = GER
+			compliance_gain = 0.01
+			compliance_growth = 0.2
 		}
 	}
 
