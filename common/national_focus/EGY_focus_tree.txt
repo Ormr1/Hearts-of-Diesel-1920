@@ -24,7 +24,7 @@ focus_tree = {
         icon = GFX_EGY_Z1
         x = 14
         y = 0
-        cost = 25
+        cost = 3
         search_filters = {  FOCUS_FILTER_POLITICAL }
         
         available_if_capitulated = yes
@@ -46,7 +46,7 @@ focus_tree = {
         prerequisite = { focus = EGY_Z1 }
         x = -1
         y = 1
-        cost = 25
+        cost = 3
         search_filters = {  FOCUS_FILTER_POLITICAL }
         
         available_if_capitulated = yes
@@ -66,7 +66,7 @@ focus_tree = {
         prerequisite = { focus = EGY_Z1 }
         x = 0
         y = 1
-        cost = 25
+        cost = 3
         search_filters = {  FOCUS_FILTER_POLITICAL }
         
         available_if_capitulated = yes
@@ -86,7 +86,7 @@ focus_tree = {
         prerequisite = { focus = EGY_Z1 }
         x = 1
         y = 1
-        cost = 25
+        cost = 3
         search_filters = {  FOCUS_FILTER_POLITICAL }
         
         available_if_capitulated = yes
@@ -108,9 +108,9 @@ focus_tree = {
         allow_branch = {
             has_country_flag = EGY_A_MASTER
         }
-        x = 2
+        x = 4
         y = 2
-        cost = 25
+        cost = 3
         search_filters = {  FOCUS_FILTER_POLITICAL }
         
         available_if_capitulated = yes
@@ -126,9 +126,9 @@ focus_tree = {
         icon = GFX_EGY_A2
         relative_position_id = EGY_A1
         prerequisite = { focus = EGY_A1 }
-        x = 1
+        x = 2
         y = 1
-        cost = 25
+        cost = 3
         search_filters = {  FOCUS_FILTER_POLITICAL }
         
         available_if_capitulated = yes
@@ -145,9 +145,9 @@ focus_tree = {
         icon = GFX_EGY_A3
         relative_position_id = EGY_A1
         prerequisite = { focus = EGY_A1 }
-        x = 2
+        x = 4
         y = 1
-        cost = 25
+        cost = 3
         search_filters = {  FOCUS_FILTER_POLITICAL }
         
         available_if_capitulated = yes
@@ -164,9 +164,9 @@ focus_tree = {
         icon = GFX_EGY_A4
         relative_position_id = EGY_A1
         prerequisite = { focus = EGY_A1 }
-        x = 3
+        x = 6
         y = 1
-        cost = 25
+        cost = 3
         search_filters = {  FOCUS_FILTER_POLITICAL }
         
         available_if_capitulated = yes
@@ -183,9 +183,9 @@ focus_tree = {
         icon = GFX_EGY_A5
         relative_position_id = EGY_A1
         prerequisite = { focus = EGY_A1 }
-        x = 4
+        x = 8
         y = 1
-        cost = 25
+        cost = 3
         search_filters = {  FOCUS_FILTER_POLITICAL }
         
         available_if_capitulated = yes
@@ -204,7 +204,7 @@ focus_tree = {
         prerequisite = { focus = EGY_A1 }
         x = 0
         y = 2
-        cost = 25
+        cost = 3
         search_filters = {  FOCUS_FILTER_POLITICAL }
         
         available_if_capitulated = yes
@@ -220,9 +220,9 @@ focus_tree = {
         icon = GFX_EGY_A7
         relative_position_id = EGY_A6
         prerequisite = { focus = EGY_A6 }
-        x = 1
+        x = 2
         y = 1
-        cost = 25
+        cost = 3
         search_filters = {  FOCUS_FILTER_POLITICAL }
         
         available_if_capitulated = yes
@@ -239,9 +239,9 @@ focus_tree = {
         icon = GFX_EGY_A8
         relative_position_id = EGY_A6
         prerequisite = { focus = EGY_A6 }
-        x = 2
+        x = 4
         y = 1
-        cost = 25
+        cost = 3
         search_filters = {  FOCUS_FILTER_POLITICAL }
         
         available_if_capitulated = yes
@@ -258,9 +258,9 @@ focus_tree = {
         icon = GFX_EGY_A9
         relative_position_id = EGY_A6
         prerequisite = { focus = EGY_A6 }
-        x = 3
+        x = 6
         y = 1
-        cost = 25
+        cost = 3
         search_filters = {  FOCUS_FILTER_POLITICAL }
         
         available_if_capitulated = yes
@@ -277,9 +277,9 @@ focus_tree = {
         icon = GFX_EGY_A10
         relative_position_id = EGY_A6
         prerequisite = { focus = EGY_A6 }
-        x = 4
+        x = 8
         y = 1
-        cost = 25
+        cost = 3
         search_filters = {  FOCUS_FILTER_POLITICAL }
         
         available_if_capitulated = yes
@@ -298,7 +298,7 @@ focus_tree = {
         prerequisite = { focus = EGY_A6 }
         x = 0
         y = 2
-        cost = 25
+        cost = 3
         search_filters = {  FOCUS_FILTER_POLITICAL }
         
         available_if_capitulated = yes
@@ -314,9 +314,9 @@ focus_tree = {
         icon = GFX_EGY_A12
         relative_position_id = EGY_A11
         prerequisite = { focus = EGY_A11 }
-        x = 1
+        x = 2
         y = 1
-        cost = 25
+        cost = 3
         search_filters = {  FOCUS_FILTER_POLITICAL }
         
         available_if_capitulated = yes
@@ -333,9 +333,9 @@ focus_tree = {
         icon = GFX_EGY_A13
         relative_position_id = EGY_A11
         prerequisite = { focus = EGY_A11 }
-        x = 2
+        x = 4
         y = 1
-        cost = 25
+        cost = 3
         search_filters = {  FOCUS_FILTER_POLITICAL }
         
         available_if_capitulated = yes
@@ -352,9 +352,9 @@ focus_tree = {
         icon = GFX_EGY_A14
         relative_position_id = EGY_A11
         prerequisite = { focus = EGY_A11 }
-        x = 3
+        x = 6
         y = 1
-        cost = 25
+        cost = 3
         search_filters = {  FOCUS_FILTER_POLITICAL }
         
         available_if_capitulated = yes
@@ -371,9 +371,9 @@ focus_tree = {
         icon = GFX_EGY_A15
         relative_position_id = EGY_A11
         prerequisite = { focus = EGY_A11 }
-        x = 4
+        x = 8
         y = 1
-        cost = 25
+        cost = 3
         search_filters = {  FOCUS_FILTER_POLITICAL }
         
         available_if_capitulated = yes
@@ -392,7 +392,7 @@ focus_tree = {
         prerequisite = { focus = EGY_A11 }
         x = 0
         y = 2
-        cost = 25
+        cost = 3
         search_filters = {  FOCUS_FILTER_POLITICAL }
         
         available_if_capitulated = yes
@@ -408,9 +408,9 @@ focus_tree = {
         icon = GFX_EGY_A17
         relative_position_id = EGY_A16
         prerequisite = { focus = EGY_A16 }
-        x = 1
+        x = 2
         y = 1
-        cost = 25
+        cost = 3
         search_filters = {  FOCUS_FILTER_POLITICAL }
         
         available_if_capitulated = yes
@@ -427,9 +427,9 @@ focus_tree = {
         icon = GFX_EGY_A18
         relative_position_id = EGY_A16
         prerequisite = { focus = EGY_A16 }
-        x = 2
+        x = 4
         y = 1
-        cost = 25
+        cost = 3
         search_filters = {  FOCUS_FILTER_POLITICAL }
         
         available_if_capitulated = yes
@@ -446,9 +446,9 @@ focus_tree = {
         icon = GFX_EGY_A14
         relative_position_id = EGY_A16
         prerequisite = { focus = EGY_A16 }
-        x = 3
+        x = 6
         y = 1
-        cost = 25
+        cost = 3
         search_filters = {  FOCUS_FILTER_POLITICAL }
         
         available_if_capitulated = yes
@@ -465,9 +465,9 @@ focus_tree = {
         icon = GFX_EGY_A20
         relative_position_id = EGY_A16
         prerequisite = { focus = EGY_A16 }
-        x = 4
+        x = 8
         y = 1
-        cost = 25
+        cost = 3
         search_filters = {  FOCUS_FILTER_POLITICAL }
         
         available_if_capitulated = yes
@@ -486,7 +486,7 @@ focus_tree = {
         prerequisite = { focus = EGY_A16 }
         x = 0
         y = 2
-        cost = 25
+        cost = 3
         search_filters = {  FOCUS_FILTER_POLITICAL }
         
         available_if_capitulated = yes
@@ -502,9 +502,9 @@ focus_tree = {
         icon = GFX_EGY_A22
         relative_position_id = EGY_A21
         prerequisite = { focus = EGY_A21 }
-        x = 1
+        x = 2
         y = 1
-        cost = 25
+        cost = 3
         search_filters = {  FOCUS_FILTER_POLITICAL }
         
         available_if_capitulated = yes
@@ -521,9 +521,9 @@ focus_tree = {
         icon = GFX_EGY_A23
         relative_position_id = EGY_A21
         prerequisite = { focus = EGY_A21 }
-        x = 2
+        x = 4
         y = 1
-        cost = 25
+        cost = 3
         search_filters = {  FOCUS_FILTER_POLITICAL }
         
         available_if_capitulated = yes
@@ -540,9 +540,9 @@ focus_tree = {
         icon = GFX_EGY_A24
         relative_position_id = EGY_A21
         prerequisite = { focus = EGY_A21 }
-        x = 3
+        x = 6
         y = 1
-        cost = 25
+        cost = 3
         search_filters = {  FOCUS_FILTER_POLITICAL }
         
         available_if_capitulated = yes
@@ -559,9 +559,9 @@ focus_tree = {
         icon = GFX_EGY_A25
         relative_position_id = EGY_A21
         prerequisite = { focus = EGY_A21 }
-        x = 4
+        x = 8
         y = 1
-        cost = 25
+        cost = 3
         search_filters = {  FOCUS_FILTER_POLITICAL }
         
         available_if_capitulated = yes
@@ -580,7 +580,7 @@ focus_tree = {
         prerequisite = { focus = EGY_A21 }
         x = 0
         y = 2
-        cost = 25
+        cost = 3
         search_filters = {  FOCUS_FILTER_POLITICAL }
         
         available_if_capitulated = yes
@@ -596,9 +596,9 @@ focus_tree = {
         icon = GFX_EGY_A27
         relative_position_id = EGY_A26
         prerequisite = { focus = EGY_A26 }
-        x = 1
+        x = 2
         y = 1
-        cost = 25
+        cost = 3
         search_filters = {  FOCUS_FILTER_POLITICAL }
         
         available_if_capitulated = yes
@@ -615,9 +615,9 @@ focus_tree = {
         icon = GFX_EGY_A28
         relative_position_id = EGY_A26
         prerequisite = { focus = EGY_A26 }
-        x = 2
+        x = 4
         y = 1
-        cost = 25
+        cost = 3
         search_filters = {  FOCUS_FILTER_POLITICAL }
         
         available_if_capitulated = yes
@@ -634,9 +634,9 @@ focus_tree = {
         icon = GFX_EGY_A29
         relative_position_id = EGY_A26
         prerequisite = { focus = EGY_A26 }
-        x = 3
+        x = 6
         y = 1
-        cost = 25
+        cost = 3
         search_filters = {  FOCUS_FILTER_POLITICAL }
         
         available_if_capitulated = yes
@@ -653,9 +653,9 @@ focus_tree = {
         icon = GFX_EGY_A30
         relative_position_id = EGY_A26
         prerequisite = { focus = EGY_A26 }
-        x = 4
+        x = 8
         y = 1
-        cost = 25
+        cost = 3
         search_filters = {  FOCUS_FILTER_POLITICAL }
         
         available_if_capitulated = yes
@@ -674,7 +674,7 @@ focus_tree = {
         prerequisite = { focus = EGY_A26 }
         x = 0
         y = 2
-        cost = 25
+        cost = 3
         search_filters = {  FOCUS_FILTER_POLITICAL }
         
         available_if_capitulated = yes
@@ -690,9 +690,9 @@ focus_tree = {
         icon = GFX_EGY_A32
         relative_position_id = EGY_A31
         prerequisite = { focus = EGY_A31 }
-        x = 1
+        x = 2
         y = 1
-        cost = 25
+        cost = 3
         search_filters = {  FOCUS_FILTER_POLITICAL }
         
         available_if_capitulated = yes
@@ -709,9 +709,9 @@ focus_tree = {
         icon = GFX_EGY_A33
         relative_position_id = EGY_A31
         prerequisite = { focus = EGY_A31 }
-        x = 2
+        x = 4
         y = 1
-        cost = 25
+        cost = 3
         search_filters = {  FOCUS_FILTER_POLITICAL }
         
         available_if_capitulated = yes
@@ -728,9 +728,9 @@ focus_tree = {
         icon = GFX_EGY_A34
         relative_position_id = EGY_A31
         prerequisite = { focus = EGY_A31 }
-        x = 3
+        x = 6
         y = 1
-        cost = 25
+        cost = 3
         search_filters = {  FOCUS_FILTER_POLITICAL }
         
         available_if_capitulated = yes
@@ -747,9 +747,9 @@ focus_tree = {
         icon = GFX_EGY_A35
         relative_position_id = EGY_A31
         prerequisite = { focus = EGY_A31 }
-        x = 4
+        x = 8
         y = 1
-        cost = 25
+        cost = 3
         search_filters = {  FOCUS_FILTER_POLITICAL }
         
         available_if_capitulated = yes
@@ -768,7 +768,7 @@ focus_tree = {
         prerequisite = { focus = EGY_A31 }
         x = 0
         y = 2
-        cost = 25
+        cost = 3
         search_filters = {  FOCUS_FILTER_POLITICAL }
         
         available_if_capitulated = yes
@@ -784,9 +784,9 @@ focus_tree = {
         icon = GFX_EGY_A37
         relative_position_id = EGY_A36
         prerequisite = { focus = EGY_A36 }
-        x = 1
+        x = 2
         y = 1
-        cost = 25
+        cost = 3
         search_filters = {  FOCUS_FILTER_POLITICAL }
         
         available_if_capitulated = yes
@@ -803,9 +803,9 @@ focus_tree = {
         icon = GFX_EGY_A38
         relative_position_id = EGY_A36
         prerequisite = { focus = EGY_A36 }
-        x = 2
+        x = 4
         y = 1
-        cost = 25
+        cost = 3
         search_filters = {  FOCUS_FILTER_POLITICAL }
         
         available_if_capitulated = yes
@@ -822,9 +822,9 @@ focus_tree = {
         icon = GFX_EGY_A39
         relative_position_id = EGY_A36
         prerequisite = { focus = EGY_A36 }
-        x = 3
+        x = 6
         y = 1
-        cost = 25
+        cost = 3
         search_filters = {  FOCUS_FILTER_POLITICAL }
         
         available_if_capitulated = yes
@@ -841,9 +841,9 @@ focus_tree = {
         icon = GFX_EGY_A40
         relative_position_id = EGY_A36
         prerequisite = { focus = EGY_A36 }
-        x = 4
+        x = 8
         y = 1
-        cost = 25
+        cost = 3
         search_filters = {  FOCUS_FILTER_POLITICAL }
         
         available_if_capitulated = yes
@@ -862,7 +862,7 @@ focus_tree = {
         prerequisite = { focus = EGY_A36 }
         x = 0
         y = 3
-        cost = 25
+        cost = 3
         search_filters = {  FOCUS_FILTER_POLITICAL }
         
         available_if_capitulated = yes
@@ -884,7 +884,7 @@ focus_tree = {
         }
         x = 0
         y = 2
-        cost = 25
+        cost = 3
         search_filters = {  FOCUS_FILTER_POLITICAL }
         
         available_if_capitulated = yes
@@ -906,7 +906,7 @@ focus_tree = {
         }
         x = -2
         y = 2
-        cost = 25
+        cost = 3
         search_filters = {  FOCUS_FILTER_POLITICAL }
         
         available_if_capitulated = yes
