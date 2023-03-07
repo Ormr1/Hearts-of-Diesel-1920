@@ -1,0 +1,920 @@
+focus_tree = {
+    id = generic_focus
+    
+    country = {
+        factor = 0
+        
+        modifier = {
+            add = 100
+            tag = EGY
+        }
+    }
+    
+    default = no
+    reset_on_civilwar = no
+
+    # initial_show_position = {
+        # focus = industrial_effort
+    # }
+
+    continuous_focus_position = { x = 200 y = 5000 }
+
+    focus = {
+        id = EGY_Z1
+        icon = GFX_EGY_Z1
+        x = 14
+        y = 0
+        cost = 25
+        search_filters = {  FOCUS_FILTER_POLITICAL }
+        
+        available_if_capitulated = yes
+
+        completion_reward = {
+            country_event = {
+                id = EGY_Z.1
+                days = 10
+            }
+        }
+        ai_will_do={
+            factor = 100
+        }
+    }
+    focus = {
+        id = EGY_Z2
+        icon = GFX_EGY_Z2
+        relative_position_id = EGY_Z1
+        prerequisite = { focus = EGY_Z1 }
+        x = -1
+        y = 1
+        cost = 25
+        search_filters = {  FOCUS_FILTER_POLITICAL }
+        
+        available_if_capitulated = yes
+
+        completion_reward = {
+            set_country_flag = EGY_C_MASTER
+            mark_focus_tree_layout_dirty = yes
+        }
+        ai_will_do={
+            factor = 100
+        }
+    }
+    focus = {
+        id = EGY_Z3
+        icon = GFX_EGY_Z3
+        relative_position_id = EGY_Z1
+        prerequisite = { focus = EGY_Z1 }
+        x = 0
+        y = 1
+        cost = 25
+        search_filters = {  FOCUS_FILTER_POLITICAL }
+        
+        available_if_capitulated = yes
+
+        completion_reward = {
+            set_country_flag = EGY_B_MASTER
+            mark_focus_tree_layout_dirty = yes
+        }
+        ai_will_do={
+            factor = 100
+        }
+    }
+    focus = {
+        id = EGY_Z4
+        icon = GFX_EGY_Z4
+        relative_position_id = EGY_Z1
+        prerequisite = { focus = EGY_Z1 }
+        x = 1
+        y = 1
+        cost = 25
+        search_filters = {  FOCUS_FILTER_POLITICAL }
+        
+        available_if_capitulated = yes
+
+        completion_reward = {
+            set_country_flag = EGY_A_MASTER
+            mark_focus_tree_layout_dirty = yes
+        }
+        ai_will_do={
+            factor = 100
+        }
+    }
+    ###KEMET###
+    focus = {
+        id = EGY_A1
+        icon = GFX_EGY_A1
+        relative_position_id = EGY_Z1
+        prerequisite = { focus = EGY_Z4 }
+        allow_branch = {
+            has_country_flag = EGY_A_MASTER
+        }
+        x = 2
+        y = 2
+        cost = 25
+        search_filters = {  FOCUS_FILTER_POLITICAL }
+        
+        available_if_capitulated = yes
+
+        completion_reward = {
+        }
+        ai_will_do={
+            factor = 100
+        }
+    }
+    focus = {
+        id = EGY_A2
+        icon = GFX_EGY_A2
+        relative_position_id = EGY_A1
+        prerequisite = { focus = EGY_A1 }
+        x = 1
+        y = 1
+        cost = 25
+        search_filters = {  FOCUS_FILTER_POLITICAL }
+        
+        available_if_capitulated = yes
+
+        completion_reward = {
+            set_country_flag = EGY_A2
+        }
+        ai_will_do={
+            factor = 100
+        }
+    }
+    focus = {
+        id = EGY_A3
+        icon = GFX_EGY_A3
+        relative_position_id = EGY_A1
+        prerequisite = { focus = EGY_A1 }
+        x = 2
+        y = 1
+        cost = 25
+        search_filters = {  FOCUS_FILTER_POLITICAL }
+        
+        available_if_capitulated = yes
+
+        completion_reward = {
+            set_country_flag = EGY_A3
+        }
+        ai_will_do={
+            factor = 100
+        }
+    }
+    focus = {
+        id = EGY_A4
+        icon = GFX_EGY_A4
+        relative_position_id = EGY_A1
+        prerequisite = { focus = EGY_A1 }
+        x = 3
+        y = 1
+        cost = 25
+        search_filters = {  FOCUS_FILTER_POLITICAL }
+        
+        available_if_capitulated = yes
+
+        completion_reward = {
+            set_country_flag = EGY_A4
+        }
+        ai_will_do={
+            factor = 100
+        }
+    }
+    focus = {
+        id = EGY_A5
+        icon = GFX_EGY_A5
+        relative_position_id = EGY_A1
+        prerequisite = { focus = EGY_A1 }
+        x = 4
+        y = 1
+        cost = 25
+        search_filters = {  FOCUS_FILTER_POLITICAL }
+        
+        available_if_capitulated = yes
+
+        completion_reward = {
+            set_country_flag = EGY_A5
+        }
+        ai_will_do={
+            factor = 100
+        }
+    }
+    focus = {
+        id = EGY_A6
+        icon = GFX_EGY_A6
+        relative_position_id = EGY_A1
+        prerequisite = { focus = EGY_A1 }
+        x = 0
+        y = 2
+        cost = 25
+        search_filters = {  FOCUS_FILTER_POLITICAL }
+        
+        available_if_capitulated = yes
+
+        completion_reward = {
+        }
+        ai_will_do={
+            factor = 100
+        }
+    }
+    focus = {
+        id = EGY_A7
+        icon = GFX_EGY_A7
+        relative_position_id = EGY_A6
+        prerequisite = { focus = EGY_A6 }
+        x = 1
+        y = 1
+        cost = 25
+        search_filters = {  FOCUS_FILTER_POLITICAL }
+        
+        available_if_capitulated = yes
+
+        completion_reward = {
+            set_country_flag = EGY_A7
+        }
+        ai_will_do={
+            factor = 100
+        }
+    }
+    focus = {
+        id = EGY_A8
+        icon = GFX_EGY_A8
+        relative_position_id = EGY_A6
+        prerequisite = { focus = EGY_A6 }
+        x = 2
+        y = 1
+        cost = 25
+        search_filters = {  FOCUS_FILTER_POLITICAL }
+        
+        available_if_capitulated = yes
+
+        completion_reward = {
+            set_country_flag = EGY_A8
+        }
+        ai_will_do={
+            factor = 100
+        }
+    }
+    focus = {
+        id = EGY_A9
+        icon = GFX_EGY_A9
+        relative_position_id = EGY_A6
+        prerequisite = { focus = EGY_A6 }
+        x = 3
+        y = 1
+        cost = 25
+        search_filters = {  FOCUS_FILTER_POLITICAL }
+        
+        available_if_capitulated = yes
+
+        completion_reward = {
+            set_country_flag = EGY_A9
+        }
+        ai_will_do={
+            factor = 100
+        }
+    }
+    focus = {
+        id = EGY_A10
+        icon = GFX_EGY_A10
+        relative_position_id = EGY_A6
+        prerequisite = { focus = EGY_A6 }
+        x = 4
+        y = 1
+        cost = 25
+        search_filters = {  FOCUS_FILTER_POLITICAL }
+        
+        available_if_capitulated = yes
+
+        completion_reward = {
+            set_country_flag = EGY_A10
+        }
+        ai_will_do={
+            factor = 100
+        }
+    }
+    focus = {
+        id = EGY_A11
+        icon = GFX_EGY_A11
+        relative_position_id = EGY_A6
+        prerequisite = { focus = EGY_A6 }
+        x = 0
+        y = 2
+        cost = 25
+        search_filters = {  FOCUS_FILTER_POLITICAL }
+        
+        available_if_capitulated = yes
+
+        completion_reward = {
+        }
+        ai_will_do={
+            factor = 100
+        }
+    }
+    focus = {
+        id = EGY_A12
+        icon = GFX_EGY_A12
+        relative_position_id = EGY_A11
+        prerequisite = { focus = EGY_A11 }
+        x = 1
+        y = 1
+        cost = 25
+        search_filters = {  FOCUS_FILTER_POLITICAL }
+        
+        available_if_capitulated = yes
+
+        completion_reward = {
+            set_country_flag = EGY_A12
+        }
+        ai_will_do={
+            factor = 100
+        }
+    }
+    focus = {
+        id = EGY_A13
+        icon = GFX_EGY_A13
+        relative_position_id = EGY_A11
+        prerequisite = { focus = EGY_A11 }
+        x = 2
+        y = 1
+        cost = 25
+        search_filters = {  FOCUS_FILTER_POLITICAL }
+        
+        available_if_capitulated = yes
+
+        completion_reward = {
+            set_country_flag = EGY_A13
+        }
+        ai_will_do={
+            factor = 100
+        }
+    }
+    focus = {
+        id = EGY_A14
+        icon = GFX_EGY_A14
+        relative_position_id = EGY_A11
+        prerequisite = { focus = EGY_A11 }
+        x = 3
+        y = 1
+        cost = 25
+        search_filters = {  FOCUS_FILTER_POLITICAL }
+        
+        available_if_capitulated = yes
+
+        completion_reward = {
+            set_country_flag = EGY_A14
+        }
+        ai_will_do={
+            factor = 100
+        }
+    }
+    focus = {
+        id = EGY_A15
+        icon = GFX_EGY_A15
+        relative_position_id = EGY_A11
+        prerequisite = { focus = EGY_A11 }
+        x = 4
+        y = 1
+        cost = 25
+        search_filters = {  FOCUS_FILTER_POLITICAL }
+        
+        available_if_capitulated = yes
+
+        completion_reward = {
+            set_country_flag = EGY_A15
+        }
+        ai_will_do={
+            factor = 100
+        }
+    }
+    focus = {
+        id = EGY_A16
+        icon = GFX_EGY_A16
+        relative_position_id = EGY_A11
+        prerequisite = { focus = EGY_A11 }
+        x = 0
+        y = 2
+        cost = 25
+        search_filters = {  FOCUS_FILTER_POLITICAL }
+        
+        available_if_capitulated = yes
+
+        completion_reward = {
+        }
+        ai_will_do={
+            factor = 100
+        }
+    }
+    focus = {
+        id = EGY_A17
+        icon = GFX_EGY_A17
+        relative_position_id = EGY_A16
+        prerequisite = { focus = EGY_A16 }
+        x = 1
+        y = 1
+        cost = 25
+        search_filters = {  FOCUS_FILTER_POLITICAL }
+        
+        available_if_capitulated = yes
+
+        completion_reward = {
+            set_country_flag = EGY_A17
+        }
+        ai_will_do={
+            factor = 100
+        }
+    }
+    focus = {
+        id = EGY_A18
+        icon = GFX_EGY_A18
+        relative_position_id = EGY_A16
+        prerequisite = { focus = EGY_A16 }
+        x = 2
+        y = 1
+        cost = 25
+        search_filters = {  FOCUS_FILTER_POLITICAL }
+        
+        available_if_capitulated = yes
+
+        completion_reward = {
+            set_country_flag = EGY_A18
+        }
+        ai_will_do={
+            factor = 100
+        }
+    }
+    focus = {
+        id = EGY_A19
+        icon = GFX_EGY_A14
+        relative_position_id = EGY_A16
+        prerequisite = { focus = EGY_A16 }
+        x = 3
+        y = 1
+        cost = 25
+        search_filters = {  FOCUS_FILTER_POLITICAL }
+        
+        available_if_capitulated = yes
+
+        completion_reward = {
+            set_country_flag = EGY_A19
+        }
+        ai_will_do={
+            factor = 100
+        }
+    }
+    focus = {
+        id = EGY_A20
+        icon = GFX_EGY_A20
+        relative_position_id = EGY_A16
+        prerequisite = { focus = EGY_A16 }
+        x = 4
+        y = 1
+        cost = 25
+        search_filters = {  FOCUS_FILTER_POLITICAL }
+        
+        available_if_capitulated = yes
+
+        completion_reward = {
+            set_country_flag = EGY_A20
+        }
+        ai_will_do={
+            factor = 100
+        }
+    }
+    focus = {
+        id = EGY_A21
+        icon = GFX_EGY_A21
+        relative_position_id = EGY_A16
+        prerequisite = { focus = EGY_A16 }
+        x = 0
+        y = 2
+        cost = 25
+        search_filters = {  FOCUS_FILTER_POLITICAL }
+        
+        available_if_capitulated = yes
+
+        completion_reward = {
+        }
+        ai_will_do={
+            factor = 100
+        }
+    }
+    focus = {
+        id = EGY_A22
+        icon = GFX_EGY_A22
+        relative_position_id = EGY_A21
+        prerequisite = { focus = EGY_A21 }
+        x = 1
+        y = 1
+        cost = 25
+        search_filters = {  FOCUS_FILTER_POLITICAL }
+        
+        available_if_capitulated = yes
+
+        completion_reward = {
+            set_country_flag = EGY_A22
+        }
+        ai_will_do={
+            factor = 100
+        }
+    }
+    focus = {
+        id = EGY_A23
+        icon = GFX_EGY_A23
+        relative_position_id = EGY_A21
+        prerequisite = { focus = EGY_A21 }
+        x = 2
+        y = 1
+        cost = 25
+        search_filters = {  FOCUS_FILTER_POLITICAL }
+        
+        available_if_capitulated = yes
+
+        completion_reward = {
+            set_country_flag = EGY_A23
+        }
+        ai_will_do={
+            factor = 100
+        }
+    }
+    focus = {
+        id = EGY_A24
+        icon = GFX_EGY_A24
+        relative_position_id = EGY_A21
+        prerequisite = { focus = EGY_A21 }
+        x = 3
+        y = 1
+        cost = 25
+        search_filters = {  FOCUS_FILTER_POLITICAL }
+        
+        available_if_capitulated = yes
+
+        completion_reward = {
+            set_country_flag = EGY_A24
+        }
+        ai_will_do={
+            factor = 100
+        }
+    }
+    focus = {
+        id = EGY_A25
+        icon = GFX_EGY_A25
+        relative_position_id = EGY_A21
+        prerequisite = { focus = EGY_A21 }
+        x = 4
+        y = 1
+        cost = 25
+        search_filters = {  FOCUS_FILTER_POLITICAL }
+        
+        available_if_capitulated = yes
+
+        completion_reward = {
+            set_country_flag = EGY_A25
+        }
+        ai_will_do={
+            factor = 100
+        }
+    }
+    focus = {
+        id = EGY_A26
+        icon = GFX_EGY_A26
+        relative_position_id = EGY_A21
+        prerequisite = { focus = EGY_A21 }
+        x = 0
+        y = 2
+        cost = 25
+        search_filters = {  FOCUS_FILTER_POLITICAL }
+        
+        available_if_capitulated = yes
+
+        completion_reward = {
+        }
+        ai_will_do={
+            factor = 100
+        }
+    }
+    focus = {
+        id = EGY_A27
+        icon = GFX_EGY_A27
+        relative_position_id = EGY_A26
+        prerequisite = { focus = EGY_A26 }
+        x = 1
+        y = 1
+        cost = 25
+        search_filters = {  FOCUS_FILTER_POLITICAL }
+        
+        available_if_capitulated = yes
+
+        completion_reward = {
+            set_country_flag = EGY_A27
+        }
+        ai_will_do={
+            factor = 100
+        }
+    }
+    focus = {
+        id = EGY_A28
+        icon = GFX_EGY_A28
+        relative_position_id = EGY_A26
+        prerequisite = { focus = EGY_A26 }
+        x = 2
+        y = 1
+        cost = 25
+        search_filters = {  FOCUS_FILTER_POLITICAL }
+        
+        available_if_capitulated = yes
+
+        completion_reward = {
+            set_country_flag = EGY_A28
+        }
+        ai_will_do={
+            factor = 100
+        }
+    }
+    focus = {
+        id = EGY_A29
+        icon = GFX_EGY_A29
+        relative_position_id = EGY_A26
+        prerequisite = { focus = EGY_A26 }
+        x = 3
+        y = 1
+        cost = 25
+        search_filters = {  FOCUS_FILTER_POLITICAL }
+        
+        available_if_capitulated = yes
+
+        completion_reward = {
+            set_country_flag = EGY_A29
+        }
+        ai_will_do={
+            factor = 100
+        }
+    }
+    focus = {
+        id = EGY_A30
+        icon = GFX_EGY_A30
+        relative_position_id = EGY_A26
+        prerequisite = { focus = EGY_A26 }
+        x = 4
+        y = 1
+        cost = 25
+        search_filters = {  FOCUS_FILTER_POLITICAL }
+        
+        available_if_capitulated = yes
+
+        completion_reward = {
+            set_country_flag = EGY_A30
+        }
+        ai_will_do={
+            factor = 100
+        }
+    }
+    focus = {
+        id = EGY_A31
+        icon = GFX_EGY_A31
+        relative_position_id = EGY_A26
+        prerequisite = { focus = EGY_A26 }
+        x = 0
+        y = 2
+        cost = 25
+        search_filters = {  FOCUS_FILTER_POLITICAL }
+        
+        available_if_capitulated = yes
+
+        completion_reward = {
+        }
+        ai_will_do={
+            factor = 100
+        }
+    }
+    focus = {
+        id = EGY_A32
+        icon = GFX_EGY_A32
+        relative_position_id = EGY_A31
+        prerequisite = { focus = EGY_A31 }
+        x = 1
+        y = 1
+        cost = 25
+        search_filters = {  FOCUS_FILTER_POLITICAL }
+        
+        available_if_capitulated = yes
+
+        completion_reward = {
+            set_country_flag = EGY_A32
+        }
+        ai_will_do={
+            factor = 100
+        }
+    }
+    focus = {
+        id = EGY_A33
+        icon = GFX_EGY_A33
+        relative_position_id = EGY_A31
+        prerequisite = { focus = EGY_A31 }
+        x = 2
+        y = 1
+        cost = 25
+        search_filters = {  FOCUS_FILTER_POLITICAL }
+        
+        available_if_capitulated = yes
+
+        completion_reward = {
+            set_country_flag = EGY_A33
+        }
+        ai_will_do={
+            factor = 100
+        }
+    }
+    focus = {
+        id = EGY_A34
+        icon = GFX_EGY_A34
+        relative_position_id = EGY_A31
+        prerequisite = { focus = EGY_A31 }
+        x = 3
+        y = 1
+        cost = 25
+        search_filters = {  FOCUS_FILTER_POLITICAL }
+        
+        available_if_capitulated = yes
+
+        completion_reward = {
+            set_country_flag = EGY_A34
+        }
+        ai_will_do={
+            factor = 100
+        }
+    }
+    focus = {
+        id = EGY_A35
+        icon = GFX_EGY_A35
+        relative_position_id = EGY_A31
+        prerequisite = { focus = EGY_A31 }
+        x = 4
+        y = 1
+        cost = 25
+        search_filters = {  FOCUS_FILTER_POLITICAL }
+        
+        available_if_capitulated = yes
+
+        completion_reward = {
+            set_country_flag = EGY_A35
+        }
+        ai_will_do={
+            factor = 100
+        }
+    }
+    focus = {
+        id = EGY_A36
+        icon = GFX_EGY_A36
+        relative_position_id = EGY_A31
+        prerequisite = { focus = EGY_A31 }
+        x = 0
+        y = 2
+        cost = 25
+        search_filters = {  FOCUS_FILTER_POLITICAL }
+        
+        available_if_capitulated = yes
+
+        completion_reward = {
+        }
+        ai_will_do={
+            factor = 100
+        }
+    }
+    focus = {
+        id = EGY_A37
+        icon = GFX_EGY_A37
+        relative_position_id = EGY_A36
+        prerequisite = { focus = EGY_A36 }
+        x = 1
+        y = 1
+        cost = 25
+        search_filters = {  FOCUS_FILTER_POLITICAL }
+        
+        available_if_capitulated = yes
+
+        completion_reward = {
+            set_country_flag = EGY_A37
+        }
+        ai_will_do={
+            factor = 100
+        }
+    }
+    focus = {
+        id = EGY_A38
+        icon = GFX_EGY_A38
+        relative_position_id = EGY_A36
+        prerequisite = { focus = EGY_A36 }
+        x = 2
+        y = 1
+        cost = 25
+        search_filters = {  FOCUS_FILTER_POLITICAL }
+        
+        available_if_capitulated = yes
+
+        completion_reward = {
+            set_country_flag = EGY_A38
+        }
+        ai_will_do={
+            factor = 100
+        }
+    }
+    focus = {
+        id = EGY_A39
+        icon = GFX_EGY_A39
+        relative_position_id = EGY_A36
+        prerequisite = { focus = EGY_A36 }
+        x = 3
+        y = 1
+        cost = 25
+        search_filters = {  FOCUS_FILTER_POLITICAL }
+        
+        available_if_capitulated = yes
+
+        completion_reward = {
+            set_country_flag = EGY_A39
+        }
+        ai_will_do={
+            factor = 100
+        }
+    }
+    focus = {
+        id = EGY_A40
+        icon = GFX_EGY_A40
+        relative_position_id = EGY_A36
+        prerequisite = { focus = EGY_A36 }
+        x = 4
+        y = 1
+        cost = 25
+        search_filters = {  FOCUS_FILTER_POLITICAL }
+        
+        available_if_capitulated = yes
+
+        completion_reward = {
+            set_country_flag = EGY_A40
+        }
+        ai_will_do={
+            factor = 100
+        }
+    }
+    focus = {
+        id = EGY_A41
+        icon = GFX_EGY_A41
+        relative_position_id = EGY_A36
+        prerequisite = { focus = EGY_A36 }
+        x = 0
+        y = 3
+        cost = 25
+        search_filters = {  FOCUS_FILTER_POLITICAL }
+        
+        available_if_capitulated = yes
+
+        completion_reward = {
+        }
+        ai_will_do={
+            factor = 100
+        }
+    }
+    ###MUSLIM###
+    focus = {
+        id = EGY_B1
+        icon = GFX_EGY_B1
+        relative_position_id = EGY_Z1
+        prerequisite = { focus = EGY_Z3 }
+        allow_branch = {
+            has_country_flag = EGY_B_MASTER
+        }
+        x = 0
+        y = 2
+        cost = 25
+        search_filters = {  FOCUS_FILTER_POLITICAL }
+        
+        available_if_capitulated = yes
+
+        completion_reward = {
+        }
+        ai_will_do={
+            factor = 100
+        }
+    }
+    ###DEMOCRATIC###
+    focus = {
+        id = EGY_C1
+        icon = GFX_EGY_C1
+        relative_position_id = EGY_Z1
+        prerequisite = { focus = EGY_Z2 }
+        allow_branch = {
+            has_country_flag = EGY_C_MASTER
+        }
+        x = -2
+        y = 2
+        cost = 25
+        search_filters = {  FOCUS_FILTER_POLITICAL }
+        
+        available_if_capitulated = yes
+
+        completion_reward = {
+        }
+        ai_will_do={
+            factor = 100
+        }
+    }
+}

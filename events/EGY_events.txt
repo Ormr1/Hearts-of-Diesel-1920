@@ -1,0 +1,12 @@
+add_namespace = EGY_Z
+add_namespace = EGY_A
+add_namespace = EGY_B
+add_namespace = EGY_C
+###EGYPT ZERO###
+country_event = {
+    id = EGY_Z.1
+    title = EGY_Z.1.t
+    desc = EGY_Z.1.d
+    is_triggered_only = yes
+    
+}
