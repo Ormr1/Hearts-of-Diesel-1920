@@ -1743,7 +1743,7 @@ leader_traits = {
 	tsar_unifier = { #Tsar Boris III
 		random = no
 		war_support_factor = -0.1		
-		neutrality_drift = 0.05
+		monarchy_drift = 0.05
 		drift_defence_factor = 0.25
 	}
 

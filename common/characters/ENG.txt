@@ -101,7 +101,10 @@ characters={
 				has_completed_focus  = ENG_the_kings_party 
 			}
 			allowed  = {
-				original_tag  = ENG
+				OR={
+					original_tag = ENG
+					original_tag = CSL
+				}
 				has_dlc = "Man the Guns"
 			}
 			traits  = {
@@ -261,7 +264,10 @@ characters={
 			idea_token = bernard_montgomery
 			ledger = army
 			allowed = {
-				original_tag = ENG
+				OR={
+					original_tag = ENG
+					original_tag = CSL
+				}
 			}
 			available = {
 				NOT = {
@@ -449,7 +455,10 @@ characters={
 			idea_token = harold_alexander
 			ledger = army
 			allowed = {
-				original_tag = ENG
+				OR={
+					original_tag = ENG
+					original_tag = CSL
+				}
 			}
 			available = {
 				NOT = {
@@ -1790,7 +1799,10 @@ characters={
 			slot = political_advisor
 			idea_token = ENG_leslie_hore_belisha
 			allowed  = {
-				original_tag  = ENG
+				OR={
+					original_tag  = CSL
+					original_tag  = ENG
+				}
 			}
 			traits  = {
 				armaments_organizer 

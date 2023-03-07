@@ -29,6 +29,7 @@ on_actions = {
 						end_civil_wars = no
 					}
 				}
+				set_cosmetic_tag = VIN_SPR
 				set_politics = {
 					ruling_party = monarchy
 				}

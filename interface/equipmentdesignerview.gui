@@ -10,7 +10,7 @@ guiTypes = {
 		orientation = CENTER
 		origo = center
 		show_sound = "ui_ship_designer_panel_appear"
-
+		clipping = no
 		background = {
 			name = "Background"
 			spriteType ="GFX_ship_designer_popup_bg"

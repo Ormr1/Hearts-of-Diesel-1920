@@ -151,8 +151,30 @@ ideas = {
 				can_create_factions = yes
 			}			
 		}
-
 		
+		
+
+		ENG_last_english_city_idea = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					has_government = communism
+				}
+			}
+
+			picture = ENG_last_english_city
+			
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.05
+				drift_defence_factor = 0.5
+			}
+		}
 		
 		british_austerity_idea = {
 			

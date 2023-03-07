@@ -2309,54 +2309,6 @@ GER_military_buildup = {
 
 	}
 
-	GER_jaegernotprogramm = {
-
-		icon = generic_air
-
-		available = {
-			has_war = yes
-			AND = {
-				has_deployed_air_force_size = {
-					type = fighter
-					size < 750
-				}
-				has_equipment = {
-					fighter_equipment < 250
-				}
-			}
-			NOT = {
-				has_idea = GER_jaegernotprogramm
-			}
-		}
-
-		cost = 50
-		fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-
-		visible = {
-			has_war = yes
-			AND = {
-				has_deployed_air_force_size = {
-					type = fighter
-					size < 750
-				}
-				has_equipment = {
-					fighter_equipment < 250
-				}
-			}
-			NOT = {
-				has_idea = GER_jaegernotprogramm
-			}
-		}
-
-		complete_effect = {
-			add_stability = -0.05
-			add_war_support = -0.05
-			add_timed_idea = { idea = GER_jaegernotprogramm days = 90 }
-		}
-	}
 }
 
 special_projects = {
@@ -2749,8 +2701,6 @@ GER_warbond_administration={
 				}
 			}
 			else = {
-				
-
 				hidden_effect = {
 					activate_mission = GER_austerity_mission
 				}
@@ -2837,10 +2787,10 @@ GER_warbond_administration={
 			num_of_civilian_factories_available_for_projects > 4
 		}
 
-		cost = 50
+		cost = 25
 		visible = {
 			hidden_trigger = {
-				has_country_flag = GER_debt_repayment_authorised
+				has_country_flag = GER_war_bond_repayment_authorised
 			}
 		}
 		days_remove = 180
@@ -2872,7 +2822,6 @@ GER_warbond_administration={
 		icon = ger_mefo_bills
 
 		available = {
-			
 			hidden_trigger = { always = no }
 		}
 

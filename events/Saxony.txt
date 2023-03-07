@@ -215,7 +215,7 @@ country_event = {#GER info - Report on the Imperial Debt (war bond problems)
 	
 	option = {
 		name = saxonian.6.a
-		set_country_flag = GER_debt_repayment_authorised
+		set_country_flag = GER_war_bond_repayment_authorised
 	}
 }
 country_event = {#GER info - wolf of the shadows (fenris)
@@ -706,7 +706,7 @@ country_event = {#miriacle on the rhine
 	
 	option = {
 		name = saxonian.24.a
-		
+		set_country_flag = GER_miracle_on_rhine
 	}
 }
 country_event = {#GER info - Report on our external loans

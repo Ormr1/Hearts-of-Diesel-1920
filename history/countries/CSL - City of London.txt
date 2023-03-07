@@ -1,10 +1,11 @@
 ﻿capital = 126
 
-#oob = "LAP_1936"
+oob = "CSL_1920"
 
 # Starting tech
 set_technology = {
 	pre_gw_infantry_weapons = 1
+	infantry_weapons = 1
 	tech_mountaineers = 1
 	gw_artillery = 1
 	interwar_antiair = 1
@@ -41,8 +42,18 @@ if = {
 	}
 }
 
+add_ideas={
+	ENG_last_english_city_idea
+}
+
 recruit_character = ENG_oswald_mosley
 recruit_character = ENG_bernard_montgomery
+recruit_character = ENG_harold_alexander
+recruit_character = ENG_henry_harwood
+recruit_character = ENG_bruce_fraser
+recruit_character = ENG_clement_attlee
+recruit_character = ENG_philip_kerr
+recruit_character = ENG_leslie_hore_belisha
 
 set_convoys = 120
 set_politics = {

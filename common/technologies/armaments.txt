@@ -2217,6 +2217,7 @@ technologies = {
 		}
 		dependencies={
 			tesla_blueprints = 1
+			infantry_coilguns = 1
 		}
 		path = {
 			leads_to_tech = death_ray

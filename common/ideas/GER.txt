@@ -186,6 +186,8 @@ ideas = {
 		}
 		
 		general_staff = {
+		
+			picture = saxon_staff
 			
 			allowed = {
 				original_tag = GER
@@ -2043,11 +2045,12 @@ ideas = {
 					original_tag = GER
 					original_tag = CRI
 				}
+				NOT={has_idea = ksmva_nationalised}
 			}
 			
 			research_bonus = {
-				industry = 0.1
-				synth_resources = 0.1
+				industry = 0.05
+				synth_resources = 0.05
 			}
 			available = {
 				if={
@@ -2056,6 +2059,31 @@ ideas = {
 					}
 					has_idea = CRI_KSMVA_domination
 				}
+			}
+			
+			modifier = {
+				fuel_gain = 0.25
+			}
+			
+			traits = { refinery_concern }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		ksmva_nationalised = {
+			
+			allowed = {
+				original_tag = GER
+				has_completed_focus = GER_fully_nationise_KSMVA
+			}
+			
+			research_bonus = {
+				industry = 0.1
+				synth_resources = 0.1
+			}
+			available = {
+				has_completed_focus = GER_fully_nationise_KSMVA
 			}
 			
 			modifier = {
