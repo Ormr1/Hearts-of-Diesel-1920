@@ -58,6 +58,23 @@ GER_military_buildup = {
 	}
 }
 
+GER_frankish_integration = {
+	icon = generic_political_actions
+
+	allowed = {
+		original_tag = GER
+	}
+	visible = {
+		has_country_flag = GER_Frankish_resistance_management
+	}
+	priority = 2
+	on_map_area = {
+		state = 977 
+		name = GER_saxon_frankia_zoom
+		zoom = 120
+	}
+}
+
 GER_warbond_administration = {
 	icon = generic_political_actions
 
@@ -67,6 +84,7 @@ GER_warbond_administration = {
 	visible = {
 
 	}
+	priority = 2
 }
 
 GER_aid_hun_rom_democratic_civil_war = {

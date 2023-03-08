@@ -649,9 +649,22 @@ defined_text = { # Country
 	text = {
 		trigger = {
 			if = {
-				limit = { ENG = { has_naval_treaty_trigger = yes } }
+				limit = { GER = { has_naval_treaty_trigger = yes } }
+				tag = GER
+			}
+			else_if = {
+				limit = { USA = { has_naval_treaty_trigger = yes } }
+				tag = USA
+			}
+		}
+		localization_key = Naval_treaty_holder
+	}
+	text = {
+		trigger = {
+			if = {
+				limit = { GER = { has_naval_treaty_trigger = yes } }
 				naval_strength_comparison = {
-					other = ENG
+					other = GER
 					ratio < 1
 					sub_unit_def_weights = {
 						carrier = 0.5
@@ -661,7 +674,7 @@ defined_text = { # Country
 					}
 				}
 				naval_strength_comparison = {
-					other = ENG
+					other = GER
 					ratio > 0.9
 					sub_unit_def_weights = {
 						carrier = 0.5
@@ -700,9 +713,11 @@ defined_text = { # Country
 	text = {
 		trigger = {
 			if = {
-				limit = { ENG = { has_naval_treaty_trigger = yes } }
+				limit = { 
+					GER = { has_naval_treaty_trigger = yes }
+				}
 				naval_strength_comparison = {
-					other = ENG
+					other = GER
 					ratio < 0.9
 					sub_unit_def_weights = {
 						carrier = 0.5
@@ -712,7 +727,7 @@ defined_text = { # Country
 					}
 				}
 				naval_strength_comparison = {
-					other = ENG
+					other = GER
 					ratio > 0.75
 					sub_unit_def_weights = {
 						carrier = 0.5
@@ -751,9 +766,9 @@ defined_text = { # Country
 	text = {
 		trigger = {
 			if = {
-				limit = { ENG = { has_naval_treaty_trigger = yes } }
+				limit = { GER = { has_naval_treaty_trigger = yes } }
 				naval_strength_comparison = {
-					other = ENG
+					other = GER
 					ratio < 0.75
 					sub_unit_def_weights = {
 						carrier = 0.5
@@ -763,7 +778,7 @@ defined_text = { # Country
 					}
 				}
 				naval_strength_comparison = {
-					other = ENG
+					other = GER
 					ratio > 0.5
 					sub_unit_def_weights = {
 						carrier = 0.5
@@ -802,9 +817,9 @@ defined_text = { # Country
 	text = {
 		trigger = {
 			if = {
-				limit = { ENG = { has_naval_treaty_trigger = yes } }
+				limit = { GER = { has_naval_treaty_trigger = yes } }
 				naval_strength_comparison = {
-					other = ENG
+					other = GER
 					ratio < 0.5
 					sub_unit_def_weights = {
 						carrier = 0.5
@@ -833,9 +848,9 @@ defined_text = { # Country
 	text = {
 		trigger = {
 			if = {
-				limit = { ENG = { has_naval_treaty_trigger = yes } }
+				limit = { GER = { has_naval_treaty_trigger = yes } }
 				naval_strength_comparison = {
-					other = ENG
+					other = GER
 					ratio > 1
 					sub_unit_def_weights = {
 						carrier = 0.5
@@ -866,15 +881,15 @@ defined_text = { # Country
 	name = GetRelevantNavalTreatyNation
 	text = {
 		trigger = {
-			ENG = {
+			GER = {
 				has_naval_treaty_trigger = yes
 			}
 		}
-		localization_key = ENG_Naval_treaty_nation
+		localization_key = GER_Naval_treaty_nation
 	}
 	text = {
 		trigger = {
-			ENG = {
+			GER = {
 				not = { has_naval_treaty_trigger = yes }
 			}
 			USA = {

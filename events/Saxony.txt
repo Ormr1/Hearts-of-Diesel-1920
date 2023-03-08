@@ -868,3 +868,124 @@ country_event = {#GER - saxon civil war
 		}
 	}
 }
+country_event = {#Naval powers - dresden naval treaty
+	id = saxonian.31
+	title = saxonian.31.t
+	desc = saxonian.31.d
+	picture = GFX_report_event_finnish_letter
+	
+	is_triggered_only = yes
+	
+	option = {#agree to attend
+		name = saxonian.31.a
+		ai_chance = {
+			factor = 99
+		}
+		GER={country_event = {id = saxonian.32}}
+		add_ideas = {MTG_naval_treaty_adherent}
+		hidden_effect={
+			set_country_flag = attending_naval_conferance
+			GER={
+				add_to_variable = {responding_naval_powers = 1}
+				add_to_variable = {signing_naval_powers = 1}
+			}
+		}
+	}
+	option = {#decline
+		name = saxonian.31.b
+		ai_chance = {
+			factor = 1
+		}
+		add_named_threat = {
+			threat = 5
+			name = GER_refused_dresden_naval_treaty
+		}
+		GER={country_event = {id = saxonian.33}}
+		hidden_effect={
+			GER={add_to_variable = {responding_naval_powers = 1}}
+		}
+	}
+}
+country_event = {#response - country agrees
+	id = saxonian.32
+	title = saxonian.32.t
+	desc = saxonian.32.d
+	picture = GFX_report_event_finnish_letter
+	
+	is_triggered_only = yes
+	
+	option = {#of course
+		name = saxonian.32.a
+	}
+}
+country_event = {#response - country refuses
+	id = saxonian.33
+	title = saxonian.33.t
+	desc = saxonian.33.d
+	picture = GFX_report_event_finnish_letter
+	
+	is_triggered_only = yes
+	
+	option = {#of course
+		name = saxonian.33.a
+	}
+}
+country_event = {#GER - All delegates have arrived
+	id = saxonian.34
+	title = saxonian.34.t
+	desc = saxonian.34.d
+	picture = GFX_report_event_finnish_letter
+	
+	trigger={
+		original_tag = GER
+		custom_trigger_tooltip={
+			tooltip = GER_check
+			check_variable = {
+				var = responding_naval_powers
+				value = responding_naval_powers_count
+				compare = greater_than_or_equals
+			}
+		}
+		has_country_flag = GER_dresden_naval_treaty_proposed
+	}
+	fire_only_once = yes
+	
+	option = {#Annouce it to be ratified
+		name = saxonian.34.a
+		add_ideas = {MTG_naval_treaty_adherent}
+		add_to_variable = {signing_naval_powers = 1}
+		set_global_flag = { flag = MTG_naval_treaty_signatories value = signing_naval_powers }
+		set_temp_variable = {
+			GER_tmp_decrease_loan_var = 2000
+		}
+		GER_decrease_debt = yes #saxony can drop naval funding
+		news_event = {id = saxonian.35 days = 16}
+		
+	}
+}
+news_event = {#GER - All delegates have arrived
+	id = saxonian.35
+	title = saxonian.35.t
+	desc = saxonian.35.d
+	picture = GFX_report_event_finnish_letter
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {#to conferance
+		name = saxonian.35.a
+		
+	}
+}
+country_event = {#response - country refuses
+	id = saxonian.36
+	title = saxonian.36.t
+	desc = saxonian.36.d
+	picture = GFX_report_event_finnish_letter
+	
+	is_triggered_only = yes
+	
+	option = {#of course
+		name = saxonian.36.a
+	}
+}

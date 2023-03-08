@@ -124,7 +124,7 @@ focus_tree = {
 		id = GER_begin_iron_harvest
 		icon = GFX_focus_generic_iron_harvest
 		relative_position_id = GER_scars_of_the_great_war
-		x = 0
+		x = 1
 		y = 1
 		cost = 5
 		search_filters = {  FOCUS_FILTER_ECONOMIC }
@@ -138,6 +138,38 @@ focus_tree = {
 					type = steel
 					amount = 25
 				}
+			}
+		}
+	}
+	focus = {
+		id = GER_dresden_naval_treaty
+		icon = GFX_focus_generic_treaty
+		relative_position_id = GER_scars_of_the_great_war
+		x = -1
+		y = 1
+		cost = 5
+		search_filters = {  FOCUS_FILTER_ECONOMIC }
+		prerequisite = { focus = GER_scars_of_the_great_war}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			every_country={
+				limit={
+					OR={#major naval powers
+						tag = SCO #Albion
+						tag = SOV #Rusviet
+						tag = FRA #Franks
+						tag = USA #Usonia
+						tag = GRE #Rome
+						tag = JAP #Togawa
+						tag = SAM #Tui Manua
+						tag = SPR #Hispania
+						tag = BRA #Brazil
+					}
+				}
+				country_event = {id= saxonian.31}
+				GER={add_to_variable = {responding_naval_powers_count = 1}}
 			}
 		}
 	}
@@ -309,7 +341,8 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			unlock_decision_category_tooltip = GER_frankish_integration
+			set_country_flag = GER_Frankish_resistance_management
 		}
 	}
 	focus = {
@@ -1557,11 +1590,13 @@ focus_tree = {
 				NOT={has_completed_focus = GER_cut_military_funding }
 				date > 1930.1.1
 			}
+			has_naval_treaty_trigger = no
 		}
 		
 		available_if_capitulated = yes
 
 		completion_reward = {
+			
 			add_equipment_production = {
 				equipment = {
 					type = ship_hull_heavy_2

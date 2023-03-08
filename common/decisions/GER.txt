@@ -2864,3 +2864,39 @@ GER_warbond_administration={
 		}
 	}
 }
+
+GER_frankish_integration={
+	crackdown_in_occupied_frankia = {
+		state_target = yes
+		target_root_trigger = {
+			original_tag = GER
+		}
+		#targets = { 976 977 785 }
+		target_array = GER.owned_states
+		target_trigger = {
+			FROM = {
+				#is_owned_by = ROOT
+				#NOT={is_core_of = GER}
+				#is_core_of = FRA
+				has_dynamic_modifier = {
+					modifier = frankish_resistance
+				}
+				#has_state_flag = frankish_resistance
+			}
+		}
+		available = {
+			has_stability > 0.33
+			has_manpower > 499
+			FROM={resistance < 1}
+		}
+		on_map_mode = map_and_decisions_view
+		icon = oppression
+		cost = 20
+		complete_effect = {
+			add_manpower = -500
+			FROM = {
+				remove_dynamic_modifier = {modifier = frankish_resistance}
+			}
+		}
+	}
+}

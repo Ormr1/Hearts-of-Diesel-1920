@@ -18,6 +18,19 @@ focus_tree = {
     default = no
     ### CRISIS OF 1920
     focus = {
+        id = SPR_golden_bastion_of_liberty
+        icon = GFX_focus_generic_free_iberia
+        #available = {
+        #    always = no
+        #}
+        x = 5
+        y = 0
+        cost = 5
+        completion_reward = {
+            # Event explaining the crisis
+        }
+    }
+    focus = {
         id = SPR_Crisis_Of_1920
         icon = placeholder
         available = {
@@ -77,6 +90,7 @@ focus_tree = {
         id = SPR_Link_Small_Towns_To_Cities
         icon = placeholder
         relative_position_id = SPR_Repair_Our_Infrastructure
+        prerequisite = { focus = SPR_Repair_Our_Infrastructure }
         x = -1
         y = 1
         cost = 10
@@ -88,6 +102,7 @@ focus_tree = {
         id = SPR_Rail_Worker_Employment_Program
         icon = placeholder
         relative_position_id = SPR_Repair_Our_Infrastructure
+        prerequisite = { focus = SPR_Repair_Our_Infrastructure }
         x = 1
         y = 1
         cost = 7
@@ -164,9 +179,17 @@ focus_tree = {
         icon = placeholder
         x = 20
         y = 0
-        mutually_exclusive = { focus = SPR_Victory_In_Vanam }
+        mutually_exclusive = { focus = SPR_Defeat_In_Vanam }
         available = {
             286 = {
+                owner = {
+                    OR = {
+                        original_tag = SPR
+                        is_subject_of = SPR
+                    }
+                }
+            }
+            671 = {
                 owner = {
                     OR = {
                         original_tag = SPR
