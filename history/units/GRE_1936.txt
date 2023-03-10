@@ -1,0 +1,660 @@
+﻿division_template = {
+	name = "Stratiotai Pezikoú" 				# professional troops
+	division_names_group = GRE_INF_02
+	# Prior to 1940 mobilization = 3rd, 4th, 5th, 9th, 10, 13th;
+	# 	6th, 7th, 11th, and 12th had 2 regiments; 14th had 1 regiment
+	# Note: sources have all Greek regular infantry as mountain-trained
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		artillery = { x = 0 y = 3 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		artillery = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "Pezikoú Themata" 				# Local Infantry Divisions
+	division_names_group = GRE_INF_01
+	# Prior to 1940 mobilization = 3rd, 4th, 5th, 9th, 10, 13th;
+	# 	6th, 7th, 11th, and 12th had 2 regiments; 14th had 1 regiment
+	# Note: sources have all Greek regular infantry as mountain-trained
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+	priority = 0
+}
+division_template = {
+	name = "Tetrágono Pezikoú" 				# Square Infantry Division
+	division_names_group = GRE_MNT_01
+	# Prior to 1940 mobilization = 1st, 2nd, 8th
+	regiments = {
+		mountaineers = { x = 0 y = 0 }
+		mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 0 y = 2 }
+		mountaineers = { x = 1 y = 0 }
+		mountaineers = { x = 1 y = 1 }
+		mountaineers = { x = 1 y = 2 }
+		mountaineers = { x = 2 y = 0 }
+		mountaineers = { x = 2 y = 1 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "Merarchía Ippikoú" 			# Cavalry Division
+	division_names_group = GRE_CAV_01
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 1 y = 2 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }      # Motorized recon inf bn
+	}
+}
+
+units = {
+	######## Professional Army #########
+	division = { # "I Merarchía Pezikoú"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 9833
+		division_template = "Stratiotai Pezikoú" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+	}
+	division = { # "I Merarchía Pezikoú"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 2
+		}
+		location = 11842
+		division_template = "Stratiotai Pezikoú" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+	}
+	division = { # "I Merarchía Pezikoú"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 3896
+		division_template = "Stratiotai Pezikoú" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+	}
+	division = { # "I Merarchía Pezikoú"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 4
+		}
+		location = 9875
+		division_template = "Stratiotai Pezikoú" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+	}
+	division = { # "I Merarchía Pezikoú"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 5
+		}
+		location = 3905
+		division_template = "Stratiotai Pezikoú" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+	}
+	division = { # "I Merarchía Pezikoú"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 6
+		}
+		location = 947
+		division_template = "Stratiotai Pezikoú" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+	}
+	division = { # "I Merarchía Pezikoú"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 7
+		}
+		location = 9878
+		division_template = "Stratiotai Pezikoú" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+	}
+	division = { # "I Merarchía Pezikoú"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 8
+		}
+		location = 1005
+		division_template = "Stratiotai Pezikoú" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+	}
+	division = { # "I Merarchía Pezikoú"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 9
+		}
+		location = 10056
+		division_template = "Stratiotai Pezikoú" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+	}
+	division = { # "I Merarchía Pezikoú"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 10
+		}
+		location = 4112
+		division_template = "Stratiotai Pezikoú" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+	}
+	division = { # "I Merarchía Pezikoú"
+		name = "I Cairo Force"
+		location = 7011
+		division_template = "Stratiotai Pezikoú" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+	}
+	division = { # "I Merarchía Pezikoú"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 12
+		}
+		location = 9904
+		division_template = "Stratiotai Pezikoú" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+	}
+	division = { # "I Merarchía Pezikoú"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 13
+		}
+		location = 9833
+		division_template = "Stratiotai Pezikoú" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+	}
+	division = { # "I Merarchía Pezikoú"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 14
+		}
+		location = 11810
+		division_template = "Stratiotai Pezikoú" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+	}
+	division = { # "I Merarchía Pezikoú"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 15
+		}
+		location = 4127
+		division_template = "Stratiotai Pezikoú" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+	}
+	division = { # "I Merarchía Pezikoú"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 16
+		}
+		location = 3983
+		division_template = "Stratiotai Pezikoú" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+	}
+	division = { # "I Merarchía Pezikoú"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 17
+		}
+		location = 11831
+		division_template = "Stratiotai Pezikoú" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+	}
+	division = { # "I Merarchía Pezikoú"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 18
+		}
+		location = 9799
+		division_template = "Stratiotai Pezikoú" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+	}
+	division = { # "I Merarchía Pezikoú"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 19
+		}
+		location = 7193
+		division_template = "Stratiotai Pezikoú" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+	}
+	division = { # "I Merarchía Pezikoú"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 20
+		}
+		location = 11969
+		division_template = "Stratiotai Pezikoú" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+	}
+	division = { # "I Merarchía Pezikoú"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 21
+		}
+		location = 9994
+		division_template = "Stratiotai Pezikoú" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+	}
+	division = { # "I Merarchía Pezikoú"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 22
+		}
+		location = 10074
+		division_template = "Stratiotai Pezikoú" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+	}
+	division = { # "I Merarchía Pezikoú"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 23
+		}
+		location = 11837
+		division_template = "Stratiotai Pezikoú" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+	}
+	
+	######## Ellinikó Genikó Epiteleío ########
+	division = { # "V Merarchía Pezikoú"
+		name = "I Themata Crete"
+		location = 12058
+		division_template = "Pezikoú Themata" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+	division = { # "VIII Merarchía Pezikoú"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 8
+		}
+		location = 3914
+		division_template = "Tetrágono Pezikoú" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+
+	}
+	division = {
+		name = "Merarchía Ippikoú"
+		location = 11818
+		division_template = "Merarchía Ippikoú" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+
+	# A Sóma Stratoú
+	division = { # "II Merarchía Pezikoú"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 2
+		}
+		location = 4109
+		division_template = "Tetrágono Pezikoú" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+
+	}
+	division = { # "III Merarchía Pezikoú"
+		name = "I Themata Peloponnesus"
+		location = 4193
+		division_template = "Pezikoú Themata" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+	division = { # "IV Merarchía Pezikoú"
+		name = "II Themata Peloponnesus"
+		location = 7096
+		division_template = "Pezikoú Themata" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+
+	# B Sóma Stratoú
+	division = { # "I Merarchía Pezikoú"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 863
+		division_template = "Tetrágono Pezikoú" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+
+	}
+	division = { # "IX Merarchía Pezikoú"
+		name = "I Themata Hellas" 
+		location = 966
+		division_template = "Pezikoú Themata" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+
+	# C Sóma Stratoú
+	division = { # "VI Merarchía Pezikoú"
+		name = "I Themata Thessalonike" 
+		location = 3526
+		division_template = "Pezikoú Themata" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+	division = { # "X Merarchía Pezikoú"
+		name = "II Themata Thessalonike"
+		location = 10163
+		division_template = "Pezikoú Themata" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+	division = { # "XI Merarchía Pezikoú"
+		name = "III Themata Thessalonike"
+		location = 11818
+		division_template = "Pezikoú Themata" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+
+	# D Sóma Stratoú
+	division = { # "VII Merarchía Pezikoú"
+		name = "I Themata Strymon" 
+		location = 9791
+		division_template = "Pezikoú Themata" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+
+	# E Sóma Stratoú
+	division = { # "XII Merarchía Pezikoú"
+		name = "II Themata Strymon" 
+		location = 11774
+		division_template = "Pezikoú Themata" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+	
+	division = { # "XII Merarchía Pezikoú"
+		name = "I Themata Dioclea"
+		location = 9914
+		division_template = "Pezikoú Themata" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+	division = { # "XII Merarchía Pezikoú"
+		name = "II Themata Thracia" 
+		location = 922
+		division_template = "Pezikoú Themata" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+	division = { # "XII Merarchía Pezikoú"
+		name = "I Themata Thracia" 
+		location = 11905
+		division_template = "Pezikoú Themata" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+	division = { # "XII Merarchía Pezikoú"
+		name = "I Themata Eukellarion"
+		location = 3919
+		division_template = "Pezikoú Themata" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+	division = { # "XII Merarchía Pezikoú"
+		name = "I Themata Paphlagonia"
+		location = 11883
+		division_template = "Pezikoú Themata" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+	division = { # "XII Merarchía Pezikoú"
+		name = "I Themata Optimaton"
+		location = 6871
+		division_template = "Pezikoú Themata" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+	division = { # "XII Merarchía Pezikoú"
+		name = "I Themata Cypress"
+		location = 7193
+		division_template = "Pezikoú Themata" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+	division = { # "XII Merarchía Pezikoú"
+		name = "I Themata Seleucia"
+		location = 7143
+		division_template = "Pezikoú Themata" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+	division = { # "XII Merarchía Pezikoú"
+		name = "I Themata Cilicia"
+		location = 11810
+		division_template = "Pezikoú Themata" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+	division = { # "XII Merarchía Pezikoú"
+		name = "I Themata Kibyraioton"
+		location = 1005
+		division_template = "Pezikoú Themata" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+	division = { # "XII Merarchía Pezikoú"
+		name = "I Themata Samos"
+		location = 4112
+		division_template = "Pezikoú Themata" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+	division = { # "XII Merarchía Pezikoú"
+		name = "I Themata Thrakesion"
+		location = 928
+		division_template = "Pezikoú Themata" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+	division = { # "XII Merarchía Pezikoú"
+		name = "I Themata Opsikion"
+		location = 947
+		division_template = "Pezikoú Themata" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+	division = { # "XII Merarchía Pezikoú"
+		name = "I Themata Longobardia"
+		location = 11837
+		division_template = "Pezikoú Themata" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+	division = { # "XII Merarchía Pezikoú"
+		name = "I Themata Calabria"
+		location = 3901
+		division_template = "Pezikoú Themata" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+	division = { # "XII Merarchía Pezikoú"
+		name = "I Themata Dyrrachion"
+		location = 914
+		division_template = "Pezikoú Themata" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+	division = { # "XII Merarchía Pezikoú"
+		name = "I Themata Carthage"
+		location = 11969
+		division_template = "Pezikoú Themata" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+
+	# Libya
+	division = { # 
+		name = "I Themata Cirene"
+		location = 1149 
+		division_template = "Pezikoú Themata"	# CC.NN. militia, lower training and equipment 
+		start_experience_factor = 0.1 
+		start_equipment_factor = 0.5 
+	} 
+	division = { #
+		name = "I Themata Libia"
+		location = 1130 
+		division_template = "Pezikoú Themata" # Colonial militia, lower training and equipment
+		force_equipment_variants = { infantry_equipment_0 = { owner = "GRE" } } 
+		start_equipment_factor = 0.5 
+	}
+	
+	#Egypt
+	division= {	
+		name = "Cairo Force"
+		location = 7011
+		division_template = "Pezikoú Themata"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+
+	}
+	division= {	
+		name = "Canal Brigade"
+		location = 1155
+		division_template = "Pezikoú Themata"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.15
+
+	}
+	division= {	
+		name = "The Cavalry Brigade (Egypt)"
+		location = 4076
+		division_template = "Merarchía Ippikoú"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+
+	}
+	#Sudan
+	division= {	
+		name = "Sudan Defense Force"
+		location = 12806
+		division_template = "Pezikoú Themata"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "GRE" } }
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.4
+
+	}
+}
+
+##### Air units -- Greece did not start to modernize air force until 1937 -- but they should still have their interwar air force available #####
+air_wings = {
+	##### Elliniki Polemiki Aeroporia #####
+	731 = { 
+		# Machitís Moíras
+		fighter_equipment_0 = {
+			owner = "GRE" 
+			amount = 26
+			create_if_missing = yes
+		}
+		# Moíra vomvistón
+		tac_bomber_equipment_0 = {
+			owner = "GRE" 
+			amount = 71
+			create_if_missing = yes
+		}
+	}
+}
+
+
+### Starting Production ###
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+			creator = "GRE"
+		}
+		requested_factories = 1
+		progress = 0.5
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = artillery_equipment_1
+			creator = "GRE"
+		}
+		requested_factories = 1
+		progress = 0.5
+		efficiency = 100
+	}
+}

@@ -3121,5 +3121,19 @@ spriteTypes = {
 		name = "GFX_focus_GER_wispers_fenris"
 		texturefile = "gfx/interface/goals/SAXONY/focus_GER_wispers_fenris.dds"
 	}
+	SpriteType = {
+		name = "GFX_focus_GER_cut_military_funding"
+		texturefile = "gfx/interface/goals/SAXONY/focus_GER_cut_military_funding.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_GER_colonial_production"
+		texturefile = "gfx/interface/goals/SAXONY/focus_GER_colonial_production.dds"
+	}
+	
+	
+	SpriteType = {
+		name = "GFX_focus_ETH_adopt_the_lira"
+		texturefile = "gfx/interface/goals/focus_ETH_adopt_the_lira.dds"
+	}
 
 }

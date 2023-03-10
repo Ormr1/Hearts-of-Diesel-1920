@@ -164,6 +164,21 @@ ideas = {
 				navy_org_factor = -0.1
 			}
 		}
+		GER_naval_production_scaled_back = {
+			
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			picture = generic_army_problems
+
+			modifier = {
+				industrial_capacity_dockyard = -0.33
+				repair_speed_factor = -0.33
+			}
+		}
 	
 		sour_loser = {
 			

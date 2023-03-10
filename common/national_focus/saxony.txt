@@ -154,6 +154,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			set_country_flag = GER_dresden_naval_treaty_proposed
 			every_country={
 				limit={
 					OR={#major naval powers
@@ -195,7 +196,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_adressing_the_armies_issues
-		icon = GFX_goal_generic_allies_build_infantry
+		icon = GFX_focus_generic_military_mission
 		relative_position_id = GER_continued_demobilisation
 		prerequisite = { focus = GER_continued_demobilisation}
 		x =-1
@@ -303,7 +304,14 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			add_timed_idea = {
+				idea = GER_naval_production_scaled_back
+				days = 720
+			}
+			set_temp_variable = {
+				GER_tmp_decrease_loan_var = 209
+			}
+			GER_decrease_debt = yes
 		}
 	}
 	focus = {
@@ -492,7 +500,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_colonial_development
-		icon = GFX_goal_generic_allies_build_infantry
+		icon = GFX_focus_GER_colonial_production
 		prerequisite = { focus = GER_a_steady_helm }
 		relative_position_id = GER_a_steady_helm
 		x = -6
@@ -709,7 +717,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_use_colonial_production
-		icon = GFX_goal_generic_allies_build_infantry
+		icon = GFX_focus_GER_colonial_production
 		relative_position_id = GER_issue_of_war_bonds
 		prerequisite = { focus = GER_issue_of_war_bonds}
 		x = 0
@@ -886,7 +894,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_cut_military_funding
-		icon = GFX_goal_generic_allies_build_infantry
+		icon = GFX_focus_GER_cut_military_funding
 		relative_position_id = GER_issue_of_war_bonds
 		prerequisite = { focus = GER_issue_of_war_bonds}
 		x = 2
@@ -925,7 +933,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_dealing_with_external_loans
-		icon = GFX_goal_generic_allies_build_infantry
+		icon = GFX_focus_ETH_adopt_the_lira
 		relative_position_id = GER_dealing_with_war_debt
 		prerequisite = { focus = GER_dealing_with_war_debt}
 		x = -6
@@ -1573,7 +1581,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_naval_expansion_kaiser
-		icon = GFX_goal_generic_build_navy
+		icon = GFX_focus_generic_navy_battleship2
 		relative_position_id = GER_naval_sector
 		mutually_exclusive = {
 			focus = GER_naval_expansion_leipzig_hipper
@@ -1591,6 +1599,7 @@ focus_tree = {
 				date > 1930.1.1
 			}
 			has_naval_treaty_trigger = no
+			NOT={has_idea = GER_naval_production_scaled_back}
 		}
 		
 		available_if_capitulated = yes
@@ -1619,7 +1628,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_naval_expansion_leipzig_hipper
-		icon = GFX_goal_generic_build_navy
+		icon = GFX_focus_generic_cruiser2
 		relative_position_id = GER_naval_sector
 		prerequisite = { 
 			focus = GER_naval_sector
@@ -1636,6 +1645,7 @@ focus_tree = {
 				NOT={has_completed_focus = GER_cut_military_funding }
 				date > 1930.1.1
 			}
+			NOT={has_idea = GER_naval_production_scaled_back}
 		}
 		
 		available_if_capitulated = yes

@@ -137,7 +137,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 20
 		}
-		location = 9503
+		location = 3646
 		division_template = "Division d'Infanterie" 	# Second line, reserve equipment
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
@@ -159,7 +159,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 2
 		}
-		location = 3629
+		location = 6949
 		division_template = "Division d'Infanterie" 	# Second line, reserve equipment
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
@@ -170,7 +170,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 11
 		}
-		location = 549
+		location = 11732
 		division_template = "Division d'Infanterie" 	# Frontline, best equipment
 		start_experience_factor = 0.3
 	}
@@ -179,7 +179,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 44
 		}
-		location = 549
+		location = 3533
 		division_template = "Division Coloniale"	 	# Second line, reserve equipment
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
@@ -405,7 +405,7 @@ units = {
 	}
 	division= {	
 		name = "Sarreguimines Div. d'Inf. de Forteresse"
-		location = 3629
+		location = 551
 		division_template = "Brigade Coloniale" 	# Garrison unit, reserve equipment
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.3
@@ -413,7 +413,7 @@ units = {
 	}
 	division= {	
 		name = "Strassbourg Div. d'Inf. de Forteresse"
-		location = 9503
+		location = 11488
 		division_template = "Brigade Coloniale" 	# Garrison unit, reserve equipment
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.3
