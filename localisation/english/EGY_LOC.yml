@@ -90,7 +90,7 @@ EGY_A39_desc: ""
 EGY_A40: "Damnation"
 EGY_A40_desc: ""
 EGY_A41: "Freedom"
-EGY_A41_desc: "'Step 9, Carter, Freedom!' \'For you, Cleo! Not for me!' \'CARTER!!!' "
+EGY_A41_desc: "'Step 9, Carter, Freedom!' \n'For you, Cleo! Not for me!' \n'CARTER!!!' "
 EGY_A42: ""
 EGY_A42_desc: ""
 EGY_A43: ""
@@ -120,3 +120,109 @@ EGY_A54_desc: ""
 EGY_A55: ""
 EGY_A55_desc: ""
 
+
+###FOCUSES BRAVO###
+
+
+
+
+###FOCUSES CHARLIE###
+
+
+
+
+###EVENTS ZERO###
+EGY_Z.1.t: "A Postcard From Thebes"
+EGY_Z.1.d: "July 1969, The Albion Museum \nDepartment of Egyptology \nAh...Thebes. He hadn't been there in years. The postcard was from a colleague at an overseas institute. Something about a 'Howard Carter'. That name was a blast from the past, too. Carter...yes, he worked here. Strange fellow, he was. Took off join a rebellion back in the 20's, never heard from again. Probably deceased by now. Regardless, they had apparently recovered a box of his posessions, pending immediate re-patriation. Well, we'll send one of the assisstants to go and collect them, no sense endagering something so valuable with the international post. Lorelai should do fine. It'll be nice to get her out of the archives too. \nGods almighty, Aegyptus in the 20s. I was only a scribbler for the Albion Evening Post. It was a mess of technicolour paint and midday heat. There was that one woman...movie star...what was her name? And those dreadful brothers...and the upstart from the south. Who were they?"
+EGY_Z.1.a: "Remember, Mr Harriet"
+
+
+
+###EVENTS ALPHA###
+EGY_A.1.t: ""
+EGY_A.1.d: ""
+EGY_A.1.a: ""
+
+EGY_A.2.t: ""
+EGY_A.2.d: ""
+EGY_A.2.a: ""
+
+EGY_A.3.t: ""
+EGY_A.3.d: ""
+EGY_A.3.a: ""
+
+EGY_A.4.t: ""
+EGY_A.4.d: ""
+EGY_A.4.a: ""
+
+EGY_A.5.t: ""
+EGY_A.5.d: ""
+EGY_A.5.a: ""
+
+EGY_A.6.t: ""
+EGY_A.6.d: ""
+EGY_A.6.a: ""
+
+EGY_A.7.t: ""
+EGY_A.7.d: ""
+EGY_A.7.a: ""
+
+EGY_A.8.t: ""
+EGY_A.8.d: ""
+EGY_A.8.a: ""
+
+EGY_A.9.t: ""
+EGY_A.9.d: ""
+EGY_A.9.a: ""
+
+EGY_A.10.t: ""
+EGY_A.10.d: ""
+EGY_A.10.a: ""
+
+EGY_A.11.t: ""
+EGY_A.11.d: ""
+EGY_A.11.a: ""
+
+EGY_A.12.t: ""
+EGY_A.12.d: ""
+EGY_A.12.a: ""
+
+EGY_A.13.t: ""
+EGY_A.13.d: ""
+EGY_A.13.a: ""
+
+EGY_A.14.t: ""
+EGY_A.14.d: ""
+EGY_A.14.a: ""
+
+EGY_A.15.t: ""
+EGY_A.15.d: ""
+EGY_A.15.a: ""
+
+EGY_A.16.t: ""
+EGY_A.16.d: ""
+EGY_A.16.a: ""
+
+EGY_A.17.t: ""
+EGY_A.17.d: ""
+EGY_A.17.a: ""
+
+EGY_A.18.t: ""
+EGY_A.18.d: ""
+EGY_A.18.a: ""
+
+EGY_A.19.t: ""
+EGY_A.19.d: ""
+EGY_A.19.a: ""
+
+EGY_A.20.t: ""
+EGY_A.20.d: ""
+EGY_A.20.a: ""
+
+EGY_A.21.t: ""
+EGY_A.21.d: ""
+EGY_A.21.a: ""
+
+EGY_A.22.t: ""
+EGY_A.22.d: ""
+EGY_A.22.a: ""
