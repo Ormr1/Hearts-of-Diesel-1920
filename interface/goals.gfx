@@ -3135,5 +3135,212 @@ spriteTypes = {
 		name = "GFX_focus_ETH_adopt_the_lira"
 		texturefile = "gfx/interface/goals/focus_ETH_adopt_the_lira.dds"
 	}
+	
+	### EGY A SERIES ###
+
+	SpriteType = {
+		name = "GFX_EGY_A1"
+		texturefile = "gfx/interface/goals/EGYPT/KEM_LARGE_1/GFX_EGY_A1.png"
+	}
+
+	SpriteType = {
+		name = "GFX_EGY_A2"
+		texturefile = "gfx/interface/goals/EGYPT/GFX_EGY_A2.png"
+	}
+
+	SpriteType = {
+		name = "GFX_EGY_A3"
+		texturefile = "gfx/interface/goals/EGYPT/GFX_EGY_A3.png"
+	}
+
+	SpriteType = {
+		name = "GFX_EGY_A4"
+		texturefile = "gfx/interface/goals/EGYPT/GFX_EGY_A4.png"
+	}
+
+	SpriteType = {
+		name = "GFX_EGY_A5"
+		texturefile = "gfx/interface/goals/EGYPT/GFX_EGY_A5.png"
+	}
+
+	SpriteType = {
+		name = "GFX_EGY_A6"
+		texturefile = "gfx/interface/goals/EGYPT/KEM_LARGE_1/GFX_EGY_A6.png"
+	}
+
+	SpriteType = {
+		name = "GFX_EGY_A7"
+		texturefile = "gfx/interface/goals/EGYPT/GFX_EGY_A7.png"
+	}
+
+	SpriteType = {
+		name = "GFX_EGY_A8"
+		texturefile = "gfx/interface/goals/EGYPT/GFX_EGY_A8.png"
+	}
+
+	SpriteType = {
+		name = "GFX_EGY_A9"
+		texturefile = "gfx/interface/goals/EGYPT/GFX_EGY_A9.png"
+	}
+
+	SpriteType = {
+		name = "GFX_EGY_A10"
+		texturefile = "gfx/interface/goals/EGYPT/GFX_EGY_A10.png"
+	}
+
+	SpriteType = {
+		name = "GFX_EGY_A11"
+		texturefile = "gfx/interface/goals/EGYPT/KEM_LARGE_1/GFX_EGY_A11.png"
+	}
+
+	SpriteType = {
+		name = "GFX_EGY_A12"
+		texturefile = "gfx/interface/goals/EGYPT/GFX_EGY_A12.png"
+	}
+
+	SpriteType = {
+		name = "GFX_EGY_A13"
+		texturefile = "gfx/interface/goals/EGYPT/GFX_EGY_A13.png"
+	}
+
+	SpriteType = {
+		name = "GFX_EGY_A14"
+		texturefile = "gfx/interface/goals/EGYPT/GFX_EGY_A14.png"
+	}
+
+	SpriteType = {
+		name = "GFX_EGY_A15"
+		texturefile = "gfx/interface/goals/EGYPT/GFX_EGY_A15.png"
+	}
+
+	SpriteType = {
+		name = "GFX_EGY_A16"
+		texturefile = "gfx/interface/goals/EGYPT/KEM_LARGE_1/GFX_EGY_A16.png"
+	}
+
+	SpriteType = {
+		name = "GFX_EGY_A17"
+		texturefile = "gfx/interface/goals/EGYPT/GFX_EGY_A17.png"
+	}
+
+	SpriteType = {
+		name = "GFX_EGY_A18"
+		texturefile = "gfx/interface/goals/EGYPT/GFX_EGY_A18.png"
+	}
+
+	SpriteType = {
+		name = "GFX_EGY_A19"
+		texturefile = "gfx/interface/goals/EGYPT/GFX_EGY_A19.png"
+	}
+
+	SpriteType = {
+		name = "GFX_EGY_A20"
+		texturefile = "gfx/interface/goals/EGYPT/GFX_EGY_A20.png"
+	}
+
+	SpriteType = {
+		name = "GFX_EGY_A21"
+		texturefile = "gfx/interface/goals/EGYPT/KEM_LARGE_1/GFX_EGY_A21.png"
+	}
+
+	SpriteType = {
+		name = "GFX_EGY_A22"
+		texturefile = "gfx/interface/goals/EGYPT/GFX_EGY_A22.png"
+	}
+
+	SpriteType = {
+		name = "GFX_EGY_A23"
+		texturefile = "gfx/interface/goals/EGYPT/GFX_EGY_A23.png"
+	}
+
+	SpriteType = {
+		name = "GFX_EGY_A24"
+		texturefile = "gfx/interface/goals/EGYPT/GFX_EGY_A24.png"
+	}
+
+	SpriteType = {
+		name = "GFX_EGY_A25"
+		texturefile = "gfx/interface/goals/EGYPT/GFX_EGY_A25.png"
+	}
+
+	SpriteType = {
+		name = "GFX_EGY_A26"
+		texturefile = "gfx/interface/goals/EGYPT/KEM_LARGE_1/GFX_EGY_A26.png"
+	}
+
+	SpriteType = {
+		name = "GFX_EGY_A27"
+		texturefile = "gfx/interface/goals/EGYPT/GFX_EGY_A27.png"
+	}
+
+	SpriteType = {
+		name = "GFX_EGY_A28"
+		texturefile = "gfx/interface/goals/EGYPT/GFX_EGY_A28.png"
+	}
+
+	SpriteType = {
+		name = "GFX_EGY_A29"
+		texturefile = "gfx/interface/goals/EGYPT/GFX_EGY_A29.png"
+	}
+
+	SpriteType = {
+		name = "GFX_EGY_A30"
+		texturefile = "gfx/interface/goals/EGYPT/GFX_EGY_A30.png"
+	}
+
+	SpriteType = {
+		name = "GFX_EGY_A31"
+		texturefile = "gfx/interface/goals/EGYPT/KEM_LARGE_1/GFX_EGY_A31.png"
+	}
+
+	SpriteType = {
+		name = "GFX_EGY_A32"
+		texturefile = "gfx/interface/goals/EGYPT/GFX_EGY_A32.png"
+	}
+
+	SpriteType = {
+		name = "GFX_EGY_A33"
+		texturefile = "gfx/interface/goals/EGYPT/GFX_EGY_A33.png"
+	}
+
+	SpriteType = {
+		name = "GFX_EGY_A34"
+		texturefile = "gfx/interface/goals/EGYPT/GFX_EGY_A34.png"
+	}
+
+	SpriteType = {
+		name = "GFX_EGY_A35"
+		texturefile = "gfx/interface/goals/EGYPT/GFX_EGY_A35.png"
+	}
+
+	SpriteType = {
+		name = "GFX_EGY_A36"
+		texturefile = "gfx/interface/goals/EGYPT/KEM_LARGE_1/GFX_EGY_A36.png"
+	}
+
+	SpriteType = {
+		name = "GFX_EGY_A37"
+		texturefile = "gfx/interface/goals/EGYPT/GFX_EGY_A37.png"
+	}
+
+	SpriteType = {
+		name = "GFX_EGY_A38"
+		texturefile = "gfx/interface/goals/EGYPT/GFX_EGY_A38.png"
+	}
+
+	SpriteType = {
+		name = "GFX_EGY_A39"
+		texturefile = "gfx/interface/goals/EGYPT/GFX_EGY_A39.png"
+	}
+
+	SpriteType = {
+		name = "GFX_EGY_A40"
+		texturefile = "gfx/interface/goals/EGYPT/GFX_EGY_A40.png"
+	}
+
+	SpriteType = {
+		name = "GFX_EGY_A41"
+		texturefile = "gfx/interface/goals/EGYPT/KEM_LARGE_1/GFX_EGY_A41.png"
+	}
 
 }
