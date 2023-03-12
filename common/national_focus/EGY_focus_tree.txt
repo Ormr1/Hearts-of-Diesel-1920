@@ -861,7 +861,25 @@ focus_tree = {
         relative_position_id = EGY_A36
         prerequisite = { focus = EGY_A36 }
         x = 0
-        y = 3
+        y = 2
+        cost = 3
+        search_filters = {  FOCUS_FILTER_POLITICAL }
+        
+        available_if_capitulated = yes
+
+        completion_reward = {
+        }
+        ai_will_do={
+            factor = 100
+        }
+    }
+    focus = {
+        id = EGY_A42
+        icon = GFX_EGY_A42
+        relative_position_id = EGY_A41
+        prerequisite = { focus = EGY_A41 }
+        x = 0
+        y = 2
         cost = 3
         search_filters = {  FOCUS_FILTER_POLITICAL }
         
