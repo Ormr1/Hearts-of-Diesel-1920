@@ -3137,10 +3137,15 @@ spriteTypes = {
 	}
 	
 	### EGY A SERIES ###
-
+	
 	SpriteType = {
-		name = "GFX_EGY_A1"
-		texturefile = "gfx/interface/goals/EGYPT/KEM_LARGE_1/GFX_EGY_A1.png"
+		name = "GFX_EGY_A1_bg"
+		texturefile = "gfx/interface/goals/EGYPT/KEM_LARGE 1/GFX_EGY_A1_bg.png"
+	}
+	SpriteType = {
+		name = "GFX_EGY_A1_fr"
+		texturefile = "gfx/interface/goals/EGYPT/KEM_LARGE 1/GFX_EGY_A1_fr.png"
+		allwaystransparent = yes
 	}
 
 	SpriteType = {
@@ -3165,7 +3170,12 @@ spriteTypes = {
 
 	SpriteType = {
 		name = "GFX_EGY_A6"
-		texturefile = "gfx/interface/goals/EGYPT/KEM_LARGE_1/GFX_EGY_A6.png"
+		texturefile = "gfx/interface/goals/EGYPT/KEM_LARGE 1/GFX_EGY_A6_bg.png"
+		allwaystransparent = yes 
+	}
+	SpriteType = {
+		name = "GFX_EGY_A6_fr"
+		texturefile = "gfx/interface/goals/EGYPT/KEM_LARGE 1/GFX_EGY_A6_fr_z.png"
 	}
 
 	SpriteType = {
@@ -3190,7 +3200,17 @@ spriteTypes = {
 
 	SpriteType = {
 		name = "GFX_EGY_A11"
-		texturefile = "gfx/interface/goals/EGYPT/KEM_LARGE_1/GFX_EGY_A11.png"
+		texturefile = "gfx/interface/goals/EGYPT/KEM_LARGE 1/GFX_EGY_A11.png"
+		allwaystransparent = yes 
+	}
+	SpriteType = {
+		name = "GFX_EGY_A11_fr"
+		texturefile = "gfx/interface/goals/EGYPT/KEM_LARGE 1/GFX_EGY_A11_fr.png"
+	}
+	SpriteType = {
+		name = "GFX_EGY_A11_bg"
+		texturefile = "gfx/interface/goals/EGYPT/KEM_LARGE 1/GFX_EGY_A11_bg.png"
+		allwaystransparent = yes 
 	}
 
 	SpriteType = {
@@ -3215,7 +3235,17 @@ spriteTypes = {
 
 	SpriteType = {
 		name = "GFX_EGY_A16"
-		texturefile = "gfx/interface/goals/EGYPT/KEM_LARGE_1/GFX_EGY_A16.png"
+		texturefile = "gfx/interface/goals/EGYPT/KEM_LARGE 1/GFX_EGY_A16.png"
+		allwaystransparent = yes 
+	}
+	SpriteType = {
+		name = "GFX_EGY_A16_fr"
+		texturefile = "gfx/interface/goals/EGYPT/KEM_LARGE 1/GFX_EGY_A16_fr.png"
+	}
+	SpriteType = {
+		name = "GFX_EGY_A16_bg"
+		texturefile = "gfx/interface/goals/EGYPT/KEM_LARGE 1/GFX_EGY_A16_bg.png"
+		allwaystransparent = yes 
 	}
 
 	SpriteType = {
@@ -3240,7 +3270,16 @@ spriteTypes = {
 
 	SpriteType = {
 		name = "GFX_EGY_A21"
-		texturefile = "gfx/interface/goals/EGYPT/KEM_LARGE_1/GFX_EGY_A21.png"
+		texturefile = "gfx/interface/goals/EGYPT/KEM_LARGE 1/GFX_EGY_A21.png"
+	}
+	SpriteType = {
+		name = "GFX_EGY_A21_bg"
+		texturefile = "gfx/interface/goals/EGYPT/KEM_LARGE 1/GFX_EGY_A21_bg.png"
+		allwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_EGY_A21_fr"
+		texturefile = "gfx/interface/goals/EGYPT/KEM_LARGE 1/GFX_EGY_A21_fr.png"
 	}
 
 	SpriteType = {
@@ -3265,7 +3304,16 @@ spriteTypes = {
 
 	SpriteType = {
 		name = "GFX_EGY_A26"
-		texturefile = "gfx/interface/goals/EGYPT/KEM_LARGE_1/GFX_EGY_A26.png"
+		texturefile = "gfx/interface/goals/EGYPT/KEM_LARGE 1/GFX_EGY_A26.png"
+	}
+	SpriteType = {
+		name = "GFX_EGY_A26_bg"
+		texturefile = "gfx/interface/goals/EGYPT/KEM_LARGE 1/GFX_EGY_A26_bg.png"
+		allwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_EGY_A26_fr"
+		texturefile = "gfx/interface/goals/EGYPT/KEM_LARGE 1/GFX_EGY_A26_fr.png"
 	}
 
 	SpriteType = {
@@ -3290,7 +3338,16 @@ spriteTypes = {
 
 	SpriteType = {
 		name = "GFX_EGY_A31"
-		texturefile = "gfx/interface/goals/EGYPT/KEM_LARGE_1/GFX_EGY_A31.png"
+		texturefile = "gfx/interface/goals/EGYPT/KEM_LARGE 1/GFX_EGY_A31.png"
+	}
+	SpriteType = {
+		name = "GFX_EGY_A31_bg"
+		texturefile = "gfx/interface/goals/EGYPT/KEM_LARGE 1/GFX_EGY_A31_bg.png"
+		allwaystransparent = yes 
+	}
+	SpriteType = {
+		name = "GFX_EGY_A31_fr"
+		texturefile = "gfx/interface/goals/EGYPT/KEM_LARGE 1/GFX_EGY_A31_fr.png"
 	}
 
 	SpriteType = {
@@ -3315,7 +3372,16 @@ spriteTypes = {
 
 	SpriteType = {
 		name = "GFX_EGY_A36"
-		texturefile = "gfx/interface/goals/EGYPT/KEM_LARGE_1/GFX_EGY_A36.png"
+		texturefile = "gfx/interface/goals/EGYPT/KEM_LARGE 1/GFX_EGY_A36.png"
+	}
+	SpriteType = {
+		name = "GFX_EGY_A36_bg"
+		texturefile = "gfx/interface/goals/EGYPT/KEM_LARGE 1/GFX_EGY_A36_bg.png"
+		allwaystransparent = yes 
+	}
+	SpriteType = {
+		name = "GFX_EGY_A36_fr"
+		texturefile = "gfx/interface/goals/EGYPT/KEM_LARGE 1/GFX_EGY_A36_fr.png"
 	}
 
 	SpriteType = {
@@ -3340,7 +3406,16 @@ spriteTypes = {
 
 	SpriteType = {
 		name = "GFX_EGY_A41"
-		texturefile = "gfx/interface/goals/EGYPT/KEM_LARGE_1/GFX_EGY_A41.png"
+		texturefile = "gfx/interface/goals/EGYPT/KEM_LARGE 1/GFX_EGY_A41.png"
+	}
+	SpriteType = {
+		name = "GFX_EGY_A41_bg"
+		texturefile = "gfx/interface/goals/EGYPT/KEM_LARGE 1/GFX_EGY_A41_bg.png"
+		allwaystransparent = yes 
+	}
+	SpriteType = {
+		name = "GFX_EGY_A41_fr"
+		texturefile = "gfx/interface/goals/EGYPT/KEM_LARGE 1/GFX_EGY_A41_fr.png"
 	}
 
 }

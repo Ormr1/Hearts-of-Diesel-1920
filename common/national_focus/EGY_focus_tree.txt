@@ -44,7 +44,7 @@ focus_tree = {
         icon = GFX_EGY_Z2
         relative_position_id = EGY_Z1
         prerequisite = { focus = EGY_Z1 }
-        x = -1
+        x = -2
         y = 1
         cost = 3
         search_filters = {  FOCUS_FILTER_POLITICAL }
@@ -84,7 +84,7 @@ focus_tree = {
         icon = GFX_EGY_Z4
         relative_position_id = EGY_Z1
         prerequisite = { focus = EGY_Z1 }
-        x = 1
+        x = 2
         y = 1
         cost = 3
         search_filters = {  FOCUS_FILTER_POLITICAL }
@@ -101,8 +101,8 @@ focus_tree = {
     }
     ###KEMET###
     focus = {
-        id = EGY_A1
-        icon = GFX_EGY_A1
+        id = EGY_A1_fr
+        icon = GFX_EGY_A1_fr
         relative_position_id = EGY_Z1
         prerequisite = { focus = EGY_Z4 }
         allow_branch = {
@@ -122,10 +122,31 @@ focus_tree = {
         }
     }
     focus = {
+        id = EGY_A1_bg
+        icon = GFX_EGY_A1_bg
+        relative_position_id = EGY_A1_fr
+        prerequisite = { focus = EGY_Z4 }
+        allow_branch = {
+            has_country_flag = EGY_A_MASTER
+        }
+        x = 0
+        y = 0
+        cost = 3
+        search_filters = {  FOCUS_FILTER_POLITICAL }
+        
+        available_if_capitulated = yes
+
+        completion_reward = {
+        }
+        ai_will_do={
+            factor = 100
+        }
+    }
+    focus = {
         id = EGY_A2
         icon = GFX_EGY_A2
-        relative_position_id = EGY_A1
-        prerequisite = { focus = EGY_A1 }
+        relative_position_id = EGY_A1_bg
+        prerequisite = { focus = EGY_A1_bg }
         x = 2
         y = 1
         cost = 3
@@ -143,8 +164,8 @@ focus_tree = {
     focus = {
         id = EGY_A3
         icon = GFX_EGY_A3
-        relative_position_id = EGY_A1
-        prerequisite = { focus = EGY_A1 }
+        relative_position_id = EGY_A1_bg
+        prerequisite = { focus = EGY_A1_bg }
         x = 4
         y = 1
         cost = 3
@@ -162,8 +183,8 @@ focus_tree = {
     focus = {
         id = EGY_A4
         icon = GFX_EGY_A4
-        relative_position_id = EGY_A1
-        prerequisite = { focus = EGY_A1 }
+        relative_position_id = EGY_A1_bg
+        prerequisite = { focus = EGY_A1_bg }
         x = 6
         y = 1
         cost = 3
@@ -181,8 +202,8 @@ focus_tree = {
     focus = {
         id = EGY_A5
         icon = GFX_EGY_A5
-        relative_position_id = EGY_A1
-        prerequisite = { focus = EGY_A1 }
+        relative_position_id = EGY_A1_bg
+        prerequisite = { focus = EGY_A1_bg }
         x = 8
         y = 1
         cost = 3
@@ -200,10 +221,28 @@ focus_tree = {
     focus = {
         id = EGY_A6
         icon = GFX_EGY_A6
-        relative_position_id = EGY_A1
-        prerequisite = { focus = EGY_A1 }
+        relative_position_id = EGY_A1_bg
+        prerequisite = { focus = EGY_A1_bg}
         x = 0
         y = 2
+        cost = 3
+        search_filters = {  FOCUS_FILTER_POLITICAL }
+        
+        available_if_capitulated = yes
+
+        completion_reward = {
+        }
+        ai_will_do={
+            factor = 100
+        }
+    }
+    focus = {
+        id = EGY_A6_fr
+        icon = GFX_EGY_A6_fr_o
+        relative_position_id = EGY_A6
+        prerequisite = { focus = EGY_A1_bg }
+        x = 0
+        y = 0
         cost = 3
         search_filters = {  FOCUS_FILTER_POLITICAL }
         
@@ -293,11 +332,29 @@ focus_tree = {
     }
     focus = {
         id = EGY_A11
-        icon = GFX_EGY_A11
+        icon = GFX_EGY_A11_bg
         relative_position_id = EGY_A6
         prerequisite = { focus = EGY_A6 }
         x = 0
         y = 2
+        cost = 3
+        search_filters = {  FOCUS_FILTER_POLITICAL }
+        
+        available_if_capitulated = yes
+
+        completion_reward = {
+        }
+        ai_will_do={
+            factor = 100
+        }
+    }
+    focus = {
+        id = EGY_A11_fr
+        icon = GFX_EGY_A11_fr
+        relative_position_id = EGY_A11
+        prerequisite = { focus = EGY_A6_fr }
+        x = 0
+        y = 0
         cost = 3
         search_filters = {  FOCUS_FILTER_POLITICAL }
         
@@ -387,11 +444,29 @@ focus_tree = {
     }
     focus = {
         id = EGY_A16
-        icon = GFX_EGY_A16
+        icon = GFX_EGY_A16_bg
         relative_position_id = EGY_A11
         prerequisite = { focus = EGY_A11 }
         x = 0
         y = 2
+        cost = 3
+        search_filters = {  FOCUS_FILTER_POLITICAL }
+        
+        available_if_capitulated = yes
+
+        completion_reward = {
+        }
+        ai_will_do={
+            factor = 100
+        }
+    }
+    focus = {
+        id = EGY_A16_fr
+        icon = GFX_EGY_A16_fr
+        relative_position_id = EGY_A16
+        prerequisite = { focus = EGY_A11_fr }
+        x = 0
+        y = 0
         cost = 3
         search_filters = {  FOCUS_FILTER_POLITICAL }
         
@@ -480,8 +555,8 @@ focus_tree = {
         }
     }
     focus = {
-        id = EGY_A21
-        icon = GFX_EGY_A21
+        id = EGY_A21_bg
+        icon = GFX_EGY_A21_bg
         relative_position_id = EGY_A16
         prerequisite = { focus = EGY_A16 }
         x = 0
@@ -498,10 +573,28 @@ focus_tree = {
         }
     }
     focus = {
+        id = EGY_A21_fr
+        icon = GFX_EGY_A21_fr
+        relative_position_id = EGY_A21_bg
+        prerequisite = { focus = EGY_A16_fr }
+        x = 0
+        y = 0
+        cost = 3
+        search_filters = {  FOCUS_FILTER_POLITICAL }
+        
+        available_if_capitulated = yes
+
+        completion_reward = {
+        }
+        ai_will_do={
+            factor = 100
+        }
+    }
+    focus = {
         id = EGY_A22
         icon = GFX_EGY_A22
-        relative_position_id = EGY_A21
-        prerequisite = { focus = EGY_A21 }
+        relative_position_id = EGY_A21_fr
+        prerequisite = { focus = EGY_A21_fr }
         x = 2
         y = 1
         cost = 3
@@ -519,8 +612,8 @@ focus_tree = {
     focus = {
         id = EGY_A23
         icon = GFX_EGY_A23
-        relative_position_id = EGY_A21
-        prerequisite = { focus = EGY_A21 }
+        relative_position_id = EGY_A21_fr
+        prerequisite = { focus = EGY_A21_fr }
         x = 4
         y = 1
         cost = 3
@@ -538,8 +631,8 @@ focus_tree = {
     focus = {
         id = EGY_A24
         icon = GFX_EGY_A24
-        relative_position_id = EGY_A21
-        prerequisite = { focus = EGY_A21 }
+        relative_position_id = EGY_A21_fr
+        prerequisite = { focus = EGY_A21_fr }
         x = 6
         y = 1
         cost = 3
@@ -557,8 +650,8 @@ focus_tree = {
     focus = {
         id = EGY_A25
         icon = GFX_EGY_A25
-        relative_position_id = EGY_A21
-        prerequisite = { focus = EGY_A21 }
+        relative_position_id = EGY_A21_fr
+        prerequisite = { focus = EGY_A21_fr }
         x = 8
         y = 1
         cost = 3
@@ -574,10 +667,10 @@ focus_tree = {
         }
     }
     focus = {
-        id = EGY_A26
-        icon = GFX_EGY_A26
-        relative_position_id = EGY_A21
-        prerequisite = { focus = EGY_A21 }
+        id = EGY_A26_bg
+        icon = GFX_EGY_A26_bg
+        relative_position_id = EGY_A21_fr
+        prerequisite = { focus = EGY_A21_fr }
         x = 0
         y = 2
         cost = 3
@@ -592,10 +685,28 @@ focus_tree = {
         }
     }
     focus = {
+        id = EGY_A26_fr
+        icon = GFX_EGY_A26_fr
+        relative_position_id = EGY_A26_bg
+        prerequisite = { focus = EGY_A21_fr }
+        x = 0
+        y = 0
+        cost = 3
+        search_filters = {  FOCUS_FILTER_POLITICAL }
+        
+        available_if_capitulated = yes
+
+        completion_reward = {
+        }
+        ai_will_do={
+            factor = 100
+        }
+    }
+    focus = {
         id = EGY_A27
         icon = GFX_EGY_A27
-        relative_position_id = EGY_A26
-        prerequisite = { focus = EGY_A26 }
+        relative_position_id = EGY_A26_fr
+        prerequisite = { focus = EGY_A26_fr }
         x = 2
         y = 1
         cost = 3
@@ -613,8 +724,8 @@ focus_tree = {
     focus = {
         id = EGY_A28
         icon = GFX_EGY_A28
-        relative_position_id = EGY_A26
-        prerequisite = { focus = EGY_A26 }
+        relative_position_id = EGY_A26_fr
+        prerequisite = { focus = EGY_A26_fr }
         x = 4
         y = 1
         cost = 3
@@ -632,8 +743,8 @@ focus_tree = {
     focus = {
         id = EGY_A29
         icon = GFX_EGY_A29
-        relative_position_id = EGY_A26
-        prerequisite = { focus = EGY_A26 }
+        relative_position_id = EGY_A26_fr
+        prerequisite = { focus = EGY_A26_fr }
         x = 6
         y = 1
         cost = 3
@@ -651,8 +762,8 @@ focus_tree = {
     focus = {
         id = EGY_A30
         icon = GFX_EGY_A30
-        relative_position_id = EGY_A26
-        prerequisite = { focus = EGY_A26 }
+        relative_position_id = EGY_A26_fr
+        prerequisite = { focus = EGY_A26_fr }
         x = 8
         y = 1
         cost = 3
@@ -668,10 +779,10 @@ focus_tree = {
         }
     }
     focus = {
-        id = EGY_A31
-        icon = GFX_EGY_A31
-        relative_position_id = EGY_A26
-        prerequisite = { focus = EGY_A26 }
+        id = EGY_A31_bg
+        icon = GFX_EGY_A31_bg
+        relative_position_id = EGY_A26_fr
+        prerequisite = { focus = EGY_A26_fr }
         x = 0
         y = 2
         cost = 3
@@ -686,10 +797,28 @@ focus_tree = {
         }
     }
     focus = {
+        id = EGY_A31_fr
+        icon = GFX_EGY_A31_fr
+        relative_position_id = EGY_A31_bg
+        prerequisite = { focus = EGY_A26_fr }
+        x = 0
+        y = 0
+        cost = 3
+        search_filters = {  FOCUS_FILTER_POLITICAL }
+        
+        available_if_capitulated = yes
+
+        completion_reward = {
+        }
+        ai_will_do={
+            factor = 100
+        }
+    }
+    focus = {
         id = EGY_A32
         icon = GFX_EGY_A32
-        relative_position_id = EGY_A31
-        prerequisite = { focus = EGY_A31 }
+        relative_position_id = EGY_A31_fr
+        prerequisite = { focus = EGY_A31_fr }
         x = 2
         y = 1
         cost = 3
@@ -707,8 +836,8 @@ focus_tree = {
     focus = {
         id = EGY_A33
         icon = GFX_EGY_A33
-        relative_position_id = EGY_A31
-        prerequisite = { focus = EGY_A31 }
+        relative_position_id = EGY_A31_fr
+        prerequisite = { focus = EGY_A31_fr }
         x = 4
         y = 1
         cost = 3
@@ -726,8 +855,8 @@ focus_tree = {
     focus = {
         id = EGY_A34
         icon = GFX_EGY_A34
-        relative_position_id = EGY_A31
-        prerequisite = { focus = EGY_A31 }
+        relative_position_id = EGY_A31_fr
+        prerequisite = { focus = EGY_A31_fr }
         x = 6
         y = 1
         cost = 3
@@ -745,8 +874,8 @@ focus_tree = {
     focus = {
         id = EGY_A35
         icon = GFX_EGY_A35
-        relative_position_id = EGY_A31
-        prerequisite = { focus = EGY_A31 }
+        relative_position_id = EGY_A31_fr
+        prerequisite = { focus = EGY_A31_fr }
         x = 8
         y = 1
         cost = 3
@@ -762,10 +891,10 @@ focus_tree = {
         }
     }
     focus = {
-        id = EGY_A36
-        icon = GFX_EGY_A36
-        relative_position_id = EGY_A31
-        prerequisite = { focus = EGY_A31 }
+        id = EGY_A36_bg
+        icon = GFX_EGY_A36_bg
+        relative_position_id = EGY_A31_fr
+        prerequisite = { focus = EGY_A31_fr }
         x = 0
         y = 2
         cost = 3
@@ -780,10 +909,28 @@ focus_tree = {
         }
     }
     focus = {
+        id = EGY_A36_fr
+        icon = GFX_EGY_A36_fr
+        relative_position_id = EGY_A36_bg
+        prerequisite = { focus = EGY_A31_fr }
+        x = 0
+        y = 0
+        cost = 3
+        search_filters = {  FOCUS_FILTER_POLITICAL }
+        
+        available_if_capitulated = yes
+
+        completion_reward = {
+        }
+        ai_will_do={
+            factor = 100
+        }
+    }
+    focus = {
         id = EGY_A37
         icon = GFX_EGY_A37
-        relative_position_id = EGY_A36
-        prerequisite = { focus = EGY_A36 }
+        relative_position_id = EGY_A36_fr
+        prerequisite = { focus = EGY_A36_fr }
         x = 2
         y = 1
         cost = 3
@@ -801,8 +948,8 @@ focus_tree = {
     focus = {
         id = EGY_A38
         icon = GFX_EGY_A38
-        relative_position_id = EGY_A36
-        prerequisite = { focus = EGY_A36 }
+        relative_position_id = EGY_A36_fr
+        prerequisite = { focus = EGY_A36_fr }
         x = 4
         y = 1
         cost = 3
@@ -820,8 +967,8 @@ focus_tree = {
     focus = {
         id = EGY_A39
         icon = GFX_EGY_A39
-        relative_position_id = EGY_A36
-        prerequisite = { focus = EGY_A36 }
+        relative_position_id = EGY_A36_fr
+        prerequisite = { focus = EGY_A36_fr }
         x = 6
         y = 1
         cost = 3
@@ -839,8 +986,8 @@ focus_tree = {
     focus = {
         id = EGY_A40
         icon = GFX_EGY_A40
-        relative_position_id = EGY_A36
-        prerequisite = { focus = EGY_A36 }
+        relative_position_id = EGY_A36_fr
+        prerequisite = { focus = EGY_A36_fr }
         x = 8
         y = 1
         cost = 3
@@ -856,10 +1003,10 @@ focus_tree = {
         }
     }
     focus = {
-        id = EGY_A41
-        icon = GFX_EGY_A41
-        relative_position_id = EGY_A36
-        prerequisite = { focus = EGY_A36 }
+        id = EGY_A41_bg
+        icon = GFX_EGY_A41_bg
+        relative_position_id = EGY_A36_fr
+        prerequisite = { focus = EGY_A36_fr }
         x = 0
         y = 2
         cost = 3
@@ -874,10 +1021,28 @@ focus_tree = {
         }
     }
     focus = {
+        id = EGY_A41_fr
+        icon = GFX_EGY_A41_fr
+        relative_position_id = EGY_A41_bg
+        prerequisite = { focus = EGY_A36_fr }
+        x = 0
+        y = 0
+        cost = 3
+        search_filters = {  FOCUS_FILTER_POLITICAL }
+        
+        available_if_capitulated = yes
+
+        completion_reward = {
+        }
+        ai_will_do={
+            factor = 100
+        }
+    }
+    focus = {
         id = EGY_A42
         icon = GFX_EGY_A42
-        relative_position_id = EGY_A41
-        prerequisite = { focus = EGY_A41 }
+        relative_position_id = EGY_A41_fr
+        prerequisite = { focus = EGY_A41_fr }
         x = 0
         y = 2
         cost = 3
