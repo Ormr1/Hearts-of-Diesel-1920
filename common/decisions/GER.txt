@@ -978,7 +978,7 @@ political_actions = {
 		days_remove = 20
 
 		ai_will_do = {
-			factor = 10
+			factor = 50
 		}
 
 		visible = {
@@ -1025,7 +1025,7 @@ political_actions = {
 		days_remove = 50
 
 		ai_will_do = {
-			factor = 10
+			factor = 50
 		}
 
 		visible = {
@@ -1072,7 +1072,7 @@ political_actions = {
 		days_remove = 50
 
 		ai_will_do = {
-			factor = 10
+			factor = 50
 		}
 
 		visible = {
@@ -1119,7 +1119,7 @@ political_actions = {
 		days_remove = 50
 
 		ai_will_do = {
-			factor = 10
+			factor = 50
 		}
 
 		visible = {
@@ -1167,7 +1167,7 @@ political_actions = {
 		days_remove = 50
 
 		ai_will_do = {
-			factor = 10
+			factor = 50
 		}
 
 		visible = {
@@ -1214,7 +1214,7 @@ political_actions = {
 		days_remove = 50
 
 		ai_will_do = {
-			factor = 10
+			factor = 50
 		}
 
 		visible = {
@@ -1261,7 +1261,7 @@ political_actions = {
 		days_remove = 50
 
 		ai_will_do = {
-			factor = 10
+			factor = 50
 		}
 
 		visible = {
@@ -1315,7 +1315,7 @@ political_actions = {
 		days_remove = 50
 
 		ai_will_do = {
-			factor = 10
+			factor = 50
 		}
 
 		visible = {
@@ -1362,7 +1362,7 @@ political_actions = {
 		days_remove = 50
 
 		ai_will_do = {
-			factor = 10
+			factor = 50
 		}
 
 		visible = {
@@ -1409,7 +1409,7 @@ political_actions = {
 		days_remove = 50
 
 		ai_will_do = {
-			factor = 10
+			factor = 50
 		}
 
 		visible = {
@@ -1456,7 +1456,7 @@ political_actions = {
 		days_remove = 50
 
 		ai_will_do = {
-			factor = 10
+			factor = 50
 		}
 
 		visible = {
@@ -1503,7 +1503,7 @@ political_actions = {
 		days_remove = 50
 
 		ai_will_do = {
-			factor = 10
+			factor = 50
 		}
 
 		visible = {
@@ -1550,7 +1550,7 @@ political_actions = {
 		days_remove = 50
 
 		ai_will_do = {
-			factor = 10
+			factor = 50
 		}
 
 		visible = {
@@ -1603,7 +1603,7 @@ political_actions = {
 		days_remove = 50
 
 		ai_will_do = {
-			factor = 10
+			factor = 50
 		}
 
 		visible = {
@@ -1650,7 +1650,7 @@ political_actions = {
 		days_remove = 50
 
 		ai_will_do = {
-			factor = 10
+			factor = 50
 		}
 
 		visible = {
@@ -1697,7 +1697,7 @@ political_actions = {
 		days_remove = 50
 
 		ai_will_do = {
-			factor = 10
+			factor = 50
 		}
 
 		visible = {
@@ -1744,7 +1744,7 @@ political_actions = {
 		days_remove = 50
 
 		ai_will_do = {
-			factor = 10
+			factor = 50
 		}
 
 		visible = {
@@ -1791,7 +1791,7 @@ political_actions = {
 		days_remove = 50
 
 		ai_will_do = {
-			factor = 10
+			factor = 50
 		}
 
 		visible = {
@@ -1842,7 +1842,7 @@ political_actions = {
 		days_remove = 50
 
 		ai_will_do = {
-			factor = 10
+			factor = 50
 		}
 
 		visible = {
@@ -1911,7 +1911,7 @@ political_actions = {
 		days_remove = 50
 
 		ai_will_do = {
-			factor = 10
+			factor = 50
 		}
 
 		visible = {
@@ -1991,7 +1991,7 @@ political_actions = {
 		days_remove = 50
 
 		ai_will_do = {
-			factor = 10
+			factor = 50
 		}
 
 		visible = {
@@ -2067,7 +2067,7 @@ political_actions = {
 		days_remove = 20
 
 		ai_will_do = {
-			factor = 10
+			factor = 50
 		}
 
 		visible = {
@@ -2098,7 +2098,7 @@ political_actions = {
 		}
 
 		available = {
-			has_stability > 0.1
+			has_stability > 0.2
 			custom_trigger_tooltip={
 				tooltip = GER_monarchy_more_popular_than_communism
 				monarchy > party_popularity@communism
@@ -2897,6 +2897,9 @@ GER_frankish_integration={
 			FROM = {
 				remove_dynamic_modifier = {modifier = frankish_resistance}
 			}
+		}
+		ai_will_do = {
+			factor = 50
 		}
 	}
 }

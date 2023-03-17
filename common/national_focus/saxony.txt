@@ -728,7 +728,11 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			add_political_power = -35
+			set_temp_variable = {
+				GER_tmp_decrease_loan_var = 980
+			}
+			GER_decrease_debt = yes
 		}
 	}
 	focus = {

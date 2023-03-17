@@ -260,7 +260,7 @@ add_ideas = {
 	service_by_requirement
 	war_economy
 }
-add_manpower = -2500000
+
 set_country_flag = already_mobilized
 
 #add_ideas = GER_mefo_bills_1
@@ -859,6 +859,9 @@ create_equipment_variant = {
 	}
 	obsolete = yes
 }
+# 1919.12.12={
+	# add_manpower = -2500000
+# }
 
 ## 1939 Start ##
 1939.1.1 = {

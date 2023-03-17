@@ -37,6 +37,7 @@ bookmarks = {
 			ideology = monarchy
 			ideas = {
 				GER_papiermark
+				GER_army_on_verge_of_munity
 			}
 			focuses = {
 				
@@ -86,7 +87,7 @@ bookmarks = {
 			history = "SOV_IRON_HARVEST_DESC"
 			ideology = monarchy
 			ideas = {
-				
+				petrograd_soviet_idea
 			}
 			focuses = {
 				
@@ -103,6 +104,17 @@ bookmarks = {
 			minor = yes
 			history = "SPR_IRON_HARVEST_DESC"
 			ideology = democratic
+			ideas = {
+				
+			}
+			focuses = {
+				
+			}
+		}
+		"RHO"={
+			minor = yes
+			history = "RHO_IRON_HARVEST_DESC"
+			ideology = neutrality
 			ideas = {
 				
 			}

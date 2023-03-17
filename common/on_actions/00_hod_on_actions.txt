@@ -19,8 +19,10 @@ on_actions = {
 					original_tag = VIN
 					has_war_with = SPR
 				}
-				set_state_controller = 286
-				set_state_controller = 671
+				VIN={
+					set_state_controller = 286
+					set_state_controller = 671
+				}
 				SPR = {
 					set_autonomy = {
 						target = VIN

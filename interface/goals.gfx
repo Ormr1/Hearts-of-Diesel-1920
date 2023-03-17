@@ -3139,6 +3139,10 @@ spriteTypes = {
 	### EGY A SERIES ###
 	
 	SpriteType = {
+		name = "GFX_EGY_Z1"
+		texturefile = "gfx/interface/goals/EGYPT/GFX_EGY_Z1.png"
+	}
+	SpriteType = {
 		name = "GFX_EGY_A1_bg"
 		texturefile = "gfx/interface/goals/EGYPT/KEM_LARGE 1/GFX_EGY_A1_bg.png"
 	}
