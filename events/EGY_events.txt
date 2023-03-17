@@ -10,3 +10,109 @@ country_event = {
     is_triggered_only = yes
     
 }
+
+###EGYPY ALPHA###
+country_event = {
+    id = EGY_A.1
+    title = EGY_A.1.t
+    desc = EGY_A.1.d
+    picture = GFX_EGY_EV_1
+    option = {
+        name = EGY_A.1.a
+        country_event = { 
+            id = EGY_A.2 
+            days = 17 
+            random_days = 5 
+        }
+    }
+}
+country_event = {
+    id = EGY_A.2
+    title = EGY_A.2.t
+    desc = EGY_A.2.d
+    picture = GFX_EGY_EV_2
+    option = {
+        name = EGY_A.2.a
+        country_event = { 
+            id = EGY_A.3 
+            days = 2 
+        }
+        political_power = -25
+    }
+}
+country_event = {
+    id = EGY_A.3
+    title = EGY_A.3.t
+    desc = EGY_A.3.d
+    picture = GFX_EGY_EV_3
+    option = {
+        name = EGY_A.3.a
+    }
+}
+country_event = {
+    id = EGY_A.4
+    title = EGY_A.4.t
+    desc = EGY_A.4.d
+    picture = GFX_EGY_EV_4
+    option = {
+        name = EGY_A.5.a
+        days = 10
+    }
+}
+country_event = {
+    id = EGY_A.5
+    title = EGY_A.5.t
+    desc = EGY_A.5.d
+    picture = GFX_EGY_EV_5
+    option = {
+        name = EGY_A.5.a
+        country_event = { 
+            id = EGY_A.6 
+            days = 2 
+        }
+        political_power = -25
+    }
+    option = {
+        name = EGY_A.5.b
+        country_event = { 
+            id = EGY_A.7 
+            days = 2 
+        }
+        political_power = -25
+    }
+}
+country_event = {
+    id = EGY_A.6
+    title = EGY_A.6.t
+    desc = EGY_A.6.d
+    picture = GFX_EGY_EV_6
+    option = {
+        name = EGY_A.6.a
+        country_event = { 
+            id = EGY_A.8 
+            days = 2 
+        }
+    }
+}
+country_event = {
+    id = EGY_A.7
+    title = EGY_A.7.t
+    desc = EGY_A.7.d
+    picture = GFX_EGY_EV_7
+    option = {
+        name = EGY_A.7.a
+        country_event = { 
+            id = EGY_A.8 
+            days = 2 
+        }
+    }
+}
+country_event = {
+    id = EGY_A.8
+    title = EGY_A.8.t
+    desc = EGY_A.8.d
+    picture = GFX_EGY_EV_8
+    option = {
+        name = EGY_A.8.a
+    }
+}
