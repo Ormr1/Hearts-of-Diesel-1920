@@ -1838,6 +1838,7 @@ focus_tree = {
 		available = {
 			has_country_flag = GER_miracle_on_rhine
 			has_stability > 0.60
+			date < 1930.1.1
 		}
 		
 		available_if_capitulated = yes

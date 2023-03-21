@@ -1,0 +1,554 @@
+focus_tree = {
+    id = tesla_focus
+
+    country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = FAC
+		}
+		
+		modifier = {
+			add = 10
+			original_tag = FAC
+		}
+	}
+    continuous_focus_position = { x = 50 y = 2000 }
+    default = no
+    ### 
+    focus = {
+        id = FAC_icarus_project
+        icon = GFX_unknown
+        #available = {
+        #    always = no
+        #}
+        x = 2
+        y = 0
+        cost = 5
+        completion_reward = {
+            # 
+        }
+    }
+    focus = {
+        id = FAC_ultimate_defence
+        icon = GFX_unknown
+        #available = {
+        #    always = no
+        #}
+        prerequisite = { focus = FAC_icarus_project}
+        relative_position_id = FAC_icarus_project
+        x = 0
+        y = 1
+        cost = 5
+        completion_reward = {
+            # 
+        }
+    }
+    focus = {
+        id = FAC_a_greater_weapon
+        icon = GFX_unknown
+        #available = {
+        #    always = no
+        #}
+        prerequisite = { focus = FAC_ultimate_defence}
+        relative_position_id = FAC_ultimate_defence
+        x = -2
+        y = 1
+        cost = 5
+        completion_reward = {
+            # 
+        }
+    }
+    focus = {
+        id = FAC_supporting_the_device
+        icon = GFX_unknown
+        #available = {
+        #    always = no
+        #}
+        prerequisite = { focus = FAC_ultimate_defence}
+        relative_position_id = FAC_ultimate_defence
+        x = 2
+        y = 1
+        cost = 5
+        completion_reward = {
+            # 
+        }
+    }
+    focus = {
+        id = FAC_impenatrable_defences
+        icon = GFX_unknown
+        #available = {
+        #    always = no
+        #}
+        prerequisite = { focus = FAC_ultimate_defence}
+        relative_position_id = FAC_ultimate_defence
+        x = 0
+        y = 1
+        cost = 5
+        completion_reward = {
+            # 
+        }
+    }
+    focus = {
+        id = FAC_the_icarus_protocall
+        icon = GFX_unknown
+        prerequisite = { focus = FAC_ultimate_defence}
+        prerequisite = { focus = FAC_a_greater_weapon }
+        prerequisite = { focus = FAC_supporting_the_device }
+        relative_position_id = FAC_impenatrable_defences
+        x = 0
+        y = 1
+        cost = 5
+        #available = {
+        #    always = no
+        #}
+        completion_reward = {
+            # enables the icarus protocall decision
+        }
+    }
+
+    focus = {
+        id = FAC_a_balance_of_conscience
+        icon = GFX_unknown
+        x = 12
+        y = 0
+        cost = 5
+        #available = {
+        #    always = no
+        #}
+        completion_reward = {
+            # 
+        }
+    }
+    focus = {
+        id = FAC_necessity_of_violence
+        icon = GFX_unknown
+        prerequisite = { focus = FAC_a_balance_of_conscience}
+        relative_position_id = FAC_a_balance_of_conscience
+        x = 5
+        y = 1
+        cost = 5
+        #available = {
+        #    always = no
+        #}
+        completion_reward = {
+            # 
+        }
+    }
+    focus = {
+        id = FAC_bringing_light_to_the_world
+        icon = GFX_unknown
+        prerequisite = { focus = FAC_a_balance_of_conscience}
+        relative_position_id = FAC_a_balance_of_conscience
+        x = -5
+        y = 1
+        cost = 5
+        #available = {
+        #    always = no
+        #}
+        completion_reward = {
+            # 
+        }
+    }
+
+    focus = {
+        id = FAC_recording_thought
+        icon = GFX_unknown
+        prerequisite = { focus = FAC_a_balance_of_conscience}
+        relative_position_id = FAC_a_balance_of_conscience
+        x = -3
+        y = 1
+        cost = 5
+        #available = {
+        #    always = no
+        #}
+        completion_reward = {
+            # 
+        }
+    }
+    focus = {
+        id = FAC_metallurgy_advancements
+        icon = GFX_unknown
+        prerequisite = { focus = FAC_exspansion_of_the_factory }
+        relative_position_id = FAC_exspansion_of_the_factory
+        x = 1
+        y = 1
+        cost = 5
+        #available = {
+        #    always = no
+        #}
+        completion_reward = {
+            # 
+        }
+    }
+    focus = {
+        id = FAC_exspansion_of_the_factory
+        icon = GFX_unknown
+        prerequisite = { focus = FAC_a_balance_of_conscience}
+        relative_position_id = FAC_a_balance_of_conscience
+        x = 0
+        y = 1
+        cost = 5
+        #available = {
+        #    always = no
+        #}
+        completion_reward = {
+            # 
+        }
+    }
+    focus = {
+        id = FAC_reworking_the_old
+        icon = GFX_unknown
+        
+        prerequisite = { focus = FAC_necessity_of_violence}
+        relative_position_id = FAC_necessity_of_violence
+        x = -2
+        y = 1
+        cost = 5
+        #available = {
+        #    always = no
+        #}
+        completion_reward = {
+            # 
+        }
+    }
+    focus = {
+        id = FAC_the_earthquake_machine
+        icon = GFX_unknown
+        prerequisite = { focus = FAC_reworking_the_old}
+        relative_position_id = FAC_reworking_the_old
+        x = -1
+        y = 1
+        cost = 5
+        #available = {
+        #    always = no
+        #}
+        completion_reward = {
+            # 
+        }
+    }
+    focus = {
+        id = FAC_weaponising_the_oscillator
+        icon = GFX_unknown
+        prerequisite = { focus = FAC_the_earthquake_machine}
+        relative_position_id = FAC_the_earthquake_machine
+        x = 0
+        y = 1
+        cost = 5
+        #available = {
+        #    always = no
+        #}
+        completion_reward = {
+            # 
+        }
+    }
+    focus = {
+        id = FAC_improving_the_coilgun
+        icon = GFX_unknown
+        prerequisite = { focus = FAC_reworking_the_old}
+        relative_position_id = FAC_reworking_the_old
+        x = 1
+        y = 1
+        cost = 5
+        #available = {
+        #    always = no
+        #}
+        completion_reward = {
+            # 
+        }
+    }
+    focus = {
+        id = FAC_building_the_new
+        icon = GFX_unknown
+        
+        prerequisite = { focus = FAC_necessity_of_violence}
+        relative_position_id = FAC_necessity_of_violence
+        x = 2
+        y = 1
+        cost = 5
+        #available = {
+        #    always = no
+        #}
+        completion_reward = {
+            # 
+        }
+    }
+    focus = {
+        id = FAC_storm_catchers
+        icon = GFX_unknown
+        
+        prerequisite = { focus = FAC_building_the_new}
+        relative_position_id = FAC_building_the_new
+        x = 1
+        y = 1
+        cost = 5
+        #available = {
+        #    always = no
+        #}
+        completion_reward = {
+            # 
+        }
+    }
+    focus = {
+        id = FAC_heavier_than_air_speculation
+        icon = GFX_unknown
+        
+        prerequisite = { focus = FAC_building_the_new}
+        relative_position_id = FAC_building_the_new
+        x = -1
+        y = 1
+        cost = 5
+        #available = {
+        #    always = no
+        #}
+        completion_reward = {
+            # 
+        }
+    }
+    focus = {
+        id = FAC_private_radio
+        icon = GFX_unknown
+        prerequisite = { focus = FAC_a_balance_of_conscience}
+        relative_position_id = FAC_a_balance_of_conscience
+        mutually_exclusive = {focus = FAC_open_private_radio_to_consumers}
+        x = 3
+        y = 1
+        cost = 5
+        #available = {
+        #    always = no
+        #}
+        completion_reward = {
+            # 
+        }
+    }
+
+    
+    focus = {
+        id = FAC_opening_the_factory
+        icon = GFX_unknown
+        x = 12
+        y = 7
+        cost = 5
+        available = {
+            date > 1930.1.1
+        }
+        completion_reward = {
+            # 
+        }
+    }
+    focus = {
+        id = FAC_teslas_worlds_fair
+        icon = GFX_unknown
+        
+        prerequisite = { focus = FAC_opening_the_factory}
+        relative_position_id = FAC_opening_the_factory
+        x = 0
+        y = 1
+        cost = 5
+        #available = {
+        #    always = no
+        #}
+        completion_reward = {
+            # 
+        }
+    }
+    focus = {
+        id = FAC_a_75th_to_remember
+        icon = GFX_unknown
+        prerequisite = { focus = FAC_teslas_worlds_fair}
+        relative_position_id = FAC_teslas_worlds_fair
+        x = 0
+        y = 1
+        cost = 5
+        available = {
+            date > 1931.1.1
+        }
+        completion_reward = {
+            # 
+        }
+    }
+
+    focus = {
+        id = FAC_cosmic_ray_research
+        icon = GFX_unknown
+        prerequisite = { focus = FAC_bringing_light_to_the_world }
+        relative_position_id = FAC_bringing_light_to_the_world
+        x = 1
+        y = 1
+        cost = 5
+        completion_reward = {
+            # 
+        }
+    }
+    focus = {
+        id = FAC_harnessing_the_cosmos
+        icon = GFX_unknown
+        
+        prerequisite = { focus = FAC_cosmic_ray_research}
+        relative_position_id = FAC_cosmic_ray_research
+        x = 0
+        y = 1
+        cost = 5
+        #available = {
+        #    always = no
+        #}
+        completion_reward = {
+            # 
+        }
+    }
+    focus = {
+        id = FAC_a_new_form_of_energy
+        icon = GFX_unknown
+        
+        prerequisite = { focus = FAC_harnessing_the_cosmos}
+        relative_position_id = FAC_harnessing_the_cosmos
+        x = 0
+        y = 1
+        cost = 5
+        #available = {
+        #    always = no
+        #}
+        completion_reward = {
+            # 
+        }
+    }
+    focus = {
+        id = FAC_wireless_power
+        icon = GFX_unknown
+        
+        prerequisite = { focus = FAC_a_new_form_of_energy}
+        relative_position_id = FAC_a_new_form_of_energy
+        x = 0
+        y = 1
+        cost = 5
+        #available = {
+        #    always = no
+        #}
+        completion_reward = {
+            # 
+        }
+    }
+
+    focus = {
+        id = FAC_whispers_of_tunguska
+        icon = GFX_unknown
+        prerequisite = { focus = FAC_bringing_light_to_the_world }
+        relative_position_id = FAC_bringing_light_to_the_world
+        #available = {
+        #    always = no
+        #}
+        x = -1
+        y = 1
+        cost = 5
+        completion_reward = {
+            # 
+        }
+    }
+    focus = {
+        id = FAC_fitting_an_expedition
+        icon = GFX_unknown
+        
+        prerequisite = { focus = FAC_whispers_of_tunguska}
+        relative_position_id = FAC_whispers_of_tunguska
+        x = 0
+        y = 1
+        cost = 5
+        #available = {
+        #    always = no
+        #}
+        completion_reward = {
+            # 
+        }
+    }
+    focus = {
+        id = FAC_retriving_artifacts
+        icon = GFX_unknown
+        
+        prerequisite = { focus = FAC_fitting_an_expedition}
+        relative_position_id = FAC_fitting_an_expedition
+        x = 0
+        y = 1
+        cost = 5
+        #available = {
+        #    always = no
+        #}
+        completion_reward = {
+            # 
+        }
+    }
+    focus = {
+        id = FAC_expanding_the_search
+        icon = GFX_unknown
+        
+        prerequisite = { focus = FAC_retriving_artifacts}
+        relative_position_id = FAC_retriving_artifacts
+        x = 0
+        y = 1
+        cost = 5
+        #available = {
+        #    always = no
+        #}
+        completion_reward = {
+            # 
+        }
+    }
+
+    focus = {
+        id = FAC_prisoner_to_the_wolf
+        icon = GFX_unknown
+        x = 0
+        y = 5
+        cost = 5
+        available = {
+			FEN={
+                OR={
+                    has_country_flag = FEN_control_tesla
+                    has_character = FAC_nikola_tesla
+                    has_subject = ROOT
+                }
+            }
+        }
+        completion_reward = {
+            # 
+        }
+    }
+    focus = {
+        id = FAC_modern_enemy_old_tactics
+        icon = GFX_unknown
+        prerequisite = { focus = FAC_prisoner_to_the_wolf}
+        relative_position_id = FAC_prisoner_to_the_wolf
+        x = 0
+        y = 1
+        cost = 5
+        #available = {
+        #    always = no
+        #}
+        completion_reward = {
+            # 
+        }
+    }
+    focus = {
+        id = FAC_vensas_letter
+        icon = GFX_unknown
+        prerequisite = { focus = FAC_modern_enemy_old_tactics}
+        relative_position_id = FAC_modern_enemy_old_tactics
+        x = 0
+        y = 1
+        cost = 5
+        #available = {
+        #    always = no
+        #}
+        completion_reward = {
+            every_country={
+                limit={
+                    OR={
+                        num_of_factories > 35
+                        tag = FEN
+                    }
+                }
+                country_event = {id = fenris.1}
+            }
+        }
+    }
+}

@@ -35,7 +35,7 @@ Western Rome:
     - Modernize
 Hispania:
     - Bedrock of financial stability in Europe
-    - Make empire
+    - Make colonial empire
     - Beacon of Western European democracy
 Bulgaria:
     - Fight Magyaria and Balkania
