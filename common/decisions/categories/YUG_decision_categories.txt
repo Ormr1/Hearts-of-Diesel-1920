@@ -1,7 +1,15 @@
 #######################
 ##### Yugoslavia ######
 #######################
-
+YUG_croatian_unrest = {
+	icon = placeholder
+	allowed = {
+		original_tag = YUG
+	}
+	visible = {
+		has_country_flag = YUG_croat_unrest_flag
+	}
+}
 YUG_peasant_uprisings = {
 	
 	icon = saf_anti_colonialist_crusade

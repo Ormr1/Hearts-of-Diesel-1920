@@ -2,6 +2,7 @@
 # Polish Events
 ###########################
 add_namespace = polania_startup
+add_namespace = polania_falangism
 
 country_event = {
     id = polania_startup.1
@@ -69,5 +70,106 @@ country_event = {
                 set_compliance = 50
             }
         }
+    }
+}
+country_event = { # Polania invites us to Falangist International
+    id = polania_falangism.1
+    title = polania_falangism.1.t
+    desc = polania_falangism.1.desc
+    is_triggered_only = yes
+    option = { # Yes
+        name = polania_falangism.1.a
+        ai_will_do = {
+            base = 10
+            modifier = {
+                has_government = democratic
+                add = -10
+            }
+            modifier = {
+                has_government = communism
+                add = -10
+            }
+            modifier = {
+                has_government = fascism
+                add = 10
+            }
+            modifier = {
+                is_in_faction = yes
+                add = -100
+            }
+        }
+        POL = { add_to_faction = ROOT }
+        FROM = {
+            country_event = polania_falangism.2
+        }
+    }
+    option = { # No
+        name = polania_falangism.1.b
+        ai_will_do = {
+            base = 10
+            modifier = {
+                has_government = democratic
+                add = 10
+            }
+            modifier = {
+                has_government = communism
+                add = 10
+            }
+            modifier = {
+                has_government = fascism
+                add = -10
+            }
+            modifier = {
+                is_in_faction = yes
+                add = 100
+            }
+        }
+        FROM = {
+            country_event = polania_falangism.3
+        }
+    }
+}
+country_event = { # Country joins International
+    id = polania_falangism.2
+    title = polania_falangism.2.t
+    desc = polania_falangism.2.desc
+    is_triggered_only = yes
+    option = { # Yippee!
+        name = polania_falangism.2.a
+    }
+}
+country_event = { # Country doesn't join International
+    id = polania_falangism.3
+    title = polania_falangism.3.t
+    desc = polania_falangism.3.desc
+    is_triggered_only = yes
+    option = { # Awww :(
+        name = polania_falangism.3.a
+    }
+}
+country_event = { # Croatian Unrest
+    id = polania_falangism.4
+    title = polania_falangism.4.t
+    desc = polania_falangism.4.desc
+    is_triggered_only = yes
+    option = { # We need to deal with this
+        name = polania_falangism.4.a
+        109 = {
+            remove_core_of = YUG
+            start_resistance = yes
+            add_resistance = 35
+        }
+        163 = {
+            remove_core_of = YUG
+            start_resistance = yes
+            add_resistance = 35
+        }
+        103 = {
+            remove_core_of = YUG
+            start_resistance = yes
+            add_resistance = 35
+        }
+        set_country_flag = YUG_croat_unrest_flag
+        unlock_decision_category_tooltip = YUG_croatian_unrest
     }
 }

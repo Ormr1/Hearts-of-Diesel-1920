@@ -587,7 +587,7 @@ country = {
 		removal_cost = 0
 		modifier = {
 			stability_factor = 0.15
-			consumer_goods_factor = -0.75
+			consumer_goods_factor = -0.075
 		}
 	}
 

@@ -64,6 +64,8 @@ l_english:
 ### EVENTS ###
  
 ### DECISION CATEGORIES ###
+POL_the_falangist_international: "Falangist International"
+POL_the_falangist_international_desc: "Standing against Saxon and Rusviet imperialism, we will be a bastion of Catholicism in Eastern Europa to fend off the Protestant and Orthodox hordes."
 
 ## DECISIONS ##
 POL_disarm_saxon_militias_in_state: "Disarm Saxon Militias in [FROM.GetName]"

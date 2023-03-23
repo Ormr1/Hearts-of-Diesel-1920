@@ -156,6 +156,66 @@ POL_imperial_glory = {
 		}
 	}
 }
+POL_the_falangist_international = {
+	POL_invite_magyars = {
+		icon = placeholder
+		allowed = {
+			tag = POL
+		}
+		ai_will_do = {
+			base = 100
+		}
+		available = {
+			AND = {
+				HUN = {
+					is_in_faction = no
+					is_subject = no
+				}
+			}
+		}
+		complete_effect = {
+			HUN = {
+				country_event = polania_falangism.1
+			}
+		}
+	}
+	POL_invite_west_rome = {
+		icon = placeholder
+		allowed = {
+			tag = POL
+		}
+		ai_will_do = {
+			base = 100
+		}
+		available = {
+			AND = {
+				ITA = {
+					is_in_faction = no
+					is_subject = no
+				}
+			}
+		}
+		complete_effect = {
+			ITA = {
+				country_event = polania_falangism.1
+			}
+		}
+	}
+	POL_incite_croatian_unrest = {
+		icon = placeholder
+		allowed = {
+			tag = POL
+		}
+		ai_will_do = {
+			base = 100
+		}
+		complete_effect = {
+			YUG = {
+				country_event = polania_falangism.4
+			}
+		}
+	}
+}
 POL_disarm_radical_militias_decisions = {
 	POL_disarm_saxon_militias_in_state = {
 		icon = placeholder

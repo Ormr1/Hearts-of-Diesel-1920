@@ -1,3 +1,92 @@
+YUG_croatian_unrest = {
+	YUG_increase_garrison_in_croat_state = {
+		icon = placeholder
+		allowed = {
+			original_tag = YUG
+		}
+		state_target = yes
+		ai_will_do = {
+			base = 100
+		}
+		on_map_mode = map_only
+		available = {
+			NOT = {
+				has_country_flag = croation_unrest_decision_in_progress
+				has_equipment = {
+					infantry_equipment > 500
+				}
+			}
+		}
+		visible = {
+			FROM = {
+				OR = {
+					state = 109
+					state = 103
+					state = 163
+				}
+			}
+		}
+		days_remove = 14
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -500
+				producer = ROOT
+			}
+		}
+		remove_effect = {
+			FROM = {
+				add_resistance = -5
+			}
+		}
+	}
+	YUG_reassert_control_in_croat_state = {
+		icon = placeholder
+		allowed = {
+			original_tag = YUG
+		}
+		state_target = yes
+		ai_will_do = {
+			base = 100
+		}
+		on_map_mode = map_only
+		available = {
+			FROM = {
+				resistance < 1
+			}
+		}
+		visible = {
+			FROM = {
+				OR = {
+					state = 109
+					state = 103
+					state = 163
+				}
+			}
+		}
+		complete_effect = {
+			FROM = {
+				add_core_of = ROOT
+			}
+			if = {
+				limit = {
+					AND = {
+						109 = {
+							is_core_of = ROOT
+						}
+						103 = {
+							is_core_of = ROOT
+						}
+						163 = {
+							is_core_of = ROOT
+						}
+					}
+				}
+				clr_country_flag = YUG_croat_unrest_flag
+			}
+		}
+	}
+}
 YUG_peasant_uprisings = {
 	
 	# Bulgaria

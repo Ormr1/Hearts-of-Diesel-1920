@@ -966,7 +966,18 @@ focus_tree = {
         y = 1
         cost = 5
         completion_reward = {
-
+            67 = {
+                add_claim_by = ROOT
+            }
+            847 = {
+                add_claim_by = ROOT
+            }
+            66 = {
+                add_claim_by = ROOT
+            }
+            848 = {
+                add_claim_by = ROOT
+            }
         }
     }
     focus = {
@@ -978,7 +989,12 @@ focus_tree = {
         y = 1
         cost = 5
         completion_reward = {
-
+            5 = {
+                add_claim_by = ROOT
+            }
+            763 = {
+                add_claim_by = ROOT
+            }
         }
     }
     focus = {
@@ -990,7 +1006,7 @@ focus_tree = {
         y = 1
         cost = 5
         completion_reward = {
-            
+            add_ideas = POL_falangist_paramilitaries
         }
     }
     focus = {
@@ -1002,7 +1018,7 @@ focus_tree = {
         y = 1
         cost = 5
         completion_reward = {
-            
+            add_ideas = POL_nationalized_industry
         }
     }
     focus = {
@@ -1027,7 +1043,7 @@ focus_tree = {
         y = 1
         cost = 5
         completion_reward = {
-            # Decisions
+            unlock_decision_category_tooltip = POL_the_falangist_international
             set_rule = { can_create_factions = yes }
 			if = {
 				limit = {
