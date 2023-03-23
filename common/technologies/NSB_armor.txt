@@ -44,6 +44,9 @@ technologies = {
 			mech_quad_legged_suspension
 			mech_hex_legged_suspension
 			mech_octo_legged_suspension
+			tank_light_fixed_superstructure_turret
+			tank_medium_fixed_superstructure_turret
+			tank_heavy_fixed_superstructure_turret
 			sloped_armor
 			extra_ammo_storage
 			wet_ammo_storage

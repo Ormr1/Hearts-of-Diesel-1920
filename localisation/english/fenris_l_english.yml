@@ -209,3 +209,6 @@
  murder_carnavon_attack: "Plant the Bomb"
  murder_carnavon_attack_desc: "Our Agents will discretly plant a bomb close to Lord Carnarvon and then disguse it as acendental gas leak"
  murder_carnavon_attack_outcome: ""
+ FAC_project_icarus_fully_operational: "§CProject Icarus§! progress is at §Y100§!"
+ FAC_can_deploy_TF_1597: "§4Tesla§! can now build and deploy smaller versions of the §CTF-1587§!"
+ FAC_icarus_protocall_enabled: "The Unstoppable §CTF-1587§! can now be deployed if the §YFactory§! is §Roverrun§!"

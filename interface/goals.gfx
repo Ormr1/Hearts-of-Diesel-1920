@@ -3421,5 +3421,73 @@ spriteTypes = {
 		name = "GFX_EGY_A41_fr"
 		texturefile = "gfx/interface/goals/EGYPT/KEM_LARGE 1/GFX_EGY_A41_fr.png"
 	}
+	SpriteType = {
+		name = "GFX_focus_FAC_icarus_project"
+		texturefile = "gfx/interface/goals/VENSA/focus_FAC_icarus_project.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_FAC_shining_city"
+		texturefile = "gfx/interface/goals/VENSA/focus_FAC_shining_city.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_FAC_shining_city_chained"
+		texturefile = "gfx/interface/goals/VENSA/focus_FAC_shining_city_chained.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_FAC_teslas_escape"
+		texturefile = "gfx/interface/goals/VENSA/focus_FAC_teslas_escape.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_FAC_stormcatchers"
+		texturefile = "gfx/interface/goals/VENSA/focus_FAC_stormcatchers.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_FAC_coilgun_upgrade"
+		texturefile = "gfx/interface/goals/VENSA/focus_FAC_coilgun_upgrade.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_FAC_cosmic_energy"
+		texturefile = "gfx/interface/goals/VENSA/focus_FAC_cosmic_energy.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_FAC_tunguska"
+		texturefile = "gfx/interface/goals/VENSA/focus_FAC_tunguska.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_FAC_tunguska_expedition"
+		texturefile = "gfx/interface/goals/VENSA/focus_FAC_tunguska_expedition.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_FAC_heavier_than_air"
+		texturefile = "gfx/interface/goals/VENSA/focus_FAC_heavier_than_air.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_FAC_teslas_oscillator"
+		texturefile = "gfx/interface/goals/VENSA/focus_FAC_teslas_oscillator.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_FAC_tesla_coil"
+		texturefile = "gfx/interface/goals/VENSA/focus_FAC_tesla_coil.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_FAC_private_radio"
+		texturefile = "gfx/interface/goals/VENSA/focus_FAC_private_radio.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_FAC_message_pidgons"
+		texturefile = "gfx/interface/goals/VENSA/focus_FAC_message_pidgons.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_FAC_balance_of_concience"
+		texturefile = "gfx/interface/goals/VENSA/focus_FAC_balance_of_concience.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_FAC_vensas_letter"
+		texturefile = "gfx/interface/goals/VENSA/focus_FAC_vensas_letter.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_FAC_forging"
+		texturefile = "gfx/interface/goals/VENSA/focus_FAC_forging.dds"
+	}
 
 }

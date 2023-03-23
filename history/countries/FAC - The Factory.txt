@@ -40,6 +40,8 @@ set_technology = {
 	tech_exo_suits = 1
 	tech_exo_suits_1 = 1
 	tech_exo_suits_2 = 1
+	tesla_coils = 1
+	coilguns = 1
 }
 if = {
 	limit = {

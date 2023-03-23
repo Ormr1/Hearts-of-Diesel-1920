@@ -38,10 +38,10 @@ set_politics = {
 }
 set_popularities = {
 	democratic = 12
-	fascism = 27
-	communism = 16
+	fascism = 21
+	communism = 25
 	neutrality = 38
-	fenris = 7
+	fenris = 4
 }
 
 add_opinion_modifier = { 
