@@ -11,7 +11,7 @@ country_event = { #revolt of the Rhodesian Native Front
 	id = RHO_bush_war.1
 	title = RHO_bush_war.1.t
 	desc = RHO_bush_war.1.d
-	picture = GFX_report_event_hitler_handshake
+	picture = GFX_report_event_saf_civil_war
 	
 	#is_triggered_only = yes
 	trigger={
@@ -105,7 +105,9 @@ country_event = { #revolt of the Rhodesian Native Front
 					target = NPU
 					type = annex_everything
 				}
+
 				load_oob = "RHO_starting_milita"
+
 			}
 		}
 	}
@@ -138,7 +140,7 @@ country_event = { #Collapse of the FROLIZA
 	id = RHO_bush_war.2
 	title = RHO_bush_war.2.t
 	desc = RHO_bush_war.2.d
-	picture = GFX_report_event_hitler_handshake
+	picture = GFX_report_event_african_soldiers
 	
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -250,7 +252,7 @@ country_event = { #Collapse of the FROLIZI
 	id = RHO_bush_war.3
 	title = RHO_bush_war.3.t
 	desc = RHO_bush_war.3.d
-	picture = GFX_report_event_hitler_handshake
+	picture = GFX_report_event_african_soldiers
 	
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -326,7 +328,7 @@ country_event = { #Collapse of the FROLINY
 	id = RHO_bush_war.4
 	title = RHO_bush_war.4.t
 	desc = RHO_bush_war.4.d
-	picture = GFX_report_event_hitler_handshake
+	picture = GFX_report_event_african_soldiers
 	
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -388,7 +390,7 @@ country_event = { #Collapse of Rhodesia
 	id = RHO_bush_war.5
 	title = RHO_bush_war.5.t
 	desc = RHO_bush_war.5.d
-	picture = GFX_report_event_hitler_handshake
+	picture = GFX_report_event_saf_coup
 	
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -526,7 +528,7 @@ country_event = { #victory in zambia, independance
 	id = RHO_bush_war.6
 	title = RHO_bush_war.6.t
 	desc = RHO_bush_war.6.d
-	picture = GFX_report_event_hitler_handshake
+	picture = GFX_report_event_generic_sign_treaty1
 	
 	#is_triggered_only = yes
 	trigger={
@@ -621,7 +623,7 @@ news_event = { #Zambian independance news event
 	id = RHO_bush_war.7
 	title = RHO_bush_war.7.t
 	desc = RHO_bush_war.7.d
-	#picture = GFX_report_event_hitler_handshake
+	#picture = GFX_report_event_generic_sign_treaty1
 	
 	major = yes
 	
@@ -638,7 +640,7 @@ country_event = { #victory in Nyasaland, independance
 	id = RHO_bush_war.8
 	title = RHO_bush_war.8.t
 	desc = RHO_bush_war.8.d
-	picture = GFX_report_event_hitler_handshake
+	picture = GFX_report_event_generic_sign_treaty1
 	
 	#is_triggered_only = yes
 	trigger={
@@ -696,7 +698,7 @@ news_event = { #Zambian independance news event
 	id = RHO_bush_war.9
 	title = RHO_bush_war.9.t
 	desc = RHO_bush_war.9.d
-	#picture = GFX_report_event_hitler_handshake
+	#picture = GFX_report_event_generic_sign_treaty1
 	
 	major = yes
 	
@@ -713,7 +715,7 @@ country_event = { #victory in zimbabwe, independance
 	id = RHO_bush_war.10
 	title = RHO_bush_war.10.t
 	desc = RHO_bush_war.10.d
-	picture = GFX_report_event_hitler_handshake
+	picture = GFX_report_event_generic_sign_treaty1
 	
 	#is_triggered_only = yes
 	trigger={
