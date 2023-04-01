@@ -15,9 +15,23 @@ characters = {
 			expire="1935.5.12.1"
 		}
 		country_leader = {
-			ideology=democratic_democratic_socialism
+			ideology=democratic_socialism
 			traits = { }
 			expire="1935.5.12.1"
+		}
+	}
+
+	POL_wincenty_witos = {
+		name = POL_wincenty_witos
+		portraits = {
+			civilian = {
+				large = "GFX_POL_wincenty_witos"
+			}
+		}
+		country_leader = {
+			ideology = social_democracy
+			traits = { }
+			expire = "1945.10.31"
 		}
 	}
 

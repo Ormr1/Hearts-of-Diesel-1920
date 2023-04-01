@@ -94,7 +94,7 @@ focus_tree = {
         }
     }
     focus = {
-        id = POL_marxists_win
+        id = POL_pilsudskiites_win
         icon = placeholder
         prerequisite = { focus = POL_1922_elections }
         relative_position_id = POL_1922_elections
@@ -1066,6 +1066,14 @@ focus_tree = {
         cost = 5
         completion_reward = {
             # Decisions
+            hidden_effect = {
+                SAX = {
+                    set_variable = {
+                        var = sax_catholic_arms
+                        value = 0
+                    }
+                }
+            }
         }
     }
 
