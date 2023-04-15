@@ -116,3 +116,255 @@ country_event = {
         name = EGY_A.8.a
     }
 }
+country_event = {
+    id = EGY_A.9
+    title = EGY_A.9.t
+    desc = EGY_A.9.d
+    picture = GFX_EGY_EV_9
+    option = {
+        name = EGY_A.9.a
+        country_event = { 
+            id = EGY_A.10 
+            days = 2 
+        }
+    }
+}
+country_event = {
+    id = EGY_A.10
+    title = EGY_A.10.t
+    desc = EGY_A.10.d
+    picture = GFX_EGY_EV_10
+    option = {
+        name = EGY_A.10.a
+        country_event = { 
+            id = EGY_A.11 
+            days = 2 
+        }
+    }
+}
+country_event = {
+    id = EGY_A.11
+    title = EGY_A.11.t
+    desc = EGY_A.11.d
+    picture = GFX_EGY_EV_11
+    option = {
+        name = EGY_A.11.a
+        country_event = { 
+            id = EGY_A.12 #Minimal fuss
+            days = 2 
+        }
+    }
+    option = {
+        name = EGY_A.11.b
+        country_event = { 
+            id = EGY_A.16 #The Mistress
+            days = 2 
+        }
+    }
+    option = {
+        name = EGY_A.11.c
+        country_event = { 
+            id = EGY_A.20 #Living Dangerously
+            days = 2 
+        }
+    }
+}
+country_event = {
+    id = EGY_A.12
+    title = EGY_A.12.t
+    desc = EGY_A.12.d
+    picture = GFX_EGY_EV_12
+    option = {
+        name = EGY_A.12.a
+        country_event = { 
+            id = EGY_A.13 #bribe the superintendent
+            days = 2 
+        }
+    }
+    option = {
+        name = EGY_A.12.b
+        country_event = { 
+            id = EGY_A.14 #just shoot him
+            days = 2 
+        }
+    }
+}
+country_event = {
+    id = EGY_A.13
+    title = EGY_A.13.t
+    desc = EGY_A.13.d
+    picture = GFX_EGY_EV_13
+    option = {
+        name = EGY_A.13.a
+        country_event = { 
+            id = EGY_A.15 
+            days = 2 
+        }
+    }
+}
+country_event = {
+    id = EGY_A.14
+    title = EGY_A.14.t
+    desc = EGY_A.14.d
+    picture = GFX_EGY_EV_14
+    option = {
+        name = EGY_A.14.a
+        country_event = { 
+            id = EGY_A.15 
+            days = 2 
+        }
+    }
+}
+country_event = {
+    id = EGY_A.15
+    title = EGY_A.15.t
+    desc = EGY_A.15.d
+    picture = GFX_EGY_EV_15
+    option = {
+        name = EGY_A.15.a
+        country_event = { 
+            id = EGY_A.25 
+            days = 2 
+        }
+    }
+}
+country_event = {
+    id = EGY_A.16
+    title = EGY_A.16.t
+    desc = EGY_A.16.d
+    picture = GFX_EGY_EV_16
+    option = {
+        name = EGY_A.16.a
+        country_event = { 
+            id = EGY_A.17 #alert the police
+            days = 2 
+        }
+    }
+    option = {
+        name = EGY_A.16.b
+        country_event = { 
+            id = EGY_A.18 #just shoot him
+            days = 2 
+        }
+    }
+}
+country_event = {
+    id = EGY_A.17
+    title = EGY_A.17.t
+    desc = EGY_A.17.d
+    picture = GFX_EGY_EV_17
+    option = {
+        name = EGY_A.17.a
+        country_event = { 
+            id = EGY_A.19 
+            days = 2 
+        }
+    }
+}
+country_event = {
+    id = EGY_A.18
+    title = EGY_A.18.t
+    desc = EGY_A.18.d
+    picture = GFX_EGY_EV_18
+    option = {
+        name = EGY_A.18.a
+        country_event = { 
+            id = EGY_A.19 
+            days = 2 
+        }
+    }
+}
+country_event = {
+    id = EGY_A.19
+    title = EGY_A.19.t
+    desc = EGY_A.19.d
+    picture = GFX_EGY_EV_19
+    option = {
+        name = EGY_A.19.a
+        country_event = { 
+            id = EGY_A.25
+            days = 2 
+        }
+    }
+}
+country_event = {
+    id = EGY_A.20
+    title = EGY_A.20.t
+    desc = EGY_A.20.d
+    picture = GFX_EGY_EV_20
+    option = {
+        name = EGY_A.20.a
+        country_event = { 
+            id = EGY_A.21
+            days = 2 
+        }
+    }
+}
+country_event = {
+    id = EGY_A.21
+    title = EGY_A.21.t
+    desc = EGY_A.21.d
+    picture = GFX_EGY_EV_21
+    option = {
+        name = EGY_A.21.a
+        country_event = { 
+            id = EGY_A.22
+            days = 2 
+        }
+    }
+    option = {
+        name = EGY_A.21.b
+        country_event = { 
+            id = EGY_A.23
+            days = 2 
+        }
+    }
+}
+country_event = {
+    id = EGY_A.22
+    title = EGY_A.22.t
+    desc = EGY_A.22.d
+    picture = GFX_EGY_EV_22
+    option = {
+        name = EGY_A.22.a
+        country_event = { 
+            id = EGY_A.24
+            days = 2 
+        }
+    }
+}
+country_event = {
+    id = EGY_A.23
+    title = EGY_A.23.t
+    desc = EGY_A.23.d
+    picture = GFX_EGY_EV_23
+    option = {
+        name = EGY_A.23.a
+        country_event = { 
+            id = EGY_A.24
+            days = 2 
+        }
+    }
+}
+country_event = {
+    id = EGY_A.24
+    title = EGY_A.24.t
+    desc = EGY_A.24.d
+    picture = GFX_EGY_EV_24
+    option = {
+        name = EGY_A.24.a
+        country_event = { 
+            id = EGY_A.25
+            days = 2 
+        }
+    }
+}
+country_event = {
+    id = EGY_A.25
+    title = EGY_A.25.t
+    desc = EGY_A.25.d
+    picture = GFX_EGY_EV_25
+    option = {
+        name = EGY_A.25.a
+    }
+}

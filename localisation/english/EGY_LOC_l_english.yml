@@ -223,23 +223,23 @@ EGY_A.20.d: "This is the difficult one, gentlemen. To make this happen is going 
 EGY_A.20.a: "What's the matter, I thought you liked a challenge."
 
 EGY_A.21.t: "Living Dangerously P2"
-EGY_A.21.d: "This plan is wrinklier than a prune's grandmother in the midday sun. First of all, we managed to pick up a Roman who will play the part...as long as we don't hand him into the police. Turns out he's wanted for armed robbery and there's a warrant out for his arrest, so he can't be seen in public. Secondly, we cannot seem to replicate the pin to perfect detail, but we have a good enough copy, which will have to fool the bouncers of the club because thirdly, Cabrillius has changed the meeting place to the Black Spade Club itself. Oh, and the sniper can't make it, his mothers sick. So we have two options: try and walk our man in through the front and hope the bouncer doesn't notice the bad fake pin, or sneak him in dressed as a waiter."
+EGY_A.21.d: "This plan is wrinklier than a prune's grandmother in the midday sun. First of all, we managed to pick up a Roman who will play the part...as long as we don't hand him into the police. Turns out he's wanted for armed robbery and there's a warrant out for his arrest, so he can't be seen in public. Secondly, we cannot seem to replicate the pin to perfect detail, but we have a good enough copy, which will have to fool the bouncers of the club because thirdly, Cabrillius has changed the meeting place to the Black Spade Club itself. Oh, and the sniper can't make it, his mother's sick. So we have two options: try and walk our man in through the front and hope the bouncer doesn't notice the bad fake pin, or sneak him in dressed as a waiter."
 EGY_A.21.a: "Sneak Him In As a Waiter"
 EGY_A.21.b: "Walk Him Through The Front"
 
 EGY_A.22.t: "Living Dangerously P3"
-EGY_A.22.d: "Sneaking him in as a waiter has been more difficult than expected. Seems that the staff are under as much scrutiny as the guests. However, with some quick talking, he has been able "
+EGY_A.22.d: "Sneaking him in as a waiter has been more difficult than expected. Seems that the staff are under as much scrutiny as the guests. However, with some quick talking, he has been able to shake most suspicion."
 EGY_A.22.a: ""
 
 EGY_A.23.t: "Living Dangerously P3"
-EGY_A.23.d: ""
+EGY_A.23.d: "walking in through the front was not a popular choice, but we've had a stroke of luck: the man working the door is new, an doesn't quite know what the pins should look like yet. Needless to say, our guy walked in without any real problems."
 EGY_A.23.a: ""
 
 EGY_A.24.t: "Living Dangerously P4"
 EGY_A.24.d: "Wrinkle number four: Frankish agents working with the local police are storming the club with sights firmly on Cabrillius and our man. Our henchmen, posing as members of the criminal underclass, are returning fire but Cabrillius has died for his country. Our man has slipped out the back door in the confusion and has managed to escape with the documents, but would like it to be noted that Mission Impossible wasn't his favourite radio-drama. Still, it could be worse. It could have been our club being shot up."
 EGY_A.24.a: "Noted"
 
-EGY_A.25.t: "Living Dangerously P5"
+EGY_A.25.t: "The Call"
 EGY_A.25.d: ""
 EGY_A.25.a: ""
 
@@ -249,8 +249,8 @@ EGY_A.26.a: "The Review Idea Seems Fun"
 EGY_A.26.b: "I Don't Know What You're Talking About..."
 
 EGY_A.27.t: "Everyone's A Critic P1"
-EGY_A.27.d: ""
-EGY_A.27.a: ""
+EGY_A.27.d: "...'Escape From Castle Wulvenreich was supposed to be Herbert Alvis' redemption, but it seems like he's retreated into the cozy and yet over-played bosom of Mary Shelley and Bram Stoker, with just enough modernity thrown in to give creedance and relevance to the tale. You'd think a monster movie would be easily written, and yet we cannot relate to the baron of the titular castle, let alone the plights of the heroes. The film is over-acted, overcooked, and certainly over-stays it's welcome, and I for one am not so much enthralled by Hollywood hams in fake teeth and bad makeup chasing buxom starlets around cardboard sets. 1 out of 5 stars.'..."
+EGY_A.27.a: "Oh, that's diabolical..."
 
 EGY_A.28.t: "Everyone's A Critic P2"
 EGY_A.28.d: "Our changes to the review have had the exact effect we were hoping for. No sooner than the paper had hit the stands, Mr Alvis came screaming halfway around the world on express airship looking for the person responsible for panning his magnum opus. Within days he has burst into Cairo, and is on a cultural rampage across the city going from printer to journalist to find the ungrateful bastard who dared to give him less than 3 stars. It will only be a matter of time before he comes looking for us."
