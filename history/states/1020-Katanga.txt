@@ -1,0 +1,32 @@
+state={
+	id=1020
+	name="STATE_1020"
+
+	resources={
+		copper = 44.000
+	}
+
+
+	history={
+		owner = RHO
+		add_core_of = RHO
+		add_core_of = ZAM
+		add_core_of = KAT
+		buildings = {
+			infrastructure = 2
+
+		}
+		victory_points = {
+			13370 1 
+		}
+
+	}
+
+	provinces={
+		1817 4515 13370 13371 13372
+	}
+	manpower=714500
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

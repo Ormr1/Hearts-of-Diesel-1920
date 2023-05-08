@@ -129,7 +129,12 @@ focus_tree = {
         #    always = no
         #}
         completion_reward = {
-            # 
+            set_power_balance = {
+                id =  FAC_tesla_sanity_bop
+                left_side = FAC_tesla_sanity_bop_manic
+                right_side = FAC_tesla_sanity_bop_unfocused
+            }
+           
         }
     }
     focus = {

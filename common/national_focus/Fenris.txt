@@ -1102,7 +1102,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = FEN_Teslas_airship_fleet
+		id = FEN_teslas_airship_fleet
 		icon = GFX_focus_FEN_study_designs
 		relative_position_id = FEN_the_shining_prize
 		x = -2

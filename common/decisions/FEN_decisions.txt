@@ -644,6 +644,13 @@ FEN_fenris_interests_cat = {
 		modifier = {
 			
 		}
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 5
+				check_variable = {  FEN_covert_reveal_risk > 150 }
+			}
+		}
 
 		complete_effect = {
 			hidden_effect={

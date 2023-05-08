@@ -324,6 +324,11 @@ equipment_modules = {
 		forbid_equipment_type = anti_air
 		forbid_equipment_type = artillery
 		forbid_equipment_type = anti_tank
+		allowed_module_categories = {
+			main_armament_slot = {
+				mech_appendaged_main_armament
+			}
+		}
 
 		add_stats = {
 			breakthrough = 5
@@ -343,6 +348,11 @@ equipment_modules = {
 		forbid_equipment_type = anti_air
 		forbid_equipment_type = artillery
 		forbid_equipment_type = anti_tank
+		allowed_module_categories = {
+			main_armament_slot = {
+				mech_appendaged_main_armament
+			}
+		}
 
 		add_stats = {
 			breakthrough = 8
@@ -362,6 +372,11 @@ equipment_modules = {
 		forbid_equipment_type = anti_air
 		forbid_equipment_type = artillery
 		forbid_equipment_type = anti_tank
+		allowed_module_categories = {
+			main_armament_slot = {
+				mech_appendaged_main_armament
+			}
+		}
 
 		add_stats = {
 			breakthrough = 11
@@ -592,6 +607,7 @@ equipment_modules = {
 		allowed_module_categories = {
 			main_armament_slot = {
 				tank_medium_main_armament
+				mech_appendaged_main_armament
 			}
 		}
 
@@ -765,6 +781,40 @@ equipment_modules = {
 
 	###Weapons
 
+	mech_light_scythe = {
+		abbreviation = "scy"
+		category = mech_appendaged_main_armament
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			soft_attack = 5
+			hard_attack = 2
+			ap_attack = 10
+			build_cost_ic = 0.5
+
+		}
+		dismantle_cost_ic = 0.5
+
+		
+		xp_cost = 1
+	}
+	mech_heavy_scythe = {
+		abbreviation = "hsy"
+		category = mech_appendaged_main_armament
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			soft_attack = 5
+			hard_attack = 2
+			ap_attack = 10
+			build_cost_ic = 0.5
+
+		}
+		dismantle_cost_ic = 0.5
+
+		
+		xp_cost = 1
+	}
 	tank_heavy_machine_gun = {
 		abbreviation = "hmg"
 		category = tank_small_main_armament

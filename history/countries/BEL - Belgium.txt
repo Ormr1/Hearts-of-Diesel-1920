@@ -1,4 +1,4 @@
-﻿capital = 6
+﻿capital = 34
 
 oob = "BEL_1936"
 
@@ -13,7 +13,6 @@ set_technology = {
 	tech_recon = 1
 	tech_engineers = 1
 	motorised_infantry = 1
-	early_fighter = 1
 	trench_warfare = 1
 	fuel_silos = 1
 	fuel_refining = 1
@@ -66,7 +65,7 @@ recruit_character = BEL_paul_van_zeeland
 	oob = "BEL_1939"
 	set_technology = {
 		fighter1 = 1
-		gw_artillery = 1
+		artillery_1900 = 1
 		interwar_artillery = 1
 		interwar_antitank = 1
 		interwar_antiair = 1

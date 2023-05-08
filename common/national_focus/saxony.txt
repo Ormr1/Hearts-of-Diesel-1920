@@ -349,8 +349,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			unlock_decision_category_tooltip = GER_frankish_integration
-			set_country_flag = GER_Frankish_resistance_management
+			country_event = {id = saxonian.37}
 		}
 	}
 	focus = {
@@ -416,11 +415,24 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			976={add_core_of = ROOT}
-			977={add_core_of = ROOT}
-			785={add_core_of = ROOT}
-			858={add_core_of = ROOT}
-			add_stability = 0.05
+			if={
+				limit={
+					BEL={
+						is_subject_of = GER
+					}
+				}
+				976={add_core_of = BEL}
+				977={add_core_of = BEL}
+				785={add_core_of = BEL}
+				858={add_core_of = BEL}
+			}
+			else={
+				976={add_core_of = ROOT}
+				977={add_core_of = ROOT}
+				785={add_core_of = ROOT}
+				858={add_core_of = ROOT}
+				add_stability = 0.05
+			}
 		}
 	}
 	focus = {
@@ -490,12 +502,26 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			29={add_core_of = ROOT}
-			857={add_core_of = ROOT}
-			859={add_core_of = ROOT}
-			856={add_core_of = ROOT}
-			855={add_core_of = ROOT}
-			add_stability = 0.05
+			if={
+				limit={
+					BEL={
+						is_subject_of = GER
+					}
+				}
+				29={add_core_of = BEL}
+				857={add_core_of = BEL}
+				859={add_core_of = BEL}
+				856={add_core_of = BEL}
+				855={add_core_of = BEL}
+			}
+			else={
+				29={add_core_of = ROOT}
+				857={add_core_of = ROOT}
+				859={add_core_of = ROOT}
+				856={add_core_of = ROOT}
+				855={add_core_of = ROOT}
+				add_stability = 0.05
+			}
 		}
 	}
 	focus = {

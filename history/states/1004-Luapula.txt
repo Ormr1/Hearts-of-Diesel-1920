@@ -6,6 +6,7 @@ state={
 		owner = RHO
 		add_core_of = RHO
 		add_core_of = ZAM
+		add_core_of = KAT
 		buildings = {
 			infrastructure = 2
 

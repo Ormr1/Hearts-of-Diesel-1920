@@ -1,0 +1,73 @@
+FAC_tesla_sanity_bop = {
+	initial_value = 0.1
+	left_side = FAC_tesla_sanity_bop_manic
+	right_side = FAC_tesla_sanity_bop_unfocused
+	decision_category = FAC_tesla_sanity_power_balance_decisions
+
+	range = { #Balanced Range, teslas focused and not manic
+		id = FAC_tesla_sanity_bop_balanced 
+		min = -0.33
+		max = 0.33
+		modifier = {
+			research_speed_factor = 0.1
+		}
+	}
+
+	side = {
+		id = FAC_tesla_sanity_bop_manic
+		icon = GFX_bop_FAC_tesla_sanity_manic_side
+		range = {
+			id = FAC_tesla_sanity_bop_complety_manic
+			min = 0.75
+			max = 1
+			modifier = {
+				research_speed_factor = -0.05
+			}
+			on_activate = {
+				
+				log = "Fully cantons activated"
+			}
+		}
+		
+		range = {
+			id = FAC_tesla_sanity_bop_very_cantons
+			min = 0.33
+			max = 0.75
+			modifier = {
+				research_speed_factor = 0.05
+			}
+			on_activate = {
+				
+				log = "Very cantons activated"
+			}
+		}
+	}
+
+	side = {
+		id = FAC_tesla_sanity_bop_unfocused
+		icon = GFX_bop_FAC_tesla_sanity_unfocused_side
+		range = {
+			id = FAC_tesla_sanity_bop_fully_unfocused
+			min = -1
+			max = -0.75
+			modifier = {
+				research_speed_factor = -0.15
+			}
+			on_activate = {
+				log = "Fully Council activated"
+			}
+		}
+
+		range = {
+			id = FAC_tesla_sanity_bop_very_unfocused
+			min = -0.75
+			max = -0.33
+			modifier = {
+				research_speed_factor = -0.05
+			}
+			on_activate = {
+				log = "Very Council activated"
+			}
+		}
+	}
+} 

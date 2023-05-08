@@ -1,0 +1,28 @@
+﻿capital = 1020
+
+#oob = "LPT_1936"
+
+# Starting tech
+set_technology = {
+	pre_gw_infantry_weapons = 1
+	tech_mountaineers = 1
+	artillery_1900 = 1
+	interwar_antiair = 1
+	early_fighter = 1
+	CAS1 = 1
+	basic_train = 1
+}
+
+#recruit_character = UUA_sebastian_marotta
+
+set_convoys = 120
+set_politics = {
+	ruling_party = monarchy
+	elections_allowed = no
+}
+set_popularities = {
+	democratic = 46
+	monarchy = 54
+}
+
+add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 20000 producer = RHO }

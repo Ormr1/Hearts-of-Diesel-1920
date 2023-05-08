@@ -2133,7 +2133,8 @@ technologies = {
 		start_year = 1912
 
 		enable_equipment_modules = {
-			
+			mech_light_scythe
+			mech_heavy_scythe
 		}
 		allow = {
 			OR={

@@ -989,3 +989,52 @@ country_event = {#response - country refuses
 		name = saxonian.36.a
 	}
 }
+country_event = {#wallon offer
+	id = saxonian.37
+	title = saxonian.37.t
+	desc = saxonian.37.d
+	picture = GFX_report_event_finnish_letter
+	
+	is_triggered_only = yes
+	
+	option = {#of course
+		name = saxonian.37.a
+		BEL={
+			transfer_state = 34
+			add_state_core = 34
+			transfer_state = 860
+			add_state_core = 860
+			transfer_state = 8
+			add_state_core = 8
+			transfer_state = 859
+			add_state_core = 859
+			
+			transfer_state = 785
+			transfer_state = 858
+			transfer_state = 856
+			transfer_state = 855
+			transfer_state = 857
+			transfer_state = 29
+			transfer_state = 977
+			transfer_state = 976
+			set_cosmetic_tag = BEL_austrasia
+			
+		}
+		set_autonomy = {
+			target = BEL
+			autonomous_state = autonomy_puppet
+			freedom_level = 0.2
+		}
+		add_to_faction = BEL
+		add_stability = 0.05
+	}
+	option = {#under direct control it will remain
+		name = saxonian.37.a
+		unlock_decision_category_tooltip = GER_frankish_integration
+		set_country_flag = GER_Frankish_resistance_management
+		add_stability = -0.02
+		ai_chance={
+			factor = 100
+		}
+	}
+}

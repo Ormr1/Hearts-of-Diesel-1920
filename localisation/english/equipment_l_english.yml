@@ -2750,6 +2750,7 @@
  SAF_anti_tank_equipment_2:0 "QF 6-pounder"
  SAF_anti_tank_equipment_3:0 "QF 17-pounder"
  
+ GER_anti_tank_equipment_0:0 "3,7 cm TAK 18"
  GER_anti_tank_equipment_1:0 "3,7 cm PaK 36"
  GER_anti_tank_equipment_1_short:0 "3,7 cm PaK 36"
  GER_anti_tank_equipment_2:0 "7,5 cm PaK 40"
@@ -2917,6 +2918,7 @@
  anti_tank_equipment_1:0 "Towed Anti-Tank"
  anti_tank_equipment_1_short:0 "Anti-Tank"
  anti_tank_equipment_1_desc:0 "Artillery specialized in defeating armored targets like Tanks, it generally fires armor piercing shells."
+ artillery_equipment_0:0 "Basic Artillery"
  artillery_equipment:0 "Towed Artillery"
  artillery_equipment_short:0 "Artillery"
  artillery_equipment_desc:0 "Artillery refers to large-caliber weapons, such as cannons and howitzers that are operated by crews, which can project munitions far beyond the effective range of personal weapons."
@@ -2932,6 +2934,8 @@
  CZE_artillery_equipment_2:0 "10.5 cm hruby kanon vz. 35"
  CZE_artillery_equipment_3:0 "15 cm hrubá houfnice vzor 37"
  
+ GER_artillery_equipment_0:0 "10.5 cm Feldhaubitze 98/09"
+ GER_artillery_equipment_0_short:0 "10.5 cm FH 98/09"
  GER_artillery_equipment_1:0 "10.5 cm Leichte Feldhaubitze 18"
  GER_artillery_equipment_1_short:0 "10.5 cm LeFH 18"
  GER_artillery_equipment_2:0 "15 cm sFH 18"
@@ -3953,3 +3957,8 @@
  FAC_exo_suit_equipment_2_short:0 "TF-233"
  FEN_exo_suit_equipment_2:0 "TF-233 šetač"
  FEN_exo_suit_equipment_2_short:0 "TF-233"
+ 
+ auto_cannons_1: "Auto Cannon I"
+ auto_cannons_2: "Auto Cannon II"
+ auto_cannons_3: "Auto Cannon III"
+ auto_cannons_4: "Auto Cannon IV"

@@ -52,7 +52,7 @@ recruit_character = IRE_sean_ceallaigh
 	
 	oob = "IRE_1939"
 	set_technology = {
-		gw_artillery = 1
+		artillery_1900 = 1
 		interwar_antiair = 1
 		infantry_weapons2 = 1
 

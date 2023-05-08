@@ -4,7 +4,7 @@ guiTypes = {
 	containerWindowType = {#rusviet factions
 		name = "rusviet_factions_ui_window"
 		position = { x = 0 y = 0 }
-		size = { width = 100% height= 444 }
+		size = { width = 100% height= 244 }
 		
 		#BACKGROUND
 
@@ -12,18 +12,18 @@ guiTypes = {
 		iconType = {
 			name ="rusviet_factions_rsdlp_icon"
 			spriteType = "GFX_rusviet_party_icon"
-			position = { x=37 y=137 }
+			position = { x=37 y=97 }
 		}
 		iconType = {
 			name ="rusviet_factions_rsdlp_bg"
 			spriteType = "GFX_rusviet_party_frame_icon"
-			position = { x=30 y=132 }
+			position = { x=30 y=92 }
 			pdx_tooltip = SOV_RSDLP_Tooltip
 			pdx_tooltip_delayed = SOV_RSDLP_Tooltip_Delayed
 		}
 		instantTextBoxType = {
 			name ="rusviet_factions_rsdlp_loyalty_text"
-			position = { x = 39 y = 192 }
+			position = { x = 39 y = 152 }
 			font = "hoi_16mbs"
 			text = SOV_factions_RSDLP_loyalty
 			format = center
@@ -31,7 +31,7 @@ guiTypes = {
 		}
 		instantTextBoxType = {
 			name ="rusviet_factions_rsdlp_name_text"
-			position = { x = 35 y = 218 }
+			position = { x = 35 y = 178 }
 			font = "hoi_16mbs"
 			text = SOV_factions_RSDLP_name
 			format = center
@@ -41,18 +41,18 @@ guiTypes = {
 		iconType = {
 			name ="rusviet_factions_sr_icon"
 			spriteType = "GFX_rusviet_party_icon"
-			position = { x=125 y=160 }
+			position = { x=125 y=120 }
 		}
 		iconType = {
 			name ="rusviet_factions_sr_bg"
 			spriteType = "GFX_rusviet_party_frame_icon"
-			position = { x=120 y=155 }
+			position = { x=120 y=115 }
 			pdx_tooltip = SOV_SR_Tooltip
 			pdx_tooltip_delayed = SOV_SR_Tooltip_Delayed
 		}
 		instantTextBoxType = {
 			name ="rusviet_factions_sr_loyalty_text"
-			position = { x = 129 y = 215 }
+			position = { x = 129 y = 175 }
 			font = "hoi_16mbs"
 			text = SOV_factions_SR_loyalty
 			format = center
@@ -60,7 +60,7 @@ guiTypes = {
 		}
 		instantTextBoxType = {
 			name ="rusviet_factions_sr_name_text"
-			position = { x = 125 y = 241 }
+			position = { x = 125 y = 201 }
 			font = "hoi_16mbs"
 			text = SOV_factions_SR_name
 			format = center
@@ -70,18 +70,18 @@ guiTypes = {
 		iconType = {
 			name ="rusviet_factions_kd_icon"
 			spriteType = "GFX_rusviet_party_icon"
-			position = { x=215 y=182 }
+			position = { x=215 y=142 }
 		}
 		iconType = {
 			name ="rusviet_factions_kd_bg"
 			spriteType = "GFX_rusviet_party_frame_icon"
-			position = { x=210 y=177 }
+			position = { x=210 y=137 }
 			pdx_tooltip = SOV_Kadet_Tooltip
 			pdx_tooltip_delayed = SOV_Kadet_Tooltip_Delayed
 		}
 		instantTextBoxType = {
 			name ="rusviet_factions_kd_loyalty_text"
-			position = { x = 219 y = 237 }
+			position = { x = 219 y = 197 }
 			font = "hoi_16mbs"
 			text = SOV_factions_KD_loyalty
 			format = center
@@ -89,7 +89,7 @@ guiTypes = {
 		}
 		instantTextBoxType = {
 			name ="rusviet_factions_kd_name_text"
-			position = { x = 215 y = 263 }
+			position = { x = 215 y = 223 }
 			font = "hoi_16mbs"
 			text = SOV_factions_KD_name
 			format = center
@@ -99,18 +99,18 @@ guiTypes = {
 		iconType = {
 			name ="rusviet_factions_o_icon"
 			spriteType = "GFX_rusviet_party_icon"
-			position = { x=305 y=160 }
+			position = { x=305 y=120 }
 		}
 		iconType = {
 			name ="rusviet_factions_o_bg"
 			spriteType = "GFX_rusviet_party_frame_icon"
-			position = { x=300 y=155 }
+			position = { x=300 y=115 }
 			pdx_tooltip = SOV_Octoberist_Tooltip
 			pdx_tooltip_delayed = SOV_Octoberist_Tooltip_Delayed
 		}
 		instantTextBoxType = {
 			name ="rusviet_factions_o_loyalty_text"
-			position = { x = 309 y = 215 }
+			position = { x = 309 y = 175 }
 			font = "hoi_16mbs"
 			text = SOV_factions_O_loyalty
 			format = center
@@ -118,7 +118,7 @@ guiTypes = {
 		}
 		instantTextBoxType = {
 			name ="rusviet_factions_o_name_text"
-			position = { x = 305 y = 241 }
+			position = { x = 305 y = 201 }
 			font = "hoi_16mbs"
 			text = SOV_factions_O_name
 			format = center
@@ -128,18 +128,18 @@ guiTypes = {
 		iconType = {
 			name ="rusviet_factions_t_icon"
 			spriteType = "GFX_rusviet_party_icon"
-			position = { x=395 y=137 }
+			position = { x=395 y=97 }
 		}
 		iconType = {
 			name ="rusviet_factions_t_bg"
 			spriteType = "GFX_rusviet_party_frame_icon"
-			position = { x=390 y=132 }
+			position = { x=390 y=92 }
 			pdx_tooltip = SOV_Tsarist_Tooltip
 			pdx_tooltip_delayed = SOV_Tsarist_Tooltip_Delayed
 		}
 		instantTextBoxType = {
 			name ="rusviet_factions_t_loyalty_text"
-			position = { x = 399 y = 192 }
+			position = { x = 399 y = 152 }
 			font = "hoi_16mbs"
 			text = SOV_factions_T_loyalty
 			format = center
@@ -147,7 +147,7 @@ guiTypes = {
 		}
 		instantTextBoxType = {
 			name ="rusviet_factions_t_name_text"
-			position = { x = 395 y = 218 }
+			position = { x = 395 y = 178 }
 			font = "hoi_16mbs"
 			text = SOV_factions_T_name
 			format = center
@@ -157,24 +157,24 @@ guiTypes = {
 		iconType = {
 			name ="rusviet_factions_army_icon"
 			spriteType = "GFX_rusviet_party_icon"
-			position = { x=215 y=67 }
+			position = { x=215 y=27 }
 		}
 		iconType = {
 			name ="rusviet_factions_army_bg"
 			spriteType = "GFX_rusviet_party_frame_army_icon"
-			position = { x=210 y=62 }
+			position = { x=210 y=22 }
 			pdx_tooltip = SOV_ARMY_loyalty_Tooltip
 			pdx_tooltip_delayed = SOV_ARMY_Tooltip
 		}
 		iconType = {
 			name ="rusviet_factions_army_controller_icon"
 			spriteType = "GFX_rusviet_party_icon_small"
-			position = { x=265 y=112 }
+			position = { x=265 y=72 }
 			pdx_tooltip = SOV_ARMY_controller_Tooltip
 		}
 		instantTextBoxType = {
 			name ="rusviet_factions_army_loyalty_text"
-			position = { x = 217 y = 122 }
+			position = { x = 217 y = 82 }
 			font = "hoi_16mbs"
 			text = SOV_factions_ARMY_loyalty
 			format = center
@@ -183,7 +183,7 @@ guiTypes = {
 		}
 		instantTextBoxType = {
 			name ="rusviet_factions_army_name_text"
-			position = { x = 214 y = 148 }
+			position = { x = 214 y = 108 }
 			font = "hoi_16mbs"
 			text = "Armed Forces"
 			format = center

@@ -810,3 +810,8 @@ SOV_ROME = {
 	color = rgb { 128 0 128 }
 	color_ui = rgb { 128 0 128 }
 }
+
+BRA_united_kingdom = {
+	color = rgb { 41 100 117 }
+	color_ui = rgb { 41 100 117 }
+}
