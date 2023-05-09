@@ -118,6 +118,21 @@ country = {
 		}
 	}
 
+	POL_home_of_nations_1 = {
+		picture = placeholder
+		allowed = {
+			original_tag = POL
+			always = no
+		}
+		allowed_civil_war = {
+			always = yes
+		}
+		removal_cost = 0
+		modifier = {
+			compliance_growth = 0.05
+		}
+	}
+
 	POL_democratic_constitution_1 = {
 		picture = placeholder
 		allowed = {

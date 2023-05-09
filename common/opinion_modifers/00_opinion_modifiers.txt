@@ -757,7 +757,7 @@ opinion_modifiers = {
 	ROM_seek_alliance_SOV = { value = 25 }
 
 
-	### Polish focus tree ###
+	### Polanian focus tree ###
 
 	POL_treaty_with_lithuania = { value = 25 }
 	
@@ -768,6 +768,8 @@ opinion_modifiers = {
 	POL_seek_accommodation_with_USSR = { value = 25 }
 
 	POL_draw_closer_to_britain = { value = 25 }
+
+	POL_saxons_deported = { value = -25 }
 
 	### Australian focus tree ###
 

@@ -220,6 +220,37 @@ ideas = {
 				max_planning_factor = 0.15
 			}
 		}
+
+		GER_supporting_refugees_from_polania = {
+			picture = placeholder
+			allowed = {
+				original_tag = GER
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = 0
+			modifier = {
+				stability_factor = -0.05
+				consumer_goods_factor = 0.05
+			}
+		}
+
+		GER_refugees_from_polania_left_alone = {
+			picture = placeholder
+			allowed = {
+				original_tag = GER
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = 0
+			modifier = {
+				stability_factor = -0.10
+			}
+		}
 		
 		spariticus_unrest = {
 		

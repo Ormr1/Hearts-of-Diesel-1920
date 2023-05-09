@@ -1037,4 +1037,36 @@ country_event = {#wallon offer
 			factor = 100
 		}
 	}
+country_event = { # What to do with refugees
+	id = saxonian.38
+	title = saxonian.38.t
+	desc = saxonian.38.desc
+	picture = placeholder
+	is_triggered_only = yes
+	option = { # Provide support
+		name = saxonian.38.a
+		add_timed_idea = {
+			idea = GER_supporting_refugees_from_polania
+			days = 365
+		}
+	}
+	option = { # We can't afford to do anything
+		name = saxonian.38.b
+		add_timed_idea = {
+			idea = GER_refugees_from_polania_left_alone
+			days = 365
+		}
+		multiply_variable = { katowice_pop_loss = -0.75 }
+		multiply_variable = { gdynia_pop_loss = -0.75 }
+		multiply_variable = { danzig_pop_loss = -0.75 }
+		67 = {
+            add_manpower = katowice_pop_loss
+        }
+        63 = {
+            add_manpower = gdynia_pop_loss
+        }
+        5 = {
+            add_manpower = danzig_pop_loss
+        }
+	}
 }

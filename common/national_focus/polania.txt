@@ -107,6 +107,209 @@ focus_tree = {
         }
     }
     focus = {
+        id = POL_red_banner_on_the_vistula
+        icon = placeholder
+        prerequisite = { focus = POL_pilsudskiites_win }
+        relative_position_id = POL_pilsudskiites_win
+        x = -2
+        y = 1
+        cost = 5
+        completion_reward =  {
+
+        }
+    }
+    focus = {
+        id = POL_uplift_the_peasantry
+        icon = placeholder
+        prerequisite = { focus = POL_red_banner_on_the_vistula }
+        relative_position_id = POL_red_banner_on_the_vistula
+        x = -1
+        y = 1
+        cost = 5
+        completion_reward =  {
+
+        }
+    }
+    focus = {
+        id = POL_rural_education_initiative
+        icon = placeholder
+        prerequisite = { focus = POL_uplift_the_peasantry }
+        relative_position_id = POL_uplift_the_peasantry
+        x = 0
+        y = 1
+        cost = 5
+        completion_reward =  {
+
+        }
+    }
+    focus = {
+        id = POL_rights_for_women
+        icon = placeholder
+        prerequisite = {
+            focus = POL_industrial_democracy
+            focus = POL_rural_education_initiative
+        }
+        relative_position_id = POL_rural_education_initiative
+        x = 0
+        y = 1
+        cost = 5
+        completion_reward =  {
+
+        }
+    }
+    focus = {
+        id = POL_compensated_collectivization
+        icon = placeholder
+        prerequisite = { focus = POL_red_banner_on_the_vistula }
+        relative_position_id = POL_red_banner_on_the_vistula
+        x = 1
+        y = 1
+        cost = 5
+        completion_reward =  {
+
+        }
+    }
+    focus = {
+        id = POL_industrial_democracy
+        icon = placeholder
+        prerequisite = { focus = POL_compensated_collectivization }
+        relative_position_id = POL_compensated_collectivization
+        x = 0
+        y = 1
+        cost = 5
+        completion_reward =  {
+
+        }
+    }
+    focus = {
+        id = POL_department_of_labor
+        icon = placeholder
+        prerequisite = {
+            focus = POL_industrial_democracy
+            focus = POL_rural_education_initiative
+        }
+        relative_position_id = POL_industrial_democracy
+        x = 0
+        y = 1
+        cost = 5
+        completion_reward =  {
+
+        }
+    }
+    focus = {
+        id = POL_building_the_home_of_nations
+        icon = placeholder
+        prerequisite = { focus = POL_pilsudskiites_win }
+        relative_position_id = POL_pilsudskiites_win
+        x = 2
+        y = 1
+        cost = 5
+        completion_reward =  {
+            add_ideas = POL_home_of_nations_1
+        }
+    }
+    focus = {
+        id = POL_autonomy_for_ukraizhia
+        icon = placeholder
+        prerequisite = { focus = POL_building_the_home_of_nations }
+        relative_position_id = POL_building_the_home_of_nations
+        x = -1
+        y = 1
+        cost = 5
+        completion_reward =  {
+
+        }
+    }
+    focus = {
+        id = POL_deport_saxons
+        icon = placeholder
+        prerequisite = { focus = POL_building_the_home_of_nations }
+        relative_position_id = POL_building_the_home_of_nations
+        x = 1
+        y = 1
+        cost = 5
+        completion_reward =  {
+            762 = {
+                set_variable = { global.katowice_pop_loss = state_population }
+                multiply_variable = { global.katowice_pop_loss = -0.12 }
+                add_manpower = global.katowice_pop_loss
+            }
+            807 = {
+                set_variable = { global.gdynia_pop_loss = state_population }
+                multiply_variable = { global.gdynia_pop_loss = -0.19 }
+                add_manpower = global.gdynia_pop_loss
+            }
+            85 = {
+                set_variable = { global.danzig_pop_loss = state_population }
+                multiply_variable = { global.danzig_pop_loss = -0.95 }
+                add_manpower = global.danzig_pop_loss
+            }
+            multiply_variable = { global.katowice_pop_loss = -1 }
+            multiply_variable = { global.gdynia_pop_loss = -1 }
+            multiply_variable = { global.danzig_pop_loss = -1 }
+            GER = {
+                country_event = polania_socialism.1
+            }
+        }
+    }
+    focus = {
+        id = POL_reach_out_to_rusviet_ukraizhians
+        icon = placeholder
+        prerequisite = { focus = POL_autonomy_for_ukraizhia }
+        prerequisite = { focus = POL_deport_saxons }
+        relative_position_id = POL_building_the_home_of_nations
+        x = 0
+        y = 2
+        cost = 5
+        completion_reward =  {
+
+        }
+    }
+    focus = {
+        id = POL_establish_ruthenian_peoples_republic
+        icon = placeholder
+        mutually_exclusive = { focus = POL_alliance_with_crimea }
+        prerequisite = { focus = POL_reach_out_to_rusviet_ukraizhians }
+        relative_position_id = POL_reach_out_to_rusviet_ukraizhians
+        x = -1
+        y = 1
+        cost = 5
+        completion_reward =  {
+
+        }
+    }
+    focus = {
+        id = POL_alliance_with_crimea
+        icon = placeholder
+        mutually_exclusive = { focus = POL_establish_ruthenian_peoples_republic }
+        prerequisite = { focus = POL_reach_out_to_rusviet_ukraizhians }
+        available = {
+            is_faction_leader = yes
+        }
+        relative_position_id = POL_reach_out_to_rusviet_ukraizhians
+        x = 1
+        y = 1
+        cost = 5
+        completion_reward =  {
+
+        }
+    }
+    focus = {
+        id = POL_polanian_peoples_commonwealth
+        icon = placeholder
+        prerequisite = { focus = POL_rights_for_women }
+        prerequisite = { focus = POL_department_of_labor }
+        prerequisite = { focus = POL_establish_ruthenian_peoples_republic }
+        prerequisite = { focus = POL_alliance_with_crimea }
+        relative_position_id = POL_pilsudskiites_win
+        x = 0
+        y = 5
+        cost = 5
+        completion_reward = {
+
+        }
+    }
+    focus = {
         id = POL_social_democrats_win
         icon = placeholder
         prerequisite = { focus = POL_1922_elections }

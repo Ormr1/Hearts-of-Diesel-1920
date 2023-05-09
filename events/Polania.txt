@@ -3,6 +3,7 @@
 ###########################
 add_namespace = polania_startup
 add_namespace = polania_falangism
+add_namespace = polania_socialism
 
 country_event = {
     id = polania_startup.1
@@ -70,6 +71,30 @@ country_event = {
                 set_compliance = 50
             }
         }
+    }
+}
+country_event = { # Saxons deported (Saxon perspective)
+    id = polania_socialism.1
+    title = polania_socialism.1.t
+    desc = polania_socialism.1.desc
+    is_triggered_only = yes
+    option = { # Horrific!
+        name = polania_socialism.1.a
+        add_war_support = 0.05
+        add_opinion_modifier = {
+            target = POL
+            modifier = POL_saxons_deported
+        }
+        67 = {
+            add_manpower = katowice_pop_loss
+        }
+        63 = {
+            add_manpower = gdynia_pop_loss
+        }
+        5 = {
+            add_manpower = danzig_pop_loss
+        }
+        country_event = saxonian.38
     }
 }
 country_event = { # Polania invites us to Falangist International
