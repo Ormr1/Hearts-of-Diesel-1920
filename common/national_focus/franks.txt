@@ -303,25 +303,25 @@ focus = {
         focus = FRA_Bank_Off_Of_the_Wealthy
     }
 }
-#focus = {
-#    id = FRA_Demonize_the_Rich
-#    icon = placeholder
-#    relative_position_id = FRA_Bank_Off_Of_the_Wealthy
-#    mutually_exclusive = { focus = FRA_Even_the_Economic_Playing_Field }
-#    x = 4
-#    y = 1
-#    cost = 5
-#    ai_will_do = {
-#        factor = 7
-#    }
-#    completion_reward = {
-#        country_event = fra_economic.26
-#    }
-#    prerequisite = {
-#        focus = FRA_the_Money_Question_2
-#        focus = FRA_Bank_Off_Of_the_Wealthy
-#    }
-#}
+focus = {
+    id = FRA_Demonize_the_Rich
+    icon = placeholder
+    relative_position_id = FRA_Bank_Off_Of_the_Wealthy
+    mutually_exclusive = { focus = FRA_Even_the_Economic_Playing_Field }
+    x = 4
+    y = 1
+    cost = 5
+    ai_will_do = {
+        factor = 7
+    }
+    completion_reward = {
+        country_event = fra_economic.26
+     }
+    prerequisite = {
+        focus = FRA_the_Money_Question_2
+        focus = FRA_Bank_Off_Of_the_Wealthy
+    }
+}
 
 focus = { ### Please note that any completion reward that would normally require a national spirit/idea is just a placeholder, since I don't know how to add/modify ideas just yet
     id = FRA_Communal_Autarky
@@ -3072,4 +3072,4 @@ focus = { ### AnCap Moment
     }
 }
 
-
+}
