@@ -232,17 +232,17 @@ focus_tree = {
             762 = {
                 set_variable = { global.katowice_pop_loss = state_population }
                 multiply_variable = { global.katowice_pop_loss = -0.12 }
-                add_manpower = global.katowice_pop_loss
+                add_manpower = var:global.katowice_pop_loss
             }
             807 = {
                 set_variable = { global.gdynia_pop_loss = state_population }
                 multiply_variable = { global.gdynia_pop_loss = -0.19 }
-                add_manpower = global.gdynia_pop_loss
+                add_manpower = var:global.gdynia_pop_loss
             }
             85 = {
                 set_variable = { global.danzig_pop_loss = state_population }
                 multiply_variable = { global.danzig_pop_loss = -0.95 }
-                add_manpower = global.danzig_pop_loss
+                add_manpower = var:global.danzig_pop_loss
             }
             multiply_variable = { global.katowice_pop_loss = -1 }
             multiply_variable = { global.gdynia_pop_loss = -1 }
