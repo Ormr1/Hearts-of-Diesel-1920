@@ -525,6 +525,30 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = GER_placating_the_franks
+		icon = GFX_goal_generic_allies_build_infantry
+		relative_position_id = GER_occupation_of_east_frankia
+		prerequisite = { focus = GER_occupation_of_east_frankia}
+		x = 0
+		y = 2
+		cost = 5
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			29={add_resistance_target = -5}
+			857={add_resistance_target = -5}
+			859={add_resistance_target = -5}
+			856={add_resistance_target = -5}
+			855={add_resistance_target = -5}
+			976={add_resistance_target = -5}
+			977={add_resistance_target = -5}
+			785={add_resistance_target = -5}
+			858={add_resistance_target = -5}
+		}
+	}
+	focus = {
 		id = GER_colonial_development
 		icon = GFX_focus_GER_colonial_production
 		prerequisite = { focus = GER_a_steady_helm }
@@ -1156,7 +1180,10 @@ focus_tree = {
 		search_filters = {  FOCUS_FILTER_POLITICAL }
 		available={
 			has_completed_focus = GER_scars_of_the_great_war 
-			has_stability > 0.45
+			OR={
+				has_stability > 0.45
+				date > 1925.1.1
+			}
 			custom_trigger_tooltip = {
 				tooltip = GER_war_loan_less_than_200b
 				check_variable = {
@@ -1605,7 +1632,6 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			#unlocks KSMVA decisions
 			navy_experience = 15
 		}
 	}
@@ -1717,6 +1743,145 @@ focus_tree = {
 				progress = 0.85
 				amount = 1
 			}
+		}
+	}
+	focus = {
+		id = GER_fleet_in_being
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		relative_position_id = GER_naval_sector
+		prerequisite = { 
+			focus = GER_naval_expansion_kaiser
+			focus = GER_naval_expansion_leipzig_hipper
+		}
+		x = 0
+		y = 2
+		cost = 5
+		search_filters = {  FOCUS_FILTER_COLONIAL }
+		available={
+			OR={
+				NOT={has_completed_focus = GER_cut_military_funding }
+				date > 1930.1.1
+			}
+			NOT={
+				OR={
+					has_idea = GER_navy_on_verge_of_munity
+					has_idea = GER_navy_unrest
+				}
+			}
+		}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				name = fleet_in_being_bonus
+				cost_reduction = 0.25
+				uses = 2
+				category = fleet_in_being_tree
+			}
+		}
+	}
+	focus = {
+		id = GER_focus_on_u_boat
+		icon = GFX_goal_generic_navy_submarine
+		prerequisite = { focus = GER_fleet_in_being }
+		x = 1
+		y = 2
+		relative_position_id = GER_fleet_in_being
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available={
+			OR={
+				NOT={has_completed_focus = GER_cut_military_funding }
+				date > 1930.1.1
+			}
+		}
+
+		available_if_capitulated = yes
+		complete_tooltip = {
+			navy_experience = 25
+			every_state = {
+				limit = { has_state_flag = GER_u_boat_effort_2dockyards }
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+			add_tech_bonus = {
+				name = GER_u_boat_effort
+				bonus = 1.0
+				uses = 1
+				category = ss_tech
+			}
+			if = {
+				limit = {
+					has_dlc = "Man the Guns"
+				}
+				set_technology = { cruiser_submarines = 1 }
+			}
+		}
+		
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			navy_experience = 25
+			random_owned_controlled_state = {
+				limit = {
+					dockyard > 0
+					free_building_slots = {
+						building = dockyard
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = GER_u_boat_effort_2dockyards
+			}
+			add_tech_bonus = {
+				name = GER_u_boat_effort
+				bonus = 1.0
+				uses = 1
+				category = ss_tech
+			}
+			if = {
+				limit = {
+					has_dlc = "Man the Guns"
+				}
+				set_technology = { cruiser_submarines = 1 }
+			}
+		}
+	}
+
+	focus = {
+		id = GER_modular_construction
+		icon = GFX_goal_generic_construct_naval_dockyard
+		prerequisite = { focus = GER_focus_on_u_boat }
+		x = 0
+		y = 1
+		relative_position_id = GER_focus_on_u_boat
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available={
+			OR={
+				NOT={has_completed_focus = GER_cut_military_funding }
+				date > 1930.1.1
+			}
+		}
+			
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			add_ideas = GER_modular_construction
 		}
 	}
 	focus = {
@@ -1852,7 +2017,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = GER_roaring_twenties
+		id = GER_golden_twenties
 		icon = GFX_goal_generic_allies_build_infantry
 		prerequisite = { focus = GER_economic_development }
 		relative_position_id = GER_economic_development
@@ -1886,7 +2051,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_ideas = ksmva_nationalised
+			add_ideas = {ksmva_nationalised}
 		}
 	}
 

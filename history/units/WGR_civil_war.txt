@@ -1,0 +1,284 @@
+﻿division_template = {
+	name = "Infanterie-Division"
+
+	division_names_group = GER_Inf_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+        infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+        infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	
+	support = {
+        engineer = { x = 0 y = 0 }
+        artillery = { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "Bohemian Republicans"		# Infantry Division
+	division_names_group = GER_Inf_02
+
+	regiments = {
+		militia = { x = 0 y = 0 }
+		militia = { x = 0 y = 1 }
+		militia = { x = 1 y = 0 }
+		militia = { x = 1 y = 1 }
+	}
+	is_locked = yes
+}
+division_template = {
+	name = "Dutch Republicans"		# Infantry Division
+	division_names_group = GER_Inf_02
+
+	regiments = {
+		militia = { x = 0 y = 0 }
+		militia = { x = 0 y = 1 }
+		militia = { x = 1 y = 0 }
+		militia = { x = 1 y = 1 }
+	}
+	is_locked = yes
+}
+
+
+units = {
+	division= {	
+		name = "1. Bohemian Milita"
+		location = 11542 # Berlin
+		division_template = "Bohemian Republicans"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.75
+	}
+	division= {	
+		name = "2. Bohemian Milita"
+		location = 11542 # Berlin
+		division_template = "Bohemian Republicans"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.75
+	}
+	division= {	
+		name = "3. Bohemian Milita"
+		location = 6470 # Berlin
+		division_template = "Bohemian Republicans"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.75
+	}
+	division= {	
+		name = "4. Bohemian Milita"
+		location = 3585 # Berlin
+		division_template = "Bohemian Republicans"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.75
+	}
+	division= {	
+		name = "5. Bohemian Milita"
+		location = 469 # Berlin
+		division_template = "Bohemian Republicans"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.75
+	}
+	division= {	
+		name = "6. Bohemian Milita"
+		location = 11401 # Berlin
+		division_template = "Bohemian Republicans"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.75
+	}
+	division= {	
+		name = "7. Bohemian Milita"
+		location = 421 # Berlin
+		division_template = "Bohemian Republicans"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.75
+	}
+	division= {	
+		name = "8. Bohemian Milita"
+		location = 3583 # Berlin
+		division_template = "Bohemian Republicans"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.75
+	}
+	division= {	
+		name = "9. Bohemian Milita"
+		location = 557 # Berlin
+		division_template = "Bohemian Republicans"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.75
+	}
+	division= {	
+		name = "10. Bohemian Milita"
+		location = 3569 # Berlin
+		division_template = "Bohemian Republicans"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.75
+	}
+	division= {	
+		name = "11. Bohemian Milita"
+		location = 6590 # Berlin
+		division_template = "Bohemian Republicans"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.75
+	}
+	division= {	
+		name = "12. Bohemian Milita"
+		location = 11414 # Berlin
+		division_template = "Bohemian Republicans"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.75
+	}
+	division= {	
+		name = "13. Bohemian Milita"
+		location = 9569 # Berlin
+		division_template = "Bohemian Republicans"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.75
+	}
+	
+	
+	division= {	
+		name = "1. Dutch Milita"
+		location = 516 # Berlin
+		division_template = "Dutch Republicans"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.75
+	}
+	division= {	
+		name = "2. Dutch Milita"
+		location = 516 # Berlin
+		division_template = "Dutch Republicans"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.75
+	}
+	division= {	
+		name = "3. Dutch Milita"
+		location = 6598 # Berlin
+		division_template = "Dutch Republicans"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.75
+	}
+	division= {	
+		name = "4. Dutch Milita"
+		location = 6598 # Berlin
+		division_template = "Dutch Republicans"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.75
+	}
+	division= {	
+		name = "5. Dutch Milita"
+		location = 9498 # Berlin
+		division_template = "Dutch Republicans"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.75
+	}
+	division= {	
+		name = "6. Dutch Milita"
+		location = 9498 # Berlin
+		division_template = "Dutch Republicans"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.75
+	}
+	division= {	
+		name = "7. Dutch Milita"
+		location = 391 # Berlin
+		division_template = "Dutch Republicans"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.75
+	}
+	division= {	
+		name = "8. Dutch Milita"
+		location = 391 # Berlin
+		division_template = "Dutch Republicans"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.75
+	}
+	division= {	
+		name = "9. Dutch Milita"
+		location = 391 # Berlin
+		division_template = "Dutch Republicans"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.75
+	}
+	division= {	
+		name = "10. Dutch Milita"
+		location = 6241 # Berlin
+		division_template = "Dutch Republicans"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.75
+	}
+	division= {	
+		name = "11. Dutch Milita"
+		location = 11562 # Berlin
+		division_template = "Dutch Republicans"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.75
+	}
+	division= {	
+		name = "12. Dutch Milita"
+		location = 9363 # Berlin
+		division_template = "Dutch Republicans"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.75
+	}
+	division= {	
+		name = "13. Dutch Milita"
+		location = 6560 # Berlin
+		division_template = "Dutch Republicans"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.75
+	}
+	division= {	
+		name = "14. Dutch Milita"
+		location = 3576 # Berlin
+		division_template = "Dutch Republicans"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.75
+	}
+
+	division= {	
+		name = "1. Republican Infantry"
+		location = 391 # Berlin
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.75
+	}
+	division= {	
+		name = "2. Republican Infantry"
+		location = 6500 # Berlin
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.75
+	}
+	division= {	
+		name = "3. Republican Infantry"
+		location = 6440 # Berlin
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.75
+	}
+	division= {	
+		name = "4. Republican Infantry"
+		location = 3569 # Berlin
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.75
+	}
+	division= {	
+		name = "5. Republican Infantry"
+		location = 11542 # Berlin
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.75
+	}
+	division= {	
+		name = "6. Republican Infantry"
+		location = 6286 # Berlin
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.75
+	}
+}

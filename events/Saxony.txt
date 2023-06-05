@@ -800,16 +800,18 @@ country_event = {#GER - saxon civil war
 			every_core_state={
 				transfer_state_to = DDR
 			}
+			load_oob = "DDR_civil_war"
 		}
 		WGR={
 			every_core_state={
 				transfer_state_to = WGR
 			}
 			declare_war_on = {
-				target = WGR
+				target = DDR
 				type = civil_war
 			}
 			add_civil_war_target = DDR
+			load_oob = "WGR_civil_war"
 		}
 		AUS={
 			every_core_state={
@@ -1029,7 +1031,7 @@ country_event = {#wallon offer
 		add_stability = 0.05
 	}
 	option = {#under direct control it will remain
-		name = saxonian.37.a
+		name = saxonian.37.b
 		unlock_decision_category_tooltip = GER_frankish_integration
 		set_country_flag = GER_Frankish_resistance_management
 		add_stability = -0.02
