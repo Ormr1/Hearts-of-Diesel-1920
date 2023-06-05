@@ -267,6 +267,48 @@ POL_the_falangist_international = {
 		}
 	}
 }
+POL_agrarian_reform_decisions = {
+	agrarian_reform_in_state = {
+		icon = placeholder
+		cost = agrarian_reform_cost
+		allowed = {
+			tag = POL
+		}
+		state_target = yes
+		ai_will_do = {
+			base = 150
+		}
+		on_map_mode = map_only
+		available = {
+			NOT = {
+				has_country_flag = POL_agrarian_reform_in_progress
+			}
+			FROM = {
+				is_owned_and_controlled_by = ROOT
+				OR = {
+					has_dynamic_modifier = { modifier = heavily_agrarian_state_2 }
+					has_dynamic_modifier = { modifier = heavily_agrarian_state_1 }
+				}
+			}
+		}
+		visible = {
+			FROM = {
+				OR = {
+					has_dynamic_modifier = { modifier = heavily_agrarian_state_2 }
+					has_dynamic_modifier = { modifier = heavily_agrarian_state_1 }
+				}
+			}
+		}
+		days_remove = 30
+		complete_effect = { set_country_flag = POL_agrarian_reform_in_progress }
+		remove_effect = {
+			clr_country_flag = POL_agrarian_reform_in_progress
+			FROM = {
+				POL_agrarian_reform_effect = yes
+			}
+		}
+	}
+}
 POL_disarm_radical_militias_decisions = {
 	POL_disarm_saxon_militias_in_state = {
 		icon = placeholder

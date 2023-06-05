@@ -72,12 +72,13 @@ saxon_nationalist_militias = {
 	army_speed_factor_for_controller = -0.10
 	attrition_for_controller = 0.10
 	compliance_growth = -0.10
-	local_building_slots_factor	= -0.20
+	local_building_slots_factor	= -0.50
 	local_factory_sabotage = 0.30
 	local_manpower = -0.20
-	state_resources_factor = -0.10
+	state_resources_factor = -0.50
 	local_supplies = -0.10
 	resistance_growth = 0.10
+	state_production_speed_buildings_factor = -0.50
 }
 
 ukraizhian_nationalist_militias = {
@@ -85,12 +86,13 @@ ukraizhian_nationalist_militias = {
 	army_speed_factor_for_controller = -0.10
 	attrition_for_controller = 0.10
 	compliance_growth = -0.10
-	local_building_slots_factor	= -0.20
+	local_building_slots_factor	= -0.50
 	local_factory_sabotage = 0.30
 	local_manpower = -0.20
-	state_resources_factor = -0.10
+	state_resources_factor = -0.50
 	local_supplies = -0.10
 	resistance_growth = 0.10
+	state_production_speed_buildings_factor = -0.50
 }
 
 moldovan_nationalist_militias = {
@@ -98,12 +100,13 @@ moldovan_nationalist_militias = {
 	army_speed_factor_for_controller = -0.10
 	attrition_for_controller = 0.10
 	compliance_growth = -0.10
-	local_building_slots_factor	= -0.20
+	local_building_slots_factor	= -0.50
 	local_factory_sabotage = 0.30
 	local_manpower = -0.20
-	state_resources_factor = -0.10
+	state_resources_factor = -0.50
 	local_supplies = -0.10
 	resistance_growth = 0.10
+	state_production_speed_buildings_factor = -0.50
 }
 
 frankish_resistance = {
@@ -117,4 +120,22 @@ frankish_resistance = {
 	state_resources_factor = -0.10
 	local_supplies = -0.10
 	resistance_growth = 0.10
+}
+
+heavily_agrarian_state_1 = {
+	icon = placeholder
+	local_building_slots_factor	= -0.125
+	production_speed_buildings_factor = -0.125
+	state_resources_factor = -0.10
+	local_supplies = -0.10
+	local_manpower = 0.125
+}
+
+heavily_agrarian_state_2 = {
+	icon = placeholder
+	local_building_slots_factor	= -0.25
+	production_speed_buildings_factor = -0.25
+	state_resources_factor = -0.20
+	local_supplies = -0.20
+	local_manpower = 0.25
 }

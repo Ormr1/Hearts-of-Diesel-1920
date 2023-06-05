@@ -115,7 +115,7 @@ focus_tree = {
         y = 1
         cost = 5
         completion_reward =  {
-
+            add_ideas = POL_red_polanian_nationalism
         }
     }
     focus = {
@@ -127,7 +127,16 @@ focus_tree = {
         y = 1
         cost = 5
         completion_reward =  {
-
+            every_owned_state = {
+                limit = {
+                    OR = {
+                        has_dynamic_modifier = { modifier = heavily_agrarian_state_2 }
+                        has_dynamic_modifier = { modifier = heavily_agrarian_state_1 }
+                    }
+                }
+                POL_agrarian_reform_effect = yes
+                add_extra_state_shared_building_slots = 1
+            }
         }
     }
     focus = {
@@ -137,9 +146,17 @@ focus_tree = {
         relative_position_id = POL_uplift_the_peasantry
         x = 0
         y = 1
-        cost = 5
+        cost = 10
         completion_reward =  {
-
+            every_owned_state = {
+                limit = {
+                    OR = {
+                        has_dynamic_modifier = { modifier = heavily_agrarian_state_2 }
+                        has_dynamic_modifier = { modifier = heavily_agrarian_state_1 }
+                    }
+                }
+                POL_agrarian_reform_effect = yes
+            }
         }
     }
     focus = {
@@ -154,7 +171,7 @@ focus_tree = {
         y = 1
         cost = 5
         completion_reward =  {
-
+            add_ideas = POL_gender_equality
         }
     }
     focus = {
@@ -166,7 +183,8 @@ focus_tree = {
         y = 1
         cost = 5
         completion_reward =  {
-
+            multiply_variable = { agrarian_reform_cost = 0.5 }
+            add_ideas = POL_compensated_collectivization_idea
         }
     }
     focus = {
@@ -178,7 +196,7 @@ focus_tree = {
         y = 1
         cost = 5
         completion_reward =  {
-
+            add_ideas = POL_workplace_democracy_1
         }
     }
     focus = {
@@ -193,7 +211,10 @@ focus_tree = {
         y = 1
         cost = 5
         completion_reward =  {
-
+            swap_ideas = {
+                remove_idea = POL_workplace_democracy_1
+                add_idea = POL_workplace_democracy_2
+            }
         }
     }
     focus = {
@@ -217,7 +238,19 @@ focus_tree = {
         y = 1
         cost = 5
         completion_reward =  {
-
+            every_owned_state = {
+                limit = {
+                    is_core_of = UKR
+                }
+                add_core_of = ROOT
+                if = {
+                    limit = {
+                        has_dynamic_modifier = { modifier = ukraizhian_nationalist_militias }
+                    }
+                    remove_dynamic_modifier = { modifier = ukraizhian_nationalist_militias }
+                }
+                add_dynamic_modifier = { modifier = semi_autonomous_state }
+            }
         }
     }
     focus = {
@@ -230,23 +263,26 @@ focus_tree = {
         cost = 5
         completion_reward =  {
             762 = {
-                set_variable = { global.katowice_pop_loss = state_population }
-                multiply_variable = { global.katowice_pop_loss = -0.12 }
-                add_manpower = var:global.katowice_pop_loss
+                set_temp_variable = { katowice_pop_loss = state_population }
+                multiply_temp_variable = { katowice_pop_loss = -0.12 }
+                add_manpower = katowice_pop_loss
             }
             807 = {
-                set_variable = { global.gdynia_pop_loss = state_population }
-                multiply_variable = { global.gdynia_pop_loss = -0.19 }
-                add_manpower = var:global.gdynia_pop_loss
+                set_temp_variable = { gdynia_pop_loss = state_population }
+                multiply_temp_variable = { gdynia_pop_loss = -0.19 }
+                add_manpower = gdynia_pop_loss
             }
             85 = {
-                set_variable = { global.danzig_pop_loss = state_population }
-                multiply_variable = { global.danzig_pop_loss = -0.95 }
-                add_manpower = var:global.danzig_pop_loss
+                set_temp_variable = { danzig_pop_loss = state_population }
+                multiply_temp_variable = { danzig_pop_loss = -0.95 }
+                add_manpower = danzig_pop_loss
             }
-            multiply_variable = { global.katowice_pop_loss = -1 }
-            multiply_variable = { global.gdynia_pop_loss = -1 }
-            multiply_variable = { global.danzig_pop_loss = -1 }
+            multiply_temp_variable = { katowice_pop_loss = -1 }
+            multiply_temp_variable = { gdynia_pop_loss = -1 }
+            multiply_temp_variable = { danzig_pop_loss = -1 }
+            oberschlesien_pop_gain = katowice_pop_loss
+            hinterpommern_pop_gain = gdynia_pop_loss
+            ermland_mauseren_pop_gain = danzig_pop_loss
             GER = {
                 country_event = polania_socialism.1
             }
@@ -262,7 +298,22 @@ focus_tree = {
         y = 2
         cost = 5
         completion_reward =  {
-
+            #Add event that does these effects
+            SOV = {
+                set_country_flag = ukraizhian_revolt
+                set_variable = { upr_pp = 150 }
+                set_variable = { upr_cp = 50 }
+                set_variable = { upr_guns = 7200 }
+                set_variable = { upr_manpower = 72000 }
+                #Test
+                SOV = {
+                    93 = {
+                        activate_mission = {
+                            decision = upr_advance_on_state
+                        }
+                    }
+                }
+            }
         }
     }
     focus = {
@@ -399,6 +450,15 @@ focus_tree = {
         cost = 5
         completion_reward = {
             add_ideas = POL_agrarian_reform_1
+            every_owned_state = {
+                limit = {
+                    OR = {
+                        has_dynamic_modifier = { modifier = heavily_agrarian_state_2 }
+                        has_dynamic_modifier = { modifier = heavily_agrarian_state_1 }
+                    }
+                }
+                POL_agrarian_reform_effect = yes
+            }
         }
     }
     focus = {
@@ -427,7 +487,7 @@ focus_tree = {
         completion_reward = {
             swap_ideas = {
                 remove_idea = POL_agrarian_reform_2
-                add_idea  =POL_agrarian_reform_3
+                add_idea = POL_agrarian_reform_3
             }
         }
     }
@@ -510,8 +570,13 @@ focus_tree = {
         relative_position_id = POL_local_farm_collectives
         x = 0
         y = 1
+        cost = 10
         completion_reward = {
-
+            add_popularity = {
+                ideology = democratic
+                popularity = 0.10
+            }
+            add_political_power = 300
         }
     }
     focus = {

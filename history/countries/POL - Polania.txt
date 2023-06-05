@@ -75,6 +75,7 @@ if = {
 }
 
 give_military_access = SOV
+set_variable = { agrarian_reform_cost = 100 }
 
 set_convoys = 10
 

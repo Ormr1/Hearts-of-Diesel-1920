@@ -70,6 +70,24 @@ country_event = {
                 set_resistance = 10
                 set_compliance = 50
             }
+            92 = {
+                add_dynamic_modifier = { modifier = heavily_agrarian_state_2 }
+            }
+            97 = {
+                add_dynamic_modifier = { modifier = heavily_agrarian_state_2 }
+            }
+            884 = {
+                add_dynamic_modifier = { modifier = heavily_agrarian_state_2 }
+            }
+            886 = {
+                add_dynamic_modifier = { modifier = heavily_agrarian_state_2 }
+            }
+            814 = {
+                add_dynamic_modifier = { modifier = heavily_agrarian_state_2 }
+            }
+            784 = {
+                add_dynamic_modifier = { modifier = heavily_agrarian_state_2 }
+            }
         }
     }
 }
@@ -86,13 +104,13 @@ country_event = { # Saxons deported (Saxon perspective)
             modifier = POL_saxons_deported
         }
         67 = {
-            add_manpower = katowice_pop_loss
+            add_manpower = oberschlesien_pop_gain
         }
         63 = {
-            add_manpower = gdynia_pop_loss
+            add_manpower = hinterpommern_pop_gain
         }
         5 = {
-            add_manpower = danzig_pop_loss
+            add_manpower = ermland_mauseren_pop_gain
         }
         country_event = saxonian.38
     }

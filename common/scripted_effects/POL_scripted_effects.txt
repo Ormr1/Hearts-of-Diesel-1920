@@ -882,3 +882,22 @@ POL_basic_form_commonwealth = {
 		set_global_flag = form_commonwealth_flag
 	}
 }
+
+POL_agrarian_reform_effect = {
+	if = {
+		limit = {
+			has_dynamic_modifier = { modifier = heavily_agrarian_state_2 }
+		}
+		remove_dynamic_modifier = { modifier = heavily_agrarian_state_2 }
+		add_dynamic_modifier = { modifier = heavily_agrarian_state_1 }
+	}
+	elif = {
+		limit = {
+			has_dynamic_modifier = { modifier = heavily_agrarian_state_1 }
+		}
+		remove_dynamic_modifier = { modifier = heavily_agrarian_state_1 }
+	}
+	else = {
+		add_extra_state_shared_building_slots = 1
+	}
+}

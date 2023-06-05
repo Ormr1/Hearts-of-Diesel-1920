@@ -32,6 +32,22 @@ POL_the_falangist_international = {
 	}
 	priority = 99
 }
+POL_agrarian_reform_decisions = {
+	icon = placeholder
+	allowed = {
+		original_tag = POL
+	}
+	visible = {
+		OR = {
+			has_completed_focus = POL_pilsudskiites_win
+			has_completed_focus = POL_social_democrats_win
+			has_completed_focus = POL_technocrats_win
+			has_completed_focus = POL_monarchists_win
+			has_completed_focus = POL_falangists_win
+		}
+	}
+	priority = 98
+}
 POL_danzig_decisions = {
 	
 	icon = GFX_decision_category_border_conflicts

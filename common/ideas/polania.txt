@@ -118,6 +118,92 @@ country = {
 		}
 	}
 
+	POL_compensated_collectivization_idea = {
+		picture = placeholder
+		allowed = {
+			original_tag = POL
+			always = no
+		}
+		allowed_civil_war = {
+			always = yes
+		}
+		removal_cost = 0
+		modifier = {
+			consumer_goods_factor = 0.10
+			custom_modifier_tooltip = POL_compensated_collectivization_idea_tt
+		}
+	}
+
+	POL_red_polanian_nationalism = {
+		picture = placeholder
+		allowed = {
+			original_tag = POL
+			always = no
+		}
+		allowed_civil_war = {
+			always = yes
+		}
+		removal_cost = 0
+		modifier = {
+			communism_drift = 0.02
+			stability_factor = 0.025
+		}
+	}
+
+	POL_gender_equality = {
+		picture = placeholder
+		allowed = {
+			original_tag = POL
+			always = no
+		}
+		allowed_civil_war = {
+			always = yes
+		}
+		removal_cost = 0
+		modifier = {
+			stability_factor = -0.05
+			industrial_capacity_factory = 0.05
+			conscription = 0.02
+		}
+	}
+
+	POL_workplace_democracy_1 = {
+		picture = placeholder
+		allowed = {
+			original_tag = POL
+			always = no
+		}
+		allowed_civil_war = {
+			always = yes
+		}
+		removal_cost = 0
+		modifier = {
+			stability_factor = 0.05
+			production_factory_efficiency_gain_factor = 0.05
+			line_change_production_efficiency_factor = 0.05
+			production_factory_max_efficiency_factor = -0.05
+			industrial_capacity_factory = -0.05
+		}
+	}
+	POL_workplace_democracy_2 = {
+		picture = placeholder
+		allowed = {
+			original_tag = POL
+			always = no
+		}
+		allowed_civil_war = {
+			always = yes
+		}
+		removal_cost = 0
+		modifier = {
+			stability_factor = 0.075
+			production_factory_efficiency_gain_factor = 0.10
+			line_change_production_efficiency_factor = 0.10
+			production_factory_max_efficiency_factor = -0.075
+			industrial_capacity_factory = -0.075
+		}
+	}
+
 	POL_home_of_nations_1 = {
 		picture = placeholder
 		allowed = {

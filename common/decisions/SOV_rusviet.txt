@@ -46,3 +46,44 @@ SOV_rusviet_factions_system = {
 		}
 	}
 }
+SOV_ukraizhian_peoples_republic = {
+	upr_advance_on_state = {
+		icon = placeholder
+		state_target = yes
+		on_map_mode = map_and_decisions_view
+		available = {
+			has_country_flag = ukraizhian_revolt
+		}
+		selectable_mission = no
+		visible = {
+			OR = {
+				original_tag = POL
+				has_country_flag = ukraizhian_revolt
+			}
+			FROM = {
+				is_owned_and_controlled_by = ROOT
+				OR = {
+					state = 93
+					state = 201
+					state = 202
+					state = 203
+					state = 193
+					state = 225
+					state = 259
+					state = 226
+					state = 221
+					state = 227
+					state = 228
+					state = 93
+				}
+			}
+		}
+		days_remove = 7
+		complete_effect = { subtract_from_variable = { upr_pp = 25 } }
+		remove_effect = {
+			FROM = {
+				add_dynamic_modifier = { modifier = ukraizhian_nationalist_militias }
+			}
+		}
+	}
+}

@@ -1204,7 +1204,9 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				conscription = 0.02	
+				stability_factor = -0.05
+				industrial_capacity_factory = 0.05
+				conscription = 0.02
 			}
 		}
 		USA_war_department = {	
