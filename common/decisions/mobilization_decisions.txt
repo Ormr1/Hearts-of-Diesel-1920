@@ -11,7 +11,12 @@ military_mobilization = {
                 has_war = yes
                 enemies_strength_ratio > 0.50
             }
-			NOT={has_idea = RHO_White_Minority_Rule}
+			if={
+				limit={
+					has_idea = RHO_White_Minority_Rule
+				}
+				NOT={has_idea = RHO_White_Minority_Rule}
+			}
         }
         visible = {
             always = yes

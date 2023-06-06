@@ -1,0 +1,16 @@
+characters = {
+	RGS_Luis_Carlos_Prestes = {
+		name = "Luís Carlos Prestes" 
+		portraits = {
+			civilian = {
+				large = GFX_portrait_Luis_Carlos_Prestes
+			}
+		}
+		country_leader = {
+			ideology = marxism
+			expire = "1951.1.1.1"
+			id = -1
+		}
+	}
+}
+	

@@ -13,5 +13,18 @@ characters = {
 			id = -1
 		}
 	}
+	UUA_jose_fernando_penelon={
+		name="Jose Fernando Penelon"
+		portraits={
+			civilian={
+				large=GFX_portrait_jose_fernando_penelon
+			}
+		}
+		# country_leader={
+			# ideology=conservatism
+			# expire="1965.1.1.1"
+			# id=-1
+		# }
+	}
 }
 	

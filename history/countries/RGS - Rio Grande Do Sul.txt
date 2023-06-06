@@ -1,5 +1,7 @@
 ﻿capital = 502
 
+recruit_character = RGS_Luis_Carlos_Prestes
+
 #oob = "LAP_1936"
 if = {
 	limit = { has_dlc = "Man the Guns" }
@@ -49,8 +51,6 @@ if = {
 		mtg_transport = 1
 	}
 }
-
-#recruit_character = LAP_john_louis_sanfuentes
 
 
 set_country_flag = monroe_doctrine

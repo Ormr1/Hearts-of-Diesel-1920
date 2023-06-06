@@ -43,7 +43,7 @@ if = {
 	}
 }
 
-#recruit_character = LAP_john_louis_sanfuentes
+recruit_character = ARG_norberto_pinero
 
 
 set_country_flag = monroe_doctrine

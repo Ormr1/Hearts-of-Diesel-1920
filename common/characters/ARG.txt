@@ -12,6 +12,33 @@ characters={
 			id=-1
 		}
 	}
+	ARG_hipolito_yrigoyen={
+		name="Hipólito Yrigoyen"
+		portraits={
+			civilian={
+				large=GFX_portrait_hipolito_yrigoyen
+			}
+		}
+		country_leader={
+			ideology=liberalism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	ARG_norberto_pinero={
+		name="Norberto Piñero"
+		portraits={
+			civilian={
+				large=GFX_portrait_norberto_pinero
+			}
+		}
+		country_leader={
+			ideology=conservatism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	
 	ARG_nimo_de_anquín={
 		name="Nimo de Anquín"
 		portraits={

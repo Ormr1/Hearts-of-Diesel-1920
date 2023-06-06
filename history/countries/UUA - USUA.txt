@@ -44,6 +44,7 @@ if = {
 }
 
 recruit_character = UUA_sebastian_marotta
+recruit_character = UUA_jose_fernando_penelon
 
 
 set_country_flag = monroe_doctrine

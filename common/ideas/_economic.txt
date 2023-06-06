@@ -514,6 +514,7 @@ ideas = {
    				factor = 0
    			}
 		}
+		
 		new_economic_policy_2 = {
 			name = new_economic_policy
 
@@ -543,6 +544,7 @@ ideas = {
    				factor = 0
    			}
 		}
+		
 	}
 
 	trade_laws = {

@@ -1,11 +1,11 @@
 Release (The Iron Harvest)
 	required FT:
-		fenris
-		Factory/Vensa
-		polania
+		fenris [in development]
+		Factory/Vensa [in development]
+		polania [in development]
 		Rusviet
-		Usonia
-		Saxony: "I've won...but at what cost?"
+		Usonia [in development]
+		Saxony: "I've won...but at what cost?" [in development]
 	prefered to have FT:
 		Crimean Khanate
 		togawa shogunate
@@ -13,7 +13,7 @@ Release (The Iron Harvest)
 		nordic kingdom
 		
 	good to have FT:
-		Franks
+		Franks [in development]
 		Hispania
 		Arabia
 		La Plata
@@ -30,7 +30,7 @@ Cradles of Man:
 	good to have FT:
 		Anatolia
 		Carnatic(Frankish Raj)
-		Aegyptus
+		Aegyptus [in development]
 
 Empires of the East
 	Required FT:
