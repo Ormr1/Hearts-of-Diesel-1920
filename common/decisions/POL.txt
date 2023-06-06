@@ -309,6 +309,54 @@ POL_agrarian_reform_decisions = {
 		}
 	}
 }
+POL_fighting_the_rusviets = {
+	POL_special_military_operation_in_nowogrodek = {
+		icon = placeholder
+		allowed = {
+			tag = POL
+		}
+		state_target = yes
+		ai_will_do = {
+			base = 100
+		}
+		on_map_mode = map_and_decisions_view
+		available = {
+			has_completed_focus = POL_establish_ruthenian_peoples_republic
+		}
+		visible = {
+			FROM = {
+				state = 95
+			}
+			95 = {
+				is_owned_and_controlled_by = SOV
+			}
+		}
+		days_remove = 7
+		complete_effect = { }
+		remove_effect = {
+			start_border_war = {
+				change_state_after_war = yes
+				attacker = {
+					state = 784
+					num_provinces = 2
+					on_win = polania_socialism.5
+					on_lose = polania_socialism.6
+					on_cancel = polania_socialism.6
+					modifier = 0.1
+					dig_in_factor = 0
+					terrain_factor = 0
+				}	
+				defender = {
+					state = 95
+					num_provinces = 2
+					on_win = polania_socialism.7
+					on_lose = polania_socialism.8
+					on_cancel = polania_socialism.7
+				}
+			}
+		}
+	}
+}
 POL_disarm_radical_militias_decisions = {
 	POL_disarm_saxon_militias_in_state = {
 		icon = placeholder

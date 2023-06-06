@@ -290,7 +290,7 @@ focus_tree = {
         }
     }
     focus = {
-        id = POL_reach_out_to_rusviet_ukraizhians
+        id = POL_arm_rusviet_ukraizhians
         icon = placeholder
         prerequisite = { focus = POL_autonomy_for_ukraizhia }
         prerequisite = { focus = POL_deport_saxons }
@@ -299,51 +299,84 @@ focus_tree = {
         y = 2
         cost = 5
         completion_reward =  {
-            #Add event that does these effects
-            SOV = {
-                set_country_flag = ukraizhian_revolt
-                set_variable = { upr_pp = 150 }
-                set_variable = { upr_cp = 50 }
-                set_variable = { upr_guns = 7200 }
-                set_variable = { upr_manpower = 72000 }
-                #Test
-                SOV = {
-                    93 = {
-                        activate_mission = {
-                            decision = upr_advance_on_state
+            add_equipment_to_stockpile = {
+                type = infantry_equipment
+                amount = -5000
+                producer = ROOT
+            }
+            UKR = {
+                add_equipment_to_stockpile = {
+                    type = infantry_equipment
+                    amount = 5000
+                    producer = ROOT
+                }
+            }
+            if = {
+                limit = {
+                    SOV = {
+                        NOT = {
+                            has_country_flag = rusviet_revolution_started
                         }
                     }
                 }
+                SOV = {
+                    add_stability = -0.05
+                }
             }
+            SOV = {
+                every_owned_state = {
+                    limit = {
+                        is_core_of = UKR
+                    }
+                }
+                add_dynamic_modifier = { modifier = ukraizhian_nationalist_militias }
+            }
+            SOV = {
+                every_owned_state = {
+                    limit = {
+                        has_dynamic_modifier = { modifier = ukraizhian_nationalist_militias }
+                    }
+                }
+                remove_dynamic_modifier = { modifier = ukraizhian_nationalist_militias }
+            }
+            unlock_decision_category_tooltip = POL_fighting_the_rusviets
         }
     }
     focus = {
         id = POL_establish_ruthenian_peoples_republic
         icon = placeholder
         mutually_exclusive = { focus = POL_alliance_with_crimea }
-        prerequisite = { focus = POL_reach_out_to_rusviet_ukraizhians }
-        relative_position_id = POL_reach_out_to_rusviet_ukraizhians
+        available = {
+            SOV = {
+                has_country_flag = rusviet_revolution_started
+            }
+        }
+        prerequisite = { focus = POL_arm_rusviet_ukraizhians }
+        relative_position_id = POL_arm_rusviet_ukraizhians
         x = -1
         y = 1
         cost = 5
         completion_reward =  {
-
+            unlock_decision_tooltip = POL_special_military_operation_in_nowogrodek
         }
     }
     focus = {
         id = POL_alliance_with_crimea
         icon = placeholder
         mutually_exclusive = { focus = POL_establish_ruthenian_peoples_republic }
-        prerequisite = { focus = POL_reach_out_to_rusviet_ukraizhians }
+        prerequisite = { focus = POL_arm_rusviet_ukraizhians }
         available = {
             is_faction_leader = yes
         }
-        relative_position_id = POL_reach_out_to_rusviet_ukraizhians
+        relative_position_id = POL_arm_rusviet_ukraizhians
         x = 1
         y = 1
         cost = 5
         completion_reward =  {
-
+            add_political_power = -75
+            CRI = {
+                country_event = polania_socialism.2
+            }
         }
     }
     focus = {

@@ -1,0 +1,46 @@
+add_namespace = sov_breakaway
+
+country_event = { # Victory in State
+    id = sov_breakaway.1
+    title = sov_breakaway.1.t
+    desc = sov_breakaway.1.desc
+    is_triggered_only = yes
+    option = { # And keep running, Rusviets!
+        name = sov_breakaway.1.a
+        transfer_state = FROM.FROM.FROM
+        SOV = {
+            add_stability = 0.05
+        }
+    }
+}
+country_event = { # Defeat in State
+    id = sov_breakaway.2
+    title = sov_breakaway.2.t
+    desc = sov_breakaway.2.desc
+    is_triggered_only = yes
+    option = { # We'll be back.
+        name = sov_breakaway.2.a
+        army_experience = -10
+    }
+}
+country_event = { # Victory in State (Rusviet Perspective)
+    id = sov_breakaway.3
+    title = sov_breakaway.3.t
+    desc = sov_breakaway.3.desc
+    is_triggered_only = yes
+    option = { # And don't come back!
+        name = sov_breakaway.3.a
+        army_experience = 10
+        add_stability = 0.025
+    }
+}
+country_event = { # Defeat in State (Rusviet Perspective)
+    id = sov_breakaway.4
+    title = sov_breakaway.4.t
+    desc = sov_breakaway.4.desc
+    is_triggered_only = yes
+    option = { # Damn vermin...
+        name = sov_breakaway.4.a
+        army_experience = -10
+    }
+}

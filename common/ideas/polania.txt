@@ -185,6 +185,7 @@ country = {
 			industrial_capacity_factory = -0.05
 		}
 	}
+	
 	POL_workplace_democracy_2 = {
 		picture = placeholder
 		allowed = {

@@ -48,43 +48,58 @@ SOV_rusviet_factions_system = {
 		}
 	}
 }
-SOV_ukraizhian_peoples_republic = {
-	upr_advance_on_state = {
+SOV_disarm_radical_militias_decisions = {
+	SOV_disarm_ukraizhian_militias_in_state = {
 		icon = placeholder
-		state_target = yes
-		on_map_mode = map_and_decisions_view
-		available = {
-			has_country_flag = ukraizhian_revolt
+		allowed = {
+			tag = SOV
 		}
-		selectable_mission = no
-		visible = {
-			OR = {
-				original_tag = POL
-				has_country_flag = ukraizhian_revolt
+		state_target = yes
+		ai_will_do = {
+			base = 100
+		}
+		on_map_mode = map_only
+		available = {
+			NOT = {
+				has_country_flag = SOV_disarming_militias
 			}
+			has_capitulated = no
 			FROM = {
-				is_owned_and_controlled_by = ROOT
-				OR = {
-					state = 93
-					state = 201
-					state = 202
-					state = 203
-					state = 193
-					state = 225
-					state = 259
-					state = 226
-					state = 221
-					state = 227
-					state = 228
-					state = 93
+				owner = {
+					has_capitulated = no
+					controls_state = PREV
 				}
 			}
+			has_equipment = {
+				infantry_equipment > 149
+			}
 		}
-		days_remove = 7
-		complete_effect = { subtract_from_variable = { upr_pp = 25 } }
-		remove_effect = {
+		visible = {
 			FROM = {
-				add_dynamic_modifier = { modifier = ukraizhian_nationalist_militias }
+				has_dynamic_modifier = { modifier = ukraizhian_nationalist_militias }
+			}
+		}
+		days_remove = 28
+		complete_effect = {
+			set_country_flag = SOV_disarming_militias
+		}
+		remove_effect = {
+			clr_country_flag = SOV_disarming_militias
+			set_temp_variable = { pol_num_soldiers_lost = random }
+			multiply_temp_variable = { pol_num_soldiers_lost = 200 }
+			round_temp_variable = pol_num_soldiers_lost
+			multiply_temp_variable = {
+				tooltip = pol_num_soldiers_lost_tt
+				pol_num_soldiers_lost = -1 
+			}
+			add_manpower = pol_num_soldiers_lost
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -150
+				producer = SOV
+			}
+			FROM = {
+				remove_dynamic_modifier = { modifier = ukraizhian_nationalist_militias }
 			}
 		}
 	}

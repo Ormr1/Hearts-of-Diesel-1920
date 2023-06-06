@@ -1,6 +1,5 @@
 l_english:
 ### TOOLTIPS
- unlock_new_advisors_tt: "New §YAdvisors§! will be unlocked"
  POL_commonwealth_dreams_tt: "Gain claims on all §YCommonwealth§! territory"
  POL_compensated_collectivization_idea_tt: "§YAgrarian Reforms§! Decision Cost: §G-50%§!"
 ### FACTION NAMES
@@ -66,13 +65,16 @@ l_english:
 ### EVENTS ###
  
 ### DECISION CATEGORIES ###
-POL_the_falangist_international: "Falangist International"
-POL_the_falangist_international_desc: "Standing against Saxon and Rusviet imperialism, we will be a bastion of Catholicism in Eastern Europa to fend off the Protestant and Orthodox hordes."
+ POL_the_falangist_international: "Falangist International"
+ POL_the_falangist_international_desc: "Standing against Saxon and Rusviet imperialism, we will be a bastion of Catholicism in Eastern Europa to fend off the Protestant and Orthodox hordes."
 
 ## DECISIONS ##
-POL_disarm_saxon_militias_in_state: "Disarm Saxon Militias in [FROM.GetName]"
-POL_disarm_ukraizhian_militias_in_state: "Disarm Ukraizhian Militias in [FROM.GetName]"
-POL_disarm_moldovan_militias_in_state: "Disarm Moldovan Militias in [FROM.GetName]"
-SOV_ukraizhian_peoples_republic: "Ukraizhian People's Republic"
-SOV_ukraizhian_peoples_republic_desc: "Unrest in Ukraizhian lands and dissatisfaction with the leadership of St. Petersburg has led to a revolt by the people of Ukraizhia against the central government, proclaiming a so-called 'Ukraizhian People's Republic.'\n\nUkraizhian Funds: [?upr_pp]\nUkraizhian Equipment: [?upr_guns]\nUkraizhian Manpower: [?upr_manpower]"
-upr_advance_on_state: "Advance on [FROM.GetName]"
+ POL_disarm_saxon_militias_in_state: "Disarm Saxon Militias in [FROM.GetName]"
+ POL_disarm_ukraizhian_militias_in_state: "Disarm Ukraizhian Militias in [FROM.GetName]"
+ POL_disarm_moldovan_militias_in_state: "Disarm Moldovan Militias in [FROM.GetName]"
+
+#### STORING RUSVIET BREAKAWAY STUFF HERE FOR NOW ####
+ sov_breakaway.1.t: "Victory in [FROM.FROM.FROM.GetName]"
+ sov_breakaway.2.t: "Defeat in [FROM.FROM.FROM.GetName]"
+ sov_breakaway.3.t: "Victory in [FROM.FROM.FROM.GetName]"
+ sov_breakaway.4.t: "Defeat in [FROM.FROM.FROM.GetName]"

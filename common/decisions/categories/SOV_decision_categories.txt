@@ -46,15 +46,15 @@ SOV_paranoia_system = {
 	visible_when_empty = yes
 }
 
-SOV_ukraizhian_peoples_republic = {
-	priority = 100
+SOV_disarm_radical_militias_decisions = {
 	icon = placeholder
 	allowed = {
 		original_tag = SOV
 	}
 	visible = {
-		has_country_flag = ukraizhian_revolt
+		has_completed_focus = SOV_disarm_radical_militias
 	}
+	priority = 100
 }
 
 SOV_propaganda_campaigns = {

@@ -141,6 +141,235 @@ country_event = { # Saxons deported (Saxon perspective)
         country_event = saxonian.38
     }
 }
+country_event = { # Alliance with Poland? (Crimean Perspective)
+    id = polania_socialism.2
+    title = polania_socialism.2.t
+    desc = polania_socialism.2.desc
+    is_triggered_only = yes
+    option = { # We shall sign a pact with them
+        name = polania_socialism.2.a
+        ai_chance = {
+            base = 50
+            modifier = {
+                has_war_with = FROM
+                factor = 0    
+            }
+            modifier = {
+                has_war_with = SOV
+                factor = 2
+            }
+            modifier = {
+                is_subject_of = POL
+                factor = 2
+            }
+        }
+        give_guarantee = POL
+        give_military_access = POL
+        diplomatic_relation = {
+            country = POL
+            relation = non_aggression_pact
+            active = no
+        }
+        POL = {
+            give_guarantee = ROOT
+        }
+        POL = {
+            give_military_access = ROOT
+        }
+        POL = {
+            diplomatic_relation = {
+                country = ROOT
+                relation = non_aggression_pact
+                active = no
+            }
+        }
+    }
+    option = { # It's not worth our time
+        name = polania_socialism.2.b
+        ai_chance = {
+            base = 25
+        }
+        add_political_power = 25
+    }
+}
+country_event = { # Crimea Accepts
+    id = polania_socialism.3
+    title = polania_socialism.3.t
+    desc = polania_socialism.3.desc
+    is_triggered_only = yes
+    option = { # Yippee!
+        name = polania_socialism.3.a
+        add_political_power = 25
+    }
+}
+country_event = { # Crimea Accepts
+    id = polania_socialism.4
+    title = polania_socialism.4.t
+    desc = polania_socialism.4.desc
+    is_triggered_only = yes
+    option = { # We will look elsewhere then
+        name = polania_socialism.4.a
+        add_political_power = 150
+    }
+}
+country_event = { # Victory in Nowogrodek
+    id = polania_socialism.5
+    title = polania_socialism.5.t
+    desc = polania_socialism.5.desc
+    is_triggered_only = yes
+    option = { # Proclaim a new state for the Ruthenians
+        name = polania_socialism.5.a
+        army_experience = 10
+        BLR = {
+            transfer_state = 95
+            add_manpower = 250000
+            division_template = {
+                name = "Strakolvaya Diviziya"
+                is_locked = no
+                division_names_group = BLR_INF_01
+                priority = 1
+                regiments = {
+                    infantry = { x = 0 y = 0 }
+                    infantry = { x = 0 y = 1 }
+                    infantry = { x = 0 y = 2 }
+                    infantry = { x = 1 y = 0 }
+                    infantry = { x = 1 y = 1 }
+                    infantry = { x = 1 y = 2 }
+                    infantry = { x = 2 y = 0 }
+                    infantry = { x = 2 y = 1 }
+                    infantry = { x = 2 y = 2 }
+                }
+            }
+            95 = {
+                create_unit = {
+                    division = "name = \"Strakolvaya Diviziya\" division_template = \"Strakolvaya Diviziya\" start_experience_factor = 0.5"
+                    owner = BLR
+                }
+                create_unit = {
+                    division = "name = \"Strakolvaya Diviziya\" division_template = \"Strakolvaya Diviziya\" start_experience_factor = 0.5"
+                    owner = BLR
+                }
+                create_unit = {
+                    division = "name = \"Strakolvaya Diviziya\" division_template = \"Strakolvaya Diviziya\" start_experience_factor = 0.5"
+                    owner = BLR
+                }
+                create_unit = {
+                    division = "name = \"Strakolvaya Diviziya\" division_template = \"Strakolvaya Diviziya\" start_experience_factor = 0.5"
+                    owner = BLR
+                }
+                create_unit = {
+                    division = "name = \"Strakolvaya Diviziya\" division_template = \"Strakolvaya Diviziya\" start_experience_factor = 0.5"
+                    owner = BLR
+                }
+                create_unit = {
+                    division = "name = \"Strakolvaya Diviziya\" division_template = \"Strakolvaya Diviziya\" start_experience_factor = 0.5"
+                    owner = BLR
+                }
+            }
+        }
+        set_autonomy = {
+            target = BLR
+            autonomy_state = autonomy_puppet
+            end_wars = no
+            end_civil_wars = no
+        }
+    }
+    option = { # Of Ruthenians, by Ruthenians! (Switch to BLR)
+        name = polania_socialism.5.b
+        army_experience = 10
+        BLR = {
+            transfer_state = 95
+            add_manpower = 250000
+            division_template = {
+                name = "Strakolvaya Diviziya"
+                is_locked = no
+                division_names_group = BLR_INF_01
+                priority = 1
+                regiments = {
+                    infantry = { x = 0 y = 0 }
+                    infantry = { x = 0 y = 1 }
+                    infantry = { x = 0 y = 2 }
+                    infantry = { x = 1 y = 0 }
+                    infantry = { x = 1 y = 1 }
+                    infantry = { x = 1 y = 2 }
+                    infantry = { x = 2 y = 0 }
+                    artillery_brigade = { x = 2 y = 1 }
+                    artillery_brigade = { x = 2 y = 2 }
+                }
+            }
+            95 = {
+                create_unit = {
+                    division = "name = \"Strakolvaya Diviziya\" division_template = \"Strakolvaya Diviziya\" start_experience_factor = 0.5"
+                    owner = BLR
+                }
+                create_unit = {
+                    division = "name = \"Strakolvaya Diviziya\" division_template = \"Strakolvaya Diviziya\" start_experience_factor = 0.5"
+                    owner = BLR
+                }
+                create_unit = {
+                    division = "name = \"Strakolvaya Diviziya\" division_template = \"Strakolvaya Diviziya\" start_experience_factor = 0.5"
+                    owner = BLR
+                }
+                create_unit = {
+                    division = "name = \"Strakolvaya Diviziya\" division_template = \"Strakolvaya Diviziya\" start_experience_factor = 0.5"
+                    owner = BLR
+                }
+                create_unit = {
+                    division = "name = \"Strakolvaya Diviziya\" division_template = \"Strakolvaya Diviziya\" start_experience_factor = 0.5"
+                    owner = BLR
+                }
+                create_unit = {
+                    division = "name = \"Strakolvaya Diviziya\" division_template = \"Strakolvaya Diviziya\" start_experience_factor = 0.5"
+                    owner = BLR
+                }
+            }
+            change_tag_from = ROOT
+        }
+        set_autonomy = {
+            target = BLR
+            autonomy_state = autonomy_puppet
+            end_wars = no
+            end_civil_wars = no
+        }
+    }
+}
+country_event = { # Defeat in Nowogrodek
+    id = polania_socialism.6
+    title = polania_socialism.6.t
+    desc = polania_socialism.6.desc
+    is_triggered_only = yes
+    option = { # Proclaim a new state for the Ruthenians
+        name = polania_socialism.6.a
+        army_experience = -10
+        95 = {
+            add_claim_by = ROOT
+        }
+    }
+}
+country_event = { # Victory in Nowogrodek (Rusviet Perspective)
+    id = polania_socialism.7
+    title = polania_socialism.7.t
+    desc = polania_socialism.7.desc
+    is_triggered_only = yes
+    option = { # And don't come back!
+        name = polania_socialism.7.a
+        army_experience = 10
+        add_stability = 0.025
+    }
+}
+country_event = { # Defeat in Nowogrodek (Rusviet Perspective)
+    id = polania_socialism.8
+    title = polania_socialism.8.t
+    desc = polania_socialism.8.desc
+    is_triggered_only = yes
+    option = { # We'll retake it soon
+        name = polania_socialism.8.a
+        army_experience = -10
+        95 = {
+            add_claim_by = ROOT
+        }
+    }
+}
 country_event = { # Polania invites us to Falangist International
     id = polania_falangism.1
     title = polania_falangism.1.t

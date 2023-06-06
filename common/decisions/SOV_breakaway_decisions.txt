@@ -1,0 +1,69 @@
+SOV_BREAKAWAY_war_of_independence = {
+    SOV_BREAKAWAY_liberate_lost_land = {
+		icon = placeholder
+		allowed = {
+            OR = {
+                original_tag = BLR
+                original_tag = UKR
+            }
+		}
+		state_target = yes
+		ai_will_do = {
+			base = 100
+		}
+		on_map_mode = map_and_decisions_view
+		available = {
+			always = yes
+		}
+		visible = {
+			FROM = {
+                AND = {
+                    is_core_of = ROOT
+                    any_neighbor_state = {
+                        is_owned_by = ROOT
+                    }
+                }
+			}
+			FROM = {
+				is_owned_and_controlled_by = SOV
+			}
+		}
+		days_remove = 7
+		complete_effect = { }
+		remove_effect = {
+            random_state = {
+                limit = {
+                    is_fully_controlled_by = ROOT
+                    has_ROOT_at_least_1_div_in_current_state_scope = yes
+                    any_neighbor_state = {
+                        state = FROM
+                    }
+                }
+                set_temp_variable = { attacker_state_temp = id }
+            }
+            FROM = {
+                set_variable = { SOV_breakaway_defender_state@ROOT = id }
+            }
+			start_border_war = {
+				change_state_after_war = no
+				attacker = {
+					state = var:attacker_state_temp
+					num_provinces = 1
+					on_win = sov_breakaway.1
+					on_lose = sov_breakaway.2
+					on_cancel = sov_breakaway.2
+					modifier = 0.1
+					dig_in_factor = 0
+					terrain_factor = 0
+				}	
+				defender = {
+					state = FROM
+					num_provinces = 1
+					on_win = sov_breakaway.3
+					on_lose = sov_breakaway.4
+					on_cancel = sov_breakaway.3
+				}
+			}
+		}
+	}
+}

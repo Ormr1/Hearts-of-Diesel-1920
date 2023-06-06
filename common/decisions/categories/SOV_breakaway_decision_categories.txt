@@ -1,0 +1,14 @@
+SOV_BREAKAWAY_war_of_independence = {
+	icon = placeholder
+	picture = placeholder
+	allowed = {
+        OR = {
+            original_tag = BLR
+            original_tag = UKR
+        }
+	}
+	visible = {
+		always = yes
+	}
+	priority = 100
+}
