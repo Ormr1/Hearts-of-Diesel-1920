@@ -1999,7 +1999,7 @@ country_event = { # Usonian Loans?
 		ai_chance = {
 			base = 20
 			modifier = {
-				num_of_civilian_factories < 20
+				num_of_civilian_factories < 35
 				add = 100
 			}
 		}
@@ -2024,7 +2024,7 @@ country_event = { # Usonian Loans?
 		ai_chance = {
 			base = 15
 			modifier = {
-				num_of_civilian_factories > 20
+				num_of_civilian_factories > 35
 				add = 100
 			}
 		}
