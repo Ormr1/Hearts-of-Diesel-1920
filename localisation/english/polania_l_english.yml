@@ -61,6 +61,14 @@
  POL_invite_industrialists_to_government_desc:0 "The people best equipped to rebuild the Polanian economy are those who built up their massive and successful companies on their own from the ground up."
  POL_loosen_trade_regulations:0 "Loosen Trade Regulations"
  POL_loosen_trade_regulations_desc:0 "The best way to keep our industries competitive is to have them compete with international companies to keep them on their toes and maintain a high level of quality and efficiency."
+ POL_invite_intellectuals_to_government:0 "Invite Intellectuals To Government"
+ POL_invite_intellectuals_to_government_desc:0 "We shall invite the best and brightest minds of the Republic to run the country. After all, we want to make sure that only the best are able to control the lives of so many people."
+ POL_boost_university_funding:0 "Boost University Funding"
+ POL_boost_university_funding_desc:0 "In order for Polania to thrive in the new Europa, we need to supplant Saxony's status as the hub of innovation on the continent. To do so, we'll pour heavy investments into the nation's education sector to create a nation promising young minds across Europa will come to."
+ POL_public_education_program:0 "Public Education Program"
+ POL_public_education_program_desc:0 "The creation of public school system will ensure that no Polanian is denied the opportunity of a high quality education. To let even one bright mind fall through the cracks would be a tragedy."
+ POL_foreign_student_program:0 "Foreign Student Program"
+ POL_foreign_student_program_desc:0 "Just having a large education pool won't be enough to bring in foreign intelligentsia. We'll need to subsidize their travel and studies in Polania for them to arrive and stay."
 
 ### EVENTS ###
  
