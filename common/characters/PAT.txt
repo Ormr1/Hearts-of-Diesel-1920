@@ -1,0 +1,29 @@
+characters = {
+	PAT_Jacques-Antoine_Napoleon = {
+		name = "Jacques-Antoine Napoleon" 
+		portraits = {
+			civilian = {
+				large = GFX_portrait_Jacques-Antoine_Napoleon
+			}
+		}
+		country_leader = {
+			ideology = benevolent_monarchy
+			expire = "1951.1.1.1"
+			id = -1
+		}
+	}
+	PAT_Yumbrel_Panqui = {
+		name = "Yumbrel Panqui" 
+		portraits = {
+			civilian = {
+				large = GFX_portrait_Yumbrel_Panqui
+			}
+		}
+		country_leader = {
+			ideology = centrism_democratic
+			expire = "1951.1.1.1"
+			id = -1
+		}
+	}
+}
+	

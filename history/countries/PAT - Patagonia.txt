@@ -1,5 +1,8 @@
 ﻿capital = 512
 
+recruit_character = PAT_Jacques-Antoine_Napoleon
+recruit_character = PAT_Yumbrel_Panqui
+
 #oob = "LAP_1936"
 if = {
 	limit = { has_dlc = "Man the Guns" }
