@@ -1,0 +1,98 @@
+crisis = {
+
+	RHO_collapse_mission = {
+
+		icon = generic_civil_support
+		
+		available = {
+			always = no
+		}
+
+		days_mission_timeout = 90
+
+		activation = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		complete_effect = {
+			
+		}
+		timeout_effect = {
+			country_event = RHO_bush_war.5
+		}
+	}
+	FROLIZI_collapse_mission = {
+
+		icon = generic_civil_support
+		
+		available = {
+			always = no
+		}
+
+		days_mission_timeout = 90
+
+		activation = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		complete_effect = {
+			
+		}
+		timeout_effect = {
+			remove_ideas = {RHO_united_front}
+			country_event = RHO_bush_war.3
+		}
+	}
+	FROLIZA_collapse_mission = {
+
+		icon = generic_civil_support
+		
+		available = {
+			always = no
+		}
+
+		days_mission_timeout = 90
+
+		activation = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		complete_effect = {
+			
+		}
+		timeout_effect = {
+			remove_ideas = {RHO_united_front}
+			country_event = RHO_bush_war.2
+		}
+	}
+	FROLINY_collapse_mission = {
+
+		icon = generic_civil_support
+		
+		available = {
+			always = no
+		}
+
+		days_mission_timeout = 90
+
+		activation = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		complete_effect = {
+			
+		}
+		timeout_effect = {
+			remove_ideas = {RHO_united_front}
+			country_event = RHO_bush_war.4
+		}
+	}
+}

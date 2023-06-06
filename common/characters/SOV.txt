@@ -74,7 +74,7 @@ characters = {
 	  }
 	  
 	  SOV_vladimir_lenin = {
-		  name = SOV_vladimir_lenin
+		  name = "Vladimir Lenin"
 		  portraits = {
 			  civilian = {
 				  large = GFX_portrait_SOV_vladimir_lenin

@@ -1,4 +1,39 @@
 add_namespace = arabia_civil_war
+add_namespace = arabia_event
+
+country_event = { # 
+    id = arabia_event.1
+    title = arabia_event.1.t
+	desc = arabia_event.1.desc
+	picture = placeholder
+    is_triggered_only = yes
+
+    option = { # 
+        name = arabia_event.1.a
+    }
+}
+country_event = { # 
+    id = arabia_event.2
+    title = arabia_event.2.t
+	desc = arabia_event.2.desc
+	picture = placeholder
+    is_triggered_only = yes
+
+    option = { # 
+        name = arabia_event.2.a
+    }
+}
+country_event = { # 
+    id = arabia_event.3
+    title = arabia_event.3.t
+	desc = arabia_event.3.desc
+	picture = placeholder
+    is_triggered_only = yes
+
+    option = { # 
+        name = arabia_event.3.a
+    }
+}
 
 news_event = { # Death of the Arabian Royal family
     id = arabia_civil_war.1

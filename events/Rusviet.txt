@@ -21,12 +21,22 @@ country_event = {
 			elections_allowed = no
 		}
 		set_variable = {var_SOV_factions_SR_loyalty = FEN.FEN_rusviet_sr_influence}
-		set_temp_variable = {var_SOV_temp_reduce_loyalty = 20}
-		SOV_reduce_rsdlp_loyalty = yes
-		set_temp_variable = {var_SOV_temp_reduce_loyalty = 60}
-		SOV_reduce_kd_loyalty = yes
-		SOV_reduce_o_loyalty = yes
-		SOV_reduce_t_loyalty = yes
+		subtract_from_variable = {
+			var_SOV_factions_RSDLP_loyalty = 20
+			tooltip = SOV_reduce_rsdlp_loyalty_amount
+		}
+		subtract_from_variable = {
+			var_SOV_factions_Kd_loyalty = 60
+			tooltip = SOV_reduce_kd_loyalty_amount
+		}
+		subtract_from_variable = {
+			var_SOV_factions_O_loyalty = 60
+			tooltip = SOV_reduce_kd_loyalty_amount
+		}
+		subtract_from_variable = {
+			var_SOV_factions_T_loyalty = 60
+			tooltip = SOV_reduce_kd_loyalty_amount
+		}
 		add_country_leader_role = {
 		  character = SOV_rasputin
 		  promote_leader = yes
@@ -87,8 +97,10 @@ country_event = {#order 24b
 	option = {#ban it
 		name = SOV_civil_war.2.a
 		add_stability = -0.1
-		set_temp_variable = {var_SOV_temp_reduce_loyalty = 5}
-		SOV_reduce_sr_loyalty = yes
+		subtract_from_variable = {
+			var_SOV_factions_SR_loyalty = 5
+			tooltip = SOV_reduce_sr_loyalty_amount
+		}
 	}
 	option = {#we will have to suffer it
 		name = SOV_civil_war.2.b
@@ -110,10 +122,18 @@ country_event = {
 	option = {
 		name = SOV_civil_war.3.a
 		#angers K-D and RSDLP
-		set_temp_variable = {var_SOV_temp_reduce_loyalty = 5}
-		SOV_reduce_rsdlp_loyalty = yes
-		SOV_reduce_sr_loyalty = yes
-		SOV_reduce_kd_loyalty = yes
+		subtract_from_variable = {
+			var_SOV_factions_RSDLP_loyalty = 5
+			tooltip = SOV_reduce_rsdlp_loyalty_amount
+		}
+		subtract_from_variable = {
+			var_SOV_factions_SR_loyalty = 5
+			tooltip = SOV_reduce_sr_loyalty_amount
+		}
+		subtract_from_variable = {
+			var_SOV_factions_Kd_loyalty = 5
+			tooltip = SOV_reduce_kd_loyalty_amount
+		}
 		add_stability = -0.05
 		hidden_effect={
 			FEN={country_event = {id = fenris.11}}
@@ -140,11 +160,19 @@ country_event = {
 			has_political_power > 149
 		}
 		#angers Octoberists and Tsarists
-		set_temp_variable = {var_SOV_temp_reduce_loyalty = 5}
-		set_temp_variable = {var_SOV_temp_increase_loyalty = 5}
-		SOV_reduce_t_loyalty = yes
-		SOV_increase_sr_loyalty = yes
-		SOV_increase_kd_loyalty = yes
+		subtract_from_variable = {
+			var_SOV_factions_T_loyalty = 5
+			tooltip = SOV_reduce_t_loyalty_amount
+		}
+		add_to_variable = {
+			var_SOV_factions_SR_loyalty = 5
+			tooltip = SOV_increase_sr_loyalty_amount
+		}
+		add_to_variable = {
+			var_SOV_factions_Kd_loyalty = 5
+			tooltip = SOV_increase_kd_loyalty_amount
+		}
+		
 		add_political_power = -150
 		hidden_effect={
 			FEN={country_event = {id = fenris.11}}
@@ -182,18 +210,31 @@ country_event = {
 	option = {
 		name = SOV_civil_war.5.a
 		#angers everyone and lowers stab
-		set_temp_variable = {var_SOV_temp_reduce_loyalty = 2}
-		SOV_reduce_rsdlp_loyalty = yes
-		SOV_reduce_sr_loyalty = yes
-		SOV_reduce_kd_loyalty = yes
-		SOV_reduce_o_loyalty = yes
+		subtract_from_variable = {
+			var_SOV_factions_RSDLP_loyalty = 2
+			tooltip = SOV_reduce_rsdlp_loyalty_amount
+		}
+		subtract_from_variable = {
+			var_SOV_factions_SR_loyalty = 2
+			tooltip = SOV_reduce_sr_loyalty_amount
+		}
+		subtract_from_variable = {
+			var_SOV_factions_Kd_loyalty = 2
+			tooltip = SOV_reduce_kd_loyalty_amount
+		}
+		subtract_from_variable = {
+			var_SOV_factions_O_loyalty = 2
+			tooltip = SOV_reduce_o_loyalty_amount
+		}
 		add_stability = -0.02
 	}
 	option = {
 		name = SOV_civil_war.5.b
 		#angers SR
-		set_temp_variable = {var_SOV_temp_reduce_loyalty = 5}
-		SOV_reduce_sr_loyalty = yes
+		subtract_from_variable = {
+			var_SOV_factions_SR_loyalty = 5
+			tooltip = SOV_reduce_sr_loyalty_amount
+		}
 		add_political_power = -50
 	}
 }
@@ -213,6 +254,12 @@ country_event = {
 					add_core_of = RSF
 					add_core_of = RDM
 				}
+				every_owned_state = {
+                    limit = {
+                        has_dynamic_modifier = { modifier = ukraizhian_nationalist_militias }
+                    }
+					remove_dynamic_modifier = { modifier = ukraizhian_nationalist_militias }
+                }
 			}
 			TPG={#Absolute Tsarists
 				transfer_state = 216
@@ -317,8 +364,14 @@ country_event = {
 			}
 			release = UKR
 			UKR={#Inpendance revolt
-				transfer_state = 94
-				transfer_state = 96
+				if={
+					limit={SOV={owns_state = 96}}
+					transfer_state = 96
+				}
+				if={
+					limit={SOV={owns_state = 94}}
+					transfer_state = 94
+				}
 				if={
 					limit={SOV={owns_state = 886}}
 					transfer_state = 886
@@ -683,8 +736,8 @@ country_event = {#FER collapses
 
 	country_event = {
 		id = SOV_peoples_say_in_economy.1
-		title = SOV_civil_war.8.t
-		desc = SOV_civil_war.8.d
+		title = SOV_peoples_say_in_economy.1.t
+		desc = SOV_peoples_say_in_economy.1.d
 		picture = placeholder
 	
 		is_triggered_only = yes
@@ -703,8 +756,8 @@ country_event = {#FER collapses
 
 	country_event = {
 		id = SOV_peoples_say_in_economy.2
-		title = SOV_civil_war.8.t "Prioritize the People"
-		desc = SOV_civil_war.8.d 
+		title = SOV_peoples_say_in_economy.2.t #"Prioritize the People"
+		desc = SOV_peoples_say_in_economy.2.d 
 		picture = placeholder
 	
 		is_triggered_only = yes
@@ -720,4 +773,3 @@ country_event = {#FER collapses
 			# hidden effect: changes flag to SOV_Governmental_Additives_in_Industry (flag visually doesn't change, just another name in code so you ccan only do 1 focus)
 		}
 	}
-}

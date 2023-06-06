@@ -743,9 +743,21 @@ country_event = {#SAU - Saxony offers protection
 	
 	option = {
 		name = saxonian.27.a
+		GER={
+			country_event = arabia_event.1
+			set_autonomy = {
+				target = ROOT
+				autonomy_state = autonomy_dominion
+				end_wars = no
+				end_civil_wars = no
+			}
+		}
 	}
 	option = {
 		name = saxonian.27.b
+		GER={
+			country_event = arabia_event.2
+		}
 	}
 }
 country_event = {#CRI - saxon invation to dresden pact
@@ -851,6 +863,10 @@ country_event = {#GER - saxon civil war
 			target = AUS
 			type = civil_war
 		}
+		remove_ideas = {
+			spariticus_unrest
+		}
+		set_global_flag = GER_civil_war
 	}
 	
 	option = {#Stay the course
@@ -1039,6 +1055,7 @@ country_event = {#wallon offer
 			factor = 100
 		}
 	}
+}
 country_event = { # What to do with refugees
 	id = saxonian.38
 	title = saxonian.38.t
@@ -1070,5 +1087,98 @@ country_event = { # What to do with refugees
         5 = {
             add_manpower = danzig_pop_loss
         }
+	}
+}
+country_event = {#Walther von Lüttwitz restores order
+	id = saxonian.39
+	title = saxonian.39.t
+	desc = saxonian.39.d
+	picture = GFX_report_event_finnish_letter
+	
+	#is_triggered_only = yes
+	fire_only_once = yes
+	trigger={
+		date > 1923.01.01
+		has_stability < 0.30
+		OR={
+			tag = GER
+			original_tag = GER
+		}
+	}
+	mean_time_to_happen = { days = 100 }
+	
+	option = {
+		name = saxonian.39.a
+		add_stability = 0.03
+		add_political_power = 50
+	}
+}
+country_event = {#Freikorps put down ruhr valley uprising
+	id = saxonian.40
+	title = saxonian.40.t
+	desc = saxonian.40.d
+	picture = GFX_report_event_finnish_letter
+	
+	#is_triggered_only = yes
+	fire_only_once = yes
+	trigger={
+		OR={
+			tag = GER
+			original_tag = GER
+		}
+		date > 1923.01.01
+		has_stability > 0.30
+		NOT={has_country_flag = GER_saxon_civil_war}
+		#saxony has not entered the rhine yet
+		OR={
+			51={is_core_of = DDR}
+			838={is_core_of = DDR}
+		}
+		#army not in revolt themselves
+		NOT={has_idea = GER_army_unrest}
+		NOT={has_idea = GER_army_on_verge_of_munity}
+	}
+	mean_time_to_happen = { days = 50 }
+	
+	option = {
+		name = saxonian.40.a
+		if={
+			limit={
+				51={is_core_of = DDR}
+			}
+			51={
+				remove_core_of = DDR
+				set_demilitarized_zone = no
+			}
+		}
+		if={
+			limit={
+				838={is_core_of = DDR}
+			}
+			838={
+				remove_core_of = DDR
+				set_demilitarized_zone = no
+			}
+		}
+		add_popularity = {#Freikorps gets the glory
+			ideology = fascism
+			popularity = 0.05
+		}
+			
+	}
+}
+country_event = {#Friedrich III gives speech
+	id = saxonian.41
+	title = saxonian.41.t
+	desc = saxonian.41.d
+	picture = GFX_report_event_finnish_letter
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	mean_time_to_happen = { days = 100 }
+	
+	option = {
+		name = saxonian.41.a
+		add_political_power = 100
 	}
 }

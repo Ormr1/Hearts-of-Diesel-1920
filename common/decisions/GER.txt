@@ -955,7 +955,7 @@ political_actions = {
 		
 
 		available = {
-			has_stability > 0.6
+			has_stability > 0.55
 			has_manpower > 20000
 			has_full_control_of_state = 64
 			840={is_demilitarized_zone = no}
@@ -1290,7 +1290,7 @@ political_actions = {
 		}
 
 		available = {
-			has_stability > 0.60
+			has_stability > 0.55
 			has_manpower > 20000
 			has_full_control_of_state = 7
 			36={is_demilitarized_zone = no}
@@ -1579,7 +1579,7 @@ political_actions = {
 		}
 
 		available = {
-			has_stability > 0.60
+			has_stability > 0.55
 			has_manpower > 10000
 			has_full_control_of_state = 9
 			69={is_demilitarized_zone = no}

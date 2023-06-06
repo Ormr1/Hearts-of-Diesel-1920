@@ -41,8 +41,10 @@ SOV_rusviet_factions_system = {
 		}
 
 		remove_effect = {
-			set_temp_variable = {var_SOV_temp_increase_loyalty = 10}
-			SOV_increase_kd_loyalty = yes
+			add_to_variable = {
+				tooltip = SOV_increase_kd_loyalty_amount
+				var_SOV_factions_Kd_loyalty = 10
+			}
 		}
 	}
 }

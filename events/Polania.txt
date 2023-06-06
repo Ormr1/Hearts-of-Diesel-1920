@@ -91,6 +91,32 @@ country_event = {
         }
     }
 }
+country_event = { # 
+    id = polania_startup.2
+    title = polania_startup.2.t
+    desc = polania_startup.2.desc
+    is_triggered_only = yes
+    option = { # 
+        name = polania_startup.2.a
+        complete_national_focus = POL_pilsudskiites_win
+    }
+	option = { # 
+        name = polania_startup.2.b
+        complete_national_focus = POL_social_democrats_win
+    }
+	option = { # 
+        name = polania_startup.2.c
+        complete_national_focus = POL_technocrats_win
+    }
+	option = { # 
+        name = polania_startup.2.e
+        complete_national_focus = POL_monarchists_win
+    }
+	option = { # 
+        name = polania_startup.2.f
+        complete_national_focus = POL_falangists_win
+    }
+}
 country_event = { # Saxons deported (Saxon perspective)
     id = polania_socialism.1
     title = polania_socialism.1.t

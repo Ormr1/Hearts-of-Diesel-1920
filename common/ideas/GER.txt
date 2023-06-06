@@ -178,6 +178,22 @@ ideas = {
 				repair_speed_factor = -0.33
 			}
 		}
+		GER_economic_shocks = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.05
+			}
+		}
 	
 		sour_loser = {
 			

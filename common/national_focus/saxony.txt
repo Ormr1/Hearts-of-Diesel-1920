@@ -42,7 +42,7 @@ focus_tree = {
 	focus = {
 		id = GER_finish_peace_talks
 		icon = GFX_focus_GER_finish_peace_talks
-		x = 14
+		x = 15
 		y = 0
 		cost = 1
 		search_filters = {  FOCUS_FILTER_POLITICAL }
@@ -124,7 +124,7 @@ focus_tree = {
 		id = GER_begin_iron_harvest
 		icon = GFX_focus_generic_iron_harvest
 		relative_position_id = GER_scars_of_the_great_war
-		x = 1
+		x = 4
 		y = 1
 		cost = 5
 		search_filters = {  FOCUS_FILTER_ECONOMIC }
@@ -145,7 +145,7 @@ focus_tree = {
 		id = GER_dresden_naval_treaty
 		icon = GFX_focus_generic_treaty
 		relative_position_id = GER_scars_of_the_great_war
-		x = -1
+		x = -2
 		y = 1
 		cost = 5
 		search_filters = {  FOCUS_FILTER_ECONOMIC }
@@ -173,13 +173,32 @@ focus_tree = {
 				GER={add_to_variable = {responding_naval_powers_count = 1}}
 			}
 		}
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	focus = {
+		id = GER_the_kaisers_speech
+		icon = GFX_goal_generic_allies_build_infantry
+		relative_position_id = GER_scars_of_the_great_war
+		x = 0
+		y = 1
+		cost = 5
+		search_filters = {  FOCUS_FILTER_ECONOMIC }
+		prerequisite = { focus = GER_scars_of_the_great_war}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = saxonian.41
+		}
 	}
 
 	focus = {
 		id = GER_continued_demobilisation
 		icon = GFX_goal_generic_allies_build_infantry
 		relative_position_id = GER_scars_of_the_great_war
-		x = 3
+		x = 2
 		y = 1
 		cost = 5
 		search_filters = {  FOCUS_FILTER_ECONOMIC }
@@ -212,6 +231,9 @@ focus_tree = {
 				remove_idea = GER_army_on_verge_of_munity
 			}
 		}
+		ai_will_do = {
+			factor = 5
+		}
 	}
 	focus = {
 		id = GER_returning_automachines_to_fields
@@ -231,6 +253,9 @@ focus_tree = {
 				disband = no
 			}
 		}
+		ai_will_do = {
+			factor = 5
+		}
 	}
 	focus = {
 		id = GER_calming_the_soldiers
@@ -248,8 +273,11 @@ focus_tree = {
 			remove_ideas = GER_army_unrest
 			add_timed_idea = {
 				idea = GER_army_light_unrest
-				days = 1440
+				days = 1095
 			}
+		}
+		ai_will_do = {
+			factor = 5
 		}
 	}
 	focus = {
@@ -270,6 +298,9 @@ focus_tree = {
 				remove_idea = GER_navy_on_verge_of_munity
 			}
 		}
+		ai_will_do = {
+			factor = 5
+		}
 	}
 	focus = {
 		id = GER_returning_requisitioned_convoys
@@ -289,6 +320,9 @@ focus_tree = {
 				amount = -600
 				producer = GER
 			}
+		}
+		ai_will_do = {
+			factor = 5
 		}
 	}
 	focus = {
@@ -313,6 +347,9 @@ focus_tree = {
 			}
 			GER_decrease_debt = yes
 		}
+		ai_will_do = {
+			factor = 5
+		}
 	}
 	focus = {
 		id = GER_calming_the_sailors
@@ -331,8 +368,11 @@ focus_tree = {
 			remove_ideas = GER_navy_unrest
 			add_timed_idea = {
 				idea = GER_navy_light_unrest
-				days = 1440
+				days = 1095
 			}
+		}
+		ai_will_do = {
+			factor = 5
 		}
 	}
 
@@ -341,7 +381,7 @@ focus_tree = {
 		icon = GFX_focus_GER_occupation_of_frankia
 		relative_position_id = GER_scars_of_the_great_war
 		prerequisite = { focus = GER_scars_of_the_great_war}
-		x = 10
+		x = 9
 		y = 1
 		cost = 5
 		search_filters = {  FOCUS_FILTER_POLITICAL }
@@ -350,6 +390,9 @@ focus_tree = {
 
 		completion_reward = {
 			country_event = {id = saxonian.37}
+		}
+		ai_will_do = {
+			factor = 5
 		}
 	}
 	focus = {
@@ -542,9 +585,9 @@ focus_tree = {
 			859={add_resistance_target = -5}
 			856={add_resistance_target = -5}
 			855={add_resistance_target = -5}
-			976={add_resistance_target = -5}
-			977={add_resistance_target = -5}
-			785={add_resistance_target = -5}
+			976={add_resistance_target = -10}
+			977={add_resistance_target = -10}
+			785={add_resistance_target = -10}
 			858={add_resistance_target = -5}
 		}
 	}
@@ -553,7 +596,7 @@ focus_tree = {
 		icon = GFX_focus_GER_colonial_production
 		prerequisite = { focus = GER_a_steady_helm }
 		relative_position_id = GER_a_steady_helm
-		x = -6
+		x = -7
 		y = 1
 		cost = 5
 		search_filters = {  FOCUS_FILTER_COLONIAL }
@@ -659,7 +702,7 @@ focus_tree = {
 		icon = GFX_focus_GER_debt_administration
 		relative_position_id = GER_scars_of_the_great_war
 		prerequisite = { focus = GER_scars_of_the_great_war }
-		x = -6
+		x = -7
 		y = 1
 		cost = 5
 		search_filters = {  FOCUS_FILTER_ECONOMIC }
@@ -1174,7 +1217,7 @@ focus_tree = {
 	focus = {
 		id = GER_a_steady_helm
 		icon = GFX_focus_ger_return_of_the_kaiser
-		x = 14
+		x = 15
 		y = 7
 		cost = 5
 		search_filters = {  FOCUS_FILTER_POLITICAL }
@@ -1198,7 +1241,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_political_power = 100
+			add_political_power = 200
 		}
 	}
 	focus = {
@@ -1361,7 +1404,7 @@ focus_tree = {
 		icon = GFX_goal_generic_allies_build_infantry
 		prerequisite = { focus = GER_a_steady_helm }
 		relative_position_id = GER_a_steady_helm
-		x = 18
+		x = 17
 		y = 1
 		cost = 5
 		search_filters = {  FOCUS_FILTER_COLONIAL }
@@ -1588,7 +1631,7 @@ focus_tree = {
 		icon = GFX_goal_generic_army_doctrines
 		relative_position_id = GER_a_steady_helm
 		prerequisite = { focus = GER_a_steady_helm}
-		x = 8
+		x = 7
 		y = 1
 		cost = 5
 		search_filters = {  FOCUS_FILTER_COLONIAL }
@@ -1756,17 +1799,11 @@ focus_tree = {
 		x = 0
 		y = 2
 		cost = 5
-		search_filters = {  FOCUS_FILTER_COLONIAL }
+		search_filters = {  FOCUS_FILTER_RESEARCH }
 		available={
 			OR={
 				NOT={has_completed_focus = GER_cut_military_funding }
 				date > 1930.1.1
-			}
-			NOT={
-				OR={
-					has_idea = GER_navy_on_verge_of_munity
-					has_idea = GER_navy_unrest
-				}
 			}
 		}
 		
@@ -1925,7 +1962,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		cost = 5
-		search_filters = {  FOCUS_FILTER_COLONIAL }
+		search_filters = {  FOCUS_FILTER_RESEARCH }
 		available={
 			OR={
 				NOT={has_completed_focus = GER_cut_military_funding }
@@ -1956,7 +1993,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		cost = 5
-		search_filters = {  FOCUS_FILTER_COLONIAL }
+		search_filters = { FOCUS_FILTER_RESEARCH }
 		available={
 			OR={
 				NOT={has_completed_focus = GER_cut_military_funding }
@@ -2005,7 +2042,7 @@ focus_tree = {
 		icon = GFX_goal_generic_allies_build_infantry
 		prerequisite = { focus = GER_a_steady_helm }
 		relative_position_id = GER_a_steady_helm
-		x = -12
+		x = -13
 		y = 1
 		cost = 5
 		search_filters = {  FOCUS_FILTER_COLONIAL }
@@ -2021,7 +2058,7 @@ focus_tree = {
 		icon = GFX_goal_generic_allies_build_infantry
 		prerequisite = { focus = GER_economic_development }
 		relative_position_id = GER_economic_development
-		x = 0
+		x = -1
 		y = 1
 		cost = 5
 		search_filters = {  FOCUS_FILTER_COLONIAL }
@@ -2036,6 +2073,28 @@ focus_tree = {
 
 		completion_reward = {
 			
+		}
+	}
+	focus = {
+		id = GER_economic_research_investments
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = { focus = GER_economic_development }
+		relative_position_id = GER_economic_development
+		x = 1
+		y = 1
+		cost = 5
+		search_filters = {  FOCUS_FILTER_ECONOMIC FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				name = economic_investments_bonus
+				cost_reduction = 0.25
+				uses = 2
+				category = industry
+				category = electronics
+			}
 		}
 	}
 	focus = {

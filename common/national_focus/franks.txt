@@ -2186,7 +2186,7 @@ focus = { ### Civil War
     y = 1
     cost = 5
     available = {
-        num_of_factories > 100
+        num_of_factories > 70
         has_completed_focus = FRA_Heart_of_the_Nation
         date > 1927.1.1
     }

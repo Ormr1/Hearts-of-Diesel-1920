@@ -45,6 +45,8 @@ country_event = { #revolt of the Rhodesian Native Front
 					communism = 89
 					neutrality = 11
 				}
+				add_ideas = {RHO_united_front}
+				activate_mission = FROLIZI_collapse_mission
 			}
 			ZAM={
 				every_core_state = {
@@ -70,6 +72,8 @@ country_event = { #revolt of the Rhodesian Native Front
 					communism = 74
 					neutrality = 26
 				}
+				add_ideas = {RHO_united_front}
+				activate_mission = FROLIZA_collapse_mission
 			}
 			MLW={
 				every_core_state = {
@@ -91,6 +95,8 @@ country_event = { #revolt of the Rhodesian Native Front
 					communism = 55
 					neutrality = 45
 				}
+				add_ideas = {RHO_united_front}
+				activate_mission = FROLINY_collapse_mission
 			}
 			RHO={
 				declare_war_on = {
@@ -105,9 +111,12 @@ country_event = { #revolt of the Rhodesian Native Front
 					target = NPU
 					type = annex_everything
 				}
-
+				activate_mission = RHO_collapse_mission
 				load_oob = "RHO_starting_milita"
 
+			}
+			1020={
+				transfer_state_to = KAT
 			}
 		}
 	}

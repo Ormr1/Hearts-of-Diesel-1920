@@ -91,6 +91,7 @@ focus_tree = {
         }
         completion_reward = {
             # Election Event
+			country_event = polania_startup.2
         }
     }
     focus = {
