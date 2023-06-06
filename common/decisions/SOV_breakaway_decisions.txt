@@ -13,7 +13,9 @@ SOV_BREAKAWAY_war_of_independence = {
 		}
 		on_map_mode = map_and_decisions_view
 		available = {
-			always = yes
+			NOT = {
+                has_country_flag = liberating_state
+            }
 		}
 		visible = {
 			FROM = {
@@ -29,8 +31,9 @@ SOV_BREAKAWAY_war_of_independence = {
 			}
 		}
 		days_remove = 7
-		complete_effect = { }
+		complete_effect = { set_country_flag = liberating_state }
 		remove_effect = {
+            clr_country_flag = liberating_state
             random_state = {
                 limit = {
                     is_fully_controlled_by = ROOT

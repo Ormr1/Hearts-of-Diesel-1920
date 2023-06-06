@@ -3879,7 +3879,7 @@ focus_tree = {
         }
     }
     focus = {
-        id = USA_Send_Aid_To_Zhongguo
+        id = USA_Send_Aid_To_Xin_Republic
         icon = placeholder
         relative_position_id = USA_The_Great_Rapproachment
         prerequisite = { focus = USA_The_Great_Rapproachment }

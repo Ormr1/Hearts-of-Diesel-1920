@@ -223,6 +223,11 @@ country_event = { # Victory in Nowogrodek
         BLR = {
             transfer_state = 95
             add_manpower = 250000
+            add_equipment_to_stockpile = {
+                type = infantry_equipment
+                amount = 6000
+                producer = POL
+            }
             division_template = {
                 name = "Strakolvaya Diviziya"
                 is_locked = no
@@ -266,6 +271,7 @@ country_event = { # Victory in Nowogrodek
                     owner = BLR
                 }
             }
+            mark_focus_tree_layout_dirty = yes
         }
         set_autonomy = {
             target = BLR
@@ -293,8 +299,8 @@ country_event = { # Victory in Nowogrodek
                     infantry = { x = 1 y = 1 }
                     infantry = { x = 1 y = 2 }
                     infantry = { x = 2 y = 0 }
-                    artillery_brigade = { x = 2 y = 1 }
-                    artillery_brigade = { x = 2 y = 2 }
+                    infantry = { x = 2 y = 1 }
+                    infantry = { x = 2 y = 2 }
                 }
             }
             95 = {
@@ -323,6 +329,7 @@ country_event = { # Victory in Nowogrodek
                     owner = BLR
                 }
             }
+            mark_focus_tree_layout_dirty = yes
             change_tag_from = ROOT
         }
         set_autonomy = {
