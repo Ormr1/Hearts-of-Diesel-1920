@@ -182,25 +182,6 @@
 			ship = { name = "HMS Warwick" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = ENG version_name = "V/W Class" } } }
 		}
 		task_force = {
-			name = "North Atlantic Fleet"
-			location = 4135 # Gibraltar
-			ship = { name = "HMS Colombo" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ENG version_name = "C-Class" } } }
-			ship = { name = "HMS Capetown" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ENG version_name = "C-Class" } } }
-			ship = { name = "HMS Wryneck" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = ENG version_name = "V/W Class"} } }	
-			# 13th Destroyer Flotilla
-			ship = { name = "HMS Keppel" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = ENG version_name = "V/W Class"} } }
-			# Destroyer Division 25
-			ship = { name = "HMS Vidette" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = ENG version_name = "V/W Class"} } }
-			ship = { name = "HMS Vortigern" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = ENG version_name = "V/W Class"} } }
-			ship = { name = "HMS Velox" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = ENG version_name = "V/W Class"} } }
-			ship = { name = "HMS Watchman" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = ENG version_name = "V/W Class"} } }
-			# Destroyer Division 26
-			ship = { name = "HMS Douglas" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = ENG version_name = "V/W Class"} } }
-			ship = { name = "HMS Active" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = ENG version_name = "A/B/C/D Class" } } }	
-			ship = { name = "HMS Wishart" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = ENG version_name = "V/W Class"} } }
-			ship = { name = "HMS Wrestler" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = ENG version_name = "V/W Class"} } }
-		}
-		task_force = {
 			name = "2nd Submarine Flotilla"
 			location = 11064 # Scapa Flow
 			# Submarine Division 21

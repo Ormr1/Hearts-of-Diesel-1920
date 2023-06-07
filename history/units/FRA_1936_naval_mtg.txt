@@ -170,13 +170,6 @@ units= {
 			ship = { name = "Basque" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = FRA version_name = "Bourrasque Class" } } }	
 		}								
 		task_force = {				
-			name = "Flotte d'Afrique de l'Ouest"			
-			location = 4948 # Dakar			
-			ship = { name = "Jeanne d'Arc" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = FRA version_name = "Duguay-Trouin Class" } } }
-			ship = { name = "Duguay-Trouin" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = FRA version_name = "Duguay-Trouin Class" } } }
-			ship = { name = "Primauguet" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = FRA version_name = "Duguay-Trouin Class" } } }
-		}
-		task_force = {				
 			name = "2ème Escadron Sous-Marins" 			
 			location = 7132 # Oran			
 			# 4e Division des Sous-Marins

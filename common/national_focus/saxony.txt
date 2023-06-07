@@ -477,6 +477,9 @@ focus_tree = {
 				add_stability = 0.05
 			}
 		}
+		ai_will_do = {
+			factor = 50
+		}
 	}
 	focus = {
 		id = GER_flemmish_administrators_in_calais
@@ -565,6 +568,9 @@ focus_tree = {
 				855={add_core_of = ROOT}
 				add_stability = 0.05
 			}
+		}
+		ai_will_do = {
+			factor = 50
 		}
 	}
 	focus = {
@@ -1839,15 +1845,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		complete_tooltip = {
 			navy_experience = 25
-			every_state = {
-				limit = { has_state_flag = GER_u_boat_effort_2dockyards }
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = dockyard
-					level = 2
-					instant_build = yes
-				}
-			}
 			add_tech_bonus = {
 				name = GER_u_boat_effort
 				bonus = 1.0
@@ -1865,23 +1862,6 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
 		completion_reward = {
 			navy_experience = 25
-			random_owned_controlled_state = {
-				limit = {
-					dockyard > 0
-					free_building_slots = {
-						building = dockyard
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = dockyard
-					level = 2
-					instant_build = yes
-				}
-				set_state_flag = GER_u_boat_effort_2dockyards
-			}
 			add_tech_bonus = {
 				name = GER_u_boat_effort
 				bonus = 1.0

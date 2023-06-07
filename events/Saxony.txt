@@ -1174,11 +1174,74 @@ country_event = {#Friedrich III gives speech
 	picture = GFX_report_event_finnish_letter
 	
 	is_triggered_only = yes
-	fire_only_once = yes
-	mean_time_to_happen = { days = 100 }
 	
 	option = {
 		name = saxonian.41.a
 		add_political_power = 100
+	}
+}
+country_event = {#Whilhelms choice
+	id = saxonian.42
+	title = saxonian.42.t
+	desc = saxonian.42.d
+	picture = GFX_report_event_finnish_letter
+	
+	#is_triggered_only = yes
+	fire_only_once = yes
+	trigger={
+		date < 1923.01.01
+		has_stability < 0.15
+		OR={
+			tag = GER
+			original_tag = GER
+		}
+	}
+	mean_time_to_happen = { days = 100 }
+	
+	option = {#i'm sorry father (Wilhelm II kills his father)
+		name = saxonian.42.a
+		custom_effect_tooltip = saxonian.42.a.tt
+		country_event = {id = saxonian.43 hours = 5}
+	}
+	option = {#A loyal son
+		name = saxonian.42.b
+		add_political_power = 100
+	}
+}
+country_event = {#In the Dead of Night
+	id = saxonian.43
+	title = saxonian.43.t
+	desc = saxonian.43.d
+	picture = GFX_report_event_finnish_letter
+	
+	is_triggered_only = yes
+	
+	option = {#Gunter must be blamed
+		name = saxonian.43.a
+		retire_character = GER_friedrich_iii
+		add_country_leader_role = {
+			character = GER_wilhelm_ii
+			promote_leader = yes
+			country_leader = {
+				ideology = absolute_monarchy
+				expire = "1965.1.1.1"
+				traits = { war_industrialist }
+			}
+		}
+		add_stability = 0.05
+		news_event = saxonian.44
+	}
+}
+news_event = {#Murder of Friedrich III
+	id = saxonian.44
+	title = saxonian.44.t
+	desc = saxonian.44.d
+	picture = GFX_report_event_finnish_letter
+	major = yes
+	is_triggered_only = yes
+	
+	option = {#
+		name = saxonian.44.a
+		
 	}
 }

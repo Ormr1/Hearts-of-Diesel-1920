@@ -1,0 +1,106 @@
+﻿units = {
+
+	##### NAVAL UNITS #####
+	fleet = {
+		name = "Kongelige Norske Marine"			
+		naval_base = 9296 # Kristiansand
+		task_force = {					
+			name = "1. Sjøforsvarsdistrikt"				
+			location =  9296 # Kristiansand
+			ship = { name = "HNoMS Harald Haarfagre" definition = heavy_cruiser equipment = { ship_hull_cruiser_coastal_defense_ship = { amount = 1 owner = NOR version_name = "Norge Class" } } }				
+			ship = { name = "HNoMS TorNORskjold" definition = heavy_cruiser equipment = { ship_hull_cruiser_coastal_defense_ship = { amount = 1 owner = NOR version_name = "Norge Class" } } }				
+			ship = { name = "HNoMS Olaf Tryggvason" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = NOR version_name = "Olaf Tryggvason Class" } } }
+			ship = { name = "HNoMS Frøya" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = NOR version_name = "Frøya Class" } } }
+			# 1st Submarine Detachment
+			ship = { name = "HNoMS A2" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = NOR version_name = "A & B Class" } } }
+			ship = { name = "HNoMS A3" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = NOR version_name = "A & B Class" } } }
+			ship = { name = "HNoMS A4" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = NOR version_name = "A & B Class" } } }
+			# 2nd Submarine Detachment
+			ship = { name = "HNoMS B2" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = NOR version_name = "A & B Class" } } }
+			ship = { name = "HNoMS B4" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = NOR version_name = "A & B Class" } } }
+			ship = { name = "HNoMS B5" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = NOR version_name = "A & B Class" } } }
+		}					
+		task_force = {					
+			name = "2. Sjøforsvarsdistrikt"				
+			location =  122 # Bergen
+			# 1st Destroyer Detachment
+			ship = { name = "HNoMS Draug" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = NOR version_name = "Draug Class" } } }
+			ship = { name = "HNoMS Troll" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = NOR version_name = "Draug Class" } } }
+			ship = { name = "HNoMS Garm" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = NOR version_name = "Draug Class" } } }
+			# Submarine Detachment
+			ship = { name = "HNoMS B6" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = NOR version_name = "A & B Class" } } }
+		}					
+		task_force = {					
+			name = "3. Sjøforsvarsdistrikt"				
+			location =  11050 # Tromso
+			ship = { name = "HNoMS Norge" pride_of_the_fleet = yes definition = heavy_cruiser equipment = { ship_hull_cruiser_coastal_defense_ship = { amount = 1 owner = NOR version_name = "Norge Class" } } }				
+			ship = { name = "HNoMS Eidsvold" definition = heavy_cruiser equipment = { ship_hull_cruiser_coastal_defense_ship = { amount = 1 owner = NOR version_name = "Norge Class" } } }				
+			# Submarine Detachment
+			ship = { name = "HNoMS B1" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = NOR version_name = "A & B Class" } } }
+			ship = { name = "HNoMS B3" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = NOR version_name = "A & B Class" } } }
+		}
+		task_force = {
+			name = "NOR Danske Flåde"
+			location = 6287  # Copenhagen			
+			ship = { name = "HNoMS Niels Iuel" definition = heavy_cruiser equipment = { ship_hull_cruiser_coastal_defense_ship = { amount = 1 owner = NOR version_name = "Norge Class" } } }
+			ship = { name = "HNoMS Peder Skram" definition = heavy_cruiser equipment = { ship_hull_cruiser_coastal_defense_ship = { amount = 1 owner = NOR version_name = "Norge Class" } } }
+			ship = { name = "HNoMS Rota" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = NOR version_name = "A & B Class" } } }			
+			ship = { name = "HNoMS Bellona" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = NOR version_name = "A & B Class" } } }		
+			ship = { name = "HNoMS Flora" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = NOR version_name = "A & B Class" } } }
+			ship = { name = "HNoMS Daphne" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = NOR version_name = "A & B Class" } } }
+			ship = { name = "HNoMS DryaNOR" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = NOR version_name = "A & B Class" } } }
+		}
+		task_force = {				
+			name = "Kustflottan"
+			location = 6050 # Stockholm
+			ship = { name = "HNoMS Dristigheten" definition = heavy_cruiser equipment = { ship_hull_cruiser_coastal_defense_ship = { amount = 1 owner = NOR version_name = "Äran Class" } } }				
+			ship = { name = "HNoMS Örnen" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = NOR version_name = "Frøya Class" } } }		
+			ship = { name = "HNoMS Jacob Bagge" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = NOR version_name = "Frøya Class" } } }		
+			ship = { name = "HNoMS Clas Fleming" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = NOR version_name = "Frøya Class" } } }				
+		}
+		task_force = { 
+			name = "1a Eskadern"
+			location = 11215 # Karlskrona
+			ship = { name = "HNoMS Gustaf V" definition = heavy_cruiser equipment = { ship_hull_cruiser_coastal_defense_ship = { amount = 1 owner = NOR version_name = "Norge Class" } } }				
+			ship = { name = "HNoMS Sverige" definition = heavy_cruiser equipment = { ship_hull_cruiser_coastal_defense_ship = { amount = 1 owner = NOR version_name = "Norge Class" } } }				
+			ship = { name = "HNoMS Drottning Victoria" definition = heavy_cruiser equipment = { ship_hull_cruiser_coastal_defense_ship = { amount = 1 owner = NOR version_name = "Norge Class" } } }				
+			ship = { name = "HNoMS Gotland" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = NOR version_name = "Gotland Class" } } }				
+			# 1. Jagarflottiljen				
+			ship = { name = "HNoMS Klas Horn" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = NOR version_name = "Draug Class" } } }		
+			ship = { name = "HNoMS Klas Uggla" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = NOR version_name = "Draug Class" } } }		
+			ship = { name = "HNoMS Ehrensköld" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = NOR version_name = "Draug Class" } } }		
+			ship = { name = "HNoMS NorNORskjöld" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = NOR version_name = "Draug Class" } } }		
+		}
+		task_force = { 
+			name = "Ålandshavseskader"
+			location = 408 # Gotland
+			ship = { name = "HNoMS Äran" definition = heavy_cruiser equipment = { ship_hull_cruiser_coastal_defense_ship = { amount = 1 owner = NOR version_name = "Äran Class" } } }				
+			ship = { name = "HNoMS Tapperheten" definition = heavy_cruiser equipment = { ship_hull_cruiser_coastal_defense_ship = { amount = 1 owner = NOR version_name = "Äran Class" } } }				
+		}
+		task_force = { 
+			name = "Karlskrona Avdelningen"
+			location = 11215 # Karlskrona
+			ship = { name = "HNoMS Wasa" definition = heavy_cruiser equipment = { ship_hull_cruiser_coastal_defense_ship = { amount = 1 owner = NOR version_name = "Äran Class" } } }				
+			ship = { name = "HNoMS Manligheten" definition = heavy_cruiser equipment = { ship_hull_cruiser_coastal_defense_ship = { amount = 1 owner = NOR version_name = "Äran Class" } } }
+			# 1. Ubatsflottiljen				
+			ship = { name = "HNoMS Draken" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = NOR version_name = "Draken Class" } } }
+			ship = { name = "HNoMS Gripen" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = NOR version_name = "Draken Class" } } }
+			ship = { name = "HNoMS Ulven" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = NOR version_name = "Draken Class" } } }
+		}
+		task_force = { 
+			name = "Göteborgs Eskadern"
+			location = 383 # Göteborg
+			ship = { name = "HNoMS Oscar II" definition = heavy_cruiser equipment = { ship_hull_cruiser_coastal_defense_ship = { amount = 1 owner = NOR version_name = "Norge Class" } } }				
+			ship = { name = "HNoMS Fylgia"definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = NOR version_name = "Gotland Class" } } }	
+			# 2. Ubatsflottiljen				
+			ship = { name = "HNoMS Hajen" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = NOR version_name = "A & B Class" } } }
+			ship = { name = "HNoMS Sälen" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = NOR version_name = "A & B Class" } } }
+			ship = { name = "HNoMS Valrossen" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = NOR version_name = "A & B Class" } } }
+			# 3. Ubatsflottiljen				
+			ship = { name = "HNoMS Bävern" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = NOR version_name = "A & B Class" } } }
+			ship = { name = "HNoMS Illern" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = NOR version_name = "A & B Class" } } }
+			ship = { name = "HNoMS Uttern" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = NOR version_name = "A & B Class" } } }
+			ship = { name = "HNoMS Valen" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = NOR version_name = "A & B Class" } } }
+		}		
+	}
+}

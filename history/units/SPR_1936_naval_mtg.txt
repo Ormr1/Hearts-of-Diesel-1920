@@ -10,6 +10,11 @@ units= {
 			location = 11805  # Ferrol/Coruna
 			ship = { name = "ARE España" pride_of_the_fleet = yes definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = SPR version_name = "España Class" } } }
 			ship = { name = "ARE Jaime I" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = SPR version_name = "España Class" } } }
+			ship = { name = "ARE Alfonso XIII" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = SPR version_name = "España Class" } } }
+			ship = { name = "ARE Reina Victoria Eugenia" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = SPR version_name = "Reina Victoria Eugenia Class" } } }
+			ship = { name = "ARE Maria Christina" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = SPR version_name = "Reina Victoria Eugenia Class" } } }
+			ship = { name = "ARE Beatriz" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = SPR version_name = "Reina Victoria Eugenia Class" } } }
+			ship = { name = "ARE Pelayo" definition = battleship equipment = { ship_hull_pre_dreadnought = { amount = 1 owner = SPR version_name = "Pelayo Class" } } }
 			ship = { name = "ARE Libertad" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = SPR version_name = "Príncipe Alfonso Class" } } }
 			ship = { name = "ARE Almirante Cervera" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = SPR version_name = "Príncipe Alfonso Class" } } }
 			ship = { name = "ARE Miguel de Cervantes" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = SPR version_name = "Príncipe Alfonso Class" } } }
@@ -87,6 +92,28 @@ units= {
 			ship = { name = "ARE C4" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = SPR version_name = "C Class" } } }
 			ship = { name = "ARE C5" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = SPR version_name = "C Class" } } }
 			ship = { name = "ARE C6" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = SPR version_name = "C Class" } } }
+		}
+	}
+	fleet = {
+		name = "Base Naval Diego Garcia"
+		naval_base = 13019  # Diego Garcia
+		task_force = {
+			name = "Escuadrón de Diego Garcia"
+			location = 13019  # Diego Garcia
+			ship = { name = "ARE Isabella" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = SPR version_name = "España Class" } } }
+			ship = { name = "ARE Reina Regente" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = SPR version_name = "Príncipe Alfonso Class" } } }
+			ship = { name = "ARE Vizcaya" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = SPR version_name = "Príncipe Alfonso Class" } } }
+			ship = { name = "ARE Navarra" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = SPR version_name = "Príncipe Alfonso Class" } } }
+			# Flotilla de Destructores de El Ferrol
+			ship = { name = "ARE Rayo" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SPR version_name = "Alsedo Class" } } }
+			ship = { name = "ARE Osado" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SPR version_name = "Alsedo Class" } } }
+			ship = { name = "ARE Ceuta" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SPR version_name = "Alsedo Class" } } }
+			ship = { name = "ARE Liniers" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SPR version_name = "Alsedo Class" } } }
+			ship = { name = "ARE Audaz" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SPR version_name = "Alsedo Class" } } }
+			ship = { name = "ARE Temerario" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SPR version_name = "Alsedo Class" } } }
+			ship = { name = "ARE Intrépido" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SPR version_name = "Alsedo Class" } } }
+			ship = { name = "ARE Ariete" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SPR version_name = "Alsedo Class" } } }
+			ship = { name = "ARE Diana" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SPR version_name = "Alsedo Class" } } }
 		}
 	}
 } 

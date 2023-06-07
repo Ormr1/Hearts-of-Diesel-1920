@@ -26,7 +26,7 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_portrait_GER_wilhelm_ii"
+		name = "GFX_portrait_SAX_wilhelm_ii"
 		texturefile = "gfx/leaders/GER/Portrait_GER_Wilhelm_II.png"
 	}
 

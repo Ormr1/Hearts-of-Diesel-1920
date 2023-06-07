@@ -185,25 +185,6 @@
 			ship = { name = "HMS Warwick" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
 		}
 		task_force = {
-			name = "North Atlantic Fleet"
-			location = 4135 # Gibraltar
-			ship = { name = "HMS Colombo" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = ENG } } }
-			ship = { name = "HMS Capetown" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = ENG } } }
-			ship = { name = "HMS Wryneck" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }	
-			# 13th Destroyer Flotilla
-			ship = { name = "HMS Keppel" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
-			# Destroyer Division 25
-			ship = { name = "HMS Vidette" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
-			ship = { name = "HMS Vortigern" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
-			ship = { name = "HMS Velox" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
-			ship = { name = "HMS Watchman" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
-			# Destroyer Division 26
-			ship = { name = "HMS Douglas" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
-			ship = { name = "HMS Active" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG version_name = "A/B/C/D Class" } } }	
-			ship = { name = "HMS Wishart" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
-			ship = { name = "HMS Wrestler" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
-		}
-		task_force = {
 			name = "2nd Submarine Flotilla"
 			location = 11064 # Scapa Flow
 			# Submarine Division 21
