@@ -1895,7 +1895,7 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_construction1_medium"
+		name = "GFX_construction0_medium"
 		texturefile = "gfx/interface/technologies/basic_construction.dds"
 	}
 
@@ -1905,19 +1905,39 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_construction3_medium"
+		name = "GFX_construction7_medium"
 		texturefile = "gfx/interface/technologies/advanced_construction.dds"
 	}	
 	
 	SpriteType = {
-		name = "GFX_construction4_medium"
+		name = "GFX_construction8_medium"
 		texturefile = "gfx/interface/technologies/improved_conversion.dds"
 	}
 
 	SpriteType = {
-		name = "GFX_construction5_medium"
+		name = "GFX_construction9_medium"
 		texturefile = "gfx/interface/technologies/advanced_conversion.dds"
 	}	
+	SpriteType = {
+		name = "GFX_scientific_management_medium"
+		texturefile = "gfx/interface/technologies/scientific_management.dds"
+	}
+	SpriteType = {
+		name = "GFX_mass_production_medium"
+		texturefile = "gfx/interface/technologies/mass_production.dds"
+	}
+	SpriteType = {
+		name = "GFX_process_re_engineering_medium"
+		texturefile = "gfx/interface/technologies/process_re_engineering.dds"
+	}
+	SpriteType = {
+		name = "GFX_facilities_design_medium"
+		texturefile = "gfx/interface/technologies/facilities_design.dds"
+	}
+	SpriteType = {
+		name = "GFX_manufacturing_support_systems_medium"
+		texturefile = "gfx/interface/technologies/manufacturing_support_systems.dds"
+	}
 	
 	### NAVAL TECH ###
 

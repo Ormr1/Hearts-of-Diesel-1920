@@ -16,98 +16,84 @@ on_actions = {
 				}
 			}
 		}
-		effect = {
-			if = {
-				limit = {
-					has_dlc = "By Blood Alone"
-				}
+		# effect = {
+			# # League of Nations Members
+			# IF = {
+				# limit = {
+					# date < 1939.1.1 # don't bother with LoN after 1939
+				# }
+				# every_country = {
+					# limit = {
+						# OR = {
+							# ### Original Members
+							# tag = ARG
+							# tag = BEL
+							# tag = BOL
+							# tag = ENG
+							# tag = AST
+							# tag = CAN
+							# tag = RAJ
+							# tag = NZL
+							# tag = SAF
+							# tag = CHI
+							# tag = COL
+							# tag = CUB
+							# tag = CZE
+							# tag = DEN
+							# tag = FRA
+							# tag = GRE
+							# tag = HAI
+							# tag = ITA
+							# tag = LIB
+							# tag = HOL
+							# tag = NOR
+							# tag = PAN
+							# tag = PER
+							# tag = PRU
+							# tag = POL
+							# tag = POR
+							# tag = ROM
+							# tag = SIA
+							# tag = SPR
+							# tag = SWE
+							# tag = SWI
+							# tag = URU
+							# tag = VEN
+							# tag = YUG
+							# ### 1920
+							# tag = AUS
+							# tag = BUL
+							# tag = COS
+							# tag = FIN
+							# tag = LUX
+							# tag = ALB
+							# ### 1921
+							# tag = EST
+							# tag = LAT
+							# tag = LIT
+							# ### 1922
+							# tag = HUN
+							# ### 1923
+							# tag = IRE
+							# tag = ETH
+							# ### 1924
+							# tag = DOM
+							# ### 1931
+							# tag = MEX
+							# ### 1932
+							# tag = TUR
+							# tag = IRQ
+							# ### 1934
+							# tag = SOV
+							# tag = AFG
+							# tag = ECU
+						# }
+					# }
+					# add_ideas = league_of_nations_member_idea
+				# }
 
-				SWI = {
-					SWI_update_neighbor_opinion_balance = yes
-					SWI_find_biggest_fascist_neighbor = yes
-					SWI_find_best_democratic_ally = yes
-					SWI_find_democratic_planes_seller = yes
-				}
-			}
-		}
-		effect = {
-			# League of Nations Members
-			IF = {
-				limit = {
-					date < 1939.1.1 # don't bother with LoN after 1939
-				}
-				every_country = {
-					limit = {
-						OR = {
-							### Original Members
-							tag = ARG
-							tag = BEL
-							tag = BOL
-							tag = ENG
-							tag = AST
-							tag = CAN
-							tag = RAJ
-							tag = NZL
-							tag = SAF
-							tag = CHI
-							tag = COL
-							tag = CUB
-							tag = CZE
-							tag = DEN
-							tag = FRA
-							tag = GRE
-							tag = HAI
-							tag = ITA
-							tag = LIB
-							tag = HOL
-							tag = NOR
-							tag = PAN
-							tag = PER
-							tag = PRU
-							tag = POL
-							tag = POR
-							tag = ROM
-							tag = SIA
-							tag = SPR
-							tag = SWE
-							tag = SWI
-							tag = URU
-							tag = VEN
-							tag = YUG
-							### 1920
-							tag = AUS
-							tag = BUL
-							tag = COS
-							tag = FIN
-							tag = LUX
-							tag = ALB
-							### 1921
-							tag = EST
-							tag = LAT
-							tag = LIT
-							### 1922
-							tag = HUN
-							### 1923
-							tag = IRE
-							tag = ETH
-							### 1924
-							tag = DOM
-							### 1931
-							tag = MEX
-							### 1932
-							tag = TUR
-							tag = IRQ
-							### 1934
-							tag = SOV
-							tag = AFG
-							tag = ECU
-						}
-					}
-					add_ideas = league_of_nations_member_idea
-				}
-
-			}
-		}
+			# }
+		# }
 	}
 
 	on_monthly = {

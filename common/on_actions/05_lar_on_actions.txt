@@ -269,65 +269,6 @@ on_actions = {
 
 	on_startup = {
 		effect = {
-			SPR = {
-				if = {
-					limit = {
-						date < 1936.1.2
-						has_dlc = "La Resistance"
-					}
-					country_lock_all_division_template = yes
-					every_state = {
-						limit = {
-							is_core_of = SPR
-						}
-						remove_core_of = SPA
-						remove_core_of = SPB
-						remove_core_of = SPC
-					}
-					if = {
-						limit = {
-							difficulty > 1
-							is_ai = no
-						}
-						SPR = {
-							add_to_variable = { var = spa_civil_war_divisions_counter_var value = 6 }
-						}
-					}
-				}
-				if = {
-					limit = {
-						date > 1939.1.1
-						has_dlc = "La Resistance"
-					}
-					every_state = {
-						limit = {
-							is_core_of = SPR
-						} 
-						remove_core_of = SPD
-						remove_core_of = SPB
-						remove_core_of = SPC
-						remove_core_of = d01
-					}
-					every_state = {
-						limit = {
-							OR = {
-								state = 41
-								state = 165
-								state = 167
-								state = 168
-								state = 173
-								state = 175
-								state = 790
-								state = 792
-								state = 793
-								state = 794
-							}
-						}
-						remove_core_of = SPA
-						start_resistance = yes
-					}
-				}
-			}
 			if = {
 				limit = {
 					has_dlc = "La Resistance"
