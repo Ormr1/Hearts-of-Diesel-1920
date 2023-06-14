@@ -54,6 +54,8 @@
  POL_establish_ruthenian_peoples_republic_desc:0 "It's time to finally make incursions into Rusviet territory as they've done to our people so many times in the past. We won't be alone, however. We'll be assisting the Ruthenian Freedom Legion, an anti-Rusviet militia force in Novogrudok."
  POL_alliance_with_crimea:0 "Alliance With Crimea"
  POL_alliance_with_crimea_desc:0 "The Crimeans to the east of us are also under threat of Rusviet expansion. An alliance can possibly be achieved with them to counter the looming threat in a united front."
+ POL_polanian_commonwealth:0 "Proclaim Polanian Commonwealth"
+ POL_polanian_commonwealth_desc:0  "Polania's reforms have been successful and the nation is on the path to the glory it waas denied years ago. It's time to claim a restoration of our old glory, to proclaim a new Commonwealth."
  POL_social_democrats_win:0 "Social Democrats Win"
  POL_social_democrats_win_desc:0 "The Social Democrats have successfully won the Polanian elections of 1922."
  POL_draft_a_democratic_constitution:0 "Draft A Democratic Constitution"
@@ -96,6 +98,16 @@
  POL_public_education_program_desc:0 "The creation of public school system will ensure that no Polanian is denied the opportunity of a high quality education. To let even one bright mind fall through the cracks would be a tragedy."
  POL_foreign_student_program:0 "Foreign Student Program"
  POL_foreign_student_program_desc:0 "Just having a large education pool won't be enough to bring in foreign intelligentsia. We'll need to subsidize their travel and studies in Polania for them to arrive and stay."
+ POL_weapons_research_and_development_bureau:0 "Weapons Research And Development Bureau"
+ POL_weapons_research_and_development_bureau_desc:0 "Polania can't hope to match its adversaries with numbers. It must overmatch them in technology to give us a fighting chance in a battle with the Saxons and the Rusviets."
+ POL_invite_factory_scientists:0 "Invite Factory Scientists"
+ POL_invite_factory_scientists_desc:0 "Many former scientists who worked at the famous Factory moved to Polania after the Factory went quiet. Our intelligence services will be able to locate them and offer them a job with the government in exchange for their protection."
+ POL_factory_tools:0 "Factory Tools"
+ POL_factory_tools_desc:0 "We will launch a small expedition to the Factory, aided by the former Factory scientists we've hired, to acquire some blueprints for advanced machinery that the Factory was working on."
+ POL_factory_rifles:0 "Factory Rifles"
+ POL_factory_rifles_desc:0 "Before it shut down its own operations, the Factory was working on new advanced small arms to equip their security forces and to eventually sell to other governments. We'll send a small detachment of the Polanian Mechanized Corps, assisted by a former scientist, to acquire the blueprints and hopefully a prototype of one of these weapons."
+ POL_factory_armor:0 "Factory Armor"
+ POL_factory_armor_desc:0 "Before the Factory shut down its operations, it was making huge strides in automaton and exosuit technology. We'll escort a recently-hired Factory scientist who used to work on those programs to the Factory to recover some of his old blueprints."
 
 ### EVENTS ###
  
