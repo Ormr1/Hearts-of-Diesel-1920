@@ -1,4 +1,74 @@
 technologies = {
+	census_tabulating = {
+
+		# small boost to research speed
+		research_speed_factor = 0.01
+		
+		path = {
+			leads_to_tech = auto_feed_tabulator 
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+		start_year = 1910
+		folder = {
+			name = electronics_folder
+			position = { x = 0 y = 0 }
+		}
+		
+		ai_will_do = {
+			factor = 30
+			
+			
+			modifier = {
+				factor = 3
+				date > "1937.1.1"
+			}
+		}
+		
+		categories = {
+			electronics
+		}
+		
+
+	}
+	auto_feed_tabulator = {
+
+		# small boost to research speed
+		research_speed_factor = 0.01
+		
+		path = {
+			leads_to_tech = electric_typewriter 
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = electronic_mechanical_engineering 
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+		start_year = 1918
+		folder = {
+			name = electronics_folder
+			position = { x = 0 y = 2 }
+		}
+		
+		ai_will_do = {
+			factor = 30
+			
+			
+			modifier = {
+				factor = 3
+				date > "1937.1.1"
+			}
+		}
+		
+		categories = {
+			electronics
+		}
+		
+
+	}
 	electronic_mechanical_engineering = {
 
 		# small boost to research speed
@@ -9,7 +79,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		path = {
-			leads_to_tech = mechanical_computing 
+			leads_to_tech = teleprinter 
 			research_cost_coeff = 1
 		}
 		path = {
@@ -18,10 +88,10 @@ technologies = {
 		}
 		
 		research_cost = 1
-		start_year = 1918
+		start_year = 1920
 		folder = {
 			name = electronics_folder
-			position = { x = 0 y = 0 }
+			position = { x = 0 y = 4 }
 		}
 		
 		ai_will_do = {
@@ -44,11 +114,11 @@ technologies = {
 	radio = {
 
 		# units with radios can more efficiently join combats when there is room
-		land_reinforce_rate = 0.05
-		coordination_bonus = 0.04
+		land_reinforce_rate = 0.02
+		coordination_bonus = 0.02
 		
 		path = {
-			leads_to_tech = radio_detection 
+			leads_to_tech = fm_radio 
 			research_cost_coeff = 1
 		}
 		
@@ -56,7 +126,7 @@ technologies = {
 		
 		folder = {
 			name = electronics_folder
-			position = { x = -2 y = 2 }
+			position = { x = -2 y = 6 }
 		}
 		
 		enable_equipment_modules = { 
@@ -66,6 +136,50 @@ technologies = {
 		folder = {
 			name = support_folder
 			position = { x = 11 y = 9 } # x = 12 y = 0
+		}
+		
+		ai_will_do = {
+			factor = 3
+			
+			modifier = {
+				factor = 6
+				has_war = yes
+			}
+			modifier = {
+				is_major = yes
+				factor = 2
+			}
+			modifier = {
+				factor = 5
+				date > "1939.8.1"
+			}
+		}
+		
+		categories = {
+			electronics
+		}
+	}
+	fm_radio = {
+
+		# units with radios can more efficiently join combats when there is room
+		land_reinforce_rate = 0.05
+		coordination_bonus = 0.04
+		
+		path = {
+			leads_to_tech = radio_detection 
+			research_cost_coeff = 1
+		}
+		start_year = 1933
+		
+		research_cost = 1.75
+		
+		folder = {
+			name = electronics_folder
+			position = { x = -2 y = 14 }
+		}
+		
+		enable_equipment_modules = { 
+			tank_radio_2
 		}
 		
 		ai_will_do = {
@@ -109,7 +223,7 @@ technologies = {
 		
 		folder = {
 			name = electronics_folder
-			position = { x = -2 y = 6 }
+			position = { x = -2 y = 16 }
 		}
 		
 		ai_will_do = {
@@ -143,7 +257,7 @@ technologies = {
 		}
 		folder = {
 			name = electronics_folder
-			position = { x = -2 y = 8 }
+			position = { x = -2 y = 18 }
 		}
 		
 		ai_will_do = {
@@ -194,7 +308,7 @@ technologies = {
 		
 		folder = {
 			name = electronics_folder
-			position = { x = -2 y = 10 }
+			position = { x = -2 y = 24 }
 		}
 		
 		ai_will_do = {
@@ -243,7 +357,7 @@ technologies = {
 		
 		folder = {
 			name = electronics_folder
-			position = { x = -2 y = 12 }
+			position = { x = -2 y = 24 }
 		}
 		
 		ai_will_do = {
@@ -289,7 +403,7 @@ technologies = {
 		
 		folder = {
 			name = electronics_folder
-			position = { x = -2 y = 14 }
+			position = { x = -2 y = 26 }
 		}
 		
 		ai_will_do = {
@@ -332,7 +446,7 @@ technologies = {
 		
 		folder = {
 			name = electronics_folder
-			position = { x = -2 y = 16 }
+			position = { x = -2 y = 28 }
 		}
 		
 		ai_will_do = {
@@ -349,6 +463,88 @@ technologies = {
 		categories = {
 			electronics
 			radar_tech
+		}
+	}
+
+	electric_typewriter = {
+
+		# small boost to research speed
+		research_speed_factor = 0.04
+		
+		path = {
+			leads_to_tech = teleprinter 
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2.5
+		start_year = 1920
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 2 y = 4 }
+		}
+		
+		ai_will_do = {
+			factor = 7
+		}
+		
+		categories = {
+			electronics
+			computing_tech
+		}
+	}
+	teleprinter = {
+
+		# small boost to research speed
+		research_speed_factor = 0.04
+
+		path = {
+			leads_to_tech = accounting_machine
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2.5
+		start_year = 1922
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 2 y = 6 }
+		}
+		
+		ai_will_do = {
+			factor = 7
+		}
+		
+		categories = {
+			electronics
+			computing_tech
+		}
+	}
+	accounting_machine = {
+
+		# small boost to research speed
+		research_speed_factor = 0.04
+		
+		path = {
+			leads_to_tech = mechanical_computing 
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2.5
+		start_year = 1928
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 2 y = 10 }
+		}
+		
+		ai_will_do = {
+			factor = 7
+		}
+		
+		categories = {
+			electronics
+			computing_tech
 		}
 	}
 	
@@ -368,11 +564,11 @@ technologies = {
 		}
 		
 		research_cost = 2.5
-		start_year = 1928
+		start_year = 1933
 		
 		folder = {
 			name = electronics_folder
-			position = { x = 2 y = 4 }
+			position = { x = 2 y = 14 }
 		}
 		
 		ai_will_do = {
@@ -411,7 +607,7 @@ technologies = {
 		
 		folder = {
 			name = electronics_folder
-			position = { x = 2 y = 8 }
+			position = { x = 2 y = 18 }
 		}
 		
 		ai_will_do = {
@@ -466,7 +662,7 @@ technologies = {
 		
 		folder = {
 			name = electronics_folder
-			position = { x = 2 y = 12 }
+			position = { x = 2 y = 22 }
 		}
 		
 		ai_will_do = {
@@ -515,7 +711,7 @@ technologies = {
 		
 		folder = {
 			name = electronics_folder
-			position = { x = 2 y = 16 }
+			position = { x = 2 y = 26 }
 		}
 		
 		ai_will_do = {
@@ -552,7 +748,7 @@ technologies = {
 		}
 		folder = {
 			name = electronics_folder
-			position = { x = 0 y = 8 }
+			position = { x = 0 y = 20 }
 		}
 		
 		ai_will_do = {
@@ -595,7 +791,7 @@ technologies = {
 		
 		folder = {
 			name = electronics_folder
-			position = { x = 0 y = 12 }
+			position = { x = 0 y = 24 }
 		}
 		
 		ai_will_do = {
@@ -638,7 +834,7 @@ technologies = {
 		
 		folder = {
 			name = electronics_folder
-			position = { x = 0 y = 16 }
+			position = { x = 0 y = 28 }
 		}
 		
 		ai_will_do = {
@@ -681,7 +877,7 @@ technologies = {
 		
 		folder = {
 			name = electronics_folder
-			position = { x = 4 y = 8 }
+			position = { x = 4 y = 20 }
 		}
 		
 		ai_will_do = {
@@ -720,7 +916,7 @@ technologies = {
 		
 		folder = {
 			name = electronics_folder
-			position = { x = 4 y = 12 }
+			position = { x = 4 y = 24 }
 		}
 		
 		ai_will_do = {
@@ -759,7 +955,7 @@ technologies = {
 		
 		folder = {
 			name = electronics_folder
-			position = { x = 4 y = 16 }
+			position = { x = 4 y = 28 }
 		}
 		
 		ai_will_do = {
@@ -799,7 +995,7 @@ technologies = {
 		
 		folder = {
 			name = electronics_folder
-			position = { x = 0 y = 2 }
+			position = { x = 0 y = 6 }
 		}
 		
 		ai_will_do = {
@@ -842,7 +1038,7 @@ technologies = {
 		
 		folder = {
 			name = electronics_folder
-			position = { x = 0 y = 6 }
+			position = { x = 0 y = 16 }
 		}
 		
 		ai_will_do = {
@@ -883,7 +1079,7 @@ technologies = {
 		}
 		folder = {
 			name = electronics_folder
-			position = { x = 0 y = 10 }
+			position = { x = 0 y = 18 }
 		}
 		
 		ai_will_do = {
@@ -925,7 +1121,7 @@ technologies = {
 		
 		folder = {
 			name = electronics_folder
-			position = { x = 0 y = 14 }
+			position = { x = 0 y = 22 }
 		}
 		
 		ai_will_do = {
