@@ -833,7 +833,12 @@ focus_tree = {
         cost = 5
         completion_reward = {
             add_tech_bonus = {
-                bonus = 1.0
+                bonus = 0.5
+                uses = 1
+                category = industry
+            }
+            add_tech_bonus = {
+                bonus = 0.5
                 uses = 1
                 category = industry
             }
@@ -1473,6 +1478,9 @@ focus_tree = {
         x = 40
         y = 0
         cost = 5
+        available = {
+            has_completed_focus = POL_1922_elections
+        }
         completion_reward = {
             add_political_power = 75
         }
@@ -1482,6 +1490,15 @@ focus_tree = {
         icon = placeholder
         mutually_exclusive = { focus = POL_polania_bows_to_none }
         mutually_exclusive = { focus = POL_towards_rusviet }
+        available = {
+            NOT = {
+                OR = {
+                    has_completed_focus = POL_pilsudskiites_win
+                    has_completed_focus = POL_falangists_win
+                    has_completed_focus = POL_monarchists_win
+                }
+            }
+        }
         prerequisite = { focus = POL_looking_outward }
         relative_position_id = POL_looking_outward
         x = -4
@@ -2090,6 +2107,15 @@ focus_tree = {
         icon = placeholder
         mutually_exclusive = { focus = POL_polania_bows_to_none }
         mutually_exclusive = { focus = POL_towards_saxony }
+        available = {
+            NOT = {
+                OR = {
+                    has_completed_focus = POL_pilsudskiites_win
+                    has_completed_focus = POL_falangists_win
+                    has_completed_focus = POL_monarchists_win
+                }
+            }
+        }
         prerequisite = { focus = POL_looking_outward }
         relative_position_id = POL_looking_outward
         x = 4

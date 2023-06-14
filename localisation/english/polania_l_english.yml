@@ -108,7 +108,26 @@
  POL_factory_rifles_desc:0 "Before it shut down its own operations, the Factory was working on new advanced small arms to equip their security forces and to eventually sell to other governments. We'll send a small detachment of the Polanian Mechanized Corps, assisted by a former scientist, to acquire the blueprints and hopefully a prototype of one of these weapons."
  POL_factory_armor:0 "Factory Armor"
  POL_factory_armor_desc:0 "Before the Factory shut down its operations, it was making huge strides in automaton and exosuit technology. We'll escort a recently-hired Factory scientist who used to work on those programs to the Factory to recover some of his old blueprints."
-
+ POL_hub_of_innovation:0 "Hub Of Innovation"
+ POL_hub_of_innovation_desc:0 "Through the Technocrats' reforms, Polania has become a hub of innovation as it creates a culture of technological investments and safe haven for international scientists who simply want to do their work."
+ POL_monarchists_win:0 "Monarchists Win"
+ POL_monarchists_win_desc:0 "The Monarchists have successfully won the Polanian elections of 1922."
+ POL_coronation_of_tadeusz_kosciuszko_ii:0 "Coronation Of Tadeusz Kosciuszko II"
+ POL_coronation_of_tadeusz_kosciuszko_ii_desc:0 "The people have spoken. They desire a monarch. One that the newly elected pro-Monarchist parliament will happily provide. An excellent candidate has been lined up for the role and the coronation of Tadeusz Kosciuszko II will herald a new golden age for Polania."
+ POL_reestablish_the_imperial_guard:0 "Re-establish The Imperial Guard"
+ POL_reestablish_the_imperial_guard_desc:0 "The Imperial Guard was the most elite and trusted formation of the First Polanian Empire and formed the personal guard of Emperor Tadeusz Kosciuszko I. A modern restoration of the Polanian Empire must include this legendary formation."
+ POL_the_royal_hussars:0 "The Royal Hussars"
+ POL_the_royal_hussars_desc:0 "The Winged Hussars are probably the most famous formation in all of Polanian history. With a legacy in glorious victories from Dresden to Moscow. Modern advancements in technology have unlocked ways to enhance and augment horse-based cavalry forces in a way never before seen and the new Royal Hussars will take advantage of them."
+ POL_promote_imperial_legacy:0 "Promote Imperial Legacy"
+ POL_promote_imperial_legacy_desc:0 "Some Polanians have either forgotten their lost imperial glory or they've actively rejected it. We need to remind the people of our legacy, of the glory that was stolen from us by opportunistic Rusviets and Saxons!"
+ POL_restore_the_imperial_army:0 "Restore The Imperial Army"
+ POL_restore_the_imperial_army_desc:0 "The Polanian Imperial Army was the envy of all of Europa. The Polanian Army of today is a shadow of its former self, being unable to hold the east against Rusviets. Restoring our army to its former imperial glory will undoubtedly lead to the same successes as the past."
+ POL_centralize_government:0 "Centralize Government"
+ POL_centralize_government_desc:0 "The previous Republican government was characterized by a chronically weak executive branch and an overreliance on the legislative branch to manage government affairs. Under our new government, we'll restore the old imperial system under Kosciuszko to prevent issues like that from resurfacing."
+ POL_restoration_of_the_imperial_palace:0 "Restoration Of The Imperial Palace"
+ POL_restoration_of_the_imperial_palace_desc:0 "The Polanian Presidential Palace is actually built on the foundations of the old Imperial Palace after it was burned down by the Coalition. We'll restore it to its former glory with all the glamour and fanfare that befits such a historic place."
+ 
+ 
 ### EVENTS ###
  
 ### DECISION CATEGORIES ###
