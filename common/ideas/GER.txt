@@ -194,6 +194,24 @@ ideas = {
 				stability_factor = -0.05
 			}
 		}
+		GER_golden_twenties = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				 always = yes
+			}
+
+			removal_cost = -1
+
+			picture = ger_rebuild_the_nation
+
+			modifier = {
+				consumer_goods_factor = -0.10
+				stability_factor = 0.05
+			}
+		}
 	
 		sour_loser = {
 			

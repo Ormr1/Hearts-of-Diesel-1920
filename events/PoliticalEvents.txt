@@ -1785,3 +1785,67 @@ country_event = {
 		}
 	}
 }
+
+country_event = { #collapse of the Hatry group
+	id = political.29
+	title = political.29.t
+	desc = political.29.d
+	picture = GFX_report_event_europe_funeral
+
+	trigger = {
+		date > 1929.9.20
+		tag = CSL
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = political.29.a
+		hidden_effect={
+			country_event = {id = political.31 days = 38}
+		}
+	}
+}
+
+news_event = { #Crash of the London Stock Market - News
+	id = political.30
+	title = political.30.t
+	desc = political.30.d
+	picture = GFX_news_event_bank_run
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = political.30.a
+	}
+}
+
+country_event = { #Crash of the London Stock Market
+	id = political.31
+	title = political.31.t
+	desc = political.31.d
+	picture = GFX_report_event_europe_funeral
+
+	is_triggered_only = yes
+
+	option = {
+		name = political.31.a
+		#inform everyone
+		country_event = {id = political.30}
+		every_country={
+			limit={
+				NOT={tag = USA}
+			}
+			add_ideas = {global_great_depression}
+		}
+		USA={
+			add_ideas = {great_depression}
+		}
+		GER={
+			remove_ideas = {GER_golden_twenties}
+		}
+	}
+}

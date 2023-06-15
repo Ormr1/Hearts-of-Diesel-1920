@@ -1,5 +1,27 @@
 ideas = {
+	country={
+		global_great_depression = {
+			picture = usa_great_depression_3
+			
+			allowed = {
+				always = no
+			}
 
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_cost = 0.5
+				consumer_goods_factor = 0.3
+				conscription_factor = -0.5
+				join_faction_tension = 0.20
+				local_resources_factor = -0.2
+			}
+		}
+	}
 	economy = {
 		law = yes
 		use_list_view = yes
