@@ -2080,6 +2080,9 @@ ideas = {
 				industry = 0.05
 				synth_resources = 0.15
 			}
+			available = {
+				date > 1925.1.1
+			}
 			
 			traits = { refinery_concern }
 			

@@ -500,6 +500,28 @@ country_event = { #Collapse of Rhodesia
 				add_civil_war_target = ZIR
 				add_civil_war_target = RNF
 			}
+			RHO={
+				declare_war_on = {
+					target = ZIN
+					type = civil_war
+				}
+				add_civil_war_target = ZIN
+				declare_war_on = {
+					target = ZUN
+					type = civil_war
+				}
+				add_civil_war_target = ZUN
+				declare_war_on = {
+					target = ZIR
+					type = civil_war
+				}
+				add_civil_war_target = ZIR
+				declare_war_on = {
+					target = RNF
+					type = civil_war
+				}
+				add_civil_war_target = RNF
+			}
 		}
 	}
 	

@@ -289,7 +289,7 @@ country_event = { #Argentinia declare
 				add_manpower = 200000
 				add_equipment_to_stockpile = {
 					type = infantry_equipment
-					amount = 2000
+					amount = 8000
 					producer = LAP
 				}
 			}
@@ -448,7 +448,7 @@ country_event = { #La Platan Liberals revolt
 				add_manpower = 200000
 				add_equipment_to_stockpile = {
 					type = infantry_equipment
-					amount = 5000
+					amount = 10000
 					producer = LAP
 				}
 			}
@@ -574,7 +574,7 @@ country_event = { #Argentinian Coilition collapses
 				add_manpower = 200000
 				add_equipment_to_stockpile = {
 					type = infantry_equipment
-					amount = 4000
+					amount = 8000
 					producer = LAP
 				}
 			}
@@ -593,7 +593,7 @@ country_event = { #Argentinian Coilition collapses
 				add_manpower = 200000
 				add_equipment_to_stockpile = {
 					type = infantry_equipment
-					amount = 4000
+					amount = 8000
 					producer = LAP
 				}
 			}
@@ -617,7 +617,7 @@ country_event = { #Argentinian Coilition collapses
 				add_manpower = 150000
 				add_equipment_to_stockpile = {
 					type = infantry_equipment
-					amount = 2000
+					amount = 8000
 					producer = LAP
 				}
 			}
@@ -635,7 +635,7 @@ country_event = { #Argentinian Coilition collapses
 				add_civil_war_target = ARC
 				add_equipment_to_stockpile = {
 					type = infantry_equipment
-					amount = 1000
+					amount = 3000
 					producer = LAP
 				}
 			}

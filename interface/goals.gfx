@@ -3129,6 +3129,22 @@ spriteTypes = {
 		name = "GFX_focus_GER_colonial_production"
 		texturefile = "gfx/interface/goals/SAXONY/focus_GER_colonial_production.dds"
 	}
+	SpriteType = {
+		name = "GFX_focus_GER_new_frankfurt"
+		texturefile = "gfx/interface/goals/SAXONY/focus_GER_new_frankfurt.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_GER_bauhaus"
+		texturefile = "gfx/interface/goals/SAXONY/focus_GER_bauhaus.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_GER_ile_de_frankia"
+		texturefile = "gfx/interface/goals/SAXONY/focus_GER_ile_de_frankia.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_GER_new_dresden"
+		texturefile = "gfx/interface/goals/SAXONY/focus_GER_new_dresden.dds"
+	}
 	
 	
 	SpriteType = {

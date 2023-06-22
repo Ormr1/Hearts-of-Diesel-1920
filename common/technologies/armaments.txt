@@ -82,7 +82,6 @@ technologies = {
 			tank_heavy_three_man_tank_turret
 			tank_super_heavy_four_man_tank_turret
 			tank_super_heavy_three_man_tank_turret
-			tank_modern_tank_turret
 		}
 
 
@@ -194,7 +193,7 @@ technologies = {
 		start_year = 1944
 
 		enable_equipment_modules = {
-			
+			tank_modern_tank_turret
 		}
 
 

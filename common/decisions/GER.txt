@@ -2258,7 +2258,7 @@ political_actions = {
 		}
 
 		available = {
-			has_stability > 0.2
+			has_stability > 0.30
 			custom_trigger_tooltip={
 				tooltip = GER_monarchy_more_popular_than_communism
 				monarchy > party_popularity@communism
@@ -2275,7 +2275,7 @@ political_actions = {
 
 		activation = {
 			OR={
-				has_stability < 0.1
+				has_stability < 0.15
 				monarchy < party_popularity@communism
 				monarchy < party_popularity@democratic
 			}

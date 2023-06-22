@@ -1858,6 +1858,10 @@ spriteTypes = {
 		name = "GFX_modern_oil_processing_medium"
 		texturefile = "gfx/interface/technologies/modern_oil_processing.dds"
 	}
+	SpriteType = {
+		name = "GFX_semi_modern_oil_processing_medium"
+		texturefile = "gfx/interface/technologies/semi_modern_oil_processing.dds"
+	}
 
 	SpriteType = {
 		name = "GFX_advanced_oil_processing_medium"
