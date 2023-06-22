@@ -19,6 +19,7 @@ Release (The Iron Harvest)
 		La Plata
 		Eastern Rome
 		Western Rome
+	Gas attack/defense?
 		
 Cradles of Man:
 	Required FT:
