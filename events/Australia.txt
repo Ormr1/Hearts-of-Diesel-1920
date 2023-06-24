@@ -177,7 +177,7 @@ country_event = {#Murrawarri joins confed
 
 	}
 }
-country_event = {#Murrawarri joins confed
+country_event = {#
 	id = australia.6
 	title = australia.6.t	#
 	desc = australia.6.d	#
@@ -191,13 +191,7 @@ country_event = {#Murrawarri joins confed
 		ai_chance = {
 			base = 75
 		}
-		979={
-			add_claim_by = ROOT
-		}
-		declare_war_on = {
-			target = MRC
-			type = take_claimed_state
-		}
+		
 	}
 	option = {#not in our interest
 		name = australia.6.a # 

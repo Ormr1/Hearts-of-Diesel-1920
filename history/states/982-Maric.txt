@@ -12,6 +12,7 @@ state={
 		buildings = {
 			infrastructure = 4
 			industrial_complex = 1
+			arms_factory = 1
 		}
 		add_core_of = MRC
 
@@ -20,7 +21,7 @@ state={
 	provinces={
 		12949 5198 1557 12411 4560 10460 12424 7610 11006 4546 4517 1472 4502 7522 4481 12308 7651 10487 7666 4632 10475 5227
 	}
-	manpower=489100
+	manpower=689100
 	buildings_max_level_factor=1.000
 	state_category=town
 	local_supplies=0.000

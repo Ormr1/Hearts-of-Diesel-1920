@@ -2196,6 +2196,7 @@ focus_tree = {
 			has_country_flag = GER_miracle_on_rhine
 			has_stability > 0.60
 			date < 1930.1.1
+			NOT={has_idea = GER_austerity_idea}
 		}
 		
 		available_if_capitulated = yes

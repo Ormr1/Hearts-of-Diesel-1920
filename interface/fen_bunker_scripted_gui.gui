@@ -188,6 +188,7 @@ guiTypes = {
 			name ="factory_fenris_map_locator_kerguelen"
 			spriteType = "GFX_fenris_map_location"
 			position = { x=240 y=114 }
+			pdx_tooltip = "Kerguelen Base"
 		}
 	}
 	containerWindowType = {#staff

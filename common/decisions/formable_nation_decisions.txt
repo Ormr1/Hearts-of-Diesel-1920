@@ -4042,3 +4042,83 @@ form_idel_ural_category = {
 		}
 	}
 }
+
+form_austrailia_category={
+	form_australia = { 
+
+		icon = generic_form_nation
+
+		allowed = {
+			OR = {
+				original_tag = AST # New Holland
+				original_tag = NAQ # New Aquitaine
+				original_tag = MRR # Murrawarri
+				original_tag = WIR # Wiradjuri
+				original_tag = MRC # Maric Confed
+				original_tag = PAM # Paman
+			}
+		}
+
+		available = {
+			controls_state = 522 # 
+			controls_state = 674 # 
+			controls_state = 519 # 
+			controls_state = 520 #  
+			controls_state = 517 # 
+			controls_state = 285 # 
+			controls_state = 518 # 
+			controls_state = 980 # 
+			controls_state = 988 # 
+			controls_state = 979 # 
+			controls_state = 982 # 
+			controls_state = 521 # 
+			controls_state = 983 # 
+			controls_state = 981 # 
+		}
+
+		visible = {
+			OR = {
+				original_tag = AST # New Holland
+				original_tag = NAQ # New Aquitaine
+				original_tag = MRR # Murrawarri
+				original_tag = WIR # Wiradjuri
+				original_tag = MRC # Maric Confed
+				original_tag = PAM # Paman
+			}
+			NOT = { has_global_flag = form_australia_flag }
+		}
+
+		complete_effect = {
+			set_cosmetic_tag = AST_united
+			
+			# Dagestan
+			522 = { add_core_of = ROOT }
+			674 = { add_core_of = ROOT }
+			519 = { add_core_of = ROOT }
+			520 = { add_core_of = ROOT }
+			517 = { add_core_of = ROOT }
+			285 = { add_core_of = ROOT }
+			518 = { add_core_of = ROOT }
+			980 = { add_core_of = ROOT }
+			988 = { add_core_of = ROOT }
+			979 = { add_core_of = ROOT }
+			982 = { add_core_of = ROOT }
+			521 = { add_core_of = ROOT }
+			983 = { add_core_of = ROOT }
+			981 = { add_core_of = ROOT }
+			
+			hidden_effect = { 
+				#news_event = { id = nsb_news.301 hours = 8 }
+				set_global_flag = form_australia_flag
+			}
+		}
+
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+	}
+}

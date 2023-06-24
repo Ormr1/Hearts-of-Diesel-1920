@@ -84,15 +84,213 @@ characters={
 			}
 		}
 	}
-
 	GER_august_von_mackensen={
 		name=GER_august_von_mackensen
 		portraits={
 			civilian={
 				large="GFX_portrait_ger_august_von_mackensen"
 			}
+			army={
+				large="GFX_portrait_ger_august_von_mackensen"
+			}
+		}
+		field_marshal={
+			traits={ old_guard urban_assault_specialist defensive_doctrine }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=2
 		}
 	}
+	GER_august_wilhelm_heye={
+		name=GER_august_wilhelm_heye
+		portraits={
+			army={
+				large=GFX_portrait_GER_august_wilhelm_heye
+				small="GFX_idea_august_wilhelm_heye"
+			}
+		}
+		corps_commander={
+			traits={ }
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=2
+		}
+	}
+	GER_kurt_von_hammerstein-equord ={
+		name=GER_kurt_von_hammerstein-equord
+		portraits={
+			army={
+				large=GFX_portrait_GER_kurt_von_hammerstein-equord
+				small="GFX_idea_kurt_von_hammerstein-equord"
+			}
+		}
+		corps_commander={
+			traits={ }
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=2
+		}
+	}
+	GER_hans_von_kirchbach={
+		name=GER_hans_von_kirchbach
+		portraits={
+			army={
+				large=GFX_portrait_GER_hans_von_kirchbach
+				small="GFX_idea_hans_von_kirchbach"
+			}
+		}
+		corps_commander={
+			traits={ }
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=2
+		}
+	}
+	GER_felix_graf_von_bothmer={
+		name=GER_felix_graf_von_bothmer
+		portraits={
+			army={
+				large=GFX_portrait_GER_felix_graf_von_bothmer
+				small="GFX_idea_felix_graf_von_bothmer"
+			}
+		}
+		corps_commander={
+			traits={ }
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=2
+		}
+	}
+	GER_werner_von_blomberg={
+		name=GER_werner_von_blomberg
+		portraits={
+			army={
+				large=GFX_portrait_GER_werner_von_blomberg
+				small="GFX_idea_werner_von_blomberg"
+			}
+		}
+		corps_commander={
+			traits={ }
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=2
+		}
+	}
+	GER_gunther_von_kirchbach={
+		name=GER_gunther_von_kirchbach
+		portraits={
+			army={
+				large=GFX_portrait_GER_gunther_von_kirchbach
+				small="GFX_idea_gunther_von_kirchbach"
+			}
+		}
+		corps_commander={
+			traits={ }
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=2
+		}
+	}
+	GER_moriz_von_lyncker={
+		name=GER_moriz_von_lyncker
+		portraits={
+			army={
+				large=GFX_portrait_GER_moriz_von_lyncker
+				small="GFX_idea_moriz_von_lyncker"
+			}
+		}
+		corps_commander={
+			traits={ }
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=2
+		}
+	}
+	GER_hans_von_plessen={
+		name=GER_hans_von_plessen
+		portraits={
+			army={
+				large=GFX_portrait_GER_hans_von_plessen
+				small="GFX_idea_hans_von_plessen"
+			}
+		}
+		corps_commander={
+			traits={ }
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=2
+		}
+	}
+	GER_paul_von_hindenburg={
+		name=GER_paul_von_hindenburg
+		portraits={
+			army={
+				large=GFX_portrait_GER_paul_von_hindenburg
+				small=GFX_portrait_GER_paul_von_hindenburg_small
+			}
+		}
+		field_marshal={
+			traits={ old_guard urban_assault_specialist defensive_doctrine }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=2
+		}
+	}
+	GER_franz_conrad_von_hotzendorf={
+		name=GER_franz_conrad_von_hotzendorf
+		portraits={
+			army={
+				large=GFX_portrait_GER_franz_conrad_von_hotzendorf
+				small=GFX_portrait_GER_franz_conrad_von_hotzendorf_small
+			}
+		}
+		field_marshal={
+			traits={ old_guard politically_connected }
+			skill=4
+			attack_skill=1
+			defense_skill=1
+			planning_skill=5
+			logistics_skill=4
+		}
+	}
+	GER_gunter_von_duisburg={
+		name=GER_gunter_von_duisburg
+		portraits={
+			army={
+				large=GFX_portrait_GER_gunter_von_duisburg
+				small=GFX_portrait_GER_gunter_von_duisburg_small
+			}
+		}
+		field_marshal={
+			traits={ war_hero urban_assault_specialist }
+			skill=6
+			attack_skill=4
+			defense_skill=5
+			planning_skill=3
+			logistics_skill=2
+		}
+	}
+	
 
 	GER_gerd_von_rundstedt={
 		name=GER_gerd_von_rundstedt
@@ -101,31 +299,6 @@ characters={
 				large=GFX_portrait_GER_gerd_von_rundstedt
 				small="GFX_idea_gerd_von_rundstedt"
 			}
-		}
-		advisor={
-			slot = high_command
-			idea_token = gerd_von_rundstedt
-			ledger = army
-			allowed = {
-				original_tag = GER
-			}
-			traits = {
-				army_regrouping_2
-			}
-			cost = 100
-			ai_will_do = {
-				factor = 1.500
-			}
-		}
-		
-		field_marshal={
-			traits={ old_guard urban_assault_specialist defensive_doctrine }
-			skill=3
-			attack_skill=3
-			defense_skill=2
-			planning_skill=3
-			logistics_skill=2
-			legacy_id=1
 		}
 	}
 
@@ -137,15 +310,6 @@ characters={
 				small=GFX_portrait_GER_gunther_von_kluge_small
 			}
 		}
-		field_marshal={
-			traits={ armor_officer offensive_doctrine }
-			skill=3
-			attack_skill=3
-			defense_skill=2
-			planning_skill=2
-			logistics_skill=3
-			legacy_id=2
-		}
 	}
 
 	GER_friedrich_paulus={
@@ -155,15 +319,6 @@ characters={
 				large=GFX_portrait_GER_friedrich_paulus
 				small=GFX_portrait_GER_friedrich_paulus_small
 			}
-		}
-		corps_commander={
-			traits={ trait_cautious armor_officer }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=3
 		}
 	}
 
@@ -213,28 +368,6 @@ characters={
 				small="GFX_idea_manstein"
 			}
 		}
-		advisor={
-			cost = 150
-			slot = theorist
-			idea_token = manstein
-			ledger = army
-			allowed = {
-				original_tag = GER
-			}
-			traits = {
-				mobile_warfare_expert
-			}
-		}
-		
-		corps_commander={
-			traits={ brilliant_strategist armor_officer trickster trait_engineer }
-			skill=4
-			attack_skill=2
-			defense_skill=4
-			planning_skill=3
-			logistics_skill=4
-			legacy_id=5
-		}
 	}
 
 	GER_heinz_guderian={
@@ -244,28 +377,6 @@ characters={
 				large=GFX_portrait_GER_heinz_guderian
 				small="GFX_idea_heinz_guderian"
 			}
-		}
-		advisor={
-			cost = 200
-			slot = theorist
-			idea_token = heinz_guderian
-			ledger = army
-			allowed = {
-				original_tag = GER
-			}
-			traits = {
-				blitzkrieg_theorist
-			}
-		}
-		
-		corps_commander={
-			traits={ brilliant_strategist career_officer armor_officer trickster panzer_leader }
-			skill=4
-			attack_skill=2
-			defense_skill=4
-			planning_skill=4
-			logistics_skill=3
-			legacy_id=6
 		}
 	}
 
@@ -277,15 +388,6 @@ characters={
 				small=GFX_portrait_GER_wilhelm_list_small
 			}
 		}
-		corps_commander={
-			traits={ inflexible_strategist career_officer }
-			skill=2
-			attack_skill=2
-			defense_skill=2
-			planning_skill=1
-			logistics_skill=2
-			legacy_id=7
-		}
 	}
 
 	GER_ewald_von_kleist={
@@ -295,15 +397,6 @@ characters={
 				large=GFX_portrait_GER_ewald_von_kleist
 				small=GFX_portrait_GER_ewald_von_kleist_small
 			}
-		}
-		corps_commander={
-			traits={ trait_cautious armor_officer }
-			skill=2
-			attack_skill=2
-			defense_skill=1
-			planning_skill=2
-			logistics_skill=2
-			legacy_id=8
 		}
 	}
 
@@ -315,15 +408,6 @@ characters={
 				small=GFX_portrait_GER_fedor_von_bock_small
 			}
 		}
-		corps_commander={
-			traits={ trait_cautious harsh_leader }
-			skill=4
-			attack_skill=4
-			defense_skill=3
-			planning_skill=4
-			logistics_skill=2
-			legacy_id=9
-		}
 	}
 
 	GER_walter_model={
@@ -333,15 +417,6 @@ characters={
 				large=GFX_portrait_GER_walter_model
 				small=GFX_portrait_GER_walter_model_small
 			}
-		}
-		field_marshal={
-			traits={ brilliant_strategist trait_cautious politically_connected defensive_doctrine }
-			skill=3
-			attack_skill=2
-			defense_skill=4
-			planning_skill=2
-			logistics_skill=2
-			legacy_id=10
 		}
 	}
 
@@ -353,15 +428,6 @@ characters={
 				small=GFX_portrait_GER_maximilian_von_weichs_small
 			}
 		}
-		corps_commander={
-			traits={ cavalry_officer }
-			skill=4
-			attack_skill=4
-			defense_skill=2
-			planning_skill=3
-			logistics_skill=4
-			legacy_id=11
-		}
 	}
 
 	GER_wilhelm_ritter_von_leeb={
@@ -371,15 +437,6 @@ characters={
 				large=GFX_portrait_GER_wilhelm_ritter_von_leeb
 				small=GFX_portrait_GER_wilhelm_ritter_von_leeb_small
 			}
-		}
-		corps_commander={
-			traits={ old_guard infantry_officer }
-			skill=3
-			attack_skill=4
-			defense_skill=3
-			planning_skill=1
-			logistics_skill=2
-			legacy_id=13
 		}
 	}
 
@@ -391,15 +448,6 @@ characters={
 				small=GFX_portrait_GER_georghans_reinhardt_small
 			}
 		}
-		corps_commander={
-			traits={ trait_cautious armor_officer }
-			skill=3
-			attack_skill=1
-			defense_skill=2
-			planning_skill=4
-			logistics_skill=3
-			legacy_id=14
-		}
 	}
 
 	GER_walter_kruger={
@@ -409,15 +457,6 @@ characters={
 				large=GFX_portrait_GER_walter_kruger
 				small=GFX_portrait_GER_walter_kruger_small
 			}
-		}
-		corps_commander={
-			traits={ trait_reckless armor_officer politically_connected }
-			skill=3
-			attack_skill=3
-			defense_skill=3
-			planning_skill=1
-			logistics_skill=3
-			legacy_id=15
 		}
 	}
 
@@ -429,31 +468,6 @@ characters={
 				small="GFX_idea_kurt_student"
 			}
 		}
-		advisor={
-			slot = high_command
-			idea_token = kurt_student
-			ledger = air
-			allowed = {
-				original_tag = GER
-			}
-			traits = {
-				air_airborne_2
-			}
-			cost = 100
-			ai_will_do = {
-				factor = 1.000
-			}
-		}
-		
-		corps_commander={
-			traits={ trait_reckless commando }
-			skill=4
-			attack_skill=4
-			defense_skill=2
-			planning_skill=4
-			logistics_skill=3
-			legacy_id=16
-		}
 	}
 
 	GER_erwin_von_witzleben={
@@ -463,15 +477,6 @@ characters={
 				large=GFX_portrait_GER_erwin_von_witzleben
 				small=GFX_portrait_GER_erwin_von_witzleben_small
 			}
-		}
-		corps_commander={
-			traits={ career_officer infantry_officer }
-			skill=4
-			attack_skill=4
-			defense_skill=3
-			planning_skill=2
-			logistics_skill=4
-			legacy_id=17
 		}
 	}
 
@@ -483,15 +488,6 @@ characters={
 				small=GFX_portrait_GER_hermann_hoth_small
 			}
 		}
-		corps_commander={
-			traits={ trait_reckless armor_officer }
-			skill=3
-			attack_skill=2
-			defense_skill=2
-			planning_skill=3
-			logistics_skill=3
-			legacy_id=18
-		}
 	}
 
 	GER_johannes_blaskowitz={
@@ -501,15 +497,6 @@ characters={
 				large=GFX_portrait_GER_johannes_blaskowitz
 				small=GFX_portrait_GER_johannes_blaskowitz_small
 			}
-		}
-		corps_commander={
-			traits={ infantry_officer }
-			skill=3
-			attack_skill=3
-			defense_skill=2
-			planning_skill=3
-			logistics_skill=2
-			legacy_id=19
 		}
 	}
 
@@ -521,15 +508,6 @@ characters={
 				small=GFX_portrait_GER_paul_hausser_small
 			}
 		}
-		corps_commander={
-			traits={ armor_officer politically_connected }
-			skill=4
-			attack_skill=3
-			defense_skill=3
-			planning_skill=4
-			logistics_skill=3
-			legacy_id=20
-		}
 	}
 
 	GER_friedrich_schulz={
@@ -539,15 +517,6 @@ characters={
 				large=GFX_portrait_GER_friedrich_schulz
 				small=GFX_portrait_GER_friedrich_schulz_small
 			}
-		}
-		corps_commander={
-			traits={ infantry_officer }
-			skill=3
-			attack_skill=3
-			defense_skill=3
-			planning_skill=1
-			logistics_skill=3
-			legacy_id=21
 		}
 	}
 
@@ -559,14 +528,6 @@ characters={
 				small=GFX_portrait_GER_georg_von_kuchler_small
 			}
 		}
-		corps_commander={
-			skill=4
-			attack_skill=3
-			defense_skill=2
-			planning_skill=4
-			logistics_skill=4
-			legacy_id=22
-		}
 	}
 
 	GER_alfred_jodl={
@@ -576,15 +537,6 @@ characters={
 				large=GFX_portrait_GER_alfred_jodl
 				small=GFX_portrait_GER_alfred_jodl_small
 			}
-		}
-		corps_commander={
-			traits={ career_officer politically_connected }
-			skill=3
-			attack_skill=2
-			defense_skill=2
-			planning_skill=3
-			logistics_skill=3
-			legacy_id=23
 		}
 	}
 
@@ -596,15 +548,6 @@ characters={
 				small=GFX_portrait_GER_sepp_dietrich_small
 			}
 		}
-		corps_commander={
-			traits={ brilliant_strategist trait_reckless armor_officer politically_connected }
-			skill=4
-			attack_skill=2
-			defense_skill=3
-			planning_skill=4
-			logistics_skill=4
-			legacy_id=24
-		}
 	}
 
 	GER_hasso_von_manteuffel={
@@ -614,15 +557,6 @@ characters={
 				large=GFX_portrait_GER_hasso_von_manteuffel
 				small=GFX_portrait_GER_hasso_von_manteuffel_small
 			}
-		}
-		corps_commander={
-			traits={ career_officer trait_cautious armor_officer }
-			skill=4
-			attack_skill=4
-			defense_skill=3
-			planning_skill=3
-			logistics_skill=3
-			legacy_id=25
 		}
 	}
 
@@ -636,30 +570,6 @@ characters={
 				large=GFX_portrait_GER_albert_kesselring
 			}
 		}
-		advisor={
-			slot = air_chief
-			idea_token = albert_kesselring
-			allowed = {
-				original_tag = GER
-			}
-			traits = {
-				air_chief_reform_2
-			}
-			cost = 100
-			ai_will_do = {
-				factor = 1.000
-			}
-		}
-		
-		corps_commander={
-			traits={ brilliant_strategist trait_cautious war_hero }
-			skill=4
-			attack_skill=2
-			defense_skill=4
-			planning_skill=3
-			logistics_skill=4
-			legacy_id=32
-		}
 	}
 
 	GER_gotthard_heinrici={
@@ -669,15 +579,6 @@ characters={
 				large=GFX_portrait_GER_gotthard_heinrici
 				small=GFX_portrait_GER_gotthard_heinrici_small
 			}
-		}
-		corps_commander={
-			traits={ trait_cautious infantry_officer trait_engineer }
-			skill=3
-			attack_skill=3
-			defense_skill=1
-			planning_skill=3
-			logistics_skill=3
-			legacy_id=33
 		}
 	}
 
@@ -689,15 +590,6 @@ characters={
 				small=GFX_portrait_GER_ernsteberhard_hell_small
 			}
 		}
-		corps_commander={
-			traits={ war_hero trait_engineer winter_specialist }
-			skill=3
-			attack_skill=3
-			defense_skill=2
-			planning_skill=3
-			logistics_skill=2
-			legacy_id=34
-		}
 	}
 
 	GER_felix_steiner={
@@ -707,14 +599,6 @@ characters={
 				large="GFX_portrait_ger_felix_steiner"
 				small=GFX_portrait_GER_felix_steiner_small
 			}
-		}
-		corps_commander={
-			skill=3
-			attack_skill=3
-			defense_skill=2
-			planning_skill=3
-			logistics_skill=2
-			legacy_id=35
 		}
 	}
 

@@ -18,6 +18,26 @@ RGS_help_USUA = {
         value = 150
     }
 }
+RSF_help_USUA = {
+	allowed = {
+		tag = RSF
+	}
+	enable = {
+		country_exists = UUA
+		UUA={has_war = yes}
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "UUA"
+		value = 500
+	}
+	ai_strategy = {
+        type = support
+        id = "UUA"
+        value = 150
+    }
+}
 #GPs help baltic allies
 GER_help_TMR = {
 	allowed = {
