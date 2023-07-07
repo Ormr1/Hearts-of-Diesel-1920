@@ -184,3 +184,8 @@
 ### DECISION CATEGORIES ###
  USA_peacekeeper_policing:0 "Peacekeeper Policing"
  USA_peacekeeper_policing_desc:0 "The United States Peacekeepers are an international police force that can be deployed to key regions to improve stability. We don't have enough Peacekeepers to deploy to every region possible, so we will have to prioritize specific regions.\n\nMaximum Possible Peacekeeper Missions: [?police_pk_charges_max]\nCurrent Possible Peacekeeper Missions: [?police_pk_charges]"
+ USA_the_wild_west:0 "The Wild West"
+ USA_the_wild_west_desc:0 "The Usonian southwest has been a hotbed of trouble for the federal government. When these territories were annexed from Aztlán, they were filled with Native American tribes who'd either lived there for centuries or displaced to there by Aztlán and Usonian authorities. These regions were left mostly alone by the Usonian federal government for the past few decades due to their relative aridity compared to the more fertile lands of the Great Plains that Usonian settlers wanted to move to. However, as that land has been taken up, more and more settlers have moved into the southwestern territories. The increasing encroachment of Usonian settlers and even armed security has caused the native population to grow increasingly agitated, culminating in some groups of people engaging in frequent raids and attacks on Usonian settlements and military installations.\n\nThe federal government has now been forced to take more direct action in the affairs of the southwest and the decision it makes on these lands will have wide-reaching ramifications."
+### DECISIONS ###
+ USA_increase_control_over_state:0 "Increase Control In [FROM.GetName]"
+ USA_integrate_state:0 "Integrate [From.GetName]"

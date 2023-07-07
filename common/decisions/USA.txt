@@ -499,6 +499,102 @@ USA_congress = {
 		}
 	}
 }
+USA_the_wild_west = {
+	USA_increase_control_over_state = {
+		icon = GFX_decision_usa_hat
+		allowed = {
+			tag = USA
+		}
+		state_target = yes
+		ai_will_do = {
+			base = 100
+		}
+		on_map_mode = map_only
+		available = {
+			NOT = {
+				has_country_flag = USA_increasing_control_in_state
+			}
+			has_capitulated = no
+			FROM = {
+				owner = {
+					has_capitulated = no
+					controls_state = PREV
+				}
+			}
+		}
+		visible = {
+			FROM = {
+				AND = {
+					is_owned_by = ROOT
+					OR = {
+						has_dynamic_modifier = { modifier = native_american_raids_1 }
+						has_dynamic_modifier = { modifier = native_american_raids_2 }
+						has_dynamic_modifier = { modifier = native_american_raids_3 }
+					}
+				}
+			}
+		}
+		days_remove = 14
+		modifier = {
+			political_power_gain = -0.05
+		}
+		complete_effect = {
+			set_country_flag = USA_increasing_control_in_state
+		}
+		remove_effect = {
+			clr_country_flag = USA_increasing_control_in_state
+			FROM = {
+				USA_increase_control_in_state = yes
+			}
+		}
+	}
+	USA_integrate_state = {
+		icon = GFX_decision_usa_flag
+		allowed = {
+			tag = USA
+		}
+		state_target = yes
+		ai_will_do = {
+			base = 100
+		}
+		on_map_mode = map_and_decisions_view
+		available = {
+			FROM = {
+				owner = {
+					has_capitulated = no
+					controls_state = PREV
+				}
+				NOT = {
+					OR = {
+						has_dynamic_modifier = { modifier = native_american_raids_1 }
+						has_dynamic_modifier = { modifier = native_american_raids_2 }
+						has_dynamic_modifier = { modifier = native_american_raids_3 }
+					}
+				}
+			}
+		}
+		visible = {
+			FROM = {
+				AND = {
+					is_owned_by = ROOT
+					OR = {
+						state = 920
+						state = 1012
+						state = 376
+						state = 377
+						state = 483
+						state = 484
+					}
+				}
+			}
+		}
+		complete_effect = {
+			FROM = {
+				add_core_of = ROOT
+			}
+		}
+	}
+}
 USA_united_states = {
 	USA_join_peacekeeper_program = {
 		icon = generic_prepare_civil_war

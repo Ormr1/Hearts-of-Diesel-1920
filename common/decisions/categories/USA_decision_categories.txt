@@ -63,6 +63,15 @@ USA_peacekeeper_policing = {
 		}
 	}
 }
+USA_the_wild_west = {
+	priority =  996
+	allowed = {
+		original_tag = USA
+	}
+	visible = {
+		original_tag = USA
+	}
+}
 USA_war_measures = {
 	
 	allowed = {

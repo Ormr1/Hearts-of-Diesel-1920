@@ -24,22 +24,22 @@ country_event = {
 	immediate = {
 		hidden_effect = {
 			920 = {
-				add_dynamic_modifier = { modifier = native_american_raids }
+				add_dynamic_modifier = { modifier = native_american_raids_3 }
 			}
 			1012 = {
-				add_dynamic_modifier = { modifier = native_american_raids }
+				add_dynamic_modifier = { modifier = native_american_raids_3 }
 			}
 			376 = {
-				add_dynamic_modifier = { modifier = native_american_raids }
+				add_dynamic_modifier = { modifier = native_american_raids_3 }
 			}
 			377 = {
-				add_dynamic_modifier = { modifier = native_american_raids }
+				add_dynamic_modifier = { modifier = native_american_raids_3 }
 			}
 			483 = {
-				add_dynamic_modifier = { modifier = native_american_raids }
+				add_dynamic_modifier = { modifier = native_american_raids_3 }
 			}
 			484 = {
-				add_dynamic_modifier = { modifier = native_american_raids }
+				add_dynamic_modifier = { modifier = native_american_raids_3 }
 			}
 		}
 	}

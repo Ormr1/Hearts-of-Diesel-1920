@@ -1,0 +1,12 @@
+spriteTypes = {	
+
+	### Usonia
+	spriteType = {
+		name = "GFX_decision_usa_hat"
+		texturefile = "gfx/interface/decisions/decision_usa_hat.png"
+	}
+	spriteType = {
+		name = "GFX_decision_usa_flag"
+		texturefile = "gfx/interface/decisions/decision_usa_flag.png"
+	}
+}

@@ -1,3 +1,23 @@
+USA_increase_control_in_state = {
+	if = {
+		limit = {
+			has_dynamic_modifier = { modifier = native_american_raids_3 }
+		}
+		remove_dynamic_modifier = { modifier = native_american_raids_3 }
+		add_dynamic_modifier = { modifier = native_american_raids_2 }
+	}
+	else_if = {
+		limit = {
+			has_dynamic_modifier = { modifier = native_american_raids_2 }
+		}
+		remove_dynamic_modifier = { modifier = native_american_raids_2 }
+		add_dynamic_modifier = { modifier = native_american_raids_1 }
+	}
+	else = {
+		remove_dynamic_modifier = { modifier = native_american_raids_1 }
+	}
+}
+
 #Add to scripted triggers if more levels of hyper inflation is added
 USA_depression_clear_all = {
 	remove_ideas = {

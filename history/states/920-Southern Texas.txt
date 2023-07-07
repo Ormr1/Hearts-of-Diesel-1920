@@ -14,6 +14,8 @@ state={
 			}
 
 		}
+		add_claim_by = USA
+		remove_core_of = USA
 		victory_points = {
 			12782 1 
 		}

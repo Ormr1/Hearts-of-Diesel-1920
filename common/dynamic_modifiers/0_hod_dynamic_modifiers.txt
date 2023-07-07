@@ -53,7 +53,19 @@ us_peacekeeper_mission_5 = {
 	compliance_gain	= 0.02
 }
 
-native_american_raids = {
+native_american_raids_3 = {
+	icon = placeholder
+	army_speed_factor_for_controller = -0.15
+	attrition_for_controller = 0.15
+	compliance_growth = -0.15
+	local_building_slots_factor	= -0.30
+	local_factory_sabotage = 0.45
+	local_manpower = -0.30
+	state_resources_factor = -0.15
+	local_supplies = -0.15
+	resistance_growth = 0.15
+}
+native_american_raids_2 = {
 	icon = placeholder
 	army_speed_factor_for_controller = -0.10
 	attrition_for_controller = 0.10
@@ -64,6 +76,18 @@ native_american_raids = {
 	state_resources_factor = -0.10
 	local_supplies = -0.10
 	resistance_growth = 0.10
+}
+native_american_raids_1 = {
+	icon = placeholder
+	army_speed_factor_for_controller = -0.05
+	attrition_for_controller = 0.05
+	compliance_growth = -0.05
+	local_building_slots_factor	= -0.10
+	local_factory_sabotage = 0.15
+	local_manpower = -0.10
+	state_resources_factor = -0.05
+	local_supplies = -0.05
+	resistance_growth = 0.05
 }
 
 saxon_nationalist_militias = {
