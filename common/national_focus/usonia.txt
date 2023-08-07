@@ -2714,6 +2714,9 @@ focus_tree = {
                             }
                         }
                         has_government = democratic
+                        NOT = {
+                            original_tag = SAM
+                        }
                     }
                 }
                 add_opinion_modifier = {
@@ -2743,6 +2746,7 @@ focus_tree = {
                             capital_scope = {
                                 is_on_continent = australia
                             }
+                            original_tag = SAM
                         }
                         has_government = democratic
                     }
@@ -2774,6 +2778,7 @@ focus_tree = {
         y = 2
         cost = 10
         completion_reward = {
+            custom_effect_tooltip = USA_San_Francisco_Conference_tt
             every_other_country = {
                 limit = {
                     has_opinion_modifier = washington_conference
@@ -3705,13 +3710,6 @@ focus_tree = {
                 is_owned_by = ROOT
             }
         }
-        available = {
-            NOT = {
-                463 = {
-                    is_owned_by = ROOT
-                }
-            }
-        }
         x = 1
         y = 1
         cost = 10
@@ -3840,22 +3838,27 @@ focus_tree = {
         x = 0
         y = 1
         cost = 10
+        available = {
+            SPR = {
+                has_government = democratic
+            }
+        }
         ai_will_do = {
             factor = 1
         }
         completion_reward = {
             add_opinion_modifier = {
                 target = SPR
-                modifier = medium_increase
+                modifier = great_rappraochment
             }
             reverse_add_opinion_modifier = {
                 target = SPR
-                modifier = medium_increase
+                modifier = great_rappraochment
             }
         }
     }
     focus = {
-        id = USA_Supply_Their_Vietnam_Adventures
+        id = USA_Supply_Their_Vanam_Adventures
         icon = placeholder
         relative_position_id = USA_The_Great_Rapproachment
         prerequisite = { focus = USA_The_Great_Rapproachment }
@@ -3880,6 +3883,14 @@ focus_tree = {
                     producer = USA
                 }
             }
+            add_opinion_modifier = {
+                target = SPR
+                modifier = medium_increase
+            }
+            reverse_add_opinion_modifier = {
+                target = SPR
+                modifier = medium_increase
+            }
         }
     }
     focus = {
@@ -3891,17 +3902,42 @@ focus_tree = {
         y = 1
         cost = 10
         completion_reward = {
-
+            ROC = {
+                add_equipment_to_stockpile = {
+                    type = infantry_equipment
+                    amount = 5000
+                    producer = USA
+                }
+                add_equipment_to_stockpile = {
+                    type = artillery_equipment
+                    amount = 500
+                    producer = USA
+                }
+                add_equipment_to_stockpile = {
+                    type = support_equipment
+                    amount = 500
+                    producer = USA
+                }
+            }
+            add_opinion_modifier = {
+                target = ROC
+                modifier = medium_increase
+            }
+            reverse_add_opinion_modifier = {
+                target = ROC
+                modifier = medium_increase
+            }
         }
     }
     focus = {
         id = USA_The_Arabia_Situation
         icon = placeholder
         relative_position_id = USA_The_Old_World
+        available = { has_global_flag = ARB_saxon_involvement }
         prerequisite = { focus = USA_The_Old_World }
         x = 4
         y = 1
-        cost = 10
+        cost = 1
         ai_will_do = {
             factor = 1
         }
@@ -3917,7 +3953,7 @@ focus_tree = {
         prerequisite = { focus = USA_The_Arabia_Situation }
         x = 0
         y = 1
-        cost = 10
+        cost = 2
         ai_will_do = {
             factor = 1
         }
@@ -3926,7 +3962,7 @@ focus_tree = {
             hidden_effect = {
                 country_event = {
                     id = usa_arabia.9
-                    days = 100
+                    days = 50
                 }
             }
         }
@@ -3942,7 +3978,7 @@ focus_tree = {
         }
         x = -1
         y = 1
-        cost = 10
+        cost = 4
         ai_will_do = {
             factor = 1
         }
@@ -3961,7 +3997,7 @@ focus_tree = {
         }
         x = 1
         y = 1
-        cost = 10
+        cost = 4
         ai_will_do = {
             factor = 1
         }
@@ -3979,7 +4015,7 @@ focus_tree = {
         }
         x = 1
         y = 1
-        cost = 10
+        cost = 5
         ai_will_do = {
             factor = 1
         }

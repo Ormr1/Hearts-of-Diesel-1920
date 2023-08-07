@@ -1791,6 +1791,11 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_idea_usa_usonian_film_industry"
+		texturefile = "gfx/interface/ideas/USA/idea_usa_usonian_film_industry.png"
+	}
+
+	spriteType = {
 		name = "GFX_idea_usa_tycoon_influence_extremely_high"
 		texturefile = "gfx/interface/ideas/USA/idea_usa_overfarming.png"
 	}

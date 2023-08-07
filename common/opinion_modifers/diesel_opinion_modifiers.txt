@@ -1,6 +1,11 @@
 opinion_modifiers = {
-	
 	GER_tyrant_overlord = {
 		value = -50
+	}
+	washington_conference = {
+		value = 25
+	}
+	great_rappraochment = {
+		value = 50
 	}
 }
