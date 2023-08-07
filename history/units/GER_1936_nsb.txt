@@ -124,6 +124,18 @@ division_template = {
 		infantry = { x = 2 y = 2 }
 	}
 }
+division_template = {
+	name = "Schutztruppe"			#
+	division_names_group = GER_COL_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+	priority = 0
+}
 
 units = {
 
@@ -944,6 +956,256 @@ units = {
 		location = 11265
 		division_template = "Conscript Division"
 		start_experience_factor = 0.3
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 42
+		}
+		location = 11518
+		division_template = "Conscript Division"
+		start_experience_factor = 0.3
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 43
+		}
+		location = 13011
+		division_template = "Conscript Division"
+		start_experience_factor = 0.3
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 44
+		}
+		location = 6683
+		division_template = "Conscript Division"
+		start_experience_factor = 0.3
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 45
+		}
+		location = 11590
+		division_template = "Conscript Division"
+		start_experience_factor = 0.3
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 46
+		}
+		location = 6236
+		division_template = "Conscript Division"
+		start_experience_factor = 0.3
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 47
+		}
+		location = 11478
+		division_template = "Conscript Division"
+		start_experience_factor = 0.3
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 48
+		}
+		location = 9470
+		division_template = "Conscript Division"
+		start_experience_factor = 0.3
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 49
+		}
+		location = 3283
+		division_template = "Conscript Division"
+		start_experience_factor = 0.3
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 50
+		}
+		location = 9511
+		division_template = "Conscript Division"
+		start_experience_factor = 0.3
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 51
+		}
+		location = 6375
+		division_template = "Conscript Division"
+		start_experience_factor = 0.3
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 52
+		}
+		location = 11386
+		division_template = "Conscript Division"
+		start_experience_factor = 0.3
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 53
+		}
+		location = 9327
+		division_template = "Conscript Division"
+		start_experience_factor = 0.3
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 54
+		}
+		location = 334
+		division_template = "Conscript Division"
+		start_experience_factor = 0.3
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 55
+		}
+		location = 11343
+		division_template = "Conscript Division"
+		start_experience_factor = 0.3
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 56
+		}
+		location = 11316
+		division_template = "Conscript Division"
+		start_experience_factor = 0.3
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 57
+		}
+		location = 3380
+		division_template = "Conscript Division"
+		start_experience_factor = 0.3
+	}
+	##### Colonial #####
+	division= {	
+		name = "Kamerun Garrison"	
+		location = 6039
+		division_template = "Schutztruppe" 	# Miltia unit, reserve equipment
+		force_equipment_variants = { infantry_equipment_0_1 = { owner = "GER" } }
+		start_equipment_factor = 0.15
+	}
+	division= {	
+		name = "Togo Garrison"	
+		location = 1951
+		division_template = "Schutztruppe" 	# Miltia unit, reserve equipment
+		force_equipment_variants = { infantry_equipment_0_1 = { owner = "GER" } }
+		start_equipment_factor = 0.15
+	}
+	division= {	
+		name = "Kongo Garrison"	
+		location = 10968
+		division_template = "Schutztruppe" 	# Miltia unit, reserve equipment
+		force_equipment_variants = { infantry_equipment_0_1 = { owner = "GER" } }
+		start_equipment_factor = 0.15
+	}
+	division= {	
+		name = "Tanganyika Garrison"	
+		location = 2196
+		division_template = "Schutztruppe" 	# Miltia unit, reserve equipment
+		force_equipment_variants = { infantry_equipment_0_1 = { owner = "GER" } }
+		start_equipment_factor = 0.15
+	}
+	division= {	
+		name = "Zuid-Arikaansche Garrison"	
+		location = 12589
+		division_template = "Schutztruppe" 	# Miltia unit, reserve equipment
+		force_equipment_variants = { infantry_equipment_0_1 = { owner = "GER" } }
+		start_equipment_factor = 0.15
+	}
+	division= {	
+		name = "Madagascar Garrison"	
+		location = 5222
+		division_template = "Schutztruppe" 	# Miltia unit, reserve equipment
+		force_equipment_variants = { infantry_equipment_0_1 = { owner = "GER" } }
+		start_equipment_factor = 0.15
+	}
+	division= {	
+		name = "Somali Garrison"	
+		location = 10833
+		division_template = "Schutztruppe" 	# Miltia unit, reserve equipment
+		force_equipment_variants = { infantry_equipment_0_1 = { owner = "GER" } }
+		start_equipment_factor = 0.15
+	}
+	division= {	
+		name = "Bahrain Garrison"	
+		location = 13270
+		division_template = "Schutztruppe" 	# Miltia unit, reserve equipment
+		force_equipment_variants = { infantry_equipment_0_1 = { owner = "GER" } }
+		start_equipment_factor = 0.15
+	}
+	division= {	
+		name = "Levant Garrison"	
+		location = 792
+		division_template = "Schutztruppe" 	# Miltia unit, reserve equipment
+		force_equipment_variants = { infantry_equipment_0_1 = { owner = "GER" } }
+		start_equipment_factor = 0.15
+	}
+	division= {	
+		name = "Suriname Garrison"	
+		location = 12828
+		division_template = "Schutztruppe" 	# Miltia unit, reserve equipment
+		force_equipment_variants = { infantry_equipment_0_1 = { owner = "GER" } }
+		start_equipment_factor = 0.15
+	}
+	division= {	
+		name = "South Georgia Garrison"	
+		location = 10995
+		division_template = "Schutztruppe" 	# Miltia unit, reserve equipment
+		force_equipment_variants = { infantry_equipment_0_1 = { owner = "GER" } }
+		start_equipment_factor = 0.15
+	}
+	division= {	
+		name = "Maldives Garrison"	
+		location = 4967
+		division_template = "Schutztruppe" 	# Miltia unit, reserve equipment
+		force_equipment_variants = { infantry_equipment_0_1 = { owner = "GER" } }
+		start_equipment_factor = 0.15
+	}
+	division= {	
+		name = "Goa Garrison"	
+		location = 1273
+		division_template = "Schutztruppe" 	# Miltia unit, reserve equipment
+		force_equipment_variants = { infantry_equipment_0_1 = { owner = "GER" } }
+		start_equipment_factor = 0.15
+	}
+	division= {	
+		name = "Hong Kong Garrison"	
+		location = 10062
+		division_template = "Schutztruppe" 	# Miltia unit, reserve equipment
+		force_equipment_variants = { infantry_equipment_0_1 = { owner = "GER" } }
+		start_equipment_factor = 0.15
+	}
+	division= {	
+		name = "Nambia Garrison"	
+		location = 2229
+		division_template = "Schutztruppe" 	# Miltia unit, reserve equipment
+		force_equipment_variants = { infantry_equipment_0_1 = { owner = "GER" } }
+		start_equipment_factor = 0.15
 	}
 }
 

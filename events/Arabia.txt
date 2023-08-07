@@ -10,6 +10,7 @@ country_event = { #
 
     option = { # 
         name = arabia_event.1.a
+		set_global_flag = ARB_saxon_involvement
     }
 }
 country_event = { # 

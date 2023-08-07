@@ -1247,3 +1247,28 @@ news_event = {#Murder of Friedrich III
 		
 	}
 }
+country_event = {#KSMVA offers investments for monopoly rights
+	id = saxonian.45
+	title = saxonian.45.t
+	desc = saxonian.45.d
+	picture = GFX_report_event_finnish_letter
+	
+	is_triggered_only = yes
+	
+	option = {#Sassanid accepts
+		name = saxonian.45.a
+		trigger = {
+			tag = PER
+		}
+	}
+	option = {#Bromoan Timocracy
+		name = saxonian.45.b
+		trigger = {
+			tag = INS
+		}
+	}
+	option = {#refuse
+		name = saxonian.45.c
+		
+	}
+}

@@ -2917,10 +2917,21 @@ GER_warbond_administration={
 		cancel_if_not_visible = yes
 
 		remove_effect = {
-			set_temp_variable = {
-				GER_tmp_decrease_loan_var = 150
+			if={
+				limit={
+					has_idea = GER_golden_twenties
+				}
+				set_temp_variable = {
+					GER_tmp_decrease_loan_var = 250
+				}
+				GER_decrease_debt = yes
 			}
-			GER_decrease_debt = yes
+			else={
+				set_temp_variable = {
+					GER_tmp_decrease_loan_var = 150
+				}
+				GER_decrease_debt = yes
+			}
 		}
 		modifier={
 			civilian_factory_use = 5

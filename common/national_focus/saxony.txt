@@ -1645,6 +1645,7 @@ focus_tree = {
 
 		completion_reward = {
 			#unlocks KSMVA decisions
+			PER={country_event = {id =saxonian.45 }}
 		}
 	}
 	focus = {
@@ -1664,6 +1665,7 @@ focus_tree = {
 
 		completion_reward = {
 			#unlocks KSMVA decisions
+			INS={country_event = {id =saxonian.45 }}
 		}
 	}
 
@@ -2212,8 +2214,8 @@ focus_tree = {
 		relative_position_id = GER_golden_twenties
 		x = 0
 		y = 1
-		cost = 5
-		search_filters = {  FOCUS_FILTER_COLONIAL }
+		cost = 10
+		search_filters = {  FOCUS_FILTER_ECONOMIC }
 		
 		available_if_capitulated = yes
 
@@ -2239,8 +2241,8 @@ focus_tree = {
 		relative_position_id = GER_new_frankfurt_project
 		x = -1
 		y = 1
-		cost = 5
-		search_filters = {  FOCUS_FILTER_COLONIAL }
+		cost = 10
+		search_filters = {  FOCUS_FILTER_ECONOMIC }
 		
 		available_if_capitulated = yes
 
@@ -2261,8 +2263,8 @@ focus_tree = {
 		relative_position_id = GER_new_frankfurt_project
 		x = 1
 		y = 1
-		cost = 5
-		search_filters = {  FOCUS_FILTER_COLONIAL }
+		cost = 10
+		search_filters = {  FOCUS_FILTER_ECONOMIC }
 		
 		available_if_capitulated = yes
 
@@ -2296,7 +2298,7 @@ focus_tree = {
 		x = -2
 		y = 1
 		cost = 5
-		search_filters = {  FOCUS_FILTER_COLONIAL }
+		search_filters = {  FOCUS_FILTER_ECONOMIC }
 		
 		available_if_capitulated = yes
 
@@ -2340,7 +2342,7 @@ focus_tree = {
 		x = 2
 		y = 1
 		cost = 10
-		search_filters = {  FOCUS_FILTER_COLONIAL }
+		search_filters = {  FOCUS_FILTER_ECONOMIC }
 		
 		available_if_capitulated = yes
 
@@ -2363,7 +2365,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		cost = 10
-		search_filters = {  FOCUS_FILTER_COLONIAL }
+		search_filters = {  FOCUS_FILTER_ECONOMIC }
 		
 		available_if_capitulated = yes
 
