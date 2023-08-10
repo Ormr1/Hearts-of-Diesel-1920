@@ -37,7 +37,9 @@ focus_tree = {
 		# focus = industrial_effort
 	# }
 
-	continuous_focus_position = { x = 200 y = 0 }
+	continuous_focus_position = { x = 2400 y = 0 }
+
+	shared_focus = GER_rally_civil_war_support
 
 	focus = {
 		id = GER_finish_peace_talks
@@ -179,7 +181,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_the_kaisers_speech
-		icon = GFX_goal_generic_allies_build_infantry
+		icon = GFX_focus_GER_kaisers_speech
 		relative_position_id = GER_scars_of_the_great_war
 		x = 0
 		y = 1
@@ -196,7 +198,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_continued_demobilisation
-		icon = GFX_goal_generic_allies_build_infantry
+		icon = GFX_focus_GER_continue_demob
 		relative_position_id = GER_scars_of_the_great_war
 		x = 2
 		y = 1
@@ -237,7 +239,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_returning_automachines_to_fields
-		icon = GFX_goal_generic_allies_build_infantry
+		icon = GFX_focus_GER_return_automachines
 		relative_position_id = GER_adressing_the_armies_issues
 		prerequisite = { focus = GER_adressing_the_armies_issues}
 		x =0
@@ -1471,7 +1473,7 @@ focus_tree = {
 		icon = GFX_goal_generic_allies_build_infantry
 		prerequisite = { focus = GER_a_steady_helm }
 		relative_position_id = GER_a_steady_helm
-		x = 17
+		x = 20
 		y = 1
 		cost = 5
 		search_filters = {  FOCUS_FILTER_COLONIAL }
@@ -1489,7 +1491,7 @@ focus_tree = {
 		prerequisite = { 
 			focus = GER_foreign_sphere
 		}
-		x = -2
+		x = -5
 		y = 1
 		cost = 5
 		search_filters = {  FOCUS_FILTER_COLONIAL }
@@ -1610,7 +1612,7 @@ focus_tree = {
 		prerequisite = { 
 			focus = GER_foreign_sphere
 		}
-		x = 2
+		x = 5
 		y = 1
 		cost = 5
 		search_filters = {  FOCUS_FILTER_COLONIAL }
@@ -1676,7 +1678,7 @@ focus_tree = {
 		prerequisite = { 
 			focus = GER_foreign_sphere
 		}
-		x = 4
+		x = 3
 		y = 1
 		cost = 5
 		search_filters = {  FOCUS_FILTER_COLONIAL }
@@ -1701,7 +1703,7 @@ focus_tree = {
 		prerequisite = { 
 			focus = GER_foreign_sphere
 		}
-		x = 7
+		x = 0
 		y = 1
 		cost = 5
 		search_filters = {  FOCUS_FILTER_COLONIAL }
@@ -2170,7 +2172,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_economic_development
-		icon = GFX_goal_generic_allies_build_infantry
+		icon = GFX_focus_GER_economic_development
 		prerequisite = { focus = GER_a_steady_helm }
 		relative_position_id = GER_a_steady_helm
 		x = -7

@@ -1,0 +1,106 @@
+focus_tree = {
+    id = sparticus_focus
+
+    country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = DDR
+		}
+		
+		modifier = {
+			add = 10
+			original_tag = DDR
+		}
+	}
+    continuous_focus_position = { x = 50 y = 2000 }
+    default = no
+    ##
+    shared_focus = GER_rally_civil_war_support
+
+}
+focus_tree = {
+    id = SPS_focus
+
+    country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = WGR
+		}
+		
+		modifier = {
+			add = 10
+			original_tag = WGR
+		}
+	}
+    continuous_focus_position = { x = 50 y = 2000 }
+    default = no
+    ##
+    shared_focus = GER_rally_civil_war_support
+
+}
+focus_tree = {
+    id = bavaria_focus
+
+    country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = BAY
+		}
+		
+		modifier = {
+			add = 10
+			original_tag = BAY
+		}
+	}
+    continuous_focus_position = { x = 50 y = 2000 }
+    default = no
+    ##
+    shared_focus = GER_rally_civil_war_support
+
+}
+shared_focus = {
+	id = GER_rally_civil_war_support
+    icon = GFX_focus_generic_
+	available = {
+        has_war = yes
+    }
+	allow_branch = {
+		has_global_flag = GER_civil_war
+	}
+    x = -5
+    y = 0
+    cost = 5
+    completion_reward = {
+        add_war_support = 0.1
+    }
+}
+shared_focus = {
+	id = GER_recall_automachines
+    icon = GFX_focus_generic_
+	prerequisite = { focus = GER_rally_civil_war_support }
+	relative_position_id = GER_rally_civil_war_support
+    x = 1
+    y = 1
+    cost = 5
+    completion_reward = {
+        
+    }
+}
+shared_focus = {
+	id = GER_call_up_loyal_milita
+    icon = GFX_focus_generic_
+	prerequisite = { focus = GER_rally_civil_war_support }
+	relative_position_id = GER_rally_civil_war_support
+    x = -1
+    y = 1
+    cost = 5
+    completion_reward = {
+        add_manpower = 20000
+    }
+}

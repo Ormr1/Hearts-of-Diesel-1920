@@ -1260,12 +1260,15 @@ country_event = {#KSMVA offers investments for monopoly rights
 		trigger = {
 			tag = PER
 		}
+		add_ideas = {PER_KSMVA}
+		give_resource_rights = { receiver = GER state = 413 }
 	}
-	option = {#Bromoan Timocracy
+	option = {#Bromoan Timocracy accepts
 		name = saxonian.45.b
 		trigger = {
 			tag = INS
 		}
+		add_ideas = {}
 	}
 	option = {#refuse
 		name = saxonian.45.c

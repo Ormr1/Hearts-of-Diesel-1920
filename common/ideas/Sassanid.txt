@@ -1,0 +1,26 @@
+ideas = {
+	country = { 
+		PER_KSMVA = {
+				
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = KSMVA_domination
+				
+			removal_cost = -1
+				
+			modifier = {
+				consumer_goods_factor = -0.075
+			}
+			targeted_modifier={
+				tag = GER
+				trade_cost_for_target_factor = -0.05
+			}
+		}
+	}
+}

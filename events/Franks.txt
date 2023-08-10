@@ -2287,11 +2287,11 @@ country_event = {
 
 	option = {
 		name = fra_economic.17.a
-		complete_national_focus = FRA_Bank_Off_Of_The_Wealthy
+		complete_national_focus = FRA_Bank_Off_Of_the_Wealthy
 	}
 	option = {
 		name = fra.economic.17.b
-		complete_national_focus = FRA_Even_The_Economic_Playing_Field
+		complete_national_focus = FRA_Even_the_Economic_Playing_Field
 	}
 }
 
