@@ -262,6 +262,7 @@ ETR = "countries/Entre Rios.txt"
 ARC = "countries/Argentine Confederation.txt"
 FEN = "countries/Fenris.txt"
 CTH = "countries/Carthage.txt"
+YUC = "countries/Yucatan.txt"
 #
 RFM = "countries/Rhodesian Federation.txt"
 ZIN = "countries/ZANU.txt"
