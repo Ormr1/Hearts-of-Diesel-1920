@@ -1429,6 +1429,56 @@ spriteTypes = {
 	### USA
 
 	SpriteType = { 
+		name = "GFX_focus_usa_american_economic_development"
+		texturefile = "gfx/interface/goals/USA/focus_usa_american_economic_development.png"
+	}
+
+	SpriteType = { 
+		name = "GFX_focus_usa_loans_for_the_americas"
+		texturefile = "gfx/interface/goals/USA/focus_usa_loans_for_the_americas.png"
+	}
+
+	SpriteType = { 
+		name = "GFX_focus_usa_spread_the_dollar"
+		texturefile = "gfx/interface/goals/USA/focus_usa_spread_the_dollar.png"
+	}
+
+	SpriteType = { 
+		name = "GFX_focus_usa_development_in_aztlan"
+		texturefile = "gfx/interface/goals/USA/focus_usa_development_in_aztlan.png"
+	}
+
+	SpriteType = { 
+		name = "GFX_focus_usa_development_in_centroamerica"
+		texturefile = "gfx/interface/goals/USA/focus_usa_development_in_centroamerica.png"
+	}
+
+	SpriteType = { 
+		name = "GFX_focus_usa_development_in_gran_colombia"
+		texturefile = "gfx/interface/goals/USA/focus_usa_development_in_gran_colombia.png"
+	}
+
+	SpriteType = { 
+		name = "GFX_focus_usa_development_in_la_plata"
+		texturefile = "gfx/interface/goals/USA/focus_usa_development_in_la_plata.png"
+	}
+
+	SpriteType = { 
+		name = "GFX_focus_usa_development_in_laurentia"
+		texturefile = "gfx/interface/goals/USA/focus_usa_development_in_laurentia.png"
+	}
+
+	SpriteType = { 
+		name = "GFX_focus_usa_development_in_the_inca"
+		texturefile = "gfx/interface/goals/USA/focus_usa_development_in_the_inca.png"
+	}
+
+	SpriteType = { 
+		name = "GFX_focus_usa_development_in_the_uk"
+		texturefile = "gfx/interface/goals/USA/focus_usa_development_in_the_uk.png"
+	}
+
+	SpriteType = { 
 		name = "GFX_focus_usa_washington_conference"
 		texturefile = "gfx/interface/goals/USA/focus_usa_washington_conference.png"
 	}

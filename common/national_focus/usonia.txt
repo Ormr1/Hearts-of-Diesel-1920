@@ -905,7 +905,7 @@ focus_tree = {
 		prerequisite = { focus = USA_Northeastern_Boom }
 		x = 1
 		y = 1
-		cost = 1
+		cost = 10
 		completion_reward = {
 			build_railway = {
 				level = 1
@@ -916,6 +916,27 @@ focus_tree = {
 				fallback = yes
 				start_province = 3957
 				target_province = 11654
+			}
+			358 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			360 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			361 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
 			}
 		}
 	}
@@ -1071,7 +1092,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = USA_Extend_Line_To_Baltimore
+		id = USA_Extend_Line_To_Richmond
 		icon = placeholder
 		relative_position_id = USA_Boston_Washington_Passenger_Line
 		prerequisite = { focus = USA_Boston_Washington_Passenger_Line }
@@ -1086,9 +1107,16 @@ focus_tree = {
 					base = 1
 				}
 				fallback = yes
-				path = { 6845 3824 6984 }
+				path = { 3957 873 3823 }
 			}
 			361 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			362 = {
 				add_building_construction = {
 					type = infrastructure
 					level = 1
@@ -1100,8 +1128,8 @@ focus_tree = {
 	focus = {
 		id = USA_Extend_Line_To_Pittsburgh
 		icon = placeholder
-		relative_position_id = USA_Extend_Line_To_Baltimore
-		prerequisite = { focus = USA_Extend_Line_To_Baltimore }
+		relative_position_id = USA_Extend_Line_To_Richmond
+		prerequisite = { focus = USA_Extend_Line_To_Richmond }
 		x = 0
 		y = 1
 		cost = 10
@@ -1352,7 +1380,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_American_Economic_Development
-		icon = placeholder
+		icon = GFX_focus_usa_american_economic_development
 		relative_position_id = USA_The_New_World
 		prerequisite = { focus = USA_The_New_World }
 		x = -3
@@ -1367,7 +1395,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_Loans_For_The_Americas
-		icon = placeholder
+		icon = GFX_focus_usa_loans_for_the_americas
 		relative_position_id = USA_American_Economic_Development
 		prerequisite = { focus = USA_American_Economic_Development }
 		x = -1
@@ -1394,7 +1422,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_Spread_The_Dollar
-		icon = placeholder
+		icon = GFX_focus_usa_spread_the_dollar
 		relative_position_id = USA_American_Economic_Development
 		prerequisite = { focus = USA_American_Economic_Development }
 		x = 1
@@ -1421,7 +1449,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_Development_In_Aztlan
-		icon = placeholder
+		icon = GFX_focus_usa_development_in_aztlan
 		relative_position_id = USA_Loans_For_The_Americas
 		prerequisite = { focus = USA_Loans_For_The_Americas }
 		prerequisite = { focus = USA_Spread_The_Dollar }
@@ -1545,12 +1573,12 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_Development_In_Centroamerica
-		icon = placeholder
+		icon = GFX_focus_usa_development_in_centroamerica
 		relative_position_id = USA_Loans_For_The_Americas
 		prerequisite = { focus = USA_Loans_For_The_Americas }
 		prerequisite = { focus = USA_Spread_The_Dollar }
 		available = {
-			GUA = {
+			ELS = {
 				has_civil_war = no
 			}
 		}
@@ -1561,7 +1589,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			GUA = {
+			ELS = {
 				add_opinion_modifier = {
 					target = ROOT
 					modifier = aided_industry
@@ -1669,7 +1697,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_Development_In_Gran_Colombia
-		icon = placeholder
+		icon = GFX_focus_usa_development_in_gran_colombia
 		relative_position_id = USA_Spread_The_Dollar
 		prerequisite = { focus = USA_Loans_For_The_Americas }
 		prerequisite = { focus = USA_Spread_The_Dollar }
@@ -1793,7 +1821,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_Development_In_Brazil
-		icon = placeholder
+		icon = GFX_focus_usa_development_in_the_uk
 		relative_position_id = USA_Spread_The_Dollar
 		prerequisite = { focus = USA_Loans_For_The_Americas }
 		prerequisite = { focus = USA_Spread_The_Dollar }
@@ -1917,7 +1945,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_Development_In_Inca
-		icon = placeholder
+		icon = GFX_focus_usa_development_in_the_inca
 		relative_position_id = USA_Development_In_Centroamerica
 		prerequisite = { focus = USA_Loans_For_The_Americas }
 		prerequisite = { focus = USA_Spread_The_Dollar }
@@ -2041,7 +2069,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_Development_In_La_Plata
-		icon = placeholder
+		icon = GFX_focus_usa_development_in_la_plata
 		relative_position_id = USA_Development_In_Centroamerica
 		prerequisite = { focus = USA_Loans_For_The_Americas }
 		prerequisite = { focus = USA_Spread_The_Dollar }
@@ -2284,7 +2312,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_Development_In_Laurentia
-		icon = placeholder
+		icon = GFX_focus_usa_development_in_laurentia
 		relative_position_id = USA_Development_In_Gran_Colombia
 		prerequisite = { focus = USA_Loans_For_The_Americas }
 		prerequisite = { focus = USA_Spread_The_Dollar }
@@ -2572,7 +2600,7 @@ focus_tree = {
 		prerequisite = { focus = USA_The_Washington_Conference }
 		x = -5
 		y = 1
-		cost = 10
+		cost = 5
 		completion_reward = {
 			every_other_country = {
 				limit = {
@@ -2588,6 +2616,13 @@ focus_tree = {
 						OR = {
 							has_government = democratic
 							has_government = neutrality
+						}
+						NOT = {
+							overlord = {
+								NOT = {
+									has_government = democratic
+								}
+							}
 						}
 						has_civil_war = no
 					}
@@ -2610,7 +2645,7 @@ focus_tree = {
 		prerequisite = { focus = USA_The_Washington_Conference }
 		x = -3
 		y = 1
-		cost = 10
+		cost = 5
 		completion_reward = {
 			every_other_country = {
 				limit = {
@@ -2618,6 +2653,13 @@ focus_tree = {
 						OR = {
 							capital_scope = {
 								is_on_continent = europe
+							}
+						}
+						NOT = {
+							overlord = {
+								NOT = {
+									has_government = democratic
+								}
 							}
 						}
 						has_government = democratic
@@ -2641,7 +2683,7 @@ focus_tree = {
 		prerequisite = { focus = USA_The_Washington_Conference }
 		x = -1
 		y = 1
-		cost = 10
+		cost = 5
 		completion_reward = {
 			every_other_country = {
 				limit = {
@@ -2649,6 +2691,13 @@ focus_tree = {
 						OR = {
 							capital_scope = {
 								is_on_continent = africa
+							}
+						}
+						NOT = {
+							overlord = {
+								NOT = {
+									has_government = democratic
+								}
 							}
 						}
 						has_government = democratic
@@ -2672,7 +2721,7 @@ focus_tree = {
 		prerequisite = { focus = USA_The_Washington_Conference }
 		x = 1
 		y = 1
-		cost = 10
+		cost = 5
 		completion_reward = {
 			every_other_country = {
 				limit = {
@@ -2680,6 +2729,13 @@ focus_tree = {
 						OR = {
 							capital_scope = {
 								is_on_continent = middle_east
+							}
+						}
+						NOT = {
+							overlord = {
+								NOT = {
+									has_government = democratic
+								}
 							}
 						}
 						has_government = democratic
@@ -2703,7 +2759,7 @@ focus_tree = {
 		prerequisite = { focus = USA_The_Washington_Conference }
 		x = 3
 		y = 1
-		cost = 10
+		cost = 5
 		completion_reward = {
 			every_other_country = {
 				limit = {
@@ -2711,6 +2767,13 @@ focus_tree = {
 						OR = {
 							capital_scope = {
 								is_on_continent = asia
+							}
+						}
+						NOT = {
+							overlord = {
+								NOT = {
+									has_government = democratic
+								}
 							}
 						}
 						has_government = democratic
@@ -2737,7 +2800,7 @@ focus_tree = {
 		prerequisite = { focus = USA_The_Washington_Conference }
 		x = 5
 		y = 1
-		cost = 10
+		cost = 5
 		completion_reward = {
 			every_other_country = {
 				limit = {
@@ -2747,6 +2810,13 @@ focus_tree = {
 								is_on_continent = australia
 							}
 							original_tag = SAM
+						}
+						NOT = {
+							overlord = {
+								NOT = {
+									has_government = democratic
+								}
+							}
 						}
 						has_government = democratic
 					}
