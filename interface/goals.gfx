@@ -1479,6 +1479,36 @@ spriteTypes = {
 	}
 
 	SpriteType = { 
+		name = "GFX_focus_usa_guns_to_la_platan_liberals"
+		texturefile = "gfx/interface/goals/USA/focus_usa_guns_to_la_platan_liberals.png"
+	}
+
+	SpriteType = { 
+		name = "GFX_focus_usa_the_new_world"
+		texturefile = "gfx/interface/goals/USA/focus_usa_the_new_world.png"
+	}
+
+	SpriteType = { 
+		name = "GFX_focus_usa_la_platan_civil_war"
+		texturefile = "gfx/interface/goals/USA/focus_usa_la_platan_civil_war.png"
+	}
+
+	SpriteType = { 
+		name = "GFX_focus_usa_occupy_the_falklands"
+		texturefile = "gfx/interface/goals/USA/focus_usa_occupy_the_falklands.png"
+	}
+
+	SpriteType = { 
+		name = "GFX_focus_usa_recognize_la_platan_liberals"
+		texturefile = "gfx/interface/goals/USA/focus_usa_recognize_la_platan_liberals.png"
+	}
+
+	SpriteType = { 
+		name = "GFX_focus_usa_operation_inti"
+		texturefile = "gfx/interface/goals/USA/focus_usa_operation_inti.png"
+	}
+
+	SpriteType = { 
 		name = "GFX_focus_usa_washington_conference"
 		texturefile = "gfx/interface/goals/USA/focus_usa_washington_conference.png"
 	}
