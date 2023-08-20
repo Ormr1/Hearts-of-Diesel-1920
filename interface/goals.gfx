@@ -1514,8 +1514,63 @@ spriteTypes = {
 	}
 
 	SpriteType = { 
+		name = "GFX_focus_usa_meet_with_african_leaders"
+		texturefile = "gfx/interface/goals/USA/focus_usa_meet_with_african_leaders.png"
+	}
+
+	SpriteType = { 
+		name = "GFX_focus_usa_meet_with_american_leaders"
+		texturefile = "gfx/interface/goals/USA/focus_usa_meet_with_american_leaders.png"
+	}
+
+	SpriteType = { 
+		name = "GFX_focus_usa_meet_with_asian_leaders"
+		texturefile = "gfx/interface/goals/USA/focus_usa_meet_with_asian_leaders.png"
+	}
+
+	SpriteType = { 
+		name = "GFX_focus_usa_meet_with_european_leaders"
+		texturefile = "gfx/interface/goals/USA/focus_usa_meet_with_european_leaders.png"
+	}
+
+	SpriteType = { 
+		name = "GFX_focus_usa_meet_with_middle_eastern_leaders"
+		texturefile = "gfx/interface/goals/USA/focus_usa_meet_with_middle_eastern_leaders.png"
+	}
+
+	SpriteType = { 
+		name = "GFX_focus_usa_meet_with_oceanian_leaders"
+		texturefile = "gfx/interface/goals/USA/focus_usa_meet_with_oceanian_leaders.png"
+	}
+
+	SpriteType = { 
+		name = "GFX_focus_usa_san_francisco_conference"
+		texturefile = "gfx/interface/goals/USA/focus_usa_san_francisco_conference.png"
+	}
+
+	SpriteType = { 
 		name = "GFX_focus_usa_establish_us_peacekeepers"
 		texturefile = "gfx/interface/goals/USA/focus_usa_establish_us_peacekeepers.png"
+	}
+
+	SpriteType = { 
+		name = "GFX_focus_usa_sof_us_peacekeepers"
+		texturefile = "gfx/interface/goals/USA/focus_usa_sof_us_peacekeepers.png"
+	}
+
+	SpriteType = { 
+		name = "GFX_focus_usa_police_us_peacekeepers"
+		texturefile = "gfx/interface/goals/USA/focus_usa_police_us_peacekeepers.png"
+	}
+
+	SpriteType = { 
+		name = "GFX_focus_usa_mountain_hikes"
+		texturefile = "gfx/interface/goals/USA/focus_usa_mountain_hikes.png"
+	}
+
+	SpriteType = { 
+		name = "GFX_focus_usa_united_states_economic_association"
+		texturefile = "gfx/interface/goals/USA/focus_usa_united_states_economic_association.png"
 	}
 	
 	SpriteType = { 

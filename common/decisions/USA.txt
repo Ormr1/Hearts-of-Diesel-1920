@@ -737,7 +737,7 @@ USA_peacekeeper_special_operations = {
 				multiply_temp_variable = { us_peacekeeper_sof_operation_casualties = -100 }
 				if = {
 					limit = {
-						has_completed_focus = USA_Integrate_The_Mobile_Air_Corps
+						has_idea = us_mobile_air_corps_integration
 					}
 					divide_temp_variable = { us_peacekeeper_sof_operation_casualties = 2 }
 				}
@@ -754,7 +754,7 @@ USA_peacekeeper_special_operations = {
 				if = {
 					limit = {
 						USA = {
-							has_completed_focus = USA_Integrate_The_Mobile_Air_Corps
+							has_idea = us_mobile_air_corps_integration
 						}
 					}
 					divide_temp_variable = { us_peacekeeper_sof_operation_casualties = 2 }
@@ -772,7 +772,7 @@ USA_peacekeeper_special_operations = {
 				if = {
 					limit = {
 						USA = {
-							has_completed_focus = USA_Integrate_The_Mobile_Air_Corps
+							has_idea = us_mobile_air_corps_integration
 						}
 					}
 					divide_temp_variable = { us_peacekeeper_sof_operation_casualties = 2 }
@@ -782,7 +782,7 @@ USA_peacekeeper_special_operations = {
 			}
 			if = {
 				limit = {
-					has_completed_focus = USA_Integrate_The_Mobile_Air_Corps
+					has_idea = us_mobile_air_corps_integration
 				}
 				random_list = {
 					75 = {

@@ -2595,7 +2595,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_Meet_With_American_Leaders
-		icon = GFX_focus_usa_washington_conference
+		icon = GFX_focus_usa_meet_with_american_leaders
 		relative_position_id = USA_The_Washington_Conference
 		prerequisite = { focus = USA_The_Washington_Conference }
 		x = -5
@@ -2640,7 +2640,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_Meet_With_European_Leaders
-		icon = GFX_focus_usa_washington_conference
+		icon = GFX_focus_usa_meet_with_european_leaders
 		relative_position_id = USA_The_Washington_Conference
 		prerequisite = { focus = USA_The_Washington_Conference }
 		x = -3
@@ -2678,7 +2678,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_Meet_With_African_Leaders
-		icon = GFX_focus_usa_washington_conference
+		icon = GFX_focus_usa_meet_with_african_leaders
 		relative_position_id = USA_The_Washington_Conference
 		prerequisite = { focus = USA_The_Washington_Conference }
 		x = -1
@@ -2716,7 +2716,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_Meet_With_Middle_Eastern_Leaders
-		icon = GFX_focus_usa_washington_conference
+		icon = GFX_focus_usa_meet_with_middle_eastern_leaders
 		relative_position_id = USA_The_Washington_Conference
 		prerequisite = { focus = USA_The_Washington_Conference }
 		x = 1
@@ -2754,7 +2754,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_Meet_With_Asian_Leaders
-		icon = GFX_focus_usa_washington_conference
+		icon = GFX_focus_usa_meet_with_asian_leaders
 		relative_position_id = USA_The_Washington_Conference
 		prerequisite = { focus = USA_The_Washington_Conference }
 		x = 3
@@ -2795,7 +2795,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_Meet_With_Oceanian_Leaders
-		icon = GFX_focus_usa_washington_conference
+		icon = GFX_focus_usa_meet_with_oceanian_leaders
 		relative_position_id = USA_The_Washington_Conference
 		prerequisite = { focus = USA_The_Washington_Conference }
 		x = 5
@@ -2834,7 +2834,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_San_Francisco_Conference
-		icon = GFX_focus_usa_washington_conference
+		icon = GFX_focus_usa_san_francisco_conference
 		relative_position_id = USA_The_Washington_Conference
 		prerequisite = {
 			focus = USA_Meet_With_American_Leaders
@@ -2879,7 +2879,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_SOF_Training
-		icon = placeholder
+		icon = GFX_focus_usa_sof_us_peacekeepers
 		relative_position_id = USA_Establish_US_Peacekeepers
 		prerequisite = { focus = USA_Establish_US_Peacekeepers }
 		mutually_exclusive = { focus = USA_Policing_Training }
@@ -3018,7 +3018,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_Mountain_Hikes
-		icon = placeholder
+		icon = GFX_focus_usa_mountain_hikes
 		relative_position_id = USA_SOF_Training
 		prerequisite = { focus = USA_SOF_Training }
 		x = 0
@@ -3144,7 +3144,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_Policing_Training
-		icon = placeholder
+		icon = GFX_focus_usa_police_us_peacekeepers
 		relative_position_id = USA_Establish_US_Peacekeepers
 		prerequisite = { focus = USA_Establish_US_Peacekeepers }
 		mutually_exclusive = { focus = USA_SOF_Training }
@@ -3392,7 +3392,7 @@ focus_tree = {
 	### USEA ###
 	focus = {
 		id = USA_The_United_States_Economic_Association
-		icon = GFX_focus_usa_washington_conference
+		icon = GFX_focus_usa_united_states_economic_association
 		relative_position_id = USA_San_Francisco_Conference
 		prerequisite = { focus = USA_San_Francisco_Conference }
 		x = 5
