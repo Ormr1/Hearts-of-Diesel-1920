@@ -1,6 +1,6 @@
 ﻿l_english:
 ### TOOLTIPS
- USA_Operation_Inti_tt: "Declare §Rwar§! on all of [LPT.GetName]'s South American enemies"
+ USA_Operation_Inti_tt: "Declare §Rwar§! on all of §Y[LPT.GetName]§!'s South American enemies"
  usa_better_eco_development_tt: "Bonuses from American Economic Development: §G+100%§!"
  us_joint_army_xp_gain_5_tt: "Gain §Y5§! extra §GArmy Experience§! for every faction member\n  Faction Army Experience Bonus: §G+[?mountain_hikes_xp_bonus]§!"
  us_joint_air_xp_gain_5_tt: "Gain §Y5§! extra §GAir Experience§! for every faction member\n  Faction Air Experience Bonus: §G+[?aerial_patrols_xp_bonus]§!"
