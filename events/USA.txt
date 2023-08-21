@@ -2863,6 +2863,10 @@ country_event = { # Resource trade amendment
 
 	option = { # Vote Aye!
 		name = usa_usea.1.a
+		ai_chance = {
+			base = 10
+		}
+		custom_effect_tooltip = usea_resource_agreement_aye_tt
 		USA = {
 			add_to_variable = {
 				var = usea_resource_exchange_votes
