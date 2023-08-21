@@ -180,6 +180,7 @@ if = {
 add_ideas = {
 	SPR_colonial_obession
 	SPR_idea_alfonso_xiii
+	SPR_idea_conquistadors
 	SPR_idea_galaten_raids
 }
 

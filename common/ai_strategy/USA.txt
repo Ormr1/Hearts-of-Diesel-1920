@@ -67,6 +67,23 @@ USA_aid_xin_republic = {
 		value = 500
 	}
 }
+USA_aid_rfm = {
+	allowed = {
+		tag = USA
+	}
+	enable = {
+		RFM = {
+			has_civil_war = yes
+			has_government = democratic
+		}
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "RFM"
+		value = 500
+	}
+}
 USA_prepare_alaska_invasion = {
 	allowed = {
 		tag = USA

@@ -189,6 +189,9 @@ set_popularities = {
 	fascism = 1
 }
 
+add_ideas = {
+	ENG_albionian_expeditionary_force
+}
 
 #give_guarantee = CZE
 

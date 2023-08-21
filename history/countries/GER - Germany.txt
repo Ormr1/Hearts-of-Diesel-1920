@@ -256,6 +256,7 @@ set_variable = { GER_war_loan_amount_M = 207237}
 
 add_ideas = {
 	general_staff
+	GER_kaiserliches_expeditionskorps
 	GER_papiermark
 	GER_war_debt
 	GER_army_on_verge_of_munity

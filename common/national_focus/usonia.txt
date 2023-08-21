@@ -1448,13 +1448,13 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = USA_Development_In_Aztlan
-		icon = GFX_focus_usa_development_in_aztlan
+		id = USA_Development_In_Maya
+		icon = GFX_focus_usa_development_in_maya
 		relative_position_id = USA_Loans_For_The_Americas
 		prerequisite = { focus = USA_Loans_For_The_Americas }
 		prerequisite = { focus = USA_Spread_The_Dollar }
 		available = {
-			MEX = {
+			YUC = {
 				has_civil_war = no
 			}
 		}
@@ -1465,7 +1465,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			MEX = {
+			YUC = {
 				add_opinion_modifier = {
 					target = ROOT
 					modifier = aided_industry
@@ -2922,6 +2922,7 @@ focus_tree = {
 					has_completed_focus = USA_Meet_With_Oceanian_Leaders
 				}
 			}
+			add = 20
 		}
 		x = 0
 		y = 2
@@ -2932,6 +2933,7 @@ focus_tree = {
 				limit = {
 					has_opinion_modifier = washington_conference
 					has_war = no
+					is_subject = no
 				}
 				country_event = usa_united_states.1
 			}
@@ -3800,7 +3802,13 @@ focus_tree = {
 		y = 1
 		cost = 10
 		ai_will_do = {
-			factor = 1
+			base = 1
+			modifier = {
+				ROC = {
+					has_war_with = CHI 
+				}
+				add = 200
+			}
 		}
 		completion_reward = {
 			add_political_power = 50
@@ -3996,7 +4004,13 @@ focus_tree = {
 			}
 		}
 		ai_will_do = {
-			factor = 1
+			base = 1
+			modifier = {
+				ROC = {
+					has_war_with = CHI 
+				}
+				add = 200
+			}
 		}
 		completion_reward = {
 			add_opinion_modifier = {
@@ -4014,9 +4028,23 @@ focus_tree = {
 		icon = placeholder
 		relative_position_id = USA_The_Great_Rapproachment
 		prerequisite = { focus = USA_The_Great_Rapproachment }
+		available = {
+			SPR = {
+				has_war_with = VIN
+			}
+		}
 		x = -1
 		y = 1
 		cost = 10
+		ai_will_do = {
+			base = 1
+			modifier = {
+				SPR = {
+					has_war_with = VIN 
+				}
+				add = 100
+			}
+		}
 		completion_reward = {
 			SPR = {
 				add_equipment_to_stockpile = {
@@ -4053,6 +4081,15 @@ focus_tree = {
 		x = 1
 		y = 1
 		cost = 10
+		ai_will_do = {
+			base = 1
+			modifier = {
+				ROC = {
+					has_war_with = CHI 
+				}
+				add = 200
+			}
+		}
 		completion_reward = {
 			ROC = {
 				add_equipment_to_stockpile = {

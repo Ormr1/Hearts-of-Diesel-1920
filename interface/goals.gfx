@@ -1449,6 +1449,11 @@ spriteTypes = {
 	}
 
 	SpriteType = { 
+		name = "GFX_focus_usa_development_in_maya"
+		texturefile = "gfx/interface/goals/USA/focus_usa_development_in_maya.png"
+	}
+
+	SpriteType = { 
 		name = "GFX_focus_usa_development_in_centroamerica"
 		texturefile = "gfx/interface/goals/USA/focus_usa_development_in_centroamerica.png"
 	}

@@ -1,0 +1,17 @@
+SPR_aid_xin_republic = {
+    allowed = {
+		tag = SPR
+	}
+	enable = {
+		ROC = {
+			has_war_with = CHI
+            has_government = democratic
+		}
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "ROC"
+		value = 500
+	}
+}

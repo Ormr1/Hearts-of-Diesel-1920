@@ -126,6 +126,7 @@ if = {
 	}
 }
 add_ideas = {
+		FRA_frankish_foreign_legion
 		FRA_loss_to_saxony
 		FRA_Ideological_Protests_6
 		FRA_Crippled_Navy
