@@ -2776,7 +2776,7 @@ country_event = { # Invitation into the United States
 			}
 			modifier = {
 				is_in_faction_with = USA
-				add = 15
+				add = 100
 			}
 		}
 		USA = {
