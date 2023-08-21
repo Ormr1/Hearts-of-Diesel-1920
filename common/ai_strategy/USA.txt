@@ -3,10 +3,10 @@ USA_help_la_plata = {
 		tag = USA
 	}
 	enable = {
-		date > 1921.3.13
 		LPT = {
 			has_civil_war = yes
 		}
+		country_exists = CHL
 	}
 	abort_when_not_enabled = yes
 	ai_strategy = {
@@ -46,6 +46,41 @@ USA_aid_arabian_king = {
 	ai_strategy = {
 		type = send_volunteers_desire
 		id = "SAU"
+		value = 500
+	}
+}
+USA_aid_xin_republic = {
+	allowed = {
+		tag = USA
+	}
+	enable = {
+		has_completed_focus = USA_Send_Aid_To_Xin_Republic
+		ROC = {
+			has_war_with = CHI
+			has_government = democratic
+		}
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "ROC"
+		value = 500
+	}
+}
+USA_prepare_alaska_invasion = {
+	allowed = {
+		tag = USA
+	}
+	enable = {
+		has_completed_focus = USA_The_Alaska_Question
+		NOT = {
+			owns_state = 463
+		}
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+    	type = prepare_for_war
+		id = SOV
 		value = 500
 	}
 }

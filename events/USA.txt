@@ -2789,11 +2789,11 @@ country_event = { # Invitation into the United States
 			base = 10
 			modifier = {
 				is_in_faction = yes
-				add = 10
+				add = 100
 			}
 			modifier = {
 				is_subject = yes
-				add = 10
+				add = 100
 			}
 		}
 	}
