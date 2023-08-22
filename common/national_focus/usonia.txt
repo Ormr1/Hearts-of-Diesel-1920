@@ -2925,7 +2925,7 @@ focus_tree = {
 					has_completed_focus = USA_Meet_With_Oceanian_Leaders
 				}
 			}
-			add = 20
+			add = 100
 		}
 		x = 0
 		y = 2

@@ -2270,7 +2270,7 @@ country_event = { # Usonia Occupies Falklands
 }
 
 ### ALASKA
-country_event = {
+country_event = { # Usonia Offers To Buy Alaska
 	id = usa_alaska.1
 	title = usa_alaska.1.t
 	desc = usa_alaska.1.desc
@@ -2343,8 +2343,12 @@ country_event = { # Alaska Goes To Usonia (Usonia Perspective)
 
 	is_triggered_only = yes
 
-	option = { # Then we go in ourselves
+	option = { # Send the boys in
 		name = usa_alaska.4.a
+		add_stability = 0.05
+		ROOT = {
+			transfer_state = 463
+		}
 	}
 }
 country_event = { # Alaska Goes To Usonia (Rusviet Perspective)
@@ -2357,8 +2361,9 @@ country_event = { # Alaska Goes To Usonia (Rusviet Perspective)
 
 	is_triggered_only = yes
 
-	option = { # Then we go in ourselves
+	option = {
 		name = usa_alaska.5.a
+		add_stability = -0.02
 	}
 }
 country_event = { # Rusviet Holds Alaska (Usonia Perspective)
@@ -2371,8 +2376,9 @@ country_event = { # Rusviet Holds Alaska (Usonia Perspective)
 
 	is_triggered_only = yes
 
-	option = { # Then we go in ourselves
+	option = { # How did this happen?!
 		name = usa_alaska.6.a
+		add_stability = -0.02
 	}
 }
 country_event = { # Rusviet Holds Alaska (Rusviet Perspective)
@@ -2385,8 +2391,9 @@ country_event = { # Rusviet Holds Alaska (Rusviet Perspective)
 
 	is_triggered_only = yes
 
-	option = { # Then we go in ourselves
+	option = { # One less thing to worry about
 		name = usa_alaska.7.a
+		add_stability = 0.05
 	}
 }
 
