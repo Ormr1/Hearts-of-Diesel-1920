@@ -3513,6 +3513,14 @@ focus_tree = {
 						}
 					}
 				}
+				add_to_variable = {
+					var = usea_pp_factor
+					value = -0.05
+				}
+				add_to_variable = {
+					var = usea_cg_factor
+					value = -0.05
+				}
 			}
 		}
 	}
@@ -3563,18 +3571,20 @@ focus_tree = {
 				value = 2
 			}
 			round_temp_variable = usea_votes_needed
-			if = {
-				limit = {
-					check_variable = {
-						var = usea_resource_exchange_votes
-						value = usea_votes_needed
-						compare = greater_than_or_equals
+			hidden_effect = {
+				if = {
+					limit = {
+						check_variable = {
+							var = usea_resource_exchange_votes
+							value = usea_votes_needed
+							compare = greater_than_or_equals
+						}
 					}
+					country_event = usa_usea.4
 				}
-				country_event = usa_usea.4
-			}
-			else = {
-				country_event = usa_usea.5
+				else = {
+					country_event = usa_usea.5
+				}
 			}
 		}
 	}

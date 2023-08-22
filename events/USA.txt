@@ -3211,7 +3211,7 @@ country_event = { # Unified Currency Amendment Passes!
 		}
 		add_to_variable = {
 			var = usea_cg_factor
-			value = -0.10
+			value = -0.05
 		}
 		force_update_dynamic_modifier = yes
 		custom_effect_tooltip = usea_currency_agreement_bonuses_tt
