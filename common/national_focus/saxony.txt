@@ -60,7 +60,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_demobilisation
-		icon = GFX_goal_generic_allies_build_infantry
+		icon = GFX_focus_GER_continue_demob
 		relative_position_id = GER_finish_peace_talks
 		prerequisite = { focus = GER_finish_peace_talks}
 		x = 0
@@ -129,7 +129,7 @@ focus_tree = {
 		x = 4
 		y = 1
 		cost = 5
-		search_filters = {  FOCUS_FILTER_ECONOMIC }
+		search_filters = {  }
 		prerequisite = { focus = GER_scars_of_the_great_war}
 		
 		available_if_capitulated = yes
@@ -150,7 +150,7 @@ focus_tree = {
 		x = -2
 		y = 1
 		cost = 5
-		search_filters = {  FOCUS_FILTER_ECONOMIC }
+		search_filters = { FOCUS_FILTER_NAVAL FOCUS_FILTER_ECONOMIC }
 		prerequisite = { focus = GER_scars_of_the_great_war}
 		
 		available_if_capitulated = yes
@@ -186,7 +186,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		cost = 5
-		search_filters = {  FOCUS_FILTER_ECONOMIC }
+		search_filters = { FOCUS_FILTER_POLITICAL }
 		prerequisite = { focus = GER_scars_of_the_great_war}
 		
 		available_if_capitulated = yes
@@ -203,7 +203,7 @@ focus_tree = {
 		x = 2
 		y = 1
 		cost = 5
-		search_filters = {  FOCUS_FILTER_ECONOMIC }
+		search_filters = {  }
 		prerequisite = { focus = GER_scars_of_the_great_war}
 		
 		available_if_capitulated = yes
@@ -1054,7 +1054,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_brazilian_payment_plan
-		icon = GFX_goal_generic_allies_build_infantry
+		icon = GFX_focus_usa_development_in_the_uk
 		relative_position_id = GER_dealing_with_external_loans
 		prerequisite = { focus = GER_dealing_with_external_loans}
 		x = 2
@@ -1077,7 +1077,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_colombian_payment_plan
-		icon = GFX_goal_generic_allies_build_infantry
+		icon = GFX_focus_usa_development_in_gran_colombia
 		relative_position_id = GER_dealing_with_external_loans
 		prerequisite = { focus = GER_dealing_with_external_loans}
 		x = 0
@@ -1100,7 +1100,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_roman_payment_plan
-		icon = GFX_goal_generic_allies_build_infantry
+		icon = GFX_focus_roman_repayments
 		relative_position_id = GER_dealing_with_external_loans
 		prerequisite = { focus = GER_dealing_with_external_loans}
 		x = -2
@@ -1123,7 +1123,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_bulgarian_payment_plan
-		icon = GFX_goal_generic_allies_build_infantry
+		icon = GFX_focus_bulgarian_repayments
 		relative_position_id = GER_dealing_with_external_loans
 		prerequisite = { focus = GER_dealing_with_external_loans}
 		x = -1
@@ -1146,7 +1146,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_hispanian_payment_plan
-		icon = GFX_goal_generic_allies_build_infantry
+		icon = GFX_focus_hispanian_repayments
 		relative_position_id = GER_dealing_with_external_loans
 		prerequisite = { focus = GER_dealing_with_external_loans}
 		x = 1
@@ -1242,6 +1242,10 @@ focus_tree = {
 					var = GER_war_loan_amount_M
 					compare = less_than_or_equals
 				}
+			}
+			OR={
+				NOT={has_global_flag = GER_civil_war}
+				has_war = no
 			}
 			
 		}
@@ -1793,7 +1797,7 @@ focus_tree = {
 		x = 7
 		y = 1
 		cost = 5
-		search_filters = {  FOCUS_FILTER_COLONIAL }
+		search_filters = {  }
 		available={
 			OR={
 				NOT={has_completed_focus = GER_cut_military_funding }
@@ -1817,7 +1821,7 @@ focus_tree = {
 		x = 3
 		y = 1
 		cost = 5
-		search_filters = {  FOCUS_FILTER_COLONIAL }
+		search_filters = {  }
 		available={
 			OR={
 				NOT={has_completed_focus = GER_cut_military_funding }
@@ -1850,7 +1854,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		cost = 5
-		search_filters = {  FOCUS_FILTER_COLONIAL }
+		search_filters = {  }
 		available={
 			OR={
 				NOT={has_completed_focus = GER_cut_military_funding }
@@ -1897,7 +1901,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		cost = 5
-		search_filters = {  FOCUS_FILTER_COLONIAL }
+		search_filters = {  }
 		available={
 			OR={
 				NOT={has_completed_focus = GER_cut_military_funding }
@@ -2064,7 +2068,7 @@ focus_tree = {
 		x = -3
 		y = 1
 		cost = 5
-		search_filters = {  FOCUS_FILTER_COLONIAL }
+		search_filters = {  }
 		available={
 			OR={
 				NOT={has_completed_focus = GER_cut_military_funding }
@@ -2154,7 +2158,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		cost = 5
-		search_filters = {  FOCUS_FILTER_COLONIAL }
+		search_filters = {  }
 		available={
 			OR={
 				NOT={has_completed_focus = GER_cut_military_funding }
@@ -2178,7 +2182,7 @@ focus_tree = {
 		x = -7
 		y = 1
 		cost = 5
-		search_filters = {  FOCUS_FILTER_COLONIAL }
+		search_filters = {  FOCUS_FILTER_ECONOMIC }
 		
 		available_if_capitulated = yes
 
@@ -2194,7 +2198,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		cost = 5
-		search_filters = {  FOCUS_FILTER_COLONIAL }
+		search_filters = {  FOCUS_FILTER_ECONOMIC }
 
 		available = {
 			has_country_flag = GER_miracle_on_rhine

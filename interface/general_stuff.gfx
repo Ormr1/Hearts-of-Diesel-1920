@@ -398,5 +398,14 @@ spriteTypes = {
 		name = "GFX_return_btn"
 		texturefile = "gfx/interface/return_btn.dds"
 	}
+	spriteType = {
+		name = "GFX_FOCUS_FILTER_ECONOMIC"
+		texturefile = "gfx/interface/focusview/filter/debt_to_the_ifc_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_FOCUS_FILTER_GER_DEBT"
+		texturefile = "gfx/interface/focusview/filter/debt_to_the_ifc_icon.dds"
+	}
+	
 	
 }
