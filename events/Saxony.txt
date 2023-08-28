@@ -619,7 +619,7 @@ country_event = {#People's State of Bavaria
 	#is_triggered_only = yes
 	fire_only_once = yes
 	trigger={
-		has_stability < 0.15
+		has_stability < 0.16
 		52={
 			is_core_of = BAY
 		}
@@ -829,6 +829,7 @@ country_event = {#GER - saxon civil war
 			every_core_state={
 				transfer_state_to = AUS
 			}
+			load_oob = "AUS_civil_war"
 		}
 		if={
 			limit={
@@ -875,12 +876,18 @@ country_event = {#GER - saxon civil war
 	}
 	option = {#communist
 		name = saxonian.30.b
+		trigger={
+			is_ai = no
+		}
 		DDR={
 			change_tag_from = GER
 		}
 	}
 	option = {#democratic
 		name = saxonian.30.c
+		trigger={
+			is_ai = no
+		}
 		WGR={
 			change_tag_from = GER
 		}

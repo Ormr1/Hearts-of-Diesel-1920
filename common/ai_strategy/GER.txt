@@ -18,26 +18,6 @@ GER_aid_xin_empire = {
 		value = 500
 	}
 }
-GER_aid_united_provinces_of_la_plata = {
-	allowed = {
-		tag = GER
-	}
-	enable = {
-		LAP = {
-			has_civil_war = yes
-            OR = {
-                has_government = monarchy
-                has_government = neutrality
-            }
-		}
-	}
-	abort_when_not_enabled = yes
-	ai_strategy = {
-		type = send_volunteers_desire
-		id = "LAP"
-		value = 500
-	}
-}
 GER_aid_rhodesia = {
 	allowed = {
 		tag = GER
@@ -57,4 +37,34 @@ GER_aid_rhodesia = {
 		id = "RHO"
 		value = 500
 	}
+}
+GER_aid_bulgaria = {
+	allowed = {
+		tag = GER
+	}
+	enable = {
+		BUL = {
+			OR={
+				has_war_with = YUG
+				has_war_with = HUN
+				has_war_with = GRE
+				has_war_with = MOL
+			}
+            OR = {
+                has_government = monarchy
+                has_government = neutrality
+            }
+		}
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "BUL"
+		value = 500
+	}
+	ai_strategy = {
+        type = support
+        id = "BUL"
+        value = 50
+    }
 }

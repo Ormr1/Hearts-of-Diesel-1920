@@ -1,0 +1,17 @@
+RGS_aid_communists = {
+    allowed = {
+		tag = RGS
+	}
+	enable = {
+		UUA = {
+			has_civil_war = yes
+            has_government = communist
+		}
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "UUA"
+		value = 500
+	}
+}

@@ -133,3 +133,91 @@ country_event = {
 		name = bulgaria.5.a
 	}
 }
+
+#Treaty of Bucharest
+country_event = {
+	id = bulgaria.10
+	title = bulgaria.10.t
+	desc = bulgaria.10.d
+	picture = GFX_report_event_hitler_handshake
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = bulgaria.10.a
+		HUN = { 
+			transfer_state = 84
+			add_state_core = 84
+			transfer_state = 82
+			add_state_core = 82
+		}
+		MOL = { 
+			transfer_state = 883
+			add_state_core = 883
+			transfer_state = 46
+			add_state_core = 46
+			transfer_state = 81
+			add_state_core = 81
+		}
+		YUG = { 
+			transfer_state = 108
+			add_state_core = 108
+			transfer_state = 802
+			add_state_core = 802
+			transfer_state = 803
+			add_state_core = 803
+		}
+		BUL={
+			remove_ideas={
+				BUL_master_of_the_balkans
+			}
+			if={
+				limit={
+					controls_state=106
+				}
+				YUG={
+					transfer_state = 106
+					add_state_core = 106
+					transfer_state = 882
+					add_state_core = 882
+				}
+			}
+			remove_state_core = 84
+			remove_state_core = 82
+			remove_state_core = 46
+			remove_state_core = 81
+			remove_state_core = 108
+			remove_state_core = 802
+		}
+	}
+}
+#Treaty of Thessaloniki
+country_event = {
+	id = bulgaria.11
+	title = bulgaria.11.t
+	desc = bulgaria.11.d
+	picture = GFX_report_event_hitler_handshake
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = bulgaria.11.a
+		GRE = { 
+			transfer_state = 969
+			add_state_core = 969
+			transfer_state = 970
+			add_state_core = 970
+		}
+		if={
+			limit={
+				controls_state=106
+			}
+			GRE={
+				transfer_state = 106
+				add_state_core = 106
+				transfer_state = 882
+				add_state_core = 882
+			}
+		}
+	}
+}

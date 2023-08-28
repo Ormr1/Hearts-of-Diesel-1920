@@ -950,7 +950,7 @@
  SAU_communism:0 "Arabian Assembly"
  SAU_communism_DEF:0 "the Arabian Assembly"
  SAU_monarchy:0 "Kingdom of Arabia"
- SAU_monarchy_DEF:0 ""the Kingdom of Arabia""
+ SAU_monarchy_DEF:0 "the Kingdom of Arabia"
  SAU_fascism_ADJ:0 "Arabian"
  SAU_neutrality_ADJ:0 "Arabian"
  SAU_democratic_ADJ:0 "Arabian"
