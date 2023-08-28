@@ -3571,6 +3571,7 @@ focus_tree = {
 				value = 2
 			}
 			round_temp_variable = usea_votes_needed
+			custom_effect_tooltip = USA_Resource_Trade_Amendment_tt
 			hidden_effect = {
 				if = {
 					limit = {
@@ -3635,18 +3636,21 @@ focus_tree = {
 				value = 2
 			}
 			round_temp_variable = usea_votes_needed
-			if = {
-				limit = {
-					check_variable = {
-						var = usea_civilian_contractor_votes
-						value = usea_votes_needed
-						compare = greater_than_or_equals
+			custom_effect_tooltip = USA_Civilian_Contractor_Agreement_tt
+			hidden_effect = {
+				if = {
+					limit = {
+						check_variable = {
+							var = usea_civilian_contractor_votes
+							value = usea_votes_needed
+							compare = greater_than_or_equals
+						}
 					}
+					country_event = usa_usea.9
 				}
-				country_event = usa_usea.9
-			}
-			else = {
-				country_event = usa_usea.10
+				else = {
+					country_event = usa_usea.10
+				}
 			}
 		}
 	}
@@ -3697,18 +3701,21 @@ focus_tree = {
 				value = 2
 			}
 			round_temp_variable = usea_votes_needed
-			if = {
-				limit = {
-					check_variable = {
-						var = usea_military_industry_votes
-						value = usea_votes_needed
-						compare = greater_than_or_equals
+			custom_effect_tooltip = USA_Military_Industry_Amendment_tt
+			hidden_effect = {
+				if = {
+					limit = {
+						check_variable = {
+							var = usea_military_industry_votes
+							value = usea_votes_needed
+							compare = greater_than_or_equals
+						}
 					}
+					country_event = usa_usea.14
 				}
-				country_event = usa_usea.14
-			}
-			else = {
-				country_event = usa_usea.15
+				else = {
+					country_event = usa_usea.15
+				}
 			}
 		}
 	}
@@ -3759,18 +3766,21 @@ focus_tree = {
 				value = 2
 			}
 			round_temp_variable = usea_votes_needed
-			if = {
-				limit = {
-					check_variable = {
-						var = usea_unified_currency_votes
-						value = usea_votes_needed
-						compare = greater_than_or_equals
+			custom_effect_tooltip = USA_Unified_Currency_Amendment_tt
+			hidden_effect = {
+				if = {
+					limit = {
+						check_variable = {
+							var = usea_unified_currency_votes
+							value = usea_votes_needed
+							compare = greater_than_or_equals
+						}
 					}
+					country_event = usa_usea.19
 				}
-				country_event = usa_usea.19
-			}
-			else = {
-				country_event = usa_usea.20
+				else = {
+					country_event = usa_usea.20
+				}
 			}
 		}
 	}
