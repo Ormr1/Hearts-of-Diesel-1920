@@ -612,7 +612,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			unlock_decision_category_tooltip = GER_colonial_development_category
 		}
 	}
 	focus = {
@@ -2323,7 +2323,10 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			add_timed_idea={
+				days = 360
+				idea = GER_economic_development_idea
+			}
 		}
 	}
 	focus = {

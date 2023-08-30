@@ -3276,7 +3276,7 @@ guiTypes = {
 					maxHeight = 32
 					format = left
 					Orientation = "UPPER_LEFT"
-				}	
+				}
 				instantTextBoxType = {
 					name = "industry_year12"
 					position = { x = 0 y = 1540 }
@@ -3288,9 +3288,9 @@ guiTypes = {
 					maxHeight = 32
 					format = left
 					Orientation = "UPPER_LEFT"
-				}				
+				}
 			
-			}			
+			}
 
 			containerWindowType = {
 				name = "industry_year_right"
