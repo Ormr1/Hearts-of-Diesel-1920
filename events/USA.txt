@@ -2357,6 +2357,7 @@ country_event = { # Give Liberals The Falklands? (Liberal defeat)
 		name = usa_la_plata.8.a
 		LPT = {
 			transfer_state = 299
+			# Load custom focus tree
 		}
 	}
 	option = { # It's best if we just hold onto it
