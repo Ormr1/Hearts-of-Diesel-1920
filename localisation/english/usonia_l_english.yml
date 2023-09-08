@@ -72,8 +72,10 @@
  us_mobile_air_corps_integration: "Mobile Air Corps Integration"
 
 ### NATIONAL FOCUS
+ ## 1924 Elections
  USA_1920_Elections: "1920 Elections"
  USA_1920_Elections_desc: "The 1920 elections showcase a battle between two opposing economic systems that have been in conflict since the Revolution: that of Hamiltonian economics championed by Federalist Booker T. Washington and that of Jeffersonian economics championed by the Democratic Republican James Cox. Who will win will decide the priorities of Usonia on the homefront for the start of the decade."
+ # Cox Wins (1924)
  USA_Cox_Wins: "Cox Wins!"
  USA_Cox_Wins_desc: "Democratic Republican candidate James Cox has won the 1920 presidential election."
  USA_Break_Up_Trusts: "Break Up Trusts"
@@ -98,6 +100,7 @@
  USA_Relief_For_Tennessee_River_Victims_desc: "For years, the Tennessee River has been both a blessing and a curse for the people around it. It provides beautiful scenery, fresh water, and ample amounts of fish but at the cost of it flooding constantly. The floods' damages to the surrounding area have made it one of the poorer regions of Usonia due to the lack of development opportunity. We need to start providing some levels of relief to the families living nearby so that they can economically recover quicker and rebuild their homes when floods arrive."
  USA_Reviving_The_Western_States: "Reviving The Western States"
  USA_Reviving_The_Western_States_desc: "The Western states of the Federal Union have been behind the East for decades but now is their time for recovery and economic expansion."
+ # Washington Wins (1924)
  USA_Washington_Wins: "Washington Wins"
  USA_Washington_Wins_desc: "Federalist candidate Booker T. Washington has won the 1920 presidential election."
  USA_McNary_Haugen_Farm_Relief_Bill: "McNary-Haugen Farm Relief Bill"
@@ -141,8 +144,10 @@
  USA_Peacekeeper_Recruitment_Drive: "Peacekeeper Recruitment Drive"
  USA_Peacekeeper_Recruitment_Drive_desc: "The Peacekeepers will be requested to provide all sorts of different tasks across the members of the United States. We'll begin a recruitment effort to get more and more people in the Peacekeepers."
  USA_The_Foreign_Legion: "The Foreign Legion"
+ ## Foreign Affairs
  USA_Foreign_Affairs: "Foreign Affairs"
  USA_Foreign_Affairs_desc: "It's a dangerous world out there. We need to be prepared. Through diplomacy, intervention, economics, and Liberty's grace, we shall make the 20th century Usonia's century."
+ # The Old World
  USA_The_Old_World: "The Old World"
  USA_The_Old_World_desc: "Though Usonia has defined itself in its turning away from the practices of the Old World, that doesn't mean we should ignore the Old World in terms of foreign policy."
  USA_The_Alaska_Question: "The Alaska Question"
@@ -173,6 +178,7 @@
  USA_Bribe_The_King_desc: "We've decided we're going to go with George Mason's plan and try to bribe the king of Arabia to side with us and help them fight the Free Tribes in exchange."
  USA_Operation_Eagle: "Operation Eagle"
  USA_Operation_Eagle_desc: "It's time to launch our intervention in Arabia. Fire up the airships and load up our troops!"
+ # The New World
  USA_The_New_World: "The New World"
  USA_The_New_World_desc: "In order to begin to expand our influence abroad, we need to first secure our backyard. Our neighbors have not been blessed with the same fortunes as we have been and we should give them a helping hand, granted they return the favor later."
  USA_American_Economic_Development: "American Economic Development"
@@ -261,6 +267,15 @@
  usa_la_plata.1.t: "Civil War In La Plata"
  usa_la_plata.1.desc: "Civil war has broken out in the nation of La Plata as groups of people with vastly different ideologies compete for control of the South American country.\n\nRegionalist groups in the east, south, north, and west have declared independence and are in active competition with those seeking to maintain a united La Plata, though under their preferred system.\n\nEven within some of these regional uprisings, infighting has broken out as ideologically opposed groups fight over control of their home region."
  usa_la_plata.1.a: "Convene the National Security Council"
+ usa_la_plata.2.t: "Guns From Usonia"
+ usa_la_plata.2.desc: "Today, our morning coffee was interrupted by the steady whirring of Usonian dropship blades as the slowly descended next to our headquarters in [ROOT.GetCapital]. The blue and red painted airship lowered its doors and a Usonian army captain stepped out, informing us of our newfound support from the Usonian government.\n\nBefore he could even finish, Usonian soldiers in their olive drab and Brodie helmets began hauling crates of rifles and ammunition out of their ships, stacking them on the ground as quickly and efficiently as possible before promptly taking off."
+ usa_la_plata.2.a: "A pleasant surprise"
+ usa_la_plata.3.t: "Usonia Recognizes Us"
+ usa_la_plata.3.desc: "An escorted envoy from Usonia arrived in a dropship to inform us that the Usonian government has officially recognized us as the legitimate government of La Plata."
+ usa_la_plata.3.a: "Excellent news!"
+ usa_la_plata.4.t: "Usonia Occupies The Malvina"
+ usa_la_plata.4.desc: "Airships from the Usonian Mobile Air Corps arrived above the Malvina Islands, armed to the teeth and pointing their guns and missiles at our military bases on the islands.\n\nDue to the ongoing pro-democracy protests, the local garrison was too distracted, stretched out, and exhausted to resist the Usonians and they surrendered without a fight.\n\nThe bloodless occupation was reportedly met with cheers from the local pro-democracy protestors, celebrating their "liberation" from our supposed tyranny."
+ usa_la_plata.4.a: "Traitors and cowards!"
  usa_alaska.1.t: "Usonia Offers To Purchase Alaska"
  usa_alaska.1.desc: "The Usonian ambassador has come to us with an offer from Washington. An offer stating that the Usonian government would be willing to purchase the territory of Alaska for a decent sum.\n\nAs much as our one colony in North America has been a source of pride for the Rusviet people, the fact of the matter is that the civil war has left us strapped for cash. By accepting this deal, we'd be giving up the territory but also acquiring a lump sum of Usonian cash that we can use to help with our war effort."
  usa_alaska.1.a: "Take the deal"

@@ -2268,7 +2268,101 @@ country_event = { # Usonia Occupies Falklands
 		name = usa_la_plata.4.a
 	}
 }
+country_event = { # Turning Over The Falklands? (Liberal victory)
+	id = usa_la_plata.5
+	title = usa_la_plata.5.t
+	desc = usa_la_plata.5.desc
+	picture = placeholder
+	fire_only_once = yes
+	trigger = {
+		LPT = {
+			exists = yes
+			has_civil_war = no
+		}
+		ROOT = {
+			owns_state = 299
+		}
+		299 = {
+			is_core_of = LPT
+		}
+	}
 
+	option = { # Hand it over to them
+		name = usa_la_plata.5.a
+		LPT = {
+			transfer_state = 299
+			country_event = usa_la_plata.6
+		}
+	}
+	option = { # It's ours to keep
+		name = usa_la_plata.5.b
+		add_political_power = -50
+		LPT = {
+			country_event = usa_la_plata.7
+		}
+	}
+}
+country_event = { # Usonia Returns Falklands
+	id = usa_la_plata.6
+	title = usa_la_plata.6.t
+	desc = usa_la_plata.6.desc
+	picture = placeholder
+	
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = { # Yippee!
+		name = usa_la_plata.6.a
+	}
+}
+country_event = { # Usonia Refuses To Return Falklands
+	id = usa_la_plata.7
+	title = usa_la_plata.7.t
+	desc = usa_la_plata.7.desc
+	picture = placeholder
+	
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = { # Cringe
+		name = usa_la_plata.7.a
+	}
+}
+country_event = { # Give Liberals The Falklands? (Liberal defeat)
+	id = usa_la_plata.8
+	title = usa_la_plata.8.t
+	desc = usa_la_plata.8.desc
+	picture = placeholder
+	fire_only_once = yes
+	trigger = {
+		LAP = {
+			exists = yes
+			has_civil_war = no
+		}
+		LPT = {
+			exists = no
+		}
+		ROOT = {
+			owns_state = 299
+			has_completed_focus = USA_La_Platan_Civil_War
+		}
+		299 = {
+			is_core_of = LAP
+		}
+	}
+
+	option = { # Establish a liberal La Platan government there
+		name = usa_la_plata.8.a
+		LPT = {
+			transfer_state = 299
+		}
+	}
+	option = { # It's best if we just hold onto it
+		name = usa_la_plata.8.b
+	}
+}
 ### ALASKA
 country_event = { # Usonia Offers To Buy Alaska
 	id = usa_alaska.1
