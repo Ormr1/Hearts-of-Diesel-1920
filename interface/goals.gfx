@@ -1577,6 +1577,51 @@ spriteTypes = {
 		name = "GFX_focus_usa_united_states_economic_association"
 		texturefile = "gfx/interface/goals/USA/focus_usa_united_states_economic_association.png"
 	}
+
+	SpriteType = { 
+		name = "GFX_focus_usa_the_alaska_question"
+		texturefile = "gfx/interface/goals/USA/focus_usa_the_alaska_question.png"
+	}
+
+	SpriteType = { 
+		name = "GFX_focus_usa_prepare_to_take_alaska"
+		texturefile = "gfx/interface/goals/USA/focus_usa_prepare_to_take_alaska.png"
+	}
+
+	SpriteType = { 
+		name = "GFX_focus_usa_purchase_alaska"
+		texturefile = "gfx/interface/goals/USA/focus_usa_purchase_alaska.png"
+	}
+
+	SpriteType = { 
+		name = "GFX_focus_usa_operation_cold_front"
+		texturefile = "gfx/interface/goals/USA/focus_usa_operation_cold_front.png"
+	}
+
+	SpriteType = { 
+		name = "GFX_focus_usa_anchorage_army_base"
+		texturefile = "gfx/interface/goals/USA/focus_usa_anchorage_army_base.png"
+	}
+
+	SpriteType = { 
+		name = "GFX_focus_usa_standard_oil"
+		texturefile = "gfx/interface/goals/USA/focus_usa_standard_oil.png"
+	}
+
+	SpriteType = { 
+		name = "GFX_focus_usa_the_great_rapproachment"
+		texturefile = "gfx/interface/goals/USA/focus_usa_the_great_rapproachment.png"
+	}
+
+	SpriteType = { 
+		name = "GFX_focus_usa_supply_their_vanam_adventures"
+		texturefile = "gfx/interface/goals/USA/focus_usa_supply_their_vanam_adventures.png"
+	}
+
+	SpriteType = { 
+		name = "GFX_focus_usa_send_aid_to_the_xin_republic"
+		texturefile = "gfx/interface/goals/USA/focus_usa_send_aid_to_the_xin_republic.png"
+	}
 	
 	SpriteType = { 
 		name = "GFX_focus_usa_reestablish_the_gold_standard"

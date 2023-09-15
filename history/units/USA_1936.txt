@@ -375,15 +375,7 @@ units = {
 					
 
 	####### Pacific Theater	#######
-	### Alaska Defense Command ###
-	division = {			
-		name = "Alaska Defense Command"		
-		location = 13091
-		division_template = "Infantry Division"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.15
-
-	}			
+	### Alaska Defense Command ###		
 	division= {			
 		name = "Attu Island Garrison"		
 		location = 13067
@@ -429,39 +421,7 @@ units = {
 
 	}				
 	
-	# South Pacific Defenses #
-	division= {			
-		name = "Christmas Island Garrison"		
-		location = 13048
-		division_template = "Garrison Brigade"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.15
-
-	}			
-	division= {			
-		name = "Jarvis Island Garrison"		
-		location = 13049
-		division_template = "Garrison Brigade"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.15
-
-	}			
-	division= {			
-		name = "Palmyra Garrison"		
-		location = 13050
-		division_template = "Garrison Brigade"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.15
-
-	}			
-	division= {			
-		name = "Phoenix Island Garrison"		
-		location = 13053
-		division_template = "Garrison Brigade"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.15
-
-	}			
+	# South Pacific Defenses #		
 	division= {			
 		name = "Johnston Island Garrison"		
 		location = 13051

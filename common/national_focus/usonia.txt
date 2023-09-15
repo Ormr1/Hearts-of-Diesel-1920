@@ -3839,7 +3839,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_The_Alaska_Question
-		icon = placeholder
+		icon = GFX_focus_usa_occupy_the_alaska_question
 		relative_position_id = USA_The_Old_World
 		prerequisite = { focus = USA_The_Old_World }
 		available = {
@@ -3863,7 +3863,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_Prepare_To_Take_Alaska
-		icon = placeholder
+		icon = GFX_focus_usa_prepare_to_take_alaska
 		relative_position_id = USA_The_Alaska_Question
 		prerequisite = { focus = USA_The_Alaska_Question }
 		mutually_exclusive = { focus = USA_Purchase_Alaska }
@@ -3882,7 +3882,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_Operation_Cold_Front
-		icon = placeholder
+		icon = GFX_focus_usa_operation_cold_front
 		relative_position_id = USA_Prepare_To_Take_Alaska
 		prerequisite = {
 			focus = USA_Prepare_To_Take_Alaska
@@ -3905,7 +3905,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_Anchorage_Army_Base
-		icon = placeholder 
+		icon = GFX_focus_usa_anchorage_army_base 
 		relative_position_id = USA_Operation_Cold_Front
 		prerequisite = { focus = USA_Operation_Cold_Front }
 		available = {
@@ -3948,7 +3948,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_Bring_In_Usonian_Companies
-		icon = placeholder 
+		icon = GFX_focus_usa_standard_oil 
 		relative_position_id = USA_Operation_Cold_Front
 		prerequisite = { focus = USA_Operation_Cold_Front }
 		available = {
@@ -3997,7 +3997,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_Purchase_Alaska
-		icon = placeholder
+		icon = GFX_focus_usa_purchase_alaska
 		relative_position_id = USA_The_Alaska_Question
 		prerequisite = { focus = USA_The_Alaska_Question }
 		mutually_exclusive = { focus = USA_Prepare_To_Take_Alaska }
@@ -4015,7 +4015,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_The_Great_Rapproachment
-		icon = placeholder
+		icon = GFX_focus_usa_the_great_rapproachment
 		relative_position_id = USA_The_Old_World
 		prerequisite = { focus = USA_The_Old_World }
 		x = 0
@@ -4048,7 +4048,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_Supply_Their_Vanam_Adventures
-		icon = placeholder
+		icon = GFX_focus_usa_supply_their_vanam_adventures
 		relative_position_id = USA_The_Great_Rapproachment
 		prerequisite = { focus = USA_The_Great_Rapproachment }
 		available = {
@@ -4098,7 +4098,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_Send_Aid_To_Xin_Republic
-		icon = placeholder
+		icon = GFX_focus_usa_send_aid_to_the_xin_republic
 		relative_position_id = USA_The_Great_Rapproachment
 		prerequisite = { focus = USA_The_Great_Rapproachment }
 		x = 1
