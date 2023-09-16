@@ -1282,3 +1282,91 @@ country_event = {#KSMVA offers investments for monopoly rights
 		
 	}
 }
+country_event = {#Trade offer to Bulgaria
+	id = saxonian.46
+	title = saxonian.46.t
+	desc = saxonian.46.d
+	picture = GFX_report_event_finnish_letter
+	
+	is_triggered_only = yes
+	
+	option = {#
+		name = saxonian.46.a
+		GER={
+			country_event = {id = saxonian.49}
+		}
+	}
+	option = {#
+		name = saxonian.46.b
+		GER={
+			country_event = {id = saxonian.50}
+		}
+	}
+}
+country_event = {#Trade offer to Magyaria
+	id = saxonian.47
+	title = saxonian.47.t
+	desc = saxonian.47.d
+	picture = GFX_report_event_finnish_letter
+	
+	is_triggered_only = yes
+	
+	option = {#
+		name = saxonian.47.a
+		GER={
+			country_event = {id = saxonian.49}
+		}
+	}
+	option = {#
+		name = saxonian.47.b
+		GER={
+			country_event = {id = saxonian.50}
+		}
+	}
+}
+country_event = {#Trade offer to Moldova
+	id = saxonian.48
+	title = saxonian.48.t
+	desc = saxonian.48.d
+	picture = GFX_report_event_finnish_letter
+	
+	is_triggered_only = yes
+	
+	option = {#
+		name = saxonian.48.a
+		GER={
+			country_event = {id = saxonian.49}
+		}
+	}
+	option = {#
+		name = saxonian.48.b
+		GER={
+			country_event = {id = saxonian.50}
+		}
+	}
+}
+country_event = {#Trade offer response- positive
+	id = saxonian.49
+	title = saxonian.49.t
+	desc = saxonian.49.d
+	picture = GFX_report_event_finnish_letter
+	
+	is_triggered_only = yes
+	
+	option = {#
+		name = saxonian.49.a
+	}
+}
+country_event = {#Trade offer response- decline
+	id = saxonian.50
+	title = saxonian.50.t
+	desc = saxonian.50.d
+	picture = GFX_report_event_finnish_letter
+	
+	is_triggered_only = yes
+	
+	option = {#
+		name = saxonian.50.a
+	}
+}
+

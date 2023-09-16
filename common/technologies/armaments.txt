@@ -1234,6 +1234,8 @@ technologies = {
 			tank_heavy_machine_gun
 			secondary_turret_hmg
 			additional_machine_guns
+			light_mg_2x
+			light_mg_4x
 		}
 
 		folder = {

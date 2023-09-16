@@ -165,6 +165,17 @@ if = {
 		}
 		obsolete = yes
 	}
+	create_equipment_variant = {			#
+		name = "Taula Class"
+		type = ship_hull_submarine_1
+		name_group = SAM_SS_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_torpedo_slot = ship_torpedo_sub_1
+			fixed_ship_engine_slot = sub_ship_engine_1
+			rear_1_custom_slot = empty
+		}
+	}
 	set_naval_oob = "SAM_1920_naval_mtg"
 }
 

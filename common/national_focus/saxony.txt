@@ -290,7 +290,7 @@ focus_tree = {
 		x = 2
 		y = 1
 		cost = 10
-		search_filters = {  FOCUS_FILTER_POLITICAL }
+		search_filters = {  FOCUS_FILTER_NAVAL }
 		
 		available_if_capitulated = yes
 
@@ -312,7 +312,7 @@ focus_tree = {
 		x =-1
 		y = 1
 		cost = 5
-		search_filters = {  FOCUS_FILTER_POLITICAL }
+		search_filters = {  FOCUS_FILTER_NAVAL }
 		
 		available_if_capitulated = yes
 
@@ -335,7 +335,7 @@ focus_tree = {
 		x =1
 		y = 1
 		cost = 5
-		search_filters = {  FOCUS_FILTER_POLITICAL }
+		search_filters = {  FOCUS_FILTER_NAVAL }
 		
 		available_if_capitulated = yes
 
@@ -362,7 +362,7 @@ focus_tree = {
 		x =0
 		y = 2
 		cost = 5
-		search_filters = {  FOCUS_FILTER_POLITICAL }
+		search_filters = {  FOCUS_FILTER_NAVAL }
 		
 		available_if_capitulated = yes
 
@@ -604,7 +604,7 @@ focus_tree = {
 		icon = GFX_focus_GER_colonial_production
 		prerequisite = { focus = GER_a_steady_helm }
 		relative_position_id = GER_a_steady_helm
-		x = -15
+		x = 6
 		y = 1
 		cost = 5
 		search_filters = {  FOCUS_FILTER_COLONIAL }
@@ -824,7 +824,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		cost = 5
-		search_filters = {  FOCUS_FILTER_ECONOMIC }
+		search_filters = { FOCUS_FILTER_ECONOMIC FOCUS_FILTER_COLONIAL}
 		
 		available_if_capitulated = yes
 
@@ -844,7 +844,7 @@ focus_tree = {
 		x = 3
 		y = 1
 		cost = 5
-		search_filters = {  FOCUS_FILTER_ECONOMIC }
+		search_filters = {  FOCUS_FILTER_ECONOMIC FOCUS_FILTER_COLONIAL }
 		
 		available_if_capitulated = yes
 
@@ -868,7 +868,7 @@ focus_tree = {
 				country_event = {id=saxonian.12}#
 			}
 			set_temp_variable = {
-				GER_tmp_decrease_loan_var = 1795
+				GER_tmp_decrease_loan_var = 1271
 			}
 			GER_decrease_debt = yes
 		}
@@ -881,7 +881,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		cost = 5
-		search_filters = {  FOCUS_FILTER_ECONOMIC }
+		search_filters = {  FOCUS_FILTER_ECONOMIC FOCUS_FILTER_COLONIAL }
 
 		available = {
 			has_subject = SAF
@@ -898,7 +898,7 @@ focus_tree = {
 				country_event = {id=saxonian.11}#
 			}
 			set_temp_variable = {
-				GER_tmp_decrease_loan_var = 1271
+				GER_tmp_decrease_loan_var = 1795
 			}
 			GER_decrease_debt = yes
 		}
@@ -911,7 +911,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		cost = 5
-		search_filters = {  FOCUS_FILTER_ECONOMIC }
+		search_filters = {  FOCUS_FILTER_ECONOMIC FOCUS_FILTER_COLONIAL }
 
 		available = {
 			has_subject = MIT
@@ -941,7 +941,7 @@ focus_tree = {
 		x = -3
 		y = 1
 		cost = 5
-		search_filters = {  FOCUS_FILTER_ECONOMIC }
+		search_filters = {  FOCUS_FILTER_ECONOMIC FOCUS_FILTER_COLONIAL }
 
 		available = {
 			has_subject = AST
@@ -1477,15 +1477,15 @@ focus_tree = {
 		icon = GFX_goal_generic_allies_build_infantry
 		prerequisite = { focus = GER_a_steady_helm }
 		relative_position_id = GER_a_steady_helm
-		x = 20
+		x = 13
 		y = 1
 		cost = 5
-		search_filters = {  FOCUS_FILTER_COLONIAL }
+		search_filters = {  }
 
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			add_political_power = 75
 		}
 	}
 	focus = {
@@ -1495,8 +1495,11 @@ focus_tree = {
 		prerequisite = { 
 			focus = GER_foreign_sphere
 		}
-		x = -5
-		y = 1
+		prerequisite = { 
+			focus = GER_colonial_development
+		}
+		x = -4
+		y = 2
 		cost = 5
 		search_filters = {  FOCUS_FILTER_COLONIAL }
 
@@ -1710,7 +1713,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		cost = 5
-		search_filters = {  FOCUS_FILTER_COLONIAL }
+		search_filters = {  }
 
 		available={
 			
@@ -1732,7 +1735,7 @@ focus_tree = {
 		x = -2
 		y = 1
 		cost = 5
-		search_filters = {  FOCUS_FILTER_COLONIAL }
+		search_filters = {  }
 
 		available={
 			
@@ -1741,7 +1744,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			BUL={country_event={id = saxonian.46}}
 		}
 	}
 	focus = {
@@ -1754,7 +1757,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		cost = 5
-		search_filters = {  FOCUS_FILTER_COLONIAL }
+		search_filters = {  }
 
 		available={
 			
@@ -1763,7 +1766,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			HUN={country_event={id = saxonian.47}}
 		}
 	}
 	focus = {
@@ -1776,7 +1779,7 @@ focus_tree = {
 		x = 2
 		y = 1
 		cost = 5
-		search_filters = {  FOCUS_FILTER_COLONIAL }
+		search_filters = {  }
 
 		available={
 			
@@ -1785,7 +1788,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			MOL={country_event={id = saxonian.48}}
 		}
 	}
 
@@ -1794,7 +1797,7 @@ focus_tree = {
 		icon = GFX_goal_generic_army_doctrines
 		relative_position_id = GER_a_steady_helm
 		prerequisite = { focus = GER_a_steady_helm}
-		x = 7
+		x = -17
 		y = 1
 		cost = 5
 		search_filters = {  }
@@ -1818,10 +1821,10 @@ focus_tree = {
 		prerequisite = { 
 			focus = GER_military_development
 		}
-		x = 3
+		x = 4
 		y = 1
 		cost = 5
-		search_filters = {  }
+		search_filters = { FOCUS_FILTER_NAVAL }
 		available={
 			OR={
 				NOT={has_completed_focus = GER_cut_military_funding }
@@ -1842,19 +1845,129 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = GER_upscaling_shipyards
+		icon = GFX_goal_generic_construct_naval_dockyard
+		prerequisite = { focus = GER_naval_sector }
+		prerequisite = { focus = GER_economic_research_investments }
+		relative_position_id = GER_naval_sector
+		x = 1
+		y = 1
+		cost = 10
+		search_filters = {  FOCUS_FILTER_ECONOMIC }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			if = {
+				limit = {
+					NOT = {
+						any_owned_state = {
+							dockyard > 0
+							free_building_slots = {
+								building = dockyard
+								size > 2
+								include_locked = yes
+							}
+						}
+					}
+					any_owned_state = {
+						is_coastal = yes
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						is_coastal = yes
+						free_building_slots = {
+							building = dockyard
+							size > 2
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = dockyard
+						level = 3
+						instant_build = yes
+					}
+				}
+				set_country_flag = naval_effort_built
+			}
+			if = {
+				limit = {
+					NOT = { has_country_flag = naval_effort_built }
+					any_owned_state = {
+						dockyard > 0
+						free_building_slots = {
+							building = dockyard
+							size > 2
+							include_locked = yes
+						}
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						dockyard > 0
+						free_building_slots = {
+							building = dockyard
+							size > 2
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = dockyard
+						level = 3
+						instant_build = yes
+					}
+				}
+				set_country_flag = naval_effort_built
+			}
+			if = {
+				limit = {
+					NOT = { has_country_flag = naval_effort_built }
+					NOT = {
+						any_owned_state = {
+							free_building_slots = {
+								building = dockyard
+								size > 2
+								include_locked = yes
+							}
+						}
+					}
+				}
+				random_state = {
+					limit = {
+						controller = { tag = ROOT }
+						free_building_slots = {
+							building = dockyard
+							size > 2
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = dockyard
+						level = 3
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}
+	focus = {
 		id = GER_naval_expansion_kaiser
 		icon = GFX_focus_generic_navy_battleship2
-		relative_position_id = GER_naval_sector
+		relative_position_id = GER_focus_on_capital
 		mutually_exclusive = {
 			focus = GER_naval_expansion_leipzig_hipper
 		}
 		prerequisite = { 
-			focus = GER_naval_sector
+			focus = GER_focus_on_capital
 		}
 		x = 1
 		y = 1
 		cost = 5
-		search_filters = {  }
+		search_filters = { FOCUS_FILTER_NAVAL }
 		available={
 			OR={
 				NOT={has_completed_focus = GER_cut_military_funding }
@@ -1891,9 +2004,9 @@ focus_tree = {
 	focus = {
 		id = GER_naval_expansion_leipzig_hipper
 		icon = GFX_focus_generic_cruiser2
-		relative_position_id = GER_naval_sector
+		relative_position_id = GER_focus_on_capital
 		prerequisite = { 
-			focus = GER_naval_sector
+			focus = GER_focus_on_capital
 		}
 		mutually_exclusive = {
 			focus = GER_naval_expansion_kaiser
@@ -1901,7 +2014,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		cost = 5
-		search_filters = {  }
+		search_filters = { FOCUS_FILTER_NAVAL }
 		available={
 			OR={
 				NOT={has_completed_focus = GER_cut_military_funding }
@@ -1956,13 +2069,12 @@ focus_tree = {
 		icon = GFX_goal_generic_navy_doctrines_tactics
 		relative_position_id = GER_naval_sector
 		prerequisite = { 
-			focus = GER_naval_expansion_kaiser
-			focus = GER_naval_expansion_leipzig_hipper
+			focus = GER_naval_sector
 		}
-		x = 0
-		y = 2
+		x = -1
+		y = 1
 		cost = 5
-		search_filters = {  FOCUS_FILTER_RESEARCH }
+		search_filters = { FOCUS_FILTER_NAVAL FOCUS_FILTER_RESEARCH }
 		available={
 			OR={
 				NOT={has_completed_focus = GER_cut_military_funding }
@@ -2001,7 +2113,7 @@ focus_tree = {
 
 		available_if_capitulated = yes
 		
-		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
+		search_filters = { FOCUS_FILTER_NAVAL }
 		completion_reward = {
 			
 		}
@@ -2044,7 +2156,7 @@ focus_tree = {
 			}
 		}
 		
-		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
+		search_filters = { FOCUS_FILTER_NAVAL FOCUS_FILTER_RESEARCH }
 		completion_reward = {
 			navy_experience = 25
 			add_tech_bonus = {
@@ -2081,7 +2193,7 @@ focus_tree = {
 		}
 			
 		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_INDUSTRY }
+		search_filters = { FOCUS_FILTER_NAVAL }
 		completion_reward = {
 			add_ideas = GER_modular_construction
 		}
@@ -2118,7 +2230,7 @@ focus_tree = {
 			}
 		}
 		
-		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
+		search_filters = { FOCUS_FILTER_NAVAL FOCUS_FILTER_RESEARCH }
 		completion_reward = {
 			navy_experience = 25
 			add_tech_bonus = {
@@ -2133,8 +2245,8 @@ focus_tree = {
 		id = GER_focus_on_capital
 		icon = GFX_goal_generic_navy_battleship
 		prerequisite = { focus = GER_fleet_in_being }
-		x = -1
-		y = 2
+		x = -2
+		y = 1
 		relative_position_id = GER_fleet_in_being
 		cost = 10
 		ai_will_do = {
@@ -2158,7 +2270,7 @@ focus_tree = {
 			}
 		}
 		
-		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
+		search_filters = { FOCUS_FILTER_NAVAL FOCUS_FILTER_RESEARCH }
 		completion_reward = {
 			navy_experience = 25
 			add_tech_bonus = {
@@ -2172,9 +2284,12 @@ focus_tree = {
 	focus = {
 		id = GER_home_of_krupp
 		icon = GFX_goal_generic_construct_naval_dockyard
-		prerequisite = { focus = GER_focus_on_capital }
+		prerequisite = { 
+			focus = GER_naval_expansion_kaiser
+			focus = GER_naval_expansion_leipzig_hipper
+		}
 		x = 0
-		y = 1
+		y = 2
 		relative_position_id = GER_focus_on_capital
 		cost = 10
 		ai_will_do = {
@@ -2189,7 +2304,7 @@ focus_tree = {
 		}
 			
 		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_INDUSTRY }
+		search_filters = { FOCUS_FILTER_NAVAL }
 		completion_reward = {
 			add_ideas = {GER_krupp_experimental_hull}
 		}
@@ -2315,7 +2430,7 @@ focus_tree = {
 		icon = GFX_focus_GER_economic_development
 		prerequisite = { focus = GER_a_steady_helm }
 		relative_position_id = GER_a_steady_helm
-		x = -7
+		x = -6
 		y = 1
 		cost = 5
 		search_filters = {  FOCUS_FILTER_ECONOMIC }
@@ -2440,7 +2555,7 @@ focus_tree = {
 		icon = GFX_focus_GER_bauhaus
 		prerequisite = { focus = GER_golden_twenties }
 		relative_position_id = GER_golden_twenties
-		x = -2
+		x = 2
 		y = 1
 		cost = 5
 		search_filters = {  FOCUS_FILTER_ECONOMIC }
@@ -2461,7 +2576,7 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_civ_factory
 		prerequisite = { focus = GER_economic_development }
 		relative_position_id = GER_economic_development
-		x = 3
+		x = -4
 		y = 1
 		cost = 5
 		search_filters = {  FOCUS_FILTER_ECONOMIC FOCUS_FILTER_RESEARCH }
@@ -2483,7 +2598,7 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_civ_factory
 		prerequisite = { focus = GER_golden_twenties }
 		prerequisite = { focus = GER_economic_research_investments }
-		relative_position_id = GER_golden_twenties
+		relative_position_id = GER_economic_research_investments
 		x = 2
 		y = 1
 		cost = 10
@@ -2507,7 +2622,7 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_civ_factory
 		prerequisite = { focus = GER_economic_research_investments }
 		relative_position_id = GER_economic_research_investments
-		x = 1
+		x = 0
 		y = 1
 		cost = 10
 		search_filters = {  FOCUS_FILTER_ECONOMIC }
@@ -2538,7 +2653,7 @@ focus_tree = {
 		icon = GFX_focus_GER_nationalise_ksmva
 		relative_position_id = GER_economic_development
 		prerequisite = { focus = GER_economic_development }
-		x = -3
+		x = 2
 		y = 1
 		cost = 5
 		search_filters = {  FOCUS_FILTER_ECONOMIC }

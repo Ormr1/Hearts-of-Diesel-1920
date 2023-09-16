@@ -1335,19 +1335,19 @@ spriteTypes = {
 		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_super_heavy_four_man_turret.dds"
 	}
 	spriteType = {
-		name = "GFX_tank_twin_heavy_machine_gun"
+		name = "GFX_EMI_tank_twin_heavy_machine_gun"
 		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_twin_linked_machine_gun.dds"
 	}
 	spriteType = {
-		name = "GFX_tank_quad_heavy_machine_gun"
+		name = "GFX_EMI_tank_quad_heavy_machine_gun"
 		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_quad_heavy_machine_gun.dds"
 	}
 	spriteType = {
-		name = "GFX_tank_auto_cannon_3"
+		name = "GFX_EMI_tank_auto_cannon_3"
 		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_auto_cannon_3.dds"
 	}
 	spriteType = {
-		name = "GFX_tank_auto_cannon_4"
+		name = "GFX_EMI_tank_auto_cannon_4"
 		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_auto_cannon_4.dds"
 	}
 
