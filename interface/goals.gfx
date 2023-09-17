@@ -1622,6 +1622,41 @@ spriteTypes = {
 		name = "GFX_focus_usa_send_aid_to_the_xin_republic"
 		texturefile = "gfx/interface/goals/USA/focus_usa_send_aid_to_the_xin_republic.png"
 	}
+
+	SpriteType = { 
+		name = "GFX_focus_usa_the_arabia_situation"
+		texturefile = "gfx/interface/goals/USA/focus_usa_the_arabia_situation.png"
+	}
+
+	SpriteType = { 
+		name = "GFX_focus_usa_send_the_uef_to_arabia"
+		texturefile = "gfx/interface/goals/USA/focus_usa_send_the_uef_to_arabia.png"
+	}
+
+	SpriteType = { 
+		name = "GFX_focus_usa_help_the_free_tribes"
+		texturefile = "gfx/interface/goals/USA/focus_usa_help_the_free_tribes.png"
+	}
+
+	SpriteType = { 
+		name = "GFX_focus_usa_bribe_the_king"
+		texturefile = "gfx/interface/goals/USA/focus_usa_bribe_the_king.png"
+	}
+
+	SpriteType = { 
+		name = "GFX_focus_usa_operation_eagle"
+		texturefile = "gfx/interface/goals/USA/focus_usa_operation_eagle.png"
+	}
+
+	SpriteType = { 
+		name = "GFX_focus_usa_operation_eagle_2"
+		texturefile = "gfx/interface/goals/USA/focus_usa_operation_eagle_2.png"
+	}
+
+	SpriteType = { 
+		name = "GFX_focus_usa_operation_eagle_3"
+		texturefile = "gfx/interface/goals/USA/focus_usa_operation_eagle_3.png"
+	}
 	
 	SpriteType = { 
 		name = "GFX_focus_usa_reestablish_the_gold_standard"

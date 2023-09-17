@@ -3839,7 +3839,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_The_Alaska_Question
-		icon = GFX_focus_usa_occupy_the_alaska_question
+		icon = GFX_focus_usa_the_alaska_question
 		relative_position_id = USA_The_Old_World
 		prerequisite = { focus = USA_The_Old_World }
 		available = {
@@ -4143,7 +4143,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_The_Arabia_Situation
-		icon = placeholder
+		icon = GFX_focus_usa_the_arabia_situation
 		relative_position_id = USA_The_Old_World
 		available = { has_global_flag = ARB_saxon_involvement }
 		prerequisite = { focus = USA_The_Old_World }
@@ -4160,7 +4160,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_Send_The_UEF_To_Arabia
-		icon = placeholder
+		icon = GFX_focus_usa_send_the_uef_to_arabia
 		relative_position_id = USA_The_Arabia_Situation
 		prerequisite = { focus = USA_The_Arabia_Situation }
 		x = 0
@@ -4181,7 +4181,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_Help_The_Free_Tribes
-		icon = placeholder
+		icon = GFX_focus_usa_help_the_free_tribes
 		relative_position_id = USA_Send_The_UEF_To_Arabia
 		prerequisite = { focus = USA_Send_The_UEF_To_Arabia }
 		mutually_exclusive = { focus = USA_Bribe_The_King }
@@ -4200,7 +4200,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_Bribe_The_King
-		icon = placeholder
+		icon = GFX_focus_usa_bribe_the_king
 		relative_position_id = USA_Send_The_UEF_To_Arabia
 		prerequisite = { focus = USA_Send_The_UEF_To_Arabia }
 		mutually_exclusive = { focus = USA_Help_The_Free_Tribes }
@@ -4219,7 +4219,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_Operation_Eagle
-		icon = placeholder
+		icon = GFX_focus_usa_operation_eagle_2
 		relative_position_id = USA_Help_The_Free_Tribes
 		prerequisite = {
 			focus = USA_Help_The_Free_Tribes
