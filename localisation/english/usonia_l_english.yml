@@ -390,6 +390,11 @@
 ### OPINION MODIFIERS ###
  washington_conference: "Washington Conference"
  great_rappraochment: "Great Rapproachment"
+### STATE MODIFIERS ###
+ local_economic_boom: "Local Economic Boom"
+ native_american_raids_3: "Native American Raids - §RHigh§!"
+ native_american_raids_2: "Native American Raids - §YMedium§!"
+ native_american_raids_1: "Native American Raids - §GLow§!"
 ### FLAGS ###
  usa_masons_first_report: "Recieved Captain Mason's First Report"
 ### RESEARCH GROUPS ###

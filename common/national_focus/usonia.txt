@@ -29,7 +29,7 @@ focus_tree = {
 	### POLITICS
 	focus = {
 		id = USA_1920_Elections
-		icon = placeholder
+		icon = GFX_focus_usa_elections
 		x = 10
 		y = 0
 		available = {
@@ -550,7 +550,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_Washington_Wins
-		icon = placeholder
+		icon = GFX_focus_usa_booker_t_washington
 		relative_position_id = USA_1920_Elections
 		prerequisite = { focus = USA_1920_Elections }
 		x = 5
@@ -1331,7 +1331,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_1924_Elections
-		icon = placeholder
+		icon = GFX_focus_usa_elections
 		relative_position_id = USA_1920_Elections
 		prerequisite = {
 			focus = USA_Reviving_The_Western_States
@@ -2990,7 +2990,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_Expeditionary_Courses
-		icon = placeholder
+		icon = GFX_focus_generic_commonwealth_build_infantry
 		relative_position_id = USA_SOF_Training
 		prerequisite = {
 			focus = USA_SOF_Training
@@ -3012,7 +3012,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_Great_Lakes_Maneuvers
-		icon = placeholder
+		icon = GFX_goal_generic_navy_doctrines_tactics
 		relative_position_id = USA_SOF_Training
 		prerequisite = { focus = USA_SOF_Training }
 		x = -2
@@ -3063,7 +3063,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_Air_Cavalry_Corps
-		icon = placeholder
+		icon = GFX_goal_generic_cavalry
 		relative_position_id = USA_Great_Lakes_Maneuvers
 		prerequisite = { focus = USA_Great_Lakes_Maneuvers }
 		x = -1
@@ -3082,7 +3082,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_Integrate_The_Mobile_Air_Corps
-		icon = placeholder
+		icon = GFX_focus_generic_paratrooper
 		relative_position_id = USA_Air_Cavalry_Corps
 		prerequisite = { focus = USA_Air_Cavalry_Corps }
 		x = 0
@@ -3150,7 +3150,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_Amphibious_Assault_Training_Bases
-		icon = placeholder
+		icon = GFX_goal_generic_amphibious_assault
 		relative_position_id = USA_Mountain_Hikes
 		prerequisite = { focus = USA_Mountain_Hikes }
 		prerequisite = { focus = USA_Expeditionary_Courses }
@@ -3192,7 +3192,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_Naval_Forward_Operating_Bases
-		icon = placeholder
+		icon = GFX_goal_generic_construct_naval_dockyard
 		relative_position_id = USA_Mountain_Hikes
 		prerequisite = { focus = USA_Amphibious_Assault_Training_Bases }
 		prerequisite = { focus = USA_Great_Lakes_Maneuvers }
@@ -3212,7 +3212,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_De_Oppresso_Liber
-		icon = placeholder
+		icon = GFX_focus_usa_establish_us_peacekeepers_2
 		relative_position_id = USA_Naval_Forward_Operating_Bases
 		prerequisite = { focus = USA_Naval_Forward_Operating_Bases }
 		prerequisite = { focus = USA_Integrate_The_Mobile_Air_Corps }
@@ -3255,7 +3255,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_De_Escalation_Classes
-		icon = placeholder
+		icon = GFX_goal_generic_improve_relations
 		prerequisite = { focus = USA_Policing_Training }
 		relative_position_id = USA_Policing_Training
 		x = 2
@@ -3275,7 +3275,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_Aerial_Patrols
-		icon = placeholder
+		icon = GFX_goal_generic_air_fighter
 		prerequisite = { focus = USA_De_Escalation_Classes }
 		relative_position_id = USA_De_Escalation_Classes
 		x = 1
@@ -3312,7 +3312,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_Establish_United_States_Air_Patrol
-		icon = placeholder
+		icon = GFX_goal_generic_build_airforce
 		prerequisite = { focus = USA_Aerial_Patrols }
 		relative_position_id = USA_Aerial_Patrols
 		x = 0
@@ -3332,7 +3332,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_Language_Schools
-		icon = placeholder
+		icon = GFX_focus_generic_military_academy
 		prerequisite = { focus = USA_Policing_Training }
 		relative_position_id = USA_Policing_Training
 		x = 0
@@ -3355,7 +3355,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_Peacekeeper_Departments
-		icon = placeholder
+		icon = GFX_focus_generic_little_entente
 		prerequisite = { focus = USA_Expeditionary_Courses }
 		prerequisite = { focus = USA_Language_Schools }
 		relative_position_id = USA_Language_Schools
@@ -3383,7 +3383,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_Peacekeeper_Recruitment_Drive
-		icon = placeholder
+		icon = GFX_focus_generic_manpower
 		prerequisite = { focus = USA_Peacekeeper_Departments }
 		prerequisite = { focus = USA_De_Escalation_Classes }
 		relative_position_id = USA_Language_Schools
@@ -3411,7 +3411,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_The_Foreign_Legion
-		icon = placeholder
+		icon = GFX_focus_usa_foreign_legion
 		relative_position_id = USA_Peacekeeper_Recruitment_Drive
 		prerequisite = { focus = USA_Peacekeeper_Recruitment_Drive }
 		prerequisite = { focus = USA_Establish_United_States_Air_Patrol }
@@ -3436,7 +3436,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_Joint_Naval_Exercises
-		icon = placeholder
+		icon = GFX_goal_generic_navy_battleship
 		relative_position_id = USA_Expeditionary_Courses
 		prerequisite = {
 			focus = USA_Amphibious_Assault_Training_Bases
@@ -3526,7 +3526,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_Resource_Trade_Amendment
-		icon = placeholder
+		icon = GFX_goal_generic_construction
 		relative_position_id = USA_The_United_States_Economic_Association
 		prerequisite = { focus = USA_The_United_States_Economic_Association }
 		x = -3
@@ -3591,7 +3591,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_Civilian_Contractor_Agreement
-		icon = placeholder
+		icon = GFX_goal_generic_construct_civ_factory
 		relative_position_id = USA_The_United_States_Economic_Association
 		prerequisite = { focus = USA_The_United_States_Economic_Association }
 		x = -1
@@ -3656,7 +3656,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_Military_Industry_Amendment
-		icon = placeholder
+		icon = GFX_goal_generic_construct_mil_factory
 		relative_position_id = USA_The_United_States_Economic_Association
 		prerequisite = { focus = USA_The_United_States_Economic_Association }
 		x = 1
@@ -3721,7 +3721,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_Unified_Currency_Amendment
-		icon = placeholder
+		icon = GFX_goal_generic_intelligence_exchange
 		relative_position_id = USA_The_United_States_Economic_Association
 		prerequisite = { focus = USA_The_United_States_Economic_Association }
 		x = 3
@@ -3786,7 +3786,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_International_Science_Foundation
-		icon = placeholder
+		icon = GFX_goal_tfv_generic_tech_sharing
 		relative_position_id = USA_The_United_States_Economic_Association
 		prerequisite = { focus = USA_Resource_Trade_Amendment }
 		prerequisite = { focus = USA_Civilian_Contractor_Agreement }
