@@ -1579,8 +1579,33 @@ spriteTypes = {
 	}
 
 	SpriteType = { 
+		name = "GFX_focus_usa_great_lakes_maneuvers"
+		texturefile = "gfx/interface/goals/USA/focus_usa_great_lakes_maneuvers.png"
+	}
+
+	SpriteType = { 
+		name = "GFX_focus_usa_air_cavalry_corps"
+		texturefile = "gfx/interface/goals/USA/focus_usa_air_cavalry_corps.png"
+	}
+
+	SpriteType = { 
+		name = "GFX_focus_usa_integrate_the_mobile_air_corps"
+		texturefile = "gfx/interface/goals/USA/focus_usa_integrate_the_mobile_air_corps.png"
+	}
+
+	SpriteType = { 
 		name = "GFX_focus_usa_police_us_peacekeepers"
 		texturefile = "gfx/interface/goals/USA/focus_usa_police_us_peacekeepers.png"
+	}
+
+	SpriteType = { 
+		name = "GFX_focus_usa_aerial_patrols"
+		texturefile = "gfx/interface/goals/USA/focus_usa_aerial_patrols.png"
+	}
+
+	SpriteType = { 
+		name = "GFX_focus_usa_establish_united_states_air_patrol"
+		texturefile = "gfx/interface/goals/USA/focus_usa_establish_united_states_air_patrol.png"
 	}
 
 	SpriteType =  { 

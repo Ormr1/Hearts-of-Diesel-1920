@@ -59,7 +59,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_Break_Up_Trusts
-		icon = placeholder
+		icon = GFX_focus_eng_concessions_to_the_trade_unions
 		relative_position_id = USA_Cox_Wins
 		prerequisite = { focus = USA_Cox_Wins }
 		x = -2
@@ -74,7 +74,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_Direct_Democracy_Reforms
-		icon = placeholder
+		icon = GFX_goal_support_democracy
 		relative_position_id = USA_Break_Up_Trusts
 		prerequisite = { focus = USA_Break_Up_Trusts }
 		x = -1
@@ -89,7 +89,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_Push_For_Eight_Hour_Workday
-		icon = placeholder
+		icon = GFX_focus_eng_concessions_to_the_trade_unions
 		relative_position_id = USA_Direct_Democracy_Reforms
 		x = 1
 		y = 1
@@ -102,7 +102,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_Cut_Funds_To_Fat_Cats
-		icon = placeholder
+		icon = GFX_focus_eng_concessions_to_the_trade_unions
 		relative_position_id = USA_Push_For_Eight_Hour_Workday
 		x = 0
 		y = 1
@@ -114,7 +114,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_Support_Small_Businesses
-		icon = placeholder
+		icon = GFX_goal_generic_construct_civ_factory
 		relative_position_id = USA_Break_Up_Trusts
 		prerequisite = { focus = USA_Break_Up_Trusts }
 		x = 1
@@ -129,7 +129,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_Nationalize_Railroads
-		icon = placeholder
+		icon = GFX_goal_generic_construct_infrastructure
 		relative_position_id = USA_Support_Small_Businesses
 		prerequisite = { focus = USA_Support_Small_Businesses }
 		prerequisite = { focus = USA_Western_Road_Construction }
@@ -142,7 +142,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_Subsidize_Western_Farms
-		icon = placeholder
+		icon = GFX_goal_generic_construct_civ_factory
 		relative_position_id = USA_Cox_Wins
 		prerequisite = { focus = USA_Cox_Wins }
 		x = 2
@@ -273,7 +273,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_Western_Road_Construction
-		icon = placeholder
+		icon = GFX_goal_generic_construct_infrastructure
 		relative_position_id = USA_Subsidize_Western_Farms
 		prerequisite = { focus = USA_Subsidize_Western_Farms }
 		x = -1
@@ -308,7 +308,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_Invigorate_The_Deep_South
-		icon = placeholder
+		icon = GFX_goal_generic_construct_civ_factory
 		relative_position_id = USA_Subsidize_Western_Farms
 		prerequisite = { focus = USA_Subsidize_Western_Farms }
 		x = 1
@@ -413,7 +413,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_Garrison_The_Southwest
-		icon = placeholder
+		icon = GFX_focus_generic_little_entente
 		relative_position_id = USA_Invigorate_The_Deep_South
 		prerequisite = { focus = USA_Invigorate_The_Deep_South }
 		x = 0
@@ -437,7 +437,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_Relief_For_Tennessee_River_Victims
-		icon = placeholder
+		icon = GFX_focus_generic_self_management
 		relative_position_id = USA_Garrison_The_Southwest
 		prerequisite = { focus = USA_Western_Road_Construction }
 		prerequisite = { focus =  USA_Garrison_The_Southwest }
@@ -456,7 +456,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_Reviving_The_Western_States
-		icon = placeholder
+		icon = GFX_goal_generic_construct_civ_factory
 		relative_position_id = USA_Nationalize_Railroads
 		prerequisite = { focus = USA_Cut_Funds_To_Fat_Cats }
 		prerequisite = { focus = USA_Nationalize_Railroads }
@@ -563,7 +563,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_McNary_Haugen_Farm_Relief_Bill
-		icon = placeholder
+		icon = GFX_focus_generic_treaty
 		relative_position_id = USA_Washington_Wins
 		prerequisite = { focus = USA_Washington_Wins }
 		x = -2
@@ -579,7 +579,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_West_Coast_Factory_Subsidies
-		icon = placeholder
+		icon = GFX_goal_generic_construct_civ_factory
 		relative_position_id = USA_McNary_Haugen_Farm_Relief_Bill
 		prerequisite = { focus = USA_McNary_Haugen_Farm_Relief_Bill }
 		x = -1
@@ -689,7 +689,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_Look_More_Westward
-		icon = placeholder
+		icon = GFX_goal_generic_construct_infrastructure
 		relative_position_id = USA_McNary_Haugen_Farm_Relief_Bill
 		prerequisite = { focus = USA_McNary_Haugen_Farm_Relief_Bill }
 		x = 1
@@ -721,7 +721,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_Fund_Great_Lakes_Industries
-		icon = placeholder
+		icon = GFX_goal_generic_construct_civ_factory
 		relative_position_id = USA_Look_More_Westward
 		prerequisite = { focus = USA_Look_More_Westward }
 		prerequisite = { focus = USA_West_Coast_Factory_Subsidies }
@@ -832,7 +832,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_The_Steel_Belt
-		icon = placeholder
+		icon = GFX_goal_generic_construct_civ_factory
 		relative_position_id = USA_Fund_Great_Lakes_Industries
 		prerequisite = { focus = USA_Fund_Great_Lakes_Industries }
 		x = 0
@@ -899,7 +899,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_Washington_Buffalo_Passenger_Line
-		icon = placeholder
+		icon = GFX_goal_generic_construct_infrastructure
 		relative_position_id = USA_Look_More_Westward
 		prerequisite = { focus = USA_Look_More_Westward }
 		prerequisite = { focus = USA_Northeastern_Boom }
@@ -942,7 +942,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_Boston_Washington_Passenger_Line
-		icon = placeholder
+		icon = GFX_goal_generic_construct_infrastructure
 		relative_position_id = USA_Washington_Wins
 		prerequisite = { focus = USA_Washington_Wins }
 		x = 2
@@ -1004,7 +1004,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_Northeastern_Boom
-		icon = placeholder
+		icon = GFX_goal_generic_construct_civilian
 		relative_position_id = USA_Boston_Washington_Passenger_Line
 		prerequisite = { focus = USA_Boston_Washington_Passenger_Line }
 		x = -1
@@ -1093,7 +1093,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_Extend_Line_To_Richmond
-		icon = placeholder
+		icon = GFX_goal_generic_construct_infrastructure
 		relative_position_id = USA_Boston_Washington_Passenger_Line
 		prerequisite = { focus = USA_Boston_Washington_Passenger_Line }
 		x = 1
@@ -1127,7 +1127,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_Extend_Line_To_Pittsburgh
-		icon = placeholder
+		icon = GFX_goal_generic_construct_infrastructure
 		relative_position_id = USA_Extend_Line_To_Richmond
 		prerequisite = { focus = USA_Extend_Line_To_Richmond }
 		x = 0
@@ -1155,7 +1155,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_Connected_Northeast
-		icon = placeholder
+		icon = GFX_goal_generic_construct_infrastructure
 		relative_position_id = USA_Extend_Line_To_Pittsburgh
 		prerequisite = { focus = USA_Extend_Line_To_Pittsburgh }
 		prerequisite = { focus = USA_Northeastern_Boom }
@@ -1268,7 +1268,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_Second_Wave_Of_Industrialization
-		icon = placeholder
+		icon = GFX_goal_generic_construct_civ_factory
 		relative_position_id = USA_Washington_Buffalo_Passenger_Line
 		prerequisite = { focus = USA_The_Steel_Belt }
 		prerequisite = { focus = USA_Connected_Northeast }
@@ -3012,7 +3012,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_Great_Lakes_Maneuvers
-		icon = GFX_goal_generic_navy_doctrines_tactics
+		icon = GFX_focus_usa_great_lakes_maneuvers
 		relative_position_id = USA_SOF_Training
 		prerequisite = { focus = USA_SOF_Training }
 		x = -2
@@ -3063,7 +3063,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_Air_Cavalry_Corps
-		icon = GFX_goal_generic_cavalry
+		icon = GFX_focus_usa_air_cavalry_corps
 		relative_position_id = USA_Great_Lakes_Maneuvers
 		prerequisite = { focus = USA_Great_Lakes_Maneuvers }
 		x = -1
@@ -3082,7 +3082,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_Integrate_The_Mobile_Air_Corps
-		icon = GFX_focus_generic_paratrooper
+		icon = GFX_focus_usa_integrate_the_mobile_air_corps
 		relative_position_id = USA_Air_Cavalry_Corps
 		prerequisite = { focus = USA_Air_Cavalry_Corps }
 		x = 0
@@ -3275,7 +3275,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_Aerial_Patrols
-		icon = GFX_goal_generic_air_fighter
+		icon = GFX_focus_usa_aerial_patrols
 		prerequisite = { focus = USA_De_Escalation_Classes }
 		relative_position_id = USA_De_Escalation_Classes
 		x = 1
@@ -3312,7 +3312,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_Establish_United_States_Air_Patrol
-		icon = GFX_goal_generic_build_airforce
+		icon = GFX_focus_usa_establish_united_states_air_patrol
 		prerequisite = { focus = USA_Aerial_Patrols }
 		relative_position_id = USA_Aerial_Patrols
 		x = 0
