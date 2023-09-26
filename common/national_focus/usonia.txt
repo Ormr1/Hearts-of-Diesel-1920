@@ -563,7 +563,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_McNary_Haugen_Farm_Relief_Bill
-		icon = GFX_focus_generic_treaty
+		icon = GFX_focus_usa_mcnary_haugen_farm_relief_bill
 		relative_position_id = USA_Washington_Wins
 		prerequisite = { focus = USA_Washington_Wins }
 		x = -2
@@ -1004,7 +1004,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_Northeastern_Boom
-		icon = GFX_goal_generic_construct_civilian
+		icon = GFX_focus_usa_northeastern_boom
 		relative_position_id = USA_Boston_Washington_Passenger_Line
 		prerequisite = { focus = USA_Boston_Washington_Passenger_Line }
 		x = -1

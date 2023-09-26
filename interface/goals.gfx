@@ -1702,6 +1702,16 @@ spriteTypes = {
 		name = "GFX_focus_usa_operation_eagle_3"
 		texturefile = "gfx/interface/goals/USA/focus_usa_operation_eagle_3.png"
 	}
+
+	SpriteType = { 
+		name = "GFX_focus_usa_mcnary_haugen_farm_relief_bill"
+		texturefile = "gfx/interface/goals/USA/focus_usa_mcnary_haugen_farm_relief_bill.png"
+	}
+
+	SpriteType = { 
+		name = "GFX_focus_usa_northeastern_boom"
+		texturefile = "gfx/interface/goals/USA/focus_usa_northeastern_boom.png"
+	}
 	
 	SpriteType = { 
 		name = "GFX_focus_usa_reestablish_the_gold_standard"
