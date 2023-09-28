@@ -367,7 +367,7 @@
  usa_arabia.5.t: "George's Plan"
  usa_arabia.5.desc: "Admiral George Mason's plan is to bribe the established king of Arabia into siding with the Usonians, sidelining the Free Tribes in the process."
  usa_arabia.5.a: "Send The Offer"
- usa_arabia.6.t: "A Message FROM Usonia"
+ usa_arabia.6.t: "A Message From Usonia"
  usa_arabia.6.desc: "The Usonian government has sent us an offer of monetary payment in exchange for our government switching from siding with the Saxons to siding with the Usonians. The offer they're giving us is substantially larger than what the Saxons are offering but the Saxons have troops across the country and even more stationed in the Levant to the northwest of us.\n\nHow should we respond?"
  usa_arabia.6.a: "Take the deal"
  usa_arabia.6.b: "We won't backstab our allies"
@@ -380,6 +380,14 @@
  usa_arabia.9.t: "Mason's First Report"
  usa_arabia.9.desc: "Captain William Mason has sent his first report on the situation in Arabia back to Washington. According to him, there's a group of anti-Saxonian fighters in the desert known as the "Free Tribes" who are mostly made up of Bedouins. They're led by the daughter of the now-slain former king and the former princess of Arabia, Sita al-Hadid.\n\nAs suspected, there are lots of Saxonian soldiers and materiel in the country as they work to stabilize the new king's regime and fight any resistance groups. They've already established forts and outposts along the coastline as well."
  usa_arabia.9.a: "Interesting..."
+## Elections
+# 1920
+ usa_elections.1.t: "1920 Presidential Elections"
+ usa_elections.1.desc: "The 1920 Presidential election is upon us and the people of Usonia are flocking to the polls. As the votes were counted in each county and reported, the night would end with a victor."
+ usa_elections.1.a: "Washington Wins!"
+ usa_elections.1.b: "Cox Wins!"
+ usa_elections.2.t: "Washington's Second Inauguration"
+ usa_elections.2.desc: "President Washington stepped up to a podium "
 ### DECISION CATEGORIES ###
  USA_peacekeeper_policing: "Peacekeeper Policing"
  USA_peacekeeper_policing_desc: "The United States Peacekeepers are an international police force that can be deployed to key regions to improve stability. We don't have enough Peacekeepers to deploy to every region possible, so we will have to prioritize specific regions.\n\nMaximum Available Peacekeeper Missions: [?police_pk_charges_max]\nCurrent Available Peacekeeper Missions: [?police_pk_charges]"

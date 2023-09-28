@@ -3351,10 +3351,44 @@ country_event = { # 1920 Election
 
 	option = { # Four More Years!
 		name = usa_elections.1.a
-		complete_national_focus = USA_Washington_Wins
+		country_event = {
+			id = usa_elections.2
+			days = 123
+		}
 	}
 	option = { # Can't keep Cox in a box
 		name = usa_elections.1.b
+		country_event = {
+			id = usa_elections.3
+			days = 123
+		}
+	}
+}
+
+country_event = { # Booker T. Washington Inauguration
+	id = usa_elections.2
+	title = usa_elections.2.t
+	desc = usa_elections.2.desc
+	picture = placeholder
+
+	is_triggered_only = yes
+
+	option = { # Hail to the chief!
+		name = usa_elections.2.a
+		complete_national_focus = USA_Washington_Wins
+	}
+}
+
+country_event = { # James Cox Inauguration
+	id = usa_elections.3
+	title = usa_elections.3.t
+	desc = usa_elections.3.desc
+	picture = placeholder
+
+	is_triggered_only = yes
+
+	option = { # Hail to the chief!
+		name = usa_elections.3.a
 		complete_national_focus = USA_Cox_Wins
 		retire_country_leader = yes
 		USA_james_cox = {
