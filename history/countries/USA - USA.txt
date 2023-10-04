@@ -191,6 +191,7 @@ give_guarantee = COL
 give_guarantee = PRU
 give_guarantee = BRA
 give_guarantee = LAP
+give_guarantee = YUC
 
 # Parties
 set_party_name = { 
