@@ -31,12 +31,6 @@ scripted_gui = {
 		window_name = "fenris_interests_ui_window"
 
 		triggers = {
-			factory_fenris_map_locator_rusviet_visible = {
-				OR={
-					SOV={has_character = SOV_rasputin}
-					has_country_flag = FEN_influence_in_SOV
-				}
-			}
 			FEN_map_rusviet_sr_influence_screen_visible = {
 				OR={
 					SOV={has_character = SOV_rasputin}
@@ -55,6 +49,13 @@ scripted_gui = {
 					has_country_flag = FEN_influence_in_SOV
 				}
 			}
+			#Locator icons
+			factory_fenris_map_locator_rusviet_visible = {
+				OR={
+					SOV={has_character = SOV_rasputin}
+					has_country_flag = FEN_influence_in_SOV
+				}
+			}
 			factory_fenris_map_locator_usonia_visible = {
 				OR={
 					USA={has_character = USA_george_mason}
@@ -66,7 +67,6 @@ scripted_gui = {
 					OR={
 						has_civil_war = yes
 						has_government = fenris
-						 
 					}
 				}
 			}

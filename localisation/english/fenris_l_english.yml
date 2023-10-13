@@ -172,6 +172,7 @@
  FEN_control_of_wealth:0 "Wealth"
  FEN_map_rusviet_sr_influence_tooltip:0 "We currently have agents embeded in Rusviet:\n   Our current hold on §tSR§! is: §Y[?FEN_rusviet_sr_influence]§!\n   The loyalty of §tSR§! to Rusviet is: §Y[?SOV.var_SOV_factions_SR_loyalty]§!"
  FEN_map_rusviet_sr_influence_tooltip_delayed:0 "We currently have a hold over the §tSocialist Revolutionary Party§! of Rusviet. As long as this is greater than their loyalty to their own Government, it can be used to strengthen our influence over the [SOV.GetName]"
+ FEN_map_usonian_tycoon_influence: "We currently have Agents embeded in Rusviet"
  FEN_sr_hold_greater_than_loyalty:0 "§tSR§! has less loyalty than our hold of §Y[?FEN.FEN_rusviet_sr_influence]§!"
  FEN_loses_hold_over_sr_by:0 "Lose §R$RIGHT|0$§! hold over §tSR§!."
  FEN_increase_hold_over_sr_by:0 "Gain §G$RIGHT|0$§! hold over §tSR§!."
@@ -227,3 +228,5 @@
  FEN_expanding_bunker_out: "Expanding the Bunker Out"
  FEN_flat_packing: "Flat Packing"
  FEN_secrets_of_the_automachines: "Secrets of the Automachines"
+ FEN_obtain_discarded_protoypes: "Obtain Discarded Prototypes"
+ FEN_obtain_discarded_protoypes_desc: "With the end of the Great War, many of the more out-there prototypes in development by the great powers will be shelved. However many of these will likely contain revolutionary new ideas that our own researchers could make great use of. If we are careful, Fenris could obtain these plans and prototypes and bring them back for our scientists to study."

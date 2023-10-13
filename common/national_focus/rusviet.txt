@@ -23,6 +23,8 @@ focus_tree = {
     continuous_focus_position = { x = 0 y = 5000 }
     default = no
 
+	shared_focus = RASPUTIN_administration_joint
+
 	### Economic
 	focus = {
 		id = SOV_Question_the_Economy
