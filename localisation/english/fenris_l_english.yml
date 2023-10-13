@@ -230,3 +230,5 @@
  FEN_secrets_of_the_automachines: "Secrets of the Automachines"
  FEN_obtain_discarded_protoypes: "Obtain Discarded Prototypes"
  FEN_obtain_discarded_protoypes_desc: "With the end of the Great War, many of the more out-there prototypes in development by the great powers will be shelved. However many of these will likely contain revolutionary new ideas that our own researchers could make great use of. If we are careful, Fenris could obtain these plans and prototypes and bring them back for our scientists to study."
+ FEN_exosuit_division: "Fenris Exosuit Division"
+ mio_cat_eq_coilguns: "Coilguns"

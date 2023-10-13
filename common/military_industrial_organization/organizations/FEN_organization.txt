@@ -2,31 +2,29 @@ FEN_exosuit_division = {
 
 	equipment_type = { infantry_equipment armor exo_suit_equipment }
 	research_categories = { infantry_weapons }
+	icon = GFX_idea_generic_infantry_equipment_manufacturer_1
 
 	allowed = { tag = FEN }
 
 	tree_header_text = {
-		text = "First Column"
+		text = "Coilguns"
 		x = 0
 	}
 
 	tree_header_text = {
-		text = "Second Column"
-		x = 4.1
+		text = "Construction"
+		x = 7
 	}
 
 	tree_header_text = {
-		text = "Third Column"
-		x = 8
+		text = "Exosuits"
+		x = 3.1
 	}
 
 	initial_trait = {
-		limit_to_equipment_type = { infantry_equipment }
-		equipment_bonus = {
-			hard_attack = 0.1
-		}
+		limit_to_equipment_type = { exo_suit_equipment mio_cat_eq_coilguns }
 		production_bonus = {
-			production_cost_factor = -0.1
+			production_cost_factor = -0.05
 		}
 		organization_modifier = {
 			military_industrial_organization_research_bonus = 0.1
@@ -34,187 +32,150 @@ FEN_exosuit_division = {
 	}
 
 	trait = {
-		token = custom_1
+		token = FEN_mio_high_capacity_coils
+		name = FEN_mio_high_capacity_coils_name
+		icon = GFX_generic_mio_trait_icon_ap_attack
 
-		limit_to_equipment_type = { infantry_equipment }
-
-		organization_modifier = {
-			military_industrial_organization_funds_gain = 0.5
-		}
+		limit_to_equipment_type = { mio_cat_eq_coilguns }
+		
 		equipment_bonus = {
-			soft_attack = 0.3
-		}
-		production_bonus = {
-			production_efficiency_cap_factor = 0.1
+			hard_attack = 0.04
 		}
 		position = { x=0 y=0 }
-		available = { owner = { has_political_power > 10 } }
 	}
-
 	trait = {
-		token = custom_2
-		icon = GFX_industrial_org_trait_placeholder
-		production_bonus = {
-			production_cost_factor = -0.2
-		}
-		position = { x=4 y=0 }
-	}
-
-	trait = {
-		token = custom_3
-		icon = GFX_industrial_org_trait_placeholder
-
-		limit_to_equipment_type = { light_tank_chassis }
+		token = FEN_mio_fast_recharging_cells
+		name = FEN_mio_fast_recharging_cells_name
+		icon = GFX_generic_mio_department_icon_infantry_offense
+		limit_to_equipment_type = { mio_cat_eq_coilguns }
 		equipment_bonus = {
-			hard_attack = 0.3
-		}
-
-		position = { x=8 y=0 }
-	}
-
-	trait = {
-		token = custom_4
-		icon = GFX_industrial_org_trait_placeholder
-		organization_modifier = {
-			military_industrial_organization_funds_gain = 0.5
-		}
-		position = { x=7 y=1 }
-		any_parent = { custom_3 }
-		mutually_exclusive = { custom_5 }
-	}
-
-	trait = {
-		token = custom_5
-		icon = GFX_industrial_org_trait_placeholder
-		organization_modifier = {
-			military_industrial_organization_funds_gain = 0.5
-		}
-		position = { x=9 y=1 }
-		any_parent = { custom_3 }
-		mutually_exclusive = { custom_4 }
-	}
-
-	trait = {
-		token = custom_6
-		icon = GFX_industrial_org_trait_placeholder
-		equipment_bonus = {
-			hard_attack = 0.1
+			 soft_attack = 0.03
 		}
 		production_bonus = {
-			production_cost_factor = -0.1
+			production_cost_factor = 0.03
+		}
+		position = { x=1 y=1 }
+		any_parent = { FEN_mio_high_capacity_coils }
+	}
+	trait = {
+		token = FEN_mio_flat_pack_stocks
+		name = FEN_mio_flat_pack_stocks_name
+		icon = GFX_generic_mio_trait_icon_efficiency_gain
+		limit_to_equipment_type = { infantry_equipment }
+		production_bonus = {
+			production_efficiency_gain_factor = 0.03
+			production_efficiency_cap_factor = 0.03
 		}
 		position = { x=0 y=2 }
-		any_parent = { custom_1 }
+		any_parent = { FEN_mio_high_capacity_coils }
 	}
 
 	trait = {
-		token = custom_7
-		icon = GFX_industrial_org_trait_placeholder
-		limit_to_equipment_type = { infantry_equipment light_tank_chassis }
-		organization_modifier = {
-			military_industrial_organization_funds_gain = 0.5
+		token = FEN_mio_braided_shock_absorbers
+		name = FEN_mio_braided_shock_absorbers_name
+		icon = GFX_generic_mio_trait_icon_production_capacity
+		
+		limit_to_equipment_type = { exo_suit_equipment }
+		production_bonus = {
+			production_cost_factor = -0.06
 		}
+		position = { x=3 y=0 }
+	}
+
+	trait = {
+		token = FEN_mio_coilgun_integrations
+		name = FEN_mio_coilgun_integrations_name
+		icon = GFX_industrial_org_trait_placeholder
+		limit_to_equipment_type = { mio_cat_eq_coilguns }
 		equipment_bonus = {
-			soft_attack = 0.3
-		}
-		position = { x=4 y=2 }
-		any_parent = { custom_2 }
-	}
-
-	trait = {
-		token = custom_8
-		icon = GFX_industrial_org_trait_placeholder
-		organization_modifier = {
-			military_industrial_organization_funds_gain = 0.5
-		}
-		position = { x=8 y=2 }
-		any_parent = { custom_4 custom_5 }
-	}
-
-	trait = {
-		token = custom_9
-		icon = GFX_industrial_org_trait_placeholder
-		organization_modifier = {
-			military_industrial_organization_funds_gain = 0.5
-		}
-		position = { x=2 y=3 }
-		parent = {
-			traits = { custom_6 custom_7 }
-			num_parents_needed = 2
-		}
-	}
-
-	trait = {
-		token = custom_10
-		icon = GFX_industrial_org_trait_placeholder
-		organization_modifier = {
-			military_industrial_organization_funds_gain = 0.5
-		}
-		position = { x=6 y=3 }
-		parent = {
-			traits = { custom_7 custom_8 }
-			num_parents_needed = 2
-		}
-	}
-
-	trait = {
-		token = custom_11
-		icon = GFX_industrial_org_trait_placeholder
-		organization_modifier = {
-			military_industrial_organization_funds_gain = 0.5
-		}
-		position = { x=0 y=4 }
-		any_parent = { custom_6 }
-		mutually_exclusive = { custom_12 custom_13 }
-	}
-
-	trait = {
-		token = custom_12
-		icon = GFX_industrial_org_trait_placeholder
-		organization_modifier = {
-			military_industrial_organization_funds_gain = 0.5
-		}
-		position = { x=4 y=4 }
-		any_parent = { custom_7 }
-		mutually_exclusive = { custom_11 custom_13 }
-	}
-
-	trait = {
-		token = custom_13
-		icon = GFX_industrial_org_trait_placeholder
-		organization_modifier = {
-			military_industrial_organization_funds_gain = 0.5
-		}
-		position = { x=8 y=4 }
-		any_parent = { custom_8 }
-		mutually_exclusive = { custom_11 custom_12 }
-	}
-}
-
-my_mio_with_include = {
-	include = FEN_exosuit_division
-	icon = GFX_idea_generic_infantry_equipment_manufacturer_1
-	equipment_type = { infantry_equipment armor cas submarine }
-	research_bonus = 0.5
-	remove_trait = { custom_9 }
-	add_trait = {
-		token = custom_14
-		icon = GFX_industrial_org_trait_placeholder
-		organization_modifier = {
-			military_industrial_organization_funds_gain = 0.5
+			soft_attack = 0.07
 		}
 		position = { x=2 y=1 }
+		any_parent = { FEN_mio_braided_shock_absorbers }
+		mutually_exclusive = {FEN_mio_auto_cannon_mountings}
 	}
-	override_trait = {
-		token = custom_1
+	trait = {
+		token = FEN_mio_auto_cannon_mountings
+		name = FEN_mio_auto_cannon_mountings_name
 		icon = GFX_industrial_org_trait_placeholder
-	}
-	override_trait = {
-		token = custom_13
-		production_bonus = {
-			production_cost_factor = -0.3
+		limit_to_equipment_type = { infantry_equipment light_tank_chassis }
+		equipment_bonus = {
+			hard_attack = 0.04
 		}
-		position = { x=-1 y=2 }
-		relative_position_id = custom_8
+		position = { x=4 y=1 }
+		any_parent = { FEN_mio_braided_shock_absorbers }
+		mutually_exclusive = {FEN_mio_coilgun_integrations}
+	}
+	
+	trait = {
+		token = FEN_mio_improved_armor_plating
+		name = FEN_mio_improved_armor_plating_name
+		icon = GFX_generic_mio_trait_icon_armor_value
+
+		limit_to_equipment_type = { armor exo_suit_equipment }
+		equipment_bonus = {
+			armor_value = 0.1
+		}
+
+		position = { x=6 y=0 }
+	}
+
+	trait = {
+		token = FEN_mio_improved_exosuit_manufactoring
+		name = FEN_mio_improved_exosuit_manufactoring_name
+		icon = GFX_generic_mio_trait_icon_efficiency_gain
+		limit_to_equipment_type = { exo_suit_equipment }
+		production_bonus = {
+			production_cost_factor = -0.06
+		}
+		position = { x=6 y=2 }
+		any_parent = { FEN_mio_improved_armor_plating }
+	}
+	
+	trait = {
+		token = FEN_mio_exosuit_upgrades
+		name = FEN_mio_exosuit_upgrades_name
+		icon = GFX_industrial_org_trait_placeholder
+		organization_modifier = {
+			military_industrial_organization_research_bonus = 0.1
+		}
+		position = { x=6 y=3 }
+		any_parent = { FEN_mio_improved_exosuit_manufactoring }
+	}
+	
+	trait = {
+		token = FEN_mio_expanded_funding
+		name = FEN_mio_expanded_funding_name
+		icon = GFX_generic_mio_trait_icon_supply_consumption
+		organization_modifier = {
+			military_industrial_organization_funds_gain = 0.25
+		}
+		position = { x=7 y=1 }
+		any_parent = { FEN_mio_improved_armor_plating FEN_mio_light_armor_tatics }
+	}
+
+	trait = {
+		token = FEN_mio_movement_compensators
+		name = FEN_mio_movement_compensators_name
+		icon = GFX_generic_mio_trait_icon_maximum_speed
+		limit_to_equipment_type = { exo_suit_equipment }
+		equipment_bonus = {
+			maximum_speed = 0.02
+		}
+		position = { x=5 y=1 }
+		any_parent = { FEN_mio_improved_armor_plating }
+	}
+	
+	trait = {
+		token = FEN_mio_light_armor_tatics
+		name = FEN_mio_light_armor_tatics_name
+		icon = GFX_generic_mio_department_icon_tank_light_tank_quality
+
+		limit_to_equipment_type = { exo_suit_equipment light_armor}
+		equipment_bonus = {
+			breakthrough = 0.05
+		}
+
+		position = { x=9 y=0 }
 	}
 }
