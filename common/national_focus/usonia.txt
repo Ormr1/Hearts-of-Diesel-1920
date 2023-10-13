@@ -1352,7 +1352,7 @@ focus_tree = {
 	focus = {
 		id = USA_Foreign_Affairs
 		icon = GFX_goal_generic_position_armies
-		x = 42
+		x = 38
 		y = 0
 		cost = 10
 		ai_will_do = {
@@ -1368,7 +1368,7 @@ focus_tree = {
 		icon = GFX_focus_usa_the_new_world
 		relative_position_id = USA_Foreign_Affairs
 		prerequisite = { focus = USA_Foreign_Affairs }
-		x = -15
+		x = -11
 		y = 1
 		cost = 10
 		ai_will_do = {
@@ -2947,7 +2947,7 @@ focus_tree = {
 		icon = GFX_focus_usa_establish_us_peacekeepers
 		relative_position_id = USA_San_Francisco_Conference
 		prerequisite = { focus = USA_San_Francisco_Conference }
-		x = -5
+		x = 0
 		y = 1
 		cost = 10
 		completion_reward = {
@@ -3477,10 +3477,8 @@ focus_tree = {
 	focus = {
 		id = USA_The_United_States_Economic_Association
 		icon = GFX_focus_usa_united_states_economic_association
-		relative_position_id = USA_San_Francisco_Conference
-		prerequisite = { focus = USA_San_Francisco_Conference }
-		x = 5
-		y = 1
+		x = 62
+		y = 0
 		cost = 10
 		completion_reward = {
 			custom_effect_tooltip = USA_The_United_States_Economic_Association_tt
@@ -3821,7 +3819,7 @@ focus_tree = {
 		icon = GFX_goal_generic_territory_or_war
 		relative_position_id = USA_Foreign_Affairs
 		prerequisite = { focus = USA_Foreign_Affairs }
-		x = 15
+		x = 11
 		y = 1
 		cost = 10
 		ai_will_do = {
@@ -3982,8 +3980,11 @@ focus_tree = {
 			}
 			has_global_flag = FEN_is_revealed_flag
 		}
+		allow_branch = {
+			has_global_flag = FEN_is_revealed_flag
+		}
 		x = 0
-		y = 8
+		y = 6
 		cost = 10
 		ai_will_do = {
 			factor = 1
