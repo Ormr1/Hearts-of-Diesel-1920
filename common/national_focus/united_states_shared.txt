@@ -1,0 +1,34 @@
+### search_filters = {FOCUS_FILTER_POLITICAL}
+### search_filters = {FOCUS_FILTER_RESEARCH}
+### search_filters = {FOCUS_FILTER_INDUSTRY}
+### search_filters = {FOCUS_FILTER_STABILITY}
+### search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+### search_filters = {FOCUS_FILTER_MANPOWER}
+### search_filters = {FOCUS_FILTER_ANNEXATION}
+### search_filters = {FOCUS_FILTER_USA_CONGRESS}
+
+### UNITED STATES TREE ###
+shared_focus = {
+	id = UNITED_STATES_first_congress_joint
+	icon = placeholder
+	cost = 5
+	x = 72
+	y = 0
+	
+	allow_branch = {
+		OR = {
+			tag = USA
+			is_in_faction_with = USA
+		}
+	}
+
+	available = {
+		USA = {
+			has_completed_focus = USA_San_Francisco_Conference
+		}
+	}
+
+	completion_reward = {
+		add_political_power = 75
+	}
+}

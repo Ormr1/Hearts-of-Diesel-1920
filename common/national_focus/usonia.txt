@@ -24,6 +24,7 @@ focus_tree = {
 		}
 	}
 	continuous_focus_position = { x = 50 y = 2000 }
+	shared_focus = UNITED_STATES_first_congress_joint
 	default = no
 	
 	### POLITICS
@@ -579,7 +580,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_West_Coast_Factory_Subsidies
-		icon = GFX_goal_generic_construct_civ_factory
+		icon = GFX_focus_usa_west_coast_factory_subsidies
 		relative_position_id = USA_McNary_Haugen_Farm_Relief_Bill
 		prerequisite = { focus = USA_McNary_Haugen_Farm_Relief_Bill }
 		x = -1
@@ -899,7 +900,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_Washington_Buffalo_Passenger_Line
-		icon = GFX_goal_generic_construct_infrastructure
+		icon = GFX_focus_generic_railroad
 		relative_position_id = USA_Look_More_Westward
 		prerequisite = { focus = USA_Look_More_Westward }
 		prerequisite = { focus = USA_Northeastern_Boom }
@@ -942,7 +943,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_Boston_Washington_Passenger_Line
-		icon = GFX_goal_generic_construct_infrastructure
+		icon = GFX_focus_POL_warsaw_main_station
 		relative_position_id = USA_Washington_Wins
 		prerequisite = { focus = USA_Washington_Wins }
 		x = 2
@@ -1155,7 +1156,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_Connected_Northeast
-		icon = GFX_goal_generic_construct_infrastructure
+		icon = GFX_focus_usa_northeastern_railroads
 		relative_position_id = USA_Extend_Line_To_Pittsburgh
 		prerequisite = { focus = USA_Extend_Line_To_Pittsburgh }
 		prerequisite = { focus = USA_Northeastern_Boom }
@@ -4250,6 +4251,7 @@ focus_tree = {
 			}
 		}
 	}
+
 	### ARMY TREE ###
 
 	### NAVY TREE ###

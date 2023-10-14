@@ -1714,8 +1714,18 @@ spriteTypes = {
 	}
 
 	SpriteType = { 
+		name = "GFX_focus_usa_west_coast_factory_subsidies"
+		texturefile = "gfx/interface/goals/USA/focus_usa_west_coast_factory_subsidies.png"
+	}
+
+	SpriteType = { 
 		name = "GFX_focus_usa_northeastern_boom"
 		texturefile = "gfx/interface/goals/USA/focus_usa_northeastern_boom.png"
+	}
+
+	SpriteType = { 
+		name = "GFX_focus_usa_northeastern_railroads"
+		texturefile = "gfx/interface/goals/USA/focus_usa_northeastern_railroads.png"
 	}
 	
 	SpriteType = { 
