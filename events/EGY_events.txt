@@ -13,13 +13,13 @@ country_event = {
 
 ###EGYPY ALPHA###
 country_event = {
-    id = EGY_A.1
-    title = EGY_A.1.t
-    desc = EGY_A.1.d
+    id = EGY_AFOC.1
+    title = EGY_AFOC.1.t
+    desc = EGY_AFOC.1.d
     picture = GFX_EGY_EV_1
 	is_triggered_only = yes
     option = {
-        name = EGY_A.1.a
+        name = EGY_AFOC.1.a
         country_event = { 
             id = EGY_A.2 
             days = 17 
@@ -53,9 +53,9 @@ country_event = {
     }
 }
 country_event = {
-    id = EGY_A.4
-    title = EGY_A.4.t
-    desc = EGY_A.4.d
+    id = EGY_AFOC.4
+    title = EGY_AFOC.4.t
+    desc = EGY_AFOC.4.d
     picture = GFX_EGY_EV_4
 	is_triggered_only = yes
     option = {
@@ -125,13 +125,13 @@ country_event = {
     }
 }
 country_event = {
-    id = EGY_A.9
-    title = EGY_A.9.t
-    desc = EGY_A.9.d
+    id = EGY_AFOC.9
+    title = EGY_AFOC.9.t
+    desc = EGY_A.9FOC.d
     picture = GFX_EGY_EV_9
 	is_triggered_only = yes
     option = {
-        name = EGY_A.9.a
+        name = EGY_AFOC.9.a
         country_event = { 
             id = EGY_A.10 
             days = 2 
@@ -393,3 +393,81 @@ country_event = {
         name = EGY_A.25.a
     }
 }
+country_event = {
+    id = EGY_AFOC.26
+    title = EGY_AFOC.26.t
+    desc = EGY_AFOC.26.d
+    picture = GFX_EGY_EV_26
+    is_triggered_only = yes
+    option = {
+        name = EGY_AFOC.26.a
+        country_event = { 
+            id = EGY_A.27
+            days = 7 
+        }
+    }
+    option = {
+        name = EGY_AFOC.26.b
+        country_event = { 
+            id = EGY_A.29
+            days = 7 
+        }
+    }
+}
+country_event = {
+    id = EGY_A.27
+    title = EGY_A.27.t
+    desc = EGY_A.27.d
+    picture = GFX_EGY_EV_27
+    is_triggered_only = yes
+    option = {
+        name = EGY_A.27.a
+        country_event = { 
+            id = EGY_A.28
+            days = 8 
+        }
+    }
+}
+country_event = {
+    id = EGY_A.28
+    title = EGY_A.28.t
+    desc = EGY_A.28.d
+    picture = GFX_EGY_EV_27
+    is_triggered_only = yes
+    option = {
+        name = EGY_A.28.a
+        country_event = { 
+            id = EGY_A.31
+            days = 8 
+        }
+    }
+}
+country_event = {
+    id = EGY_A.29
+    title = EGY_A.29.t
+    desc = EGY_A.29.d
+    picture = GFX_EGY_EV_29
+    is_triggered_only = yes
+    option = {
+        name = EGY_A.29.a
+        country_event = { 
+            id = EGY_A.30
+            days = 8 
+        }
+    }
+}
+country_event = {
+    id = EGY_A.30
+    title = EGY_A.30.t
+    desc = EGY_A.30.d
+    picture = GFX_EGY_EV_30
+    is_triggered_only = yes
+    option = {
+        name = EGY_A.30.a
+        country_event = { 
+            id = EGY_A.31
+            days = 8 
+        }
+    }
+}
+

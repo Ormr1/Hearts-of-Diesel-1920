@@ -137,9 +137,9 @@ EGY_Z.1.a: "Remember, Mr Alvis"
 
 
 ###EVENTS ALPHA###
-EGY_A.1.t: "He Came From Albion"
-EGY_A.1.d: "Our fledgling cause has found an unlikely ally. A few days ago, an esteemed professor of archaeology made contact with one of our agents, wishing to lend his support to our struggle. Seems he's gained quite the soft spot for the ancient times and wants to see them return as much as we do. \nRecruit Howard Carter."
-EGY_A.1.a: "Interesting. Does he come with his own pith helmet?"
+EGY_AFOC.1.t: "He Came From Albion"
+EGY_AFOC.1.d: "Our fledgling cause has found an unlikely ally. A few days ago, an esteemed professor of archaeology made contact with one of our agents, wishing to lend his support to our struggle. Seems he's gained quite the soft spot for the ancient times and wants to see them return as much as we do. \nRecruit Howard Carter."
+EGY_AFOC.1.a: "Interesting. Does he come with his own pith helmet?"
 
 EGY_A.2.t: "Pith-Helmet Included"
 EGY_A.2.d: "Locating Mr Carter was easily done. We found him examining several astounding finds...that had already been discovered. In the Alexandrian Temple of Ma'at. Without permission. The high priest isn't happy about it, but he's willing to cut a deal considering it's the Pharaoh asking. He wants a small donation in return for Mr Carter."
@@ -149,9 +149,9 @@ EGY_A.3.t: "Sprung From The Crypt"
 EGY_A.3.d: "Carter's in a rather cheery disposition considering he's spend the last 3 days in a temple basement. Kept himself occupied with the frescoes, he says. No matter, he's eager to help and willing to apply himself. And he's rather well connected too."
 EGY_A.3.a: "Suits us fine"
 
-EGY_A.4.t: "Intelligence, Or Lack Thereof"
-EGY_A.4.d: "A signal-jacker was recently arrested in Cairo while trying to break encrypted Roman diplomatic telegrams, and is languishing in the city jail. His work can't be faulted, but his common sense leaves a lot to be desired: he left the door open while he was doing it and his landlady overheard him and ratted him out. Freeing him from his cell and recruiting him will be a boon to us and an effective two-finger salute to the Romans who put him there. \nRecruit Imhotep Astari."
-EGY_A.4.a: "A radio-ham. How drole..."
+EGY_AFOC.4.t: "Intelligence, Or Lack Thereof"
+EGY_AFOC.4.d: "A signal-jacker was recently arrested in Cairo while trying to break encrypted Roman diplomatic telegrams, and is languishing in the city jail. His work can't be faulted, but his common sense leaves a lot to be desired: he left the door open while he was doing it and his landlady overheard him and ratted him out. Freeing him from his cell and recruiting him will be a boon to us and an effective two-finger salute to the Romans who put him there. \nRecruit Imhotep Astari."
+EGY_AFOC.4.a: "A radio-ham. How drole..."
 
 EGY_A.5.t: "Hamming It Up"
 EGY_A.5.d: "Turns out springing him from the hoosgow was the easy part. The old-fashioned Cleopatra charm might have helped with the guards, but it was most likely the bribe money that did it. The hard part is getting his equipment back, which has been squirreled away by the Romans at some army holding depot. Now, we can make all sneaky-like and use some disguises, but we'll have to get them first. Or, we can ram-raid the gates like it's gangbusters and shoot the place up to a chorus of blaring alarms."
@@ -167,12 +167,12 @@ EGY_A.7.d: "As opposed to getting hold of military uniforms, this was remarkably
 EGY_A.7.a: "Oh well, I suppose it worked out"
 
 EGY_A.8.t: "We Begin Our Broadcast Day"
-EGY_A.8.d: "Imhotep has set himself up in the broom cupboard. Apparently he's more comfortable in there. "
+EGY_A.8.d: "Imhotep has set himself up in the broom cupboard. Apparently he's more comfortable in there, and he's made himself quite at home in that  "
 EGY_A.8.a: ""
 
-EGY_A.9.t: "The Broker"
-EGY_A.9.d: "Carter believes he can convince one of his former associates from the institute to aid us in our cause, but the man wants to be sure we're the real deal. \nMake contact with The Broker and convince him we're legit."
-EGY_A.9.a: "Tall, Dark, and Mysterious. I like it."
+EGY_AFOC.9.t: "The Broker"
+EGY_AFOC.9.d: "Carter believes he can convince one of his former associates from the institute to aid us in our cause, but the man wants to be sure we're the real deal. \nMake contact with The Broker and convince him we're legit."
+EGY_AFOC.9.a: "Tall, Dark, and Mysterious. I like it."
 
 EGY_A.10.t: "Proving Legitimacy"
 EGY_A.10.d: "The broker wants us to prove out legitimacy, so he's sent us on somewhat of a scavenger hunt. What he wants is a very specific diplomatic communique form, only issued by the Frankish embassies of the world. Now, there isn't a Frankish Embassy in Kemet. Their embassy to Byzantium is in Constantinople. However, and I believe this is the test, there is one passing through Alexandria by way of a courier in a few weeks time. If we snag that paper and deliver it to the broker, he's confident he can connect us to all the weapons and supplies we need. All we have to do is find where the courier is handing the papers off."
@@ -243,10 +243,10 @@ EGY_A.25.t: "The Call"
 EGY_A.25.d: ""
 EGY_A.25.a: ""
 
-EGY_A.26.t: "The Producer"
-EGY_A.26.d: "Cleopatra's time in hollywood has put her in contact with a lot of men who can turn logistical nightmares into cakewalks. One of these men is Herbert Alvis, a big-shot Hollywood producer who has hit a losing streak after backing the wrong horse. Apparently 'French Mistake' is slang for something else and not suitable for film title. Regardless of his taste in creative direction, he's impressively skilled at getting things organised and schmoozing rich people out of their money. This means that he is a very busy man, but we think we've got a few decent ideas as to how to get his attention. You see, despite the screw up with 'The French Mistake', Alvis has returned to strength as a creative lead with his new thrilling adventure 'Escape From Castle Wulvenreich'. It's a smash hit, and critics across the globe are giving it 5 stars. Jack Thomas, a member of the Hollywood Foreign Press, is writing his review from Cairo. If we were to make a less than favourable review of our own and submit it in his place, it would be sure to get Alvis' attention. Alternatively, we can lure him here with his former long-time colleague, Cleo LaFay. Ring any bells?  \nRecruit Herbert Alvis."
-EGY_A.26.a: "The Review Idea Seems Fun"
-EGY_A.26.b: "I Don't Know What You're Talking About..."
+EGY_AFOC.26.t: "The Producer"
+EGY_AFOC.26.d: "Cleopatra's time in hollywood has put her in contact with a lot of men who can turn logistical nightmares into cakewalks. One of these men is Herbert Alvis, a big-shot Hollywood producer who has hit a losing streak after backing the wrong horse. Apparently 'French Mistake' is slang for something else and not suitable for film title. Regardless of his taste in creative direction, he's impressively skilled at getting things organised and schmoozing rich people out of their money. This means that he is a very busy man, but we think we've got a few decent ideas as to how to get his attention. You see, despite the screw up with 'The French Mistake', Alvis has returned to strength as a creative lead with his new thrilling adventure 'Escape From Castle Wulvenreich'. It's a smash hit, and critics across the globe are giving it 5 stars. Jack Thomas, a member of the Hollywood Foreign Press, is writing his review from Cairo. If we were to make a less than favourable review of our own and submit it in his place, it would be sure to get Alvis' attention. Alternatively, we can lure him here with his former long-time colleague, Cleo LaFay. Ring any bells?  \nRecruit Herbert Alvis."
+EGY_AFOC.26.a: "The Review Idea Seems Fun"
+EGY_AFOC.26.b: "I Don't Know What You're Talking About..."
 
 EGY_A.27.t: "Everyone's A Critic P1"
 EGY_A.27.d: "...'Escape From Castle Wulvenreich was supposed to be Herbert Alvis' redemption, but it seems like he's retreated into the cozy and yet over-played bosom of Mary Shelley and Bram Stoker, with just enough modernity thrown in to give creedance and relevance to the tale. You'd think a monster movie would be easily written, and yet we cannot relate to the baron of the titular castle, let alone the plights of the heroes. The film is over-acted, overcooked, and certainly over-stays it's welcome, and I for one am not so much enthralled by Hollywood hams in fake teeth and bad makeup chasing buxom starlets around cardboard sets. 1 out of 5 stars.'..."
@@ -263,3 +263,7 @@ EGY_A.29.a: ""
 EGY_A.30.t: "The Red Carpet P2"
 EGY_A.30.d: ""
 EGY_A.30.a: ""
+
+EGY_A.31.t: "Making Up For Lost Time"
+EGY_A.31.d: ""
+EGY_A.31.a: "We'll find a way to make it up to him..."
