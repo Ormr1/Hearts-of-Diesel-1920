@@ -1094,7 +1094,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_Extend_Line_To_Richmond
-		icon = GFX_goal_generic_construct_infrastructure
+		icon = GFX_focus_generic_trains_1
 		relative_position_id = USA_Boston_Washington_Passenger_Line
 		prerequisite = { focus = USA_Boston_Washington_Passenger_Line }
 		x = 1

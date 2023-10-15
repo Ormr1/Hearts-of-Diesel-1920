@@ -5432,6 +5432,10 @@ spriteTypes = {
 		name = "GFX_focus_generic_iron_harvest"
 		texturefile = "gfx/interface/goals/focus_generic_iron_harvest.dds"
 	}
+	SpriteType = { 
+		name = "GFX_focus_generic_trains_1"
+		texturefile = "gfx/interface/goals/focus_generic_trains_1.png"
+	}
 	
 	
 	
