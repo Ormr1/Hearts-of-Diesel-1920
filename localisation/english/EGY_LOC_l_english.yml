@@ -20,9 +20,9 @@ EGY_A5_desc: "Please Stand By"
 EGY_A6_fr: "Secure The Keys"
 EGY_A6_fr_desc: "In order to effectively challenge the occupying forces as equals, we need to be prepared. We need guns, money, and information, so seek them out."
 EGY_A7: "For The Taking"
-EGY_A7_desc: "It seems Roman operational security is quite lax. We have received word that an arms shipment is heading down the nile headed for the garrison troops at Thebes. Now, I don't know about you, but I think those guns would be better used by us. If we create a jam in the river in the middle of nowhere, we can hijack the shipment and grab it for ourselves miles away from Roman support."
+EGY_A7_desc: "Please Stand By"
 EGY_A8: "Wrong Number"
-EGY_A8_desc: "Thanks to some crossed wires, Imhotep has clued us into a rather juicy piece of gossip. Apparently, a senior Roman official in Alexandria is at risk of having his affair exposed unless he pays his mistress off to the tune of 5,000 solidus. Not wanting to cause a fuss, the powers that be in Constantinople are wiring him the money in a secure wireless transfer to keep things hush-hush. If we intercept the banking draft before it reaches him, we can pocket the change for our own ends and expose a selacious affair, undermining Roman reputations."
+EGY_A8_desc: "Please Stand By"
 EGY_A9: "The Man On The Inside"
 EGY_A9_desc: "A city councillor in Thebes has been campaigning for change in municipal policies for quite a while now, but has been getting nowhere as he's been blocked by the tetrachy at every turn, and they've set a whopping ambush for him in the next municipal election in the form of a nasty smear campaign. If we help him win the upcoming election, he says he'll be happy to pass on any information he gets to us and aid our troops in the struggle. Snub that smear, and put the fear of Osiris into his opponents."
 EGY_A10: "Cheap And Simple"
@@ -211,7 +211,7 @@ EGY_A.17.d: "In this case, we've been lucky, and the police have done our job fo
 EGY_A.17.a: "Wonderful"
 
 EGY_A.18.t: "The Mistress P2"
-EGY_A.18.d: ""
+EGY_A.18.d: "Remarkable easy, it was simply a matter of waiting for him to walk down the street, pull up alongside with a car, roll down the window and blow his brains out with a revolver before cheesing it. It's caused quite a stir in the area, "
 EGY_A.18.a: ""
 
 EGY_A.19.t: "The Mistress P3"
@@ -267,3 +267,18 @@ EGY_A.30.a: ""
 EGY_A.31.t: "Making Up For Lost Time"
 EGY_A.31.d: ""
 EGY_A.31.a: "We'll find a way to make it up to him..."
+
+EGY_AFOC.32.t: "For The Taking"
+EGY_AFOC.32.d: "It seems Roman operational security is quite lax. We have received word that an arms shipment is heading down the nile headed for the garrison troops at Thebes. Now, I don't know about you, but I think those guns would be better used by us. If we create a jam in the river in the middle of nowhere, we can hijack the shipment and grab it for ourselves miles away from Roman support."
+EGY_AFOC.32.a: "Well, Let's Go Shopping"
+
+EGY_A.33.t: "Midriver Traffic P1"
+EGY_A.33.d: "The easiest way to seize their boat is by making it stop first, and we have multiple options for this. On one hand, the reps of the local fisherman's association are confident that they could cause enough traffic to stop them in their tracks long enough for us to board the boat and capture it. On the other hand, a sympathetic mayor in the area has an idea that makes use of the local wildlife population..."
+EGY_A.33.a: ""
+EGY_A.33.b: ""
+
+
+
+EGY_AFOC.39.t: "Wrong Number"
+EGY_AFOC.39.d: "Thanks to some crossed wires, Imhotep has clued us into a rather juicy piece of gossip. Apparently, a senior Roman official in Alexandria is at risk of having his affair exposed unless he pays his mistress off to the tune of 5,000 solidus. Not wanting to cause a fuss, the powers that be in Constantinople are wiring him the money in a secure wireless transfer to keep things hush-hush. If we intercept the banking draft before it reaches him, we can pocket the change for our own ends and expose a selacious affair, undermining Roman reputations."
+EGY_AFOC.39.a: "Ooh, Scandals Are Fun!"

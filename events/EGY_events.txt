@@ -1,7 +1,10 @@
 add_namespace = EGY_Z
 add_namespace = EGY_A
+add_namespace = EGY_AFOC
 add_namespace = EGY_B
+add_namespace = EGY_BFOC
 add_namespace = EGY_C
+add_namespace = EGY_CFOC
 ###EGYPT ZERO###
 country_event = {
     id = EGY_Z.1
@@ -470,4 +473,128 @@ country_event = {
         }
     }
 }
-
+country_event = {
+    id = EGY_A.31
+    title = EGY_A.31.t
+    desc = EGY_A.31.d
+    picture = GFX_EGY_EV_31
+    is_triggered_only = yes
+    option = {
+        name = EGY_A.31.a
+    }
+}
+country_event = {
+    id = EGY_AFOC.32
+    title = EGY_AFOC.32.t
+    desc = EGY_AFOC.32.d
+    picture = GFX_EGY_EV_32
+    is_triggered_only = yes
+    option = {
+        name = EGY_AFOC.32.a
+        country_event = { 
+            id = EGY_A.33
+            days = 8 
+        }
+    }
+}
+country_event = {
+    id = EGY_A.33
+    title = EGY_A.33.t
+    desc = EGY_A.33.d
+    picture = GFX_EGY_EV_33
+    is_triggered_only = yes
+    option = {
+        name = EGY_A.33.a
+        country_event = { 
+            id = EGY_A.34
+            days = 8 
+        }
+    }
+    option = {
+        name = EGY_A.33.b
+        country_event = { 
+            id = EGY_A.36
+            days = 8 
+        }
+    }
+}
+country_event = {
+    id = EGY_A.34
+    title = EGY_A.34.t
+    desc = EGY_A.34.d
+    picture = GFX_EGY_EV_34
+    is_triggered_only = yes
+    option = {
+        name = EGY_A.34.a
+        country_event = { 
+            id = EGY_A.35
+            days = 8 
+        }
+    }
+}
+country_event = {
+    id = EGY_A.35
+    title = EGY_A.35.t
+    desc = EGY_A.35.d
+    picture = GFX_EGY_EV_35
+    is_triggered_only = yes
+    option = {
+        name = EGY_A.35.a
+        country_event = { 
+            id = EGY_A.38
+            days = 8 
+        }
+    }
+}
+country_event = {
+    id = EGY_A.36
+    title = EGY_A.36.t
+    desc = EGY_A.36.d
+    picture = GFX_EGY_EV_36
+    is_triggered_only = yes
+    option = {
+        name = EGY_A.36.a
+        country_event = { 
+            id = EGY_A.37
+            days = 8 
+        }
+    }
+}
+country_event = {
+    id = EGY_A.37
+    title = EGY_A.37.t
+    desc = EGY_A.37.d
+    picture = GFX_EGY_EV_37
+    is_triggered_only = yes
+    option = {
+        name = EGY_A.37.a
+        country_event = { 
+            id = EGY_A.38
+            days = 8 
+        }
+    }
+}
+country_event = {
+    id = EGY_A.38
+    title = EGY_A.38.t
+    desc = EGY_A.38.d
+    picture = GFX_EGY_EV_38
+    is_triggered_only = yes
+    option = {
+        name = EGY_A.38.a
+    }
+}
+country_event = {
+    id = EGY_AFOC.39
+    title = EGY_AFOC.39.t
+    desc = EGY_AFOC.39.d
+    picture = GFX_EGY_EV_39
+    is_triggered_only = yes
+    option = {
+        name = EGY_AFOC.39.a
+        country_event = { 
+            id = EGY_A.40
+            days = 8 
+        }
+    }
+}
