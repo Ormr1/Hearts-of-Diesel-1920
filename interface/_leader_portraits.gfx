@@ -1378,6 +1378,14 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/idea_generic_army_asia_1.dds"
 	}
 
+
+	### Xin Empire
+
+	spriteType = {
+		name = "GFX_portrait_CHI_yuan_keding"
+		texturefile = "gfx/leaders/CHI/Portrait_CHI_Yuantai_Emperor.png"
+	}
+
 	
 
 
