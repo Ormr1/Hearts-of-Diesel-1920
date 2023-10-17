@@ -534,7 +534,7 @@ USA_the_wild_west = {
 				}
 			}
 		}
-		days_remove = 14
+		days_remove = 180
 		modifier = {
 			political_power_gain = -0.05
 		}

@@ -32,7 +32,7 @@ ENG_vickers_armstrong_eng_organization = {
 	visible = {
 		IF = {
 			limit = { FROM = { original_tag = ETH } }
-			FROM = { has_completed_focus = ETH_invite_foreign_industrialists }
+			# # # FROM = { has_completed_focus = ETH_invite_foreign_industrialists }
 		}
 	}
 	
@@ -67,7 +67,7 @@ ENG_vickers_armstrong_eng_organization = {
 					is_subject_of = ENG
 				}
 				#is_in_faction_with = ENG
-				NOT = { has_completed_focus = BUL_nationalization }
+				# # # NOT = { has_completed_focus = BUL_nationalization }
 			}
 		}
 	}
@@ -152,12 +152,12 @@ ENG_vauxhall_organization = {
 			}
 			FROM = {
 				has_country_flag = POL_vauxhall_motors
-				NOT = { has_completed_focus = POL_adaptive_designs }
+				# # NOT = { has_completed_focus = POL_adaptive_designs }
 			}
 		}
 		IF = {
 			limit = { FROM = { original_tag = ETH } }
-			FROM = { has_completed_focus = ETH_invite_foreign_industrialists }
+			# # FROM = { has_completed_focus = ETH_invite_foreign_industrialists }
 		}
 	
 	}
@@ -193,7 +193,7 @@ ENG_vauxhall_organization = {
 					is_subject_of = ENG
 				}
 				#is_in_faction_with = ENG
-				NOT = { has_completed_focus = BUL_nationalization }
+				# # NOT = { has_completed_focus = BUL_nationalization }
 			}
 		}
 	}
@@ -355,7 +355,7 @@ ENG_yarrow_shipbuilders_organization = {
 					is_subject_of = ENG
 				}
 				#is_in_faction_with = ENG
-				NOT = { has_completed_focus = BUL_nationalization }
+				# # NOT = { has_completed_focus = BUL_nationalization }
 			}
 		}
 	}
@@ -383,7 +383,7 @@ ENG_john_brown_organization = {
 	visible = {
 		IF = {
 			limit = { FROM = { original_tag = ETH } }
-			FROM = { has_completed_focus = ETH_invite_foreign_industrialists }
+			# # FROM = { has_completed_focus = ETH_invite_foreign_industrialists }
 		}
 	}
 	
@@ -549,7 +549,7 @@ ENG_de_havilland_organization = {
 				FROM = { tag = NOR }
 			}
 			FROM = {
-				has_completed_focus = NOR_invite_transnational_manufacturers
+				# has_completed_focus = NOR_invite_transnational_manufacturers
 			}
 		}
 	}
@@ -592,7 +592,7 @@ ENG_fairey_aviation_organization = {
 					is_subject_of = ENG
 				}
 				#is_in_faction_with = ENG
-				NOT = { has_completed_focus = BUL_nationalization }
+				# # NOT = { has_completed_focus = BUL_nationalization }
 			}
 		}
 	}
@@ -659,7 +659,7 @@ ENG_rsaf_enfield_organization = {
 				}
 			}
 			FROM = {
-				has_completed_focus = BALTIC_british_designers
+				# has_completed_focus = BALTIC_british_designers
 			}
 		}
 	}
@@ -730,7 +730,7 @@ SCO_john_dickson_and_sons = {
 				}
 			}
 			FROM = {
-				has_completed_focus = BALTIC_british_designers
+				# has_completed_focus = BALTIC_british_designers
 			}
 		}
 	}
@@ -798,12 +798,12 @@ ENG_vauxhall_automotive_organization = {
 			}
 			FROM = {
 				has_country_flag = POL_vauxhall_motors
-				NOT = { has_completed_focus = POL_adaptive_designs }
+				# NOT = { has_completed_focus = POL_adaptive_designs }
 			}
 		}
 		IF = {
 			limit = { FROM = { original_tag = ETH } }
-			FROM = { has_completed_focus = ETH_invite_foreign_industrialists }
+			# # FROM = { has_completed_focus = ETH_invite_foreign_industrialists }
 		}	
 	}
 	
@@ -838,7 +838,7 @@ ENG_vauxhall_automotive_organization = {
 					is_subject_of = ENG
 				}
 				#is_in_faction_with = ENG
-				NOT = { has_completed_focus = BUL_nationalization }
+				# # NOT = { has_completed_focus = BUL_nationalization }
 			}
 		}
 		IF = {
@@ -891,7 +891,7 @@ ENG_royal_arsenal_organization = {
 				}
 			}
 			FROM = {
-				has_completed_focus = BALTIC_british_designers
+				# has_completed_focus = BALTIC_british_designers
 			}
 		}
 	}

@@ -391,12 +391,19 @@
 ### DECISION CATEGORIES ###
  USA_peacekeeper_policing: "Peacekeeper Policing"
  USA_peacekeeper_policing_desc: "The United States Peacekeepers are an international police force that can be deployed to key regions to improve stability. We don't have enough Peacekeepers to deploy to every region possible, so we will have to prioritize specific regions.\n\nMaximum Available Peacekeeper Missions: [?police_pk_charges_max]\nCurrent Available Peacekeeper Missions: [?police_pk_charges]"
+ USA_peacekeeper_special_operations: "Peacekeeper Special Operations"
  USA_the_wild_west: "The Wild West"
  USA_the_wild_west_desc: "The Usonian southwest has been a hotbed of trouble for the federal government. When these territories were annexed from Aztlán, they were filled with Native American tribes who'd either lived there for centuries or displaced to there by Aztlán and Usonian authorities. These regions were left mostly alone by the Usonian federal government for the past few decades due to their relative aridity compared to the more fertile lands of the Great Plains that Usonian settlers wanted to move to. However, as that land has been taken up, more and more settlers have moved into the southwestern territories. The increasing encroachment of Usonian settlers and even armed security has caused the native population to grow increasingly agitated, culminating in some groups of people engaging in frequent raids and attacks on Usonian settlements and military installations.\n\nThe federal government has now been forced to take more direct action in the affairs of the southwest and the decision it makes on these lands will have wide-reaching ramifications."
+ USA_united_states: "The United States"
 ### DECISIONS ###
  USA_increase_control_over_state: "Increase Control In [FROM.GetName]"
  USA_integrate_state: "Integrate [FROM.GetName]"
  USA_initiate_operation_cold_front: "Initiate Operation Cold Front"
+ USA_join_peacekeeper_program: "Join U.S. Peacekeeper Program"
+ USA_construct_forward_operating_base: "Construct Forward Operating Base In [FROM.GetName]"
+ USA_peacekeeper_supply_raid: "Launch Supply Raid"
+ 
+ 
 ### OPINION MODIFIERS ###
  washington_conference: "Washington Conference"
  great_rappraochment: "Great Rapproachment"

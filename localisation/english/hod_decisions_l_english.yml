@@ -1,0 +1,11 @@
+﻿l_english:
+ ## CATEGORIES
+ military_mobilization: "Military Mobilization"
+ ## DECISIONS
+ # MILITARY MOBILIZATION
+ mobilize_infantry: "Mobilize Infantry"
+ mobilizing_infantry: "Mobilizing Infantry"
+ demobilize_infantry: "Demobilize Infantry"
+ ## FLAGS
+ unable_to_mobilize: "Unable To Mobilize"
+ already_mobilized: "Already Mobilized"

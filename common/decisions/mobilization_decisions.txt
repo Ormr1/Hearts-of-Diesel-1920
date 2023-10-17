@@ -102,8 +102,10 @@ military_mobilization = {
         icon = placeholder
         complete_effect = {
             clr_country_flag = already_mobilized
-            every_controlled_state = {
-                clr_state_flag = state_infantry_mobilized
+            hidden_effect = {
+                every_controlled_state = {
+                    clr_state_flag = state_infantry_mobilized
+                }
             }
             delete_units = {
                 division_template = "Conscript Division"

@@ -43,7 +43,7 @@ GER_porsche_organization = {
 			limit = {
 				FROM = { tag = NOR }
 			}
-			FROM = { has_completed_focus = NOR_invite_german_engineers }
+			# FROM = { has_completed_focus = NOR_invite_german_engineers }
 		}
 	}
 }
@@ -69,7 +69,7 @@ GER_henschel_organization = {
 	visible = {
 		IF = {
 			limit = { FROM = { original_tag = ETH } }
-			FROM = { has_completed_focus = ETH_invite_foreign_industrialists }
+			# FROM = { has_completed_focus = ETH_invite_foreign_industrialists }
 		}
 	}
 
@@ -105,7 +105,7 @@ GER_henschel_organization = {
 					is_subject_of = GER
 				}
 				#is_in_faction_with = GER
-				NOT = { has_completed_focus = BUL_nationalization }
+				# NOT = { has_completed_focus = BUL_nationalization }
 			}
 		}
 	}
@@ -272,7 +272,7 @@ GER_messerschmitt_organization = {
 			limit = {
 				FROM = { original_tag = NOR }
 			}
-			FROM = { has_completed_focus = NOR_invite_german_engineers }
+			# FROM = { has_completed_focus = NOR_invite_german_engineers }
 		}
 	}
 
@@ -333,7 +333,7 @@ GER_junkers_organization = {
 	visible = {
 		IF = {
 			limit = { FROM = { original_tag = ETH } }
-			FROM = { has_completed_focus = ETH_invite_foreign_industrialists }
+			# FROM = { has_completed_focus = ETH_invite_foreign_industrialists }
 		}
 	}
 
@@ -424,14 +424,14 @@ GER_heinkel_organization = {
 					is_subject_of = GER
 				}
 				#is_in_faction_with = GER
-				NOT = { has_completed_focus = BUL_nationalization }
+				# NOT = { has_completed_focus = BUL_nationalization }
 			}
 		}
 		ELSE_IF = {
 			limit = {
 				FROM = { original_tag = NOR }
 			}
-			FROM = { has_completed_focus = NOR_invite_german_engineers }
+			# FROM = { has_completed_focus = NOR_invite_german_engineers }
 		}
 	}
 }
@@ -499,7 +499,7 @@ GER_mauser_organization = {
 	visible = {
 		IF = {
 			limit = { FROM = { original_tag = ETH } }
-			FROM = { has_completed_focus = ETH_invite_foreign_industrialists }
+			# FROM = { has_completed_focus = ETH_invite_foreign_industrialists }
 		}
 	}
 	
@@ -567,7 +567,7 @@ GER_opel_organization = {
 					is_subject_of = GER
 				}
 				#is_in_faction_with = GER
-				NOT = { has_completed_focus = BUL_nationalization }
+				# NOT = { has_completed_focus = BUL_nationalization }
 			}
 		}
 		IF = {
