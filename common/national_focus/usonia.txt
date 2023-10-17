@@ -2925,8 +2925,8 @@ focus_tree = {
 					has_completed_focus = USA_Meet_With_Asian_Leaders
 					has_completed_focus = USA_Meet_With_Oceanian_Leaders
 				}
+				add = 100
 			}
-			add = 100
 		}
 		x = 0
 		y = 2

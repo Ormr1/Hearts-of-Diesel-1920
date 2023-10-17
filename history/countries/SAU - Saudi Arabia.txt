@@ -33,6 +33,7 @@ recruit_character = SAU_ali_muhammed_khan
 recruit_character = SAU_faisal_al_saud
 recruit_character = SAU_faisal_saud
 recruit_character = SAU_gholam_wali
+recruit_character = SAU_uncle_al_hadid
 
 set_politics = {
 	ruling_party = monarchy

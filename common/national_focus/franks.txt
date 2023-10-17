@@ -941,8 +941,6 @@ focus = {
     cost = 5
     prerequisite = {
         focus = FRA_Hold_Them_Accountable
-    }
-    prerequisite = {
         focus = FRA_White_Man_as_the_Role_Model
     }
 }

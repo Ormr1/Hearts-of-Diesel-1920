@@ -824,3 +824,25 @@ country_event = { #War of the Pasific
 		}
 	}
 }
+
+country_event = { #Araucania wants to join the Entente
+	id = la_plata.126
+	title = la_plata.126.t
+	desc = la_plata.126.d
+	picture = GFX_report_event_hitler_handshake
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {#let them in
+		name = la_plata.126.a
+		add_to_faction = FROM
+		ai_chance = {
+			base = 100
+		}
+	}
+	option = {#reject them
+		name = la_plata.126.b
+		
+	}
+}

@@ -46,6 +46,7 @@ add_ideas={
 	closed_economy
 	tot_economic_mobilisation
 	fenris_air_company
+	closed_economy
 }
 
 # Starting tech
