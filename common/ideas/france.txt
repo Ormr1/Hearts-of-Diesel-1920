@@ -19,7 +19,7 @@ ideas = {
 				monarchy_drift = -0.01
 				political_power_cost = 0.10
 				consumer_goods_factor = 0.3
-				war_support_factor = -0.5
+				#war_support_factor = -0.5 #frankia is suffering 50% less war support while stated to be massively revachist?
 				economy_cost_factor = 1.5
 				political_advisor_cost_factor = 1.5
 			}

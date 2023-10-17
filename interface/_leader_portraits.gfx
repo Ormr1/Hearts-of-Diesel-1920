@@ -8259,6 +8259,10 @@ spriteTypes = {
 		name = GFX_portrait_CRN_ghulam_muhammad_ali_khan
 		texturefile = gfx/leaders/CRN/portrait_CRN_ghulam_muhammad_ali_khan.dds
 	}
+	spriteType = {
+		name = GFX_portrait_CRN_alfred_albert_martineau
+		texturefile = gfx/leaders/CRN/portrait_CRN_alfred_albert_martineau.dds
+	}
 	
 	spriteType = {
 		name = GFX_portrait_BRA_epitacio_pessoa

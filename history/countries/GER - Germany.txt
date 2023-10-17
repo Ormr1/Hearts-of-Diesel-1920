@@ -25,6 +25,14 @@ set_fuel_ratio = 0.8
 	set_truce = { target = SCO days = 1080 }
 	set_truce = { target = NOR days = 1080 }
 	set_truce = { target = FRA days = 1080 }
+	add_opinion_modifier = {
+		target = SOV
+		modifier = sanctions
+	}
+	reverse_add_opinion_modifier = {
+		target = SOV
+		modifier = sanctions
+	}
 }
 give_guarantee = CRI
 977 = {

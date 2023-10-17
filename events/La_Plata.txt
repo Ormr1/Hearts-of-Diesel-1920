@@ -797,3 +797,30 @@ country_event = { #La Platan Civil war is over
 		
 	}
 }
+
+country_event = { #War of the Pasific
+	id = la_plata.125
+	title = la_plata.125.t
+	desc = la_plata.125.d
+	picture = GFX_report_event_hitler_handshake
+	
+	#is_triggered_only = yes
+	trigger={
+		tag = CHL
+		has_war = no
+	}
+	mean_time_to_happen = { days = 30}
+	fire_only_once = yes
+	immediate = {
+		
+	}
+	
+	option = {
+		name = la_plata.125.a
+		declare_war_on = {
+			target = PRU
+			type = take_state
+			generator = { 506 }
+		}
+	}
+}

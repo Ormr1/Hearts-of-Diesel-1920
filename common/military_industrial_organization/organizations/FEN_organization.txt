@@ -108,6 +108,18 @@ FEN_exosuit_division = {
 	}
 	
 	trait = {
+		token = FEN_mio_production_lines
+		name = FEN_mio_production_lines_name
+		icon = GFX_industrial_org_trait_placeholder
+		production_bonus = {
+			production_cost_factor = 0.05
+			production_efficiency_cap_factor = 0.1
+		}
+		position = { x=3 y=2 }
+		any_parent = { FEN_mio_auto_cannon_mountings FEN_mio_coilgun_integrations }
+	}
+	
+	trait = {
 		token = FEN_mio_improved_armor_plating
 		name = FEN_mio_improved_armor_plating_name
 		icon = GFX_generic_mio_trait_icon_armor_value
@@ -151,7 +163,7 @@ FEN_exosuit_division = {
 			military_industrial_organization_funds_gain = 0.25
 		}
 		position = { x=7 y=1 }
-		any_parent = { FEN_mio_improved_armor_plating FEN_mio_light_armor_tatics }
+		all_parents = { FEN_mio_improved_armor_plating FEN_mio_light_armor_tatics }
 	}
 
 	trait = {

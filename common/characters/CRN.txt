@@ -25,4 +25,13 @@ characters={
 			id=-1
 		}
 	}
+	CRN_alfred_albert_martineau = {
+		name="Alfred Albert Martineau"
+		portraits={
+			civilian={
+				large=GFX_portrait_CRN_alfred_albert_martineau
+			}
+		}
+	
+	}
 }

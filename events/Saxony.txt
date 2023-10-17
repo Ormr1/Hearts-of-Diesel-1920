@@ -60,15 +60,21 @@ country_event = {
 		every_country={
 			limit={
 				OR={
-					original_tag = FRA
-					original_tag = ENG
-					original_tag = SOV
-					original_tag = CRI
-					original_tag = POL
-					original_tag = GER
+					#entente
+					original_tag = FRA #Franks
+					original_tag = SCO #Albion
+					#Moscow Accord
+					original_tag = SOV #Rusviet
+					original_tag = NOR #Nordic Kingdoms
+					#Polania stands alone
+					original_tag = POL #Polania
+					#Dresden Pact
+					original_tag = GER #Saxony
+					original_tag = CRI #Crimea
+
 				}
 			}
-			country_event={id = saxonian.2}
+			country_event={id = saxonian.2 days = 6}
 		}
 	}
 }
@@ -91,6 +97,12 @@ country_event = {
 		news_event = saxonian.3
 	}
 	option = {
+		name = saxonian.2.cri
+		trigger={
+			tag  = CRI
+		}
+	}
+	option = {
 		name = saxonian.2.pol
 		trigger={
 			tag  = POL
@@ -102,9 +114,15 @@ country_event = {
 		784 = {set_demilitarized_zone = no}
 	}
 	option = {
-		name = saxonian.2.eng
+		name = saxonian.2.sco
 		trigger={
-			tag  = ENG
+			tag  = SCO
+		}
+	}
+	option = {
+		name = saxonian.2.fra
+		trigger={
+			tag  = FRA
 		}
 	}
 	option = {
@@ -114,17 +132,12 @@ country_event = {
 		}
 	}
 	option = {
-		name = saxonian.2.cri
+		name = saxonian.2.nor
 		trigger={
-			tag  = CRI
+			tag  = NOR
 		}
 	}
-	option = {
-		name = saxonian.2.fra
-		trigger={
-			tag  = FRA
-		}
-	}
+	
 }
 #world news event
 news_event = { 
@@ -859,7 +872,7 @@ country_event = {#GER - saxon civil war
 			target = DDR
 			type = civil_war
 		}
-		add_civil_war_target = DRR
+		add_civil_war_target = DDR
 		declare_war_on = {
 			target = AUS
 			type = civil_war
@@ -1290,13 +1303,17 @@ country_event = {#Trade offer to Bulgaria
 	
 	is_triggered_only = yes
 	
-	option = {#
+	option = {#agree
 		name = saxonian.46.a
+		add_opinion_modifier={
+			target = GER
+			modifier = ROM_trade_treaty_with_germany
+		}
 		GER={
 			country_event = {id = saxonian.49}
 		}
 	}
-	option = {#
+	option = {#decline
 		name = saxonian.46.b
 		GER={
 			country_event = {id = saxonian.50}
@@ -1311,13 +1328,17 @@ country_event = {#Trade offer to Magyaria
 	
 	is_triggered_only = yes
 	
-	option = {#
+	option = {#agree
 		name = saxonian.47.a
+		add_opinion_modifier={
+			target = GER
+			modifier = ROM_trade_treaty_with_germany
+		}
 		GER={
 			country_event = {id = saxonian.49}
 		}
 	}
-	option = {#
+	option = {#decline
 		name = saxonian.47.b
 		GER={
 			country_event = {id = saxonian.50}
@@ -1332,13 +1353,17 @@ country_event = {#Trade offer to Moldova
 	
 	is_triggered_only = yes
 	
-	option = {#
+	option = {#agree
 		name = saxonian.48.a
+		add_opinion_modifier={
+			target = GER
+			modifier = ROM_trade_treaty_with_germany
+		}
 		GER={
 			country_event = {id = saxonian.49}
 		}
 	}
-	option = {#
+	option = {#decline
 		name = saxonian.48.b
 		GER={
 			country_event = {id = saxonian.50}
@@ -1355,6 +1380,10 @@ country_event = {#Trade offer response- positive
 	
 	option = {#
 		name = saxonian.49.a
+		set_temp_variable = {
+			GER_tmp_decrease_loan_var = 150
+		}
+		GER_decrease_debt = yes
 	}
 }
 country_event = {#Trade offer response- decline
