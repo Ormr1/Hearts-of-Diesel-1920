@@ -91,6 +91,7 @@ country_event = {
         }
     }
 }
+### REMINDER TO DO POLANIAN POLITICAL CAMPAIGNING EVENTS
 country_event = { # 
     id = polania_startup.2
     title = polania_startup.2.t
@@ -98,6 +99,9 @@ country_event = { #
     is_triggered_only = yes
     option = { # 
         name = polania_startup.2.a
+        trigger = {
+            communism > 24.9
+        }
         complete_national_focus = POL_pilsudskiites_win
         set_politics = {
             ruling_party = communism
@@ -106,6 +110,9 @@ country_event = { #
     }
 	option = { # 
         name = polania_startup.2.b
+        trigger = {
+            democratic > 24.9
+        }
         complete_national_focus = POL_social_democrats_win
         set_politics = {
             ruling_party = democratic
@@ -115,6 +122,9 @@ country_event = { #
 	option = { # 
         name = polania_startup.2.c
         complete_national_focus = POL_technocrats_win
+        trigger = {
+            neutrality > 24.9
+        }
         set_politics = {
             ruling_party = neutrality
             elections_allowed = yes
@@ -123,6 +133,9 @@ country_event = { #
 	option = { # 
         name = polania_startup.2.e
         complete_national_focus = POL_monarchists_win
+        trigger = {
+            monarchy > 24.9
+        }
         set_politics = {
             ruling_party = monarchy
             elections_allowed = yes
@@ -131,6 +144,9 @@ country_event = { #
 	option = { # 
         name = polania_startup.2.f
         complete_national_focus = POL_falangists_win
+        trigger = {
+            fascism > 24.9
+        }
         set_politics = {
             ruling_party = fascism
             elections_allowed = yes
