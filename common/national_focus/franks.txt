@@ -2091,7 +2091,7 @@ focus = {
         add_ideas = { FRA_Political_Unionization }
     }
     available = {
-        focus = FRA_Light_the_Torch
+        has_completed_focus = FRA_Light_the_Torch
     }
     prerequisite = {
         focus = FRA_Unite_the_Left
@@ -2263,7 +2263,7 @@ focus = { ### Commie and Democratic Path
     ai_will_do = {
         factor = 5
     }
-    trigger = {
+    allow_branch = {
         has_game_rule = {
             rule = obsolete_focus_branches_visibility
             option = HIDE
@@ -2290,7 +2290,7 @@ focus = { ### Communist
     ai_will_do = {
         factor = 5
     }
-    trigger = {
+    allow_branch = {
         has_game_rule = {
             rule = obsolete_focus_branches_visibility
             option = HIDE
@@ -2330,7 +2330,7 @@ focus = { ### Democratic
     ai_will_do = {
         factor = 5
     }
-    trigger = {
+    allow_branch = {
         has_game_rule = {
             rule = obsolete_focus_branches_visibility
             option = HIDE
@@ -2354,7 +2354,7 @@ focus = { ### Anarchism Path
     ai_will_do = {
         factor = 8
     }
-    trigger = {
+    allow_branch = {
         has_game_rule = {
             rule = obsolete_focus_branches_visibility
             option = HIDE
@@ -2383,7 +2383,7 @@ focus = {
     ai_will_do = {
         factor = 8
     }
-    trigger = {
+    allow_branch = {
         has_game_rule = {
             rule = obsolete_focus_branches_visibility
             option = HIDE
@@ -2392,7 +2392,7 @@ focus = {
     }
     search_filters = {FOCUS_FILTER_FRA_PARLIAMENT}
     completion_reward = {
-        add_ideas = { idea = FRA_Focus_on_the_Anarcho_Communists }
+        add_ideas = { FRA_Focus_on_the_Anarcho_Communists }
         country_event = FRA_Anarchist.1
     }
     prerequisite = {

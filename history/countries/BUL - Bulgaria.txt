@@ -54,3 +54,7 @@ set_technology = { #VANILLA & DLC
 	fuel_silos = 1
 	basic_train = 1
 }
+#master of the Balkan guarantees
+give_guarantee = HUN
+give_guarantee = YUG
+give_guarantee = MOL

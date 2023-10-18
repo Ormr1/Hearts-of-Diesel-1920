@@ -27,7 +27,7 @@ focus_tree = {
         y = 0
         cost = 5
         completion_reward = {
-            # Event explaining the crisis
+            # 
         }
     }
     focus = {
@@ -41,6 +41,19 @@ focus_tree = {
         cost = 0
         completion_reward = {
             # Event explaining the crisis
+        }
+    }
+    focus = {
+        id = SPA_encourage_local_mining
+        icon = placeholder
+        available = {
+            always = no
+        }
+        x = 8
+        y = 2
+        cost = 5
+        completion_reward = {
+            #
         }
     }
     focus = {

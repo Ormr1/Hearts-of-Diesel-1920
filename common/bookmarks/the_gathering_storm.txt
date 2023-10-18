@@ -40,6 +40,8 @@ bookmarks = {
 				GER_army_on_verge_of_munity
 			}
 			focuses = {
+				GER_dealing_with_war_debt
+				GER_golden_twenties
 				
 			}
 		}

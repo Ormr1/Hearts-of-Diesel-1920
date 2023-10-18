@@ -600,112 +600,6 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = GER_colonial_development
-		icon = GFX_focus_GER_colonial_production
-		prerequisite = { focus = GER_a_steady_helm }
-		relative_position_id = GER_a_steady_helm
-		x = 6
-		y = 1
-		cost = 5
-		search_filters = {  FOCUS_FILTER_COLONIAL }
-		
-		available_if_capitulated = yes
-
-		completion_reward = {
-			unlock_decision_category_tooltip = GER_colonial_development_category
-		}
-	}
-	focus = {
-		id = GER_develop_kamerun
-		icon = GFX_focus_generic_africa_factory
-		relative_position_id = GER_colonial_development
-		x = -2
-		y = 1
-		cost = 5
-		search_filters = {  FOCUS_FILTER_COLONIAL }
-		prerequisite = { focus = GER_colonial_development}
-		
-		available_if_capitulated = yes
-
-		completion_reward = {
-			773={
-				add_extra_state_shared_building_slots = 1
-			}
-		}
-	}
-	focus = {
-		id = GER_develop_curacao
-		icon = GFX_focus_generic_africa_factory
-		relative_position_id = GER_colonial_development
-		x = -1
-		y = 2
-		cost = 5
-		search_filters = {  FOCUS_FILTER_COLONIAL }
-		prerequisite = { focus = GER_colonial_development}
-		
-		available_if_capitulated = yes
-
-		completion_reward = {
-			695={
-				add_extra_state_shared_building_slots = 1
-			}
-		}
-	}
-	focus = {
-		id = GER_develop_madagascar
-		icon = GFX_focus_generic_africa_factory
-		relative_position_id = GER_colonial_development
-		x = 0
-		y = 1
-		cost = 5
-		search_filters = {  FOCUS_FILTER_COLONIAL }
-		prerequisite = { focus = GER_colonial_development}
-		
-		available_if_capitulated = yes
-
-		completion_reward = {
-			543={
-				add_extra_state_shared_building_slots = 1
-			}
-		}
-	}
-	focus = {
-		id = GER_develop_suriname
-		icon = GFX_focus_generic_africa_factory
-		relative_position_id = GER_colonial_development
-		x = 1
-		y = 2
-		cost = 5
-		search_filters = {  FOCUS_FILTER_COLONIAL }
-		prerequisite = { focus = GER_colonial_development}
-		
-		available_if_capitulated = yes
-
-		completion_reward = {
-			309={
-				add_extra_state_shared_building_slots = 1
-			}
-		}
-	}
-	focus = {
-		id = GER_develop_somalia
-		icon = GFX_focus_generic_africa_factory
-		relative_position_id = GER_colonial_development
-		x = 2
-		y = 1
-		cost = 5
-		search_filters = {  FOCUS_FILTER_COLONIAL }
-		prerequisite = { focus = GER_colonial_development}
-		
-		available_if_capitulated = yes
-
-		completion_reward = {
-			269={
-				add_extra_state_shared_building_slots = 1
-			}
-		}
-	}
-	focus = {
 		id = GER_dealing_with_war_debt
 		icon = GFX_focus_GER_debt_administration
 		relative_position_id = GER_scars_of_the_great_war
@@ -1363,7 +1257,6 @@ focus_tree = {
 		icon = GFX_goal_generic_allies_build_infantry
 		relative_position_id = GER_a_steady_helm
 		prerequisite = { focus = GER_a_steady_helm}
-		mutually_exclusive = {focus = GER_faith_in_the_son}
 		x = 0
 		y = 1
 		cost = 5
@@ -1470,6 +1363,112 @@ focus_tree = {
 			add_popularity = {
 				ideology = democratic
 				popularity = -0.1
+			}
+		}
+	}
+	focus = {
+		id = GER_colonial_development
+		icon = GFX_focus_GER_colonial_production
+		prerequisite = { focus = GER_a_steady_helm }
+		relative_position_id = GER_a_steady_helm
+		x = 6
+		y = 1
+		cost = 5
+		search_filters = {  FOCUS_FILTER_COLONIAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			unlock_decision_category_tooltip = GER_colonial_development_category
+		}
+	}
+	focus = {
+		id = GER_develop_kamerun
+		icon = GFX_focus_generic_africa_factory
+		relative_position_id = GER_colonial_development
+		x = -2
+		y = 1
+		cost = 5
+		search_filters = {  FOCUS_FILTER_COLONIAL }
+		prerequisite = { focus = GER_colonial_development}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			773={
+				add_extra_state_shared_building_slots = 1
+			}
+		}
+	}
+	focus = {
+		id = GER_develop_curacao
+		icon = GFX_focus_generic_africa_factory
+		relative_position_id = GER_colonial_development
+		x = -1
+		y = 2
+		cost = 5
+		search_filters = {  FOCUS_FILTER_COLONIAL }
+		prerequisite = { focus = GER_colonial_development}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			695={
+				add_extra_state_shared_building_slots = 1
+			}
+		}
+	}
+	focus = {
+		id = GER_develop_madagascar
+		icon = GFX_focus_generic_africa_factory
+		relative_position_id = GER_colonial_development
+		x = 0
+		y = 1
+		cost = 5
+		search_filters = {  FOCUS_FILTER_COLONIAL }
+		prerequisite = { focus = GER_colonial_development}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			543={
+				add_extra_state_shared_building_slots = 1
+			}
+		}
+	}
+	focus = {
+		id = GER_develop_suriname
+		icon = GFX_focus_generic_africa_factory
+		relative_position_id = GER_colonial_development
+		x = 1
+		y = 2
+		cost = 5
+		search_filters = {  FOCUS_FILTER_COLONIAL }
+		prerequisite = { focus = GER_colonial_development}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			309={
+				add_extra_state_shared_building_slots = 1
+			}
+		}
+	}
+	focus = {
+		id = GER_develop_somalia
+		icon = GFX_focus_generic_africa_factory
+		relative_position_id = GER_colonial_development
+		x = 2
+		y = 1
+		cost = 5
+		search_filters = {  FOCUS_FILTER_COLONIAL }
+		prerequisite = { focus = GER_colonial_development}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			269={
+				add_extra_state_shared_building_slots = 1
 			}
 		}
 	}
@@ -1956,116 +1955,6 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = GER_naval_expansion_kaiser
-		icon = GFX_focus_generic_navy_battleship2
-		relative_position_id = GER_focus_on_capital
-		mutually_exclusive = {
-			focus = GER_naval_expansion_leipzig_hipper
-		}
-		prerequisite = { 
-			focus = GER_focus_on_capital
-		}
-		x = 1
-		y = 1
-		cost = 5
-		search_filters = { FOCUS_FILTER_NAVAL }
-		available={
-			OR={
-				NOT={has_completed_focus = GER_cut_military_funding }
-				date > 1930.1.1
-			}
-			has_naval_treaty_trigger = no
-			NOT={has_idea = GER_naval_production_scaled_back}
-		}
-		
-		available_if_capitulated = yes
-
-		completion_reward = {
-			
-			add_equipment_production = {
-				equipment = {
-					type = ship_hull_heavy_2
-					version_name = "Kaiser Class"
-				}
-				requested_factories = 4
-				progress = 0.85
-				amount = 1
-			}
-			add_equipment_production = {
-				equipment = {
-					type = ship_hull_heavy_2
-					version_name = "Kaiser Class"
-				}
-				requested_factories = 4
-				progress = 0.85
-				amount = 1
-			}
-		}
-	}
-	focus = {
-		id = GER_naval_expansion_leipzig_hipper
-		icon = GFX_focus_generic_cruiser2
-		relative_position_id = GER_focus_on_capital
-		prerequisite = { 
-			focus = GER_focus_on_capital
-		}
-		mutually_exclusive = {
-			focus = GER_naval_expansion_kaiser
-		}
-		x = -1
-		y = 1
-		cost = 5
-		search_filters = { FOCUS_FILTER_NAVAL }
-		available={
-			OR={
-				NOT={has_completed_focus = GER_cut_military_funding }
-				date > 1930.1.1
-			}
-			NOT={has_idea = GER_naval_production_scaled_back}
-		}
-		
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_equipment_production = {
-				equipment = {
-					type = ship_hull_cruiser_2
-					version_name = "Leipzig Class"
-				}
-				requested_factories = 3
-				progress = 0.85
-				amount = 1
-			}
-			add_equipment_production = {
-				equipment = {
-					type = ship_hull_cruiser_2
-					version_name = "Leipzig Class"
-				}
-				requested_factories = 3
-				progress = 0.85
-				amount = 1
-			}
-			add_equipment_production = {
-				equipment = {
-					type = ship_hull_cruiser_2
-					version_name = "Admiral Hipper Class"
-				}
-				requested_factories = 3
-				progress = 0.85
-				amount = 1
-			}
-			add_equipment_production = {
-				equipment = {
-					type = ship_hull_cruiser_2
-					version_name = "Admiral Hipper Class"
-				}
-				requested_factories = 3
-				progress = 0.85
-				amount = 1
-			}
-		}
-	}
-	focus = {
 		id = GER_fleet_in_being
 		icon = GFX_goal_generic_navy_doctrines_tactics
 		relative_position_id = GER_naval_sector
@@ -2279,6 +2168,116 @@ focus_tree = {
 				bonus = 1.0
 				uses = 1
 				category = bb_tech
+			}
+		}
+	}
+	focus = {
+		id = GER_naval_expansion_kaiser
+		icon = GFX_focus_generic_navy_battleship2
+		relative_position_id = GER_focus_on_capital
+		mutually_exclusive = {
+			focus = GER_naval_expansion_leipzig_hipper
+		}
+		prerequisite = { 
+			focus = GER_focus_on_capital
+		}
+		x = 1
+		y = 1
+		cost = 5
+		search_filters = { FOCUS_FILTER_NAVAL }
+		available={
+			OR={
+				NOT={has_completed_focus = GER_cut_military_funding }
+				date > 1930.1.1
+			}
+			has_naval_treaty_trigger = no
+			NOT={has_idea = GER_naval_production_scaled_back}
+		}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			add_equipment_production = {
+				equipment = {
+					type = ship_hull_heavy_2
+					version_name = "Kaiser Class"
+				}
+				requested_factories = 4
+				progress = 0.85
+				amount = 1
+			}
+			add_equipment_production = {
+				equipment = {
+					type = ship_hull_heavy_2
+					version_name = "Kaiser Class"
+				}
+				requested_factories = 4
+				progress = 0.85
+				amount = 1
+			}
+		}
+	}
+	focus = {
+		id = GER_naval_expansion_leipzig_hipper
+		icon = GFX_focus_generic_cruiser2
+		relative_position_id = GER_focus_on_capital
+		prerequisite = { 
+			focus = GER_focus_on_capital
+		}
+		mutually_exclusive = {
+			focus = GER_naval_expansion_kaiser
+		}
+		x = -1
+		y = 1
+		cost = 5
+		search_filters = { FOCUS_FILTER_NAVAL }
+		available={
+			OR={
+				NOT={has_completed_focus = GER_cut_military_funding }
+				date > 1930.1.1
+			}
+			NOT={has_idea = GER_naval_production_scaled_back}
+		}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_equipment_production = {
+				equipment = {
+					type = ship_hull_cruiser_2
+					version_name = "Leipzig Class"
+				}
+				requested_factories = 3
+				progress = 0.85
+				amount = 1
+			}
+			add_equipment_production = {
+				equipment = {
+					type = ship_hull_cruiser_2
+					version_name = "Leipzig Class"
+				}
+				requested_factories = 3
+				progress = 0.85
+				amount = 1
+			}
+			add_equipment_production = {
+				equipment = {
+					type = ship_hull_cruiser_2
+					version_name = "Admiral Hipper Class"
+				}
+				requested_factories = 3
+				progress = 0.85
+				amount = 1
+			}
+			add_equipment_production = {
+				equipment = {
+					type = ship_hull_cruiser_2
+					version_name = "Admiral Hipper Class"
+				}
+				requested_factories = 3
+				progress = 0.85
+				amount = 1
 			}
 		}
 	}

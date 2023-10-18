@@ -449,9 +449,6 @@ characters = {
 			}
 			available = {
 				NOT = {
-					has_completed_focus = BUL_oppose_the_royal_dictatorship
-				}
-				NOT = {
 					has_government = communism
 				}
 			}
@@ -629,9 +626,6 @@ characters = {
 					original_tag = BUL
 				}
 				available = {
-					NOT = {
-						has_completed_focus = BUL_join_the_tripartite_pact
-					}
 					NOT = {
 						has_government = fascism
 					}
@@ -957,9 +951,6 @@ characters = {
 				original_tag = BUL
 			}
 			available = {
-				NOT = {
-					has_completed_focus = BUL_approach_germany
-				}
 				NOT = {
 					has_government = fascism
 				}
@@ -1594,24 +1585,6 @@ characters = {
 				}
 				ai_will_do = {
 					base = 3.000
-					modifier = {
-						factor = 10
-						OR = {
-							BUL_is_monarchist_ferdinand_ai = yes
-							BUL_is_historical_ai = yes
-						}
-						NOT = { has_completed_focus = BUL_illusions_of_a_non_partisan_system }
-						democratic < 0.2
-					}
-					modifier = {
-						factor = 0.01
-						OR = {
-							BUL_is_monarchist_ferdinand_ai = yes
-							BUL_is_historical_ai = yes
-						}
-						has_completed_focus = BUL_illusions_of_a_non_partisan_system
-						democratic > 0.8
-					}
 				}
 			}
 		}
@@ -1636,142 +1609,7 @@ characters = {
 			}
 		}
 	}
-
-	BUL_konstantin_muraviev = {
-		instance = {
-			allowed = {
-				has_dlc = "Battle for the Bosporus"
-			}
-			advisor = {
-				slot = political_advisor
-				idea_token = BUL_konstantin_muraviev
-				allowed = {
-					has_dlc = "Battle for the Bosporus"
-					original_tag = BUL
-				}
-				available = {
-					has_completed_focus = BUL_democratic_principles 
-				}
-				traits = {
-					compassionate_gentleman 
-				}
-				ai_will_do = {
-					base = 1.000
-				}
-			}
-			name = BUL_konstantin_muraviev
-			portraits = {
-				army = {
-					small = "GFX_idea_bul_konstantin_muraviev"
-				}
-			}
-		}
-
-		instance = {
-			allowed = {
-				NOT = {
-					has_dlc = "Battle for the Bosporus"
-				}
-			}
-			advisor = {
-				slot = political_advisor
-				idea_token = BUL_konstantin_muraviev
-				allowed = {
-					NOT = {
-						has_dlc = "Battle for the Bosporus"
-					}
-					original_tag = BUL
-				}
-				traits = {
-					compassionate_gentleman 
-				}
-			}
-			name = BUL_konstantin_muraviev
-			portraits = {
-				army = {
-					small = "GFX_idea_generic_political_advisor_europe_1"
-				}
-			}
-		}
-	}
-
-	BUL_stefan_stefanov = {
-		advisor = {
-			slot = political_advisor
-			idea_token = BUL_stefan_stefanov
-			allowed = {
-				has_dlc = "Battle for the Bosporus"
-				original_tag = BUL
-			}
-			available = {
-				has_completed_focus = BUL_democratic_principles 
-			}
-			traits = {
-				industry_reformer 
-			}
-			ai_will_do = {
-				base = 1.000
-			}
-		}
-		name = BUL_stefan_stefanov
-		portraits = {
-			army = {
-				small = "GFX_idea_bul_stefan_stefanov"
-			}
-		}
-	}
 	
-	BUL_dimitrana_ivanova = {
-		name = BUL_dimitrana_ivanova
-		portraits = {
-			army = {
-				small = "GFX_idea_bul_dimitrana_ivanova"
-			}
-		}
-		gender = female
-		advisor = {
-			slot = political_advisor
-			idea_token = BUL_dimitrana_ivanova
-			allowed = {
-				has_dlc = "Battle for the Bosporus"
-				original_tag = BUL
-			}
-			available = {
-				OR = {
-					has_completed_focus = BUL_limited_womens_suffrage 
-					has_completed_focus = BUL_full_voting_rights_for_women 
-				}
-			}
-			traits = {
-				womens_rights_activist 
-			}
-			ai_will_do = {
-				base = 1.000
-				modifier = {
-					factor = 2.000
-					OR = {
-						BUL_is_democratic_socialist_ai = yes 
-						BUL_is_democratic_liberal_ai = yes 
-					}
-				}
-				modifier = {
-					factor = 2
-					OR = {
-						BUL_is_monarchist_ferdinand_ai = yes
-						BUL_is_historical_ai = yes
-					}
-					NOT = { has_completed_focus = BUL_illusions_of_a_non_partisan_system }
-					democratic < 0.2
-				}
-				modifier = {
-					factor = 0.000
-					BUL_is_monarchist_ferdinand_ai = yes 
-					has_completed_focus = BUL_illusions_of_a_non_partisan_system 
-				}
-			}
-		}
-	}
-
 	BUL_vasil_kolarov = {
 		advisor = {
 			slot = political_advisor
@@ -1781,9 +1619,7 @@ characters = {
 				original_tag = BUL
 			}
 			available = {
-				NOT = {
-					has_completed_focus = BUL_power_to_the_tsar 
-				}
+
 			}
 			traits = {
 				communist_revolutionary 
@@ -1803,32 +1639,6 @@ characters = {
 		portraits = {
 			army = {
 				small = "GFX_idea_bul_vasil_kolarov"
-			}
-		}
-	}
-
-	BUL_valko_chervenkov = {
-		advisor = {
-			slot = political_advisor
-			idea_token = BUL_valko_chervenkov
-			allowed = {
-				has_dlc = "Battle for the Bosporus"
-				original_tag = BUL
-			}
-			available = {
-				has_completed_focus = BUL_appoint_communist_ministers 
-			}
-			traits = {
-				captain_of_industry 
-			}
-			ai_will_do = {
-				base = 1.000
-			}
-		}
-		name = BUL_valko_chervenkov
-		portraits = {
-			army = {
-				small = "GFX_idea_bul_valko_chervenkov"
 			}
 		}
 	}
@@ -1876,9 +1686,7 @@ characters = {
 				original_tag = BUL
 			}
 			available = {
-				NOT = {
-					has_completed_focus = BUL_oppose_the_royal_dictatorship 
-				}
+
 			}
 			traits = {
 				fascist_demagogue 
@@ -1947,42 +1755,6 @@ characters = {
 		}
 	}
 
-	BUL_nikola_zhekov = {
-		advisor = {
-			slot = political_advisor
-			idea_token = BUL_nikola_zhekov
-			allowed = {
-				has_dlc = "Battle for the Bosporus"
-				original_tag = BUL
-			}
-			available = {
-				has_completed_focus = BUL_appoint_right_wing_ministers 
-				NOT = {
-					has_government = democratic 
-				}
-				NOT = {
-					has_government = communism 
-				}
-			}
-			traits = {
-				nazi_sympathizer 
-			}
-			ai_will_do = {
-				base = 1.000
-				modifier = {
-					factor = 2.000
-					BUL_is_fascist_axis_ai = yes 
-				}
-			}
-		}
-		name = BUL_nikola_zhekov
-		portraits = {
-			army = {
-				small = "GFX_idea_bul_nikola_zhekov"
-			}
-		}
-	}
-
 	BUL_dobri_bozhilov = {
 		instance = {
 			allowed = {
@@ -1996,9 +1768,7 @@ characters = {
 					original_tag = BUL
 				}
 				available = {
-					NOT = {
-						has_completed_focus = BUL_oppose_the_royal_dictatorship 
-					}
+
 				}
 				traits = {
 					captain_of_industry 
@@ -2038,99 +1808,6 @@ characters = {
 				army = {
 					small = "GFX_idea_generic_political_advisor_europe_2"
 				}
-			}
-		}
-	}
-	
-	BUL_bogdan_filov_fascism = { #TODO_Manu: THIS GUY IS SPLIT INTO TWO VERSIONS -> SHOULD UNIFY
-		advisor = {
-			slot = political_advisor
-			idea_token = BUL_bogdan_filov_fascism
-			name = BUL_bogdan_filov 
-			allowed = {
-				has_dlc = "Battle for the Bosporus"
-				original_tag = BUL
-			}
-			available = {
-				has_completed_focus = BUL_approach_germany 
-				NOT = {
-					has_government = democratic 
-				}
-				NOT = {
-					has_government = communism 
-				}
-			}
-			visible = {
-				has_government = fascism 
-			}
-			traits = {
-				ambitious_negotiator_fascism 
-			}
-			ai_will_do = {
-				factor = 1.000
-				modifier = {
-					factor = 0.000
-					is_historical_focus_on = yes 
-					date < 1940.01.01
-				}
-			}
-		}
-		name = BUL_bogdan_filov
-		portraits = {
-			army = {
-				small = "GFX_idea_bul_bogdan_filov"
-			}
-		}
-	}
-	
-	BUL_bogdan_filov = {
-		advisor = {
-			slot = political_advisor
-			idea_token = BUL_bogdan_filov
-			allowed = {
-				has_dlc = "Battle for the Bosporus"
-				original_tag = BUL
-			}
-			available = {
-				has_completed_focus = BUL_approach_germany 
-				NOT = {
-					has_government = democratic 
-				}
-				NOT = {
-					has_government = communism 
-				}
-			}
-			visible = {
-				NOT = {
-					has_government = fascism 
-				}
-			}
-			traits = {
-				ambitious_negotiator_neutrality 
-			}
-			ai_will_do = {
-				factor = 1.000
-				modifier = {
-					factor = 0.000
-					is_historical_focus_on = yes 
-					date < 1940.01.01
-				}
-			}
-		}
-		country_leader = {
-				expire = "1965.1.1"
-				ideology = centrism
-				traits = {
-					political_manipulator 
-				}
-		}
-		name = BUL_bogdan_filov
-		portraits = {
-			army = {
-				small = "GFX_idea_bul_bogdan_filov"
-			}
-			civilian = {
-				large = "GFX_portrait_bul_bogdan_filov"
 			}
 		}
 	}
