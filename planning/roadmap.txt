@@ -13,7 +13,7 @@ Release (The Iron Harvest)
 		nordic kingdom
 		
 	good to have FT:
-		Franks [in development]
+		Franks [in development, probably will be commented out for first release]
 		Hispania
 		Arabia
 		La Plata

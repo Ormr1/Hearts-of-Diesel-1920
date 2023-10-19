@@ -2664,6 +2664,26 @@ spriteTypes = {
 	## POLAND ##
 
 	SpriteType = { 
+		name = "GFX_focus_pol_falangists_win"
+		texturefile = "gfx/interface/goals/POL/focus_pol_falangists_win.png"
+	}
+	SpriteType = { 
+		name = "GFX_focus_pol_monarchists_win"
+		texturefile = "gfx/interface/goals/POL/focus_pol_monarchists_win.png"
+	}
+	SpriteType = { 
+		name = "GFX_focus_pol_pilsudskiites_win"
+		texturefile = "gfx/interface/goals/POL/focus_pol_pilsudskiites_win.png"
+	}
+	SpriteType = { 
+		name = "GFX_focus_pol_social_democrats_win"
+		texturefile = "gfx/interface/goals/POL/focus_pol_social_democrats_win.png"
+	}
+	SpriteType = { 
+		name = "GFX_focus_pol_technocrats_win"
+		texturefile = "gfx/interface/goals/POL/focus_pol_technocrats_win.png"
+	}
+	SpriteType = { 
 		name = "GFX_focus_POL_habsburg"
 		texturefile = "gfx/interface/goals/focus_POL_habsburg.dds"
 	}

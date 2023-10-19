@@ -96,7 +96,7 @@ focus_tree = {
     }
     focus = {
         id = POL_pilsudskiites_win
-        icon = placeholder
+        icon = GFX_focus_pol_pilsudskiites_win
         prerequisite = { focus = POL_1922_elections }
         relative_position_id = POL_1922_elections
         available = { always = no }
@@ -449,7 +449,7 @@ focus_tree = {
     }
     focus = {
         id = POL_social_democrats_win
-        icon = placeholder
+        icon = GFX_focus_pol_social_democrats_win
         prerequisite = { focus = POL_1922_elections }
         relative_position_id = POL_1922_elections
         available = { always = no }
@@ -668,7 +668,7 @@ focus_tree = {
     }
     focus = {
         id = POL_technocrats_win
-        icon = placeholder
+        icon = GFX_focus_pol_technocrats_win
         prerequisite = { focus = POL_1922_elections }
         relative_position_id = POL_1922_elections
         available = { always = no }
@@ -929,7 +929,7 @@ focus_tree = {
     }
     focus = {
         id = POL_monarchists_win
-        icon = placeholder
+        icon = GFX_focus_pol_monarchists_win
         prerequisite = { focus = POL_1922_elections }
         relative_position_id = POL_1922_elections
         available = { always = no }
@@ -1251,7 +1251,7 @@ focus_tree = {
     }
     focus = {
         id = POL_falangists_win
-        icon = placeholder
+        icon = GFX_focus_pol_falangists_win
         prerequisite = { focus = POL_1922_elections }
         relative_position_id = POL_1922_elections
         available = { always = no }
