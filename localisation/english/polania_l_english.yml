@@ -126,6 +126,18 @@
  POL_centralize_government_desc:0 "The previous Republican government was characterized by a chronically weak executive branch and an overreliance on the legislative branch to manage government affairs. Under our new government, we'll restore the old imperial system under Kosciuszko to prevent issues like that from resurfacing."
  POL_restoration_of_the_imperial_palace:0 "Restoration Of The Imperial Palace"
  POL_restoration_of_the_imperial_palace_desc:0 "The Polanian Presidential Palace is actually built on the foundations of the old Imperial Palace after it was burned down by the Coalition. We'll restore it to its former glory with all the glamour and fanfare that befits such a historic place."
+ POL_royal_parades:0 "Royal Parades"
+ POL_royal_parades_desc:0 "Nothing can bring a country together like a magnificent royal parade in honor of a popular monarch. In order to avoid alienating the less-fortunate, we'll include free feasts and food for the locals."
+ POL_commonwealth_dreams:0 "Commonwealth Dreams"
+ POL_commonwealth_dreams_desc:0 "Polania was once a great power on Europa. A commonwealth stretching from the Vistula to the Dnieper that was the envy and fear of all who surrounded it. That dream must be realized so that Polania can ends its years of humiliation at the hands of the Saxons and Rusviets."
+ POL_imperial_glory:0 "Imperial Glory"
+ POL_imperial_glory_desc:0 "To truly embrace our restored imperial glory, we will begin to integrate the territories of our wayward provinces."
+ POL_commonwealth_propaganda:0 "Commonwealth Propaganda"
+ POL_commonwealth_propaganda_desc:0 "We will spread pro-Commonwealth propaganda to nearby nations to convince the people of said nations to be willing to embrace our Commonwealth."
+ POL_reach_out_to_other_monarchies:0 "Reach Out To Other Monarchies"
+ POL_reach_out_to_other_monarchies_desc:0  "We will work to establish good relations with the monarchies of other nations in light of recent events threatening their security."
+ POL_the_second_polanian_empire:0 "The Second Polanian Empire"
+ POL_the_second_polanian_empire_desc:0 "In a grand speech, we will proclaim the creation of the second "Polanian Empire" as we realize our desires to restore our historic borders and influence."
  
  
 ### EVENTS ###

@@ -2060,6 +2060,9 @@ focus_tree = {
                 is_faction_leader = yes
             }
             has_government = democratic
+            NOT = {
+                is_faction_leader = yes
+            }
         }
         prerequisite = { focus = POL_find_new_allies }
         relative_position_id = POL_find_new_allies
@@ -2074,6 +2077,9 @@ focus_tree = {
     focus = {
         id = POL_found_the_intermarium
         icon = placeholder
+        bypass = {
+            is_faction_leader = yes
+        }
         prerequisite = { focus = POL_find_new_allies }
         relative_position_id = POL_find_new_allies
         x = 0
@@ -2091,6 +2097,9 @@ focus_tree = {
                 is_faction_leader = yes
             }
             has_government = monarchy
+            NOT = {
+                is_faction_leader = yes
+            }
         }
         prerequisite = { focus = POL_find_new_allies }
         relative_position_id = POL_find_new_allies
