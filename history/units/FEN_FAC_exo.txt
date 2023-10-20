@@ -1,0 +1,11 @@
+﻿units = {
+	division = {
+		name = "Factory Force Exosuits"
+		location = 6761
+		division_template = "Fenris Exosuits"		
+		start_experience_factor = 0.85
+		start_equipment_factor = 1.0
+		force_equipment_variants = { infantry_equipment_coilgun = { owner = "FEN" } }
+
+	}
+}

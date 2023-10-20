@@ -117,7 +117,7 @@ country_event = {#Attack on the factory
 	
 	option = {
 		name = fenris.7.a
-		
+		set_country_flag = FEN_factory_second_stage
 	}
 }
 country_event = {#Usonias wants
@@ -351,6 +351,173 @@ country_event = {#powderkeg of africa
 	}
 	option = {#too chaotic, even for us
 		name = fenris.19.c
+		custom_effect_tooltip = fenris.19.c.tt
+	}
+}
+country_event = {#meeting with muslim firebrands
+	id = fenris.20
+	title = fenris.20.t
+	desc = fenris.20.d
+	picture = GFX_report_event_finnish_letter
+	
+	is_triggered_only = yes
+	
+	option = {#
+		name = fenris.20.a
 		
+	}
+}
+country_event = {#diverting funds to the brotherhood
+	id = fenris.21
+	title = fenris.21.t
+	desc = fenris.21.d
+	picture = GFX_report_event_finnish_letter
+	
+	is_triggered_only = yes
+	
+	option = {#
+		name = fenris.21.a
+		
+	}
+}
+country_event = {#Assult on the Factory
+	id = fenris.22
+	title = fenris.22.t
+	desc = fenris.22.d
+	picture = GFX_report_event_finnish_letter
+	
+	is_triggered_only = yes
+	
+	option = {#
+		name = fenris.22.a
+		878={
+			transfer_state_to = FEN
+		}
+		while_loop_effect = {
+			limit = {
+				check_variable={FEN_FAC_commited_merc_var > 0}
+			}
+			load_oob = FEN_FAC_merc
+			subtract_from_variable = {FEN_FAC_commited_merc_var = 1}
+		}
+		while_loop_effect = {
+			limit = {
+				check_variable={FEN_FAC_commited_exo_var > 0}
+			}
+			load_oob = FEN_FAC_exo
+			subtract_from_variable = {FEN_FAC_commited_exo_var = 1}
+		}
+		while_loop_effect = {
+			limit = {
+				check_variable={FEN_FAC_commited_mech_var > 0}
+			}
+			load_oob = FEN_FAC_mech
+			subtract_from_variable = {FEN_FAC_commited_mech_var = 1}
+		}
+		while_loop_effect = {
+			limit = {
+				check_variable={FEN_FAC_commited_fort_sab > 0}
+			}
+			878={
+				damage_building = {
+					type = bunker
+					damage = 1
+					province = 6584
+				}
+			}
+			subtract_from_variable = {FEN_FAC_commited_fort_sab = 1}
+		}
+		start_border_war = {
+			change_state_after_war = no
+			attacker = {
+				state = 878
+				num_provinces = 1
+				on_win = fenris.23
+				on_lose = fenris.24
+				on_cancel = fenris.25
+			}	
+			defender = {
+				state = 978
+				num_provinces = 1
+				on_win = fenris.24
+				on_lose = fenris.23
+				on_cancel = fenris.25
+			}
+		}
+	}
+}
+country_event = {#win
+	id = fenris.23
+	title = fenris.23.t
+	desc = fenris.23.d
+	picture = GFX_report_event_finnish_letter
+	
+	is_triggered_only = yes
+	
+	option = {#
+		name = fenris.23.fen
+		trigger={tag = FEN}
+		878={
+			transfer_state_to = MOL
+		}
+		delete_unit = {
+			state = 878
+			disband = yes #will refund equipment and manpower
+		}
+		set_country_flag = FEN_control_tesla
+	}
+	option = {#
+		name = fenris.23.fac
+		trigger={tag = FAC}
+	}
+}
+country_event = {#lose
+	id = fenris.24
+	title = fenris.24.t
+	desc = fenris.24.d
+	picture = GFX_report_event_finnish_letter
+	
+	is_triggered_only = yes
+	
+	option = {#
+		name = fenris.24.fen
+		trigger={tag = FEN}
+		878={
+			transfer_state_to = MOL
+		}
+		delete_unit = {
+			state = 878
+			disband = yes #will refund equipment and manpower
+		}
+		set_country_flag = failed_in_factory
+	}
+	option = {#
+		name = fenris.24.fac
+		trigger={tag = FAC}
+	}
+}
+country_event = {#cancel
+	id = fenris.25
+	title = fenris.25.t
+	desc = fenris.25.d
+	picture = GFX_report_event_finnish_letter
+	
+	is_triggered_only = yes
+	
+	option = {#
+		name = fenris.25.fen
+		trigger={tag = FEN}
+		878={
+			transfer_state_to = MOL
+		}
+		delete_unit = {
+			state = 878
+			disband = yes #will refund equipment and manpower
+		}
+		clr_country_flag = FEN_factory_third_stage
+	}
+	option = {#
+		name = fenris.25.fac
+		trigger={tag = FAC}
 	}
 }

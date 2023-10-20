@@ -1,5 +1,5 @@
-FEN_fenris_interests_cat = {
-
+FEN_fenris_interests_cat = {#map and non-operation misc actions
+	#paraguay
 	FEN_instruct_paraguay_intervene_ARG = {
 
 		icon = generic_operation
@@ -45,81 +45,309 @@ FEN_fenris_interests_cat = {
 			}
 		}
 	}
-	FEN_more_troops_to_PAF = {
+	#Suspicion Management
+	FEN_lay_low = {
 
-		icon = generic_political_discourse
+		icon = recruit_operative
 
 		available = {
 			is_subject = no
-			has_manpower > 5000
-			NOT={has_country_flag = FEN_laying_low}
 		}
 
 		visible = {
-			country_exists = PAF
-			PAF={
-				has_war = yes
+			check_variable = { var = FEN_covert_reveal_risk value = 50 compare = greater_than }
+			NOT = {has_global_flag = FEN_is_revealed_flag}
+		}
+
+		fire_only_once = no
+
+		cost = 50
+		
+		days_remove = 90
+
+		modifier = {
+			
+		}
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 5
+				check_variable = {  FEN_covert_reveal_risk > 150 }
 			}
 		}
 
-		fire_only_once = yes
-		
-		days_re_enable = 120
+		complete_effect = {
+			hidden_effect={
+				remove_ideas = {
+					FEN_covert_forces
+				}
+				set_country_flag = FEN_laying_low
+			}
+			custom_effect_tooltip = FEN_laying_low_start
+		}
+		remove_effect = {
+			hidden_effect={
+				add_ideas = {
+					FEN_covert_forces
+				}
+				clr_country_flag = FEN_laying_low
+				set_temp_variable = {FEN_suspicion_temp = 100}
+				FEN_decrease_suspicion = yes
+			}
+			custom_effect_tooltip = FEN_laying_low_end
+		}
+	}
+	FEN_quiet_rumors = {
 
-		cost = 50
+		icon = recruit_operative
+
+		available = {
+			is_subject = no
+		}
+
+		visible = {
+			check_variable = { var = FEN_covert_reveal_risk value = 10 compare = greater_than }
+			NOT = {has_global_flag = FEN_is_revealed_flag}
+		}
+
+		fire_only_once = no
+
+		cost = 200
+		
+		days_remove = 50
+		
+		days_re_enable = 310
 
 		modifier = {
 			
 		}
 
-		complete_effect = {
-			PAF={add_manpower = 5000}
+		remove_effect = {
+			set_temp_variable = {FEN_suspicion_temp = 10}
+			FEN_decrease_suspicion = yes
+			
 		}
 		ai_will_do = {
-			base = 80
+			base = 0
+			modifier = {
+				add = 5
+				check_variable = {  FEN_covert_reveal_risk > 20 }
+			}
+			modifier = {
+				add = 10
+				check_variable = {  FEN_covert_reveal_risk > 40 }
+			}
+			modifier = {
+				add = 10
+				check_variable = {  FEN_covert_reveal_risk > 60 }
+			}
 		}
 	}
-	FEN_more_weapons_to_PAF = {
+
+	FEN_pull_rasputin_from_SOV = {
 
 		icon = generic_political_discourse
 
 		available = {
 			is_subject = no
-			has_equipment = {
-				infantry_equipment > 500
+			SOV={
+				has_character = SOV_rasputin
 			}
-			NOT={has_country_flag = FEN_laying_low}
 		}
 
 		visible = {
-			country_exists = PAF
-			PAF={
-				has_war = yes
+			SOV={
+				NOT={has_government = fenris}
+				has_character = SOV_rasputin
 			}
 		}
 
 		fire_only_once = yes
+
+		#cost = 100
 		
-		days_re_enable = 120
+		#days_re_enable = 360
+
+		complete_effect = {
+			custom_effect_tooltip = FEN_damage_SOV_operations
+			set_temp_variable = {FEN_suspicion_temp = 35}
+			FEN_increase_suspicion = yes
+			hidden_effect={
+				SOV={
+					deactivate_advisor = SOV_rasputin
+					remove_advisor_role = {
+					  character = "SOV_rasputin"
+					  slot = political_advisor
+					}
+					SOV_rasputin={
+						add_corps_commander_role={
+							skill = 3
+							attack_skill = 2
+							defense_skill = 2
+							planning_skill = 5
+							logistics_skill = 4
+						}
+						set_nationality = FEN
+					}
+				}
+				SOV_rasputin={
+					add_country_leader_role = {
+						promote_leader = yes
+						country_leader = {
+							ideology = fenris
+							expire = "1965.1.1.1"
+							traits = { war_industrialist }
+						}
+					}
+					promote_character = yes
+				}
+			}
+			SOV = {country_event = {id = fenris.17}}
+			subtract_from_variable = {
+				FEN_rusviet_sr_influence = 20
+				tooltip = FEN_loses_hold_over_sr_by
+			}
+			for_each_loop = {
+				array = FEN_controlled_country
+				value = vv
+				index = ii
+				break = break_var
+				if={
+					limit={
+						check_variable = {vv = SOV}
+					}
+					set_temp_variable = {SOV_ii = ii}
+					set_variable = {break_var = 1}
+				}
+			}
+			subtract_from_variable = {FEN_controlled_country_amount^SOV_ii = 33}
+			if={
+				limit={
+					check_variable = {FEN_controlled_country_amount^SOV_ii < 1}
+				}
+				remove_from_array = {
+					array = FEN_controlled_country
+					index = SOV_ii
+				}
+				remove_from_array = {
+					array = FEN_controlled_country_type
+					index = SOV_ii
+				}
+				remove_from_array = {
+					array = FEN_controlled_country_amount
+					index = SOV_ii
+				}
+				clr_country_flag = FEN_influence_in_SOV
+				clear_variable = FEN_rusviet_sr_influence
+			}
+			
+			
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	FEN_track_down_carnavon = {
+
+		icon = generic_nationalism
+
+		available = {
+			is_subject = no
+			custom_trigger_tooltip={
+				tooltip = FEN_has_500_covert_staff
+				check_variable = { FEN_covert_staff > 499}
+			}
+			NOT={has_country_flag = FEN_laying_low}
+			has_country_flag = FEN_rogue_carnavon
+		}
+
+		visible = {
+			has_country_flag = FEN_rogue_carnavon
+		}
+
+		fire_only_once = yes
 
 		cost = 50
+		days_remove = 50
 
 		modifier = {
 			
 		}
 
-		complete_effect = {
-			send_equipment = {
-				equipment = infantry_equipment
-				amount = 100
-				target = PAF
-			}
+		remove_effect = {
+			#add country event here
+			country_event = {id = fenris.12}
 		}
 		ai_will_do = {
-			base = 80
+			base = 2
+			modifier = {
+				add = 5
+				has_completed_focus = FEN_agitate_aegyptus
+			}
 		}
 	}
-	FEN_start_SOV_revolt = {
+
+	FEN_hide_operations = {
+
+		icon = generic_political_discourse
+
+		visible = {
+			NOT={has_country_flag = FEN_operations_hidden}
+		}
+
+		#cost = 100
+		
+		days_re_enable = 0
+
+		complete_effect = {			
+			set_country_flag = FEN_operations_hidden
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	FEN_show_operations = {
+
+		icon = generic_political_discourse
+
+		visible = {
+			has_country_flag = FEN_operations_hidden
+		}
+
+		#cost = 100
+		
+		days_re_enable = 0
+
+		complete_effect = {			
+			clr_country_flag = FEN_operations_hidden
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	FEN_reveal_our_hand = {
+
+		icon = generic_political_discourse
+
+		visible = {
+			NOT={has_global_flag = FEN_is_revealed_flag}
+		}
+
+		#cost = 100
+		
+		fire_only_once = yes
+
+		complete_effect = {			
+			custom_effect_tooltip = FEN_die_is_cast
+			FEN_is_reveled_effect = yes
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}
+FEN_fenris_operations_SOV={
+	FEN_start_SOV_revolt = {#operation objective at the top
 
 		icon = generic_nationalism
 
@@ -165,6 +393,7 @@ FEN_fenris_interests_cat = {
 			base = 1000
 		}
 	}
+
 	FEN_provoke_reprisals_SOV = {
 
 		icon = generic_political_rally
@@ -298,7 +527,6 @@ FEN_fenris_interests_cat = {
 		available = {
 			is_subject = no
 			NOT={has_country_flag = FEN_laying_low}
-			
 			SOV={
 				has_stability < 0.65
 			}
@@ -341,7 +569,10 @@ FEN_fenris_interests_cat = {
 			}
 		}
 	}
-	FEN_USA_buisness_plot = {
+
+}
+FEN_fenris_operations_USA={
+	FEN_USA_buisness_plot = {#operation objective at the top
 
 		icon = generic_nationalism
 
@@ -353,6 +584,9 @@ FEN_fenris_interests_cat = {
 			}
 			has_completed_focus = FEN_usonian_desires
 			NOT={has_country_flag = FEN_laying_low}
+			USA={
+				has_idea = usa_tycoon_influence_extremely_high
+			}
 		}
 
 		visible = {
@@ -381,42 +615,60 @@ FEN_fenris_interests_cat = {
 			base = 1000
 		}
 	}
-	FEN_USA_skim_buisness_profits = {
 
-		icon = gre_paying_ifc_debt
+}
+FEN_fenris_operations_FAC={
+	FEN_FAC_strike_the_factory= {
+
+		icon = generic_operation
 
 		available = {
-			is_subject = no
-			has_completed_focus = FEN_usonian_desires
+			custom_trigger_tooltip={
+				tooltip = FEN_has_2000_covert_staff
+				check_variable = { FEN_covert_staff > 1999}
+			}
 			NOT={has_country_flag = FEN_laying_low}
+			has_country_flag = FEN_factory_second_stage
+			#20 strength
+			custom_trigger_tooltip = {
+				tooltip = FEN_strength_FAC_20_tt
+				check_variable = {FEN_strength_FAC_increase_temp > 19}
+			}
+			#At least 1 div
+			custom_trigger_tooltip = {
+				tooltip = FEN_strength_FAC_div_tt
+				OR={
+					check_variable = {FEN_FAC_commited_merc_var > 0}
+					check_variable = {FEN_FAC_commited_exo_var > 0}
+					check_variable = {FEN_FAC_commited_mech_var > 0}
+				}
+			}
+			#
+			custom_trigger_tooltip = {
+				tooltip = FEN_FAC_commited_fort_sab_4_tt
+				check_variable = {FEN_FAC_commited_fort_sab > 3}
+			}
 		}
-		
-		days_remove = 150
 
 		visible = {
-			USA={
-				has_civil_war = no
-				NOT={has_government = fenris}
-			}
-			OR={
-				USA={has_character = USA_george_mason}
-				has_country_flag = FEN_influence_in_USA
-			}
+			has_country_flag = FEN_factory_first_stage
+			NOT={has_country_flag = FEN_factory_third_stage}
 		}
 
 		fire_only_once = yes
 
-		cost = 100
+		cost = 150
 
 		modifier = {
-			civilian_factory_use = -2
+			
 		}
 
 		complete_effect = {
-			FEN_increase_suspicion_random = yes
+			set_country_flag = FEN_factory_third_stage
+			country_event = {id= fenris.22}
 		}
 		ai_will_do = {
-			factor = 10
+			base = 100
 		}
 	}
 	FEN_FAC_advance_to_stage_2 = {
@@ -435,6 +687,7 @@ FEN_fenris_interests_cat = {
 
 		visible = {
 			has_country_flag = FEN_factory_first_stage
+			NOT={has_country_flag = FEN_factory_second_stage}
 		}
 
 		fire_only_once = yes
@@ -623,243 +876,356 @@ FEN_fenris_interests_cat = {
 			base = 100
 		}
 	}
-	FEN_lay_low = {
+	FEN_FAC_set_aside_spare_coilguns = {
 
-		icon = recruit_operative
+		icon = generic_operation
 
 		available = {
-			is_subject = no
+			has_equipment = {
+				infantry_equipment_coilgun > 99
+			}
 		}
 
 		visible = {
-			check_variable = { var = FEN_covert_reveal_risk value = 50 compare = greater_than }
+			has_country_flag = FEN_factory_second_stage
+			NOT={has_country_flag = FEN_factory_third_stage}
 		}
 
-		fire_only_once = no
+		fire_only_once = yes
 
 		cost = 50
-		
-		days_remove = 90
 
 		modifier = {
 			
-		}
-		ai_will_do = {
-			base = 0
-			modifier = {
-				add = 5
-				check_variable = {  FEN_covert_reveal_risk > 150 }
-			}
 		}
 
 		complete_effect = {
-			hidden_effect={
-				remove_ideas = {
-					FEN_covert_forces
-				}
-				set_country_flag = FEN_laying_low
-			}
-			custom_effect_tooltip = FEN_laying_low_start
+			set_temp_variable = {FEN_strength_FAC_increase_temp = 1}
+			FEN_FAC_increase_strength_effect = yes
 		}
-		remove_effect = {
-			hidden_effect={
-				add_ideas = {
-					FEN_covert_forces
-				}
-				clr_country_flag = FEN_laying_low
-				set_temp_variable = {FEN_suspicion_temp = 100}
-				FEN_decrease_suspicion = yes
-			}
-			custom_effect_tooltip = FEN_laying_low_end
+		ai_will_do = {
+			base = 100
 		}
 	}
-	FEN_quiet_rumors = {
+	FEN_FAC_prepare_exosuit_divison = {
 
-		icon = recruit_operative
+		icon = generic_operation
 
 		available = {
-			is_subject = no
+			has_equipment = {
+				infantry_equipment_coilgun > 649
+			}
+			has_equipment = {
+				exo_suit_equipment > 249
+			}
+			has_manpower > 4999
 		}
 
 		visible = {
-			check_variable = { var = FEN_covert_reveal_risk value = 10 compare = greater_than }
+			has_country_flag = FEN_factory_second_stage
+			NOT={has_country_flag = FEN_factory_third_stage}
 		}
 
-		fire_only_once = no
-
-		cost = 200
-		
-		days_remove = 50
-		
-		days_re_enable = 310
+		cost = 50
 
 		modifier = {
 			
 		}
 
-		remove_effect = {
-			set_temp_variable = {FEN_suspicion_temp = 10}
-			FEN_decrease_suspicion = yes
-			
+		complete_effect = {
+			set_temp_variable = {FEN_strength_FAC_increase_temp = 6}
+			FEN_FAC_increase_strength_effect = yes
+			add_equipment_to_stockpile = {
+				type = exo_suit_equipment
+				amount = -250
+				producer = FEN
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_coilgun
+				amount = -650
+				producer = FEN
+			}
+			add_manpower = -5000
+			add_to_variable={
+				FEN_FAC_commited_exo_var = 1
+			}
 		}
 		ai_will_do = {
-			base = 0
-			modifier = {
-				add = 5
-				check_variable = {  FEN_covert_reveal_risk > 20 }
-			}
-			modifier = {
-				add = 10
-				check_variable = {  FEN_covert_reveal_risk > 40 }
-			}
-			modifier = {
-				add = 10
-				check_variable = {  FEN_covert_reveal_risk > 60 }
-			}
+			base = 100
 		}
 	}
-	FEN_pull_rasputin_from_SOV = {
+	FEN_FAC_prepare_merc_divison = {
 
-		icon = generic_political_discourse
+		icon = generic_operation
 
 		available = {
-			is_subject = no
-			SOV={
-				has_character = SOV_rasputin
+			has_equipment = {
+				infantry_equipment > 599
+			}
+			has_manpower > 5999
+		}
+
+		visible = {
+			has_country_flag = FEN_factory_second_stage
+			NOT={has_country_flag = FEN_factory_third_stage}
+		}
+
+		cost = 50
+
+		modifier = {
+			
+		}
+
+		complete_effect = {
+			set_temp_variable = {FEN_strength_FAC_increase_temp = 3}
+			FEN_FAC_increase_strength_effect = yes
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -650
+				producer = FEN
+			}
+			add_manpower = 6000
+			add_to_variable={
+				FEN_FAC_commited_merc_var = 1
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	FEN_FAC_prepare_mech_divison = {
+
+		icon = generic_operation
+
+		available = {
+			has_equipment = {
+				infantry_equipment_coilgun > 100
+			}
+			has_equipment = {
+				light_tank_chassis > 49
 			}
 		}
 
 		visible = {
+			has_country_flag = FEN_factory_second_stage
+			NOT={has_country_flag = FEN_factory_third_stage}
+		}
+
+		cost = 50
+
+		modifier = {
+			
+		}
+
+		complete_effect = {
+			set_temp_variable = {FEN_strength_FAC_increase_temp = 10}
+			FEN_FAC_increase_strength_effect = yes
+			add_to_variable={
+				FEN_FAC_commited_mech_var = 1
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	FEN_FAC_covert_backing_from_SOV_agents = {
+
+		icon = generic_operation
+
+		available = {
+
+		}
+
+		visible = {
+			has_country_flag = FEN_factory_second_stage
+			NOT={has_country_flag = FEN_factory_third_stage}
+			has_country_flag = FEN_influence_in_SOV
 			SOV={
-				NOT={has_government = fenris}
-				has_character = SOV_rasputin
+				controls_state = 203
 			}
 		}
 
 		fire_only_once = yes
 
-		#cost = 100
-		
-		#days_re_enable = 360
+		cost = 75
+
+		modifier = {
+			
+		}
 
 		complete_effect = {
-			custom_effect_tooltip = FEN_damage_SOV_operations
-			set_temp_variable = {FEN_suspicion_temp = 35}
-			FEN_increase_suspicion = yes
-			hidden_effect={
-				SOV={
-					deactivate_advisor = SOV_rasputin
-					remove_advisor_role = {
-					  character = "SOV_rasputin"
-					  slot = political_advisor
-					}
-					SOV_rasputin={
-						add_corps_commander_role={
-							skill = 3
-							attack_skill = 2
-							defense_skill = 2
-							planning_skill = 5
-							logistics_skill = 4
-						}
-						set_nationality = FEN
-					}
-				}
-				SOV_rasputin={
-					add_country_leader_role = {
-						promote_leader = yes
-						country_leader = {
-							ideology = fenris
-							expire = "1965.1.1.1"
-							traits = { war_industrialist }
-						}
-					}
-					promote_character = yes
-				}
-			}
-			SOV = {country_event = {id = fenris.17}}
-			subtract_from_variable = {
-				FEN_rusviet_sr_influence = 20
-				tooltip = FEN_loses_hold_over_sr_by
-			}
-			for_each_loop = {
-				array = FEN_controlled_country
-				value = vv
-				index = ii
-				break = break_var
-				if={
-					limit={
-						check_variable = {vv = SOV}
-						set_temp_variable = {SOV_ii = ii}
-						set_variable = {break_var = 1}
-					}
-				}
-			}
-			subtract_from_variable = {FEN_controlled_country_amount^SOV_ii = 33}
-			if={
-				limit={
-					check_variable = {FEN_controlled_country_amount^SOV_ii < 1}
-				}
-				remove_from_array = {
-					array = FEN_controlled_country
-					index = SOV_ii
-				}
-				remove_from_array = {
-					array = FEN_controlled_country_type
-					index = SOV_ii
-				}
-				remove_from_array = {
-					array = FEN_controlled_country_amount
-					index = SOV_ii
-				}
-				clr_country_flag = FEN_influence_in_SOV
-				clear_variable = FEN_rusviet_sr_influence
-			}
-			
-			
+			set_temp_variable = {FEN_strength_FAC_increase_temp = 1}
+			FEN_FAC_increase_strength_effect = yes
 		}
 		ai_will_do = {
-			factor = 0
+			base = 100
 		}
 	}
-	FEN_track_down_carnavon = {
+	FEN_FAC_covert_backing_from_GER_agents = {
 
-		icon = generic_nationalism
+		icon = generic_operation
 
 		available = {
-			is_subject = no
+
+		}
+
+		visible = {
+			has_country_flag = FEN_factory_second_stage
+			NOT={has_country_flag = FEN_factory_third_stage}
+			has_country_flag = FEN_influence_in_GER
+			GER={
+				controls_state = 73
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 75
+
+		modifier = {
+			
+		}
+
+		complete_effect = {
+			set_temp_variable = {FEN_strength_FAC_increase_temp = 1}
+			FEN_FAC_increase_strength_effect = yes
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	FEN_FAC_inflitrate_defences = {
+
+		icon =generic_operation
+
+		available = {
 			custom_trigger_tooltip={
 				tooltip = FEN_has_500_covert_staff
 				check_variable = { FEN_covert_staff > 499}
 			}
 			NOT={has_country_flag = FEN_laying_low}
-			has_country_flag = FEN_rogue_carnavon
 		}
 
 		visible = {
-			has_country_flag = FEN_rogue_carnavon
+			has_country_flag = FEN_factory_second_stage
+			NOT={has_country_flag = FEN_factory_third_stage}
+			check_variable = {FEN_FAC_commited_fort_sab < 10}
 		}
 
-		fire_only_once = yes
-
 		cost = 50
-		days_remove = 50
 
 		modifier = {
 			
 		}
 
-		remove_effect = {
-			#add country event here
-			country_event = {id = fenris.12}
+		complete_effect = {
+			subtract_from_variable = {FEN_covert_staff = 500}
+			custom_effect_tooltip = FEN_remove_500_covert_staff
+			set_temp_variable = {FEN_strength_FAC_increase_temp = 2}
+			FEN_FAC_increase_strength_effect = yes
+			add_to_variable={
+				FEN_FAC_commited_fort_sab = 1
+			}
+			custom_effect_tooltip = FEN_sabotage_fac_fort
 		}
 		ai_will_do = {
-			base = 2
-			modifier = {
-				add = 5
-				has_completed_focus = FEN_agitate_aegyptus
-			}
+			base = 100
 		}
 	}
+
+}
+FEN_fenris_operations_PAF={
+	FEN_more_troops_to_PAF = {
+
+		icon = generic_political_discourse
+
+		available = {
+			is_subject = no
+			has_manpower > 5000
+			NOT={has_country_flag = FEN_laying_low}
+		}
+
+		visible = {
+			country_exists = PAF
+			PAF={
+				has_war = yes
+			}
+		}
+
+		fire_only_once = yes
+		
+		days_re_enable = 120
+
+		cost = 50
+
+		modifier = {
+			
+		}
+
+		complete_effect = {
+			PAF={add_manpower = 5000}
+		}
+		ai_will_do = {
+			base = 80
+		}
+	}
+	FEN_more_weapons_to_PAF = {
+
+		icon = generic_political_discourse
+
+		available = {
+			is_subject = no
+			has_equipment = {
+				infantry_equipment > 500
+			}
+			NOT={has_country_flag = FEN_laying_low}
+		}
+
+		visible = {
+			country_exists = PAF
+			PAF={
+				has_war = yes
+			}
+		}
+
+		fire_only_once = yes
+		
+		days_re_enable = 120
+
+		cost = 50
+
+		modifier = {
+			
+		}
+
+		complete_effect = {
+			send_equipment = {
+				equipment = infantry_equipment
+				amount = 100
+				target = PAF
+			}
+		}
+		ai_will_do = {
+			base = 80
+		}
+	}
+
+}
+FEN_fenris_operations_MAR={
+}
+FEN_fenris_operations_EGY={
+}
+FEN_fenris_operations_RHO={
+}
+FEN_fenris_operations_CHI={
+}
+FEN_fenris_operations_AST={
+}
+FEN_fenris_operations_GRE={
+}
+FEN_fenris_operations_MAL={
+}
+FEN_fenris_operations_JAP={
 }
 FEN_bunker_staff = {
 
@@ -1787,4 +2153,45 @@ FEN_bunker_industry_expansion = {
 		}
 		
 	}
+	
+	FEN_USA_skim_buisness_profits = {
+
+		icon = gre_paying_ifc_debt
+
+		available = {
+			is_subject = no
+			has_completed_focus = FEN_usonian_desires
+			NOT={has_country_flag = FEN_laying_low}
+			custom_trigger_tooltip = {tooltip = FEN_influence_in_USA}
+		}
+		
+		days_remove = 150
+
+		visible = {
+			USA={
+				has_civil_war = no
+				NOT={has_government = fenris}
+			}
+			OR={
+				USA={has_character = USA_george_mason}
+				has_country_flag = FEN_influence_in_USA
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 100
+
+		modifier = {
+			civilian_factory_use = -2
+		}
+
+		complete_effect = {
+			FEN_increase_suspicion_random = yes
+		}
+		ai_will_do = {
+			factor = 10
+		}
+	}
+
 }

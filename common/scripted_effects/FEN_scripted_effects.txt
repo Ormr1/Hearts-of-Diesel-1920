@@ -72,3 +72,9 @@ FEN_is_reveled_effect={
 		set_global_flag = FEN_is_revealed_flag
 	}
 }
+FEN_FAC_increase_strength_effect={
+	add_to_variable={
+		tooltip = FEN_strength_commited_FAC
+		FEN_strength_commited_FAC_var = FEN_strength_FAC_increase_temp
+	}
+}

@@ -1,5 +1,5 @@
 FEN_fenris_interests_cat = {
-	priority = 102
+	priority = 110
 
 	icon = generic_propaganda
 	
@@ -13,6 +13,189 @@ FEN_fenris_interests_cat = {
 		is_puppet = no
 	}
 	visible_when_empty = yes
+}
+#operations seperated for convenice
+FEN_fenris_operations_SOV = {
+	priority = 108
+
+	icon = generic_propaganda
+	
+	allowed = {
+		original_tag = FEN
+	}
+
+	visible = {
+		NOT={has_country_flag = FEN_operations_hidden}
+	}
+	visible_when_empty = no
+}
+FEN_fenris_operations_USA= {
+	priority = 108
+
+	icon = generic_propaganda
+	
+	allowed = {
+		original_tag = FEN
+	}
+
+	visible = {
+		NOT={has_country_flag = FEN_operations_hidden}
+	}
+	visible_when_empty = no
+}
+FEN_fenris_operations_FAC= {
+	priority = 109
+
+	icon = generic_propaganda
+	
+	allowed = {
+		original_tag = FEN
+	}
+
+	visible = {
+		NOT={has_country_flag = FEN_operations_hidden}
+	}
+	visible_when_empty = no
+}
+FEN_fenris_operations_EGY= {
+	priority = 107
+
+	icon = generic_propaganda
+	
+	allowed = {
+		original_tag = FEN
+	}
+
+	visible = {
+		NOT={has_country_flag = FEN_operations_hidden}
+	}
+	visible_when_empty = no
+}
+FEN_fenris_operations_PAF= {
+	priority = 107
+
+	icon = generic_propaganda
+	
+	allowed = {
+		original_tag = FEN
+	}
+
+	visible = {
+		NOT={has_country_flag = FEN_operations_hidden}
+	}
+	visible_when_empty = no
+}
+FEN_fenris_operations_EGY= {
+	priority = 107
+
+	icon = generic_propaganda
+	
+	allowed = {
+		original_tag = FEN
+	}
+
+	visible = {
+		NOT={has_country_flag = FEN_operations_hidden}
+	}
+	visible_when_empty = no
+}
+FEN_fenris_operations_MAR= {
+	priority = 107
+
+	icon = generic_propaganda
+	
+	allowed = {
+		original_tag = FEN
+	}
+
+	visible = {
+		NOT={has_country_flag = FEN_operations_hidden}
+	}
+	visible_when_empty = no
+}
+FEN_fenris_operations_RHO= {
+	priority = 107
+
+	icon = generic_propaganda
+	
+	allowed = {
+		original_tag = FEN
+	}
+
+	visible = {
+		NOT={has_country_flag = FEN_operations_hidden}
+	}
+	visible_when_empty = no
+}
+FEN_fenris_operations_CHI= {
+	priority = 107
+
+	icon = generic_propaganda
+	
+	allowed = {
+		original_tag = FEN
+	}
+
+	visible = {
+		NOT={has_country_flag = FEN_operations_hidden}
+	}
+	visible_when_empty = no
+}
+FEN_fenris_operations_AST= {
+	priority = 107
+
+	icon = generic_propaganda
+	
+	allowed = {
+		original_tag = FEN
+	}
+
+	visible = {
+		NOT={has_country_flag = FEN_operations_hidden}
+	}
+	visible_when_empty = no
+}
+FEN_fenris_operations_GRE= {
+	priority = 107
+
+	icon = generic_propaganda
+	
+	allowed = {
+		original_tag = FEN
+	}
+
+	visible = {
+		NOT={has_country_flag = FEN_operations_hidden}
+	}
+	visible_when_empty = no
+}
+FEN_fenris_operations_MAL= {
+	priority = 107
+
+	icon = generic_propaganda
+	
+	allowed = {
+		original_tag = FEN
+	}
+
+	visible = {
+		NOT={has_country_flag = FEN_operations_hidden}
+	}
+	visible_when_empty = no
+}
+FEN_fenris_operations_JAP= {
+	priority = 107
+
+	icon = generic_propaganda
+	
+	allowed = {
+		original_tag = FEN
+	}
+
+	visible = {
+		NOT={has_country_flag = FEN_operations_hidden}
+	}
+	visible_when_empty = no
 }
 
 FEN_bunker_staff = {

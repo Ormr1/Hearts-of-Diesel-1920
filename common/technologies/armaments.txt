@@ -2260,12 +2260,18 @@ technologies = {
 		}
 		allow = {
 			OR={
-				has_country_flag = FAC_project_icarus
-				has_country_flag = FEN_annihilator
+				custom_trigger_tooltip = {
+					tooltip = DEATH_RAY_REQUIREMENTS_FAC
+					has_country_flag = FAC_project_icarus
+				}
+				custom_trigger_tooltip = {
+					tooltip = DEATH_RAY_REQUIREMENTS_FEN
+					has_country_flag = FEN_annihilator
+				}
 			}
 		}
 		on_research_complete = {
-			custom_effect_tooltip = DEATH_RAY_REQUIREMENTS
+			
 		}
 
 		folder = {

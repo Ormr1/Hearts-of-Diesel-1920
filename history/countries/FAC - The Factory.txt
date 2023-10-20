@@ -43,6 +43,7 @@ set_technology = {
 	tesla_coils = 1
 	coilguns = 1
 }
+oob = "FAC_1920"
 if = {
 	limit = {
 		NOT = { has_dlc = "No Step Back" }

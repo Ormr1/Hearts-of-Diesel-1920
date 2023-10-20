@@ -1,6 +1,10 @@
 spriteTypes = {
 
 	spriteType = {
+		name = "GFX_hod_logo"
+		texturefile = "gfx/interface/hod_logo.png"
+	}
+	spriteType = {
 		name = "GFX_bunker_depth_icon"
 		texturefile = "gfx/interface/fenris/bunker_depth_icon.dds"
 	}

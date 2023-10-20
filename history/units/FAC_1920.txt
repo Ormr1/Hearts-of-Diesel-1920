@@ -1,0 +1,31 @@
+﻿division_template = {
+	name = "District Militia"	# 
+	# Note: all forces at reserve levels in 1936
+
+	division_names_group = SPAN_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+}
+
+units = {
+	division= {	
+		name = "Factory Guards"
+		location = 6584 # 
+		division_template = "District Militia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+}
+
+
+
+##### Starting Production #####
+instant_effect = {
+
+}

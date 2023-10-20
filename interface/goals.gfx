@@ -5600,6 +5600,22 @@ spriteTypes = {
 		name = "GFX_focus_GER_new_dresden"
 		texturefile = "gfx/interface/goals/SAXONY/focus_GER_new_dresden.dds"
 	}
+	SpriteType = {
+		name = "GFX_focus_GER_seine"
+		texturefile = "gfx/interface/goals/SAXONY/focus_GER_seine.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_GER_paris_garrison"
+		texturefile = "gfx/interface/goals/SAXONY/focus_GER_paris_garrison.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_GER_flemish_admin_calais"
+		texturefile = "gfx/interface/goals/SAXONY/focus_GER_flemish_admin_calais.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_GER_presence_verdun"
+		texturefile = "gfx/interface/goals/SAXONY/focus_GER_presence_verdun.dds"
+	}
 	
 	
 	SpriteType = {

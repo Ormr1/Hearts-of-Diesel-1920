@@ -250,7 +250,7 @@ focus_tree = {
 		id = FEN_improved_production_routing
 		icon = GFX_focus_FEN_bunker_building
 		relative_position_id = FEN_plotting_deeper
-		x = -1
+		x = 1
 		y = 1
 		cost = 10
 		search_filters = {FOCUS_FILTER_INDUSTRY}
@@ -278,7 +278,7 @@ focus_tree = {
 		id = FEN_expand_the_barracks
 		icon = GFX_focus_FEN_skulking_threat
 		relative_position_id = FEN_plotting_deeper
-		x = 1
+		x = -1
 		y = 1
 		cost = 10
 		search_filters = {   }
@@ -308,6 +308,26 @@ focus_tree = {
 
 		completion_reward = {
 			add_political_power = 150
+		}
+	}
+	focus = {
+		id = FEN_reserving_MIO_areas
+		icon = GFX_focus_FEN_skulking_threat
+		relative_position_id = FEN_plotting_deeper
+		x = -3
+		y = 1
+		cost = 10
+		search_filters = {   }
+		prerequisite = { focus = FEN_plotting_deeper}
+		
+		available_if_capitulated = yes
+
+		allow_branch = {
+			has_dlc = "Arms Against Tyranny"
+		}
+
+		completion_reward = {
+			#unlocks MIO buildings
 		}
 	}
     focus = {
@@ -550,6 +570,7 @@ focus_tree = {
 
 		completion_reward = {
 			country_event = {id=fenris.9}
+			custom_effect_tooltip = FEN_rasputins_play_tt
 		}
 		ai_will_do={
 			factor = 50
@@ -610,6 +631,7 @@ focus_tree = {
 		completion_reward = {
 			#unlock usonian decisions
 			country_event = {id = fenris.8}
+			custom_effect_tooltip = FEN_usonian_desires_tt
 		}
 		ai_will_do={
 			factor = 50
@@ -635,6 +657,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_fuel = 100000
+			add_ideas = {FEN_alaskan_shell_companies}
 		}
 	}
 	focus = {
@@ -725,7 +748,7 @@ focus_tree = {
 		id = FEN_new_global_focus
 		icon = GFX_focus_FEN_grasping_the_world
 		x = 20
-		y = 8
+		y = 7
 		cost = 10
 		search_filters = {   }
 
@@ -999,7 +1022,7 @@ focus_tree = {
 		icon = GFX_focus_FEN_skulking_threat
 		relative_position_id = FEN_new_global_focus
 		x = -3
-		y = -3
+		y = -2
 		cost = 10
 		search_filters = {   }
 
@@ -1044,7 +1067,7 @@ focus_tree = {
 		icon = GFX_focus_FAC_shining_city_chained
 		relative_position_id = FEN_new_global_focus
 		x = 3
-		y = -3
+		y = -2
 		cost = 10
 		search_filters = {   }
 
@@ -1078,8 +1101,13 @@ focus_tree = {
 		
 		available_if_capitulated = yes
 
+		available = {
+			has_completed_focus = FEN_military_administration
+		}
+
 		completion_reward = {
 			add_political_power = 200
+			custom_effect_tooltip = FEN_teslas_annihilator_tt
 		}
 	}
 	focus = {
@@ -1145,14 +1173,20 @@ focus_tree = {
 		available={
 			if={
 				limit={
-					PAR={has_war = yes}
+					PAR={
+
+						has_war = yes
+					}
 				}
 				PAF={
 					exists = yes
 				}
 			}
 			else={
-				always = no
+				custom_trigger_tooltip = {
+					tooltip = FEN_paraguay_coup_not_happened_tt
+					always = no
+				}
 			}
 			NOT={has_country_flag = FEN_laying_low}
 		}
@@ -1182,10 +1216,56 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = FEN_paraguayian_management
+		icon = GFX_focus_FEN_skulking_threat
+		relative_position_id = FEN_the_paraguayian_move
+		x = 0
+		y = 1
+		cost = 5
+		search_filters = {   }
+
+		prerequisite = { 
+			focus = FEN_the_paraguayian_move
+		}
+		available = {
+			PAR={
+				has_civil_war = no
+				has_government = fenris
+			}
+		}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			PAR={
+				add_political_power = 100
+			}
+		}
+	}
+	focus = {
+		id = FEN_helping_with_PAR_reconstruction
+		icon = GFX_focus_FEN_skulking_threat
+		relative_position_id = FEN_paraguayian_management
+		x = 0
+		y = 1
+		cost = 10
+		search_filters = {   }
+
+		prerequisite = { 
+			focus = FEN_paraguayian_management
+		}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			PAR={country_event = {id = fenris.18}}
+		}
+	}
+	focus = {
 		id = FEN_rhodesian_powderkeg
 		icon = GFX_focus_FEN_skulking_threat
 		relative_position_id = FEN_international_intrigue
-		x = 6
+		x = 4
 		y = 1
 		cost = 10
 		search_filters = {   }
@@ -1206,6 +1286,7 @@ focus_tree = {
 
 		completion_reward = {
 			#unlocks rhodeisan decisions
+			custom_effect_tooltip = FEN_rhodesian_powderkeg_tt
 			country_event={
 				id = fenris.19
 			}
@@ -1249,7 +1330,7 @@ focus_tree = {
 		id = FEN_agitate_aegyptus
 		icon = GFX_focus_FEN_skulking_threat
 		relative_position_id = FEN_international_intrigue
-		x = 4
+		x = 6
 		y = 1
 		cost = 10
 		search_filters = {   }
@@ -1284,6 +1365,13 @@ focus_tree = {
 
 		completion_reward = {
 			#unlocks aegyptian decisions
+			custom_effect_tooltip = FEN_agitate_aegyptus_tt
+			if={
+				limit={
+					EGY={NOT={has_country_flag = muslium_brotherhood_founded}}
+				}
+				country_event = { id = fenris.20}
+			}
 		}
 	}
 	focus = {
@@ -1680,54 +1768,6 @@ focus_tree = {
 		}
 	}
 
-	focus = {
-		id = FEN_paraguayian_management
-		icon = GFX_focus_FEN_skulking_threat
-		x = 45
-		y = 0
-		cost = 5
-		search_filters = {   }
-		available = {
-			PAR={
-				has_civil_war = no
-				has_government = fenris
-			}
-		}
-		
-		available_if_capitulated = yes
-
-		completion_reward = {
-			PAR={
-				add_political_power = 100
-			}
-		}
-	}
-	focus = {
-		id = FEN_helping_with_PAR_reconstruction
-		icon = GFX_focus_FEN_skulking_threat
-		relative_position_id = FEN_paraguayian_management
-		x = 0
-		y = 1
-		cost = 10
-		search_filters = {   }
-
-		prerequisite = { 
-			focus = FEN_paraguayian_management
-		}
-
-		available = {
-			PAR={
-				has_civil_war = no
-				has_government = fenris
-			}
-		}
-		
-		available_if_capitulated = yes
-
-		completion_reward = {
-			PAR={country_event = {id = fenris.18}}
-		}
-	}
 }
 #joint tree for fenris and rusviet under rasputin
 shared_focus = {

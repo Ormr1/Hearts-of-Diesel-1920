@@ -1572,3 +1572,33 @@ defined_text = {
 		localization_key = SOV_STRIKE_AT_THE_SOURCE_DESC_EXILES
 	}
 }
+defined_text = {
+	name = FENGetSusRevealedStatus
+	text = {
+		trigger = {
+			has_global_flag = FEN_is_revealed_flag
+		}
+		localization_key = " "
+	}
+	text = {
+		trigger = {
+			NOT={has_global_flag = FEN_is_revealed_flag}
+		}
+		localization_key = FEN_suspicion_txt
+	}
+}
+defined_text = {
+	name = FENGetSusRevealedStatus_tt
+	text = {
+		trigger = {
+			has_global_flag = FEN_is_revealed_flag
+		}
+		localization_key = ""
+	}
+	text = {
+		trigger = {
+			NOT={has_global_flag = FEN_is_revealed_flag}
+		}
+		localization_key = FEN_suspicion_txt_tooltip
+	}
+}

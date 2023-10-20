@@ -40,6 +40,7 @@ country_event = { # Death of the Arabian Royal family
 		SAU_al_hadid={
 			retire = yes
 		}
+		country_event = {id = arabia_civil_war.1}
     }
 }
 

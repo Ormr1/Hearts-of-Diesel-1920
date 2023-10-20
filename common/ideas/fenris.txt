@@ -117,6 +117,13 @@ ideas = {
 				army_infantry_defence_factor = 0.10
 			}
 		}
+		FEN_alaskan_shell_companies= {
+			picture = generic_army_problems
+			
+			modifier = {
+				base_fuel_gain = 750
+			}
+		}
 	}
 	aircraft_manufacturer = { 
 			

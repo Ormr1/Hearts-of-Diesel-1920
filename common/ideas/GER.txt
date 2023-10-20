@@ -281,6 +281,26 @@ ideas = {
 				stability_factor = 0.05
 			}
 		}
+		GER_expanding_trade_influence = {
+				
+			allowed = {
+				original_tag = GER
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = generic_foreign_capital
+				
+			removal_cost = -1
+				
+			modifier = {
+				trade_laws_cost_factor = -0.15
+				research_speed_factor = 0.05
+				trade_opinion_factor = 0.15
+			}
+		}
 	
 		sour_loser = {
 			

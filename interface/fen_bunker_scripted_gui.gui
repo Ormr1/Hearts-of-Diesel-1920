@@ -202,36 +202,35 @@ guiTypes = {
 			spriteType = "GFX_bunker_staff_bg"
 			position = { x=@BACKGROUND_X y=-20 }
 		}
-
-		#Sus meter
-		iconType = {
-			name ="suspicion_bg"
-			position = { x=@SUSMETER_BG_X	y=@SUSMETER_BG_Y }
-			pdx_tooltip = FEN_suspicion_txt_tooltip
-			spriteType = "GFX_FEN_suspicion_bg"
-			size = { width = 100% height= 250 }
-		}
-		iconType = {
-			name ="suspicion_main_paranoiameter"
-			spriteType = "GFX_FEN_suspicion_meter_icon"
-			position = { x=@SUSMETER_MAIN_X	 y=@SUSMETER_MAIN_Y }
-			pdx_tooltip = FEN_suspicion_txt_tooltip
-		}
-		iconType = {
-			name ="suspicion_main_needle"
-			spriteType = "GFX_FEN_suspicion_needle_icon"
-			position = { x=@SUSMETER_MAIN_X	 y=@SUSMETER_MAIN_Y }
-			pdx_tooltip = FEN_suspicion_txt_tooltip
-		}
-		instantTextBoxType = {
-			name ="sus_text"
-			position = { x = @SUSMETER_TEXT_X y = @SUSMETER_TEXT_Y }
-			font = "hoi_18mbs"
-			text = "FEN_suspicion_txt"
-			tooltip = "FEN_suspicion_txt_tooltip"
-			format = center
-			maxWidth = 150
-		}
+			#Sus meter
+			iconType = {
+				name ="suspicion_bg"
+				position = { x=@SUSMETER_BG_X	y=@SUSMETER_BG_Y }
+				pdx_tooltip = FEN_suspicion_txt_tooltip
+				spriteType = "GFX_FEN_suspicion_bg"
+				size = { width = 100% height= 250 }
+			}
+			iconType = {
+				name ="suspicion_main_paranoiameter"
+				spriteType = "GFX_FEN_suspicion_meter_icon"
+				position = { x=@SUSMETER_MAIN_X	 y=@SUSMETER_MAIN_Y }
+				pdx_tooltip = FEN_suspicion_txt_tooltip
+			}
+			iconType = {
+				name ="suspicion_main_needle"
+				spriteType = "GFX_FEN_suspicion_needle_icon"
+				position = { x=@SUSMETER_MAIN_X	 y=@SUSMETER_MAIN_Y }
+				pdx_tooltip = FEN_suspicion_txt_tooltip
+			}
+			instantTextBoxType = {
+				name ="sus_text"
+				position = { x = @SUSMETER_TEXT_X y = @SUSMETER_TEXT_Y }
+				font = "hoi_18mbs"
+				text = FEN_sus_text_txt
+				tooltip = FEN_sus_text_txt_tooltip
+				format = center
+				maxWidth = 150
+			}
 		
 		iconType = {
 			name ="text_bg"

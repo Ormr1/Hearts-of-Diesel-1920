@@ -399,7 +399,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_increase_the_paris_garrison
-		icon = GFX_goal_generic_allies_build_infantry
+		icon = GFX_focus_GER_paris_garrison
 		relative_position_id = GER_occupation_of_east_frankia
 		prerequisite = { focus = GER_occupation_of_east_frankia}
 		x =-3
@@ -417,7 +417,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_importance_of_the_seine
-		icon = GFX_goal_generic_allies_build_infantry
+		icon = GFX_focus_GER_seine
 		relative_position_id = GER_occupation_of_east_frankia
 		prerequisite = { focus = GER_occupation_of_east_frankia}
 		x =-1
@@ -485,7 +485,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_flemmish_administrators_in_calais
-		icon = GFX_goal_generic_allies_build_infantry
+		icon = GFX_focus_GER_flemish_admin_calais
 		relative_position_id = GER_occupation_of_east_frankia
 		prerequisite = { focus = GER_occupation_of_east_frankia}
 		x = 1
@@ -509,7 +509,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_increase_presence_in_verdun
-		icon = GFX_goal_generic_allies_build_infantry
+		icon = GFX_focus_GER_presence_verdun
 		relative_position_id = GER_occupation_of_east_frankia
 		prerequisite = { focus = GER_occupation_of_east_frankia}
 		x = 3
@@ -1705,7 +1705,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_new_trade_treaties
-		icon = GFX_goal_generic_alliance
+		icon = GFX_focus_generic_merchant_fleet
 		relative_position_id = GER_foreign_sphere
 		prerequisite = { 
 			focus = GER_foreign_sphere
@@ -1722,7 +1722,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			add_ideas = { GER_expanding_trade_influence }
 		}
 	}
 	focus = {
