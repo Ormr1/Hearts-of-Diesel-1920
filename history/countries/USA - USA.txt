@@ -53,8 +53,6 @@ set_research_slots = 4
 set_stability = 0.75
 set_war_support = 0
 add_command_power = 20
-set_variable = { var = usa_tycoon_influence_var value = 80 }
-# usa_tycoon_influence_update = yes every time usa_tycoon_influence_var changes
 set_variable = { var = senators_support value = 65 }
 set_variable = { var = senators_total value = 130 }
 set_variable = { var = representatives_support value = 218 }
