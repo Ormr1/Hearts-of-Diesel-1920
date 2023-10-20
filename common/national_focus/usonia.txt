@@ -4257,4 +4257,91 @@ focus_tree = {
 	### NAVY TREE ###
 
 	### AIR TREE ###
+	focus = {
+		id = USA_The_Usonian_Air_Force
+		icon = placeholder
+		x = 70
+		y = 0
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			air_experience = 25
+		}
+	}
+	# REVERE DEVELOPMENT
+	focus = {
+		id = USA_Fighter_Command
+		icon = placeholder
+		relative_position_id = USA_The_Usonian_Air_Force
+		prerequisite = { focus = USA_The_Usonian_Air_Force }
+		x = -3
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = light_fighter
+			}
+			if = {
+				limit = { has_dlc = "By Blood Alone" }
+				add_tech_bonus = {
+					bonus = 0.5
+					uses = 1
+					category = cat_air_guns
+				}
+			}
+		}
+	}
+	focus = {
+		id = USA_Establish_Fighter_School
+		icon = placeholder
+		relative_position_id = USA_Fighter_Command
+		prerequisite = { focus = USA_Fighter_Command }
+		x = -2
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = USA_Great_Plains_Fighter_Exercises
+		icon = placeholder
+		relative_position_id = USA_Fighter_Command
+		prerequisite = { focus = USA_Fighter_Command }
+		x = 0
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			
+		}
+	}
+	# SAMSOM DEVELOPMENT
+	focus = {
+		id = USA_Bomber_Command
+		icon = placeholder
+		relative_position_id = USA_The_Usonian_Air_Force
+		prerequisite = { focus = USA_The_Usonian_Air_Force }
+		x = 3
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			air_experience = 25
+		}
+	}
 }

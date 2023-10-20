@@ -12,7 +12,7 @@ shared_focus = {
 	id = UNITED_STATES_first_congress_joint
 	icon = placeholder
 	cost = 5
-	x = 72
+	x = -6
 	y = 0
 	
 	allow_branch = {
