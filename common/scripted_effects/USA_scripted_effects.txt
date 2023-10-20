@@ -18,6 +18,17 @@ USA_increase_control_in_state = {
 	}
 }
 
+usa_tycoon_influence_update = {
+	# Update tycoon influence
+	# usa_tycoon_influence_var > 85: Extremely High
+	# usa_tycoon_influence_var > 70: Very High
+	# usa_tycoon_influence_var > 55: High
+	# 45 < usa_tycoon_influence_var < 55: Middling
+	# usa_tycoon_influence_var < 45: Low
+	# usa_tycoon_influence_var < 30: Very Low
+	# usa_tycoon_influence_var < 15: Extremely Low
+}
+
 #Add to scripted triggers if more levels of hyper inflation is added
 USA_depression_clear_all = {
 	remove_ideas = {
