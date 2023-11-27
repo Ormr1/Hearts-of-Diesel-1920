@@ -4253,14 +4253,116 @@ focus_tree = {
 	}
 
 	### ARMY TREE ###
-
+	focus = {
+		id = USA_The_Usonian_Army
+		icon = placeholder
+		x = 71
+		y = 0
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			army_experience = 25
+		}
+	}
+	focus = {
+		id = USA_A_Mechanized_Doctrine
+		icon = placeholder
+		relative_position_id = USA_The_Usonian_Army
+		prerequisite = { focus = USA_The_Usonian_Army }
+		x = -4
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = USA_Promote_Patton
+		icon = placeholder
+		relative_position_id = USA_A_Mechanized_Doctrine
+		prerequisite = { focus = USA_A_Mechanized_Doctrine }
+		x = -2
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = USA_Promote_Eisenhower
+		icon = placeholder
+		relative_position_id = USA_A_Mechanized_Doctrine
+		prerequisite = { focus = USA_A_Mechanized_Doctrine }
+		x = 2
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = USA_A_Conventional_Doctrine
+		icon = placeholder
+		relative_position_id = USA_The_Usonian_Army
+		prerequisite = { focus = USA_The_Usonian_Army }
+		x = 4
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = USA_Promote_Bradley
+		icon = placeholder
+		relative_position_id = USA_A_Conventional_Doctrine
+		prerequisite = { focus = USA_A_Conventional_Doctrine }
+		x = -2
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = USA_Promote_MacArthur
+		icon = placeholder
+		relative_position_id = USA_A_Conventional_Doctrine
+		prerequisite = { focus = USA_A_Conventional_Doctrine }
+		x = 2
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			
+		}
+	}
 	### NAVY TREE ###
 
 	### AIR TREE ###
 	focus = {
 		id = USA_The_Usonian_Air_Force
 		icon = placeholder
-		x = 70
+		x = 85
 		y = 0
 		cost = 4
 		ai_will_do = {
