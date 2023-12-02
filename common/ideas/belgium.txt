@@ -1,4 +1,24 @@
 ideas = {
+	country={
+		BEL_calais_administration = {
+			picture = placeholder
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = 0
+			
+			modifier = {
+				resistance_target = -0.1
+				required_garrison_factor = -0.25
+			}
+		}
+	}
 	# MILITARY
 
 	tank_manufacturer = { 

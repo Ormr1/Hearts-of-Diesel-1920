@@ -514,7 +514,7 @@ country_event = {#cancel
 			state = 878
 			disband = yes #will refund equipment and manpower
 		}
-		clr_country_flag = FEN_factory_third_stage
+		clr_country_flag = FEN_factory_third_stage#reset if a bug happens
 	}
 	option = {#
 		name = fenris.25.fac
