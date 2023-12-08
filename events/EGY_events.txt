@@ -1018,3 +1018,513 @@ country_event = {
 		name = EGY_A.71.a
 	}
 }
+country_event = {
+	id = EGY_AFOC.72
+	title = EGY_AFOC.72.t
+	desc = EGY_AFOC.72.d
+	picture = GFX_EGY_EV_72
+	is_triggered_only = yes
+	option = {
+		name = EGY_AFOC.72.a
+        country_event = {
+			id = EGY_A.73
+			days = 8
+		}
+	}
+}
+country_event = {
+	id = EGY_AFOC.73
+	title = EGY_AFOC.73.t
+	desc = EGY_AFOC.73.d
+	picture = GFX_EGY_EV_73
+	is_triggered_only = yes
+	option = {
+		name = EGY_AFOC.73.a
+        country_event = {
+			id = EGY_A.74
+			days = 8
+		}
+	}
+    option = {
+		name = EGY_AFOC.73.b
+        country_event = {
+			id = EGY_A.77
+			days = 8
+		}
+	}
+    option = {
+		name = EGY_AFOC.73.c
+        country_event = {
+			id = EGY_A.80
+			days = 8
+		}
+	}
+}
+country_event = {
+	id = EGY_A.74
+	title = EGY_A.74.t
+	desc = EGY_A.74.d
+	picture = GFX_EGY_EV_74
+	is_triggered_only = yes
+	option = {
+		name = EGY_A.74.a
+		country_event = {
+			id = EGY_A.75
+			days = 8
+		}
+	}
+}
+country_event = {
+	id = EGY_A.75
+	title = EGY_A.75.t
+	desc = EGY_A.75.d
+	picture = GFX_EGY_EV_75
+	is_triggered_only = yes
+	option = {
+		name = EGY_A.75.a
+		country_event = {
+			id = EGY_A.76
+			days = 8
+		}
+	}
+}
+country_event = {
+	id = EGY_A.76
+	title = EGY_A.76.t
+	desc = EGY_A.76.d
+	picture = GFX_EGY_EV_76
+	is_triggered_only = yes
+	option = {
+		name = EGY_A.76.a
+		country_event = {
+			id = EGY_A.83
+			days = 8
+		}
+	}
+}
+country_event = {
+	id = EGY_A.77
+	title = EGY_A.77.t
+	desc = EGY_A.77.d
+	picture = GFX_EGY_EV_77
+	is_triggered_only = yes
+	option = {
+		name = EGY_A.77.a
+		country_event = {
+			id = EGY_A.78
+			days = 8
+		}
+	}
+}
+country_event = {
+	id = EGY_A.78
+	title = EGY_A.78.t
+	desc = EGY_A.78.d
+	picture = GFX_EGY_EV_78
+	is_triggered_only = yes
+	option = {
+		name = EGY_A.78.a
+		country_event = {
+			id = EGY_A.79
+			days = 8
+		}
+	}
+}
+country_event = {
+	id = EGY_A.79
+	title = EGY_A.79.t
+	desc = EGY_A.79.d
+	picture = GFX_EGY_EV_79
+	is_triggered_only = yes
+	option = {
+		name = EGY_A.79.a
+		country_event = {
+			id = EGY_A.783
+			days = 8
+		}
+	}
+}
+country_event = {
+	id = EGY_A.80
+	title = EGY_A.80.t
+	desc = EGY_A.80.d
+	picture = GFX_EGY_EV_80
+	is_triggered_only = yes
+	option = {
+		name = EGY_A.80.a
+		country_event = {
+			id = EGY_A.81
+			days = 8
+		}
+	}
+}
+country_event = {
+	id = EGY_A.81
+	title = EGY_A.81.t
+	desc = EGY_A.81.d
+	picture = GFX_EGY_EV_81
+	is_triggered_only = yes
+	option = {
+		name = EGY_A.81.a
+		country_event = {
+			id = EGY_A.82
+			days = 8
+		}
+	}
+}
+country_event = {
+	id = EGY_A.82
+	title = EGY_A.82.t
+	desc = EGY_A.82.d
+	picture = GFX_EGY_EV_82
+	is_triggered_only = yes
+	option = {
+		name = EGY_A.82.a
+		country_event = {
+			id = EGY_A.83
+			days = 8
+		}
+	}
+}
+country_event = {
+	id = EGY_A.83
+	title = EGY_A.83.t
+	desc = EGY_A.83.d
+	picture = GFX_EGY_EV_83
+	is_triggered_only = yes
+	option = {
+		name = EGY_A.83.a
+	}
+}
+country_event = {
+	id = EGY_AFOC.84
+	title = EGY_AFOC.84.t
+	desc = EGY_AFOC.84.d
+	picture = GFX_EGY_EV_84
+	is_triggered_only = yes
+	option = {
+		name = EGY_AFOC.84.a
+		country_event = {
+			id = EGY_A.85
+			days = 8
+		}
+	}
+}
+country_event = {
+	id = EGY_A.85
+	title = EGY_A.85.t
+	desc = EGY_A.85.d
+	picture = GFX_EGY_EV_85
+	is_triggered_only = yes
+	option = {
+		name = EGY_A.85.a
+		country_event = {
+			id = EGY_A.86
+			days = 8
+		}
+	}
+    option = {
+		name = EGY_A.85.b
+		country_event = {
+			id = EGY_A.89
+			days = 8
+		}
+	}
+}
+country_event = {
+	id = EGY_A.86
+	title = EGY_A.86.t
+	desc = EGY_A.86.d
+	picture = GFX_EGY_EV_86
+	is_triggered_only = yes
+	option = {
+		name = EGY_A.86.a
+		country_event = {
+			id = EGY_A.87
+			days = 8
+		}
+	}
+}
+country_event = {
+	id = EGY_A.87
+	title = EGY_A.87.t
+	desc = EGY_A.87.d
+	picture = GFX_EGY_EV_87
+	is_triggered_only = yes
+	option = {
+		name = EGY_A.87.a
+		country_event = {
+			id = EGY_A.88
+			days = 8
+		}
+	}
+}
+country_event = {
+	id = EGY_A.88
+	title = EGY_A.88.t
+	desc = EGY_A.88.d
+	picture = GFX_EGY_EV_88
+	is_triggered_only = yes
+	option = {
+		name = EGY_A.88.a
+		country_event = {
+			id = EGY_A.94
+			days = 8
+		}
+	}
+}
+country_event = {
+	id = EGY_A.89
+	title = EGY_A.89.t
+	desc = EGY_A.89.d
+	picture = GFX_EGY_EV_89
+	is_triggered_only = yes
+	option = {
+		name = EGY_A.89.a
+		country_event = {
+			id = EGY_A.90
+			days = 8
+		}
+	}
+    option = {
+		name = EGY_A.89.b
+		country_event = {
+			id = EGY_A.92
+			days = 8
+		}
+	}
+}
+country_event = {
+	id = EGY_A.90
+	title = EGY_A.90.t
+	desc = EGY_A.90.d
+	picture = GFX_EGY_EV_90
+	is_triggered_only = yes
+	option = {
+		name = EGY_A.90.a
+		country_event = {
+			id = EGY_A.91
+			days = 8
+		}
+	}
+}
+country_event = {
+	id = EGY_A.91
+	title = EGY_A.91.t
+	desc = EGY_A.91.d
+	picture = GFX_EGY_EV_91
+	is_triggered_only = yes
+	option = {
+		name = EGY_A.91.a
+		country_event = {
+			id = EGY_A.94
+			days = 8
+		}
+	}
+}
+country_event = {
+	id = EGY_A.92
+	title = EGY_A.92.t
+	desc = EGY_A.92.d
+	picture = GFX_EGY_EV_92
+	is_triggered_only = yes
+	option = {
+		name = EGY_A.92.a
+		country_event = {
+			id = EGY_A.93
+			days = 8
+		}
+	}
+}
+country_event = {
+	id = EGY_A.93
+	title = EGY_A.93.t
+	desc = EGY_A.93.d
+	picture = GFX_EGY_EV_93
+	is_triggered_only = yes
+	option = {
+		name = EGY_A.93.a
+		country_event = {
+			id = EGY_A.94
+			days = 8
+		}
+	}
+}
+country_event = {
+	id = EGY_A.94
+	title = EGY_A.94.t
+	desc = EGY_A.94.d
+	picture = GFX_EGY_EV_94
+	is_triggered_only = yes
+	option = {
+		name = EGY_A.94.a
+	}
+}
+country_event = {
+	id = EGY_AFOC.95
+	title = EGY_AFOC.95.t
+	desc = EGY_AFOC.95.d
+	picture = GFX_EGY_EV_95
+	is_triggered_only = yes
+	option = {
+		name = EGY_AFOC.95.a
+        country_event = {
+			id = EGY_A.96
+			days = 8
+		}
+	}
+}
+country_event = {
+	id = EGY_A.96
+	title = EGY_A.96.t
+	desc = EGY_A.96.d
+	picture = GFX_EGY_EV_96
+	is_triggered_only = yes
+	option = {
+		name = EGY_A.96.a
+		country_event = {
+			id = EGY_A.97
+			days = 8
+		}
+	}
+    option = {
+		name = EGY_A.96.b
+		country_event = {
+			id = EGY_A.100
+			days = 8
+		}
+	}
+}
+country_event = {
+	id = EGY_A.97
+	title = EGY_A.97.t
+	desc = EGY_A.97.d
+	picture = GFX_EGY_EV_97
+	is_triggered_only = yes
+	option = {
+		name = EGY_A.97.a
+		country_event = {
+			id = EGY_A.98
+			days = 8
+		}
+	}
+}
+country_event = {
+	id = EGY_A.98
+	title = EGY_A.98.t
+	desc = EGY_A.98.d
+	picture = GFX_EGY_EV_98
+	is_triggered_only = yes
+	option = {
+		name = EGY_A.98.a
+		country_event = {
+			id = EGY_A.99
+			days = 8
+		}
+	}
+}
+country_event = {
+	id = EGY_A.99
+	title = EGY_A.99.t
+	desc = EGY_A.99.d
+	picture = GFX_EGY_EV_99
+	is_triggered_only = yes
+	option = {
+		name = EGY_A.99.a
+		country_event = {
+			id = EGY_A.105
+			days = 8
+		}
+	}
+}
+country_event = {
+	id = EGY_A.100
+	title = EGY_A.100.t
+	desc = EGY_A.100.d
+	picture = GFX_EGY_EV_100
+	is_triggered_only = yes
+	option = {
+		name = EGY_A.100.a
+		country_event = {
+			id = EGY_A.101
+			days = 8
+		}
+	}
+    option = {
+		name = EGY_A.103.a
+		country_event = {
+			id = EGY_A.103
+			days = 8
+		}
+	}
+}
+country_event = {
+	id = EGY_A.101
+	title = EGY_A.101.t
+	desc = EGY_A.101.d
+	picture = GFX_EGY_EV_101
+	is_triggered_only = yes
+	option = {
+		name = EGY_A.101.a
+		country_event = {
+			id = EGY_A.102
+			days = 8
+		}
+	}
+}
+country_event = {
+	id = EGY_A.102
+	title = EGY_A.102.t
+	desc = EGY_A.102.d
+	picture = GFX_EGY_EV_102
+	is_triggered_only = yes
+	option = {
+		name = EGY_A.102.a
+		country_event = {
+			id = EGY_A.105
+			days = 8
+		}
+	}
+}
+country_event = {
+	id = EGY_A.103
+	title = EGY_A.103.t
+	desc = EGY_A.103.d
+	picture = GFX_EGY_EV_103
+	is_triggered_only = yes
+	option = {
+		name = EGY_A.103.a
+		country_event = {
+			id = EGY_A.104
+			days = 8
+		}
+	}
+}
+country_event = {
+	id = EGY_A.104
+	title = EGY_A.104.t
+	desc = EGY_A.104.d
+	picture = GFX_EGY_EV_104
+	is_triggered_only = yes
+	option = {
+		name = EGY_A.104.a
+		country_event = {
+			id = EGY_A.105
+			days = 8
+		}
+	}
+}
+country_event = {
+	id = EGY_AFOC.106
+	title = EGY_AFOC.106.t
+	desc = EGY_AFOC.106.d
+	picture = GFX_EGY_EV_106
+	is_triggered_only = yes
+	option = {
+		name = EGY_AFOC.106.a
+		country_event = {
+			id = EGY_A.107
+			days = 8
+		}
+	}
+}
