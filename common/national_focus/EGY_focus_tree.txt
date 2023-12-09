@@ -568,7 +568,7 @@ focus_tree = {
     }
     focus = {
         id = EGY_A19
-        icon = GFX_EGY_A14
+        icon = GFX_EGY_A19
         relative_position_id = EGY_A16_fr
         prerequisite = { focus = EGY_A16_fr }
         x = 6

@@ -44,7 +44,7 @@ EGY_A17_desc: "Please Stand By"
 EGY_A18: "Bad Publicity"
 EGY_A18_desc: "Please Stand By"
 EGY_A19: "False Profits"
-EGY_A19_desc: "A Byzantine consortium has slowly and with the tacit approval of the Tetrarchy been buying up resources production in Kemet, such as mines and food production. A fraction these products are returned to the people and when they are they're sold for high price, which would make the nile Byzantium's personal breadbasket. We would sabotage their flow of money, but nobody has figured out how they own 75% of this land's resources and still manage to make a loss. Until now. We believe that these profits are being siphoned back to Constantinople through the new cathedral in Alexandria, paid in as donations and then sent back to the head offices. Because it's religious money, it can't be taxed or levied, keeping it remarkably secure in transit. If we were to expose this, the Tetrarch would look like a fool and the combined scandal would be enough to drop their stock price through the floor."
+EGY_A19_desc: "Please Stand By"
 EGY_A20: "It's The Pits"
 EGY_A20_desc: "Now we have the people's attention, we should focus on winning hearts and minds here and abroad."
 EGY_A21_fr: "Unleash The Hoarde"
@@ -159,7 +159,7 @@ EGY_A.5.a: "See about getting those disguises"
 EGY_A.5.b: "Shooting the place up sounds fun"
 
 EGY_A.6.t: "Masters of Disguise"
-EGY_A.6.d: "Grabbing some military uniforms required a bit of searching. Getting the right sizes was a tricky affair. The others fared fine, but have you tried finding a roman legionary with the build and height of a pint-sized Egyptian with an hourglass figure? Absolutely scandalous. Then there was the subject of getting the papers. We've no need for forgers here, the Tetrarch has unwittingly admitted a few of our own into his beurocracy, so it was just a matter of getting the papers written up."
+EGY_A.6.d: "Grabbing some military uniforms required a bit of searching. Getting the right sizes was a tricky affair. The others fared fine, but have you tried finding a roman legionary with the build and height of a pint-sized Egyptian with an hourglass figure? Absolutely scandalous. And Kofi! Poor Kofi looking like a clown in that. Then there was the subject of getting the papers. We've no need for forgers here, the Tetrarch has unwittingly admitted a few of our own into his beurocracy, so it was just a matter of getting the papers written up."
 EGY_A.6.a: "We've got his radios, that's all that matters"
 
 EGY_A.7.t: "Strong Interference"
@@ -328,5 +328,11 @@ EGY_AFOC.116.a: ""
 
 
 EGY_AFOC.125.t: "Bad Publicity"
-EGY_AFOC.125.d: ""
+EGY_AFOC.125.d: "If you read the papers, you wouldn't know that there is currently quite the heath crisis in Nubia. Yellow fever has been spreading at an alarming rate through the local populations. There's a press embargo, on account of the fact that the occupying roman government has done nothing to aid the population. Now, this could be charitably chalked up to corruption, or inability, or unawareness, or anything marginally better than the cynical option, which is that the authorities are trying to use Yellow fever as a crude form of population control. Either way, we can get a lot of mileage from stealing the supplies, assisting the sick, and exposing the ineptitude of the occupying reigime. We could even paint it as deliberate cruelty."
 EGY_AFOC.125.a: ""
+
+
+
+EGY_AFOC.134.t: "False Profits"
+EGY_AFOC.134.d: "A Byzantine consortium has slowly and with the tacit approval of the Tetrarchy been buying up resources production in Kemet, such as mines and food production. A fraction these products are returned to the people and when they are they're sold for high price, which would make the nile Byzantium's personal breadbasket. We would sabotage their flow of money, but nobody has figured out how they own 75% of this land's resources and still manage to make a loss. Until now. We believe that these profits are being siphoned back to Constantinople through the new cathedral in Alexandria, paid in as donations and then sent back to the head offices. Because it's religious money, it can't be taxed or levied, keeping it remarkably secure in transit. If we were to expose this, the Tetrarch would look like a fool and the combined scandal would be enough to drop their stock price through the floor."
+EGY_AFOC.134.a: ""
