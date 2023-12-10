@@ -1310,7 +1310,10 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_stability = 0.05
+			add_popularity = {
+				ideology = monarchy
+				popularity = 0.05
+			}
 		}
 	}
 	focus = {
@@ -1328,15 +1331,12 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_popularity = {
-				ideology = monarchy
-				popularity = 0.05
-			}
+			add_stability = 0.05
 		}
 	}
 	focus = {
 		id = GER_propagandia_aganist_the_socialists
-		icon = GFX_goal_generic_war_with_comintern
+		icon = GFX_focus_SWE_attack_landsorganisationen
 		relative_position_id = GER_shift_blame
 		prerequisite = { 
 			focus = GER_shift_blame
@@ -1357,7 +1357,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_propagandia_aganist_the_liberals
-		icon = GFX_goal_generic_allies_build_infantry
+		icon = GFX_focus_genric_burning_flag_yellow
 		relative_position_id = GER_shift_blame
 		prerequisite = { 
 			focus = GER_shift_blame
@@ -2022,7 +2022,14 @@ focus_tree = {
 		
 		search_filters = { FOCUS_FILTER_NAVAL }
 		completion_reward = {
-			
+			add_tech_bonus = {
+				name = GER_capital_effort
+				bonus = 0.33
+				uses = 2
+				category = dd_tech
+				category = ss_tech
+				category = tp_tech
+			}
 		}
 	}
 	focus = {
@@ -2463,7 +2470,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_golden_twenties
-		icon = GFX_goal_generic_allies_build_infantry
+		icon = GFX_focus_GER_roaring_twenties
 		prerequisite = { focus = GER_economic_development }
 		relative_position_id = GER_economic_development
 		x = 0

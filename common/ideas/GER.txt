@@ -34,7 +34,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = ger_mefo_bills
+			picture = GER_papiermark
 
 			modifier = {
 				consumer_goods_factor = -0.05
@@ -52,7 +52,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = ger_mefo_bills
+			picture = GER_papiermark
 
 			modifier = {
 				consumer_goods_factor = -0.075

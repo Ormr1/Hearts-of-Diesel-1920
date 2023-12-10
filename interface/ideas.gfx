@@ -1355,6 +1355,11 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/GER/saxon_staff.dds"
 
 	}
+	SpriteType = {
+		name = "GFX_idea_GER_papiermark"
+		texturefile = "gfx/interface/ideas/GER/papiermark.dds"
+
+	}
 
 	SpriteType = {
 		name = "GFX_idea_mauser"

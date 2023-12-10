@@ -144,7 +144,7 @@ news_event = {
 	id = saxonian.3
 	title = saxonian.3.t
 	desc = saxonian.3.d
-	picture = GFX_report_event_finnish_letter
+	picture = GFX_news_event_generic_read_write
 	
 	major = yes
 	
@@ -821,66 +821,68 @@ country_event = {#GER - saxon civil war
 	is_triggered_only = yes
 	
 	immediate={
-		DDR={
-			every_core_state={
-				transfer_state_to = DDR
+		hidden_effect={
+			DDR={
+				every_core_state={
+					transfer_state_to = DDR
+				}
+				load_oob = "DDR_civil_war"
 			}
-			load_oob = "DDR_civil_war"
-		}
-		WGR={
-			every_core_state={
-				transfer_state_to = WGR
+			WGR={
+				every_core_state={
+					transfer_state_to = WGR
+				}
+				declare_war_on = {
+					target = DDR
+					type = civil_war
+				}
+				add_civil_war_target = DDR
+				load_oob = "WGR_civil_war"
 			}
+			AUS={
+				every_core_state={
+					transfer_state_to = AUS
+				}
+				load_oob = "AUS_civil_war"
+			}
+			if={
+				limit={
+					BAY = {exists = yes}
+				}
+				declare_war_on = {
+					target = BAY
+					type = civil_war
+				}
+				AUS={
+					declare_war_on = {
+						target = BAY
+						type = civil_war
+					}
+				}
+			}
+			every_core_state={
+				add_core_of = WGR
+				add_core_of = DDR
+			}
+			declare_war_on = {
+				target = WGR
+				type = civil_war
+			}
+			add_civil_war_target = WGR
 			declare_war_on = {
 				target = DDR
 				type = civil_war
 			}
 			add_civil_war_target = DDR
-			load_oob = "WGR_civil_war"
-		}
-		AUS={
-			every_core_state={
-				transfer_state_to = AUS
-			}
-			load_oob = "AUS_civil_war"
-		}
-		if={
-			limit={
-				BAY = {exists = yes}
-			}
 			declare_war_on = {
-				target = BAY
+				target = AUS
 				type = civil_war
 			}
-			AUS={
-				declare_war_on = {
-					target = BAY
-					type = civil_war
-				}
+			remove_ideas = {
+				spariticus_unrest
 			}
+			set_global_flag = GER_civil_war
 		}
-		every_core_state={
-			add_core_of = WGR
-			add_core_of = DDR
-		}
-		declare_war_on = {
-			target = WGR
-			type = civil_war
-		}
-		add_civil_war_target = WGR
-		declare_war_on = {
-			target = DDR
-			type = civil_war
-		}
-		add_civil_war_target = DDR
-		declare_war_on = {
-			target = AUS
-			type = civil_war
-		}
-		remove_ideas = {
-			spariticus_unrest
-		}
-		set_global_flag = GER_civil_war
 	}
 	
 	option = {#Stay the course

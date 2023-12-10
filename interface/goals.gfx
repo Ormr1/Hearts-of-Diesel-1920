@@ -5993,6 +5993,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/SAXONY/focus_GER_continue_demob.dds"
 	}
 	SpriteType = {
+		name = "GFX_focus_GER_roaring_twenties"
+		texturefile = "gfx/interface/goals/SAXONY/focus_GER_roaring_twenties.dds"
+	}
+	SpriteType = {
 		name = "GFX_focus_hispanian_repayments"
 		texturefile = "gfx/interface/goals/SAXONY/focus_hispanian_repayments.png"
 	}
@@ -6003,6 +6007,10 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_focus_bulgarian_repayments"
 		texturefile = "gfx/interface/goals/SAXONY/focus_bulgarian_repayments.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_genric_burning_flag_yellow"
+		texturefile = "gfx/interface/goals/focus_genric_burning_flag_yellow.dds"
 	}
 
 }
