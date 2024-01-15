@@ -7,8 +7,6 @@ USA_congress = {
 		original_tag = USA
 	}
 
-	scripted_gui = usa_congress_decision_ui	
-
 	priority = 999
 }
 USA_united_states = {
