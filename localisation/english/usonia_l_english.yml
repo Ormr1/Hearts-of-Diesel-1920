@@ -403,7 +403,7 @@
  USA_construct_forward_operating_base: "Construct Forward Operating Base In [FROM.GetName]"
  USA_peacekeeper_supply_raid: "Launch Supply Raid"
  USA_congress: "Usonian Congress"
- USA_congress_desc: "§YSenate§!:\n§gFP§!: [?federal_senate_seats] / [?max_senate_seats|Y]\n§CDRP§!: [?d_r_senate_seats] / [?max_senate_seats|Y]\n§RSPU§: [?spu_senate_seats] / [?max_senate_seats|Y]\n§OPP§: [?pp_senate_seats] / [?max_senate_seats|Y]\n§0NFP§: [?nfp_senate_seats] / [?max_senate_seats|Y]\n\n§YHouse of Representatives§!:\n§gFP§!: [?federal_house_seats] / [?max_house_seats|Y]\n§CDRP§!: [?drp_house_seats] / [?max_house_seats|Y]\n§RSPU§!: [?spu_house_seats] / [?max_house_seats|Y]\n§OPP§!: [?pp_house_seats] / [?max_house_seats|Y]\n§0NFP§!: [?nfp_house_seats] / [?max_house_seats|Y]"
+ USA_congress_desc: "§YSenate§!:\n§gFP§!: [?federal_senate_seats] / [?max_senate_seats|Y]\n§CDRP§!: [?d_r_senate_seats] / [?max_senate_seats|Y]\n§RSPU§!: [?spu_senate_seats] / [?max_senate_seats|Y]\n§OPP§!: [?pp_senate_seats] / [?max_senate_seats|Y]\n§0NFP§!: [?nfp_senate_seats] / [?max_senate_seats|Y]\n\n§YHouse of Representatives§!:\n§gFP§!: [?federal_house_seats] / [?max_house_seats|Y]\n§CDRP§!: [?drp_house_seats] / [?max_house_seats|Y]\n§RSPU§!: [?spu_house_seats] / [?max_house_seats|Y]\n§OPP§!: [?pp_house_seats] / [?max_house_seats|Y]\n§0NFP§!: [?nfp_house_seats] / [?max_house_seats|Y]"
  
  
 ### OPINION MODIFIERS ###

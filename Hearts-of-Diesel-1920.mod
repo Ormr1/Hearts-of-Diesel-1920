@@ -24,11 +24,9 @@ replace_path="common/country_leader"
 replace_path="common/decisions/categories"
 replace_path="common/decisions"
 replace_path="common/national_focus"
-
 replace_path="history/countries"
 replace_path="history/states"
 replace_path="history"
-
 replace_path="map/strategicregions"
 replace_path="gfx/flags"
 supported_version="1.12.*"
