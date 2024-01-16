@@ -35,6 +35,7 @@ set_fuel_ratio = 0.8
 	}
 }
 give_guarantee = CRI
+give_guarantee = CSL
 977 = {
 	start_resistance = yes
 	set_compliance = 10

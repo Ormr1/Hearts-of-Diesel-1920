@@ -6527,5 +6527,13 @@ spriteTypes = {
 		name = "GFX_idea_GRE_perpetual_peace"
 		texturefile = "gfx/interface/ideas/GRE/idea_perpetual_peace.png"
 	}
+	spriteType = {
+		name = "GFX_idea_generic_naval_problems"
+		texturefile = "gfx/interface/ideas/idea_generic_naval_problems.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_GER_saxon_expebitionkorps"
+		texturefile = "gfx/interface/ideas/GER/saxon_expebitionkorps.dds"
+	}
 	
 }

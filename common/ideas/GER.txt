@@ -3,7 +3,7 @@ ideas = {
 	country = {
 
 		GER_kaiserliches_expeditionskorps = {
-			picture = placeholder
+			picture = GER_saxon_expebitionkorps
 
 			allowed = {
 				always = no
@@ -165,7 +165,7 @@ ideas = {
 
 			removal_cost = -1
 			
-			picture = generic_army_problems
+			picture = generic_naval_problems
 
 			modifier = {
 				stability_factor = -0.10
@@ -184,7 +184,7 @@ ideas = {
 
 			removal_cost = -1
 			
-			picture = generic_army_problems
+			picture = generic_naval_problems
 
 			modifier = {
 				stability_factor = -0.1
@@ -203,7 +203,7 @@ ideas = {
 
 			removal_cost = -1
 			
-			picture = generic_army_problems
+			picture = generic_naval_problems
 
 			modifier = {
 				stability_factor = -0.05
