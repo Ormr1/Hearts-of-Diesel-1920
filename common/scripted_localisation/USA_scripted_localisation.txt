@@ -1,0 +1,72 @@
+defined_text = {
+    name = usa_house_bill_support_loc
+    text = {
+        trigger = {
+            check_variable = { usa_house_bill_support < usa_house_majority }
+        }
+        localization_key = usa_house_bill_support_negative_loc
+    }
+    text = {
+        localization_key = usa_house_bill_support_positive_loc
+    }
+}
+defined_text = {
+    name = usa_senate_bill_support_loc
+    text = {
+        trigger = {
+            check_variable = { usa_senate_bill_support < usa_senate_majority }
+        }
+        localization_key = usa_senate_bill_support_negative_loc
+    }
+    text = {
+        localization_key = usa_senate_bill_support_positive_loc
+    }
+}
+defined_text = {
+	name = usa_house_support_text
+	text = {
+		trigger = {
+			check_variable = { usa_house_support > usa_house_majority }
+		}
+		localization_key = usa_house_support_text_majority
+	}
+	text = {
+		localization_key = usa_house_support_text_minority
+	}
+}
+defined_text = {
+	name = usa_senate_support_text
+	text = {
+		trigger = {
+			check_variable = { usa_senate_support > usa_senate_majority }
+		}
+		localization_key = usa_senate_support_text_majority
+	}
+	text = {
+		localization_key = usa_senate_support_text_minority
+	}
+}
+defined_text = {
+	name = usa_house_bill_pass_text
+	text = {
+		trigger = {
+			check_variable = { usa_house_support > usa_house_majority }
+		}
+		localization_key = usa_house_bill_pass_text_yes
+	}
+	text = {
+		localization_key = usa_house_bill_pass_text_no
+	}
+}
+defined_text = {
+	name = usa_senate_bill_pass_text
+	text = {
+		trigger = {
+			check_variable = { usa_senate_support > usa_senate_majority }
+		}
+		localization_key = usa_senate_bill_pass_text_yes
+	}
+	text = {
+		localization_key = usa_senate_bill_pass_text_no
+	}
+}

@@ -1,172 +1,255 @@
 USA_congress = {
-	USA_small_lobby_effort = {
+	# LOBBYING DECISIONS (WILL BE EXPANDED ON LATER)
+	USA_lobby_house_small = {
 		icon = generic_political_discourse
 		available = {
-			OR = {
-				check_variable = { senators_support < senators_total }
-				check_variable = { representatives_support < representatives_total }
-			}
-			not = {
-				has_decision = USA_medium_lobby_effort
-			}
-			OR = {
-				political_power_daily > 0.3
-				has_political_power > 10
-			}
+			has_country_flag = usa_voting_on_bill_house
 		}
-		cost = 0
+		cost = 25
 		ai_will_do = {
 			factor = 10
-			modifier = {
-				congress_medium_support_trigger = yes
-				factor = 0.5
-			}
-			modifier = {
-				congress_low_support_trigger = yes
-				factor = 0.5
-			}
-			modifier = {
-				congress_high_support_trigger = yes
-				factor = 0
-			}
 		}
-		modifier = {
-			political_power_gain = -0.3
-		}
-		days_remove = 30
+		days_remove = 7
 		remove_effect = {
-			USA_congress_small_support = yes
+			USA_increase_bill_support_house_small = yes
 		}
 	}
-	USA_medium_lobby_effort = {
+	USA_lobby_house_medium = {
 		icon = generic_political_discourse
 		available = {
-			OR = {
-				check_variable = { senators_support < senators_total }
-				check_variable = { representatives_support < representatives_total }
-			}
-			not = {
-				has_decision = USA_small_lobby_effort
-			}
-			OR = {
-				political_power_daily > 0.75
-				has_political_power > 35
-			}
-		}
-		cost = 0
-		ai_will_do = {
-			factor = 10
-			modifier = {
-				congress_medium_support_trigger = yes
-				factor = 0.5
-			}
-			modifier = {
-				congress_low_support_trigger = yes
-				factor = 0.5
-			}
-			modifier = {
-				congress_high_support_trigger = yes
-				factor = 0
-			}
-		}
-		days_remove = 45
-		modifier = {
-			political_power_gain = -0.75
-		}
-		remove_effect = {
-			USA_congress_medium_support = yes
-		}
-	}
-	USA_special_measures = {
-		icon = ger_mefo_bills
-		available = {
-			OR = {
-				check_variable = { senators_support < senators_total }
-				check_variable = { representatives_support < representatives_total }
-			}
+			has_country_flag = usa_voting_on_bill_house
 		}
 		cost = 50
 		ai_will_do = {
-			factor = 100
-			modifier = {
-				congress_low_support_trigger = yes
-				factor = 0
-			}
+			factor = 10
 		}
-		days_re_enable = 90
-		complete_effect = {
-			USA_congress_small_support = yes
+		days_remove = 7
+		remove_effect = {
+			USA_increase_bill_support_house_medium = yes
 		}
 	}
-	USA_use_huac = {
-		icon = oppression
+	USA_lobby_house_large = {
+		icon = generic_political_discourse
 		available = {
-			has_idea = USA_joseph_mccarthy
-			OR = {
-				check_variable = { senators_support < senators_total }
-				check_variable = { representatives_support < representatives_total }
-			}
+			has_country_flag = usa_voting_on_bill_house
 		}
-		visible = {
-			has_completed_focus = USA_empower_the_huac
-		}
-		cost = 10
+		cost = 75
 		ai_will_do = {
-			factor = 1
-			modifier = {
-				congress_low_support_trigger = yes
-				factor = 0
-			}
+			factor = 10
 		}
-		days_re_enable = 90
-		complete_effect = {
-			USA_congress_small_support = yes
-			add_stability = -0.05
+		days_remove = 7
+		remove_effect = {
+			USA_increase_bill_support_house_large = yes
 		}
 	}
-	USA_beat_up_opposition = {
-		icon = oppression
+	USA_lobby_senate_small = {
+		icon = generic_political_discourse
 		available = {
-			has_government = democratic
+			has_country_flag = usa_voting_on_bill_senate
 		}
-		visible = { has_completed_focus = USA_ally_with_the_silver_shirts }
-		cost = 10
+		cost = 25
 		ai_will_do = {
-			factor = 1
-			modifier = {
-				congress_low_support_trigger = yes
-				factor = 0
-			}
+			factor = 10
 		}
-		days_re_enable = 90
-		complete_effect = {
-			add_stability = -0.1
-			USA_congress_small_support = yes
-			add_popularity = { ideology = fascism popularity = 0.02 }
+		days_remove = 7
+		remove_effect = {
+			USA_increase_bill_support_senate_small = yes
 		}
 	}
+	USA_lobby_senate_medium = {
+		icon = generic_political_discourse
+		available = {
+			has_country_flag = usa_voting_on_bill_senate
+		}
+		cost = 50
+		ai_will_do = {
+			factor = 10
+		}
+		days_remove = 7
+		remove_effect = {
+			USA_increase_bill_support_senate_medium = yes
+		}
+	}
+	USA_lobby_senate_large = {
+		icon = generic_political_discourse
+		available = {
+			has_country_flag = usa_voting_on_bill_senate
+		}
+		cost = 75
+		ai_will_do = {
+			factor = 10
+		}
+		days_remove = 7
+		remove_effect = {
+			USA_increase_bill_support_senate_large = yes
+		}
+	}
+	# BILLS GO HERE
+
+	# GENERIC CONGRESS DECISIONS
 	USA_pay_farm_subsidies = {
 		icon = ger_mefo_bills
 		available = {
-			has_government = democratic
+			NOT = {
+				OR = {
+					has_country_flag = usa_voting_on_bill_house
+					has_country_flag = usa_voting_on_bill_senate
+					has_active_mission = USA_pay_farm_subsidies_house_vote
+					has_active_mission = USA_pay_farm_subsidies_senate_vote
+				}
+				has_country_flag = usa_pay_farm_subsidies_cooldown
+			}
 			OR = {
-				check_variable = { senators_support < senators_total }
-				check_variable = { representatives_support < representatives_total }
+				has_completed_focus = USA_McNary_Haugen_Farm_Relief_Bill
+				has_completed_focus = USA_Subsidize_Western_Farms
 			}
 		}
-		visible = { has_completed_focus = USA_agricultural_adjustment_act }
+		visible = {
+			NOT = {
+				OR = {
+					has_country_flag = usa_voting_on_bill_house
+					has_country_flag = usa_voting_on_bill_senate
+					has_active_mission = USA_pay_farm_subsidies_house_vote
+					has_active_mission = USA_pay_farm_subsidies_senate_vote
+				}
+				has_country_flag = usa_pay_farm_subsidies_cooldown
+			}
+		}
 		cost = 0
 		ai_will_do = {
-			factor = 1
-			modifier = {
-				congress_low_support_trigger = yes
-				factor = 0
-			}
+			factor = 10
 		}
-		days_remove = 90
-		modifier = { consumer_goods_factor = 0.03 }
-		remove_effect = {
-			USA_congress_small_support = yes
+		complete_effect = {
+			set_country_flag = {
+				flag = usa_pay_farm_subsidies_cooldown
+				days = 160
+				value = 1
+			}
+			# Federalist Support
+			set_variable = { usa_fp_bill_support_house = fp_house_seats }
+			multiply_variable = { usa_fp_bill_support_house = 0.70 }
+			round_variable = usa_fp_bill_support_house
+			add_to_variable = { usa_house_bill_support = usa_fp_bill_support_house }
+			set_variable = { usa_fp_bill_support_senate = fp_senate_seats }
+			multiply_variable = { usa_fp_bill_support_senate = 0.70 }
+			round_variable = usa_fp_bill_support_senate
+			add_to_variable = { usa_senate_bill_support = usa_fp_bill_support_senate }
+			# Democratic-Republican Support
+			set_variable = { usa_drp_bill_support_house = drp_house_seats }
+			multiply_variable = { usa_drp_bill_support_house = 0.85 }
+			round_variable = usa_drp_bill_support_house
+			add_to_variable = { usa_house_bill_support = usa_drp_bill_support_house }
+			set_variable = { usa_drp_bill_support_senate = drp_senate_seats }
+			multiply_variable = { usa_drp_bill_support_senate = 0.85 }
+			round_variable = usa_drp_bill_support_senate
+			add_to_variable = { usa_senate_bill_support = usa_drp_bill_support_senate }
+			# Socialist Support
+			set_variable = { usa_spu_bill_support_house = spu_house_seats }
+			multiply_variable = { usa_spu_bill_support_house = 0.85 }
+			round_variable = usa_spu_bill_support_house
+			add_to_variable = { usa_house_bill_support = usa_spu_bill_support_house }
+			set_variable = { usa_spu_bill_support_senate = spu_senate_seats }
+			multiply_variable = { usa_spu_bill_support_senate = 0.85 }
+			round_variable = usa_spu_bill_support_senate
+			add_to_variable = { usa_senate_bill_support = usa_spu_bill_support_senate }
+			# Fascist Support
+			set_variable = { usa_pp_bill_support_house = pp_house_seats }
+			multiply_variable = { usa_pp_bill_support_house = 0.85 }
+			round_variable = usa_pp_bill_support_house
+			add_to_variable = { usa_house_bill_support = usa_pp_bill_support_house }
+			set_variable = { usa_pp_bill_support_senate = pp_senate_seats }
+			multiply_variable = { usa_pp_bill_support_senate = 0.85 }
+			round_variable = usa_pp_bill_support_senate
+			add_to_variable = { usa_senate_bill_support = usa_pp_bill_support_senate }
+			# Neo-Federalist Support
+			set_variable = { usa_nfp_bill_support_house = nfp_house_seats }
+			multiply_variable = { usa_nfp_bill_support_house = 0.85 }
+			round_variable = usa_nfp_bill_support_house
+			add_to_variable = { usa_house_bill_support = usa_nfp_bill_support_house }
+			set_variable = { usa_nfp_bill_support_senate = nfp_senate_seats }
+			multiply_variable = { usa_nfp_bill_support_senate = 0.85 }
+			round_variable = usa_nfp_bill_support_senate
+			add_to_variable = { usa_senate_bill_support = usa_nfp_bill_support_senate }
+			# Independent Support
+			set_variable = { usa_i_bill_support_house = i_house_seats }
+			multiply_variable = { usa_i_bill_support_house = 0.85 }
+			round_variable = usa_i_bill_support_house
+			add_to_variable = { usa_house_bill_support = usa_i_bill_support_house }
+			set_variable = { usa_i_bill_support_senate = i_senate_seats }
+			multiply_variable = { usa_i_bill_support_senate = 0.85 }
+			round_variable = usa_i_bill_support_senate
+			add_to_variable = { usa_senate_bill_support = usa_i_bill_support_senate }
+			clamp_variable = {
+				var = usa_house_bill_support
+				min = 0
+				max = max_house_seats
+			}
+			clamp_variable = {
+				var = usa_senate_bill_support
+				min = 0
+				max = max_senate_seats
+			}
+			set_country_flag = usa_voting_on_bill_house
+			activate_mission = USA_pay_farm_subsidies_house_vote
+		}
+	}
+	USA_pay_farm_subsidies_house_vote = {
+		icon = ger_mefo_bills
+		is_good = yes
+		days_mission_timeout = 35
+		selectable_mission = no
+		activation = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		cancel_trigger = {
+			always = no
+		}
+		timeout_effect = {
+			if = {
+				limit = {
+					check_variable = { usa_house_bill_support > usa_house_majority }
+				}
+				custom_effect_tooltip = [usa_house_bill_pass_text]
+				activate_mission = USA_pay_farm_subsidies_senate_vote
+				set_country_flag = usa_voting_on_bill_senate
+			}
+			else = {
+				custom_effect_tooltip = [usa_house_bill_pass_text]
+			}
+			clr_country_flag = usa_voting_on_bill_house
+		}
+	}
+	USA_pay_farm_subsidies_senate_vote = {
+		icon = ger_mefo_bills
+		is_good = yes
+		days_mission_timeout = 35
+		selectable_mission = no
+		activation = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		cancel_trigger = {
+			always = no
+		}
+		timeout_effect = {
+			if = {
+				limit = {
+					check_variable = { usa_senate_bill_support > usa_senate_majority }
+				}
+				custom_effect_tooltip = [usa_senate_bill_pass_text]
+				add_timed_idea = {
+					idea = usa_farm_subsidies_idea
+					days = 90
+				}
+			}
+			else = {
+				custom_effect_tooltip = [usa_senate_bill_pass_text]
+			}
 		}
 	}
 	USA_give_tax_break = {

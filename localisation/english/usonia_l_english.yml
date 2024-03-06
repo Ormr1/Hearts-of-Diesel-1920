@@ -30,6 +30,9 @@
 ### FACTION NAMES
  FACTION_NAME_UNITED_STATES: "United States"
 ### IDEAS
+ usa_usonian_pluralism: "Usonian Pluralism"
+ usa_usonian_pluralism_desc: ""
+ usa_usonian_pluralism_tt: "§YDemocratic Popularity§!:\n §gFederalists§!: [?fp_popularity_democratic|%2]\n §CDemocratic-Republicans§!: [?drp_popularity_democratic|%2]\n§YNational Popularity§!:\n §gFederalists§!: [?fp_popularity_national|%2]\n §CDemocratic-Republicans§!: [?drp_popularity_national|%2]"
  usea_idea: "U.S.E.A."
  us_peacekeepers: "U.S. Peacekeepers"
  us_sof_peacekeepers_1: "U.S. Peacekeepers"
@@ -402,9 +405,17 @@
  USA_join_peacekeeper_program: "Join U.S. Peacekeeper Program"
  USA_construct_forward_operating_base: "Construct Forward Operating Base In [FROM.GetName]"
  USA_peacekeeper_supply_raid: "Launch Supply Raid"
+## CONGRESS ##
  USA_congress: "Usonian Congress"
- USA_congress_desc: "§YSenate§!:\n§gFP§!: [?federal_senate_seats] / [?max_senate_seats|0Y]\n§CDRP§!: [?d_r_senate_seats] / [?max_senate_seats|0Y]\n§RSPU§!: [?spu_senate_seats] / [?max_senate_seats|0Y]\n§OPP§!: [?pp_senate_seats] / [?max_senate_seats|0Y]\n§0NFP§!: [?nfp_senate_seats] / [?max_senate_seats|0Y]\n\n§YHouse of Representatives§!:\n§gFP§!: [?federal_house_seats] / [?max_house_seats|0Y]\n§CDRP§!: [?drp_house_seats] / [?max_house_seats|0Y]\n§RSPU§!: [?spu_house_seats] / [?max_house_seats|0Y]\n§OPP§!: [?pp_house_seats] / [?max_house_seats|0Y]\n§0NFP§!: [?nfp_house_seats] / [?max_house_seats|0Y]"
- 
+ USA_congress_desc: "§YSenate§!:\n§gFP§!: [?fp_senate_seats] / [?max_senate_seats|0Y]\n§CDRP§!: [?drp_senate_seats] / [?max_senate_seats|0Y]\n§RSPU§!: [?spu_senate_seats] / [?max_senate_seats|0Y]\n§OPP§!: [?pp_senate_seats] / [?max_senate_seats|0Y]\n§0NFP§!: [?nfp_senate_seats] / [?max_senate_seats|0Y]\n\n§YHouse of Representatives§!:\n§gFP§!: [?fp_house_seats] / [?max_house_seats|0Y]\n§CDRP§!: [?drp_house_seats] / [?max_house_seats|0Y]\n§RSPU§!: [?spu_house_seats] / [?max_house_seats|0Y]\n§OPP§!: [?pp_house_seats] / [?max_house_seats|0Y]\n§0NFP§!: [?nfp_house_seats] / [?max_house_seats|0Y]\n\nCurrent House Support For Bill: [usa_house_bill_support_loc] / [?max_house_seats|0Y]\nCurrent Senate Support For Bill: [usa_senate_bill_support_loc] / [?max_senate_seats|0Y]"
+ usa_house_bill_support_positive_loc: "[?usa_house_bill_support|G0]"
+ usa_house_bill_support_negative_loc: "[?usa_house_bill_support|R0]"
+ usa_senate_bill_support_positive_loc: "[?usa_senate_bill_support|G0]"
+ usa_senate_bill_support_negative_loc: "[?usa_senate_bill_support|R0]"
+ usa_house_bill_pass_text_yes: "Based on the current support, this bill will §Gpass§! the §CHouse of Representatives§!"
+ usa_house_bill_pass_text_no: "Based on the current support, this bill will §Rnot pass§! the §CHouse of Representatives§!"
+ usa_senate_bill_pass_text_yes: "Based on the current support, this bill will §Gpass§! the §CSenate§!"
+ usa_senate_bill_pass_text_no: "Based on the current support, this bill will §Rnot pass§! the §CSenate§!"
  
 ### OPINION MODIFIERS ###
  washington_conference: "Washington Conference"

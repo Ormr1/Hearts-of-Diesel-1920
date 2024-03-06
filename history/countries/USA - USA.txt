@@ -66,23 +66,28 @@ set_variable = { var = sof_focus_count value = 0 }
 set_variable = { var = police_pk_focus_count value = 0 }
 set_variable = { var = police_pk_charges value = 0 }
 set_variable = { var = police_pk_charges_max value = 0 }
-USA_recalc_congress_icon_frames = yes
-USA_initialize_senate_positions = yes
-USA_initialize_house_positions = yes
 set_variable = { fp_senate_seats = 63 }
 set_variable = { drp_senate_seats = 63 }
 set_variable = { spu_senate_seats = 2 }
 set_variable = { pp_senate_seats = 1 }
 set_variable = { nfp_senate_seats = 1 }
+set_variable = { i_senate_seats = 0 }
 set_variable = { max_senate_seats = 129 }
-USA_senate_calc_effect = yes
-set_variable = { fp_house_seats = 400 }
-set_variable = { drp_house_seats = 35 }
-set_variable = { spu_house_seats = 0 }
-set_variable = { pp_house_seats = 0 }
-set_variable = { nfp_house_seats = 0 }
+set_variable = { fp_house_seats = 163 }
+set_variable = { drp_house_seats = 159 }
+set_variable = { spu_house_seats = 83 }
+set_variable = { pp_house_seats = 13 }
+set_variable = { nfp_house_seats = 4 }
+set_variable = { i_senate_seats = 13 }
 set_variable = { max_house_seats = 435 }
-USA_house_calc_effect = yes
+set_variable = { fp_popularity_democratic = 0.50 }
+set_variable = { drp_popularity_democratic = 0.50 }
+set_variable = { fp_popularity_national = 0.365 }
+set_variable = { drp_popularity_national = 0.365 }
+set_variable = { usa_house_bill_support = 0 }
+set_variable = { usa_house_majority = 218 }
+set_variable = { usa_senate_bill_support = 0 }
+set_variable = { usa_senate_majority = 65 }
 USA = {
 	country_event = { id = usa.50 days = 2 }
 	country_event = { id = usa.51 days = 2 }
@@ -363,6 +368,7 @@ add_ideas = {
 	undisturbed_isolation
 	disarmed_nation
 	free_trade
+	usa_usonian_pluralism
 	home_of_the_free
 	usa_hamiltonian_economics
 	usa_tycoon_influence_high

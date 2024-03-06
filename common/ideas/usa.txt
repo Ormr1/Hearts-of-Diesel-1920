@@ -1,6 +1,22 @@
 ideas = {
 
 	country = {
+		usa_usonian_pluralism = {
+			picture = placeholder
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = 0
+
+			modifier = {
+				custom_modifier_tooltip = usa_usonian_pluralism_tt
+			}
+		}
 		usa_overfarming_1 = {
 			picture = usa_overfarming
 
@@ -955,6 +971,24 @@ ideas = {
 				trade_opinion_factor = 0.15
 				improve_relations_maintain_cost_factor = -0.15
 				stability_factor = 0.05
+			}
+		}
+		usa_farm_subsidies_idea = {
+			picture = placeholder
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = 0
+
+			modifier = {
+				consumer_goods_factor = 0.05
+				stability_weekly = 0.001
 			}
 		}
 		great_depression = {

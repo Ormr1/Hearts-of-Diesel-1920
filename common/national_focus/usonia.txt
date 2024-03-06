@@ -153,6 +153,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+			unlock_decision_tooltip = USA_pay_farm_subsidies
 			swap_ideas = {
 				remove_idea = usa_overfarming_2
 				add_idea = usa_overfarming_1
@@ -571,6 +572,7 @@ focus_tree = {
 		y = 1
 		cost = 10
 		completion_reward = {
+			unlock_decision_tooltip = USA_pay_farm_subsidies
 			swap_ideas = {
 				remove_idea = usa_overfarming_2
 				add_idea = usa_overfarming_1
