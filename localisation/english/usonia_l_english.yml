@@ -416,6 +416,23 @@
  usa_house_bill_pass_text_no: "Based on the current support, this bill will §Rnot pass§! the §CHouse of Representatives§!"
  usa_senate_bill_pass_text_yes: "Based on the current support, this bill will §Gpass§! the §CSenate§!"
  usa_senate_bill_pass_text_no: "Based on the current support, this bill will §Rnot pass§! the §CSenate§!"
+# LOBBYING #
+ USA_lobby_house_small: "Small House Lobbying Effort"
+ USA_lobby_house_small_tt: "§G+5%§! House Support for current bill"
+ USA_lobby_house_medium: "Medium House Lobbying Effort"
+ USA_lobby_house_medium_tt: "§G+10%§! House Support for current bill"
+ USA_lobby_house_large: "Large House Lobbying Effort"
+ USA_lobby_house_large_tt: "§G+15%§! House Support for current bill"
+ USA_lobby_senate_small: "Small Senate Lobbying Effort"
+ USA_lobby_senate_small_tt: "§G+5%§! Senate Support for current bill"
+ USA_lobby_senate_medium: "Medium Senate Lobbying Effort"
+ USA_lobby_senate_medium_tt: "§G+10%§! Senate Support for current bill"
+ USA_lobby_senate_large: "Large Senate Lobbying Effort"
+ USA_lobby_senate_large_tt: "§G+15%§! Senate Support for current bill"
+# BILLS #
+ USA_pay_farm_subsidies: "Introduce [GetYear] Farm Bill"
+ USA_pay_farm_subsidies_house_vote: "[GetYear] Farm Bill - House Vote"
+ USA_pay_farm_subsidies_senate_vote: "[GetYear] Farm Bill - Senate Vote"
  
 ### OPINION MODIFIERS ###
  washington_conference: "Washington Conference"

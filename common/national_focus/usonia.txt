@@ -4269,70 +4269,346 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = USA_A_Mechanized_Doctrine
-		icon = placeholder
-		relative_position_id = USA_The_Usonian_Army
-		prerequisite = { focus = USA_The_Usonian_Army }
-		x = -4
-		y = 1
-		cost = 4
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			
-		}
-	}
-	focus = {
 		id = USA_Promote_Patton
 		icon = placeholder
-		relative_position_id = USA_A_Mechanized_Doctrine
-		prerequisite = { focus = USA_A_Mechanized_Doctrine }
-		x = -2
-		y = 1
-		cost = 4
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			
-		}
-	}
-	focus = {
-		id = USA_Promote_Eisenhower
-		icon = placeholder
-		relative_position_id = USA_A_Mechanized_Doctrine
-		prerequisite = { focus = USA_A_Mechanized_Doctrine }
-		x = 2
-		y = 1
-		cost = 4
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			
-		}
-	}
-	focus = {
-		id = USA_A_Conventional_Doctrine
-		icon = placeholder
 		relative_position_id = USA_The_Usonian_Army
 		prerequisite = { focus = USA_The_Usonian_Army }
-		x = 4
+		mutually_exclusive = { focus = USA_Promote_Bradley }
+		mutually_exclusive = { focus = USA_Promote_Eisenhower }
+		mutually_exclusive = { focus = USA_Promote_MacArthur }
+		x = -6
 		y = 1
 		cost = 4
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.25
+				uses = 1
+				category = cat_mobile_warfare
+			}
+		}
+	}
+	focus = {
+		id = USA_Modernize_The_Cavalry
+		icon = placeholder
+		relative_position_id = USA_Promote_Patton
+		prerequisite = { focus = USA_Promote_Patton }
+		x = 0
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.25
+				uses = 1
+				category = motorized_equipment
+				category = infantry_tech
+			}
+		}
+	}
+	focus = {
+		id = USA_Procure_Mechs_And_Exosuits
+		icon = placeholder
+		relative_position_id = USA_Modernize_The_Cavalry
+		prerequisite = { focus = USA_Modernize_The_Cavalry }
+		x = 0
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.25
+				uses = 1
+				category = motorized_equipment
+				category = armor
+			}
+		}
+	}
+	focus = {
+		id = USA_Cavalry_Primacy
+		icon = placeholder
+		relative_position_id = USA_Procure_Mechs_And_Exosuits
+		prerequisite = { focus = USA_Procure_Mechs_And_Exosuits }
+		mutually_exclusive = { focus = USA_Mech_Primacy }
+		x = -1
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.25
+				uses = 1
+				category = motorized_equipment
+				category = infantry_tech
+				category = cat_mechanized_equipment
+			}
+		}
+	}
+	focus = {
+		id = USA_Mass_Truck_Production
+		icon = placeholder
+		relative_position_id = USA_Cavalry_Primacy
+		prerequisite = { focus = USA_Cavalry_Primacy }
+		x = 0
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			# PLACEHOLDER EFFECT
+			add_tech_bonus = {
+				bonus = 0.25
+				uses = 1
+				category = motorized_equipment
+				category = infantry_tech
+			}
+		}
+	}
+	focus = {
+		id = USA_The_IFV_Concept
+		icon = placeholder
+		relative_position_id = USA_Mass_Truck_Production
+		prerequisite = { focus = USA_Mass_Truck_Production }
+		x = 0
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			# PLACEHOLDER EFFECT
+			add_tech_bonus = {
+				bonus = 0.25
+				uses = 1
+				category = motorized_equipment
+				category = infantry_tech
+				category = cat_mechanized_equipment
+			}
+		}
+	}
+	focus = {
+		id = USA_Mech_Primacy
+		icon = placeholder
+		relative_position_id = USA_Procure_Mechs_And_Exosuits
+		prerequisite = { focus = USA_Procure_Mechs_And_Exosuits }
+		mutually_exclusive = { focus = USA_Cavalry_Primacy }
+		x = 1
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.25
+				uses = 1
+				category = armor
+			}
+		}
+	}
+	focus = {
+		id = USA_Our_Armored_Fist
+		icon = placeholder
+		relative_position_id = USA_Mech_Primacy
+		prerequisite = { focus = USA_Mech_Primacy }
+		x = 0
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			# PLACEHOLDER EFFECT
+			add_tech_bonus = {
+				bonus = 0.25
+				uses = 1
+				category = armor
+			}
+		}
+	}
+	focus = {
+		id = USA_Mechanization_Cult
+		icon = placeholder
+		relative_position_id = USA_Our_Armored_Fist
+		prerequisite = { focus = USA_Our_Armored_Fist }
+		x = 0
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			# PLACEHOLDER EFFECT
+			add_tech_bonus = {
+				bonus = 0.25
+				uses = 1
+				category = armor
+			}
+		}
+	}
+	focus = {
+		id = USA_The_Brigade_Combat_Team
+		icon = placeholder
+		relative_position_id = USA_Procure_Mechs_And_Exosuits
+		prerequisite = {
+			focus = USA_The_IFV_Concept
+			focus = USA_Mechanization_Cult
+		}
+		x = 0
+		y = 4
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			# PLACEHOLDER EFFECT
+			add_tech_bonus = {
+				bonus = 0.25
+				uses = 1
+				category = armor
+			}
+		}
+	}
+	focus = {
+		id = USA_Armor_The_Infantry
+		icon = placeholder
+		relative_position_id = USA_The_Brigade_Combat_Team
+		prerequisite = { focus = USA_The_Brigade_Combat_Team }
+		mutually_exclusive = { focus = USA_Logistics_For_Mechs }
+		x = -1
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			# PLACEHOLDER EFFECT
+			add_tech_bonus = {
+				bonus = 0.25
+				uses = 1
+				category = exo_suits_tech
+			}
+		}
+	}
+	focus = {
+		id = USA_Develop_Autocannons
+		icon = placeholder
+		relative_position_id = USA_Armor_The_Infantry
+		prerequisite = { focus = USA_Armor_The_Infantry }
+		x = 0
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			# PLACEHOLDER EFFECT
+			add_tech_bonus = {
+				bonus = 0.25
+				uses = 1
+				category = cat_anti_tank
+			}
+		}
+	}
+	focus = {
+		id = USA_Hit_Em_Hard_And_Fast
+		icon = placeholder
+		relative_position_id = USA_Develop_Autocannons
+		prerequisite = { focus = USA_Develop_Autocannons }
+		x = 0
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			# PLACEHOLDER EFFECT
+			add_tech_bonus = {
+				bonus = 0.25
+				uses = 1
+				category = cat_light_armor
+			}
+		}
+	}
+	focus = {
+		id = USA_Logistics_For_Mechs
+		icon = placeholder
+		relative_position_id = USA_The_Brigade_Combat_Team
+		prerequisite = { focus = USA_The_Brigade_Combat_Team }
+		mutually_exclusive = { focus = USA_Armor_The_Infantry }
+		x = 1
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			# PLACEHOLDER EFFECT
+			add_tech_bonus = {
+				bonus = 0.25
+				uses = 1
+				category = motorized_equipment
+				category = support_tech
+			}
+		}
+	}
+	focus = {
+		id = USA_Heavier_Armor
+		icon = placeholder
+		relative_position_id = USA_Logistics_For_Mechs
+		prerequisite = { focus = USA_Logistics_For_Mechs }
+		x = 0
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			# PLACEHOLDER EFFECT
+			add_tech_bonus = {
+				bonus = 0.25
+				uses = 1
+				category = cat_heavy_armor
+			}
+		}
+	}
+	focus = {
+		id = USA_Crush_Usonias_Enemies
+		icon = placeholder
+		relative_position_id = USA_Heavier_Armor
+		prerequisite = { focus = USA_Heavier_Armor }
+		x = 0
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			# PLACEHOLDER EFFECT
+			add_tech_bonus = {
+				bonus = 0.25
+				uses = 1
+				category = cat_heavy_armor
+			}
 		}
 	}
 	focus = {
 		id = USA_Promote_Bradley
 		icon = placeholder
-		relative_position_id = USA_A_Conventional_Doctrine
-		prerequisite = { focus = USA_A_Conventional_Doctrine }
+		relative_position_id = USA_The_Usonian_Army
+		prerequisite = { focus = USA_The_Usonian_Army }
+		mutually_exclusive = { focus = USA_Promote_Patton }
+		mutually_exclusive = { focus = USA_Promote_Eisenhower }
+		mutually_exclusive = { focus = USA_Promote_MacArthur }
 		x = -2
 		y = 1
 		cost = 4
@@ -4340,14 +4616,317 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.25
+				uses = 1
+				category = cat_superior_firepower
+			}
 		}
 	}
 	focus = {
-		id = USA_Promote_MacArthur
+		id = USA_Mortar_Development
 		icon = placeholder
-		relative_position_id = USA_A_Conventional_Doctrine
-		prerequisite = { focus = USA_A_Conventional_Doctrine }
+		relative_position_id = USA_Promote_Bradley
+		prerequisite = { focus = USA_Promote_Bradley }
+		x = 0
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.25
+				uses = 1
+				category = infantry_weapons
+			}
+		}
+	}
+	focus = {
+		id = USA_Mortarize_The_Infantry
+		icon = placeholder
+		relative_position_id = USA_Mortar_Development
+		prerequisite = { focus = USA_Mortar_Development }
+		x = 0
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.25
+				uses = 1
+				category = infantry_weapons
+				category = infantry_tech
+			}
+		}
+	}
+	focus = {
+		id = USA_Pursue_Fire_Superiority
+		icon = placeholder
+		relative_position_id = USA_Mortarize_The_Infantry
+		prerequisite = { focus = USA_Mortarize_The_Infantry }
+		mutually_exclusive = { focus = USA_The_Fireteam }
+		x = -1
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.25
+				uses = 1
+				category = artillery
+			}
+		}
+	}
+	focus = {
+		id = USA_Long_Range_Fires
+		icon = placeholder
+		relative_position_id = USA_Pursue_Fire_Superiority
+		prerequisite = { focus = USA_Pursue_Fire_Superiority }
+		x = 0
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.25
+				uses = 1
+				category = train_tech
+				category = artillery
+			}
+		}
+	}
+	focus = {
+		id = USA_The_Fireteam
+		icon = placeholder
+		relative_position_id = USA_Mortarize_The_Infantry
+		prerequisite = { focus = USA_Mortarize_The_Infantry }
+		mutually_exclusive = { focus = USA_Pursue_Fire_Superiority }
+		x = 1
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.25
+				uses = 1
+				category = infantry_tech
+				category = infantry_weapons
+			}
+		}
+	}
+	focus = {
+		id = USA_Squad_Automatic_Weapons
+		icon = placeholder
+		relative_position_id = USA_The_Fireteam
+		prerequisite = { focus = USA_The_Fireteam }
+		x = 0
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.25
+				uses = 1
+				category = infantry_tech
+				category = infantry_weapons
+			}
+		}
+	}
+	focus = {
+		id = USA_Motorize_Fire_Assets
+		icon = placeholder
+		relative_position_id = USA_Mortarize_The_Infantry
+		prerequisite = {
+			focus = USA_Long_Range_Fires
+			focus = USA_Squad_Automatic_Weapons
+		}
+		x = 0
+		y = 3
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.25
+				uses = 1
+				category = motorized_equipment
+			}
+		}
+	}
+	focus = {
+		id = USA_Anti_Mech_Fires
+		icon = placeholder
+		relative_position_id = USA_Motorize_Fire_Assets
+		prerequisite = { focus = USA_Motorize_Fire_Assets }
+		mutually_exclusive = { focus = USA_Expand_UAFAS }
+		x = -1
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.25
+				uses = 1
+				category = cat_anti_tank
+			}
+		}
+	}
+	focus = {
+		id = USA_Interservice_Fire_Coordination
+		icon = placeholder
+		relative_position_id = USA_Anti_Mech_Fires
+		prerequisite = { focus = USA_Anti_Mech_Fires }
+		x = 0
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.25
+				uses = 1
+				category = artillery
+			}
+		}
+	}
+	focus = {
+		id = USA_Mechanize_Fires
+		icon = placeholder
+		relative_position_id = USA_Interservice_Fire_Coordination
+		prerequisite = { focus = USA_Interservice_Fire_Coordination }
+		x = 0
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.25
+				uses = 1
+				category = cat_mechanized_equipment
+			}
+		}
+	}
+	focus = {
+		id = USA_Joint_Tactical_Air_Controllers
+		icon = placeholder
+		relative_position_id = USA_Mechanize_Fires
+		prerequisite = { focus = USA_Mechanize_Fires }
+		x = 0
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.25
+				uses = 1
+				category = artillery
+			}
+		}
+	}
+	focus = {
+		id = USA_Expand_UAFAS
+		icon = placeholder
+		relative_position_id = USA_Motorize_Fire_Assets
+		prerequisite = { focus = USA_Motorize_Fire_Assets }
+		mutually_exclusive = { focus = USA_Anti_Mech_Fires }
+		x = 1
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.25
+				uses = 1
+				category = artillery
+			}
+		}
+	}
+	focus = {
+		id = USA_Fire_Support_Officers
+		icon = placeholder
+		relative_position_id = USA_Expand_UAFAS
+		prerequisite = { focus = USA_Expand_UAFAS }
+		x = 0
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.25
+				uses = 1
+				category = recon_tech
+			}
+		}
+	}
+	focus = {
+		id = USA_Improve_Brigade_Fires
+		icon = placeholder
+		relative_position_id = USA_Fire_Support_Officers
+		prerequisite = { focus = USA_Fire_Support_Officers }
+		x = 0
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.25
+				uses = 1
+				category = infantry_weapons
+			}
+		}
+	}
+	focus = {
+		id = USA_Spend_Shells_Not_Men
+		icon = placeholder
+		relative_position_id = USA_Improve_Brigade_Fires
+		prerequisite = { focus = USA_Improve_Brigade_Fires }
+		x = 0
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.25
+				uses = 1
+				category = artillery
+			}
+		}
+	}
+	focus = {
+		id = USA_Promote_Eisenhower
+		icon = placeholder
+		relative_position_id = USA_The_Usonian_Army
+		prerequisite = { focus = USA_The_Usonian_Army }
+		mutually_exclusive = { focus = USA_Promote_Bradley }
+		mutually_exclusive = { focus = USA_Promote_Patton }
+		mutually_exclusive = { focus = USA_Promote_MacArthur }
 		x = 2
 		y = 1
 		cost = 4
@@ -4355,7 +4934,544 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.25
+				uses = 1
+				category = cat_grand_battle_plan
+			}
+		}
+	}
+	focus = {
+		id = USA_Establish_Joint_Chiefs_Of_Staff
+		icon = placeholder
+		relative_position_id = USA_Promote_Eisenhower
+		prerequisite = { focus = USA_Promote_Eisenhower }
+		x = 0
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			army_experience = 25
+		}
+	}
+	focus = {
+		id = USA_Modernize_Trench_Implements
+		icon = placeholder
+		relative_position_id = USA_Establish_Joint_Chiefs_Of_Staff
+		prerequisite = { focus = USA_Establish_Joint_Chiefs_Of_Staff }
+		x = 0
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.25
+				uses = 1
+				category = engineers_tech
+			}
+		}
+	}
+	focus = {
+		id = USA_Expand_Hospital_Corps
+		icon = placeholder
+		relative_position_id = USA_Modernize_Trench_Implements
+		prerequisite = { focus = USA_Modernize_Trench_Implements }
+		x = 0
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.25
+				uses = 1
+				category = hospital_tech
+			}
+		}
+	}
+	focus = {
+		id = USA_Armored_Personnel_Carriers
+		icon = placeholder
+		relative_position_id = USA_Expand_Hospital_Corps
+		prerequisite = { focus = USA_Expand_Hospital_Corps }
+		mutually_exclusive = { focus = USA_Mobile_LMGs }
+		x = -1
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.25
+				uses = 1
+				category = cat_mechanized_equipment
+				category = motorized_equipment
+			}
+		}
+	}
+	focus = {
+		id = USA_Armor_Infantry_Coordination
+		icon = placeholder
+		relative_position_id = USA_Armored_Personnel_Carriers
+		prerequisite = { focus = USA_Armored_Personnel_Carriers }
+		x = 0
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.25
+				uses = 1
+				category = cat_mechanized_equipment
+				category = motorized_equipment
+			}
+		}
+	}
+	focus = {
+		id = USA_Armor_Infantry_Exercises
+		icon = placeholder
+		relative_position_id = USA_Armor_Infantry_Coordination
+		prerequisite = { focus = USA_Armor_Infantry_Coordination }
+		x = 0
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			army_experience = 25
+		}
+	}
+	focus = {
+		id = USA_Exosuit_Integration
+		icon = placeholder
+		relative_position_id = USA_Armor_Infantry_Exercises
+		prerequisite = { focus = USA_Armor_Infantry_Exercises }
+		x = 0
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.25
+				uses = 1
+				category = exo_suits_tech
+			}
+		}
+	}
+	focus = {
+		id = USA_Interservice_Liaisons
+		icon = placeholder
+		relative_position_id = USA_Exosuit_Integration
+		prerequisite = { focus = USA_Exosuit_Integration }
+		x = 0
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			army_experience = 25
+		}
+	}
+	focus = {
+		id = USA_Expand_Army_Radio_Communication
+		icon = placeholder
+		relative_position_id = USA_Interservice_Liaisons
+		prerequisite = { focus = USA_Interservice_Liaisons }
+		x = 0
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.25
+				uses = 1
+				category = radar_tech
+			}
+		}
+	}
+	focus = {
+		id = USA_Mobile_LMGs
+		icon = placeholder
+		relative_position_id = USA_Expand_Hospital_Corps
+		prerequisite = { focus = USA_Expand_Hospital_Corps }
+		mutually_exclusive = { focus = USA_Armored_Personnel_Carriers }
+		x = 1
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.25
+				uses = 1
+				category = infantry_weapons
+			}
+		}
+	}
+	focus = {
+		id = USA_Armored_Reconnaisance
+		icon = placeholder
+		relative_position_id = USA_Mobile_LMGs
+		prerequisite = { focus = USA_Mobile_LMGs }
+		x = 0
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.25
+				uses = 1
+				category = recon_tech
+			}
+		}
+	}
+	focus = {
+		id = USA_Expanded_Logistics
+		icon = placeholder
+		relative_position_id = USA_Armored_Reconnaisance
+		prerequisite = { focus = USA_Armored_Reconnaisance }
+		x = 0
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.25
+				uses = 1
+				category = logistics_tech
+			}
+		}
+	}
+	focus = {
+		id = USA_Night_Vision_Development
+		icon = placeholder
+		relative_position_id = USA_Expanded_Logistics
+		prerequisite = { focus = USA_Expanded_Logistics }
+		x = 0
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.25
+				uses = 1
+				category = electronics
+			}
+		}
+	}
+	focus = {
+		id = USA_Mobile_Firebases
+		icon = placeholder
+		relative_position_id = USA_Night_Vision_Development
+		prerequisite = { focus = USA_Night_Vision_Development }
+		x = 0
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.25
+				uses = 1
+				category = engineers_tech
+			}
+		}
+	}
+	focus = {
+		id = USA_Expert_Reconnaisance_Teams
+		icon = placeholder
+		relative_position_id = USA_Mobile_Firebases
+		prerequisite = { focus = USA_Mobile_Firebases }
+		x = 0
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.25
+				uses = 1
+				category = recon_tech
+			}
+		}
+	}
+	focus = {
+		id = USA_Promote_MacArthur
+		icon = placeholder
+		relative_position_id = USA_The_Usonian_Army
+		prerequisite = { focus = USA_The_Usonian_Army }
+		mutually_exclusive = { focus = USA_Promote_Bradley }
+		mutually_exclusive = { focus = USA_Promote_Eisenhower }
+		mutually_exclusive = { focus = USA_Promote_Patton }
+		x = 6
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.25
+				uses = 1
+				category = cat_mass_assault
+			}
+		}
+	}
+	focus = {
+		id = USA_Loyalty_And_Patriotism
+		icon = placeholder
+		relative_position_id = USA_Promote_MacArthur
+		prerequisite = { focus = USA_Promote_MacArthur }
+		x = 0
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			army_experience = 25
+		}
+	}
+	focus = {
+		id = USA_Construct_Static_Defenses
+		icon = placeholder
+		relative_position_id = USA_Loyalty_And_Patriotism
+		prerequisite = { focus = USA_Loyalty_And_Patriotism }
+		x = 0
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			army_experience = 25
+		}
+	}
+	focus = {
+		id = USA_Improve_Our_MREs
+		icon = placeholder
+		relative_position_id = USA_Construct_Static_Defenses
+		prerequisite = { focus = USA_Construct_Static_Defenses }
+		mutually_exclusive = { focus = USA_Expand_Selective_Service }
+		x = -1
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.25
+				uses = 1
+				category = logistics_tech
+			}
+		}
+	}
+	focus = {
+		id = USA_Stormtroopers
+		icon = placeholder
+		relative_position_id = USA_Improve_Our_MREs
+		prerequisite = { focus = USA_Improve_Our_MREs }
+		x = 0
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			army_experience = 25
+		}
+	}
+	focus = {
+		id = USA_Expanded_NCO_Corps
+		icon = placeholder
+		relative_position_id = USA_Stormtroopers
+		prerequisite = { focus = USA_Stormtroopers }
+		x = 0
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			army_experience = 25
+		}
+	}
+	focus = {
+		id = USA_Overwhelming_Numbers
+		icon = placeholder
+		relative_position_id = USA_Expanded_NCO_Corps
+		prerequisite = { focus = USA_Expanded_NCO_Corps }
+		x = 0
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			army_experience = 25
+		}
+	}
+	focus = {
+		id = USA_Armored_Bayonet_Charges
+		icon = placeholder
+		relative_position_id = USA_Overwhelming_Numbers
+		prerequisite = { focus = USA_Overwhelming_Numbers }
+		x = 0
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			army_experience = 25
+		}
+	}
+	focus = {
+		id = USA_Exosuit_Brigades
+		icon = placeholder
+		relative_position_id = USA_Armored_Bayonet_Charges
+		prerequisite = { focus = USA_Armored_Bayonet_Charges }
+		x = 0
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			army_experience = 25
+		}
+	}
+	focus = {
+		id = USA_Expand_Selective_Service
+		icon = placeholder
+		relative_position_id = USA_Construct_Static_Defenses
+		prerequisite = { focus = USA_Construct_Static_Defenses }
+		mutually_exclusive = { focus = USA_Improve_Our_MREs }
+		x = 1
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			army_experience = 25
+		}
+	}
+	focus = {
+		id = USA_Improved_Armor_Plates
+		icon = placeholder
+		relative_position_id = USA_Expand_Selective_Service
+		prerequisite = { focus = USA_Expand_Selective_Service }
+		x = 0
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			army_experience = 25
+		}
+	}
+	focus = {
+		id = USA_Frontwide_Planning
+		icon = placeholder
+		relative_position_id = USA_Improved_Armor_Plates
+		prerequisite = { focus = USA_Improved_Armor_Plates }
+		x = 0
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			army_experience = 25
+		}
+	}
+	focus = {
+		id = USA_Expand_The_National_Guard
+		icon = placeholder
+		relative_position_id = USA_Frontwide_Planning
+		prerequisite = { focus = USA_Frontwide_Planning }
+		x = 0
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			army_experience = 25
+		}
+	}
+	focus = {
+		id = USA_Arm_The_Citizenry
+		icon = placeholder
+		relative_position_id = USA_Expand_The_National_Guard
+		prerequisite = { focus = USA_Expand_The_National_Guard }
+		x = 0
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			army_experience = 25
+		}
+	}
+	focus = {
+		id = USA_Cult_Of_The_Offensive
+		icon = placeholder
+		relative_position_id = USA_Arm_The_Citizenry
+		prerequisite = { focus = USA_Arm_The_Citizenry }
+		x = 0
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			army_experience = 25
+		}
+	}
+	focus = {
+		id = USA_Grand_Army_Of_The_Republic
+		icon = placeholder
+		relative_position_id = USA_Construct_Static_Defenses
+		prerequisite = {
+			focus = USA_Exosuit_Brigades
+			focus = USA_Cult_Of_The_Offensive
+		}
+		x = 0
+		y = 7
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			army_experience = 25
 		}
 	}
 	### NAVY TREE ###
@@ -4364,7 +5480,7 @@ focus_tree = {
 	focus = {
 		id = USA_The_Usonian_Air_Force
 		icon = placeholder
-		x = 85
+		x = 86
 		y = 0
 		cost = 4
 		ai_will_do = {

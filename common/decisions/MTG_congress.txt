@@ -11,6 +11,7 @@ USA_congress = {
 		}
 		days_remove = 7
 		remove_effect = {
+			custom_effect_tooltip = USA_lobby_house_small_tt
 			USA_increase_bill_support_house_small = yes
 		}
 	}
@@ -25,6 +26,7 @@ USA_congress = {
 		}
 		days_remove = 7
 		remove_effect = {
+			custom_effect_tooltip = USA_lobby_house_medium_tt
 			USA_increase_bill_support_house_medium = yes
 		}
 	}
@@ -39,6 +41,7 @@ USA_congress = {
 		}
 		days_remove = 7
 		remove_effect = {
+			custom_effect_tooltip = USA_lobby_house_large_tt
 			USA_increase_bill_support_house_large = yes
 		}
 	}
@@ -53,6 +56,7 @@ USA_congress = {
 		}
 		days_remove = 7
 		remove_effect = {
+			custom_effect_tooltip = USA_lobby_senate_small_tt
 			USA_increase_bill_support_senate_small = yes
 		}
 	}
@@ -67,6 +71,7 @@ USA_congress = {
 		}
 		days_remove = 7
 		remove_effect = {
+			custom_effect_tooltip = USA_lobby_senate_medium_tt
 			USA_increase_bill_support_senate_medium = yes
 		}
 	}
@@ -81,10 +86,11 @@ USA_congress = {
 		}
 		days_remove = 7
 		remove_effect = {
+			custom_effect_tooltip = USA_lobby_senate_large_tt
 			USA_increase_bill_support_senate_large = yes
 		}
 	}
-	# BILLS GO HERE
+	# UNIQUE BILLS GO HERE
 
 	# GENERIC CONGRESS DECISIONS
 	USA_pay_farm_subsidies = {
