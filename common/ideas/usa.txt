@@ -991,6 +991,148 @@ ideas = {
 				stability_weekly = 0.001
 			}
 		}
+		usa_armored_cavalry_1 = {
+			picture = placeholder
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = 0
+
+			modifier = {
+				motorized_attack_factor = 0.05
+				motorized_defence_factor = 0.05
+				motorized_speed_factor = 0.05
+				mechanized_attack_factor = 0.05
+				mechanized_defence_factor = 0.05
+				mechanized_speed_factor = 0.05
+			}
+		}
+		usa_armored_cavalry_2 = {
+			picture = placeholder
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = 0
+
+			modifier = {
+				motorized_attack_factor = 0.10
+				motorized_defence_factor = 0.10
+				motorized_speed_factor = 0.10
+				mechanized_attack_factor = 0.10
+				mechanized_defence_factor = 0.10
+				mechanized_speed_factor = 0.10
+			}
+		}
+		usa_armored_cavalry_3 = {
+			picture = placeholder
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = 0
+
+			modifier = {
+				motorized_attack_factor = 0.15
+				motorized_defence_factor = 0.15
+				motorized_speed_factor = 0.15
+				mechanized_attack_factor = 0.15
+				mechanized_defence_factor = 0.15
+				mechanized_speed_factor = 0.15
+			}
+		}
+		usa_automaton_corps_1 = {
+			picture = placeholder
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = 0
+
+			modifier = {
+				army_armor_attack_factor = 0.05
+				army_armor_defence_factor = 0.05
+				army_armor_speed_factor = 0.05
+			}
+		}
+		usa_automaton_corps_2 = {
+			picture = placeholder
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = 0
+
+			modifier = {
+				army_armor_attack_factor = 0.10
+				army_armor_defence_factor = 0.10
+				army_armor_speed_factor = 0.10
+			}
+		}
+		usa_automaton_corps_3 = {
+			picture = placeholder
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = 0
+
+			modifier = {
+				army_armor_attack_factor = 0.15
+				army_armor_defence_factor = 0.15
+				army_armor_speed_factor = 0.15
+			}
+		}
+		usa_mass_truck_production = {
+			picture = placeholder
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = 0
+
+			equipment_bonus = {
+				motorized_equipment = {
+					build_cost_ic = -0.1 instant = yes
+				}
+			}
+		}
 		great_depression = {
 			picture = usa_great_depression_3
 			

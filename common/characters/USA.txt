@@ -195,13 +195,15 @@ characters={
 			slot = theorist
 			idea_token = george_patton
 			ledger = army
-				allowed = {
-					original_tag = USA
-				}
-				
-				traits = {
-					mobile_warfare_expert
-				}
+			allowed = {
+				original_tag = USA
+			}
+			available = {
+				has_completed_focus = USA_Promote_Patton
+			}
+			traits = {
+				mobile_warfare_expert
+			}
 		}
 
 		corps_commander={
@@ -233,7 +235,9 @@ characters={
 			allowed = {
 				original_tag = USA
 			}
-			
+			available = {
+				has_completed_focus = USA_Promote_Bradley
+			}
 			traits = {
 				superior_firepower_expert
 			}
@@ -264,18 +268,21 @@ characters={
 			slot = army_chief
 			idea_token = dwight_eisenhower
 			allowed = {
-					original_tag = USA
-				}
-				traits = {
-					army_chief_offensive_2
-				}
-				cost = 100
-				ai_will_do = {
-					factor = 1.000
-				}
+				original_tag = USA
+			}
+			available = {
+				has_completed_focus = USA_Promote_Eisenhower
+			}
+			traits = {
+				army_chief_offensive_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
 		}
 		
-		field_marshal={
+		corps_commander={
 			traits={ trait_cautious armor_officer politically_connected organizer logistics_wizard offensive_doctrine }
 			skill=5
 			attack_skill=3
@@ -384,6 +391,7 @@ characters={
 						character = USA_douglas_macarthur
 					}
 				}
+				has_completed_focus = USA_Promote_Eisenhower
 			}
 			traits = {
 				army_chief_morale_2
@@ -394,7 +402,7 @@ characters={
 			}
 		}
 		
-		field_marshal={
+		corps_commander={
 			traits={ brilliant_strategist career_officer media_personality politically_connected offensive_doctrine }
 			skill=4
 			attack_skill=4

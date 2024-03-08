@@ -153,15 +153,6 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			unlock_decision_tooltip = USA_agricultural_subsidization_act
-			custom_effect_tooltip = usa_bill_pass_tt
-			effect_tooltip = {
-				add_political_power = 75
-				swap_ideas = {
-					remove_idea = usa_overfarming_2
-					add_idea = usa_overfarming_1
-				}
-			}
 			custom_effect_tooltip = USA_Subsidize_Western_Farms_tt
 			hidden_effect = {
 				random_list = {
@@ -273,6 +264,15 @@ focus_tree = {
 							}
 						}
 					}
+				}
+			}
+			unlock_decision_tooltip = USA_agricultural_subsidization_act
+			custom_effect_tooltip = usa_bill_pass_tt
+			effect_tooltip = {
+				add_political_power = 75
+				swap_ideas = {
+					remove_idea = usa_overfarming_2
+					add_idea = usa_overfarming_1
 				}
 			}
 		}
@@ -576,6 +576,7 @@ focus_tree = {
 		y = 1
 		cost = 10
 		completion_reward = {
+			add_stability = 0.025
 			unlock_decision_tooltip = USA_mcnary_haugen_farm_relief_bill
 			custom_effect_tooltip = usa_bill_pass_tt
 			effect_tooltip = {
@@ -585,7 +586,6 @@ focus_tree = {
 					add_idea = usa_overfarming_1
 				}
 			}
-			add_stability = 0.025
 		}
 	}
 	focus = {
@@ -4291,6 +4291,9 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+			USA_george_s_patton = {
+				promote_leader = yes
+			}
 			add_doctrine_cost_reduction = {
 				cost_reduction = 0.25
 				uses = 1
@@ -4312,7 +4315,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				bonus = 0.25
-				uses = 1
+				uses = 2
 				category = motorized_equipment
 				category = infantry_tech
 			}
@@ -4332,9 +4335,8 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				bonus = 0.25
-				uses = 1
-				category = motorized_equipment
-				category = armor
+				uses = 2
+				category = exo_suits_tech
 			}
 		}
 	}
@@ -4351,13 +4353,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			add_tech_bonus = {
-				bonus = 0.25
-				uses = 1
-				category = motorized_equipment
-				category = infantry_tech
-				category = cat_mechanized_equipment
-			}
+			add_ideas = usa_armored_cavalry_1
 		}
 	}
 	focus = {
@@ -4372,12 +4368,9 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			# PLACEHOLDER EFFECT
-			add_tech_bonus = {
-				bonus = 0.25
-				uses = 1
-				category = motorized_equipment
-				category = infantry_tech
+			add_timed_idea = {
+				idea = usa_mass_truck_production
+				days = 730
 			}
 		}
 	}
@@ -4397,9 +4390,12 @@ focus_tree = {
 			add_tech_bonus = {
 				bonus = 0.25
 				uses = 1
-				category = motorized_equipment
-				category = infantry_tech
-				category = cat_mechanized_equipment
+				category = mio_cat_tech_light_armor_and_modules
+			}
+			add_tech_bonus = {
+				bonus = 0.25
+				uses = 1
+				category = cat_anti_tank
 			}
 		}
 	}
@@ -4416,11 +4412,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			add_tech_bonus = {
-				bonus = 0.25
-				uses = 1
-				category = armor
-			}
+			add_ideas = usa_automaton_corps_1
 		}
 	}
 	focus = {
@@ -4438,7 +4430,7 @@ focus_tree = {
 			# PLACEHOLDER EFFECT
 			add_tech_bonus = {
 				bonus = 0.25
-				uses = 1
+				uses = 2
 				category = armor
 			}
 		}
@@ -4458,8 +4450,8 @@ focus_tree = {
 			# PLACEHOLDER EFFECT
 			add_tech_bonus = {
 				bonus = 0.25
-				uses = 1
-				category = armor
+				uses = 2
+				category = cat_mechanized_equipment
 			}
 		}
 	}
@@ -4478,7 +4470,24 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			# PLACEHOLDER EFFECT
+			if = {
+				limit = {
+					has_completed_focus = USA_Cavalry_Primacy
+				}
+				swap_ideas = {
+					remove_idea = usa_armored_cavalry_1
+					add_idea = usa_armored_cavalry_2
+				}
+			}
+			else_if = {
+				limit = {
+					has_completed_focus = USA_Mech_Primacy
+				}
+				swap_ideas = {
+					remove_idea = usa_automaton_corps_1
+					add_idea = usa_automaton_corps_2
+				}
+			}
 			add_tech_bonus = {
 				bonus = 0.25
 				uses = 1
@@ -4502,7 +4511,7 @@ focus_tree = {
 			# PLACEHOLDER EFFECT
 			add_tech_bonus = {
 				bonus = 0.25
-				uses = 1
+				uses = 2
 				category = exo_suits_tech
 			}
 		}
@@ -4522,7 +4531,7 @@ focus_tree = {
 			# PLACEHOLDER EFFECT
 			add_tech_bonus = {
 				bonus = 0.25
-				uses = 1
+				uses = 2
 				category = cat_anti_tank
 			}
 		}
@@ -4539,11 +4548,9 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			# PLACEHOLDER EFFECT
-			add_tech_bonus = {
-				bonus = 0.25
-				uses = 1
-				category = cat_light_armor
+			swap_ideas = {
+				remove_idea = usa_armored_cavalry_2
+				add_idea = usa_armored_cavalry_3
 			}
 		}
 	}
@@ -4565,7 +4572,11 @@ focus_tree = {
 				bonus = 0.25
 				uses = 1
 				category = motorized_equipment
-				category = support_tech
+			}
+			add_tech_bonus = {
+				bonus = 0.25
+				uses = 1
+				category = logistics_tech
 			}
 		}
 	}
@@ -4584,8 +4595,8 @@ focus_tree = {
 			# PLACEHOLDER EFFECT
 			add_tech_bonus = {
 				bonus = 0.25
-				uses = 1
-				category = cat_heavy_armor
+				uses = 2
+				category = mio_cat_tech_heavy_armor_and_modules
 			}
 		}
 	}
@@ -4601,11 +4612,9 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			# PLACEHOLDER EFFECT
-			add_tech_bonus = {
-				bonus = 0.25
-				uses = 1
-				category = cat_heavy_armor
+			swap_ideas = {
+				remove_idea = usa_automaton_corps_2
+				add_idea = usa_automaton_corps_3
 			}
 		}
 	}
@@ -4624,6 +4633,9 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+			USA_omar_bradley = {
+				promote_leader = yes
+			}
 			add_doctrine_cost_reduction = {
 				cost_reduction = 0.25
 				uses = 1
@@ -4942,6 +4954,9 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+			USA_dwight_d_eisenhower = {
+				promote_leader = yes
+			}
 			add_doctrine_cost_reduction = {
 				cost_reduction = 0.25
 				uses = 1
@@ -5241,6 +5256,9 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+			USA_douglas_macarthur = {
+				promote_leader = yes
+			}
 			add_doctrine_cost_reduction = {
 				cost_reduction = 0.25
 				uses = 1
