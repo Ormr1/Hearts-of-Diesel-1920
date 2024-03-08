@@ -153,10 +153,14 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			unlock_decision_tooltip = USA_pay_farm_subsidies
-			swap_ideas = {
-				remove_idea = usa_overfarming_2
-				add_idea = usa_overfarming_1
+			unlock_decision_tooltip = USA_agricultural_subsidization_act
+			custom_effect_tooltip = usa_bill_pass_tt
+			effect_tooltip = {
+				add_political_power = 75
+				swap_ideas = {
+					remove_idea = usa_overfarming_2
+					add_idea = usa_overfarming_1
+				}
 			}
 			custom_effect_tooltip = USA_Subsidize_Western_Farms_tt
 			hidden_effect = {
@@ -572,12 +576,16 @@ focus_tree = {
 		y = 1
 		cost = 10
 		completion_reward = {
-			unlock_decision_tooltip = USA_pay_farm_subsidies
-			swap_ideas = {
-				remove_idea = usa_overfarming_2
-				add_idea = usa_overfarming_1
+			unlock_decision_tooltip = USA_mcnary_haugen_farm_relief_bill
+			custom_effect_tooltip = usa_bill_pass_tt
+			effect_tooltip = {
+				add_stability = 0.025
+				swap_ideas = {
+					remove_idea = usa_overfarming_2
+					add_idea = usa_overfarming_1
+				}
 			}
-			add_stability = 0.05
+			add_stability = 0.025
 		}
 	}
 	focus = {

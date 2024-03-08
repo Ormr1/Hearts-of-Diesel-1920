@@ -27,6 +27,7 @@
  USA_Civilian_Contractor_Agreement_tt: "If passed, §YU.S.E.A.§! will be modified by\nPolitical Power Gain: §R-5%§!\n§YCivilian Factory§! construction speed: §G+10%§!"
  USA_Military_Industry_Amendment_tt: "If passed, §YU.S.E.A.§! will be modified by\nPolitical Power Gain: §R-5%§!\n§YMilitary Factory§! construction speed: §G+10%§!"
  USA_Unified_Currency_Amendment_tt: "If passed, §YU.S.E.A.§! will be modified by\nPolitical Power Gain: §R-5%§!\nConsumer Goods Factories: §Y-10%§!"
+ usa_bill_pass_tt: "§YEffects if bill passes§!:"
 ### FACTION NAMES
  FACTION_NAME_UNITED_STATES: "United States"
 ### IDEAS

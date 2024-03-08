@@ -90,9 +90,357 @@ USA_congress = {
 			USA_increase_bill_support_senate_large = yes
 		}
 	}
-	# UNIQUE BILLS GO HERE
+	## UNIQUE BILLS GO HERE
+	# McNary-Haugen Farm Relief Bill
+	USA_mcnary_haugen_farm_relief_bill = {
+		icon = ger_mefo_bills
+		available = {
+			NOT = {
+				OR = {
+					has_country_flag = usa_voting_on_bill_house
+					has_country_flag = usa_voting_on_bill_senate
+					has_active_mission = USA_research_grants_vote
+					has_active_mission = USA_research_grants_vote
+				}
+			}
+			has_completed_focus = USA_McNary_Haugen_Farm_Relief_Bill
+		}
+		visible = {
+			NOT = {
+				OR = {
+					has_country_flag = usa_voting_on_bill_house
+					has_country_flag = usa_voting_on_bill_senate
+					has_active_mission = USA_research_grants_vote
+					has_active_mission = USA_research_grants_vote
+				}
+			}
+		}
+		cost = 0
+		ai_will_do = {
+			factor = 10
+		}
+		complete_effect = {
+			custom_effect_tooltip = usa_bill_pass_tt
+			effect_tooltip = {
+				add_stability = 0.025
+				swap_ideas = {
+					remove_idea = usa_overfarming_2
+					add_idea = usa_overfarming_1
+				}
+			}
+			# Federalist Support
+			set_variable = { usa_fp_bill_support_house = fp_house_seats }
+			multiply_variable = { usa_fp_bill_support_house = 0.90 }
+			round_variable = usa_fp_bill_support_house
+			add_to_variable = { usa_house_bill_support = usa_fp_bill_support_house }
+			set_variable = { usa_fp_bill_support_senate = fp_senate_seats }
+			multiply_variable = { usa_fp_bill_support_senate = 0.90 }
+			round_variable = usa_fp_bill_support_senate
+			add_to_variable = { usa_senate_bill_support = usa_fp_bill_support_senate }
+			# Democratic-Republican Support
+			set_variable = { usa_drp_bill_support_house = drp_house_seats }
+			multiply_variable = { usa_drp_bill_support_house = 0.25 }
+			round_variable = usa_drp_bill_support_house
+			add_to_variable = { usa_house_bill_support = usa_drp_bill_support_house }
+			set_variable = { usa_drp_bill_support_senate = drp_senate_seats }
+			multiply_variable = { usa_drp_bill_support_senate = 0.25 }
+			round_variable = usa_drp_bill_support_senate
+			add_to_variable = { usa_senate_bill_support = usa_drp_bill_support_senate }
+			# Socialist Support
+			set_variable = { usa_spu_bill_support_house = spu_house_seats }
+			multiply_variable = { usa_spu_bill_support_house = 0.40 }
+			round_variable = usa_spu_bill_support_house
+			add_to_variable = { usa_house_bill_support = usa_spu_bill_support_house }
+			set_variable = { usa_spu_bill_support_senate = spu_senate_seats }
+			multiply_variable = { usa_spu_bill_support_senate = 0.40 }
+			round_variable = usa_spu_bill_support_senate
+			add_to_variable = { usa_senate_bill_support = usa_spu_bill_support_senate }
+			# Fascist Support
+			set_variable = { usa_pp_bill_support_house = pp_house_seats }
+			multiply_variable = { usa_pp_bill_support_house = 0.20 }
+			round_variable = usa_pp_bill_support_house
+			add_to_variable = { usa_house_bill_support = usa_pp_bill_support_house }
+			set_variable = { usa_pp_bill_support_senate = pp_senate_seats }
+			multiply_variable = { usa_pp_bill_support_senate = 0.20 }
+			round_variable = usa_pp_bill_support_senate
+			add_to_variable = { usa_senate_bill_support = usa_pp_bill_support_senate }
+			# Neo-Federalist Support
+			set_variable = { usa_nfp_bill_support_house = nfp_house_seats }
+			multiply_variable = { usa_nfp_bill_support_house = 0.15 }
+			round_variable = usa_nfp_bill_support_house
+			add_to_variable = { usa_house_bill_support = usa_nfp_bill_support_house }
+			set_variable = { usa_nfp_bill_support_senate = nfp_senate_seats }
+			multiply_variable = { usa_nfp_bill_support_senate = 0.15 }
+			round_variable = usa_nfp_bill_support_senate
+			add_to_variable = { usa_senate_bill_support = usa_nfp_bill_support_senate }
+			# Independent Support
+			set_variable = { usa_i_bill_support_house = i_house_seats }
+			multiply_variable = { usa_i_bill_support_house = 0.50 }
+			round_variable = usa_i_bill_support_house
+			add_to_variable = { usa_house_bill_support = usa_i_bill_support_house }
+			set_variable = { usa_i_bill_support_senate = i_senate_seats }
+			multiply_variable = { usa_i_bill_support_senate = 0.50 }
+			round_variable = usa_i_bill_support_senate
+			add_to_variable = { usa_senate_bill_support = usa_i_bill_support_senate }
+			clamp_variable = {
+				var = usa_house_bill_support
+				min = 0
+				max = max_house_seats
+			}
+			clamp_variable = {
+				var = usa_senate_bill_support
+				min = 0
+				max = max_senate_seats
+			}
+			set_country_flag = usa_voting_on_bill_house
+			activate_mission = USA_mcnary_haugen_farm_relief_bill_house_vote
+		}
+	}
+	USA_mcnary_haugen_farm_relief_bill_house_vote = {
+		icon = ger_mefo_bills
+		is_good = yes
+		days_mission_timeout = 35
+		selectable_mission = no
+		activation = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		cancel_trigger = {
+			always = no
+		}
+		timeout_effect = {
+			if = {
+				limit = {
+					check_variable = { usa_house_bill_support > usa_house_majority }
+				}
+				custom_effect_tooltip = [usa_house_bill_pass_text]
+				custom_effect_tooltip = usa_bill_pass_tt
+				effect_tooltip = {
+					add_stability = 0.025
+					swap_ideas = {
+						remove_idea = usa_overfarming_2
+						add_idea = usa_overfarming_1
+					}
+				}
+				activate_mission = USA_mcnary_haugen_farm_relief_bill_senate_vote
+				set_country_flag = usa_voting_on_bill_senate
+			}
+			else = {
+				custom_effect_tooltip = [usa_house_bill_pass_text]
+			}
+			clr_country_flag = usa_voting_on_bill_house
+		}
+	}
+	USA_mcnary_haugen_farm_relief_bill_senate_vote = {
+		icon = ger_mefo_bills
+		is_good = yes
+		days_mission_timeout = 35
+		selectable_mission = no
+		activation = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		cancel_trigger = {
+			always = no
+		}
+		timeout_effect = {
+			if = {
+				limit = {
+					check_variable = { usa_senate_bill_support > usa_senate_majority }
+				}
+				custom_effect_tooltip = [usa_senate_bill_pass_text]
+				custom_effect_tooltip = usa_bill_pass_tt
+				add_stability = 0.025
+				swap_ideas = {
+					remove_idea = usa_overfarming_2
+					add_idea = usa_overfarming_1
+				}
+			}
+			else = {
+				custom_effect_tooltip = [usa_senate_bill_pass_text]
+			}
+		}
+	}
+	# Agricultural Subsidization Act
+	USA_agricultural_subsidization_act = {
+		icon = ger_mefo_bills
+		available = {
+			NOT = {
+				OR = {
+					has_country_flag = usa_voting_on_bill_house
+					has_country_flag = usa_voting_on_bill_senate
+					has_active_mission = USA_research_grants_vote
+					has_active_mission = USA_research_grants_vote
+				}
+			}
+			has_completed_focus = USA_Subsidize_Western_Farms
+		}
+		visible = {
+			NOT = {
+				OR = {
+					has_country_flag = usa_voting_on_bill_house
+					has_country_flag = usa_voting_on_bill_senate
+					has_active_mission = USA_research_grants_vote
+					has_active_mission = USA_research_grants_vote
+				}
+			}
+		}
+		cost = 0
+		ai_will_do = {
+			factor = 10
+		}
+		complete_effect = {
+			custom_effect_tooltip = usa_bill_pass_tt
+			effect_tooltip = {
+				add_political_power = 75
+				swap_ideas = {
+					remove_idea = usa_overfarming_2
+					add_idea = usa_overfarming_1
+				}
+			}
+			# Federalist Support
+			set_variable = { usa_fp_bill_support_house = fp_house_seats }
+			multiply_variable = { usa_fp_bill_support_house = 0.25 }
+			round_variable = usa_fp_bill_support_house
+			add_to_variable = { usa_house_bill_support = usa_fp_bill_support_house }
+			set_variable = { usa_fp_bill_support_senate = fp_senate_seats }
+			multiply_variable = { usa_fp_bill_support_senate = 0.25 }
+			round_variable = usa_fp_bill_support_senate
+			add_to_variable = { usa_senate_bill_support = usa_fp_bill_support_senate }
+			# Democratic-Republican Support
+			set_variable = { usa_drp_bill_support_house = drp_house_seats }
+			multiply_variable = { usa_drp_bill_support_house = 0.90 }
+			round_variable = usa_drp_bill_support_house
+			add_to_variable = { usa_house_bill_support = usa_drp_bill_support_house }
+			set_variable = { usa_drp_bill_support_senate = drp_senate_seats }
+			multiply_variable = { usa_drp_bill_support_senate = 0.90 }
+			round_variable = usa_drp_bill_support_senate
+			add_to_variable = { usa_senate_bill_support = usa_drp_bill_support_senate }
+			# Socialist Support
+			set_variable = { usa_spu_bill_support_house = spu_house_seats }
+			multiply_variable = { usa_spu_bill_support_house = 0.35 }
+			round_variable = usa_spu_bill_support_house
+			add_to_variable = { usa_house_bill_support = usa_spu_bill_support_house }
+			set_variable = { usa_spu_bill_support_senate = spu_senate_seats }
+			multiply_variable = { usa_spu_bill_support_senate = 0.35 }
+			round_variable = usa_spu_bill_support_senate
+			add_to_variable = { usa_senate_bill_support = usa_spu_bill_support_senate }
+			# Fascist Support
+			set_variable = { usa_pp_bill_support_house = pp_house_seats }
+			multiply_variable = { usa_pp_bill_support_house = 0.20 }
+			round_variable = usa_pp_bill_support_house
+			add_to_variable = { usa_house_bill_support = usa_pp_bill_support_house }
+			set_variable = { usa_pp_bill_support_senate = pp_senate_seats }
+			multiply_variable = { usa_pp_bill_support_senate = 0.20 }
+			round_variable = usa_pp_bill_support_senate
+			add_to_variable = { usa_senate_bill_support = usa_pp_bill_support_senate }
+			# Neo-Federalist Support
+			set_variable = { usa_nfp_bill_support_house = nfp_house_seats }
+			multiply_variable = { usa_nfp_bill_support_house = 0.15 }
+			round_variable = usa_nfp_bill_support_house
+			add_to_variable = { usa_house_bill_support = usa_nfp_bill_support_house }
+			set_variable = { usa_nfp_bill_support_senate = nfp_senate_seats }
+			multiply_variable = { usa_nfp_bill_support_senate = 0.15 }
+			round_variable = usa_nfp_bill_support_senate
+			add_to_variable = { usa_senate_bill_support = usa_nfp_bill_support_senate }
+			# Independent Support
+			set_variable = { usa_i_bill_support_house = i_house_seats }
+			multiply_variable = { usa_i_bill_support_house = 0.50 }
+			round_variable = usa_i_bill_support_house
+			add_to_variable = { usa_house_bill_support = usa_i_bill_support_house }
+			set_variable = { usa_i_bill_support_senate = i_senate_seats }
+			multiply_variable = { usa_i_bill_support_senate = 0.50 }
+			round_variable = usa_i_bill_support_senate
+			add_to_variable = { usa_senate_bill_support = usa_i_bill_support_senate }
+			clamp_variable = {
+				var = usa_house_bill_support
+				min = 0
+				max = max_house_seats
+			}
+			clamp_variable = {
+				var = usa_senate_bill_support
+				min = 0
+				max = max_senate_seats
+			}
+			set_country_flag = usa_voting_on_bill_house
+			activate_mission = USA_agricultural_subsidization_act_house_vote
+		}
+	}
+	USA_agricultural_subsidization_act_house_vote = {
+		icon = ger_mefo_bills
+		is_good = yes
+		days_mission_timeout = 35
+		selectable_mission = no
+		activation = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		cancel_trigger = {
+			always = no
+		}
+		timeout_effect = {
+			if = {
+				limit = {
+					check_variable = { usa_house_bill_support > usa_house_majority }
+				}
+				custom_effect_tooltip = [usa_house_bill_pass_text]
+				custom_effect_tooltip = usa_bill_pass_tt
+				effect_tooltip = {
+					add_political_power = 75
+					swap_ideas = {
+						remove_idea = usa_overfarming_2
+						add_idea = usa_overfarming_1
+					}
+				}
+				activate_mission = USA_agricultural_subsidization_act_senate_vote
+				set_country_flag = usa_voting_on_bill_senate
+			}
+			else = {
+				custom_effect_tooltip = [usa_house_bill_pass_text]
+			}
+			clr_country_flag = usa_voting_on_bill_house
+		}
+	}
+	USA_agricultural_subsidization_act_senate_vote = {
+		icon = ger_mefo_bills
+		is_good = yes
+		days_mission_timeout = 35
+		selectable_mission = no
+		activation = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		cancel_trigger = {
+			always = no
+		}
+		timeout_effect = {
+			if = {
+				limit = {
+					check_variable = { usa_senate_bill_support > usa_senate_majority }
+				}
+				custom_effect_tooltip = [usa_senate_bill_pass_text]
+				custom_effect_tooltip = usa_bill_pass_tt
+				add_political_power = 75
+				swap_ideas = {
+					remove_idea = usa_overfarming_2
+					add_idea = usa_overfarming_1
+				}
+			}
+			else = {
+				custom_effect_tooltip = [usa_senate_bill_pass_text]
+			}
+		}
+	}
 
-	# GENERIC CONGRESS DECISIONS
+	## GENERIC CONGRESS DECISIONS
 	USA_pay_farm_subsidies = {
 		icon = ger_mefo_bills
 		available = {
@@ -106,8 +454,8 @@ USA_congress = {
 				has_country_flag = usa_pay_farm_subsidies_cooldown
 			}
 			OR = {
-				has_completed_focus = USA_McNary_Haugen_Farm_Relief_Bill
-				has_completed_focus = USA_Subsidize_Western_Farms
+				has_country_flag = usa_mcnary_haugen_farm_relief_bill_passed
+				has_country_flag = usa_subsidize_western_farms_passed
 			}
 		}
 		visible = {
@@ -151,38 +499,38 @@ USA_congress = {
 			add_to_variable = { usa_senate_bill_support = usa_drp_bill_support_senate }
 			# Socialist Support
 			set_variable = { usa_spu_bill_support_house = spu_house_seats }
-			multiply_variable = { usa_spu_bill_support_house = 0.85 }
+			multiply_variable = { usa_spu_bill_support_house = 0.55 }
 			round_variable = usa_spu_bill_support_house
 			add_to_variable = { usa_house_bill_support = usa_spu_bill_support_house }
 			set_variable = { usa_spu_bill_support_senate = spu_senate_seats }
-			multiply_variable = { usa_spu_bill_support_senate = 0.85 }
+			multiply_variable = { usa_spu_bill_support_senate = 0.55 }
 			round_variable = usa_spu_bill_support_senate
 			add_to_variable = { usa_senate_bill_support = usa_spu_bill_support_senate }
 			# Fascist Support
 			set_variable = { usa_pp_bill_support_house = pp_house_seats }
-			multiply_variable = { usa_pp_bill_support_house = 0.85 }
+			multiply_variable = { usa_pp_bill_support_house = 0.75 }
 			round_variable = usa_pp_bill_support_house
 			add_to_variable = { usa_house_bill_support = usa_pp_bill_support_house }
 			set_variable = { usa_pp_bill_support_senate = pp_senate_seats }
-			multiply_variable = { usa_pp_bill_support_senate = 0.85 }
+			multiply_variable = { usa_pp_bill_support_senate = 0.75 }
 			round_variable = usa_pp_bill_support_senate
 			add_to_variable = { usa_senate_bill_support = usa_pp_bill_support_senate }
 			# Neo-Federalist Support
 			set_variable = { usa_nfp_bill_support_house = nfp_house_seats }
-			multiply_variable = { usa_nfp_bill_support_house = 0.85 }
+			multiply_variable = { usa_nfp_bill_support_house = 0.35 }
 			round_variable = usa_nfp_bill_support_house
 			add_to_variable = { usa_house_bill_support = usa_nfp_bill_support_house }
 			set_variable = { usa_nfp_bill_support_senate = nfp_senate_seats }
-			multiply_variable = { usa_nfp_bill_support_senate = 0.85 }
+			multiply_variable = { usa_nfp_bill_support_senate = 0.35 }
 			round_variable = usa_nfp_bill_support_senate
 			add_to_variable = { usa_senate_bill_support = usa_nfp_bill_support_senate }
 			# Independent Support
 			set_variable = { usa_i_bill_support_house = i_house_seats }
-			multiply_variable = { usa_i_bill_support_house = 0.85 }
+			multiply_variable = { usa_i_bill_support_house = 0.50 }
 			round_variable = usa_i_bill_support_house
 			add_to_variable = { usa_house_bill_support = usa_i_bill_support_house }
 			set_variable = { usa_i_bill_support_senate = i_senate_seats }
-			multiply_variable = { usa_i_bill_support_senate = 0.85 }
+			multiply_variable = { usa_i_bill_support_senate = 0.50 }
 			round_variable = usa_i_bill_support_senate
 			add_to_variable = { usa_senate_bill_support = usa_i_bill_support_senate }
 			clamp_variable = {
