@@ -5545,22 +5545,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = USA_Establish_Fighter_School
-		icon = placeholder
-		relative_position_id = USA_Fighter_Command
-		prerequisite = { focus = USA_Fighter_Command }
-		x = -2
-		y = 1
-		cost = 4
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			
-		}
-	}
-	focus = {
-		id = USA_Great_Plains_Fighter_Exercises
+		id = USA_Great_Plains_Fighter_Exercise
 		icon = placeholder
 		relative_position_id = USA_Fighter_Command
 		prerequisite = { focus = USA_Fighter_Command }
@@ -5574,7 +5559,147 @@ focus_tree = {
 			
 		}
 	}
-	# SAMSOM DEVELOPMENT
+	focus = {
+		id = USA_Establish_Fighter_School
+		icon = placeholder
+		relative_position_id = USA_Great_Plains_Fighter_Exercise
+		prerequisite = { focus = USA_Great_Plains_Fighter_Exercise }
+		x = -1
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = USA_Air_Weapons_Research_And_Development_Office
+		icon = placeholder
+		relative_position_id = USA_Great_Plains_Fighter_Exercise
+		prerequisite = { focus = USA_Great_Plains_Fighter_Exercise }
+		x = 1
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = USA_Path_Of_The_Gun
+		icon = placeholder
+		relative_position_id = USA_Establish_Fighter_School
+		prerequisite = { focus = USA_Establish_Fighter_School }
+		prerequisite = { focus = USA_Air_Weapons_Research_And_Development_Office }
+		mutually_exclusive = { focus = USA_Path_Of_The_Missile }
+		x = 0
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = USA_Fund_Browning_Arms_Company
+		icon = placeholder
+		relative_position_id = USA_Path_Of_The_Gun
+		prerequisite = { focus = USA_Path_Of_The_Gun }
+		x = -2
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = USA_Prioritize_Airship_Agility
+		icon = placeholder
+		relative_position_id = USA_Path_Of_The_Gun
+		prerequisite = { focus = USA_Path_Of_The_Gun }
+		x = 0
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = USA_Develop_The_ANM2
+		icon = placeholder
+		relative_position_id = USA_Prioritize_Airship_Agility
+		prerequisite = { focus = USA_Fund_Browning_Arms_Company }
+		prerequisite = { focus = USA_Prioritize_Airship_Agility }
+		x = 0
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = USA_Path_Of_The_Missile
+		icon = placeholder
+		relative_position_id = USA_Air_Weapons_Research_And_Development_Office
+		prerequisite = { focus = USA_Establish_Fighter_School }
+		prerequisite = { focus = USA_Air_Weapons_Research_And_Development_Office }
+		mutually_exclusive = { focus = USA_Path_Of_The_Gun }
+		x = 0
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = USA_Prioritize_Airship_Detection_Range
+		icon = placeholder
+		relative_position_id = USA_Path_Of_The_Missile
+		prerequisite = { focus = USA_Path_Of_The_Missile }
+		x = 0
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = USA_Fund_Raytheon
+		icon = placeholder
+		relative_position_id = USA_Path_Of_The_Missile
+		prerequisite = { focus = USA_Path_Of_The_Missile }
+		x = 2
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			
+		}
+	}
+	# SAMSON DEVELOPMENT
 	focus = {
 		id = USA_Bomber_Command
 		icon = placeholder
