@@ -5670,7 +5670,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = USA_Prioritize_Airship_Detection_Range
+		id = USA_Improve_Airship_Radars
 		icon = placeholder
 		relative_position_id = USA_Path_Of_The_Missile
 		prerequisite = { focus = USA_Path_Of_The_Missile }
@@ -5690,6 +5690,60 @@ focus_tree = {
 		relative_position_id = USA_Path_Of_The_Missile
 		prerequisite = { focus = USA_Path_Of_The_Missile }
 		x = 2
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = USA_Project_Hotshot
+		icon = placeholder
+		relative_position_id = USA_Improve_Airship_Radars
+		prerequisite = { focus = USA_Improve_Airship_Radars }
+		prerequisite = { focus = USA_Fund_Raytheon }
+		x = 0
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = USA_Project_Cowboy
+		icon = placeholder
+		relative_position_id = USA_Prioritize_Airship_Agility
+		prerequisite = { focus = USA_Fund_Browning_Arms_Company }
+		prerequisite = { focus = USA_Prioritize_Airship_Agility }
+		x = 0
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = cat_air_guns
+			}
+		}
+	}
+	focus = {
+		id = USA_Develop_Rocket_Engines
+		icon = placeholder
+		relative_position_id = USA_Project_Cowboy
+		prerequisite = {
+			focus = USA_Project_Cowboy
+			focus = USA_Project_Hotshot
+		}
+		x = 1
 		y = 1
 		cost = 4
 		ai_will_do = {
