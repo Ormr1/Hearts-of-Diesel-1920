@@ -13,6 +13,7 @@ add_namespace = usa_alaska
 add_namespace = usa_arabia
 add_namespace = usa_usea
 add_namespace = usa_elections
+add_namespace = usa_midterms
 
 country_event = {
 	id = usa_startup.1
@@ -3333,6 +3334,28 @@ country_event = { # Unified Currency Amendment Fails!
 }
 
 ### ELECTIONS ###
+# Midterms
+country_event = { # House Elections
+	id = usa_midterms.1
+	title = usa_midterms.1.t
+	desc = usa_midterms.1.desc
+	picture = placeholder
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			USA_house_elections = yes
+			USA_senate_elections = yes
+		}
+	}
+
+	option = { # Let's see the results
+		name = usa_elections.1.a
+		custom_effect_tooltip = usa_midterms_1_tt
+	}
+}
+
 # 1920
 country_event = { # 1920 Election
 	id = usa_elections.1

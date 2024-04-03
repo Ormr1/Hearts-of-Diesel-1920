@@ -84,6 +84,124 @@ USA_great_depression_level_down = {
 	}
 }
 
+USA_house_elections = {
+	# Set variables to maximum
+	set_temp_variable = { fp_house_seats_won = max_house_seats }
+	set_temp_variable = { drp_house_seats_won = max_house_seats }
+	set_temp_variable = { spu_house_seats_won = max_house_seats }
+	set_temp_variable = { pp_house_seats_won = max_house_seats }
+	set_temp_variable = { nfp_house_seats_won = max_house_seats }
+	set_temp_variable = { i_house_seats_won = max_house_seats }
+	# Multiply variables by popularity
+	multiply_temp_variable = { fp_house_seats_won = fp_popularity_national }
+	multiply_temp_variable = { drp_house_seats_won = drp_popularity_national }
+	multiply_temp_variable = { spu_house_seats_won = party_popularity@communism }
+	multiply_temp_variable = { pp_house_seats_won = party_popularity@fascism }
+	multiply_temp_variable = { nfp_house_seats_won = party_popularity@monarchy }
+	multiply_temp_variable = { i_house_seats_won = party_popularity@neutrality }
+	# Set new seat numbers
+	set_variable = { fp_house_seats = fp_house_seats_won }
+	set_variable = { drp_house_seats = drp_house_seats_won }
+	set_variable = { spu_house_seats = spu_house_seats_won }
+	set_variable = { pp_house_seats = pp_house_seats_won }
+	set_variable = { nfp_house_seats = nfp_house_seats_won }
+	set_variable = { i_house_seats = i_house_seats_won }
+	# Round Variables
+	round_variable = fp_house_seats
+	round_variable = drp_house_seats
+	round_variable = spu_house_seats
+	round_variable = pp_house_seats
+	round_variable = nfp_house_seats
+	round_variable = i_house_seats
+	# Failsafes
+	set_temp_variable = { new_house_seat_total = fp_house_seats }
+	add_to_temp_variable = { new_house_seat_total = drp_house_seats }
+	add_to_temp_variable = { new_house_seat_total = spu_house_seats }
+	add_to_temp_variable = { new_house_seat_total = pp_house_seats }
+	add_to_temp_variable = { new_house_seat_total = nfp_house_seats }
+	add_to_temp_variable = { new_house_seat_total = i_house_seats }
+	if = {
+		limit = {
+			check_variable = { new_house_seat_total < max_house_seats }
+		}
+		set_temp_variable = { failsafe_house_seats_to_add = max_house_seats }
+		subtract_from_temp_variable = { failsafe_house_seats_to_add = new_house_seat_total }
+		add_to_variable = { i_house_seats = failsafe_house_seats_to_add }
+	}
+	else_if = {
+		limit = {
+			check_variable = { new_house_seat_total > max_house_seats }
+		}
+		set_temp_variable = { failsafe_house_seats_to_subtract = new_house_seat_total }
+		subtract_from_temp_variable = { failsafe_house_seats_to_subtract = max_house_seats }
+		subtract_from_variable = { i_house_seats = failsafe_house_seats_to_subtract }
+	}
+}
+
+USA_senate_elections = {
+	# Setup how many seats are up for grabs
+	set_temp_variable = { senate_seats_to_win = max_senate_seats }
+	multiply_temp_variable = { senate_seats_to_win = 0.34 }
+	# Remove 34% of seats
+	multiply_variable = { fp_senate_seats = 0.66 }
+	multiply_variable = { drp_senate_seats = 0.66 }
+	multiply_variable = { spu_senate_seats = 0.66 }
+	multiply_variable = { pp_senate_seats = 0.66 }
+	multiply_variable = { nfp_senate_seats = 0.66 }
+	multiply_variable = { i_senate_seats = 0.66 }
+	# Set variables to maximum
+	set_temp_variable = { fp_senate_seats_won = senate_seats_to_win }
+	set_temp_variable = { drp_senate_seats_won = senate_seats_to_win }
+	set_temp_variable = { spu_senate_seats_won = senate_seats_to_win }
+	set_temp_variable = { pp_senate_seats_won = senate_seats_to_win }
+	set_temp_variable = { nfp_senate_seats_won = senate_seats_to_win }
+	set_temp_variable = { i_senate_seats_won = senate_seats_to_win }
+	# Multiply variables by popularity
+	multiply_temp_variable = { fp_senate_seats_won = fp_popularity_national }
+	multiply_temp_variable = { drp_senate_seats_won = drp_popularity_national }
+	multiply_temp_variable = { spu_senate_seats_won = party_popularity@communism }
+	multiply_temp_variable = { pp_senate_seats_won = party_popularity@fascism }
+	multiply_temp_variable = { nfp_senate_seats_won = party_popularity@monarchy }
+	multiply_temp_variable = { i_senate_seats_won = party_popularity@neutrality }
+	# Set new seat numbers
+	add_to_variable = { fp_senate_seats = fp_senate_seats_won }
+	add_to_variable = { drp_senate_seats = drp_senate_seats_won }
+	add_to_variable = { spu_senate_seats = spu_senate_seats_won }
+	add_to_variable = { pp_senate_seats = pp_senate_seats_won }
+	add_to_variable = { nfp_senate_seats = nfp_senate_seats_won }
+	add_to_variable = { i_senate_seats = i_senate_seats_won }
+	# Round Variables
+	round_variable = fp_senate_seats
+	round_variable = drp_senate_seats
+	round_variable = spu_senate_seats
+	round_variable = pp_senate_seats
+	round_variable = nfp_senate_seats
+	round_variable = i_senate_seats
+	# Failsafes
+	set_temp_variable = { new_senate_seat_total = fp_senate_seats }
+	add_to_temp_variable = { new_senate_seat_total = drp_senate_seats }
+	add_to_temp_variable = { new_senate_seat_total = spu_senate_seats }
+	add_to_temp_variable = { new_senate_seat_total = pp_senate_seats }
+	add_to_temp_variable = { new_senate_seat_total = nfp_senate_seats }
+	add_to_temp_variable = { new_senate_seat_total = i_senate_seats }
+	if = {
+		limit = {
+			check_variable = { new_senate_seat_total < max_senate_seats }
+		}
+		set_temp_variable = { failsafe_senate_seats_to_add = max_senate_seats }
+		subtract_from_temp_variable = { failsafe_senate_seats_to_add = new_senate_seat_total }
+		add_to_variable = { i_senate_seats = failsafe_senate_seats_to_add }
+	}
+	else_if = {
+		limit = {
+			check_variable = { new_senate_seat_total > max_senate_seats }
+		}
+		set_temp_variable = { failsafe_senate_seats_to_subtract = new_senate_seat_total }
+		subtract_from_temp_variable = { failsafe_senate_seats_to_subtract = max_senate_seats }
+		subtract_from_variable = { i_senate_seats = failsafe_senate_seats_to_subtract }
+	}
+}
+
 USA_increase_federalist_popularity = {
 	# use variable fp_pop_to_increase
 	custom_effect_tooltip = USA_increase_federalist_popularity_tt

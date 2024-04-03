@@ -27,7 +27,10 @@
  USA_Civilian_Contractor_Agreement_tt: "If passed, §YU.S.E.A.§! will be modified by\nPolitical Power Gain: §R-5%§!\n§YCivilian Factory§! construction speed: §G+10%§!"
  USA_Military_Industry_Amendment_tt: "If passed, §YU.S.E.A.§! will be modified by\nPolitical Power Gain: §R-5%§!\n§YMilitary Factory§! construction speed: §G+10%§!"
  USA_Unified_Currency_Amendment_tt: "If passed, §YU.S.E.A.§! will be modified by\nPolitical Power Gain: §R-5%§!\nConsumer Goods Factories: §Y-10%§!"
+ usa_midterms_1_tt: "§YThe seats of Congress have shifted...§!"
  usa_bill_pass_tt: "§YEffects if bill passes§!:"
+ usa_mcnary_haugen_farm_relief_bill_passed: "McNary-Haugen Farm Relief Bill Passed"
+ usa_subsidize_western_farms_passed: "Agricultural Subsidization Act Passed"
 ### FACTION NAMES
  FACTION_NAME_UNITED_STATES: "United States"
 ### IDEAS
@@ -408,7 +411,7 @@
  USA_peacekeeper_supply_raid: "Launch Supply Raid"
 ## CONGRESS ##
  USA_congress: "Usonian Congress"
- USA_congress_desc: "§YSenate§!:\n§gFP§!: [?fp_senate_seats] / [?max_senate_seats|0Y]\n§CDRP§!: [?drp_senate_seats] / [?max_senate_seats|0Y]\n§RSPU§!: [?spu_senate_seats] / [?max_senate_seats|0Y]\n§OPP§!: [?pp_senate_seats] / [?max_senate_seats|0Y]\n§0NFP§!: [?nfp_senate_seats] / [?max_senate_seats|0Y]\n\n§YHouse of Representatives§!:\n§gFP§!: [?fp_house_seats] / [?max_house_seats|0Y]\n§CDRP§!: [?drp_house_seats] / [?max_house_seats|0Y]\n§RSPU§!: [?spu_house_seats] / [?max_house_seats|0Y]\n§OPP§!: [?pp_house_seats] / [?max_house_seats|0Y]\n§0NFP§!: [?nfp_house_seats] / [?max_house_seats|0Y]\n\nCurrent House Support For Bill: [usa_house_bill_support_loc] / [?max_house_seats|0Y]\nCurrent Senate Support For Bill: [usa_senate_bill_support_loc] / [?max_senate_seats|0Y]"
+ USA_congress_desc: "§YSenate§!:\n§gFP§!: [?fp_senate_seats] / [?max_senate_seats|0Y]\n§CDRP§!: [?drp_senate_seats] / [?max_senate_seats|0Y]\n§RSPU§!: [?spu_senate_seats] / [?max_senate_seats|0Y]\n§OPP§!: [?pp_senate_seats] / [?max_senate_seats|0Y]\n§0NFP§!: [?nfp_senate_seats] / [?max_senate_seats|0Y]\n§gIndependent§!: [?i_senate_seats] / [?max_senate_seats|0Y]\n\n§YHouse of Representatives§!:\n§gFP§!: [?fp_house_seats] / [?max_house_seats|0Y]\n§CDRP§!: [?drp_house_seats] / [?max_house_seats|0Y]\n§RSPU§!: [?spu_house_seats] / [?max_house_seats|0Y]\n§OPP§!: [?pp_house_seats] / [?max_house_seats|0Y]\n§0NFP§!: [?nfp_house_seats] / [?max_house_seats|0Y]\n§gIndependent§!: [?i_house_seats] / [?max_house_seats|0Y]\n\nCurrent House Support For Bill: [usa_house_bill_support_loc] / [?max_house_seats|0Y]\nCurrent Senate Support For Bill: [usa_senate_bill_support_loc] / [?max_senate_seats|0Y]"
  usa_house_bill_support_positive_loc: "[?usa_house_bill_support|G0]"
  usa_house_bill_support_negative_loc: "[?usa_house_bill_support|R0]"
  usa_senate_bill_support_positive_loc: "[?usa_senate_bill_support|G0]"
@@ -431,6 +434,8 @@
  USA_lobby_senate_large: "Large Senate Lobbying Effort"
  USA_lobby_senate_large_tt: "§G+15%§! Senate Support for current bill"
 # BILLS #
+ USA_mcnary_haugen_farm_relief_bill: "Introduce McNary-Haugen Farm Relief Bill"
+ USA_agricultural_subsidization_act: "Introduce Agricultural Subsidization Act"
  USA_pay_farm_subsidies: "Introduce [GetYear] Farm Bill"
  USA_pay_farm_subsidies_house_vote: "[GetYear] Farm Bill - House Vote"
  USA_pay_farm_subsidies_senate_vote: "[GetYear] Farm Bill - Senate Vote"
