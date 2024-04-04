@@ -5760,22 +5760,6 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = USA_Develop_The_ANM2
-		icon = placeholder
-		relative_position_id = USA_Prioritize_Airship_Agility
-		prerequisite = { focus = USA_Fund_Browning_Arms_Company }
-		prerequisite = { focus = USA_Prioritize_Airship_Agility }
-		x = 0
-		y = 1
-		cost = 5
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			
-		}
-	}
-	focus = {
 		id = USA_Path_Of_The_Missile
 		icon = placeholder
 		relative_position_id = USA_Air_Weapons_Research_And_Development_Office
