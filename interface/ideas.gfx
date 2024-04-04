@@ -1806,6 +1806,11 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_idea_USA_air_modifier"
+		texturefile = "gfx/interface/ideas/USA/idea_USA_air_modifier.png"
+	}
+
+	spriteType = {
 		name = "GFX_idea_usa_tycoon_influence_extremely_high"
 		texturefile = "gfx/interface/ideas/USA/idea_usa_overfarming.png"
 	}

@@ -70,3 +70,15 @@ defined_text = {
 		localization_key = usa_senate_bill_pass_text_no
 	}
 }
+defined_text = {
+	name = USA_air_modifier_loc
+	text = {
+		trigger = {
+			has_country_flag = USA_founded_usonian_air_force
+		}
+		localization_key = USA_air_modifier_loc_air_force
+	}
+	text = {
+		localization_key = USA_air_modifier_loc_mobile_air_corps
+	}
+}

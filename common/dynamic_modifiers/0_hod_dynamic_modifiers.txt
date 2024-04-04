@@ -219,3 +219,28 @@ USA_army_modifier = { # Usonian Army
 	experience_gain_infantry_combat_factor = USA_army_modifier_experience_gain_infantry_combat_factor
 	unit_motorized_design_cost_factor = USA_army_modifier_unit_motorized_design_cost_factor
 }
+
+USA_air_modifier = { # Usonian Mobile Air Corps / Air Force
+	enable = { always = yes }
+
+	icon = GFX_idea_USA_air_modifier
+    
+	experience_gain_air_factor = USA_air_modifier_experience_gain_air_factor
+	experience_gain_air = USA_air_modifier_experience_gain_air
+	paratroopers_special_forces_contribution_factor = USA_air_modifier_paratroopers_special_forces_contribution_factor
+	paratrooper_aa_defense = USA_air_modifier_paratrooper_aa_defense
+	paratrooper_weight_factor = USA_air_modifier_paratrooper_weight_factor
+	paradrop_organization_factor = USA_air_modifier_paradrop_organization_factor
+	extra_paratrooper_supply_grace = USA_air_modifier_extra_paratrooper_supply_grace
+	unit_paratrooper_design_cost_factor = USA_air_modifier_unit_paratrooper_design_cost_factor
+	air_ace_generation_chance_factor = USA_air_modifier_air_ace_generation_chance_factor
+	ace_effectiveness_factor = USA_air_modifier_ace_effectiveness_factor
+	air_attack_factor = USA_air_modifier_air_attack_factor
+	air_agility_factor = USA_air_modifier_air_agility_factor
+	air_range_factor = USA_air_modifier_air_range_factor
+	air_strategic_bomber_night_penalty = USA_air_modifier_air_strategic_bomber_night_penalty
+	air_superiority_detect_factor = USA_air_modifier_air_superiority_detect_factor
+	air_interception_detect_factor = USA_air_modifier_air_interception_detect_factor
+	air_weather_penalty = USA_air_modifier_air_weather_penalty
+	air_close_air_support_org_damage_factor = USA_army_modifier_air_close_air_support_org_damage_factor
+}

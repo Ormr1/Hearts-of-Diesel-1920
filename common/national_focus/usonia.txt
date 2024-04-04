@@ -5026,9 +5026,9 @@ focus_tree = {
 		}
 		completion_reward = {
 			custom_effect_tooltip = usa_modify_usonian_army_ns_intro
-			add_to_variable = { USA_army_modifier_experience_gain_army = 0.01 tooltip = experience_gain_army_daily_tt }
-			add_to_variable = { USA_army_modifier_experience_gain_navy = 0.01 tooltip = experience_gain_navy_daily_tt }
-			add_to_variable = { USA_army_modifier_experience_gain_air = 0.01 tooltip = experience_gain_air_daily_tt }
+			add_to_variable = { USA_army_modifier_experience_gain_army = 0.02 tooltip = experience_gain_army_daily_tt }
+			add_to_variable = { USA_army_modifier_experience_gain_navy = 0.02 tooltip = experience_gain_navy_daily_tt }
+			add_to_variable = { USA_army_modifier_experience_gain_air = 0.02 tooltip = experience_gain_air_daily_tt }
 		}
 	}
 	focus = {
@@ -5629,14 +5629,14 @@ focus_tree = {
 	focus = {
 		id = USA_The_Usonian_Air_Force
 		icon = placeholder
-		x = 86
+		x = 90
 		y = 0
 		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			air_experience = 25
+			add_dynamic_modifier = { modifier = USA_air_modifier }
 		}
 	}
 	# REVERE DEVELOPMENT
@@ -5645,7 +5645,7 @@ focus_tree = {
 		icon = placeholder
 		relative_position_id = USA_The_Usonian_Air_Force
 		prerequisite = { focus = USA_The_Usonian_Air_Force }
-		x = -3
+		x = -7
 		y = 1
 		cost = 5
 		ai_will_do = {
@@ -5679,7 +5679,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			
+			air_experience =  35
 		}
 	}
 	focus = {
@@ -5694,7 +5694,9 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			
+			custom_effect_tooltip = usa_modify_usonian_air_ns_intro
+			add_to_variable = { USA_air_modifier_air_ace_generation_chance_factor = 0.05 tooltip = air_ace_generation_chance_factor_tt }
+			add_to_variable = { USA_air_modifier_ace_effectiveness_factor = 0.05 tooltip = ace_effectiveness_factor_tt }
 		}
 	}
 	focus = {
@@ -5709,7 +5711,11 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			
+			add_tech_bonus = {
+				bonus = 0.25
+				uses = 2
+				category = cat_air_guns
+			}
 		}
 	}
 	focus = {
@@ -5726,7 +5732,8 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			
+			custom_effect_tooltip = usa_modify_usonian_air_ns_intro
+			add_to_variable = { USA_air_modifier_air_attack_factor = 0.075 tooltip = air_attack_factor_tt }
 		}
 	}
 	focus = {
@@ -5756,7 +5763,8 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			
+			custom_effect_tooltip = usa_modify_usonian_air_ns_intro
+			add_to_variable = { USA_air_modifier_air_agility_factor = 0.10 tooltip = air_agility_factor_tt }
 		}
 	}
 	focus = {
@@ -5773,7 +5781,9 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			
+			custom_effect_tooltip = usa_modify_usonian_air_ns_intro
+			add_to_variable = { USA_air_modifier_air_agility_factor = 0.15 tooltip = air_agility_factor_tt }
+			add_to_variable = { USA_air_modifier_air_range_factor = 0.10 tooltip = air_range_factor_tt }
 		}
 	}
 	focus = {
@@ -5788,7 +5798,11 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			
+			custom_effect_tooltip = usa_modify_usonian_air_ns_intro
+			add_to_variable = { USA_air_modifier_air_strategic_bomber_night_penalty = -0.10 tooltip = air_night_penalty_tt }
+			add_to_variable = { USA_air_modifier_air_superiority_detect_factor = 0.10 tooltip = air_superiority_detect_factor_tt }
+			add_to_variable = { USA_air_modifier_air_interception_detect_factor = 0.10 tooltip = air_interception_detect_factor_tt }
+			add_to_variable = { USA_air_modifier_air_weather_penalty = -0.10 tooltip = air_weather_penalty_tt }
 		}
 	}
 	focus = {
@@ -5860,13 +5874,98 @@ focus_tree = {
 			
 		}
 	}
+	# USONIAN AIRBORNE
+	focus = {
+		id = USA_Expand_The_Airborne
+		icon = placeholder
+		relative_position_id = USA_The_Usonian_Air_Force
+		prerequisite = { focus = USA_The_Usonian_Air_Force }
+		x = 0
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = usa_modify_usonian_air_ns_intro
+			add_to_variable = { USA_air_modifier_paratroopers_special_forces_contribution_factor = -0.05 tooltip = paratroopers_special_forces_contribution_factor_tt }
+			add_to_variable = { USA_air_modifier_unit_paratrooper_design_cost_factor = -0.50 tooltip = modifier_unit_paratrooper_design_cost_factor_tt }
+		}
+	}
+	focus = {
+		id = USA_Dedicated_Paratrooper_Carriers
+		icon = placeholder
+		relative_position_id = USA_Expand_The_Airborne
+		prerequisite = { focus = USA_Expand_The_Airborne }
+		x = -2
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = usa_modify_usonian_air_ns_intro
+			add_to_variable = { USA_air_modifier_paratrooper_weight_factor = -0.10 tooltip = paratrooper_weight_factor_tt }
+		}
+	}
+	focus = {
+		id = USA_Establish_Airborne_School
+		icon = placeholder
+		relative_position_id = USA_Expand_The_Airborne
+		prerequisite = { focus = USA_Expand_The_Airborne }
+		x = 0
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = usa_modify_usonian_air_ns_intro
+			add_to_variable = { USA_air_modifier_experience_gain_air = 0.03 tooltip = experience_gain_air_daily_tt }
+		}
+	}
+	focus = {
+		id = USA_Airborne_Survival_Training
+		icon = placeholder
+		relative_position_id = USA_Expand_The_Airborne
+		prerequisite = { focus = USA_Expand_The_Airborne }
+		x = 2
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = usa_modify_usonian_air_ns_intro
+			add_to_variable = { extra_paratrooper_supply_grace = 48 tooltip = extra_paratrooper_supply_grace_tt }
+		}
+	}
+	focus = {
+		id = USA_The_Helldivers
+		icon = placeholder
+		relative_position_id = USA_Expand_The_Airborne
+		prerequisite = { focus = USA_Dedicated_Paratrooper_Carriers }
+		prerequisite = { focus = USA_Establish_Airborne_School }
+		prerequisite = { focus = USA_Airborne_Survival_Training }
+		x = 0
+		y = 2
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = usa_modify_usonian_air_ns_intro
+			add_to_variable = { USA_air_modifier_paratrooper_aa_defense = 0.075 tooltip = paratrooper_aa_defense_tt }
+			add_to_variable = { USA_air_modifier_paradrop_organization_factor = 0.075 tooltip = paradrop_organization_factor_tt }
+		}
+	}
 	# SAMSON DEVELOPMENT
 	focus = {
 		id = USA_Bomber_Command
 		icon = placeholder
 		relative_position_id = USA_The_Usonian_Air_Force
 		prerequisite = { focus = USA_The_Usonian_Air_Force }
-		x = 3
+		x = 7
 		y = 1
 		cost = 5
 		ai_will_do = {
