@@ -10,7 +10,7 @@
  army_armor_speed_factor_tt: " $MODIFIER_ARMY_ARMOR_SPEED_FACTOR$: $RIGHT|+=%1$"
  out_of_supply_factor_tt: " $MODIFIER_OUT_OF_SUPPLY_FACTOR$: $RIGHT|-=%1$"
  supply_consumption_factor_tt: " $MODIFIER_SUPPLY_CONSUMPTION_FACTOR$: $RIGHT|-=%1$"
- experience_gain_artillery_combat_factor_tt: " $modifier_experience_gain_artillery_combat_factor$: $RIGHT|+=%1$"
+ experience_gain_artillery_combat_factor_tt: " $modifier_experience_gain_artillery_combat_factor$: $RIGHT|+=%0$"
  no_supply_grace_tt: " $MODIFIER_NO_SUPPLY_GRACE$: $RIGHT|+=1$"
  planning_speed_tt: " $MODIFIER_PLANNING_SPEED$: $RIGHT|+=%1$" # Specifically for idea modification
  modifier_max_planning_factor_tt: " $MODIFIER_MAX_PLANNING_FACTOR$: $RIGHT|+=%1$" # Specifically for idea modification
@@ -29,10 +29,10 @@
  modifier_unit_anti_tank_design_cost_factor_tt: " $modifier_unit_anti_tank_design_cost_factor$: $RIGHT|-=%$"
  modifier_unit_anti_tank_brigade_design_cost_factor_tt: " $modifier_unit_anti_tank_brigade_design_cost_factor$: $RIGHT|-=%$"
  modifier_unit_mot_anti_tank_brigade_design_cost_factor_tt: " $modifier_unit_mot_anti_tank_brigade_design_cost_factor$: $RIGHT|-=%$"
- modifier_experience_gain_infantry_combat_factor_tt: " $modifier_experience_gain_infantry_combat_factor$: $RIGHT|+=%1$"
- air_close_air_support_org_damage_factor_tt: " $MODIFIER_AIR_CAS_ORG_DAMAGE_FACTOR$: $RIGHT|+=%1$"
+ modifier_experience_gain_infantry_combat_factor_tt: " $modifier_experience_gain_infantry_combat_factor$: $RIGHT|+=%0$"
+ air_close_air_support_org_damage_factor_tt: " $MODIFIER_AIR_CAS_ORG_DAMAGE_FACTOR$: $RIGHT|+=%0$"
  shore_bombardment_bonus_tt: " $MODIFIER_SHORE_BOMBARDMENT$: $RIGHT|+=%1$"
- railway_gun_bombardment_factor_tt: " $MODIFIER_RAILWAY_GUN_BOMBARDMENT_FACTOR$: $RIGHT|+=%1$"
+ railway_gun_bombardment_factor_tt: " $MODIFIER_RAILWAY_GUN_BOMBARDMENT_FACTOR$: $RIGHT|+=%0$"
  experience_loss_factor_tt: " $MODIFIER_EXPERIENCE_LOSS_FACTOR$: $RIGHT|-=%1$"
  experience_gain_army_daily_tt: " $MODIFIER_XP_GAIN_ARMY$: $RIGHT|+=2$"
  experience_gain_navy_daily_tt: " $MODIFIER_XP_GAIN_NAVY$: $RIGHT|+=2$"

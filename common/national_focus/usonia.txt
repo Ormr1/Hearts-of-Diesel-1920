@@ -4564,9 +4564,9 @@ focus_tree = {
 		}
 		completion_reward = {
 			custom_effect_tooltip = usa_modify_usonian_army_ns_intro
-			add_to_variable = { USA_army_modifier_motorized_attack_factor = 0.10 tooltip = motorized_attack_factor_tt }
+			add_to_variable = { USA_army_modifier_motorized_attack_factor = 0.05 tooltip = motorized_attack_factor_tt }
 			add_to_variable = { USA_army_modifier_motorized_defence_factor = 0.05 tooltip = motorized_defence_factor_tt }
-			add_to_variable = { USA_army_modifier_mechanized_attack_factor = 0.10 tooltip = mechanized_attack_factor_tt }
+			add_to_variable = { USA_army_modifier_mechanized_attack_factor = 0.05 tooltip = mechanized_attack_factor_tt }
 			add_to_variable = { USA_army_modifier_mechanized_defence_factor = 0.05 tooltip = mechanized_defence_factor_tt }
 			add_to_variable = { USA_army_modifier_army_speed_factor = 0.05 tooltip = army_speed_factor_tt }
 		}
