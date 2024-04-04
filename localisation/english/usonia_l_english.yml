@@ -27,6 +27,7 @@
  USA_Civilian_Contractor_Agreement_tt: "If passed, §YU.S.E.A.§! will be modified by\nPolitical Power Gain: §R-5%§!\n§YCivilian Factory§! construction speed: §G+10%§!"
  USA_Military_Industry_Amendment_tt: "If passed, §YU.S.E.A.§! will be modified by\nPolitical Power Gain: §R-5%§!\n§YMilitary Factory§! construction speed: §G+10%§!"
  USA_Unified_Currency_Amendment_tt: "If passed, §YU.S.E.A.§! will be modified by\nPolitical Power Gain: §R-5%§!\nConsumer Goods Factories: §Y-10%§!"
+ usa_modify_usonian_army_ns_intro: "Modify §Y$USA_army_modifier$§! by"
  usa_midterms_1_tt: "§YThe seats of Congress have shifted...§!"
  usa_bill_pass_tt: "§YEffects if bill passes§!:"
  usa_mcnary_haugen_farm_relief_bill_passed: "McNary-Haugen Farm Relief Bill Passed"
@@ -34,6 +35,7 @@
 ### FACTION NAMES
  FACTION_NAME_UNITED_STATES: "United States"
 ### IDEAS
+ USA_army_modifier: "Usonian Army"
  usa_usonian_pluralism: "Usonian Pluralism"
  usa_usonian_pluralism_desc: ""
  usa_usonian_pluralism_tt: "§YDemocratic Popularity§!:\n §gFederalists§!: [?fp_popularity_democratic|%2]\n §CDemocratic-Republicans§!: [?drp_popularity_democratic|%2]\n§YNational Popularity§!:\n §gFederalists§!: [?fp_popularity_national|%2]\n §CDemocratic-Republicans§!: [?drp_popularity_national|%2]"

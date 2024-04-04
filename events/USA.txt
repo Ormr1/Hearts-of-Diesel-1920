@@ -3347,6 +3347,10 @@ country_event = { # House Elections
 		hidden_effect = {
 			USA_house_elections = yes
 			USA_senate_elections = yes
+			country_event = {
+				id = usa_midterms.1
+				days = 730
+			}
 		}
 	}
 

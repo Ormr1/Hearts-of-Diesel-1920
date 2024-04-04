@@ -4274,6 +4274,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			army_experience = 25
+			add_dynamic_modifier = { modifier = USA_army_modifier }
 		}
 	}
 	focus = {
@@ -4353,7 +4354,12 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			add_ideas = usa_armored_cavalry_1
+			custom_effect_tooltip = usa_modify_usonian_army_ns_intro
+        	add_to_variable = { USA_army_modifier_motorized_attack_factor = 0.05 tooltip = motorized_attack_factor_tt }
+			add_to_variable = { USA_army_modifier_motorized_defence_factor = 0.05 tooltip = motorized_defence_factor_tt }
+			add_to_variable = { USA_army_modifier_mechanized_attack_factor = 0.05 tooltip = mechanized_attack_factor_tt }
+			add_to_variable = { USA_army_modifier_mechanized_defence_factor = 0.05 tooltip = mechanized_defence_factor_tt }
+			add_to_variable = { USA_army_modifier_army_speed_factor = 0.05 tooltip = army_speed_factor_tt }
 		}
 	}
 	focus = {
@@ -4412,7 +4418,10 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			add_ideas = usa_automaton_corps_1
+			custom_effect_tooltip = usa_modify_usonian_army_ns_intro
+        	add_to_variable = { USA_army_modifier_army_armor_attack_factor = 0.05 tooltip = army_armor_attack_factor_tt }
+			add_to_variable = { USA_army_modifier_army_armor_defence_factor = 0.05 tooltip = army_armor_defence_factor_tt }
+			add_to_variable = { USA_army_modifier_army_armor_speed_factor = 0.05 tooltip = army_armor_speed_factor_tt }
 		}
 	}
 	focus = {
@@ -4474,19 +4483,21 @@ focus_tree = {
 				limit = {
 					has_completed_focus = USA_Cavalry_Primacy
 				}
-				swap_ideas = {
-					remove_idea = usa_armored_cavalry_1
-					add_idea = usa_armored_cavalry_2
-				}
+				custom_effect_tooltip = usa_modify_usonian_army_ns_intro
+				add_to_variable = { USA_army_modifier_motorized_attack_factor = 0.05 tooltip = motorized_attack_factor_tt }
+				add_to_variable = { USA_army_modifier_motorized_defence_factor = 0.05 tooltip = motorized_defence_factor_tt }
+				add_to_variable = { USA_army_modifier_mechanized_attack_factor = 0.05 tooltip = mechanized_attack_factor_tt }
+				add_to_variable = { USA_army_modifier_mechanized_defence_factor = 0.05 tooltip = mechanized_defence_factor_tt }
+				add_to_variable = { USA_army_modifier_army_speed_factor = 0.05 tooltip = army_speed_factor_tt }
 			}
 			else_if = {
 				limit = {
 					has_completed_focus = USA_Mech_Primacy
 				}
-				swap_ideas = {
-					remove_idea = usa_automaton_corps_1
-					add_idea = usa_automaton_corps_2
-				}
+				custom_effect_tooltip = usa_modify_usonian_army_ns_intro
+				add_to_variable = { USA_army_modifier_army_armor_attack_factor = 0.05 tooltip = army_armor_attack_factor_tt }
+				add_to_variable = { USA_army_modifier_army_armor_defence_factor = 0.05 tooltip = army_armor_defence_factor_tt }
+				add_to_variable = { USA_army_modifier_army_armor_speed_factor = 0.05 tooltip = army_armor_speed_factor_tt }
 			}
 			add_tech_bonus = {
 				bonus = 0.25
@@ -4548,10 +4559,12 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = usa_armored_cavalry_2
-				add_idea = usa_armored_cavalry_3
-			}
+			custom_effect_tooltip = usa_modify_usonian_army_ns_intro
+			add_to_variable = { USA_army_modifier_motorized_attack_factor = 0.05 tooltip = motorized_attack_factor_tt }
+			add_to_variable = { USA_army_modifier_motorized_defence_factor = 0.05 tooltip = motorized_defence_factor_tt }
+			add_to_variable = { USA_army_modifier_mechanized_attack_factor = 0.05 tooltip = mechanized_attack_factor_tt }
+			add_to_variable = { USA_army_modifier_mechanized_defence_factor = 0.05 tooltip = mechanized_defence_factor_tt }
+			add_to_variable = { USA_army_modifier_army_speed_factor = 0.05 tooltip = army_speed_factor_tt }
 		}
 	}
 	focus = {
@@ -4612,10 +4625,10 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = usa_automaton_corps_2
-				add_idea = usa_automaton_corps_3
-			}
+			custom_effect_tooltip = usa_modify_usonian_army_ns_intro
+        	add_to_variable = { USA_army_modifier_army_armor_attack_factor = 0.05 tooltip = army_armor_attack_factor_tt }
+			add_to_variable = { USA_army_modifier_army_armor_defence_factor = 0.05 tooltip = army_armor_defence_factor_tt }
+			add_to_variable = { USA_army_modifier_army_armor_speed_factor = 0.05 tooltip = army_armor_speed_factor_tt }
 		}
 	}
 	focus = {
@@ -5278,7 +5291,10 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			army_experience = 25
+			custom_effect_tooltip = usa_modify_usonian_army_ns_intro
+        	add_to_variable = { USA_army_modifier_stability_factor = 0.025 tooltip = stability_factor_tt }
+			add_to_variable = { USA_army_modifier_war_support_factor = 0.025 tooltip = war_support_factor_tt }
+			add_to_variable = { USA_army_modifier_army_org_factor = 0.05 tooltip = army_org_factor_tt }
 		}
 	}
 	focus = {
@@ -5293,7 +5309,9 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			army_experience = 25
+			custom_effect_tooltip = usa_modify_usonian_army_ns_intro
+        	add_to_variable = { USA_army_modifier_dig_in_speed_factor = 0.05 tooltip = dig_in_speed_factor_tt }
+			add_to_variable = { USA_army_modifier_max_dig_in_factor = 0.05 tooltip = max_dig_in_factor_tt }
 		}
 	}
 	focus = {
@@ -5309,11 +5327,9 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			add_tech_bonus = {
-				bonus = 0.25
-				uses = 1
-				category = logistics_tech
-			}
+			custom_effect_tooltip = usa_modify_usonian_army_ns_intro
+        	add_to_variable = { USA_army_modifier_supply_consumption_factor = -0.05 tooltip = supply_consumption_factor_tt }
+			add_to_variable = { USA_army_modifier_army_morale_factor_factor = 0.05 tooltip = army_morale_factor_tt }
 		}
 	}
 	focus = {
@@ -5328,7 +5344,10 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			army_experience = 25
+			custom_effect_tooltip = usa_modify_usonian_army_ns_intro
+        	add_to_variable = { USA_army_modifier_army_infantry_attack_factor = 0.10 tooltip = army_infantry_attack_factor_tt }
+			add_to_variable = { USA_army_modifier_breakthrough_factor = 0.05 tooltip = breakthrough_factor_tt }
+			add_to_variable = { USA_army_modifier_army_morale_factor_factor = 0.05 tooltip = army_attack_speed_factor_tt }
 		}
 	}
 	focus = {
@@ -5343,7 +5362,8 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			army_experience = 25
+			custom_effect_tooltip = usa_modify_usonian_army_ns_intro
+        	add_to_variable = { USA_army_modifier_experience_gain_army_unit_factor = 0.10 tooltip = experience_gain_army_unit_factor_tt }
 		}
 	}
 	focus = {
@@ -5358,7 +5378,8 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			army_experience = 25
+			custom_effect_tooltip = usa_modify_usonian_army_ns_intro
+        	add_to_variable = { USA_army_modifier_land_reinforce_rate = 0.05 tooltip = land_reinforce_rate_tt }
 		}
 	}
 	focus = {
@@ -5373,7 +5394,9 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			army_experience = 25
+			custom_effect_tooltip = usa_modify_usonian_army_ns_intro
+        	add_to_variable = { USA_army_modifier_breakthrough_factor = 0.05 tooltip = breakthrough_factor_tt }
+			add_to_variable = { USA_army_modifier_army_attack_speed_factor = 0.05 tooltip = army_attack_speed_factor_tt }
 		}
 	}
 	focus = {
@@ -5388,7 +5411,11 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			army_experience = 25
+			add_tech_bonus = {
+				bonus = 0.25
+				uses = 2
+				category = exo_suits_tech
+			}
 		}
 	}
 	focus = {
@@ -5404,7 +5431,9 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			army_experience = 25
+			custom_effect_tooltip = usa_modify_usonian_army_ns_intro
+        	add_to_variable = { USA_army_modifier_mobilization_speed = 0.05 tooltip = mobilization_speed_tt }
+			add_to_variable = { USA_army_modifier_conscription = 0.003 tooltip = conscription_tt }
 		}
 	}
 	focus = {
@@ -5419,7 +5448,8 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			army_experience = 25
+			custom_effect_tooltip = usa_modify_usonian_army_ns_intro
+        	add_to_variable = { USA_army_modifier_army_defence_factor = 0.05 tooltip = army_defence_factor_tt }
 		}
 	}
 	focus = {
@@ -5434,7 +5464,8 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			army_experience = 25
+			custom_effect_tooltip = usa_modify_usonian_army_ns_intro
+        	add_to_variable = { USA_army_modifier_max_planning_factor = 0.10 tooltip = max_planning_tt }
 		}
 	}
 	focus = {
@@ -5449,7 +5480,9 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			army_experience = 25
+			custom_effect_tooltip = usa_modify_usonian_army_ns_intro
+			add_to_variable = { USA_army_modifier_mobilization_speed = 0.05 tooltip = mobilization_speed_tt }
+        	add_to_variable = { USA_army_modifier_training_time_factor = -0.05 tooltip = training_time_factor_tt }
 		}
 	}
 	focus = {
@@ -5464,7 +5497,8 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			army_experience = 25
+			custom_effect_tooltip = usa_modify_usonian_army_ns_intro
+			add_to_variable = { USA_army_modifier_army_core_defence_factor = 0.10 tooltip = army_core_defence_factor_tt }
 		}
 	}
 	focus = {
@@ -5479,7 +5513,9 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			army_experience = 25
+			custom_effect_tooltip = usa_modify_usonian_army_ns_intro
+			add_to_variable = { USA_army_modifier_army_attack_factor = 0.05 tooltip = army_attack_factor_tt }
+			add_to_variable = { USA_army_modifier_land_reinforce_rate = 0.05 tooltip = land_reinforce_rate_tt }
 		}
 	}
 	focus = {
@@ -5497,7 +5533,23 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			army_experience = 25
+			add_to_variable = { USA_army_modifier_stability_factor = 0.025 tooltip = stability_factor_tt }
+			add_to_variable = { USA_army_modifier_war_support_factor = 0.025 tooltip = war_support_factor_tt }
+			add_to_variable = { USA_army_modifier_army_org_factor = 0.05 tooltip = army_org_factor_tt }
+			if = {
+				limit = {
+					has_completed_focus = USA_Improve_Our_MREs
+				}
+				add_to_variable = { USA_army_modifier_supply_consumption_factor = -0.05 tooltip = supply_consumption_factor_tt }
+				add_to_variable = { USA_army_modifier_army_morale_factor_factor = 0.05 tooltip = army_morale_factor_tt }
+			}
+			else_if = {
+				limit = {
+					has_completed_focus = USA_Expand_Selective_Service
+				}
+				add_to_variable = { USA_army_modifier_mobilization_speed = 0.05 tooltip = mobilization_speed_tt }
+				add_to_variable = { USA_army_modifier_conscription = 0.003 tooltip = conscription_tt }
+			}
 		}
 	}
 	### NAVY TREE ###

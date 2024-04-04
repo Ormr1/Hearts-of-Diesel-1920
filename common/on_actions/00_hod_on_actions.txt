@@ -10,6 +10,10 @@ on_actions = {
 					id = usa_elections.1
 					days = 307
 				}
+				country_event = {
+					id = usa_midterms.1
+					days = 307
+				}
             }
             GER = {
                 country_event = saxony_startup.1

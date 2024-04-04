@@ -380,6 +380,8 @@ add_ideas = {
 	usa_usonian_film_industry
 }
 
+set_variable = { USA_army_modifier_experience_gain_army_factor = 0.10 }
+
 # DIPLOMACY
 set_autonomy = {
 	target = PHI
