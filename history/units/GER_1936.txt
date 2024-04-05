@@ -177,6 +177,7 @@ units = {
 		division_template = "Panzer-Division"
 		start_experience_factor = 0.3
 		force_equipment_variants = { light_tank_equipment_1 = { owner = "GER" } }
+		start_equipment_factor = 0.2
 	}
 	division= {	
 		division_name = {
@@ -451,6 +452,7 @@ units = {
 		location = 11506
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
 	}	
 	division= {	
 		division_name = {
@@ -621,6 +623,7 @@ units = {
 				name_order = 8
 		}
 		location = 11506
+		start_equipment_factor = 0.1
 		division_template = "Conscript Division"
 		start_experience_factor = 0.3
 	}
@@ -765,6 +768,26 @@ units = {
 				name_order = 22
 		}
 		location = 11366
+		division_template = "Conscript Division"
+		start_experience_factor = 0.3
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 23
+		}
+		location = 11506
+		start_equipment_factor = 0.3
+		division_template = "Conscript Division"
+		start_experience_factor = 0.3
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 24
+		}
+		location = 11506
+		start_equipment_factor = 0.15
 		division_template = "Conscript Division"
 		start_experience_factor = 0.3
 	}

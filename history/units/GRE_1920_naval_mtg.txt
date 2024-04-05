@@ -1,0 +1,347 @@
+﻿
+units= {
+	##### NAVAL UNITS #####
+	fleet = {
+		name = "Classis Graeciae"			
+		naval_base = 4109 # Athens
+		task_force = {				
+			name = "Vasilikós Stólos"				
+			location = 4109 # Athens
+			ship = { name = "CIN Georgios Averof" pride_of_the_fleet = yes definition = heavy_cruiser equipment = { ship_hull_cruiser_coastal_defense_ship = { amount = 1 owner = GRE version_name =  "Averof Class" } } }				
+			ship = { name = "CIN Elli" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = GRE version_name =  "Elli Class" } } }				
+			# Destroyer Flotilla
+			ship = { name = "CIN Aetos" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name =  "Aetos Class" } } }		
+			ship = { name = "CIN Ierax" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name =  "Aetos Class" } } }		
+			ship = { name = "CIN Leon" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name =  "Aetos Class" } } }		
+			ship = { name = "CIN Panthir" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name =  "Aetos Class" } } }		
+			ship = { name = "CIN Kountouriotis" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name =  "Hydra Class" } } }
+			ship = { name = "CIN Hydra" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name =  "Hydra Class" } } }
+			ship = { name = "CIN Psara" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name =  "Hydra Class" } } }
+			ship = { name = "CIN Spetsai" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name =  "Hydra Class" } } }
+		}					
+		task_force = {					
+			name = "Stolískou Ypovrychíon"				
+			location = 4109 # Athens
+			ship = { name = "CIN Katsonis" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GRE version_name =  "Katsonis Class" } } }		
+			ship = { name = "CIN Papanikolis" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GRE version_name =  "Katsonis Class" } } }		
+			ship = { name = "CIN Protefs" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = GRE version_name =  "Glafkos Class" } } }		
+			ship = { name = "CIN Nirefs" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = GRE version_name =  "Glafkos Class" } } }		 
+			ship = { name = "CIN Triton" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = GRE version_name =  "Glafkos Class" } } }		
+			ship = { name = "CIN Glafkos" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = GRE version_name =  "Glafkos Class" } } }		
+		}					
+	}
+	fleet = {
+		name = "Classis Italiae"			
+		naval_base = 11837 # Taranto, Italy
+		task_force = { 
+			name = "I Squadra Navale" # Dipartimento Militare Marittimo 'Ionio e Basso Adriatico' / I Squadra
+			location = 11837 # Taranto, Italy
+			# V Divisione Corazzate
+			ship = { name = "CIN Caio Duilio" pride_of_the_fleet = yes definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_1 = { amount = 1 owner = GRE version_name = "Andrea Doria Class"  } } } 
+			ship = { name = "CIN Andrea Doria" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_1 = { amount = 1 owner = GRE version_name = "Andrea Doria Class"  } } } 
+			# I Divisione Incrociatori
+			ship = { name = "CIN Zara" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = GRE version_name = "Zara Class" } } } 
+			ship = { name = "CIN Gorizia" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = GRE version_name = "Zara Class" } } } 
+			ship = { name = "CIN Fiume" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = GRE version_name = "Zara Class" } } } 
+			# IV Divisione Incrociatori
+			ship = { name = "CIN Luigi Cadorna" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = GRE version_name = "Giussano Class" } } } 
+			ship = { name = "CIN Armando Diaz" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = GRE version_name = "Giussano Class" } } } 
+			ship = { name = "CIN Alberico da Barbiano" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = GRE version_name = "Giussano Class" } } } 
+			ship = { name = "CIN Alberto da Giussano" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = GRE version_name = "Giussano Class" } } } 
+			# Gruppo Incrociatori (Obsoleti)
+			ship = { name = "CIN San Giorgio" definition = heavy_cruiser equipment = { ship_hull_cruiser_coastal_defense_ship = { amount = 1 owner = GRE version_name = "San Giorgio Class" } } } 
+			ship = { name = "CIN Taranto" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = GRE version_name = "Taranto Class" } } } 
+			ship = { name = "CIN Bari" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = GRE version_name = "Taranto Class" } } }	
+			# Gruppo Esploratori Leggeri (Obsoleti)
+			ship = { name = "CIN Carlo Mirabello" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name = "Navigatori Class" } } } 
+			ship = { name = "CIN Augusto Riboty" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name = "Navigatori Class" } } } 
+			# II Squadriglia Cacciatorpediniere
+			ship = { name = "CIN Espero" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name = "Curtatone Class" } } } 
+			ship = { name = "CIN Borea" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name = "Curtatone Class" } } } 
+			ship = { name = "CIN Zeffiro" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name = "Curtatone Class" } } } 
+			ship = { name = "CIN Ostro" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name = "Curtatone Class" } } } 
+			# VI Squadriglia Cacciatorpediniere
+			ship = { name = "CIN Bettino Ricasoli" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name = "Curtatone Class" } } } 
+			ship = { name = "CIN Giovanni Nicotera" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name = "Curtatone Class" } } } 
+			# VI Squadriglia Torpediniere
+			ship = { name = "CIN Rosolino Pilo" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name = "Curtatone Class" } } } 
+			ship = { name = "CIN Giuseppe Missori" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name = "Curtatone Class" } } } 
+			ship = { name = "CIN Francesco Stocco" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name = "Curtatone Class" } } } 
+			ship = { name = "CIN Giuseppe Sirtori" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name = "Curtatone Class" } } } 
+			# VII Squadriglia Cacciatorpediniere
+			ship = { name = "CIN Dardo" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name = "Maestrale Class" } } } 
+			ship = { name = "CIN Freccia" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name = "Maestrale Class" } } } 
+			ship = { name = "CIN Saetta" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name = "Maestrale Class" } } } 
+			ship = { name = "CIN Strale" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name = "Maestrale Class" } } } 
+			# VII Squadriglia Torpediniere
+			ship = { name = "CIN Angelo Bassini" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name = "Curtatone Class" } } } 
+			ship = { name = "CIN Enrico Cosenz" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name = "Curtatone Class" } } } 
+			ship = { name = "CIN Giacomo Medici" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name = "Curtatone Class" } } } 
+			ship = { name = "CIN Nicola Fabrizi" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name = "Curtatone Class" } } } 
+			# VIII Squadriglia Cacciatorpediniere
+			ship = { name = "CIN Baleno" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name = "Maestrale Class" } } } 
+			ship = { name = "CIN Folgore" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name = "Maestrale Class" } } } 
+			ship = { name = "CIN Fulmine" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name = "Maestrale Class" } } } 
+			ship = { name = "CIN Lampo" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name = "Maestrale Class" } } } 
+			# IX Squadriglia Cacciatorpediniere
+			ship = { name = "CIN Nicoloso da Recco" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name = "Navigatori Class" } } } 
+			ship = { name = "CIN Emanuele Pessagno" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name = "Navigatori Class" } } } 
+			ship = { name = "CIN Luca Tarigo" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name = "Navigatori Class" } } } 
+			ship = { name = "CIN Antoniotto Usodimare" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name = "Navigatori Class" } } } 
+		} 
+		task_force = { 
+			name = "IV Gruppo Sommergibili"	
+			location = 11837 # Taranto, Italy
+			# XLI Squadriglia Sommergibili
+			ship = { name = "RSmg Balilla" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GRE version_name = "Mameli Class" } } } 
+			ship = { name = "RSmg Antonio Sciesa" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GRE version_name = "Mameli Class" } } } 
+			ship = { name = "RSmg Enrico Toti" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GRE version_name = "Mameli Class" } } } 
+			ship = { name = "RSmg Domenico Millelire" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GRE version_name = "Mameli Class" } } } 
+		} 
+	}
+	
+	fleet = {
+		name = "Classis Carthaginensis"			
+		naval_base = 9994 # Carthage, Lybia
+		task_force = {				
+			name = "II Squadra Navale" # Dipartimento Militare Marittimo 'Alto Tirreno' / II Squadra
+			location = 9994 # Carthage, Lybia
+			# Comando di Squadra
+			ship = { name = "CIN Pola" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = GRE version_name = "Zara Class" } } } 
+			# II Divisione Incrociatori
+			ship = { name = "CIN Giovanni dalle Bande Nere" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = GRE version_name = "Giussano Class" } } } 
+			ship = { name = "CIN Bartolomeo Colleoni" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = GRE version_name = "Giussano Class" } } } 
+			# III Divisione Incrociatori
+			ship = { name = "CIN Bolzano" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = GRE version_name = "Bolzano Class" } } } 
+			ship = { name = "CIN Trento" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = GRE version_name = "Trento Class" } } } 
+			ship = { name = "CIN Trieste" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = GRE version_name = "Trento Class" } } } 
+			# VI Divisione Incrociatori
+			ship = { name = "CIN Emanuele Filiberto Duca d'Aosta" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = GRE version_name = "Montecuccoli Class" } } } 
+			ship = { name = "CIN Muzio Attendolo" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = GRE version_name = "Montecuccoli Class" } } } 
+			ship = { name = "CIN Raimondo Montecuccoli" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = GRE version_name = "Montecuccoli Class" } } } 
+			# X Squadriglia Cacciatorpediniere
+			ship = { name = "CIN Maestrale" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name = "Maestrale Class" } } } 
+			ship = { name = "CIN Grecale" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name = "Maestrale Class" } } } 
+			ship = { name = "CIN Libeccio" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name = "Maestrale Class" } } } 
+			ship = { name = "CIN Scirocco" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name = "Maestrale Class" } } } 
+			# XI Squadriglia Cacciatorpediniere
+			ship = { name = "CIN Antonio da Noli" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name = "Navigatori Class" } } } 
+			ship = { name = "CIN Ugolino Vivaldi" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name = "Navigatori Class" } } } 
+			ship = { name = "CIN Lanzerotto Malocello" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name = "Navigatori Class" } } } 
+			ship = { name = "CIN Leone Pancaldo" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name = "Navigatori Class" } } } 
+			# XII Squadriglia Cacciatorpediniere
+			ship = { name = "CIN Antonio Pigafetta" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name = "Navigatori Class" } } } 
+			ship = { name = "CIN Alvise da Mosto" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name = "Navigatori Class" } } } 
+			ship = { name = "CIN Giovanni da Verrazzano" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name = "Navigatori Class" } } } 
+			ship = { name = "CIN Nicolò Zeno" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name = "Navigatori Class" } } } 
+		} 
+		task_force = { 
+			name = "I Gruppo Sommergibili" 
+			location = 9994 # Carthage, Lybia
+			# XI Squadriglia Sommergibili
+			ship = { name = "RSmg Pietro Calvi" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = GRE version_name = "Calvi Class" } } } 
+			ship = { name = "RSmg Giuseppe Finzi" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = GRE version_name = "Calvi Class" } } } 
+			ship = { name = "RSmg Ettore Fieramosca" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GRE version_name = "Bandiera Class" } } } 
+			# XII Squadriglia Sommergibili
+			ship = { name = "RSmg Glauco" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GRE version_name = "Sirena Class" } } } 
+			ship = { name = "RSmg Otaria" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GRE version_name = "Sirena Class" } } } 
+			# XIII Squadriglia Sommergibili
+			ship = { name = "RSmg Rubino" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GRE version_name = "Sirena Class" } } } 
+			ship = { name = "RSmg Ondina" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GRE version_name = "Sirena Class" } } } 
+			# XIV Squadriglia Sommergibili
+			ship = { name = "RSmg H 1" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GRE version_name = "Mameli Class" } } } 
+			ship = { name = "RSmg H 2" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GRE version_name = "Mameli Class" } } } 
+			ship = { name = "RSmg H 4" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GRE version_name = "Mameli Class" } } } 
+			ship = { name = "RSmg H 6" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GRE version_name = "Mameli Class" } } } 
+			ship = { name = "RSmg H 8" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GRE version_name = "Mameli Class" } } } 
+		} 
+	}
+	
+	fleet = {
+		name = "Classis Indiarum Orientalium"			
+		naval_base = 12299 # Singapore
+		task_force = { 
+			name = "III Squadra Navale" # Dipartimento Militare Marittimo 'Basso Tirreno' (Check - III Squadra correct?)
+			location = 12299 # Singapore
+			# III Squadriglia Torpediniere
+			ship = { name = "CIN Generale Marcello Prestinari" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name = "Curtatone Class" } } } 
+			ship = { name = "CIN Generale Antonio Cantore" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name = "Curtatone Class" } } } 
+			ship = { name = "CIN Giuseppe La Masa" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name = "Curtatone Class" } } } 
+			ship = { name = "CIN Giacinto Carini" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name = "Curtatone Class" } } } 
+			# IV Squadriglia Torpediniere
+			ship = { name = "CIN Calatafimi" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name = "Curtatone Class" } } } 
+			ship = { name = "CIN Castelfidardo" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name = "Curtatone Class" } } } 
+			ship = { name = "CIN Curtatone" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name = "Curtatone Class" } } } 
+			ship = { name = "CIN Monzambano" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name = "Curtatone Class" } } } 
+		} 
+		task_force = { 
+			name = "II Gruppo Sommergibili"	
+			location = 12299 # Singapore
+			# XXI Squadriglia Sommergibili
+			ship = { name = "RSmg Jalea" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GRE version_name = "Sirena Class" } } } 
+			ship = { name = "RSmg Jantina" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GRE version_name = "Sirena Class" } } } 
+			ship = { name = "RSmg Ametista" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GRE version_name = "Sirena Class" } } } 
+			ship = { name = "RSmg Zaffiro" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GRE version_name = "Sirena Class" } } } 
+			# XXII Squadriglia Sommergibili
+			ship = { name = "RSmg Diamante" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GRE version_name = "Sirena Class" } } } 
+			ship = { name = "RSmg Topazio" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GRE version_name = "Sirena Class" } } } 
+			ship = { name = "RSmg Galatea" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GRE version_name = "Sirena Class" } } } 
+			ship = { name = "RSmg Nereide" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GRE version_name = "Sirena Class" } } } 
+		} 
+	}
+	
+	### AFCINCA ###
+	fleet = {
+		name = "Classis Libyae"			
+		naval_base = 1130 # Tobruk, Libya
+		task_force = { 
+			name = "Squadra di Libia" 
+			location = 1130 # Tobruk, Libya
+			# I Squadriglia Cacciatorpediniere
+			ship = { name = "CIN Aquilone" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name = "Curtatone Class" } } } 
+			ship = { name = "CIN Euro" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name = "Curtatone Class" } } } 
+			ship = { name = "CIN Nembo" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name = "Curtatone Class" } } } 
+			ship = { name = "CIN Turbine" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name = "Curtatone Class" } } } 
+		} 
+		task_force = { 
+			name = "V Gruppo Sommergibili" 
+			location = 1130 # Tobruk, Libya
+			# LI Squadriglia Sommergibili
+			ship = { name = "RSmg Delfino" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GRE version_name = "Bandiera Class" } } } 
+			ship = { name = "RSmg Narvalo" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GRE version_name = "Bandiera Class" } } } 
+			ship = { name = "RSmg Squalo" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GRE version_name = "Bandiera Class" } } } 
+			ship = { name = "RSmg Tricheco" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GRE version_name = "Bandiera Class" } } } 
+		} 
+	}
+} 
+
+
+
+#########################
+## STARTING PRODUCTION ##
+#########################
+instant_effect = {
+	if = { 
+		limit = { is_tutorial = no } 
+		
+		##### Ships #####
+		# BB: "CIN Conte di Cavour" (Refitted & Recommissioned: 1-Jun, 1937)
+		add_equipment_production = { 
+			equipment = { 
+				type = ship_hull_heavy_1
+				creator = "GRE" 
+				version_name = "Conte Di Cavour Class" 
+			} 
+			name = "CIN Conte di Cavour"
+			requested_factories = 2
+			progress = 0.70 
+			amount = 1 
+		} 
+
+		# BB: "CIN Giulio Cesare" (Refitted & Recommissioned: 3-Jun, 1937)
+		add_equipment_production = { 
+			equipment = { 
+				type = ship_hull_heavy_1 
+				creator = "GRE" 
+				version_name = "Conte Di Cavour Class" 
+			} 
+			name = "CIN Giulio Cesare"
+			requested_factories = 2
+			progress = 0.70 
+			amount = 1 
+		} 
+		# BB: "Littorio"
+		add_equipment_production = { 
+			equipment = { 
+				type = ship_hull_heavy_2
+				creator = "GRE" 
+				version_name = "Littorio Class" 
+			} 
+			requested_factories = 2
+			progress = 0.20 
+			amount = 1 
+		} 
+		# BB: Vittoria Veneto
+		add_equipment_production = { 
+			equipment = { 
+				type = ship_hull_heavy_2
+				creator = "GRE" 
+				version_name = "Littorio Class" 
+			} 
+			requested_factories = 2
+			progress = 0.20 
+			amount = 1 
+		} 
+
+		# CL: "CIN Eugenio di Savoia" (Commissioned: 16-Jan, 1936)
+		add_equipment_production = { 
+			equipment = { 
+				type = ship_hull_cruiser_2 
+				creator = "GRE" 
+				version_name = "Montecuccoli Class" 
+			} 
+			requested_factories = 1 
+			progress = 0.95 
+			amount = 1 
+		} 
+		# CL: "Duca degli Abruzzi"
+		add_equipment_production = { 
+			equipment = { 
+				type = ship_hull_cruiser_2 
+				creator = "GRE" 
+				version_name = "Duca degli Abruzzi Class" 
+			} 
+			requested_factories = 1 
+			progress = 0.5 
+			amount = 1 
+		} 
+		# CL: Giuseppe Garibaldi
+		add_equipment_production = { 
+			equipment = { 
+				type = ship_hull_cruiser_2 
+				creator = "GRE" 
+				version_name = "Duca degli Abruzzi Class" 
+			} 
+			requested_factories = 1 
+			progress = 0.45 
+			amount = 1 
+		} 
+
+		# DD: "CIN Perseo", "CIN Sirio"
+		add_equipment_production = { 
+			equipment = { 
+				type = ship_hull_light_1 
+				creator = "GRE" 
+				version_name = "Maestrale Class" 
+			} 
+			requested_factories = 1 
+			progress = 0.70 
+			amount = 1
+		} 
+		add_equipment_production = { 
+			equipment = { 
+				type = ship_hull_light_1 
+				creator = "GRE" 
+				version_name = "Maestrale Class" 
+			} 
+			requested_factories = 1
+			progress = 0.60 
+			amount = 1 
+		} 
+
+		# SS: "RSmg Enrico Tazzoli"
+		add_equipment_production = { 
+			equipment = { 
+				type = ship_hull_submarine_2 
+				creator = "GRE" 
+				version_name = "Calvi Class" 
+			} 
+			name = "RSmg Enrico Tazzoli"
+			requested_factories = 1 
+			progress = 0.50 
+			amount = 1 
+		} 
+	} 
+}
+
+#####################

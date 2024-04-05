@@ -270,34 +270,35 @@ country_event = {#new holland rejects demands
 	option = {#to war
 		name = australia.9.a #
 		hidden_effect = {	
-			GER={
-				set_autonomy = {
-					target = AST
-					autonomy_state = autonomy_free
-					end_wars = no
-					end_civil_wars = no
-				}
-			}
-			FRA={
-				set_autonomy = {
-					target = NAQ
-					autonomy_state = autonomy_free
-					end_wars = no
-					end_civil_wars = no
-				}
-			}
-			leave_faction = yes
+			# GER={
+				# set_autonomy = {
+					# target = AST
+					# autonomy_state = autonomy_free
+					# end_wars = no
+					# end_civil_wars = no
+				# }
+			# }
+			# FRA={
+				# set_autonomy = {
+					# target = NAQ
+					# autonomy_state = autonomy_free
+					# end_wars = no
+					# end_civil_wars = no
+				# }
+			# }
+			# leave_faction = yes
 			every_core_state={
 				add_core_of = AST
 			}
 			AST={
-				leave_faction = yes
+				# leave_faction = yes
 				every_core_state={
 					add_core_of = NAQ
 				}
 			}
 		}
 		add_war_support = 0.25
+		add_civil_war_target = AST
 		declare_war_on = {
 			target = AST
 			type = annex_everything

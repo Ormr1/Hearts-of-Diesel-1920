@@ -14,7 +14,10 @@ if = {
 	}
 	set_oob = "ITA_1936_nsb"
 }
-
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_naval_oob = "ITA_1920_naval_mtg"
+}
 starting_train_buffer = 1.5
 
 set_research_slots = 4

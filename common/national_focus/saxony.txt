@@ -37,7 +37,7 @@ focus_tree = {
 		# focus = industrial_effort
 	# }
 
-	continuous_focus_position = { x = 2400 y = 0 }
+	continuous_focus_position = { x = 2900 y = 0 }
 
 	shared_focus = GER_rally_civil_war_support
 
@@ -1189,7 +1189,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			add_war_support = 0.05
 		}
 	}
 	focus = {
@@ -1236,7 +1236,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			add_stability = 0.05
 		}
 	}
 	focus = {
@@ -1807,7 +1807,7 @@ focus_tree = {
 		icon = GFX_goal_generic_army_doctrines
 		relative_position_id = GER_a_steady_helm
 		prerequisite = { focus = GER_a_steady_helm}
-		x = -17
+		x = -18
 		y = 1
 		cost = 5
 		search_filters = {  }
@@ -1831,7 +1831,7 @@ focus_tree = {
 		prerequisite = { 
 			focus = GER_military_development
 		}
-		x = 4
+		x = 5
 		y = 1
 		cost = 5
 		search_filters = { FOCUS_FILTER_NAVAL }
@@ -2205,7 +2205,7 @@ focus_tree = {
 		prerequisite = { 
 			focus = GER_focus_on_capital
 		}
-		x = 1
+		x = -1
 		y = 1
 		cost = 5
 		search_filters = { FOCUS_FILTER_NAVAL }
@@ -2252,7 +2252,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = GER_naval_expansion_kaiser
 		}
-		x = -1
+		x = 1
 		y = 1
 		cost = 5
 		search_filters = { FOCUS_FILTER_NAVAL }
@@ -2307,14 +2307,17 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_home_of_krupp
-		icon = GFX_goal_generic_construct_naval_dockyard
+		icon = GFX_focus_GER_home_krupp
 		prerequisite = { 
 			focus = GER_naval_expansion_kaiser
 			focus = GER_naval_expansion_leipzig_hipper
 		}
+		prerequisite = { 
+			focus = GER_military_reforms
+		}
 		x = 0
-		y = 2
-		relative_position_id = GER_focus_on_capital
+		y = 5
+		relative_position_id = GER_military_development
 		cost = 10
 		ai_will_do = {
 			factor = 1
@@ -2330,9 +2333,36 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_NAVAL }
 		completion_reward = {
+			add_ideas = GER_krupp_expertise
+		}
+	}
+	focus = {
+		id = GER_experimental_hull_armor
+		icon = GFX_goal_generic_construct_naval_dockyard
+		prerequisite = { 
+			focus = GER_home_of_krupp
+		}
+		x = 2
+		y = 1
+		relative_position_id = GER_home_of_krupp
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available={
+			OR={
+				NOT={has_completed_focus = GER_cut_military_funding }
+				date > 1930.1.1
+			}
+		}
+			
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_NAVAL }
+		completion_reward = {
 			add_ideas = {GER_krupp_experimental_hull}
 		}
 	}
+
 	focus = {
 		id = GER_land_sector
 		icon = GFX_goal_generic_axis_build_infantry
@@ -2340,7 +2370,7 @@ focus_tree = {
 		prerequisite = { 
 			focus = GER_military_development
 		}
-		x = -3
+		x = -4
 		y = 1
 		cost = 5
 		search_filters = {  }
@@ -2366,10 +2396,10 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_automachine_turrets
-		icon = GFX_goal_generic_axis_build_infantry
-		relative_position_id = GER_land_sector
+		icon = GFX_goal_generic_build_tank
+		relative_position_id = GER_reichwaffenamt
 		prerequisite = { 
-			focus = GER_land_sector
+			focus = GER_reichwaffenamt
 		}
 		x = -1
 		y = 1
@@ -2396,11 +2426,35 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = GER_infantry_investments
-		icon = GFX_goal_generic_axis_build_infantry
+		id = GER_reichwaffenamt
+		icon = GFX_focus_GER_reichwaffenamt
 		relative_position_id = GER_land_sector
 		prerequisite = { 
 			focus = GER_land_sector
+		}
+		x = 0
+		y = 1
+		cost = 5
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		available={
+			OR={
+				NOT={has_completed_focus = GER_cut_military_funding }
+				date > 1930.1.1
+			}
+		}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = {GER_reichwaffenamt}
+		}
+	}
+	focus = {
+		id = GER_infantry_investments
+		icon = GFX_goal_generic_axis_build_infantry
+		relative_position_id = GER_reichwaffenamt
+		prerequisite = { 
+			focus = GER_reichwaffenamt
 		}
 		x = 1
 		y = 1
@@ -2421,6 +2475,287 @@ focus_tree = {
 				uses = 3
 				category = infantry_tech
 			}
+		}
+	}
+	focus = {
+		id = GER_antimech_weapons
+		icon = GFX_goal_generic_army_artillery2
+		relative_position_id = GER_reichwaffenamt
+		prerequisite = { 
+			focus = GER_reichwaffenamt
+		}
+		x = 3
+		y = 1
+		cost = 5
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		available={
+			OR={
+				NOT={has_completed_focus = GER_cut_military_funding }
+				date > 1930.1.1
+			}
+		}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.66
+				uses = 1
+				category = cat_anti_tank
+			}
+		}
+	}
+	focus = {
+		id = GER_motorisation
+		icon = GFX_focus_generic_truck
+		relative_position_id = GER_reichwaffenamt
+		prerequisite = { 
+			focus = GER_reichwaffenamt
+		}
+		x = -3
+		y = 1
+		cost = 5
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		available={
+			OR={
+				NOT={has_completed_focus = GER_cut_military_funding }
+				date > 1930.1.1
+			}
+		}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = motorized_equipment
+			}
+		}
+	}
+	focus = {
+		id = GER_military_reforms
+		icon = GFX_goal_generic_axis_build_infantry
+		relative_position_id = GER_reichwaffenamt
+		prerequisite = { 
+			focus = GER_motorisation
+			focus = GER_automachine_turrets
+			focus = GER_infantry_investments
+			focus = GER_antimech_weapons
+		}
+		x = 0
+		y = 2
+		cost = 5
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		available={
+			OR={
+				NOT={has_completed_focus = GER_cut_military_funding }
+				date > 1930.1.1
+			}
+			count_triggers = {
+				amount = 4
+				has_completed_focus = GER_motorisation
+				has_completed_focus = GER_automachine_turrets
+				has_completed_focus = GER_infantry_investments
+				has_completed_focus = GER_antimech_weapons
+				date > 1930.1.1
+				date > 1932.1.1
+				date > 1934.1.1
+			}
+		}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			swap_ideas = {
+				add_idea = GER_reichwaffenamt_2
+				remove_idea = GER_reichwaffenamt
+			}
+		}
+	}
+	focus = {
+		id = GER_taking_insperation_from_freikorps
+		icon = GFX_goal_generic_axis_build_infantry
+		relative_position_id = GER_military_reforms
+		prerequisite = { 
+			focus = GER_military_reforms
+		}
+		x = -4
+		y = 1
+		cost = 5
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		available={
+			OR={
+				NOT={has_completed_focus = GER_cut_military_funding }
+				date > 1930.1.1
+			}
+		}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			swap_ideas = {
+				add_idea = GER_reichwaffenamt_3
+				remove_idea = GER_reichwaffenamt_2
+			}
+		}
+	}
+	focus = {
+		id = GER_mobile_warfare
+		icon = GFX_goal_generic_axis_build_infantry
+		relative_position_id = GER_taking_insperation_from_freikorps
+		prerequisite = { 
+			focus = GER_taking_insperation_from_freikorps
+		}
+		x = 0
+		y = 1
+		cost = 5
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		available={
+			OR={
+				NOT={has_completed_focus = GER_cut_military_funding }
+				date > 1930.1.1
+			}
+		}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.33
+				uses = 2
+				category = cat_mobile_warfare
+			}
+		}
+	}
+	focus = {
+		id = GER_improving_exosuits
+		icon = GFX_goal_generic_axis_build_infantry
+		relative_position_id = GER_military_reforms
+		prerequisite = { 
+			focus = GER_military_reforms
+		}
+		x = -2
+		y = 1
+		cost = 5
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		available={
+			OR={
+				NOT={has_completed_focus = GER_cut_military_funding }
+				date > 1930.1.1
+			}
+		}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = exo_suits_tech
+			}
+		}
+	}
+	focus = {
+		id = GER_new_service_rifle
+		icon = GFX_goal_generic_small_arms
+		relative_position_id = GER_military_reforms
+		prerequisite = { 
+			focus = GER_military_reforms
+		}
+		x = 0
+		y = 1
+		cost = 5
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		available={
+			OR={
+				NOT={has_completed_focus = GER_cut_military_funding }
+				date > 1930.1.1
+			}
+		}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			if={
+				limit={
+					NOT={has_tech = infantry_weapons1}
+				}
+				set_technology = {
+					infantry_weapons1 = 1
+				}
+			}
+		}
+	}
+	focus = {
+		id = GER_ENIGMA_program
+		icon = GFX_focus_GER_enigma_machine
+		relative_position_id = GER_military_reforms
+		prerequisite = { 
+			focus = GER_military_reforms
+		}
+		x = 2
+		y = 1
+		cost = 5
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		available={
+			OR={
+				NOT={has_completed_focus = GER_cut_military_funding }
+				date > 1930.1.1
+			}
+		}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = GER_enigma_machine
+		}
+	}
+	focus = {
+		id = GER_krupp_mech_armor
+		icon = GFX_goal_generic_axis_build_infantry
+		relative_position_id = GER_home_of_krupp
+		prerequisite = { 
+			focus = GER_home_of_krupp
+		}
+		x = -2
+		y = 1
+		cost = 5
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		available={
+			OR={
+				NOT={has_completed_focus = GER_cut_military_funding }
+				date > 1930.1.1
+			}
+		}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = GER_self_propelled_artillery
+		icon = GFX_focus_generic_self_propelled_gun
+		relative_position_id = GER_home_of_krupp
+		prerequisite = { 
+			focus = GER_home_of_krupp
+		}
+		x = 0
+		y = 1
+		cost = 5
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		available={
+			OR={
+				NOT={has_completed_focus = GER_cut_military_funding }
+				date > 1930.1.1
+			}
+		}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = GER_krupp_spa
 		}
 	}
 	focus = {
@@ -2643,7 +2978,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_expand_bohemian_industry
-		icon = GFX_goal_generic_construct_civ_factory
+		icon = GFX_focus_GER_bohemian_industry
 		prerequisite = { focus = GER_economic_research_investments }
 		relative_position_id = GER_economic_research_investments
 		x = 0

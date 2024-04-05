@@ -192,6 +192,7 @@ units = {
 		location = 11506
 		division_template = "Converted Automachines"
 		start_experience_factor = 0.3
+		start_equipment_factor = 0.2
 		force_equipment_variants = { light_tank_chassis_1 = { owner = "GER" version_name = "Panzer I Ausf. A" } }
 	}
 	division= {	
@@ -479,6 +480,7 @@ units = {
 		location = 11506
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
 	}	
 	division= {	
 		division_name = {
@@ -649,6 +651,7 @@ units = {
 		}
 		location = 11506
 		division_template = "Conscript Division"
+		start_equipment_factor = 0.1
 		start_experience_factor = 0.3
 	}
 	division= {	
@@ -1098,6 +1101,26 @@ units = {
 				name_order = 57
 		}
 		location = 3380
+		division_template = "Conscript Division"
+		start_experience_factor = 0.3
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 58
+		}
+		location = 11506
+		division_template = "Conscript Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.3
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 59
+		}
+		location = 11506
+		start_equipment_factor = 0.15
 		division_template = "Conscript Division"
 		start_experience_factor = 0.3
 	}

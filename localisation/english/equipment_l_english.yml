@@ -3962,3 +3962,11 @@
  auto_cannons_2: "Auto Cannon II"
  auto_cannons_3: "Auto Cannon III"
  auto_cannons_4: "Auto Cannon IV"
+ 
+ EQUIPMENT_DESCRIPTION: "$NAME$"
+ 
+ modifier_army_sub_unit_light_sp_artillery_brigade_attack_factor: "Light SP Artillery Division Attack"
+ modifier_army_sub_unit_medium_sp_artillery_brigade_attack_factor: "Medium SP Artillery Division Attack"
+ modifier_army_sub_unit_heavy_sp_artillery_brigade_attack_factor: "Heavy SP Artillery Division Attack"
+ modifier_army_sub_unit_super_heavy_sp_artillery_brigade_attack_factor: "Super Heavy SP Artillery Division Attack"
+ modifier_army_sub_unit_modern_sp_artillery_brigade_attack_factor: "Modern SP Artillery Division Attack"

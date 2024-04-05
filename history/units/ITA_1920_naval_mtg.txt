@@ -1,0 +1,79 @@
+﻿
+units= {
+	##### NAVAL UNITS #####
+	### ITALY ###
+	fleet = {
+		name = "Comando Navale Sardegna"			
+		naval_base = 6891 # La Maddalena, Sardinia
+		task_force = { 
+			name = "Squadra di Sardegna" # Comando Militare Marittimo 'Sardegna' (Check, here and below - 'Squadra' correct/close enough?)
+			location = 6891 # La Maddalena, Sardinia
+			# II Squadriglia Torpediniere
+			ship = { name = "CIN Generale Achille Papa" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name = "Curtatone Class" } } } 
+			ship = { name = "CIN Generale Carlo Montanari" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name = "Curtatone Class" } } } 
+			ship = { name = "CIN Generale Antonino Cascino" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name = "Curtatone Class" } } } 
+			ship = { name = "CIN Generale Antonio Chinotto" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name = "Curtatone Class" } } } 
+			# IX Squadriglia Torpediniere
+			ship = { name = "CIN Antonio Mosto" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name = "Curtatone Class" } } } 
+			ship = { name = "CIN Ippolito Nievo" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name = "Curtatone Class" } } } 
+			ship = { name = "CIN Fratelli Cairoli" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name = "Curtatone Class" } } }
+			# Aquila-Class DDs (Esploratori Leggeri) (Transferred to Spain in 1937)
+			ship = { name = "CIN Aquila" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name = "Aquila Class" } } } 
+			ship = { name = "CIN Falco" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name = "Aquila Class" } } } 
+		} 
+		task_force = { 
+			name = "VII Gruppo Sommergibili" 
+			location = 6891 # La Maddalena, Sardinia
+			# LXXI Squadriglia Sommergibili
+			ship = { name = "RSmg Medusa" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GRE version_name = "Sirena Class" } } } 
+			ship = { name = "RSmg Anfitrite" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GRE version_name = "Sirena Class" } } } 
+		} 
+
+	}
+	
+	fleet = {
+		name = "Comando Navale Sicilia"			
+		naval_base = 4159 # Messina, Sicily
+		task_force = { 
+			name = "Squadra di Sicilia" # Comando Militare Marittimo 'Sicilia'
+			location = 4159 # Messina, Sicily
+			# I Squadriglia Torpediniere
+			ship = { name = "CIN Palestro" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name = "Curtatone Class" } } } 
+			ship = { name = "CIN Confienza" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name = "Curtatone Class" } } } 
+			ship = { name = "CIN San Martino" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name = "Curtatone Class" } } } 
+			ship = { name = "CIN Solferino" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name = "Curtatone Class" } } } 
+			# V Squadriglia Torpediniere
+			ship = { name = "CIN Giuseppe La Farina" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name = "Curtatone Class" } } } 
+			ship = { name = "CIN Simone Schiaffino" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name = "Curtatone Class" } } } 
+			ship = { name = "CIN Giuseppe Dezza" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name = "Curtatone Class" } } } 
+			ship = { name = "CIN Giuseppe Cesare Abba" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name = "Curtatone Class" } } } 
+		} 
+		task_force = { 
+			name = "III Gruppo Sommergibili" 
+			location = 4159 # Messina, Sicily
+			# XXXI Squadriglia Sommergibili
+			ship = { name = "RSmg Vettor Pisani" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GRE version_name = "Mameli Class" } } } 
+			ship = { name = "RSmg Giovanni Bausan" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GRE version_name = "Mameli Class" } } } 
+			ship = { name = "RSmg Marcantonio Colonna" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GRE version_name = "Mameli Class" } } } 
+			ship = { name = "RSmg Des Geneys" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GRE version_name = "Mameli Class" } } } 
+			# XXXII Squadriglia Sommergibili
+			ship = { name = "RSmg Fratelli Bandiera" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GRE version_name = "Bandiera Class" } } } 
+			ship = { name = "RSmg Luciano Manara" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GRE version_name = "Bandiera Class" } } } 
+			ship = { name = "RSmg Ciro Menotti" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GRE version_name = "Bandiera Class" } } } 
+			ship = { name = "RSmg Santorre Santarosa" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GRE version_name = "Bandiera Class" } } } 
+			# XXXIII Squadriglia Sommergibili
+			ship = { name = "RSmg Goffredo Mameli" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GRE version_name = "Mameli Class" } } } 
+			ship = { name = "RSmg Pier Capponi" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GRE version_name = "Mameli Class" } } } 
+			ship = { name = "RSmg Tito Speri" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GRE version_name = "Mameli Class" } } } 
+			ship = { name = "RSmg Giovanni da Procida" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GRE version_name = "Mameli Class" } } } 
+		} 
+	}
+} 
+
+
+
+#########################
+## STARTING PRODUCTION ##
+#########################
+
+#####################

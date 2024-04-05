@@ -387,4 +387,9 @@
  STAT_RAILWAY_GUN_ATTACK_RANGE_DESC:1 "The maximum distance at which the unit can provide bombardment support."
  STAT_RAILWAY_GUN_ATTACK_RANGE_VALUE:1 "$VALUE|H0$ km"
  STAT_RAILWAY_GUN_ATTACK_RANGE_DIFF:1 " $VALUE|=+0$ km"
+ 
+ STAT_NAVY_WEATHER_PENALTY: "Weather Penalty: "
+ STAT_NAVY_WEATHER_PENALTY_VALUE: "$VALUE|H0%$"
+ STAT_NAVY_WEATHER_PENALTY_DIFF: "$VALUE|H0%$"
+ STAT_NAVY_WEATHER_PENALTY_DESC: "How much this ship reduces the effect of weather based modifiers."
 

@@ -6545,5 +6545,9 @@ spriteTypes = {
 		name = "GFX_idea_GER_saxon_expebitionkorps"
 		texturefile = "gfx/interface/ideas/GER/saxon_expebitionkorps.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_GER_reichwaffenamt"
+		texturefile = "gfx/interface/ideas/GER/reichwaffenamt.dds"
+	}
 	
 }

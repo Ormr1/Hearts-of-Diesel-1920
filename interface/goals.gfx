@@ -5616,6 +5616,10 @@ spriteTypes = {
 		name = "GFX_focus_GER_presence_verdun"
 		texturefile = "gfx/interface/goals/SAXONY/focus_GER_presence_verdun.dds"
 	}
+	SpriteType = {
+		name = "GFX_focus_GER_bohemian_industry"
+		texturefile = "gfx/interface/goals/SAXONY/focus_GER_bohemian_industry.dds"
+	}
 	
 	
 	SpriteType = {
@@ -5997,6 +6001,18 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/SAXONY/focus_GER_roaring_twenties.dds"
 	}
 	SpriteType = {
+		name = "GFX_focus_GER_home_krupp"
+		texturefile = "gfx/interface/goals/SAXONY/focus_GER_home_krupp.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_GER_enigma_machine"
+		texturefile = "gfx/interface/goals/SAXONY/focus_GER_enigma_machine.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_GER_reichwaffenamt"
+		texturefile = "gfx/interface/goals/SAXONY/focus_GER_reichwaffenamt.dds"
+	}
+	SpriteType = {
 		name = "GFX_focus_hispanian_repayments"
 		texturefile = "gfx/interface/goals/SAXONY/focus_hispanian_repayments.png"
 	}
@@ -6011,6 +6027,10 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_focus_genric_burning_flag_yellow"
 		texturefile = "gfx/interface/goals/focus_genric_burning_flag_yellow.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_generic_cruiser_submarines"
+		texturefile = "gfx/interface/goals/focus_generic_cruiser_submarines.dds"
 	}
 
 }
