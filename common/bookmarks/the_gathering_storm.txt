@@ -16,9 +16,9 @@ bookmarks = {
 				undisturbed_isolation
 			}
 			focuses = {
-				USA_war_plan_black
-				USA_limited_intervention
-				USA_reestablish_the_gold_standard
+				USA_The_Washington_Conference
+				USA_Operation_Eagle
+				USA_1920_Elections
 			}
 		}
 		"SCO"={

@@ -1771,6 +1771,11 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_idea_USA_usonian_pluralism"
+		texturefile = "gfx/interface/ideas/USA/idea_USA_usonian_pluralism.png"
+	}
+
+	spriteType = {
 		name = "GFX_idea_usa_hamiltonian_economics"
 		texturefile = "gfx/interface/ideas/USA/idea_usa_hamiltonian_economics.png"
 	}

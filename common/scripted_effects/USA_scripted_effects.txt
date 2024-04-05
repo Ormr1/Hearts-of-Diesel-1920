@@ -209,7 +209,7 @@ USA_increase_federalist_popularity = {
 	subtract_from_variable = { drp_popularity_democratic = fp_pop_to_increase }
 	set_variable = { fp_popularity_national = party_popularity@democratic }
 	multiply_variable = { fp_popularity_national = fp_popularity_democratic }
-	set_variable = { rp_popularity_national = party_popularity@democratic }
+	set_variable = { drp_popularity_national = party_popularity@democratic }
 	multiply_variable = { drp_popularity_national = drp_popularity_democratic }
 }
 
@@ -218,6 +218,10 @@ USA_increase_dem_rep_popularity = {
 	custom_effect_tooltip = USA_increase_federalist_popularity_tt
 	add_to_variable = { drp_popularity_democratic = drp_pop_to_increase }
 	subtract_from_variable = { fp_popularity_democratic = drp_pop_to_increase }
+	set_variable = { drp_popularity_national = party_popularity@democratic }
+	multiply_variable = { drp_popularity_national = drp_popularity_democratic }
+	set_variable = { fp_popularity_national = party_popularity@democratic }
+	multiply_variable = { fp_popularity_national = fp_popularity_democratic }
 }
 
 USA_increase_bill_support_house_small = { # 5%

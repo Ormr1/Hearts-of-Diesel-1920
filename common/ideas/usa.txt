@@ -2,7 +2,7 @@ ideas = {
 
 	country = {
 		usa_usonian_pluralism = {
-			picture = placeholder
+			picture = USA_usonian_pluralism
 			allowed = {
 				always = no
 			}

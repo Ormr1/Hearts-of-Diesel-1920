@@ -80,10 +80,10 @@ set_variable = { pp_house_seats = 13 }
 set_variable = { nfp_house_seats = 4 }
 set_variable = { i_house_seats = 13 }
 set_variable = { max_house_seats = 435 }
-set_variable = { fp_popularity_democratic = 0.50 }
-set_variable = { drp_popularity_democratic = 0.50 }
-set_variable = { fp_popularity_national = 0.365 }
-set_variable = { drp_popularity_national = 0.365 }
+set_variable = { fp_popularity_democratic = 0.579 }
+set_variable = { drp_popularity_democratic = 0.421 }
+set_variable = { fp_popularity_national = 0.423 }
+set_variable = { drp_popularity_national = 0.307 }
 set_variable = { usa_house_bill_support = 0 }
 set_variable = { usa_house_majority = 218 }
 set_variable = { usa_senate_bill_support = 0 }
