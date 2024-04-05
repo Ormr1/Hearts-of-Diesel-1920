@@ -272,6 +272,6 @@
  FEN_FAC_covert_backing_from_SOV_agents: "Covert Backing from [SOV.GetName] Agents"
  FEN_FAC_covert_backing_from_GER_agents: "Covert Backing from [GER.GetName] Agents"
  FEN_sabotage_fac_fort: "+1 more §YFort Levels§! in the §CFactory§! will be Damaged at the beginning of the Strike."
- FEN_FAC_commited_fort_sab_4_tt: "Sabotaged §Y4§! Fort Levels"
- FEN_strength_FAC_20_tt: "§Y20§! Strength commited to the §YOperation§!"
+ FEN_FAC_commited_fort_sab_4_tt: "Sabotaged [?FEN_FAC_commited_fort_sab]/§Y4§! Fort Levels"
+ FEN_strength_FAC_20_tt: "[?FEN_strength_commited_fac_var]/§Y20§! Strength commited to the §YOperation§!"
  FEN_strength_FAC_div_tt: "§Y1§! Division Assigned to the §YOperation§!"

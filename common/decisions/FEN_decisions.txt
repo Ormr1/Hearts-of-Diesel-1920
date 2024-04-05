@@ -632,7 +632,7 @@ FEN_fenris_operations_FAC={
 			#20 strength
 			custom_trigger_tooltip = {
 				tooltip = FEN_strength_FAC_20_tt
-				check_variable = {FEN_strength_FAC_increase_temp > 19}
+				check_variable = {FEN_strength_commited_fac_var > 19}
 			}
 			#At least 1 div
 			custom_trigger_tooltip = {
@@ -668,7 +668,7 @@ FEN_fenris_operations_FAC={
 			country_event = {id= fenris.22}
 		}
 		ai_will_do = {
-			base = 100
+			base = 200
 		}
 	}
 	FEN_FAC_advance_to_stage_2 = {

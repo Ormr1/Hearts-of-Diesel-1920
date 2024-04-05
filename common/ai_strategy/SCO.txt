@@ -18,3 +18,23 @@ SCO_aid_napoleon = {
 		value = 500
 	}
 }
+SCO_aid_kingdom_frank = {
+	allowed = {
+		tag = SCO
+	}
+	enable = {
+		FRA = {
+			has_civil_war = yes
+            OR = {
+                has_government = monarchy
+                has_government = neutrality
+            }
+		}
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "FRA"
+		value = 500
+	}
+}

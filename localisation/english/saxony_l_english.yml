@@ -260,6 +260,10 @@
  GER_new_service_rifle: "New Service Rifle"
  GER_ENIGMA_program: "ENIGMA Program"
  GER_experimental_hull_armor: "Experimental Hull Armor"
+ GER_self_propelled_artillery: "Self Propelled Artillery"
+ GER_improving_exosuits: "Improving the Exosuits"
+ GER_taking_insperation_from_freikorps: "Taking Inspiration from the Freikorps"
+ GER_mobile_warfare: "Mobile Warfare"
  
  GER_expand_bauxite_suriname: "Expand Bauxite production in Suriname"
  suriname_aluminium_developed: "Developed Aluminium Production"

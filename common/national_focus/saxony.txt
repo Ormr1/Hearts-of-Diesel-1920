@@ -209,7 +209,17 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_stability = 0.1
+			add_stability = 0.05
+			if={
+				limit={
+					NOT={
+						has_idea = disarmed_nation
+					}
+				}
+				add_ideas = {
+					disarmed_nation
+				}
+			}
 		}
 		ai_will_do={
 			factor = 10
@@ -1159,6 +1169,9 @@ focus_tree = {
 
 		completion_reward = {
 			add_political_power = 200
+		}
+		ai_will_do = {
+			factor = 50
 		}
 	}
 	focus = {

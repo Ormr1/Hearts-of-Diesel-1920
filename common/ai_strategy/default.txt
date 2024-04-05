@@ -89,7 +89,7 @@ default_unit_production = {
 	ai_strategy = {
 		type = unit_ratio
 		id = capital_ship
-		value = 20
+		value = 10
 	}
 
 	ai_strategy = {
@@ -101,7 +101,7 @@ default_unit_production = {
 	ai_strategy = {
 		type = unit_ratio
 		id = screen_ship
-		value = 30
+		value = 40
 	}
 
 	ai_strategy = {
@@ -592,6 +592,15 @@ build_patrol_bombers = {
 default_garrison_production = {
 	enable = {
 		ai_wants_divisions >  12 #Massively decreasing the amount of paratroopers the AI wants
+		NOT = {
+			original_tag = GER
+			original_tag = SOV
+			original_tag = USA
+			original_tag = CHI
+			original_tag = FRA
+			original_tag = JAP
+			original_tag = ENG
+		}
 		is_major = yes
 	}
 	abort = {
@@ -1380,7 +1389,7 @@ minors_dont_spy = {
 default_produce_some_trucks_for_buffer = {
 	enable = {
 		num_of_military_factories > 12
-		has_tech = tech_trucks
+		has_tech = motorised_infantry
 		has_equipment = { motorized_equipment < 3000 }
 	}
 	abort_when_not_enabled = yes

@@ -35,7 +35,7 @@ GER_aid_rhodesia = {
 	ai_strategy = {
 		type = send_volunteers_desire
 		id = "RHO"
-		value = 500
+		value = 50
 	}
 }
 GER_aid_bulgaria = {
