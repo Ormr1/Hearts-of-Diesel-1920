@@ -1,0 +1,6 @@
+UNITED_STATES_in_faction = {
+	OR = {
+		tag = USA
+		is_in_faction_with = USA
+	}
+}

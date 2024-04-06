@@ -6,12 +6,12 @@ local_economic_boom = {
 
 usea_idea = {
 	icon = placeholder
-	political_power_factor = USA.usea_pp_factor
-	consumer_goods_factor = USA.usea_cg_factor
-	production_speed_industrial_complex_factor = USA.usea_ic_factor
-	production_speed_arms_factory_factor = USA.usea_af_factor
-	local_resources_factor = USA.usea_lr_factor
-	research_speed_factor = USA.usea_research_factor
+	political_power_factor = usea_idea_political_power_factor
+	consumer_goods_factor = usea_idea_consumer_goods_factor
+	production_speed_industrial_complex_factor = usea_idea_production_speed_industrial_complex_factor
+	production_speed_arms_factory_factor = usea_idea_production_speed_arms_factory_factor
+	local_resources_factor = usea_idea_local_resources_factor
+	research_speed_factor = usea_idea_research_speed_factor
 }
 
 us_peacekeeper_mission_1 = {
@@ -242,5 +242,6 @@ USA_air_modifier = { # Usonian Mobile Air Corps / Air Force
 	air_superiority_detect_factor = USA_air_modifier_air_superiority_detect_factor
 	air_interception_detect_factor = USA_air_modifier_air_interception_detect_factor
 	air_weather_penalty = USA_air_modifier_air_weather_penalty
+	air_power_projection_factor = USA_air_modifier_air_power_projection_factor
 	air_close_air_support_org_damage_factor = USA_army_modifier_air_close_air_support_org_damage_factor
 }

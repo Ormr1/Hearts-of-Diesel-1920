@@ -1,0 +1,20 @@
+ideas = {
+	country = {
+		united_states_democratic_reforms = {
+			picture = USA_usonian_pluralism
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = 0
+
+			modifier = {
+				democratic_drift = 0.01
+			}
+		}
+	}
+}

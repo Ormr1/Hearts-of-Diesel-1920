@@ -12,8 +12,18 @@ shared_focus = {
 	id = UNITED_STATES_first_congress_joint
 	icon = placeholder
 	cost = 5
-	x = -6
+	text_icon = NORDIC_focus_style
+	x = -10
 	y = 0
+
+	#USONIA
+	offset = {
+		x = 52
+		y = 4
+		trigger = {
+			has_focus_tree = usonia_focus
+		}
+	}
 	
 	allow_branch = {
 		OR = {
@@ -30,5 +40,958 @@ shared_focus = {
 
 	completion_reward = {
 		add_political_power = 75
+	}
+}
+joint_focus = {
+	id = UNITED_STATES_draft_the_charter
+	icon = placeholder
+	prerequisite = { focus = UNITED_STATES_first_congress_joint }
+	relative_position_id = UNITED_STATES_first_congress_joint
+	cost = 5
+	text_icon = NORDIC_focus_style
+	x = 0
+	y = 1
+
+	available = {
+		UNITED_STATES_in_faction = yes
+	}
+	joint_trigger = {
+		UNITED_STATES_in_faction = yes
+	}
+
+	completion_reward = {
+		add_political_power = 75
+	}
+}
+joint_focus = {
+	id = UNITED_STATES_commitment_to_democracy
+	icon = placeholder
+	prerequisite = { focus = UNITED_STATES_draft_the_charter }
+	relative_position_id = UNITED_STATES_draft_the_charter
+	cost = 5
+	text_icon = NORDIC_focus_style
+	x = -8
+	y = 1
+
+	available = {
+		UNITED_STATES_in_faction = yes
+		has_country_flag = UNITED_STATES_commitment_to_democracy_flag
+	}
+	joint_trigger = {
+		UNITED_STATES_in_faction = yes
+	}
+
+	completion_reward = {
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.05
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_government = democratic
+				}
+			}
+			add_ideas = united_states_democratic_reforms
+		}
+	}
+}
+joint_focus = {
+	id = USA_The_United_States_Economic_Association
+	icon = GFX_focus_usa_united_states_economic_association
+	prerequisite = { focus = UNITED_STATES_draft_the_charter }
+	relative_position_id = UNITED_STATES_draft_the_charter
+	x = -3
+	y = 1
+	cost = 10
+	text_icon = NORDIC_focus_style
+	available = {
+		UNITED_STATES_in_faction = yes
+	}
+	joint_trigger = {
+		UNITED_STATES_in_faction = yes
+	}
+	completion_reward = {
+		custom_effect_tooltip = USA_The_United_States_Economic_Association_tt
+		hidden_effect = {
+			add_dynamic_modifier = {
+				modifier = usea_idea
+			}
+			set_country_flag = joined_usea
+			USA = {
+				add_to_variable = {
+					var = usea_member_count
+					value = 1
+				}
+			}
+		}
+		custom_effect_tooltip = usa_modify_usea_ns_intro
+		add_to_variable = { usea_idea_political_power_factor = -0.05 tooltip = political_power_factor_tt }
+		add_to_variable = { usea_idea_consumer_goods_factor = -0.05 tooltip = consumer_goods_factor_tt }
+	}
+}
+joint_focus = {
+	id = USA_Resource_Trade_Amendment
+	icon = GFX_goal_generic_construction
+	relative_position_id = USA_The_United_States_Economic_Association
+	prerequisite = { focus = USA_The_United_States_Economic_Association }
+	x = -3
+	y = 1
+	cost = 5
+	available = {
+		UNITED_STATES_in_faction = yes
+	}
+	joint_trigger = {
+		UNITED_STATES_in_faction = yes
+	}
+	select_effect = {
+		set_variable = {
+			var = usea_resource_exchange_votes
+			value = 1
+		}
+		every_other_country = {
+			limit = {
+				is_in_faction_with = USA
+				has_country_flag = joined_usea
+			}
+			country_event = usa_usea.1
+		}
+	}
+	completion_reward = {
+		set_temp_variable = {
+			var = usea_votes_needed
+			value = 1
+		}
+		USA = {
+			add_to_temp_variable = {
+				var = usea_votes_needed
+				value = 1
+			}
+		}
+		USA = {
+			divide_temp_variable = {
+				var = usea_votes_needed
+				value = 2
+			}
+		}
+		USA = {
+			round_temp_variable = usea_votes_needed
+		}
+		custom_effect_tooltip = USEA_Amendment_tt
+		custom_effect_tooltip = usa_modify_usea_ns_intro
+		effect_tooltip = {
+			add_to_variable = { usea_idea_political_power_factor = -0.05 tooltip = political_power_factor_tt }
+			add_to_variable = { usea_idea_local_resources_factor = 0.15 tooltip = local_resources_factor_tt }
+		}
+		hidden_effect = {
+			USA = {
+				if = {
+					limit = {
+						check_variable = {
+							var = usea_resource_exchange_votes
+							value = usea_votes_needed
+							compare = greater_than_or_equals
+						}
+					}
+					country_event = usa_usea.4
+				}
+				else = {
+					country_event = usa_usea.5
+				}
+			}
+		}
+	}
+}
+joint_focus = {
+	id = USA_Civilian_Contractor_Agreement
+	icon = GFX_goal_generic_construct_civ_factory
+	relative_position_id = USA_The_United_States_Economic_Association
+	prerequisite = { focus = USA_The_United_States_Economic_Association }
+	x = -1
+	y = 1
+	cost = 5
+	text_icon = NORDIC_focus_style
+	available = {
+		UNITED_STATES_in_faction = yes
+	}
+	joint_trigger = {
+		UNITED_STATES_in_faction = yes
+	}
+	select_effect = {
+		set_variable = {
+			var = usea_civilian_contractor_votes
+			value = 1
+		}
+		every_other_country = {
+			limit = {
+				is_in_faction_with = USA
+				has_country_flag = joined_usea
+			}
+			country_event = usa_usea.6
+		}
+	}
+	completion_reward = {
+		set_temp_variable = {
+			var = usea_votes_needed
+			value = 1
+		}
+		USA = {
+			add_to_temp_variable = {
+				var = usea_votes_needed
+				value = 1
+			}
+		}
+		USA = {
+			divide_temp_variable = {
+				var = usea_votes_needed
+				value = 2
+			}
+		}
+		round_temp_variable = usea_votes_needed
+		custom_effect_tooltip = USEA_Amendment_tt
+		custom_effect_tooltip = usa_modify_usea_ns_intro
+		effect_tooltip = {
+			add_to_variable = { usea_idea_political_power_factor = -0.05 tooltip = political_power_factor_tt }
+			add_to_variable = { usea_idea_local_resources_factor = 0.15 tooltip = local_resources_factor_tt }
+		}
+		hidden_effect = {
+			USA = {
+				if = {
+					limit = {
+						check_variable = {
+							var = usea_civilian_contractor_votes
+							value = usea_votes_needed
+							compare = greater_than_or_equals
+						}
+					}
+					country_event = usa_usea.9
+				}
+				else = {
+					country_event = usa_usea.10
+				}
+			}
+		}
+	}
+}
+joint_focus = {
+	id = USA_Military_Industry_Amendment
+	icon = GFX_goal_generic_construct_mil_factory
+	relative_position_id = USA_The_United_States_Economic_Association
+	prerequisite = { focus = USA_The_United_States_Economic_Association }
+	x = 1
+	y = 1
+	cost = 5
+	text_icon = NORDIC_focus_style
+	available = {
+		UNITED_STATES_in_faction = yes
+	}
+	joint_trigger = {
+		UNITED_STATES_in_faction = yes
+	}
+	select_effect = {
+		set_variable = {
+			var = usea_military_industry_votes
+			value = 1
+		}
+		every_other_country = {
+			limit = {
+				is_in_faction_with = USA
+				has_country_flag = joined_usea
+			}
+			country_event = usa_usea.16
+		}
+	}
+	completion_reward = {
+		set_temp_variable = {
+			var = usea_votes_needed
+			value = 1
+		}
+		USA = {
+			add_to_temp_variable = {
+				var = usea_votes_needed
+				value = 1
+			}
+		}
+		USA = {
+			divide_temp_variable = {
+				var = usea_votes_needed
+				value = 2
+			}
+		}
+		round_temp_variable = usea_votes_needed
+		custom_effect_tooltip = USEA_Amendment_tt
+		custom_effect_tooltip = usa_modify_usea_ns_intro
+		effect_tooltip = {
+			add_to_variable = { usea_idea_political_power_factor = -0.05 tooltip = political_power_factor_tt }
+			add_to_variable = { usea_idea_production_speed_arms_factory_factor = 0.10 tooltip = production_speed_industrial_complex_factor_tt }
+		}
+		hidden_effect = {
+			USA = {
+				if = {
+					limit = {
+						check_variable = {
+							var = usea_military_industry_votes
+							value = usea_votes_needed
+							compare = greater_than_or_equals
+						}
+					}
+					country_event = usa_usea.14
+				}
+				else = {
+					country_event = usa_usea.15
+				}
+			}
+		}
+	}
+}
+joint_focus = {
+	id = USA_Unified_Currency_Amendment
+	icon = GFX_goal_generic_intelligence_exchange
+	relative_position_id = USA_The_United_States_Economic_Association
+	prerequisite = { focus = USA_The_United_States_Economic_Association }
+	x = 3
+	y = 1
+	cost = 5
+	text_icon = NORDIC_focus_style
+	available = {
+		UNITED_STATES_in_faction = yes
+	}
+	joint_trigger = {
+		UNITED_STATES_in_faction = yes
+	}
+	select_effect = {
+		set_variable = {
+			var = usea_unified_currency_votes
+			value = 1
+		}
+		every_other_country = {
+			limit = {
+				is_in_faction_with = USA
+				has_country_flag = joined_usea
+			}
+			country_event = usa_usea.16
+		}
+	}
+	completion_reward = {
+		set_temp_variable = {
+			var = usea_votes_needed
+			value = 1
+		}
+		USA = {
+			add_to_temp_variable = {
+				var = usea_votes_needed
+				value = 1
+			}
+		}
+		USA = {
+			divide_temp_variable = {
+				var = usea_votes_needed
+				value = 2
+			}
+		}
+		round_temp_variable = usea_votes_needed
+		custom_effect_tooltip = USEA_Amendment_tt
+		custom_effect_tooltip = usa_modify_usea_ns_intro
+		effect_tooltip = {
+			add_to_variable = { usea_idea_political_power_factor = -0.05 tooltip = political_power_factor_tt }
+			add_to_variable = { usea_idea_consumer_goods_factor = -0.05 tooltip = consumer_goods_factor_tt }
+		}
+		hidden_effect = {
+			USA = {
+				if = {
+					limit = {
+						check_variable = {
+							var = usea_unified_currency_votes
+							value = usea_votes_needed
+							compare = greater_than_or_equals
+						}
+					}
+					country_event = usa_usea.19
+				}
+				else = {
+					country_event = usa_usea.20
+				}
+			}
+		}
+	}
+}
+joint_focus = {
+	id = USA_International_Science_Foundation
+	icon = GFX_goal_tfv_generic_tech_sharing
+	relative_position_id = USA_The_United_States_Economic_Association
+	prerequisite = { focus = USA_Resource_Trade_Amendment }
+	prerequisite = { focus = USA_Civilian_Contractor_Agreement }
+	prerequisite = { focus = USA_Military_Industry_Amendment }
+	prerequisite = { focus = USA_Unified_Currency_Amendment }
+	x = 0
+	y = 2
+	cost = 10
+	text_icon = NORDIC_focus_style
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		custom_effect_tooltip = usa_modify_usea_ns_intro
+		effect_tooltip = {
+			add_to_variable = { usea_idea_research_speed_factor = 0.05 tooltip = research_speed_factor_tt }
+		}
+		force_update_dynamic_modifier = yes
+	}
+}
+joint_focus = {
+	id = UNITED_STATES_adopting_the_us_dollar
+	icon = placeholder
+	prerequisite = { focus = UNITED_STATES_draft_the_charter }
+	relative_position_id = UNITED_STATES_draft_the_charter
+	cost = 5
+	text_icon = NORDIC_focus_style
+	x = 3
+	y = 1
+
+	available = {
+		UNITED_STATES_in_faction = yes
+	}
+	joint_trigger = {
+		UNITED_STATES_in_faction = yes
+	}
+
+	completion_reward = {
+		add_political_power = 75
+	}
+}
+joint_focus = {
+	id = UNITED_STATES_joint_military_command
+	icon = placeholder
+	prerequisite = { focus = UNITED_STATES_draft_the_charter }
+	relative_position_id = UNITED_STATES_draft_the_charter
+	cost = 5
+	text_icon = NORDIC_focus_style
+	x = 8
+	y = 1
+
+	available = {
+		UNITED_STATES_in_faction = yes
+	}
+	joint_trigger = {
+		UNITED_STATES_in_faction = yes
+	}
+
+	completion_reward = {
+		army_experience = 5
+		navy_experience = 5
+		air_experience = 5
+	}
+}
+joint_focus = {
+	id = USA_Establish_US_Peacekeepers
+	icon = GFX_focus_usa_establish_us_peacekeepers
+	relative_position_id = UNITED_STATES_joint_military_command
+	prerequisite = { focus = UNITED_STATES_joint_military_command }
+	x = 0
+	y = 1
+	cost = 10
+	text_icon = NORDIC_focus_style
+	available = {
+		UNITED_STATES_in_faction = yes
+	}
+	joint_trigger = {
+		UNITED_STATES_in_faction = yes
+	}
+	completion_reward = {
+		add_ideas = us_peacekeepers
+		set_country_flag = us_peacekeeper_program
+	}
+}
+joint_focus = {
+	id = USA_SOF_Training
+	icon = GFX_focus_usa_sof_us_peacekeepers
+	relative_position_id = USA_Establish_US_Peacekeepers
+	prerequisite = { focus = USA_Establish_US_Peacekeepers }
+	mutually_exclusive = { focus = USA_Policing_Training }
+	x = -2
+	y = 1
+	cost = 10
+	text_icon = NORDIC_focus_style
+	available = {
+		UNITED_STATES_in_faction = yes
+	}
+	joint_trigger = {
+		UNITED_STATES_in_faction = yes
+	}
+	completion_reward = {
+		army_experience = 15
+		swap_ideas = {
+			remove_idea = us_peacekeepers
+			add_idea = us_sof_peacekeepers_1
+		}
+	}
+}
+joint_focus = {
+	id = USA_Expeditionary_Courses
+	icon = GFX_focus_generic_commonwealth_build_infantry
+	relative_position_id = USA_SOF_Training
+	prerequisite = {
+		focus = USA_SOF_Training
+		focus = USA_Policing_Training
+	}
+	x = 2
+	y = 1
+	cost = 5
+	text_icon = NORDIC_focus_style
+	available = {
+		UNITED_STATES_in_faction = yes
+	}
+	joint_trigger = {
+		UNITED_STATES_in_faction = yes
+	}
+	completion_reward = {
+		army_experience = 10
+		USA_SOF_Focus_Count_Check = yes
+	}
+}
+joint_focus = {
+	id = USA_Great_Lakes_Maneuvers
+	icon = GFX_focus_usa_great_lakes_maneuvers
+	relative_position_id = USA_SOF_Training
+	prerequisite = { focus = USA_SOF_Training }
+	x = -2
+	y = 1
+	cost = 10
+	text_icon = NORDIC_focus_style
+	available = {
+		UNITED_STATES_in_faction = yes
+	}
+	joint_trigger = {
+		UNITED_STATES_in_faction = yes
+	}
+	completion_reward = {
+		USA_SOF_Peacekeepers_Increase_Level = yes
+		USA_SOF_Focus_Count_Check = yes
+		set_temp_variable = { great_lakes_xp_bonus = 0 }
+		hidden_effect = {
+			every_other_country = {
+				limit = {
+					is_in_faction_with = ROOT
+				}
+				ROOT = {
+					add_to_temp_variable = { great_lakes_xp_bonus = 2 }
+				}
+			}
+			army_experience = great_lakes_xp_bonus
+			navy_experience = great_lakes_xp_bonus
+		}
+		custom_effect_tooltip = us_joint_army_navy_xp_gain_2_tt
+		army_experience = 5
+		navy_experience = 5
+		add_tech_bonus = {
+			bonus = 0.5
+			uses = 1
+			category = tp_tech
+		}
+	}
+}
+joint_focus = {
+	id = USA_Air_Cavalry_Corps
+	icon = GFX_focus_usa_air_cavalry_corps
+	relative_position_id = USA_Great_Lakes_Maneuvers
+	prerequisite = { focus = USA_Great_Lakes_Maneuvers }
+	x = -1
+	y = 1
+	cost = 10
+	text_icon = NORDIC_focus_style
+	available = {
+		UNITED_STATES_in_faction = yes
+	}
+	joint_trigger = {
+		UNITED_STATES_in_faction = yes
+	}
+	completion_reward = {
+		USA_SOF_Peacekeepers_Increase_Level = yes
+		USA_SOF_Focus_Count_Check = yes
+	}
+}
+joint_focus = {
+	id = USA_Integrate_The_Mobile_Air_Corps
+	icon = GFX_focus_usa_integrate_the_mobile_air_corps
+	relative_position_id = USA_Air_Cavalry_Corps
+	prerequisite = { focus = USA_Air_Cavalry_Corps }
+	x = 0
+	y = 1
+	cost = 10
+	text_icon = NORDIC_focus_style
+	available = {
+		UNITED_STATES_in_faction = yes
+	}
+	joint_trigger = {
+		UNITED_STATES_in_faction = yes
+	}
+	completion_reward = {
+		USA_SOF_Peacekeepers_Increase_Level = yes
+		USA_SOF_Focus_Count_Check = yes
+		add_ideas = us_mobile_air_corps_integration
+	}
+}
+joint_focus = {
+	id = USA_Mountain_Hikes
+	icon = GFX_focus_usa_mountain_hikes
+	relative_position_id = USA_SOF_Training
+	prerequisite = { focus = USA_SOF_Training }
+	x = 0
+	y = 1
+	cost = 10
+	text_icon = NORDIC_focus_style
+	available = {
+		UNITED_STATES_in_faction = yes
+	}
+	joint_trigger = {
+		UNITED_STATES_in_faction = yes
+	}
+	completion_reward = {
+		USA_SOF_Peacekeepers_Increase_Level = yes
+		USA_SOF_Focus_Count_Check = yes
+		set_temp_variable = { mountain_hikes_xp_bonus = 0 }
+		hidden_effect = {
+			every_other_country = {
+				limit = {
+					is_in_faction_with = ROOT
+				}
+				ROOT = {
+					add_to_temp_variable = { mountain_hikes_xp_bonus = 5 }
+				}
+			}
+			army_experience = mountain_hikes_xp_bonus
+		}
+		custom_effect_tooltip = us_joint_army_xp_gain_5_tt
+		army_experience = 5
+		add_tech_bonus = {
+			bonus = 0.5
+			uses = 1
+			category = mountaineers_tech
+		}
+	}
+}
+joint_focus = {
+	id = USA_Amphibious_Assault_Training_Bases
+	icon = GFX_goal_generic_amphibious_assault
+	relative_position_id = USA_Mountain_Hikes
+	prerequisite = { focus = USA_Mountain_Hikes }
+	prerequisite = { focus = USA_Expeditionary_Courses }
+	x = 1
+	y = 1
+	cost = 10
+	text_icon = NORDIC_focus_style
+	available = {
+		UNITED_STATES_in_faction = yes
+	}
+	joint_trigger = {
+		UNITED_STATES_in_faction = yes
+	}
+	completion_reward = {
+		USA_SOF_Peacekeepers_Increase_Level = yes
+		USA_SOF_Focus_Count_Check = yes
+		army_experience = 10
+		navy_experience = 5
+		add_tech_bonus = {
+			bonus = 0.25
+			uses = 1
+			category = marine_tech
+		}
+		add_tech_bonus = {
+			bonus = 0.25
+			uses = 1
+			category = tp_tech
+		}
+	}
+}
+joint_focus = {
+	id = USA_Naval_Forward_Operating_Bases
+	icon = GFX_goal_generic_construct_naval_dockyard
+	relative_position_id = USA_Mountain_Hikes
+	prerequisite = { focus = USA_Amphibious_Assault_Training_Bases }
+	prerequisite = { focus = USA_Great_Lakes_Maneuvers }
+	x = -1
+	y = 2
+	cost = 10
+	text_icon = NORDIC_focus_style
+	available = {
+		UNITED_STATES_in_faction = yes
+	}
+	joint_trigger = {
+		UNITED_STATES_in_faction = yes
+	}
+	completion_reward = {
+		USA_SOF_Focus_Count_Check = yes
+		USA_SOF_Peacekeepers_Increase_Level = yes
+	}
+}
+joint_focus = {
+	id = USA_De_Oppresso_Liber
+	icon = GFX_focus_usa_establish_us_peacekeepers_2
+	relative_position_id = USA_Naval_Forward_Operating_Bases
+	prerequisite = { focus = USA_Naval_Forward_Operating_Bases }
+	prerequisite = { focus = USA_Integrate_The_Mobile_Air_Corps }
+	x = -1
+	y = 1
+	cost = 10
+	text_icon = NORDIC_focus_style
+	available = {
+		UNITED_STATES_in_faction = yes
+	}
+	joint_trigger = {
+		UNITED_STATES_in_faction = yes
+	}
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = us_sof_peacekeepers_4
+			add_idea = us_sof_peacekeepers_5
+		}
+	}
+}
+joint_focus = {
+	id = USA_Policing_Training
+	icon = GFX_focus_usa_police_us_peacekeepers
+	relative_position_id = USA_Establish_US_Peacekeepers
+	prerequisite = { focus = USA_Establish_US_Peacekeepers }
+	mutually_exclusive = { focus = USA_SOF_Training }
+	x = 2
+	y = 1
+	cost = 10
+	text_icon = NORDIC_focus_style
+	available = {
+		UNITED_STATES_in_faction = yes
+	}
+	joint_trigger = {
+		UNITED_STATES_in_faction = yes
+	}
+	completion_reward = {
+		add_manpower = 10000
+		swap_ideas = {
+			remove_idea = us_peacekeepers
+			add_idea = us_police_peacekeepers_1
+		}
+	}
+}
+joint_focus = {
+	id = USA_De_Escalation_Classes
+	icon = GFX_goal_generic_improve_relations
+	prerequisite = { focus = USA_Policing_Training }
+	relative_position_id = USA_Policing_Training
+	x = 2
+	y = 1
+	cost = 10
+	text_icon = NORDIC_focus_style
+	available = {
+		UNITED_STATES_in_faction = yes
+	}
+	joint_trigger = {
+		UNITED_STATES_in_faction = yes
+	}
+	completion_reward = {
+		add_stability = 0.05
+		USA_Police_Peacekeepers_Increase_Level = yes
+	}
+}
+joint_focus = {
+	id = USA_Aerial_Patrols
+	icon = GFX_focus_usa_aerial_patrols
+	prerequisite = { focus = USA_De_Escalation_Classes }
+	relative_position_id = USA_De_Escalation_Classes
+	x = 1
+	y = 1
+	cost = 10
+	text_icon = NORDIC_focus_style
+	available = {
+		UNITED_STATES_in_faction = yes
+	}
+	joint_trigger = {
+		UNITED_STATES_in_faction = yes
+	}
+	completion_reward = {
+		air_experience = 25
+		set_temp_variable = { aerial_patrols_xp_bonus = 0 }
+		hidden_effect = {
+			every_other_country = {
+				limit = {
+					is_in_faction_with = ROOT
+				}
+				ROOT = {
+					add_to_temp_variable = { aerial_patrols_xp_bonus = 5 }
+				}
+			}
+			air_experience = aerial_patrols_xp_bonus
+		}
+		custom_effect_tooltip = us_joint_air_xp_gain_5_tt
+		USA_Police_Peacekeepers_Increase_Level = yes
+	}
+}
+joint_focus = {
+	id = USA_Establish_United_States_Air_Patrol
+	icon = GFX_focus_usa_establish_united_states_air_patrol
+	prerequisite = { focus = USA_Aerial_Patrols }
+	relative_position_id = USA_Aerial_Patrols
+	x = 0
+	y = 1
+	cost = 10
+	text_icon = NORDIC_focus_style
+	available = {
+		UNITED_STATES_in_faction = yes
+	}
+	joint_trigger = {
+		UNITED_STATES_in_faction = yes
+	}
+	completion_reward = {
+		add_ideas = us_air_patrol
+		USA_Police_Peacekeepers_Increase_Level = yes
+	}
+}
+joint_focus = {
+	id = USA_Language_Schools
+	icon = GFX_focus_generic_military_academy
+	prerequisite = { focus = USA_Policing_Training }
+	relative_position_id = USA_Policing_Training
+	x = 0
+	y = 1
+	cost = 10
+	text_icon = NORDIC_focus_style
+	available = {
+		UNITED_STATES_in_faction = yes
+	}
+	joint_trigger = {
+		UNITED_STATES_in_faction = yes
+	}
+	completion_reward = {
+		USA_Police_Peacekeepers_Increase_Level = yes
+		USA_Police_PK_Focus_Count_Check = yes
+	}
+	completion_reward_joint_member = {
+		add_opinion_modifier = {
+			target = USA
+			modifier = small_increase
+		}
+	}
+}
+joint_focus = {
+	id = USA_Peacekeeper_Departments
+	icon = GFX_focus_generic_little_entente
+	prerequisite = { focus = USA_Expeditionary_Courses }
+	prerequisite = { focus = USA_Language_Schools }
+	relative_position_id = USA_Language_Schools
+	x = -1
+	y = 1
+	cost = 10
+	text_icon = NORDIC_focus_style
+	available = {
+		UNITED_STATES_in_faction = yes
+	}
+	joint_trigger = {
+		UNITED_STATES_in_faction = yes
+	}
+	completion_reward = {
+		USA_Police_Peacekeepers_Increase_Level = yes
+		add_to_variable = {
+			var = police_pk_charges
+			value = 1
+		}
+		add_to_variable = {
+			var = police_pk_charges_max
+			value = 1
+		}
+		unlock_decision_category_tooltip = USA_peacekeeper_policing
+	}
+}
+joint_focus = {
+	id = USA_Peacekeeper_Recruitment_Drive
+	icon = GFX_focus_generic_manpower
+	prerequisite = { focus = USA_Peacekeeper_Departments }
+	prerequisite = { focus = USA_De_Escalation_Classes }
+	relative_position_id = USA_Language_Schools
+	x = 1
+	y = 2
+	cost = 10
+	text_icon = NORDIC_focus_style
+	available = {
+		UNITED_STATES_in_faction = yes
+	}
+	joint_trigger = {
+		UNITED_STATES_in_faction = yes
+	}
+	completion_reward = {
+		USA_Police_Peacekeepers_Increase_Level = yes
+		add_to_variable = {
+			var = police_pk_charges
+			value = 1
+		}
+		add_to_variable = {
+			var = police_pk_charges_max
+			value = 1
+		}
+		custom_effect_tooltip = usa_pk_charge_increase_1_tt
+	}
+}
+joint_focus = {
+	id = USA_The_Foreign_Legion
+	icon = GFX_focus_usa_foreign_legion
+	relative_position_id = USA_Peacekeeper_Recruitment_Drive
+	prerequisite = { focus = USA_Peacekeeper_Recruitment_Drive }
+	prerequisite = { focus = USA_Establish_United_States_Air_Patrol }
+	x = 1
+	y = 1
+	cost = 10
+	text_icon = NORDIC_focus_style
+	available = {
+		UNITED_STATES_in_faction = yes
+	}
+	joint_trigger = {
+		UNITED_STATES_in_faction = yes
+	}
+	completion_reward = {
+		add_to_variable = {
+			var = police_pk_charges
+			value = 1
+		}
+		add_to_variable = {
+			var = police_pk_charges_max
+			value = 1
+		}
+		custom_effect_tooltip = usa_pk_charge_increase_1_tt
+		swap_ideas = {
+			remove_idea = us_police_peacekeepers_4
+			add_idea = us_police_peacekeepers_5
+		}
+	}
+}
+joint_focus = {
+	id = USA_Joint_Naval_Exercises
+	icon = GFX_goal_generic_navy_battleship
+	relative_position_id = USA_Expeditionary_Courses
+	prerequisite = {
+		focus = USA_Amphibious_Assault_Training_Bases
+		focus = USA_Peacekeeper_Departments
+	}
+	x = 0
+	y = 2
+	cost = 10
+	text_icon = NORDIC_focus_style
+	available = {
+		UNITED_STATES_in_faction = yes
+	}
+	joint_trigger = {
+		UNITED_STATES_in_faction = yes
+	}
+	completion_reward = {
+		set_temp_variable = { joint_naval_exercises_xp_bonus = 0 }
+		hidden_effect = {
+			every_other_country = {
+				limit = {
+					is_in_faction_with = ROOT
+				}
+				ROOT = {
+					add_to_temp_variable = { joint_naval_exercises_xp_bonus = 5 }
+				}
+			}
+			navy_experience = joint_naval_exercises_xp_bonus
+		}
+		custom_effect_tooltip = us_joint_navy_xp_gain_5_tt
+		navy_experience = 5
 	}
 }

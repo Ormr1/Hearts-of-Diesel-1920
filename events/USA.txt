@@ -2969,7 +2969,10 @@ country_event = { # Resource trade amendment
 		ai_chance = {
 			base = 10
 		}
-		custom_effect_tooltip = usea_resource_agreement_aye_tt
+		custom_effect_tooltip = USEA_Amendment_tt
+		custom_effect_tooltip = usa_modify_usea_ns_intro
+		add_to_variable = { usea_idea_political_power_factor = -0.05 tooltip = political_power_factor_tt }
+		add_to_variable = { usea_idea_local_resources_factor = 0.15 tooltip = local_resources_factor_tt }
 		USA = {
 			add_to_variable = {
 				var = usea_resource_exchange_votes
@@ -3029,16 +3032,10 @@ country_event = { # Resource Amendment Passes!
 
 	option = { # Great Success!
 		name = usa_usea.4.a
-		add_to_variable = {
-			var = usea_pp_factor
-			value = -0.05
-		}
-		add_to_variable = {
-			var = usea_lr_factor
-			value = 0.15
-		}
+		custom_effect_tooltip = usa_modify_usea_ns_intro
+		add_to_variable = { usea_idea_political_power_factor = -0.05 tooltip = political_power_factor_tt }
+		add_to_variable = { usea_idea_local_resources_factor = 0.15 tooltip = local_resources_factor_tt }
 		force_update_dynamic_modifier = yes
-		custom_effect_tooltip = usea_resource_agreement_bonuses_tt
 	}
 }
 country_event = { # Resource Amendment Fails!
@@ -3063,6 +3060,10 @@ country_event = { # Civilian contractors amendment
 
 	option = { # Vote Aye!
 		name = usa_usea.6.a
+		custom_effect_tooltip = USEA_Amendment_tt
+		custom_effect_tooltip = usa_modify_usea_ns_intro
+		add_to_variable = { usea_idea_political_power_factor = -0.05 tooltip = political_power_factor_tt }
+		add_to_variable = { usea_idea_production_speed_industrial_complex_factor = 0.10 tooltip = production_speed_industrial_complex_factor_tt }
 		USA = {
 			add_to_variable = {
 				var = usea_civilian_contractor_votes
@@ -3122,16 +3123,10 @@ country_event = { # Civilian Contractor Amendment Passes!
 
 	option = { # Great Success!
 		name = usa_usea.9.a
-		add_to_variable = {
-			var = usea_pp_factor
-			value = -0.05
-		}
-		add_to_variable = {
-			var = usea_ic_factor
-			value = 0.10
-		}
+		custom_effect_tooltip = usa_modify_usea_ns_intro
+		add_to_variable = { usea_idea_political_power_factor = -0.05 tooltip = political_power_factor_tt }
+		add_to_variable = { usea_idea_production_speed_industrial_complex_factor = 0.10 tooltip = production_speed_industrial_complex_factor_tt }
 		force_update_dynamic_modifier = yes
-		custom_effect_tooltip = usea_civilian_agreement_bonuses_tt
 	}
 }
 country_event = { # Civilian Contractor Amendment Fails!
@@ -3156,6 +3151,10 @@ country_event = { # Military industry amendment
 
 	option = { # Vote Aye!
 		name = usa_usea.11.a
+		custom_effect_tooltip = USEA_Amendment_tt
+		custom_effect_tooltip = usa_modify_usea_ns_intro
+		add_to_variable = { usea_idea_political_power_factor = -0.05 tooltip = political_power_factor_tt }
+		add_to_variable = { usea_idea_production_speed_industrial_complex_factor = 0.10 tooltip = production_speed_industrial_complex_factor_tt }
 		USA = {
 			add_to_variable = {
 				var = usea_military_industry_votes
@@ -3215,16 +3214,10 @@ country_event = { # Military Industry Amendment Passes!
 
 	option = { # Great Success!
 		name = usa_usea.14.a
-		add_to_variable = {
-			var = usea_pp_factor
-			value = -0.05
-		}
-		add_to_variable = {
-			var = usea_af_factor
-			value = 0.10
-		}
+		custom_effect_tooltip = usa_modify_usea_ns_intro
+		add_to_variable = { usea_idea_political_power_factor = -0.05 tooltip = political_power_factor_tt }
+		add_to_variable = { usea_idea_production_speed_arms_factory_factor = 0.10 tooltip = production_speed_industrial_complex_factor_tt }
 		force_update_dynamic_modifier = yes
-		custom_effect_tooltip = usea_military_agreement_bonuses_tt
 	}
 }
 country_event = { # Military Industry Amendment Fails!
@@ -3249,6 +3242,10 @@ country_event = { # Unified Currency amendment
 
 	option = { # Vote Aye!
 		name = usa_usea.16.a
+		custom_effect_tooltip = USEA_Amendment_tt
+		custom_effect_tooltip = usa_modify_usea_ns_intro
+		add_to_variable = { usea_idea_political_power_factor = -0.05 tooltip = political_power_factor_tt }
+		add_to_variable = { usea_idea_consumer_goods_factor = -0.05 tooltip = consumer_goods_factor_tt }
 		USA = {
 			add_to_variable = {
 				var = usea_unified_currency_votes
@@ -3308,16 +3305,10 @@ country_event = { # Unified Currency Amendment Passes!
 
 	option = { # Great Success!
 		name = usa_usea.19.a
-		add_to_variable = {
-			var = usea_pp_factor
-			value = -0.05
-		}
-		add_to_variable = {
-			var = usea_cg_factor
-			value = -0.05
-		}
+		custom_effect_tooltip = usa_modify_usea_ns_intro
+		add_to_variable = { usea_idea_political_power_factor = -0.05 tooltip = political_power_factor_tt }
+		add_to_variable = { usea_idea_consumer_goods_factor = -0.05 tooltip = consumer_goods_factor_tt }
 		force_update_dynamic_modifier = yes
-		custom_effect_tooltip = usea_currency_agreement_bonuses_tt
 	}
 }
 country_event = { # Unified Currency Amendment Fails!
