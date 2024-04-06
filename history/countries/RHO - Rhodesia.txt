@@ -19,6 +19,7 @@ set_technology = {
 	oil_processing = 1
 	fuel_refining = 1
 }
+country_lock_all_division_template = yes
 add_ideas={
 	RHO_White_Minority_Rule
 	RHO_African_Auxiliary_Units

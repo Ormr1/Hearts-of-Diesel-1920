@@ -209,7 +209,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_stability = 0.05
+			add_stability = 0.075
 			if={
 				limit={
 					NOT={

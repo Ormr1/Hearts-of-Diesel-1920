@@ -99,6 +99,10 @@ if = {
 		light_tank_chassis_1 = 1
 	}
 }
+add_equipment_to_stockpile = {
+    type = support_equipment
+	amount = 100
+}
 
 recruit_character = FEN_louis_iv_merovech
 
