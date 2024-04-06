@@ -817,10 +817,12 @@ country_event = { #War of the Pasific
 	
 	option = {
 		name = la_plata.125.a
-		declare_war_on = {
-			target = PRU
-			type = take_state
-			generator = { 506 }
+		PRU={
+			declare_war_on = {
+				target = CHL
+				type = take_state
+				generator = { 1018 }
+			}
 		}
 	}
 }

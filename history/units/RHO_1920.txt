@@ -85,6 +85,18 @@ units = {
 		start_equipment_factor = 0.3
 
 	}
+	division= {	
+		#name = "1st District Brigade"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 10929  
+		division_template = "District Brigade"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
 
 
 	##### No Naval OOB #####

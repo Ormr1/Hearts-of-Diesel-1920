@@ -40,15 +40,4 @@ SPR_invade_vietnam  = {
 		execution_type = rush
 		execute_order = yes
 	}
-
-	ai_strategy = {
-		type = invade
-		id = "VIN"
-		value = 1000
-	}
-	ai_strategy = {
-		type = role_ratio
-		id = garrison
-		value = -10000
-	}
 }
