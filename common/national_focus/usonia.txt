@@ -5975,4 +5975,266 @@ focus_tree = {
 			air_experience = 25
 		}
 	}
+	focus = {
+		id = USA_Listen_To_The_Old_Guard
+		icon = placeholder
+		mutually_exclusive = { focus = USA_Listen_To_The_Reformists }
+		relative_position_id = USA_Bomber_Command
+		prerequisite = { focus = USA_Bomber_Command }
+		x = -1
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			air_experience = 25
+		}
+	}
+	focus = {
+		id = USA_Continue_Drone_Development
+		icon = placeholder
+		relative_position_id = USA_Listen_To_The_Old_Guard
+		prerequisite = { focus = USA_Listen_To_The_Old_Guard }
+		x = -2
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			air_experience = 25
+		}
+	}
+	focus = {
+		id = USA_Automated_Flight_Control_School
+		icon = placeholder
+		relative_position_id = USA_Continue_Drone_Development
+		prerequisite = { focus = USA_Continue_Drone_Development }
+		x = 0
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			air_experience = 25
+		}
+	}
+	focus = {
+		id = USA_Project_Altair
+		icon = placeholder
+		relative_position_id = USA_Automated_Flight_Control_School
+		prerequisite = { focus = USA_Automated_Flight_Control_School }
+		x = 0
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			air_experience = 25
+		}
+	}
+	focus = {
+		id = USA_Airship_Mounted_Radar_Development
+		icon = placeholder
+		relative_position_id = USA_Listen_To_The_Old_Guard
+		prerequisite = { focus = USA_Listen_To_The_Old_Guard }
+		x = 0
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			air_experience = 25
+		}
+	}
+	focus = {
+		id = USA_Airship_Escort_Tactics
+		icon = placeholder
+		relative_position_id = USA_Airship_Mounted_Radar_Development
+		prerequisite = { focus = USA_Airship_Mounted_Radar_Development }
+		x = 0
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			air_experience = 25
+		}
+	}
+	focus = {
+		id = USA_Bomber_Infantry_Coordination_Exercises
+		icon = placeholder
+		relative_position_id = USA_Airship_Escort_Tactics
+		prerequisite = { focus = USA_Airship_Escort_Tactics }
+		x = 0
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			air_experience = 25
+		}
+	}
+	focus = {
+		id = USA_Death_From_Afar
+		icon = placeholder
+		relative_position_id = USA_Bomber_Infantry_Coordination_Exercises
+		prerequisite = { focus = USA_Bomber_Infantry_Coordination_Exercises }
+		prerequisite = { focus = USA_Project_Altair }
+		x = 0
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			air_experience = 25
+		}
+	}
+	focus = {
+		id = USA_Listen_To_The_Reformists
+		icon = placeholder
+		mutually_exclusive = { focus = USA_Listen_To_The_Old_Guard }
+		relative_position_id = USA_Bomber_Command
+		prerequisite = { focus = USA_Bomber_Command }
+		x = 1
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			air_experience = 25
+		}
+	}
+	focus = {
+		id = USA_Return_To_Wavebombing
+		icon = placeholder
+		relative_position_id = USA_Listen_To_The_Reformists
+		prerequisite = { focus = USA_Listen_To_The_Reformists }
+		x = 0
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			air_experience = 25
+		}
+	}
+	focus = {
+		id = USA_Improve_Balloon_Armor
+		icon = placeholder
+		relative_position_id = USA_Return_To_Wavebombing
+		prerequisite = { focus = USA_Return_To_Wavebombing }
+		x = 0
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			air_experience = 25
+		}
+	}
+	focus = {
+		id = USA_Bat_Bomb_Development
+		icon = placeholder
+		relative_position_id = USA_Improve_Balloon_Armor
+		prerequisite = { focus = USA_Improve_Balloon_Armor }
+		x = 0
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			air_experience = 25
+		}
+	}
+	focus = {
+		id = USA_Cut_Bomber_Construction_Costs
+		icon = placeholder
+		relative_position_id = USA_Listen_To_The_Reformists
+		prerequisite = { focus = USA_Listen_To_The_Reformists }
+		x = 2
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			air_experience = 25
+		}
+	}
+	focus = {
+		id = USA_Stanadardize_Bomber_Lines
+		icon = placeholder
+		relative_position_id = USA_Cut_Bomber_Construction_Costs
+		prerequisite = { focus = USA_Cut_Bomber_Construction_Costs }
+		x = 0
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			air_experience = 25
+		}
+	}
+	focus = {
+		id = USA_Air_To_Ground_Gunnery
+		icon = placeholder
+		relative_position_id = USA_Stanadardize_Bomber_Lines
+		prerequisite = { focus = USA_Stanadardize_Bomber_Lines }
+		x = 0
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			air_experience = 25
+		}
+	}
+	focus = {
+		id = USA_A_Rain_Of_Ordinance
+		icon = placeholder
+		relative_position_id = USA_Air_To_Ground_Gunnery
+		prerequisite = { focus = USA_Air_To_Ground_Gunnery }
+		prerequisite = { focus = USA_Bat_Bomb_Development }
+		x = -2
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			air_experience = 25
+		}
+	}
+	focus = {
+		id = USA_Peace_Through_Strength
+		icon = placeholder
+		relative_position_id = USA_Bomber_Command
+		prerequisite = {
+			focus = USA_Death_From_Afar
+			focus = USA_A_Rain_Of_Ordinance
+		}
+		x = 0
+		y = 6
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			air_experience = 25
+		}
+	}
 }
