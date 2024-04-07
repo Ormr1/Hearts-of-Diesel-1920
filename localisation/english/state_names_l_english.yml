@@ -452,7 +452,7 @@
  STATE_451:0 "Antipyrgus"
  STATE_452:0 "Matrouh"
  STATE_453:0 "Sinai"
- STATE_454:0 "Palestine"
+ STATE_454:0 "Israel"
  STATE_455:0 "Jordan"
  STATE_456:0 "Aswan"
  STATE_457:1 "Eastern Desert"
@@ -1019,3 +1019,4 @@
  STATE_1018:0 "Atacama"
  STATE_1019:0 "Soctra"
  STATE_1020:0 "Katanga"
+ STATE_1021:0 "Judea"

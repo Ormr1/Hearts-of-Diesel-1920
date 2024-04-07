@@ -708,6 +708,10 @@ country_event = { #Chile and RGS are unaccessable for now
 			white_peace = RGS
 			CHL={
 				transfer_state = 1018
+				add_ideas = USA_monroe_doctrine_idea
+			}
+			USA = {
+				give_guarantee = CHL
 			}
 		}
 	}
