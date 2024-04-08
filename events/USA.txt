@@ -1,4 +1,4 @@
-﻿###########################
+###########################
 # USA Events
 ###########################
 
@@ -2001,7 +2001,7 @@ country_event = { # Usonian Loans?
 			base = 20
 			modifier = {
 				num_of_civilian_factories < 35
-				add = 100
+				add = 20
 			}
 		}
 		name = usa_eco_development.1.a
@@ -2026,7 +2026,7 @@ country_event = { # Usonian Loans?
 			base = 15
 			modifier = {
 				num_of_civilian_factories > 35
-				add = 100
+				add = 20
 			}
 		}
 		name = usa_eco_development.1.b

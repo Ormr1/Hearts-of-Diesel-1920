@@ -130,7 +130,7 @@ USA_congress = {
 		}
 		cost = 0
 		ai_will_do = {
-			factor = 10
+			base = 100
 		}
 		complete_effect = {
 			custom_effect_tooltip = usa_bill_pass_tt
@@ -307,7 +307,7 @@ USA_congress = {
 		}
 		cost = 0
 		ai_will_do = {
-			factor = 10
+			base = 100
 		}
 		complete_effect = {
 			custom_effect_tooltip = usa_bill_pass_tt
