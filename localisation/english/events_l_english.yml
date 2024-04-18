@@ -3258,6 +3258,7 @@
  la_plata.106.t:0 "Army fails to retake Porto Alegre"
  la_plata.101.t:0 "Patagonia Declares Independance"
  la_plata.104.t:0 "Argentinian Reformist Party Rises in Revolt"
+ la_plata.126.t: "[FROM.GetName] Asks to join the [ROOT.GetFactionName]"
  
  IR_news.1.t:0 "The Iron Harvest"
  IR_news.1.d:0 "The fighting has ended, just a month or so ago the guns fell silent all across europe as a cease-fire was declared. Now the belligerents discuss the full peace terms, with the likely outcome being the drawing of the borders to the current frontlines. While this is seen as satifactory to most of the war weary powers, the Franks have exprested anger at this after losing paris only a few days before the cease-fire. Already many nations are begining to clean-up the graveyard of broken mechs and trench scarred land. The tons of twisted scrap metal have already attracted hordes of oppertunists and looters who are attempting to profit from the wasteland. Due to this many observers are already calling this era the Iron Harvest, however time will tell how long the peace lasts."
