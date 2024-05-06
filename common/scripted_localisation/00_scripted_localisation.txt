@@ -1602,3 +1602,15 @@ defined_text = {
 		localization_key = FEN_suspicion_txt_tooltip
 	}
 }
+defined_text = {
+	name = SOV_civil_war_9_a_pp_check_tt
+	text = {
+		trigger = {
+			has_political_power < 49
+		}
+		localization_key = SOV_civil_war_9_a_1
+	}
+	text = {
+		localization_key = ""
+	}
+}

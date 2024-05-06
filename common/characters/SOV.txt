@@ -135,6 +135,23 @@ characters = {
 			  id = -1
 		  }
 	  }
+	  
+	  SOV_pavel_milyukov = {
+		  name = SOV_pavel_milyukov
+		  portraits = {
+			  civilian = {
+				  large = "GFX_portrait_SOV_pavel_milyukov"
+			  }
+		  }
+		  country_leader = {
+			  ideology = democratic
+			  expire = "1953.3.1.1"
+			  id = -1
+			  traits = {
+				  
+			  }
+		  }
+	  }
   
 	  # Kerensky and Rodzaevsky moved to the bottom of the file
   

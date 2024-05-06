@@ -59,7 +59,7 @@ focus_tree = {
 		id = SOV_The_People_Have_Spoken
 		icon = placeholder
 		relative_position_id = SOV_Needs_of_the_People
-		x = -6
+		x = -2
 		y = 1
 		cost = 8
 		ai_will_do = {
@@ -107,7 +107,7 @@ focus_tree = {
 		id = SOV_Ignore_the_People
 		icon = placeholder
 		relative_position_id = SOV_Needs_of_the_People
-		x = 6
+		x = 2
 		y = 1
 		cost = 8
 		ai_will_do = {
@@ -115,6 +115,262 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = SOV_Needs_of_the_People
+		}
+	}
+
+	#political
+	focus = {
+		id = SOV_progressive_bloc
+		icon = placeholder
+		x = 10
+		y = 0
+		cost = 5
+		ai_will_do = {
+			factor = 5
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.07
+			}
+		}
+	}
+	focus = { # 
+		id = SOV_supress_the_sr
+		icon = placeholder
+		relative_position_id = SOV_progressive_bloc
+		mutually_exclusive = {
+			focus = SOV_working_with_soviet
+		}
+		x = -2
+		y = 1
+		cost = 8
+		ai_will_do = {
+			factor = 5
+		}
+		prerequisite = {
+			focus = SOV_progressive_bloc
+		}
+		completion_reward = {
+			subtract_from_variable = {
+				tooltip = SOV_reduce_sr_loyalty_amount
+				var_SOV_factions_SR_loyalty = 5
+			}
+			add_popularity = {
+				ideology = communism
+				popularity = -0.05
+			}
+		}
+	}
+	focus = { # 
+		id = SOV_working_with_soviet
+		icon = placeholder
+		relative_position_id = SOV_progressive_bloc
+		mutually_exclusive = {
+			focus = SOV_supress_the_sr
+		}
+		x = -4
+		y = 1
+		cost = 8
+		ai_will_do = {
+			factor = 5
+		}
+		prerequisite = {
+			focus = SOV_progressive_bloc
+		}
+		completion_reward = {
+			add_to_variable = {
+				tooltip = SOV_increase_sr_loyalty_amount
+				var_SOV_factions_SR_loyalty = 5
+			}
+			add_popularity = {
+				ideology = monarchy
+				popularity = -0.07
+			}
+		}
+	}
+	focus = { #
+		id = SOV_
+		icon = placeholder
+		relative_position_id = SOV_progressive_bloc
+		x = 2
+		y = 1
+		cost = 8
+		ai_will_do = {
+			factor = 5
+		}
+		prerequisite = {
+			focus = SOV_progressive_bloc
+		}
+	}
+	focus = { #
+		id = SOV_for_peoples_freedoms
+		icon = placeholder
+		relative_position_id = SOV_progressive_bloc
+		x = 0
+		y = 1
+		cost = 8
+		ai_will_do = {
+			factor = 5
+		}
+		prerequisite = {
+			focus = SOV_progressive_bloc
+		}
+	}
+	focus = { # 
+		id = SOV_democratic_coalition
+		icon = placeholder
+		relative_position_id = SOV_for_peoples_freedoms
+		x = 0
+		y = 1
+		cost = 8
+		ai_will_do = {
+			factor = 5
+		}
+		prerequisite = {
+			focus = SOV_for_peoples_freedoms
+		}
+	}
+	focus = { # 
+		id = SOV_increased_duma_rights
+		icon = placeholder
+		relative_position_id = SOV_democratic_coalition
+		mutually_exclusive = {
+			focus = SOV_decreased_duma_rights
+		}
+		x = 1
+		y = 1
+		cost = 8
+		ai_will_do = {
+			factor = 5
+		}
+		prerequisite = {
+			focus = SOV_democratic_coalition
+		}
+		completion_reward = {
+			add_to_variable = {
+				tooltip = SOV_increase_sr_loyalty_amount
+				var_SOV_factions_SR_loyalty = 3
+			}
+			add_to_variable = {
+				tooltip = SOV_increase_kd_loyalty_amount
+				var_SOV_factions_KD_loyalty = 5
+			}
+			add_to_variable = {
+				tooltip = SOV_increase_o_loyalty_amount
+				var_SOV_factions_O_loyalty = 5
+			}
+			subtract_from_variable = {
+				tooltip = SOV_reduce_t_loyalty_amount
+				var_SOV_factions_T_loyalty = 10
+			}
+		}
+	}
+	focus = {
+		id = SOV_tsars_land_reforms
+		icon = placeholder
+		x = 15
+		y = 0
+		cost = 5
+		ai_will_do = {
+			factor = 5
+		}
+		completion_reward = {
+			add_stability = 0.02
+		}
+	}
+	focus = { #
+		id = SOV_reinforce_tsarists_in_army
+		icon = placeholder
+		relative_position_id = SOV_tsars_land_reforms
+		x = 1
+		y = 1
+		cost = 8
+		ai_will_do = {
+			factor = 5
+		}
+		prerequisite = {
+			focus = SOV_tsars_land_reforms
+		}
+		completion_reward = {
+			set_temp_variable = {
+				var_SOV_temp_increase_controller = 5
+			}
+			set_temp_variable = { var_SOV_temp_reduce_loyalty = 3}
+			SOV_increase_army_control = yes
+			add_to_variable = {
+				tooltip = SOV_increase_t_loyalty_amount
+				var_SOV_factions_T_loyalty = 5
+			}
+		}
+	}
+	focus = { #
+		id = SOV_increased_landowner_buyouts
+		icon = placeholder
+		relative_position_id = SOV_tsars_land_reforms
+		x = -1
+		y = 1
+		cost = 8
+		ai_will_do = {
+			factor = 5
+		}
+		prerequisite = {
+			focus = SOV_tsars_land_reforms
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = { #
+		id = SOV_follow_the_nobilities_lead
+		icon = placeholder
+		relative_position_id = SOV_increased_landowner_buyouts
+		x = 0
+		y = 1
+		cost = 8
+		ai_will_do = {
+			factor = 5
+		}
+		prerequisite = {
+			focus = SOV_increased_landowner_buyouts
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = { # 
+		id = SOV_decreased_duma_rights
+		icon = placeholder
+		relative_position_id = SOV_follow_the_nobilities_lead
+		mutually_exclusive = {
+			focus = SOV_increased_duma_rights
+		}
+		x = -1
+		y = 1
+		cost = 8
+		ai_will_do = {
+			factor = 5
+		}
+		prerequisite = {
+			focus = SOV_follow_the_nobilities_lead
+		}
+		completion_reward = {
+			subtract_from_variable = {
+				tooltip = SOV_reduce_o_loyalty_amount
+				var_SOV_factions_O_loyalty = 3
+			}
+			subtract_from_variable = {
+				tooltip = SOV_reduce_kd_loyalty_amount
+				var_SOV_factions_KD_loyalty = 6
+			}
+			subtract_from_variable = {
+				tooltip = SOV_reduce_sr_loyalty_amount
+				var_SOV_factions_SR_loyalty = 10
+			}
+			add_to_variable = {
+				tooltip = SOV_increase_t_loyalty_amount
+				var_SOV_factions_T_loyalty = 10
+			}
 		}
 	}
 }

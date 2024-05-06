@@ -2187,24 +2187,17 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		complete_tooltip = {
-			navy_experience = 25
-			add_tech_bonus = {
-				name = GER_capital_effort
-				bonus = 1.0
-				uses = 1
-				category = bb_tech
-			}
-		}
-		
+
 		search_filters = { FOCUS_FILTER_NAVAL FOCUS_FILTER_RESEARCH }
 		completion_reward = {
-			navy_experience = 25
 			add_tech_bonus = {
 				name = GER_capital_effort
 				bonus = 1.0
+				ahead_reduction = 2
 				uses = 1
+				category = bc_tech
 				category = bb_tech
+				category = shbb_tech
 			}
 		}
 	}

@@ -729,6 +729,48 @@ country_event = {#FER collapses
 	}
 }
 
+country_event = {#Tsarina Dismisses minister 
+	id = SOV_civil_war.9
+	title = SOV_civil_war.9.t
+	desc = SOV_civil_war.9.d
+	picture = GFX_report_event_hitler_handshake
+	
+	trigger = {
+		tag = SOV
+		date > 1920.7.14
+	}
+	fire_only_once = yes
+	
+	option = {#side with her
+		name = SOV_civil_war.9.a
+		custom_effect_tooltip = SOV_civil_war.9.a.tt
+		subtract_from_variable = {
+			tooltip = SOV_reduce_kd_loyalty_amount
+			var_SOV_factions_KD_loyalty = 5
+		}
+		subtract_from_variable = {
+			tooltip = SOV_reduce_o_loyalty_amount
+			var_SOV_factions_O_loyalty = 3
+		}
+		add_stability = -0.05
+	}
+	option = {#prevent this
+		name = SOV_civil_war.9.b
+		trigger={
+			has_political_power > 49
+		}
+		add_to_variable = {
+			tooltip = SOV_increase_kd_loyalty_amount
+			var_SOV_factions_KD_loyalty = 2
+		}
+		add_to_variable = {
+			tooltip = SOV_increase_o_loyalty_amount
+			var_SOV_factions_O_loyalty = 2
+		}
+		add_political_power = -50
+	}
+}
+
 	###########################
 	# Rusviet Economy
 	###########################
