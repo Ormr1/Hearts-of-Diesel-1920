@@ -70,7 +70,7 @@ joint_focus = {
 	relative_position_id = UNITED_STATES_draft_the_charter
 	cost = 5
 	text_icon = NORDIC_focus_style
-	x = -8
+	x = -10
 	y = 1
 
 	available = {
@@ -94,6 +94,73 @@ joint_focus = {
 			}
 			add_ideas = united_states_democratic_reforms
 		}
+	}
+}
+joint_focus = {
+	id = UNITED_STATES_international_democracy_foundation
+	icon = placeholder
+	prerequisite = { focus = UNITED_STATES_commitment_to_democracy }
+	relative_position_id = UNITED_STATES_commitment_to_democracy
+	cost = 5
+	text_icon = NORDIC_focus_style
+	x = -1
+	y = 1
+
+	available = {
+		UNITED_STATES_in_faction = yes
+		has_country_flag = UNITED_STATES_commitment_to_democracy_flag
+	}
+	joint_trigger = {
+		UNITED_STATES_in_faction = yes
+	}
+
+	completion_reward = {
+		# unlock decisions to promote democracy in nonaligned countries
+	}
+}
+joint_focus = {
+	id = UNITED_STATES_democratic_monetary_fund
+	icon = placeholder
+	prerequisite = { focus = UNITED_STATES_commitment_to_democracy }
+	relative_position_id = UNITED_STATES_commitment_to_democracy
+	cost = 5
+	text_icon = NORDIC_focus_style
+	x = 1
+	y = 1
+
+	available = {
+		UNITED_STATES_in_faction = yes
+		has_country_flag = UNITED_STATES_commitment_to_democracy_flag
+	}
+	joint_trigger = {
+		UNITED_STATES_in_faction = yes
+	}
+
+	completion_reward = {
+		# unlock decisions to give civ bonuses to democratic countries
+	}
+}
+joint_focus = {
+	id = UNITED_STATES_international_judicial_association
+	icon = placeholder
+	prerequisite = { focus = UNITED_STATES_international_democracy_foundation }
+	prerequisite = { focus = UNITED_STATES_democratic_monetary_fund }
+	relative_position_id = UNITED_STATES_commitment_to_democracy
+	cost = 5
+	text_icon = NORDIC_focus_style
+	x = 0
+	y = 2
+
+	available = {
+		UNITED_STATES_in_faction = yes
+		has_country_flag = UNITED_STATES_commitment_to_democracy_flag
+	}
+	joint_trigger = {
+		UNITED_STATES_in_faction = yes
+	}
+
+	completion_reward = {
+		add_stability = 0.025
 	}
 }
 joint_focus = {
@@ -138,6 +205,7 @@ joint_focus = {
 	x = -3
 	y = 1
 	cost = 5
+	text_icon = NORDIC_focus_style
 	available = {
 		UNITED_STATES_in_faction = yes
 	}
@@ -466,7 +534,7 @@ joint_focus = {
 	relative_position_id = UNITED_STATES_draft_the_charter
 	cost = 5
 	text_icon = NORDIC_focus_style
-	x = 8
+	x = 10
 	y = 1
 
 	available = {
