@@ -1,0 +1,3428 @@
+###########################
+# USA Events
+###########################
+
+add_namespace = usa
+add_namespace = usa_startup
+add_namespace = usa_native_americans
+add_namespace = usa_la_plata
+add_namespace = usa_eco_development
+add_namespace = usa_united_states
+add_namespace = us_peacekeeper_sof_operation
+add_namespace = usa_alaska
+add_namespace = usa_arabia
+add_namespace = usa_usea
+add_namespace = usa_elections
+add_namespace = usa_midterms
+
+country_event = {
+	id = usa_startup.1
+	title = usa_startup.1.t
+	desc = usa_startup.1.desc
+	picture = placeholder
+	hidden = yes
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			920 = {
+				add_dynamic_modifier = { modifier = native_american_raids_3 }
+			}
+			1012 = {
+				add_dynamic_modifier = { modifier = native_american_raids_3 }
+			}
+			376 = {
+				add_dynamic_modifier = { modifier = native_american_raids_3 }
+			}
+			377 = {
+				add_dynamic_modifier = { modifier = native_american_raids_3 }
+			}
+			483 = {
+				add_dynamic_modifier = { modifier = native_american_raids_3 }
+			}
+			484 = {
+				add_dynamic_modifier = { modifier = native_american_raids_3 }
+			}
+		}
+	}
+}
+
+# # Amelia Eartharts wants to join the USAAC
+# country_event = {
+# 	id = usa.1
+# 	title = usa.1.t
+# 	desc = usa.1.d
+# 	picture = GFX_report_event_usa_amelia_earhart_airplane
+
+# 	fire_only_once = yes
+	
+# 	trigger = {
+# 		tag = USA
+# 		has_war = yes
+# 		NOT = { has_global_flag = earhart_disappeared }
+# 	}
+	
+# 	mean_time_to_happen = {
+# 		days = 30
+# 	}
+	
+# 	option = { # Let her join
+# 		name = usa.1.a
+# 		add_political_power = -10
+# 		add_ace = {
+# 			name = "Amelia"
+# 			surname = "Earhart"
+# 			callsign = "Revenant"
+# 			type = fighter_genius
+# 			is_female = yes
+# 		}
+# 		set_country_flag = amelia_active_ace
+# 	}
+# 	option = { # Refuse
+# 		name = usa.1.b
+# 	}
+# }
+
+# # Pearl Harbor Gambit
+# country_event = {
+# 	id = usa.3
+# 	title = usa.3.t
+# 	desc = usa.3.d
+# 	picture = GFX_report_event_usa_pearl_harbor_airphoto
+
+# 	fire_only_once = yes
+
+# 	trigger = {
+# 		tag = JAP
+# 		USA = {
+# 			focus_progress = {
+# 				focus = USA_pearl_harbor_gambit
+# 				progress > 0.1
+# 			}
+# 		}
+# 	}
+
+# 	mean_time_to_happen = {
+# 		days = 21
+# 		modifier = {
+# 			factor = 0.5
+# 			USA = {
+# 				focus_progress = {
+# 					focus = USA_pearl_harbor_gambit
+# 					progress > 0.6
+# 				}
+# 			}
+# 		}
+# 	}
+
+# 	option = {
+# 		name = usa.3.a
+# 		USA = {
+# 			add_war_support = 0.5
+# 		}
+# 		create_wargoal = {
+# 			type = take_state
+# 			target = USA
+# 			generator = { 629 } # Hawaii
+# 		}
+# 	}
+# }
+
+# # Destroyers for Bases
+# country_event = {
+# 	id = usa.4
+# 	title = usa.4.t
+# 	desc = usa.4.d
+# 	picture = GFX_report_event_usa_british_sailors_destroyers
+
+# 	is_triggered_only = yes
+	
+# 	option = {
+# 		name = usa.4.a
+# 		custom_effect_tooltip = usa.4.a.tt
+# 		hidden_effect = {
+# 			if = {
+# 				limit = { not = { has_dlc = "Man the Guns" } }
+# 				ENG = {	load_oob = "ENG_destroyers_for_bases" }
+# 				CAN = { load_oob = "CAN_destroyers_for_bases" }
+# 			}
+# 			else = {
+# 				ENG = {	load_oob = "ENG_destroyers_for_bases_mtg" }
+# 				CAN = { load_oob = "CAN_destroyers_for_bases_mtg" }
+# 			}
+# 			ENG = {
+# 				if = { limit = { 696 = { is_controlled_by = ENG } }
+# 					remove_state_core = 696
+# 				}
+# 				if = { limit = { 331 = { is_controlled_by = ENG } }
+# 					remove_state_core = 331
+# 				}
+# 				if = { limit = { 308 = { is_controlled_by = ENG } } 
+# 					remove_state_core = 308
+# 				}
+# 				if = { limit = { 693 = { is_controlled_by = ENG } } 
+# 					remove_state_core = 693
+# 				}
+# 				if = { limit = { 689 = { is_controlled_by = ENG } } 
+# 					remove_state_core = 689
+# 				}
+# 				if = { limit = { 691 = { is_controlled_by = ENG } } 
+# 					remove_state_core = 691
+# 				}
+# 			}
+# 		}
+# 		USA = {
+# 			if = { limit = { 696 = { is_controlled_by = ENG } }
+# 				transfer_state = 696
+# 			}
+# 			if = { limit = { 331 = { is_controlled_by = ENG } }
+# 				transfer_state = 331
+# 			}
+# 			if = { limit = { 308 = { is_controlled_by = ENG } } 
+# 				transfer_state = 308
+# 			}
+# 			if = { limit = { 693 = { is_controlled_by = ENG } } 
+# 				transfer_state = 693
+# 			}
+# 			if = { limit = { 689 = { is_controlled_by = ENG } } 
+# 				transfer_state = 689
+# 			}
+# 			if = { limit = { 691 = { is_controlled_by = ENG } } 
+# 				transfer_state = 691
+# 			}
+# 			add_opinion_modifier = {
+# 				target = ROOT
+# 				modifier = destroyers_for_bases_opinion
+# 			}
+# 			country_event = { id = usa.401 days = 3 }
+# 		}
+# 	}
+
+# 	option = {
+# 		name = usa.4.b
+# 		USA = { country_event = { id = usa.5 days = 1 } }
+# 		ai_chance = { factor = 0 }
+# 	}
+
+# }
+
+# # Britain accepts offer
+# country_event = {
+# 	id = usa.401
+# 	title = usa.401.t
+# 	desc = usa.401.desc
+# 	picture = GFX_report_event_usa_destroyers
+
+# 	is_triggered_only = yes
+	
+# 	option = { 
+# 		name = usa.401.a
+# 	}
+# }
+
+# # Britain refuses offer
+# country_event = {
+# 	id = usa.5
+# 	title = usa.5.t
+# 	desc = usa.5.d
+# 	picture = GFX_report_event_usa_destroyers
+
+# 	is_triggered_only = yes
+	
+# 	option = { 
+# 		name = usa.5.a
+# 	}
+# }
+
+# # Election of 1936: Roosevelt vs Alf Landon
+# country_event = {
+# 	id = usa.6
+# 	title = usa.6.t
+# 	desc = usa.6.d
+# 	picture = GFX_report_event_usa_election_generic
+
+# 	is_triggered_only = yes
+
+# 	trigger = {
+# 		tag = USA
+# 		democratic > 0.5
+# 		date > 1936.1.1
+# 		date < 1937.1.1
+# 	}
+
+# 	immediate = {
+# 		hidden_effect = {
+# 			if = {
+# 				limit = {
+# 					OR = {
+# 						has_completed_focus = USA_voter_registration_act
+# 						has_completed_focus = USA_union_representation_act
+# 					}
+# 				}
+# 				country_event = { id = usa.32 days = 730 } # midterms
+# 			}
+# 			else = {
+# 				country_event = { id = usa.35 days = 730 } # midterms
+# 			}
+# 		}
+# 	}
+
+# 	option = { 	
+# 		name = usa.6.a
+# 		ai_chance = {
+# 			factor = 75
+# 			modifier = {
+# 				OR = {
+# 					has_game_rule = {
+# 						rule = USA_ai_behavior
+# 						option = FASCIST
+# 					}
+# 					has_country_flag = USA_AI_RANDOM_FASCIST
+# 				}
+# 				has_dlc = "Man the Guns"
+# 				factor = 0
+# 			}
+# 		}		
+# 		add_ideas = new_deal
+# 		if = {
+# 			limit = {
+# 				OR = {
+# 					has_completed_focus = USA_voter_registration_act
+# 					has_completed_focus = USA_union_representation_act
+# 				}
+# 			}
+# 			country_event = usa.32
+# 		}
+# 		else = {
+# 			set_variable = { election_factor = random }
+# 			add_to_variable = { election_factor = -0.5 }
+# 			USA_election_senate = yes
+# 			USA_election_house = yes
+# 			custom_effect_tooltip = usa_congress_elections_tt_bad
+# 			country_event = usa.30
+# 		}
+# 	}
+
+# 	option = {
+# 		name = usa.6.b
+# 		ai_chance = {
+# 			factor = 25
+# 			modifier = {
+# 				factor = 0
+# 				is_historical_focus_on = yes
+# 				has_game_rule = {
+# 					rule = USA_ai_behavior
+# 					option = DEFAULT
+# 				}
+# 			}
+# 		}		
+# 		set_party_name = { ideology = democratic long_name = USA_federalist_party_long name = USA_federalist_party }
+# 		set_variable = { election_factor = random }
+# 		add_to_variable = { election_factor = -0.6 }
+# 		USA_election_senate = yes
+# 		USA_election_house = yes
+# 		USA_flip_support = yes
+# 		custom_effect_tooltip = usa_congress_elections_tt_good
+# 		add_political_power = 120
+# 		if = {
+# 			limit = {
+# 				has_idea = standard_oil_california
+# 			}
+# 			add_political_power = 150
+# 		}
+# 		if = {
+# 			limit = {
+# 				NOT = { has_idea = standard_oil_california }
+# 			}
+# 			add_ideas = standard_oil_california
+# 		}
+# 		create_country_leader = {
+# 			name = "Alf Landon"
+# 			desc = "POLITICS_ALF_LANDON_DESC"
+# 			picture = GFX_portrait_Alf_Landon
+# 			expire = "1965.1.1"
+# 			ideology = conservatism
+# 			traits = {
+# 				staunch_constitutionalist
+# 			}
+# 		}
+# 		country_event = usa.31
+# 	}
+# }
+
+# # Election of 1940: Roosevelt vs Wendell Wilkie
+# country_event = {
+# 	id = usa.7
+# 	title = usa.7.t
+# 	desc = usa.7.d
+# 	picture = GFX_report_event_usa_election_roosevelt_wilkie
+
+# 	is_triggered_only = yes
+
+# 	trigger = {
+# 		tag = USA
+# 		democratic > 0.5
+# 		date > 1940.1.1
+# 		date < 1941.1.1
+# 		has_idea = new_deal
+# 	}
+
+# 	immediate = {
+# 		hidden_effect = {
+# 			if = {
+# 				limit = {
+# 					OR = {
+# 						has_completed_focus = USA_voter_registration_act
+# 						has_completed_focus = USA_union_representation_act
+# 					}
+# 				}
+# 				country_event = { id = usa.32 days = 730 } # midterms
+# 			}
+# 			else = {
+# 				country_event = { id = usa.35 days = 730 } # midterms
+# 			}
+# 		}
+# 	}
+	
+# 	option = {
+# 		name = usa.7.a
+# 		ai_chance = {
+# 			factor = 75
+# 		}
+# 		if = {
+# 			limit = {
+# 				OR = {
+# 					has_completed_focus = USA_voter_registration_act
+# 					has_completed_focus = USA_union_representation_act
+# 				}
+# 			}
+# 			country_event = usa.32
+# 		}
+# 		else = {
+# 			set_variable = { election_factor = random }
+# 			add_to_variable = { election_factor = -0.5 }
+# 			USA_election_senate = yes
+# 			USA_election_house = yes
+# 			custom_effect_tooltip = usa_congress_elections_tt_bad
+# 			country_event = usa.30
+# 		}
+# 	}
+
+# 	option = {
+# 		name = usa.7.b
+# 		ai_chance = {
+# 			factor = 25
+# 			modifier = {
+# 				factor = 0
+# 				is_historical_focus_on = yes
+# 			}
+# 		}	
+# 		set_party_name = { ideology = democratic long_name = USA_federalist_party_long name = USA_federalist_party }
+# 		remove_ideas = new_deal
+# 		add_ideas = wilkies_new_deal
+# 		set_variable = { election_factor = random }
+# 		add_to_variable = { election_factor = -0.6 }
+# 		add_political_power = 120
+# 		USA_election_senate = yes
+# 		USA_election_house = yes
+# 		USA_flip_support = yes
+# 		custom_effect_tooltip = usa_congress_elections_tt_good
+# 		create_country_leader = {
+# 			name = "Wendell Wilkie"
+# 			desc = "POLITICS_WENDELL_WILKIE_DESC"
+# 			picture = GFX_portrait_Wendell_Wilkie
+# 			expire = "1965.1.1"
+# 			ideology = liberalism
+# 			traits = {
+				
+# 			}
+# 		}
+# 		country_event = usa.31 #weighted towards gain of support
+# 	}
+# }
+
+# # Election of 1940: Roosevelt vs Landon (Incumbent)
+# country_event = {
+# 	id = usa.8
+# 	title = usa.8.t
+# 	desc = usa.8.d
+# 	picture = GFX_report_event_usa_election_landon_roosevelt
+
+# 	is_triggered_only = yes
+
+# 	trigger = {
+# 		tag = USA
+# 		democratic > 0.5
+# 		date > 1940.1.1
+# 		date < 1941.1.1
+# 		NOT = { has_idea = new_deal }
+# 	}
+
+# 	immediate = {
+# 		hidden_effect = {
+# 			if = {
+# 				limit = {
+# 					OR = {
+# 						has_completed_focus = USA_voter_registration_act
+# 						has_completed_focus = USA_union_representation_act
+# 					}
+# 				}
+# 				country_event = { id = usa.32 days = 730 } # midterms
+# 			}
+# 			else = {
+# 				country_event = { id = usa.35 days = 730 } # midterms
+# 			}
+# 		}
+# 	}
+	
+# 	option = { 
+# 		name = usa.8.a
+# 		add_political_power = -40
+# 		if = {
+# 			limit = {
+# 				OR = {
+# 					has_completed_focus = USA_voter_registration_act
+# 					has_completed_focus = USA_union_representation_act
+# 				}
+# 			}
+# 			country_event = usa.32
+# 		}
+# 		else = {
+# 			set_variable = { election_factor = random }
+# 			add_to_variable = { election_factor = -0.5 }
+# 			USA_election_senate = yes
+# 			USA_election_house = yes
+# 			custom_effect_tooltip = usa_congress_elections_tt_bad
+# 			country_event = usa.30
+# 		}
+# 	}
+
+# 	option = { 
+# 		name = usa.8.b
+# 		set_party_name = { ideology = democratic long_name = USA_democratic_party name = USA_democratic_party }
+# 		add_ideas = new_deal
+# 		retire_country_leader = yes
+# 		add_political_power = 120
+# 		set_variable = { election_factor = random }
+# 		add_to_variable = { election_factor = -0.6 }
+# 		USA_election_senate = yes
+# 		USA_election_house = yes
+# 		USA_flip_support = yes
+# 		custom_effect_tooltip = usa_congress_elections_tt_good
+# 		country_event = usa.31
+# 	}
+# }
+
+# # Election of 1944: Roosevelt vs Thomas E. Dewey
+# country_event = {
+# 	id = usa.9
+# 	title = usa.9.t
+# 	desc = usa.9.d
+# 	picture = GFX_report_event_usa_election_roosevelt_dewey
+
+# 	is_triggered_only = yes
+# 	immediate = {
+# 		hidden_effect = {
+# 			if = {
+# 				limit = {
+# 					OR = {
+# 						has_completed_focus = USA_voter_registration_act
+# 						has_completed_focus = USA_union_representation_act
+# 					}
+# 				}
+# 				country_event = { id = usa.32 days = 730 } # midterms
+# 			}
+# 			else = {
+# 				country_event = { id = usa.35 days = 730 } # midterms
+# 			}
+# 		}
+# 	}
+# 	trigger = {
+# 		tag = USA
+# 		democratic > 0.5
+# 		date > 1944.1.1
+# 		date < 1945.1.1
+# 		has_idea = new_deal
+# 		has_war = no
+# 	}
+	
+# 	option = {
+# 		name = usa.9.a
+# 		ai_chance = {
+# 			factor = 75
+# 		}
+# 		add_political_power = 10
+# 		if = {
+# 			limit = {
+# 				OR = {
+# 					has_completed_focus = USA_voter_registration_act
+# 					has_completed_focus = USA_union_representation_act
+# 				}
+# 			}
+# 			country_event = usa.32
+# 		}
+# 		else = {
+# 			set_variable = { election_factor = random }
+# 			add_to_variable = { election_factor = -0.5 }
+# 			USA_election_senate = yes
+# 			USA_election_house = yes
+# 			custom_effect_tooltip = usa_congress_elections_tt_bad
+# 			country_event = usa.30
+# 		}
+# 	}
+
+# 	option = {
+# 		name = usa.9.b
+# 		ai_chance = {
+# 			factor = 25
+# 			modifier = {
+# 				factor = 0
+# 				is_historical_focus_on = yes
+# 			}
+# 		}		
+# 		remove_ideas = new_deal
+# 		set_party_name = { ideology = democratic long_name = USA_federalist_party_long name = USA_federalist_party }
+# 		set_variable = { election_factor = random }
+# 		add_to_variable = { election_factor = -0.6 }
+# 		USA_election_senate = yes
+# 		USA_election_house = yes
+# 		USA_flip_support = yes
+# 		add_political_power = 120
+# 		custom_effect_tooltip = usa_congress_elections_tt_good
+# 		create_country_leader = {
+# 			name = "Thomas E. Dewey"
+# 			desc = "POLITICS_THOMAS_DEWEY_DESC"
+# 			picture = GFX_portrait_Thomas_E_Dewey
+# 			expire = "1965.1.1"
+# 			ideology = conservatism
+# 			traits = {
+				
+# 			}
+# 		}
+# 		country_event = usa.31
+# 	}
+# }
+
+# # Election of 1944: Roosevelt vs Incumbent
+# country_event = {
+# 	id = usa.10
+# 	title = usa.10.t
+# 	desc = usa.10.d
+# 	picture = GFX_report_event_usa_election_generic
+
+# 	is_triggered_only = yes
+# 	immediate = {
+# 		hidden_effect = {
+# 			if = {
+# 				limit = {
+# 					OR = {
+# 						has_completed_focus = USA_voter_registration_act
+# 						has_completed_focus = USA_union_representation_act
+# 					}
+# 				}
+# 				country_event = { id = usa.32 days = 730 } # midterms
+# 			}
+# 			else = {
+# 				country_event = { id = usa.35 days = 730 } # midterms
+# 			}
+# 		}
+# 	}
+# 	trigger = {
+# 		tag = USA
+# 		democratic > 0.5
+# 		date > 1944.1.1
+# 		date < 1945.1.1
+# 		NOT = { has_idea = new_deal }
+# 	}
+	
+# 	option = { 
+# 		name = usa.10.a
+# 		add_political_power = 10
+# 		if = {
+# 			limit = {
+# 				OR = {
+# 					has_completed_focus = USA_voter_registration_act
+# 					has_completed_focus = USA_union_representation_act
+# 				}
+# 			}
+# 			country_event = usa.32
+# 		}
+# 		else = {
+# 			set_variable = { election_factor = random }
+# 			add_to_variable = { election_factor = -0.5 }
+# 			USA_election_senate = yes
+# 			USA_election_house = yes
+# 			custom_effect_tooltip = usa_congress_elections_tt_bad
+# 			country_event = usa.30
+# 		}
+# 	}
+
+# 	option = { 
+# 		name = usa.10.b
+# 		add_ideas = new_deal
+# 		set_party_name = { ideology = democratic long_name = USA_democratic_party name = USA_democratic_party }
+# 		set_variable = { election_factor = random }
+# 		add_to_variable = { election_factor = -0.6 }
+# 		USA_election_senate = yes
+# 		USA_election_house = yes
+# 		USA_flip_support = yes
+# 		add_political_power = 120
+# 		custom_effect_tooltip = usa_congress_elections_tt_good
+# 		if = {
+# 			limit = { has_idea = wilkies_new_deal }
+# 			remove_ideas = wilkies_new_deal
+# 		}
+# 		retire_country_leader = yes
+# 		country_event = usa.31
+# 	}
+# }
+
+# # Election of 1944: Roosevelt vs MacArthur
+# country_event = {
+# 	id = usa.11
+# 	title = usa.11.t
+# 	desc = usa.11.d
+# 	picture = GFX_report_event_usa_election_roosevelt_macarthur
+
+# 	is_triggered_only = yes
+# 	immediate = {
+# 		hidden_effect = {
+# 			if = {
+# 				limit = {
+# 					OR = {
+# 						has_completed_focus = USA_voter_registration_act
+# 						has_completed_focus = USA_union_representation_act
+# 					}
+# 				}
+# 				country_event = { id = usa.32 days = 730 } # midterms
+# 			}
+# 			else = {
+# 				country_event = { id = usa.35 days = 730 } # midterms
+# 			}
+# 		}
+# 	}
+# 	trigger = {
+# 		tag = USA
+# 		democratic > 0.5
+# 		date > 1944.1.1
+# 		date < 1945.1.1
+# 		has_idea = new_deal
+# 		OR = {
+# 			has_war = no
+# 			has_country_flag = macarthur_candidate
+# 		}
+# 	}
+	
+# 	option = {
+# 		name = usa.11.a
+# 		ai_chance = {
+# 			factor = 25
+# 		}	
+# 		add_political_power = 10
+# 		if = {
+# 			limit = {
+# 				OR = {
+# 					has_completed_focus = USA_voter_registration_act
+# 					has_completed_focus = USA_union_representation_act
+# 				}
+# 			}
+# 			country_event = usa.32
+# 		}
+# 		else = {
+# 			set_variable = { election_factor = random }
+# 			add_to_variable = { election_factor = -0.5 }
+# 			USA_election_senate = yes
+# 			USA_election_house = yes
+# 			custom_effect_tooltip = usa_congress_elections_tt_bad
+# 			country_event = usa.30
+# 		}
+# 	}
+
+# 	option = {
+# 		name = usa.11.b
+# 		ai_chance = {
+# 			factor = 25
+# 			modifier = {
+# 				factor = 0
+# 				is_historical_focus_on = yes
+# 			}
+# 		}
+# 		remove_ideas = new_deal
+# 		set_party_name = { ideology = democratic long_name = USA_federalist_party_long name = USA_federalist_party }
+# 		set_variable = { election_factor = random }
+# 		add_to_variable = { election_factor = -0.6 }
+# 		USA_election_senate = yes
+# 		USA_election_house = yes
+# 		USA_flip_support = yes
+# 		add_political_power = 120
+# 		custom_effect_tooltip = usa_congress_elections_tt_good
+# 		create_country_leader = {
+# 			name = "Douglas MacArthur"
+# 			desc = "POLITICS_DOUGLAS_MACARTHUR_DESC"
+# 			picture = GFX_portrait_Douglas_MacArthur
+# 			expire = "1965.1.1"
+# 			ideology = conservatism
+# 			traits = {
+				
+# 			}
+# 		}
+# 		country_event = usa.31
+# 		USA_douglas_macarthur = { remove_unit_leader_role = yes }
+# 	}
+# }
+
+# # Election of 1944: MacArthur Candidate?
+# country_event = {
+# 	id = usa.12
+# 	title = usa.12.t
+# 	desc = usa.12.d
+# 	picture = GFX_report_event_usa_macarthur_speech
+
+# 	is_triggered_only = yes
+
+# 	trigger = {
+# 		tag = USA
+# 		democratic > 0.5
+# 		date > 1944.1.1
+# 		date < 1945.1.1
+# 		has_idea = new_deal
+# 		has_war = yes
+# 	}
+	
+# 	option = { 
+# 		name = usa.12.a
+# 		country_event = { id = usa.9 }
+# 	}
+
+# 	option = { 
+# 		name = usa.12.b
+# 		country_event = { id = usa.11 }
+# 	}
+# }
+
+# # Roosevelt Dies
+# country_event = {
+# 	id = usa.13
+# 	title = usa.13.t
+# 	desc = usa.13.d
+# 	picture = GFX_report_event_usa_funeral
+
+# 	trigger = {
+# 		tag = USA
+# 		date > 1945.3.29
+# 		has_idea = new_deal
+# 		has_government = democratic
+# 	}
+
+# 	fire_only_once = yes
+
+# 	mean_time_to_happen = {
+# 		days = 365
+# 	}
+	
+# 	option = {
+# 		name = usa.13.a
+# 		add_political_power = -40
+# 		kill_country_leader = yes
+# 		create_country_leader = {
+# 			name = "Harry S. Truman"
+# 			desc = "POLITICS_HARRY_TRUMAN_DESC"
+# 			picture = GFX_portrait_Harry_S_Truman
+# 			expire = "1965.1.1"
+# 			ideology = liberalism
+# 			traits = {
+				
+# 			}
+# 		}
+# 	}
+# }
+
+# # Fascist US reacts to Commienazis 
+# country_event = {
+# 	id = usa.14
+# 	title = usa.14.t
+# 	desc = usa.14.d
+# 	picture = GFX_report_event_molotov_ribentrop_handshake
+
+# 	is_triggered_only = yes
+
+# 	trigger = {
+# 		tag = USA
+# 		has_government = fascism
+# 		is_puppet = no
+# 	}
+	
+# 	option = { 
+# 		name = usa.14.a
+# 		set_politics = {
+# 			ruling_party = democratic
+# 			elections_allowed = yes
+# 		}
+# 		set_political_party = {
+# 			ideology = democratic
+# 			popularity = 50
+# 		}
+# 		remove_ideas = great_depression
+# 		add_war_support = 0.2
+# 		add_timed_idea = { idea = fascism_defeated days = 730 }
+# 		if = {
+# 			limit = {
+# 				ENG = {
+# 					is_faction_leader = yes
+# 					NOT = { has_war_with = USA }
+# 				}
+# 			}
+# 			ENG = { add_to_faction = USA }
+# 			USA = {
+# 				add_ai_strategy = {
+# 					type = alliance
+# 					id = "ENG"
+# 					value = 200
+# 				}
+# 			}
+# 		}
+# 		add_opinion_modifier = { target = GER modifier = unholy_alliance }
+# 	}
+
+# 	option = {
+# 		name = usa.14.b
+# 		ai_chance = { factor = 0 }
+# 	}
+# }
+
+# #DO NOT USE USA.15 AS EVENT ID
+# #It will make the event text pop up as the name or requirement for two radar technologies for Finland if they are Fascist due to a hash conflict.
+
+
+# # USA option to intervene in war
+# # Hidden event to get scopes set up 
+# country_event = {
+# 	id = usa.16
+
+# 	is_triggered_only = yes
+	
+# 	hidden = yes
+
+# 	immediate = {
+# 		save_event_target_as = being_attacked
+# 		USA = {
+# 			country_event = { id = usa.17 }
+# 		}
+# 	}
+# }
+
+# # USA option to intervene in war 
+# country_event = {
+# 	id = usa.17
+# 	title = usa.17.t
+# 	desc = usa.17.d
+# 	picture = GFX_report_event_usa_macarthur_speech
+
+# 	is_triggered_only = yes
+	
+# 	#Intervene ultimatum war
+# 	option = { 
+# 		name = usa.17.a
+	
+# 		#Need to use FROM FROM scope since the one sending the event is the nation under attack
+# 		ai_chance = {
+# 			factor = 20			
+# 			modifier = {
+# 				factor = 0.2
+# 				FROM = {
+# 					FROM = {
+# 						strength_ratio = {
+# 							tag = USA
+# 							ratio > 0.8
+# 						}
+# 					}
+# 				}
+# 			}		
+# 		}
+
+# 		custom_effect_tooltip = usa.17.a_tt
+# 		FROM = { FROM = { country_event = { id = usa.18 days = 2 } } }
+# 	}
+
+# 	#Don't Intervene
+# 	option = {
+# 		name = usa.17.b
+
+# 		ai_chance = {
+# 			factor = 5
+# 			modifier = {
+# 				factor = 0
+# 				FROM = {
+# 					FROM = {
+# 						strength_ratio = {
+# 							tag = USA
+# 							ratio < 0.5
+# 						}
+# 					}
+# 				}
+# 			}
+# 		}
+# 	}
+# }
+
+# # Country response to USA intervening
+# country_event = {
+# 	id = usa.18
+# 	title = usa.18.t
+# 	desc = usa.18.d
+# 	picture = GFX_report_event_soldiers_marching
+
+# 	is_triggered_only = yes
+	
+# 	#Go to war with USA
+# 	option = { 
+# 		name = usa.18.a
+
+# 		ai_chance = {
+# 			factor = 10
+# 			modifier = {
+# 				factor = 0.5
+# 				strength_ratio = {
+# 					tag = USA
+# 					ratio < 0.7
+# 				}
+# 				is_in_faction = yes
+# 			}
+# 			modifier = {
+# 				factor = 5
+# 				strength_ratio = {
+# 					tag = USA
+# 					ratio > 0.7
+# 				}
+# 			}
+# 		}
+
+# 		event_target:being_attacked = {
+# 			FROM = {
+# 				add_to_war = {
+# 					targeted_alliance = PREV
+# 					enemy = ROOT
+# 					hostility_reason = guarantee
+# 				}
+# 			}
+# 		}
+
+# 		#ROOT = {
+# 		#	declare_war_on = {
+# 		#		target = FROM
+# 		#	}
+# 		#}
+# 		hidden_effect = {
+# 			news_event = { id = news.157 days = 2 }
+# 		}
+# 	}
+
+# 	#Back down
+# 	option = {
+# 		name = usa.18.b
+
+# 		ai_chance = { 
+# 			factor = 10
+# 			modifier = {
+# 				factor = 10
+# 				strength_ratio = {
+# 					tag = USA
+# 					ratio < 0.7
+# 				}
+# 				is_in_faction = no
+# 			}			
+# 		}
+
+# 		custom_effect_tooltip = usa.18.b_tt
+# 		hidden_effect = {
+# 			event_target:being_attacked = { white_peace = ROOT }
+# 			news_event = { id = news.158 days = 2 }
+# 		}
+# 	}
+# }
+# country_event = {
+# 	id = usa.19
+# 	title = usa.19.t
+
+# 	is_triggered_only = yes
+	
+# 	hidden = yes
+
+# 	immediate = {
+# 		USA = {
+# 			create_wargoal = {
+# 				type = puppet_wargoal_focus
+# 				target = ROOT
+# 			}
+# 		}
+# 	}
+# }
+
+# # US supports democracy 
+# country_event = {
+# 	id = usa.20
+# 	title = usa.20.t
+# 	desc = usa.20.d
+# 	picture = GFX_report_event_usa_election_generic
+
+# 	is_triggered_only = yes
+
+# 	immediate = {
+# 		set_country_flag = usa_influence_fired
+# 	}
+
+# 	option = {
+# 		name = usa.20.a		
+# 		custom_effect_tooltip = usa.20.a_tt
+# 	}
+# }
+
+# # US supports communism
+# country_event = {
+# 	id = usa.21
+# 	title = usa.20.t
+# 	desc = usa.21.d
+# 	picture = GFX_report_event_usa_election_generic
+	
+# 	is_triggered_only = yes
+
+# 	immediate = {
+# 		set_country_flag = usa_influence_fired
+# 	}
+
+# 	option = {
+# 		name = usa.20.a
+# 		custom_effect_tooltip = usa.20.a_tt
+# 	}
+# }
+
+# # US supports fascism
+# country_event = {
+# 	id = usa.22
+# 	title = usa.20.t
+# 	desc = usa.22.d
+# 	picture = GFX_report_event_usa_election_generic
+
+# 	is_triggered_only = yes
+
+# 	immediate = {
+# 		set_country_flag = usa_influence_fired
+# 	}
+
+# 	option = {
+# 		name = usa.20.a	
+# 		custom_effect_tooltip = usa.20.a_tt
+# 	}
+
+# }
+
+# # US extends influence to protection. Will meddle in wars
+# country_event = {
+# 	id = usa.23
+# 	title = usa.23.t
+# 	desc = usa.23.d
+# 	picture = GFX_report_event_usa_heavy_cruiser
+
+# 	is_triggered_only = yes
+
+# 	option = {
+# 		name = usa.23.a
+# 		custom_effect_tooltip = usa.23.a_tt
+# 	}
+
+# }
+
+
+# # Communist US reacts to Commienazis 
+# country_event = {
+# 	id = usa.24
+# 	title = usa.24.t
+# 	desc = usa.24.d
+# 	picture = GFX_report_event_molotov_ribentrop_handshake
+
+# 	is_triggered_only = yes
+
+# 	trigger = {
+# 		tag = USA
+# 		has_government = communism 
+# 		is_puppet = no
+# 	}
+	
+# 	option = { 
+# 		name = usa.24.a
+# 		set_politics = {
+# 			ruling_party = democratic
+# 			elections_allowed = yes
+# 		}
+# 		set_political_party = {
+# 			ideology = democratic
+# 			popularity = 50
+# 		}
+# 		remove_ideas = great_depression
+# 		add_war_support = 0.2
+# 		add_timed_idea = { idea = communism_defeated days = 730 }
+# 		if = {
+# 			limit = {
+# 				ENG = {
+# 					is_faction_leader = yes
+# 					NOT = { has_war_with = USA }
+# 				}
+# 			}
+# 			ENG = { add_to_faction = USA }
+# 			USA = {
+# 				add_ai_strategy = {
+# 					type = alliance
+# 					id = "ENG"
+# 					value = 200
+# 				}
+# 			}
+# 		}
+# 		add_opinion_modifier = { target = GER modifier = unholy_alliance }
+# 		add_opinion_modifier = { target = SOV modifier = unholy_alliance }
+# 	}
+
+# 	option = {
+# 		name = usa.24.b
+# 		ai_chance = { factor = 0 }
+# 	}
+# }
+
+# # US congress elections - outcome
+# country_event = {
+# 	id = usa.30
+# 	title = usa.30.t
+# 	desc = usa.30.desc
+# 	picture = GFX_report_event_election_vote
+
+# 	is_triggered_only = yes
+
+# 	option = {
+# 		name = usa.30.a
+# 		clear_variable = sen_loc
+# 		clear_variable = ror_loc
+# 		clear_variable = senators_for_reelection
+# 		clear_variable = representatives_for_reelection
+# 	}
+
+# }
+# # elections - new president, opposition/support switch roles
+# country_event = {
+# 	id = usa.31
+# 	title = usa.31.t
+# 	desc = usa.31.desc
+# 	picture = GFX_report_event_usa_election_generic
+
+# 	is_triggered_only = yes
+
+# 	option = {
+# 		name = usa.31.a
+# 		clear_variable = sen_loc
+# 		clear_variable = ror_loc
+# 		clear_variable = senators_for_reelection
+# 		clear_variable = representatives_for_reelection
+# 	}
+
+# }
+# # elections in the US - player has a majority guaranteed
+# country_event = {
+# 	id = usa.32
+# 	title = usa.32.t
+# 	desc = usa.32.desc
+# 	picture = GFX_report_event_election_vote
+
+# 	is_triggered_only = yes
+# 	trigger = {
+# 		OR = {
+# 			has_completed_focus = USA_voter_registration_act
+# 			has_completed_focus = USA_union_representation_act
+# 		}
+# 	}
+
+# 	option = {
+# 		name = usa.32.a
+# 		USA_return_majority = yes
+# 	}
+
+# }
+
+# #midterm elections
+# country_event = {
+# 	id = usa.35
+# 	title = usa.35.t
+# 	desc = usa.35.desc
+# 	picture = GFX_report_event_election_vote
+# 	hidden = yes
+# 	is_triggered_only = yes
+
+# 	immediate = {
+# 		if = {
+# 			limit = {
+# 				NOT = {
+# 					OR = {
+# 						has_completed_focus = USA_voter_registration_act
+# 						has_completed_focus = USA_union_representation_act
+# 					}
+# 				}
+# 			}
+# 			random_list = {
+# 				50 = {
+# 					set_variable = { election_factor = random }
+# 					add_to_variable = { election_factor = -0.6 }
+# 					USA_election_senate = yes
+# 					USA_election_house = yes
+# 					country_event = usa.30
+# 				}
+# 				50 = {
+# 					set_variable = { election_factor = random }
+# 					add_to_variable = { election_factor = -0.3 }
+# 					USA_election_senate = yes
+# 					USA_election_house = yes
+# 					country_event = usa.30
+# 				}
+# 			}
+# 		}
+# 		else = {
+# 			country_event = usa.32
+# 		}
+# 	}
+
+# 	option = {
+# 		name = usa.35.a
+		
+# 	}
+
+# }
+# #small support event - senate
+# country_event = {
+# 	id = usa.40
+# 	title = usa.40.t
+# 	desc = usa.40.desc
+# 	picture = GFX_report_event_FDR_speech
+
+# 	is_triggered_only = yes
+# 	trigger = {
+# 		tag = USA
+# 		NOT = {
+# 			OR = {
+# 				has_completed_focus = USA_voter_registration_act
+# 				has_completed_focus = USA_union_representation_act
+# 			}
+# 		}
+# 	}
+
+# 	option = {
+# 		name = usa.40.a
+# 		USA_senate_small_support = yes
+# 		hidden_effect = {
+# 			country_event = { id = usa.50 days = 70 random_days = 10 }
+# 		}
+# 	}
+
+# }
+# # small support event - house
+# country_event = {
+# 	id = usa.41
+# 	title = usa.41.t
+# 	desc = usa.41.desc
+# 	picture = GFX_report_event_FDR_speech
+
+# 	is_triggered_only = yes
+# 	trigger = {
+# 		tag = USA
+# 		NOT = {
+# 			OR = {
+# 				has_completed_focus = USA_voter_registration_act
+# 				has_completed_focus = USA_union_representation_act
+# 			}
+# 		}
+# 	}
+
+# 	option = {
+# 		name = usa.41.a
+# 		USA_house_small_support = yes
+# 		hidden_effect = {
+# 			country_event = { id = usa.51 days = 70 random_days = 10 }
+# 		}
+# 	}
+
+# }
+
+# #small opposition event - senate
+# country_event = {
+# 	id = usa.42
+# 	title = usa.42.t
+# 	desc = usa.42.desc
+# 	picture = GFX_report_event_journalists_speech
+
+# 	is_triggered_only = yes
+	
+# 	trigger = {
+# 		tag = USA
+# 		NOT = {
+# 			OR = {
+# 				has_completed_focus = USA_voter_registration_act
+# 				has_completed_focus = USA_union_representation_act
+# 			}
+# 		}
+# 	}
+
+# 	option = {
+# 		name = usa.42.a
+# 		USA_senate_small_opposition = yes
+# 		hidden_effect = {
+# 			country_event = { id = usa.50 days = 70 random_days = 10 }
+# 		}
+# 	}
+
+# }
+# # small opposition event - house
+# country_event = {
+# 	id = usa.43
+# 	title = usa.43.t
+# 	desc = usa.43.desc
+# 	picture = GFX_report_event_journalists_speech
+
+# 	is_triggered_only = yes
+# 	trigger = {
+# 		tag = USA
+# 		NOT = {
+# 			OR = {
+# 				has_completed_focus = USA_voter_registration_act
+# 				has_completed_focus = USA_union_representation_act
+# 			}
+# 		}
+# 	}
+
+# 	option = {
+# 		name = usa.43.a
+# 		USA_house_small_opposition = yes
+# 		hidden_effect = {
+# 			country_event = { id = usa.51 days = 70 random_days = 10 }
+# 		}
+# 	}
+
+# }
+
+# #medium support event - senate
+# country_event = {
+# 	id = usa.44
+# 	title = usa.44.t
+# 	desc = usa.44.desc
+# 	picture = GFX_report_event_FDR_speech
+
+# 	is_triggered_only = yes
+# 	trigger = {
+# 		tag = USA
+# 		NOT = {
+# 			OR = {
+# 				has_completed_focus = USA_voter_registration_act
+# 				has_completed_focus = USA_union_representation_act
+# 			}
+# 		}
+# 	}
+
+# 	option = {
+# 		name = usa.44.a
+# 		USA_senate_medium_support = yes
+# 		hidden_effect = {
+# 			country_event = { id = usa.50 days = 70 random_days = 20 }
+# 		}
+# 	}
+
+# }
+# # medium support event - house
+# country_event = {
+# 	id = usa.45
+# 	title = usa.45.t
+# 	desc = usa.45.desc
+# 	picture = GFX_report_event_FDR_speech
+
+# 	is_triggered_only = yes
+# 	trigger = {
+# 		tag = USA
+# 		NOT = {
+# 			OR = {
+# 				has_completed_focus = USA_voter_registration_act
+# 				has_completed_focus = USA_union_representation_act
+# 			}
+# 		}
+# 	}
+
+# 	option = {
+# 		name = usa.45.a
+# 		USA_house_medium_support = yes
+# 		hidden_effect = {
+# 			country_event = { id = usa.51 days = 70 random_days = 10 }
+# 		}
+# 	}
+
+# }
+
+# #medium opposition event - senate
+# country_event = {
+# 	id = usa.46
+# 	title = usa.46.t
+# 	desc = usa.46.desc
+# 	picture = GFX_report_event_journalists_speech
+
+# 	is_triggered_only = yes
+# 	trigger = {
+# 		tag = USA
+# 		NOT = {
+# 			OR = {
+# 				has_completed_focus = USA_voter_registration_act
+# 				has_completed_focus = USA_union_representation_act
+# 			}
+# 		}
+# 	}
+
+# 	option = {
+# 		name = usa.46.a
+# 		USA_senate_medium_opposition = yes
+# 		hidden_effect = {
+# 			country_event = { id = usa.50 days = 70 random_days = 20 }
+# 		}
+# 	}
+
+# }
+# # medium opposition event - house
+# country_event = {
+# 	id = usa.47
+# 	title = usa.47.t
+# 	desc = usa.47.desc
+# 	picture = GFX_report_event_journalists_speech
+
+# 	is_triggered_only = yes
+# 	trigger = {
+# 		tag = USA
+# 		NOT = {
+# 			OR = {
+# 				has_completed_focus = USA_voter_registration_act
+# 				has_completed_focus = USA_union_representation_act
+# 			}
+# 		}
+# 	}
+
+# 	option = {
+# 		name = usa.47.a
+# 		USA_house_medium_opposition = yes
+# 		hidden_effect = {
+# 			country_event = { id = usa.51 days = 70 random_days = 10 }
+# 		}
+# 	}
+
+# }
+
+# # dispatcher event - senate
+# country_event = {
+# 	id = usa.50
+# 	Hidden = yes
+# 	is_triggered_only = yes
+# 	trigger = {
+# 		tag = USA
+# 		NOT = {
+# 			OR = {
+# 				has_completed_focus = USA_voter_registration_act
+# 				has_completed_focus = USA_union_representation_act
+# 			}
+# 		}
+# 	}
+
+# 	immediate = {
+# 		random_list = {
+# 			20 = { 
+# 				modifier = {
+# 					not = { congress_medium_support_trigger = yes }
+# 					factor = 1.25
+# 				}
+# 				modifier = {
+# 					not = { congress_low_support_trigger = yes }
+# 					factor = 2
+# 				}
+# 				country_event = { id = usa.40 days = 15 random_days = 6 } #small support
+# 			} 
+# 			20 = { 
+# 				modifier = {
+# 					check_variable = { var = senators_support value = quorum_high compare = greater_than_or_equals }
+# 					factor = 3
+# 				}
+# 				modifier = {
+# 					has_idea_with_trait = fascist_demagogue
+# 					factor = 2
+# 				}
+# 				modifier = {
+# 					has_idea_with_trait = communist_revolutionary
+# 					factor = 2
+# 				}
+# 				country_event = { id = usa.42 days = 20 random_days = 6 } #small opposition 
+# 			} 
+# 			15 = { 
+# 				modifier = {
+# 					not = { congress_medium_support_trigger = yes }
+# 					factor = 1.25
+# 				}
+# 				modifier = {
+# 					not = { congress_low_support_trigger = yes }
+# 					factor = 2
+# 				}
+# 				country_event = { id = usa.44 days = 20 random_days = 10 } #medium support
+# 			} 
+# 			15 = { 
+# 				modifier = {
+# 					check_variable = { var = senators_support value = quorum_high compare = greater_than_or_equals }
+# 					factor = 3
+# 				}
+# 				modifier = {
+# 					has_idea_with_trait = fascist_demagogue
+# 					factor = 2
+# 				}
+# 				modifier = {
+# 					has_idea_with_trait = communist_revolutionary
+# 					factor = 2
+# 				}
+# 				country_event = { id = usa.46 days = 20 random_days = 10 }  #medium opposition
+# 			}
+# 			30 = { #investment opportunity
+# 				modifier = {
+# 					has_country_flag = USA_congress_investment
+# 					factor = 0
+# 				}
+# 				modifier = {
+# 					has_completed_focus = USA_wpa
+# 					factor = 1.5
+# 				} 
+# 				country_event = { id = usa.60 days = 10 random_days = 15 } 
+# 			} 
+# 		}
+# 	}
+# }
+
+# # dispatcher event - house
+# country_event = {
+# 	id = usa.51
+# 	Hidden = yes
+# 	is_triggered_only = yes
+# 	trigger = {
+# 		tag = USA
+# 		NOT = {
+# 			OR = {
+# 				has_completed_focus = USA_voter_registration_act
+# 				has_completed_focus = USA_union_representation_act
+# 			}
+# 		}
+# 	}
+
+# 	immediate = {
+# 		random_list = {
+# 			35 = { 
+# 				modifier = {
+# 					check_variable = { representatives_support < 218 }
+# 					factor = 1.5
+# 				}
+# 				modifier = {
+# 					check_variable = { representatives_support < 180 }
+# 					factor = 3
+# 				}
+# 				country_event = { id = usa.41 days = 15 random_days = 6 } #small support
+# 			} 
+# 			25 = {
+# 				modifier = {
+# 					check_variable = { representatives_support > 260 }
+# 					factor = 2
+# 				}
+# 				modifier = {
+# 					check_variable = { representatives_support < 180 }
+# 					factor = 0.5
+# 				}
+# 				modifier = {
+# 					has_idea_with_trait = fascist_demagogue
+# 					factor = 2
+# 				}
+# 				modifier = {
+# 					has_idea_with_trait = communist_revolutionary
+# 					factor = 2
+# 				} 
+# 				country_event = { id = usa.43 days = 20 random_days = 6 } #small opposition
+# 			} 
+# 			25 = { 
+# 				modifier = {
+# 					check_variable = { representatives_support < 180 }
+# 					factor = 1.5
+# 				}
+# 				modifier = {
+# 					check_variable = { representatives_support < 100 }
+# 					factor = 10
+# 				}
+# 				country_event = { id = usa.45 days = 25 random_days = 10 } #medium support
+# 			} 
+# 			15 = { 
+# 				modifier = {
+# 					check_variable = { representatives_support > 260 }
+# 					factor = 2
+# 				}
+# 				modifier = {
+# 					check_variable = { representatives_support > 400 }
+# 					factor = 10
+# 				}
+# 				modifier = {
+# 					check_variable = { representatives_support < 180 }
+# 					factor = 0.5
+# 				}
+# 				modifier = {
+# 					check_variable = { representatives_support < 100 }
+# 					factor = 0
+# 				}
+# 				modifier = {
+# 					has_idea_with_trait = fascist_demagogue
+# 					factor = 2
+# 				}
+# 				modifier = {
+# 					has_idea_with_trait = communist_revolutionary
+# 					factor = 2
+# 				}
+# 				country_event = { id = usa.47 days = 30 random_days = 15 } #medium opposition
+# 			} 
+# 		}
+# 	}
+# }
+# # senator wants investment in their state - hidden dispatch event
+# country_event = {
+# 	id = usa.60
+# 	hidden = yes
+# 	is_triggered_only = yes
+# 	trigger = {
+# 		tag = USA
+# 		NOT = {
+# 			OR = {
+# 				has_completed_focus = USA_voter_registration_act
+# 				has_completed_focus = USA_union_representation_act
+# 			}
+# 		}
+# 	}
+
+# 	immediate = {
+# 		set_country_flag = USA_congress_investment
+# 		if = {
+# 			limit = { has_event_target = USA_congress_investment_state }
+# 			clear_global_event_target = USA_congress_investment_state
+# 		}
+# 		random_list = {
+# 			25 = {
+# 				modifier = {
+# 					NOT = {
+# 						any_owned_state = {
+# 							is_core_of = ROOT
+# 							is_controlled_by = ROOT
+# 							free_building_slots = {
+# 								building = industrial_complex
+# 								size > 0
+# 								include_locked = no
+# 							}
+# 						}
+# 					}
+# 					factor = 0
+# 				}
+# 				random_owned_state = {
+# 					limit = {
+# 						is_core_of = ROOT
+# 						is_controlled_by = ROOT
+# 						free_building_slots = {
+# 							building = industrial_complex
+# 							size > 0
+# 							include_locked = no
+# 						}
+# 					}
+					
+# 					save_global_event_target_as = USA_congress_investment_state
+# 					state_event = { id = usa.61 trigger_for = controller }
+# 				}
+# 			}
+# 			25 = {
+# 				modifier = {
+# 					NOT = {
+# 						any_owned_state = {
+# 							is_core_of = ROOT
+# 							is_controlled_by = ROOT
+# 							free_building_slots = {
+# 								building = arms_factory
+# 								size > 0
+# 								include_locked = no
+# 							}
+# 						}
+# 					}
+# 					factor = 0
+# 				}
+# 				modifier = {
+# 					has_completed_focus = USA_military_construction
+# 					factor = 2
+# 				}
+# 				random_owned_state = {
+# 					limit = {
+# 						is_core_of = ROOT
+# 						is_controlled_by = ROOT
+# 						free_building_slots = {
+# 							building = arms_factory
+# 							size > 0
+# 							include_locked = no
+# 						}
+# 					}
+# 					save_global_event_target_as = USA_congress_investment_state
+# 					state_event = { id = usa.62 trigger_for = controller }
+# 				}
+# 			}
+# 			25 = { 
+# 				modifier = {
+# 					NOT = {
+# 						any_owned_state = {
+# 							is_core_of = ROOT
+# 							is_controlled_by = ROOT
+# 							is_coastal = yes
+# 							free_building_slots = {
+# 								building = dockyard
+# 								size > 0
+# 								include_locked = no
+# 							}
+# 						}
+# 					}
+# 					factor = 0
+# 				}
+# 				random_owned_state = {
+# 					limit = {
+# 						is_core_of = ROOT
+# 						is_controlled_by = ROOT
+# 						free_building_slots = {
+# 							building = dockyard
+# 							size > 0
+# 							include_locked = no
+# 						}
+# 					}
+# 					save_global_event_target_as = USA_congress_investment_state
+# 					state_event = { id = usa.64 trigger_for = controller }
+# 				}
+# 			}
+# 			25 = {
+# 				modifier = {
+# 					NOT = {
+# 						any_owned_state = {
+# 							is_core_of = ROOT
+# 							free_building_slots = {
+# 								building = infrastructure
+# 								size > 0
+# 								include_locked = no
+# 							}
+# 						}
+# 					}
+# 					factor = 0
+# 				}
+# 				modifier = {
+# 					has_completed_focus = USA_USACE_projects
+# 					factor = 2
+# 				}
+# 				random_owned_state = {
+# 					limit = {
+# 						is_core_of = ROOT
+# 						is_controlled_by = ROOT
+# 						free_building_slots = {
+# 							building = infrastructure
+# 							size > 0
+# 							include_locked = no
+# 						}
+# 					}
+# 					save_global_event_target_as = USA_congress_investment_state
+# 					state_event = { id = usa.63 trigger_for = controller }
+# 				}
+# 			}
+# 		}
+# 		hidden_effect = {
+# 			country_event = { id = usa.50 days = 70 random_days = 10 }
+# 		}
+# 	}
+# }
+# # senator wants investment in civilian factory
+# country_event = {
+# 	id = usa.61
+# 	title = usa.61.t
+# 	desc = usa.61.desc
+# 	picture = GFX_report_event_generic_sign_treaty3
+	
+# 	is_triggered_only = yes
+	
+
+# 	option = {
+# 		name = usa.61.a #accept
+# 		ai_chance = {
+# 			factor = 0
+# 		}
+# 		unlock_decision_tooltip = { decision = USA_invest_in_state_factory show_effect_tooltip = yes }
+# 		event_target:USA_congress_investment_state = {
+# 			set_state_flag = USA_congress_build_factory
+# 			set_variable = { factory_goal = industrial_complex_level }
+# 			add_to_variable = { factory_goal = 1 }
+# 		}
+# 	}
+# 	option = {
+# 		name = usa.61.b #refuse
+# 		ai_chance = {
+# 			factor = 100
+# 		}
+# 		ROOT = { clr_country_flag = USA_congress_investment }
+# 		clear_global_event_target = USA_congress_investment_state
+# 	}
+# }
+
+# # senator wants investment in military factory
+# country_event = {
+# 	id = usa.62
+# 	title = usa.61.t
+# 	desc = usa.62.desc
+# 	picture = GFX_report_event_tank_factory
+	
+# 	is_triggered_only = yes
+	
+
+# 	option = {
+# 		name = usa.62.a #accept
+# 		ai_chance = {
+# 			factor = 0
+# 		}
+# 		unlock_decision_tooltip = { decision = USA_invest_in_state_arms_factory show_effect_tooltip = yes }
+# 		event_target:USA_congress_investment_state = {
+# 			set_state_flag = USA_congress_build_arms_factory
+# 			set_variable = { arms_factory_goal = arms_factory_level }
+# 			add_to_variable = { arms_factory_goal = 1 }
+# 		}
+# 	}
+# 	option = {
+# 		name = usa.62.b #refuse
+# 		ai_chance = {
+# 			factor = 100
+# 		}
+# 		ROOT = { clr_country_flag = USA_congress_investment }
+# 		clear_global_event_target = USA_congress_investment_state
+# 	}
+# }
+# # senator wants investment in infrastructure
+# country_event = {
+# 	id = usa.63
+# 	title = usa.63.t
+# 	desc = usa.63.desc
+# 	picture = GFX_report_event_generic_train
+	
+# 	is_triggered_only = yes
+	
+
+# 	option = {
+# 		name = usa.63.a #accept
+# 		ai_chance = {
+# 			factor = 0
+# 		}
+# 		unlock_decision_tooltip = { decision = USA_invest_in_state_infrastructure show_effect_tooltip = yes }
+# 		event_target:USA_congress_investment_state = {
+# 			set_state_flag = USA_congress_build_infrastructure
+# 			set_variable = { infrastructure_goal = infrastructure_level }
+# 			add_to_variable = { infrastructure_goal = 1 }
+# 		}
+# 	}
+# 	option = {
+# 		name = usa.63.b #refuse
+# 		ai_chance = {
+# 			factor = 100
+# 		}
+# 		ROOT = { clr_country_flag = USA_congress_investment }
+# 		clear_global_event_target = USA_congress_investment_state
+# 	}
+# }
+# # senator wants investment in dockyards
+# country_event = {
+# 	id = usa.64
+# 	title = usa.64.t
+# 	desc = usa.64.desc
+# 	picture = GFX_report_event_ast_navy
+	
+# 	is_triggered_only = yes
+	
+
+# 	option = {
+# 		name = usa.64.a #accept
+# 		ai_chance = {
+# 			factor = 0
+# 		}
+# 		unlock_decision_tooltip = { decision = USA_invest_in_state_dockyard show_effect_tooltip = yes }
+# 		event_target:USA_congress_investment_state = {
+# 			set_state_flag = USA_congress_build_dockyard
+# 			set_variable = { dockyard_goal = building_level@dockyard }
+# 			add_to_variable = { dockyard_goal = 1 }
+# 		}
+# 	}
+# 	option = {
+# 		name = usa.64.b #refuse
+# 		ai_chance = {
+# 			factor = 100
+# 		}
+# 		ROOT = { clr_country_flag = USA_congress_investment }
+# 		clear_global_event_target = USA_congress_investment_state
+# 	}
+# }
+
+# country_event = {
+# 	id = usa.176 #Fire arsenal of democracy speech
+	
+# 	fire_only_once = yes
+	
+# 	trigger = {
+# 		tag = USA
+# 		has_war = yes
+# 		has_war_with = GER
+# 		date > 1939.1.1
+# 	}
+	
+# 	mean_time_to_happen = {
+# 		days = 30
+# 	}
+	
+# 	hidden = yes
+
+# 	immediate = {
+# 		play_arsenal_of_democracy_effect = yes
+# 	}
+# }
+### ECONOMIC DEVELOPMENT
+country_event = { # Usonian Loans?
+	id = usa_eco_development.1
+	title = usa_eco_development.1.t
+	desc = usa_eco_development.1.desc
+	picture = GFX_report_event_generic_read_write
+	
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = { # Accept the loans
+		ai_chance = {
+			base = 20
+			modifier = {
+				num_of_civilian_factories < 35
+				add = 20
+			}
+		}
+		name = usa_eco_development.1.a
+		add_timed_idea = {
+			idea = usonian_loans
+			days = 365
+		}
+		add_offsite_building = {
+			type = industrial_complex
+			level = 1
+		}
+		FROM = {
+			country_event = usa_eco_development.2
+		}
+		country_event = {
+			id = usa_eco_development.3
+			days = 365
+		}
+	}
+	option = { # Deny the loans
+		ai_chance = {
+			base = 15
+			modifier = {
+				num_of_civilian_factories > 35
+				add = 20
+			}
+		}
+		name = usa_eco_development.1.b
+		add_political_power = 25
+	}
+}
+country_event = { # Loans Accepted
+	id = usa_eco_development.2
+	title = usa_eco_development.2.t
+	desc = usa_eco_development.2.desc
+	picture = placeholder
+	
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = { # Excellent
+		name = usa_eco_development.2.a
+		add_political_power = 10
+		add_opinion_modifier = {
+			target = FROM
+			modifier = medium_increase
+		}
+	}
+}
+country_event = { # Another loan?
+	id = usa_eco_development.3
+	title = usa_eco_development.3.t
+	desc = usa_eco_development.3.desc
+	picture = placeholder
+	
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = { # Take out another
+		ai_chance = {
+			base = 15
+			modifier = {
+				num_of_civilian_factories < 15
+				add = 100
+			}
+		}
+		name = usa_eco_development.3.a
+		add_timed_idea = {
+			idea = usonian_loans
+			days = 365
+		}
+		add_offsite_building = {
+			type = industrial_complex
+			level = 1
+		}
+		FROM = {
+			country_event = usa_eco_development.4
+		}
+		country_event = {
+			id = usa_eco_development.3
+			days = 365
+		}
+	}
+	option = { # We don't need any more
+		ai_chance = {
+			base = 15
+			modifier = {
+				num_of_civilian_factories > 15
+				add = 100
+			}
+		}
+		name = usa_eco_development.3.b
+		add_political_power = 25
+	}
+}
+country_event = { # They Took Out Another Loan
+	id = usa_eco_development.4
+	title = usa_eco_development.4.t
+	desc = usa_eco_development.4.desc
+	picture = placeholder
+	
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = { # Excellent
+		name = usa_eco_development.4.a
+		add_political_power = 10
+		add_opinion_modifier = {
+			target = FROM
+			modifier = medium_increase
+		}
+	}
+}
+country_event = { # Transition to the dollar?
+	id = usa_eco_development.5
+	title = usa_eco_development.5.t
+	desc = usa_eco_development.5.desc
+	picture = placeholder
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = { # The Dollar is better
+		name = usa_eco_development.5.a
+		ai_chance = {
+			base = 10
+			modifier = {
+				num_of_civilian_factories < 30
+				add = 100
+			}
+			modifier = {
+				has_idea = great_depression
+				add = 100
+			}
+			modifier = {
+				has_idea = great_depression_2
+				add = 100
+			}
+			modifier = {
+				has_idea = great_depression_3
+				add = 100
+			}
+		}
+		add_timed_idea = {
+			idea = transition_to_the_dollar
+			days = 730
+		}
+		hidden_effect = {
+			country_event = {
+				id = usa_eco_development.6
+				days = 730
+			}
+		}
+	}
+	option = { # We prefer our own currency
+		ai_chance = {
+			base = 10
+		}
+		name = usa_eco_development.5.b
+	}
+}
+country_event = { # Transition to the dollar!
+	id = usa_eco_development.6
+	title = usa_eco_development.6.t
+	desc = usa_eco_development.6.desc
+	picture = placeholder
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = { # The Dollar is better
+		name = usa_eco_development.6.a
+		add_ideas = dollarzone_idea
+		if = {
+			limit = {
+				USA = {
+					NOT = {
+						has_idea = dollarzone_idea
+					}
+				}
+			}
+			USA = {
+				add_ideas = dollarzone
+			}
+		}
+		add_opinion_modifier = {
+			target = USA
+			modifier = dollarzone_member
+		}
+		reverse_add_opinion_modifier = {
+			target = USA
+			modifier = dollarzone_member
+		}
+	}
+}
+
+### LA PLATA
+country_event = {
+	id = usa_la_plata.1
+	title = usa_la_plata.1.t
+	desc = usa_la_plata.1.desc
+	picture = GFX_report_event_ITA_italian_civil_war
+	
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = usa_la_plata.1.a
+		complete_national_focus = USA_La_Platan_Civil_War
+	}
+}
+country_event = { # Guns from Usonia
+	id = usa_la_plata.2
+	title = usa_la_plata.2.t
+	desc = usa_la_plata.2.desc
+	picture = GFX_report_event_generic_rifles
+	
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = usa_la_plata.2.a
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 5000
+			producer = USA
+		}
+	}
+}
+country_event = { # Usonia Recognizes Us
+	id = usa_la_plata.3
+	title = usa_la_plata.3.t
+	desc = usa_la_plata.3.desc
+	picture = GFX_report_event_USA_white_house
+	
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = usa_la_plata.3.a
+		add_political_power = 150
+		add_stability = 0.10
+		add_war_support = 0.10
+	}
+}
+country_event = { # Usonia Occupies The Malvinas
+	id = usa_la_plata.4
+	title = usa_la_plata.4.t
+	desc = usa_la_plata.4.desc
+	picture = GFX_report_event_USA_mobile_air_corps
+	
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = { # Snakes!
+		name = usa_la_plata.4.a
+	}
+}
+country_event = { # Turning Over The Falklands? (Liberal victory)
+	id = usa_la_plata.5
+	title = usa_la_plata.5.t
+	desc = usa_la_plata.5.desc
+	picture = GFX_report_event_generic_islas_malvinas
+	fire_only_once = yes
+	trigger = {
+		LPT = {
+			exists = yes
+			has_civil_war = no
+		}
+		ROOT = {
+			owns_state = 299
+		}
+		299 = {
+			is_core_of = LPT
+		}
+	}
+
+	option = { # Hand it over to them
+		name = usa_la_plata.5.a
+		LPT = {
+			transfer_state = 299
+			country_event = usa_la_plata.6
+		}
+	}
+	option = { # It's ours to keep
+		name = usa_la_plata.5.b
+		add_political_power = -50
+		LPT = {
+			country_event = usa_la_plata.7
+		}
+	}
+}
+country_event = { # Usonia Returns Falklands
+	id = usa_la_plata.6
+	title = usa_la_plata.6.t
+	desc = usa_la_plata.6.desc
+	picture = GFX_report_event_generic_islas_malvinas
+	
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = { # Yippee!
+		name = usa_la_plata.6.a
+	}
+}
+country_event = { # Usonia Refuses To Return Falklands
+	id = usa_la_plata.7
+	title = usa_la_plata.7.t
+	desc = usa_la_plata.7.desc
+	picture = GFX_report_event_generic_islas_malvinas
+	
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = { # Cringe
+		name = usa_la_plata.7.a
+	}
+}
+country_event = { # Give Liberals The Falklands? (Liberal defeat)
+	id = usa_la_plata.8
+	title = usa_la_plata.8.t
+	desc = usa_la_plata.8.desc
+	picture = GFX_report_event_generic_islas_malvinas
+	fire_only_once = yes
+	trigger = {
+		LAP = {
+			exists = yes
+			has_civil_war = no
+		}
+		LPT = {
+			exists = no
+		}
+		ROOT = {
+			owns_state = 299
+			has_completed_focus = USA_La_Platan_Civil_War
+		}
+		299 = {
+			is_core_of = LAP
+		}
+	}
+
+	option = { # Establish a liberal La Platan government there
+		name = usa_la_plata.8.a
+		LPT = {
+			transfer_state = 299
+			# Load custom focus tree
+		}
+	}
+	option = { # It's best if we just hold onto it
+		name = usa_la_plata.8.b
+	}
+}
+### ALASKA
+country_event = { # Usonia Offers To Buy Alaska
+	id = usa_alaska.1
+	title = usa_alaska.1.t
+	desc = usa_alaska.1.desc
+	picture = GFX_report_event_USA_alaska
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = { # Accept Deal
+		name = usa_alaska.1.a
+		USA = {
+			transfer_state = 463
+		}
+		add_timed_idea = {
+			idea = sov_alaska_payments
+			days = 1825
+		}
+		USA = {
+			add_timed_idea = {
+				idea = usa_alaska_payments
+				days = 1825
+			}
+			country_event = usa_alaska.2
+		}
+	}
+	option = { # Refuse Deal
+		name = usa_alaska.1.b
+		USA = {
+			set_country_flag = usa_alaska_purchase_failed
+			country_event = usa_alaska.3
+		}
+	}
+}
+country_event = { # Rusviet Accepts Deal
+	id = usa_alaska.2
+	title = usa_alaska.2.t
+	desc = usa_alaska.2.desc
+	picture = GFX_report_event_USA_alaska
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = { # Wonderful
+		name = usa_alaska.2.a
+	}
+}
+country_event = { # Rusviet Refuses Deal
+	id = usa_alaska.3
+	title = usa_alaska.3.t
+	desc = usa_alaska.3.desc
+	picture = GFX_report_event_USA_alaska
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = { # Then we go in ourselves
+		name = usa_alaska.3.a
+	}
+}
+country_event = { # Alaska Goes To Usonia (Usonia Perspective)
+	id = usa_alaska.4
+	title = usa_alaska.4.t
+	desc = usa_alaska.4.desc
+	picture = GFX_report_event_USA_alaska
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = { # Send the boys in
+		name = usa_alaska.4.a
+		add_stability = 0.05
+		ROOT = {
+			transfer_state = 463
+		}
+	}
+}
+country_event = { # Alaska Goes To Usonia (Rusviet Perspective)
+	id = usa_alaska.5
+	title = usa_alaska.5.t
+	desc = usa_alaska.5.desc
+	picture = GFX_report_event_USA_alaska
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = usa_alaska.5.a
+		add_stability = -0.02
+	}
+}
+country_event = { # Rusviet Holds Alaska (Usonia Perspective)
+	id = usa_alaska.6
+	title = usa_alaska.6.t
+	desc = usa_alaska.6.desc
+	picture = GFX_report_event_USA_alaska
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = { # How did this happen?!
+		name = usa_alaska.6.a
+		add_stability = -0.02
+	}
+}
+country_event = { # Rusviet Holds Alaska (Rusviet Perspective)
+	id = usa_alaska.7
+	title = usa_alaska.7.t
+	desc = usa_alaska.7.desc
+	picture = GFX_report_event_USA_alaska
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = { # One less thing to worry about
+		name = usa_alaska.7.a
+		add_stability = 0.05
+	}
+}
+
+### ARABIA ###
+country_event = { # UEF Flies To Arabia
+	id = usa_arabia.1
+	title = usa_arabia.1.t
+	desc = usa_arabia.1.desc
+	picture = placeholder
+	
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = { # Wish them luck
+		name = usa_arabia.1.a
+		hidden_effect = {
+			country_event = {
+				id = usa_arabia.2
+				days = 21
+			}
+		}
+	}
+}
+country_event = { # Dropships Down!
+	id = usa_arabia.2
+	title = usa_arabia.2.t
+	desc = usa_arabia.2.desc
+	picture = placeholder
+	
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = { # Dear lord...
+		name = usa_arabia.2.a
+		add_manpower = -12
+	}
+}
+country_event = { # William's Plan
+	id = usa_arabia.3
+	title = usa_arabia.3.t
+	desc = usa_arabia.3.desc
+	picture = placeholder
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = usa_arabia.3.a
+		BED = {
+			add_manpower = 10000
+		}
+		send_equipment = {
+			type = infantry_equipment
+			amount 5000
+			target = BED
+		}
+		send_equipment = {
+			type = fighter_equipment
+			amount 25
+			target = BED
+		}
+		BED = {
+			country_event = usa_arabia.4
+		}
+		set_country_flag = usa_supported_bedouins
+	}
+}
+country_event = { # Mason Keeps His Promise
+	id = usa_arabia.4
+	title = usa_arabia.4.t
+	desc = usa_arabia.4.desc
+	picture = placeholder
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = usa_arabia.4.a
+		add_war_support = 0.025
+	}
+}
+country_event = { # George's Plan
+	id = usa_arabia.5
+	title = usa_arabia.5.t
+	desc = usa_arabia.5.desc
+	picture = placeholder
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = { # send the offer
+		name = usa_arabia.5.a
+		SAU = {
+			id = usa_arabia.6
+			days = 1
+		}
+	}
+}
+country_event = { # Usonia Gives A Better Offer
+	id = usa_arabia.6
+	title = usa_arabia.6.t
+	desc = usa_arabia.6.desc
+	picture = placeholder
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = { # Accept
+		name = usa_arabia.6.a
+		add_war_support = 0.025
+		add_manpower = 10000
+		USA = {
+			send_equipment = {
+				type = infantry_equipment
+				amount 5000
+				target = SAU
+			}
+			send_equipment = {
+				type = fighter_equipment
+				amount 25
+				target = SAU
+			}
+			set_country_flag = usa_supported_arab_monarchy
+		}
+	}
+
+	option = { # Deny
+		name = usa_arabia.6.b
+		USA = {
+			country_event = {
+				id = usa_arabia.7
+				days = 1
+			}
+		}
+	}
+}
+country_event = { # Arabia Denies
+	id = usa_arabia.7
+	title = usa_arabia.7.t
+	desc = usa_arabia.7.desc
+	picture = placeholder
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = { # Let's listen to William
+		name = usa_arabia.7.a
+		BED = {
+			add_manpower = 10000
+		}
+		send_equipment = {
+			type = infantry_equipment
+			amount 5000
+			target = BED
+		}
+		send_equipment = {
+			type = fighter_equipment
+			amount 25
+			target = BED
+		}
+		BED = {
+			country_event = usa_arabia.4
+		}
+		set_country_flag = usa_supported_bedouins
+	}
+}
+country_event = { # In Come The Airships
+	id = usa_arabia.8
+	title = usa_arabia.8.t
+	desc = usa_arabia.8.desc
+	picture = placeholder
+
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+
+	option = { # Salvation!
+		name = usa_arabia.8.a
+		if = {
+			limit = {
+				NOT = {
+					has_tech = tech_logistics_company
+				}
+			}
+			set_technology = {
+				tech_logistics_company = 1
+			}
+		}
+		division_template = {
+			name = "Usonian Volunteers"
+			is_locked = yes
+			division_names_group = USA_INF_01
+			priority = 1
+			template_counter = 0
+			regiments = {
+				infantry = { x = 0 y = 0 }
+				infantry = { x = 0 y = 1 }
+				infantry = { x = 0 y = 2 }
+				infantry = { x = 0 y = 3 }
+				infantry = { x = 0 y = 4 }
+				infantry = { x = 1 y = 0 }
+				infantry = { x = 1 y = 1 }
+				infantry = { x = 1 y = 2 }
+				infantry = { x = 1 y = 3 }
+				infantry = { x = 1 y = 4 }
+				infantry = { x = 2 y = 0 }
+				infantry = { x = 2 y = 1 }
+				infantry = { x = 2 y = 2 }
+				infantry = { x = 2 y = 3 }
+				infantry = { x = 2 y = 4 }
+			}
+			support = {
+				artillery = { x = 0 y = 0 }
+				engineer = { x = 0 y = 1 }
+				logistics_company = { x = 0 y = 2 }
+			}
+		}
+		if = {
+			limit = {
+				USA = {
+					NOT = {
+						has_completed_focus = USA_Establish_US_Peacekeepers
+					}
+				}
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 2000
+				producer = GER
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 150
+				producer = GER
+			}
+			add_equipment_to_stockpile = {
+				type = artillery_equipment
+				amount = 36
+				producer = GER
+			}
+			add_equipment_to_stockpile = {
+				type = motorized_equipment
+				amount = 30
+				producer = GER
+			}
+			random_owned_controlled_state = {
+				create_unit = {
+					division = "name = \"Usonian Volunteers\" division_template = \"Usonian Volunteers\" start_experience_factor = 2 start_equipment_factor = 1 start_manpower_factor = 1"
+					owner = ROOT
+				}
+			}
+			random_owned_controlled_state = {
+				create_unit = {
+					division = "name = \"Usonian Volunteers\" division_template = \"Usonian Volunteers\" start_experience_factor = 2 start_equipment_factor = 1 start_manpower_factor = 1"
+					owner = ROOT
+				}
+			}
+			random_owned_controlled_state = {
+				create_unit = {
+					division = "name = \"Usonian Volunteers\" division_template = \"Usonian Volunteers\" start_experience_factor = 2 start_equipment_factor = 1 start_manpower_factor = 1"
+					owner = ROOT
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				USA = {
+					has_completed_focus = USA_Establish_US_Peacekeepers
+				}
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 3000
+				producer = GER
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 180
+				producer = GER
+			}
+			add_equipment_to_stockpile = {
+				type = artillery_equipment
+				amount = 48
+				producer = GER
+			}
+			add_equipment_to_stockpile = {
+				type = motorized_equipment
+				amount = 555
+				producer = GER
+			}
+			division_template = {
+				name = "MECOM Peacekeepers"
+				is_locked = yes
+				division_names_group = USA_INF_01
+				priority = 1
+				template_counter = 39
+				regiments = {
+					motorized = { x = 0 y = 0 }
+					motorized = { x = 0 y = 1 }
+					motorized = { x = 0 y = 2 }
+					motorized = { x = 0 y = 3 }
+					motorized = { x = 0 y = 4 }
+					motorized = { x = 1 y = 0 }
+					motorized = { x = 1 y = 1 }
+					motorized = { x = 1 y = 2 }
+					motorized = { x = 1 y = 3 }
+					motorized = { x = 1 y = 4 }
+					motorized = { x = 2 y = 0 }
+					motorized = { x = 2 y = 1 }
+					motorized = { x = 2 y = 2 }
+					motorized = { x = 2 y = 3 }
+					motorized = { x = 2 y = 4 }
+				}
+				support = {
+					artillery = { x = 0 y = 0 }
+					engineer = { x = 0 y = 1 }
+					logistics_company = { x = 0 y = 2 }
+				}
+			}
+			random_owned_controlled_state = {
+				create_unit = {
+					division = "name = \"MECOM Peacekeepers\" division_template = \"MECOM Peacekeepers\" start_experience_factor = 2 start_equipment_factor = 1 start_manpower_factor = 1"
+					owner = ROOT
+				}
+			}
+			random_owned_controlled_state = {
+				create_unit = {
+					division = "name = \"Usonian Volunteers\" division_template = \"Usonian Volunteers\" start_experience_factor = 2 start_equipment_factor = 1 start_manpower_factor = 1"
+					owner = ROOT
+				}
+			}
+			random_owned_controlled_state = {
+				create_unit = {
+					division = "name = \"Usonian Volunteers\" division_template = \"Usonian Volunteers\" start_experience_factor = 2 start_equipment_factor = 1 start_manpower_factor = 1"
+					owner = ROOT
+				}
+			}
+			random_owned_controlled_state = {
+				create_unit = {
+					division = "name = \"Usonian Volunteers\" division_template = \"Usonian Volunteers\" start_experience_factor = 2 start_equipment_factor = 1 start_manpower_factor = 1"
+					owner = ROOT
+				}
+			}
+		}
+	}
+}
+country_event = { # Mason's first report
+	id = usa_arabia.9
+	title = usa_arabia.9.t
+	desc = usa_arabia.9.desc
+	picture = placeholder
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = { # Interesting...
+		name = usa_arabia.9.a
+	}
+}
+
+### UNITED STATES
+country_event = { # Invitation into the United States
+	id = usa_united_states.1
+	title = usa_united_states.1.t
+	desc = usa_united_states.1.desc
+	picture = placeholder
+	
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = { # Accept
+		name = usa_united_states.1.a
+		ai_chance = {
+			base = 100
+			modifier = {
+				is_subject_of = USA
+				add = 100
+			}
+			modifier = {
+				is_in_faction_with = USA
+				add = 100
+			}
+		}
+		USA = {
+			add_to_faction = ROOT
+		}
+	}
+	option = { # Deny
+		name = usa_united_states.1.b
+		ai_chance = {
+			base = 0
+			modifier = {
+				is_in_faction = yes
+				add = 100
+			}
+			modifier = {
+				is_subject = yes
+				add = 100
+			}
+		}
+	}
+}
+
+country_event = { # Peacekeeper Supply Raid Successful
+	id = us_peacekeeper_sof_operation.1
+	title = us_peacekeeper_sof_operation.1.t
+	desc = us_peacekeeper_sof_operation.1.desc
+	picture = placeholder
+
+	is_triggered_only = yes
+
+	option = { # Hell yes
+		name = us_peacekeeper_sof_operation.1.a
+	}
+}
+
+country_event = { # Peacekeeper Supply Raid Failed
+	id = us_peacekeeper_sof_operation.2
+	title = us_peacekeeper_sof_operation.2.t
+	desc = us_peacekeeper_sof_operation.2.desc
+	picture = placeholder
+
+	is_triggered_only = yes
+
+	option = { # Hell yes
+		name = us_peacekeeper_sof_operation.2.a
+		set_temp_variable = { us_peacekeeper_sof_operation_casualties = random }
+		multiply_temp_variable = { us_peacekeeper_sof_operation_casualties = -100 }
+		if = {
+			limit = {
+				has_completed_focus = USA_Integrate_The_Mobile_Air_Corps
+			}
+			divide_temp_variable = { us_peacekeeper_sof_operation_casualties = 2 }
+		}
+		round_temp_variable = us_peacekeeper_sof_operation_casualties
+		add_manpower = var:us_peacekeeper_sof_operation_casualties
+	}
+}
+
+country_event = { # Supplied Raided!
+	id = us_peacekeeper_sof_operation.3
+	title = us_peacekeeper_sof_operation.3.t
+	desc = us_peacekeeper_sof_operation.2.desc
+	picture = placeholder
+
+	is_triggered_only = yes
+
+	option = { # FUCK
+		name = us_peacekeeper_sof_operation.3.a
+		add_timed_idea = {
+			idea = us_supplies_raided
+			days = 30
+		}
+	}
+}
+
+### USEA ###
+country_event = { # Resource trade amendment
+	id = usa_usea.1
+	title = usa_usea.1.t
+	desc = usa_usea.1.desc
+	picture = placeholder
+
+	is_triggered_only = yes
+
+	option = { # Vote Aye!
+		name = usa_usea.1.a
+		ai_chance = {
+			base = 10
+		}
+		custom_effect_tooltip = USEA_Amendment_tt
+		custom_effect_tooltip = usa_modify_usea_ns_intro
+		add_to_variable = { usea_idea_political_power_factor = -0.05 tooltip = political_power_factor_tt }
+		add_to_variable = { usea_idea_local_resources_factor = 0.15 tooltip = local_resources_factor_tt }
+		USA = {
+			add_to_variable = {
+				var = usea_resource_exchange_votes
+                value = 1
+			}
+		}
+		USA = {
+			country_event = {
+				id = usa_usea.2
+				days = 1
+				random_days = 12
+			}
+		}
+	}
+	option = { # Vote Nay!
+		name = usa_usea.1.b
+		USA = {
+			country_event = {
+				id = usa_usea.3
+				days = 1
+				random_days = 12
+			}
+		}
+	}
+}
+country_event = { # [FROM] Votes Aye!
+	id = usa_usea.2
+	title = usa_usea.2.t
+	desc = usa_usea.2.desc
+	picture = placeholder
+
+	is_triggered_only = yes
+
+	option = { # Wonderful
+		name = usa_usea.2.a
+	}
+}
+country_event = { # [FROM] Votes Nay!
+	id = usa_usea.3
+	title = usa_usea.3.t
+	desc = usa_usea.3.desc
+	picture = placeholder
+
+	is_triggered_only = yes
+
+	option = { # Damn
+		name = usa_usea.3.a
+	}
+}
+country_event = { # Resource Amendment Passes!
+	id = usa_usea.4
+	title = usa_usea.4.t
+	desc = usa_usea.4.desc
+	picture = placeholder
+
+	is_triggered_only = yes
+
+	option = { # Great Success!
+		name = usa_usea.4.a
+		custom_effect_tooltip = usa_modify_usea_ns_intro
+		add_to_variable = { usea_idea_political_power_factor = -0.05 tooltip = political_power_factor_tt }
+		add_to_variable = { usea_idea_local_resources_factor = 0.15 tooltip = local_resources_factor_tt }
+		force_update_dynamic_modifier = yes
+	}
+}
+country_event = { # Resource Amendment Fails!
+	id = usa_usea.5
+	title = usa_usea.5.t
+	desc = usa_usea.5.desc
+	picture = placeholder
+
+	is_triggered_only = yes
+
+	option = { # It was worth a try
+		name = usa_usea.5.a
+	}
+}
+country_event = { # Civilian contractors amendment
+	id = usa_usea.6
+	title = usa_usea.6.t
+	desc = usa_usea.6.desc
+	picture = placeholder
+
+	is_triggered_only = yes
+
+	option = { # Vote Aye!
+		name = usa_usea.6.a
+		custom_effect_tooltip = USEA_Amendment_tt
+		custom_effect_tooltip = usa_modify_usea_ns_intro
+		add_to_variable = { usea_idea_political_power_factor = -0.05 tooltip = political_power_factor_tt }
+		add_to_variable = { usea_idea_production_speed_industrial_complex_factor = 0.10 tooltip = production_speed_industrial_complex_factor_tt }
+		USA = {
+			add_to_variable = {
+				var = usea_civilian_contractor_votes
+                value = 1
+			}
+		}
+		USA = {
+			country_event = {
+				id = usa_usea.7
+				days = 1
+				random_days = 12
+			}
+		}
+	}
+	option = { # Vote Nay!
+		name = usa_usea.1.b
+		USA = {
+			country_event = {
+				id = usa_usea.8
+				days = 1
+				random_days = 12
+			}
+		}
+	}
+}
+country_event = { # [FROM] Votes Aye!
+	id = usa_usea.7
+	title = usa_usea.7.t
+	desc = usa_usea.7.desc
+	picture = placeholder
+
+	is_triggered_only = yes
+
+	option = { # Wonderful
+		name = usa_usea.7.a
+	}
+}
+country_event = { # [FROM] Votes Nay!
+	id = usa_usea.8
+	title = usa_usea.8.t
+	desc = usa_usea.8.desc
+	picture = placeholder
+
+	is_triggered_only = yes
+
+	option = { # Damn
+		name = usa_usea.8.a
+	}
+}
+country_event = { # Civilian Contractor Amendment Passes!
+	id = usa_usea.9
+	title = usa_usea.9.t
+	desc = usa_usea.9.desc
+	picture = placeholder
+
+	is_triggered_only = yes
+
+	option = { # Great Success!
+		name = usa_usea.9.a
+		custom_effect_tooltip = usa_modify_usea_ns_intro
+		add_to_variable = { usea_idea_political_power_factor = -0.05 tooltip = political_power_factor_tt }
+		add_to_variable = { usea_idea_production_speed_industrial_complex_factor = 0.10 tooltip = production_speed_industrial_complex_factor_tt }
+		force_update_dynamic_modifier = yes
+	}
+}
+country_event = { # Civilian Contractor Amendment Fails!
+	id = usa_usea.10
+	title = usa_usea.10.t
+	desc = usa_usea.10.desc
+	picture = placeholder
+
+	is_triggered_only = yes
+
+	option = { # It was worth a try
+		name = usa_usea.10.a
+	}
+}
+country_event = { # Military industry amendment
+	id = usa_usea.11
+	title = usa_usea.11.t
+	desc = usa_usea.11.desc
+	picture = placeholder
+
+	is_triggered_only = yes
+
+	option = { # Vote Aye!
+		name = usa_usea.11.a
+		custom_effect_tooltip = USEA_Amendment_tt
+		custom_effect_tooltip = usa_modify_usea_ns_intro
+		add_to_variable = { usea_idea_political_power_factor = -0.05 tooltip = political_power_factor_tt }
+		add_to_variable = { usea_idea_production_speed_industrial_complex_factor = 0.10 tooltip = production_speed_industrial_complex_factor_tt }
+		USA = {
+			add_to_variable = {
+				var = usea_military_industry_votes
+                value = 1
+			}
+		}
+		USA = {
+			country_event = {
+				id = usa_usea.12
+				days = 1
+				random_days = 12
+			}
+		}
+	}
+	option = { # Vote Nay!
+		name = usa_usea.1.b
+		USA = {
+			country_event = {
+				id = usa_usea.13
+				days = 1
+				random_days = 12
+			}
+		}
+	}
+}
+country_event = { # [FROM] Votes Aye!
+	id = usa_usea.12
+	title = usa_usea.12.t
+	desc = usa_usea.12.desc
+	picture = placeholder
+
+	is_triggered_only = yes
+
+	option = { # Wonderful
+		name = usa_usea.12.a
+	}
+}
+country_event = { # [FROM] Votes Nay!
+	id = usa_usea.13
+	title = usa_usea.13.t
+	desc = usa_usea.13.desc
+	picture = placeholder
+
+	is_triggered_only = yes
+
+	option = { # Damn
+		name = usa_usea.13.a
+	}
+}
+country_event = { # Military Industry Amendment Passes!
+	id = usa_usea.14
+	title = usa_usea.14.t
+	desc = usa_usea.14.desc
+	picture = placeholder
+
+	is_triggered_only = yes
+
+	option = { # Great Success!
+		name = usa_usea.14.a
+		custom_effect_tooltip = usa_modify_usea_ns_intro
+		add_to_variable = { usea_idea_political_power_factor = -0.05 tooltip = political_power_factor_tt }
+		add_to_variable = { usea_idea_production_speed_arms_factory_factor = 0.10 tooltip = production_speed_industrial_complex_factor_tt }
+		force_update_dynamic_modifier = yes
+	}
+}
+country_event = { # Military Industry Amendment Fails!
+	id = usa_usea.15
+	title = usa_usea.15.t
+	desc = usa_usea.15.desc
+	picture = placeholder
+
+	is_triggered_only = yes
+
+	option = { # It was worth a try
+		name = usa_usea.15.a
+	}
+}
+country_event = { # Unified Currency amendment
+	id = usa_usea.16
+	title = usa_usea.16.t
+	desc = usa_usea.16.desc
+	picture = placeholder
+
+	is_triggered_only = yes
+
+	option = { # Vote Aye!
+		name = usa_usea.16.a
+		custom_effect_tooltip = USEA_Amendment_tt
+		custom_effect_tooltip = usa_modify_usea_ns_intro
+		add_to_variable = { usea_idea_political_power_factor = -0.05 tooltip = political_power_factor_tt }
+		add_to_variable = { usea_idea_consumer_goods_factor = -0.05 tooltip = consumer_goods_factor_tt }
+		USA = {
+			add_to_variable = {
+				var = usea_unified_currency_votes
+                value = 1
+			}
+		}
+		USA = {
+			country_event = {
+				id = usa_usea.17
+				days = 1
+				random_days = 12
+			}
+		}
+	}
+	option = { # Vote Nay!
+		name = usa_usea.1.b
+		USA = {
+			country_event = {
+				id = usa_usea.18
+				days = 1
+				random_days = 12
+			}
+		}
+	}
+}
+country_event = { # [FROM] Votes Aye!
+	id = usa_usea.17
+	title = usa_usea.17.t
+	desc = usa_usea.17.desc
+	picture = placeholder
+
+	is_triggered_only = yes
+
+	option = { # Wonderful
+		name = usa_usea.17.a
+	}
+}
+country_event = { # [FROM] Votes Nay!
+	id = usa_usea.18
+	title = usa_usea.18.t
+	desc = usa_usea.18.desc
+	picture = placeholder
+
+	is_triggered_only = yes
+
+	option = { # Damn
+		name = usa_usea.18.a
+	}
+}
+country_event = { # Unified Currency Amendment Passes!
+	id = usa_usea.19
+	title = usa_usea.19.t
+	desc = usa_usea.19.desc
+	picture = placeholder
+
+	is_triggered_only = yes
+
+	option = { # Great Success!
+		name = usa_usea.19.a
+		custom_effect_tooltip = usa_modify_usea_ns_intro
+		add_to_variable = { usea_idea_political_power_factor = -0.05 tooltip = political_power_factor_tt }
+		add_to_variable = { usea_idea_consumer_goods_factor = -0.05 tooltip = consumer_goods_factor_tt }
+		force_update_dynamic_modifier = yes
+	}
+}
+country_event = { # Unified Currency Amendment Fails!
+	id = usa_usea.20
+	title = usa_usea.20.t
+	desc = usa_usea.20.desc
+	picture = placeholder
+
+	is_triggered_only = yes
+
+	option = { # It was worth a try
+		name = usa_usea.20.a
+	}
+}
+
+### ELECTIONS ###
+# Midterms
+country_event = { # House Elections
+	id = usa_midterms.1
+	title = usa_midterms.1.t
+	desc = usa_midterms.1.desc
+	picture = placeholder
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			USA_house_elections = yes
+			USA_senate_elections = yes
+			country_event = {
+				id = usa_midterms.1
+				days = 730
+			}
+		}
+	}
+
+	option = { # Let's see the results
+		name = usa_elections.1.a
+		custom_effect_tooltip = usa_midterms_1_tt
+	}
+}
+
+# 1920
+country_event = { # 1920 Election
+	id = usa_elections.1
+	title = usa_elections.1.t
+	desc = usa_elections.1.desc
+	picture = placeholder
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			complete_national_focus = USA_1920_Elections
+			# 1924 Election in 1464 days
+		}
+	}
+
+	option = { # Four More Years!
+		name = usa_elections.1.a
+		country_event = {
+			id = usa_elections.2
+			days = 123
+		}
+	}
+	option = { # Can't keep Cox in a box
+		name = usa_elections.1.b
+		country_event = {
+			id = usa_elections.3
+			days = 123
+		}
+	}
+}
+
+country_event = { # Booker T. Washington Inauguration
+	id = usa_elections.2
+	title = usa_elections.2.t
+	desc = usa_elections.2.desc
+	picture = placeholder
+
+	is_triggered_only = yes
+
+	option = { # Hail to the chief!
+		name = usa_elections.2.a
+		complete_national_focus = USA_Washington_Wins
+	}
+}
+
+country_event = { # James Cox Inauguration
+	id = usa_elections.3
+	title = usa_elections.3.t
+	desc = usa_elections.3.desc
+	picture = placeholder
+
+	is_triggered_only = yes
+
+	option = { # Hail to the chief!
+		name = usa_elections.3.a
+		complete_national_focus = USA_Cox_Wins
+		retire_country_leader = yes
+		USA_james_cox = {
+			add_country_leader_role = {
+				promote_leader = yes
+				country_leader = {
+					ideology = liberalism
+					expire = "1965.1.1.1"
+					traits = { }
+				}
+			}
+		}
+		set_party_name = {
+			ideology = democratic
+			long_name = USA_democratic_republican_party_long
+			name = USA_democratic_republican_party
+		}
+	}
+}

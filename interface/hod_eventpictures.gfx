@@ -1,0 +1,18 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_report_event_generic_islas_malvinas"
+		texturefile = "gfx/event_pictures/report_event_generic_islas_malvinas.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_USA_mobile_air_corps"
+		texturefile = "gfx/event_pictures/report_event_USA_mobile_air_corps.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_USA_white_house"
+		texturefile = "gfx/event_pictures/report_event_USA_white_house.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_USA_alaska"
+		texturefile = "gfx/event_pictures/report_event_USA_alaska.dds"
+	}
+}
