@@ -1363,7 +1363,7 @@ focus_tree = {
 	focus = {
 		id = USA_Foreign_Affairs
 		icon = GFX_goal_generic_position_armies
-		x = 42
+		x = 37
 		y = 0
 		cost = 10
 		ai_will_do = {
@@ -1379,7 +1379,7 @@ focus_tree = {
 		icon = GFX_focus_usa_the_new_world
 		relative_position_id = USA_Foreign_Affairs
 		prerequisite = { focus = USA_Foreign_Affairs }
-		x = -15
+		x = -11
 		y = 1
 		cost = 10
 		ai_will_do = {
@@ -2960,7 +2960,7 @@ focus_tree = {
 		icon = GFX_goal_generic_territory_or_war
 		relative_position_id = USA_Foreign_Affairs
 		prerequisite = { focus = USA_Foreign_Affairs }
-		x = 15
+		x = 11
 		y = 1
 		cost = 10
 		ai_will_do = {
@@ -3108,29 +3108,6 @@ focus_tree = {
 					level = 2
 					instant_build = yes
 				}
-			}
-		}
-	}
-	focus = {
-		id = USA_Operation_Judgement_Day
-		icon = placeholder
-		relative_position_id = USA_Establish_US_Peacekeepers
-		available = {
-			NOT = {
-				has_government = fenris
-			}
-			has_global_flag = FEN_is_revealed_flag
-		}
-		x = 0
-		y = 8
-		cost = 10
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			create_wargoal = {
-				type = annex_everything
-				target = FEN
 			}
 		}
 	}
@@ -3394,7 +3371,7 @@ focus_tree = {
 	focus = {
 		id = USA_The_Usonian_Army
 		icon = placeholder
-		x = 71
+		x = 62
 		y = 0
 		cost = 5
 		ai_will_do = {
@@ -4757,7 +4734,7 @@ focus_tree = {
 	focus = {
 		id = USA_The_Usonian_Air_Force
 		icon = placeholder
-		x = 89
+		x = 80
 		y = 0
 		cost = 5
 		ai_will_do = {

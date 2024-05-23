@@ -18,7 +18,7 @@ shared_focus = {
 
 	#USONIA
 	offset = {
-		x = 52
+		x = 47
 		y = 4
 		trigger = {
 			has_focus_tree = usonia_focus
@@ -70,7 +70,7 @@ joint_focus = {
 	relative_position_id = UNITED_STATES_draft_the_charter
 	cost = 5
 	text_icon = NORDIC_focus_style
-	x = -10
+	x = -9
 	y = 1
 
 	available = {
@@ -141,7 +141,7 @@ joint_focus = {
 	}
 }
 joint_focus = {
-	id = UNITED_STATES_international_judicial_association
+	id = UNITED_STATES_the_summit_for_democracy
 	icon = placeholder
 	prerequisite = { focus = UNITED_STATES_international_democracy_foundation }
 	prerequisite = { focus = UNITED_STATES_democratic_monetary_fund }
@@ -150,6 +150,28 @@ joint_focus = {
 	text_icon = NORDIC_focus_style
 	x = 0
 	y = 2
+
+	available = {
+		UNITED_STATES_in_faction = yes
+		has_country_flag = UNITED_STATES_commitment_to_democracy_flag
+	}
+	joint_trigger = {
+		UNITED_STATES_in_faction = yes
+	}
+
+	completion_reward = {
+		add_stability = 0.025
+	}
+}
+joint_focus = {
+	id = UNITED_STATES_election_observers
+	icon = placeholder
+	prerequisite = { focus = UNITED_STATES_the_summit_for_democracy }
+	relative_position_id = UNITED_STATES_the_summit_for_democracy
+	cost = 5
+	text_icon = NORDIC_focus_style
+	x = 0
+	y = 1
 
 	available = {
 		UNITED_STATES_in_faction = yes
@@ -511,13 +533,103 @@ joint_focus = {
 	icon = placeholder
 	prerequisite = { focus = UNITED_STATES_draft_the_charter }
 	relative_position_id = UNITED_STATES_draft_the_charter
-	cost = 5
+	cost = 20
 	text_icon = NORDIC_focus_style
 	x = 3
 	y = 1
 
 	available = {
 		UNITED_STATES_in_faction = yes
+		has_war = no
+	}
+	joint_trigger = {
+		UNITED_STATES_in_faction = yes
+	}
+
+	completion_reward = {
+		add_political_power = 75
+	}
+}
+joint_focus = {
+	id = UNITED_STATES_united_states_trade_council
+	icon = placeholder
+	prerequisite = { focus = UNITED_STATES_adopting_the_us_dollar }
+	relative_position_id = UNITED_STATES_adopting_the_us_dollar
+	cost = 20
+	text_icon = NORDIC_focus_style
+	x = 0
+	y = 1
+
+	available = {
+		UNITED_STATES_in_faction = yes
+		has_war = no
+	}
+	joint_trigger = {
+		UNITED_STATES_in_faction = yes
+	}
+
+	completion_reward = {
+		add_political_power = 75
+	}
+}
+joint_focus = {
+	id = UNITED_STATES_united_states_court_of_commerce
+	icon = placeholder
+	prerequisite = { focus = UNITED_STATES_united_states_trade_council }
+	relative_position_id = UNITED_STATES_united_states_trade_council
+	cost = 20
+	text_icon = NORDIC_focus_style
+	x = -1
+	y = 1
+
+	available = {
+		UNITED_STATES_in_faction = yes
+		has_war = no
+	}
+	joint_trigger = {
+		UNITED_STATES_in_faction = yes
+	}
+
+	completion_reward = {
+		add_political_power = 75
+	}
+}
+joint_focus = {
+	id = UNITED_STATES_united_states_banking_commission
+	icon = placeholder
+	prerequisite = { focus = UNITED_STATES_united_states_trade_council }
+	relative_position_id = UNITED_STATES_united_states_trade_council
+	cost = 20
+	text_icon = NORDIC_focus_style
+	x = 1
+	y = 1
+
+	available = {
+		UNITED_STATES_in_faction = yes
+		has_war = no
+	}
+	joint_trigger = {
+		UNITED_STATES_in_faction = yes
+	}
+
+	completion_reward = {
+		add_political_power = 75
+	}
+}
+joint_focus = {
+	id = UNITED_STATES_united_states_fully_adopt_the_dollar
+	icon = placeholder
+	prerequisite = { focus = UNITED_STATES_united_states_court_of_commerce }
+	prerequisite = { focus = UNITED_STATES_united_states_banking_commission }
+	relative_position_id = UNITED_STATES_united_states_trade_council
+	cost = 20
+	text_icon = NORDIC_focus_style
+	x = 0
+	y = 2
+
+	available = {
+		UNITED_STATES_in_faction = yes
+		has_war = no
 	}
 	joint_trigger = {
 		UNITED_STATES_in_faction = yes
@@ -534,7 +646,7 @@ joint_focus = {
 	relative_position_id = UNITED_STATES_draft_the_charter
 	cost = 5
 	text_icon = NORDIC_focus_style
-	x = 10
+	x = 9
 	y = 1
 
 	available = {
@@ -1061,5 +1173,149 @@ joint_focus = {
 		}
 		custom_effect_tooltip = us_joint_navy_xp_gain_5_tt
 		navy_experience = 5
+	}
+}
+joint_focus = {
+	id = USA_Fenris_Revealed
+	icon = placeholder
+	relative_position_id = USA_Joint_Naval_Exercises
+	prerequisite = {
+		focus = USA_De_Oppresso_Liber
+		focus = USA_The_Foreign_Legion
+	}
+	x = 0
+	y = 2
+	cost = 10
+	text_icon = NORDIC_focus_style
+	available = {
+		UNITED_STATES_in_faction = yes
+	}
+	joint_trigger = {
+		UNITED_STATES_in_faction = yes
+	}
+	completion_reward = {
+		add_political_power = 5
+	}
+}
+joint_focus = {
+	id = USA_Coordinate_The_Intelligence_Agencies
+	icon = placeholder
+	relative_position_id = USA_Fenris_Revealed
+	prerequisite = { focus = USA_Fenris_Revealed }
+	x = 0
+	y = 1
+	cost = 10
+	text_icon = NORDIC_focus_style
+	available = {
+		UNITED_STATES_in_faction = yes
+	}
+	joint_trigger = {
+		UNITED_STATES_in_faction = yes
+	}
+	completion_reward = {
+		add_political_power = 5
+	}
+}
+joint_focus = {
+	id = USA_Investigate_Suspected_Fenris_Sympathizers
+	icon = placeholder
+	relative_position_id = USA_Coordinate_The_Intelligence_Agencies
+	prerequisite = { focus = USA_Coordinate_The_Intelligence_Agencies }
+	x = -2
+	y = 1
+	cost = 10
+	text_icon = NORDIC_focus_style
+	available = {
+		UNITED_STATES_in_faction = yes
+	}
+	joint_trigger = {
+		UNITED_STATES_in_faction = yes
+	}
+	completion_reward = {
+		add_political_power = 5
+	}
+}
+joint_focus = {
+	id = USA_Reconnoiter_Possible_Outposts
+	icon = placeholder
+	relative_position_id = USA_Coordinate_The_Intelligence_Agencies
+	prerequisite = { focus = USA_Coordinate_The_Intelligence_Agencies }
+	x = 0
+	y = 1
+	cost = 10
+	text_icon = NORDIC_focus_style
+	available = {
+		UNITED_STATES_in_faction = yes
+	}
+	joint_trigger = {
+		UNITED_STATES_in_faction = yes
+	}
+	completion_reward = {
+		add_political_power = 5
+	}
+}
+joint_focus = {
+	id = USA_Seize_Fenris_Assets
+	icon = placeholder
+	relative_position_id = USA_Coordinate_The_Intelligence_Agencies
+	prerequisite = { focus = USA_Coordinate_The_Intelligence_Agencies }
+	x = 2
+	y = 1
+	cost = 10
+	text_icon = NORDIC_focus_style
+	available = {
+		UNITED_STATES_in_faction = yes
+	}
+	joint_trigger = {
+		UNITED_STATES_in_faction = yes
+	}
+	completion_reward = {
+		add_political_power = 5
+	}
+}
+joint_focus = {
+	id = USA_Fenris_Headquarters_Revealed
+	icon = placeholder
+	relative_position_id = USA_Reconnoiter_Possible_Outposts
+	prerequisite = { focus = USA_Investigate_Suspected_Fenris_Sympathizers }
+	prerequisite = { focus = USA_Reconnoiter_Possible_Outposts }
+	prerequisite = { focus = USA_Seize_Fenris_Assets }
+	x = 0
+	y = 1
+	cost = 10
+	text_icon = NORDIC_focus_style
+	available = {
+		UNITED_STATES_in_faction = yes
+	}
+	joint_trigger = {
+		UNITED_STATES_in_faction = yes
+	}
+	completion_reward = {
+		add_political_power = 5
+	}
+}
+joint_focus = {
+	id = USA_Operation_Judgement_Day
+	icon = placeholder
+	relative_position_id = USA_Fenris_Headquarters_Revealed
+	prerequisite = { focus = USA_Fenris_Headquarters_Revealed }
+	available = {
+		NOT = {
+			has_government = fenris
+		}
+		has_global_flag = FEN_is_revealed_flag
+	}
+	x = 0
+	y = 1
+	cost = 10
+	text_icon = NORDIC_focus_style
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		create_wargoal = {
+			type = annex_everything
+			target = FEN
+		}
 	}
 }
