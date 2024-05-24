@@ -2037,7 +2037,7 @@ country_event = { # Loans Accepted
 	id = usa_eco_development.2
 	title = usa_eco_development.2.t
 	desc = usa_eco_development.2.desc
-	picture = placeholder
+	picture = GFX_report_event_generic_read_write
 	
 	fire_only_once = yes
 
@@ -2056,7 +2056,7 @@ country_event = { # Another loan?
 	id = usa_eco_development.3
 	title = usa_eco_development.3.t
 	desc = usa_eco_development.3.desc
-	picture = placeholder
+	picture = GFX_report_event_generic_read_write
 	
 	fire_only_once = yes
 
@@ -2103,7 +2103,7 @@ country_event = { # They Took Out Another Loan
 	id = usa_eco_development.4
 	title = usa_eco_development.4.t
 	desc = usa_eco_development.4.desc
-	picture = placeholder
+	picture = GFX_report_event_generic_read_write
 	
 	fire_only_once = yes
 
