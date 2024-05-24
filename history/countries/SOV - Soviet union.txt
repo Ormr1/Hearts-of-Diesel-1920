@@ -112,6 +112,8 @@ recruit_character = SOV_yakov_cherevichenko
 recruit_character = SOV_yakov_smushkevich
 
 recruit_character = SOV_vitaly_primakov
+
+recruit_character = SOV_lavr_kornilov
 #Not available at game start
 recruit_character = SOV_vasily_korzh
 recruit_character = SOV_sidor_kovpak
@@ -306,10 +308,10 @@ set_politics = {
 	elections_allowed = no
 }
 set_popularities = {
-	democratic = 5
+	democratic = 24
 	fascism = 2
-	communism = 15
-	monarchy = 75
+	communism = 31
+	monarchy = 40
 	fenris = 3
 }
 

@@ -29,7 +29,7 @@ focus_tree = {
 	focus = {
 		id = SOV_Question_the_Economy
 		icon = placeholder
-		x = 0
+		x = 12
 		y = 0
 		cost = 5
 		ai_will_do = {
@@ -120,9 +120,56 @@ focus_tree = {
 
 	#political
 	focus = {
+		id = SOV_the_RSDLP
+		icon = placeholder
+		x = -8
+		y = 0
+		cost = 5
+		ai_will_do = {
+			factor = 5
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = communism
+				popularity = -0.015
+			}
+			add_stability = -0.03
+		}
+	}
+	focus = {
+		id = SOV_support_mensheviks_over_lenin
+		icon = placeholder
+		relative_position_id = SOV_the_RSDLP
+		prerequisite = {
+			focus = SOV_the_RSDLP
+		}
+		x = -1
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 5
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = communism
+				popularity = 0.02
+			}
+			subtract_from_variable = {
+				tooltip = SOV_reduce_rsdlp_loyalty_amount
+				var_SOV_factions_RSDLP_loyalty = 3
+			}
+			set_temp_variable = { var_SOV_temp_reduce_controller = 1 }
+			set_temp_variable = { var_SOV_temp_increase_controller = 2 }
+			set_temp_variable = { var_SOV_temp_reduce_loyalty = 3 }
+			SOV_decrease_army_control = yes
+		}
+	}
+
+
+	focus = {
 		id = SOV_progressive_bloc
 		icon = placeholder
-		x = 10
+		x = 0
 		y = 0
 		cost = 5
 		ai_will_do = {
@@ -142,7 +189,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = SOV_working_with_soviet
 		}
-		x = -2
+		x = -1
 		y = 1
 		cost = 8
 		ai_will_do = {
@@ -160,6 +207,7 @@ focus_tree = {
 				ideology = communism
 				popularity = -0.05
 			}
+			add_manpower = -100000
 		}
 	}
 	focus = { # 
@@ -169,7 +217,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = SOV_supress_the_sr
 		}
-		x = -4
+		x = -3
 		y = 1
 		cost = 8
 		ai_will_do = {
@@ -190,10 +238,10 @@ focus_tree = {
 		}
 	}
 	focus = { #
-		id = SOV_
+		id = SOV_suppress_anarchists
 		icon = placeholder
 		relative_position_id = SOV_progressive_bloc
-		x = 2
+		x = 3
 		y = 1
 		cost = 8
 		ai_will_do = {
@@ -201,13 +249,28 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = SOV_progressive_bloc
+			focus = SOV_tsars_land_reforms
+		}
+		available = {
+			has_political_power > 14
+		}
+		select_effect = {
+			add_political_power = -15
+		}
+		completion_reward = {	
+			add_stability = 0.03
+			set_temp_variable = {
+				var_SOV_temp_increase_controller = 0
+			}
+			set_temp_variable = { var_SOV_temp_reduce_loyalty = 2}
+			SOV_increase_army_control = yes
 		}
 	}
 	focus = { #
 		id = SOV_for_peoples_freedoms
 		icon = placeholder
 		relative_position_id = SOV_progressive_bloc
-		x = 0
+		x = 1
 		y = 1
 		cost = 8
 		ai_will_do = {
@@ -215,6 +278,21 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = SOV_progressive_bloc
+		}
+		completion_reward = {
+			add_stability = 0.01
+			add_to_variable = {
+				tooltip = SOV_increase_sr_loyalty_amount
+				var_SOV_factions_SR_loyalty = 1
+			}
+			add_to_variable = {
+				tooltip = SOV_increase_kd_loyalty_amount
+				var_SOV_factions_KD_loyalty = 1
+			}
+			add_to_variable = {
+				tooltip = SOV_increase_o_loyalty_amount
+				var_SOV_factions_O_loyalty = 1
+			}
 		}
 	}
 	focus = { # 
@@ -229,6 +307,20 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = SOV_for_peoples_freedoms
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.02
+			}
+			add_to_variable = {
+				tooltip = SOV_increase_kd_loyalty_amount
+				var_SOV_factions_KD_loyalty = 2
+			}
+			add_to_variable = {
+				tooltip = SOV_increase_o_loyalty_amount
+				var_SOV_factions_O_loyalty = 2
+			}
 		}
 	}
 	focus = { # 
@@ -269,14 +361,17 @@ focus_tree = {
 	focus = {
 		id = SOV_tsars_land_reforms
 		icon = placeholder
-		x = 15
+		x = 6
 		y = 0
 		cost = 5
 		ai_will_do = {
 			factor = 5
 		}
 		completion_reward = {
-			add_stability = 0.02
+			swap_ideas={
+				add_idea = SOV_land_reform_2
+				remove_idea = SOV_land_reform
+			}
 		}
 	}
 	focus = { #
@@ -294,7 +389,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			set_temp_variable = {
-				var_SOV_temp_increase_controller = 5
+				var_SOV_temp_increase_controller = 5 #tsarist
 			}
 			set_temp_variable = { var_SOV_temp_reduce_loyalty = 3}
 			SOV_increase_army_control = yes
@@ -318,7 +413,18 @@ focus_tree = {
 			focus = SOV_tsars_land_reforms
 		}
 		completion_reward = {
-			
+			swap_ideas={
+				add_idea = SOV_land_reform_3
+				remove_idea = SOV_land_reform_2
+			}
+			subtract_from_variable = {
+				tooltip = SOV_reduce_t_loyalty_amount
+				var_SOV_factions_T_loyalty = 5
+			}
+			add_to_variable = {
+				tooltip = SOV_increase_o_loyalty_amount
+				var_SOV_factions_O_loyalty = 5
+			}
 		}
 	}
 	focus = { #
@@ -335,7 +441,10 @@ focus_tree = {
 			focus = SOV_increased_landowner_buyouts
 		}
 		completion_reward = {
-			
+			add_popularity = {
+				ideology = monarchy
+				popularity = 0.04
+			}
 		}
 	}
 	focus = { # 

@@ -47,6 +47,134 @@ SOV_rusviet_factions_system = {
 			}
 		}
 	}
+	RUS_concessions_to_octoberists = {
+
+		icon = generic_political_rally
+
+		allowed = { 
+			original_tag = SOV
+		}
+
+		available = {
+			#has_country_flag = SOV_factions_unlocked
+			#check_variable = { var = GRE_monarchist_loyalty value = -2 compare = greater_than }
+			#check_variable = { var = GRE_monarchist_loyalty value = 1 compare = less_than }
+		}
+
+		cost = 100
+
+		fire_only_once = yes
+
+		days_remove = 100
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 5
+				check_variable = { var_SOV_factions_O_loyalty = 50 compare = less_than_or_equals }
+			}
+			modifier = {
+				factor = 25
+				check_variable = { var_SOV_factions_O_loyalty = 30 compare = less_than_or_equals }
+			}
+		}
+
+		visible = {
+			
+		}
+
+		complete_effect = {
+			
+		}
+
+		remove_effect = {
+			add_to_variable = {
+				tooltip = SOV_increase_o_loyalty_amount
+				var_SOV_factions_O_loyalty = 10
+			}
+		}
+	}
+
+	SOV_civil_war_countdown = {
+
+		icon = generic_operation
+
+		allowed = {
+			original_tag = SOV
+		}
+
+		available = {
+			has_stability > 0.2
+			custom_trigger_tooltip ={
+				tooltip = SOV_factions_3_loyalty_40_tt
+				count_triggers = {
+					amount = 3
+					check_variable = {var_SOV_factions_RSDLP_loyalty > 40}
+					check_variable = {var_SOV_factions_SR_loyalty > 40}
+					check_variable = {var_SOV_factions_T_loyalty > 40}
+					check_variable = {var_SOV_factions_Kd_loyalty > 40}
+					check_variable = {var_SOV_factions_O_loyalty > 40}
+				}
+			}
+			custom_trigger_tooltip ={
+				tooltip = SOV_factions_RSDLP_loyalty_15_tt
+				check_variable = {var_SOV_factions_RSDLP_loyalty > 15}
+			}
+			custom_trigger_tooltip ={
+				tooltip = SOV_factions_SR_loyalty_15_tt
+				check_variable = {var_SOV_factions_SR_loyalty > 15}
+			}
+			custom_trigger_tooltip ={
+				tooltip = SOV_factions_T_loyalty_15_tt
+				check_variable = {var_SOV_factions_T_loyalty > 15}
+			}
+			custom_trigger_tooltip ={
+				tooltip = SOV_factions_KD_loyalty_15_tt
+				check_variable = {var_SOV_factions_Kd_loyalty > 15}
+			}
+			custom_trigger_tooltip ={
+				tooltip = SOV_factions_O_loyalty_15_tt
+				check_variable = {var_SOV_factions_O_loyalty > 15}
+			}
+		}
+
+		days_mission_timeout = 180
+		fire_only_once = yes
+
+		activation = {
+			OR={
+				has_stability < 0.2
+				count_triggers = {
+					amount = 3
+					check_variable = {var_SOV_factions_RSDLP_loyalty < 40}
+					check_variable = {var_SOV_factions_SR_loyalty < 40}
+					check_variable = {var_SOV_factions_T_loyalty < 40}
+					check_variable = {var_SOV_factions_Kd_loyalty < 40}
+					check_variable = {var_SOV_factions_O_loyalty < 40}
+				}
+				check_variable = {var_SOV_factions_RSDLP_loyalty < 15}
+				check_variable = {var_SOV_factions_SR_loyalty < 15}
+				check_variable = {var_SOV_factions_T_loyalty < 15}
+				check_variable = {var_SOV_factions_Kd_loyalty < 15}
+				check_variable = {var_SOV_factions_O_loyalty < 15}
+			}
+		}
+
+		is_good = no
+
+		complete_effect = {
+			#custom_effect_tooltip = barbarossa_mission_tt
+		}
+
+		timeout_effect = {
+			custom_effect_tooltip = SOV_civil_war_mission_tt
+			
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
 }
 SOV_disarm_radical_militias_decisions = {
 	SOV_disarm_ukraizhian_militias_in_state = {

@@ -29,6 +29,7 @@ ideas = {
 			modifier = {
 				stability_factor = -0.2
 				political_power_factor = -0.15
+				recruitable_population_factor = -0.30
 			}
 		}
 		SOV_order_24 = {
@@ -67,6 +68,64 @@ ideas = {
 			modifier = {
 				political_power_factor = -0.10
 				production_speed_buildings_factor = 0.10
+			}
+		}
+		SOV_land_reform_2 = {
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Added via purges
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			picture = generic_democratic_opposition
+			
+			modifier = {
+				political_power_factor = -0.10
+				production_speed_buildings_factor = 0.10
+				stability_factor = 0.02
+			}
+		}
+		SOV_land_reform_3 = {
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Added via purges
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			picture = generic_democratic_opposition
+			
+			modifier = {
+				political_power_factor = -0.12
+				production_speed_buildings_factor = 0.13
+				stability_factor = 0.04
+			}
+		}
+		
+		SOV_july_days = {
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Added via purges
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			picture = home_of_revolution
+			
+			modifier = {
+				stability_factor = -0.09
+				political_power_cost = 0.15
+				communism_drift = 0.02
 			}
 		}
 
