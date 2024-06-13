@@ -386,6 +386,8 @@
  USA_lobby_senate_large_tt: "§G+15%§! Senate Support for current bill"
 # BILLS #
  USA_mcnary_haugen_farm_relief_bill: "Introduce McNary-Haugen Farm Relief Bill"
+ USA_mcnary_haugen_farm_relief_bill_house_vote: "McNary-Haugen Farm Relief Bill - House Vote"
+ USA_mcnary_haugen_farm_relief_bill_senate_vote: "McNary-Haugen Farm Relief Bill - Senate Vote"
  USA_agricultural_subsidization_act: "Introduce Agricultural Subsidization Act"
  USA_pay_farm_subsidies: "Introduce [GetYear] Farm Bill"
  USA_pay_farm_subsidies_house_vote: "[GetYear] Farm Bill - House Vote"
@@ -401,5 +403,7 @@
  native_american_raids_1: "Native American Raids - §GLow§!"
 ### FLAGS ###
  usa_masons_first_report: "Recieved Captain Mason's First Report"
+ usa_voting_on_bill_house_completed: "Vote in the House has occurred"
+ usa_voting_on_bill_senate_completed: "Vote in the Senate has occurred"
 ### RESEARCH GROUPS ###
  usea_research_name: "International Science Foundation"

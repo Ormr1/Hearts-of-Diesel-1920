@@ -14,6 +14,7 @@ add_namespace = usa_arabia
 add_namespace = usa_usea
 add_namespace = usa_elections
 add_namespace = usa_midterms
+add_namespace = usa_congress
 
 country_event = {
 	id = usa_startup.1
@@ -3423,6 +3424,64 @@ country_event = { # James Cox Inauguration
 			ideology = democratic
 			long_name = USA_democratic_republican_party_long
 			name = USA_democratic_republican_party
+		}
+	}
+}
+
+### CONGRESS EVENTS ###
+country_event = { # Random Event 1: Representative Opposes Bill
+	id = usa_congress.1
+	title = usa_congress.1.t
+	desc = usa_congress.1.desc
+	picture = placeholder
+
+	is_triggered_only = yes
+
+	option = { # Unfortunate
+		name = usa_congress.1.a
+		subtract_from_variable = { usa_house_bill_support = 1 }
+		clamp_variable = {
+			var = usa_house_bill_support
+			min = 0
+			max = max_house_seats
+		}
+	}
+}
+country_event = { # Random Event 2: Representative Opposes Bill
+	id = usa_congress.1
+	title = usa_congress.1.t
+	desc = usa_congress.1.desc
+	picture = placeholder
+
+	is_triggered_only = yes
+
+	option = { # Unfortunate
+		name = usa_congress.1.a
+		add_to_variable = { usa_house_bill_support = 1 }
+		clamp_variable = {
+			var = usa_house_bill_support
+			min = 0
+			max = max_house_seats
+		}
+	}
+}
+country_event = { # Random Event 3: Small Group of Representatives Supports Bill
+	id = usa_congress.1
+	title = usa_congress.1.t
+	desc = usa_congress.1.desc
+	picture = placeholder
+
+	is_triggered_only = yes
+
+	option = { # Unfortunate
+		name = usa_congress.1.a
+		set_temp_variable = { usa_house_support_loss = max_house_seats }
+		multiply_temp_variable = { usa_house_support_loss = 0.05 }
+		subtract_from_variable = { usa_house_bill_support = usa_house_support_loss }
+		clamp_variable = {
+			var = usa_house_bill_support
+			min = 0
+			max = max_house_seats
 		}
 	}
 }
