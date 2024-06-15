@@ -275,3 +275,11 @@
  FEN_FAC_commited_fort_sab_4_tt: "Sabotaged [?FEN_FAC_commited_fort_sab]/§Y4§! Fort Levels"
  FEN_strength_FAC_20_tt: "[?FEN_strength_commited_fac_var]/§Y20§! Strength commited to the §YOperation§!"
  FEN_strength_FAC_div_tt: "§Y1§! Division Assigned to the §YOperation§!"
+ FEN_rhodesian_powderkeg: "Rhodesian Powderkeg"
+ FEN_kuwaiti_governer: "Kuwaiti Governer"
+ FEN_supporting_coup: "Supporting the Coup"
+ FEN_improved_production_routing: "Improved Production Routing"
+ FEN_expand_the_barracks: "Expand the Barracks"
+ 
+ 
+ end_of_data_tt: "§REnd of Current Content§!"

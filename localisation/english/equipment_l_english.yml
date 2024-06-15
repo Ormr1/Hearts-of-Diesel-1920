@@ -3187,8 +3187,10 @@
  
  # small arms
  
- GER_infantry_equipment_0:0 "Gewehr 98"
- GER_infantry_equipment_0_short:0 "Gewehr 98"
+ GER_infantry_equipment_0_1:0 "Gewehr 98"
+ GER_infantry_equipment_0_1_short:0 "Gewehr 98"
+ GER_infantry_equipment_0:0 "MP 18"
+ GER_infantry_equipment_0_short:0 "MP 18"
  GER_infantry_equipment_1:0 "Karabiner 98k"
  GER_infantry_equipment_1_short:0 "Karabiner 98k"
  GER_infantry_equipment_2:0 "MP 38"

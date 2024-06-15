@@ -2596,6 +2596,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/GER_infantry_equipment_1.dds"
 	}
 	
+	
 	SpriteType = {
 		name = "GFX_fuel_medium"
 		texturefile = "gfx/interface/technologies/fuel_medium.dds"
@@ -2615,6 +2616,16 @@ spriteTypes = {
 		name = "GFX_GER_infantry_weapons_medium"
 		texturefile = "gfx/interface/technologies/GER_infantry_equipment_1.dds"
 	}
+	
+	SpriteType = {
+		name = "GFX_GER_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/GER_infantry_equipment_0.dds"
+	}	
+	SpriteType = {
+		name = "GFX_GER_pre_gw_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/GER_infantry_equipment_0_1.dds"
+	}
+	
 	
 	SpriteType = {
 		name = "GFX_armored_car1_medium"
