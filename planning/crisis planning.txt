@@ -49,7 +49,7 @@ Rasputins coup:
 		Rusviet Imperial Army -  loyalty of the army
 	
 	factions: ACRONYM/Full Name (full name) [goal, 1st formable, 2nd formable] {TAG}
-		Rusviet Union (-) [Rasputin controlled Rusviet] {SOV}
+		Rusviet Union (-) [Rasputin controlled Rusviet/Socialist Rusviet] {SOV}
 		Sovdepia (-) [lenin-trotsky Rusviet, Sovdepian Union] {RSF}
 		Rusviet Democratic Movement (-) [Democratic Rusviet, Rusviet Republic] {RDM}
 		Tsars Provisional Government  (-) [Restoration of the Tsar, Rusviet Tsardom] {TPG}

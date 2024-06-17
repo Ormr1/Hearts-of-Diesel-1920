@@ -296,6 +296,8 @@ set_country_flag = SOV_TEST_REMOVE_VANILLA_ADVISORS_flag
 add_ideas = {
 	petrograd_soviet_idea
 	SOV_land_reform
+	SOV_disaster_aganist_togawa
+	SOV_devistated_army
 }
 activate_advisor = SOV_rasputin
 

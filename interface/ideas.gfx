@@ -6484,6 +6484,10 @@ spriteTypes = {
 		name = "GFX_idea_petrograd_soviet"
 		texturefile = "gfx/interface/ideas/RUS/petrograd_soviet.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_disaster_at_tsushima"
+		texturefile = "gfx/interface/ideas/RUS/disaster_at_tsushima.dds"
+	}
 	
 	spriteType = {
 		name = "GFX_idea_fra_crn_company"

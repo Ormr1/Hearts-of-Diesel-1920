@@ -109,6 +109,48 @@ ideas = {
 			}
 		}
 		
+		SOV_disaster_aganist_togawa = {
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Added via purges
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			picture = disaster_at_tsushima
+			
+			modifier = {
+				experience_gain_navy_factor = -0.75
+				refit_speed = -0.25
+				refit_ic_cost = 0.15
+				critical_receive_chance = 0.15
+				naval_coordination = -0.1
+				positioning = -0.05
+				production_cost_max_ship_hull_heavy = 10000
+			}
+		}
+		
+		SOV_devistated_army = {
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Added via purges
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			picture = generic_democratic_opposition
+			
+			modifier = {
+				
+			}
+		}
+		
 		SOV_july_days = {
 			removal_cost = -1
 			

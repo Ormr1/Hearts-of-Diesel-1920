@@ -29,7 +29,7 @@ focus_tree = {
 	focus = {
 		id = SOV_Question_the_Economy
 		icon = placeholder
-		x = 12
+		x = 27
 		y = 0
 		cost = 5
 		ai_will_do = {
@@ -115,6 +115,287 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = SOV_Needs_of_the_People
+		}
+	}
+	### Economic
+	focus = {
+		id = SOV_kolchak_plan
+		icon = placeholder
+		x = 15
+		y = 0
+		cost = 5
+		ai_will_do = {
+			factor = 5
+		}
+	}
+
+	focus = {
+		id = SOV_extreme_budget
+		icon = placeholder
+		relative_position_id = SOV_kolchak_plan
+		mutually_exclusive = {
+			focus = SOV_moderate_budget
+			focus = SOV_low_budget
+		}
+		x = -6
+		y = 1
+		cost = 8
+		ai_will_do = {
+			factor = 5
+		}
+		prerequisite = {
+			focus = SOV_kolchak_plan
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SOV_strike_away_the_disfunction
+		icon = placeholder
+		relative_position_id = SOV_extreme_budget
+		x = -2
+		y = 1
+		cost = 8
+		ai_will_do = {
+			factor = 5
+		}
+		prerequisite = {
+			focus = SOV_extreme_budget
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SOV_forced_removal_of_corrupt
+		icon = placeholder
+		relative_position_id = SOV_extreme_budget
+		x = 0
+		y = 1
+		cost = 8
+		ai_will_do = {
+			factor = 5
+		}
+		prerequisite = {
+			focus = SOV_extreme_budget
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SOV_promote_new_commanders
+		icon = placeholder
+		relative_position_id = SOV_forced_removal_of_corrupt
+		x = 0
+		y = 1
+		cost = 8
+		ai_will_do = {
+			factor = 5
+		}
+		prerequisite = {
+			focus = SOV_forced_removal_of_corrupt
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SOV_revise_military_spending
+		icon = placeholder
+		relative_position_id = SOV_extreme_budget
+		x = 2
+		y = 1
+		cost = 8
+		ai_will_do = {
+			factor = 5
+		}
+		prerequisite = {
+			focus = SOV_extreme_budget
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SOV_enforce_quality_control
+		icon = placeholder
+		relative_position_id = SOV_revise_military_spending
+		x = 0
+		y = 1
+		cost = 8
+		ai_will_do = {
+			factor = 5
+		}
+		prerequisite = {
+			focus = SOV_revise_military_spending
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = SOV_moderate_budget
+		icon = placeholder
+		relative_position_id = SOV_kolchak_plan
+		mutually_exclusive = {
+			focus = SOV_extreme_budget
+			focus = SOV_low_budget
+		}
+		x = 0
+		y = 1
+		cost = 8
+		ai_will_do = {
+			factor = 5
+		}
+		prerequisite = {
+			focus = SOV_kolchak_plan
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SOV_decommission_broken_ships
+		icon = placeholder
+		relative_position_id = SOV_moderate_budget
+		x = -2
+		y = 1
+		cost = 8
+		ai_will_do = {
+			factor = 5
+		}
+		prerequisite = {
+			focus = SOV_moderate_budget
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SOV_resuffling_the_problem
+		icon = placeholder
+		relative_position_id = SOV_moderate_budget
+		x = 0
+		y = 1
+		cost = 8
+		ai_will_do = {
+			factor = 5
+		}
+		prerequisite = {
+			focus = SOV_moderate_budget
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SOV_investigate_spending
+		icon = placeholder
+		relative_position_id = SOV_moderate_budget
+		x = 2
+		y = 1
+		cost = 8
+		ai_will_do = {
+			factor = 5
+		}
+		prerequisite = {
+			focus = SOV_moderate_budget
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = SOV_low_budget
+		icon = placeholder
+		relative_position_id = SOV_kolchak_plan
+		mutually_exclusive = {
+			focus = SOV_extreme_budget
+			focus = SOV_moderate_budget
+		}
+		x = 6
+		y = 1
+		cost = 8
+		ai_will_do = {
+			factor = 5
+		}
+		prerequisite = {
+			focus = SOV_kolchak_plan
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SOV_all_ships_serve_the_tsar
+		icon = placeholder
+		relative_position_id = SOV_low_budget
+		x = -2
+		y = 1
+		cost = 8
+		ai_will_do = {
+			factor = 5
+		}
+		prerequisite = {
+			focus = SOV_low_budget
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SOV_sweeping_corruption_under_the_rug
+		icon = placeholder
+		relative_position_id = SOV_low_budget
+		x = 0
+		y = 1
+		cost = 8
+		ai_will_do = {
+			factor = 5
+		}
+		prerequisite = {
+			focus = SOV_low_budget
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SOV_allow_new_commanders
+		icon = placeholder
+		relative_position_id = SOV_sweeping_corruption_under_the_rug
+		x = 0
+		y = 1
+		cost = 8
+		ai_will_do = {
+			factor = 5
+		}
+		prerequisite = {
+			focus = SOV_sweeping_corruption_under_the_rug
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SOV_blindfold_the_investigations
+		icon = placeholder
+		relative_position_id = SOV_low_budget
+		x = 2
+		y = 1
+		cost = 8
+		ai_will_do = {
+			factor = 5
+		}
+		prerequisite = {
+			focus = SOV_low_budget
+		}
+		completion_reward = {
+			
 		}
 	}
 

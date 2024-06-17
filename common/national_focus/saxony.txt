@@ -37,7 +37,7 @@ focus_tree = {
 		# focus = industrial_effort
 	# }
 
-	continuous_focus_position = { x = 2900 y = 0 }
+	continuous_focus_position = { x = 3100 y = 10 }
 
 	shared_focus = GER_rally_civil_war_support
 
@@ -1820,7 +1820,7 @@ focus_tree = {
 		icon = GFX_goal_generic_army_doctrines
 		relative_position_id = GER_a_steady_helm
 		prerequisite = { focus = GER_a_steady_helm}
-		x = -18
+		x = -19
 		y = 1
 		cost = 5
 		search_filters = {  }
@@ -2017,7 +2017,7 @@ focus_tree = {
 		id = GER_question_of_screens
 		icon = GFX_goal_generic_navy_submarine
 		prerequisite = { focus = GER_fleet_in_being }
-		x = 2
+		x = 3
 		y = 1
 		relative_position_id = GER_fleet_in_being
 		cost = 10
@@ -2049,7 +2049,7 @@ focus_tree = {
 		id = GER_focus_on_u_boat
 		icon = GFX_goal_generic_navy_submarine
 		prerequisite = { focus = GER_question_of_screens }
-		x = 1
+		x = 2
 		y = 1
 		relative_position_id = GER_question_of_screens
 		mutually_exclusive = {
@@ -2105,7 +2105,7 @@ focus_tree = {
 		id = GER_modular_construction
 		icon = GFX_goal_generic_construct_naval_dockyard
 		prerequisite = { focus = GER_focus_on_u_boat }
-		x = 0
+		x = 1
 		y = 1
 		relative_position_id = GER_focus_on_u_boat
 		cost = 10
@@ -2126,13 +2126,37 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = GER_wolfpacks
+		icon = GFX_goal_generic_wolf_pack
+		prerequisite = { focus = GER_focus_on_u_boat }
+		x = -1
+		y = 1
+		relative_position_id = GER_focus_on_u_boat
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available={
+			OR={
+				NOT={has_completed_focus = GER_cut_military_funding }
+				date > 1930.1.1
+			}
+		}
+			
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_NAVAL }
+		completion_reward = {
+			add_ideas = GER_wolfpacks
+		}
+	}
+	focus = {
 		id = GER_focus_on_destroyer
 		icon = GFX_focus_generic_destroyer
 		prerequisite = { focus = GER_question_of_screens }
 		mutually_exclusive = {
 			focus = GER_focus_on_u_boat
 		}
-		x = -1
+		x = -2
 		y = 1
 		relative_position_id = GER_question_of_screens
 		cost = 10
@@ -2211,7 +2235,7 @@ focus_tree = {
 		prerequisite = { 
 			focus = GER_focus_on_capital
 		}
-		x = -1
+		x = -2
 		y = 1
 		cost = 5
 		search_filters = { FOCUS_FILTER_NAVAL }
@@ -2246,6 +2270,39 @@ focus_tree = {
 				progress = 0.85
 				amount = 1
 			}
+		}
+	}
+	focus = {
+		id = GER_s_class_battleships
+		icon = GFX_focus_generic_navy_battleship2
+		relative_position_id = GER_naval_expansion_kaiser
+		prerequisite = { 
+			focus = GER_naval_expansion_kaiser
+		}
+		x = 0
+		y = 1
+		cost = 5
+		search_filters = { FOCUS_FILTER_NAVAL }
+		available={
+			OR={
+				NOT={has_completed_focus = GER_cut_military_funding }
+				date > 1930.1.1
+			}
+			has_naval_treaty_trigger = no
+			NOT={has_idea = GER_naval_production_scaled_back}
+		}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = GER_capital_effort
+				bonus = 1.0
+				uses = 1
+				category = bb_tech
+				category = shbb_tech
+			}
+			add_ideas = GER_s_class_development
 		}
 	}
 	focus = {
@@ -2312,6 +2369,87 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = GER_imperial_destroyer_scheme
+		icon = GFX_goal_generic_wolf_pack
+		prerequisite = { focus = GER_focus_on_destroyer }
+		x = 1
+		y = 1
+		relative_position_id = GER_focus_on_destroyer
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available={
+			OR={
+				NOT={has_completed_focus = GER_cut_military_funding }
+				date > 1930.1.1
+			}
+		}
+			
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_NAVAL }
+		completion_reward = {
+			add_ideas = GER_saxon_imperial_destroyers
+		}
+	}
+	focus = {
+		id = GER_rapid_response_doctrine
+		icon = GFX_focus_generic_naval_discipline
+		prerequisite = { 
+			focus = GER_naval_expansion_leipzig_hipper
+		}
+		prerequisite = {  
+			focus = GER_focus_on_destroyer
+		}
+		x = 1
+		y = 1
+		relative_position_id = GER_naval_expansion_leipzig_hipper
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available={
+			OR={
+				NOT={has_completed_focus = GER_cut_military_funding }
+				date > 1930.1.1
+			}
+		}
+
+		available_if_capitulated = yes
+		
+		search_filters = { FOCUS_FILTER_NAVAL }
+		completion_reward = {
+			add_ideas = GER_chnelleinsatzflotte
+		}
+	}
+	focus = {
+		id = GER_improving_naval_response
+		icon = GFX_goal_generic_construct_naval_dockyard
+		prerequisite = { focus = GER_rapid_response_doctrine }
+		x = 0
+		y = 1
+		relative_position_id = GER_rapid_response_doctrine
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available={
+			OR={
+				NOT={has_completed_focus = GER_cut_military_funding }
+				date > 1930.1.1
+			}
+		}
+			
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_NAVAL }
+		completion_reward = {
+			swap_ideas = {
+				add_idea = GER_chnelleinsatzflotte_2
+				remove_idea = GER_chnelleinsatzflotte
+			}
+		}
+	}
+	focus = {
 		id = GER_home_of_krupp
 		icon = GFX_focus_GER_home_krupp
 		prerequisite = { 
@@ -2321,7 +2459,7 @@ focus_tree = {
 		prerequisite = { 
 			focus = GER_military_reforms
 		}
-		x = 0
+		x = -2
 		y = 5
 		relative_position_id = GER_military_development
 		cost = 10
@@ -2376,7 +2514,7 @@ focus_tree = {
 		prerequisite = { 
 			focus = GER_military_development
 		}
-		x = -4
+		x = -6
 		y = 1
 		cost = 5
 		search_filters = {  }
