@@ -39,7 +39,7 @@ shared_focus = {
 	}
 
 	completion_reward = {
-		add_political_power = 75
+		news_event = usa_united_states.2
 	}
 }
 joint_focus = {
@@ -60,7 +60,7 @@ joint_focus = {
 	}
 
 	completion_reward = {
-		add_political_power = 75
+		news_event = usa_united_states.3
 	}
 }
 joint_focus = {
@@ -115,7 +115,7 @@ joint_focus = {
 	}
 
 	completion_reward = {
-		# unlock decisions to promote democracy in nonaligned countries
+		unlock_decision_tooltip = USA_idf_investment_in_country
 	}
 }
 joint_focus = {
@@ -137,7 +137,7 @@ joint_focus = {
 	}
 
 	completion_reward = {
-		# unlock decisions to give civ bonuses to democratic countries
+		unlock_decision_tooltip = USA_dmf_investment_in_country
 	}
 }
 joint_focus = {
@@ -160,7 +160,11 @@ joint_focus = {
 	}
 
 	completion_reward = {
-		add_stability = 0.025
+		add_stability = 0.01
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.025
+		}
 	}
 }
 joint_focus = {
@@ -183,6 +187,10 @@ joint_focus = {
 
 	completion_reward = {
 		add_stability = 0.025
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.05
+		}
 	}
 }
 joint_focus = {
