@@ -118,23 +118,23 @@ SOV_rusviet_factions_system = {
 			}
 			custom_trigger_tooltip ={
 				tooltip = SOV_factions_RSDLP_loyalty_15_tt
-				check_variable = {var_SOV_factions_RSDLP_loyalty > 15}
+				check_variable = {var_SOV_factions_RSDLP_loyalty > 0}
 			}
 			custom_trigger_tooltip ={
 				tooltip = SOV_factions_SR_loyalty_15_tt
-				check_variable = {var_SOV_factions_SR_loyalty > 15}
+				check_variable = {var_SOV_factions_SR_loyalty > 0}
 			}
 			custom_trigger_tooltip ={
 				tooltip = SOV_factions_T_loyalty_15_tt
-				check_variable = {var_SOV_factions_T_loyalty > 15}
+				check_variable = {var_SOV_factions_T_loyalty > 0}
 			}
 			custom_trigger_tooltip ={
 				tooltip = SOV_factions_KD_loyalty_15_tt
-				check_variable = {var_SOV_factions_Kd_loyalty > 15}
+				check_variable = {var_SOV_factions_Kd_loyalty > 0}
 			}
 			custom_trigger_tooltip ={
 				tooltip = SOV_factions_O_loyalty_15_tt
-				check_variable = {var_SOV_factions_O_loyalty > 15}
+				check_variable = {var_SOV_factions_O_loyalty > 0}
 			}
 		}
 
@@ -152,11 +152,11 @@ SOV_rusviet_factions_system = {
 					check_variable = {var_SOV_factions_Kd_loyalty < 40}
 					check_variable = {var_SOV_factions_O_loyalty < 40}
 				}
-				check_variable = {var_SOV_factions_RSDLP_loyalty < 15}
-				check_variable = {var_SOV_factions_SR_loyalty < 15}
-				check_variable = {var_SOV_factions_T_loyalty < 15}
-				check_variable = {var_SOV_factions_Kd_loyalty < 15}
-				check_variable = {var_SOV_factions_O_loyalty < 15}
+				check_variable = {var_SOV_factions_RSDLP_loyalty < 0}
+				check_variable = {var_SOV_factions_SR_loyalty < 0}
+				check_variable = {var_SOV_factions_T_loyalty < 0}
+				check_variable = {var_SOV_factions_Kd_loyalty < 0}
+				check_variable = {var_SOV_factions_O_loyalty < 0}
 			}
 		}
 

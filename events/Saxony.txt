@@ -107,11 +107,6 @@ country_event = {
 		trigger={
 			tag  = POL
 		}
-		97 = {set_demilitarized_zone = no}
-		886 = {set_demilitarized_zone = no}
-		884 = {set_demilitarized_zone = no}
-		814 = {set_demilitarized_zone = no}
-		784 = {set_demilitarized_zone = no}
 	}
 	option = {
 		name = saxonian.2.sco

@@ -29,7 +29,7 @@ focus_tree = {
 	focus = {
 		id = SOV_Question_the_Economy
 		icon = placeholder
-		x = 27
+		x = 40
 		y = 0
 		cost = 5
 		ai_will_do = {
@@ -121,7 +121,7 @@ focus_tree = {
 	focus = {
 		id = SOV_kolchak_plan
 		icon = placeholder
-		x = 15
+		x = 26
 		y = 0
 		cost = 5
 		ai_will_do = {
@@ -461,6 +461,7 @@ focus_tree = {
 				ideology = democratic
 				popularity = 0.07
 			}
+			add_stability = 0.02
 		}
 	}
 	focus = { # 
@@ -470,7 +471,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = SOV_working_with_soviet
 		}
-		x = -1
+		x = -2
 		y = 1
 		cost = 8
 		ai_will_do = {
@@ -498,7 +499,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = SOV_supress_the_sr
 		}
-		x = -3
+		x = -4
 		y = 1
 		cost = 8
 		ai_will_do = {
@@ -642,7 +643,7 @@ focus_tree = {
 	focus = {
 		id = SOV_tsars_land_reforms
 		icon = placeholder
-		x = 6
+		x = 7
 		y = 0
 		cost = 5
 		ai_will_do = {
@@ -659,7 +660,7 @@ focus_tree = {
 		id = SOV_reinforce_tsarists_in_army
 		icon = placeholder
 		relative_position_id = SOV_tsars_land_reforms
-		x = 1
+		x = -2
 		y = 1
 		cost = 8
 		ai_will_do = {
@@ -681,10 +682,39 @@ focus_tree = {
 		}
 	}
 	focus = { #
+		id = SOV_support_from_the_church
+		icon = placeholder
+		relative_position_id = SOV_tsars_land_reforms
+		x = 0
+		y = 1
+		cost = 8
+		ai_will_do = {
+			factor = 5
+		}
+		prerequisite = {
+			focus = SOV_tsars_land_reforms
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = monarchy
+				popularity = 0.03
+			}
+			add_war_support = -0.05
+			add_to_variable = {
+				tooltip = SOV_increase_t_loyalty_amount
+				var_SOV_factions_T_loyalty = 3
+			}
+			subtract_from_variable = {
+				tooltip = SOV_reduce_rsdlp_loyalty_amount
+				var_SOV_factions_RSDLP_loyalty = 3
+			}
+		}
+	}
+	focus = { #
 		id = SOV_increased_landowner_buyouts
 		icon = placeholder
 		relative_position_id = SOV_tsars_land_reforms
-		x = -1
+		x = 4
 		y = 1
 		cost = 8
 		ai_will_do = {
@@ -708,10 +738,44 @@ focus_tree = {
 			}
 		}
 	}
-	focus = { #
-		id = SOV_follow_the_nobilities_lead
+	focus = { # 
+		id = SOV_forced_breakup_of_landlord_manors
 		icon = placeholder
 		relative_position_id = SOV_increased_landowner_buyouts
+		mutually_exclusive = {
+			focus = SOV_breaking_both
+			focus = SOV_dissolve_rural_communes
+			focus = SOV_follow_the_nobilities_lead
+		}
+		x = -3
+		y = 1
+		cost = 8
+		ai_will_do = {
+			factor = 5
+		}
+		prerequisite = {
+			focus = SOV_increased_landowner_buyouts
+		}
+		completion_reward = {
+			subtract_from_variable = {
+				tooltip = SOV_reduce_t_loyalty_amount
+				var_SOV_factions_T_loyalty = 10
+			}
+			subtract_from_variable = {
+				tooltip = SOV_reduce_o_loyalty_amount
+				var_SOV_factions_O_loyalty = 5
+			}
+			add_stability = 0.05
+		}
+	}
+	focus = { # 
+		id = SOV_breaking_both
+		icon = placeholder
+		relative_position_id = SOV_increased_landowner_buyouts
+		mutually_exclusive = {
+			focus = SOV_forced_breakup_of_landlord_manors
+			focus = SOV_dissolve_rural_communes
+		}
 		x = 0
 		y = 1
 		cost = 8
@@ -720,6 +784,99 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = SOV_increased_landowner_buyouts
+		}
+		completion_reward = {
+			subtract_from_variable = {
+				tooltip = SOV_reduce_t_loyalty_amount
+				var_SOV_factions_T_loyalty = 5
+			}
+			subtract_from_variable = {
+				tooltip = SOV_reduce_rsdlp_loyalty_amount
+				var_SOV_factions_RSDLP_loyalty = 5
+			}
+			subtract_from_variable = {
+				tooltip = SOV_reduce_sr_loyalty_amount
+				var_SOV_factions_SR_loyalty = 5
+			}
+			add_to_variable = {
+				tooltip = SOV_increase_kd_loyalty_amount
+				var_SOV_factions_KD_loyalty = 5
+			}
+			add_to_variable = {
+				tooltip = SOV_increase_o_loyalty_amount
+				var_SOV_factions_O_loyalty = 5
+			}
+		}
+	}
+	focus = { # 
+		id = SOV_privatization
+		icon = placeholder
+		relative_position_id = SOV_breaking_both
+		x = 2
+		y = 1
+		cost = 8
+		ai_will_do = {
+			factor = 5
+		}
+		prerequisite = {
+			focus = SOV_breaking_both
+			focus = SOV_dissolve_rural_communes
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = { # 
+		id = SOV_dissolve_rural_communes
+		icon = placeholder
+		relative_position_id = SOV_increased_landowner_buyouts
+		mutually_exclusive = {
+			focus = SOV_forced_breakup_of_landlord_manors
+			focus = SOV_breaking_both
+		}
+		x = 3
+		y = 1
+		cost = 8
+		ai_will_do = {
+			factor = 5
+		}
+		prerequisite = {
+			focus = SOV_increased_landowner_buyouts
+		}
+		completion_reward = {
+			subtract_from_variable = {
+				tooltip = SOV_reduce_rsdlp_loyalty_amount
+				var_SOV_factions_RSDLP_loyalty = 10
+			}
+			subtract_from_variable = {
+				tooltip = SOV_reduce_sr_loyalty_amount
+				var_SOV_factions_SR_loyalty = 10
+			}
+			add_to_variable = {
+				tooltip = SOV_increase_kd_loyalty_amount
+				var_SOV_factions_KD_loyalty = 5
+			}
+			add_to_variable = {
+				tooltip = SOV_increase_o_loyalty_amount
+				var_SOV_factions_O_loyalty = 5
+			}
+		}
+	}
+	focus = { #
+		id = SOV_follow_the_nobilities_lead
+		icon = placeholder
+		relative_position_id = SOV_reinforce_tsarists_in_army
+		mutually_exclusive = {
+			focus = SOV_forced_breakup_of_landlord_manors
+		}
+		x = 0
+		y = 1
+		cost = 8
+		ai_will_do = {
+			factor = 5
+		}
+		prerequisite = {
+			focus = SOV_reinforce_tsarists_in_army
 		}
 		completion_reward = {
 			add_popularity = {
