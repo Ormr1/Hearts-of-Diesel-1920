@@ -112,6 +112,9 @@
  SOV_july_days: "July Days"
  SOV_disaster_aganist_togawa: "Disaster at Tsushima"
  SOV_devistated_army: "Devistated Army"
+ petrograd_soviet:0 "Petrograd Soviet"
+ petrograd_soviet_desc:0 "The Petrograd Soviet of Workers and Soldiers Deputies, known as the Petrograd Soviet, is a Communist thorn in the Tsars side. The Soviet was established during the war and has fast become a second government to the duma, even to the point of enforcing their emblem onto our flag. Something will need to be done to remove this thorn soon"
+ SOV_order_24:0 "Soviet Order No. 24"
  
  RUS_concessions_to_kadets: "Concessions to the §CKadets§!"
  RUS_concessions_to_octoberists: "Concessions to the §5Octoberists§!"

@@ -1270,6 +1270,46 @@ characters = {
 			  visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		  }
 	  }
+	  
+	  SOV_alexander_kolchak = {
+		  name = SOV_alexander_kolchak
+		  portraits = {
+			  navy = {
+				  small = "GFX_idea_alexander_kolchak"
+			  }
+			  army = {
+				  large = GFX_portrait_SOV_alexander_kolchak
+			  }
+		  }
+		  advisor = {
+			  cost = 100
+			  slot = theorist
+			  idea_token = alexander_kolchak
+			  ledger = navy
+			  allowed = {
+				  original_tag = SOV
+			  }
+			  available = {
+				  if = {
+					  limit = {
+						  has_character_flag = SOV_exiled_flag
+					  }
+					  NOT = { has_character_flag = SOV_exiled_flag }
+				  }
+			  }
+			  traits = { naval_theorist }
+		  }
+  
+		  navy_leader = {
+			  traits = { bold navy_career_officer }
+			  skill = 5
+			  attack_skill = 5
+			  defense_skill = 4
+			  maneuvering_skill = 2
+			  coordination_skill = 3
+			  visible = { NOT = { has_character_flag = SOV_exiled_flag } }
+		  }
+	  }
   
 	  SOV_gordey_levchenko = {
 		  name = SOV_gordey_levchenko

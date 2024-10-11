@@ -120,6 +120,8 @@ recruit_character = SOV_sidor_kovpak
 recruit_character = SOV_lev_dovator
 recruit_character = SOV_pavel_rybalko
 
+recruit_character = SOV_alexander_kolchak
+
 if = {
 	limit = {
 		has_dlc = "No Step Back"
@@ -318,6 +320,12 @@ set_popularities = {
 	monarchy = 40
 	fenris = 3
 }
+set_party_name = { # game start
+	ideology = communism
+	name = SOV_communism_party_SR
+	long_name = SOV_communism_party_SR_long
+}
+
 
 create_faction = "Moscow Accord"
 add_to_faction = SOV

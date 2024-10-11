@@ -33,7 +33,8 @@ ideas = {
 				recruitable_population_factor = -0.30
 			}
 		}
-		SOV_order_24 = {
+		petrograd_soviet_idea_reduced = {
+			name = petrograd_soviet
 
 			removal_cost = -1
 
@@ -45,6 +46,27 @@ ideas = {
 
 			allowed_civil_war = {
 				always = no
+			}
+			
+			modifier = {
+				stability_factor = -0.15
+				war_support_factor = -0.1
+				political_power_factor = -0.125
+				recruitable_population_factor = -0.25
+			}
+		}
+		SOV_order_24 = {
+
+			removal_cost = -1
+
+			picture = petrograd_soviet
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
 			}
 			
 			modifier = {
@@ -62,7 +84,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				always = no
+				always = yes
 			}
 
 			picture = generic_agrarian_reform
@@ -80,7 +102,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				always = no
+				always = yes
 			}
 
 			picture = generic_agrarian_reform
@@ -99,7 +121,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				always = no
+				always = yes
 			}
 
 			picture = generic_agrarian_reform
@@ -119,7 +141,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				always = no
+				always = yes
 			}
 
 			picture = disaster_at_tsushima
@@ -140,7 +162,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				always = no
+				always = yes
 			}
 
 			picture = generic_army_problems

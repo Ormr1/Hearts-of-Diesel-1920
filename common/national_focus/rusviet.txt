@@ -27,13 +27,29 @@ focus_tree = {
 
 	### Economic
 	focus = {
+		id = SOV_demobilisation
+		icon = placeholder
+		x = 15
+		y = 0
+		cost = 5
+		ai_will_do = {
+			factor = 0
+		}
+		completion_reward = {
+			add_ideas={
+				limited_conscription
+				low_economic_mobilisation
+			}
+		}
+	}
+	focus = {
 		id = SOV_Question_the_Economy
 		icon = placeholder
 		x = 40
 		y = 0
 		cost = 5
 		ai_will_do = {
-			factor = 5
+			factor = 0
 		}
 	}
 
@@ -45,7 +61,7 @@ focus_tree = {
 		y = 1
 		cost = 8
 		ai_will_do = {
-			factor = 5
+			factor = 0
 		}
 		prerequisite = {
 			focus = SOV_Question_the_Economy
@@ -120,12 +136,19 @@ focus_tree = {
 	### Economic
 	focus = {
 		id = SOV_kolchak_plan
+		relative_position_id = SOV_demobilisation
 		icon = placeholder
-		x = 26
-		y = 0
+		prerequisite = {
+			focus = SOV_demobilisation
+		}
+		x = 10
+		y = 1
 		cost = 5
 		ai_will_do = {
 			factor = 5
+		}
+		completion_reward = {
+			army_experience = 25
 		}
 	}
 
@@ -401,10 +424,28 @@ focus_tree = {
 
 	#political
 	focus = {
+		id = SOV_dealing_with_the_political_tightrope
+		icon = placeholder
+		relative_position_id = SOV_demobilisation
+		prerequisite = {
+			focus = SOV_demobilisation
+		}
+		x = -15
+		y = 1
+		cost = 1
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	focus = {
 		id = SOV_the_RSDLP
 		icon = placeholder
+		relative_position_id = SOV_dealing_with_the_political_tightrope
+		prerequisite = {
+			focus = SOV_dealing_with_the_political_tightrope
+		}
 		x = -8
-		y = 0
+		y = 1
 		cost = 5
 		ai_will_do = {
 			factor = 5
@@ -423,6 +464,9 @@ focus_tree = {
 		relative_position_id = SOV_the_RSDLP
 		prerequisite = {
 			focus = SOV_the_RSDLP
+		}
+		mutually_exclusive = {
+			focus = SOV_purging_radicals_from_soviets
 		}
 		x = -1
 		y = 1
@@ -445,13 +489,91 @@ focus_tree = {
 			SOV_decrease_army_control = yes
 		}
 	}
-
+	focus = { # 
+		id = SOV_devisio_et_imperi
+		icon = placeholder
+		relative_position_id = SOV_support_mensheviks_over_lenin
+		x = 1
+		y = 1
+		cost = 8
+		ai_will_do = {
+			factor = 5
+		}
+		prerequisite = {
+			focus = SOV_support_mensheviks_over_lenin
+			focus = SOV_purging_radicals_from_soviets
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = monarchy
+				popularity = 0.05
+			}
+		}
+	}
+	focus = {
+		id = SOV_purging_radicals_from_soviets
+		icon = placeholder
+		relative_position_id = SOV_the_RSDLP
+		prerequisite = {
+			focus = SOV_the_RSDLP
+		}
+		mutually_exclusive = {
+			focus = SOV_support_mensheviks_over_lenin
+			focus = SOV_working_with_soviet
+		}
+		x = 1
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 5
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = communism
+				popularity = -0.05
+			}
+			subtract_from_variable = {
+				tooltip = SOV_reduce_rsdlp_loyalty_amount
+				var_SOV_factions_RSDLP_loyalty = 5
+			}
+			subtract_from_variable = {
+				tooltip = SOV_reduce_sr_loyalty_amount
+				var_SOV_factions_SR_loyalty = 15
+			}
+			swap_ideas={
+				add_idea = petrograd_soviet_idea_reduced
+				remove_idea = petrograd_soviet_idea
+			}
+			custom_effect_tooltip = soviet_uprising_risk_tt
+		}
+	}
+	focus = { # 
+		id = SOV_hunt_for_lenin
+		icon = placeholder
+		relative_position_id = SOV_purging_radicals_from_soviets
+		x = 1
+		y = 1
+		cost = 8
+		ai_will_do = {
+			factor = 5
+		}
+		prerequisite = {
+			focus = SOV_purging_radicals_from_soviets
+		}
+		completion_reward = {
+			
+		}
+	}
 
 	focus = {
 		id = SOV_progressive_bloc
-		icon = placeholder
+		icon = GFX_focus_ARG_defense_and_democracy
+		relative_position_id = SOV_dealing_with_the_political_tightrope
+		prerequisite = {
+			focus = SOV_dealing_with_the_political_tightrope
+		}
 		x = 0
-		y = 0
+		y = 1
 		cost = 5
 		ai_will_do = {
 			factor = 5
@@ -471,7 +593,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = SOV_working_with_soviet
 		}
-		x = -2
+		x = -1
 		y = 1
 		cost = 8
 		ai_will_do = {
@@ -493,11 +615,33 @@ focus_tree = {
 		}
 	}
 	focus = { # 
+		id = SOV_fighting_the_red_menace
+		icon = placeholder
+		relative_position_id = SOV_supress_the_sr
+		x = 1
+		y = 1
+		cost = 8
+		ai_will_do = {
+			factor = 5
+		}
+		prerequisite = {
+			focus = SOV_supress_the_sr
+		}
+		completion_reward = {
+			subtract_from_variable = {
+				tooltip = SOV_reduce_sr_loyalty_amount
+				var_SOV_factions_SR_loyalty = 5
+			}
+
+		}
+	}
+	focus = { # 
 		id = SOV_working_with_soviet
 		icon = placeholder
 		relative_position_id = SOV_progressive_bloc
 		mutually_exclusive = {
 			focus = SOV_supress_the_sr
+			focus = SOV_purging_radicals_from_soviets
 		}
 		x = -4
 		y = 1
@@ -519,11 +663,36 @@ focus_tree = {
 			}
 		}
 	}
+	focus = { # 
+		id = SOV_principles_of_democratic_socialism
+		icon = placeholder
+		relative_position_id = SOV_working_with_soviet
+		x = 0
+		y = 1
+		cost = 8
+		ai_will_do = {
+			factor = 5
+		}
+		prerequisite = {
+			focus = SOV_working_with_soviet
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = communism
+				popularity = 0.03
+			}
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.03
+			}
+
+		}
+	}
 	focus = { #
 		id = SOV_suppress_anarchists
 		icon = placeholder
 		relative_position_id = SOV_progressive_bloc
-		x = 3
+		x = 4
 		y = 1
 		cost = 8
 		ai_will_do = {
@@ -533,6 +702,8 @@ focus_tree = {
 			focus = SOV_progressive_bloc
 			focus = SOV_tsars_land_reforms
 		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
 		available = {
 			has_political_power > 14
 		}
@@ -552,7 +723,7 @@ focus_tree = {
 		id = SOV_for_peoples_freedoms
 		icon = placeholder
 		relative_position_id = SOV_progressive_bloc
-		x = 1
+		x = 2
 		y = 1
 		cost = 8
 		ai_will_do = {
@@ -643,8 +814,12 @@ focus_tree = {
 	focus = {
 		id = SOV_tsars_land_reforms
 		icon = placeholder
-		x = 7
-		y = 0
+		relative_position_id = SOV_dealing_with_the_political_tightrope
+		prerequisite = {
+			focus = SOV_dealing_with_the_political_tightrope
+		}
+		x = 8
+		y = 1
 		cost = 5
 		ai_will_do = {
 			factor = 5
@@ -683,7 +858,7 @@ focus_tree = {
 	}
 	focus = { #
 		id = SOV_support_from_the_church
-		icon = placeholder
+		icon = GFX_focus_SOV_rebuild_the_savior_cathedral
 		relative_position_id = SOV_tsars_land_reforms
 		x = 0
 		y = 1
@@ -806,6 +981,24 @@ focus_tree = {
 				tooltip = SOV_increase_o_loyalty_amount
 				var_SOV_factions_O_loyalty = 5
 			}
+		}
+	}
+	focus = { # 
+		id = SOV_public_housing
+		icon = placeholder
+		relative_position_id = SOV_breaking_both
+		x = -2
+		y = 1
+		cost = 8
+		ai_will_do = {
+			factor = 5
+		}
+		prerequisite = {
+			focus = SOV_breaking_both
+			focus = SOV_forced_breakup_of_landlord_manors
+		}
+		completion_reward = {
+
 		}
 	}
 	focus = { # 
