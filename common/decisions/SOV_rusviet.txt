@@ -9,6 +9,7 @@ SOV_rusviet_factions_system = {
 		}
 
 		available = {
+			NOT={has_government = democratic}
 			#has_country_flag = SOV_factions_unlocked
 			#check_variable = { var = GRE_monarchist_loyalty value = -2 compare = greater_than }
 			#check_variable = { var = GRE_monarchist_loyalty value = 1 compare = less_than }
@@ -94,10 +95,106 @@ SOV_rusviet_factions_system = {
 			}
 		}
 	}
+	RUS_concessions_to_socialists = {
+
+		icon = generic_political_rally
+
+		allowed = { 
+			original_tag = SOV
+		}
+
+		available = {
+			NOT={has_government = communism}
+			#has_country_flag = SOV_factions_unlocked
+			#check_variable = { var = GRE_monarchist_loyalty value = -2 compare = greater_than }
+			#check_variable = { var = GRE_monarchist_loyalty value = 1 compare = less_than }
+		}
+
+		cost = 100
+
+		fire_only_once = yes
+
+		days_remove = 100
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 5
+				check_variable = { var_SOV_factions_SR_loyalty = 50 compare = less_than_or_equals }
+			}
+			modifier = {
+				factor = 25
+				check_variable = { var_SOV_factions_SR_loyalty = 30 compare = less_than_or_equals }
+			}
+		}
+
+		visible = {
+			
+		}
+
+		complete_effect = {
+			
+		}
+
+		remove_effect = {
+			add_to_variable = {
+				tooltip = SOV_increase_sr_loyalty_amount
+				var_SOV_factions_SR_loyalty = 10
+			}
+		}
+	}
+	RUS_concessions_to_monarchists = {
+
+		icon = generic_political_rally
+
+		allowed = { 
+			original_tag = SOV
+		}
+
+		available = {
+			NOT={has_government = monarchy}
+			#has_country_flag = SOV_factions_unlocked
+			#check_variable = { var = GRE_monarchist_loyalty value = -2 compare = greater_than }
+			#check_variable = { var = GRE_monarchist_loyalty value = 1 compare = less_than }
+		}
+
+		cost = 100
+
+		fire_only_once = yes
+
+		days_remove = 100
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 5
+				check_variable = { var_SOV_factions_T_loyalty = 50 compare = less_than_or_equals }
+			}
+			modifier = {
+				factor = 25
+				check_variable = { var_SOV_factions_T_loyalty = 30 compare = less_than_or_equals }
+			}
+		}
+
+		visible = {
+			
+		}
+
+		complete_effect = {
+			
+		}
+
+		remove_effect = {
+			add_to_variable = {
+				tooltip = SOV_increase_t_loyalty_amount
+				var_SOV_factions_T_loyalty = 10
+			}
+		}
+	}
 
 	SOV_civil_war_countdown = {
 
-		icon = generic_operation
+		icon = eng_support_imperialist_coup
 
 		allowed = {
 			original_tag = SOV
@@ -168,7 +265,279 @@ SOV_rusviet_factions_system = {
 
 		timeout_effect = {
 			custom_effect_tooltip = SOV_civil_war_mission_tt
-			
+			country_event = {id= SOV_civil_war.6}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	SOV_democratic_coup = {
+
+		icon = eng_support_imperialist_coup
+
+		allowed = {
+			original_tag = SOV
+		}
+
+		available = {
+			set_temp_variable = {
+				var_SOV_factions_Kd_O_loyalty = var_SOV_factions_Kd_loyalty
+			}
+			add_to_temp_variable = {
+				var_SOV_factions_Kd_O_loyalty = var_SOV_factions_O_loyalty
+			}
+			OR={
+				has_stability > 0.5
+				custom_trigger_tooltip={
+					tooltip = var_SOV_factions_Kd_O_loyalty_80_tt
+					check_variable = {var_SOV_factions_Kd_O_loyalty > 80}
+				}
+				AND={
+					democratic < party_popularity@ruling_party
+					custom_trigger_tooltip={
+						tooltip = Kd_controls_army_NOT_tt
+						NOT={check_variable = {var_SOV_current_army_controller = 3}}
+					}
+					custom_trigger_tooltip={
+						tooltip = O_controls_army_NOT_tt
+						NOT={check_variable = {var_SOV_current_army_controller = 4}}
+					}
+				}
+				has_government = democratic
+			}
+		}
+
+		days_mission_timeout = 90
+		fire_only_once = yes
+
+		activation = {
+			NOT={has_government = democratic}
+			has_stability < 0.5
+			OR={
+				democratic > party_popularity@ruling_party
+				check_variable = {var_SOV_current_army_controller = 3}
+				check_variable = {var_SOV_current_army_controller = 4}
+			}
+			set_temp_variable = {
+				var_SOV_factions_Kd_O_loyalty = var_SOV_factions_Kd_loyalty
+			}
+			add_to_temp_variable = {
+				var_SOV_factions_Kd_O_loyalty = var_SOV_factions_O_loyalty
+			}
+			check_variable = {var_SOV_factions_Kd_O_loyalty < 80}
+			NOT={ has_active_mission = SOV_civil_war_countdown}
+		}
+
+		is_good = no
+
+		complete_effect = {
+			#custom_effect_tooltip = barbarossa_mission_tt
+		}
+
+		timeout_effect = {
+			custom_effect_tooltip = SOV_democratic_coup_mission_tt
+			set_politics = {
+				ruling_party = democratic
+				elections_allowed = no
+				last_election = "1935.12.17"
+				election_frequency = 48
+			}
+			add_to_variable = {
+				tooltip = SOV_increase_kd_loyalty_amount
+				var_SOV_factions_KD_loyalty = 40
+			}
+			add_to_variable = {
+				tooltip = SOV_increase_o_loyalty_amount
+				var_SOV_factions_O_loyalty = 25
+			}
+			subtract_from_variable = {
+				tooltip = SOV_reduce_rsdlp_loyalty_amount
+				var_SOV_factions_RSDLP_loyalty = 20
+			}
+			subtract_from_variable = {
+				tooltip = SOV_reduce_sr_loyalty_amount
+				var_SOV_factions_SR_loyalty = 20
+			}
+			subtract_from_variable = {
+				tooltip = SOV_reduce_t_loyalty_amount
+				var_SOV_factions_T_loyalty = 20
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	SOV_soviet_coup = {
+
+		icon = eng_support_imperialist_coup
+
+		allowed = {
+			original_tag = SOV
+		}
+
+		available = {
+			set_temp_variable = {
+				var_SOV_factions_RSDLP_SR_loyalty = var_SOV_factions_RSDLP_loyalty
+			}
+			add_to_temp_variable = {
+				var_SOV_factions_RSDLP_SR_loyalty = var_SOV_factions_SR_loyalty
+			}
+			OR={
+				has_stability > 0.5
+				custom_trigger_tooltip={
+					tooltip = var_SOV_factions_RSDLP_SR_loyalty_80_tt
+					check_variable = {var_SOV_factions_RSDLP_SR_loyalty > 80}
+				}
+				AND={
+					communism < party_popularity@ruling_party
+					custom_trigger_tooltip={
+						tooltip = SR_controls_army_NOT_tt
+						NOT={check_variable = {var_SOV_current_army_controller = 1}}
+					}
+					
+					custom_trigger_tooltip={
+						tooltip = RSDLP_controls_army_NOT_tt
+						NOT={check_variable = {var_SOV_current_army_controller = 2}}
+					}
+				}
+				has_government = communism
+			}
+		}
+
+		days_mission_timeout = 90
+		fire_only_once = yes
+
+		activation = {
+			has_stability < 0.5
+			NOT={has_government = communism}
+			OR={
+				communism > party_popularity@ruling_party
+				check_variable = {var_SOV_current_army_controller = 1}
+				check_variable = {var_SOV_current_army_controller = 2}
+			}
+			set_temp_variable = {
+				var_SOV_factions_RSDLP_SR_loyalty = var_SOV_factions_RSDLP_loyalty
+			}
+			add_to_temp_variable = {
+				var_SOV_factions_RSDLP_SR_loyalty = var_SOV_factions_SR_loyalty
+			}
+			check_variable = {var_SOV_factions_RSDLP_SR_loyalty < 80}
+			NOT={ has_active_mission = SOV_civil_war_countdown}
+		}
+
+		is_good = no
+
+		complete_effect = {
+			#custom_effect_tooltip = barbarossa_mission_tt
+		}
+
+		timeout_effect = {
+			custom_effect_tooltip = SOV_soviet_coup_mission_tt
+			set_politics = {
+				ruling_party = communism
+				elections_allowed = no
+			}
+			add_to_variable = {
+				tooltip = SOV_increase_sr_loyalty_amount
+				var_SOV_factions_SR_loyalty = 40
+			}
+			add_to_variable = {
+				tooltip = SOV_increase_rsdlp_loyalty_amount
+				var_SOV_factions_RSDLP_loyalty = 10
+			}
+			subtract_from_variable = {
+				tooltip = SOV_reduce_o_loyalty_amount
+				var_SOV_factions_O_loyalty = 20
+			}
+			subtract_from_variable = {
+				tooltip = SOV_reduce_kd_loyalty_amount
+				var_SOV_factions_KD_loyalty = 20
+			}
+			subtract_from_variable = {
+				tooltip = SOV_reduce_t_loyalty_amount
+				var_SOV_factions_T_loyalty = 20
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	SOV_monarchist_coup = {
+
+		icon = eng_support_imperialist_coup
+
+		allowed = {
+			original_tag = SOV
+		}
+
+		available = {
+			OR={
+				has_stability > 0.5
+				custom_trigger_tooltip={
+					tooltip = SOV_factions_T_loyalty_40_tt
+					check_variable = {var_SOV_factions_T_loyalty > 40}
+				}
+				AND={
+					monarchy < party_popularity@ruling_party
+					custom_trigger_tooltip={
+						tooltip = T_controls_army_NOT_tt
+						NOT={check_variable = {var_SOV_current_army_controller = 5}}
+					}
+				}
+				has_government = monarchy
+			}
+		}
+
+		days_mission_timeout = 90
+		fire_only_once = yes
+
+		activation = {
+			has_stability < 0.5
+			NOT={has_government = monarchy}
+			OR={
+				monarchy > party_popularity@ruling_party
+				check_variable = {var_SOV_current_army_controller = 5}
+			}
+			check_variable = {var_SOV_factions_T_loyalty < 40}
+			NOT={ has_active_mission = SOV_civil_war_countdown}
+		}
+
+		is_good = no
+
+		complete_effect = {
+			#custom_effect_tooltip = barbarossa_mission_tt
+		}
+
+		timeout_effect = {
+			custom_effect_tooltip = SOV_soviet_coup_mission_tt
+			set_politics = {
+				ruling_party = monarchy
+				elections_allowed = no
+			}
+			add_to_variable = {
+				tooltip = SOV_increase_t_loyalty_amount
+				var_SOV_factions_T_loyalty = 40
+			}
+			add_to_variable = {
+				tooltip = SOV_increase_o_loyalty_amount
+				var_SOV_factions_O_loyalty = 25
+			}
+			subtract_from_variable = {
+				tooltip = SOV_reduce_rsdlp_loyalty_amount
+				var_SOV_factions_RSDLP_loyalty = 20
+			}
+			subtract_from_variable = {
+				tooltip = SOV_reduce_sr_loyalty_amount
+				var_SOV_factions_SR_loyalty = 20
+			}
+			subtract_from_variable = {
+				tooltip = SOV_reduce_kd_loyalty_amount
+				var_SOV_factions_KD_loyalty = 20
+			}
 		}
 
 		ai_will_do = {

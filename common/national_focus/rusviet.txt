@@ -25,10 +25,9 @@ focus_tree = {
 
 	shared_focus = RASPUTIN_administration_joint
 
-	### Economic
 	focus = {
 		id = SOV_demobilisation
-		icon = placeholder
+		icon = GFX_focus_GER_continue_demob
 		x = 15
 		y = 0
 		cost = 5
@@ -43,105 +42,36 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = SOV_Question_the_Economy
-		icon = placeholder
-		x = 40
-		y = 0
-		cost = 5
-		ai_will_do = {
-			factor = 0
-		}
-	}
-
-	focus = {
-		id = SOV_Needs_of_the_People
-		icon = placeholder
-		relative_position_id = SOV_Question_the_Economy
+		id = SOV_iron_harvest
+		icon = GFX_focus_generic_iron_harvest
+		relative_position_id = SOV_demobilisation
 		x = 0
 		y = 1
 		cost = 8
 		ai_will_do = {
-			factor = 0
-		}
-		prerequisite = {
-			focus = SOV_Question_the_Economy
-		}
-		completion_reward = {
-			country_event = {id = SOV_peoples_say_in_economy.1}
-		}
-	}
-
-	focus = { # Skipped via event
-		id = SOV_The_People_Have_Spoken
-		icon = placeholder
-		relative_position_id = SOV_Needs_of_the_People
-		x = -2
-		y = 1
-		cost = 8
-		ai_will_do = {
 			factor = 5
 		}
-		prerequisite = {
-			focus = SOV_Needs_of_the_People
-		}
-		completion_reward = {
-			country_event = {id = SOV_peoples_say_in_economy.2}
-		}
-	}
-
-	focus = { # Available if chosen to minimize control
-		id = SOV_Lower_Economic_Control
-		icon = placeholder
-		relative_position_id = SOV_The_People_Have_Spoken
-		x = -1
-		y = 1
-		cost = 5
-		ai_will_do = {
-			factor = 5
-		}
-		prerequisite = {
-			focus = SOV_The_People_Have_Spoken
-		}
-	}
-
-	focus = { # Available if chosen to emphasize control
-		id = SOV_Governmental_Additives_in_Industry
-		icon = placeholder
-		relative_position_id = SOV_The_People_Have_Spoken
-		x = 1
-		y = 1
-		cost = 5
-		ai_will_do = {
-			factor = 5
-		}
-		prerequisite = {
-			focus = SOV_The_People_Have_Spoken
-		}
-	}
-
-	focus = { # Skipped via event / Historical
-		id = SOV_Ignore_the_People
-		icon = placeholder
-		relative_position_id = SOV_Needs_of_the_People
-		x = 2
-		y = 1
-		cost = 8
-		ai_will_do = {
-			factor = 5
-		}
-		prerequisite = {
-			focus = SOV_Needs_of_the_People
-		}
-	}
-	### Economic
-	focus = {
-		id = SOV_kolchak_plan
-		relative_position_id = SOV_demobilisation
-		icon = placeholder
 		prerequisite = {
 			focus = SOV_demobilisation
 		}
-		x = 10
+		completion_reward = {
+			capital_scope = {
+				add_resource = {
+					type = steel
+					amount = 25
+				}
+			}
+		}
+	}
+	### military
+	focus = {
+		id = SOV_kolchak_plan
+		relative_position_id = SOV_demobilisation
+		icon = GFX_focus_sov_kolchak_plan
+		prerequisite = {
+			focus = SOV_demobilisation
+		}
+		x = 11
 		y = 1
 		cost = 5
 		ai_will_do = {
@@ -151,16 +81,11 @@ focus_tree = {
 			army_experience = 25
 		}
 	}
-
 	focus = {
-		id = SOV_extreme_budget
+		id = SOV_new_military_budget
 		icon = placeholder
 		relative_position_id = SOV_kolchak_plan
-		mutually_exclusive = {
-			focus = SOV_moderate_budget
-			focus = SOV_low_budget
-		}
-		x = -6
+		x = 0
 		y = 1
 		cost = 8
 		ai_will_do = {
@@ -170,48 +95,66 @@ focus_tree = {
 			focus = SOV_kolchak_plan
 		}
 		completion_reward = {
-			
+			country_event = SOV_events.1
 		}
 	}
 	focus = {
 		id = SOV_strike_away_the_disfunction
 		icon = placeholder
-		relative_position_id = SOV_extreme_budget
-		x = -2
+		relative_position_id = SOV_new_military_budget
+		mutually_exclusive = {
+			focus = SOV_decommission_broken_ships
+			focus = SOV_all_ships_serve_the_tsar
+		}
+		x = -5
 		y = 1
 		cost = 8
 		ai_will_do = {
 			factor = 5
 		}
 		prerequisite = {
-			focus = SOV_extreme_budget
+			focus = SOV_new_military_budget
 		}
 		completion_reward = {
-			
+			#removes all outdated ships (from perspective of 1920) give a large naval research boost
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 2
+				category = ship_modules_tech
+			}
+			navy_experience = 25
 		}
 	}
 	focus = {
 		id = SOV_forced_removal_of_corrupt
 		icon = placeholder
-		relative_position_id = SOV_extreme_budget
-		x = 0
+		relative_position_id = SOV_new_military_budget
+		x = 1
 		y = 1
 		cost = 8
 		ai_will_do = {
 			factor = 5
 		}
 		prerequisite = {
-			focus = SOV_extreme_budget
+			focus = SOV_new_military_budget
 		}
 		completion_reward = {
-			
+			swap_ideas={
+				add_idea = SOV_political_corruption_2
+				remove_idea = SOV_political_corruption
+			}
+			set_temp_variable = {
+				var_SOV_temp_reduce_controller = 5
+			}
+			set_temp_variable = { var_SOV_temp_reduce_loyalty = 4}
+			SOV_decrease_army_control = yes
 		}
 	}
 	focus = {
 		id = SOV_promote_new_commanders
-		icon = placeholder
+		icon = GFX_focus_generic_military_mission
 		relative_position_id = SOV_forced_removal_of_corrupt
-		x = 0
+		x = -1
 		y = 1
 		cost = 8
 		ai_will_do = {
@@ -221,21 +164,37 @@ focus_tree = {
 			focus = SOV_forced_removal_of_corrupt
 		}
 		completion_reward = {
-			
+			#enables 3 generals
+			add_corps_commander_role = {
+				Character = SOV_anatoly_pepelyayev
+				skill = 2
+				attack_skill = 2
+				defense_skill = 2
+				planning_skill = 1
+				logistics_skill = 3
+			}
+			add_corps_commander_role = {
+				Character = SOV_vladimir_kappel
+				skill = 2
+				attack_skill = 3
+				defense_skill = 2
+				planning_skill = 3
+				logistics_skill = 1
+			}
 		}
 	}
 	focus = {
 		id = SOV_revise_military_spending
 		icon = placeholder
-		relative_position_id = SOV_extreme_budget
-		x = 2
+		relative_position_id = SOV_new_military_budget
+		x = 3
 		y = 1
 		cost = 8
 		ai_will_do = {
 			factor = 5
 		}
 		prerequisite = {
-			focus = SOV_extreme_budget
+			focus = SOV_new_military_budget
 		}
 		completion_reward = {
 			
@@ -246,6 +205,168 @@ focus_tree = {
 		icon = placeholder
 		relative_position_id = SOV_revise_military_spending
 		x = 0
+		y = 2
+		cost = 8
+		ai_will_do = {
+			factor = 5
+		}
+		prerequisite = {
+			focus = SOV_blindfold_the_investigations
+			focus = SOV_investigate_spending
+		}
+		completion_reward = {
+			swap_ideas = {
+				add_idea = SOV_devistated_army_2
+				remove_idea = SOV_devistated_army
+			}
+		}
+	}
+	focus = {
+		id = SOV_decommission_broken_ships
+		icon = placeholder
+		relative_position_id = SOV_new_military_budget
+		mutually_exclusive = {
+			focus = SOV_strike_away_the_disfunction
+			focus = SOV_all_ships_serve_the_tsar
+		}
+		x = -3
+		y = 1
+		cost = 8
+		ai_will_do = {
+			factor = 5
+		}
+		prerequisite = {
+			focus = SOV_new_military_budget
+		}
+		completion_reward = {
+			#removes old ships for a research boost
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				category = ship_modules_tech
+			}
+		}
+	}
+	focus = {
+		id = SOV_investigate_spending
+		icon = placeholder
+		relative_position_id = SOV_revise_military_spending
+		mutually_exclusive = {
+			focus = SOV_blindfold_the_investigations
+		}
+		x = -1
+		y = 1
+		cost = 8
+		ai_will_do = {
+			factor = 5
+		}
+		prerequisite = {
+			focus = SOV_revise_military_spending
+		}
+		prerequisite = {
+			focus = SOV_forced_removal_of_corrupt
+		}
+		completion_reward = {
+			swap_ideas={
+				add_idea = SOV_political_corruption_3
+				remove_idea = SOV_political_corruption_2
+			}
+			add_stability = -0.05
+		}
+	}
+	focus = {
+		id = SOV_all_ships_serve_the_tsar
+		icon = placeholder
+		relative_position_id = SOV_new_military_budget
+		mutually_exclusive = {
+			focus = SOV_decommission_broken_ships
+			focus = SOV_strike_away_the_disfunction
+		}
+		x = -1
+		y = 1
+		cost = 8
+		ai_will_do = {
+			factor = 5
+		}
+		prerequisite = {
+			focus = SOV_new_military_budget
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SOV_expand_petrograd_shipbuilding
+		icon = GFX_focus_SOV_reinforce_western_naval_bases
+		relative_position_id = SOV_decommission_broken_ships
+		x = 0
+		y = 1
+		cost = 8
+		ai_will_do = {
+			factor = 5
+		}
+		prerequisite = {
+			focus = SOV_all_ships_serve_the_tsar
+			focus = SOV_decommission_broken_ships
+			focus = SOV_strike_away_the_disfunction
+		}
+		completion_reward = {
+			195={
+				if = {
+					limit = {
+						free_building_slots = {
+							building = dockyard
+							size > 1
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = dockyard
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}
+	focus = {
+		id = SOV_kolchaks_new_navy
+		icon = placeholder
+		relative_position_id = SOV_expand_petrograd_shipbuilding
+		x = 0
+		y = 1
+		cost = 8
+		ai_will_do = {
+			factor = 5
+		}
+		prerequisite = {
+			focus = SOV_expand_petrograd_shipbuilding
+		}
+		completion_reward = {
+			navy_experience = 15
+			hidden_effect = {
+				if = {
+					limit = {
+						has_government = communism
+					}
+					add_dynamic_modifier = { modifier = SOV_the_red_fleet_dynamic_modifier }
+				}
+				else = {
+					add_dynamic_modifier = { modifier = SOV_the_red_fleet_dynamic_modifier_alt }
+				}
+			}
+			custom_effect_tooltip = SOV_pc_of_the_ussr_navy_ns_tt
+		}
+	}
+	focus = {
+		id = SOV_blindfold_the_investigations
+		icon = placeholder
+		relative_position_id = SOV_revise_military_spending
+		mutually_exclusive = {
+			focus = SOV_investigate_spending
+		}
+		x = 1
 		y = 1
 		cost = 8
 		ai_will_do = {
@@ -255,170 +376,36 @@ focus_tree = {
 			focus = SOV_revise_military_spending
 		}
 		completion_reward = {
-			
+			add_political_power = 100
 		}
 	}
-
 	focus = {
-		id = SOV_moderate_budget
+		id = SOV_restored_rusviet_army
 		icon = placeholder
-		relative_position_id = SOV_kolchak_plan
-		mutually_exclusive = {
-			focus = SOV_extreme_budget
-			focus = SOV_low_budget
-		}
+		relative_position_id = SOV_new_military_budget
 		x = 0
-		y = 1
+		y = 4
 		cost = 8
 		ai_will_do = {
 			factor = 5
 		}
 		prerequisite = {
-			focus = SOV_kolchak_plan
-		}
-		completion_reward = {
-			
-		}
-	}
-	focus = {
-		id = SOV_decommission_broken_ships
-		icon = placeholder
-		relative_position_id = SOV_moderate_budget
-		x = -2
-		y = 1
-		cost = 8
-		ai_will_do = {
-			factor = 5
+			focus = SOV_kolchaks_new_navy
 		}
 		prerequisite = {
-			focus = SOV_moderate_budget
-		}
-		completion_reward = {
-			
-		}
-	}
-	focus = {
-		id = SOV_resuffling_the_problem
-		icon = placeholder
-		relative_position_id = SOV_moderate_budget
-		x = 0
-		y = 1
-		cost = 8
-		ai_will_do = {
-			factor = 5
+			focus = SOV_enforce_quality_control
 		}
 		prerequisite = {
-			focus = SOV_moderate_budget
+			focus = SOV_promote_new_commanders
 		}
-		completion_reward = {
+		available = {
 			
 		}
-	}
-	focus = {
-		id = SOV_investigate_spending
-		icon = placeholder
-		relative_position_id = SOV_moderate_budget
-		x = 2
-		y = 1
-		cost = 8
-		ai_will_do = {
-			factor = 5
-		}
-		prerequisite = {
-			focus = SOV_moderate_budget
-		}
 		completion_reward = {
-			
-		}
-	}
-
-	focus = {
-		id = SOV_low_budget
-		icon = placeholder
-		relative_position_id = SOV_kolchak_plan
-		mutually_exclusive = {
-			focus = SOV_extreme_budget
-			focus = SOV_moderate_budget
-		}
-		x = 6
-		y = 1
-		cost = 8
-		ai_will_do = {
-			factor = 5
-		}
-		prerequisite = {
-			focus = SOV_kolchak_plan
-		}
-		completion_reward = {
-			
-		}
-	}
-	focus = {
-		id = SOV_all_ships_serve_the_tsar
-		icon = placeholder
-		relative_position_id = SOV_low_budget
-		x = -2
-		y = 1
-		cost = 8
-		ai_will_do = {
-			factor = 5
-		}
-		prerequisite = {
-			focus = SOV_low_budget
-		}
-		completion_reward = {
-			
-		}
-	}
-	focus = {
-		id = SOV_sweeping_corruption_under_the_rug
-		icon = placeholder
-		relative_position_id = SOV_low_budget
-		x = 0
-		y = 1
-		cost = 8
-		ai_will_do = {
-			factor = 5
-		}
-		prerequisite = {
-			focus = SOV_low_budget
-		}
-		completion_reward = {
-			
-		}
-	}
-	focus = {
-		id = SOV_allow_new_commanders
-		icon = placeholder
-		relative_position_id = SOV_sweeping_corruption_under_the_rug
-		x = 0
-		y = 1
-		cost = 8
-		ai_will_do = {
-			factor = 5
-		}
-		prerequisite = {
-			focus = SOV_sweeping_corruption_under_the_rug
-		}
-		completion_reward = {
-			
-		}
-	}
-	focus = {
-		id = SOV_blindfold_the_investigations
-		icon = placeholder
-		relative_position_id = SOV_low_budget
-		x = 2
-		y = 1
-		cost = 8
-		ai_will_do = {
-			factor = 5
-		}
-		prerequisite = {
-			focus = SOV_low_budget
-		}
-		completion_reward = {
-			
+			swap_ideas = {
+				add_idea = SOV_devistated_army_3
+				remove_idea = SOV_devistated_army_2
+			}
 		}
 	}
 
@@ -430,16 +417,19 @@ focus_tree = {
 		prerequisite = {
 			focus = SOV_demobilisation
 		}
-		x = -15
+		x = -10
 		y = 1
-		cost = 1
+		cost = 5
 		ai_will_do = {
 			factor = 0
+		}
+		completion_reward = {
+			add_stability = 0.025
 		}
 	}
 	focus = {
 		id = SOV_the_RSDLP
-		icon = placeholder
+		icon = GFX_focus_ger_bulwark_against_bolshevism
 		relative_position_id = SOV_dealing_with_the_political_tightrope
 		prerequisite = {
 			focus = SOV_dealing_with_the_political_tightrope
@@ -487,6 +477,17 @@ focus_tree = {
 			set_temp_variable = { var_SOV_temp_increase_controller = 2 }
 			set_temp_variable = { var_SOV_temp_reduce_loyalty = 3 }
 			SOV_decrease_army_control = yes
+			custom_effect_tooltip = SOV_ryutin_liberated_tt 
+			hidden_effect = {
+				SOV_martemyan_ryutin = {
+					clr_character_flag = SOV_imprisoned_flag
+					set_portraits = {
+						army = {
+							small = "GFX_idea_SOV_martemyan_ryutin"
+						}
+					}
+				}
+			}
 		}
 	}
 	focus = { # 
@@ -512,7 +513,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SOV_purging_radicals_from_soviets
-		icon = placeholder
+		icon = GFX_focus_generic_conspiracy
 		relative_position_id = SOV_the_RSDLP
 		prerequisite = {
 			focus = SOV_the_RSDLP
@@ -561,13 +562,13 @@ focus_tree = {
 			focus = SOV_purging_radicals_from_soviets
 		}
 		completion_reward = {
-			
+			country_event = { id =SOV_civil_war.13}
 		}
 	}
 
 	focus = {
 		id = SOV_progressive_bloc
-		icon = GFX_focus_ARG_defense_and_democracy
+		icon = GFX_focus_spr_torchbearers_of_tomorrow
 		relative_position_id = SOV_dealing_with_the_political_tightrope
 		prerequisite = {
 			focus = SOV_dealing_with_the_political_tightrope
@@ -588,7 +589,7 @@ focus_tree = {
 	}
 	focus = { # 
 		id = SOV_supress_the_sr
-		icon = placeholder
+		icon = GFX_focus_SWE_attack_landsorganisationen
 		relative_position_id = SOV_progressive_bloc
 		mutually_exclusive = {
 			focus = SOV_working_with_soviet
@@ -616,7 +617,7 @@ focus_tree = {
 	}
 	focus = { # 
 		id = SOV_fighting_the_red_menace
-		icon = placeholder
+		icon = GFX_focus_SWE_attack_landsorganisationen
 		relative_position_id = SOV_supress_the_sr
 		x = 1
 		y = 1
@@ -632,12 +633,25 @@ focus_tree = {
 				tooltip = SOV_reduce_sr_loyalty_amount
 				var_SOV_factions_SR_loyalty = 5
 			}
-
+			set_temp_variable = {
+				var_SOV_temp_reduce_loyalty = 2
+			}
+			set_temp_variable = {
+				var_SOV_temp_reduce_controller = 2
+			}
+			set_temp_variable = {
+				var_SOV_temp_increase_controller = 3
+			}
+			SOV_reduce_army_control = yes
+			set_temp_variable = {
+				var_SOV_temp_increase_controller = 5
+			}
+			SOV_reduce_army_control = yes
 		}
 	}
 	focus = { # 
 		id = SOV_working_with_soviet
-		icon = placeholder
+		icon = GFX_goal_generic_dangerous_deal
 		relative_position_id = SOV_progressive_bloc
 		mutually_exclusive = {
 			focus = SOV_supress_the_sr
@@ -657,6 +671,7 @@ focus_tree = {
 				tooltip = SOV_increase_sr_loyalty_amount
 				var_SOV_factions_SR_loyalty = 5
 			}
+			add_stability = 0.05
 			add_popularity = {
 				ideology = monarchy
 				popularity = -0.07
@@ -690,7 +705,7 @@ focus_tree = {
 	}
 	focus = { #
 		id = SOV_suppress_anarchists
-		icon = placeholder
+		icon = GFX_focus_spr_crush_the_revolution
 		relative_position_id = SOV_progressive_bloc
 		x = 4
 		y = 1
@@ -721,7 +736,7 @@ focus_tree = {
 	}
 	focus = { #
 		id = SOV_for_peoples_freedoms
-		icon = placeholder
+		icon = GFX_goal_generic_support_democracy
 		relative_position_id = SOV_progressive_bloc
 		x = 2
 		y = 1
@@ -813,7 +828,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SOV_tsars_land_reforms
-		icon = placeholder
+		icon = GFX_focus_generic_agricultural_subsidies
 		relative_position_id = SOV_dealing_with_the_political_tightrope
 		prerequisite = {
 			focus = SOV_dealing_with_the_political_tightrope
@@ -940,6 +955,14 @@ focus_tree = {
 				tooltip = SOV_reduce_o_loyalty_amount
 				var_SOV_factions_O_loyalty = 5
 			}
+			add_to_variable = {
+				tooltip = SOV_increase_sr_loyalty_amount
+				var_SOV_factions_SR_loyalty = 5
+			}
+			add_to_variable = {
+				tooltip = SOV_increase_kd_loyalty_amount
+				var_SOV_factions_KD_loyalty = 5
+			}
 			add_stability = 0.05
 		}
 	}
@@ -985,7 +1008,7 @@ focus_tree = {
 	}
 	focus = { # 
 		id = SOV_public_housing
-		icon = placeholder
+		icon = GFX_focus_generic_low_cost_housing
 		relative_position_id = SOV_breaking_both
 		x = -2
 		y = 1
@@ -998,12 +1021,12 @@ focus_tree = {
 			focus = SOV_forced_breakup_of_landlord_manors
 		}
 		completion_reward = {
-
+			add_ideas={SOV_public_housing_idea}
 		}
 	}
 	focus = { # 
 		id = SOV_privatization
-		icon = placeholder
+		icon = GFX_goal_generic_forceful_treaty
 		relative_position_id = SOV_breaking_both
 		x = 2
 		y = 1
@@ -1016,7 +1039,27 @@ focus_tree = {
 			focus = SOV_dissolve_rural_communes
 		}
 		completion_reward = {
-
+			add_timed_idea = {
+				idea = SOV_privatization_idea
+				days = 360
+			}
+		}
+	}
+	focus = { # 
+		id = SOV_building_a_middle_class
+		icon = placeholder
+		relative_position_id = SOV_breaking_both
+		x = 0
+		y = 1
+		cost = 8
+		ai_will_do = {
+			factor = 5
+		}
+		prerequisite = {
+			focus = SOV_breaking_both
+		}
+		completion_reward = {
+			
 		}
 	}
 	focus = { # 

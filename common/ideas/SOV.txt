@@ -155,6 +155,7 @@ ideas = {
 		}
 		
 		SOV_devistated_army = {
+			name = SOV_devistated_army
 			removal_cost = -1
 			
 			allowed = {
@@ -175,6 +176,165 @@ ideas = {
 				war_support_factor = -0.2
 			}
 		}
+		SOV_devistated_army_2 = {
+			name = SOV_devistated_army
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Added via purges
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = generic_army_problems
+			
+			modifier = {
+				land_reinforce_rate = -0.01
+				max_command_power = -25
+				training_time_army_factor = 10
+				conscription_factor = -0.70
+				war_support_factor = -0.2
+			}
+		}
+		SOV_devistated_army_3 = {
+			name = SOV_devistated_army
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Added via purges
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = generic_army_problems
+			
+			modifier = {
+				max_command_power = -10
+				training_time_army_factor = 10
+				conscription_factor = -0.65
+				war_support_factor = -0.15
+			}
+		}
+		SOV_political_corruption = {
+			name = SOV_political_corruption
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Added via purges
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = FRA_factory_strikes
+			
+			modifier = {
+				political_power_gain = 0.02
+				consumer_goods_factor = 0.05
+				promote_cost_factor = 0.1
+				military_leader_cost_factor = 0.1
+				army_leader_cost_factor = 0.1
+				refit_ic_cost = 0.1
+				equipment_upgrade_xp_cost = 0.1
+				license_purchase_cost = 0.1
+				political_advisor_cost_factor = 0.1
+				economy_cost_factor = 0.1
+				trade_laws_cost_factor = 0.1
+				mobilization_laws_cost_factor = 0.1
+			}
+		}
+		SOV_political_corruption_2 = {
+			name = SOV_political_corruption
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Added via purges
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = FRA_factory_strikes
+			
+			modifier = {
+				political_power_gain = 0.02
+				consumer_goods_factor = 0.05
+				promote_cost_factor = 0.075
+				military_leader_cost_factor = 0.075
+				army_leader_cost_factor = 0.075
+				refit_ic_cost = 0.075
+				equipment_upgrade_xp_cost = 0.075
+				license_purchase_cost = 0.075
+				political_advisor_cost_factor = 0.075
+				economy_cost_factor = 0.075
+				trade_laws_cost_factor = 0.075
+				mobilization_laws_cost_factor = 0.075
+			}
+		}
+		SOV_political_corruption_3 = {
+			name = SOV_political_corruption
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Added via purges
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = FRA_factory_strikes
+			
+			modifier = {
+				political_power_gain = 0.02
+				consumer_goods_factor = 0.05
+				promote_cost_factor = 0.05
+				military_leader_cost_factor = 0.05
+				army_leader_cost_factor = 0.05
+				refit_ic_cost = 0.05
+				equipment_upgrade_xp_cost = 0.05
+				license_purchase_cost = 0.05
+				political_advisor_cost_factor = 0.05
+				economy_cost_factor = 0.05
+				trade_laws_cost_factor = 0.05
+				mobilization_laws_cost_factor = 0.05
+			}
+		}
+		SOV_political_corruption_4 = {
+			name = SOV_political_corruption
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Added via purges
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = FRA_factory_strikes
+			
+			modifier = {
+				political_power_gain = 0.01
+				consumer_goods_factor = 0.05
+				promote_cost_factor = 0.025
+				military_leader_cost_factor = 0.025
+				army_leader_cost_factor = 0.025
+				refit_ic_cost = 0.025
+				equipment_upgrade_xp_cost = 0.025
+				license_purchase_cost = 0.025
+				political_advisor_cost_factor = 0.025
+				economy_cost_factor = 0.025
+				trade_laws_cost_factor = 0.025
+				mobilization_laws_cost_factor = 0.025
+			}
+		}
 		
 		SOV_july_days = {
 			removal_cost = -1
@@ -193,6 +353,43 @@ ideas = {
 				stability_factor = -0.09
 				political_power_cost = 0.15
 				communism_drift = 0.02
+			}
+		}
+		
+		SOV_public_housing_idea = {
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Added via purges
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			picture = ARG_public_works_investment
+			
+			modifier = {
+				stability_factor = 0.05
+				consumer_goods_factor = 0.025
+			}
+		}
+		SOV_privatization_idea = {
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Added via purges
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			picture = generic_economic_increase
+			
+			modifier = {
+				political_power_factor = 0.05
+				consumer_goods_factor = -0.05
 			}
 		}
 

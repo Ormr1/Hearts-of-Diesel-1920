@@ -6025,12 +6025,20 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/SAXONY/focus_bulgarian_repayments.png"
 	}
 	SpriteType = {
+		name = "GFX_focus_sov_kolchak_plan"
+		texturefile = "gfx/interface/goals/RUSVIET/focus_sov_kolchak_plan.png"
+	}
+	SpriteType = {
 		name = "GFX_focus_genric_burning_flag_yellow"
 		texturefile = "gfx/interface/goals/focus_genric_burning_flag_yellow.dds"
 	}
 	SpriteType = {
 		name = "GFX_focus_generic_cruiser_submarines"
 		texturefile = "gfx/interface/goals/focus_generic_cruiser_submarines.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_generic_low_cost_housing"
+		texturefile = "gfx/interface/goals/focus_generic_low_cost_housing.dds"
 	}
 
 }

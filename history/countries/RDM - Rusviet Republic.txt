@@ -44,6 +44,7 @@ if = {
 }
 
 #recruit_character = LAP_john_louis_sanfuentes
+recruit_character = SOV_pyotr_wrangel
 
 set_convoys = 120
 set_politics = {

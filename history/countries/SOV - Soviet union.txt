@@ -8,6 +8,7 @@ recruit_character = SOV_tsar_nicholas
 recruit_character = SOV_rasputin #the great mistic and a part of [fenris]
 recruit_character = SOV_pavel_milyukov #kadets
 recruit_character = SOV_supreme_soviet #This is a fake character! Proper country leader role is added via focus
+recruit_character = SOV_viktor_chernov
 recruit_character = SOV_vladimir_lenin
 if = {
 	limit = {
@@ -121,6 +122,13 @@ recruit_character = SOV_lev_dovator
 recruit_character = SOV_pavel_rybalko
 
 recruit_character = SOV_alexander_kolchak
+recruit_character = SOV_anton_denikin
+recruit_character = SOV_nikolai_yudenich
+recruit_character = SOV_mikhail_drozdovsky
+recruit_character = SOV_mikhail_diterikhs
+recruit_character = SOV_anatoly_pepelyayev
+recruit_character = SOV_vladimir_kantakuzen
+recruit_character = SOV_vladimir_kappel
 
 if = {
 	limit = {
@@ -302,6 +310,7 @@ add_ideas = {
 	SOV_devistated_army
 	extensive_conscription
 	partial_economic_mobilisation
+	SOV_political_corruption
 }
 activate_advisor = SOV_rasputin
 

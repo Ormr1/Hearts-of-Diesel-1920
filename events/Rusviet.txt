@@ -3,6 +3,7 @@
 ###########################
 
 add_namespace = SOV_civil_war
+add_namespace = SOV_events
 add_namespace = SOV_peoples_say_in_the_economy
 
 # Rasputin marches on St Petersburg
@@ -803,6 +804,12 @@ country_event = {#Kornilov affair
 		SOV_lavr_kornilov={
 			set_character_flag = SOV_exiled_flag
 		}
+		SOV_nikolai_yudenich = {
+			set_character_flag = SOV_exiled_flag
+		}
+		SOV_anton_denikin = {
+			set_character_flag = SOV_exiled_flag
+		}
 	}
 	option = {#prevent this to keep the peace
 		name = SOV_civil_war.10.b
@@ -821,6 +828,12 @@ country_event = {#Kornilov affair
 		SOV_lavr_kornilov={
 			set_character_flag = SOV_exiled_flag
 		}
+		SOV_nikolai_yudenich = {
+			set_character_flag = SOV_exiled_flag
+		}
+		SOV_anton_denikin = {
+			set_character_flag = SOV_exiled_flag
+		}
 	}
 	option = {#a oppertunity to strike a blow aganist the soviets
 		name = SOV_civil_war.10.c
@@ -833,11 +846,11 @@ country_event = {#Kornilov affair
 			tooltip = SOV_reduce_rsdlp_loyalty_amount
 			var_SOV_factions_RSDLP_loyalty = 20
 		}
-		remove_ideas = petrograd_soviet_idea
 		set_temp_variable = { var_SOV_temp_reduce_controller = 2 }
 		set_temp_variable = { var_SOV_temp_increase_controller = 3 }
 		set_temp_variable = { var_SOV_temp_reduce_loyalty = 7 }
 		SOV_decrease_army_control = yes
+		remove_ideas = petrograd_soviet_idea
 	}
 }
 country_event = {#Lenins Speaches
@@ -891,6 +904,38 @@ country_event = {#July Days
 	}
 }
 
+country_event = {#Hunt for lenin
+	id = SOV_civil_war.13
+	title = SOV_civil_war.13.t
+	desc = SOV_civil_war.13.d
+	picture = GFX_report_event_generic_riot
+	
+	is_triggered_only = yes
+
+	fire_only_once = yes
+	
+	option = {#damn
+		name = SOV_civil_war.13.a
+		
+	}
+}
+
+
+
+country_event = {#military_budget
+	id = SOV_events.1
+	title = SOV_events.1.t
+	desc = SOV_events.1.d
+	picture = GFX_report_event_generic_riot
+	
+	is_triggered_only = yes
+	
+	option = {#damn
+		name = SOV_events.1.a
+		
+	}
+}
+
 
 	###########################
 	# Rusviet Economy
@@ -907,13 +952,9 @@ country_event = {#July Days
 
 		option = {
 			name = SOV_peoples_say_in_economy.1.a
-			complete_national_focus = SOV_The_People_Have_Spoken
-			# hidden effect: changes flag to SOV_The_People_Have_Spoken (flag visually doesn't change, just another name in code so you ccan only do 1 focus)
 		}
 		option = { # Historical
 			name = SOV_peoples_say_in_economy.1.b
-			complete_national_focus = SOV_Ignore_the_People
-			# hidden effect: changes flag to SOV_Ignore_the_People (flag visually doesn't change, just another name in code so you ccan only do 1 focus)
 		}
 	}
 
@@ -927,12 +968,8 @@ country_event = {#July Days
 
 		option = {
 			name = SOV_peoples_say_in_economy.2.a
-			complete_national_focus = SOV_Lower_Economic_Control
-			# hidden effect: changes flag to SOV_Lower_Economic_Control (flag visually doesn't change, just another name in code so you ccan only do 1 focus)
 		}
 		option = {
 			name = SOV_peoples_say_in_economy.2.b
-			complete_national_focus = SOV_Governmental_Additives_in_Industry
-			# hidden effect: changes flag to SOV_Governmental_Additives_in_Industry (flag visually doesn't change, just another name in code so you ccan only do 1 focus)
 		}
 	}
