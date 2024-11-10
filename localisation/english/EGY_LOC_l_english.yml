@@ -258,7 +258,7 @@ EGY_A.28.a: "Exactly As Planned"
 
 EGY_A.29.t: "The Red Carpet P1"
 EGY_A.29.d: ""
-EGY_A.29.a: ""
+EGY_A.29.a: "Herbert could never resist the prospect of dinner with me"
 
 EGY_A.30.t: "The Red Carpet P2"
 EGY_A.30.d: ""
@@ -272,12 +272,30 @@ EGY_AFOC.32.t: "For The Taking"
 EGY_AFOC.32.d: "It seems Roman operational security is quite lax. We have received word that an arms shipment is heading down the nile headed for the garrison troops at Thebes. Now, I don't know about you, but I think those guns would be better used by us. If we create a jam in the river in the middle of nowhere, we can hijack the shipment and grab it for ourselves miles away from Roman support."
 EGY_AFOC.32.a: "Well, Let's Go Shopping"
 
-EGY_A.33.t: "Midriver Traffic P1"
+EGY_A.33.t: "Midriver Traffic"
 EGY_A.33.d: "The easiest way to seize their boat is by making it stop first, and we have multiple options for this. On one hand, the reps of the local fisherman's association are confident that they could cause enough traffic to stop them in their tracks long enough for us to board the boat and capture it. On the other hand, a sympathetic mayor in the area has an idea that makes use of the local wildlife population..."
-EGY_A.33.a: ""
-EGY_A.33.b: ""
+EGY_A.33.a: "Go with the fisherman's plan"
+EGY_A.33.b: "What exactly does he mean by Wildlife?"
 
+EGY_A.34.t: ""
+EGY_A.34.d: ""
+EGY_A.34.a: ""
 
+EGY_A.35.t: ""
+EGY_A.35.d: ""
+EGY_A.35.a: ""
+
+EGY_A.36.t: "Hungry Hungry Hippos"
+EGY_A.36.d: "The mayor's plan goes a little something like this: he believes that the local hippo population can be suitably aggravated by disturbing their sleeping routines and strategically denying them access to food. To this end, they have been setting off fireworks over their nests, and have been removing the local vegetation. In short, they have done everything in their power to deliberately piss off these Hippos, and are ready to turn them loose."
+EGY_A.36.a: "Tawret unleashed, anyone?"
+
+EGY_A.37.t: "Hungry Hungry Hippos"
+EGY_A.37.d: "While the raid has gone as planned, out team has reported some...psychological casualties. Apparently in order to bait the hippos into attacking the Roman boats, fruit was packed into sacks and thrown onto the decks from the riverbank. At once, the Hippos attacked the first boast en masse and began to rock it to get the fruit off the deck. This threw the Roman sailors into the water, where apparently one of the men in Sobek division witnessed a Hippo 'crush a Roman's head like a ripe watermelon'. The Romans in the other boats suffered similar fates. While we posess the shipment, might I suggest less traumatising methods in the future?"
+EGY_A.37.a: "Remind me to never anger a Hippo."
+
+EGY_A.38.t: ""
+EGY_A.38.d: ""
+EGY_A.38.a: ""
 
 EGY_AFOC.39.t: "Wrong Number"
 EGY_AFOC.39.d: "Thanks to some crossed wires, Imhotep has clued us into a rather juicy piece of gossip. Apparently, a senior Roman official in Alexandria is at risk of having his affair exposed unless he pays his mistress off to the tune of 5,000 solidus. Not wanting to cause a fuss, the powers that be in Constantinople are wiring him the money in a secure wireless transfer to keep things hush-hush. If we intercept the banking draft before it reaches him, we can pocket the change for our own ends and expose a selacious affair, undermining Roman reputations."
