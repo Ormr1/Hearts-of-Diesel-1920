@@ -90,7 +90,7 @@ EGY_A40_desc: "The world weather office is predicting record rainfall this Akhet
 EGY_A41_fr: "Freedom"
 EGY_A41_fr_desc: "'Step 9, Carter, Freedom!' \n'For you, Cleo! Not for me!' \n'CARTER!!!' "
 EGY_A42: "The Final Push"
-EGY_A42_desc: "Despite the cause of holding on to their 'Aegyptus' being a lost one, the forces of Byzantium are going to give us one final show of strength. They have amassed 70% of their southern army groups and are heading towards Suez at a breakneck pace. How they convinced the Saxons to let them walk through the levant is beyond us, but it may be the work of whoever had them backing those Muslims. No matter, the only concern now is the hoarde of angry Romans heading towards us."
+EGY_A42_desc: "Despite the cause of holding on to their 'Aegyptus' being a lost one, Eastern Rome is massing it's troops for a counter-offensive. Despite it all the forces of Byzantium are going to give us one final show of strength, so let's give them one final show of valour. They have amassed 70% of their southern army groups and are heading towards Suez at a breakneck pace. How they convinced the Saxons to let them walk through the levant is beyond us, but it may be the work of whoever had them backing those Muslims. No matter, the only concern now is the hoarde of angry Romans heading towards us. Show them what this land is truly made of."
 EGY_A43: ""
 EGY_A43_desc: ""
 EGY_A44: ""
@@ -277,8 +277,8 @@ EGY_A.33.d: "The easiest way to seize their boat is by making it stop first, and
 EGY_A.33.a: "Go with the fisherman's plan"
 EGY_A.33.b: "What exactly does he mean by Wildlife?"
 
-EGY_A.34.t: ""
-EGY_A.34.d: ""
+EGY_A.34.t: "Aggressive Negotiations"
+EGY_A.34.d: "The local fisherman's union has done what it does best: organised. The plan is that during a scheduled haul, a few key boats on the route are going to have engine trouble at strategic positions. This will cause a river jam, which will bring traffic to a standstill. In the chaos, we can sweep in, neutralise the guards, and steal the weapons shipment."
 EGY_A.34.a: ""
 
 EGY_A.35.t: ""
@@ -307,11 +307,36 @@ EGY_AFOC.46.t: "The Man On The Inside"
 EGY_AFOC.46.d: "A city councillor in Thebes has been campaigning for change in municipal policies for quite a while now, but has been getting nowhere as he's been blocked by the tetrachy at every turn, and they've set a whopping ambush for him in the next municipal election in the form of a nasty smear campaign. If we help him win the upcoming election, he says he'll be happy to pass on any information he gets to us and aid our troops in the struggle. Snub that smear, and put the fear of Osiris into his opponents."
 EGY_AFOC.46.a: ""
 
+EGY_A.47.t: "Election Day"
+EGY_A.47.d: "Hammu Thesy is what one would refer to as an idealist. He is a man that entered politics believing that with hard work and through conversation, he could represent the will of the people. The Romans have done everything in their power to prove him wrong, and their next surprise is a real stinker. They intend to beat him once and for all by fabricating evidence that he has taken bribes from local business leaders to the tune of 20,000 deben, an accusation that will fatally damage his reputation and make the election a cakewalk for his pro-tetrarch oponent.\nAs always, we must act.\nWe can make sure the evidence is never exposed, but that will leave his opponent's ties to the tetrarchy unseen and intact. Alternatively, we can be more spiteful, and expose his opponent and the fabrication for everyone to see on the day of the results"
+EGY_A.47.a: "Best To Play It Safely"
+EGY_A.47.b: "Spiteful Is My Middle Name"
 
+EGY_A.48.t: "The Safety Play"
+EGY_A.48.d: ""
+EGY_A.48.a: ""
+
+EGY_A.49.t: "No Hitches For Now"
+EGY_A.49.d: ""
+EGY_A.49.a: ""
+
+EGY_A.50.t: "Our Name Is Spite"
+EGY_A.50.d: "Keeping on top of this one has been a difficult task. The balance of propaganda and counter-propaganda is a delicate one, to be sure. Allow the scandal too much breathing space, and the locals might believe it, but over-correct and the Tetrarch may smell a rat. However, while the results are tight, the payoff has been worth it. At the announcement of the results, our men backstage swapped the background music for a version cut with recordings of the whole sordid affair, Tetrarch collusion and all. Needless to say, that went out on air and it has become a massive local scandal from which Hammu has managed to emerge victorious, with his opponent being chased out of city hall. I think we deserve a pat on the back."
+EGY_A.50.a: "Splendid"
+
+EGY_A.51.t: "His Name Was Hammu"
+EGY_A.51.d: "Hammu is dead.\nEver the sore loser, the pro-tetrarch candidate set a bomb in his car, hoping to win by default. Unfortunately for him, he will miss his inauguration. Ra knows, you can't run a city from our basement, where he is currently tied up, pending disposal.\nHis death, while tragic, has served to highlight the cruelty of the Tetrarch's rule over Kemet. He has become a local martyr, the good man who through the will of the people managed to beat an unfair system, only to have the system cheat anyway. Regardless of who comes to power in their place, we have a city loyal to his memory and our cause, and ready to rise.\nStill, not exactly a victory."
+EGY_A.51.a: "May Osiris Carry Him To Sekhet-Aaru"
 
 EGY_AFOC.52.t: "Cheap And Simple"
 EGY_AFOC.52.d: "Making weapons cheaply and robustly is the key to winning, and we're going to need to evaluate designs. This seems like the perfect opportunity to hold an underground arms trial, with all the big anarchist names competing to get the contract."
 EGY_AFOC.52.a: ""
+
+EGY_A.53.t: ""
+EGY_A.53.d: "Our invitation has been heard, and we've attracted some choice characters. Many underground gun-makers and arms dealers have come from far to show off their wares, hoping to land a contract that will make them rich beyond their wildest dreams. While first and foremost we are supplied by The Broker, our forces have grown, and there is a considerable shortfall in our inventory. While there are many here who could easily cover it, three of them stand out. Firstly, "
+EGY_A.53.a: ""
+EGY_A.53.b: ""
+EGY_A.53.c: ""
 
 
 
