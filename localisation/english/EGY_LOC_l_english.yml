@@ -301,6 +301,11 @@ EGY_AFOC.39.t: "Wrong Number"
 EGY_AFOC.39.d: "Thanks to some crossed wires, Imhotep has clued us into a rather juicy piece of gossip. Apparently, a senior Roman official in Alexandria is at risk of having his affair exposed unless he pays his mistress off to the tune of 5,000 solidus. Not wanting to cause a fuss, the powers that be in Constantinople are wiring him the money in a secure wireless transfer to keep things hush-hush. If we intercept the banking draft before it reaches him, we can pocket the change for our own ends and expose a selacious affair, undermining Roman reputations."
 EGY_AFOC.39.a: "Ooh, Scandals Are Fun!"
 
+EGY_A.40.t: ""
+EGY_A.40.d: ""
+EGY_A.40.a: ""
+EGY_A.40.b: ""
+
 
 
 EGY_AFOC.46.t: "The Man On The Inside"
@@ -332,13 +337,81 @@ EGY_AFOC.52.t: "Cheap And Simple"
 EGY_AFOC.52.d: "Making weapons cheaply and robustly is the key to winning, and we're going to need to evaluate designs. This seems like the perfect opportunity to hold an underground arms trial, with all the big anarchist names competing to get the contract."
 EGY_AFOC.52.a: ""
 
-EGY_A.53.t: ""
-EGY_A.53.d: "Our invitation has been heard, and we've attracted some choice characters. Many underground gun-makers and arms dealers have come from far to show off their wares, hoping to land a contract that will make them rich beyond their wildest dreams. While first and foremost we are supplied by The Broker, our forces have grown, and there is a considerable shortfall in our inventory. While there are many here who could easily cover it, three of them stand out. Firstly, "
-EGY_A.53.a: ""
-EGY_A.53.b: ""
-EGY_A.53.c: ""
+EGY_A.53.t: "The Fair"
+EGY_A.53.d: "Our invitation has been heard, and we've attracted some choice characters. Many underground gun-makers and arms dealers have come from far to show off their wares, hoping to land a contract that will make them rich beyond their wildest dreams. While first and foremost we are supplied by The Broker, our forces have grown, and there is a considerable shortfall in our inventory. While there are many here who could easily cover it, three of them stand out. \nFirstly, the Aztec Xocotonal. His M-18 series were entered into the Aztlan Army Weapons Trials last year, and came a solid second place. Unable to sell them on the consumer market, he has started supplying them to syndicates, rebellions, and rogue nations. Us included. \nSecondly, there is the Mongol Sarantuya. Dubbed the Queen of the Silk Road, her syndicate has sourced weapons from Togawa, Xin, and even as far as Usonia. None of the premium kit, mind, but if we want tried and tested military equipment, she can get it. Not easy on the senses, though. \nFinally, there is the western roman known only as The Jackal. From what we can tell, he's a former Army Officer from the previous war, looking to get revenge on Byzantium in any way he can. and that includes supplying us."
+EGY_A.53.a: "We'll Try The Mongol"
+EGY_A.53.b: "Go For The Aztec"
+EGY_A.53.c: "I Suppose The Jackal Is Getting His Day"
 
+EGY_A.54.t: "The Mongol"
+EGY_A.54.d: "What we have before us, is a heavy-set Mongolian who smells...strongly. Despite appearances, we have confirmed that she is, in fact, the leader of the Harbin Cartel and the Queen of the Silk Road, and she's very interested in getting started."
+EGY_A.54.a: "Well, Appearances Have Decieved Before"
 
+EGY_A.55.t: ""
+EGY_A.55.d: "Most of the Silk Road's trading is done the old-fashioned way: by land caravans. While these are far more modern, using mechs in stead of livestock, they still take longer than shipping by airship or by sea. This works out in our favour, as it appears that our previous nautical nonsense has causes the authorities to tighten security at ports and on the coast, while the route in over the suez laxly guarded. We've entered a deal for 5,000 rifles of mixed Xin and Togawan origin, which will be delivered in two shipments, one Xin and one Togawan. The Togawan shipment is coming from occupied Joseon, and will take slightly longer to get here, but will be personally delivered by Sarantuya."
+EGY_A.55.a: ""
+
+EGY_A.56.t: "Poor Fortunes"
+EGY_A.56.d: "While we have recieved the first shipment of arms, it comes with poor tidings. We have heard that Sarantuya's caravan was apprehended while crossing into the Xin Empire, and that she died in the resulting shootout. Her successor is calling our deal null and void, and has kept the money leaving us with half the guns we ordered and out of pocket. Needless to say, things have not shaken out in our favour."
+EGY_A.56.a: "Oh Cock."
+
+EGY_A.57.t: "The Triumphant Return"
+EGY_A.57.d: "The Mongol has returned, heading the caravan of mechs across the suez canal and into Kemet, and she brings the second shipment of weapons with her. With the first transaction successful, our options for what we need next have been greatly expanded. On one hand, we have the rising need for explosives to engage in expanded sabotage operations. On the other hand, there is this thing that Imhotep has wanted for a while from Usonia."
+EGY_A.57.a: "The Direct Approach Seems Best."
+EGY_A.57.b: "We Should Throw Imhotep A Bone."
+
+EGY_A.58.t: "Things That Go BOOM In The Night"
+EGY_A.58.d: "Macau Bay is home to the Xin Imperial Chemical Works: 7 square miles of explosives factory that feeds the Xin need for new years celebrations and their need for resource extraction. And it's about to be wide-open. See, that civil war of theirs isn't going too well, and the imperial autorities are moving stock out before thr republicans can get to it. This gives an unprecedented opportunity to steal their loot in transit. Sarantuya can make this happen, before spiriting it back to Kemet so it can be put to better use: killing romans."
+EGY_A.58.a: "You Had Me At Boom"
+
+EGY_A.59.t: ""
+EGY_A.59.d: ""
+EGY_A.59.a: ""
+
+EGY_A.60.t: "Photos By Wire"
+EGY_A.60.d: "The Usonian media machine sits on the bleeding edge of broadcast technology, and it does so because Usonian equipment is considered the gold standard for broadcast and telecommunications. What the Usonians have come up with this time is the object of Imhotep's fantasies: a Wireless Telephoto system. I don't pretend to understand how it works, but the basic gist of the contraption is that the photograph spins on a drum, and a photocell in the machine scans it line by line, transmitting values for dark and light to be decoded and replicated on the other end. The Usonia General Electrical company has a prototype that can supposedly transmit a full page of letter-standard paper in a hair over a minute. Having such a machine would allow our agents to sidestep Byzantine courier interception efforts and transmit valuable information straight to HQ. Imhotep and Sarantuya seem to be getting on quite well, and she's fairly sure that her Usonian contacts can get not only a few of those machine but their schematics too. For a price."
+EGY_A.60.a: "That will certainly prove useful"
+
+EGY_A.61.t: "Happy Ending (ugh)"
+EGY_A.61.d: "Our dealings with Sarantuya have become our most fruitful business relationship to-date. Not only has she opened a world of gunrunning to us, but the Telephoto machine has has the Tetrarch and his goons chasing their tails for weeks. Unprecedentedly, Sarantuya has agreed to remain here as a direct contact. While this cannot be logically or financially explained, it likely has something to do with her and Imhotep going into a broom closet and not coming out for two hours..."
+EGY_A.61.a: "Isis Give Me Strength..."
+
+EGY_A.62.t: "The Aztec"
+EGY_A.62.d: "Xocotonal knows what hard work is. He has clawed and scraped in a thousand different jobs under the yoke of the fascists, slowly but surely building his own industrial concern. Only to be shot down by a trust-fund baby's clone of an outdated nordic gun. Yes, we are aware of what happened, and it must sting, mustn't it? Living, knowing she only got that contract because he father knows a general, must just tear him up inside. But we can fix that. Especially considering it's the superior gun."
+EGY_A.62.a: "We Like To Help"
+
+EGY_A.63.t: "Canned Goods"
+EGY_A.63.d: ""
+EGY_A.63.a: ""
+
+EGY_A.64.t: ""
+EGY_A.64.d: ""
+EGY_A.64.a: ""
+
+EGY_A.65.t: "The Jackal"
+EGY_A.65.d: "The Jackal is a man who lives and breathes revenge. He eats spite and craps divine retribution, and he has one goal in life: to watch Byzantium burn. Uncontent to wait for it to collapse under it's own rotten deadweight, he has taken to accelerating the process by whatever means he can, and that includes funding and supplying anyone who will fight them. Luckily, this aligns with our goals."
+EGY_A.65.a: "A Man After My Heart"
+
+EGY_A.66.t: ""
+EGY_A.66.d: ""
+EGY_A.66.a: ""
+EGY_A.66.b: ""
+
+EGY_A.67.t: ""
+EGY_A.67.d: ""
+EGY_A.67.a: ""
+
+EGY_A.68.t: ""
+EGY_A.68.d: ""
+EGY_A.68.a: ""
+
+EGY_A.69.t: ""
+EGY_A.69.d: ""
+EGY_A.69.a: ""
+
+EGY_A.70.t: ""
+EGY_A.70.d: ""
+EGY_A.70.a: ""
 
 EGY_AFOC.72.t: "The Fight"
 EGY_AFOC.72.d: ""

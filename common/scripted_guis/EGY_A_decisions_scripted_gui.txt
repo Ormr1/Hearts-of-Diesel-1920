@@ -1,0 +1,14 @@
+scripted_gui = {
+    ##kemet rebellion decisions##
+    EGY_A_operation_decisions_ui = {
+        context_type = decision_category
+        window_name = "EGY_A_operations_window"
+
+        triggers = {
+
+        }
+        properties = {
+            
+        }
+    }
+}
