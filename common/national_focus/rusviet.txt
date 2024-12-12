@@ -24,6 +24,9 @@ focus_tree = {
     default = no
 
 	shared_focus = RASPUTIN_administration_joint
+	shared_focus = SOV_cw_foreign_aid
+	shared_focus = SOV_cw_rightful_ruler_of_rusviet
+	shared_focus = SOV_cw_rush_of_volunteers
 
 	focus = {
 		id = SOV_demobilisation
@@ -32,12 +35,15 @@ focus_tree = {
 		y = 0
 		cost = 5
 		ai_will_do = {
-			factor = 0
+			factor = 5
+		}
+		allow_branch={
+			NOT={SOV = {has_country_flag = SOV_civil_war}}
 		}
 		completion_reward = {
 			add_ideas={
-				limited_conscription
-				low_economic_mobilisation
+				volunteer_only
+				civilian_economy
 			}
 		}
 	}
@@ -421,7 +427,7 @@ focus_tree = {
 		y = 1
 		cost = 5
 		ai_will_do = {
-			factor = 0
+			factor = 10
 		}
 		completion_reward = {
 			add_stability = 0.025
@@ -434,7 +440,7 @@ focus_tree = {
 		prerequisite = {
 			focus = SOV_dealing_with_the_political_tightrope
 		}
-		x = -8
+		x = -9
 		y = 1
 		cost = 5
 		ai_will_do = {
@@ -457,8 +463,9 @@ focus_tree = {
 		}
 		mutually_exclusive = {
 			focus = SOV_purging_radicals_from_soviets
+			focus = SOV_working_with_lenin
 		}
-		x = -1
+		x = 0
 		y = 1
 		cost = 5
 		ai_will_do = {
@@ -504,11 +511,49 @@ focus_tree = {
 			focus = SOV_support_mensheviks_over_lenin
 			focus = SOV_purging_radicals_from_soviets
 		}
+		available = {
+			NOT = {has_government = communism }
+		}
 		completion_reward = {
 			add_popularity = {
 				ideology = monarchy
 				popularity = 0.05
 			}
+		}
+	}
+	focus = {
+		id = SOV_working_with_lenin
+		icon = placeholder
+		relative_position_id = SOV_the_RSDLP
+		prerequisite = {
+			focus = SOV_the_RSDLP
+		}
+		mutually_exclusive = {
+			focus = SOV_purging_radicals_from_soviets
+			focus = SOV_support_mensheviks_over_lenin
+		}
+		x = -2
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 5
+		}
+		available = {
+			has_government = communism
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = communism
+				popularity = 0.04
+			}
+			add_to_variable = {
+				tooltip = SOV_increase_rsdlp_loyalty_amount
+				var_SOV_factions_RSDLP_loyalty = 3
+			}
+			set_temp_variable = { var_SOV_temp_increase_controller = 1 }
+			set_temp_variable = { var_SOV_temp_decrease_controller = 2 }
+			set_temp_variable = { var_SOV_temp_reduce_loyalty = 3 }
+			SOV_decrease_army_control = yes
 		}
 	}
 	focus = {
@@ -521,12 +566,16 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = SOV_support_mensheviks_over_lenin
 			focus = SOV_working_with_soviet
+			focus = SOV_working_with_lenin
 		}
-		x = 1
+		x = 2
 		y = 1
 		cost = 5
 		ai_will_do = {
 			factor = 5
+		}
+		available = {
+			NOT={has_government = communism}
 		}
 		completion_reward = {
 			add_popularity = {
@@ -837,7 +886,7 @@ focus_tree = {
 		y = 1
 		cost = 5
 		ai_will_do = {
-			factor = 5
+			factor = 10
 		}
 		completion_reward = {
 			swap_ideas={
@@ -1153,6 +1202,1004 @@ focus_tree = {
 			add_to_variable = {
 				tooltip = SOV_increase_t_loyalty_amount
 				var_SOV_factions_T_loyalty = 10
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = SOV_cw_foreign_aid
+	icon = placeholder
+	cost = 5
+	x = 0
+	y = 0
+	
+	allow_branch = {
+		OR={
+			tag = TPG
+			tag = RSF
+			tag = RDM
+			tag = SOV
+		}
+		SOV={has_country_flag = SOV_civil_war}
+	}
+
+	completion_reward = {
+		add_political_power = 75
+	}
+}
+joint_focus = {
+	id = SOV_cw_sell_petsamo
+	icon = placeholder
+	cost = 5
+	text_icon = RUSVIET_CW_focus_style
+	prerequisite = {focus = SOV_cw_foreign_aid}
+	relative_position_id = SOV_cw_foreign_aid
+	x = -5
+	y = 1
+	
+	joint_trigger = {
+		OR={
+			tag = TPG
+			tag = RSF
+			tag = RDM
+			tag = SOV
+		}
+	}
+	available = {
+		controls_state = 722
+	}
+
+	completion_reward_joint_originator = {
+		722={
+			transfer_state_to = FIN
+		}
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 1500
+			producer = FIN
+		}
+	}
+}
+joint_focus = {
+	id = SOV_cw_democratic_aid
+	icon = placeholder
+	cost = 5
+	text_icon = RUSVIET_CW_focus_style
+	prerequisite = {focus = SOV_cw_foreign_aid}
+	relative_position_id = SOV_cw_foreign_aid
+	x = -3
+	y = 1
+	
+	joint_trigger = {
+		OR={
+			tag = TPG
+			tag = RSF
+			tag = RDM
+			tag = SOV
+		}
+	}
+	available = {
+		OR={
+			has_government = neutrality
+			has_government = democratic
+		}
+	}
+
+	completion_reward_joint_originator = {
+		add_political_power = 50
+	}
+}
+joint_focus = {
+	id = SOV_cw_usonian_aid
+	icon = placeholder
+	cost = 5
+	text_icon = RUSVIET_CW_focus_style
+	prerequisite = {focus = SOV_cw_democratic_aid}
+	relative_position_id = SOV_cw_democratic_aid
+	x = 1
+	y = 1
+	
+	joint_trigger = {
+		OR={
+			tag = TPG
+			tag = RSF
+			tag = RDM
+			tag = SOV
+		}
+	}
+	available = {
+		OR={
+			has_government = neutrality
+			has_government = democratic
+			USA={
+				has_opinion = {
+					target = ROOT
+					value > 75
+				}
+			}
+		}
+	}
+
+	completion_reward_joint_originator = {
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 1000
+			producer = USA
+		}
+		add_manpower = 1000
+	}
+	completion_reward_joint_member = {
+		add_opinion_modifier = {
+			target = USA
+			modifier = protest_action_strong
+		}
+	}
+}
+joint_focus = {
+	id = SOV_cw_hispanian_aid
+	icon = placeholder
+	cost = 5
+	text_icon = RUSVIET_CW_focus_style
+	prerequisite = {focus = SOV_cw_democratic_aid}
+	relative_position_id = SOV_cw_democratic_aid
+	x = -1
+	y = 1
+	
+	joint_trigger = {
+		OR={
+			tag = TPG
+			tag = RSF
+			tag = RDM
+			tag = SOV
+		}
+	}
+	available = {
+		OR={
+			has_government = neutrality
+			has_government = democratic
+			SPR={
+				has_opinion = {
+					target = ROOT
+					value > 75
+				}
+			}
+		}
+	}
+
+	completion_reward_joint_originator = {
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 1000
+			producer = SPR
+		}
+		add_manpower = 1000
+	}
+	completion_reward_joint_member = {
+		add_opinion_modifier = {
+			target = SPR
+			modifier = protest_action_strong
+		}
+	}
+}
+joint_focus = {
+	id = SOV_cw_frankian_aid
+	icon = placeholder
+	cost = 5
+	text_icon = RUSVIET_CW_focus_style
+	prerequisite = {focus = SOV_cw_foreign_aid}
+	relative_position_id = SOV_cw_foreign_aid
+	x = -1
+	y = 1
+	
+	joint_trigger = {
+		OR={
+			tag = TPG
+			tag = RSF
+			tag = RDM
+			tag = SOV
+		}
+	}
+	available = {
+		OR={
+			has_government = FRA
+			FRA={
+				has_opinion = {
+					target = ROOT
+					value > 75
+				}
+			}
+		}
+	}
+
+	completion_reward_joint_originator = {
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 1000
+			producer = FRA
+		}
+		add_manpower = 1000
+	}
+	completion_reward_joint_member = {
+		add_opinion_modifier = {
+			target = FRA
+			modifier = protest_action_strong
+		}
+	}
+}
+joint_focus = {
+	id = SOV_cw_saxon_aid
+	icon = placeholder
+	cost = 5
+	text_icon = RUSVIET_CW_focus_style
+	prerequisite = {focus = SOV_cw_foreign_aid}
+	relative_position_id = SOV_cw_foreign_aid
+	x = 1
+	y = 1
+	
+	joint_trigger = {
+		OR={
+			tag = TPG
+			tag = RSF
+			tag = RDM
+			tag = SOV
+		}
+	}
+	available = {
+		OR={
+			AND={
+				has_government = communism
+				DDR= {exists = yes}
+			}
+			AND={
+				OR={
+					has_government = monarchy
+					has_government = neutrality
+					GER= {exists = yes}
+				}
+			}
+			AND={
+				OR={
+					has_government = democratic
+					has_government = neutrality
+					WGR= {exists = yes}
+				}
+			}
+			65={
+				owner={
+					has_opinion = {
+						target = ROOT
+						value > 75
+					}
+				}
+			}
+		}
+		65={
+			owner={
+				has_civil_war = no
+			}
+		}
+	}
+
+	completion_reward_joint_originator = {
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 1000
+			producer = 65.owner
+		}
+		add_manpower = 1000
+	}
+	completion_reward_joint_member = {
+		add_opinion_modifier = {
+			target = FRA
+			modifier = protest_action_strong
+		}
+	}
+}
+joint_focus = {
+	id = SOV_cw_monarchist_aid
+	icon = placeholder
+	cost = 5
+	text_icon = RUSVIET_CW_focus_style
+	prerequisite = {focus = SOV_cw_foreign_aid}
+	relative_position_id = SOV_cw_foreign_aid
+	x = 3
+	y = 1
+	
+	joint_trigger = {
+		OR={
+			tag = TPG
+			tag = RSF
+			tag = RDM
+			tag = SOV
+		}
+	}
+	available = {
+		OR={
+			has_government = neutrality
+			has_government = monarchy
+		}
+	}
+
+	completion_reward_joint_originator = {
+		add_political_power = 50
+	}
+}
+joint_focus = {
+	id = SOV_cw_albonian_aid
+	icon = placeholder
+	cost = 5
+	text_icon = RUSVIET_CW_focus_style
+	prerequisite = {focus = SOV_cw_monarchist_aid}
+	relative_position_id = SOV_cw_monarchist_aid
+	x = -1
+	y = 1
+	
+	joint_trigger = {
+		OR={
+			tag = TPG
+			tag = RSF
+			tag = RDM
+			tag = SOV
+		}
+	}
+	available = {
+		OR={
+			has_government = neutrality
+			has_government = monarchy
+			SCO={
+				has_opinion = {
+					target = ROOT
+					value > 75
+				}
+			}
+		}
+	}
+
+	completion_reward_joint_originator = {
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 1000
+			producer = SCO
+		}
+		add_manpower = 1000
+	}
+	completion_reward_joint_member = {
+		add_opinion_modifier = {
+			target = SCO
+			modifier = protest_action_strong
+		}
+	}
+}
+joint_focus = {
+	id = SOV_cw_roman_aid
+	icon = placeholder
+	cost = 5
+	text_icon = RUSVIET_CW_focus_style
+	prerequisite = {focus = SOV_cw_monarchist_aid}
+	relative_position_id = SOV_cw_monarchist_aid
+	x = 1
+	y = 1
+	
+	joint_trigger = {
+		OR={
+			tag = TPG
+			tag = RSF
+			tag = RDM
+			tag = SOV
+		}
+	}
+	available = {
+		OR={
+			has_government = neutrality
+			has_government = monarchy
+			GRE={
+				has_opinion = {
+					target = ROOT
+					value > 75
+				}
+			}
+		}
+	}
+
+	completion_reward_joint_originator = {
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 1000
+			producer = GRE
+		}
+		add_manpower = 1000
+	}
+	completion_reward_joint_member = {
+		add_opinion_modifier = {
+			target = GRE
+			modifier = protest_action_strong
+		}
+	}
+}
+joint_focus = {
+	id = SOV_cw_our_old_ally
+	icon = placeholder
+	cost = 5
+	text_icon = RUSVIET_CW_focus_style
+	prerequisite = {focus = SOV_cw_foreign_aid}
+	relative_position_id = SOV_cw_foreign_aid
+	x = 0
+	y = 2
+	
+	joint_trigger = {
+		OR={
+			tag = TPG
+			tag = RSF
+			tag = RDM
+			tag = SOV
+		}
+	}
+	available = {
+		NOR={
+			has_opinion = {
+				target = ROOT
+				value > 99
+			}
+		}
+	}
+
+	completion_reward_joint_originator = {
+		NOR={
+			#country event 
+		}
+	}
+}
+joint_focus = {
+	id = SOV_cw_aid_from_low_places
+	icon = placeholder
+	cost = 5
+	text_icon = RUSVIET_CW_focus_style
+	prerequisite = {focus = SOV_cw_foreign_aid}
+	relative_position_id = SOV_cw_foreign_aid
+	x = 5
+	y = 1
+	
+	joint_trigger = {
+		OR={
+			tag = TPG
+			tag = RSF
+			tag = RDM
+			tag = SOV
+		}
+	}
+
+	completion_reward_joint_originator = {
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 300
+			producer = GER
+		}
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 300
+			producer = SCO
+		}
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 300
+			producer = USA
+		}
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 300
+			producer = FRA
+		}
+		add_stability = -0.05
+	}
+}
+shared_focus = {
+	id = SOV_cw_rightful_ruler_of_rusviet
+	icon = placeholder
+	cost = 5
+	x = 11
+	y = 0
+	
+	allow_branch = {
+		OR={
+			tag = TPG
+			tag = RSF
+			tag = RDM
+			tag = SOV
+		}
+		SOV={has_country_flag = SOV_civil_war}
+	}
+
+	completion_reward = {
+		add_political_power = 75
+	}
+}
+joint_focus = {
+	id = SOV_cw_utilising_black_hundreds
+	icon = placeholder
+	cost = 5
+	text_icon = RUSVIET_CW_focus_style
+	prerequisite = {focus = SOV_cw_rightful_ruler_of_rusviet}
+	relative_position_id = SOV_cw_rightful_ruler_of_rusviet
+	x = -4
+	y = 1
+	
+	joint_trigger = {
+		OR={
+			tag = TPG
+			tag = RSF
+			tag = RDM
+			tag = SOV
+		}
+	}
+	available = {
+		monarchy > 0.3
+	}
+
+	completion_reward_joint_originator = {
+		
+	}
+}
+joint_focus = {
+	id = SOV_cw_sway_tatars
+	icon = placeholder
+	cost = 5
+	text_icon = RUSVIET_CW_focus_style
+	prerequisite = {focus = SOV_cw_rightful_ruler_of_rusviet}
+	relative_position_id = SOV_cw_rightful_ruler_of_rusviet
+	x = 2
+	y = 1
+	
+	joint_trigger = {
+		OR={
+			tag = TPG
+			tag = RSF
+			tag = RDM
+			tag = SOV
+		}
+	}
+	available = {
+		TAT={is_free_or_subject_of_root = yes}
+	}
+
+	completion_reward_joint_originator = {
+		
+	}
+}
+joint_focus = {
+	id = SOV_cw_sway_cossaks
+	icon = GFX_focus_SOV_restore_cossack_units
+	cost = 5
+	text_icon = RUSVIET_CW_focus_style
+	prerequisite = {focus = SOV_cw_rightful_ruler_of_rusviet}
+	relative_position_id = SOV_cw_rightful_ruler_of_rusviet
+	x = -2
+	y = 1
+	
+	joint_trigger = {
+		OR={
+			tag = TPG
+			tag = RSF
+			tag = RDM
+			tag = SOV
+		}
+	}
+	available = {
+		DON={is_free_or_subject_of_root = yes}
+	}
+
+	completion_reward_joint_originator = {
+		DON={
+
+		}
+	}
+}
+joint_focus = {
+	id = SOV_cw_sway_volga
+	icon = placeholder
+	cost = 5
+	text_icon = RUSVIET_CW_focus_style
+	prerequisite = {focus = SOV_cw_rightful_ruler_of_rusviet}
+	relative_position_id = SOV_cw_rightful_ruler_of_rusviet
+	x = 4
+	y = 1
+	
+	joint_trigger = {
+		OR={
+			tag = TPG
+			tag = RSF
+			tag = RDM
+			tag = SOV
+		}
+	}
+	available = {
+		VGE={is_free_or_subject_of_root = yes}
+	}
+
+	completion_reward_joint_originator = {
+		
+	}
+}
+joint_focus = {
+	id = SOV_cw_peoples_army_of_komuch
+	icon = placeholder
+	cost = 5
+	text_icon = RUSVIET_CW_focus_style
+	prerequisite = {focus = SOV_cw_sway_volga}
+	relative_position_id = SOV_cw_sway_volga
+	x = 0
+	y = 1
+	
+	joint_trigger = {
+		OR={
+			tag = TPG
+			tag = RSF
+			tag = RDM
+			tag = SOV
+		}
+	}
+	available = {
+		652={
+			is_controlled_by_ROOT_or_ally = yes
+		}
+	}
+
+	completion_reward_joint_originator = {
+		
+	}
+}
+shared_focus = {
+	id = SOV_cw_calling_patriots
+	icon = placeholder
+	cost = 5
+	prerequisite = {focus = SOV_cw_rightful_ruler_of_rusviet }
+	relative_position_id = SOV_cw_rightful_ruler_of_rusviet
+	x = 0
+	y = 1
+	
+	allow_branch = {
+		OR={
+			tag = TPG
+			tag = RSF
+			tag = RDM
+			tag = SOV
+		}
+		SOV={has_country_flag = SOV_civil_war}
+	}
+
+	completion_reward = {
+		add_political_power = 75
+	}
+}
+joint_focus = {
+	id = SOV_cw_support_195
+	icon = placeholder
+	cost = 5
+	text_icon = RUSVIET_CW_focus_style
+	prerequisite = {focus = SOV_cw_calling_patriots}
+	relative_position_id = SOV_cw_calling_patriots
+	x = -2
+	y = 1
+	
+	joint_trigger = {
+		OR={
+			tag = TPG
+			tag = RSF
+			tag = RDM
+			tag = SOV
+		}
+	}
+	available = {
+		controls_state = 195
+	}
+
+	completion_reward_joint_originator = {
+		add_manpower = 50000
+	}
+}
+joint_focus = {
+	id = SOV_cw_support_239
+	icon = placeholder
+	cost = 5
+	text_icon = RUSVIET_CW_focus_style
+	prerequisite = {focus = SOV_cw_calling_patriots}
+	relative_position_id = SOV_cw_calling_patriots
+	x = -1
+	y = 2
+	
+	joint_trigger = {
+		OR={
+			tag = TPG
+			tag = RSF
+			tag = RDM
+			tag = SOV
+		}
+	}
+	available = {
+		controls_state = 239
+	}
+
+	completion_reward_joint_originator = {
+		add_manpower = 50000
+	}
+}
+joint_focus = {
+	id = SOV_cw_support_219
+	icon = placeholder
+	cost = 5
+	text_icon = RUSVIET_CW_focus_style
+	prerequisite = {focus = SOV_cw_calling_patriots}
+	relative_position_id = SOV_cw_calling_patriots
+	x = 0
+	y = 1
+	
+	joint_trigger = {
+		OR={
+			tag = TPG
+			tag = RSF
+			tag = RDM
+			tag = SOV
+		}
+	}
+	available = {
+		controls_state = 219
+	}
+
+	completion_reward_joint_originator = {
+		add_manpower = 50000
+	}
+}
+joint_focus = {
+	id = SOV_cw_support_224
+	icon = placeholder
+	cost = 5
+	text_icon = RUSVIET_CW_focus_style
+	prerequisite = {focus = SOV_cw_calling_patriots}
+	relative_position_id = SOV_cw_calling_patriots
+	x = 1
+	y = 2
+	
+	joint_trigger = {
+		OR={
+			tag = TPG
+			tag = RSF
+			tag = RDM
+			tag = SOV
+		}
+	}
+	available = {
+		controls_state = 224
+	}
+
+	completion_reward_joint_originator = {
+		add_manpower = 50000
+	}
+}
+joint_focus = {
+	id = SOV_cw_support_242
+	icon = placeholder
+	cost = 5
+	text_icon = RUSVIET_CW_focus_style
+	prerequisite = {focus = SOV_cw_calling_patriots}
+	relative_position_id = SOV_cw_calling_patriots
+	x = 2
+	y = 1
+	
+	joint_trigger = {
+		OR={
+			tag = TPG
+			tag = RSF
+			tag = RDM
+			tag = SOV
+		}
+	}
+	available = {
+		controls_state = 242
+	}
+
+	completion_reward_joint_originator = {
+		add_manpower = 50000
+	}
+}
+shared_focus = {
+	id = SOV_cw_rush_of_volunteers
+	icon = GFX_focus_SOV_mobilization_plan
+	cost = 5
+	x = 20
+	y = 0
+	
+	allow_branch = {
+		OR={
+			tag = TPG
+			tag = RSF
+			tag = RDM
+			tag = SOV
+		}
+		SOV={has_country_flag = SOV_civil_war}
+	}
+
+	completion_reward = {
+		army_experience = 25
+		add_manpower = 2500
+	}
+}
+shared_focus = {
+	id = SOV_cw_seizing_stockpiles
+	icon = placeholder
+	cost = 5
+	prerequisite = {focus = SOV_cw_rush_of_volunteers}
+	relative_position_id = SOV_cw_rush_of_volunteers
+	x = 1
+	y = 1
+	
+	allow_branch = {
+		OR={
+			tag = TPG
+			tag = RSF
+			tag = RDM
+			tag = SOV
+		}
+		SOV={has_country_flag = SOV_civil_war}
+	}
+
+	completion_reward = {
+		
+	}
+}
+shared_focus = {
+	id = SOV_cw_lessions_of_the_war
+	icon = placeholder
+	cost = 5
+	prerequisite = {focus = SOV_cw_rush_of_volunteers}
+	relative_position_id = SOV_cw_rush_of_volunteers
+	x = 3
+	y = 1
+	
+	allow_branch = {
+		OR={
+			tag = TPG
+			tag = RSF
+			tag = RDM
+			tag = SOV
+		}
+		SOV={has_country_flag = SOV_civil_war}
+	}
+
+	completion_reward = {
+		army_experience = 5
+		add_doctrine_cost_reduction = {
+			name = land_doc_bonus
+			cost_reduction = 0.5
+			uses = 1
+			category = land_doctrine
+		}
+	}
+}
+
+focus_tree = {
+    id=soviet_focus
+
+	country = {
+        factor = 0
+        modifier = {
+            add = 10
+            original_tag = RSF
+        }
+    }
+    continuous_focus_position = { x = 0 y = 5000 }
+    default = no
+
+	shared_focus = SOV_cw_foreign_aid
+	shared_focus = SOV_cw_rightful_ruler_of_rusviet
+	shared_focus = SOV_cw_rush_of_volunteers
+
+	focus = {
+		id = RSF_workers_and_peasants_red_army
+		icon = GFX_focus_SOV_builder_of_the_red_army
+		prerequisite = {focus = SOV_cw_rush_of_volunteers}
+		relative_position_id = SOV_cw_rush_of_volunteers
+		x = -1
+		y = 1
+		cost = 5
+		allow_branch = {
+			tag = RSF
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		completion_reward = {
+			add_ideas={
+				limited_conscription
+			}
+		}
+	}
+	focus = {
+		id = RSF_force_officers_to_join
+		icon = GFX_focus_SOV_builder_of_the_red_army
+		prerequisite = {focus = RSF_workers_and_peasants_red_army}
+		relative_position_id = RSF_workers_and_peasants_red_army
+		x = 0
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 5
+		}
+		completion_reward = {
+			
+		}
+	}
+}
+focus_tree = {
+    id=democratic_SOV_focus
+
+	country = {
+        factor = 0
+        modifier = {
+            add = 10
+            original_tag = RDM
+        }
+    }
+    continuous_focus_position = { x = 0 y = 5000 }
+    default = no
+
+	shared_focus = SOV_cw_foreign_aid
+	shared_focus = SOV_cw_rightful_ruler_of_rusviet
+	shared_focus = SOV_cw_rush_of_volunteers
+	focus = {
+		id = RDM_unify_white_army
+		icon = placeholder
+		prerequisite = {focus = SOV_cw_rush_of_volunteers}
+		relative_position_id = SOV_cw_rush_of_volunteers
+		x = -1
+		y = 1
+		cost = 5
+		allow_branch = {
+			tag = RDM
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		completion_reward = {
+			add_ideas={
+				limited_conscription
+			}
+		}
+	}
+}
+focus_tree = {
+    id=tsarist_SOV_focus
+
+	country = {
+        factor = 0
+        modifier = {
+            add = 10
+            original_tag = TPG
+        }
+    }
+    continuous_focus_position = { x = 0 y = 5000 }
+    default = no
+
+	shared_focus = SOV_cw_foreign_aid
+	shared_focus = SOV_cw_rightful_ruler_of_rusviet
+	shared_focus = SOV_cw_rush_of_volunteers
+
+	focus = {
+		id = RDM_in_name_of_tsar
+		icon = placeholder
+		prerequisite = {focus = SOV_cw_rush_of_volunteers}
+		relative_position_id = SOV_cw_rush_of_volunteers
+		x = -1
+		y = 1
+		cost = 5
+		allow_branch = {
+			tag = TPG
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		completion_reward = {
+			add_ideas={
+				limited_conscription
 			}
 		}
 	}

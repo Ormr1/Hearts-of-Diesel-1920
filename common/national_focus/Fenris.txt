@@ -1774,6 +1774,8 @@ shared_focus = {
 	id = RASPUTIN_administration_joint
 	icon = GFX_focus_FEN_skulking_threat
 	cost = 5
+	x =0
+	y = 0
 	offset = {
 		x = 50
 		y = 0
@@ -1824,6 +1826,57 @@ joint_focus = {
 		navy_experience = 25
 		army_experience = 25
 		add_command_power = 25	
+	}
+}
+joint_focus = {
+	id = RASPUTIN_weapon_deliveries
+	icon = GFX_focus_FEN_skulking_threat
+	cost = 5
+	text_icon = FENRIS_focus_style
+	prerequisite = {focus = RASPUTIN_military_joint}
+	relative_position_id = RASPUTIN_military_joint
+	x = 1
+	y = 1
+	
+	joint_trigger = {
+		OR={
+			tag = SOV
+			tag = FEN
+		}
+		has_government = fenris
+	}
+
+	completion_reward = {
+		if={
+			limit={tag = SOV}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 500
+				producer = FEN
+			}
+		}
+	}
+}
+joint_focus = {
+	id = RASPUTIN_deploying_exosuits
+	icon = GFX_focus_FEN_skulking_threat
+	cost = 5
+	text_icon = FENRIS_focus_style
+	prerequisite = {focus = RASPUTIN_military_joint}
+	relative_position_id = RASPUTIN_military_joint
+	x = -1
+	y = 1
+	
+	joint_trigger = {
+		OR={
+			tag = SOV
+			tag = FEN
+		}
+		has_government = fenris
+	}
+
+	completion_reward = {
+		air_experience = 25
 	}
 }
 joint_focus = {

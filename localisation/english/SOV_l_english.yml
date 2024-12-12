@@ -93,6 +93,9 @@
  SOV_civil_war.5.d:0 "Today several members of the §tSR§! stood up in the duma and scathingly denouced the Tsar and his politices, citing our many failures in both the great war and on the home front. Even worse is that it seems to be winning over members from other parties, we will have to do something before it snowballs"
  SOV_civil_war.5.a:0 "We can't afford to alinate the rest of §tSR§!"
  SOV_civil_war.5.b:0 "Use allied duma members to cut the §tSR§!s time off"
+ SOV_civil_war.6.a: "Flee to the East"
+ SOV_civil_war.6.b: "Stand and fight"
+ SOV_civil_war.6.c: "Slava Ukrania"
  SOV_civil_war.9.t: "The Tsarina Removes Minister"
  SOV_civil_war.9.a: "The Tsar trusts his wife"
  SOV_civil_war.9.a.tt: "[SOV_civil_war_9_a_pp_check_tt]"
@@ -143,6 +146,7 @@
  RSDLP_controls_army_NOT_tt: "§YNOT§!: §RRSDLP§! is the Army Controller"
  Kd_controls_army_NOT_tt: "§YNOT§!: §CKadets§! is the Army Controller"
  O_controls_army_NOT_tt: "§YNOT§!: §5Octoberists§! is the Army Controller"
+ T_controls_army_NOT_tt: "§YNOT§!: §0Tsarists§! is the Army Controller"
  SOV_ryutin_liberated_tt: "§YMartemyan Ryutin§! will be liberated from prison and will become available as an advisor."
  
  
@@ -154,4 +158,6 @@
  SOV_mikhail_drozdovsky: "Mikhail Drozdovsky"
  SOV_anatoly_pepelyayev: "Anatoly Pepelyayev"
  SOV_vladimir_kappel: "Vladimir Kappel"
+ SOV_viktor_chernov: "Viktor Chernov"
+ SOV_lev_aleksey_zubov: "Lev Aleksey Zubov"
  

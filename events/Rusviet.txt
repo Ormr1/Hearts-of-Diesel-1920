@@ -55,14 +55,14 @@ country_event = {
 			fenris = 56
 		}
 		remove_ideas = {petrograd_soviet_idea}
-		every_owned_state = {#army goes rouge, also balance for the war
-			SOV={
-				delete_unit = {
-					state = PREV
-					disband = yes #will refund equipment and manpower
-				}
-			}
-		}
+		# every_owned_state = {#army goes rouge, also balance for the war
+			# SOV={
+				# delete_unit = {
+					# state = PREV
+					# disband = yes #will refund equipment and manpower
+				# }
+			# }
+		# }
 		every_owned_state = {
 			limit={
 				NOT={state = 208}
@@ -260,6 +260,20 @@ country_event = {
                     }
 					remove_dynamic_modifier = { modifier = ukraizhian_nationalist_militias }
                 }
+				set_country_flag = SOV_civil_war
+				set_nationality = {
+					target_country = RSF
+					character = SOV_vladimir_lenin
+				}
+				set_nationality = {
+					target_country = RDM
+					character = SOV_aleksandr_kerensky
+				}
+				set_nationality = {
+					target_country = FER
+					character = SOV_olga_morozova
+				}
+				mark_focus_tree_layout_dirty = yes
 			}
 			TPG={#Absolute Tsarists
 				transfer_state = 216
@@ -292,6 +306,7 @@ country_event = {
 					target = SOV
 					type = civil_war
 				}
+				mark_focus_tree_layout_dirty = yes
 			}
 			RSF={#RSDLP
 				transfer_state = 219
@@ -327,6 +342,7 @@ country_event = {
 					target = TPG
 					type = civil_war
 				}
+				mark_focus_tree_layout_dirty = yes
 			}
 			RDM={#K-D
 				transfer_state = 224
@@ -361,6 +377,34 @@ country_event = {
 					target = TPG
 					type = civil_war
 				}
+				mark_focus_tree_layout_dirty = yes
+			}
+			set_temp_variable ={temp_units_to_transfer = var_SOV_factions_ARMY_loyalty^5}
+			divide_temp_variable ={temp_units_to_transfer = 100}
+			transfer_units_fraction= {
+				target = TPG
+				stockpile_ratio = temp_units_to_transfer
+				army_ratio = temp_units_to_transfer
+				navy_ratio = 0.0
+				air_ratio = 0.0
+			}
+			set_temp_variable ={temp_units_to_transfer = var_SOV_factions_ARMY_loyalty^0}
+			divide_temp_variable ={temp_units_to_transfer = 100}
+			transfer_units_fraction= {
+				target = RSF
+				stockpile_ratio = temp_units_to_transfer
+				army_ratio = temp_units_to_transfer
+				navy_ratio = 0.0
+				air_ratio = 0.0
+			}
+			set_temp_variable ={temp_units_to_transfer = var_SOV_factions_ARMY_loyalty^4}
+			divide_temp_variable ={temp_units_to_transfer = 100}
+			transfer_units_fraction= {
+				target = RDM
+				stockpile_ratio = temp_units_to_transfer
+				army_ratio = temp_units_to_transfer
+				navy_ratio = 0.0
+				air_ratio = 0.0
 			}
 			release = UKR
 			UKR={#Inpendance revolt
@@ -514,6 +558,16 @@ country_event = {
 				transfer_state = 537
 				add_state_core = 537
 				
+				add_country_leader_role = {
+					character = SOV_olga_morozova
+					promote_leader = yes
+					country_leader = {
+						ideology = democratic
+						expire = "1965.1.1.1"
+						traits = {  }
+					}
+				}
+				
 				load_oob = "FER_RCW"
 			}
 			KAL={#buffer state
@@ -575,6 +629,7 @@ country_event = {
 	#an early event will dicate which side you flip to
 	option = {#flee east
 		name = SOV_civil_war.6.a
+		switch_tag = FER
 	}
 	option = {#Stronghold in the west
 		name = SOV_civil_war.6.b

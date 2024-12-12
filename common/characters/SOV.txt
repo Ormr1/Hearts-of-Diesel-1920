@@ -401,7 +401,7 @@ characters = {
 			  }
 		  }
 		  country_leader = {
-			  ideology = social_democracy
+			  ideology = democratic_socialism
 			  expire = "1953.3.1.1"
 			  id = -1
 		  }
@@ -1535,6 +1535,25 @@ characters = {
 			  defense_skill = 2
 			  planning_skill = 2
 			  logistics_skill = 2
+			  legacy_id = 0
+			  visible = { NOT = { has_character_flag = SOV_exiled_flag } }
+		  }
+	  }
+	  SOV_lev_aleksey_zubov = {
+		  name = SOV_lev_aleksey_zubov
+		  portraits = {
+			  army = {
+				  large = GFX_portrait_SOV_lev_aleksey_zubov
+				  small=GFX_portrait_SOV_lev_aleksey_zubov_small
+			  }
+		  }
+		  corps_commander = {
+			  traits = {  }
+			  skill = 3
+			  attack_skill = 3
+			  defense_skill = 1
+			  planning_skill = 1
+			  logistics_skill = 1
 			  legacy_id = 0
 			  visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		  }
@@ -4106,7 +4125,47 @@ characters = {
 			  }
 		  }
 	  }
+	  SOV_olga_morozova = {
+		  name = SOV_olga_morozova
+		  portraits = {
+			 army = {
+				  large = GFX_portrait_SOV_olga_morozova
+				  small=GFX_portrait_SOV_olga_morozova_small
+			  }
+		  }
+		  allowed_civil_war = {
+			  OR = {
+				  has_government = neutrality 
+				  has_government = fascism
+			  }
+		  }
   
+		  advisor = {
+			  slot = political_advisor
+			  idea_token = SOV_olga_morozova
+			  allowed = {
+				  original_tag = SOV
+			  }
+			  visible = {
+				  NOT = {
+					  has_character_flag = SOV_character_purged_flag 
+				  }
+				  date > 1929.1.1
+			  }
+			  available = {
+				  has_completed_focus = SOV_reconvene_the_zemsky_sobor
+				  if = {
+					  limit = {
+						  has_character_flag = SOV_exiled_flag
+					  }
+					  NOT = { has_character_flag = SOV_exiled_flag }
+				  }
+			  }
+			  traits = {
+				  head_of_intelligence
+			  }
+		  }
+	  }
   
    #######                                         #     #                                                     #                                                       
    #        #    #  #  #       ######   ####       ##   ##  #  #       #  #####    ##    #####   #   #        # #    #####   #    #  #   ####    ####   #####    ####  

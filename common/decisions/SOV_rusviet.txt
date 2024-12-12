@@ -328,6 +328,8 @@ SOV_rusviet_factions_system = {
 			}
 			check_variable = {var_SOV_factions_Kd_O_loyalty < 80}
 			NOT={ has_active_mission = SOV_civil_war_countdown}
+			NOT={has_government = fenris}
+			NOT={has_country_flag = SOV_civil_war}
 		}
 
 		is_good = no
@@ -364,6 +366,7 @@ SOV_rusviet_factions_system = {
 				tooltip = SOV_reduce_t_loyalty_amount
 				var_SOV_factions_T_loyalty = 20
 			}
+			add_stability = -0.1
 		}
 
 		ai_will_do = {
@@ -426,6 +429,8 @@ SOV_rusviet_factions_system = {
 			}
 			check_variable = {var_SOV_factions_RSDLP_SR_loyalty < 80}
 			NOT={ has_active_mission = SOV_civil_war_countdown}
+			NOT={has_government = fenris}
+			NOT={has_country_flag = SOV_civil_war}
 		}
 
 		is_good = no
@@ -460,6 +465,7 @@ SOV_rusviet_factions_system = {
 				tooltip = SOV_reduce_t_loyalty_amount
 				var_SOV_factions_T_loyalty = 20
 			}
+			add_stability = -0.1
 		}
 
 		ai_will_do = {
@@ -504,6 +510,8 @@ SOV_rusviet_factions_system = {
 			}
 			check_variable = {var_SOV_factions_T_loyalty < 40}
 			NOT={ has_active_mission = SOV_civil_war_countdown}
+			NOT={has_government = fenris}
+			NOT={has_country_flag = SOV_civil_war}
 		}
 
 		is_good = no
@@ -538,6 +546,7 @@ SOV_rusviet_factions_system = {
 				tooltip = SOV_reduce_kd_loyalty_amount
 				var_SOV_factions_KD_loyalty = 20
 			}
+			add_stability = -0.1
 		}
 
 		ai_will_do = {

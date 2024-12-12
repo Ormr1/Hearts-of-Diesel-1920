@@ -129,6 +129,8 @@ recruit_character = SOV_mikhail_diterikhs
 recruit_character = SOV_anatoly_pepelyayev
 recruit_character = SOV_vladimir_kantakuzen
 recruit_character = SOV_vladimir_kappel
+recruit_character = SOV_olga_morozova
+recruit_character = SOV_lev_aleksey_zubov
 
 if = {
 	limit = {
