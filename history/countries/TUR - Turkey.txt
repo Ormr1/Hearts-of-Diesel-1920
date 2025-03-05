@@ -1,4 +1,5 @@
-﻿capital = 49
+﻿capital = 346
+set_cosmetic_tag = RUM
 
 set_oob = "TUR_1936"
 if = {
@@ -18,8 +19,6 @@ if = {
 #TUR_democratic
 #TUR_fascism
 #TUR_neutrality
-set_cosmetic_tag = TUR_neutrality
-
 set_research_slots = 3
 
 set_technology = {
