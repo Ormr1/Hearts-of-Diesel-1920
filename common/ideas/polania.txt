@@ -1,6 +1,37 @@
 ideas = {
 
 country = {
+	POL_tarnished_liberty_2 = {
+		picture = placeholder
+		allowed = {
+			original_tag = POL
+			always = no
+		}
+		allowed_civil_war = {
+			always = yes
+		}
+		removal_cost = 0
+		modifier = {
+			stability_factor = -0.25
+			stability_weekly_factor = -0.01
+		}
+	}
+
+	POL_tarnished_liberty_1 = {
+		picture = placeholder
+		allowed = {
+			original_tag = POL
+			always = no
+		}
+		allowed_civil_war = {
+			always = yes
+		}
+		removal_cost = 0
+		modifier = {
+			stability_factor = -0.25
+		}
+	}
+
 	POL_polania_is_not_yet_lost = {
 		picture = placeholder
 		allowed = {

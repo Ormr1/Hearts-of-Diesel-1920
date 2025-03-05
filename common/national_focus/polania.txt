@@ -41,6 +41,10 @@ focus_tree = {
         completion_reward = {
             unlock_decision_category_tooltip = POL_disarm_radical_militias_decisions
             # Unlock decisions to disarm radical militias
+            swap_ideas = {
+                remove_idea = POL_tarnished_liberty_2
+                add_idea = POL_tarnished_liberty_1
+            }
         }
     }
     focus = {
@@ -75,6 +79,9 @@ focus_tree = {
                     }
                 }
             }
+        }
+        bypass = {
+            date > 1922.12.31
         }
         prerequisite = { focus = POL_disarm_radical_militias }
         prerequisite = { focus = POL_increase_danzig_garrison }
