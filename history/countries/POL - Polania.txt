@@ -7,6 +7,7 @@ add_ideas = {
 	POL_weak_executive
 	POL_kosciuszkos_legacy
 	POL_russophobia
+	POL_tarnished_liberty_2
 }
 
 oob = "POL_1936"

@@ -2661,8 +2661,19 @@ spriteTypes = {
 
 			#### No Step Back ####
 
-	## POLAND ##
-
+	## POLANIA ##
+	SpriteType = { 
+		name = "GFX_focus_pol_stabilizing_the_country"
+		texturefile = "gfx/interface/goals/POL/focus_pol_stabilizing_the_country.png"
+	}
+	SpriteType = { 
+		name = "GFX_focus_pol_disarm_radical_militias"
+		texturefile = "gfx/interface/goals/POL/focus_pol_disarm_radical_militias.png"
+	}
+	SpriteType = { 
+		name = "GFX_focus_pol_1922_elections"
+		texturefile = "gfx/interface/goals/POL/focus_pol_1922_elections.png"
+	}
 	SpriteType = { 
 		name = "GFX_focus_pol_falangists_win"
 		texturefile = "gfx/interface/goals/POL/focus_pol_falangists_win.png"

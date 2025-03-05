@@ -16,7 +16,7 @@ focus_tree = {
     #########################
     focus = {
         id = POL_stabilizing_the_country
-        icon = placeholder
+        icon = GFX_focus_pol_stabilizing_the_country
         x = 11
         y = 0
         cost = 5
@@ -29,7 +29,7 @@ focus_tree = {
     }
     focus = {
         id = POL_disarm_radical_militias
-        icon = placeholder
+        icon = GFX_focus_pol_disarm_radical_militias
         prerequisite = { focus = POL_stabilizing_the_country }
         relative_position_id = POL_stabilizing_the_country
         x = -1
@@ -49,7 +49,7 @@ focus_tree = {
     }
     focus = {
         id = POL_increase_danzig_garrison
-        icon = placeholder
+        icon = GFX_focus_generic_advanced_military_studies
         prerequisite = { focus = POL_stabilizing_the_country }
         relative_position_id = POL_stabilizing_the_country
         x = 1
@@ -68,7 +68,7 @@ focus_tree = {
     }
     focus = {
         id = POL_1922_elections
-        icon = placeholder
+        icon = GFX_focus_pol_1922_elections
         available = {
             NOT = {
                 any_owned_state = {

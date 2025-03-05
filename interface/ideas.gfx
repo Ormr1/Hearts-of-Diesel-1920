@@ -6017,7 +6017,19 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/idea_LAT_fricis_menders.dds"
 	}
 
-		## POLAND ##
+	## POLANIA ##
+	spriteType = {
+		name = "GFX_idea_POL_idea_tarnished_liberty"
+		texturefile = "gfx/interface/ideas/POL/POL_idea_tarnished_liberty.png"
+	}
+	spriteType = {
+		name = "GFX_idea_POL_idea_kosciuszkos_legacy"
+		texturefile = "gfx/interface/ideas/POL/POL_idea_kosciuszkos_legacy.png"
+	}
+	spriteType = {
+		name = "GFX_idea_POL_idea_polania_is_not_yet_lost"
+		texturefile = "gfx/interface/ideas/POL/POL_idea_polania_is_not_yet_lost.png"
+	}
 	spriteType = {
 		name = "GFX_idea_POL_april_constitution"
 		texturefile = "gfx/interface/ideas/idea_POL_april_constitution.dds"

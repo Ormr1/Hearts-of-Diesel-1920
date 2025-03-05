@@ -2,7 +2,7 @@ ideas = {
 
 country = {
 	POL_tarnished_liberty_2 = {
-		picture = placeholder
+		picture = POL_idea_tarnished_liberty
 		allowed = {
 			original_tag = POL
 			always = no
@@ -18,7 +18,7 @@ country = {
 	}
 
 	POL_tarnished_liberty_1 = {
-		picture = placeholder
+		picture = POL_idea_tarnished_liberty
 		allowed = {
 			original_tag = POL
 			always = no
@@ -33,7 +33,7 @@ country = {
 	}
 
 	POL_polania_is_not_yet_lost = {
-		picture = placeholder
+		picture = POL_idea_polania_is_not_yet_lost
 		allowed = {
 			original_tag = POL
 			always = no
@@ -116,7 +116,7 @@ country = {
 	}
 
 	POL_kosciuszkos_legacy = {
-		picture = placeholder
+		picture = POL_idea_kosciuszkos_legacy
 		allowed = {
 			original_tag = POL
 			always = no
