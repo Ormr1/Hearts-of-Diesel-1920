@@ -128,6 +128,11 @@
  SOV_political_corruption: "Political Corruption"
  SOV_public_housing_idea: "Public Housing"
  SOV_privatization_idea: "Privatization"
+ SOV_demobilisation: "Demobilisation"
+ SOV_iron_harvest: "Iron Harvest"
+ SOV_kolchak_plan: "The Kolchak Plan"
+ SOV_the_RSDLP: "The RSDLP"
+ SOV_progressive_bloc: "Progressive Bloc"
  
  RUS_concessions_to_kadets: "Concessions to the §CKadets§!"
  RUS_concessions_to_octoberists: "Concessions to the §5Octoberists§!"
