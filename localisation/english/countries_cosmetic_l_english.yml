@@ -37,9 +37,9 @@
  EGY_ROME_DEF:0 "the Province of Aegyptus"
  EGY_ROME_ADJ:0 "Egyptian"
  
- HUN_horde:0 "Magyar Horde"
- HUN_horde_DEF:0 "the Magyar Horde"
- HUN_horde_ADJ:0 "Magyar"
+ HUN_khaganate:0 "Magyar Khaganate"
+ HUN_khaganate_DEF:0 "the Magyar Khaganate"
+ HUN_khaganate_ADJ:0 "Magyar"
 
  BUL_ROM_fascism:0 "Bulgaro-Romanian Legion"
  BUL_ROM_fascism_DEF:0 "the Bulgaro-Romanian Legion"

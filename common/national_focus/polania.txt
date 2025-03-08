@@ -156,11 +156,11 @@ focus_tree = {
             factor = 99
         }
         completion_reward = {
-            
+            remove_ideas = POL_weak_executive
         }
     }
     focus = {
-        id = POL_eyes_and_ears_of_the_republic
+        id = POL_eyes_and_ears_of_the_revolution
         icon = placeholder
         prerequisite = { focus = POL_dissolve_the_sejm }
         relative_position_id = POL_dissolve_the_sejm
@@ -352,6 +352,7 @@ focus_tree = {
         icon = GFX_focus_pol_pilsudskiites_win
         prerequisite = { focus = POL_trials_of_the_politicians }
         prerequisite = { focus = POL_the_state_of_emergency }
+        prerequisite = { focus = POL_eyes_and_ears_of_the_revolution }
         relative_position_id = POL_the_new_jacobin
         available = { always = no }
         x = 0
@@ -2397,7 +2398,7 @@ focus_tree = {
         cost = 5
         completion_reward = {
             add_political_power = 50
-            GER = {
+            SOV = {
                 add_opinion_modifier = {
                     target = POL
                     modifier = large_increase
@@ -2428,7 +2429,7 @@ focus_tree = {
         completion_reward = {
             add_political_power = 50
             add_opinion_modifier = {
-                target = GER
+                target = SOV
                 modifier = large_increase
             }
         }

@@ -59,7 +59,7 @@ country = {
 		}
 		removal_cost = 0
 		modifier = {
-			democratic_drift = 0.05
+			democratic_drift = 0.01
 			democratic_acceptance = 50
 		}
 	}
@@ -177,7 +177,7 @@ country = {
 		}
 		removal_cost = 0
 		modifier = {
-			communism_drift = 0.02
+			communism_drift = 0.01
 			stability_factor = 0.025
 		}
 	}

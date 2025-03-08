@@ -6,7 +6,7 @@ set_research_slots = 3
 set_stability = 0.7
 set_war_support = 0.6
 
-set_cosmetic_tag = HUN_horde
+set_cosmetic_tag = HUN_khaganate
 
 set_technology = {
 	pre_gw_infantry_weapons = 1

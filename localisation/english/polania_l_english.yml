@@ -20,10 +20,12 @@
  POL_kosciuszkos_legacy_desc: "No man has had as large of an impact on history as Tadeusz Kościuszko. In the wars that followed the Polanian Revolution, his military skill protected Polania from bloodthirsty neighbors. In Polania’s greatest time of need, he became the emperor of the Polanian Empire and was able to keep the country afloat and fight numerous enemies until a massive coalition crushed his armies, leading to the country losing just under half of its territory and his resignation as emperor after he made his final decree for Polania to become a republic.\n\nHis reign has long since ended but his influence still holds sway in the minds of some people today. Polanian nationalists wish that the days of Polanian glory and conquest could be re-imagined in the present and the less hawkish want a stable imperial government to make Polania strong again so they may never experience a defeat like the Great War."
  POL_russophobia: "Russophobia"
  POL_russophobia_desc: "For the past few centuries, Rusviet has been Polania's greatest enemy. It has had an unrelenting thirst for Polanian blood and soil and has been the one enemy that Polania has always had the hardest time overcoming. The animosity between Polania and Rusviet has created an atmosphere in Polania of outright hatred for all things Rusviet, especially its army. Negotiations between the two will be nearly impossible and Polanians will do everything they can to ensure that Rusviet never carves up Polanian territory again."
- 
+ POL_red_polanian_nationalism: "Syncretic Nationalism"
+ POL_home_of_nations_1: "The Home of Nations"
+
 ### NATIONAL FOCUS
  POL_stabilizing_the_country: "Stabilizing The Country"
- POL_stabilizing_the_country_desc: "The years after the Great War have been tumultuous for the Polanian Republic. The years after the war's end saw thousands of unemployed veterans left without a job but armed and trained to fight forming militias to find work with private groups, including nationalist militias fighting for self-determination for ethnic minorities in Polania who have, for a long time, been ignored by the government at best and actively oppressed at worst. This combined with massive economic downturn has led to a massive instability issue facing the Republic."
+ POL_stabilizing_the_country_desc: "The final days of the Great War have been tumultuous for the Polanian Republic. It has see thousands of Polanian soldiers forcibly disarmed and left to fend for themselves with nothing but their fighting ability. Some of these soldiers have already joined paramilitary groups, including nationalist militias fighting for ethnic minorities in Polania who have either been ignored by the government at best and actively oppressed at worst."
  POL_disarm_radical_militias: "Disarming Radical Militias"
  POL_disarm_radical_militias_desc: "The first and foremost issue that we need to address is the presence of violent anti-government militias spread out throughout the country. The government is going to have a hard time rolling out economic relief with the threat of government employees being assassinated by militias."
  POL_increase_danzig_garrison: "Increase Danzig Garrison"
@@ -41,7 +43,7 @@
  POL_pilsudskiites_win: "Pilsudskiites Win"
  POL_pilsudskiites_win_desc: "The Pilsudskiites have successfully won the Polanian elections of 1922."
  POL_red_banner_on_the_vistula: "Red Banner On The Vistula"
- POL_red_banner_on_the_vistula_desc: "A red banner has been raised over the Vistula as the people of Polania rejoice from the ascension of a new, radical government willing to reclaim the wealth of the workers and the lost glory of Polania."
+ POL_red_banner_on_the_vistula_desc: "A red banner has been raised over the Vistula as the people of Polania rejoice from the ascension of a new, radical government willing to reclaim the wealth of the workers and the lost glory of Polania, to celebrate the republican traditions which have made Polania beacon of liberty for Europa."
  POL_uplift_the_peasantry: "Uplift The Peasantry"
  POL_uplift_the_peasantry_desc: "The peasantry of eastern Polania have historically been relegated to agricultural roles with little chance of advancement in their lives. By industrializing that region and investing in the economic health of Polanian farmers, we can uplift the peasants and give them opportunities for better lives."
  POL_rural_education_initiative: "Rural Education Initiative"
