@@ -1823,6 +1823,8 @@
  BAN_democratic_DEF:0 "Bengalese"
  BAN_neutrality:0 "Sultanate of Bengal"
  BAN_neutrality_DEF:0 "the Sultanate of Bengal"
+ BAN_monarchy:0 "Sultanate of Bengal"
+ BAN_monarchy_DEF:0 "the Sultanate of Bengal"
  BAN_communism:0 "Bengal People's Republic"
  BAN_communism_DEF:0 "the Bengal People's Republic"
  BAN_fascism_ADJ:0 "Bengal"

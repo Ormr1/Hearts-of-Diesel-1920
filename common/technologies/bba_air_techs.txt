@@ -276,7 +276,13 @@ technologies = {
 	
 	modern_small_airframe = {
 
-		enable_equipments = {
+		allow = { 	 		
+			ROOT = {
+				is_special_project_completed = sp:sp_air_axial_jet_engine
+			} 
+		}
+
+		is_special_project_tech = yes		enable_equipments = {
 			small_plane_airframe_4
 			small_plane_cas_airframe_4
 			small_plane_naval_bomber_airframe_4
@@ -325,7 +331,28 @@ technologies = {
 			}
 		}
 	}
-	
+	supersonic_small_airframe = { #supersonic
+
+		allow = { always = no }
+
+		enable_equipments = {
+			small_plane_airframe_5
+		}
+		
+		research_cost = 2
+		start_year = 1950
+		
+		categories = {
+			light_air
+			light_fighter
+		}
+		special_project_specialization = { specialization_air }
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+		
 	iw_medium_airframe = {
 
 		enable_equipments = {
@@ -430,7 +457,12 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 2
+		on_research_complete = {
+			custom_effect_tooltip = {
+				localization_key = SP_UNLOCK_PROJECT
+				PROJECT = sp_air_jet_engine	
+			}
+		}		research_cost = 2
 		start_year = 1940
 		folder = {
 			name = bba_air_techs_folder
@@ -444,6 +476,7 @@ technologies = {
 			air_equipment
 			mio_cat_all_medium_aircraft_and_modules
 		}
+		special_project_specialization = { specialization_air }
 		
 		ai_will_do = {
 			factor = 1

@@ -1049,6 +1049,10 @@
  CHU_democratic_party_long:0 "Chuvash-Turkic State Council"
  CHU_neutrality_party:0 "COU"
  CHU_neutrality_party_long:0 "Chuvash Orthodox Union"
+ ROC_democratic_party:0 "Kuomintang"
+ ROC_communism_party:0 "CPC"
+ ROC_communism_party_long:0 "Communist Party of China"
+ 
 
  
  
