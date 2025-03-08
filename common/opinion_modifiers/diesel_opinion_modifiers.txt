@@ -2,6 +2,9 @@ opinion_modifiers = {
 	GER_tyrant_overlord = {
 		value = -50
 	}
+	POL_russophobia = {
+		value = -100
+	}
 	washington_conference = {
 		value = 25
 	}

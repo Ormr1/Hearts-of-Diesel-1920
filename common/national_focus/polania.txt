@@ -67,6 +67,251 @@ focus_tree = {
         }
     }
     focus = {
+        id = POL_snakes_in_the_grass
+        icon = placeholder
+        prerequisite = { focus = POL_disarm_radical_militias }
+        prerequisite = { focus = POL_increase_danzig_garrison }
+        relative_position_id = POL_stabilizing_the_country
+        x = 0
+        y = 2
+        cost = 5
+        ai_will_do = {
+            factor = 99
+        }
+        completion_reward = {
+            
+        }
+    }
+    focus = {
+        id = POL_the_new_jacobin
+        icon = placeholder
+        mutually_exclusive = { focus = POL_the_marshal_outmaneuvered }
+        prerequisite = { focus = POL_snakes_in_the_grass }
+        relative_position_id = POL_snakes_in_the_grass
+        x = -10
+        y = 1
+        cost = 5
+        ai_will_do = {
+            factor = 99
+        }
+        completion_reward = {
+            
+        }
+    }
+    focus = {
+        id = POL_roll_out_the_guillotine
+        icon = placeholder
+        prerequisite = { focus = POL_the_new_jacobin }
+        relative_position_id = POL_the_new_jacobin
+        x = -1
+        y = 1
+        cost = 5
+        ai_will_do = {
+            factor = 99
+        }
+        completion_reward = {
+            
+        }
+    }
+    focus = {
+        id = POL_trials_of_the_officers
+        icon = placeholder
+        prerequisite = { focus = POL_roll_out_the_guillotine }
+        relative_position_id = POL_roll_out_the_guillotine
+        x = -1
+        y = 1
+        cost = 5
+        ai_will_do = {
+            factor = 99
+        }
+        completion_reward = {
+            
+        }
+    }
+    focus = {
+        id = POL_trials_of_the_politicians
+        icon = placeholder
+        prerequisite = { focus = POL_trials_of_the_officers }
+        relative_position_id = POL_trials_of_the_officers
+        x = 0
+        y = 1
+        cost = 5
+        ai_will_do = {
+            factor = 99
+        }
+        completion_reward = {
+            
+        }
+    }
+    focus = {
+        id = POL_dissolve_the_sejm
+        icon = placeholder
+        prerequisite = { focus = POL_roll_out_the_guillotine }
+        prerequisite = { focus = POL_address_to_the_people }
+        relative_position_id = POL_roll_out_the_guillotine
+        x = 1
+        y = 1
+        cost = 5
+        ai_will_do = {
+            factor = 99
+        }
+        completion_reward = {
+            
+        }
+    }
+    focus = {
+        id = POL_eyes_and_ears_of_the_republic
+        icon = placeholder
+        prerequisite = { focus = POL_dissolve_the_sejm }
+        relative_position_id = POL_dissolve_the_sejm
+        x = 2
+        y = 1
+        cost = 5
+        ai_will_do = {
+            factor = 99
+        }
+        completion_reward = {
+            
+        }
+    }
+    focus = {
+        id = POL_the_state_of_emergency
+        icon = placeholder
+        prerequisite = { focus = POL_dissolve_the_sejm }
+        relative_position_id = POL_dissolve_the_sejm
+        x = 0
+        y = 1
+        cost = 5
+        ai_will_do = {
+            factor = 99
+        }
+        completion_reward = {
+            
+        }
+    }
+    focus = {
+        id = POL_address_to_the_people
+        icon = placeholder
+        prerequisite = { focus = POL_the_new_jacobin }
+        relative_position_id = POL_the_new_jacobin
+        x = 1
+        y = 1
+        cost = 5
+        ai_will_do = {
+            factor = 99
+        }
+        completion_reward = {
+            
+        }
+    }
+    focus = {
+        id = POL_the_marshal_outmaneuvered
+        icon = placeholder
+        mutually_exclusive = { focus = POL_the_new_jacobin }
+        prerequisite = { focus = POL_snakes_in_the_grass }
+        relative_position_id = POL_snakes_in_the_grass
+        x = 10
+        y = 1
+        cost = 5
+        ai_will_do = {
+            factor = 99
+        }
+        completion_reward = {
+            
+        }
+    }
+    focus = {
+        id = POL_arrest_socialist_politicians
+        icon = placeholder
+        prerequisite = { focus = POL_the_marshal_outmaneuvered }
+        relative_position_id = POL_the_marshal_outmaneuvered
+        x = -1
+        y = 1
+        cost = 5
+        ai_will_do = {
+            factor = 99
+        }
+        completion_reward = {
+            
+        }
+    }
+    focus = {
+        id = POL_discharge_socialist_officers
+        icon = placeholder
+        prerequisite = { focus = POL_the_marshal_outmaneuvered }
+        relative_position_id = POL_the_marshal_outmaneuvered
+        x = 1
+        y = 1
+        cost = 5
+        ai_will_do = {
+            factor = 99
+        }
+        completion_reward = {
+            
+        }
+    }
+    focus = {
+        id = POL_ban_the_pps
+        icon = placeholder
+        prerequisite = { focus = POL_arrest_socialist_politicians }
+        prerequisite = { focus = POL_discharge_socialist_officers }
+        relative_position_id = POL_the_marshal_outmaneuvered
+        x = 0
+        y = 2
+        cost = 5
+        ai_will_do = {
+            factor = 99
+        }
+        completion_reward = {
+            
+        }
+    }
+    focus = {
+        id = POL_guarantee_rights_for_minorities
+        icon = placeholder
+        prerequisite = { focus = POL_ban_the_pps }
+        relative_position_id = POL_ban_the_pps
+        x = -2
+        y = 1
+        cost = 5
+        ai_will_do = {
+            factor = 99
+        }
+        completion_reward = {
+            
+        }
+    }
+    focus = {
+        id = POL_inaugurate_a_provisional_president
+        icon = placeholder
+        prerequisite = { focus = POL_ban_the_pps }
+        relative_position_id = POL_ban_the_pps
+        x = 0
+        y = 1
+        cost = 5
+        ai_will_do = {
+            factor = 99
+        }
+        completion_reward = {
+            
+        }
+    }
+    focus = {
+        id = POL_meet_with_foreign_ambassadors
+        icon = placeholder
+        prerequisite = { focus = POL_ban_the_pps }
+        relative_position_id = POL_ban_the_pps
+        x = 2
+        y = 1
+        cost = 5
+        ai_will_do = {
+            factor = 99
+        }
+        completion_reward = {
+            
+        }
+    }
+    focus = {
         id = POL_1922_elections
         icon = GFX_focus_pol_1922_elections
         available = {
@@ -83,11 +328,12 @@ focus_tree = {
         bypass = {
             date > 1922.12.31
         }
-        prerequisite = { focus = POL_disarm_radical_militias }
-        prerequisite = { focus = POL_increase_danzig_garrison }
-        relative_position_id = POL_stabilizing_the_country
+        prerequisite = { focus = POL_guarantee_rights_for_minorities }
+        prerequisite = { focus = POL_inaugurate_a_provisional_president }
+        prerequisite = { focus = POL_meet_with_foreign_ambassadors }
+        relative_position_id = POL_the_marshal_outmaneuvered
         x = 0
-        y = 2
+        y = 4
         cost = 10
         ai_will_do = {
             factor = 100
@@ -102,13 +348,14 @@ focus_tree = {
         }
     }
     focus = {
-        id = POL_pilsudskiites_win
+        id = POL_proclaim_the_fourth_republic
         icon = GFX_focus_pol_pilsudskiites_win
-        prerequisite = { focus = POL_1922_elections }
-        relative_position_id = POL_1922_elections
+        prerequisite = { focus = POL_trials_of_the_politicians }
+        prerequisite = { focus = POL_the_state_of_emergency }
+        relative_position_id = POL_the_new_jacobin
         available = { always = no }
-        x = -16
-        y = 1
+        x = 0
+        y = 4
         cost = 0
         completion_reward = {
 
@@ -117,8 +364,8 @@ focus_tree = {
     focus = {
         id = POL_red_banner_on_the_vistula
         icon = placeholder
-        prerequisite = { focus = POL_pilsudskiites_win }
-        relative_position_id = POL_pilsudskiites_win
+        prerequisite = { focus = POL_proclaim_the_fourth_republic }
+        relative_position_id = POL_proclaim_the_fourth_republic
         x = -2
         y = 1
         cost = 5
@@ -228,8 +475,8 @@ focus_tree = {
     focus = {
         id = POL_building_the_home_of_nations
         icon = placeholder
-        prerequisite = { focus = POL_pilsudskiites_win }
-        relative_position_id = POL_pilsudskiites_win
+        prerequisite = { focus = POL_proclaim_the_fourth_republic }
+        relative_position_id = POL_proclaim_the_fourth_republic
         x = 2
         y = 1
         cost = 5
@@ -338,19 +585,11 @@ focus_tree = {
                 }
                 add_dynamic_modifier = { modifier = ukraizhian_nationalist_militias }
             }
-            SOV = {
-                every_owned_state = {
-                    limit = {
-                        has_dynamic_modifier = { modifier = ukraizhian_nationalist_militias }
-                    }
-                }
-                remove_dynamic_modifier = { modifier = ukraizhian_nationalist_militias }
-            }
             unlock_decision_category_tooltip = POL_fighting_the_rusviets
         }
     }
     focus = {
-        id = POL_establish_ruthenian_peoples_republic
+        id = POL_establish_ruthenian_republic
         icon = placeholder
         mutually_exclusive = { focus = POL_alliance_with_crimea }
         available = {
@@ -370,7 +609,7 @@ focus_tree = {
     focus = {
         id = POL_alliance_with_crimea
         icon = placeholder
-        mutually_exclusive = { focus = POL_establish_ruthenian_peoples_republic }
+        mutually_exclusive = { focus = POL_establish_ruthenian_republic }
         prerequisite = { focus = POL_arm_rusviet_ukraizhians }
         available = {
             is_faction_leader = yes
@@ -387,18 +626,17 @@ focus_tree = {
         }
     }
     focus = {
-        id = POL_polanian_commonwealth
+        id = POL_reform_the_commonwealth
         icon = placeholder
         prerequisite = { focus = POL_rights_for_women }
         prerequisite = { focus = POL_department_of_labor }
-        prerequisite = { focus = POL_establish_ruthenian_peoples_republic }
+        prerequisite = { focus = POL_establish_ruthenian_republic }
         prerequisite = { focus = POL_alliance_with_crimea }
-        relative_position_id = POL_pilsudskiites_win
+        relative_position_id = POL_proclaim_the_fourth_republic
         x = 0
         y = 5
         cost = 5
         completion_reward = {
-            set_cosmetic_tag = POL_commonwealth
             every_state = {
                 limit = {
                     OR = {
@@ -460,7 +698,7 @@ focus_tree = {
         prerequisite = { focus = POL_1922_elections }
         relative_position_id = POL_1922_elections
         available = { always = no }
-        x = -8
+        x = -12
         y = 1
         cost = 0
         completion_reward = {
@@ -679,7 +917,7 @@ focus_tree = {
         prerequisite = { focus = POL_1922_elections }
         relative_position_id = POL_1922_elections
         available = { always = no }
-        x = 0
+        x = -4
         y = 1
         cost = 0
         completion_reward = {
@@ -687,7 +925,7 @@ focus_tree = {
         }
     }
     focus = {
-        id = POL_staff_government_with_elites
+        id = POL_the_szlachta_government
         icon = placeholders
         prerequisite = { focus = POL_technocrats_win }
         relative_position_id = POL_technocrats_win
@@ -702,8 +940,8 @@ focus_tree = {
     focus = {
         id = POL_invite_industrialists_to_government
         icon = placeholders
-        prerequisite = { focus = POL_staff_government_with_elites }
-        relative_position_id = POL_staff_government_with_elites
+        prerequisite = { focus = POL_the_szlachta_government }
+        relative_position_id = POL_the_szlachta_government
         x = -1
         y = 1
         cost = 5
@@ -731,8 +969,8 @@ focus_tree = {
     focus = {
         id = POL_invite_intellectuals_to_government
         icon = placeholders
-        prerequisite = { focus = POL_staff_government_with_elites }
-        relative_position_id = POL_staff_government_with_elites
+        prerequisite = { focus = POL_the_szlachta_government }
+        relative_position_id = POL_the_szlachta_government
         x = 1
         y = 1
         cost = 5
@@ -940,7 +1178,7 @@ focus_tree = {
         prerequisite = { focus = POL_1922_elections }
         relative_position_id = POL_1922_elections
         available = { always = no }
-        x = 8
+        x = 4
         y = 1
         cost = 0
         completion_reward = {
@@ -1262,7 +1500,7 @@ focus_tree = {
         prerequisite = { focus = POL_1922_elections }
         relative_position_id = POL_1922_elections
         available = { always = no }
-        x = 16
+        x = 12
         y = 1
         cost = 0
         completion_reward = {
@@ -1500,7 +1738,7 @@ focus_tree = {
         available = {
             NOT = {
                 OR = {
-                    has_completed_focus = POL_pilsudskiites_win
+                    has_completed_focus = POL_proclaim_the_fourth_republic
                     has_completed_focus = POL_falangists_win
                     has_completed_focus = POL_monarchists_win
                 }
@@ -2126,7 +2364,7 @@ focus_tree = {
         available = {
             NOT = {
                 OR = {
-                    has_completed_focus = POL_pilsudskiites_win
+                    has_completed_focus = POL_proclaim_the_fourth_republic
                     has_completed_focus = POL_falangists_win
                     has_completed_focus = POL_monarchists_win
                 }

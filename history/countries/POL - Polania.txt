@@ -10,6 +10,11 @@ add_ideas = {
 	POL_tarnished_liberty_2
 }
 
+add_opinion_modifier = {
+    target = SOV
+    modifier = POL_russophobia
+}
+
 oob = "POL_1936"
 if = {
 	limit = { has_dlc = "Man the Guns" }

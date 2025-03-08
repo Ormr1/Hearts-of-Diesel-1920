@@ -49,7 +49,7 @@ country = {
 	}
 
 	POL_home_of_the_enlightenment = {
-		picture = placeholder
+		picture = POL_idea_home_of_the_enlightenment
 		allowed = {
 			original_tag = POL
 			always = no
@@ -82,7 +82,7 @@ country = {
 	}
 
 	POL_weak_executive = {
-		picture = placeholder
+		picture = POL_idea_weak_executive
 		allowed = {
 			original_tag = POL
 			always = no
@@ -133,7 +133,7 @@ country = {
 	}
 
 	POL_russophobia = {
-		picture = placeholder
+		picture = POL_idea_russophobia
 		allowed = {
 			original_tag = POL
 			always = no
@@ -146,6 +146,7 @@ country = {
 			tag = SOV
 			attack_bonus_against = 0.05
 			defense_bonus_against = 0.05
+			generate_wargoal_tension_against = -0.15
 		}
 	}
 

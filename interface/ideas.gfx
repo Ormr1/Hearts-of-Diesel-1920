@@ -6023,6 +6023,18 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/POL/POL_idea_tarnished_liberty.png"
 	}
 	spriteType = {
+		name = "GFX_idea_POL_idea_home_of_the_enlightenment"
+		texturefile = "gfx/interface/ideas/POL/POL_idea_home_of_the_enlightenment.png"
+	}
+	spriteType = {
+		name = "GFX_idea_POL_idea_weak_executive"
+		texturefile = "gfx/interface/ideas/POL/POL_idea_weak_executive.png"
+	}
+	spriteType = {
+		name = "GFX_idea_POL_idea_russophobia"
+		texturefile = "gfx/interface/ideas/POL/POL_idea_russophobia.png"
+	}
+	spriteType = {
 		name = "GFX_idea_POL_idea_kosciuszkos_legacy"
 		texturefile = "gfx/interface/ideas/POL/POL_idea_kosciuszkos_legacy.png"
 	}

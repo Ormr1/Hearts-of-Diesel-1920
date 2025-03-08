@@ -31,4 +31,4 @@ replace_path="history"
 
 replace_path="map/strategicregions"
 replace_path="gfx/flags"
-supported_version="1.11.*"
+supported_version="1.16.*"
