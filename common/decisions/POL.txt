@@ -1,3 +1,30 @@
+POL_the_power_struggle = {
+	POL_impeachment_vote = {
+		icon = generic_civil_support
+		allowed = {
+			original_tag = USA
+		}
+		available = {
+			always = no
+		}
+		activation = {
+			always = no
+		}
+		is_good = no
+		days_mission_timeout = 60
+		timeout_effect = {
+			if = {
+				limit = {
+					check_variable = { pro_impeachment_votes > 198 }
+				}
+				complete_national_focus = POL_the_marshal_outmaneuvered
+			}
+			else = {
+				complete_national_focus = POL_the_new_jacobin
+			}
+		}
+	}
+}
 POL_imperial_glory = {
 	POL_integrate_imperial_territory = {
 		icon = placeholder

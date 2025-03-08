@@ -1,5 +1,94 @@
 #Remember to change the tooltips if the effects are changed
 #State scope. Prev is target country.
+POL_setup_impeachment_vote = {
+	set_variable_to_random = {
+		var = zlm_total_votes
+		min = 59
+		max = 99
+		integer = yes
+	}
+	set_variable_to_random = {
+		var = pps_total_votes
+		min = 118
+		max = 158
+		integer = yes
+	}
+	set_variable_to_random = {
+		var = sld_total_votes
+		min = 79
+		max = 118
+		integer = yes
+	}
+	set_variable_to_random = {
+		var = onr_total_votes
+		min = 20
+		max = 39
+		integer = yes
+	}
+	# ensure no overflow past 394
+	set_temp_variable = { total_votes = zlm_total_votes }
+	add_to_temp_variable = { total_votes = pps_total_votes }
+	add_to_temp_variable = { total_votes = sld_total_votes }
+	add_to_temp_variable = { total_votes = onr_total_votes }
+	if = {
+		limit = {
+			check_variable = { total_votes > 394 }
+		}
+		set_temp_variable = { total_vote_diff = total_votes }
+		subtract_from_temp_variable = { total_vote_diff = 394 }
+		subtract_from_variable = { onr_total_votes = total_vote_diff }
+	}
+	else_if = {
+		limit = {
+			check_variable = { total_votes < 394 }
+		}
+		set_temp_variable = { total_vote_diff = 394 }
+		subtract_from_temp_variable = { total_vote_diff = total_votes }
+		add_to_variable = { pps_total_votes = total_vote_diff }
+	}
+	# ZLM Pro-Impeachment Votes
+	set_variable_to_random = {
+		var = percentage_pro_impeachment
+		min = 0.75
+		max = 0.85
+	}
+	set_variable = { zlm_pro_impeachment_votes = zlm_total_votes }
+	multiply_variable = { zlm_pro_impeachment_votes = percentage_pro_impeachment }
+	round_variable = zlm_pro_impeachment_votes
+	# PPS Pro-Impeachment Votes
+	set_variable_to_random = {
+		var = percentage_pro_impeachment
+		min = 0.05
+		max = 0.10
+	}
+	set_variable = { pps_pro_impeachment_votes = pps_total_votes }
+	multiply_variable = { pps_pro_impeachment_votes = percentage_pro_impeachment }
+	round_variable = pps_pro_impeachment_votes
+	# SLD Pro-Impeachment Votes
+	set_variable_to_random = {
+		var = percentage_pro_impeachment
+		min = 0.40
+		max = 0.60
+	}
+	set_variable = { sld_pro_impeachment_votes = sld_total_votes }
+	multiply_variable = { sld_pro_impeachment_votes = percentage_pro_impeachment }
+	round_variable = sld_pro_impeachment_votes
+	# ONR Pro-Impeachment Votes
+	set_variable_to_random = {
+		var = percentage_pro_impeachment
+		min = 0.95
+		max = 1
+	}
+	set_variable = { onr_pro_impeachment_votes = onr_total_votes }
+	multiply_variable = { onr_pro_impeachment_votes = percentage_pro_impeachment }
+	round_variable = onr_pro_impeachment_votes
+}
+POL_update_pro_impeachment_votes = {
+	set_variable = { pro_impeachment_votes = zlm_pro_impeachment_votes }
+	add_to_variable = { pro_impeachment_votes = pps_pro_impeachment_votes }
+	add_to_variable = { pro_impeachment_votes = sld_pro_impeachment_votes }
+	add_to_variable = { pro_impeachment_votes = onr_pro_impeachment_votes }
+}
 POL_increase_danzig_control = {
 	if = {
 		limit = {

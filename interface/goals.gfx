@@ -2671,6 +2671,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/POL/focus_pol_disarm_radical_militias.png"
 	}
 	SpriteType = { 
+		name = "GFX_focus_pol_snakes_in_the_grass"
+		texturefile = "gfx/interface/goals/POL/focus_pol_snakes_in_the_grass.png"
+	}
+	SpriteType = { 
 		name = "GFX_focus_pol_1922_elections"
 		texturefile = "gfx/interface/goals/POL/focus_pol_1922_elections.png"
 	}

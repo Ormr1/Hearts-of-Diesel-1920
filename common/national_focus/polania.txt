@@ -68,7 +68,7 @@ focus_tree = {
     }
     focus = {
         id = POL_snakes_in_the_grass
-        icon = placeholder
+        icon = GFX_focus_pol_snakes_in_the_grass
         prerequisite = { focus = POL_disarm_radical_militias }
         prerequisite = { focus = POL_increase_danzig_garrison }
         relative_position_id = POL_stabilizing_the_country
@@ -79,7 +79,9 @@ focus_tree = {
             factor = 99
         }
         completion_reward = {
-            
+            POL_setup_impeachment_vote = yes
+            POL_update_pro_impeachment_votes = yes
+            unlock_decision_category_tooltip = POL_the_power_struggle
         }
     }
     focus = {
