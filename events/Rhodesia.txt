@@ -570,34 +570,34 @@ country_event = { #victory in zambia, independance
 			original_tag = ZRF
 		}
 		1005={
-			is_owned_and_controlled_by = ROOT
+			is_controlled_by = ROOT
 		}
 		972={
-			is_owned_and_controlled_by = ROOT
+			is_controlled_by = ROOT
 		}
 		1004={
-			is_owned_and_controlled_by = ROOT
+			is_controlled_by = ROOT
 		}
 		1003={
-			is_owned_and_controlled_by = ROOT
+			is_controlled_by = ROOT
 		}
 		771={
-			is_owned_and_controlled_by = ROOT
+			is_controlled_by = ROOT
 		}
 		999={
-			is_owned_and_controlled_by = ROOT
+			is_controlled_by = ROOT
 		}
 		1002={
-			is_owned_and_controlled_by = ROOT
+			is_controlled_by = ROOT
 		}
 		1001={
-			is_owned_and_controlled_by = ROOT
+			is_controlled_by = ROOT
 		}
 		1000={
-			is_owned_and_controlled_by = ROOT
+			is_controlled_by = ROOT
 		}
 		998={
-			is_owned_and_controlled_by = ROOT
+			is_controlled_by = ROOT
 		}
 	}
 	fire_only_once = yes

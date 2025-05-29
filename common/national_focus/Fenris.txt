@@ -1820,6 +1820,14 @@ joint_focus = {
 		}
 		has_government = fenris
 	}
+	available = {
+		if={
+			limit={
+				tag = SOV
+			}
+			has_completed_focus = SOV_cw_rush_of_volunteers
+		}
+	}
 
 	completion_reward = {
 		air_experience = 25

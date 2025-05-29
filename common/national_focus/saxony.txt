@@ -1617,7 +1617,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_deals_with_the_king
-		icon = GFX_goal_generic_forceful_treaty
+		icon = GFX_focus_usa_bribe_the_king
 		relative_position_id = GER_influence_in_arabia
 		prerequisite = { 
 			focus = GER_influence_in_arabia

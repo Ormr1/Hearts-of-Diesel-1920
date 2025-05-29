@@ -3314,6 +3314,10 @@ spriteTypes = {
 		name = "GFX_focus_SOV_approach_semyonov"
 		texturefile = "gfx/interface/goals/focus_SOV_approach_semyonov.dds"
 	}
+	SpriteType = {
+		name = "GFX_focus_sov_hunt_lenin"
+		texturefile = "gfx/interface/goals/RUSVIET/focus_sov_hunt_lenin.png"
+	}
 		### ITALY ###
 
 	SpriteType = { 
@@ -5214,8 +5218,8 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/focus_FIN_confederated_finno_russian_republics.dds"
 	}
 	SpriteType = { 
-		name = "GFX_focus_FIN_socialist_wellfare"
-		texturefile = "gfx/interface/goals/focus_FIN_socialist_wellfare.dds"
+		name = "GFX_focus_FIN_socialist_welfare"
+		texturefile = "gfx/interface/goals/focus_FIN_socialist_welfare.dds"
 	}
 	SpriteType = { 
 		name = "GFX_focus_FIN_the_finnish_throne"

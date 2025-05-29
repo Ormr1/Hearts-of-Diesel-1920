@@ -137,7 +137,13 @@
  SOV_support_from_the_church: "Support from the Church"
  SOV_suppress_anarchists: "Suppress Anarchists"
  SOV_public_housing: "Public Housing"
- 
+ SOV_purging_radicals_from_soviets: "Purging Radicals from the Soviets"
+ SOV_supress_the_sr: "Supress the Soviets"
+ SOV_working_with_soviet: "Working with the Soviets"
+ SOV_working_with_lenin: "Working With Lenin"
+ SOV_hunt_for_lenin: "Hunt for Lenin"
+ SOV_promote_new_commanders: "Promote New Commanders"
+ SOV_expand_petrograd_shipbuilding: "Expand Petrograd Shipbuilding"
  
  RUS_concessions_to_kadets: "Concessions to the §CKadets§!"
  RUS_concessions_to_octoberists: "Concessions to the §5Octoberists§!"

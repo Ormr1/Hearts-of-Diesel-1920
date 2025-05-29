@@ -79,3 +79,24 @@ NOR_help_EST = {
         value = 50
     }
 }
+NC_URG_help_ETR = {
+	allowed = {
+		original_tag = URG
+		has_government = fascism
+	}
+	enable = {
+		country_exists = ETR
+		ETR={has_war = yes}
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "ETR"
+		value = 500
+	}
+	ai_strategy = {
+        type = support
+        id = "ETR"
+        value = 150
+    }
+}

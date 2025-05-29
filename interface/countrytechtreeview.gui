@@ -1,4 +1,8 @@
 guiTypes = {
+	positionType = {
+		name = "special_project_tech_icon_offset"
+		position = { x = -10 y = -10 }
+	}
 	containerWindowType = {
 		name = "subunit_icon_entry"
 		position = { x=0 y=0 }
@@ -4707,6 +4711,11 @@ guiTypes = {
 		background = {
 			name = "Background"
 			quadTextureSprite ="GFX_technology_unavailable_item_bg"
+		}
+		
+		gridboxtype = {
+			# contains special_project_specialization
+			name = "special_project_specialization_list"
 		}
 
 		iconType = {

@@ -608,6 +608,7 @@ NAirGfx = {
 	AIRPLANES_BANK_STRENGTH = 210.0, 				-- Multiplier of how much the curve affects the wings banking. (angle limited by the following value)
 	AIRPLANES_BANK_ANGLE_LIMIT = 55.0, 				-- Bank angle limit.
 	AIRPLANES_GROUND_COLLISION_OFFSET_Y = -5.0, 		-- Lets the 3d airplanes disappear after going a bit under the ground.
+	AIRPLANES_GROUND_EXPLOSION_TIME_DELAY = 0.6,	-- Time in seconds to play explosion animation when plane hit ground before the plane entity is deleted
 	AIRPLANES_1_FIGHTER_PATROL_ANIM = 1, 			-- Number of fighters needed for a single instance of this animation
 	AIRPLANES_3_FIGHTER_PATROL_ANIM = 3,			-- Number of fighters needed for a single instance of this animation
 	AIRPLANES_1_BOMBER_BOMBING_ANIM = 1, 			-- Number of bombers needed for a single instance of this animation
@@ -620,6 +621,7 @@ NAirGfx = {
 	AIRPLANES_3_SCOUT_PLANE_PATROL_ANIM = 3,
 
 	RANDOM_SCENARIO_ANIMATION_MAX_DELAY = 3.0,		-- Maximum delay until an animation for a gfx airplane (Currently SAM and gun emplacments) starts
+
 	STRAT_BOMBER_FIREBOMB_THRESHOLD = 42.0,         -- If a strategic bomber has a strat_bomber value >= this, then the firebombing animation will be used
 	STRAT_BOMBER_CARPETBOMB_THRESHOLD = 16.0,       -- If a strategic bomber has a strat_bomber value >= this, then the carpet-bombing animation will be used
 
@@ -753,6 +755,8 @@ NGraphics = {
 		0.8, 0.3, 0.0, 1.0,   -- 11: construction: invalid secondary build target
 		0.7, 0.7, 0.0, 1.0,   -- 12: construction: foreign secondary build target
 	},
+
+
 	BORDER_COLOR_TUTORIAL_HIGHLIGHT_R = 0.0,
 	BORDER_COLOR_TUTORIAL_HIGHLIGHT_G = 0.61,
 	BORDER_COLOR_TUTORIAL_HIGHLIGHT_B = 0.75,
@@ -1233,6 +1237,7 @@ NGraphics = {
 	RAID_UNIT_THIRD_STAGE_PROGRESS = 0.66,			-- Specifies raid progress value on [0,1] where third stage is activated
 
 	DEFAULT_NUDGE_FLOATING_HARBOR_DIST = 7.0,	-- Default distance of floating harbors from the coast in pixels, for nudger
+
 	RAID_MAP_ICON_DRAW_DISTANCE_MIN = 10.0,                      -- Below this distance, raid map icons are hidden
 	RAID_MAP_ICON_DRAW_DISTANCE_MAX = 500.0,                     -- Above this distance, raid map icons are hidden in normal map modes
 	RAID_MAP_ICON_MAX_DRAW_DISTANCE_IN_RAID_MAP_MODE = 1600.0,   -- Above this distance, raid map icons are hidden in raid map mode
@@ -1380,6 +1385,7 @@ NInterface = {
 	-- When selecting a module in the tank designer, for each role the module forbids a role icon may be displayed.
 	EQUIPMENT_DESIGNER_SHOW_MODULE_FORBIDS_BASE_ROLE_ICON = 0, -- If this is set to 0 no icon will be displayed if the main tank role is forbidden. If set to 1 the icon will be displayed as normal.
 	EQUIPMENT_DESIGNER_SHOW_MODULE_FORBIDS_SPECIALIZED_ROLE_ICON = 0, -- If this is set to 0 no icons will be displayed for any forbidden specialized roles. If set to 1 the icons will be displayed as normal.
+
 
 	MIO_CENTRAL_TREE_HORIZONTAL_POSITION = 1, -- Horizontal position for auto-generated MIO traits
 
