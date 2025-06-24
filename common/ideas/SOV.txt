@@ -132,6 +132,44 @@ ideas = {
 				stability_factor = 0.04
 			}
 		}
+		SOV_land_reform_4 = {
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Added via purges
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = generic_agrarian_reform
+			
+			modifier = {
+				political_power_factor = -0.15
+				production_speed_buildings_factor = 0.15
+				stability_factor = 0.05
+			}
+		}
+		SOV_building_middle_class= {
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Added via purges
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = generic_agrarian_reform
+			
+			modifier = {
+				political_power_factor = -0.15
+				production_speed_buildings_factor = 0.13
+				stability_factor = 0.06
+			}
+		}
 		
 		SOV_disaster_aganist_togawa = {
 			removal_cost = -1

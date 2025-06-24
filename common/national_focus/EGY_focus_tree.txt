@@ -406,6 +406,16 @@ focus_tree = {
         
         available_if_capitulated = yes
 
+        available={
+            count_triggers = {
+                amount = 3
+                has_completed_focus = EGY_A7
+                has_completed_focus = EGY_A8
+                has_completed_focus = EGY_A9
+                has_completed_focus = EGY_A10
+            }
+        }
+
         completion_reward = {
         }
         ai_will_do={
@@ -522,6 +532,16 @@ focus_tree = {
         
         available_if_capitulated = yes
 
+        available={
+            count_triggers = {
+                amount = 3
+                has_completed_focus = EGY_A12
+                has_completed_focus = EGY_A13
+                has_completed_focus = EGY_A14
+                has_completed_focus = EGY_A15
+            }
+        }
+
         completion_reward = {
         }
         ai_will_do={
@@ -636,6 +656,16 @@ focus_tree = {
         search_filters = {  FOCUS_FILTER_POLITICAL }
         
         available_if_capitulated = yes
+
+        available={
+            count_triggers = {
+                amount = 3
+                has_completed_focus = EGY_A17
+                has_completed_focus = EGY_A18
+                has_completed_focus = EGY_A19
+                has_completed_focus = EGY_A20
+            }
+        }
 
         completion_reward = {
         }
@@ -753,6 +783,16 @@ focus_tree = {
         
         available_if_capitulated = yes
 
+        available={
+            count_triggers = {
+                amount = 3
+                has_completed_focus = EGY_A22
+                has_completed_focus = EGY_A23
+                has_completed_focus = EGY_A24
+                has_completed_focus = EGY_A25
+            }
+        }
+
         completion_reward = {
         }
         ai_will_do={
@@ -868,6 +908,16 @@ focus_tree = {
         search_filters = {  FOCUS_FILTER_POLITICAL }
         
         available_if_capitulated = yes
+
+        available={
+            count_triggers = {
+                amount = 3
+                has_completed_focus = EGY_A27
+                has_completed_focus = EGY_A28
+                has_completed_focus = EGY_A29
+                has_completed_focus = EGY_A30
+            }
+        }
 
         completion_reward = {
         }
@@ -985,6 +1035,16 @@ focus_tree = {
         
         available_if_capitulated = yes
 
+        available={
+            count_triggers = {
+                amount = 3
+                has_completed_focus = EGY_A32
+                has_completed_focus = EGY_A33
+                has_completed_focus = EGY_A34
+                has_completed_focus = EGY_A35
+            }
+        }
+
         completion_reward = {
         }
         ai_will_do={
@@ -1100,6 +1160,16 @@ focus_tree = {
         search_filters = {  FOCUS_FILTER_POLITICAL }
         
         available_if_capitulated = yes
+
+        available={
+            count_triggers = {
+                amount = 3
+                has_completed_focus = EGY_A37
+                has_completed_focus = EGY_A38
+                has_completed_focus = EGY_A39
+                has_completed_focus = EGY_A40
+            }
+        }
 
         completion_reward = {
         }

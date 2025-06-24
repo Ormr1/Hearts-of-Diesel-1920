@@ -77,7 +77,7 @@ focus_tree = {
 		prerequisite = {
 			focus = SOV_demobilisation
 		}
-		x = 11
+		x = 9
 		y = 1
 		cost = 5
 		ai_will_do = {
@@ -89,7 +89,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SOV_new_military_budget
-		icon = placeholder
+		icon = GFX_focus_generic_currency_reforms
 		relative_position_id = SOV_kolchak_plan
 		x = 0
 		y = 1
@@ -106,7 +106,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SOV_strike_away_the_disfunction
-		icon = placeholder
+		icon = GFX_focus_sov_strike_away_ships
 		relative_position_id = SOV_new_military_budget
 		mutually_exclusive = {
 			focus = SOV_decommission_broken_ships
@@ -122,7 +122,22 @@ focus_tree = {
 			focus = SOV_new_military_budget
 		}
 		completion_reward = {
-			#removes all outdated ships (from perspective of 1920) give a large naval research boost
+			destroy_ships = {
+				type = ship_hull_light_1
+				count = all
+			}
+			destroy_ships = {
+				type = ship_hull_submarine_1
+				count = all
+			}
+			destroy_ships = {
+				type = ship_hull_heavy_1
+				count = all
+			}
+			destroy_ships = {
+				type = ship_hull_cruiser_1
+				count = all
+			}
 			add_tech_bonus = {
 				bonus = 1.0
 				uses = 2
@@ -133,7 +148,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SOV_forced_removal_of_corrupt
-		icon = placeholder
+		icon = GFX_focus_ARG_crackdown_on_corruption
 		relative_position_id = SOV_new_military_budget
 		x = 1
 		y = 1
@@ -191,7 +206,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SOV_revise_military_spending
-		icon = placeholder
+		icon = GFX_focus_generic_military_mission
 		relative_position_id = SOV_new_military_budget
 		x = 3
 		y = 1
@@ -208,7 +223,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SOV_enforce_quality_control
-		icon = placeholder
+		icon = GFX_focus_chi_army_reform
 		relative_position_id = SOV_revise_military_spending
 		x = 0
 		y = 2
@@ -229,7 +244,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SOV_decommission_broken_ships
-		icon = placeholder
+		icon = GFX_focus_sov_decomission_ships
 		relative_position_id = SOV_new_military_budget
 		mutually_exclusive = {
 			focus = SOV_strike_away_the_disfunction
@@ -246,6 +261,14 @@ focus_tree = {
 		}
 		completion_reward = {
 			#removes old ships for a research boost
+			destroy_ships = {
+				type = destroyer
+				count = 7
+			}
+			destroy_ships = {
+				type = ship_hull_submarine_1
+				count = 20
+			}
 			add_tech_bonus = {
 				bonus = 0.5
 				uses = 2
@@ -255,7 +278,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SOV_investigate_spending
-		icon = placeholder
+		icon = GFX_focus_sov_investigate_spending
 		relative_position_id = SOV_revise_military_spending
 		mutually_exclusive = {
 			focus = SOV_blindfold_the_investigations
@@ -282,7 +305,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SOV_all_ships_serve_the_tsar
-		icon = placeholder
+		icon = GFX_focus_sov_all_ships_serve
 		relative_position_id = SOV_new_military_budget
 		mutually_exclusive = {
 			focus = SOV_decommission_broken_ships
@@ -338,7 +361,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SOV_kolchaks_new_navy
-		icon = placeholder
+		icon = GFX_focus_sov_new_navy
 		relative_position_id = SOV_expand_petrograd_shipbuilding
 		x = 0
 		y = 1
@@ -387,7 +410,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SOV_restored_rusviet_army
-		icon = placeholder
+		icon = GFX_focus_GER_demonstration_of_military_achievements
 		relative_position_id = SOV_new_military_budget
 		x = 0
 		y = 4
@@ -418,7 +441,7 @@ focus_tree = {
 	#political
 	focus = {
 		id = SOV_dealing_with_the_political_tightrope
-		icon = placeholder
+		icon = GFX_focus_RAJ_circuvment_demobilization_restrictions
 		relative_position_id = SOV_demobilisation
 		prerequisite = {
 			focus = SOV_demobilisation
@@ -456,7 +479,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SOV_support_mensheviks_over_lenin
-		icon = placeholder
+		icon = GFX_focus_SWE_refuge_for_revolutionaries
 		relative_position_id = SOV_the_RSDLP
 		prerequisite = {
 			focus = SOV_the_RSDLP
@@ -464,6 +487,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = SOV_purging_radicals_from_soviets
 			focus = SOV_working_with_lenin
+			focus = SOV_supress_the_sr
 		}
 		x = 0
 		y = 1
@@ -642,12 +666,16 @@ focus_tree = {
 		relative_position_id = SOV_progressive_bloc
 		mutually_exclusive = {
 			focus = SOV_working_with_soviet
+			focus = SOV_support_mensheviks_over_lenin
 		}
 		x = -1
 		y = 1
 		cost = 8
 		ai_will_do = {
 			factor = 5
+		}
+		available = {
+			NOT={has_government = communism}
 		}
 		prerequisite = {
 			focus = SOV_progressive_bloc
@@ -729,7 +757,7 @@ focus_tree = {
 	}
 	focus = { # 
 		id = SOV_principles_of_democratic_socialism
-		icon = placeholder
+		icon = GFX_focus_generic_social_democracy
 		relative_position_id = SOV_working_with_soviet
 		x = 0
 		y = 1
@@ -785,7 +813,7 @@ focus_tree = {
 	}
 	focus = { #
 		id = SOV_for_peoples_freedoms
-		icon = GFX_goal_generic_support_democracy
+		icon = GFX_focus_ARG_defense_and_democracy
 		relative_position_id = SOV_progressive_bloc
 		x = 2
 		y = 1
@@ -814,7 +842,7 @@ focus_tree = {
 	}
 	focus = { # 
 		id = SOV_democratic_coalition
-		icon = placeholder
+		icon = GFX_goal_support_democracy
 		relative_position_id = SOV_for_peoples_freedoms
 		x = 0
 		y = 1
@@ -842,7 +870,7 @@ focus_tree = {
 	}
 	focus = { # 
 		id = SOV_increased_duma_rights
-		icon = placeholder
+		icon = GFX_focus_generic_improve_the_administration
 		relative_position_id = SOV_democratic_coalition
 		mutually_exclusive = {
 			focus = SOV_decreased_duma_rights
@@ -897,7 +925,7 @@ focus_tree = {
 	}
 	focus = { #
 		id = SOV_reinforce_tsarists_in_army
-		icon = placeholder
+		icon = GFX_focus_generic_monarchist_sentiment
 		relative_position_id = SOV_tsars_land_reforms
 		x = -2
 		y = 1
@@ -951,9 +979,9 @@ focus_tree = {
 	}
 	focus = { #
 		id = SOV_increased_landowner_buyouts
-		icon = placeholder
+		icon = GFX_focus_generic_welfare
 		relative_position_id = SOV_tsars_land_reforms
-		x = 4
+		x = 3
 		y = 1
 		cost = 8
 		ai_will_do = {
@@ -977,16 +1005,16 @@ focus_tree = {
 			}
 		}
 	}
-	focus = { # 
+	focus = {
 		id = SOV_forced_breakup_of_landlord_manors
-		icon = placeholder
+		icon = GFX_focus_generic_workers_and_farmers_rise
 		relative_position_id = SOV_increased_landowner_buyouts
 		mutually_exclusive = {
 			focus = SOV_breaking_both
 			focus = SOV_dissolve_rural_communes
 			focus = SOV_follow_the_nobilities_lead
 		}
-		x = -3
+		x = -2
 		y = 1
 		cost = 8
 		ai_will_do = {
@@ -1016,8 +1044,28 @@ focus_tree = {
 		}
 	}
 	focus = { # 
+		id = SOV_completed_land_reform_sr
+		icon = GFX_focus_FIN_socialist_welfare
+		relative_position_id = SOV_forced_breakup_of_landlord_manors
+		x = -1
+		y = 1
+		cost = 8
+		ai_will_do = {
+			factor = 5
+		}
+		prerequisite = {
+			focus = SOV_forced_breakup_of_landlord_manors
+		}
+		completion_reward = {
+			swap_ideas = {
+				add_idea = SOV_land_reform_4
+				remove_idea = SOV_land_reform_3
+			}
+		}
+	}
+	focus = { # 
 		id = SOV_breaking_both
-		icon = placeholder
+		icon = GFX_focus_generic_monetary_union
 		relative_position_id = SOV_increased_landowner_buyouts
 		mutually_exclusive = {
 			focus = SOV_forced_breakup_of_landlord_manors
@@ -1028,6 +1076,9 @@ focus_tree = {
 		cost = 8
 		ai_will_do = {
 			factor = 5
+		}
+		available = {
+			NOT={has_government = communism}
 		}
 		prerequisite = {
 			focus = SOV_increased_landowner_buyouts
@@ -1053,13 +1104,14 @@ focus_tree = {
 				tooltip = SOV_increase_o_loyalty_amount
 				var_SOV_factions_O_loyalty = 5
 			}
+			add_stability = -0.075
 		}
 	}
 	focus = { # 
 		id = SOV_public_housing
 		icon = GFX_focus_generic_low_cost_housing
 		relative_position_id = SOV_breaking_both
-		x = -2
+		x = -1
 		y = 1
 		cost = 8
 		ai_will_do = {
@@ -1077,7 +1129,7 @@ focus_tree = {
 		id = SOV_privatization
 		icon = GFX_goal_generic_forceful_treaty
 		relative_position_id = SOV_breaking_both
-		x = 2
+		x = 1
 		y = 1
 		cost = 8
 		ai_will_do = {
@@ -1096,10 +1148,10 @@ focus_tree = {
 	}
 	focus = { # 
 		id = SOV_building_a_middle_class
-		icon = placeholder
+		icon = GFX_focus_generic_industrialists
 		relative_position_id = SOV_breaking_both
 		x = 0
-		y = 1
+		y = 2
 		cost = 8
 		ai_will_do = {
 			factor = 5
@@ -1108,22 +1160,28 @@ focus_tree = {
 			focus = SOV_breaking_both
 		}
 		completion_reward = {
-			
+			swap_ideas = {
+				add_idea = SOV_building_middle_class
+				remove_idea = SOV_land_reform_3
+			}
 		}
 	}
 	focus = { # 
 		id = SOV_dissolve_rural_communes
-		icon = placeholder
+		icon = GFX_focus_sov_crush_rural_communes
 		relative_position_id = SOV_increased_landowner_buyouts
 		mutually_exclusive = {
 			focus = SOV_forced_breakup_of_landlord_manors
 			focus = SOV_breaking_both
 		}
-		x = 3
+		x = 2
 		y = 1
 		cost = 8
 		ai_will_do = {
 			factor = 5
+		}
+		available = {
+			NOT={has_government = communism}
 		}
 		prerequisite = {
 			focus = SOV_increased_landowner_buyouts
@@ -1145,11 +1203,32 @@ focus_tree = {
 				tooltip = SOV_increase_o_loyalty_amount
 				var_SOV_factions_O_loyalty = 5
 			}
+			add_political_power = 75
+		}
+	}
+	focus = { # 
+		id = SOV_completed_land_reform_nb
+		icon = GFX_focus_AFG_establish_darulaman
+		relative_position_id = SOV_dissolve_rural_communes
+		x = 1
+		y = 1
+		cost = 8
+		ai_will_do = {
+			factor = 5
+		}
+		prerequisite = {
+			focus = SOV_dissolve_rural_communes
+		}
+		completion_reward = {
+			swap_ideas = {
+				add_idea = SOV_land_reform_4
+				remove_idea = SOV_land_reform_3
+			}
 		}
 	}
 	focus = { #
 		id = SOV_follow_the_nobilities_lead
-		icon = placeholder
+		icon = GFX_focus_generic_monarchist_sentiment
 		relative_position_id = SOV_reinforce_tsarists_in_army
 		mutually_exclusive = {
 			focus = SOV_forced_breakup_of_landlord_manors
@@ -1159,6 +1238,9 @@ focus_tree = {
 		cost = 8
 		ai_will_do = {
 			factor = 5
+		}
+		available = {
+			NOT={has_government = communism}
 		}
 		prerequisite = {
 			focus = SOV_reinforce_tsarists_in_army
@@ -1172,7 +1254,7 @@ focus_tree = {
 	}
 	focus = { # 
 		id = SOV_decreased_duma_rights
-		icon = placeholder
+		icon = GFX_focus_generic_monarchy_1
 		relative_position_id = SOV_follow_the_nobilities_lead
 		mutually_exclusive = {
 			focus = SOV_increased_duma_rights
@@ -1209,7 +1291,7 @@ focus_tree = {
 
 shared_focus = {
 	id = SOV_cw_foreign_aid
-	icon = placeholder
+	icon = GFX_focus_generic_reinforcing_the_supply_network
 	cost = 5
 	x = 0
 	y = 0
@@ -1491,7 +1573,7 @@ joint_focus = {
 	}
 	completion_reward_joint_member = {
 		add_opinion_modifier = {
-			target = FRA
+			target = GER
 			modifier = protest_action_strong
 		}
 	}
@@ -1695,10 +1777,26 @@ joint_focus = {
 }
 shared_focus = {
 	id = SOV_cw_rightful_ruler_of_rusviet
-	icon = placeholder
 	cost = 5
 	x = 11
 	y = 0
+	dynamic = yes
+	icon = {
+		trigger = {
+			original_tag = RSF
+		}
+		value = GFX_focus_generic_join_comintern
+	}
+	icon = {
+		trigger = {
+			OR={
+				tag = TPG
+				tag = RDM
+				tag = SOV
+			}
+		}
+		value = GFX_focus_SOV_my_brothers_keeper
+	}
 	
 	allow_branch = {
 		OR={
@@ -1737,7 +1835,7 @@ joint_focus = {
 	}
 
 	completion_reward_joint_originator = {
-		
+		add_manpower = 25000
 	}
 }
 joint_focus = {
@@ -1763,7 +1861,9 @@ joint_focus = {
 	}
 
 	completion_reward_joint_originator = {
-		
+		TAT={
+			country_event = {id =SOV_civil_war.14}
+		}
 	}
 }
 joint_focus = {
@@ -1790,7 +1890,7 @@ joint_focus = {
 
 	completion_reward_joint_originator = {
 		DON={
-
+			country_event = {id =SOV_civil_war.14}
 		}
 	}
 }
@@ -1817,7 +1917,7 @@ joint_focus = {
 	}
 
 	completion_reward_joint_originator = {
-		
+		VGE={country_event = {id =SOV_civil_war.14}}
 	}
 }
 joint_focus = {
@@ -1856,24 +1956,14 @@ shared_focus = {
 	relative_position_id = SOV_cw_rightful_ruler_of_rusviet
 	x = 0
 	y = 1
-	
-	allow_branch = {
-		OR={
-			tag = TPG
-			tag = RSF
-			tag = RDM
-			tag = SOV
-		}
-		SOV={has_country_flag = SOV_civil_war}
-	}
 
 	completion_reward = {
-		add_political_power = 75
+		add_war_support = 0.1
 	}
 }
 joint_focus = {
 	id = SOV_cw_support_195
-	icon = placeholder
+	icon = GFX_focus_support_from_195
 	cost = 5
 	text_icon = RUSVIET_CW_focus_style
 	prerequisite = {focus = SOV_cw_calling_patriots}
@@ -1899,7 +1989,7 @@ joint_focus = {
 }
 joint_focus = {
 	id = SOV_cw_support_239
-	icon = placeholder
+	icon = GFX_focus_support_from_239
 	cost = 5
 	text_icon = RUSVIET_CW_focus_style
 	prerequisite = {focus = SOV_cw_calling_patriots}
@@ -1925,7 +2015,7 @@ joint_focus = {
 }
 joint_focus = {
 	id = SOV_cw_support_219
-	icon = placeholder
+	icon = GFX_focus_support_from_219
 	cost = 5
 	text_icon = RUSVIET_CW_focus_style
 	prerequisite = {focus = SOV_cw_calling_patriots}
@@ -1951,7 +2041,7 @@ joint_focus = {
 }
 joint_focus = {
 	id = SOV_cw_support_224
-	icon = placeholder
+	icon = GFX_focus_support_from_224
 	cost = 5
 	text_icon = RUSVIET_CW_focus_style
 	prerequisite = {focus = SOV_cw_calling_patriots}
@@ -1977,7 +2067,7 @@ joint_focus = {
 }
 joint_focus = {
 	id = SOV_cw_support_242
-	icon = placeholder
+	icon = GFX_focus_support_from_242
 	cost = 5
 	text_icon = RUSVIET_CW_focus_style
 	prerequisite = {focus = SOV_cw_calling_patriots}
@@ -2020,12 +2110,12 @@ shared_focus = {
 
 	completion_reward = {
 		army_experience = 25
-		add_manpower = 2500
+		add_manpower = 25000
 	}
 }
 shared_focus = {
 	id = SOV_cw_seizing_stockpiles
-	icon = placeholder
+	icon = GFX_focus_FIN_weapon_caches
 	cost = 5
 	prerequisite = {focus = SOV_cw_rush_of_volunteers}
 	relative_position_id = SOV_cw_rush_of_volunteers
@@ -2043,12 +2133,16 @@ shared_focus = {
 	}
 
 	completion_reward = {
-		
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 2000
+			producer = SOV
+		}
 	}
 }
 shared_focus = {
 	id = SOV_cw_lessions_of_the_war
-	icon = placeholder
+	icon = GFX_focus_AFG_against_kabul
 	cost = 5
 	prerequisite = {focus = SOV_cw_rush_of_volunteers}
 	relative_position_id = SOV_cw_rush_of_volunteers

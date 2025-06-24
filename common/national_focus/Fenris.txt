@@ -1568,7 +1568,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FEN_hidden_talent_hunters
-		icon = GFX_focus_FEN_skulking_threat
+		icon = GFX_focus_RAJ_headhunt_army_personell
 		relative_position_id = FEN_focus_on_elte_troops
 		x = 0
 		y = 1

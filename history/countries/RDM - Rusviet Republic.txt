@@ -48,14 +48,14 @@ recruit_character = SOV_pyotr_wrangel
 
 set_convoys = 120
 set_politics = {
-	ruling_party = neutrality
+	ruling_party = democratic
 	last_election = "1915.12.17"
 	election_frequency = 60
 	elections_allowed = yes
 }
 set_popularities = {
-	democratic = 0
+	democratic = 60
 	fascism = 0
 	communism = 0
-	neutrality = 100
+	neutrality = 40
 }

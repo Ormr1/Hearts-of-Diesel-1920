@@ -174,7 +174,7 @@ instant_effect = {
 		equipment = {
 			type = ship_hull_light_2
 			creator = "SOV"
-			version_name = "Leningrad & Minsk Class"
+			version_name = "Minsk Class"
 		}
 		requested_factories = 1
 		progress = 0.70
@@ -184,7 +184,7 @@ instant_effect = {
 		equipment = {
 			type = ship_hull_light_2
 			creator = "SOV"
-			version_name = "Leningrad & Minsk Class"
+			version_name = "Minsk Class"
 		}
 		requested_factories = 1
 		progress = 0.60

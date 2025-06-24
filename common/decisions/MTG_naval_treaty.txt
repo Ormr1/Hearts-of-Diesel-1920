@@ -421,9 +421,9 @@ MTG_naval_treaties = {
 						NOT = { has_country_flag = MTG_refused_naval_treaty }
 						has_naval_treaty_trigger = no
 						if = {
-							limit = { ENG = { has_naval_treaty_trigger = yes } }
+							limit = { GER = { has_naval_treaty_trigger = yes } }
 							naval_strength_comparison = {
-								other = ENG
+								other = GER
 								ratio > 1
 								sub_unit_def_weights = {
 									carrier = 0.5
@@ -456,9 +456,9 @@ MTG_naval_treaties = {
 					AND = {
 						has_naval_treaty_trigger = yes
 						if = {
-							limit = { ENG = { has_naval_treaty_trigger = yes } }
+							limit = { GER = { has_naval_treaty_trigger = yes } }
 							naval_strength_comparison = {
-								other = ENG
+								other = GER
 								ratio > 1.1
 								sub_unit_def_weights = {
 									carrier = 0.5
@@ -498,7 +498,7 @@ MTG_naval_treaties = {
 			modifier = {
 				NOT = {
 					OR = {
-						TAG = ENG
+						TAG = GER
 						TAG = USA
 					}
 				}
@@ -524,9 +524,9 @@ MTG_naval_treaties = {
 		}
 		available = {
 			if = {
-				limit = { ENG = { has_naval_treaty_trigger = yes } }
+				limit = { GER = { has_naval_treaty_trigger = yes } }
 				naval_strength_comparison = {
-					other = ENG
+					other = GER
 					ratio < 0.8
 					sub_unit_def_weights = {
 						carrier = 0.25

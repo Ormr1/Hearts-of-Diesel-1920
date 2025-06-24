@@ -6573,7 +6573,11 @@ spriteTypes = {
 
 	spriteType = {
 		name = GFX_portrait_SOV_aleksandr_kerensky
-		texturefile = "gfx/leaders/SOV/Portrait_Soviet_Generic_1.dds"
+		texturefile = "gfx/leaders/SOV/portrait_SOV_aleksandr_kerensky.dds"
+	}
+	spriteType = {
+		name = GFX_portrait_SOV_olga_morozova
+		texturefile = "gfx/leaders/SOV/portrait_SOV_olga_morozova.dds"
 	}
 
 	spriteType = {

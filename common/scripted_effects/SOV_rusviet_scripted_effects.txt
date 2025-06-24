@@ -379,3 +379,221 @@ SOV_normalize_army_control={
 		add_to_variable = {var_SOV_factions_ARMY_loyalty^var_SOV_current_army_controller = temp_army_loyalty_check_2}
 	}
 }
+
+
+SOV_civil_war_release_indepedants = {
+	release = UKR
+	UKR={#Independance revolt
+		if={
+			limit={SOV={owns_state = 96}}
+			transfer_state = 96
+		}
+		if={
+			limit={SOV={owns_state = 94}}
+			transfer_state = 94
+		}
+		if={
+			limit={SOV={owns_state = 886}}
+			transfer_state = 886
+			add_state_core = 886
+		}
+		if={
+			limit={SOV={owns_state = 97}}
+			transfer_state = 97
+			add_state_core = 97
+		}
+				
+		load_oob = "UKR_RCW"
+	}
+	RLL={#baltics, explodes shortly
+		transfer_state = 811
+		add_state_core = 811
+		transfer_state = 812
+		add_state_core = 812
+		transfer_state = 813
+		add_state_core = 813
+		transfer_state = 13
+		add_state_core = 13
+		transfer_state = 191
+		add_state_core = 191
+		transfer_state = 12
+		add_state_core = 12
+		transfer_state = 810
+		add_state_core = 810
+		transfer_state = 808
+		add_state_core = 808
+		transfer_state = 809
+		add_state_core = 809
+		transfer_state = 190
+		add_state_core = 190
+		transfer_state = 815
+		add_state_core = 815
+		transfer_state = 11
+		add_state_core = 11
+		transfer_state = 189
+		add_state_core = 189
+		transfer_state = 188
+		add_state_core = 188
+		if={
+			limit={SOV={owns_state = 784}}
+			transfer_state = 784
+			add_state_core = 784
+		}
+		if={
+			limit={SOV={owns_state = 814}}
+			transfer_state = 814
+			add_state_core = 814
+		}
+		if={
+			limit={SOV={owns_state = 884}}
+			transfer_state = 884
+			add_state_core = 884
+		}
+				
+		load_oob = "RLL_RCW"
+		country_event={id=SOV_civil_war.7 days = 37}
+	}
+	release = KAZ
+	KAZ={#Alash inpendenace
+		transfer_state = 823
+		load_oob = "KAZ_RCW"
+		set_cosmetic_tag = KAZ_alash
+		# set_politics = {
+			# ruling_party = communism
+			# last_election = "1921.1.1"
+			# elections_allowed = no
+		# }
+		# set_popularities = {
+			# communism = 89
+			# neutrality = 11
+		# }
+	}
+	set_nationality = {
+		target_country = FER
+		character = SOV_olga_morozova
+	}
+	FER={#Far Eastern Republic, coalition of rusviet loyaltist (although not nessicerly tsarists) that flee east, falls into its own civil war pretty quickly
+		transfer_state = 562
+		add_state_core = 562
+		transfer_state = 637
+		add_state_core = 637
+		transfer_state = 822
+		add_state_core = 822
+		transfer_state = 644
+		add_state_core = 644
+		transfer_state = 574
+		add_state_core = 574
+		transfer_state = 563
+		add_state_core = 563
+		transfer_state = 564
+		add_state_core = 564
+		transfer_state = 565
+		add_state_core = 565
+		transfer_state = 575
+		add_state_core = 575
+		transfer_state = 516
+		add_state_core = 516
+		transfer_state = 576
+		add_state_core = 576
+		transfer_state = 566
+		add_state_core = 566
+		transfer_state = 567
+		add_state_core = 567
+		transfer_state = 568
+		add_state_core = 568
+		transfer_state = 569
+		add_state_core = 569
+		transfer_state = 654
+		add_state_core = 654
+		transfer_state = 40
+		add_state_core = 40
+		transfer_state = 570
+		add_state_core = 570
+		transfer_state = 578
+		add_state_core = 578
+		transfer_state = 577
+		add_state_core = 577
+		transfer_state = 824
+		add_state_core = 824
+		transfer_state = 579
+		add_state_core = 579
+		transfer_state = 580
+		add_state_core = 580
+		transfer_state = 571
+		add_state_core = 571
+		transfer_state = 403
+		add_state_core = 403
+		transfer_state = 655
+		add_state_core = 655
+		transfer_state = 537
+		add_state_core = 537
+				
+		add_country_leader_role = {
+			character = SOV_olga_morozova
+			promote_leader = yes
+			country_leader = {
+				ideology = democratic
+				expire = "1965.1.1.1"
+				traits = {  }
+			}
+		}
+		promote_character = SOV_olga_morozova
+				
+		load_oob = "FER_RCW"
+	}
+	KAL={#buffer state
+		transfer_state = 237
+		transfer_state = 236
+		add_state_core = 236
+	}
+	DON={#buffer state
+		transfer_state = 218
+		add_state_core = 218
+		transfer_state = 245
+		add_state_core = 245
+		transfer_state = 238
+		add_state_core = 238
+		transfer_state = 265
+		add_state_core = 265
+		transfer_state = 217
+		add_state_core = 217
+	}
+	VGE={#Saxon ethic government
+		transfer_state = 829
+		add_state_core = 829
+		transfer_state = 401
+		add_state_core = 401
+		transfer_state = 251
+		add_state_core = 251
+		transfer_state = 652
+		add_state_core = 652
+	}
+	TMS={#Turks
+		transfer_state = 584
+		transfer_state = 832
+		transfer_state = 831
+		transfer_state = 585
+		transfer_state = 830
+		transfer_state = 742
+		transfer_state = 732
+		transfer_state = 405
+	}
+	TAT={#buffer state of tatars
+		transfer_state = 398
+		transfer_state = 399
+		transfer_state = 249
+		transfer_state = 256
+		transfer_state = 833
+		transfer_state = 400
+	}
+	BSK={#Octoberists that don't coalition with the east
+		transfer_state = 653
+		transfer_state = 651
+		transfer_state = 572
+		transfer_state = 573
+		transfer_state = 905
+		transfer_state = 582
+		set_cosmetic_tag = BSK_ural_republic
+	}
+}
+

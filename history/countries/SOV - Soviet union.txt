@@ -235,9 +235,11 @@ resize_array = {
 	value = 0
 	size = 5
 }
-set_variable = {var_SOV_factions_ARMY_loyalty^2 = 39}
-set_variable = {var_SOV_factions_ARMY_loyalty^5 = 54}
-set_variable = {var_SOV_factions_ARMY_loyalty^4 = 7}
+set_variable = {var_SOV_factions_ARMY_loyalty^1 = 4}
+set_variable = {var_SOV_factions_ARMY_loyalty^2 = 29}
+set_variable = {var_SOV_factions_ARMY_loyalty^3 = 12}
+set_variable = {var_SOV_factions_ARMY_loyalty^4 = 8}
+set_variable = {var_SOV_factions_ARMY_loyalty^5 = 47}
 
 if = {
 	limit = {
@@ -519,7 +521,7 @@ if = {
 		}
 	}
 	create_equipment_variant = {
-		name = "Leningrad & Minsk Class"
+		name = "Minsk Class"
 		type = destroyer_1
 		upgrades = {
 			ship_torpedo_upgrade = 3

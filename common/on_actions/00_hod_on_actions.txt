@@ -26,10 +26,7 @@ on_actions = {
 				limit = {
 					original_tag = VIN
 					has_war_with = SPR
-				}
-				VIN={
-					set_state_controller = 286
-					set_state_controller = 671
+					NOT={has_country_flag = SPR_victory_in_VIN}
 				}
 				SPR = {
 					set_autonomy = {
@@ -38,6 +35,7 @@ on_actions = {
 						end_wars = yes
 						end_civil_wars = no
 					}
+					set_country_flag = SPR_victory_in_VIN
 				}
 				set_cosmetic_tag = VIN_SPR
 				set_politics = {
@@ -48,6 +46,10 @@ on_actions = {
 					neutrality = 10
 					fascism = 5
 					monarchy = 55
+				}
+				VIN={
+					set_state_controller = 286
+					set_state_controller = 671
 				}
 			}
 			if = {
@@ -70,6 +72,41 @@ on_actions = {
 				ROC={
 					annex_country = {
 						target = ROOT
+						transfer_troops = no
+					}
+				}
+			}
+		}
+	}
+	#ROOT is winner #FROM is loser
+	on_peaceconference_ended = {
+		effect = {
+			IF = {
+				limit = {
+					FROM={
+						OR={
+							tag = TPG
+							tag = RSF
+							tag = RDM
+						}
+					}
+					ROOT={
+						OR={
+							tag = TPG
+							tag = RSF
+							tag = RDM
+							tag = SOV
+						}
+					}
+				}
+				FROM={
+					every_core_state = {
+						remove_core_of = FROM
+					}
+				}
+				ROOT={
+					annex_country = {
+						target = FROM
 						transfer_troops = no
 					}
 				}

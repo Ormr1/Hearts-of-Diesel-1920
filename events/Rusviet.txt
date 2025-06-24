@@ -261,134 +261,221 @@ country_event = {
 					remove_dynamic_modifier = { modifier = ukraizhian_nationalist_militias }
                 }
 				set_country_flag = SOV_civil_war
-				set_nationality = {
-					target_country = RSF
-					character = SOV_vladimir_lenin
+				if={
+					limit={
+						NOT={
+							has_country_leader = {
+								character = SOV_vladimir_lenin
+								ruling_only = yes
+							}
+						}
+					}
+					set_nationality = {
+						target_country = RSF
+						character = SOV_vladimir_lenin
+					}
 				}
-				set_nationality = {
-					target_country = RDM
-					character = SOV_aleksandr_kerensky
-				}
-				set_nationality = {
-					target_country = FER
-					character = SOV_olga_morozova
-				}
-				mark_focus_tree_layout_dirty = yes
-			}
-			TPG={#Absolute Tsarists
-				transfer_state = 216
-				transfer_state = 947
-				transfer_state = 213
-				transfer_state = 722
-				transfer_state = 215
-				transfer_state = 214
-				transfer_state = 923
-				transfer_state = 397
-				transfer_state = 262
-				transfer_state = 825
-				transfer_state = 581
-				transfer_state = 205
-				transfer_state = 242
-				transfer_state = 243
-				
-				load_oob = "TPG_RCW"
-				# set_cosmetic_tag = ZIM_FROLIZI
-				# set_politics = {
-					# ruling_party = communism
-					# last_election = "1921.1.1"
-					# elections_allowed = no
-				# }
-				# set_popularities = {
-					# communism = 89
-					# neutrality = 11
-				# }
-				declare_war_on = {
-					target = SOV
-					type = civil_war
+				if={
+					limit={
+						NOT={
+							has_country_leader = {
+								character = SOV_aleksandr_kerensky
+								ruling_only = yes
+							}
+						}
+					}
+					set_nationality = {
+						target_country = RDM
+						character = SOV_aleksandr_kerensky
+					}
 				}
 				mark_focus_tree_layout_dirty = yes
 			}
-			RSF={#RSDLP
-				transfer_state = 219
-				transfer_state = 253
-				transfer_state = 252
-				transfer_state = 925
-				transfer_state = 924
-				transfer_state = 351
-				transfer_state = 248
-				transfer_state = 254
-				transfer_state = 223
-				transfer_state = 258
-				transfer_state = 222
-				transfer_state = 220
-				transfer_state = 240
-				
-				load_oob = "RSF_RCW"
-				# set_cosmetic_tag = ZIM_FROLIZI
-				# set_politics = {
-					# ruling_party = communism
-					# last_election = "1921.1.1"
-					# elections_allowed = no
-				# }
-				# set_popularities = {
-					# communism = 89
-					# neutrality = 11
-				# }
-				declare_war_on = {
-					target = SOV
-					type = civil_war
+			if={
+				limit={
+					NOT={
+						has_government = monarchy
+					}
 				}
-				declare_war_on = {
-					target = TPG
-					type = civil_war
+				TPG={#Absolute Tsarists
+					transfer_state = 216
+					transfer_state = 947
+					transfer_state = 213
+					transfer_state = 722
+					transfer_state = 215
+					transfer_state = 214
+					transfer_state = 923
+					transfer_state = 397
+					transfer_state = 262
+					transfer_state = 825
+					transfer_state = 581
+					transfer_state = 205
+					transfer_state = 242
+					transfer_state = 243
+					
+					load_oob = "TPG_RCW"
+					create_faction = TSARIST_RUSVIET
+					# set_cosmetic_tag = ZIM_FROLIZI
+					# set_politics = {
+						# ruling_party = communism
+						# last_election = "1921.1.1"
+						# elections_allowed = no
+					# }
+					# set_popularities = {
+						# communism = 89
+						# neutrality = 11
+					# }
+					declare_war_on = {
+						target = SOV
+						type = civil_war
+					}
+					mark_focus_tree_layout_dirty = yes
 				}
-				mark_focus_tree_layout_dirty = yes
 			}
-			RDM={#K-D
-				transfer_state = 224
-				transfer_state = 260
-				transfer_state = 255
-				transfer_state = 926
-				transfer_state = 250
-				transfer_state = 239
-				transfer_state = 257
-				transfer_state = 241
-				
-				load_oob = "RDM_RCW"
-				# set_cosmetic_tag = ZIM_FROLIZI
-				# set_politics = {
-					# ruling_party = communism
-					# last_election = "1921.1.1"
-					# elections_allowed = no
-				# }
-				# set_popularities = {
-					# communism = 89
-					# neutrality = 11
-				# }
-				declare_war_on = {
-					target = SOV
-					type = civil_war
+			if={
+				limit={
+					NOT={
+						has_country_leader = {
+							character = SOV_vladimir_lenin
+							ruling_only = yes
+						}
+					}
 				}
-				declare_war_on = {
-					target = RSF
-					type = civil_war
+				RSF={#RSDLP
+					transfer_state = 219
+					transfer_state = 253
+					transfer_state = 252
+					transfer_state = 925
+					transfer_state = 924
+					transfer_state = 351
+					transfer_state = 248
+					transfer_state = 254
+					transfer_state = 223
+					transfer_state = 258
+					transfer_state = 222
+					
+					load_oob = "RSF_RCW"
+					create_faction = COMMINTERN
+					# set_cosmetic_tag = ZIM_FROLIZI
+					# set_politics = {
+						# ruling_party = communism
+						# last_election = "1921.1.1"
+						# elections_allowed = no
+					# }
+					# set_popularities = {
+						# communism = 89
+						# neutrality = 11
+					# }
+					add_country_leader_role = {
+						character = SOV_vladimir_lenin
+						promote_leader = yes
+						country_leader = {
+							ideology = leninism
+							expire = "1965.1.1.1"
+							traits = {  }
+						}
+					}
+					promote_character = SOV_vladimir_lenin
+					declare_war_on = {
+						target = SOV
+						type = civil_war
+					}
+					declare_war_on = {
+						target = TPG
+						type = civil_war
+					}
+					mark_focus_tree_layout_dirty = yes
 				}
-				declare_war_on = {
-					target = TPG
-					type = civil_war
-				}
-				mark_focus_tree_layout_dirty = yes
 			}
-			set_temp_variable ={temp_units_to_transfer = var_SOV_factions_ARMY_loyalty^5}
-			divide_temp_variable ={temp_units_to_transfer = 100}
-			transfer_units_fraction= {
-				target = TPG
-				stockpile_ratio = temp_units_to_transfer
-				army_ratio = temp_units_to_transfer
-				navy_ratio = 0.0
-				air_ratio = 0.0
+			if={
+				limit={
+					NOT={
+						has_government = communism
+						has_government = fenris
+					}
+					NOT={
+						has_country_leader = {
+							character = SOV_vladimir_lenin
+							ruling_only = yes
+						}
+					}
+					NOT={
+						has_completed_focus = SOV_working_with_soviet
+					}
+				}
+				RSF={#RSDLP gets SR states if the SR is not on side
+					transfer_state = 247
+					transfer_state = 264
+					transfer_state = 246
+					transfer_state = 906
+					transfer_state = 207
+				}
+			}
+			if={
+				limit={
+					NOT={
+						has_government = democratic
+					}
+				}
+				RDM={#K-D
+					transfer_state = 224
+					transfer_state = 260
+					transfer_state = 255
+					transfer_state = 926
+					transfer_state = 250
+					transfer_state = 239
+					transfer_state = 257
+					transfer_state = 241
+					transfer_state = 220
+					transfer_state = 240
+					
+					load_oob = "RDM_RCW"
+					create_faction = WHITE_RUSVIET
+					# set_cosmetic_tag = ZIM_FROLIZI
+					# set_politics = {
+						# ruling_party = communism
+						# last_election = "1921.1.1"
+						# elections_allowed = no
+					# }
+					# set_popularities = {
+						# communism = 89
+						# neutrality = 11
+					# }
+					declare_war_on = {
+						target = SOV
+						type = civil_war
+					}
+					declare_war_on = {
+						target = RSF
+						type = civil_war
+					}
+					declare_war_on = {
+						target = TPG
+						type = civil_war
+					}
+					add_country_leader_role = {
+						character = SOV_aleksandr_kerensky
+						promote_leader = yes
+						country_leader = {
+							ideology = centrism_democratic
+							expire = "1965.1.1.1"
+							traits = {  }
+						}
+					}
+					promote_character = SOV_aleksandr_kerensky
+					mark_focus_tree_layout_dirty = yes
+				}
 			}
 			set_temp_variable ={temp_units_to_transfer = var_SOV_factions_ARMY_loyalty^0}
+			if={
+				limit={
+					NOT={
+						has_government = communism
+						has_government = fenris
+					}
+				}
+				add_to_temp_variable ={temp_units_to_transfer = var_SOV_factions_ARMY_loyalty^1}
+			}
 			divide_temp_variable ={temp_units_to_transfer = 100}
 			transfer_units_fraction= {
 				target = RSF
@@ -397,7 +484,7 @@ country_event = {
 				navy_ratio = 0.0
 				air_ratio = 0.0
 			}
-			set_temp_variable ={temp_units_to_transfer = var_SOV_factions_ARMY_loyalty^4}
+			add_to_temp_variable ={temp_units_to_transfer = var_SOV_factions_ARMY_loyalty^3}
 			divide_temp_variable ={temp_units_to_transfer = 100}
 			transfer_units_fraction= {
 				target = RDM
@@ -406,224 +493,38 @@ country_event = {
 				navy_ratio = 0.0
 				air_ratio = 0.0
 			}
-			release = UKR
-			UKR={#Inpendance revolt
-				if={
-					limit={SOV={owns_state = 96}}
-					transfer_state = 96
-				}
-				if={
-					limit={SOV={owns_state = 94}}
-					transfer_state = 94
-				}
-				if={
-					limit={SOV={owns_state = 886}}
-					transfer_state = 886
-					add_state_core = 886
-				}
-				if={
-					limit={SOV={owns_state = 97}}
-					transfer_state = 97
-					add_state_core = 97
-				}
-				
-				load_oob = "UKR_RCW"
-				# set_cosmetic_tag = ZIM_FROLIZI
-				# set_politics = {
-					# ruling_party = communism
-					# last_election = "1921.1.1"
-					# elections_allowed = no
-				# }
-				# set_popularities = {
-					# communism = 89
-					# neutrality = 11
-				# }
-			}
-			RLL={#baltics, explodes shortly
-				transfer_state = 811
-				add_state_core = 811
-				transfer_state = 812
-				add_state_core = 812
-				transfer_state = 813
-				add_state_core = 813
-				transfer_state = 13
-				add_state_core = 13
-				transfer_state = 191
-				add_state_core = 191
-				transfer_state = 12
-				add_state_core = 12
-				transfer_state = 810
-				add_state_core = 810
-				transfer_state = 808
-				add_state_core = 808
-				transfer_state = 809
-				add_state_core = 809
-				transfer_state = 190
-				add_state_core = 190
-				transfer_state = 815
-				add_state_core = 815
-				transfer_state = 11
-				add_state_core = 11
-				transfer_state = 189
-				add_state_core = 189
-				transfer_state = 188
-				add_state_core = 188
-				if={
-					limit={SOV={owns_state = 784}}
-					transfer_state = 784
-					add_state_core = 784
-				}
-				if={
-					limit={SOV={owns_state = 814}}
-					transfer_state = 814
-					add_state_core = 814
-				}
-				if={
-					limit={SOV={owns_state = 884}}
-					transfer_state = 884
-					add_state_core = 884
-				}
-				
-				load_oob = "RLL_RCW"
-				country_event={id=SOV_civil_war.7 days = 37}
-			}
-			release = KAZ
-			KAZ={#Alash inpendenace
-				transfer_state = 823
-				load_oob = "KAZ_RCW"
-				set_cosmetic_tag = KAZ_alash
-				# set_politics = {
-					# ruling_party = communism
-					# last_election = "1921.1.1"
-					# elections_allowed = no
-				# }
-				# set_popularities = {
-					# communism = 89
-					# neutrality = 11
-				# }
-			}
-			FER={#Far Eastern Republic, coalition of rusviet loyaltist (although not nessicerly tsarists) that flee east, falls into its own civil war pretty quickly
-				transfer_state = 562
-				add_state_core = 562
-				transfer_state = 637
-				add_state_core = 637
-				transfer_state = 822
-				add_state_core = 822
-				transfer_state = 644
-				add_state_core = 644
-				transfer_state = 574
-				add_state_core = 574
-				transfer_state = 563
-				add_state_core = 563
-				transfer_state = 564
-				add_state_core = 564
-				transfer_state = 565
-				add_state_core = 565
-				transfer_state = 575
-				add_state_core = 575
-				transfer_state = 516
-				add_state_core = 516
-				transfer_state = 576
-				add_state_core = 576
-				transfer_state = 566
-				add_state_core = 566
-				transfer_state = 567
-				add_state_core = 567
-				transfer_state = 568
-				add_state_core = 568
-				transfer_state = 569
-				add_state_core = 569
-				transfer_state = 654
-				add_state_core = 654
-				transfer_state = 40
-				add_state_core = 40
-				transfer_state = 570
-				add_state_core = 570
-				transfer_state = 578
-				add_state_core = 578
-				transfer_state = 577
-				add_state_core = 577
-				transfer_state = 824
-				add_state_core = 824
-				transfer_state = 579
-				add_state_core = 579
-				transfer_state = 580
-				add_state_core = 580
-				transfer_state = 571
-				add_state_core = 571
-				transfer_state = 403
-				add_state_core = 403
-				transfer_state = 655
-				add_state_core = 655
-				transfer_state = 537
-				add_state_core = 537
-				
-				add_country_leader_role = {
-					character = SOV_olga_morozova
-					promote_leader = yes
-					country_leader = {
-						ideology = democratic
-						expire = "1965.1.1.1"
-						traits = {  }
+			add_to_temp_variable ={temp_units_to_transfer = var_SOV_factions_ARMY_loyalty^5}
+			if={
+				limit={
+					NOT={
+						has_government = democratic
+						has_government = neutrality
+						has_government = monarchy
 					}
 				}
-				
-				load_oob = "FER_RCW"
+				add_to_temp_variable ={temp_units_to_transfer = var_SOV_factions_ARMY_loyalty^4}
 			}
-			KAL={#buffer state
-				transfer_state = 237
-				transfer_state = 236
-				add_state_core = 236
+			divide_temp_variable ={temp_units_to_transfer = 100}
+			transfer_units_fraction= {
+				target = TPG
+				stockpile_ratio = temp_units_to_transfer
+				army_ratio = temp_units_to_transfer
+				navy_ratio = 0.0
+				air_ratio = 0.0
+			} 
+			SOV={
+				add_civil_war_target = RSF
+				add_civil_war_target = RDM
+				add_civil_war_target = TPG
 			}
-			DON={#buffer state
-				transfer_state = 218
-				add_state_core = 218
-				transfer_state = 245
-				add_state_core = 245
-				transfer_state = 238
-				add_state_core = 238
-				transfer_state = 265
-				add_state_core = 265
-				transfer_state = 217
-				add_state_core = 217
+			RSF={
+				add_civil_war_target = RDM
+				add_civil_war_target = TPG
 			}
-			VGE={#Saxon ethic government
-				transfer_state = 829
-				add_state_core = 829
-				transfer_state = 401
-				add_state_core = 401
-				transfer_state = 251
-				add_state_core = 251
-				transfer_state = 652
-				add_state_core = 652
+			RDM={
+				add_civil_war_target = TPG
 			}
-			TMS={#Turks
-				transfer_state = 584
-				transfer_state = 832
-				transfer_state = 831
-				transfer_state = 585
-				transfer_state = 830
-				transfer_state = 742
-				transfer_state = 732
-				transfer_state = 405
-			}
-			TAT={#buffer state of tatars
-				transfer_state = 398
-				transfer_state = 399
-				transfer_state = 249
-				transfer_state = 256
-				transfer_state = 833
-				transfer_state = 400
-			}
-			BSK={#Octoberists that don't coalition with the east
-				transfer_state = 653
-				transfer_state = 651
-				transfer_state = 572
-				transfer_state = 573
-				transfer_state = 905
-				transfer_state = 582
-				set_cosmetic_tag = BSK_ural_republic
-			}
+			SOV_civil_war_release_indepedants = yes
 		}
 	}
 	#an early event will dicate which side you flip to
@@ -975,6 +876,89 @@ country_event = {#Hunt for lenin
 	}
 }
 
+country_event = {#FROM sways ROOT into its faction
+	id = SOV_civil_war.14
+	title = SOV_civil_war.14.t
+	desc = SOV_civil_war.14.d
+	picture = GFX_report_event_generic_riot
+	
+	is_triggered_only = yes
+
+	fire_only_once = yes
+	
+	option = {#Agree
+		name = SOV_civil_war.14.a
+		ai_chance = { factor = 9 }
+		FROM={
+			set_autonomy = {
+				target = ROOT
+				autonomous_state = autonomy_colony
+				end_wars = no
+				end_civil_wars = no
+			}
+		}
+		if={
+			limit={
+				FROM={
+					NOT={tag = SOV}
+				}
+			}
+			add_to_war = {
+				targeted_alliance = FROM
+				enemy = SOV
+				hostility_reason = asked_to_join
+			}
+		}
+		if={
+			limit={
+				FROM={
+					NOT={tag = RDM}
+				}
+			}
+			add_to_war = {
+				targeted_alliance = FROM
+				enemy = RDM
+				hostility_reason = asked_to_join
+			}
+		}
+		if={
+			limit={
+				FROM={
+					NOT={tag = RSF}
+				}
+			}
+			add_to_war = {
+				targeted_alliance = FROM
+				enemy = RSF
+				hostility_reason = asked_to_join
+			}
+		}
+		if={
+			limit={
+				FROM={
+					NOT={tag = TPG}
+				}
+			}
+			add_to_war = {
+				targeted_alliance = FROM
+				enemy = TPG
+				hostility_reason = asked_to_join
+			}
+		}
+	}
+	option = {#Refuse
+		name = SOV_civil_war.14.b
+		ai_chance = { factor = 1 }
+	}
+	option = {#Independance
+		name = SOV_civil_war.14.c
+		ai_chance = { factor = 0 }
+		trigger={
+			is_ai = no
+		}
+	}
+}
+
 
 
 country_event = {#military_budget
@@ -985,7 +969,7 @@ country_event = {#military_budget
 	
 	is_triggered_only = yes
 	
-	option = {#damn
+	option = {#Agree
 		name = SOV_events.1.a
 		
 	}

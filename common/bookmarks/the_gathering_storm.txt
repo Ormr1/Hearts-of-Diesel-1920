@@ -90,6 +90,8 @@ bookmarks = {
 			ideology = monarchy
 			ideas = {
 				petrograd_soviet_idea
+				SOV_devistated_army
+				SOV_land_reform
 			}
 			focuses = {
 				

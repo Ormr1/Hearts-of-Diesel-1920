@@ -5889,42 +5889,6 @@ CHI_communist_infiltration = {
 #    ##  #  # ### ###  ##  #  #     ##   ##  #    #     ##  #  #  #  
 
 foreign_support = {
-	CHI_flying_tigers = {
-		icon = generic_air
-		available = {
-			has_equipment = { fighter_equipment > 149 }
-		}
-		visible = {
-			has_country_flag = CHI_flying_tigers
-		}
-		cost = 25
-		ai_will_do = {
-			factor = 1
-		}
-		fire_only_once = yes
-		days_remove = -1
-		complete_effect = {
-			random_country = {
-				limit = {
-					has_completed_focus = CHI_invite_the_flying_tigers
-				}
-				custom_effect_tooltip = flying_tigers_tt
-				hidden_effect = {
-					USA = {
-						send_equipment = {
-							target = PREV
-							type = fighter_equipment
-							amount = 150
-						}
-					}
-				}
-			}
-			add_war_support = 0.05
-		}
-		modifier = {
-			air_volunteer_cap = 100
-		}
-	}
 
 	CHI_expand_the_burma_road = {
 		icon = generic_construction

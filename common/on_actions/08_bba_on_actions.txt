@@ -915,6 +915,7 @@ on_actions = {
 				ETH_transfer_promised_states = yes
 			}
 		}
+		
 		# Drop AOI cosmetic tag to set correct flag
 		effect = {
 			IF = {

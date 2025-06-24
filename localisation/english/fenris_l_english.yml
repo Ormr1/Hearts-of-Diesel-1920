@@ -280,6 +280,8 @@
  FEN_supporting_coup: "Supporting the Coup"
  FEN_improved_production_routing: "Improved Production Routing"
  FEN_expand_the_barracks: "Expand the Barracks"
+ FEN_hidden_talent_hunters: "Hidden Talent Hunters"
+ FEN_recruiting_in_mercanary_ciricles: "Recruiting in Mercenary Circles"
  
  
  end_of_data_tt: "§REnd of Current Content§!"
