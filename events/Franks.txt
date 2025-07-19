@@ -2507,7 +2507,7 @@ country_event = { # fra_civilwarignite.1
 			ruling_party = democratic
 			ideology = ROOT
 			set_capital = { state = 15 }
-			size = 0.5
+			size = 0.4
 			only_own_territory = yes
 			states = { 
 				28 15 30 23 24 16
@@ -2515,7 +2515,7 @@ country_event = { # fra_civilwarignite.1
 			keep_unit_leaders = {
 				750 751 752
 			}
-			keep_political_leader = yes
+			#keep_political_leader = yes
 			keep_political_party_members = yes
 		}
 		add_ideas = FRA_Revolutionary_Ideals
@@ -2545,7 +2545,7 @@ country_event = { # fra_civilwarignite.1
 			ruling_party = democratic
 			ideology = ROOT
 			set_capital = { state = 15 }
-			size = 0.5
+			size = 0.4
 			only_own_territory = yes
 			states = { 
 				27 17 28 24 16 15 30 19 23 18

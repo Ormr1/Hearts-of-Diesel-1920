@@ -41,8 +41,9 @@ add_to_array = {FEN_controlled_country_amount = 48}
 
 add_manpower = 36000
 add_ideas={
-	FEN_in_the_shadows
 	FEN_covert_forces
+	FEN_in_the_shadows
+	FEN_under_a_false_flag
 	closed_economy
 	tot_economic_mobilisation
 	fenris_air_company

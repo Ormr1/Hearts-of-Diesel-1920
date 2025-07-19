@@ -1,5 +1,17 @@
 ideas = {
 	country={
+		FEN_covert_forces = {
+			picture = FRA_frankish_foreign_legion
+			
+			modifier = {
+				send_volunteer_divisions_required = -1.5
+				send_volunteers_tension = -0.95
+				send_volunteer_size = 1
+			}
+			rule={
+				can_send_volunteers = yes
+			}
+		}
 		FEN_in_the_shadows = {
 			picture = FRA_loss_to_saxony
 			
@@ -15,6 +27,20 @@ ideas = {
 				can_join_factions = no
 			}
 		}
+		FEN_under_a_false_flag = {
+			picture = FRA_political_violence
+			
+			modifier = {
+				enemy_declare_war_tension = 1.1
+			}
+			rule = {
+				can_access_market = no
+				can_not_declare_war = yes
+			}
+			on_remove = {
+				drop_cosmetic_tag = yes
+			}
+		}
 		FEN_shadow_cabal={
 			picture = generic_army_problems
 			
@@ -25,18 +51,7 @@ ideas = {
 				operative_slot = 2
 			}
 		}
-		FEN_covert_forces = {
-			picture = FRA_political_violence
-			
-			modifier = {
-				send_volunteer_divisions_required = -1.5
-				send_volunteers_tension = -0.95
-				send_volunteer_size = 1
-			}
-			rule={
-				can_send_volunteers = yes
-			}
-		}
+		
 		FEN_flat_packing_idea= {
 			picture = generic_army_problems
 			

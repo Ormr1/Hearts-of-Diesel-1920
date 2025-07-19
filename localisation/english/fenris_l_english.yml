@@ -25,6 +25,8 @@
  FEN_in_the_shadows:0 "§gIn the Shadows§!"
  FEN_covert_forces:0 "§gCovert Forces§!"
  FEN_covert_forces_desc:0 "§OFenris§! deploys highly trained covert troops disguised as normal volunteers to flashpoints around the globe rather than fight conventional wars"
+ FEN_under_a_false_flag: "§gUnder a False Flag§!"
+ FEN_under_a_false_flag_desc: "§OFenris§! never flies its own flag, this keeps us hidden, but does limit how open we can be without entering the endgame too early"
  FEN_repair_main_generator:0 "Repair Main Generator"
  FEN_main_generator_repaired:0 "The §HMain Generator§! has been repared"
  FEN_add_500_covert_staff:0 "§gCovert Staff§!: §G+500§!."

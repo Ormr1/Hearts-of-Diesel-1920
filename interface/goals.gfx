@@ -10811,6 +10811,11 @@ spriteTypes = {
 		name = "GFX_focus_FEN_annihilator"
 		texturefile = "gfx/interface/goals/FENRIS/focus_FEN_annihilator.dds"
 	}
+	SpriteType = {
+		name = "GFX_focus_FEN_usonian_desires"
+		texturefile = "gfx/interface/goals/FENRIS/focus_FEN_usonian_desires.dds"
+	}
+	
 	
 	SpriteType = {
 		name = "GFX_focus_GER_levantine_oil"

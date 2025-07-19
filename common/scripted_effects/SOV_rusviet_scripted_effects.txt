@@ -579,20 +579,26 @@ SOV_civil_war_release_indepedants = {
 		transfer_state = 405
 	}
 	TAT={#buffer state of tatars
-		transfer_state = 398
 		transfer_state = 399
 		transfer_state = 249
 		transfer_state = 256
 		transfer_state = 833
-		transfer_state = 400
 	}
 	BSK={#Octoberists that don't coalition with the east
 		transfer_state = 653
+		add_state_core = 653
 		transfer_state = 651
+		add_state_core = 651
 		transfer_state = 572
+		add_state_core = 572
 		transfer_state = 573
+		add_state_core = 573
 		transfer_state = 905
+		add_state_core = 905
 		transfer_state = 582
+		add_state_core = 582
+		transfer_state = 398
+		add_state_core = 398
 		set_cosmetic_tag = BSK_ural_republic
 	}
 }

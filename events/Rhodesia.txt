@@ -603,11 +603,13 @@ country_event = { #victory in zambia, independance
 	fire_only_once = yes
 	immediate = {
 		hidden_effect={
+			white_peace = RHO
+			white_peace = RFM
 			ZUN={
 				every_core_state = {
 					limit={
 						is_core_of = ROOT
-						NOT={is_core_of = KAT}
+						NOT={state = 1020}
 					}
 					remove_core_of = ZMW
 					remove_core_of = ZUN
@@ -649,8 +651,7 @@ country_event = { #victory in zambia, independance
 	option = {
 		name = RHO_bush_war.6.a
 		news_event = {id=RHO_bush_war.7}
-		white_peace = RHO
-		white_peace = RFM
+		
 	}
 }
 
@@ -684,13 +685,13 @@ country_event = { #victory in Nyasaland, independance
 			original_tag = NPU
 		}
 		1007={
-			is_fully_controlled_by = ROOT
+			is_controlled_by = ROOT
 		}
 		770={
-			is_fully_controlled_by = ROOT
+			is_controlled_by = ROOT
 		}
 		1006={
-			is_fully_controlled_by = ROOT
+			is_controlled_by = ROOT
 		}
 	}
 	fire_only_once = yes
@@ -761,34 +762,34 @@ country_event = { #victory in zimbabwe, independance
 			original_tag = RNF
 		}
 		992={
-			is_fully_controlled_by = ROOT
+			is_controlled_by = ROOT
 		}
 		993={
-			is_fully_controlled_by = ROOT
+			is_controlled_by = ROOT
 		}
 		995={
-			is_fully_controlled_by = ROOT
+			is_controlled_by = ROOT
 		}
 		997={
-			is_fully_controlled_by = ROOT
+			is_controlled_by = ROOT
 		}
 		996={
-			is_fully_controlled_by = ROOT
+			is_controlled_by = ROOT
 		}
 		994={
-			is_fully_controlled_by = ROOT
+			is_controlled_by = ROOT
 		}
 		545={
-			is_fully_controlled_by = ROOT
+			is_controlled_by = ROOT
 		}
 		989={
-			is_fully_controlled_by = ROOT
+			is_controlled_by = ROOT
 		}
 		990={
-			is_fully_controlled_by = ROOT
+			is_controlled_by = ROOT
 		}
 		991={
-			is_fully_controlled_by = ROOT
+			is_controlled_by = ROOT
 		}
 	}
 	fire_only_once = yes

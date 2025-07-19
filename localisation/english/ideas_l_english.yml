@@ -2769,6 +2769,10 @@
  
  LAP_machine_politics:0 "Machine Politics"
  LAP_machine_politics_desc:0 "The system of machine politics is strong in the United Provinces, each province has a caudillo in charge who uses bribery, vote rigging and political influence to secure their seats and even the seat of the president."
+ LAP_distater_in_rio_grande_do_sul: "Disaster in Rio Grande do Sul"
+ LAP_distater_in_rio_grande_do_sul_desc: "The Army of La Plata displayed their Incompetence in the Rio Grande do Sul campaign and proved to the whole country that the United Provinces is weaken and ready to fall."
+ 
+ ARG_uncivil_war: "Uncivil War"
  
  BRA_untrustworthy_military_idea:0 "Untrustworthy Military"
  BRA_untrustworthy_military_idea_desc:0 "Todo"

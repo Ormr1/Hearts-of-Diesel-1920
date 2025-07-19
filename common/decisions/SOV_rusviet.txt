@@ -371,7 +371,7 @@ SOV_rusviet_factions_system = {
 				tooltip = SOV_reduce_t_loyalty_amount
 				var_SOV_factions_T_loyalty = 20
 			}
-			add_stability = -0.1
+			add_stability = -0.40
 		}
 
 		ai_will_do = {
@@ -470,7 +470,7 @@ SOV_rusviet_factions_system = {
 				tooltip = SOV_reduce_t_loyalty_amount
 				var_SOV_factions_T_loyalty = 20
 			}
-			add_stability = -0.1
+			add_stability = -0.40
 		}
 
 		ai_will_do = {
@@ -594,7 +594,7 @@ SOV_rusviet_factions_system = {
 			has_government = communism
 			OR={
 				check_variable = {var_SOV_current_army_controller = 1}
-				
+				has_stability < 0.30
 			}
 			check_variable = {var_SOV_factions_RSDLP_loyalty < 40}
 			NOT={ has_active_mission = SOV_civil_war_countdown}
@@ -620,7 +620,158 @@ SOV_rusviet_factions_system = {
 				tooltip = SOV_increase_rsdlp_loyalty_amount
 				var_SOV_factions_RSDLP_loyalty = 100
 			}
-			add_stability = -0.1
+			add_stability = -0.15
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	SOV_army_loyalty_wavers = {
+
+		icon = eng_support_imperialist_coup
+
+		allowed = {
+			original_tag = SOV
+			#has_country_flag = SOV_factions_unlocked
+			NOT={has_country_flag = SOV_civil_war}
+		}
+		
+		selectable_mission = yes
+
+		available = {
+			
+		}
+		
+		cost = 30
+
+		days_mission_timeout = 180
+		fire_only_once = yes
+
+		activation = {
+			
+		}
+		
+		cancel_trigger = { 
+			OR={
+				has_completed_focus = SOV_restored_rusviet_army
+				has_country_flag = SOV_civil_war
+			}
+		}
+
+		is_good = no
+
+		complete_effect = {
+			if={
+				limit={
+					has_government = monarchy
+				}
+				set_temp_variable = {
+					var_SOV_temp_increase_controller = 5 #tsarist
+				}
+			}
+			else_if={
+				limit={
+					has_government = neutrality
+				}
+				set_temp_variable = {
+					var_SOV_temp_increase_controller = 4 #Octoberist
+				}
+			}
+			else_if={
+				limit={
+					has_government = democratic
+				}
+				set_temp_variable = {
+					var_SOV_temp_increase_controller = 3 #K-D
+				}
+			}
+			else_if={
+				limit={
+					has_government = communism
+				}
+				set_temp_variable = {
+					var_SOV_temp_increase_controller = 2 #SR
+				}
+			}
+			else={
+				set_temp_variable = {
+					var_SOV_temp_increase_controller = 1 #RSDLP
+				}
+			}
+			set_temp_variable = { var_SOV_temp_reduce_loyalty = 1}
+			SOV_increase_army_control = yes
+			activate_mission = SOV_army_loyalty_wavers
+		}
+
+		timeout_effect = {
+			random_list = {
+				16 = {
+					modifier = {
+						factor = 1.2
+						has_completed_focus = SOV_reinforce_tsarists_in_army
+					}
+					set_temp_variable = {
+						var_SOV_temp_increase_controller = 5 #tsarist
+					}
+					set_temp_variable = { var_SOV_temp_reduce_loyalty = 2}
+					SOV_increase_army_control = yes
+				}
+				16 = {
+					set_temp_variable = {
+						var_SOV_temp_increase_controller = 4 #O
+					}
+					set_temp_variable = { var_SOV_temp_reduce_loyalty = 2}
+					SOV_increase_army_control = yes
+				}
+				16 = {
+					set_temp_variable = {
+						var_SOV_temp_increase_controller = 3 #K-D
+					}
+					set_temp_variable = { var_SOV_temp_reduce_loyalty = 2}
+					SOV_increase_army_control = yes
+				}
+				16 = {
+					modifier = {
+						factor = 0.7
+						has_completed_focus = SOV_supress_the_sr
+					}
+					set_temp_variable = {
+						var_SOV_temp_increase_controller = 2 #SR
+					}
+					set_temp_variable = { var_SOV_temp_reduce_loyalty = 2}
+					SOV_increase_army_control = yes
+				}	
+				16 = {
+					modifier = {
+						factor = 0.7
+						has_completed_focus = SOV_supress_the_sr
+					}
+					modifier = {
+						factor = 1.2
+						has_completed_focus = SOV_working_with_lenin
+					}
+					set_temp_variable = {
+						var_SOV_temp_increase_controller = 1 #RSDLP
+					}
+					set_temp_variable = { var_SOV_temp_reduce_loyalty = 2}
+					SOV_increase_army_control = yes
+				}
+				
+				20 = {
+					modifier = {
+						factor = 0.25
+						has_completed_focus = SOV_suppress_anarchists
+					}
+					set_temp_variable = {
+						var_SOV_temp_increase_controller = 6 #Goes Rogue
+					}
+					set_temp_variable = { var_SOV_temp_reduce_loyalty = 1}
+					SOV_increase_army_control = yes
+				}
+			}
+			activate_mission = SOV_army_loyalty_wavers
 		}
 
 		ai_will_do = {

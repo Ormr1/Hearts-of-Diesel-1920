@@ -873,6 +873,14 @@ country_event = {#GER - saxon civil war
 				target = AUS
 				type = civil_war
 			}
+			DDR={
+				add_civil_war_target = WGR
+				add_civil_war_target = GER
+			}
+			WGR={
+				add_civil_war_target = DDR
+				add_civil_war_target = GER
+			}
 			remove_ideas = {
 				spariticus_unrest
 			}

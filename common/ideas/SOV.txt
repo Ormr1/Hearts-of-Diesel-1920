@@ -272,7 +272,7 @@ ideas = {
 			picture = FRA_factory_strikes
 			
 			modifier = {
-				political_power_gain = 0.02
+				political_power_gain = 0.05
 				consumer_goods_factor = 0.05
 				promote_cost_factor = 0.1
 				military_leader_cost_factor = 0.1
@@ -301,7 +301,7 @@ ideas = {
 			picture = FRA_factory_strikes
 			
 			modifier = {
-				political_power_gain = 0.02
+				political_power_gain = 0.03
 				consumer_goods_factor = 0.05
 				promote_cost_factor = 0.075
 				military_leader_cost_factor = 0.075
@@ -428,6 +428,58 @@ ideas = {
 			modifier = {
 				political_power_factor = 0.05
 				consumer_goods_factor = -0.05
+			}
+		}
+		
+		RDM_cossaks_raid_supplies={
+			name = RDM_cossaks_raid_supplies
+
+			removal_cost = -1
+
+			picture = spr_subvert_soviet_control
+			
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				supply_factor = -0.1
+				consumer_goods_factor = 0.05
+				no_supply_grace = 0
+				attrition = 0.05
+			}
+		}
+		RDM_march_on_moscow_idea={
+			name = RDM_march_on_moscow_idea
+
+			removal_cost = -1
+
+			picture = generic_attack_soviet_union
+			
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				breakthrough_factor = 0.5
+				army_org_regain = 0.5
+				army_morale = 10
+			}
+		}
+		RDM_VSYUR_ruble={
+			name = RDM_VSYUR_ruble
+
+			removal_cost = -1
+
+			picture = generic_economic_increase
+			
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				consumer_goods_factor = -0.05
+				production_speed_industrial_complex_factor = 0.05
 			}
 		}
 

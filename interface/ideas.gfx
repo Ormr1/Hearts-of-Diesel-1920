@@ -4178,6 +4178,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/FRA/idea_fra_loss_to_saxony.png"
 	}
 	spriteType = {
+		name = "GFX_idea_FRA_frankish_foreign_legion"
+		texturefile = "gfx/interface/ideas/FRA/idea_fra_frankish_foreign_legion.png"
+	}
+	spriteType = {
 		name = "GFX_idea_FRA_aeb"
 		texturefile = "gfx/interface/ideas/fra_aeb.dds"
 	}

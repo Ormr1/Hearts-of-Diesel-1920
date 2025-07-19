@@ -2724,7 +2724,7 @@ focus_tree = {
 		prerequisite = { 
 			focus = GER_military_reforms
 		}
-		x = -4
+		x = 0
 		y = 1
 		cost = 5
 		search_filters = { FOCUS_FILTER_RESEARCH }
@@ -2807,7 +2807,7 @@ focus_tree = {
 		prerequisite = { 
 			focus = GER_military_reforms
 		}
-		x = 0
+		x = -4
 		y = 1
 		cost = 5
 		search_filters = { FOCUS_FILTER_RESEARCH }

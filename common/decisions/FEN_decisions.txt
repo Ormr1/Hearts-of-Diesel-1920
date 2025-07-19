@@ -356,12 +356,21 @@ FEN_fenris_operations_SOV={
 			has_completed_focus = FEN_rasputins_play
 			NOT={has_country_flag = FEN_laying_low}
 			SOV={
-				has_stability < 0.25
+				OR={
+					has_stability < 0.25
+					has_active_mission = SOV_civil_war_countdown
+				}
 				OR={
 					custom_trigger_tooltip = {
 						tooltip = FEN_sr_hold_greater_than_loyalty
 						check_variable = {var_SOV_factions_SR_loyalty < FEN.FEN_rusviet_sr_influence}
 					}
+					SOV_rasputin={
+						is_hired_as_advisor = yes
+					}
+				}
+				OR={
+					has_stability < 0.20
 					has_character = SOV_rasputin
 				}
 			}

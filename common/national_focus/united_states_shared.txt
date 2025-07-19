@@ -24,6 +24,13 @@ shared_focus = {
 			has_focus_tree = usonia_focus
 		}
 	}
+	offset = {
+		x = 45
+		y = 0
+		trigger = {
+			has_focus_tree = hispania_focus
+		}
+	}
 	
 	allow_branch = {
 		OR = {
@@ -31,11 +38,17 @@ shared_focus = {
 			is_in_faction_with = USA
 		}
 	}
+	bypass={
+		USA={
+			has_completed_focus = UNITED_STATES_first_congress_joint
+		}
+	}
 
 	available = {
 		USA = {
 			has_completed_focus = USA_San_Francisco_Conference
 		}
+		tag = USA
 	}
 
 	completion_reward = {
