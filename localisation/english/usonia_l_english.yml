@@ -54,6 +54,8 @@
  usa_tycoon_influence_somewhat_low: "Tycoon Influence - Ignored By Congress"
  usa_tycoon_influence_low: "Tycoon Influence - They Don't Pick Up The Phone"
  usa_tycoon_influence_extremely_low: "Tycoon Influence - National Ostracization"
+ USA_increase_tycoon_influence_tt: "Tycoon Influence increases by §Y$RIGHT|0$§!"
+ USA_decrease_tycoon_influence_tt: "Tycoon Influence decreases by §Y$RIGHT|0$§!"
  usa_american_economic_development_council: "American Economic Development Council"
  usa_hamiltonian_economics: "Hamiltonian Economics"
  usa_jeffersonian_economics: "Jeffersonian Economics"

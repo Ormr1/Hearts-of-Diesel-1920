@@ -18,7 +18,7 @@ ideas = {
 			}
         }
 		SPR_idea_conquistadors = {
-			picture = placeholder
+			picture = ARG_spirit_of_the_conquistadors
 
 			allowed = {
 				always = no

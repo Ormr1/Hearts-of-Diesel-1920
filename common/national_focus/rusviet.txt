@@ -446,7 +446,7 @@ focus_tree = {
 		prerequisite = {
 			focus = SOV_demobilisation
 		}
-		x = -10
+		x = -8
 		y = 1
 		cost = 5
 		ai_will_do = {
@@ -615,7 +615,7 @@ focus_tree = {
 		completion_reward = {
 			add_popularity = {
 				ideology = communism
-				popularity = -0.05
+				popularity = -0.03
 			}
 			subtract_from_variable = {
 				tooltip = SOV_reduce_rsdlp_loyalty_amount
@@ -623,8 +623,9 @@ focus_tree = {
 			}
 			subtract_from_variable = {
 				tooltip = SOV_reduce_sr_loyalty_amount
-				var_SOV_factions_SR_loyalty = 15
+				var_SOV_factions_SR_loyalty = 7
 			}
+			add_stability = -0.02
 			swap_ideas={
 				add_idea = petrograd_soviet_idea_reduced
 				remove_idea = petrograd_soviet_idea
@@ -692,17 +693,26 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = SOV_progressive_bloc
+			focus = SOV_the_RSDLP
 		}
 		completion_reward = {
 			subtract_from_variable = {
 				tooltip = SOV_reduce_sr_loyalty_amount
-				var_SOV_factions_SR_loyalty = 5
+				var_SOV_factions_SR_loyalty = 15
+			}
+			subtract_from_variable = {
+				tooltip = SOV_reduce_rsdlp_loyalty_amount
+				var_SOV_factions_RSDLP_loyalty = 10
 			}
 			add_popularity = {
 				ideology = communism
 				popularity = -0.05
 			}
 			add_manpower = -100000
+			swap_ideas={
+				add_idea = petrograd_soviet_idea_reduced
+				remove_idea = petrograd_soviet_idea
+			}
 		}
 	}
 	focus = { # 
@@ -771,7 +781,7 @@ focus_tree = {
 		id = SOV_principles_of_democratic_socialism
 		icon = GFX_focus_generic_social_democracy
 		relative_position_id = SOV_working_with_soviet
-		x = 0
+		x = 1
 		y = 1
 		cost = 8
 		ai_will_do = {
@@ -779,6 +789,9 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = SOV_working_with_soviet
+		}
+		prerequisite = {
+			focus = SOV_for_peoples_freedoms
 		}
 		completion_reward = {
 			add_popularity = {
@@ -796,7 +809,7 @@ focus_tree = {
 		id = SOV_suppress_anarchists
 		icon = GFX_focus_spr_crush_the_revolution
 		relative_position_id = SOV_progressive_bloc
-		x = 4
+		x = 3
 		y = 1
 		cost = 8
 		ai_will_do = {
@@ -828,7 +841,7 @@ focus_tree = {
 		id = SOV_for_peoples_freedoms
 		icon = GFX_focus_ARG_defense_and_democracy
 		relative_position_id = SOV_progressive_bloc
-		x = 2
+		x = 1
 		y = 1
 		cost = 8
 		ai_will_do = {
@@ -857,7 +870,7 @@ focus_tree = {
 		id = SOV_democratic_coalition
 		icon = GFX_goal_support_democracy
 		relative_position_id = SOV_for_peoples_freedoms
-		x = 0
+		x = 1
 		y = 1
 		cost = 8
 		ai_will_do = {
@@ -888,7 +901,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = SOV_decreased_duma_rights
 		}
-		x = 1
+		x = 0
 		y = 1
 		cost = 8
 		ai_will_do = {
@@ -923,7 +936,7 @@ focus_tree = {
 		prerequisite = {
 			focus = SOV_dealing_with_the_political_tightrope
 		}
-		x = 8
+		x = 7
 		y = 1
 		cost = 5
 		ai_will_do = {
@@ -994,7 +1007,7 @@ focus_tree = {
 		id = SOV_increased_landowner_buyouts
 		icon = GFX_focus_generic_welfare
 		relative_position_id = SOV_tsars_land_reforms
-		x = 3
+		x = 2
 		y = 1
 		cost = 8
 		ai_will_do = {

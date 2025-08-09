@@ -343,15 +343,28 @@ country_event = {#powderkeg of africa
 	
 	option = {#gain supporters in the rhodesian government
 		name = fenris.19.a
-		
+		trigger={
+			RHO = {exists = yes}
+		}
+		RHO={
+			save_global_event_target_as = FEN_BUSH_WAR_TARGET
+		}
+		set_country_flag = FEN_involved_in_bush_war
 	}
 	option = {#embed ourselves in the SRN
 		name = fenris.19.b
-		
+		trigger={
+			RNF = {exists = yes}
+		}
+		RNF={
+			save_global_event_target_as = FEN_BUSH_WAR_TARGET
+		}
+		set_country_flag = FEN_involved_in_bush_war
 	}
 	option = {#too chaotic, even for us
 		name = fenris.19.c
 		custom_effect_tooltip = fenris.19.c.tt
+		
 	}
 }
 country_event = {#meeting with muslim firebrands

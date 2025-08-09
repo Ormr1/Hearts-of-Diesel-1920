@@ -72,6 +72,7 @@ FEN_is_reveled_effect={
 		}
 		news_event = {id = fenris.2}
 		set_global_flag = FEN_is_revealed_flag
+		drop_cosmetic_tag = yes
 	}
 }
 FEN_FAC_increase_strength_effect={

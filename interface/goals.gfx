@@ -10815,6 +10815,42 @@ spriteTypes = {
 		name = "GFX_focus_FEN_usonian_desires"
 		texturefile = "gfx/interface/goals/FENRIS/focus_FEN_usonian_desires.dds"
 	}
+	SpriteType = {
+		name = "GFX_focus_FEN_rhodesian_powderkeg"
+		texturefile = "gfx/interface/goals/FENRIS/focus_FEN_rhodesian_powderkeg.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_FEN_marathan_control"
+		texturefile = "gfx/interface/goals/FENRIS/focus_FEN_marathan_control.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_FEN_steal_equipment"
+		texturefile = "gfx/interface/goals/FENRIS/focus_FEN_steal_equipment.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_FEN_muslim_brotherhood"
+		texturefile = "gfx/interface/goals/FENRIS/focus_FEN_muslim_brotherhood.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_FEN_flat_packing"
+		texturefile = "gfx/interface/goals/FENRIS/focus_FEN_flat_packing.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_FEN_coilgun_prototypes"
+		texturefile = "gfx/interface/goals/FENRIS/focus_FEN_coilgun_prototypes.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_FEN_australian_play"
+		texturefile = "gfx/interface/goals/FENRIS/focus_FEN_australian_play.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_FEN_golden_fruit"
+		texturefile = "gfx/interface/goals/FENRIS/focus_FEN_golden_fruit.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_FEN_finding_income"
+		texturefile = "gfx/interface/goals/FENRIS/focus_FEN_finding_income.dds"
+	}
 	
 	
 	SpriteType = {

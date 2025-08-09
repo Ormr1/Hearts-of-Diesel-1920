@@ -1,5 +1,6 @@
 ideas = {
 	country={
+		##FRA look-alike Ideas
 		FEN_covert_forces = {
 			picture = FRA_frankish_foreign_legion
 			
@@ -41,6 +42,7 @@ ideas = {
 				drop_cosmetic_tag = yes
 			}
 		}
+		#
 		FEN_shadow_cabal={
 			picture = generic_army_problems
 			
@@ -53,7 +55,7 @@ ideas = {
 		}
 		
 		FEN_flat_packing_idea= {
-			picture = generic_army_problems
+			picture = generic_supply_depot
 			
 			modifier = {
 				production_factory_efficiency_gain_factor = 0.25
@@ -62,7 +64,7 @@ ideas = {
 			}
 		}
 		FEN_quality_rifles_idea= {
-			picture = generic_army_problems
+			picture = ast_volunteer_defence_corps
 			
 			equipment_bonus = {
 				infantry_equipment = {
@@ -73,7 +75,7 @@ ideas = {
 			}
 		}
 		FEN_worldwide_transports_idea= {
-			picture = generic_army_problems
+			picture = generic_air_bonus
 			
 			equipment_bonus = {
 				transport_plane_equipment={
@@ -84,7 +86,7 @@ ideas = {
 			}
 		}
 		FEN_focusing_elite_troops_idea= {
-			picture = generic_army_problems
+			picture = generic_reserve_divisions
 			
 			modifier = {
 				army_org_factor = 0.1
@@ -92,7 +94,7 @@ ideas = {
 			}
 		}
 		FEN_focusing_elite_troops_idea_2= {
-			picture = generic_army_problems
+			picture = generic_reserve_divisions
 			
 			modifier = {
 				army_org_factor = 0.15
@@ -101,7 +103,7 @@ ideas = {
 			}
 		}
 		FEN_focusing_elite_troops_idea_3= {
-			picture = generic_army_problems
+			picture = generic_reserve_divisions
 			
 			modifier = {
 				army_org_factor = 0.15
@@ -111,21 +113,21 @@ ideas = {
 			}
 		}
 		FEN_focusing_mercenaries_idea= {
-			picture = generic_army_problems
+			picture = RAJ_private_military_complex
 			
 			modifier = {
 				weekly_manpower = 50
 			}
 		}
 		FEN_focusing_mercenaries_idea_2= {
-			picture = generic_army_problems
+			picture = RAJ_private_military_complex
 			
 			modifier = {
 				weekly_manpower = 75
 			}
 		}
 		FEN_focusing_mercenaries_idea_3= {
-			picture = generic_army_problems
+			picture = RAJ_private_military_complex
 			
 			modifier = {
 				weekly_manpower = 75
@@ -133,7 +135,7 @@ ideas = {
 			}
 		}
 		FEN_alaskan_shell_companies= {
-			picture = generic_army_problems
+			picture = ARG_resource_extration_focus
 			
 			modifier = {
 				base_fuel_gain = 750

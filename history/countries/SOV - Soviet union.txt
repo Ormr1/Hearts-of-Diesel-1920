@@ -164,6 +164,8 @@ set_technology = {
 }
 give_guarantee = NOR
 
+set_country_flag = already_mobilized
+
 
 ####
 #### VANILLA ####

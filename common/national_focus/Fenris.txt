@@ -43,7 +43,7 @@ focus_tree = {
 		id = FEN_join_iron_harvest
 		icon = GFX_focus_generic_iron_harvest
 		relative_position_id = FEN_last_of_the_great_war_profits
-		x = -5
+		x = -3
 		y = 1
 		cost = 10
 		search_filters = { FOCUS_FILTER_INDUSTRY }
@@ -113,7 +113,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FEN_draft_scavengers
-		icon = GFX_focus_FEN_skulking_threat
+		icon = GFX_focus_AFG_scavenging
 		relative_position_id = FEN_join_iron_harvest
 		x = -1
 		y = 1
@@ -129,7 +129,6 @@ focus_tree = {
         }
 		select_effect = {
 			subtract_from_variable = {FEN_covert_staff = 500}
-            custom_effect_tooltip = FEN_remove_500_covert_staff
 		}
 		continue_if_invalid = yes
 		
@@ -138,7 +137,57 @@ focus_tree = {
 		completion_reward = {
             add_manpower = 1500
 			add_to_variable = {FEN_research_staff = 1000}
+			custom_effect_tooltip = FEN_remove_500_covert_staff
             custom_effect_tooltip = FEN_add_1000_research_staff
+		}
+		ai_will_do = {
+			factor = 24
+		}
+	}
+	focus = {
+		id = FEN_new_profit_sources
+		icon = GFX_focus_FEN_finding_income
+		relative_position_id = FEN_last_of_the_great_war_profits
+		x = -7
+		y = 1
+		cost = 10
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		prerequisite = { focus = FEN_last_of_the_great_war_profits}
+
+        available={
+            
+        }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+            
+		}
+		ai_will_do = {
+			factor = 24
+		}
+	}
+	focus = {
+		id = FEN_the_golden_fruit
+		icon = GFX_focus_FEN_golden_fruit
+		relative_position_id = FEN_new_profit_sources
+		x = -1
+		y = 1
+		cost = 10
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		prerequisite = { focus = FEN_new_profit_sources}
+
+        available={
+            ELS={
+				has_idea = ELS_banana_states_idea
+			}
+        }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+            custom_effect_tooltip = unlock_UFC_decisions_TT
+			FEN_increase_suspicion_random = yes
 		}
 		ai_will_do = {
 			factor = 24
@@ -149,7 +198,7 @@ focus_tree = {
 		icon = GFX_focus_FEN_generator_repair
 		relative_position_id = FEN_last_of_the_great_war_profits
 		x = 0
-		y = 1
+		y = 2
 		cost = 10
 		search_filters = {   }
 		prerequisite = { focus = FEN_last_of_the_great_war_profits}
@@ -211,7 +260,11 @@ focus_tree = {
 		available={
 			custom_trigger_tooltip={
 				tooltip = FEN_bunker_depth_5
-				check_variable = { FEN_bunker_depth > 5}
+				check_variable = { FEN_bunker_depth > 4}
+			}
+			custom_trigger_tooltip={
+				tooltip = FEN_bunker_depth_slots_required
+				check_variable = { FEN_bunker_depth_slots > FEN_total_bunker_slots}
 			}
 		}
 		prerequisite = { focus = FEN_expanding_bunker_out}
@@ -234,7 +287,11 @@ focus_tree = {
 		available={
 			custom_trigger_tooltip={
 				tooltip = FEN_bunker_depth_15
-				check_variable = { FEN_bunker_depth > 15}
+				check_variable = { FEN_bunker_depth > 14}
+			}
+			custom_trigger_tooltip={
+				tooltip = FEN_bunker_depth_slots_required
+				check_variable = { FEN_bunker_depth_slots > FEN_total_bunker_slots}
 			}
 		}
 		prerequisite = { focus = FEN_plotting_deeper}
@@ -244,6 +301,28 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = FEN_add_bunker_building_slot
 			add_to_variable = { FEN_total_bunker_slots = 1}
+		}
+	}
+	focus = {
+		id = FEN_into_the_abyss
+		icon = GFX_focus_FEN_bunker_building
+		relative_position_id = FEN_dark_depths
+		x = 0
+		y = 3
+		cost = 10
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		available={
+			custom_trigger_tooltip={
+				tooltip = FEN_bunker_depth_30
+				check_variable = { FEN_bunker_depth > 29}
+			}
+		}
+		prerequisite = { focus = FEN_dark_depths}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
 		}
 	}
 	focus = {
@@ -273,6 +352,39 @@ focus_tree = {
 			add_offsite_building = { type = industrial_complex level = 1 }
 		}
 	}
+	focus = {
+		id = FEN_expanding_construction_corps
+		icon = GFX_focus_FEN_bunker_building
+		relative_position_id = FEN_improved_production_routing
+		x = 0
+		y = 1
+		cost = 10
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		available={
+			custom_trigger_tooltip={
+				tooltip = FEN_has_bunker_building_slot
+				check_variable = { FEN_total_bunker_slots > FEN_used_bunker_slots}
+			}
+            custom_trigger_tooltip = {
+                tooltip = FEN_has_500_admin_staff
+                check_variable = {var = FEN_admin_staff value = 500  compare = greater_than_or_equals}
+            }
+		}
+		select_effect = {
+			add_to_variable = { FEN_used_bunker_slots = 1}
+			subtract_from_variable = {FEN_admin_staff = 500}
+		}
+		continue_if_invalid = yes
+		prerequisite = { focus = FEN_improved_production_routing}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			custom_effect_tooltip = FEN_remove_500_admin_staff
+			custom_effect_tooltip = FEN_remove_bunker_building_slot
+			add_offsite_building = { type = industrial_complex level = 1 }
+		}
+	}
 
 	focus = {
 		id = FEN_expand_the_barracks
@@ -295,6 +407,37 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = FEN_improving_cyptographic_mesures
+		icon = GFX_focus_generic_secret_service_agency
+		relative_position_id = FEN_last_of_the_great_war_profits
+		x = 1
+		y = 1
+		cost = 10
+		search_filters = {   }
+		prerequisite = { focus = FEN_last_of_the_great_war_profits}
+
+		available={
+            custom_trigger_tooltip = {
+                tooltip = FEN_has_500_covert_staff
+                check_variable = {var = FEN_covert_staff value = 500  compare = greater_than_or_equals}
+            }
+        }
+		allow_branch = {
+			has_dlc = "La Resistance"
+		}
+
+		select_effect = {
+			subtract_from_variable = {FEN_covert_staff = 500}
+		}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			custom_effect_tooltip = FEN_remove_500_covert_staff
+			upgrade_intelligence_agency = upgrade_form_department
+		}
+	}
+	focus = {
 		id = FEN_underground_economy
 		icon = GFX_focus_FEN_skulking_threat
 		relative_position_id = FEN_plotting_deeper
@@ -313,12 +456,12 @@ focus_tree = {
 	focus = {
 		id = FEN_reserving_MIO_areas
 		icon = GFX_focus_FEN_skulking_threat
-		relative_position_id = FEN_plotting_deeper
-		x = -3
+		relative_position_id = FEN_last_of_the_great_war_profits
+		x = -1
 		y = 1
 		cost = 10
 		search_filters = {   }
-		prerequisite = { focus = FEN_plotting_deeper}
+		prerequisite = { focus = FEN_last_of_the_great_war_profits}
 		
 		available_if_capitulated = yes
 
@@ -349,7 +492,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FEN_flat_packing
-		icon = GFX_focus_FEN_skulking_threat
+		icon = GFX_focus_FEN_flat_packing
 		relative_position_id = FEN_getting_the_generator_online
 		x = 2
 		y = 1
@@ -370,7 +513,7 @@ focus_tree = {
 		id = FEN_military_administration 
 		icon = GFX_focus_FEN_military_administration
 		relative_position_id = FEN_last_of_the_great_war_profits
-		x = 6
+		x = 5
 		y = 1
 		cost = 10
 		search_filters = {FOCUS_FILTER_WAR_SUPPORT}
@@ -383,13 +526,13 @@ focus_tree = {
         }
 		select_effect = {
 			subtract_from_variable = {FEN_admin_staff = 1000}
-            custom_effect_tooltip = FEN_remove_1000_admin_staff
 		}
 		continue_if_invalid = yes
 		
 		available_if_capitulated = yes
 
 		completion_reward = {
+			custom_effect_tooltip = FEN_remove_1000_admin_staff
 			army_experience =  25
 		}
 	}
@@ -445,7 +588,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FEN_fudge_rusviet_equipment_numbers
-		icon = GFX_focus_FEN_skulking_threat
+		icon = GFX_focus_FEN_steal_equipment
 		relative_position_id = FEN_obtain_discarded_protoypes
 		x = -1
 		y = 1
@@ -471,7 +614,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FEN_fudge_polania_equipment_numbers
-		icon = GFX_focus_FEN_skulking_threat
+		icon = GFX_focus_FEN_steal_equipment
 		relative_position_id = FEN_obtain_discarded_protoypes
 		x = 1
 		y = 1
@@ -497,10 +640,10 @@ focus_tree = {
 	}
 	focus = {
 		id = FEN_coilgun_prototypes
-		icon = GFX_focus_FEN_skulking_threat
+		icon = GFX_focus_FEN_coilgun_prototypes
 		relative_position_id = FEN_obtain_discarded_protoypes
 		x = 0
-		y = 2
+		y = 3
 		cost = 10
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		prerequisite = { focus = FEN_obtain_discarded_protoypes}
@@ -509,7 +652,11 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			add_tech_bonus = {
+				bonus = 1.5
+				uses = 1
+				technology = infantry_coilguns_2
+			}
 		}
 	}
 	focus = {
@@ -543,6 +690,14 @@ focus_tree = {
 
 		completion_reward = {
 			add_political_power = 200
+			if={
+				limit={
+					has_dlc = "La Resistance"
+				}
+				set_country_flag = europe_recruitment_unlocked
+				set_country_flag = north_america_recruitment_unlocked
+				custom_effect_tooltip = FEN_unlock_NA_EU_recruitment_tt
+			}
 		}
 	}
 	focus = {
@@ -700,7 +855,7 @@ focus_tree = {
 
 	focus = {
 		id = FEN_striking_tesla
-		icon = GFX_focus_FEN_skulking_threat
+		icon = GFX_focus_FAC_shining_city_chained
 		relative_position_id = FEN_international_intrigue
 		x = 0
 		y = 3
@@ -748,7 +903,7 @@ focus_tree = {
 		id = FEN_new_global_focus
 		icon = GFX_focus_FEN_grasping_the_world
 		x = 20
-		y = 7
+		y = 6
 		cost = 10
 		search_filters = {   }
 
@@ -801,7 +956,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FEN_a_austrailian_play
-		icon = GFX_focus_FEN_skulking_threat
+		icon = GFX_focus_FEN_australian_play
 		relative_position_id = FEN_new_global_focus
 		x = -3
 		y = 1
@@ -1019,7 +1174,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FEN_distater_in_romania
-		icon = GFX_focus_FEN_skulking_threat
+		icon = GFX_focus_generic_surrender
 		relative_position_id = FEN_new_global_focus
 		x = -3
 		y = -2
@@ -1103,10 +1258,14 @@ focus_tree = {
 
 		available = {
 			has_completed_focus = FEN_military_administration
+			land_facility > 0
 		}
 
 		completion_reward = {
-			add_political_power = 200
+			add_breakthrough_points = {
+				specialization = specialization_land
+				value = 3
+			}
 			custom_effect_tooltip = FEN_teslas_annihilator_tt
 		}
 	}
@@ -1217,7 +1376,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FEN_paraguayian_management
-		icon = GFX_focus_FEN_skulking_threat
+		icon = GFX_focus_ARG_paraguayan_ultimatum
 		relative_position_id = FEN_the_paraguayian_move
 		x = 0
 		y = 1
@@ -1244,7 +1403,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FEN_helping_with_PAR_reconstruction
-		icon = GFX_focus_FEN_skulking_threat
+		icon = GFX_focus_ARG_paraguayan_ultimatum
 		relative_position_id = FEN_paraguayian_management
 		x = 0
 		y = 1
@@ -1263,7 +1422,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FEN_rhodesian_powderkeg
-		icon = GFX_focus_FEN_skulking_threat
+		icon = GFX_focus_FEN_rhodesian_powderkeg
 		relative_position_id = FEN_international_intrigue
 		x = 4
 		y = 1
@@ -1294,7 +1453,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FEN_a_marathan_peshwa_of_our_own
-		icon = GFX_focus_FEN_skulking_threat
+		icon = GFX_focus_FEN_marathan_control
 		relative_position_id = FEN_international_intrigue
 		x = -4
 		y = 1
@@ -1322,13 +1481,13 @@ focus_tree = {
 		continue_if_invalid = yes
 
 		completion_reward = {
-			
-			#unlocks austrialian decisions
+			#unlocks Maratha decisions
+			custom_effect_tooltip = FEN_marathan_peshwa_tt
 		}
 	}
 	focus = {
 		id = FEN_agitate_aegyptus
-		icon = GFX_focus_FEN_skulking_threat
+		icon = GFX_focus_FEN_muslim_brotherhood
 		relative_position_id = FEN_international_intrigue
 		x = 6
 		y = 1
@@ -1376,7 +1535,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FEN_funding_the_muslium_brotherhood #backing Rashid Rida
-		icon = GFX_focus_FEN_skulking_threat
+		icon = GFX_focus_FEN_muslim_brotherhood
 		relative_position_id = FEN_agitate_aegyptus
 		x = 0
 		y = 1
@@ -1746,7 +1905,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FEN_extra_weapon_run
-		icon = GFX_focus_FEN_skulking_threat
+		icon = GFX_focus_AFG_scavenging 
 		relative_position_id = FEN_organise_more_troops
 		x = -1
 		y = 1
