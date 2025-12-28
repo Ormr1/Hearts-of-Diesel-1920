@@ -536,7 +536,7 @@ focus_tree = {
 			focus = SOV_purging_radicals_from_soviets
 		}
 		available = {
-			NOT = {has_government = communism }
+			has_government = monarchy
 		}
 		completion_reward = {
 			if={

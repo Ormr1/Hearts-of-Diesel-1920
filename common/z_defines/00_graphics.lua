@@ -54,6 +54,10 @@ NMapMode = {
 	NAVAL_REGION_ACCESS_AVOID_COLOR = { 1, 1, 0, 0.35 },							-- Color for the map stripes on naval regions that has set an access level = AVOID
 	NAVAL_REGION_ACCESS_BLOCK_COLOR = { 1, 0, 0, 0.45 },							-- Color for the map stripes on naval regions that has set an access level = BLOCK
 	NAVAL_REGION_FADE_WHEN_FLEET_SELECTED = 0.25,									-- How much all region borders (except those with mission assigned to it) are faded out, when a fleet is selected.
+	NAVAL_REGION_TRANSPARENCY_RATIO_MAX = 0.8,										-- Maximum transparency ratio for the strategic navy region map
+	NAVAL_REGION_TRANSPARENCY_RATIO_MIN = 0.5,										-- Minimum transparency ratio for the strategic navy region map
+	NAVAL_REGION_TRANSPARENCY_RANGE = 2000.0,										-- The range of naval dominance to be rendered on the strategic navy region map
+	NAVAL_DOMINANCE_TREND_BAR_HIDE_RATIO = 0.72,									-- Ratio of the camera height to the maximum camera height, below which the naval dominance trend bar is hidden.
 	AIR_REGION_FADE_WHEN_WING_SELECTED = 0.15,
 	UI_CONFIGURABLE_SLOT_FROM = 4,													-- Mapmode slots range that may be configurable. Indices are 0-based (first slot is 0)
 	UI_CONFIGURABLE_SLOT_TO = 10,
@@ -76,6 +80,7 @@ NMapMode = {
 	OPERATIVE_MAP_MODE_INVALID_COUNTRY_TARGET_TRANSPARENCY = 0.15,							-- alpha of country which cannot be targeted by the selected operative mission
 
 	COASTAL_FACILITY_OFFSET = {-1.5, 0, 1.5},					-- Offset from world position CVector3f (x, y, z). So it does not overlap with a port map icon
+	NAVAL_HEADQUARTER_OFFSET = {1.5, 0, 1.5},					-- Offset from world position CVector3f (x, y, z). So it does not overlap with a port map icon or facility
 
 	SUPPLY_MAP_MODE_COUNTRY_BORDER_CAMERA_DISTANCE = 1.0,
 	SUPPLY_MAP_MODE_COUNTRY_BORDER_OUTLINE_CUTOFF = 0.973,
@@ -113,6 +118,9 @@ NMapMode = {
 	CONSTRUCTION_SECONDARY_VALID_BUILD_TARGET_PROVINCE_COLOR_INDEX = 10,
 	CONSTRUCTION_SECONDARY_INVALID_BUILD_TARGET_PROVINCE_COLOR_INDEX = 11,
 	CONSTRUCTION_SECONDARY_FOREIGN_BUILD_TARGET_PROVINCE_COLOR_INDEX = 12,
+
+	FACTION_THEATER_COLOR_INDEX = 13, -- Border color when editing a faction theater (index in BORDER_COLOR_CUSTOM_HIGHLIGHTS)
+	FACTION_THEATER_HIGHLIGHT_COLOR_INDEX = 14, -- Border color when hovering a faction theater map icon (index in BORDER_COLOR_CUSTOM_HIGHLIGHTS)
 
 },
 

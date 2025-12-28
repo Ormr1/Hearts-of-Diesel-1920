@@ -60,6 +60,7 @@
  enclave:0 "Enclave"
  small_island:0 "Small Island"
  tiny_island:0 "Tiny Island"
+ large_island:0 "Large Island"
  pastoral:0 "Pastoral Region"
  OCCUPATION_BREAKDOWN:0 "Occupation Breakdown:"
  OCCUPATION_BREAKDOWN_ENTRY:0 "\n$COUNTRY|Y$: $OCCUPATION|Y%0$"
